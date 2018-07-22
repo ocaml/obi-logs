@@ -25,8 +25,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/ppx_getenv.1.0
 # command              ~/.opam/4.05/bin/ocaml pkg/build.ml native=true native-dynlink=true
 # exit-code            10
-# env-file             ~/.opam/log/ppx_getenv-10-4519e5.env
-# output-file          ~/.opam/log/ppx_getenv-10-4519e5.out
+# env-file             ~/.opam/log/ppx_getenv-11-4519e5.env
+# output-file          ~/.opam/log/ppx_getenv-11-4519e5.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package ppx_tools.metaquot -modules src/ppx_getenv.ml > src/ppx_getenv.ml.depends
@@ -52,5 +52,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180720223028.export"
-31 1532125826 1532125837
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722065744.export"
+31 1532242663 1532242670
