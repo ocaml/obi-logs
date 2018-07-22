@@ -205,36 +205,34 @@ The following actions will be performed:
 # 0.01s _obuild/ocp-indent.dynlink/indentLoader.mlmods                   [ done ]
 # 0.01s _obuild/ocp-indent/indentVersion.mlmods                          [ done ]
 # 0.01s _obuild/ocp-indent/indentArgs.mlimods                            [ done ]
-# 0.01s _obuild/ocp-indent/indentMain.mlmods                             [ done ]
 # 0.01s _obuild/ocp-indent/indentArgs.mlmods                             [ done ]
-# 0.01s _obuild/ocp-indent.utils/pos.cmi                                 [ done ]
+# 0.01s _obuild/ocp-indent/indentMain.mlmods                             [ done ]
 # 0.01s _obuild/ocp-indent.lexer/approx_tokens.cmo                       [ done ]
-# 0.02s _obuild/ocp-indent.lib/indentBlock.mlmods                        [ done ]
+# 0.01s _obuild/ocp-indent.utils/pos.cmi                                 [ done ]
 # 0.01s _obuild/ocp-indent.utils/compat.cmo                              [ done ]
 # 0.01s _obuild/ocp-indent.lib/indentConfig.cmi                          [ done ]
 # -- stderr for ...build/ocp-indent.lib/indentConfig.cmi --
 # File "./src/indentConfig.mli", line 21, characters 2-27:
 # Warning 50: unattached documentation comment (ignored)
+# 0.02s _obuild/ocp-indent.lib/indentBlock.mlmods                        [ done ]
 # 0.01s _obuild/ocp-indent.dynlink/indentLoader.cmi                      [ done ]
 # 0.01s _obuild/ocp-indent/indentVersion.cmo                             [ done ]
 # 0.01s _obuild/ocp-indent.lexer/indentExtend.cmi                        [ done ]
+# 0.02s _obuild/ocp-indent.utils/util.cmo                                [ done ]
 # 0.03s _obuild/ocp-indent.lexer/_temp/approx_lexer.ml                   [ done ]
 # -- stdout for ...cp-indent.lexer/_temp/approx_lexer.ml --
 # 217 states, 6258 transitions, table size 26334 bytes
 # 2516 additional bytes used for bindings
-# 0.02s _obuild/ocp-indent.utils/util.cmo                                [ done ]
 # 0.02s _obuild/ocp-indent.utils/pos.cmo                                 [ done ]
 # 0.01s _obuild/ocp-indent.lexer/indentExtend.cmo                        [ done ]
 # 0.02s _obuild/ocp-indent.lexer/approx_tokens.cmx                       [ done ]
-# 0.02s _obuild/ocp-indent.lexer/approx_lexer.mlmods                     [ done ]
-# 0.02s _obuild/ocp-indent/indentVersion.cmx                             [ done ]
-# 0.03s _obuild/ocp-indent.utils/compat.cmx                              [ done ]
-# 0.03s _obuild/ocp-indent.utils/pos.cmx                                 [ done ]
+# 0.02s _obuild/ocp-indent.utils/compat.cmx                              [ done ]
 # 0.02s _obuild/ocp-indent.dynlink/indentLoader.cmo                      [ done ]
+# 0.02s _obuild/ocp-indent/indentVersion.cmx                             [ done ]
+# 0.02s _obuild/ocp-indent.lexer/approx_lexer.mlmods                     [ done ]
 # 0.01s _obuild/ocp-indent.dynlink/ocp-indent.dynlink.cma                [ done ]
-# 0.04s _obuild/ocp-indent.utils/util.cmx                                [ done ]
-# 0.03s _obuild/ocp-indent.lexer/indentExtend.cmx                        [ done ]
-# 0.05s _obuild/ocp-indent.lib/indentConfig.cmo                          [ done ]
+# 0.04s _obuild/ocp-indent.utils/pos.cmx                                 [ done ]
+# 0.03s _obuild/ocp-indent.lib/indentConfig.cmo                          [ done ]
 # -- stderr for ...build/ocp-indent.lib/indentConfig.cmo --
 # File "./src/indentConfig.ml", line 83, characters 19-34:
 # Warning 52: Code should not depend on the actual values of
@@ -273,7 +271,10 @@ The following actions will be performed:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 8.5)
-# 0.05s _obuild/ocp-indent.lexer/approx_lexer.cmo                        [ done ]
+# 0.04s _obuild/ocp-indent.utils/util.cmx                                [ done ]
+# 0.03s _obuild/ocp-indent.lexer/indentExtend.cmx                        [ done ]
+# 0.05s _obuild/ocp-indent.dynlink/indentLoader.cmx                      [ done ]
+# 0.06s _obuild/ocp-indent.lexer/approx_lexer.cmo                        [ done ]
 # -- stderr for ...ild/ocp-indent.lexer/approx_lexer.cmo --
 # File "./src/approx_lexer.mll", line 110, characters 28-41:
 # Warning 3: deprecated: String.create
@@ -287,12 +288,11 @@ The following actions will be performed:
 # Warning 3: deprecated: String.set
 # Use Bytes.set instead.
 # 0.01s _obuild/ocp-indent.lexer/ocp-indent.lexer.cma                    [ done ]
-# 0.01s _obuild/ocp-indent.utils/nstream.cmi                             [ done ]
-# 0.04s _obuild/ocp-indent.dynlink/indentLoader.cmx                      [ done ]
-# 0.01s _obuild/ocp-indent.lib/indentBlock.cmi                           [ done ]
 # 0.01s _obuild/ocp-indent.dynlink/ocp-indent.dynlink.cmxa               [ done ]
+# 0.01s _obuild/ocp-indent.utils/nstream.cmi                             [ done ]
+# 0.01s _obuild/ocp-indent.lib/indentBlock.cmi                           [ done ]
 # 0.01s _obuild/ocp-indent.lib/indentPrinter.cmi                         [ done ]
-# 0.03s _obuild/ocp-indent.utils/nstream.cmo                             [ done ]
+# 0.02s _obuild/ocp-indent.utils/nstream.cmo                             [ done ]
 # -- stderr for ./_obuild/ocp-indent.utils/nstream.cmo --
 # File "./src/nstream.ml", line 112, characters 18-36:
 # Warning 3: deprecated: Lazy.lazy_from_val
@@ -300,37 +300,7 @@ The following actions will be performed:
 # File "./src/nstream.ml", line 113, characters 17-35:
 # Warning 3: deprecated: Lazy.lazy_from_val
 # Use Lazy.from_val instead.
-# 0.01s _obuild/ocp-indent/indentArgs.cmi                                [ done ]
-# 0.01s _obuild/ocp-indent.utils/ocp-indent.utils.cma                    [ done ]
-# 0.03s _obuild/ocp-indent.lib/indentPrinter.cmo                         [ done ]
-# 0.02s _obuild/ocp-indent/indentMain.cmo                                [ done ]
-# -- stderr for ./_obuild/ocp-indent/indentMain.cmo --
-# File "./src/indentMain.ml", line 55, characters 10-41:
-# Warning 48: implicit elimination of optional argument ?extra
-# File "./src/indentMain.ml", line 68, characters 10-41:
-# Warning 48: implicit elimination of optional argument ?extra
-# 0.03s _obuild/ocp-indent/indentArgs.cmo                                [failed]
-# [108.1] Command failed: '/home/opam/.opam/4.05/bin/ocamlc.opt' '-g' '-w' '+A-4-9-44' '-bin-annot' '-c' '-o' '_obuild/RULE-fc0aed5c18367730bb538e94bd27ff5f/indentArgs.cmo' '-I' './_obuild/ocp-indent' '-I' './src' '-I' './_obuild/ocp-indent.lib' '-I' './_obuild/ocp-indent.dynlink' '-I' './_obuild/ocp-indent.utils' '-I' './_obuild/ocp-indent.lexer' '-I' '/home/opam/.opam/4.05/lib/findlib' '-I' '/home/opam/.opam/4.05/lib/ocaml' '-I' '/home/opam/.opam/4.05/lib/cmdliner' './src/indentArgs.ml'
-# -- stderr for ./_obuild/ocp-indent/indentArgs.cmo --
-# File "./src/indentArgs.ml", line 236, characters 62-65:
-# Error: This expression has type
-#          [ `I of string * string
-#          | `Noblank
-#          | `P of string
-#          | `Pre of string
-#          | `S of string ] list
-#        but an expression was expected of type Cmdliner.Manpage.block list
-#        Type
-#          [ `I of string * string
-#          | `Noblank
-#          | `P of string
-#          | `Pre of string
-#          | `S of string ]
-#        is not compatible with type
-#          Cmdliner.Manpage.block =
-#            [ `I of string * string | `Noblank | `P of string | `S of string ] 
-#        The second variant type does not allow tag(s) `Pre
-# 0.10s _obuild/ocp-indent.lib/indentConfig.cmx                          [ done ]
+# 0.09s _obuild/ocp-indent.lib/indentConfig.cmx                          [ done ]
 # -- stderr for ...build/ocp-indent.lib/indentConfig.cmx --
 # File "./src/indentConfig.ml", line 83, characters 19-34:
 # Warning 52: Code should not depend on the actual values of
@@ -369,8 +339,38 @@ The following actions will be performed:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 8.5)
+# 0.01s _obuild/ocp-indent/indentArgs.cmi                                [ done ]
+# 0.01s _obuild/ocp-indent.utils/ocp-indent.utils.cma                    [ done ]
 # 0.05s _obuild/ocp-indent.dynlink/ocp-indent.dynlink.cmxa               [ done ]
-# 0.12s _obuild/ocp-indent.lexer/approx_lexer.cmx                        [ done ]
+# 0.03s _obuild/ocp-indent.lib/indentPrinter.cmo                         [ done ]
+# 0.03s _obuild/ocp-indent/indentMain.cmo                                [ done ]
+# -- stderr for ./_obuild/ocp-indent/indentMain.cmo --
+# File "./src/indentMain.ml", line 55, characters 10-41:
+# Warning 48: implicit elimination of optional argument ?extra
+# File "./src/indentMain.ml", line 68, characters 10-41:
+# Warning 48: implicit elimination of optional argument ?extra
+# 0.03s _obuild/ocp-indent/indentArgs.cmo                                [failed]
+# [108.1] Command failed: '/home/opam/.opam/4.05/bin/ocamlc.opt' '-g' '-w' '+A-4-9-44' '-bin-annot' '-c' '-o' '_obuild/RULE-fc0aed5c18367730bb538e94bd27ff5f/indentArgs.cmo' '-I' './_obuild/ocp-indent' '-I' './src' '-I' './_obuild/ocp-indent.lib' '-I' './_obuild/ocp-indent.dynlink' '-I' './_obuild/ocp-indent.utils' '-I' './_obuild/ocp-indent.lexer' '-I' '/home/opam/.opam/4.05/lib/findlib' '-I' '/home/opam/.opam/4.05/lib/ocaml' '-I' '/home/opam/.opam/4.05/lib/cmdliner' './src/indentArgs.ml'
+# -- stderr for ./_obuild/ocp-indent/indentArgs.cmo --
+# File "./src/indentArgs.ml", line 236, characters 62-65:
+# Error: This expression has type
+#          [ `I of string * string
+#          | `Noblank
+#          | `P of string
+#          | `Pre of string
+#          | `S of string ] list
+#        but an expression was expected of type Cmdliner.Manpage.block list
+#        Type
+#          [ `I of string * string
+#          | `Noblank
+#          | `P of string
+#          | `Pre of string
+#          | `S of string ]
+#        is not compatible with type
+#          Cmdliner.Manpage.block =
+#            [ `I of string * string | `Noblank | `P of string | `S of string ] 
+#        The second variant type does not allow tag(s) `Pre
+# 0.15s _obuild/ocp-indent.lexer/approx_lexer.cmx                        [ done ]
 # -- stderr for ...ild/ocp-indent.lexer/approx_lexer.cmx --
 # File "./src/approx_lexer.mll", line 110, characters 28-41:
 # Warning 3: deprecated: String.create
@@ -383,12 +383,12 @@ The following actions will be performed:
 # File "./src/approx_lexer.mll", line 228, characters 15-27:
 # Warning 3: deprecated: String.set
 # Use Bytes.set instead.
-# 0.17s _obuild/ocp-indent.lib/indentBlock.cmo                           [ done ]
+# 0.22s _obuild/ocp-indent.lib/indentBlock.cmo                           [ done ]
 # -- stderr for ./_obuild/ocp-indent.lib/indentBlock.cmo --
 # File "./src/indentBlock.ml", line 1578, characters 4-65:
 # Warning 57: Ambiguous or-pattern variables under guard;
 # variable tok may match different arguments. (See manual section 8.5)
-# 2 errors in 0.45s. 59 jobs (parallelism 3.0x), 83 files generated.
+# 2 errors in 0.50s. 59 jobs (parallelism 2.8x), 83 files generated.
 # Error log:
 # Error:
 # [108.1] '/home/opam/.opam/4.05/bin/ocamlc.opt' '-g' '-w' '+A-4-9-44' '-bin-annot' '-c' '-o' '_obuild/RULE-fc0aed5c18367730bb538e94bd27ff5f/indentArgs.cmo' '-I' './_obuild/ocp-indent' '-I' './src' '-I' './_obuild/ocp-indent.lib' '-I' './_obuild/ocp-indent.dynlink' '-I' './_obuild/ocp-indent.utils' '-I' './_obuild/ocp-indent.lexer' '-I' '/home/opam/.opam/4.05/lib/findlib' '-I' '/home/opam/.opam/4.05/lib/ocaml' '-I' '/home/opam/.opam/4.05/lib/cmdliner' './src/indentArgs.ml'
@@ -431,5 +431,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722093027.export"
-31 1532251824 1532251846
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722204827.export"
+31 1532292504 1532292524

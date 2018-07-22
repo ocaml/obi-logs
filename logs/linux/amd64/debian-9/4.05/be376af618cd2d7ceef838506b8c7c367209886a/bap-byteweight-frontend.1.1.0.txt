@@ -276,9 +276,9 @@ The following actions will be performed:
 ===== 87 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[bap-byteweight.1.4.0] found in cache
-[bap-byteweight-frontend.1.1.0] found in cache
-[bap-future.1.4.0] found in cache
+[bap-byteweight-frontend.1.1.0] downloaded from https://github.com/BinaryAnalysisPlatform/bap/archive/v1.1.0.tar.gz
+[bap-byteweight.1.4.0] downloaded from https://github.com/BinaryAnalysisPlatform/bap/archive/v1.4.0.tar.gz
+[bap-future.1.4.0] downloaded from https://github.com/BinaryAnalysisPlatform/bap/archive/v1.4.0.tar.gz
 [bap-signatures.1.4.0] found in cache
 [bap-std.1.4.0] found in cache
 [base.v0.9.4] found in cache
@@ -299,7 +299,6 @@ The following actions will be performed:
 [lwt_log.1.1.0] found in cache
 [lwt_react.1.1.1] found in cache
 [monads.1.4.0] found in cache
-[oasis.0.4.7] found in cache
 [ocaml-compiler-libs.v0.9.0] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
@@ -310,7 +309,6 @@ The following actions will be performed:
 [ocurl.0.8.1] found in cache
 [ogre.1.4.0] found in cache
 [ppx_assert.v0.9.0] found in cache
-[ppx_ast.v0.9.1] found in cache
 [ppx_base.v0.9.0] found in cache
 [ppx_bench.v0.9.1] found in cache
 [ppx_bin_prot.v0.9.0] found in cache
@@ -318,11 +316,13 @@ The following actions will be performed:
 [ppx_core.v0.9.3] found in cache
 [ppx_custom_printf.v0.9.0] found in cache
 [ppx_derivers.1.0] found in cache
+[oasis.0.4.7] downloaded from https://forge.ocamlcore.org/frs/download.php/1635/oasis-0.4.7.tar.gz
 [ppx_driver.v0.9.2] found in cache
 [ppx_enumerate.v0.9.0] found in cache
 [ppx_expect.v0.9.0] found in cache
 [ppx_fail.v0.9.0] found in cache
 [ppx_fields_conv.v0.9.0] found in cache
+[ppx_ast.v0.9.1] downloaded from https://github.com/janestreet/ppx_ast/archive/v0.9.1.tar.gz
 [ppx_hash.v0.9.0] found in cache
 [ppx_here.v0.9.1] found in cache
 [ppx_inline_test.v0.9.2] found in cache
@@ -351,11 +351,11 @@ The following actions will be performed:
 [topkg.0.9.1] found in cache
 [typerep.v0.9.0] found in cache
 [uri.1.9.7] found in cache
-[utop.1.19.3] found in cache
 [uuidm.0.9.6] found in cache
 [variantslib.v0.9.0] found in cache
 [zarith.1.7] found in cache
 [zed.1.6] found in cache
+[utop.1.19.3] downloaded from https://github.com/diml/utop/archive/1.19.3.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed bap-signatures.1.4.0
@@ -451,8 +451,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/bap-byteweight-frontend.1.1.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/bap-byteweight-frontend-11-033039.env
-# output-file          ~/.opam/log/bap-byteweight-frontend-11-033039.out
+# env-file             ~/.opam/log/bap-byteweight-frontend-11-ec9b65.env
+# output-file          ~/.opam/log/bap-byteweight-frontend-11-ec9b65.out
 ### output ###
 # ocaml setup.ml -quiet -build 
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package core_kernel -package findlib -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -586,5 +586,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722101510.export"
-31 1532254474 1532255208
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722204259.export"
+31 1532292146 1532293008

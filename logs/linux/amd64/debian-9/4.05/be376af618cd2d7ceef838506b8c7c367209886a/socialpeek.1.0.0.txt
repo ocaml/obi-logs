@@ -145,7 +145,6 @@ The following actions will be performed:
 [result.1.3] found in cache
 [sexplib.v0.11.0] found in cache
 [sexplib0.v0.11.0] found in cache
-[socialpeek.1.0.0] found in cache
 [ssl.0.5.5] found in cache
 [stdio.v0.11.0] found in cache
 [stringext.1.5.0] found in cache
@@ -153,6 +152,7 @@ The following actions will be performed:
 [uchar.0.0.2] found in cache
 [uri.1.9.7] found in cache
 [uutf.1.0.1] found in cache
+[socialpeek.1.0.0] downloaded from https://github.com/erizocosmico/ocaml-socialpeek/archive/1.0.0.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -176,30 +176,30 @@ The following actions will be performed:
 -> installed base.v0.11.1
 -> installed sexplib.v0.11.0
 -> installed ssl.0.5.5
--> installed lwt.3.3.0
 -> installed stdio.v0.11.0
+-> installed lwt.3.3.0
 -> installed lwt_ssl.1.1.2
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed astring.0.8.3
--> installed cmdliner.1.0.2
--> installed uchar.0.0.2
--> installed fmt.0.8.5
--> installed logs.0.6.2
--> installed uutf.1.0.1
--> installed jsonm.1.0.1
 -> installed ppxlib.0.3.0
+-> installed cmdliner.1.0.2
 -> installed fieldslib.v0.11.0
--> installed markup.0.7.6
--> installed ppx_fields_conv.v0.11.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
--> installed lambdasoup.0.6.3
+-> installed ppx_fields_conv.v0.11.0
+-> installed uchar.0.0.2
 -> installed uri.1.9.7
+-> installed uutf.1.0.1
+-> installed fmt.0.8.5
+-> installed jsonm.1.0.1
+-> installed markup.0.7.6
+-> installed logs.0.6.2
 -> installed conduit.1.1.0
 -> installed cohttp.0.99.0
 -> installed conduit-lwt.1.1.0
 -> installed cohttp-lwt.0.99.0
+-> installed lambdasoup.0.6.3
 -> installed conduit-lwt-unix.1.1.0
 -> installed cohttp-lwt-unix.0.99.0
 [ERROR] The compilation of socialpeek failed at "/home/opam/.opam/4.05/bin/jbuilder build -p socialpeek -j 71".
@@ -209,8 +209,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/socialpeek.1.0.0
 # command              ~/.opam/4.05/bin/jbuilder build -p socialpeek -j 71
 # exit-code            1
-# env-file             ~/.opam/log/socialpeek-11-33acae.env
-# output-file          ~/.opam/log/socialpeek-11-33acae.out
+# env-file             ~/.opam/log/socialpeek-11-ec29d9.env
+# output-file          ~/.opam/log/socialpeek-11-ec29d9.out
 ### output ###
 #       ocamlc socialpeek/.socialpeek.objs/socialpeek__Metatags.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.05/bin/ocamlc.opt -w -40 -g -bin-annot -I socialpeek/.socialpeek.objs -I /home/opam/.opam/4.05/lib/astring -I /home/opam/.opam/4.05/lib/base -I /home/opam/.opam/4.05/lib/base/caml -I /home/opam/.opam/4.05/lib/base/shadow_stdlib -I /home/opam/.opam/4.05/lib/base64 -I /home/opam/.opam/4.05/lib/bytes -I /home/opam/.opam/4.05/lib/cohttp -I /home/opam/.opam/4.05/lib/cohttp-lwt -I /home/opam/.opam/4.05/lib/cohttp-lwt-unix -I /home/opam/.opam/4.05/lib/conduit -I /home/opam/.opam/4.05/lib/conduit-lwt -I /home/opam/.opam/4.05/lib/conduit-lwt-unix -I /home/opam/.opam/4.05/lib/fieldslib -I /home/opam/.opam/4.05/lib/fmt -I /home/opam/.opam/4.05/lib/ipaddr -I /home/opam/.opam/4.05/lib/ipaddr/unix -I /home/opam/.opam/4.05/lib/lambdasoup -I /home/opam/.opam/4.05/lib/logs -I /home/opam/.opam/4.05/lib/lwt -I /home/opam/.opam/4.05/lib/lwt_ssl -I /home/opam/.opam/4.05/lib/magic-mime -I /home/opam/.opam/4.05/lib/markup -I /home/opam/.opam/4.05/lib/ocaml/threads -I /home/opam/.opam/4.05/lib/parsexp -I /home/opam/.opam/4.05/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.05/lib/re -I /home/opam/.opam/4.05/lib/re/emacs -I /home/opam/.opam/4.05/lib/re/posix -I /home/opam/.opam/4.05/lib/result -I /home/opam/.opam/4.05/lib/sexplib -I /home/opam/.opam/4.05/lib/sexplib0 -I /home/opam/.opam/4.05/lib/ssl -I /home/opam/.opam/4.05/lib/stringext -I /home/opam/.opam/4.05/lib/uchar -I /home/opam/.opam/4.05/lib/uri -I /home/opam/.opam/4.05/lib/uri/services -I /home/opam/.opam/4.05/lib/uutf -no-alias-deps -open Socialpeek__ -o socialpeek/.socialpeek.objs/socialpeek__Metatags.cmo -c -impl socialpeek/metatags.ml)
@@ -277,5 +277,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722100713.export"
-31 1532254020 1532254162
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180722214140.export"
+31 1532295684 1532295889
