@@ -166,13 +166,13 @@ The following actions will be performed:
 -> installed ctypes-foreign.0.4.0
 -> installed easy-format.1.3.1
 -> installed num.1.1
--> installed biniou.1.2.0
 -> installed ocaml-compiler-libs.v0.11.0
 -> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed cppo_ocamlbuild.1.6.0
 -> installed ppx_derivers.1.0
 -> installed ppx_tools.5.1+4.06.0
 -> installed result.1.3
--> installed cppo_ocamlbuild.1.6.0
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed sexplib0.v0.11.0
 -> installed base.v0.11.1
@@ -193,9 +193,9 @@ The following actions will be performed:
 -> installed ppx_fields_conv.v0.11.0
 -> installed ptime.0.8.3
 -> installed variantslib.v0.11.0
--> installed ppx_variants_conv.v0.11.1
--> installed yojson.1.4.1
 -> installed ppx_custom_printf.v0.11.0
+-> installed yojson.1.4.1
+-> installed ppx_variants_conv.v0.11.1
 -> installed ppx_deriving_yojson.3.1
 -> installed zarith.1.7
 -> installed bin_prot.v0.11.0
@@ -209,8 +209,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/pkcs11.0.7.0
 # command              ~/.opam/4.07/bin/ocaml pkg/pkg.ml build --pinned false --with-cmdliner false
 # exit-code            1
-# env-file             ~/.opam/log/pkcs11-11-53d359.env
-# output-file          ~/.opam/log/pkcs11-11-53d359.out
+# env-file             ~/.opam/log/pkcs11-11-20f1f3.env
+# output-file          ~/.opam/log/pkcs11-11-20f1f3.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_generator.ml > src/pkcs11_generator.ml.depends
@@ -501,5 +501,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180720211452.export"
-31 1532121282 1532121357
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180722090828.export"
+31 1532250496 1532250623
