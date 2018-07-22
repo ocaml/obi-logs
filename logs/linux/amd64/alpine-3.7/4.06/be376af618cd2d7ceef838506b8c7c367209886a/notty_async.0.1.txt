@@ -204,13 +204,9 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/core.v0.11.2
 # command              ~/.opam/4.06/bin/jbuilder build -p core -j 71
 # exit-code            1
-# env-file             ~/.opam/log/core-13-3415e6.env
-# output-file          ~/.opam/log/core-13-3415e6.out
+# env-file             ~/.opam/log/core-13-327eca.env
+# output-file          ~/.opam/log/core-13-327eca.out
 ### output ###
-#       ocamlc src/md5_stubs.o
-# md5_stubs.c:10:32: warning: '-pedantic' is not an option that controls warnings [-Wpragmas]
-#  #pragma GCC diagnostic ignored "-pedantic"
-#                                 ^~~~~~~~~~~
 #       ocamlc src/unix_time_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -ccopt -D_LARGEFILE64_SOURCE -ccopt -I../../core_kernel/src -o unix_time_stubs.o unix_time_stubs.c)
 # In file included from unix_time_stubs.c:6:0:
@@ -279,6 +275,10 @@ The following actions will be performed:
 # unix_time_stubs.c:49:11: note: in expansion of macro 'caml_alloc_int63'
 #    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
 #            ^~~~~~~~~~~~~~~~
+#       ocamlc src/md5_stubs.o
+# md5_stubs.c:10:32: warning: '-pedantic' is not an option that controls warnings [-Wpragmas]
+#  #pragma GCC diagnostic ignored "-pedantic"
+#                                 ^~~~~~~~~~~
 #       ocamlc src/linux_ext_stubs.o
 # linux_ext_stubs.c: In function 'linux_sendmsg_nonblocking_no_sigpipe_stub':
 # linux_ext_stubs.c:149:46: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
@@ -396,5 +396,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721023113.export"
-31 1532140271 1532140483
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722123916.export"
+31 1532263154 1532263366
