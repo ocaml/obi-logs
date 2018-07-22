@@ -37,7 +37,7 @@ The following actions will be performed:
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [ocamlbuild.0.12.0] found in cache
-[parmap.1.0-rc6] found in cache
+[parmap.1.0-rc6] downloaded from https://github.com/rdicosmo/parmap/archive/1.0-rc6.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed conf-which.1
@@ -51,8 +51,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/parmap.1.0-rc6
 # command              /usr/bin/make DESTDIR=/home/opam/.opam/4.06 OCAMLLIBDIR=lib
 # exit-code            2
-# env-file             ~/.opam/log/parmap-13-06fa5f.env
-# output-file          ~/.opam/log/parmap-13-06fa5f.out
+# env-file             ~/.opam/log/parmap-13-a19e5c.env
+# output-file          ~/.opam/log/parmap-13-a19e5c.out
 ### output ###
 # ocamlbuild -j 10 -use-ocamlfind  parmap.cma  parmap.cmxa  parmap.cmxs parmap.a
 # ocamlfind ocamlc -ccopt -D_GNU_SOURCE -ccopt -fPIC -c bytearray_stubs.c
@@ -102,5 +102,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721053330.export"
-31 1532151202 1532151229
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722161521.export"
+31 1532276111 1532276140

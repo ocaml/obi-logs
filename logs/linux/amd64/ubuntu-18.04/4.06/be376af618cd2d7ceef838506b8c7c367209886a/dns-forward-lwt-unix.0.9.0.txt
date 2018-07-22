@@ -91,8 +91,6 @@ The following actions will be performed:
 [cstruct.3.2.1] found in cache
 [cstruct-lwt.3.2.1] found in cache
 [dns.1.0.1] found in cache
-[dns-forward.0.10.0] found in cache
-[dns-forward-lwt-unix.0.9.0] found in cache
 [duration.0.1.1] found in cache
 [fmt.0.8.5] found in cache
 [hashcons.1.3] found in cache
@@ -101,6 +99,8 @@ The following actions will be performed:
 [ipaddr.2.8.0] found in cache
 [logs.0.6.2] found in cache
 [lwt.4.1.0] found in cache
+[dns-forward.0.10.0] downloaded from https://github.com/mirage/ocaml-dns-forward/releases/download/v0.10.0/dns-forward-0.10.0.tbz
+[dns-forward-lwt-unix.0.9.0] downloaded from https://github.com/mirage/ocaml-dns-forward/releases/download/v0.9.0/dns-forward-0.9.0.tbz
 [mirage-channel.3.1.0] found in cache
 [mirage-channel-lwt.3.1.0] found in cache
 [mirage-clock.1.3.0] found in cache
@@ -140,9 +140,9 @@ The following actions will be performed:
 -> installed conf-autoconf.0.1
 -> installed cppo.1.6.4
 -> installed num.1.1
--> installed hashcons.1.3
 -> installed ocaml-compiler-libs.v0.11.0
 -> installed ocamlbuild.0.12.0
+-> installed hashcons.1.3
 -> installed ppx_derivers.1.0
 -> installed re.1.7.3
 -> installed result.1.3
@@ -167,9 +167,10 @@ The following actions will be performed:
 -> installed mtime.1.1.0
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
+-> installed ppxlib.0.3.0
 -> installed fmt.0.8.5
--> installed mirage-device.1.1.0
 -> installed logs.0.6.2
+-> installed mirage-device.1.1.0
 -> installed mirage-clock.1.3.0
 -> installed mirage-flow.1.5.0
 -> installed mirage-channel.3.1.0
@@ -178,22 +179,21 @@ The following actions will be performed:
 -> installed mirage-clock-unix.1.4.0
 -> installed mirage-time.1.1.0
 -> installed mirage-channel-lwt.3.1.0
--> installed ppxlib.0.3.0
--> installed mirage-time-lwt.1.1.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
+-> installed mirage-time-lwt.1.1.0
 -> installed uri.1.9.7
 -> installed dns.1.0.1
 -> installed dns-forward.0.10.0
-[ERROR] The compilation of dns-forward-lwt-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p dns-forward-lwt-unix -j 47".
+[ERROR] The compilation of dns-forward-lwt-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p dns-forward-lwt-unix -j 71".
 
 #=== ERROR while compiling dns-forward-lwt-unix.0.9.0 =========================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/dns-forward-lwt-unix.0.9.0
-# command              ~/.opam/4.06/bin/jbuilder build -p dns-forward-lwt-unix -j 47
+# command              ~/.opam/4.06/bin/jbuilder build -p dns-forward-lwt-unix -j 71
 # exit-code            1
-# env-file             ~/.opam/log/dns-forward-lwt-unix-13-1a41fc.env
-# output-file          ~/.opam/log/dns-forward-lwt-unix-13-1a41fc.out
+# env-file             ~/.opam/log/dns-forward-lwt-unix-13-751baf.env
+# output-file          ~/.opam/log/dns-forward-lwt-unix-13-751baf.out
 ### output ###
 #     ocamlopt lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cstruct -I /home/opam/.opam/4.06/lib/cstruct-lwt -I /home/opam/.opam/4.06/lib/dns -I /home/opam/.opam/4.06/lib/dns-forward -I /home/opam/.opam/4.06/lib/duration -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/hashcons -I /home/opam/.opam/4.06/lib/io-page -I /home/opam/.opam/4.06/lib/io-page-unix -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/mirage-channel -I /home/opam/.opam/4.06/lib/mirage-channel-lwt -I /home/opam/.opam/4.06/lib/mirage-clock -I /home/opam/.opam/4.06/lib/mirage-clock-lwt -I /home/opam/.opam/4.06/lib/mirage-clock-unix -I /home/opam/.opam/4.06/lib/mirage-device -I /home/opam/.opam/4.06/lib/mirage-flow -I /home/opam/.opam/4.06/lib/mirage-flow-lwt -I /home/opam/.opam/4.06/lib/mirage-time -I /home/opam/.opam/4.06/lib/mirage-time-lwt -I /home/opam/.opam/4.06/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.06/lib/ocaml/compiler-libs -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_tools_versioned -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/re/str -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/rresult -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmx -c -impl lwt/dns_forward_lwt_unix.ml)
@@ -266,5 +266,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721053257.export"
-31 1532151171 1532151289
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722161647.export"
+31 1532276198 1532276401

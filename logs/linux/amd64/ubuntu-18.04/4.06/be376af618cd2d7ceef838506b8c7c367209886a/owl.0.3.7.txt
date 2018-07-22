@@ -909,12 +909,12 @@ The following actions will be performed:
 -> installed ctypes.0.14.0
 -> installed oasis.0.4.11
 -> installed eigen.0.0.5
-[ERROR] The compilation of owl failed at "/home/opam/.opam/4.06/bin/jbuilder build -p owl -j 47".
+[ERROR] The compilation of owl failed at "/home/opam/.opam/4.06/bin/jbuilder build -p owl -j 71".
 
 #=== ERROR while compiling owl.0.3.7 ==========================================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/owl.0.3.7
-# command              ~/.opam/4.06/bin/jbuilder build -p owl -j 47
+# command              ~/.opam/4.06/bin/jbuilder build -p owl -j 71
 # exit-code            1
 # env-file             ~/.opam/log/owl-13-f65401.env
 # output-file          ~/.opam/log/owl-13-f65401.out
@@ -923,14 +923,46 @@ The following actions will be performed:
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_nlp_utils.cmo -c -impl src/owl/owl_nlp_utils.ml)
 # File "src/owl/nlp/owl_nlp_utils.ml", line 93, characters 26-51:
 # Error: Unbound value Owl_utils.marshal_to_file
-#     ocamlopt src/owl/.owl.objs/owl_sparse_dok_matrix.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmx -c -impl src/owl/owl_sparse_dok_matrix.ml)
-# File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
-# Error: Unbound value Owl_utils.marshal_to_file
 #       ocamlc src/owl/.owl.objs/owl_sparse_dok_matrix.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmo -c -impl src/owl/owl_sparse_dok_matrix.ml)
 # File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
 # Error: Unbound value Owl_utils.marshal_to_file
+#     ocamlopt src/owl/.owl.objs/owl_sparse_dok_matrix.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmx -c -impl src/owl/owl_sparse_dok_matrix.ml)
+# File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
+# Error: Unbound value Owl_utils.marshal_to_file
+#       ocamlc src/owl/.owl.objs/owl_algodiff.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_algodiff.cmo -c -impl src/owl/owl_algodiff.ml)
+# File "src/owl/optimise/owl_algodiff.ml", line 10, characters 38-57:
+# Error: Signature mismatch:
+#        ...
+#        The value `transpose_conv3d_backward_kernel' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 241, characters 2-78:
+#          Expected declaration
+#        The value `transpose_conv3d_backward_input' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 239, characters 2-77:
+#          Expected declaration
+#        The value `transpose_conv2d_backward_kernel' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 237, characters 2-78:
+#          Expected declaration
+#        The value `transpose_conv2d_backward_input' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 235, characters 2-77:
+#          Expected declaration
+#        The value `transpose_conv1d_backward_kernel' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 233, characters 2-78:
+#          Expected declaration
+#        The value `transpose_conv1d_backward_input' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 231, characters 2-77:
+#          Expected declaration
+#        The value `transpose_conv3d' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 205, characters 2-75:
+#          Expected declaration
+#        The value `transpose_conv2d' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 203, characters 2-75:
+#          Expected declaration
+#        The value `transpose_conv1d' is required but not provided
+#        File "src/base/types/owl_types_ndarray_basic.ml", line 201, characters 2-75:
+#          Expected declaration
 #       ocamlc src/owl/.owl.objs/owl_regression.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression.cmo -c -impl src/owl/owl_regression.ml)
 # File "src/owl/optimise/owl_regression.ml", line 13, characters 40-59:
@@ -966,38 +998,6 @@ The following actions will be performed:
 #       ocamlc src/owl/.owl.objs/owl_optimise.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_optimise.cmo -c -impl src/owl/owl_optimise.ml)
 # File "src/owl/optimise/owl_optimise.ml", line 10, characters 38-57:
-# Error: Signature mismatch:
-#        ...
-#        The value `transpose_conv3d_backward_kernel' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 241, characters 2-78:
-#          Expected declaration
-#        The value `transpose_conv3d_backward_input' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 239, characters 2-77:
-#          Expected declaration
-#        The value `transpose_conv2d_backward_kernel' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 237, characters 2-78:
-#          Expected declaration
-#        The value `transpose_conv2d_backward_input' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 235, characters 2-77:
-#          Expected declaration
-#        The value `transpose_conv1d_backward_kernel' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 233, characters 2-78:
-#          Expected declaration
-#        The value `transpose_conv1d_backward_input' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 231, characters 2-77:
-#          Expected declaration
-#        The value `transpose_conv3d' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 205, characters 2-75:
-#          Expected declaration
-#        The value `transpose_conv2d' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 203, characters 2-75:
-#          Expected declaration
-#        The value `transpose_conv1d' is required but not provided
-#        File "src/base/types/owl_types_ndarray_basic.ml", line 201, characters 2-75:
-#          Expected declaration
-#       ocamlc src/owl/.owl.objs/owl_algodiff.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_algodiff.cmo -c -impl src/owl/owl_algodiff.ml)
-# File "src/owl/optimise/owl_algodiff.ml", line 10, characters 38-57:
 # Error: Signature mismatch:
 #        ...
 #        The value `transpose_conv3d_backward_kernel' is required but not provided
@@ -1089,5 +1089,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721055432.export"
-31 1532152435 1532152728
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722155859.export"
+31 1532275101 1532275392

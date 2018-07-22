@@ -115,9 +115,9 @@ The following actions will be performed:
 -> installed ppx_test.1.6.0
 -> installed sexplib0.v0.11.0
 -> installed base.v0.11.1
--> installed camlp4.4.06+1
 -> installed spotlib.4.0.3
 -> installed stdio.v0.11.0
+-> installed camlp4.4.06+1
 -> installed configurator.v0.11.0
 -> installed pcre.7.3.4
 [ERROR] The compilation of orakuda failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
@@ -127,8 +127,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/orakuda.1.1.1
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/orakuda-13-d6cd01.env
-# output-file          ~/.opam/log/orakuda-13-d6cd01.out
+# env-file             ~/.opam/log/orakuda-13-127107.env
+# output-file          ~/.opam/log/orakuda-13-127107.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -180,7 +180,7 @@ The following actions will be performed:
 # File OMyMakefile: line 781, characters 6-34:
 #    Warning: old-style foreach expression.
 #    This expression should use a => binding.
-# *** omake: finished reading OMakefiles (0.28 sec)
+# *** omake: finished reading OMakefiles (0.23 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build . regexp.cmi
 # + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c regexp.mli
@@ -213,7 +213,7 @@ The following actions will be performed:
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
 # *** omake: 72/125 targets are up to date
-# *** omake: failed (1.95 sec, 20/20 scans, 15/15 rules, 44/81 digests)
+# *** omake: failed (1.49 sec, 20/20 scans, 15/15 rules, 44/81 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    cformat.cmo
 #       depends on: cformat.ml
@@ -253,5 +253,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721054842.export"
-31 1532152107 1532152346
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722161519.export"
+31 1532276109 1532276247

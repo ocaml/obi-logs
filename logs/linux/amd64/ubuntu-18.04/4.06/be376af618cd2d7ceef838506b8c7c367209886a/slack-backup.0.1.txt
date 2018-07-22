@@ -139,8 +139,6 @@ The following actions will be performed:
 [re.1.7.3] found in cache
 [result.1.3] found in cache
 [sexplib.v0.9.3] found in cache
-[slack-backup.0.1] found in cache
-[slacko.0.13.0] found in cache
 [ssl.0.5.5] found in cache
 [stdio.v0.9.1] found in cache
 [stringext.1.5.0] found in cache
@@ -148,15 +146,17 @@ The following actions will be performed:
 [uchar.0.0.2] found in cache
 [uri.1.9.7] found in cache
 [yojson.1.4.1] found in cache
+[slack-backup.0.1] downloaded from https://github.com/Khady/slack-backup/archive/0.1.zip
+[slacko.0.13.0] downloaded from https://github.com/Leonidas-from-XIV/slacko/releases/download/0.13.0/slacko-0.13.0.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
 -> installed base64.2.2.0
 -> installed conf-pkg-config.1.1
--> installed conf-openssl.1
 -> installed conf-which.1
 -> installed cppo.1.6.4
 -> installed easy-format.1.3.1
+-> installed conf-openssl.1
 -> installed biniou.1.2.0
 -> installed magic-mime.1.1.0
 -> installed num.1.1
@@ -170,25 +170,25 @@ The following actions will be performed:
 -> installed result.1.3
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed ppx_ast.v0.9.2
+-> installed ppx_tools_versioned.5.2
 -> installed ppx_deriving.4.2.1
 -> installed sexplib.v0.9.3
--> installed ppx_tools_versioned.5.2
--> installed base.v0.9.4
 -> installed lwt.3.3.0
 -> installed ssl.0.5.5
--> installed stdio.v0.9.1
+-> installed base.v0.9.4
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
+-> installed stdio.v0.9.1
 -> installed cmdliner.1.0.2
 -> installed uchar.0.0.2
--> installed ppx_core.v0.9.3
 -> installed fmt.0.8.5
--> installed ppx_optcomp.v0.9.0
+-> installed ppx_core.v0.9.3
 -> installed logs.0.6.2
 -> installed yojson.1.4.1
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_deriving_yojson.3.1
 -> installed ppx_driver.v0.9.2
 -> installed fieldslib.v0.9.0
--> installed ppx_deriving_yojson.3.1
 -> installed ppx_metaquot.v0.9.0
 -> installed ppx_type_conv.v0.9.1
 -> installed ppx_fields_conv.v0.9.0
@@ -205,8 +205,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/slack-backup.0.1
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/slack-backup-13-0338fe.env
-# output-file          ~/.opam/log/slack-backup-13-0338fe.out
+# env-file             ~/.opam/log/slack-backup-13-a1ced9.env
+# output-file          ~/.opam/log/slack-backup-13-a1ced9.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -317,5 +317,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721055141.export"
-31 1532152284 1532152480
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722162223.export"
+31 1532276522 1532276784
