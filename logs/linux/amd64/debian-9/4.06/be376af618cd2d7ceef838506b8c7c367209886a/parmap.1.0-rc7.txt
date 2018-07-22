@@ -49,8 +49,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/parmap.1.0-rc7
 # command              /usr/bin/make DESTDIR=/home/opam/.opam/4.06 OCAMLLIBDIR=lib
 # exit-code            2
-# env-file             ~/.opam/log/parmap-12-06fa5f.env
-# output-file          ~/.opam/log/parmap-12-06fa5f.out
+# env-file             ~/.opam/log/parmap-11-06fa5f.env
+# output-file          ~/.opam/log/parmap-11-06fa5f.out
 ### output ###
 # ocamlbuild -j 10 -use-ocamlfind  parmap.cma  parmap.cmxa  parmap.cmxs parmap.a
 # ocamlfind ocamlc -ccopt -D_GNU_SOURCE -ccopt -fPIC -c bytearray_stubs.c
@@ -100,5 +100,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721004344.export"
-31 1532133817 1532133842
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722080937.export"
+31 1532246970 1532246990
