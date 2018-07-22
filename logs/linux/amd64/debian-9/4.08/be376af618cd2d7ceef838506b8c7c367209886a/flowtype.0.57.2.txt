@@ -16,13 +16,13 @@ The following actions will be performed:
 ===== 8 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[flowtype.0.57.2] found in cache
 [gen.0.5.1] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
 [ppx_tools_versioned.5.2] found in cache
 [result.1.3] found in cache
 [sedlex.1.99.4] found in cache
+[flowtype.0.57.2] downloaded from https://github.com/facebook/flow/archive/v0.57.2.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -36,8 +36,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.08/.opam-switch/build/ocaml-migrate-parsetree.1.0.11
 # command              ~/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71
 # exit-code            1
-# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-4748d7.env
-# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-4748d7.out
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-34169e.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-34169e.out
 ### output ###
 #        ocaml src/ast-version,src/compiler-functions-file (exit 1)
 # (cd _build/default/src && /home/opam/.opam/4.08/bin/ocaml config/gen.ml 4.08.0+dev0-2018-04-09)
@@ -58,5 +58,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180722071358.export"
-31 1532243635 1532243648
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180722204120.export"
+31 1532292078 1532292096

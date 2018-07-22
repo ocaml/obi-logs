@@ -80,7 +80,7 @@ The following actions will be performed:
 # make[1]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/cil.1.7.3'
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules machdep.ml > machdep.ml.depends
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/cilint.cmi src/cilint.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o machdep.cmo machdep.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o machdep.cmo machdep.ml
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/dataflow.mli > src/ext/dataflow.mli.depends
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/cil.cmi src/cil.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/inthash.mli > ocamlutil/inthash.mli.depends
@@ -90,18 +90,18 @@ The following actions will be performed:
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o ocamlutil/util.cmi ocamlutil/util.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/stats.mli > ocamlutil/stats.mli.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/usedef.ml > src/ext/usedef.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/dataflow.cmi src/ext/dataflow.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/expcompare.cmo src/ext/expcompare.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/dataflow.cmi src/ext/dataflow.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/expcompare.cmo src/ext/expcompare.ml
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o ocamlutil/stats.cmi ocamlutil/stats.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/usedef.cmo src/ext/usedef.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/usedef.cmo src/ext/usedef.ml
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/availexpslv.ml > src/ext/availexpslv.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/bitmap.mli > ocamlutil/bitmap.mli.depends
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o ocamlutil/bitmap.cmi ocamlutil/bitmap.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/bitmap.ml > ocamlutil/bitmap.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cabs.ml > src/frontc/cabs.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cabs2cil.mli > src/frontc/cabs2cil.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/cabs.cmo src/frontc/cabs.ml
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/cabs2cil.cmi src/frontc/cabs2cil.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/cabs.cmo src/frontc/cabs.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/cabs2cil.cmi src/frontc/cabs2cil.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cabs2cil.ml > src/frontc/cabs2cil.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cabshelper.ml > src/frontc/cabshelper.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/growArray.mli > ocamlutil/growArray.mli.depends
@@ -112,22 +112,22 @@ The following actions will be performed:
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/escape.mli > src/escape.mli.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/whitetrack.mli > src/frontc/whitetrack.mli.depends
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/escape.cmi src/escape.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/whitetrack.cmi src/frontc/whitetrack.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/whitetrack.cmi src/frontc/whitetrack.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/trace.mli > ocamlutil/trace.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/cabshelper.cmo src/frontc/cabshelper.ml
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/cabsvisit.cmi src/frontc/cabsvisit.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/cabshelper.cmo src/frontc/cabshelper.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/cabsvisit.cmi src/frontc/cabsvisit.mli
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/cilutil.cmo src/cilutil.ml
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/cprint.cmo src/frontc/cprint.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/cprint.cmo src/frontc/cprint.ml
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o ocamlutil/trace.cmi ocamlutil/trace.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cabsvisit.ml > src/frontc/cabsvisit.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/callgraph.mli > src/ext/callgraph.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/callgraph.cmi src/ext/callgraph.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/callgraph.cmi src/ext/callgraph.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/callgraph.ml > src/ext/callgraph.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/canonicalize.mli > src/ext/canonicalize.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/canonicalize.cmi src/ext/canonicalize.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/canonicalize.cmi src/ext/canonicalize.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/canonicalize.ml > src/ext/canonicalize.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/cfg.mli > src/ext/cfg.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/cfg.cmi src/ext/cfg.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/cfg.cmi src/ext/cfg.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/cfg.ml > src/ext/cfg.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/check.mli > src/check.mli.depends
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/check.cmi src/check.mli
@@ -142,7 +142,7 @@ The following actions will be performed:
 # make[1]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/cil.1.7.3'
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules cilversion.ml > cilversion.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/clist.mli > ocamlutil/clist.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o cilversion.cmo cilversion.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o cilversion.cmo cilversion.ml
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I ocamlutil -I src -I src/ext -I src/frontc -I src/ext/pta -o ocamlutil/clist.cmi ocamlutil/clist.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/cilint.ml > src/cilint.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/cillower.mli > src/cillower.mli.depends
@@ -155,7 +155,7 @@ The following actions will be performed:
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/machdepenv.ml > src/machdepenv.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/mergecil.mli > src/mergecil.mli.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/rmtmps.mli > src/rmtmps.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/frontc.cmi src/frontc/frontc.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/frontc.cmi src/frontc/frontc.mli
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/machdepenv.cmo src/machdepenv.ml
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/mergecil.cmi src/mergecil.mli
 # /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src -I ocamlutil -I src/ext -I src/frontc -I src/ext/pta -o src/rmtmps.cmi src/rmtmps.mli
@@ -165,24 +165,24 @@ The following actions will be performed:
 # + /home/opam/.opam/4.08/bin/ocamlyacc src/frontc/cparser.mly
 # 1 shift/reduce conflict.
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cparser.mli > src/frontc/cparser.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/cparser.cmi src/frontc/cparser.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/clexer.cmi src/frontc/clexer.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/cparser.cmi src/frontc/cparser.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/clexer.cmi src/frontc/clexer.mli
 # /home/opam/.opam/4.08/bin/ocamllex.opt -q src/frontc/clexer.mll
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/clexer.ml > src/frontc/clexer.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/lexerhack.ml > src/frontc/lexerhack.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I ocamlutil -I src -I src/ext -I src/ext/pta -o src/frontc/lexerhack.cmo src/frontc/lexerhack.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/frontc -I src -I ocamlutil -I src/ext -I src/ext/pta -o src/frontc/lexerhack.cmo src/frontc/lexerhack.ml
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/clist.ml > ocamlutil/clist.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/frontc/cparser.ml > src/frontc/cparser.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/dataflow.ml > src/ext/dataflow.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/dataslicing.mli > src/ext/dataslicing.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/dataslicing.cmi src/ext/dataslicing.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/dataslicing.cmi src/ext/dataslicing.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/dataslicing.ml > src/ext/dataslicing.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/deadcodeelim.ml > src/ext/deadcodeelim.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/ciltools.cmo src/ext/ciltools.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/ciltools.cmo src/ext/ciltools.ml
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/reachingdefs.ml > src/ext/reachingdefs.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/liveness.ml > src/ext/liveness.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/liveness.cmo src/ext/liveness.ml
-# + /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/liveness.cmo src/ext/liveness.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/liveness.cmo src/ext/liveness.ml
+# + /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/liveness.cmo src/ext/liveness.ml
 # File "src/ext/liveness.ml", line 197, characters 21-25:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
@@ -191,8 +191,8 @@ The following actions will be performed:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 9.5)
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/reachingdefs.cmo src/ext/reachingdefs.ml
-# + /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/reachingdefs.cmo src/ext/reachingdefs.ml
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/reachingdefs.cmo src/ext/reachingdefs.ml
+# + /home/opam/.opam/4.08/bin/ocamlc.opt -c -g -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/reachingdefs.cmo src/ext/reachingdefs.ml
 # File "src/ext/reachingdefs.ml", line 470, characters 15-19:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
@@ -202,7 +202,7 @@ The following actions will be performed:
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 9.5)
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/dominators.mli > src/ext/dominators.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I ocamlutil -I src -I src/frontc -I src/ext/pta -o src/ext/dominators.cmi src/ext/dominators.mli
+# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I src/ext -I src -I ocamlutil -I src/frontc -I src/ext/pta -o src/ext/dominators.cmi src/ext/dominators.mli
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/dominators.ml > src/ext/dominators.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules src/ext/epicenter.ml > src/ext/epicenter.ml.depends
 # /home/opam/.opam/4.08/bin/ocamldep.opt -modules ocamlutil/errormsg.ml > ocamlutil/errormsg.ml.depends
@@ -254,5 +254,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180722071133.export"
-31 1532243491 1532243507
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180722201649.export"
+31 1532290607 1532290625

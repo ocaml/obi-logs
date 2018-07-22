@@ -52,7 +52,6 @@ The following actions will be performed:
 [lwt.4.1.0] found in cache
 [mirage-block.1.1.0] found in cache
 [mirage-block-lwt.1.1.0] found in cache
-[mirage-block-unix.2.8.2] found in cache
 [mirage-device.1.1.0] found in cache
 [num.1.1] found in cache
 [ocaml-compiler-libs.v0.11.0] found in cache
@@ -64,6 +63,7 @@ The following actions will be performed:
 [ppxlib.0.3.0] found in cache
 [re.1.7.3] found in cache
 [result.1.3] found in cache
+[mirage-block-unix.2.8.2] downloaded from https://github.com/mirage/mirage-block-unix/archive/v2.8.2.tar.gz
 [rresult.0.5.0] found in cache
 [sexplib.v0.11.0] found in cache
 [sexplib0.v0.11.0] found in cache
@@ -108,8 +108,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.08/.opam-switch/build/ocaml-migrate-parsetree.1.0.11
 # command              ~/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71
 # exit-code            1
-# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-21867d.env
-# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-21867d.out
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-46ade3.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-46ade3.out
 ### output ###
 #        ocaml src/ast-version,src/compiler-functions-file (exit 1)
 # (cd _build/default/src && /home/opam/.opam/4.08/bin/ocaml config/gen.ml 4.08.0+dev0-2018-04-09)
@@ -153,5 +153,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180722072303.export"
-31 1532244180 1532244230
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180722202131.export"
+31 1532290888 1532290987
