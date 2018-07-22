@@ -6,8 +6,6 @@ openmpi
 # The following new OS packages need to be installed: openmpi
 The following command needs to be run through "sudo":
     zypper --non-interactive install openmpi
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -27,7 +25,7 @@ Retrieving: libpsm2-compat-10.2.103-2.6.x86_64.rpm [done]
 Retrieving package rdma-core-14-8.1.x86_64 (4/11),  33.9 KiB ( 60.2 KiB unpacked)
 Retrieving: rdma-core-14-8.1.x86_64.rpm [done]
 Retrieving package libibverbs1-14-8.1.x86_64 (5/11),  37.7 KiB ( 82.1 KiB unpacked)
-Retrieving: libibverbs1-14-8.1.x86_64.rpm [done]
+Retrieving: libibverbs1-14-8.1.x86_64.rpm [.done]
 Retrieving package libmlx5-1-14-8.1.x86_64 (6/11),  41.4 KiB ( 98.4 KiB unpacked)
 Retrieving: libmlx5-1-14-8.1.x86_64.rpm [done]
 Retrieving package libibverbs-14-8.1.x86_64 (7/11), 124.5 KiB (374.2 KiB unpacked)
@@ -105,5 +103,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721033807.export"
-31 1532143849 1532144289
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722151312.export"
+31 1532272377 1532272397

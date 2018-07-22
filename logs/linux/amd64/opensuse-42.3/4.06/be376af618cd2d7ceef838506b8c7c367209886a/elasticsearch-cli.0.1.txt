@@ -8,8 +8,6 @@ which
 # The following new OS packages need to be installed: libcurl-devel pcre-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libcurl-devel pcre-devel
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -21,13 +19,13 @@ The following 6 NEW packages are going to be installed:
 Overall download size: 643.4 KiB. Already cached: 0 B. After the operation, additional 1.0 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/6),   4.8 KiB (   72   B unpacked)
-Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [.done]
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [done]
 Retrieving package libcurl-devel-7.37.0-36.1.x86_64 (2/6), 227.2 KiB (357.2 KiB unpacked)
 Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [done]
 Retrieving package libpcre16-0-8.39-11.1.x86_64 (3/6), 147.2 KiB (406.3 KiB unpacked)
 Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (4/6),  24.0 KiB ( 34.6 KiB unpacked)
-Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
+Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [.done (2.5 KiB/s)]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (5/6),  15.7 KiB ( 10.2 KiB unpacked)
 Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (6/6), 224.5 KiB (263.5 KiB unpacked)
@@ -135,14 +133,14 @@ The following actions will be performed:
 [configurator.v0.11.0] found in cache
 [core_kernel.v0.11.1] found in cache
 [cppo.1.6.4] found in cache
-[devkit.0.6] found in cache
 [easy-format.1.3.1] found in cache
-[elasticsearch-cli.0.1] found in cache
 [extlib.1.7.5] found in cache
 [extunix.0.1.6] found in cache
 [fieldslib.v0.11.0] found in cache
 [jane-street-headers.v0.11.0] found in cache
-[libevent.0.8.0] found in cache
+[libevent.0.8.0] downloaded from http://ygrek.org.ua/p/release/ocaml-libevent/ocaml-libevent-0.8.0.tar.gz
+[devkit.0.6] downloaded from https://github.com/ahrefs/devkit/archive/v0.6.tar.gz
+[elasticsearch-cli.0.1] downloaded from https://github.com/cyborgize/es-cli/archive/0.1.tar.gz
 [lwt.3.3.0] found in cache
 [lwt_ppx.1.2.1] found in cache
 [menhir.20180703] found in cache
@@ -188,7 +186,6 @@ The following actions will be performed:
 [ppx_variants_conv.v0.11.1] found in cache
 [ppxlib.0.3.0] found in cache
 [re.1.7.3] found in cache
-[re2.v0.11.0] found in cache
 [result.1.3] found in cache
 [sexplib.v0.11.0] found in cache
 [sexplib0.v0.11.0] found in cache
@@ -197,6 +194,7 @@ The following actions will be performed:
 [typerep.v0.11.0] found in cache
 [variantslib.v0.11.0] found in cache
 [yojson.1.4.1] found in cache
+[re2.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/re2-v0.11.0.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [ERROR] The compilation of libevent failed at "/usr/bin/make all allopt".
@@ -281,8 +279,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/libevent.0.8.0
 # command              /usr/bin/make all allopt
 # exit-code            2
-# env-file             ~/.opam/log/libevent-12-2c3e51.env
-# output-file          ~/.opam/log/libevent-12-2c3e51.out
+# env-file             ~/.opam/log/libevent-12-3aee7b.env
+# output-file          ~/.opam/log/libevent-12-3aee7b.out
 ### output ###
 # ocamlc -c -ccopt "-DFULL_UNROLL -Wall -O2 -I/usr/local/include" event_stubs.c
 # event_stubs.c:13:19: fatal error: event.h: No such file or directory
@@ -378,5 +376,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721043416.export"
-31 1532147197 1532148012
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722150927.export"
+31 1532272152 1532272697

@@ -7,8 +7,6 @@ m4
 # The following new OS packages need to be installed: libogg-devel libvorbis-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libogg-devel libvorbis-devel
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -58,8 +56,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/vorbis.0.7.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/vorbis-12-865888.env
-# output-file          ~/.opam/log/vorbis-12-865888.out
+# env-file             ~/.opam/log/vorbis-13-865888.env
+# output-file          ~/.opam/log/vorbis-13-865888.out
 ### output ###
 # /usr/bin/make -C src all
 # make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.7.0/src'
@@ -109,5 +107,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721034911.export"
-31 1532144507 1532144956
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722144146.export"
+31 1532270476 1532270511

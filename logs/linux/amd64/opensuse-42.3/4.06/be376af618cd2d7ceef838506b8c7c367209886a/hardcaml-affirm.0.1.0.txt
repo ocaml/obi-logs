@@ -7,8 +7,6 @@ which
 # The following new OS packages need to be installed: libffi-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libffi-devel
-Retrieving repository 'OSS Update' metadata [...done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 'libffi-devel' not found in package names. Trying capabilities.
@@ -158,8 +156,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/hardcaml-waveterm.0.2.0
 # command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build
 # exit-code            1
-# env-file             ~/.opam/log/hardcaml-waveterm-12-a95925.env
-# output-file          ~/.opam/log/hardcaml-waveterm-12-a95925.out
+# env-file             ~/.opam/log/hardcaml-waveterm-12-588c3d.env
+# output-file          ~/.opam/log/hardcaml-waveterm-12-588c3d.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package lambda-term -package hardcaml -package astring -modules src/lTerm_waveterm_compat.mli > src/lTerm_waveterm_compat.mli.depends
@@ -307,5 +305,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721034052.export"
-31 1532144015 1532144594
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722144511.export"
+31 1532270255 1532270861

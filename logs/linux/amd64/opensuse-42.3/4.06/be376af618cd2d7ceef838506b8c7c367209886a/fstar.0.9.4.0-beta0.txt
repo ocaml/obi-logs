@@ -7,8 +7,6 @@ which
 # The following new OS packages need to be installed: gmp-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install gmp-devel
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -22,7 +20,7 @@ Continue? [y/n/...? shows all options] (y): y
 Retrieving package libgmpxx4-5.1.3-7.15.x86_64 (1/2),  16.1 KiB ( 26.5 KiB unpacked)
 Retrieving: libgmpxx4-5.1.3-7.15.x86_64.rpm [done]
 Retrieving package gmp-devel-5.1.3-7.15.x86_64 (2/2),   1.2 MiB (  7.1 MiB unpacked)
-Retrieving: gmp-devel-5.1.3-7.15.x86_64.rpm [done]
+Retrieving: gmp-devel-5.1.3-7.15.x86_64.rpm [.done (16.8 KiB/s)]
 Checking for file conflicts: [......done]
 (1/2) Installing: libgmpxx4-5.1.3-7.15.x86_64 [....done]
 (2/2) Installing: gmp-devel-5.1.3-7.15.x86_64 [............done]
@@ -84,8 +82,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/fstar.0.9.4.0-beta0
 # command              /usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output
 # exit-code            2
-# env-file             ~/.opam/log/fstar-12-028069.env
-# output-file          ~/.opam/log/fstar-12-028069.out
+# env-file             ~/.opam/log/fstar-12-de2abc.env
+# output-file          ~/.opam/log/fstar-12-de2abc.out
 ### output ###
 # make: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.4.0-beta0/src/ocaml-output'
 # cp "../extraction/ml/FStar_Extraction_ML_PrintML_4.06.1.ml" ../extraction/ml/FStar_Extraction_ML_PrintML.ml
@@ -120,5 +118,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721035835.export"
-31 1532145072 1532145552
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722144556.export"
+31 1532270350 1532270791

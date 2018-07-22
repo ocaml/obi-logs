@@ -6,8 +6,6 @@ pcre-devel
 # The following new OS packages need to be installed: pcre-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install pcre-devel
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -19,15 +17,15 @@ The following 5 NEW packages are going to be installed:
 Overall download size: 416.3 KiB. Already cached: 0 B. After the operation, additional 714.7 KiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/5),   4.8 KiB (   72   B unpacked)
-Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [.done]
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [..done]
 Retrieving package libpcre16-0-8.39-11.1.x86_64 (2/5), 147.2 KiB (406.3 KiB unpacked)
-Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
+Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [.done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (3/5),  24.0 KiB ( 34.6 KiB unpacked)
 Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (4/5),  15.7 KiB ( 10.2 KiB unpacked)
 Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (5/5), 224.5 KiB (263.5 KiB unpacked)
-Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
+Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [.done]
 Checking for file conflicts: [......done]
 (1/5) Installing: libstdc++-devel-4.8-11.16.x86_64 [.....done]
 (2/5) Installing: libpcre16-0-8.39-11.1.x86_64 [.........done]
@@ -92,5 +90,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721034948.export"
-31 1532144542 1532144990
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722145806.export"
+31 1532271040 1532271488
