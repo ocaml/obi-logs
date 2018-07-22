@@ -89,8 +89,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/mirage-entropy-unix.0.2.0
 # command              /usr/bin/make unix-build
 # exit-code            2
-# env-file             ~/.opam/log/mirage-entropy-unix-11-9e96d2.env
-# output-file          ~/.opam/log/mirage-entropy-unix-11-9e96d2.out
+# env-file             ~/.opam/log/mirage-entropy-unix-11-de8d9f.env
+# output-file          ~/.opam/log/mirage-entropy-unix-11-de8d9f.out
 ### output ###
 # OS=unix ./build
 # ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
@@ -135,5 +135,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180720220105.export"
-31 1532124063 1532124177
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180722104358.export"
+31 1532256236 1532256344
