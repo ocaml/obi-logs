@@ -1,0 +1,2033 @@
+$ opam depext -iy -j 2 frama-c.20140301
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-which 1        [required by camlp4]
+  - install ocamlbuild 0.12.0   [required by camlp4]
+  - install ocamlgraph 1.8.6    [required by frama-c]
+  - install camlp4     4.03+1   [required by frama-c]
+  - install frama-c    20140301
+===== 5 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.03+1] found in cache
+[frama-c.20140301] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-which.1
+-> installed ocamlbuild.0.12.0
+-> installed ocamlgraph.1.8.6
+-> installed camlp4.4.03+1
+[ERROR] The compilation of frama-c failed at "/usr/bin/make".
+
+#=== ERROR while compiling frama-c.20140301 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/frama-c.20140301
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/frama-c-11-201c9f.env
+# output-file          ~/.opam/log/frama-c-11-201c9f.out
+### output ###
+# share/Makefile.dynamic:219: share/Makefile.kernel: No such file or directory
+# share/Makefile.dynamic:219: share/Makefile.kernel: No such file or directory
+# share/Makefile.dynamic:219: share/Makefile.kernel: No such file or directory
+# share/Makefile.dynamic:219: share/Makefile.kernel: No such file or directory
+# share/Makefile.dynamic:219: share/Makefile.kernel: No such file or directory
+# Makefile:2443: .depend: No such file or directory
+# Copying to   src/lib/integer.ml
+# Generating   src/lib/dynlink_common_interface.ml
+# Ocamllex     cil/src/frontc/clexer.ml
+# 372 states, 4382 transitions, table size 19760 bytes
+# 3275 additional bytes used for bindings
+# Ocamlyacc    cil/src/frontc/cparser.ml
+# 1 shift/reduce conflict.
+# Ocamllex     cil/src/logic/logic_lexer.ml
+# 145 states, 1840 transitions, table size 8230 bytes
+# 1915 additional bytes used for bindings
+# Ocamlyacc    cil/src/logic/logic_parser.ml
+# Ocamllex     cil/src/logic/logic_preprocess.ml
+# 118 states, 565 transitions, table size 2968 bytes
+# 2787 additional bytes used for bindings
+# Generating   src/kernel/config.ml
+# Generating   share/frama-c.rc
+# Generating   ptests/ptests_config.ml
+# Generating   share/Makefile.dynamic_config
+# Generating   share/Makefile.kernel
+# Generating   lib/plugins/Metrics.mli
+# Ocamldep     src/metrics/.depend
+# Generating   lib/plugins/Syntactic_callgraph.mli
+# Ocamldep     src/syntactic_callgraph/.depend
+# Generating   lib/plugins/Value.mli
+# Ocamldep     src/value/.depend
+# Generating   lib/plugins/Occurrence.mli
+# Ocamldep     src/occurrence/.depend
+# Generating   lib/plugins/RteGen.mli
+# Ocamldep     src/rte/.depend
+# Generating   lib/plugins/From.mli
+# Ocamldep     src/from/.depend
+# Generating   lib/plugins/Users.mli
+# Ocamldep     src/users/.depend
+# Generating   lib/plugins/Constant_Propagation.mli
+# Ocamldep     src/constant_propagation/.depend
+# Generating   lib/plugins/Postdominators.mli
+# Ocamldep     src/postdominators/.depend
+# Generating   lib/plugins/Inout.mli
+# Ocamldep     src/inout/.depend
+# Generating   lib/plugins/Semantic_callgraph.mli
+# Ocamldep     src/semantic_callgraph/.depend
+# Generating   lib/plugins/Impact.mli
+# Ocamldep     src/impact/.depend
+# Generating   lib/plugins/Pdg.mli
+# Ocamldep     src/pdg/.depend
+# Generating   lib/plugins/Scope.mli
+# Ocamldep     src/scope/.depend
+# Generating   lib/plugins/Sparecode.mli
+# Ocamldep     src/sparecode/.depend
+# Ocamldep     src/slicing/.depend
+# Generating   lib/plugins/Aorai.mli
+# Ocamldep     src/aorai/.depend
+# Generating   lib/plugins/Obfuscator.mli
+# Ocamldep     src/obfuscator/.depend
+# Generating   lib/plugins/Report.mli
+# Ocamldep     src/report/.depend
+# Generating   lib/plugins/Wp.mli
+# Ocamldep     src/wp/.depend
+# Generating   .depend
+# Ocamlc       external/unmarshal.cmi
+# File "external/unmarshal.mli", line 74, characters 0-1970:
+# Warning 50: unattached documentation comment (ignored)
+# File "external/unmarshal.mli", line 122, characters 0-118:
+# Warning 50: unattached documentation comment (ignored)
+# File "external/unmarshal.mli", line 128, characters 0-307:
+# Warning 50: unattached documentation comment (ignored)
+# File "external/unmarshal.mli", line 136, characters 0-174:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       external/unmarshal.cmo
+# File "external/unmarshal.ml", line 174, characters 4-21:
+# Warning 3: deprecated: String.unsafe_set
+# File "external/unmarshal.ml", line 238, characters 10-23:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "external/unmarshal.ml", line 253, characters 14-25:
+# Warning 3: deprecated: String.copy
+# File "external/unmarshal.ml", line 256, characters 6-18:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "external/unmarshal.ml", line 499, characters 22-35:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# Ocamlc       external/unmarshal_nums.cmi
+# Ocamlc       external/unmarshal_nums.cmo
+# Ocamlc       external/sysutil.cmi
+# Ocamlc       external/sysutil.cmo
+# Ocamlc       src/lib/dynlink_common_interface.cmi
+# Ocamlc       src/lib/dynlink_common_interface.cmo
+# Ocamlc       src/type/structural_descr.cmi
+# Ocamlc       src/type/structural_descr.cmo
+# Ocamlc       src/type/type.cmi
+# File "src/type/type.mli", line 231, characters 4-236:
+# Warning 50: ambiguous documentation comment
+# File "src/type/type.mli", line 389, characters 0-7:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/type/type.cmo
+# Ocamlc       src/type/descr.cmi
+# Ocamlc       src/type/descr.cmo
+# Ocamlc       src/lib/FCSet.cmi
+# Ocamlc       src/lib/FCSet.cmo
+# Ocamlc       src/lib/FCMap.cmi
+# Ocamlc       src/lib/FCMap.cmo
+# Ocamlc       src/lib/FCHashtbl.cmi
+# Ocamlc       src/lib/FCHashtbl.cmo
+# Ocamlc       src/lib/extlib.cmi
+# File "src/lib/extlib.mli", line 251, characters 0-61:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/extlib.mli", line 252, characters 0-69:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/extlib.mli", line 257, characters 0-67:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# Ocamlc       src/lib/extlib.cmo
+# File "src/lib/extlib.ml", line 231, characters 0-61:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/extlib.ml", line 232, characters 0-69:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/extlib.ml", line 269, characters 0-67:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/extlib.ml", line 349, characters 0-71:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/extlib.ml", line 352, characters 0-52:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# Ocamlc       src/lib/pretty_utils.cmi
+# File "src/lib/pretty_utils.mli", line 50, characters 0-344:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/lib/pretty_utils.cmo
+# Ocamlc       src/lib/hook.cmi
+# Ocamlc       src/lib/hook.cmo
+# File "src/lib/hook.ml", line 44, characters 12-41:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/lib/bag.cmi
+# Ocamlc       src/lib/bag.cmo
+# Ocamlc       src/lib/indexer.cmi
+# File "src/lib/indexer.mli", line 39, characters 29-51:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/indexer.mli", line 40, characters 28-68:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/indexer.mli", line 44, characters 26-48:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/indexer.mli", line 45, characters 29-51:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/indexer.mli", line 46, characters 39-53:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/indexer.mli", line 52, characters 40-54:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/lib/indexer.cmo
+# Ocamlc       src/lib/vector.cmi
+# File "src/lib/vector.mli", line 34, characters 28-70:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/vector.mli", line 35, characters 36-78:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/vector.mli", line 36, characters 29-115:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/vector.mli", line 37, characters 29-73:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/vector.mli", line 38, characters 25-62:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/vector.mli", line 41, characters 37-63:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/vector.mli", line 52, characters 32-52:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/lib/vector.cmo
+# File "src/lib/vector.ml", line 43, characters 14-26:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/lib/bitvector.cmi
+# File "src/lib/bitvector.mli", line 36, characters 28-76:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/lib/bitvector.cmo
+# File "src/lib/bitvector.ml", line 66, characters 2-24:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/lib/bitvector.ml", line 74, characters 2-24:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/lib/bitvector.ml", line 90, characters 30-53:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/lib/bitvector.ml", line 164, characters 8-31:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/lib/bitvector.ml", line 172, characters 8-31:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/lib/bitvector.ml", line 174, characters 20-35:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# Ocamlc       src/lib/qstack.cmi
+# Ocamlc       src/lib/qstack.cmo
+# Ocamlc       src/lib/integer.cmi
+# File "src/lib/integer.mli", line 40, characters 26-99:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/integer.mli", line 43, characters 31-88:
+# Warning 50: ambiguous documentation comment
+# File "src/lib/integer.mli", line 57, characters 25-41:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/lib/integer.cmo
+# File "src/lib/integer.ml", line 194, characters 17-33:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       src/lib/filepath.cmi
+# Ocamlc       src/lib/filepath.cmo
+# File "src/lib/filepath.ml", line 42, characters 2-52:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/kernel/config.cmi
+# Ocamlc       src/kernel/config.cmo
+# Ocamlc       src/kernel/log.cmi
+# File "src/kernel/log.mli", line 76, characters 2-94:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/log.mli", line 80, characters 2-98:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/kernel/log.cmo
+# File "src/kernel/log.ml", line 654, characters 49-76:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/log.ml", line 193, characters 19-32:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "src/kernel/log.ml", line 230, characters 16-29:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "src/kernel/log.ml", line 246, characters 11-24:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# Ocamlc       src/kernel/cmdline.cmi
+# File "src/kernel/cmdline.mli", line 179, characters 9-41:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/cmdline.mli", line 180, characters 17-49:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/cmdline.mli", line 182, characters 4-368:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/cmdline.cmo
+# File "src/kernel/cmdline.ml", line 898, characters 43-59:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# File "src/kernel/cmdline.ml", line 912, characters 7-23:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/kernel/cmdline.ml", line 913, characters 7-23:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# Ocamlc       src/project/project_skeleton.cmi
+# Ocamlc       src/project/project_skeleton.cmo
+# Ocamlc       src/type/datatype.cmi
+# File "src/type/datatype.mli", line 211, characters 20-44:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/type/datatype.cmo
+# File "src/type/datatype.ml", line 149, characters 2-21:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "src/type/datatype.ml", line 272, characters 55-69:
+# Warning 3: deprecated: Char.uppercase
+# Use Char.uppercase_ascii instead.
+# File "src/type/datatype.ml", line 1704, characters 30-47:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/type/datatype.ml", line 1723, characters 34-51:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/type/datatype.ml", line 1868, characters 17-28:
+# Warning 3: deprecated: String.copy
+# Ocamlc       src/kernel/journal.cmi
+# File "src/kernel/journal.mli", line 60, characters 4-231:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/journal.cmo
+# File "src/kernel/journal.ml", line 232, characters 4-231:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/journal.ml", line 237, characters 4-121:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/journal.ml", line 157, characters 5-22:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# Ocamlc       src/project/state.cmi
+# Ocamlc       src/project/state.cmo
+# Ocamlc       src/project/state_dependency_graph.cmi
+# Ocamlc       src/project/state_dependency_graph.cmo
+# Ocamlc       src/project/state_topological.cmi
+# Ocamlc       src/project/state_topological.cmo
+# Ocamlc       src/project/state_selection.cmi
+# Ocamlc       src/project/state_selection.cmo
+# Ocamlc       src/project/project.cmi
+# Ocamlc       src/project/project.cmo
+# File "src/project/project.ml", line 435, characters 9-32:
+# Warning 48: implicit elimination of optional argument ?selection
+# File "src/project/project.ml", line 761, characters 24-32:
+# Warning 48: implicit elimination of optional argument ?selection
+# File "src/project/project.ml", line 776, characters 22-30:
+# Warning 48: implicit elimination of optional argument ?selection
+# Ocamlc       src/project/state_builder.cmi
+# File "src/project/state_builder.mli", line 37, characters 19-53:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 106, characters 4-40:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 108, characters 4-39:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 110, characters 4-36:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 131, characters 4-167:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 149, characters 32-63:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 267, characters 7-37:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 269, characters 7-74:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 271, characters 7-76:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 296, characters 4-58:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 298, characters 4-62:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 300, characters 4-27:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 302, characters 4-31:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 310, characters 4-197:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 315, characters 4-112:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 318, characters 4-69:
+# Warning 50: ambiguous documentation comment
+# File "src/project/state_builder.mli", line 325, characters 23-54:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/project/state_builder.mli", line 326, characters 20-66:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/project/state_builder.mli", line 343, characters 26-53:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/project/state_builder.cmo
+# Ocamlc       src/kernel/typed_parameter.cmi
+# File "src/kernel/typed_parameter.mli", line 61, characters 0-7:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/kernel/typed_parameter.cmo
+# Ocamlc       src/kernel/dynamic.cmi
+# File "src/kernel/dynamic.mli", line 106, characters 2-9:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/dynamic.mli", line 113, characters 6-41:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/dynamic.mli", line 141, characters 6-33:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/dynamic.mli", line 143, characters 6-33:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/dynamic.cmo
+# File "src/kernel/dynamic.ml", line 239, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/kernel/dynamic.ml", line 270, characters 32-49:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/kernel/dynamic.ml", line 282, characters 44-61:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/kernel/dynamic.ml", line 352, characters 15-32:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/kernel/dynamic.ml", line 355, characters 37-54:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/kernel/dynamic.ml", line 368, characters 18-35:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# Ocamlc       cil/src/cil_types.cmi
+# File "cil/src/cil_types.mli", line 1421, characters 2-386:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/kernel/parameter_customize.cmi
+# Ocamlc       src/kernel/parameter_customize.cmo
+# Ocamlc       src/kernel/parameter_sig.cmi
+# File "src/kernel/parameter_sig.mli", line 37, characters 4-33:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/parameter_sig.mli", line 118, characters 0-7:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/parameter_sig.mli", line 255, characters 4-32:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/parameter_sig.mli", line 265, characters 13-47:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/parameter_sig.mli", line 267, characters 4-44:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/parameter_sig.mli", line 275, characters 9-41:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/parameter_sig.mli", line 276, characters 21-45:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/parameter_sig.mli", line 277, characters 26-50:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/parameter_state.cmi
+# Ocamlc       src/kernel/parameter_state.cmo
+# Ocamlc       src/kernel/parameter_builder.cmi
+# Ocamlc       src/kernel/parameter_builder.cmo
+# File "src/kernel/parameter_builder.ml", line 465, characters 34-41:
+# Warning 48: implicit elimination of optional argument ?sep
+# File "src/kernel/parameter_builder.ml", line 530, characters 34-41:
+# Warning 48: implicit elimination of optional argument ?sep
+# Ocamlc       src/kernel/plugin.cmi
+# File "src/kernel/plugin.mli", line 100, characters 22-76:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/plugin.mli", line 101, characters 27-78:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/plugin.cmo
+# Ocamlc       src/kernel/kernel.cmi
+# Ocamlc       src/kernel/kernel.cmo
+# Ocamlc       src/kernel/emitter.cmi
+# File "src/kernel/emitter.mli", line 132, characters 0-111:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/emitter.cmo
+# Ocamlc       src/lib/floating_point.cmi
+# File "src/lib/floating_point.mli", line 26, characters 0-75:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/floating_point.mli", line 27, characters 0-71:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/floating_point.mli", line 28, characters 0-88:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# Ocamlc       src/lib/floating_point.cmo
+# File "src/lib/floating_point.ml", line 23, characters 0-74:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/floating_point.ml", line 24, characters 0-70:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/lib/floating_point.ml", line 25, characters 0-82:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# Ocamlc       src/lib/rangemap.cmi
+# File "src/lib/rangemap.mli", line 55, characters 11-43:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/lib/rangemap.cmo
+# Ocamlc       src/lib/binary_cache.cmi
+# Ocamlc       src/lib/binary_cache.cmo
+# File "src/lib/binary_cache.ml", line 38, characters 12-27:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "src/lib/binary_cache.ml", line 342, characters 4-33:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/lib/binary_cache.ml", line 346, characters 4-15:
+# Warning 3: deprecated: String.fill
+# Use Bytes.fill instead.
+# File "_none_", line 1:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       external/hptmap.cmi
+# File "external/hptmap.mli", line 49, characters 18-50:
+# Warning 50: unattached documentation comment (ignored)
+# File "external/hptmap.mli", line 55, characters 18-49:
+# Warning 50: ambiguous documentation comment
+# File "external/hptmap.mli", line 56, characters 35-58:
+# Warning 50: ambiguous documentation comment
+# File "external/hptmap.mli", line 58, characters 7-55:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       external/hptmap.cmo
+# File "external/hptmap.ml", line 73, characters 20-33:
+# Warning 50: unattached documentation comment (ignored)
+# File "external/hptmap.ml", line 1210, characters 4-255:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/lib/hptset.cmi
+# Ocamlc       src/lib/hptset.cmo
+# Ocamlc       src/printer/printer_api.cmi
+# File "src/printer/printer_api.mli", line 202, characters 2-46:
+# Warning 50: ambiguous documentation comment
+# File "src/printer/printer_api.mli", line 305, characters 6-41:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/printer/printer_builder.cmi
+# Ocamlc       src/printer/printer_builder.cmo
+# Ocamlc       cil/src/cilmsg.cmi
+# Ocamlc       cil/src/cilmsg.cmo
+# Ocamlc       cil/ocamlutil/alpha.cmi
+# Ocamlc       cil/ocamlutil/alpha.cmo
+# Ocamlc       cil/ocamlutil/cilconfig.cmi
+# Ocamlc       cil/ocamlutil/cilconfig.cmo
+# File "cil/ocamlutil/cilconfig.ml", line 138, characters 2-70:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/ocamlutil/cilconfig.ml", line 195, characters 23-47:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/ocamlutil/cilconfig.ml", line 204, characters 15-30:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "cil/ocamlutil/cilconfig.ml", line 211, characters 15-32:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/logic/logic_ptree.cmi
+# File "cil/src/logic/logic_ptree.mli", line 75, characters 4-48:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/frontc/cabs.cmo
+# File "cil/src/frontc/cabs.ml", line 233, characters 3-16:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/cil_datatype.cmi
+# File "cil/src/cil_datatype.mli", line 63, characters 4-175:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 85, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 103, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 112, characters 17-48:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 113, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 150, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 163, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 180, characters 4-81:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 182, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 188, characters 0-7:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 237, characters 2-77:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 239, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 265, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 288, characters 0-7:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 289, characters 0-95:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 299, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 306, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 312, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 319, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil_datatype.mli", line 324, characters 2-9:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/cil_datatype.cmo
+# File "cil/src/cil_datatype.ml", line 1349, characters 20-31:
+# Warning 3: deprecated: String.copy
+# Ocamlc       cil/src/cil_state_builder.cmi
+# Ocamlc       cil/src/cil_state_builder.cmo
+# Ocamlc       cil/src/logic/utf8_logic.cmi
+# Ocamlc       cil/src/logic/utf8_logic.cmo
+# File "cil/src/logic/utf8_logic.ml", line 38, characters 6-23:
+# Warning 3: deprecated: String.unsafe_set
+# File "cil/src/logic/utf8_logic.ml", line 40, characters 6-23:
+# Warning 3: deprecated: String.unsafe_set
+# File "cil/src/logic/utf8_logic.ml", line 42, characters 1-18:
+# Warning 3: deprecated: String.unsafe_set
+# File "cil/src/logic/utf8_logic.ml", line 48, characters 10-23:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# Ocamlc       cil/src/machdep_x86_16.cmi
+# Ocamlc       cil/src/machdep_x86_16.cmo
+# Ocamlc       cil/src/machdep_x86_32.cmi
+# Ocamlc       cil/src/machdep_x86_32.cmo
+# Ocamlc       cil/src/machdep_x86_64.cmi
+# Ocamlc       cil/src/machdep_x86_64.cmo
+# Ocamlc       cil/src/machdep_ppc_32.cmo
+# Ocamlc       cil/src/cil_const.cmi
+# Ocamlc       cil/src/cil_const.cmo
+# Ocamlc       cil/src/logic/logic_env.cmi
+# File "cil/src/logic/logic_env.mli", line 79, characters 4-57:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/logic/logic_env.cmo
+# File "cil/src/logic/logic_env.ml", line 280, characters 0-17:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/escape.cmi
+# Ocamlc       cil/src/escape.cmo
+# Ocamlc       cil/src/logic/logic_const.cmi
+# File "cil/src/logic/logic_const.mli", line 111, characters 0-8:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/logic/logic_const.cmo
+# Ocamlc       cil/src/cil.cmi
+# File "cil/src/cil.mli", line 111, characters 6-101:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/cil.mli", line 122, characters 6-164:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/cil.mli", line 164, characters 6-41:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/cil.mli", line 671, characters 0-129:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.mli", line 1382, characters 2-216:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.mli", line 1402, characters 2-111:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.mli", line 1421, characters 2-112:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.mli", line 1646, characters 4-122:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.mli", line 1748, characters 0-34:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/cil.cmo
+# File "cil/src/cil.ml", line 1552, characters 48-132:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.ml", line 1554, characters 48-146:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.ml", line 1556, characters 50-138:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.ml", line 1559, characters 48-232:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.ml", line 1579, characters 4-62:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/cil.ml", line 5380, characters 2-46:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/cil.ml", line 6825, characters 10-133:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/cil.ml", line 3584, characters 21-37:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# File "cil/src/cil.ml", line 3668, characters 15-17:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "cil/src/cil.ml", line 4663, characters 33-41:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "cil/src/cil.ml", line 5717, characters 11-22:
+# Warning 3: deprecated: String.copy
+# File "cil/src/cil.ml", line 5727, characters 7-17:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# Ocamlc       src/printer/cil_printer.cmi
+# Ocamlc       src/printer/cil_printer.cmo
+# File "src/printer/cil_printer.ml", line 326, characters 4-144:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/printer/cil_descriptive_printer.cmi
+# Ocamlc       src/printer/cil_descriptive_printer.cmo
+# Ocamlc       cil/src/frontc/errorloc.cmi
+# Ocamlc       cil/src/frontc/errorloc.cmo
+# Ocamlc       cil/src/ext/expcompare.cmo
+# Ocamlc       cil/src/frontc/cabs_debug.cmi
+# Ocamlc       cil/src/frontc/cabs_debug.cmo
+# Ocamlc       cil/src/frontc/cabshelper.cmi
+# Ocamlc       cil/src/frontc/cabshelper.cmo
+# Ocamlc       cil/src/logic/logic_utils.cmi
+# File "cil/src/logic/logic_utils.mli", line 133, characters 0-37:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/logic/logic_utils.mli", line 265, characters 0-29:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/logic/logic_utils.cmo
+# File "cil/src/logic/logic_utils.ml", line 268, characters 19-35:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# Ocamlc       cil/src/logic/logic_builtin.cmi
+# Ocamlc       cil/src/logic/logic_builtin.cmo
+# Ocamlc       cil/src/logic/logic_print.cmi
+# Ocamlc       cil/src/logic/logic_print.cmo
+# Ocamlc       cil/src/logic/logic_parser.cmi
+# Ocamlc       cil/src/logic/logic_parser.cmo
+# Ocamlc       cil/src/logic/logic_lexer.cmo
+# File "cil/src/logic/logic_lexer.mll", line 407, characters 30-47:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/frontc/lexerhack.cmo
+# Ocamlc       cil/src/mergecil.cmi
+# Ocamlc       cil/src/mergecil.cmo
+# File "cil/src/mergecil.ml", line 2374, characters 10-58:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/rmtmps.cmi
+# Ocamlc       cil/src/rmtmps.cmo
+# File "cil/src/rmtmps.ml", line 237, characters 6-39:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/logic/logic_typing.cmi
+# File "cil/src/logic/logic_typing.mli", line 132, characters 6-75:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/logic/logic_typing.cmo
+# File "cil/src/logic/logic_typing.ml", line 1583, characters 10-83:
+# Warning 57: Ambiguous or-pattern variables under guard;
+# variables name,t may match different arguments. (See manual section 8.5)
+# Ocamlc       cil/src/frontc/cprint.cmi
+# Ocamlc       cil/src/frontc/cprint.cmo
+# Ocamlc       cil/src/frontc/cabscond.cmi
+# Ocamlc       cil/src/frontc/cabscond.cmo
+# Ocamlc       cil/src/frontc/cabsvisit.cmi
+# Ocamlc       cil/src/frontc/cabsvisit.cmo
+# Ocamlc       cil/src/frontc/cabs2cil.cmi
+# Ocamlc       cil/src/frontc/cabs2cil.cmo
+# File "cil/src/frontc/cabs2cil.ml", line 1068, characters 10-342:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 1970, characters 12-39:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 2343, characters 21-37:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 2895, characters 2-224:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 3992, characters 10-46:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 5681, characters 8-79:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 6460, characters 4-110:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/frontc/cabs2cil.ml", line 2418, characters 30-42:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "cil/src/frontc/cabs2cil.ml", line 2513, characters 26-38:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "cil/src/frontc/cabs2cil.ml", line 4839, characters 20-36:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# Ocamlc       cil/src/frontc/cparser.cmi
+# Ocamlc       cil/src/frontc/clexer.cmi
+# Ocamlc       cil/src/frontc/clexer.cmo
+# File "cil/src/frontc/clexer.mll", line 694, characters 30-47:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/frontc/cparser.cmo
+# Ocamlc       cil/src/logic/logic_preprocess.cmi
+# Ocamlc       cil/src/logic/logic_preprocess.cmo
+# File "cil/src/logic/logic_preprocess.mll", line 168, characters 20-35:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/frontc/frontc.cmi
+# Ocamlc       cil/src/frontc/frontc.cmo
+# Ocamlc       cil/src/ext/callgraph.cmi
+# File "cil/src/ext/callgraph.mli", line 57, characters 2-14:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/callgraph.mli", line 60, characters 2-41:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/callgraph.mli", line 63, characters 2-64:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/callgraph.mli", line 66, characters 2-69:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/ext/callgraph.cmo
+# Ocamlc       cil/src/ext/dataflow.cmi
+# File "cil/src/ext/dataflow.mli", line 89, characters 19-74:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/ext/dataflow.mli", line 182, characters 19-74:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/ext/dataflow.cmo
+# File "cil/src/ext/dataflow.ml", line 112, characters 19-74:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/ext/dataflow.ml", line 191, characters 6-44:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow.ml", line 278, characters 6-37:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow.ml", line 430, characters 6-56:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/ext/oneret.cmi
+# Ocamlc       cil/src/ext/oneret.cmo
+# Ocamlc       cil/src/ext/cfg.cmi
+# Ocamlc       cil/src/ext/cfg.cmo
+# Ocamlc       src/buckx/buckx.cmi
+# Ocamlc       src/buckx/buckx.cmo
+# Ocamlc       src/kernel/ast_info.cmi
+# Ocamlc       src/kernel/ast_info.cmo
+# Ocamlc       src/kernel/ast.cmi
+# Ocamlc       src/kernel/ast.cmo
+# Ocamlc       src/kernel/globals.cmi
+# Ocamlc       src/kernel/globals.cmo
+# Ocamlc       src/kernel/kernel_function.cmi
+# Ocamlc       src/kernel/kernel_function.cmo
+# Ocamlc       src/logic/property.cmi
+# Ocamlc       src/logic/property.cmo
+# File "src/logic/property.ml", line 576, characters 10-21:
+# Warning 3: deprecated: String.copy
+# File "src/logic/property.ml", line 578, characters 59-69:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# Ocamlc       src/logic/property_status.cmi
+# File "src/logic/property_status.mli", line 113, characters 21-51:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/logic/property_status.cmo
+# Ocamlc       src/logic/annotations.cmi
+# Ocamlc       src/logic/annotations.cmo
+# Ocamlc       src/printer/printer.cmi
+# Ocamlc       src/printer/printer.cmo
+# Ocamlc       src/kernel/stmts_graph.cmi
+# Ocamlc       src/kernel/stmts_graph.cmo
+# Ocamlc       cil/src/ext/ordered_stmt.cmi
+# Ocamlc       cil/src/ext/ordered_stmt.cmo
+# Ocamlc       cil/src/ext/dataflows.cmi
+# Ocamlc       cil/src/ext/dataflows.cmo
+# Ocamlc       cil/src/ext/dataflow2.cmi
+# File "cil/src/ext/dataflow2.mli", line 89, characters 19-74:
+# Warning 50: ambiguous documentation comment
+# File "cil/src/ext/dataflow2.mli", line 168, characters 19-74:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       cil/src/ext/dataflow2.cmo
+# File "cil/src/ext/dataflow2.ml", line 148, characters 6-99:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 152, characters 6-55:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 157, characters 6-40:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 160, characters 6-62:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 163, characters 6-106:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 303, characters 6-44:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 348, characters 6-37:
+# Warning 50: unattached documentation comment (ignored)
+# File "cil/src/ext/dataflow2.ml", line 469, characters 6-56:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       cil/src/ext/usedef.cmo
+# Ocamlc       cil/src/ext/liveness.cmo
+# Ocamlc       cil/src/ext/reachingdefs.cmo
+# File "cil/src/ext/reachingdefs.ml", line 491, characters 15-19:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "cil/src/ext/reachingdefs.ml", line 573, characters 17-21:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/ext/availexpslv.cmo
+# File "cil/src/ext/availexpslv.ml", line 361, characters 15-19:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "cil/src/ext/availexpslv.ml", line 421, characters 17-21:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/ext/rmciltmps.cmo
+# File "cil/src/ext/rmciltmps.ml", line 901, characters 17-21:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       cil/src/ext/deadcodeelim.cmi
+# Ocamlc       cil/src/ext/deadcodeelim.cmo
+# Ocamlc       src/kernel/dominators.cmi
+# Ocamlc       src/kernel/dominators.cmo
+# File "src/kernel/dominators.ml", line 102, characters 16-28:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/logic/description.cmi
+# Ocamlc       src/logic/description.cmo
+# Ocamlc       src/logic/statuses_by_call.cmi
+# Ocamlc       src/logic/statuses_by_call.cmo
+# Ocamlc       src/kernel/alarms.cmi
+# File "src/kernel/alarms.mli", line 43, characters 10-22:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/alarms.mli", line 47, characters 17-71:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/alarms.mli", line 54, characters 16-32:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/alarms.mli", line 58, characters 16-130:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/kernel/alarms.cmo
+# File "src/kernel/alarms.ml", line 227, characters 6-23:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# Ocamlc       src/kernel/messages.cmi
+# Ocamlc       src/kernel/messages.cmo
+# Ocamlc       src/ai/lattice_type.cmi
+# File "src/ai/lattice_type.mli", line 29, characters 24-58:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/lattice_type.mli", line 30, characters 34-80:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/lattice_type.mli", line 64, characters 24-59:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/ai/abstract_interp.cmi
+# Ocamlc       src/ai/abstract_interp.cmo
+# Ocamlc       src/ai/int_Base.cmi
+# Ocamlc       src/ai/int_Base.cmo
+# Ocamlc       src/kernel/unicode.cmi
+# Ocamlc       src/kernel/unicode.cmo
+# Ocamlc       src/misc/service_graph.cmi
+# File "src/misc/service_graph.mli", line 39, characters 9-72:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/misc/service_graph.cmo
+# Ocamlc       src/ai/ival.cmi
+# File "src/ai/ival.mli", line 131, characters 0-80:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 133, characters 0-75:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 138, characters 0-55:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 140, characters 0-55:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 163, characters 4-74:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 235, characters 0-63:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 237, characters 0-62:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 239, characters 0-72:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 253, characters 0-222:
+# Warning 50: ambiguous documentation comment
+# File "src/ai/ival.mli", line 303, characters 36-46:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/ai/ival.mli", line 303, characters 54-69:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/ai/ival.cmo
+# File "src/ai/ival.ml", line 53, characters 2-76:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/ai/ival.ml", line 90, characters 2-70:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "src/ai/ival.ml", line 1582, characters 9-21:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 1673, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 1956, characters 10-22:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 1969, characters 10-22:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 1982, characters 10-22:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 1998, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 2022, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/ai/ival.ml", line 1618, characters 4-37:
+# Warning 57: Ambiguous or-pattern variables under guard;
+# variable t may match different arguments. (See manual section 8.5)
+# File "src/ai/ival.ml", line 2107, characters 4-25:
+# Warning 57: Ambiguous or-pattern variables under guard;
+# variable v may match different arguments. (See manual section 8.5)
+# File "src/ai/ival.ml", line 2108, characters 4-25:
+# Warning 57: Ambiguous or-pattern variables under guard;
+# variable v may match different arguments. (See manual section 8.5)
+# File "src/ai/ival.ml", line 2274, characters 7-26:
+# Warning 57: Ambiguous or-pattern variables under guard;
+# variable s may match different arguments. (See manual section 8.5)
+# Ocamlc       src/misc/bit_utils.cmi
+# Ocamlc       src/misc/bit_utils.cmo
+# File "src/misc/bit_utils.ml", line 219, characters 13-46:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/misc/bit_utils.ml", line 275, characters 10-54:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/misc/bit_utils.ml", line 344, characters 49-75:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/misc/bit_utils.ml", line 428, characters 13-46:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/misc/bit_utils.ml", line 464, characters 10-54:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/ai/lattice_Interval_Set.cmi
+# Ocamlc       src/ai/lattice_Interval_Set.cmo
+# Ocamlc       src/ai/base.cmi
+# File "src/ai/base.mli", line 41, characters 18-80:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/ai/base.mli", line 54, characters 30-50:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/ai/base.mli", line 55, characters 6-186:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/ai/base.mli", line 146, characters 0-134:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/ai/base.cmo
+# Ocamlc       src/ai/origin.cmi
+# Ocamlc       src/ai/origin.cmo
+# Ocamlc       src/ai/map_Lattice.cmo
+# Ocamlc       src/ai/trace.cmi
+# Ocamlc       src/ai/trace.cmo
+# Ocamlc       src/memory_state/locations.cmi
+# File "src/memory_state/locations.mli", line 57, characters 4-72:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/locations.mli", line 59, characters 4-48:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/locations.mli", line 95, characters 4-117:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/locations.mli", line 102, characters 4-120:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/locations.mli", line 105, characters 4-92:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/locations.mli", line 123, characters 38-78:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/memory_state/locations.cmo
+# Ocamlc       src/memory_state/value_messages.cmo
+# Ocamlc       src/kernel/cilE.cmi
+# File "src/kernel/cilE.mli", line 101, characters 0-391:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/cilE.mli", line 115, characters 0-157:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/cilE.cmo
+# Ocamlc       src/memory_state/int_Interv.cmi
+# Ocamlc       src/memory_state/int_Interv.cmo
+# Ocamlc       src/memory_state/int_Interv_Map.cmo
+# Ocamlc       src/memory_state/tr_offset.cmi
+# File "src/memory_state/tr_offset.mli", line 29, characters 16-26:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/tr_offset.mli", line 30, characters 16-26:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/tr_offset.mli", line 31, characters 16-27:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/tr_offset.mli", line 32, characters 17-27:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/tr_offset.mli", line 33, characters 17-27:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/memory_state/tr_offset.cmo
+# Ocamlc       src/memory_state/offsetmap_lattice_with_isotropy.cmi
+# Ocamlc       src/memory_state/offsetmap_sig.cmi
+# File "src/memory_state/offsetmap_sig.mli", line 30, characters 7-56:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/memory_state/offsetmap.cmi
+# Ocamlc       src/memory_state/offsetmap.cmo
+# File "src/memory_state/offsetmap.ml", line 301, characters 2-71:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/memory_state/offsetmap_bitwise.cmi
+# Ocamlc       src/memory_state/offsetmap_bitwise.cmo
+# File "src/memory_state/offsetmap_bitwise.ml", line 253, characters 0-16:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/memory_state/lmap_sig.cmi
+# File "src/memory_state/lmap_sig.mli", line 28, characters 7-57:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/lmap_sig.mli", line 29, characters 15-59:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/lmap_sig.mli", line 51, characters 0-104:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/memory_state/lmap.cmi
+# Ocamlc       src/memory_state/lmap.cmo
+# Ocamlc       src/memory_state/lmap_bitwise.cmi
+# File "src/memory_state/lmap_bitwise.mli", line 80, characters 4-240:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/memory_state/lmap_bitwise.cmo
+# Ocamlc       src/memory_state/function_Froms.cmi
+# File "src/memory_state/function_Froms.mli", line 75, characters 0-91:
+# Warning 50: ambiguous documentation comment
+# File "src/memory_state/function_Froms.mli", line 78, characters 0-136:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/memory_state/function_Froms.cmo
+# Ocamlc       src/memory_state/cvalue.cmi
+# File "src/memory_state/cvalue.mli", line 93, characters 9-25:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/cvalue.mli", line 93, characters 33-43:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/cvalue.mli", line 93, characters 51-66:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/cvalue.mli", line 137, characters 2-61:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# Ocamlc       src/memory_state/cvalue.cmo
+# File "src/memory_state/cvalue.ml", line 1007, characters 47-73:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/cvalue.ml", line 777, characters 2-59:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# Ocamlc       src/memory_state/widen_type.cmi
+# Ocamlc       src/memory_state/widen_type.cmo
+# Ocamlc       src/kernel/visitor.cmi
+# Ocamlc       src/kernel/visitor.cmo
+# File "src/kernel/visitor.ml", line 444, characters 22-42:
+# Warning 48: implicit elimination of optional argument ?e
+# Ocamlc       cil/src/frontc/cabsbranches.cmi
+# Ocamlc       cil/src/frontc/cabsbranches.cmo
+# Ocamlc       src/kernel/loop.cmi
+# Ocamlc       src/kernel/loop.cmo
+# Ocamlc       src/memory_state/inout_type.cmi
+# Ocamlc       src/memory_state/inout_type.cmo
+# Ocamlc       src/pdg_types/pdgIndex.cmi
+# File "src/pdg_types/pdgIndex.mli", line 210, characters 2-99:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/pdg_types/pdgIndex.cmo
+# File "src/pdg_types/pdgIndex.ml", line 446, characters 4-44:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/pdg_types/pdgTypes.cmi
+# Ocamlc       src/pdg_types/pdgTypes.cmo
+# File "src/pdg_types/pdgTypes.ml", line 599, characters 28-74:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/pdg_types/pdgMarks.cmi
+# Ocamlc       src/pdg_types/pdgMarks.cmo
+# Ocamlc       src/slicing_types/slicingInternals.cmo
+# File "src/slicing_types/slicingInternals.ml", line 95, characters 2-49:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 99, characters 0-139:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 111, characters 0-76:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 123, characters 2-77:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 127, characters 0-112:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 142, characters 0-109:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 155, characters 0-259:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 164, characters 2-147:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 172, characters 2-120:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 177, characters 0-66:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 184, characters 0-55:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 208, characters 0-41:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/slicing_types/slicingInternals.ml", line 221, characters 0-98:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/slicing_types/slicingTypes.cmo
+# Ocamlc       src/memory_state/value_types.cmi
+# File "src/memory_state/value_types.mli", line 52, characters 12-47:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/value_types.mli", line 54, characters 7-76:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/memory_state/value_types.mli", line 56, characters 7-67:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/memory_state/value_types.cmo
+# Ocamlc       src/kernel/db.cmi
+# File "src/kernel/db.mli", line 102, characters 2-9:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/db.mli", line 135, characters 5-241:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/db.mli", line 205, characters 6-58:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/db.mli", line 207, characters 6-257:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/db.mli", line 493, characters 4-89:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 862, characters 4-222:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 867, characters 4-102:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 871, characters 4-147:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1278, characters 5-278:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1297, characters 4-169:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1301, characters 4-57:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1303, characters 4-66:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1325, characters 8-54:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1410, characters 8-48:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1461, characters 8-34:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1466, characters 8-41:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1700, characters 8-52:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1887, characters 0-120:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/db.mli", line 1944, characters 0-7:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/kernel/db.cmo
+# File "src/kernel/db.ml", line 334, characters 6-28:
+# Warning 48: implicit elimination of optional argument ?project
+# Ocamlc       src/kernel/command.cmi
+# File "src/kernel/command.mli", line 51, characters 2-59:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/command.mli", line 53, characters 2-45:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/command.mli", line 55, characters 2-59:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/command.cmo
+# File "src/kernel/command.ml", line 85, characters 21-34:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# Ocamlc       src/kernel/task.cmi
+# File "src/kernel/task.mli", line 46, characters 34-66:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/task.mli", line 105, characters 57-77:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/task.mli", line 106, characters 51-75:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/task.mli", line 107, characters 54-77:
+# Warning 50: ambiguous documentation comment
+# File "src/kernel/task.mli", line 204, characters 31-65:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/kernel/task.cmo
+# Ocamlc       src/kernel/file.cmi
+# Ocamlc       src/kernel/file.cmo
+# File "src/kernel/file.ml", line 1930, characters 7-53:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/kernel/file.ml", line 1140, characters 35-51:
+# Warning 48: implicit elimination of optional argument ?specs
+# File "src/kernel/file.ml", line 1661, characters 35-51:
+# Warning 48: implicit elimination of optional argument ?specs
+# File "src/kernel/file.ml", line 1681, characters 25-53:
+# Warning 48: implicit elimination of optional arguments ?emitter, ?force
+# Ocamlc       src/logic/translate_lightweight.cmi
+# Ocamlc       src/logic/translate_lightweight.cmo
+# File "src/logic/translate_lightweight.ml", line 74, characters 21-34:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       src/kernel/unroll_loops.cmi
+# Ocamlc       src/kernel/unroll_loops.cmo
+# Ocamlc       src/misc/filter.cmi
+# File "src/misc/filter.mli", line 90, characters 4-316:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/misc/filter.cmo
+# Ocamlc       src/kernel/special_hooks.cmi
+# Ocamlc       src/kernel/special_hooks.cmo
+# Ocamlc       src/logic/logic_interp.cmi
+# Ocamlc       src/logic/logic_interp.cmo
+# File "src/logic/logic_interp.ml", line 736, characters 30-45:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       src/logic/infer_annotations.cmi
+# Ocamlc       src/logic/infer_annotations.cmo
+# Ocamlc       src/logic/allocates.cmi
+# Ocamlc       src/logic/allocates.cmo
+# Ocamlc       src/metrics/metrics_parameters.cmi
+# Ocamlc       src/metrics/metrics_parameters.cmo
+# Ocamlc       src/metrics/css_html.cmo
+# Ocamlc       src/metrics/metrics_base.cmi
+# Ocamlc       src/metrics/metrics_base.cmo
+# Ocamlc       src/metrics/metrics_acsl.cmi
+# Ocamlc       src/metrics/metrics_acsl.cmo
+# Ocamlc       src/metrics/metrics_cabs.cmi
+# Ocamlc       src/metrics/metrics_cabs.cmo
+# Ocamlc       src/metrics/metrics_cilast.cmi
+# Ocamlc       src/metrics/metrics_cilast.cmo
+# Ocamlc       src/metrics/metrics_coverage.cmi
+# Ocamlc       src/metrics/metrics_coverage.cmo
+# Ocamlc       src/metrics/register.cmo
+# Ocamlc       lib/plugins/Metrics.cmi
+# Packing      lib/plugins/Metrics.cmo
+# Ocamlc       src/syntactic_callgraph/options.cmi
+# Ocamlc       src/syntactic_callgraph/options.cmo
+# Ocamlc       src/syntactic_callgraph/register.cmo
+# Ocamlc       lib/plugins/Syntactic_callgraph.cmi
+# Packing      lib/plugins/Syntactic_callgraph.cmo
+# Ocamlc       src/value/kf_state.cmi
+# Ocamlc       src/value/kf_state.cmo
+# Ocamlc       src/value/split_strategy.cmi
+# Ocamlc       src/value/split_strategy.cmo
+# Ocamlc       src/value/value_parameters.cmi
+# Ocamlc       src/value/value_parameters.cmo
+# Ocamlc       src/value/stop_at_nth.cmi
+# Ocamlc       src/value/stop_at_nth.cmo
+# Ocamlc       src/value/value_perf.cmi
+# Ocamlc       src/value/value_perf.cmo
+# Ocamlc       src/value/value_util.cmi
+# Ocamlc       src/value/value_util.cmo
+# Ocamlc       src/value/library_functions.cmi
+# Ocamlc       src/value/library_functions.cmo
+# Ocamlc       src/value/mark_noresults.cmo
+# Ocamlc       src/value/separate.cmi
+# Ocamlc       src/value/separate.cmo
+# Ocamlc       src/value/state_set.cmi
+# File "src/value/state_set.mli", line 45, characters 34-144:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/value/state_set.cmo
+# Ocamlc       src/value/state_imp.cmi
+# File "src/value/state_imp.mli", line 39, characters 20-132:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/value/state_imp.cmo
+# Ocamlc       src/value/value_results.cmo
+# Ocamlc       src/value/current_table.cmi
+# Ocamlc       src/value/current_table.cmo
+# Ocamlc       src/value/widen.cmi
+# Ocamlc       src/value/widen.cmo
+# Ocamlc       src/value/warn.cmi
+# Ocamlc       src/value/warn.cmo
+# Ocamlc       src/value/precise_locs.cmi
+# Ocamlc       src/value/precise_locs.cmo
+# Ocamlc       src/value/eval_op.cmi
+# Ocamlc       src/value/eval_op.cmo
+# Ocamlc       src/value/eval_exprs.cmi
+# Ocamlc       src/value/eval_exprs.cmo
+# Ocamlc       src/value/non_linear.cmi
+# Ocamlc       src/value/non_linear.cmo
+# Ocamlc       src/value/initial_state.cmi
+# Ocamlc       src/value/initial_state.cmo
+# File "src/value/initial_state.ml", line 619, characters 6-56:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/value/locals_scoping.cmi
+# Ocamlc       src/value/locals_scoping.cmo
+# Ocamlc       src/value/builtins.cmi
+# Ocamlc       src/value/builtins.cmo
+# Ocamlc       src/value/eval_terms.cmi
+# Ocamlc       src/value/eval_terms.cmo
+# Ocamlc       src/value/eval_annots.cmo
+# File "src/value/eval_annots.ml", line 374, characters 23-39:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# Ocamlc       src/value/mem_exec.cmi
+# File "src/value/mem_exec.mli", line 32, characters 54-67:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/value/mem_exec.cmo
+# Ocamlc       src/value/function_args.cmo
+# Ocamlc       src/value/split_return.cmi
+# Ocamlc       src/value/split_return.cmo
+# File "src/value/split_return.ml", line 110, characters 8-149:
+# Warning 57: Ambiguous or-pattern variables under guard;
+# variables lv,typ may match different arguments. (See manual section 8.5)
+# Ocamlc       src/value/eval_stmt.cmi
+# Ocamlc       src/value/eval_stmt.cmo
+# Ocamlc       src/value/per_stmt_slevel.cmi
+# Ocamlc       src/value/per_stmt_slevel.cmo
+# Ocamlc       src/value/eval_slevel.cmi
+# Ocamlc       src/value/eval_slevel.cmo
+# Ocamlc       src/value/eval_funs.cmi
+# Ocamlc       src/value/eval_funs.cmo
+# Ocamlc       src/value/register.cmo
+# File "src/value/register.ml", line 74, characters 59-66:
+# Warning 48: implicit elimination of optional argument ?fmt
+# Ocamlc       lib/plugins/Value.cmi
+# Packing      lib/plugins/Value.cmo
+# Ocamlc       src/occurrence/options.cmi
+# Ocamlc       src/occurrence/options.cmo
+# Ocamlc       src/occurrence/register.cmo
+# File "src/occurrence/register.ml", line 132, characters 26-41:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       lib/plugins/Occurrence.cmi
+# Packing      lib/plugins/Occurrence.cmo
+# Ocamlc       src/rte/options.cmi
+# Ocamlc       src/rte/options.cmo
+# Ocamlc       src/rte/generator.cmi
+# Ocamlc       src/rte/generator.cmo
+# Ocamlc       src/rte/rte.cmi
+# Ocamlc       src/rte/rte.cmo
+# Ocamlc       src/rte/visit.cmi
+# Ocamlc       src/rte/visit.cmo
+# Ocamlc       src/rte/register.cmo
+# Ocamlc       lib/plugins/RteGen.cmi
+# Packing      lib/plugins/RteGen.cmo
+# Ocamlc       src/from/from_parameters.cmi
+# Ocamlc       src/from/from_parameters.cmo
+# Ocamlc       src/from/from_compute.cmi
+# File "src/from/from_compute.mli", line 89, characters 2-55:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/from/from_compute.cmo
+# File "src/from/from_compute.ml", line 131, characters 34-49:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "src/from/from_compute.ml", line 157, characters 34-49:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "src/from/from_compute.ml", line 425, characters 42-54:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       src/from/functionwise.cmi
+# Ocamlc       src/from/functionwise.cmo
+# Ocamlc       src/from/callwise.cmi
+# Ocamlc       src/from/callwise.cmo
+# File "src/from/callwise.ml", line 68, characters 19-23:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "src/from/callwise.ml", line 189, characters 4-19:
+# Warning 48: implicit elimination of optional argument ?project
+# Ocamlc       src/from/path_dependencies.cmo
+# Ocamlc       src/from/mem_dependencies.cmo
+# Ocamlc       src/from/from_register.cmi
+# Ocamlc       src/from/from_register.cmo
+# Ocamlc       lib/plugins/From.cmi
+# Packing      lib/plugins/From.cmo
+# Ocamlc       src/users/users_register.cmo
+# Ocamlc       lib/plugins/Users.cmi
+# Packing      lib/plugins/Users.cmo
+# Ocamlc       src/constant_propagation/propagationParameters.cmi
+# Ocamlc       src/constant_propagation/propagationParameters.cmo
+# Ocamlc       src/constant_propagation/register.cmi
+# Ocamlc       src/constant_propagation/register.cmo
+# Ocamlc       lib/plugins/Constant_Propagation.cmi
+# Packing      lib/plugins/Constant_Propagation.cmo
+# Ocamlc       src/postdominators/postdominators_parameters.cmi
+# Ocamlc       src/postdominators/postdominators_parameters.cmo
+# Ocamlc       src/postdominators/print.cmo
+# Ocamlc       src/postdominators/compute.cmo
+# Ocamlc       lib/plugins/Postdominators.cmi
+# Packing      lib/plugins/Postdominators.cmo
+# Ocamlc       src/inout/inout_parameters.cmi
+# Ocamlc       src/inout/inout_parameters.cmo
+# Ocamlc       src/inout/cumulative_analysis.cmi
+# File "src/inout/cumulative_analysis.mli", line 71, characters 4-53:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/inout/cumulative_analysis.cmo
+# Ocamlc       src/inout/operational_inputs.cmo
+# File "src/inout/operational_inputs.ml", line 526, characters 27-31:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# File "src/inout/operational_inputs.ml", line 529, characters 23-27:
+# Warning 52: the argument of this constructor should not be matched against a
+# constant pattern; the actual value of the argument could change
+# in the future.
+# Ocamlc       src/inout/outputs.cmi
+# Ocamlc       src/inout/outputs.cmo
+# Ocamlc       src/inout/inputs.cmi
+# Ocamlc       src/inout/inputs.cmo
+# Ocamlc       src/inout/derefs.cmi
+# Ocamlc       src/inout/derefs.cmo
+# Ocamlc       src/inout/access_path.cmi
+# Ocamlc       src/inout/access_path.cmo
+# Ocamlc       src/inout/register.cmo
+# Ocamlc       lib/plugins/Inout.cmi
+# Packing      lib/plugins/Inout.cmo
+# Ocamlc       src/semantic_callgraph/options.cmi
+# Ocamlc       src/semantic_callgraph/options.cmo
+# Ocamlc       src/semantic_callgraph/register.cmo
+# File "src/semantic_callgraph/register.ml", line 133, characters 4-38:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       lib/plugins/Semantic_callgraph.cmi
+# Packing      lib/plugins/Semantic_callgraph.cmo
+# Ocamlc       src/impact/options.cmi
+# Ocamlc       src/impact/options.cmo
+# Ocamlc       src/impact/pdg_aux.cmi
+# Ocamlc       src/impact/pdg_aux.cmo
+# Ocamlc       src/impact/reason_graph.cmo
+# Ocamlc       src/impact/compute_impact.cmi
+# File "src/impact/compute_impact.mli", line 34, characters 11-25:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/impact/compute_impact.mli", line 39, characters 11-25:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/impact/compute_impact.cmo
+# Ocamlc       src/impact/register.cmo
+# Ocamlc       lib/plugins/Impact.cmi
+# Packing      lib/plugins/Impact.cmo
+# Ocamlc       src/pdg/pdg_parameters.cmi
+# Ocamlc       src/pdg/pdg_parameters.cmo
+# Ocamlc       src/pdg/ctrlDpds.cmi
+# Ocamlc       src/pdg/ctrlDpds.cmo
+# File "src/pdg/ctrlDpds.ml", line 29, characters 0-25:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/pdg/ctrlDpds.ml", line 155, characters 0-50:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/pdg/pdg_state.cmi
+# Ocamlc       src/pdg/pdg_state.cmo
+# Ocamlc       src/pdg/build.cmi
+# Ocamlc       src/pdg/build.cmo
+# File "src/pdg/build.ml", line 238, characters 4-530:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/pdg/build.ml", line 700, characters 2-137:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/pdg/sets.cmi
+# Ocamlc       src/pdg/sets.cmo
+# Ocamlc       src/pdg/annot.cmi
+# Ocamlc       src/pdg/annot.cmo
+# Ocamlc       src/pdg/marks.cmi
+# Ocamlc       src/pdg/marks.cmo
+# Ocamlc       src/pdg/register.cmo
+# Ocamlc       lib/plugins/Pdg.cmi
+# Packing      lib/plugins/Pdg.cmo
+# Ocamlc       src/scope/datascope.cmo
+# Ocamlc       src/scope/zones.cmi
+# Ocamlc       src/scope/zones.cmo
+# Ocamlc       src/scope/defs.cmi
+# Ocamlc       src/scope/defs.cmo
+# Ocamlc       lib/plugins/Scope.cmi
+# Packing      lib/plugins/Scope.cmo
+# Ocamlc       src/sparecode/sparecode_params.cmi
+# Ocamlc       src/sparecode/sparecode_params.cmo
+# Ocamlc       src/sparecode/globs.cmo
+# Ocamlc       src/sparecode/spare_marks.cmi
+# Ocamlc       src/sparecode/spare_marks.cmo
+# File "src/sparecode/spare_marks.ml", line 159, characters 2-59:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/sparecode/transform.cmo
+# Ocamlc       src/sparecode/register.cmo
+# Ocamlc       lib/plugins/Sparecode.cmi
+# Packing      lib/plugins/Sparecode.cmo
+# Ocamlc       src/slicing/slicingParameters.cmi
+# Ocamlc       src/slicing/slicingParameters.cmo
+# Ocamlc       src/slicing/slicingMacros.cmi
+# Ocamlc       src/slicing/slicingMacros.cmo
+# Ocamlc       src/slicing/slicingMarks.cmi
+# Ocamlc       src/slicing/slicingMarks.cmo
+# Ocamlc       src/slicing/slicingActions.cmi
+# Ocamlc       src/slicing/slicingActions.cmo
+# Ocamlc       src/slicing/fct_slice.cmi
+# Ocamlc       src/slicing/fct_slice.cmo
+# Ocamlc       src/slicing/printSlice.cmi
+# Ocamlc       src/slicing/printSlice.cmo
+# Ocamlc       src/slicing/slicingProject.cmi
+# Ocamlc       src/slicing/slicingProject.cmo
+# Ocamlc       src/slicing/slicingTransform.cmi
+# Ocamlc       src/slicing/slicingTransform.cmo
+# Ocamlc       src/slicing/slicingCmds.cmi
+# Ocamlc       src/slicing/slicingCmds.cmo
+# Ocamlc       src/slicing/register.cmi
+# Ocamlc       src/slicing/register.cmo
+# Packing      lib/plugins/Slicing.cmo
+# Ocamlc       src/kernel/boot.cmo
+# Ocamlc       src/buckx/buckx_c.o
+# Ocamlc       src/aorai/bool3.cmi
+# Ocamlc       src/aorai/bool3.cmo
+# Ocamlc       src/aorai/aorai_option.cmi
+# Ocamlc       src/aorai/aorai_option.cmo
+# Ocamlc       src/aorai/promelaast.cmi
+# Ocamlc       src/aorai/path_analysis.cmo
+# Ocamlc       src/aorai/promelaoutput.cmi
+# Ocamlc       src/aorai/promelaoutput.cmo
+# File "src/aorai/promelaoutput.ml", line 138, characters 4-48:
+# Warning 3: deprecated: Format.pp_get_all_formatter_output_functions
+# Use Format.pp_get_formatter_out_functions instead.
+# File "src/aorai/promelaoutput.ml", line 153, characters 2-46:
+# Warning 3: deprecated: Format.pp_set_all_formatter_output_functions
+# Use Format.pp_set_formatter_out_functions instead.
+# File "src/aorai/promelaoutput.ml", line 158, characters 2-46:
+# Warning 3: deprecated: Format.pp_set_all_formatter_output_functions
+# Use Format.pp_set_formatter_out_functions instead.
+# Ocamlc       src/aorai/logic_simplification.cmi
+# Ocamlc       src/aorai/logic_simplification.cmo
+# Ocamlc       src/aorai/data_for_aorai.cmi
+# File "src/aorai/data_for_aorai.mli", line 86, characters 0-43:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/aorai/data_for_aorai.cmo
+# Ocamlc       src/aorai/aorai_utils.cmi
+# Ocamlc       src/aorai/aorai_utils.cmo
+# Ocamlc       src/aorai/ltlast.cmi
+# Ocamlc       src/aorai/ltl_output.cmi
+# Ocamlc       src/aorai/ltl_output.cmo
+# Ocamlc       src/aorai/utils_parser.cmo
+# Ocamlc       src/aorai/ltlparser.cmi
+# Ocamlc       src/aorai/ltlparser.cmo
+# Ocamlc       src/aorai/ltllexer.cmo
+# Ocamlc       src/aorai/yaparser.cmi
+# Ocamlc       src/aorai/yaparser.cmo
+# Ocamlc       src/aorai/yalexer.cmo
+# Ocamlc       src/aorai/promelaparser.cmi
+# Ocamlc       src/aorai/promelaparser.cmo
+# Ocamlc       src/aorai/promelalexer.cmo
+# Ocamlc       src/aorai/promelaparser_withexps.cmi
+# Ocamlc       src/aorai/promelaparser_withexps.cmo
+# Ocamlc       src/aorai/promelalexer_withexps.cmo
+# Ocamlc       src/aorai/aorai_dataflow.cmi
+# Ocamlc       src/aorai/aorai_dataflow.cmo
+# Ocamlc       src/aorai/aorai_visitors.cmo
+# Ocamlc       src/aorai/aorai_register.cmo
+# Ocamlc       lib/plugins/Aorai.cmi
+# Packing      lib/plugins/Aorai.cmo
+# Ocamlc       src/obfuscator/options.cmi
+# Ocamlc       src/obfuscator/options.cmo
+# Ocamlc       src/obfuscator/obfuscator_kind.cmi
+# Ocamlc       src/obfuscator/obfuscator_kind.cmo
+# Ocamlc       src/obfuscator/dictionary.cmi
+# Ocamlc       src/obfuscator/dictionary.cmo
+# Ocamlc       src/obfuscator/obfuscate.cmi
+# Ocamlc       src/obfuscator/obfuscate.cmo
+# Ocamlc       src/obfuscator/obfuscator_register.cmo
+# Ocamlc       lib/plugins/Obfuscator.cmi
+# Packing      lib/plugins/Obfuscator.cmo
+# Ocamlc       src/report/report_parameters.cmi
+# Ocamlc       src/report/report_parameters.cmo
+# Ocamlc       src/report/scan.cmi
+# Ocamlc       src/report/scan.cmo
+# Ocamlc       src/report/dump.cmi
+# Ocamlc       src/report/dump.cmo
+# Ocamlc       src/report/register.cmi
+# Ocamlc       src/report/register.cmo
+# Ocamlc       lib/plugins/Report.cmi
+# Packing      lib/plugins/Report.cmo
+# Ocamllex     src/wp/qed/src/numbers.ml
+# 53 states, 1709 transitions, table size 7154 bytes
+# 4689 additional bytes used for bindings
+# Compiling    Qed (byte.opt)
+# File "src/wp/qed/src/numbers.mll", line 131, characters 18-28:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/wp/qed/src/numbers.mll", line 168, characters 4-16:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "cache.ml", line 70, characters 21-33:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "cache.ml", line 90, characters 21-33:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "intmap.ml", line 59, characters 15-27:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "intmap.ml", line 75, characters 15-27:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "export_why3.ml", line 72, characters 21-35:
+# Warning 3: deprecated: Char.lowercase
+# Use Char.lowercase_ascii instead.
+# File "export_why3.ml", line 74, characters 18-29:
+# Warning 3: deprecated: String.copy
+# File "export_why3.ml", line 75, characters 10-25:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "pattern.ml", line 73, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "pattern.ml", line 77, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/CfgTypes.cmi
+# File "src/wp/CfgTypes.mli", line 54, characters 38-70:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgTypes.mli", line 55, characters 38-70:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgTypes.mli", line 56, characters 56-82:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgTypes.mli", line 57, characters 56-82:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/CfgLib.cmi
+# File "src/wp/CfgLib.mli", line 41, characters 4-65:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 43, characters 4-58:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 53, characters 33-69:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 54, characters 41-66:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 55, characters 51-80:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 56, characters 50-94:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 57, characters 66-115:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/CfgLib.mli", line 58, characters 65-115:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/CfgLib.cmo
+# File "src/wp/CfgLib.ml", line 185, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/WTO.cmi
+# Ocamlc       src/wp/WTO.cmo
+# File "src/wp/WTO.ml", line 105, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/Fixpoint.cmi
+# File "src/wp/Fixpoint.mli", line 52, characters 2-34:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Fixpoint.mli", line 54, characters 2-35:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Fixpoint.mli", line 56, characters 2-39:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Fixpoint.mli", line 58, characters 2-43:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Fixpoint.cmo
+# File "src/wp/Fixpoint.ml", line 140, characters 14-26:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/Fixpoint.ml", line 142, characters 15-27:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/Fixpoint.ml", line 153, characters 17-29:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/rformat.cmi
+# Ocamlc       src/wp/rformat.cmo
+# File "src/wp/rformat.ml", line 681, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/rformat.ml", line 757, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/wprop.cmi
+# Ocamlc       src/wp/wprop.cmo
+# Ocamlc       src/wp/wp_parameters.cmi
+# Ocamlc       src/wp/wp_parameters.cmo
+# Ocamlc       src/wp/wp_error.cmi
+# Ocamlc       src/wp/wp_error.cmo
+# Ocamlc       src/wp/dyncall.cmi
+# Ocamlc       src/wp/dyncall.cmo
+# Ocamlc       src/wp/ctypes.cmi
+# File "src/wp/ctypes.mli", line 79, characters 31-64:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 80, characters 31-63:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 83, characters 32-67:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 84, characters 32-67:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 94, characters 26-45:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 95, characters 27-47:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 96, characters 28-51:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ctypes.mli", line 113, characters 2-104:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/ctypes.cmo
+# File "src/wp/ctypes.ml", line 189, characters 10-22:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/ctypes.ml", line 201, characters 10-22:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/clabels.cmi
+# Ocamlc       src/wp/clabels.cmo
+# Ocamlc       src/wp/LogicUsage.cmi
+# Ocamlc       src/wp/LogicUsage.cmo
+# Ocamlc       src/wp/VarUsage.cmi
+# File "src/wp/VarUsage.mli", line 29, characters 32-79:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/VarUsage.mli", line 30, characters 37-95:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/VarUsage.mli", line 31, characters 38-104:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/VarUsage.cmo
+# Ocamlc       src/wp/RefUsage.cmi
+# Ocamlc       src/wp/RefUsage.cmo
+# Ocamlc       src/wp/variables_analysis.cmi
+# Ocamlc       src/wp/variables_analysis.cmo
+# Ocamlc       src/wp/cil2cfg.cmi
+# Ocamlc       src/wp/cil2cfg.cmo
+# Ocamlc       src/wp/normAtLabels.cmi
+# Ocamlc       src/wp/normAtLabels.cmo
+# Ocamlc       src/wp/wpPropId.cmi
+# File "src/wp/wpPropId.mli", line 68, characters 35-72:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/wpPropId.cmo
+# Ocamlc       src/wp/wpStrategy.cmi
+# Ocamlc       src/wp/wpStrategy.cmo
+# Ocamlc       src/wp/wpAnnot.cmi
+# Ocamlc       src/wp/wpAnnot.cmo
+# File "src/wp/wpAnnot.ml", line 158, characters 13-25:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/Context.cmi
+# Ocamlc       src/wp/Context.cmo
+# Ocamlc       src/wp/Warning.cmi
+# Ocamlc       src/wp/Warning.cmo
+# Ocamlc       src/wp/Model.cmi
+# File "src/wp/Model.mli", line 69, characters 4-50:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Model.mli", line 71, characters 4-48:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Model.mli", line 73, characters 4-38:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Model.cmo
+# File "src/wp/Model.ml", line 46, characters 33-70:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Lang.cmi
+# File "src/wp/Lang.mli", line 44, characters 0-37:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/Lang.mli", line 54, characters 19-70:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/Lang.mli", line 59, characters 24-59:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Lang.mli", line 155, characters 41-64:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Lang.mli", line 167, characters 4-119:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Lang.mli", line 211, characters 37-63:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Lang.cmo
+# File "src/wp/Lang.ml", line 124, characters 24-59:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Lang.ml", line 382, characters 20-53:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/Lang.ml", line 69, characters 12-23:
+# Warning 3: deprecated: String.copy
+# File "src/wp/Lang.ml", line 70, characters 4-14:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# Ocamlc       src/wp/Matrix.cmi
+# File "src/wp/Matrix.mli", line 37, characters 28-55:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Matrix.cmo
+# Ocamlc       src/wp/Passive.cmi
+# Ocamlc       src/wp/Passive.cmo
+# Ocamlc       src/wp/Splitter.cmi
+# Ocamlc       src/wp/Splitter.cmo
+# Ocamlc       src/wp/Letify.cmi
+# Ocamlc       src/wp/Letify.cmo
+# Ocamlc       src/wp/Cleaning.cmi
+# Ocamlc       src/wp/Cleaning.cmo
+# Ocamlc       src/wp/Partitioning.cmi
+# Ocamlc       src/wp/Partitioning.cmo
+# Ocamlc       src/wp/Conditions.cmi
+# Ocamlc       src/wp/Conditions.cmo
+# Ocamlc       src/wp/LogicBuiltins.cmi
+# File "src/wp/LogicBuiltins.mli", line 76, characters 2-47:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/LogicBuiltins.cmo
+# Ocamlc       src/wp/Definitions.cmi
+# File "src/wp/Definitions.mli", line 37, characters 35-48:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Definitions.mli", line 120, characters 42-56:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Definitions.mli", line 121, characters 45-78:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Definitions.mli", line 122, characters 46-76:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Definitions.mli", line 123, characters 62-100:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Definitions.mli", line 124, characters 66-108:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Definitions.mli", line 125, characters 44-83:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Definitions.cmo
+# File "src/wp/Definitions.ml", line 471, characters 8-27:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/Definitions.ml", line 478, characters 8-54:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/Definitions.ml", line 486, characters 17-39:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/wp/Cint.cmi
+# File "src/wp/Cint.mli", line 35, characters 28-61:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Cint.cmo
+# Ocamlc       src/wp/Cfloat.cmi
+# Ocamlc       src/wp/Cfloat.cmo
+# Ocamlc       src/wp/Vset.cmi
+# Ocamlc       src/wp/Vset.cmo
+# Ocamlc       src/wp/Region.cmi
+# File "src/wp/Region.mli", line 52, characters 26-61:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Region.mli", line 53, characters 28-66:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Region.cmo
+# Ocamlc       src/wp/Cstring.cmi
+# File "src/wp/Cstring.mli", line 37, characters 26-80:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/Cstring.mli", line 38, characters 24-89:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Cstring.cmo
+# File "src/wp/Cstring.ml", line 89, characters 7-79:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/wp/mcfg.cmi
+# File "src/wp/mcfg.mli", line 86, characters 4-95:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Memory.cmi
+# File "src/wp/Memory.mli", line 90, characters 33-54:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Sigma.cmi
+# Ocamlc       src/wp/Cvalues.cmi
+# File "src/wp/Cvalues.mli", line 40, characters 28-46:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/Cvalues.cmo
+# Ocamlc       src/wp/CodeSemantics.cmi
+# Ocamlc       src/wp/CodeSemantics.cmo
+# Ocamlc       src/wp/LogicCompiler.cmi
+# Ocamlc       src/wp/LogicCompiler.cmo
+# Ocamlc       src/wp/LogicSemantics.cmi
+# Ocamlc       src/wp/LogicSemantics.cmo
+# Ocamlc       src/wp/LogicAssigns.cmi
+# Ocamlc       src/wp/LogicAssigns.cmo
+# Ocamlc       src/wp/Sigma.cmo
+# Ocamlc       src/wp/MemEmpty.cmi
+# Ocamlc       src/wp/MemEmpty.cmo
+# Ocamlc       src/wp/MemVar.cmi
+# Ocamlc       src/wp/MemVar.cmo
+# Ocamlc       src/wp/MemTyped.cmi
+# Ocamlc       src/wp/MemTyped.cmo
+# File "src/wp/MemTyped.ml", line 333, characters 7-63:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/MemTyped.ml", line 391, characters 7-63:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/MemTyped.ml", line 524, characters 7-63:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/MemTyped.ml", line 179, characters 12-24:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/VCS.cmi
+# Ocamlc       src/wp/VCS.cmo
+# Ocamlc       src/wp/script.cmi
+# Ocamlc       src/wp/script.cmo
+# Ocamlc       src/wp/proof.cmi
+# Ocamlc       src/wp/proof.cmo
+# Ocamlc       src/wp/wpo.cmi
+# File "src/wp/wpo.mli", line 144, characters 44-82:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/wpo.cmo
+# File "src/wp/wpo.ml", line 451, characters 17-27:
+# Warning 48: implicit elimination of optional arguments ?solver, ?time, ?steps
+# Ocamlc       src/wp/wpReport.cmi
+# Ocamlc       src/wp/wpReport.cmo
+# Ocamlc       src/wp/ProverTask.cmi
+# File "src/wp/ProverTask.mli", line 42, characters 4-118:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ProverTask.mli", line 49, characters 31-66:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ProverTask.mli", line 50, characters 19-56:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ProverTask.mli", line 51, characters 21-61:
+# Warning 50: ambiguous documentation comment
+# File "src/wp/ProverTask.mli", line 52, characters 22-61:
+# Warning 50: ambiguous documentation comment
+# Ocamlc       src/wp/ProverTask.cmo
+# File "src/wp/ProverTask.ml", line 295, characters 12-31:
+# Warning 48: implicit elimination of optional argument ?stage
+# Ocamlc       src/wp/ProverErgo.cmi
+# Ocamlc       src/wp/ProverErgo.cmo
+# Ocamlc       src/wp/ProverCoq.cmi
+# Ocamlc       src/wp/ProverCoq.cmo
+# File "src/wp/ProverCoq.ml", line 74, characters 17-28:
+# Warning 3: deprecated: String.copy
+# File "src/wp/ProverCoq.ml", line 76, characters 31-46:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/wp/ProverCoq.ml", line 77, characters 30-45:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/wp/ProverCoq.ml", line 99, characters 50-67:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/ProverCoq.ml", line 105, characters 19-36:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/ProverCoq.ml", line 412, characters 8-31:
+# Warning 48: implicit elimination of optional argument ?echo
+# File "src/wp/ProverCoq.ml", line 431, characters 25-50:
+# Warning 48: implicit elimination of optional argument ?echo
+# Ocamlc       src/wp/ProverWhy3.cmi
+# Ocamlc       src/wp/ProverWhy3.cmo
+# File "src/wp/ProverWhy3.ml", line 239, characters 6-43:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/ProverWhy3.ml", line 295, characters 2-34:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/ProverWhy3.ml", line 366, characters 14-119:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/ProverWhy3.ml", line 419, characters 4-29:
+# Warning 50: unattached documentation comment (ignored)
+# File "src/wp/ProverWhy3.ml", line 55, characters 2-19:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/ProverWhy3.ml", line 140, characters 14-31:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/ProverWhy3.ml", line 146, characters 28-45:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/ProverWhy3.ml", line 154, characters 40-57:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/ProverWhy3.ml", line 616, characters 15-31:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/wp/ProverWhy3.ml", line 617, characters 28-44:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/wp/ProverWhy3.ml", line 627, characters 35-56:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "src/wp/ProverWhy3.ml", line 654, characters 25-45:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# Ocamlc       src/wp/why3_xml.cmi
+# Ocamlc       src/wp/why3_xml.cmo
+# File "src/wp/why3_xml.ml", line 702, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/why3_xml.ml", line 737, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/why3_xml.ml", line 812, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# Ocamlc       src/wp/why3_session.cmi
+# Ocamlc       src/wp/why3_session.cmo
+# File "src/wp/why3_session.ml", line 225, characters 2-73:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       src/wp/driver.cmi
+# Ocamlc       src/wp/driver.cmo
+# File "src/wp/driver.ml", line 779, characters 27-39:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/wp/driver.mll", line 514, characters 18-22:
+# Warning 48: implicit elimination of optional argument ?feedback
+# Ocamlc       src/wp/prover.cmi
+# Ocamlc       src/wp/prover.cmo
+# Ocamlc       src/wp/calculus.cmi
+# Ocamlc       src/wp/calculus.cmo
+# Ocamlc       src/wp/Generator.cmi
+# Ocamlc       src/wp/cfgDump.cmi
+# Ocamlc       src/wp/cfgDump.cmo
+# Ocamlc       src/wp/cfgWP.cmi
+# Ocamlc       src/wp/cfgWP.cmo
+# Ocamlc       src/wp/Generator.cmo
+# Ocamlc       src/wp/Factory.cmi
+# Ocamlc       src/wp/Factory.cmo
+# File "src/wp/Factory.ml", line 48, characters 25-42:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/Factory.ml", line 57, characters 25-42:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "src/wp/Factory.ml", line 216, characters 7-23:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# Ocamlc       src/wp/register.cmo
+# File "src/wp/register.ml", line 140, characters 2-44:
+# Warning 50: unattached documentation comment (ignored)
+# Ocamlc       lib/plugins/Wp.cmi
+# Packing      lib/plugins/Wp.cmo
+# Packing      lib/plugins/Wp.cma
+# Linking      bin/toplevel.byte
+# /usr/bin/ld: src/buckx/buckx_c.o: relocation R_X86_64_32 against `.rodata.str1.1' can not be used when making a shared object; recompile with -fPIC
+# /usr/bin/ld: final link failed: Nonrepresentable section on output
+# collect2: error: ld returned 1 exit status
+# File "_none_", line 1:
+# Error: Error while building custom runtime system
+# Makefile:1316: recipe for target 'bin/toplevel.byte' failed
+# make: *** [bin/toplevel.byte] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build frama-c 20140301
++- 
++- The following changes have been performed
+| - install camlp4     4.03+1
+| - install conf-which 1
+| - install ocamlbuild 0.12.0
+| - install ocamlgraph 1.8.6
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180720211855.export"
+31 1532121533 1532121706

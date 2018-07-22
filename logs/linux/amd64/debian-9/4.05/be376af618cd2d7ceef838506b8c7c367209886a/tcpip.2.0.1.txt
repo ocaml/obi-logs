@@ -1,0 +1,17 @@
+$ opam depext -iy -j 2 tcpip.2.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for tcpip.2.0.1: The following dependencies couldn't be met:
+          - tcpip -> mirage-types < 2.2.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tcpip -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tcpip -> mirage-types-lwt < 3.0.0 -> mirage-types (= 2.3.0 | >= 2.5.0) -> mirage-channel
+          - tcpip -> mirage-types-lwt < 3.0.0 -> mirage-types (= 2.3.0 | >= 2.5.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of mirage-types satisfies the constraints
+          - mirage-channel is in conflict with tcpip < 3.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=tcpip.2.0.1 returned 20
+20 1532127570 1532127573

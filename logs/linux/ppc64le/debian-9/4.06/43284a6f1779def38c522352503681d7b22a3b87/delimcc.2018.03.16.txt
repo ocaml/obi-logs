@@ -1,0 +1,65 @@
+$ opam depext -iy -j 2 delimcc.2018.03.16
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install delimcc 2018.03.16
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[delimcc.2018.03.16] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of delimcc failed at "/usr/bin/make opt".
+
+#=== ERROR while compiling delimcc.2018.03.16 =================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/delimcc.2018.03.16
+# command              /usr/bin/make opt
+# exit-code            2
+# env-file             ~/.opam/log/delimcc-11-d2c37b.env
+# output-file          ~/.opam/log/delimcc-11-d2c37b.out
+### output ###
+# /home/opam/.opam/4.06/bin/ocamlopt -verbose -opaque -c delimcc.ml
+# + as -a64 -mppc64 -o 'delimcc.o' '/tmp/camlasmf23ff7.s'
+# gcc -c -DCAML_NAME_SPACE -DNATIVE_CODE -DTARGET_power -DSYS_elf -O2 -fPIC -Wall \
+#  -I/home/opam/.opam/4.06/lib/ocaml/caml stacks-native.c
+# In file included from stacks-native.c:144:0:
+# /home/opam/.opam/4.06/lib/ocaml/caml/stack.h:45:2: error: #error "TARGET_power: wrong MODEL"
+#  #error "TARGET_power: wrong MODEL"
+#   ^~~~~
+# stacks-native.c: In function 'print_stack_trace':
+# stacks-native.c:163:25: warning: implicit declaration of function 'Saved_return_address' [-Wimplicit-function-declaration]
+#    (Mask_already_scanned(Saved_return_address(sp)))
+#                          ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/stack.h:48:41: note: in definition of macro 'Mask_already_scanned'
+#  #define Mask_already_scanned(retaddr) ((retaddr) & ~1)
+#                                          ^~~~~~~
+# stacks-native.c:269:17: note: in expansion of macro 'RetAddr_from_frame'
+#        retaddr = RetAddr_from_frame(sp);
+#                  ^~~~~~~~~~~~~~~~~~
+# stacks-native.c:272:44: warning: implicit declaration of function 'Callback_link' [-Wimplicit-function-declaration]
+#        struct caml_context * next_context = Callback_link(sp);
+#                                             ^~~~~~~~~~~~~
+# stacks-native.c:272:44: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+# stacks-native.c: In function 'find_frame':
+# stacks-native.c:323:44: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+#        struct caml_context * next_context = Callback_link(sp);
+#                                             ^~~~~~~~~~~~~
+# stacks-native.c: In function 'push_stack_fragment_really':
+# stacks-native.c:936:48: error: lvalue required as left operand of assignment
+#    Saved_return_address(caml_exception_pointer) = fdtop->retaddr;
+#                                                 ^
+# Makefile:126: recipe for target 'stacks-native.o' failed
+# make: *** [stacks-native.o] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build delimcc 2018.03.16
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1531355721 1531355726

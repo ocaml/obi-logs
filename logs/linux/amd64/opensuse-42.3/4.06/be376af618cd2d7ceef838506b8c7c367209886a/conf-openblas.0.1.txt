@@ -1,0 +1,35 @@
+$ opam depext -iy -j 2 conf-openblas.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-openblas 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-openblas failed at "/usr/bin/sh -exc cc $CFLAGS test.c -lopenblas".
+
+#=== ERROR while compiling conf-openblas.0.1 ==================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-openblas.0.1
+# command              /usr/bin/sh -exc cc $CFLAGS test.c -lopenblas
+# exit-code            1
+# env-file             ~/.opam/log/conf-openblas-12-5f1023.env
+# output-file          ~/.opam/log/conf-openblas-12-5f1023.out
+### output ###
+# + cc test.c -lopenblas
+# test.c:1:19: fatal error: cblas.h: No such file or directory
+#  #include <cblas.h>
+#                    ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-openblas 0.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532144605 1532144832

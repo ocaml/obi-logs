@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 starterkit.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for starterkit.1.0.0: The following dependencies couldn't be met:
+          - starterkit -> merlin -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=starterkit.1.0.0 returned 20
+20 1532117827 1532117829

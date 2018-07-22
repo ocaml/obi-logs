@@ -1,0 +1,113 @@
+$ opam depext -iy -j 2 bun.0.3.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3     [required by logs, fmt, topkg, etc.]
+  - install base-bytes base    [required by astring]
+  - install ocamlbuild 0.12.0  [required by astring, bos]
+  - install spawn      v0.11.1 [required by bun]
+  - install afl        2.52b   [required by bun]
+  - install uchar      0.0.2   [required by fmt]
+  - install topkg      0.9.1   [required by astring, bos]
+  - install rresult    0.5.0   [required by bun]
+  - install cmdliner   1.0.2   [required by bun]
+  - install astring    0.8.3   [required by bun]
+  - install fmt        0.8.5   [required by bos]
+  - install fpath      0.7.2   [required by bun]
+  - install logs       0.6.2   [required by bos]
+  - install bos        0.2.0   [required by bun]
+  - install bun        0.3.1
+===== 15 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[afl.2.52b] found in cache
+[astring.0.8.3] found in cache
+[bos.0.2.0] found in cache
+[bun.0.3.1] found in cache
+[cmdliner.1.0.2] found in cache
+[fmt.0.8.5] found in cache
+[fpath.0.7.2] found in cache
+[logs.0.6.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[spawn.v0.11.1] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+[ERROR] The compilation of afl failed at "/usr/bin/make".
+-> installed spawn.v0.11.1
+-> installed uchar.0.0.2
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed fpath.0.7.2
+-> installed rresult.0.5.0
+-> installed fmt.0.8.5
+-> installed logs.0.6.2
+-> installed bos.0.2.0
+
+#=== ERROR while compiling afl.2.52b ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/afl.2.52b
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/afl-13-af57d6.env
+# output-file          ~/.opam/log/afl-13-af57d6.out
+### output ###
+# [*] Checking for the ability to compile x86 code...
+# [+] Everything seems to be working, ready to compile.
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-gcc.c -o afl-gcc -ldl
+# set -e; for i in afl-g++ afl-clang afl-clang++; do ln -sf afl-gcc $i; done
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-fuzz.c -o afl-fuzz -ldl
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-showmap.c -o afl-showmap -ldl
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-tmin.c -o afl-tmin -ldl
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-gotcpu.c -o afl-gotcpu -ldl
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-analyze.c -o afl-analyze -ldl
+# cc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" afl-as.c -o afl-as -ldl
+# ln -sf afl-as as
+# [*] Testing the CC wrapper and instrumentation output...
+# unset AFL_USE_ASAN AFL_USE_MSAN; AFL_QUIET=1 AFL_INST_RATIO=100 AFL_PATH=. ./afl-gcc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/usr/local/lib/afl\" -DDOC_PATH=\"/usr/local/share/doc/afl\" -DBIN_PATH=\"/usr/local/bin\" test-instr.c -o test-instr -ldl
+# echo 0 | ./afl-showmap -m none -q -o .test-instr0 ./test-instr
+# echo 1 | ./afl-showmap -m none -q -o .test-instr1 ./test-instr
+# 
+# Oops, the instrumentation does not seem to be behaving correctly!
+# 
+# Please ping <lcamtuf@google.com> to troubleshoot the issue.
+# 
+# Makefile:90: recipe for target 'test_build' failed
+# make: *** [test_build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build afl 2.52b
++- 
++- The following changes have been performed (the rest was aborted)
+| - install astring    0.8.3
+| - install base-bytes base
+| - install bos        0.2.0
+| - install cmdliner   1.0.2
+| - install fmt        0.8.5
+| - install fpath      0.7.2
+| - install logs       0.6.2
+| - install ocamlbuild 0.12.0
+| - install result     1.3
+| - install rresult    0.5.0
+| - install spawn      v0.11.1
+| - install topkg      0.9.1
+| - install uchar      0.0.2
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721055714.export"
+31 1532152632 1532152664

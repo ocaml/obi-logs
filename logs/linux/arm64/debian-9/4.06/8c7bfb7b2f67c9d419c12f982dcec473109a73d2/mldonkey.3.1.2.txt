@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mldonkey.3.1.2
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mldonkey.3.1.2: The following dependencies couldn't be met:
+          - mldonkey -> ocaml = 3.12.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mldonkey.3.1.2 returned 20
+20 1530676422 1530676434

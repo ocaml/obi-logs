@@ -1,0 +1,676 @@
+$ opam depext -iy -j 2 mlcuddidl.3.0.2
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlidl    1.05   [required by mlcuddidl]
+  - install ocamlbuild 0.12.0 [required by mlcuddidl]
+  - install mlcuddidl  3.0.2
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlidl.1.05] found in cache
+[mlcuddidl.3.0.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed camlidl.1.05
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of mlcuddidl failed at "/usr/bin/make -j95".
+
+#=== ERROR while compiling mlcuddidl.3.0.2 ====================================#
+# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2
+# command              /usr/bin/make -j95
+# exit-code            2
+# env-file             ~/.opam/log/mlcuddidl-12-f6c0a8.env
+# output-file          ~/.opam/log/mlcuddidl-12-f6c0a8.out
+### output ###
+# /usr/bin/m4 macros.m4 hash.idl > tmp/hash.idl
+# /usr/bin/m4 macros.m4 cache.idl > tmp/cache.idl
+# /usr/bin/m4 macros.m4 memo.idl > tmp/memo.idl
+# /usr/bin/m4 macros.m4 man.idl > tmp/man.idl
+# /usr/bin/m4 macros.m4 bdd.idl > tmp/bdd.idl
+# /usr/bin/m4 macros.m4 vdd.idl > tmp/vdd.idl
+# /usr/bin/m4 macros.m4 custom.idl > tmp/custom.idl
+# /usr/bin/m4 macros.m4 add.idl > tmp/add.idl
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . hash.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . cache.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . memo.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . man.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . bdd.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . vdd.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . custom.idl);
+# (cd tmp; /home/opam/.opam/4.06/bin/camlidl -no-include -nocpp -I . add.idl);
+# /bin/sed -f sedscript_c tmp/cache_stubs.c > cache_caml.c;
+# /bin/sed -f sedscript_c tmp/hash_stubs.c > hash_caml.c;
+# /bin/sed -f sedscript_c tmp/memo_stubs.c > memo_caml.c;
+# /bin/sed -f sedscript_caml tmp/cache.ml > cache.ml;
+# /bin/sed -f sedscript_caml tmp/hash.ml > hash.ml;
+# /bin/sed -f sedscript_caml tmp/memo.ml > memo.ml;
+# /bin/sed -f sedscript_caml tmp/cache.mli > cache.mli;
+# /bin/sed -f sedscript_caml tmp/hash.mli > hash.mli;
+# /bin/sed -f sedscript_caml tmp/memo.mli > memo.mli;
+# /bin/sed -f sedscript_c tmp/man_stubs.c > man_caml.c;
+# /bin/sed -f sedscript_c tmp/vdd_stubs.c > vdd_caml.c;
+# /bin/sed -f sedscript_caml tmp/man.ml > man.ml;
+# /bin/sed -f sedscript_caml tmp/vdd.ml > vdd.ml;
+# /bin/sed -f sedscript_c tmp/bdd_stubs.c > bdd_caml.c;
+# /bin/sed -f sedscript_c tmp/custom_stubs.c > custom_caml.c;
+# /bin/sed -f sedscript_caml tmp/bdd.ml > bdd.ml;
+# /bin/sed -f sedscript_caml tmp/custom.ml > custom.ml;
+# /bin/sed -f sedscript_caml tmp/vdd.mli > vdd.mli;
+# /bin/sed -f sedscript_caml tmp/man.mli > man.mli;
+# /bin/sed -f sedscript_c tmp/add_stubs.c > add_caml.c;
+# /bin/sed -f sedscript_caml tmp/add.ml > add.ml;
+# /bin/sed -f sedscript_caml tmp/bdd.mli > bdd.mli;
+# /bin/sed -f sedscript_caml tmp/custom.mli > custom.mli;
+# /bin/sed -f sedscript_caml tmp/add.mli > add.mli;
+# /home/opam/.opam/4.06/bin/ocamldep.opt -one-line hash.mli cache.mli memo.mli man.mli bdd.mli vdd.mli custom.mli weakke.mli pWeakke.mli mtbdd.mli mtbddc.mli user.mli mapleaf.mli add.mli hash.ml cache.ml memo.ml man.ml bdd.ml vdd.ml custom.ml weakke.ml pWeakke.ml mtbdd.ml mtbddc.ml user.ml mapleaf.ml add.ml |						\
+#   /bin/sed -e '/\.cmo/    { p; s/\.cmo/.d.cmo/; }'			\
+# 	 -e '/\.cmx/    { p; s/\.cmx/.p.cmx/; }'			\
+# 	 -e '#/\.p\.cmx/ { p; s/\.p\./.d./; }'				\
+#   > Makefile.depend
+# /bin/sed -e "s!@VERSION@!3.0.2!g;"  META.in > META;
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c hash.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c cache.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c man.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c weakke.mli
+# mkdir -p cuddsrc-base;
+# ( srcdir="/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cudd-3.0.0"; cd cuddsrc-base && CPPFLAGS="" CFLAGS="-fPIC -O3" "${srcdir}/configure" DOXYGEN= --prefix "/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cuddbld-base" --srcdir="${srcdir}" --disable-dependency-tracking --disable-shared --enable-static ; ) || { rm -rf cuddsrc-base; false; };
+# mkdir -p cuddsrc-dbug;
+# mkdir -p cuddsrc-prof;
+# ( srcdir="/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cudd-3.0.0"; cd cuddsrc-dbug && CPPFLAGS="-DDD_CACHE_PROFILE -DDD_UNIQUE_PROFILE -DDD_VERBOSE -DDD_DEBUG -DDD_STATS -DDD_COUNT -DMTR_DEBUG" CFLAGS="-fPIC -O0 -g" "${srcdir}/configure" DOXYGEN= --prefix "/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cuddbld-dbug" --srcdir="${srcdir}" --disable-dependency-tracking --disable-shared --enable-static ; ) || { rm -rf cuddsrc-dbug; false; };
+# ( srcdir="/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cudd-3.0.0"; cd cuddsrc-prof && CPPFLAGS="" CFLAGS="-fPIC -O3 -pg" "${srcdir}/configure" DOXYGEN= --prefix "/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cuddbld-prof" --srcdir="${srcdir}" --disable-dependency-tracking --disable-shared --enable-static ; ) || { rm -rf cuddsrc-prof; false; };
+# sh ./ocamlpack -o cudd_ocamldoc.mli -title "Interface to CUDD library"	\
+#    -intro cudd.mlpacki hash cache memo man bdd vdd custom weakke pWeakke mtbdd mtbddc user mapleaf add
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c cache.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -annot -inline 20 -for-pack Cudd -c cache.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c hash.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c memo.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c weakke.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c pWeakke.mli
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -annot -inline 20 -for-pack Cudd -c hash.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -annot -inline 20 -for-pack Cudd -c weakke.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c man.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -annot -inline 20 -for-pack Cudd -c man.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -g -o cache.d.cmo -c cache.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c memo.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c bdd.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -c pWeakke.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -annot -inline 20 -p -for-pack Cudd -c -o cache.p.cmx cache.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -g -o memo.d.cmo -c memo.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -g -o hash.d.cmo -c hash.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -g -o man.d.cmo -c man.ml
+# Profiling with "gprof" is not supported on this platform.
+# /home/opam/.opam/4.06/bin/ocamlc.opt -annot  -g -o pWeakke.d.cmo -c pWeakke.ml
+# Makefile:320: recipe for target 'cache.p.cmx' failed
+# make: *** [cache.p.cmx] Error 2
+# make: *** Waiting for unfinished jobs....
+# checking build system type... checking build system type... checking build system type... aarch64-unknown-linux-gnu
+# checking host system type... aarch64-unknown-linux-gnu
+# checking for a BSD-compatible install... /usr/bin/install -c
+# checking whether build environment is sane... aarch64-unknown-linux-gnu
+# aarch64-unknown-linux-gnu
+# checking host system type... aarch64-unknown-linux-gnu
+# checking host system type... aarch64-unknown-linux-gnu
+# checking for a BSD-compatible install... checking for a BSD-compatible install... yes
+# /usr/bin/install -c
+# checking whether build environment is sane... checking for a thread-safe mkdir -p... /usr/bin/install -c
+# checking whether build environment is sane... /bin/mkdir -p
+# checking for gawk... yes
+# no
+# checking for mawk... mawk
+# checking whether make sets $(MAKE)... yes
+# checking for a thread-safe mkdir -p... yes
+# checking for a thread-safe mkdir -p... /bin/mkdir -p
+# checking for gawk... no
+# checking for mawk... mawk
+# checking whether make sets $(MAKE)... checking whether make supports nested variables... /bin/mkdir -p
+# checking for gawk... no
+# checking for mawk... mawk
+# checking whether make sets $(MAKE)... yes
+# yes
+# yes
+# checking whether make supports nested variables... checking whether make supports nested variables... yes
+# checking for gcc... gcc
+# yes
+# checking for gcc... gcc
+# checking for gcc... gcc
+# checking whether the C compiler works... checking whether the C compiler works... checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... 
+# 
+# checking whether we are cross compiling... checking whether we are cross compiling... no
+# checking for suffix of object files... no
+# checking for suffix of object files... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... o
+# checking whether we are using the GNU C compiler... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking whether gcc accepts -g... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... yes
+# checking for gcc option to accept ISO C89... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking whether gcc understands -c and -o together... none needed
+# checking whether gcc understands -c and -o together... none needed
+# checking whether gcc understands -c and -o together... yes
+# checking for style of include used by make... GNU
+# checking dependency style of gcc... none
+# checking for g++... g++
+# yes
+# checking for style of include used by make... GNU
+# checking dependency style of gcc... none
+# checking for g++... g++
+# yes
+# checking for style of include used by make... GNU
+# checking dependency style of gcc... none
+# checking for g++... g++
+# checking whether we are using the GNU C++ compiler... checking whether we are using the GNU C++ compiler... checking whether we are using the GNU C++ compiler... yes
+# checking whether g++ accepts -g... yes
+# checking whether g++ accepts -g... yes
+# checking whether g++ accepts -g... yes
+# checking dependency style of g++... none
+# checking for ar... ar
+# checking the archiver (ar) interface... yes
+# checking dependency style of g++... none
+# checking for ar... ar
+# checking the archiver (ar) interface... yes
+# checking dependency style of g++... none
+# checking for ar... ar
+# checking the archiver (ar) interface... ar
+# ar
+# checking how to print strings... checking how to print strings... printf
+# checking for a sed that does not truncate output... printf
+# checking for a sed that does not truncate output... /bin/sed
+# /bin/sed
+# checking for grep that handles long lines and -e... checking for grep that handles long lines and -e... /bin/grep
+# /bin/grep
+# checking for egrep... checking for egrep... /bin/grep -E
+# checking for fgrep... /bin/grep -F
+# checking for ld used by gcc... /bin/grep -E
+# /usr/bin/ld
+# checking for fgrep... checking if the linker (/usr/bin/ld) is GNU ld... ar
+# /bin/grep -F
+# checking for ld used by gcc... checking how to print strings... yes
+# checking for BSD- or MS-compatible name lister (nm)... printf
+# checking for a sed that does not truncate output... /usr/bin/nm -B
+# checking the name lister (/usr/bin/nm -B) interface... /usr/bin/ld
+# checking if the linker (/usr/bin/ld) is GNU ld... /bin/sed
+# checking for grep that handles long lines and -e... yes
+# checking for BSD- or MS-compatible name lister (nm)... /bin/grep
+# checking for egrep... /usr/bin/nm -B
+# checking the name lister (/usr/bin/nm -B) interface... /bin/grep -E
+# checking for fgrep... /bin/grep -F
+# checking for ld used by gcc... /usr/bin/ld
+# checking if the linker (/usr/bin/ld) is GNU ld... yes
+# checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+# checking the name lister (/usr/bin/nm -B) interface... BSD nm
+# checking whether ln -s works... yes
+# checking the maximum length of command line arguments... 1572864
+# checking whether the shell understands some XSI constructs... yes
+# checking whether the shell understands "+="... yes
+# checking how to convert aarch64-unknown-linux-gnu file names to aarch64-unknown-linux-gnu format... func_convert_file_noop
+# checking how to convert aarch64-unknown-linux-gnu file names to toolchain format... BSD nm
+# checking whether ln -s works... func_convert_file_noop
+# checking for /usr/bin/ld option to reload object files... yes
+# -r
+# checking the maximum length of command line arguments... checking for objdump... objdump
+# checking how to recognize dependent libraries... pass_all
+# checking for dlltool... no
+# checking how to associate runtime and link libraries... printf %s\n
+# 1572864
+# checking whether the shell understands some XSI constructs... checking for archiver @FILE support... yes
+# checking whether the shell understands "+="... yes
+# BSD nm
+# checking whether ln -s works... yes
+# checking the maximum length of command line arguments... checking how to convert aarch64-unknown-linux-gnu file names to aarch64-unknown-linux-gnu format... func_convert_file_noop
+# checking how to convert aarch64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+# checking for /usr/bin/ld option to reload object files... -r
+# checking for objdump... objdump
+# checking how to recognize dependent libraries... pass_all
+# checking for dlltool... no
+# checking how to associate runtime and link libraries... printf %s\n
+# checking for archiver @FILE support... 1572864
+# checking whether the shell understands some XSI constructs... yes
+# checking whether the shell understands "+="... yes
+# checking how to convert aarch64-unknown-linux-gnu file names to aarch64-unknown-linux-gnu format... func_convert_file_noop
+# checking how to convert aarch64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+# checking for /usr/bin/ld option to reload object files... -r
+# checking for objdump... objdump
+# checking how to recognize dependent libraries... pass_all
+# checking for dlltool... no
+# checking how to associate runtime and link libraries... printf %s\n
+# checking for archiver @FILE support... @
+# checking for strip... strip
+# checking for ranlib... ranlib
+# checking command to parse /usr/bin/nm -B output from gcc object... @
+# checking for strip... strip
+# checking for ranlib... ranlib
+# checking command to parse /usr/bin/nm -B output from gcc object... @
+# checking for strip... strip
+# checking for ranlib... ranlib
+# checking command to parse /usr/bin/nm -B output from gcc object... ok
+# checking for sysroot... no
+# checking for mt... no
+# checking if : is a manifest tool... ok
+# checking for sysroot... no
+# ok
+# no
+# checking for mt... no
+# checking for sysroot... checking if : is a manifest tool... no
+# checking for mt... no
+# checking if : is a manifest tool... checking how to run the C preprocessor... no
+# no
+# checking how to run the C preprocessor... checking how to run the C preprocessor... gcc -E
+# gcc -E
+# gcc -E
+# checking for ANSI C header files... checking for ANSI C header files... checking for ANSI C header files... yes
+# checking for sys/types.h... yes
+# yes
+# checking for sys/types.h... checking for sys/types.h... yes
+# checking for sys/stat.h... yes
+# yes
+# checking for sys/stat.h... checking for sys/stat.h... yes
+# checking for stdlib.h... yes
+# yes
+# checking for stdlib.h... checking for stdlib.h... yes
+# checking for string.h... yes
+# yes
+# checking for string.h... checking for string.h... yes
+# checking for memory.h... yes
+# yes
+# checking for memory.h... checking for memory.h... yes
+# checking for strings.h... yes
+# checking for strings.h... yes
+# checking for strings.h... yes
+# checking for inttypes.h... yes
+# yes
+# checking for inttypes.h... checking for inttypes.h... yes
+# checking for stdint.h... yes
+# yes
+# checking for stdint.h... checking for stdint.h... yes
+# checking for unistd.h... yes
+# yes
+# checking for unistd.h... checking for unistd.h... yes
+# checking for dlfcn.h... yes
+# checking for dlfcn.h... yes
+# checking for dlfcn.h... yes
+# checking for objdir... .libs
+# yes
+# checking for objdir... .libs
+# yes
+# checking for objdir... .libs
+# checking if gcc supports -fno-rtti -fno-exceptions... checking if gcc supports -fno-rtti -fno-exceptions... checking if gcc supports -fno-rtti -fno-exceptions... no
+# checking for gcc option to produce PIC... -fPIC -DPIC
+# checking if gcc PIC flag -fPIC -DPIC works... no
+# checking for gcc option to produce PIC... -fPIC -DPIC
+# checking if gcc PIC flag -fPIC -DPIC works... no
+# checking for gcc option to produce PIC... -fPIC -DPIC
+# checking if gcc PIC flag -fPIC -DPIC works... yes
+# checking if gcc static flag -static works... yes
+# checking if gcc static flag -static works... yes
+# checking if gcc static flag -static works... yes
+# checking if gcc supports -c -o file.o... yes
+# checking if gcc supports -c -o file.o... yes
+# checking if gcc supports -c -o file.o... yes
+# checking if gcc supports -c -o file.o... (cached) yes
+# checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+# checking dynamic linker characteristics... yes
+# checking if gcc supports -c -o file.o... (cached) yes
+# checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+# yes
+# checking if gcc supports -c -o file.o... (cached) checking dynamic linker characteristics... yes
+# checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+# checking dynamic linker characteristics... GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether stripping libraries is possible... yes
+# checking if libtool supports shared libraries... yes
+# checking whether to build shared libraries... no
+# checking whether to build static libraries... yes
+# checking how to run the C++ preprocessor... GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether stripping libraries is possible... yes
+# checking if libtool supports shared libraries... yes
+# checking whether to build shared libraries... no
+# checking whether to build static libraries... yes
+# checking how to run the C++ preprocessor... GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether stripping libraries is possible... yes
+# checking if libtool supports shared libraries... yes
+# checking whether to build shared libraries... no
+# checking whether to build static libraries... yes
+# checking how to run the C++ preprocessor... g++ -E
+# g++ -E
+# g++ -E
+# checking for ld used by g++... checking for ld used by g++... /usr/bin/ld
+# checking if the linker (/usr/bin/ld) is GNU ld... /usr/bin/ld
+# checking if the linker (/usr/bin/ld) is GNU ld... yes
+# yes
+# checking whether the g++ linker (/usr/bin/ld) supports shared libraries... checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+# yes
+# checking for ld used by g++... /usr/bin/ld
+# checking if the linker (/usr/bin/ld) is GNU ld... yes
+# checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+# checking for g++ option to produce PIC... -fPIC -DPIC
+# checking if g++ PIC flag -fPIC -DPIC works... checking for g++ option to produce PIC... -fPIC -DPIC
+# checking if g++ PIC flag -fPIC -DPIC works... checking for g++ option to produce PIC... -fPIC -DPIC
+# checking if g++ PIC flag -fPIC -DPIC works... yes
+# checking if g++ static flag -static works... yes
+# checking if g++ static flag -static works... yes
+# checking if g++ static flag -static works... yes
+# checking if g++ supports -c -o file.o... yes
+# checking if g++ supports -c -o file.o... yes
+# checking if g++ supports -c -o file.o... yes
+# checking if g++ supports -c -o file.o... (cached) yes
+# checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+# checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether byte ordering is bigendian... yes
+# checking if g++ supports -c -o file.o... (cached) yes
+# checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+# checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether byte ordering is bigendian... yes
+# checking if g++ supports -c -o file.o... (cached) yes
+# checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+# checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether byte ordering is bigendian... no
+# checking for doxygen... no
+# configure: WARNING: Doxygen not found - continuing without Doxygen support
+# checking for pdflatex... no
+# configure: WARNING: pdflatex not found - unable to compile manual to PDF
+# checking for makeindex... no
+# configure: WARNING: makeindex not found - unable to compile manual to PDF
+# checking for library containing pow... no
+# checking for doxygen... no
+# configure: WARNING: Doxygen not found - continuing without Doxygen support
+# checking for pdflatex... no
+# configure: WARNING: pdflatex not found - unable to compile manual to PDF
+# checking for makeindex... no
+# configure: WARNING: makeindex not found - unable to compile manual to PDF
+# checking for library containing pow... no
+# checking for doxygen... no
+# configure: WARNING: Doxygen not found - continuing without Doxygen support
+# checking for pdflatex... no
+# configure: WARNING: pdflatex not found - unable to compile manual to PDF
+# checking for makeindex... no
+# configure: WARNING: makeindex not found - unable to compile manual to PDF
+# checking for library containing pow... -lm
+# checking for pthread_create in -lpthread... -lm
+# checking for pthread_create in -lpthread... -lm
+# checking for pthread_create in -lpthread... yes
+# checking for library containing WSAStartup... yes
+# checking for library containing WSAStartup... yes
+# checking for library containing WSAStartup... no
+# checking for library containing GetProcessMemoryInfo... no
+# checking for library containing GetProcessMemoryInfo... no
+# checking for library containing GetProcessMemoryInfo... no
+# checking float.h usability... no
+# checking float.h usability... no
+# checking float.h usability... yes
+# checking float.h presence... yes
+# checking float.h presence... yes
+# checking for float.h... yes
+# checking for inttypes.h... (cached) yes
+# yes
+# checking for float.h... yes
+# yes
+# checking float.h presence... checking limits.h usability... checking for inttypes.h... (cached) yes
+# yes
+# checking for float.h... yes
+# checking limits.h usability... checking for inttypes.h... (cached) yes
+# checking limits.h usability... yes
+# checking limits.h presence... yes
+# checking limits.h presence... yes
+# checking for limits.h... yes
+# checking stddef.h usability... yes
+# checking limits.h presence... yes
+# checking for limits.h... yes
+# checking stddef.h usability... yes
+# checking for limits.h... yes
+# checking stddef.h usability... yes
+# checking stddef.h presence... yes
+# checking stddef.h presence... yes
+# checking for stddef.h... yes
+# checking for stdlib.h... (cached) yes
+# yes
+# checking for stddef.h... yes
+# yes
+# checking stddef.h presence... checking for string.h... (cached) yes
+# checking for stdlib.h... (cached) yes
+# checking assert.h usability... yes
+# checking for stddef.h... yes
+# checking for string.h... (cached) yes
+# checking for stdlib.h... (cached) checking assert.h usability... yes
+# checking for string.h... (cached) yes
+# checking assert.h usability... yes
+# checking assert.h presence... yes
+# checking assert.h presence... yes
+# checking for assert.h... yes
+# yes
+# checking for assert.h... yes
+# checking math.h usability... checking math.h usability... yes
+# checking assert.h presence... yes
+# checking for assert.h... yes
+# checking math.h usability... yes
+# checking math.h presence... yes
+# checking math.h presence... yes
+# checking for math.h... yes
+# yes
+# checking for math.h... yes
+# checking for unistd.h... (cached) yes
+# yes
+# checking math.h presence... checking sys/time.h usability... checking for unistd.h... (cached) yes
+# checking sys/time.h usability... yes
+# checking for math.h... yes
+# checking for unistd.h... (cached) yes
+# checking sys/time.h usability... yes
+# checking sys/time.h presence... yes
+# checking sys/time.h presence... yes
+# checking for sys/time.h... yes
+# yes
+# checking for sys/time.h... yes
+# checking sys/times.h usability... checking sys/times.h usability... yes
+# checking sys/time.h presence... yes
+# checking for sys/time.h... yes
+# yes
+# checking sys/times.h presence... checking sys/times.h usability... yes
+# checking sys/times.h presence... yes
+# checking for sys/times.h... yes
+# yes
+# checking for sys/times.h... yes
+# checking sys/resource.h usability... checking sys/resource.h usability... yes
+# checking sys/times.h presence... yes
+# checking for sys/times.h... yes
+# yes
+# checking sys/resource.h presence... yes
+# checking sys/resource.h presence... checking sys/resource.h usability... yes
+# checking for sys/resource.h... yes
+# yes
+# checking for sys/resource.h... yes
+# checking sys/wait.h usability... checking sys/wait.h usability... yes
+# checking sys/resource.h presence... yes
+# checking for sys/resource.h... yes
+# checking sys/wait.h usability... yes
+# checking sys/wait.h presence... yes
+# checking sys/wait.h presence... yes
+# checking for sys/wait.h... yes
+# yes
+# checking for sys/wait.h... yes
+# checking for working C++ thread header... checking for working C++ thread header... yes
+# checking sys/wait.h presence... yes
+# checking for sys/wait.h... yes
+# checking for working C++ thread header... yes
+# checking for stdbool.h that conforms to C99... yes
+# checking for stdbool.h that conforms to C99... yes
+# checking for _Bool... yes
+# checking for _Bool... yes
+# checking for stdbool.h that conforms to C99... yes
+# checking for _Bool... yes
+# checking for inline... yes
+# checking for inline... inline
+# checking for size_t... inline
+# checking for size_t... yes
+# checking for inline... inline
+# checking for size_t... yes
+# checking for uint16_t... yes
+# checking for uint16_t... yes
+# checking for uint32_t... yes
+# checking for uint32_t... yes
+# checking for uint16_t... yes
+# checking for ptrdiff_t... yes
+# checking for ptrdiff_t... yes
+# checking for uint32_t... yes
+# checking size of int... yes
+# checking for ptrdiff_t... yes
+# checking size of int... 4
+# checking size of long... 4
+# checking size of long... yes
+# checking size of int... 8
+# checking size of void *... 8
+# checking size of void *... 4
+# checking size of long... 8
+# checking size of long double... 8
+# checking size of long double... 8
+# checking size of void *... 16
+# checking whether we are building for a Win32 host... 16
+# checking whether we are building for a Win32 host... no
+# checking whether enough of C++11 is supported... 8
+# checking size of long double... no
+# checking whether enough of C++11 is supported... yes
+# checking for pow... yes
+# checking for pow... 16
+# checking whether we are building for a Win32 host... yes
+# yes
+# checking for sqrt... checking for sqrt... no
+# checking whether enough of C++11 is supported... yes
+# checking for pow... yes
+# yes
+# checking for strchr... checking for strchr... yes
+# yes
+# yes
+# checking for strstr... checking for sqrt... checking for strstr... yes
+# yes
+# yes
+# checking for strchr... checking for powl... checking for powl... yes
+# yes
+# yes
+# checking for gethostname... checking for strstr... checking for gethostname... yes
+# yes
+# checking for getrlimit... yes
+# checking for powl... checking for getrlimit... yes
+# checking for getrusage... yes
+# checking for gethostname... yes
+# checking for getrusage... yes
+# checking for sysconf... yes
+# yes
+# checking for getrlimit... checking for sysconf... yes
+# checking for +Infinity (IEEE 754 floating point)... yes
+# yes
+# checking for +Infinity (IEEE 754 floating point)... checking for getrusage... yes
+# yes
+# checking for sysconf... yes
+# checking that generated files are newer than configure... done
+# configure: creating ./config.status
+# yes
+# checking that generated files are newer than configure... done
+# configure: creating ./config.status
+# checking for +Infinity (IEEE 754 floating point)... yes
+# checking that generated files are newer than configure... done
+# configure: creating ./config.status
+# config.status: creating Makefile
+# config.status: creating dddmp/exp/test1.sh
+# config.status: creating dddmp/exp/test2.sh
+# config.status: creating dddmp/exp/test3.sh
+# config.status: creating Makefile
+# config.status: creating dddmp/exp/test4.sh
+# config.status: creating dddmp/exp/test1.sh
+# config.status: creating dddmp/exp/test5.sh
+# config.status: creating dddmp/exp/test2.sh
+# config.status: creating dddmp/exp/test6.sh
+# config.status: creating dddmp/exp/test3.sh
+# config.status: creating dddmp/exp/test7.sh
+# config.status: creating dddmp/exp/test4.sh
+# config.status: creating config.h
+# config.status: creating dddmp/exp/test5.sh
+# config.status: executing depfiles commands
+# config.status: executing libtool commands
+# config.status: creating Makefile
+# config.status: creating dddmp/exp/test6.sh
+# config.status: creating dddmp/exp/test7.sh
+# config.status: creating dddmp/exp/test1.sh
+# config.status: creating config.h
+# config.status: creating dddmp/exp/test2.sh
+# config.status: executing depfiles commands
+# config.status: executing libtool commands
+# config.status: creating dddmp/exp/test3.sh
+# config.status: creating dddmp/exp/test4.sh
+# --------------------------------------------------
+# Configuration summary for cudd 3.0.0
+# 
+# Build system   : aarch64-unknown-linux-gnu
+# Host system    : aarch64-unknown-linux-gnu
+# Prefix         : '/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cuddbld-dbug'
+# Compilers      : 'gcc  -DDD_CACHE_PROFILE -DDD_UNIQUE_PROFILE -DDD_VERBOSE -DDD_DEBUG -DDD_STATS -DDD_COUNT -DMTR_DEBUG  -fPIC -O0 -g'
+#                : 'g++  -DDD_CACHE_PROFILE -DDD_UNIQUE_PROFILE -DDD_VERBOSE -DDD_DEBUG -DDD_STATS -DDD_COUNT -DMTR_DEBUG  -Wall -Wextra -std=c++0x -g -O3'
+# Shared library : no
+#  dddmp enabled : no
+#  obj enabled   : no
+# --------------------------------------------------
+# config.status: creating dddmp/exp/test5.sh
+# config.status: creating dddmp/exp/test6.sh
+# config.status: creating dddmp/exp/test7.sh
+# --------------------------------------------------
+# Configuration summary for cudd 3.0.0
+# 
+# Build system   : aarch64-unknown-linux-gnu
+# Host system    : aarch64-unknown-linux-gnu
+# Prefix         : '/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cuddbld-base'
+# Compilers      : 'gcc    -fPIC -O3'
+#                : 'g++    -Wall -Wextra -std=c++0x -g -O3'
+# Shared library : no
+#  dddmp enabled : no
+#  obj enabled   : no
+# --------------------------------------------------
+# config.status: creating config.h
+# config.status: executing depfiles commands
+# config.status: executing libtool commands
+# --------------------------------------------------
+# Configuration summary for cudd 3.0.0
+# 
+# Build system   : aarch64-unknown-linux-gnu
+# Host system    : aarch64-unknown-linux-gnu
+# Prefix         : '/home/opam/.opam/4.06/.opam-switch/build/mlcuddidl.3.0.2/cuddbld-prof'
+# Compilers      : 'gcc    -fPIC -O3 -pg'
+#                : 'g++    -Wall -Wextra -std=c++0x -g -O3'
+# Shared library : no
+#  dddmp enabled : no
+#  obj enabled   : no
+# --------------------------------------------------
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mlcuddidl 3.0.2
++- 
++- The following changes have been performed
+| - install camlidl    1.05
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704033652.export"
+31 1530675401 1530675492

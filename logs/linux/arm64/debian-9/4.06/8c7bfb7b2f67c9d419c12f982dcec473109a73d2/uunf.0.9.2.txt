@@ -1,0 +1,55 @@
+$ opam depext -iy -j 2 uunf.0.9.2
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by uunf]
+  - install uunf       0.9.2
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[uunf.0.9.2] downloaded from http://erratique.ch/software/uunf/releases/uunf-0.9.2.tbz
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The installation of uunf failed at "./pkg/build true false".
+
+#=== ERROR while installing uunf.0.9.2 ========================================#
+# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/uunf.0.9.2
+# command              ~/.opam/4.06/.opam-switch/build/uunf.0.9.2/./pkg/build true false
+# exit-code            10
+# env-file             ~/.opam/log/uunf-11-d8393c.env
+# output-file          ~/.opam/log/uunf-11-d8393c.out
+### output ###
+# ocamlfind ocamldep -modules src/uunf.mli > src/uunf.mli.depends
+# ocamlfind ocamlc -c -annot -I src -I test -o src/uunf.cmi src/uunf.mli
+# ocamlfind ocamldep -modules src/uunf.ml > src/uunf.ml.depends
+# ocamlfind ocamlopt -c -annot -I src -I test -o src/uunf.cmx src/uunf.ml
+# + ocamlfind ocamlopt -c -annot -I src -I test -o src/uunf.cmx src/uunf.ml
+# File "src/uunf.ml", line 3611, characters 20-32:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "src/uunf.ml", line 3633, characters 13-25:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# ocamlopt.opt got signal and exited
+# Command exited with code 2.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install uunf 0.9.2
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704005935.export"
+31 1530665962 1530666024

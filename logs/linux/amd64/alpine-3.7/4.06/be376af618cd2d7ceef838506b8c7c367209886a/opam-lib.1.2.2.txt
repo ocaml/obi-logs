@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 opam-lib.1.2.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for opam-lib.1.2.2: The following dependencies couldn't be met:
+          - opam-lib -> dose < 3.4.0 -> ocamlgraph < 1.8.6 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - opam-lib -> dose < 3.4.0 -> extlib-compat < 1.7.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - opam-lib -> dose < 3.4.0 -> extlib < 1.7.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=opam-lib.1.2.2 returned 20
+20 1532139510 1532139513

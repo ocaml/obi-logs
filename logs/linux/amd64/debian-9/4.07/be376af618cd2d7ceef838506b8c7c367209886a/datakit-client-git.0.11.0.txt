@@ -1,0 +1,129 @@
+$ opam depext -iy -j 2 datakit-client-git.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for datakit-client-git.0.11.0: The following dependencies couldn't be met:
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> sexplib0
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> ppx_core < v0.11 -> base < v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> ppx_core < v0.11 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> jbuilder >= 1.0+beta18.1
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> base >= v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> ppx_sexp_conv != v0.11.0 -> base >= v0.11 -> sexplib0
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> sexplib < 113.01.00 -> parsexp >= v0.11 -> jbuilder >= 1.0+beta18.1
+          - datakit-client-git -> git-unix < 2.0 -> nocrypto >= 0.2.0 -> sexplib < 113.01.00 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> conduit < 0.16.0 -> pa_sexp_conv < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp < 0.99 -> conduit < 0.16.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> pa_sexp_conv < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git-http -> git >= 1.11.0
+          - datakit-client-git -> git-unix < 2.0 -> git < 1.11.0 -> cmdliner < 1.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git < 1.11.0 -> conduit = 0.5.1 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git < 1.11.0 -> lazy-trie -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git < 1.11.0 -> lazy-trie -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git < 1.11.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> git < 1.11.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> conduit < 1.0.0 -> pa_sexp_conv < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> conduit < 1.0.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> conduit < 1.0.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> conduit < 1.0.0 -> ppx_driver < v0.10.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> conduit < 1.0.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> conduit < 0.16.0 -> pa_sexp_conv < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cohttp-lwt-unix < 1.0.0 -> cohttp-lwt < 1.0 -> cohttp < 1.0 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> git-unix < 2.0 -> cmdliner < 1.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> irmin < 1.4.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> irmin < 1.4.0 -> lwt < 2.7.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> irmin < 1.4.0 -> hex >= 0.2.0 -> jbuilder >= 1.0+beta8
+          - datakit-client-git -> irmin < 1.4.0 -> hex >= 0.2.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> irmin < 1.4.0 -> ezjsonm < 0.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> irmin-watcher >= 0.3.0 -> logs -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit-client-git -> jbuilder < 1.0+beta12
+        Your request can't be satisfied:
+          - No available version of git satisfies the constraints
+          - No available version of jbuilder satisfies the constraints
+          - logs >= 0.6.2 is in conflict with cmdliner < 0.9.8
+          - sexplib0 is in conflict with sexplib < v0.11
+
+
+Command failed: opam list --readonly --external  --resolve=datakit-client-git.0.11.0 returned 20
+20 1532121377 1532121382

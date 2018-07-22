@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 zarith-freestanding.1.4
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for zarith-freestanding.1.4: The following dependencies couldn't be met:
+          - zarith-freestanding -> ocaml-freestanding
+              unmet availability conditions, e.g. os = "linux" & (arch = "x86_64" | arch = "arm64") | os = "freebsd" & arch = "x86_64" | os = "openbsd" & arch = "x86_64"
+
+
+Command failed: opam list --readonly --external  --resolve=zarith-freestanding.1.4 returned 20
+20 1531366429 1531366433

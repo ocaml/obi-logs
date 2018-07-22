@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 async-mvar.0.1.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for async-mvar.0.1.0: The following dependencies couldn't be met:
+          - async-mvar -> core_kernel < 113.24.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=async-mvar.0.1.0 returned 20
+20 1531353728 1531353732

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 unix-fcntl.0.3.3
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for unix-fcntl.0.3.3: The following dependencies couldn't be met:
+          - unix-fcntl -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=unix-fcntl.0.3.3 returned 20
+20 1530664993 1530665003

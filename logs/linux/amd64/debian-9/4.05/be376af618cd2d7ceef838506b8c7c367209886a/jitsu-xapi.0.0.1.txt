@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 jitsu-xapi.0.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for jitsu-xapi.0.0.1: The following dependencies couldn't be met:
+          - jitsu-xapi -> jitsu -> libvirt -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=jitsu-xapi.0.0.1 returned 20
+20 1532129323 1532129326

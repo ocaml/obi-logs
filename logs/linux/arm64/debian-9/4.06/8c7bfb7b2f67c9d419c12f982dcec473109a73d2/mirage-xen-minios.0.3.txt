@@ -1,0 +1,69 @@
+$ opam depext -iy -j 2 mirage-xen-minios.0.3
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install mirage-xen-minios 0.3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[mirage-xen-minios.0.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of mirage-xen-minios failed at "/usr/bin/make build".
+
+#=== ERROR while compiling mirage-xen-minios.0.3 ==============================#
+# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             ~/.opam/log/mirage-xen-minios-11-05296d.env
+# output-file          ~/.opam/log/mirage-xen-minios-11-05296d.out
+### output ###
+# ./install.sh
+# + . ./vars.sh
+# + [  =  ]
+# + command -v opam
+# + opam config var prefix
+# + PREFIX=/home/opam/.opam/4.06
+# + MINIOS=minios-v0.3
+# + MINIOS_ARCHIVE=minios-v0.3.tar.gz
+# + MINIOS_URL=https://github.com/talex5/xen/archive/minios-v0.3.tar.gz
+# + LIBM=openlibm-0.4
+# + LIBM_ARCHIVE=v0.4.tar.gz
+# + LIBM_URL=https://github.com/JuliaLang/openlibm/archive/v0.4.tar.gz
+# + rm -rf xen-minios-v0.3
+# + tar -zxf minios-v0.3.tar.gz
+# + cd xen-minios-v0.3/extras/mini-os
+# + make debug=n
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os'
+# ln -sf . include/mini-os
+# ln -sf ../../../xen/include/public include/xen
+# ln -sf . arch/arm/include/mini-os
+# cp /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/../../xen/include/xen/libfdt/fdt.h include/fdt.h
+# sed 's!xen/libfdt/!!' /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/../../xen/include/xen/libfdt/libfdt.h > include/libfdt.h
+# gcc -DCONFIG_START_NETWORK -DCONFIG_SPARSE_BSS -DCONFIG_BLKFRONT -DCONFIG_NETFRONT -DCONFIG_KBDFRONT -DCONFIG_FBFRONT -DCONFIG_CONSFRONT -DCONFIG_XENBUS -fno-builtin -Wall -Werror -Wredundant-decls -Wno-format -Wno-redundant-decls -Wformat -fno-stack-protector -fgnu89-inline -Wstrict-prototypes -Wnested-externs -Wpointer-arith -Winline -O3 -fno-tree-loop-distribute-patterns -D__INSIDE_MINIOS__  -isystem /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/../../extras/mini-os/include -D__MINIOS__ -D__XEN_INTERFACE_VERSION__=0x00030205  -isystem /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/../../extras/mini-os/arch/arm/include -c blkfront.c -o /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/blkfront.o
+# In file included from /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/arch/arm/include/os.h:6:0,
+#                  from blkfront.c:7:
+# /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/include/hypervisor.h:33:5: error: unknown type name 'start_info_t'
+#      start_info_t start_info;
+#      ^~~~~~~~~~~~
+# In file included from blkfront.c:7:0:
+# /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/arch/arm/include/os.h:155:2: error: #error "Unsupported architecture"
+#  #error "Unsupported architecture"
+#   ^~~~~
+# minios.mk:70: recipe for target '/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/blkfront.o' failed
+# make[1]: *** [/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os/blkfront.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.3/xen-minios-v0.3/extras/mini-os'
+# Makefile:11: recipe for target 'build' failed
+# make: *** [build] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mirage-xen-minios 0.3
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1530660676 1530660703

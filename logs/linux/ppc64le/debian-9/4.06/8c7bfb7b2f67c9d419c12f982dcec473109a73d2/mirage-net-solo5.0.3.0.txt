@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-net-solo5.0.3.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-net-solo5.0.3.0: The following dependencies couldn't be met:
+          - mirage-net-solo5 -> mirage-solo5 >= 0.3.0 -> ocaml-freestanding >= 0.3.0
+              unmet availability conditions: os = "linux" & (arch = "x86_64" | arch = "arm64") | os = "freebsd" & arch = "x86_64" | os = "openbsd" & arch = "x86_64"
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-net-solo5.0.3.0 returned 20
+20 1530661264 1530661267

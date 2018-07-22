@@ -1,0 +1,727 @@
+$ opam depext -iy -j 2 http2https.1.0.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install magic-mime              1.1.0      [required by cohttp]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install re                      1.7.3      [required by cohttp]
+  - install base-bytes              base       [required by cohttp]
+  - install ocaml-compiler-libs     v0.9.0     [required by ppx_core]
+  - install num                     1.1        [required by sexplib]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by cmdliner, conduit]
+  - install ocamlbuild              0.12.0     [required by http2https]
+  - install ppx_traverse_builtins   v0.9.0     [required by ppx_core, ppx_metaquot]
+  - install stringext               1.5.0      [required by cohttp]
+  - install cppo                    1.6.4      [required by ppx_deriving]
+  - install base64                  2.2.0      [required by cohttp]
+  - install sexplib                 v0.9.3     [required by cohttp]
+  - install ocaml-migrate-parsetree 1.0.11     [required by fieldslib, ppx_fields_conv]
+  - install uchar                   0.0.2      [required by fmt]
+  - install topkg                   0.9.1      [required by cmdliner]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install base                    v0.9.4     [required by fieldslib]
+  - install ppx_tools_versioned     5.1        [required by lwt]
+  - install ppx_ast                 v0.9.2     [required by ppx_core]
+  - install cmdliner                1.0.2      [required by cohttp]
+  - install ppx_deriving            4.2.1      [required by cohttp]
+  - install stdio                   v0.9.1     [required by ppx_core]
+  - install lwt                     3.3.0      [required by http2https]                          For the PPX, please install package lwt_ppx
+                                                                                                 For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install fmt                     0.8.5      [required by cohttp]
+  - install ppx_core                v0.9.3     [required by ppx_fields_conv]
+  - install logs                    0.6.2      [required by cohttp]
+  - install ppx_optcomp             v0.9.0     [required by conduit]
+  - install ppx_driver              v0.9.2     [required by fieldslib, conduit, ppx_fields_conv]
+  - install ppx_metaquot            v0.9.0     [required by ppx_fields_conv]
+  - install fieldslib               v0.9.0     [required by cohttp]
+  - install ppx_type_conv           v0.9.1     [required by ppx_fields_conv]
+  - install ppx_sexp_conv           v0.9.0     [required by cohttp]
+  - install ppx_fields_conv         v0.9.0     [required by cohttp]
+  - install uri                     1.9.7      [required by cohttp]
+  - install ipaddr                  2.8.0      [required by conduit]
+  - install conduit                 0.15.4     [required by cohttp]
+  - install cohttp                  0.22.0     [required by http2https]
+  - install http2https              1.0.0
+===== 40 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.9.4] found in cache
+[base64.2.2.0] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.0.22.0] found in cache
+[conduit.0.15.4] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[fieldslib.v0.9.0] found in cache
+[fmt.0.8.5] found in cache
+[http2https.1.0.0] found in cache
+[ipaddr.2.8.0] found in cache
+[logs.0.6.2] found in cache
+[lwt.3.3.0] found in cache
+[magic-mime.1.1.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_ast.v0.9.2] found in cache
+[ppx_core.v0.9.3] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.9.2] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.1] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.9.3] found in cache
+[stdio.v0.9.1] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed cppo.1.6.4
+-> installed magic-mime.1.1.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed sexplib.v0.9.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.9.4
+-> installed ppx_ast.v0.9.2
+-> installed ppx_deriving.4.2.1
+-> installed stdio.v0.9.1
+-> installed ppx_tools_versioned.5.1
+-> installed ppx_core.v0.9.3
+-> installed lwt.3.3.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed ppx_optcomp.v0.9.0
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed ppx_driver.v0.9.2
+-> installed fieldslib.v0.9.0
+-> installed fmt.0.8.5
+-> installed ppx_metaquot.v0.9.0
+-> installed logs.0.6.2
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ipaddr.2.8.0
+-> installed uri.1.9.7
+-> installed conduit.0.15.4
+[ERROR] The compilation of cohttp failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06".
+
+#=== ERROR while compiling cohttp.0.22.0 ======================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/cohttp.0.22.0
+# command              /usr/bin/make PREFIX=/home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/cohttp-12-37ee36.env
+# output-file          ~/.opam/log/cohttp-12-37ee36.out
+### output ###
+# ocamlopt.opt -o setup.bin setup.ml 2>/dev/null || ocamlopt -o setup.bin setup.ml 2>/dev/null || ocamlc -o setup.bin setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.cmo
+# ./setup.bin -configure --enable-lwt  --enable-lwt-unix   --prefix /home/opam/.opam/4.06
+# 
+# Configuration:
+# ocamlfind: ........................................... /home/opam/.opam/4.06/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.06/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.06/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.06/bin/ocamlbuild
+# Package name: ........................................ cohttp
+# Package version: ..................................... 0.21.1
+# os_type: ............................................. Unix
+# system: .............................................. elf
+# architecture: ........................................ power
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.06.1
+# standard_library_default: ............................ /home/opam/.opam/4.06/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.06/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.06/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... ppc64le
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /home/opam/.opam/4.06
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ......................................
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: .........................
+# build everything that is possible: ................... false
+# build the Lwt library: ............................... true
+# build the Lwt-unix library: .......................... true
+# build the Core/Async library: ........................ false
+# build the Javascript XHR client library: ............. false
+# run the internet-using tests: ........................ false
+# build the async s3 example: .......................... false
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_re_emacs: ........................................ /home/opam/.opam/4.06/lib/re/emacs
+# pkg_stringext: ....................................... /home/opam/.opam/4.06/lib/stringext
+# pkg_uri: ............................................. /home/opam/.opam/4.06/lib/uri
+# pkg_fieldslib: ....................................... /home/opam/.opam/4.06/lib/fieldslib
+# pkg_sexplib: ......................................... /home/opam/.opam/4.06/lib/sexplib
+# pkg_ppx_fields_conv: ................................. /home/opam/.opam/4.06/lib/ppx_fields_conv
+# pkg_ppx_sexp_conv: ................................... /home/opam/.opam/4.06/lib/ppx_sexp_conv
+# pkg_bytes: ........................................... /home/opam/.opam/4.06/lib/bytes
+# pkg_base64: .......................................... /home/opam/.opam/4.06/lib/base64
+# pkg_compiler_libs_toplevel: .......................... /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# pkg_lwt: ............................................. /home/opam/.opam/4.06/lib/lwt
+# pkg_unix: ............................................ /home/opam/.opam/4.06/lib/ocaml
+# pkg_lwt_unix: ........................................ /home/opam/.opam/4.06/lib/lwt
+# pkg_conduit_lwt_unix: ................................ /home/opam/.opam/4.06/lib/conduit
+# pkg_magic_mime: ...................................... /home/opam/.opam/4.06/lib/magic-mime
+# pkg_logs: ............................................ /home/opam/.opam/4.06/lib/logs
+# pkg_logs_fmt: ........................................ /home/opam/.opam/4.06/lib/logs
+# pkg_logs_lwt: ........................................ /home/opam/.opam/4.06/lib/logs
+# ocamldoc: ............................................ /home/opam/.opam/4.06/bin/ocamldoc
+# pkg_cmdliner: ........................................ /home/opam/.opam/4.06/lib/cmdliner
+# 
+# ./setup.bin -build -classic-display
+# W: Cannot find source file matching module 'cohttp' in library cohttp.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 52, characters 26-35:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 102, characters 17-32:
+# Warning: the tag "pkg_js_of_ocaml" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 103, characters 17-36:
+# Warning: the tag "pkg_js_of_ocaml.ppx" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 115, characters 20-29:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 118, characters 20-37:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 145, characters 35-44:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 159, characters 32-41:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 162, characters 32-49:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 168, characters 32-41:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 191, characters 38-47:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 207, characters 38-47:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 217, characters 38-50:
+# Warning: the tag "pkg_alcotest" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 221, characters 38-47:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 231, characters 39-51:
+# Warning: the tag "pkg_alcotest" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 235, characters 39-48:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 245, characters 39-51:
+# Warning: the tag "pkg_alcotest" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 256, characters 39-48:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 267, characters 23-35:
+# Warning: the tag "pkg_alcotest" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 402, characters 41-50:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 405, characters 41-58:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 411, characters 41-50:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 424, characters 48-57:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 427, characters 48-65:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 433, characters 48-57:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 446, characters 51-60:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 449, characters 51-68:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 455, characters 51-60:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 468, characters 48-57:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 471, characters 48-65:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 477, characters 48-57:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 490, characters 49-58:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 493, characters 49-66:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 499, characters 49-58:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 512, characters 23-32:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 513, characters 23-40:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 521, characters 41-50:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 524, characters 41-58:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 542, characters 39-48:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 545, characters 39-56:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 561, characters 18-27:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 562, characters 18-35:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 659, characters 44-53:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 662, characters 44-61:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 680, characters 38-47:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 683, characters 38-55:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 684, characters 38-49:
+# Warning: the tag "pkg_cstruct" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 690, characters 38-50:
+# Warning: the tag "pkg_nocrypto" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 701, characters 29-40:
+# Warning: the tag "pkg_cstruct" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 702, characters 29-41:
+# Warning: the tag "pkg_nocrypto" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 708, characters 26-41:
+# Warning: the tag "pkg_js_of_ocaml" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 709, characters 26-45:
+# Warning: the tag "pkg_js_of_ocaml.ppx" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 720, characters 23-38:
+# Warning: the tag "pkg_js_of_ocaml" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 721, characters 23-42:
+# Warning: the tag "pkg_js_of_ocaml.ppx" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 725, characters 45-54:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 728, characters 45-62:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 744, characters 29-38:
+# Warning: the tag "pkg_async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 747, characters 29-46:
+# Warning: the tag "pkg_conduit.async" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 839, characters 38-47:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 862, characters 23-32:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/s.ml > lib/s.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/code.mli > lib/code.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/header.mli > lib/header.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/accept.mli > lib/accept.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/accept_types.ml > lib/accept_types.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept_types.cmo lib/accept_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/auth.mli > lib/auth.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/link.mli > lib/link.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/transfer.mli > lib/transfer.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept.cmi lib/accept.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/auth.cmi lib/auth.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/link.cmi lib/link.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/transfer.cmi lib/transfer.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/code.cmi lib/code.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/header.cmi lib/header.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/code.ml > lib/code.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/header.ml > lib/header.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/conf.mli > lib/conf.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/conf.cmi lib/conf.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/cookie.mli > lib/cookie.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/cookie.cmi lib/cookie.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/cookie.ml > lib/cookie.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/request.mli > lib/request.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/s.cmo lib/s.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/request.cmi lib/request.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/request.ml > lib/request.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/header_io.mli > lib/header_io.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/transfer_io.mli > lib/transfer_io.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/header_io.cmi lib/header_io.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/transfer_io.cmi lib/transfer_io.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/response.mli > lib/response.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/response.cmi lib/response.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/response.ml > lib/response.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/transfer.ml > lib/transfer.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/accept.ml > lib/accept.ml.depends
+# /home/opam/.opam/4.06/bin/ocamllex.opt -q lib/accept_lexer.mll
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/accept_lexer.ml > lib/accept_lexer.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlyacc lib/accept_parser.mly
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/accept_parser.mli > lib/accept_parser.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept_parser.cmi lib/accept_parser.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept_lexer.cmo lib/accept_lexer.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/accept_parser.ml > lib/accept_parser.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/link.ml > lib/link.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/auth.ml > lib/auth.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/header_io.ml > lib/header_io.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/transfer_io.ml > lib/transfer_io.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/connection.mli > lib/connection.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/connection.cmi lib/connection.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/connection.ml > lib/connection.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/body.mli > lib/body.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/body.cmi lib/body.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/body.ml > lib/body.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/string_io.mli > lib/string_io.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/string_io.cmi lib/string_io.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/string_io.ml > lib/string_io.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lib/conf.ml > lib/conf.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/code.cmo lib/code.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/header.cmo lib/header.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/header.cmo lib/header.ml
+# File "lib/header.ml", line 26, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/header.ml", line 168, characters 11-22:
+# Warning 3: deprecated: module Re_emacs
+# Use Re.Emacs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/cookie.cmo lib/cookie.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/cookie.cmo lib/cookie.ml
+# File "lib/cookie.ml", line 89, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/cookie.ml", line 104, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/cookie.ml", line 118, characters 18-22:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/request.cmo lib/request.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/response.cmo lib/response.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/transfer.cmo lib/transfer.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept.cmo lib/accept.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept_parser.cmo lib/accept_parser.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/accept_parser.cmo lib/accept_parser.ml
+# File "lib/accept_parser.mly", line 46, characters 17-34:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "lib/accept_parser.mly", line 59, characters 31-47:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 62, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 62, characters 46-62:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 71, characters 35-51:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 80, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 97, characters 48-64:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/link.cmo lib/link.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/auth.cmo lib/auth.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/header_io.cmo lib/header_io.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/header_io.cmo lib/header_io.ml
+# File "lib/header_io.ml", line 39, characters 27-43:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/transfer_io.cmo lib/transfer_io.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/connection.cmo lib/connection.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/body.cmo lib/body.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/string_io.cmo lib/string_io.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/conf.cmo lib/conf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -pack -g -annot -bin-annot lib/code.cmo lib/accept_types.cmo lib/accept_parser.cmo lib/accept_lexer.cmo lib/accept.cmo lib/auth.cmo lib/conf.cmo lib/link.cmo lib/transfer.cmo lib/header.cmo lib/s.cmo lib/cookie.cmo lib/transfer_io.cmo lib/header_io.cmo lib/request.cmo lib/response.cmo lib/connection.cmo lib/body.cmo lib/string_io.cmo -o lib/cohttp.cmo
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -a -I lib lib/cohttp.cmo -o lib/cohttp.cma
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/accept_types.cmx lib/accept_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/accept_parser.cmx lib/accept_parser.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/accept_parser.cmx lib/accept_parser.ml
+# File "lib/accept_parser.mly", line 46, characters 17-34:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "lib/accept_parser.mly", line 59, characters 31-47:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 62, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 62, characters 46-62:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 71, characters 35-51:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 80, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/accept_parser.mly", line 97, characters 48-64:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/accept_lexer.cmx lib/accept_lexer.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/accept.cmx lib/accept.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/auth.cmx lib/auth.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/conf.cmx lib/conf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/link.cmx lib/link.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/transfer.cmx lib/transfer.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/code.cmx lib/code.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/header.cmx lib/header.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/header.cmx lib/header.ml
+# File "lib/header.ml", line 26, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/header.ml", line 168, characters 11-22:
+# Warning 3: deprecated: module Re_emacs
+# Use Re.Emacs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/s.cmx lib/s.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/transfer_io.cmx lib/transfer_io.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/header_io.cmx lib/header_io.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/header_io.cmx lib/header_io.ml
+# File "lib/header_io.ml", line 39, characters 27-43:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/cookie.cmx lib/cookie.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/cookie.cmx lib/cookie.ml
+# File "lib/cookie.ml", line 89, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/cookie.ml", line 104, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/cookie.ml", line 118, characters 18-22:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/request.cmx lib/request.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/response.cmx lib/response.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/connection.cmx lib/connection.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/body.cmx lib/body.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package base64 -package bytes -package fieldslib -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -for-pack Cohttp -I lib -o lib/string_io.cmx lib/string_io.ml
+# touch lib/cohttp.mli  ; if  /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -pack -g -annot -bin-annot -I lib lib/accept_types.cmx lib/accept_parser.cmx lib/accept_lexer.cmx lib/accept.cmx lib/auth.cmx lib/code.cmx lib/conf.cmx lib/link.cmx lib/transfer.cmx lib/header.cmx lib/s.cmx lib/cookie.cmx lib/transfer_io.cmx lib/header_io.cmx lib/request.cmx lib/response.cmx lib/connection.cmx lib/body.cmx lib/string_io.cmx -o lib/cohttp.cmx  ; then  rm -f lib/cohttp.mli  ; else  rm -f lib/cohttp.mli  ; exit 1; fi
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -I lib lib/cohttp.cmx -o lib/cohttp.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -I lib lib/cohttp.cmxa lib/cohttp.cmx -o lib/cohttp.cmxs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package compiler-libs.toplevel -modules top/cohttp_top.ml > top/cohttp_top.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package compiler-libs.toplevel -w @5@8@10@11@12@14@23@24@26@29 -I top -o top/cohttp_top.cmo top/cohttp_top.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package compiler-libs.toplevel -w @5@8@10@11@12@14@23@24@26@29 -I top -o top/cohttp_top.cmo top/cohttp_top.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml, /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -a -I top top/cohttp_top.cmo -o top/cohttp_top.cma
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package compiler-libs.toplevel -w @5@8@10@11@12@14@23@24@26@29 -I top -o top/cohttp_top.cmx top/cohttp_top.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -package compiler-libs.toplevel -w @5@8@10@11@12@14@23@24@26@29 -I top -o top/cohttp_top.cmx top/cohttp_top.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml, /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Toploop, and its interface was not compiled with -opaque
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -I top top/cohttp_top.cmx -o top/cohttp_top.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -I top top/cohttp_top.cmxa top/cohttp_top.cmx -o top/cohttp_top.cmxs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/cohttp_lwt_body.mli > lwt-core/cohttp_lwt_body.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt_body.cmi lwt-core/cohttp_lwt_body.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/cohttp_lwt_body.ml > lwt-core/cohttp_lwt_body.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/cohttp_lwt.mli > lwt-core/cohttp_lwt.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/cohttp_lwt_s.ml > lwt-core/cohttp_lwt_s.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt_s.cmo lwt-core/cohttp_lwt_s.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt.cmi lwt-core/cohttp_lwt.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/cohttp_lwt.ml > lwt-core/cohttp_lwt.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/string_io_lwt.mli > lwt-core/string_io_lwt.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/string_io_lwt.cmi lwt-core/string_io_lwt.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -modules lwt-core/string_io_lwt.ml > lwt-core/string_io_lwt.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt_body.cmo lwt-core/cohttp_lwt_body.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt.cmo lwt-core/cohttp_lwt.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt.cmo lwt-core/cohttp_lwt.ml
+# File "lwt-core/cohttp_lwt.ml", line 69, characters 10-33:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# File "lwt-core/cohttp_lwt.ml", line 161, characters 4-27:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# File "lwt-core/cohttp_lwt.ml", line 258, characters 14-37:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/string_io_lwt.cmo lwt-core/string_io_lwt.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -a -I lwt-core lwt-core/cohttp_lwt_body.cmo lwt-core/cohttp_lwt_s.cmo lwt-core/cohttp_lwt.cmo lwt-core/string_io_lwt.cmo -o lwt-core/cohttp_lwt.cma
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt_body.cmx lwt-core/cohttp_lwt_body.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt_s.cmx lwt-core/cohttp_lwt_s.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt.cmx lwt-core/cohttp_lwt.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/cohttp_lwt.cmx lwt-core/cohttp_lwt.ml
+# File "lwt-core/cohttp_lwt.ml", line 69, characters 10-33:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# File "lwt-core/cohttp_lwt.ml", line 161, characters 4-27:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# File "lwt-core/cohttp_lwt.ml", line 258, characters 14-37:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -package base64 -package bytes -package fieldslib -package lwt -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt-core -I lib -o lwt-core/string_io_lwt.cmx lwt-core/string_io_lwt.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -I lwt-core lwt-core/cohttp_lwt_body.cmx lwt-core/cohttp_lwt_s.cmx lwt-core/cohttp_lwt.cmx lwt-core/string_io_lwt.cmx -o lwt-core/cohttp_lwt.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -I lwt-core lwt-core/cohttp_lwt.cmxa lwt-core/cohttp_lwt_body.cmx lwt-core/cohttp_lwt_s.cmx lwt-core/cohttp_lwt.cmx lwt-core/string_io_lwt.cmx -o lwt-core/cohttp_lwt.cmxs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix_io.mli > lwt/cohttp_lwt_unix_io.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_io.cmi lwt/cohttp_lwt_unix_io.mli
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_io.cmi lwt/cohttp_lwt_unix_io.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix_io.ml > lwt/cohttp_lwt_unix_io.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix_debug.mli > lwt/cohttp_lwt_unix_debug.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_debug.cmi lwt/cohttp_lwt_unix_debug.mli
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_debug.cmi lwt/cohttp_lwt_unix_debug.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix.mli > lwt/cohttp_lwt_unix.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix_net.mli > lwt/cohttp_lwt_unix_net.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_net.cmi lwt/cohttp_lwt_unix_net.mli
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_net.cmi lwt/cohttp_lwt_unix_net.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix.cmi lwt/cohttp_lwt_unix.mli
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix.cmi lwt/cohttp_lwt_unix.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix.ml > lwt/cohttp_lwt_unix.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix_net.ml > lwt/cohttp_lwt_unix_net.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -modules lwt/cohttp_lwt_unix_debug.ml > lwt/cohttp_lwt_unix_debug.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_io.cmo lwt/cohttp_lwt_unix_io.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_io.cmo lwt/cohttp_lwt_unix_io.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix.cmo lwt/cohttp_lwt_unix.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix.cmo lwt/cohttp_lwt_unix.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "lwt/cohttp_lwt_unix.ml", line 73, characters 6-29:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_net.cmo lwt/cohttp_lwt_unix_net.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_net.cmo lwt/cohttp_lwt_unix_net.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_debug.cmo lwt/cohttp_lwt_unix_debug.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_debug.cmo lwt/cohttp_lwt_unix_debug.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -a -I lwt lwt/cohttp_lwt_unix_debug.cmo lwt/cohttp_lwt_unix_io.cmo lwt/cohttp_lwt_unix_net.cmo lwt/cohttp_lwt_unix.cmo -o lwt/cohttp_lwt_unix.cma
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_debug.cmx lwt/cohttp_lwt_unix_debug.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_debug.cmx lwt/cohttp_lwt_unix_debug.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_io.cmx lwt/cohttp_lwt_unix_io.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_io.cmx lwt/cohttp_lwt_unix_io.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_net.cmx lwt/cohttp_lwt_unix_net.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix_net.cmx lwt/cohttp_lwt_unix_net.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix.cmx lwt/cohttp_lwt_unix.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -package base64 -package bytes -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -w @5@8@10@11@12@14@23@24@26@29 -I lwt -I lwt-core -o lwt/cohttp_lwt_unix.cmx lwt/cohttp_lwt_unix.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "lwt/cohttp_lwt_unix.ml", line 73, characters 6-29:
+# Warning 3: deprecated: Lwt_stream.on_terminate
+#  Bind on Lwt_stream.closed.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -I lwt lwt/cohttp_lwt_unix_debug.cmx lwt/cohttp_lwt_unix_io.cmx lwt/cohttp_lwt_unix_net.cmx lwt/cohttp_lwt_unix.cmx -o lwt/cohttp_lwt_unix.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -I lwt lwt/cohttp_lwt_unix.cmxa lwt/cohttp_lwt_unix_debug.cmx lwt/cohttp_lwt_unix_io.cmx lwt/cohttp_lwt_unix_net.cmx lwt/cohttp_lwt_unix.cmx -o lwt/cohttp_lwt_unix.cmxs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -modules bin/cohttp_server_lwt.ml > bin/cohttp_server_lwt.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -modules bin/cohttp_server.ml > bin/cohttp_server.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -I lwt -I async -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -thread -w @5@8@10@11@12@14@23@24@26@29 -I bin -I async -I lib -I lwt -o bin/cohttp_server.cmo bin/cohttp_server.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -I lwt -I async -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -thread -w @5@8@10@11@12@14@23@24@26@29 -I bin -I async -I lib -I lwt -o bin/cohttp_server.cmo bin/cohttp_server.ml
+# File "bin/cohttp_server.ml", line 36, characters 23-39:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "bin/cohttp_server.ml", line 36, characters 44-60:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -I lwt -I async -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -thread -w @5@8@10@11@12@14@23@24@26@29 -I bin -I async -I lib -I lwt -o bin/cohttp_server_lwt.cmo bin/cohttp_server_lwt.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -I lwt -I async -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -thread -w @5@8@10@11@12@14@23@24@26@29 -I bin -I async -I lib -I lwt -o bin/cohttp_server.cmx bin/cohttp_server.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -I lwt -I async -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -thread -w @5@8@10@11@12@14@23@24@26@29 -I bin -I async -I lib -I lwt -o bin/cohttp_server.cmx bin/cohttp_server.ml
+# File "bin/cohttp_server.ml", line 36, characters 23-39:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "bin/cohttp_server.ml", line 36, characters 44-60:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -strict-sequence -I lib -I lwt-core -I lwt -I async -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package fmt.tty -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package threads -package unix -package uri -package uri.services -thread -w @5@8@10@11@12@14@23@24@26@29 -I bin -I async -I lib -I lwt -o bin/cohttp_server_lwt.cmx bin/cohttp_server_lwt.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -g -linkpkg -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -I bin -I lib -I lwt-core -I lwt bin/cohttp_server.cmx lib/cohttp.cmxa lwt-core/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_server_lwt.cmx -o bin/cohttp_server_lwt.native
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -g -linkpkg -package base64 -package bytes -package cmdliner -package conduit.lwt-unix -package fieldslib -package logs -package logs.fmt -package logs.lwt -package lwt -package lwt.unix -package magic-mime -package ppx_fields_conv -package ppx_sexp_conv -package re.emacs -package sexplib -package stringext -package unix -package uri -I bin -I lib -I lwt-core -I lwt bin/cohttp_server.cmx lib/cohttp.cmxa lwt-core/cohttp_lwt.cmxa lwt/cohttp_lwt_unix.cmxa bin/cohttp_server_lwt.cmx -o bin/cohttp_server_lwt.native
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek':
+# /home/opam/.opam/4.06/.opam-switch/build/lwt.3.3.0/_build/default/src/unix/unix_lseek_job.c:113:(.text+0xb8): call to `result_lseek.part.0' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
+# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek_64':
+# /home/opam/.opam/4.06/.opam-switch/build/lwt.3.3.0/_build/default/src/unix/unix_lseek_job.c:134:(.text+0x134): call to `result_lseek_64.part.1' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
+# /usr/bin/ld: final link failed: Bad value
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/cohttp.cma lib/cohttp.cmxa lib/cohttp.a lib/cohttp.cmxs top/cohttp_top.cma top/cohttp_top.cmxa top/cohttp_top.a top/cohttp_top.cmxs lwt-core/cohttp_lwt.cma lwt-core/cohttp_lwt.cmxa lwt-core/cohttp_lwt.a lwt-core/cohttp_lwt.cmxs lwt/cohttp_lwt_unix.cma lwt/cohttp_lwt_unix.cmxa lwt/cohttp_lwt_unix.a lwt/cohttp_lwt_unix.cmxs bin/cohttp_server_lwt.native bin/cohttp_proxy_lwt.native bin/cohttp_curl_lwt.native examples/doc/client_lwt.native examples/doc/server_lwt.native -tag debug -classic-display' terminated with error code 10")
+# Makefile:20: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build cohttp 0.22.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                    v0.9.4
+| - install base-bytes              base
+| - install base64                  2.2.0
+| - install cmdliner                1.0.2
+| - install conduit                 0.15.4
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install fieldslib               v0.9.0
+| - install fmt                     0.8.5
+| - install ipaddr                  2.8.0
+| - install logs                    0.6.2
+| - install lwt                     3.3.0
+| - install magic-mime              1.1.0
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.9.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_ast                 v0.9.2
+| - install ppx_core                v0.9.3
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              v0.9.2
+| - install ppx_fields_conv         v0.9.0
+| - install ppx_metaquot            v0.9.0
+| - install ppx_optcomp             v0.9.0
+| - install ppx_sexp_conv           v0.9.0
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.1
+| - install ppx_traverse_builtins   v0.9.0
+| - install ppx_type_conv           v0.9.1
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.9.3
+| - install stdio                   v0.9.1
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install uri                     1.9.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180703233807.export"
+31 1530661082 1530661230

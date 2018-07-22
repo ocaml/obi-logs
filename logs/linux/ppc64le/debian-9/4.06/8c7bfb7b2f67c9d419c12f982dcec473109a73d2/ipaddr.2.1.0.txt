@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ipaddr.2.1.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ipaddr.2.1.0: The following dependencies couldn't be met:
+          - ipaddr -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ipaddr.2.1.0 returned 20
+20 1530659893 1530659898

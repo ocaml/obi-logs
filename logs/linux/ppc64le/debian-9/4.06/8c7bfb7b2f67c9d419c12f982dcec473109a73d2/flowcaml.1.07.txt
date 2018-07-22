@@ -1,0 +1,67 @@
+$ opam depext -iy -j 2 flowcaml.1.07
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install flowcaml 1.07
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[flowcaml.1.07] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of flowcaml failed at "/bin/sh -c cd src-flowcaml && ./configure --prefix /home/opam/.opam/4.06 --with-runlib=/home/opam/.opam/4.06/lib/flowcaml".
+
+#=== ERROR while compiling flowcaml.1.07 ======================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/flowcaml.1.07
+# command              /bin/sh -c cd src-flowcaml && ./configure --prefix /home/opam/.opam/4.06 --with-runlib=/home/opam/.opam/4.06/lib/flowcaml
+# exit-code            1
+# env-file             ~/.opam/log/flowcaml-11-05296d.env
+# output-file          ~/.opam/log/flowcaml-11-05296d.out
+### output ###
+# checking build system type... ./config/config.guess: unable to guess system type
+# 
+# This script, last modified 2001-09-04, has failed to recognize
+# the operating system you are using. It is advised that you
+# download the most up to date version of the config scripts from
+# 
+#     ftp://ftp.gnu.org/pub/gnu/config/
+# 
+# If the version you run (./config/config.guess) is already up to date, please
+# send the following data and any information you think might be
+# pertinent to <config-patches@gnu.org> in order to provide the needed
+# information to handle your system.
+# 
+# config.guess timestamp = 2001-09-04
+# 
+# uname -m = ppc64le
+# uname -r = 4.8.0-36-generic
+# uname -s = Linux
+# uname -v = #36~16.04.1-Ubuntu SMP Sun Feb 5 09:38:53 UTC 2017
+# 
+# /usr/bin/uname -p = 
+# /bin/uname -X     = 
+# 
+# hostinfo               = 
+# /bin/universe          = 
+# /usr/bin/arch -k       = 
+# /bin/arch              = 
+# /usr/bin/oslevel       = 
+# /usr/convex/getsysinfo = 
+# 
+# UNAME_MACHINE = ppc64le
+# UNAME_RELEASE = 4.8.0-36-generic
+# UNAME_SYSTEM  = Linux
+# UNAME_VERSION = #36~16.04.1-Ubuntu SMP Sun Feb 5 09:38:53 UTC 2017
+# configure: error: cannot guess build type; you must specify one
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build flowcaml 1.07
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1530672156 1530672163

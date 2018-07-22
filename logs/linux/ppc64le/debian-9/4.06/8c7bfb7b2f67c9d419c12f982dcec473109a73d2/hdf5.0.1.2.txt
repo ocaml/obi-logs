@@ -1,0 +1,160 @@
+$ opam depext -iy -j 2 hdf5.0.1.2
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libhdf5-serial-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libhdf5-serial-dev m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package hdf5-helpers.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17555 files and directories currently installed.)
+Preparing to unpack .../00-hdf5-helpers_1.10.0-patch1+docs-3+deb9u1_ppc64el.deb ...
+Unpacking hdf5-helpers (1.10.0-patch1+docs-3+deb9u1) ...
+Selecting previously unselected package libaec0:ppc64el.
+Preparing to unpack .../01-libaec0_0.3.2-1_ppc64el.deb ...
+Unpacking libaec0:ppc64el (0.3.2-1) ...
+Selecting previously unselected package libgfortran3:ppc64el.
+Preparing to unpack .../02-libgfortran3_6.3.0-18+deb9u1_ppc64el.deb ...
+Unpacking libgfortran3:ppc64el (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libsz2:ppc64el.
+Preparing to unpack .../03-libsz2_0.3.2-1_ppc64el.deb ...
+Unpacking libsz2:ppc64el (0.3.2-1) ...
+Selecting previously unselected package libhdf5-100:ppc64el.
+Preparing to unpack .../04-libhdf5-100_1.10.0-patch1+docs-3+deb9u1_ppc64el.deb ...
+Unpacking libhdf5-100:ppc64el (1.10.0-patch1+docs-3+deb9u1) ...
+Selecting previously unselected package libhdf5-cpp-100:ppc64el.
+Preparing to unpack .../05-libhdf5-cpp-100_1.10.0-patch1+docs-3+deb9u1_ppc64el.deb ...
+Unpacking libhdf5-cpp-100:ppc64el (1.10.0-patch1+docs-3+deb9u1) ...
+Selecting previously unselected package zlib1g-dev:ppc64el.
+Preparing to unpack .../06-zlib1g-dev_1%3a1.2.8.dfsg-5_ppc64el.deb ...
+Unpacking zlib1g-dev:ppc64el (1:1.2.8.dfsg-5) ...
+Selecting previously unselected package libjpeg62-turbo:ppc64el.
+Preparing to unpack .../07-libjpeg62-turbo_1%3a1.5.1-2_ppc64el.deb ...
+Unpacking libjpeg62-turbo:ppc64el (1:1.5.1-2) ...
+Selecting previously unselected package libjpeg62-turbo-dev:ppc64el.
+Preparing to unpack .../08-libjpeg62-turbo-dev_1%3a1.5.1-2_ppc64el.deb ...
+Unpacking libjpeg62-turbo-dev:ppc64el (1:1.5.1-2) ...
+Selecting previously unselected package libjpeg-dev.
+Preparing to unpack .../09-libjpeg-dev_1%3a1.5.1-2_all.deb ...
+Unpacking libjpeg-dev (1:1.5.1-2) ...
+Selecting previously unselected package libaec-dev:ppc64el.
+Preparing to unpack .../10-libaec-dev_0.3.2-1_ppc64el.deb ...
+Unpacking libaec-dev:ppc64el (0.3.2-1) ...
+Selecting previously unselected package libhdf5-dev.
+Preparing to unpack .../11-libhdf5-dev_1.10.0-patch1+docs-3+deb9u1_ppc64el.deb ...
+Unpacking libhdf5-dev (1.10.0-patch1+docs-3+deb9u1) ...
+Selecting previously unselected package libhdf5-serial-dev.
+Preparing to unpack .../12-libhdf5-serial-dev_1.10.0-patch1+docs-3+deb9u1_all.deb ...
+Unpacking libhdf5-serial-dev (1.10.0-patch1+docs-3+deb9u1) ...
+Setting up libaec0:ppc64el (0.3.2-1) ...
+Setting up libjpeg62-turbo:ppc64el (1:1.5.1-2) ...
+Setting up libgfortran3:ppc64el (6.3.0-18+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libjpeg62-turbo-dev:ppc64el (1:1.5.1-2) ...
+Setting up hdf5-helpers (1.10.0-patch1+docs-3+deb9u1) ...
+Setting up libsz2:ppc64el (0.3.2-1) ...
+Setting up zlib1g-dev:ppc64el (1:1.2.8.dfsg-5) ...
+Setting up libhdf5-100:ppc64el (1.10.0-patch1+docs-3+deb9u1) ...
+Setting up libaec-dev:ppc64el (0.3.2-1) ...
+Setting up libjpeg-dev (1:1.5.1-2) ...
+Setting up libhdf5-cpp-100:ppc64el (1.10.0-patch1+docs-3+deb9u1) ...
+Setting up libhdf5-dev (1.10.0-patch1+docs-3+deb9u1) ...
+update-alternatives: using /usr/lib/powerpc64le-linux-gnu/pkgconfig/hdf5-serial.pc to provide /usr/lib/powerpc64le-linux-gnu/pkgconfig/hdf5.pc (hdf5.pc) in auto mode
+Setting up libhdf5-serial-dev (1.10.0-patch1+docs-3+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes      base   [required by cppo]
+  - install ocamlbuild      0.12.0 [required by cppo_ocamlbuild]
+  - install cppo            1.6.4  [required by hdf5]
+  - install cppo_ocamlbuild 1.6.0  [required by hdf5]
+  - install hdf5            0.1.2
+===== 5 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[hdf5.0.1.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+[ERROR] The compilation of hdf5 failed at "/usr/bin/make".
+
+#=== ERROR while compiling hdf5.0.1.2 =========================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/hdf5.0.1.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/hdf5-11-f6c0a8.env
+# output-file          ~/.opam/log/hdf5-11-f6c0a8.out
+### output ###
+# ocaml setup.ml -build 
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5a_stubs.c
+# mv h5a_stubs.o lib/raw/h5a_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5d_stubs.c
+# mv h5d_stubs.o lib/raw/h5d_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5f_stubs.c
+# mv h5f_stubs.o lib/raw/h5f_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5g_stubs.c
+# mv h5g_stubs.o lib/raw/h5g_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5i_stubs.c
+# mv h5i_stubs.o lib/raw/h5i_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5l_stubs.c
+# mv h5l_stubs.o lib/raw/h5l_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5lt_stubs.c
+# mv h5lt_stubs.o lib/raw/h5lt_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5o_stubs.c
+# mv h5o_stubs.o lib/raw/h5o_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5p_stubs.c
+# mv h5p_stubs.o lib/raw/h5p_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5r_stubs.c
+# mv h5r_stubs.o lib/raw/h5r_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5s_stubs.c
+# mv h5s_stubs.o lib/raw/h5s_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5_stubs.c
+# mv h5_stubs.o lib/raw/h5_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5tb_stubs.c
+# mv h5tb_stubs.o lib/raw/h5tb_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5t_stubs.c
+# mv h5t_stubs.o lib/raw/h5t_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/h5z_stubs.c
+# mv h5z_stubs.o lib/raw/h5z_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/usr/include/hdf5/serial -c lib/raw/hid_stubs.c
+# mv hid_stubs.o lib/raw/hid_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlmklib -o lib/raw/hdf5_raw_stubs -L/usr/lib/x86_64-linux-gnu/hdf5/serial -lhdf5 -lhdf5_hl lib/raw/h5a_stubs.o lib/raw/h5d_stubs.o lib/raw/h5f_stubs.o lib/raw/h5g_stubs.o lib/raw/h5i_stubs.o lib/raw/h5l_stubs.o lib/raw/h5lt_stubs.o lib/raw/h5o_stubs.o lib/raw/h5p_stubs.o lib/raw/h5r_stubs.o lib/raw/h5s_stubs.o lib/raw/h5_stubs.o lib/raw/h5tb_stubs.o lib/raw/h5t_stubs.o lib/raw/h5z_stubs.o lib/raw/hid_stubs.o
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlmklib -o lib/raw/hdf5_raw_stubs -L/usr/lib/x86_64-linux-gnu/hdf5/serial -lhdf5 -lhdf5_hl lib/raw/h5a_stubs.o lib/raw/h5d_stubs.o lib/raw/h5f_stubs.o lib/raw/h5g_stubs.o lib/raw/h5i_stubs.o lib/raw/h5l_stubs.o lib/raw/h5lt_stubs.o lib/raw/h5o_stubs.o lib/raw/h5p_stubs.o lib/raw/h5r_stubs.o lib/raw/h5s_stubs.o lib/raw/h5_stubs.o lib/raw/h5tb_stubs.o lib/raw/h5t_stubs.o lib/raw/h5z_stubs.o lib/raw/hid_stubs.o
+# /usr/bin/ld: cannot find -lhdf5
+# /usr/bin/ld: cannot find -lhdf5_hl
+# collect2: error: ld returned 1 exit status
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/raw/libhdf5_raw_stubs.a lib/raw/dllhdf5_raw_stubs.so lib/raw/hdf5_raw.cma lib/raw/hdf5_raw.cmxa lib/raw/hdf5_raw.a lib/raw/hdf5_raw.cmxs lib/ppx/ppx_h5struct.native lib/caml/hdf5_caml.cma lib/caml/hdf5_caml.cmxa lib/caml/hdf5_caml.a lib/caml/hdf5_caml.cmxs -use-ocamlfind -plugin-tags 'package(cppo_ocamlbuild)' -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build hdf5 0.1.2
++- 
++- The following changes have been performed
+| - install base-bytes      base
+| - install cppo            1.6.4
+| - install cppo_ocamlbuild 1.6.0
+| - install ocamlbuild      0.12.0
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libhdf5-serial-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704014906.export"
+31 1530668939 1530668971

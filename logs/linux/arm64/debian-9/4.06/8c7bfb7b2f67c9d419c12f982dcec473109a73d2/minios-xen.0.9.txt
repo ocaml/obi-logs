@@ -1,0 +1,59 @@
+$ opam depext -iy -j 2 minios-xen.0.9
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+perl
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-perl  1   [required by minios-xen]
+  - install minios-xen 0.9
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[minios-xen.0.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-perl.1
+[ERROR] The compilation of minios-xen failed at "/bin/sh -ex ./build-opam.sh".
+
+#=== ERROR while compiling minios-xen.0.9 =====================================#
+# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/minios-xen.0.9
+# command              /bin/sh -ex ./build-opam.sh
+# exit-code            2
+# env-file             ~/.opam/log/minios-xen-11-e7966f.env
+# output-file          ~/.opam/log/minios-xen-11-e7966f.out
+### output ###
+# + unset EXTRA_DEPS
+# + make debug=n CONFIG_VERBOSE_BOOT=n
+# perl include/minios-external/bsd-sys-queue-h-seddery include/minios-external/bsd-sys-queue.h --prefix=minios  >include/list.h.new
+# if ! cmp -s include/list.h.new include/list.h; then mv -f include/list.h.new include/list.h; else rm -f include/list.h.new; fi
+# ln -sf . include/mini-os
+# ln -sf . arch/arm/include/mini-os
+# gcc -DCONFIG_START_NETWORK -DCONFIG_SPARSE_BSS -DCONFIG_BLKFRONT -DCONFIG_NETFRONT -DCONFIG_KBDFRONT -DCONFIG_FBFRONT -DCONFIG_CONSFRONT -DCONFIG_XENBUS -nostdinc -isystem /usr/lib/gcc/aarch64-linux-gnu/6/include -fno-builtin -Wall -Wredundant-decls -Wno-format -Wno-redundant-decls -Wformat -fno-stack-protector -fgnu89-inline -Wstrict-prototypes -Wnested-externs -Wpointer-arith -Winline -O3 -fno-tree-loop-distribute-patterns -D__INSIDE_MINIOS__   -isystem /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/include -D__MINIOS__ -isystem /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/include -D__MINIOS__ -D__XEN_INTERFACE_VERSION__=0x00030205  -isystem /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/arch/arm/include -c blkfront.c -o /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/blkfront.o
+# In file included from /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/arch/arm/include/os.h:6:0,
+#                  from blkfront.c:7:
+# /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/include/hypervisor.h:33:5: error: unknown type name 'start_info_t'
+#      start_info_t start_info;
+#      ^~~~~~~~~~~~
+# In file included from blkfront.c:7:0:
+# /home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/arch/arm/include/os.h:155:2: error: #error "Unsupported architecture"
+#  #error "Unsupported architecture"
+#   ^~~~~
+# minios.mk:78: recipe for target '/home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/blkfront.o' failed
+# make: *** [/home/opam/.opam/4.06/.opam-switch/build/minios-xen.0.9/blkfront.o] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build minios-xen 0.9
++- 
++- The following changes have been performed
+| - install conf-perl 1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704044709.export"
+31 1530679620 1530679641

@@ -1,0 +1,150 @@
+$ opam depext -iy -j 2 llvm.3.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+python
+# The following new OS packages need to be installed: python
+The following command needs to be run through "sudo":
+    zypper --non-interactive install python
+Retrieving repository 'OSS Update' metadata [...done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  libsqlite3-0 python
+
+2 new packages to install.
+Overall download size: 722.3 KiB. Already cached: 0 B. After the operation, additional 2.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (1/2), 408.9 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [done]
+Retrieving package python-2.7.13-27.3.1.x86_64 (2/2), 313.5 KiB (  1.4 MiB unpacked)
+Retrieving: python-2.7.13-27.3.1.x86_64.rpm [done]
+Checking for file conflicts: [......done]
+(1/2) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
+(2/2) Installing: python-2.7.13-27.3.1.x86_64 [............done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-llvm       3.9    [required by llvm]
+  - install result          1.3    [required by topkg]
+  - install base-bytes      base   [required by ctypes]
+  - install ocamlbuild      0.12.0 [required by integers]
+  - install conf-pkg-config 1.1    [required by ctypes]
+  - install conf-cmake      1      [required by llvm]
+  - install conf-python-2-7 1.0    [required by llvm]
+  - install topkg           0.9.1  [required by integers]
+  - install integers        0.2.2  [required by ctypes]
+  - install ctypes          0.14.0 [required by llvm]
+  - install llvm            3.9
+===== 11 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.14.0] found in cache
+[integers.0.2.2] found in cache
+[llvm.3.9] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-cmake failed at "/bin/bash -ex configure.sh".
+[ERROR] The compilation of conf-llvm failed at "/bin/bash -ex configure.sh 3.9".
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-python-2-7.1.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+
+#=== ERROR while compiling conf-llvm.3.9 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-llvm.3.9
+# command              /bin/bash -ex configure.sh 3.9
+# exit-code            1
+# env-file             ~/.opam/log/conf-llvm-12-48c407.env
+# output-file          ~/.opam/log/conf-llvm-12-48c407.out
+### output ###
+# + version=3.9
+# + config=
+# + hash brew
+# + shopt -s nullglob
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config-3.9 --version
+# configure.sh: line 13: llvm-config-3.9: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-3.9'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config-3.9' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config39 --version
+# configure.sh: line 13: llvm-config39: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config39'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config39' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config-mp-3.9 --version
+# configure.sh: line 13: llvm-config-mp-3.9: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-mp-3.9'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config-mp-3.9' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config --version
+# configure.sh: line 13: llvm-config: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + echo 'Error: LLVM 3.9 is not installed.'
+# Error: LLVM 3.9 is not installed.
+# + exit 1
+
+
+#=== ERROR while compiling conf-cmake.1 =======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-cmake.1
+# command              /bin/bash -ex configure.sh
+# exit-code            1
+# env-file             ~/.opam/log/conf-cmake-12-d474c2.env
+# output-file          ~/.opam/log/conf-cmake-12-d474c2.out
+### output ###
+# + command -v cmake3
+# + command -v cmake
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-cmake 1
+| - build conf-llvm  3.9
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install conf-python-2-7 1.0
+| - install ctypes          0.14.0
+| - install integers        0.2.2
+| - install ocamlbuild      0.12.0
+| - install result          1.3
+| - install topkg           0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721044332.export"
+31 1532147776 1532148242

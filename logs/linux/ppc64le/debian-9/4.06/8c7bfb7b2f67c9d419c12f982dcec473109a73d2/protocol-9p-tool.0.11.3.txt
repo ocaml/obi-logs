@@ -1,0 +1,304 @@
+$ opam depext -iy -j 2 protocol-9p-tool.0.11.3
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_tools               5.1+4.06.0 [required by protocol-9p, protocol-9p-unix]
+  - install re                      1.7.3      [required by prometheus]
+  - install base-bytes              base       [required by protocol-9p-tool]
+  - install num                     1.1        [required by sexplib]
+  - install camomile                1.0.1      [required by lambda-term]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by protocol-9p, fmt, cmdliner, etc.]
+  - install ocamlbuild              0.12.0     [required by fmt, cmdliner, logs]
+  - install win-error               0.3        [required by protocol-9p-tool]
+  - install cppo                    1.6.4      [required by lwt, ppx_deriving]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.0    [required by ppx_sexp_conv]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_deriving, ppx_sexp_conv]
+  - install uchar                   0.0.2      [required by fmt]
+  - install topkg                   0.9.1      [required by fmt, cmdliner, logs]
+  - install lwt                     4.1.0      [required by protocol-9p, lambda-term, logs, protocol-9p-unix] For the PPX, please install package lwt_ppx
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install sexplib                 v0.11.0    [required by protocol-9p, protocol-9p-unix]
+  - install stdio                   v0.11.0    [required by ppxlib]
+  - install rresult                 0.5.0      [required by protocol-9p-tool]
+  - install react                   1.2.1      [required by lambda-term]
+  - install cmdliner                1.0.2      [required by protocol-9p-tool]
+  - install astring                 0.8.3      [required by protocol-9p, protocol-9p-unix]
+  - install asetmap                 0.8.1      [required by prometheus]
+  - install lwt_log                 1.1.0      [required by lambda-term]
+  - install ppx_deriving            4.2.1      [required by protocol-9p, protocol-9p-unix]
+  - install cstruct                 3.2.1      [required by protocol-9p, protocol-9p-unix]
+  - install ppxlib                  0.3.0      [required by ppx_sexp_conv]
+  - install configurator            v0.11.0    [required by io-page-unix]
+  - install zed                     1.6        [required by lambda-term]
+  - install lwt_react               1.1.1      [required by lambda-term]
+  - install fmt                     0.8.5      [required by protocol-9p-tool]
+  - install ocb-stubblr             0.1.1      [required by named-pipe]
+  - install cstruct-lwt             3.2.1      [required by protocol-9p, protocol-9p-unix]
+  - install ppx_sexp_conv           v0.11.2    [required by protocol-9p, protocol-9p-unix]
+  - install io-page                 2.0.1      [required by mirage-channel-lwt, io-page-unix]
+  - install lambda-term             1.13       [required by protocol-9p-tool]
+  - install prometheus              0.5        [required by protocol-9p-unix]
+  - install mirage-flow             1.3.0      [required by mirage-channel, mirage-flow-lwt]
+  - install mirage-device           1.1.0      [required by mirage-kv]
+  - install logs                    0.6.2      [required by protocol-9p-tool]
+  - install named-pipe              0.4.0      [required by protocol-9p, protocol-9p-unix]
+  - install io-page-unix            2.0.1      [required by protocol-9p-unix]
+  - install mirage-channel          3.1.0      [required by mirage-channel-lwt]
+  - install mirage-kv               1.1.1      [required by mirage-kv-lwt]
+  - install mirage-clock            1.3.0      [required by mirage-flow-lwt]
+  - install mirage-kv-lwt           1.1.0      [required by protocol-9p, protocol-9p-unix]
+  - install mirage-flow-lwt         1.4.0      [required by protocol-9p, protocol-9p-unix]
+  - install mirage-channel-lwt      3.1.0      [required by protocol-9p, protocol-9p-unix]
+  - install protocol-9p             0.11.2     [required by protocol-9p-tool]
+  - install protocol-9p-unix        0.11.2     [required by protocol-9p-tool]
+  - install protocol-9p-tool        0.11.3
+===== 54 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[asetmap.0.8.1] found in cache
+[astring.0.8.3] found in cache
+[base.v0.11.0] found in cache
+[camomile.1.0.1] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[fmt.0.8.5] found in cache
+[io-page.2.0.1] found in cache
+[io-page-unix.2.0.1] found in cache
+[lambda-term.1.13] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[lwt_log.1.1.0] found in cache
+[lwt_react.1.1.1] found in cache
+[mirage-channel.3.1.0] found in cache
+[mirage-channel-lwt.3.1.0] found in cache
+[mirage-clock.1.3.0] found in cache
+[mirage-device.1.1.0] found in cache
+[mirage-flow.1.3.0] found in cache
+[mirage-flow-lwt.1.4.0] found in cache
+[mirage-kv.1.1.1] found in cache
+[mirage-kv-lwt.1.1.0] found in cache
+[named-pipe.0.4.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocb-stubblr.0.1.1] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppxlib.0.3.0] found in cache
+[prometheus.0.5] found in cache
+[protocol-9p.0.11.2] found in cache
+[protocol-9p-tool.0.11.3] found in cache
+[protocol-9p-unix.0.11.2] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[win-error.0.3] found in cache
+[zed.1.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of camomile failed at "/home/opam/.opam/4.06/bin/jbuilder build -p camomile -j 79".
+-> installed base-bytes.base
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo.1.6.4
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed lwt_log.1.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed ppx_deriving.4.2.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.3.2.1
+-> installed cstruct-lwt.3.2.1
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
+-> installed topkg.0.9.1
+-> installed asetmap.0.8.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed ocb-stubblr.0.1.1
+-> installed named-pipe.0.4.0
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed rresult.0.5.0
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
+-> installed mirage-device.1.1.0
+-> installed logs.0.6.2
+-> installed mirage-clock.1.3.0
+-> installed mirage-flow.1.3.0
+-> installed mirage-channel.3.1.0
+-> installed mirage-kv.1.1.1
+-> installed mirage-flow-lwt.1.4.0
+-> installed mirage-kv-lwt.1.1.0
+-> installed ppxlib.0.3.0
+-> installed mirage-channel-lwt.3.1.0
+-> installed prometheus.0.5
+-> installed win-error.0.3
+-> installed ppx_sexp_conv.v0.11.2
+-> installed protocol-9p.0.11.2
+-> installed protocol-9p-unix.0.11.2
+
+#=== ERROR while compiling camomile.1.0.1 =====================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/camomile.1.0.1
+# command              ~/.opam/4.06/bin/jbuilder build -p camomile -j 79
+# exit-code            1
+# env-file             ~/.opam/log/camomile-11-813bac.env
+# output-file          ~/.opam/log/camomile-11-813bac.out
+### output ###
+# File "Camomile/jbuild", line 4, characters 0-96:
+# Warning: File installConfig.ml is both generated by a rule and present in the source tree.
+# As a result, the rule is currently ignored, however this will become an error in the future.
+# To keep the current behavior and get rid of this warning, add a field (fallback) to the rule.
+#    ocamlyacc Camomile/internal/uReStrParser.{ml,mli}
+# 4 shift/reduce conflicts.
+# camomilelocaledef Camomile/locales/az.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/ar.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/div.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/el.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/fa.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/gu.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/hi.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/he.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/pa.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/mr.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/ka.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/kk.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/hi__DIRECT.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/mn.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/ky.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/ta.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/kn.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/vi.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/ur.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/sa.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/te.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/tt.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/syr.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/uz.mar
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/th.mar
+# Warning : file loading is not supported.
+# Warning : normalization option is not supported
+# camomilelocaledef Camomile/locales/zh__PINYIN.mar (got signal SEGV)
+# (cd _build/default/Camomile && ./tools/camomilelocaledef.exe --file locales/zh__PINYIN.txt locales)
+# camomilelocaledef Camomile/locales/ja.mar
+# Warning : strength option is not supported
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build camomile 1.0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install asetmap                 0.8.1
+| - install astring                 0.8.3
+| - install base                    v0.11.0
+| - install base-bytes              base
+| - install cmdliner                1.0.2
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 3.2.1
+| - install cstruct-lwt             3.2.1
+| - install fmt                     0.8.5
+| - install io-page                 2.0.1
+| - install io-page-unix            2.0.1
+| - install logs                    0.6.2
+| - install lwt                     4.1.0
+| - install lwt_log                 1.1.0
+| - install lwt_react               1.1.1
+| - install mirage-channel          3.1.0
+| - install mirage-channel-lwt      3.1.0
+| - install mirage-clock            1.3.0
+| - install mirage-device           1.1.0
+| - install mirage-flow             1.3.0
+| - install mirage-flow-lwt         1.4.0
+| - install mirage-kv               1.1.1
+| - install mirage-kv-lwt           1.1.0
+| - install named-pipe              0.4.0
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocb-stubblr             0.1.1
+| - install parsexp                 v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.1+4.06.0
+| - install ppxlib                  0.3.0
+| - install prometheus              0.5
+| - install protocol-9p             0.11.2
+| - install protocol-9p-unix        0.11.2
+| - install re                      1.7.3
+| - install react                   1.2.1
+| - install result                  1.3
+| - install rresult                 0.5.0
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install win-error               0.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180703235118.export"
+31 1530661876 1530661943

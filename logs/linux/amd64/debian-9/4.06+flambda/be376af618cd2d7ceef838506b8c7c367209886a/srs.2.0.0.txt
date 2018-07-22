@@ -1,0 +1,38 @@
+$ opam depext -iy -j 2 srs.2.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install srs 2.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[srs.2.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of srs failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p srs -j 71".
+
+#=== ERROR while compiling srs.2.0.0 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/srs.2.0.0
+# command              ~/.opam/4.06+flambda/bin/jbuilder build -p srs -j 71
+# exit-code            1
+# env-file             ~/.opam/log/srs-11-05296d.env
+# output-file          ~/.opam/log/srs-11-05296d.out
+### output ###
+#       ocamlc src/srs_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -g -ccopt -Wall -ccopt -Werror -o srs_stubs.o srs_stubs.c)
+# srs_stubs.c:4:18: fatal error: srs2.h: No such file or directory
+#  #include <srs2.h>
+#                   ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build srs 2.0.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532142290 1532142296

@@ -1,0 +1,64 @@
+$ opam depext -iy -j 2 mirage-xen-minios.0.7.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+perl
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-perl         1     [required by mirage-xen-minios]
+  - install mirage-xen-minios 0.7.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[mirage-xen-minios.0.7.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-perl.1
+[ERROR] The compilation of mirage-xen-minios failed at "/usr/bin/make build".
+
+#=== ERROR while compiling mirage-xen-minios.0.7.0 ============================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             ~/.opam/log/mirage-xen-minios-12-d2c37b.env
+# output-file          ~/.opam/log/mirage-xen-minios-12-d2c37b.out
+### output ###
+# ./install.sh
+# + . ./vars.sh
+# + [  =  ]
+# + command -v opam
+# + opam config var prefix
+# + PREFIX=/home/opam/.opam/4.06
+# + MINIOS=minios-v0.6
+# + MINIOS_ARCHIVE=minios-v0.6.tar.gz
+# + MINIOS_URL=https://github.com/talex5/xen/archive/minios-v0.6.tar.gz
+# + LIBM=openlibm-0.4.1-tal1
+# + LIBM_ARCHIVE=v0.4.1-tal1.tar.gz
+# + LIBM_URL=https://github.com/talex5/openlibm/archive/v0.4.1-tal1.tar.gz
+# + rm -rf xen-minios-v0.6
+# + tar -zxf minios-v0.6.tar.gz
+# + cd xen-minios-v0.6/extras/mini-os
+# + make debug=n
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0/xen-minios-v0.6/extras/mini-os'
+# /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0/xen-minios-v0.6/extras/mini-os/../../Config.mk:59: /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0/xen-minios-v0.6/extras/mini-os/../../config/ppc64le.mk: No such file or directory
+# Config.mk:41: /home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0/xen-minios-v0.6/extras/mini-os/../../extras/mini-os/arch/ppc64le/arch.mk: No such file or directory
+# make[1]: *** No rule to make target '/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0/xen-minios-v0.6/extras/mini-os/../../extras/mini-os/arch/ppc64le/arch.mk'.  Stop.
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/mirage-xen-minios.0.7.0/xen-minios-v0.6/extras/mini-os'
+# Makefile:11: recipe for target 'build' failed
+# make: *** [build] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mirage-xen-minios 0.7.0
++- 
++- The following changes have been performed
+| - install conf-perl 1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180712015300.export"
+31 1531360377 1531360385

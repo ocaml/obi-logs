@@ -1,0 +1,107 @@
+$ opam depext -iy -j 2 rashell.0.1.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+bmake
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy bmake m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package bmake.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17555 files and directories currently installed.)
+Preparing to unpack .../bmake_20160220-2+b1_ppc64el.deb ...
+Unpacking bmake (20160220-2+b1) ...
+Setting up bmake (20160220-2+b1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3            [required by lwt]
+  - install base-bytes base           [required by cppo]
+  - install conf-bmake 1.0            [required by rashell]
+  - install cppo       1.6.4          [required by lwt]
+  - install bsdowl     3.0.0-20150830 [required by rashell]
+  - install lwt        4.1.0          [required by rashell] For the PPX, please install package lwt_ppx
+                                                            For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install broken     0.4.2          [required by rashell]
+  - install rashell    0.1.0
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+[cppo.1.6.4] found in cache
+[lwt.4.1.0] found in cache
+[rashell.0.1.0] found in cache
+[result.1.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-bmake.1.0
+[ERROR] The compilation of bsdowl failed at "/home/opam/.opam/4.06/.opam-switch/build/bsdowl.3.0.0-20150830/./configure --prefix /home/opam/.opam/4.06".
+-> installed result.1.3
+-> installed cppo.1.6.4
+-> installed lwt.4.1.0
+
+#=== ERROR while compiling bsdowl.3.0.0-20150830 ==============================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/bsdowl.3.0.0-20150830
+# command              ~/.opam/4.06/.opam-switch/build/bsdowl.3.0.0-20150830/./configure --prefix /home/opam/.opam/4.06
+# exit-code            1
+# env-file             ~/.opam/log/bsdowl-11-0f1b61.env
+# output-file          ~/.opam/log/bsdowl-11-0f1b61.out
+### output ###
+# checking build system type... Library/Autoconf/config.guess: unable to guess system type
+# 
+# This script, last modified 2013-05-16, has failed to recognize
+# the operating system you are using. It is advised that you
+# download the most up to date version of the config scripts from
+# 
+#   http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD
+# and
+#   http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD
+# 
+# If the version you run (Library/Autoconf/config.guess) is already up to date, please
+# send the following data and any information you think might be
+# pertinent to <config-patches@gnu.org> in order to provide the needed
+# information to handle your system.
+# 
+# config.guess timestamp = 2013-05-16
+# 
+# uname -m = ppc64le
+# uname -r = 4.4.0-127-generic
+# uname -s = Linux
+# uname -v = #153-Ubuntu SMP Sat May 19 11:02:20 UTC 2018
+# 
+# /usr/bin/uname -p = 
+# /bin/uname -X     = 
+# 
+# hostinfo               = 
+# /bin/universe          = 
+# /usr/bin/arch -k       = 
+# /bin/arch              = 
+# /usr/bin/oslevel       = 
+# /usr/convex/getsysinfo = 
+# 
+# UNAME_MACHINE = ppc64le
+# UNAME_RELEASE = 4.4.0-127-generic
+# UNAME_SYSTEM  = Linux
+# UNAME_VERSION = #153-Ubuntu SMP Sat May 19 11:02:20 UTC 2018
+# configure: error: cannot guess build type; you must specify one
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build bsdowl 3.0.0-20150830
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes base
+| - install conf-bmake 1.0
+| - install cppo       1.6.4
+| - install lwt        4.1.0
+| - install result     1.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180712021752.export"
+31 1531361863 1531361884

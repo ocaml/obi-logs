@@ -1,0 +1,79 @@
+$ opam depext -iy -j 2 imagelib.20170118
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+zlib-dev
+m4
+# The following new OS packages need to be installed: zlib-dev
+The following command needs to be run through "sudo":
+    apk add zlib-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/1) Installing zlib-dev (1.2.11-r1)
+OK: 204 MiB in 74 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip    1.07     [required by imagelib]
+  - install ocamlbuild 0.12.0   [required by imagelib]
+  - install imagelib   20170118
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlzip.1.07] found in cache
+[imagelib.20170118] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed camlzip.1.07
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of imagelib failed at "/usr/bin/make".
+
+#=== ERROR while compiling imagelib.20170118 ==================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/imagelib.20170118
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/imagelib-13-06fa5f.env
+# output-file          ~/.opam/log/imagelib-13-06fa5f.out
+### output ###
+# ocamlbuild -cflags -w,-3 -use-ocamlfind imagelib.cma
+# ocamlfind ocamldep -package bigarray -package zip -modules imageUtil.ml > imageUtil.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules image.mli > image.mli.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o image.cmi image.mli
+# ocamlfind ocamldep -package bigarray -package zip -modules image.ml > image.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imageGIF.ml > imageGIF.ml.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageUtil.cmo imageUtil.ml
+# ocamlfind ocamldep -package bigarray -package zip -modules imageJPG.ml > imageJPG.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imagePNG.ml > imagePNG.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imagePPM.ml > imagePPM.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imageXCF.ml > imageXCF.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imageLib.mli > imageLib.mli.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+# ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# File "imageGIF.ml", line 40, characters 16-21:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# make: *** [GNUmakefile:49: imagelib.cma] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build imagelib 20170118
++- 
++- The following changes have been performed
+| - install camlzip    1.07
+| - install ocamlbuild 0.12.0
++- 
+
+<><> imagelib.20170118 troubleshooting ><><><><><><><><><><><><><><><><><><><><>
+=> imagelib requires convert (imagemagick) to handle format other than png and ppm.
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721022047.export"
+31 1532139644 1532139657

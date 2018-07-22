@@ -1,0 +1,135 @@
+$ opam depext -iy -j 2 javalib.2.3.3
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy m4 zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:ppc64el.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17555 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-5_ppc64el.deb ...
+Unpacking zlib1g-dev:ppc64el (1:1.2.8.dfsg-5) ...
+Setting up zlib1g-dev:ppc64el (1:1.2.8.dfsg-5) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip       1.07   [required by javalib]
+  - install base-bytes    base   [required by extlib-compat]
+  - install ocamlbuild    0.12.0 [required by camlp4]
+  - install cppo          1.6.4  [required by extlib-compat]
+  - install camlp4        4.06+1 [required by javalib]
+  - install extlib-compat 1.7.2  [required by javalib]
+  - install javalib       2.3.3
+===== 7 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[camlzip.1.07] found in cache
+[cppo.1.6.4] found in cache
+[extlib-compat.1.7.2] found in cache
+[javalib.2.3.3] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camlzip.1.07
+-> installed cppo.1.6.4
+-> installed extlib-compat.1.7.2
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.06+1
+[ERROR] The compilation of javalib failed at "/usr/bin/make".
+
+#=== ERROR while compiling javalib.2.3.3 ======================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/javalib.2.3.3
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/javalib-11-58a9f1.env
+# output-file          ~/.opam/log/javalib-11-58a9f1.out
+### output ###
+# /usr/bin/make -C src
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/javalib.2.3.3/src'
+# ocamllex jManifest.mll
+# 13 states, 340 transitions, table size 1438 bytes
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package camlp4 -syntax camlp4o ../Makefile.config jBasics.mli jBasicsLow.mli jSignature.mli jCode.mli jClassLow.mli jClass.mli jDumpBasics.mli jUnparseSignature.mli jDumpLow.mli jDumpJasmin.mli jParseCode.mli jInstruction.mli jUnparse.mli jParseSignature.mli jParse.mli jLow2High.mli jHigh2Low.mli jFile.mli jManifest.mli javalib.mli jBasics.ml jBasicsLow.ml jSignature.ml jCode.ml jClass.ml jDumpBasics.ml jParseCode.ml jInstruction.ml jUnparseSignature.ml jDumpLow.ml jHigh2Low.ml jDumpJasmin.ml jUnparse.ml jParseSignature.ml jLow2High.ml jParse.ml jFile.ml jManifest.ml jPrint.ml javalib.ml > .depend
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jBasics.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jBasicsLow.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jSignature.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jCode.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jClassLow.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jClass.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jDumpBasics.mli
+# File "jDumpBasics.mli", line 41, characters 2-190:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 45, characters 2-191:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 49, characters 2-87:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 51, characters 2-311:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 57, characters 2-154:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 61, characters 2-188:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 65, characters 2-167:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 69, characters 2-99:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 72, characters 2-99:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 75, characters 2-100:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 78, characters 2-104:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 81, characters 2-121:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 84, characters 2-93:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 87, characters 2-81:
+# Warning 50: ambiguous documentation comment
+# File "jDumpBasics.mli", line 92, characters 4-66:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jUnparseSignature.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jDumpLow.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jDumpJasmin.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jParseCode.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jInstruction.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jUnparse.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jParseSignature.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jParse.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jLow2High.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jHigh2Low.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jFile.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jManifest.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c javalib.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jBasics.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -w Aer -annot -package unix,str,extlib,ptrees,zip -c jBasicsLow.ml
+# File "jBasicsLow.ml", line 45, characters 12-13:
+# Error: This expression has type string but an expression was expected of type
+#          ExtBytes.Bytes.t = bytes
+# Makefile:62: recipe for target 'jBasicsLow.cmo' failed
+# make[1]: *** [jBasicsLow.cmo] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/javalib.2.3.3/src'
+# Makefile:9: recipe for target 'javalib' failed
+# make: *** [javalib] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build javalib 2.3.3
++- 
++- The following changes have been performed
+| - install base-bytes    base
+| - install camlp4        4.06+1
+| - install camlzip       1.07
+| - install cppo          1.6.4
+| - install extlib-compat 1.7.2
+| - install ocamlbuild    0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180712034405.export"
+31 1531367039 1531367196

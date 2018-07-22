@@ -1,0 +1,22 @@
+$ opam depext -iy -j 2 conf-capnproto.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-capnproto 0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling conf-capnproto.0 ===================================#
+"capnpc": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-capnproto 0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532140182 1532140187

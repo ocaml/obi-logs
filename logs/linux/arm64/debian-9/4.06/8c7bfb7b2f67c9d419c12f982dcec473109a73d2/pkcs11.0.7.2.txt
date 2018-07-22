@@ -1,0 +1,505 @@
+$ opam depext -iy -j 2 pkcs11.0.7.2
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libffi-dev
+libgmp-dev
+m4
+perl
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libffi-dev libgmp-dev m4 perl pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17581 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:arm64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_arm64.deb ...
+Unpacking libicu57:arm64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:arm64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_arm64.deb ...
+Unpacking libxml2:arm64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libffi-dev:arm64.
+Preparing to unpack .../03-libffi-dev_3.2.1-6_arm64.deb ...
+Unpacking libffi-dev:arm64 (3.2.1-6) ...
+Selecting previously unselected package libglib2.0-0:arm64.
+Preparing to unpack .../04-libglib2.0-0_2.50.3-2_arm64.deb ...
+Unpacking libglib2.0-0:arm64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../05-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libgmpxx4ldbl:arm64.
+Preparing to unpack .../06-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_arm64.deb ...
+Unpacking libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:arm64.
+Preparing to unpack .../07-libgmp-dev_2%3a6.1.2+dfsg-1_arm64.deb ...
+Unpacking libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../08-pkg-config_0.29-4+b1_arm64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../09-shared-mime-info_1.8-1_arm64.deb ...
+Unpacking shared-mime-info (1.8-1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../10-xdg-user-dirs_0.15-2+b1_arm64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../11-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:arm64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up libffi-dev:arm64 (3.2.1-6) ...
+Setting up sgml-base (1.29) ...
+Setting up libicu57:arm64 (57.1-6+deb9u2) ...
+Setting up libxml2:arm64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1) ...
+Setting up xml-core (0.17) ...
+Setting up libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
+Processing triggers for sgml-base (1.29) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp                1          [required by zarith]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install base-bytes              base       [required by ctypes]
+  - install conf-perl               1          [required by zarith]
+  - install conf-pkg-config         1.1        [required by ctypes]
+  - install num                     1.1        [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib, base]
+  - install ctypes-foreign          0.4.0      [required by pkcs11]
+  - install easy-format             1.3.1      [required by yojson]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by key-parsers]
+  - install conf-which              1          [required by biniou]
+  - install ocamlbuild              0.12.0     [required by pkcs11]
+  - install cppo                    1.6.4      [required by ppx_deriving, ppx_deriving_yojson]
+  - install zarith                  1.7        [required by key-parsers]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.0    [required by ppx_bin_prot]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_bin_prot, ppx_deriving]
+  - install biniou                  1.2.0      [required by yojson]
+  - install topkg                   0.9.1      [required by pkcs11]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving, ppx_deriving_yojson]
+  - install sexplib                 v0.11.0    [required by cstruct]
+  - install stdio                   v0.11.0    [required by ppxlib]
+  - install yojson                  1.4.1      [required by ppx_deriving_yojson]
+  - install ptime                   0.8.3      [required by asn1-combinators]
+  - install integers                0.2.2      [required by ctypes]
+  - install ppx_deriving            4.2.1      [required by pkcs11]
+  - install cstruct                 3.2.1      [required by hex, key-parsers]
+  - install ppxlib                  0.3.0      [required by ppx_bin_prot]
+  - install ctypes                  0.14.0     [required by pkcs11]
+  - install ppx_deriving_yojson     3.1        [required by pkcs11]
+  - install hex                     1.2.0      [required by pkcs11]
+  - install asn1-combinators        0.2.0      [required by key-parsers]
+  - install variantslib             v0.11.0    [required by ppx_variants_conv]
+  - install ppx_sexp_conv           v0.11.2    [required by bin_prot]
+  - install ppx_here                v0.11.0    [required by ppx_bin_prot]
+  - install ppx_compare             v0.11.1    [required by bin_prot]
+  - install fieldslib               v0.11.0    [required by ppx_fields_conv]
+  - install ppx_variants_conv       v0.11.1    [required by bin_prot]
+  - install ppx_custom_printf       v0.11.0    [required by bin_prot]
+  - install ppx_fields_conv         v0.11.0    [required by bin_prot]
+  - install bin_prot                v0.11.0    [required by ppx_bin_prot]
+  - install ppx_bin_prot            v0.11.1    [required by key-parsers]
+  - install key-parsers             0.9.2      [required by pkcs11]
+  - install pkcs11                  0.7.2
+===== 46 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[asn1-combinators.0.2.0] found in cache
+[base.v0.11.0] found in cache
+[bin_prot.v0.11.0] found in cache
+[biniou.1.2.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[ctypes.0.14.0] found in cache
+[easy-format.1.3.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[hex.1.2.0] found in cache
+[integers.0.2.2] found in cache
+[key-parsers.0.9.2] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[parsexp.v0.11.0] found in cache
+[pkcs11.0.7.2] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_deriving_yojson.3.1] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.0] found in cache
+[ptime.0.8.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[variantslib.v0.11.0] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed ctypes-foreign.0.4.0
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed ppx_deriving.4.2.1
+-> installed stdio.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.3.2.1
+-> installed hex.1.2.0
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed ppxlib.0.3.0
+-> installed ctypes.0.14.0
+-> installed fieldslib.v0.11.0
+-> installed ppx_compare.v0.11.1
+-> installed ppx_here.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ppx_fields_conv.v0.11.0
+-> installed ptime.0.8.3
+-> installed variantslib.v0.11.0
+-> installed ppx_variants_conv.v0.11.1
+-> installed yojson.1.4.1
+-> installed ppx_custom_printf.v0.11.0
+-> installed ppx_deriving_yojson.3.1
+-> installed zarith.1.7
+-> installed bin_prot.v0.11.0
+-> installed asn1-combinators.0.2.0
+-> installed ppx_bin_prot.v0.11.1
+-> installed key-parsers.0.9.2
+[ERROR] The compilation of pkcs11 failed at "/home/opam/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false --with-cmdliner false".
+
+#=== ERROR while compiling pkcs11.0.7.2 =======================================#
+# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/pkcs11.0.7.2
+# command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false --with-cmdliner false
+# exit-code            1
+# env-file             ~/.opam/log/pkcs11-11-53d359.env
+# output-file          ~/.opam/log/pkcs11-11-53d359.out
+### output ###
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_generator.ml > src/pkcs11_generator.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/ctypes_helpers.mli > src/ctypes_helpers.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_bindings.ml > src/pkcs11_bindings.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_types.ml > src/pkcs11_types.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/ctypes_helpers.cmi src/ctypes_helpers.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CBC_ENCRYPT_DATA_PARAMS.ml > src/pkcs11_CBC_ENCRYPT_DATA_PARAMS.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_BYTE.mli > src/pkcs11_CK_BYTE.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_BYTE.cmi src/pkcs11_CK_BYTE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ATTRIBUTE.mli > src/pkcs11_CK_ATTRIBUTE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ATTRIBUTE_TYPE.mli > src/pkcs11_CK_ATTRIBUTE_TYPE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_BIGINT.mli > src/pkcs11_CK_BIGINT.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_KEY_TYPE.mli > src/pkcs11_CK_KEY_TYPE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/p11_sigs.ml > src/p11_sigs.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ULONG.mli > src/pkcs11_CK_ULONG.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/p11_sigs.cmo src/p11_sigs.ml
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ULONG.cmi src/pkcs11_CK_ULONG.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_OBJECT_CLASS.mli > src/pkcs11_CK_OBJECT_CLASS.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_key_gen_mechanism.mli > src/pkcs11_key_gen_mechanism.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_MECHANISM_TYPE.mli > src/pkcs11_CK_MECHANISM_TYPE.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_MECHANISM_TYPE.cmi src/pkcs11_CK_MECHANISM_TYPE.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_BIGINT.cmi src/pkcs11_CK_BIGINT.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_KEY_TYPE.cmi src/pkcs11_CK_KEY_TYPE.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_OBJECT_CLASS.cmi src/pkcs11_CK_OBJECT_CLASS.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_key_gen_mechanism.cmi src/pkcs11_key_gen_mechanism.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ATTRIBUTE_TYPE.cmi src/pkcs11_CK_ATTRIBUTE_TYPE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ATTRIBUTE_SET.mli > src/pkcs11_CK_ATTRIBUTE_SET.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ATTRIBUTE.cmi src/pkcs11_CK_ATTRIBUTE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_RV.mli > src/pkcs11_CK_RV.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_RV.cmi src/pkcs11_CK_RV.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_BBOOL.mli > src/pkcs11_CK_BBOOL.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ECDH1_DERIVE_PARAMS.mli > src/pkcs11_CK_ECDH1_DERIVE_PARAMS.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_EC_KDF_TYPE.mli > src/pkcs11_CK_EC_KDF_TYPE.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_EC_KDF_TYPE.cmi src/pkcs11_CK_EC_KDF_TYPE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ECMQV_DERIVE_PARAMS.mli > src/pkcs11_CK_ECMQV_DERIVE_PARAMS.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_OBJECT_HANDLE.mli > src/pkcs11_CK_OBJECT_HANDLE.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_OBJECT_HANDLE.cmi src/pkcs11_CK_OBJECT_HANDLE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_FLAGS.mli > src/pkcs11_CK_FLAGS.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_HW_FEATURE_TYPE.mli > src/pkcs11_CK_HW_FEATURE_TYPE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_INFO.mli > src/pkcs11_CK_INFO.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_FLAGS.cmi src/pkcs11_CK_FLAGS.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_VERSION.mli > src/pkcs11_CK_VERSION.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_VERSION.cmi src/pkcs11_CK_VERSION.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.mli > src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_MECHANISM.mli > src/pkcs11_CK_MECHANISM.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CBC_ENCRYPT_DATA_PARAMS.cmo src/pkcs11_CBC_ENCRYPT_DATA_PARAMS.ml
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ECDH1_DERIVE_PARAMS.cmi src/pkcs11_CK_ECDH1_DERIVE_PARAMS.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ECMQV_DERIVE_PARAMS.cmi src/pkcs11_CK_ECMQV_DERIVE_PARAMS.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.cmi src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_PKCS5_PBKD2_PARAMS.mli > src/pkcs11_CK_PKCS5_PBKD2_PARAMS.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.mli > src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.mli > src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.cmi src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.cmi src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_RAW_PAYLOAD.mli > src/pkcs11_CK_RAW_PAYLOAD.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.mli > src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_RSA_PKCS_MGF_TYPE.mli > src/pkcs11_CK_RSA_PKCS_MGF_TYPE.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_RSA_PKCS_MGF_TYPE.cmi src/pkcs11_CK_RSA_PKCS_MGF_TYPE.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.mli > src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_PKCS5_PBKD2_PARAMS.cmi src/pkcs11_CK_PKCS5_PBKD2_PARAMS.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_RAW_PAYLOAD.cmi src/pkcs11_CK_RAW_PAYLOAD.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.cmi src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.cmi src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_MECHANISM_INFO.mli > src/pkcs11_CK_MECHANISM_INFO.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_SESSION_HANDLE.mli > src/pkcs11_CK_SESSION_HANDLE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_SESSION_INFO.mli > src/pkcs11_CK_SESSION_INFO.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_SLOT_ID.mli > src/pkcs11_CK_SLOT_ID.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_SLOT_INFO.mli > src/pkcs11_CK_SLOT_INFO.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_TOKEN_INFO.mli > src/pkcs11_CK_TOKEN_INFO.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_USER_TYPE.mli > src/pkcs11_CK_USER_TYPE.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_UTF8CHAR.mli > src/pkcs11_CK_UTF8CHAR.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_VOID.mli > src/pkcs11_CK_VOID.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_data.mli > src/pkcs11_data.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_mechanism_list.mli > src/pkcs11_mechanism_list.mli.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_slot_list.mli > src/pkcs11_slot_list.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_SLOT_ID.cmi src/pkcs11_CK_SLOT_ID.mli
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_template.mli > src/pkcs11_template.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ATTRIBUTE_SET.cmi src/pkcs11_CK_ATTRIBUTE_SET.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_BBOOL.cmi src/pkcs11_CK_BBOOL.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_HW_FEATURE_TYPE.cmi src/pkcs11_CK_HW_FEATURE_TYPE.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_INFO.cmi src/pkcs11_CK_INFO.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_MECHANISM.cmi src/pkcs11_CK_MECHANISM.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_MECHANISM_INFO.cmi src/pkcs11_CK_MECHANISM_INFO.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_SESSION_HANDLE.cmi src/pkcs11_CK_SESSION_HANDLE.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_SESSION_INFO.cmi src/pkcs11_CK_SESSION_INFO.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_SLOT_INFO.cmi src/pkcs11_CK_SLOT_INFO.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_TOKEN_INFO.cmi src/pkcs11_CK_TOKEN_INFO.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_USER_TYPE.cmi src/pkcs11_CK_USER_TYPE.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_UTF8CHAR.cmi src/pkcs11_CK_UTF8CHAR.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_VOID.cmi src/pkcs11_CK_VOID.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_data.cmi src/pkcs11_data.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_mechanism_list.cmi src/pkcs11_mechanism_list.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_slot_list.cmi src/pkcs11_slot_list.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_template.cmi src/pkcs11_template.mli
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_types.cmo src/pkcs11_types.ml
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_bindings.cmo src/pkcs11_bindings.ml
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_generator.cmo src/pkcs11_generator.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/ctypes_helpers.ml > src/ctypes_helpers.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/ctypes_helpers.cmx src/ctypes_helpers.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_BYTE.ml > src/pkcs11_CK_BYTE.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_BYTE.cmx src/pkcs11_CK_BYTE.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ATTRIBUTE.ml > src/pkcs11_CK_ATTRIBUTE.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ATTRIBUTE_TYPE.ml > src/pkcs11_CK_ATTRIBUTE_TYPE.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_BIGINT.ml > src/pkcs11_CK_BIGINT.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_hex_data.ml > src/pkcs11_hex_data.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_hex_data.mli > src/pkcs11_hex_data.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_hex_data.cmi src/pkcs11_hex_data.mli
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_hex_data.cmx src/pkcs11_hex_data.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_KEY_TYPE.ml > src/pkcs11_CK_KEY_TYPE.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ULONG.ml > src/pkcs11_CK_ULONG.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_log.ml > src/pkcs11_log.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_log.mli > src/pkcs11_log.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_log.cmi src/pkcs11_log.mli
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ULONG.cmx src/pkcs11_CK_ULONG.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_log.cmx src/pkcs11_log.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/p11_sigs.cmx src/p11_sigs.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_OBJECT_CLASS.ml > src/pkcs11_CK_OBJECT_CLASS.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_key_gen_mechanism.ml > src/pkcs11_key_gen_mechanism.ml.depends
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_MECHANISM_TYPE.ml > src/pkcs11_CK_MECHANISM_TYPE.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_MECHANISM_TYPE.cmx src/pkcs11_CK_MECHANISM_TYPE.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_BIGINT.cmx src/pkcs11_CK_BIGINT.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_KEY_TYPE.cmx src/pkcs11_CK_KEY_TYPE.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_OBJECT_CLASS.cmx src/pkcs11_CK_OBJECT_CLASS.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_key_gen_mechanism.cmx src/pkcs11_key_gen_mechanism.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_BBOOL.ml > src/pkcs11_CK_BBOOL.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ATTRIBUTE_TYPE.cmx src/pkcs11_CK_ATTRIBUTE_TYPE.ml
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_BBOOL.cmx src/pkcs11_CK_BBOOL.ml
+# ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_CK_ATTRIBUTE_SET.ml > src/pkcs11_CK_ATTRIBUTE_SET.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ATTRIBUTE.cmx src/pkcs11_CK_ATTRIBUTE.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -I src -I include -o src/pkcs11_CK_ATTRIBUTE.cmx src/pkcs11_CK_ATTRIBUTE.ml
+# File "src/pkcs11_CK_ATTRIBUTE.ml", line 150, characters 6-10:
+# Error: This variant pattern is expected to have type
+#          (Key_parsers.Asn1.EC.point * Cstruct.t, Asn.error) Result.result
+#        The constructor None does not belong to type Result.result
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/pkcs11.a' 'src/pkcs11.cmxs' 'src/pkcs11.cmxa'
+#      'src/pkcs11.cma' 'src/p11_key_attributes.cmx'
+#      'src/p11_key_attributes.cmi' 'src/p11_key_attributes.mli'
+#      'src/pkcs11_bindings.cmx' 'src/pkcs11_generated.cmx'
+#      'src/pkcs11_CK_VOID.cmx' 'src/pkcs11_CK_VOID.cmi'
+#      'src/pkcs11_CK_VOID.mli' 'src/pkcs11_CK_SESSION_HANDLE.cmx'
+#      'src/pkcs11_CK_SESSION_HANDLE.cmi' 'src/pkcs11_CK_SESSION_HANDLE.mli'
+#      'src/pkcs11_CK_HW_FEATURE_TYPE.cmx' 'src/pkcs11_CK_HW_FEATURE_TYPE.cmi'
+#      'src/pkcs11_CK_HW_FEATURE_TYPE.mli' 'src/pkcs11_CK_SLOT_INFO.cmx'
+#      'src/pkcs11_CK_SLOT_INFO.cmi' 'src/pkcs11_CK_SLOT_INFO.mli'
+#      'src/pkcs11_CK_SLOT_ID.cmx' 'src/pkcs11_CK_SLOT_ID.cmi'
+#      'src/pkcs11_CK_SLOT_ID.mli' 'src/pkcs11_slot_list.cmx'
+#      'src/pkcs11_slot_list.cmi' 'src/pkcs11_slot_list.mli'
+#      'src/pkcs11_CK_MECHANISM_INFO.cmx' 'src/pkcs11_CK_MECHANISM_INFO.cmi'
+#      'src/pkcs11_CK_MECHANISM_INFO.mli' 'src/pkcs11_CK_RV.cmx'
+#      'src/pkcs11_CK_RV.cmi' 'src/pkcs11_CK_RV.mli'
+#      'src/pkcs11_CK_RAW_PAYLOAD.cmx' 'src/pkcs11_CK_RAW_PAYLOAD.cmi'
+#      'src/pkcs11_CK_RAW_PAYLOAD.mli'
+#      'src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.cmx'
+#      'src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.cmi'
+#      'src/pkcs11_CK_PKCS5_PBKD2_PSEUDO_RANDOM_FUNCTION_TYPE.mli'
+#      'src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.cmx'
+#      'src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.cmi'
+#      'src/pkcs11_CK_PKCS5_PBKDF2_SALT_SOURCE_TYPE.mli'
+#      'src/pkcs11_CK_PKCS5_PBKD2_PARAMS.cmx'
+#      'src/pkcs11_CK_PKCS5_PBKD2_PARAMS.cmi'
+#      'src/pkcs11_CK_PKCS5_PBKD2_PARAMS.mli'
+#      'src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.cmx'
+#      'src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.cmi'
+#      'src/pkcs11_CK_RSA_PKCS_OAEP_PARAMS.mli'
+#      'src/pkcs11_CK_RSA_PKCS_MGF_TYPE.cmx'
+#      'src/pkcs11_CK_RSA_PKCS_MGF_TYPE.cmi'
+#      'src/pkcs11_CK_RSA_PKCS_MGF_TYPE.mli'
+#      'src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.cmx'
+#      'src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.cmi'
+#      'src/pkcs11_CK_RSA_PKCS_PSS_PARAMS.mli'
+#      'src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.cmx'
+#      'src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.cmi'
+#      'src/pkcs11_CK_KEY_DERIVATION_STRING_DATA.mli'
+#      'src/pkcs11_CBC_ENCRYPT_DATA_PARAMS.cmx'
+#      'src/pkcs11_CK_ECDH1_DERIVE_PARAMS.cmx'
+#      'src/pkcs11_CK_ECDH1_DERIVE_PARAMS.cmi'
+#      'src/pkcs11_CK_ECDH1_DERIVE_PARAMS.mli'
+#      'src/pkcs11_CK_OBJECT_HANDLE.cmx' 'src/pkcs11_CK_OBJECT_HANDLE.cmi'
+#      'src/pkcs11_CK_OBJECT_HANDLE.mli' 'src/pkcs11_CK_EC_KDF_TYPE.cmx'
+#      'src/pkcs11_CK_EC_KDF_TYPE.cmi' 'src/pkcs11_CK_EC_KDF_TYPE.mli'
+#      'src/pkcs11_CK_ECMQV_DERIVE_PARAMS.cmx'
+#      'src/pkcs11_CK_ECMQV_DERIVE_PARAMS.cmi'
+#      'src/pkcs11_CK_ECMQV_DERIVE_PARAMS.mli' 'src/pkcs11_CK_MECHANISM.cmx'
+#      'src/pkcs11_CK_MECHANISM.cmi' 'src/pkcs11_CK_MECHANISM.mli'
+#      'src/pkcs11_CK_USER_TYPE.cmx' 'src/pkcs11_CK_USER_TYPE.cmi'
+#      'src/pkcs11_CK_USER_TYPE.mli' 'src/pkcs11_CK_INFO.cmx'
+#      'src/pkcs11_CK_INFO.cmi' 'src/pkcs11_CK_INFO.mli'
+#      'src/pkcs11_CK_UTF8CHAR.cmx' 'src/pkcs11_CK_UTF8CHAR.cmi'
+#      'src/pkcs11_CK_UTF8CHAR.mli' 'src/pkcs11_CK_VERSION.cmx'
+#      'src/pkcs11_CK_VERSION.cmi' 'src/pkcs11_CK_VERSION.mli'
+#      'src/pkcs11_CK_TOKEN_INFO.cmx' 'src/pkcs11_CK_TOKEN_INFO.cmi'
+#      'src/pkcs11_CK_TOKEN_INFO.mli' 'src/pkcs11_template.cmx'
+#      'src/pkcs11_template.cmi' 'src/pkcs11_template.mli'
+#      'src/pkcs11_mechanism_list.cmx' 'src/pkcs11_mechanism_list.cmi'
+#      'src/pkcs11_mechanism_list.mli' 'src/pkcs11_CK_BBOOL.cmx'
+#      'src/pkcs11_CK_BBOOL.cmi' 'src/pkcs11_CK_BBOOL.mli'
+#      'src/pkcs11_CK_ATTRIBUTE_TYPE.cmx' 'src/pkcs11_CK_ATTRIBUTE_TYPE.cmi'
+#      'src/pkcs11_CK_ATTRIBUTE_TYPE.mli' 'src/pkcs11_CK_MECHANISM_TYPE.cmx'
+#      'src/pkcs11_CK_MECHANISM_TYPE.cmi' 'src/pkcs11_CK_MECHANISM_TYPE.mli'
+#      'src/pkcs11_key_gen_mechanism.cmx' 'src/pkcs11_key_gen_mechanism.cmi'
+#      'src/pkcs11_key_gen_mechanism.mli' 'src/pkcs11_CK_ULONG.cmx'
+#      'src/pkcs11_CK_ULONG.cmi' 'src/pkcs11_CK_ULONG.mli'
+#      'src/pkcs11_hex_data.cmx' 'src/pkcs11_hex_data.cmi'
+#      'src/pkcs11_hex_data.mli' 'src/pkcs11_CK_BIGINT.cmx'
+#      'src/pkcs11_CK_BIGINT.cmi' 'src/pkcs11_CK_BIGINT.mli'
+#      'src/pkcs11_CK_ATTRIBUTE.cmx' 'src/pkcs11_CK_ATTRIBUTE.cmi'
+#      'src/pkcs11_CK_ATTRIBUTE.mli' 'src/pkcs11_CK_KEY_TYPE.cmx'
+#      'src/pkcs11_CK_KEY_TYPE.cmi' 'src/pkcs11_CK_KEY_TYPE.mli'
+#      'src/pkcs11_CK_OBJECT_CLASS.cmx' 'src/pkcs11_CK_OBJECT_CLASS.cmi'
+#      'src/pkcs11_CK_OBJECT_CLASS.mli' 'src/pkcs11_CK_ATTRIBUTE_SET.cmx'
+#      'src/pkcs11_CK_ATTRIBUTE_SET.cmi' 'src/pkcs11_CK_ATTRIBUTE_SET.mli'
+#      'src/pkcs11_types.cmx' 'src/pkcs11_CK_FLAGS.cmx'
+#      'src/pkcs11_CK_FLAGS.cmi' 'src/pkcs11_CK_FLAGS.mli'
+#      'src/pkcs11_helpers.cmx' 'src/pkcs11_CK_SESSION_INFO.cmx'
+#      'src/pkcs11_CK_SESSION_INFO.cmi' 'src/pkcs11_CK_SESSION_INFO.mli'
+#      'src/ctypes_helpers.cmx' 'src/ctypes_helpers.cmi'
+#      'src/ctypes_helpers.mli' 'src/pkcs11_CK_BYTE.cmx'
+#      'src/pkcs11_CK_BYTE.cmi' 'src/pkcs11_CK_BYTE.mli' 'src/pkcs11_data.cmx'
+#      'src/pkcs11_data.cmi' 'src/pkcs11_data.mli' 'src/pkcs11_log.cmx'
+#      'src/pkcs11_log.cmi' 'src/pkcs11_log.mli' 'src/p11.cmx' 'src/p11.cmi'
+#      'src/p11.mli' 'src/pkcs11.cmx' 'src/pkcs11.cmi' 'src/pkcs11.mli'
+#      'src/dllpkcs11_stubs.so' 'src/libpkcs11_stubs.a' 'include/pkcs11.h'
+#      'include/pkcs11t.h' 'include/pkcs11f.h' 'include/pkcs11_module.h'
+#      'src/pkcs11_rev.a' 'src/pkcs11_rev.cmxs' 'src/pkcs11_rev.cmxa'
+#      'src/pkcs11_rev.cma' 'src/pkcs11_rev_generated.cmx'
+#      'src/pkcs11_rev_decl.cmx' 'src/pkcs11_rev.cmx' 'src/pkcs11_rev.cmi'
+#      'src/pkcs11_rev.mli' 'src/dllpkcs11_rev_stubs.so'
+#      'src/libpkcs11_rev_stubs.a' 'src/dllpkcs11_rev_dllmain.so'
+#      'src/libpkcs11_rev_dllmain.a']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build pkcs11 0.7.2
++- 
++- The following changes have been performed
+| - install asn1-combinators        0.2.0
+| - install base                    v0.11.0
+| - install base-bytes              base
+| - install bin_prot                v0.11.0
+| - install biniou                  1.2.0
+| - install conf-gmp                1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 3.2.1
+| - install ctypes                  0.14.0
+| - install ctypes-foreign          0.4.0
+| - install easy-format             1.3.1
+| - install fieldslib               v0.11.0
+| - install hex                     1.2.0
+| - install integers                0.2.2
+| - install key-parsers             0.9.2
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install parsexp                 v0.11.0
+| - install ppx_bin_prot            v0.11.1
+| - install ppx_compare             v0.11.1
+| - install ppx_custom_printf       v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_deriving_yojson     3.1
+| - install ppx_fields_conv         v0.11.0
+| - install ppx_here                v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_variants_conv       v0.11.1
+| - install ppxlib                  0.3.0
+| - install ptime                   0.8.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install variantslib             v0.11.0
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704021139.export"
+31 1530670235 1530670720

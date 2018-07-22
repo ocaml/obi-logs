@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 core.109.20.00
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for core.109.20.00: The following dependencies couldn't be met:
+          - core -> ocaml < 4.01.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=core.109.20.00 returned 20
+20 1530665538 1530665541
