@@ -178,10 +178,10 @@ The following actions will be performed:
 -> installed ppx_test.1.4.1
 -> installed ppx_deriving.4.2.1
 -> installed sexplib0.v0.11.0
--> installed base.v0.11.1
 -> installed spotlib.3.1.2
--> installed stdio.v0.11.0
+-> installed base.v0.11.1
 -> installed tiny_json.1.1.4
+-> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
 -> installed pcre.7.3.4
 -> installed ppx_orakuda.3.0.2
@@ -213,7 +213,7 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.04/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.04/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.06 sec)
+# *** omake: finished reading OMakefiles (0.08 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan lib scan-ocaml-parserMonad.mli
 # + ocamlfind ocamldep -package cryptokit,str,spotlib,ppx_meta_conv,ppx_meta_conv_tiny_json,ppx_meta_conv_ocaml,curl -package ppx_meta_conv -modules parserMonad.mli
@@ -221,7 +221,7 @@ The following actions will be performed:
 # File "_none_", line 1:
 # Error: Cannot load /home/opam/.opam/4.04/lib/re/re_perl.cmxs: cannot find file /home/opam/.opam/4.04/lib/re/re_perl.cmxs in search path
 # *** omake: 28/293 targets are up to date
-# *** omake: failed (0.11 sec, 1/1 scans, 0/0 rules, 15/135 digests)
+# *** omake: failed (0.13 sec, 1/1 scans, 0/0 rules, 15/135 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner lib/scan-ocaml-parserMonad.mli>
 #       depends on: lib/parserMonad.mli
@@ -272,5 +272,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180721020536.export"
-31 1532138724 1532138843
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722115439.export"
+31 1532260464 1532260620

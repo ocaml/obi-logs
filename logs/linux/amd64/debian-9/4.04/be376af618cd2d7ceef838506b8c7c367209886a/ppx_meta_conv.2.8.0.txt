@@ -55,9 +55,9 @@ The following actions will be performed:
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed ppx_deriving.4.2.1
 -> installed ppx_tools_versioned.5.2
+-> installed omake.0.9.8.7
 -> installed ppxx.2.3.1
 -> installed ppx_test.1.6.0
--> installed omake.0.9.8.7
 -> installed spotlib.4.0.3
 [ERROR] The compilation of ppx_meta_conv failed at "/home/opam/.opam/4.04/bin/ocaml setup.ml -build".
 
@@ -92,7 +92,7 @@ The following actions will be performed:
 # Checking package tiny_json
 # ocamlfind: Package `tiny_json' not found
 # Package tiny_json is not available...
-# *** omake: finished reading OMakefiles (0.13 sec)
+# *** omake: finished reading OMakefiles (0.16 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build src ppx_meta_conv.cmx
 # + ocamlfind ocamlc -package ppx_deriving.api,ocaml-compiler-libs.common,ocaml-migrate-parsetree,spotlib,ppxx -g -w A-3-4-9-40-41-42-44-45-48 -warn-error a -g -annot -bin-annot -package ppx_tools_versioned.metaquot_404 -I . -c ppx_meta_conv.ml
@@ -102,7 +102,7 @@ The following actions will be performed:
 #        Type string is not compatible with type
 #          Ast_405.Ast_helper.str = string Location.loc 
 # *** omake: 37/173 targets are up to date
-# *** omake: failed (0.40 sec, 2/2 scans, 2/3 rules, 21/136 digests)
+# *** omake: failed (0.51 sec, 2/2 scans, 2/3 rules, 21/136 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    src/ppx_meta_conv.annot
 #       depends on: src/ppx_meta_conv.ml
@@ -143,5 +143,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180721011609.export"
-31 1532135766 1532135830
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722122401.export"
+31 1532262239 1532262308

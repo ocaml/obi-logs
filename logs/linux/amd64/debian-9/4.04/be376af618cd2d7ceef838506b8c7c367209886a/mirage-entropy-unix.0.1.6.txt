@@ -92,8 +92,8 @@ The following actions will be performed:
 -> installed topkg.0.9.1
 -> installed camlp4.4.04+1
 -> installed lwt.3.3.0
--> installed mirage-types.2.3.0
 -> installed logs.0.6.2
+-> installed mirage-types.2.3.0
 -> installed mirage-unix.3.0.8
 [ERROR] The compilation of mirage-entropy-unix failed at "/usr/bin/make unix-build".
 
@@ -102,8 +102,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/mirage-entropy-unix.0.1.6
 # command              /usr/bin/make unix-build
 # exit-code            2
-# env-file             ~/.opam/log/mirage-entropy-unix-11-84d876.env
-# output-file          ~/.opam/log/mirage-entropy-unix-11-84d876.out
+# env-file             ~/.opam/log/mirage-entropy-unix-12-2450cb.env
+# output-file          ~/.opam/log/mirage-entropy-unix-12-2450cb.out
 ### output ###
 # OS=unix ./build
 # ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
@@ -152,5 +152,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180721010741.export"
-31 1532135259 1532135389
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722113002.export"
+31 1532258999 1532259153

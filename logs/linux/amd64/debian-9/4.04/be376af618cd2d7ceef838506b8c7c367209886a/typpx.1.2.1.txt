@@ -58,7 +58,7 @@ The following actions will be performed:
 #    Warning: old-style foreach expression.
 #    This expression should use a => binding.
 # PREFIX=/home/opam/.opam/4.04
-# *** omake: finished reading OMakefiles (0.16 sec)
+# *** omake: finished reading OMakefiles (0.18 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan src scan-ocaml-compilerlib.mli
 # + ocamlfind ocamldep -package compiler-libs.common,ppxx,ppx_tools.metaquot -modules compilerlib.mli
@@ -91,7 +91,7 @@ The following actions will be performed:
 # + ocamlfind ocamldep -package compiler-libs.common,ppxx,ppx_tools.metaquot -modules s.ml
 # ocamlfind: Package `ppx_tools.metaquot' not found
 # *** omake: 46/123 targets are up to date
-# *** omake: failed (0.19 sec, 10/10 scans, 3/3 rules, 33/72 digests)
+# *** omake: failed (0.21 sec, 10/10 scans, 3/3 rules, 33/72 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner src/scan-ocaml-compile.ml>
 #       depends on: src/compile.ml
@@ -132,5 +132,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180721012817.export"
-31 1532136495 1532136550
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722114754.export"
+31 1532260071 1532260126

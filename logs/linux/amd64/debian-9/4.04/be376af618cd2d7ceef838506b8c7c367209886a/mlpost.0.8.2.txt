@@ -754,8 +754,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/mlpost.0.8.2
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/mlpost-11-e19cf7.env
-# output-file          ~/.opam/log/mlpost-11-e19cf7.out
+# env-file             ~/.opam/log/mlpost-11-acfa5e.env
+# output-file          ~/.opam/log/mlpost-11-acfa5e.out
 ### output ###
 # /home/opam/.opam/4.04/bin/ocamlbuild  -no-links -tag bin_annot -tags cairo_yes,concrete_yes  -classic-display -log "build.log" mlpost.cma mlpost_desc_options.cma mlpost_options.cma mlpost_options.cmi mlpost.cmxa mlpost_desc_options.cmxa mlpost_options.cmxa tool.native backend/dllmlpost_ft.so backend/libmlpost_ft.a
 # /home/opam/.opam/4.04/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -782,7 +782,7 @@ The following actions will be performed:
 # sh: 1: no: not found
 # File "mlpost.mli", line 1:
 # Error: Error while running external preprocessor
-# Command line: no Camlp4MacroParser.cmo  -D CAIRO -D CONCRETE 'mlpost.mli' > /tmp/ocamlpp145b56
+# Command line: no Camlp4MacroParser.cmo  -D CAIRO -D CONCRETE 'mlpost.mli' > /tmp/ocamlppc61ba9
 # 
 # Command exited with code 2.
 # ocamlbuild.Makefile:50: recipe for target 'all' failed
@@ -810,5 +810,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180721013754.export"
-31 1532137018 1532137113
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722114502.export"
+31 1532259849 1532259940

@@ -248,11 +248,11 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/mirage-qubes.0.3
 # command              ~/.opam/4.04/.opam-switch/build/mirage-qubes.0.3/./configure
 # exit-code            1
-# env-file             ~/.opam/log/mirage-qubes-11-4f207f.env
-# output-file          ~/.opam/log/mirage-qubes-11-4f207f.out
+# env-file             ~/.opam/log/mirage-qubes-10-4f207f.env
+# output-file          ~/.opam/log/mirage-qubes-10-4f207f.out
 ### output ###
 # ocamlfind: Package `mirage-types.lwt' not found
-# W: Field 'pkg_mirage_types_lwt' is not set: Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d mirage-types.lwt > '/tmp/oasis-9f5d87.txt'' terminated with error code 2
+# W: Field 'pkg_mirage_types_lwt' is not set: Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d mirage-types.lwt > '/tmp/oasis-a88ac3.txt'' terminated with error code 2
 # E: Cannot find findlib package mirage-types.lwt
 # E: Failure("1 configuration error")
 
@@ -322,5 +322,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180721013340.export"
-31 1532136805 1532136973
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722120107.export"
+31 1532260855 1532261006
