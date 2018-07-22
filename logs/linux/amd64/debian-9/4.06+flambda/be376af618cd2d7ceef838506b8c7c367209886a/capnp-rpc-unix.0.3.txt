@@ -310,9 +310,9 @@ The following actions will be performed:
 -> installed ppx_sexp_message.v0.10.0
 -> installed ppx_sexp_value.v0.10.0
 -> installed ppx_traverse.v0.10.0
--> installed ppx_custom_printf.v0.10.0
 -> installed ppx_typerep_conv.v0.10.0
 -> installed uint.1.2.1
+-> installed ppx_custom_printf.v0.10.0
 -> installed uri.1.9.7
 -> installed variantslib.v0.10.0
 -> installed capnp-rpc.0.3.1
@@ -329,15 +329,15 @@ The following actions will be performed:
 -> installed core_kernel.v0.10.0
 -> installed capnp.3.2.0
 -> installed capnp-rpc-lwt.0.3.1
-[ERROR] The compilation of capnp-rpc-unix failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p capnp-rpc-unix -j 71".
+[ERROR] The compilation of capnp-rpc-unix failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p capnp-rpc-unix -j 47".
 
 #=== ERROR while compiling capnp-rpc-unix.0.3 =================================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/capnp-rpc-unix.0.3
-# command              ~/.opam/4.06+flambda/bin/jbuilder build -p capnp-rpc-unix -j 71
+# command              ~/.opam/4.06+flambda/bin/jbuilder build -p capnp-rpc-unix -j 47
 # exit-code            1
-# env-file             ~/.opam/log/capnp-rpc-unix-11-1cc3e8.env
-# output-file          ~/.opam/log/capnp-rpc-unix-11-1cc3e8.out
+# env-file             ~/.opam/log/capnp-rpc-unix-11-8a2096.env
+# output-file          ~/.opam/log/capnp-rpc-unix-11-8a2096.out
 ### output ###
 #       ocamlc unix/.capnp_rpc_unix.objs/capnp_rpc_unix__File_store.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -g -bin-annot -I unix/.capnp_rpc_unix.objs -I /home/opam/.opam/4.06+flambda/lib/asetmap -I /home/opam/.opam/4.06+flambda/lib/asn1-combinators -I /home/opam/.opam/4.06+flambda/lib/astring -I /home/opam/.opam/4.06+flambda/lib/base64 -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/capnp -I /home/opam/.opam/4.06+flambda/lib/capnp-rpc -I /home/opam/.opam/4.06+flambda/lib/capnp-rpc-lwt -I /home/opam/.opam/4.06+flambda/lib/cmdliner -I /home/opam/.opam/4.06+flambda/lib/cstruct -I /home/opam/.opam/4.06+flambda/lib/cstruct-lwt -I /home/opam/.opam/4.06+flambda/lib/fmt -I /home/opam/.opam/4.06+flambda/lib/logs -I /home/opam/.opam/4.06+flambda/lib/lwt -I /home/opam/.opam/4.06+flambda/lib/lwt/unix -I /home/opam/.opam/4.06+flambda/lib/mirage-clock -I /home/opam/.opam/4.06+flambda/lib/mirage-device -I /home/opam/.opam/4.06+flambda/lib/mirage-flow -I /home/opam/.opam/4.06+flambda/lib/mirage-flow-lwt -I /home/opam/.opam/4.06+flambda/lib/mirage-flow-unix -I /home/opam/.opam/4.06+flambda/lib/mirage-kv -I /home/opam/.opam/4.06+flambda/lib/mirage-kv-lwt -I /home/opam/.opam/4.06+flambda/lib/nocrypto -I /home/opam/.opam/4.06+flambda/lib/ocaml/threads -I /home/opam/.opam/4.06+flambda/lib/ocplib-endian -I /home/opam/.opam/4.06+flambda/lib/ppx_deriving -I /home/opam/.opam/4.06+flambda/lib/ptime -I /home/opam/.opam/4.06+flambda/lib/re -I /home/opam/.opam/4.06+flambda/lib/re/posix -I /home/opam/.opam/4.06+flambda/lib/res -I /home/opam/.opam/4.06+flambda/lib/result -I /home/opam/.opam/4.06+flambda/lib/sexplib -I /home/opam/.opam/4.06+flambda/lib/sexplib/0 -I /home/opam/.opam/4.06+flambda/lib/stringext -I /home/opam/.opam/4.06+flambda/lib/tls -I /home/opam/.opam/4.06+flambda/lib/uchar -I /home/opam/.opam/4.06+flambda/lib/uint -I /home/opam/.opam/4.06+flambda/lib/uri -I /home/opam/.opam/4.06+flambda/lib/x509 -I /home/opam/.opam/4.06+flambda/lib/zarith -no-alias-deps -open Capnp_rpc_unix__ -o unix/.capnp_rpc_unix.objs/capnp_rpc_unix__File_store.cmo -c -impl unix/file_store.ml)
@@ -453,5 +453,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180721025214.export"
-31 1532141523 1532141970
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180722135744.export"
+31 1532267854 1532268308

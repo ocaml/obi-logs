@@ -200,17 +200,16 @@ The following actions will be performed:
 -> installed result.1.3
 -> installed sexplib.v0.9.3
 -> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.9.4
 -> installed ppx_ast.v0.9.2
 -> installed spawn.v0.9.0
--> installed topkg.0.9.1
--> installed base.v0.9.4
--> installed integers.0.2.2
 -> installed stdio.v0.9.1
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
 -> installed ppx_core.v0.9.3
 -> installed ppx_optcomp.v0.9.0
--> installed ctypes.0.14.0
--> installed typerep.v0.9.0
 -> installed ppx_driver.v0.9.2
+-> installed ctypes.0.14.0
 -> installed fieldslib.v0.9.0
 -> installed ppx_here.v0.9.1
 -> installed ppx_let.v0.9.0
@@ -233,23 +232,24 @@ The following actions will be performed:
 -> installed ppx_traverse.v0.9.0
 -> installed ppx_base.v0.9.0
 -> installed configurator.v0.9.1
--> installed ppx_typerep_conv.v0.9.0
--> installed variantslib.v0.9.0
+-> installed typerep.v0.9.0
 -> installed ppx_custom_printf.v0.9.0
+-> installed variantslib.v0.9.0
+-> installed ppx_typerep_conv.v0.9.0
 -> installed ppx_variants_conv.v0.9.0
 -> installed bin_prot.v0.9.2
 -> installed ppx_expect.v0.9.0
 -> installed ppx_bin_prot.v0.9.0
 -> installed ppx_jane.v0.9.0
-[ERROR] The compilation of core_kernel failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p core_kernel -j 71".
+[ERROR] The compilation of core_kernel failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p core_kernel -j 47".
 
 #=== ERROR while compiling core_kernel.v0.9.1 =================================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/core_kernel.v0.9.1
-# command              ~/.opam/4.06+flambda/bin/jbuilder build -p core_kernel -j 71
+# command              ~/.opam/4.06+flambda/bin/jbuilder build -p core_kernel -j 47
 # exit-code            1
-# env-file             ~/.opam/log/core_kernel-11-0ec95c.env
-# output-file          ~/.opam/log/core_kernel-11-0ec95c.out
+# env-file             ~/.opam/log/core_kernel-11-66cc07.env
+# output-file          ~/.opam/log/core_kernel-11-66cc07.out
 ### output ###
 #       ocamlc src/.core_kernel.objs/core_kernel__Core_array.{cmo,cmt}
 # File "src/core_array.ml", line 269, characters 11-12:
@@ -414,5 +414,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180721030722.export"
-31 1532142431 1532142565
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180722143309.export"
+31 1532269980 1532270171
