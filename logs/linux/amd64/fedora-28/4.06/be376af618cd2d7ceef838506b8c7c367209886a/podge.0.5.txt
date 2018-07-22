@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -38,7 +38,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:50 2018
+Install Date: Sat Jul 21 06:33:03 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -57,8 +57,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                    7.0 MB/s |  20 MB     00:02    
-Last metadata expiration check: 0:00:10 ago on Sat Jul 21 05:34:16 2018.
+Fedora 28 - x86_64 - Updates                     17 MB/s |  20 MB     00:01    
+Last metadata expiration check: 0:00:08 ago on Sun Jul 22 13:23:14 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -78,12 +78,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          653 kB/s |  46 kB     00:00    
-(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.1 MB/s | 193 kB     00:00    
-(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        1.2 MB/s | 184 kB     00:00    
-(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        1.5 MB/s | 550 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          316 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.2 MB/s | 193 kB     00:00    
+(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm        3.2 MB/s | 550 kB     00:00    
+(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        6.9 MB/s | 184 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.7 MB/s | 973 kB     00:00     
+Total                                           2.2 MB/s | 973 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -251,8 +251,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/podge.0.5
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/podge-10-60130f.env
-# output-file          ~/.opam/log/podge-10-60130f.out
+# env-file             ~/.opam/log/podge-10-fe39e4.env
+# output-file          ~/.opam/log/podge-10-fe39e4.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package yojson -package unix -package tyxml -package stringext -package re.pcre -package ezxmlm -package cohttp -package ANSITerminal -modules lib/podge.ml > lib/podge.ml.depends
@@ -340,5 +340,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721053432.export"
-31 1532151253 1532151542
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722132328.export"
+31 1532265789 1532266072

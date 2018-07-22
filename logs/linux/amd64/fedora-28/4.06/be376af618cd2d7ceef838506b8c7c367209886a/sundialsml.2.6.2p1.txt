@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package sundials-devel is not installed
 # The following new OS packages need to be installed: lapack-devel sundials-devel
 The following command needs to be run through "sudo":
     yum install -y lapack-devel sundials-devel
-Fedora 28 - x86_64 - Updates                     38 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Jul 21 05:01:39 2018.
+Fedora 28 - x86_64 - Updates                     20 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:14 ago on Sun Jul 22 13:40:25 2018.
 Dependencies resolved.
 ================================================================================
  Package                 Arch         Version               Repository     Size
@@ -70,26 +70,26 @@ Install  18 Packages
 Total download size: 39 M
 Installed size: 161 M
 Downloading Packages:
-(1/18): blas-devel-3.8.0-9.fc28.x86_64.rpm      169 kB/s |  25 kB     00:00    
-(2/18): lapack-devel-3.8.0-9.fc28.x86_64.rpm    360 kB/s |  88 kB     00:00    
-(3/18): blas-3.8.0-9.fc28.x86_64.rpm            2.6 MB/s | 428 kB     00:00    
-(4/18): sundials-devel-3.1.0-4.fc28.x86_64.rpm  1.2 MB/s | 163 kB     00:00    
-(5/18): sundials-3.1.0-4.fc28.x86_64.rpm        3.0 MB/s | 445 kB     00:00    
-(6/18): SuperLUMT-double-3.1.0-15.fc28.x86_64.r 855 kB/s |  85 kB     00:00    
-(7/18): lapack-3.8.0-9.fc28.x86_64.rpm           12 MB/s | 8.6 MB     00:00    
-(8/18): suitesparse-4.4.6-11.fc28.x86_64.rpm    3.0 MB/s | 1.0 MB     00:00    
-(9/18): SuperLUMT-common-3.1.0-15.fc28.noarch.r 1.9 MB/s | 648 kB     00:00    
-(10/18): tbb-2018.5-1.fc28.x86_64.rpm           3.5 MB/s | 158 kB     00:00    
-(11/18): libgfortran-8.1.1-5.fc28.x86_64.rpm    8.6 MB/s | 656 kB     00:00    
-(12/18): openblas-0.3.1-1.fc28.x86_64.rpm       1.5 MB/s |  29 kB     00:00    
-(13/18): openblas-serial-0.3.1-1.fc28.x86_64.rp  17 MB/s | 4.5 MB     00:00    
-(14/18): libquadmath-8.1.1-5.fc28.x86_64.rpm    7.2 MB/s | 186 kB     00:00    
-(15/18): libquadmath-devel-8.1.1-5.fc28.x86_64. 1.2 MB/s |  39 kB     00:00    
-(16/18): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm    16 MB/s |  11 MB     00:00    
-(17/18): openblas-openmp-0.3.1-1.fc28.x86_64.rp 5.1 MB/s | 4.7 MB     00:00    
-(18/18): atlas-3.10.3-5.fc28.x86_64.rpm         8.3 MB/s | 6.4 MB     00:00    
+(1/18): blas-devel-3.8.0-9.fc28.x86_64.rpm      226 kB/s |  25 kB     00:00    
+(2/18): lapack-devel-3.8.0-9.fc28.x86_64.rpm    708 kB/s |  88 kB     00:00    
+(3/18): blas-3.8.0-9.fc28.x86_64.rpm            7.0 MB/s | 428 kB     00:00    
+(4/18): sundials-devel-3.1.0-4.fc28.x86_64.rpm  1.6 MB/s | 163 kB     00:00    
+(5/18): SuperLUMT-double-3.1.0-15.fc28.x86_64.r 3.2 MB/s |  85 kB     00:00    
+(6/18): sundials-3.1.0-4.fc28.x86_64.rpm        3.1 MB/s | 445 kB     00:00    
+(7/18): SuperLUMT-common-3.1.0-15.fc28.noarch.r 6.8 MB/s | 648 kB     00:00    
+(8/18): suitesparse-4.4.6-11.fc28.x86_64.rpm    5.8 MB/s | 1.0 MB     00:00    
+(9/18): tbb-2018.5-1.fc28.x86_64.rpm            5.2 MB/s | 158 kB     00:00    
+(10/18): lapack-3.8.0-9.fc28.x86_64.rpm          11 MB/s | 8.6 MB     00:00    
+(11/18): libgfortran-8.1.1-5.fc28.x86_64.rpm    7.4 MB/s | 656 kB     00:00    
+(12/18): openblas-0.3.1-1.fc28.x86_64.rpm       1.3 MB/s |  29 kB     00:00    
+(13/18): openblas-openmp-0.3.1-1.fc28.x86_64.rp 7.6 MB/s | 4.7 MB     00:00    
+(14/18): libquadmath-8.1.1-5.fc28.x86_64.rpm    5.5 MB/s | 186 kB     00:00    
+(15/18): libquadmath-devel-8.1.1-5.fc28.x86_64. 2.3 MB/s |  39 kB     00:00    
+(16/18): openblas-serial-0.3.1-1.fc28.x86_64.rp 8.1 MB/s | 4.5 MB     00:00    
+(17/18): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm   8.2 MB/s |  11 MB     00:01    
+(18/18): atlas-3.10.3-5.fc28.x86_64.rpm         8.9 MB/s | 6.4 MB     00:00    
 --------------------------------------------------------------------------------
-Total                                            11 MB/s |  39 MB     00:03     
+Total                                            12 MB/s |  39 MB     00:03     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -216,4 +216,4 @@ The packages you requested declare the following system dependencies. Please mak
     lapack-devel sundials-devel
 
 # Run eval $(opam env) to update the current shell environment
-31 1532149295 1532149327
+31 1532266818 1532266865

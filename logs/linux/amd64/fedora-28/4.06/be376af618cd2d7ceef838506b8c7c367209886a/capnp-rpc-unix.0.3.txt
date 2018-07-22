@@ -41,7 +41,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -68,8 +68,8 @@ package perl-Pod-Html is not installed
 # The following new OS packages need to be installed: capnproto gmp-devel perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y capnproto gmp-devel perl-Pod-Html
-Fedora 28 - x86_64 - Updates                     26 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Sat Jul 21 05:28:58 2018.
+Fedora 28 - x86_64 - Updates                     37 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:25:08 2018.
 Dependencies resolved.
 ================================================================================
  Package              Arch         Version                  Repository     Size
@@ -90,12 +90,12 @@ Total download size: 1.4 M
 Installed size: 4.4 M
 Downloading Packages:
 (1/5): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.7 MB/s | 187 kB     00:00    
-(2/5): gmp-c++-6.1.2-7.fc28.x86_64.rpm          2.4 MB/s |  31 kB     00:00    
-(3/5): capnproto-0.6.1-7.fc28.x86_64.rpm        1.8 MB/s | 266 kB     00:00    
-(4/5): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 979 kB/s |  85 kB     00:00    
-(5/5): capnproto-libs-0.6.1-7.fc28.x86_64.rpm   4.0 MB/s | 879 kB     00:00    
+(2/5): gmp-c++-6.1.2-7.fc28.x86_64.rpm          1.5 MB/s |  31 kB     00:00    
+(3/5): capnproto-0.6.1-7.fc28.x86_64.rpm        1.9 MB/s | 266 kB     00:00    
+(4/5): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 1.5 MB/s |  85 kB     00:00    
+(5/5): capnproto-libs-0.6.1-7.fc28.x86_64.rpm   3.3 MB/s | 879 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           982 kB/s | 1.4 MB     00:01     
+Total                                           1.1 MB/s | 1.4 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -425,15 +425,15 @@ The following actions will be performed:
 -> installed core_kernel.v0.10.0
 -> installed capnp.3.2.0
 -> installed capnp-rpc-lwt.0.3.1
-[ERROR] The compilation of capnp-rpc-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p capnp-rpc-unix -j 47".
+[ERROR] The compilation of capnp-rpc-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p capnp-rpc-unix -j 71".
 
 #=== ERROR while compiling capnp-rpc-unix.0.3 =================================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/capnp-rpc-unix.0.3
-# command              ~/.opam/4.06/bin/jbuilder build -p capnp-rpc-unix -j 47
+# command              ~/.opam/4.06/bin/jbuilder build -p capnp-rpc-unix -j 71
 # exit-code            1
-# env-file             ~/.opam/log/capnp-rpc-unix-10-4906f1.env
-# output-file          ~/.opam/log/capnp-rpc-unix-10-4906f1.out
+# env-file             ~/.opam/log/capnp-rpc-unix-10-8a2096.env
+# output-file          ~/.opam/log/capnp-rpc-unix-10-8a2096.out
 ### output ###
 #       ocamlc unix/.capnp_rpc_unix.objs/capnp_rpc_unix__File_store.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I unix/.capnp_rpc_unix.objs -I /home/opam/.opam/4.06/lib/asetmap -I /home/opam/.opam/4.06/lib/asn1-combinators -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/capnp -I /home/opam/.opam/4.06/lib/capnp-rpc -I /home/opam/.opam/4.06/lib/capnp-rpc-lwt -I /home/opam/.opam/4.06/lib/cmdliner -I /home/opam/.opam/4.06/lib/cstruct -I /home/opam/.opam/4.06/lib/cstruct-lwt -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/mirage-clock -I /home/opam/.opam/4.06/lib/mirage-device -I /home/opam/.opam/4.06/lib/mirage-flow -I /home/opam/.opam/4.06/lib/mirage-flow-lwt -I /home/opam/.opam/4.06/lib/mirage-flow-unix -I /home/opam/.opam/4.06/lib/mirage-kv -I /home/opam/.opam/4.06/lib/mirage-kv-lwt -I /home/opam/.opam/4.06/lib/nocrypto -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ocplib-endian -I /home/opam/.opam/4.06/lib/ppx_deriving -I /home/opam/.opam/4.06/lib/ptime -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/res -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/tls -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uint -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/x509 -I /home/opam/.opam/4.06/lib/zarith -no-alias-deps -open Capnp_rpc_unix__ -o unix/.capnp_rpc_unix.objs/capnp_rpc_unix__File_store.cmo -c -impl unix/file_store.ml)
@@ -549,5 +549,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721052914.export"
-31 1532150933 1532151313
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722132523.export"
+31 1532265903 1532266306

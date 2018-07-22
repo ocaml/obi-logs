@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:50 2018
+Install Date: Sat Jul 21 06:33:03 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -55,8 +55,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: wget
 The following command needs to be run through "sudo":
     yum install -y wget
-Fedora 28 - x86_64 - Updates                     25 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Jul 21 05:11:26 2018.
+Fedora 28 - x86_64 - Updates                     13 MB/s |  20 MB     00:01    
+Last metadata expiration check: 0:00:09 ago on Sun Jul 22 13:20:04 2018.
 Dependencies resolved.
 ================================================================================
  Package       Arch            Version                   Repository        Size
@@ -71,9 +71,9 @@ Install  1 Package
 Total download size: 719 k
 Installed size: 2.8 M
 Downloading Packages:
-wget-1.19.5-1.fc28.x86_64.rpm                   5.6 MB/s | 719 kB     00:00    
+wget-1.19.5-1.fc28.x86_64.rpm                   5.7 MB/s | 719 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           755 kB/s | 719 kB     00:00     
+Total                                           1.1 MB/s | 719 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -145,8 +145,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/clangml.3.9.1
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/clangml-10-048520.env
-# output-file          ~/.opam/log/clangml-10-048520.out
+# env-file             ~/.opam/log/clangml-10-803e1a.env
+# output-file          ~/.opam/log/clangml-10-803e1a.out
 ### output ###
 # ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -189,5 +189,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721051139.export"
-31 1532149881 1532150040
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722132020.export"
+31 1532265599 1532265767

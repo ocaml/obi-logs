@@ -7,7 +7,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,8 +34,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: zlib-devel
 The following command needs to be run through "sudo":
     yum install -y zlib-devel
-Fedora 28 - x86_64 - Updates                     26 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Jul 21 05:18:09 2018.
+Fedora 28 - x86_64 - Updates                     43 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:15:47 2018.
 Dependencies resolved.
 ================================================================================
  Package            Arch           Version                Repository       Size
@@ -50,9 +50,9 @@ Install  1 Package
 Total download size: 55 k
 Installed size: 138 k
 Downloading Packages:
-zlib-devel-1.2.11-8.fc28.x86_64.rpm             556 kB/s |  55 kB     00:00    
+zlib-devel-1.2.11-8.fc28.x86_64.rpm             910 kB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            77 kB/s |  55 kB     00:00     
+Total                                            66 kB/s |  55 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -83,15 +83,15 @@ The following actions will be performed:
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed camlzip.1.07
-[ERROR] The compilation of npy failed at "/home/opam/.opam/4.06/bin/jbuilder build --only-packages npy --root . -j 47 @install".
+[ERROR] The compilation of npy failed at "/home/opam/.opam/4.06/bin/jbuilder build --only-packages npy --root . -j 71 @install".
 
 #=== ERROR while compiling npy.0.0.5 ==========================================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/npy.0.0.5
-# command              ~/.opam/4.06/bin/jbuilder build --only-packages npy --root . -j 47 @install
+# command              ~/.opam/4.06/bin/jbuilder build --only-packages npy --root . -j 71 @install
 # exit-code            1
-# env-file             ~/.opam/log/npy-9-865888.env
-# output-file          ~/.opam/log/npy-9-865888.out
+# env-file             ~/.opam/log/npy-10-865888.env
+# output-file          ~/.opam/log/npy-10-865888.out
 ### output ###
 #     ocamlopt src/.npy.objs/npy.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/opam/.opam/4.06/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
@@ -116,5 +116,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721051822.export"
-31 1532150285 1532150306
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131600.export"
+31 1532265341 1532265363

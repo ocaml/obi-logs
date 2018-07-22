@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     15 MB/s |  20 MB     00:01    
-Last metadata expiration check: 0:00:07 ago on Sat Jul 21 05:03:58 2018.
+Fedora 28 - x86_64 - Updates                     19 MB/s |  20 MB     00:01    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:25:13 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -57,12 +57,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          706 kB/s |  46 kB     00:00    
-(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.7 MB/s | 193 kB     00:00    
-(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        1.7 MB/s | 184 kB     00:00    
-(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        2.6 MB/s | 550 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          531 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.9 MB/s | 193 kB     00:00    
+(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        4.9 MB/s | 184 kB     00:00    
+(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        4.2 MB/s | 550 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.3 MB/s | 973 kB     00:00     
+Total                                           1.1 MB/s | 973 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -159,8 +159,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/orakuda.1.1.1
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/orakuda-10-d6cd01.env
-# output-file          ~/.opam/log/orakuda-10-d6cd01.out
+# env-file             ~/.opam/log/orakuda-10-127107.env
+# output-file          ~/.opam/log/orakuda-10-127107.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -212,7 +212,7 @@ The following actions will be performed:
 # File OMyMakefile: line 781, characters 6-34:
 #    Warning: old-style foreach expression.
 #    This expression should use a => binding.
-# *** omake: finished reading OMakefiles (0.16 sec)
+# *** omake: finished reading OMakefiles (0.15 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build . regexp.cmi
 # + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c regexp.mli
@@ -240,12 +240,8 @@ The following actions will be performed:
 #          val contents : t -> string
 #        File "cformat.ml", line 55, characters 2-28: Expected declaration
 #        File "cformat.ml", line 73, characters 6-14: Actual declaration
-# - build pa pa_hash.o
-# + ocamlfind ocamlopt -annot -bin-annot -package pcre,camlp4 -g -w A-3-4-9-40-42-44-45-48 -warn-error a -pp camlp4of -I . -c pa_hash.ml
-# File "_none_", line 1:
-# Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
-# *** omake: 72/125 targets are up to date
-# *** omake: failed (1.01 sec, 20/20 scans, 15/15 rules, 44/81 digests)
+# *** omake: 69/125 targets are up to date
+# *** omake: failed (0.66 sec, 20/20 scans, 12/12 rules, 42/79 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    cformat.cmo
 #       depends on: cformat.ml
@@ -285,5 +281,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721050410.export"
-31 1532149434 1532149576
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722132527.export"
+31 1532265908 1532266055

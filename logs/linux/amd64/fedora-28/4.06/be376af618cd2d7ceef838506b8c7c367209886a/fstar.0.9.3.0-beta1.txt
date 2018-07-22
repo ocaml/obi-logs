@@ -40,7 +40,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -68,7 +68,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:50 2018
+Install Date: Sat Jul 21 06:33:03 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -87,8 +87,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: gmp-devel perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y gmp-devel perl-Pod-Html
-Fedora 28 - x86_64 - Updates                     13 MB/s |  20 MB     00:01    
-Last metadata expiration check: 0:00:08 ago on Sat Jul 21 05:15:14 2018.
+Fedora 28 - x86_64 - Updates                     26 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:19:13 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch         Version                   Repository     Size
@@ -106,11 +106,11 @@ Install  3 Packages
 Total download size: 303 k
 Installed size: 413 k
 Downloading Packages:
-(1/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 916 kB/s |  85 kB     00:00    
-(2/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          307 kB/s |  31 kB     00:00    
-(3/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.7 MB/s | 187 kB     00:00    
+(1/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          487 kB/s |  31 kB     00:00    
+(2/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 973 kB/s |  85 kB     00:00    
+(3/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.4 MB/s | 187 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           168 kB/s | 303 kB     00:01     
+Total                                           174 kB/s | 303 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -175,8 +175,8 @@ The following actions will be performed:
 -> installed cppo.1.6.4
 -> installed easy-format.1.3.1
 -> installed num.1.1
--> installed biniou.1.2.0
 -> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
 -> installed stdint.0.5.1
 -> installed yojson.1.4.1
 -> installed zarith.1.7
@@ -188,8 +188,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/fstar.0.9.3.0-beta1
 # command              /usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output
 # exit-code            2
-# env-file             ~/.opam/log/fstar-9-71d49a.env
-# output-file          ~/.opam/log/fstar-9-71d49a.out
+# env-file             ~/.opam/log/fstar-10-65c165.env
+# output-file          ~/.opam/log/fstar-10-65c165.out
 ### output ###
 # make: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
 # make -j 1 -C ../../lib/ml
@@ -249,7 +249,7 @@ The following actions will be performed:
 # echo 'let version = "0.9.3.0-beta1"' > FStar_Version.ml
 # echo 'let platform = "Linux_x86_64"' >> FStar_Version.ml
 # echo 'let compiler = "OCaml 4.06.1"' >> FStar_Version.ml
-# echo 'let date = "2018-07-21T05:16:21+00:00"' >> FStar_Version.ml
+# echo 'let date = "2018-07-22T13:20:10+00:00"' >> FStar_Version.ml
 # echo 'let commit= " (dirty)"' >> FStar_Version.ml
 # make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
 # /usr/bin/make depend
@@ -462,5 +462,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721051530.export"
-31 1532150110 1532150200
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131928.export"
+31 1532265548 1532265628

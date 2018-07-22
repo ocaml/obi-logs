@@ -7,7 +7,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,8 +34,8 @@ package zeromq-devel is not installed
 # The following new OS packages need to be installed: zeromq-devel
 The following command needs to be run through "sudo":
     yum install -y zeromq-devel
-Fedora 28 - x86_64 - Updates                     22 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Sat Jul 21 04:58:04 2018.
+Fedora 28 - x86_64 - Updates                     17 MB/s |  20 MB     00:01    
+Last metadata expiration check: 0:00:10 ago on Sun Jul 22 13:15:46 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch          Version                  Repository     Size
@@ -53,11 +53,11 @@ Install  3 Packages
 Total download size: 443 k
 Installed size: 1.1 M
 Downloading Packages:
-(1/3): zeromq-devel-4.1.6-7.fc28.x86_64.rpm     221 kB/s |  17 kB     00:00    
-(2/3): openpgm-5.2.122-11.fc28.x86_64.rpm       1.7 MB/s | 178 kB     00:00    
-(3/3): zeromq-4.1.6-7.fc28.x86_64.rpm           2.3 MB/s | 248 kB     00:00    
+(1/3): zeromq-devel-4.1.6-7.fc28.x86_64.rpm     256 kB/s |  17 kB     00:00    
+(2/3): openpgm-5.2.122-11.fc28.x86_64.rpm       2.0 MB/s | 178 kB     00:00    
+(3/3): zeromq-4.1.6-7.fc28.x86_64.rpm           2.7 MB/s | 248 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           491 kB/s | 443 kB     00:00     
+Total                                           359 kB/s | 443 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -158,5 +158,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721045816.export"
-31 1532149080 1532149129
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131602.export"
+31 1532265341 1532265408

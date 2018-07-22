@@ -7,7 +7,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,7 +34,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:50 2018
+Install Date: Sat Jul 21 06:33:03 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -145,8 +145,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/hardcaml-waveterm.0.2.0
 # command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build
 # exit-code            1
-# env-file             ~/.opam/log/hardcaml-waveterm-10-974342.env
-# output-file          ~/.opam/log/hardcaml-waveterm-10-974342.out
+# env-file             ~/.opam/log/hardcaml-waveterm-10-91b184.env
+# output-file          ~/.opam/log/hardcaml-waveterm-10-91b184.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package lambda-term -package hardcaml -package astring -modules src/lTerm_waveterm_compat.mli > src/lTerm_waveterm_compat.mli.depends
@@ -218,6 +218,9 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/wave.cmo src/wave.ml
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/gfx.cmo src/gfx.ml
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/render.cmo src/render.ml
+# + ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/gfx.cmo src/gfx.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/write.cmo src/write.ml
 # + ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/wave.cmo src/wave.ml
 # ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
 # File "src/wave.ml", line 1:
@@ -278,5 +281,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721052112.export"
-31 1532150469 1532150648
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131054.export"
+31 1532265052 1532265219

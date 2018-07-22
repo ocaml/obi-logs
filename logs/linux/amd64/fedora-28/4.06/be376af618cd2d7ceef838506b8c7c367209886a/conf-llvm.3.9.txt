@@ -5,8 +5,8 @@ llvm3.9-devel
 package llvm3.9-devel is not installed
 The following command needs to be run through "sudo":
     yum install -y llvm3.9-devel
-Fedora 28 - x86_64 - Updates                     52 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Sat Jul 21 05:24:11 2018.
+Fedora 28 - x86_64 - Updates                     35 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:06 ago on Sun Jul 22 13:41:40 2018.
 Dependencies resolved.
 ================================================================================
  Package                Arch         Version                Repository     Size
@@ -25,12 +25,12 @@ Install  4 Packages
 Total download size: 16 M
 Installed size: 61 M
 Downloading Packages:
-(1/4): llvm3.9-devel-3.9.1-13.fc28.x86_64.rpm   2.3 MB/s | 2.0 MB     00:00    
-(2/4): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 1.1 MB/s |  38 kB     00:00    
-(3/4): llvm3.9-3.9.1-13.fc28.x86_64.rpm         1.8 MB/s | 2.2 MB     00:01    
-(4/4): llvm3.9-libs-3.9.1-13.fc28.x86_64.rpm    3.0 MB/s |  12 MB     00:04    
+(1/4): llvm3.9-3.9.1-13.fc28.x86_64.rpm         3.2 MB/s | 2.2 MB     00:00    
+(2/4): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 452 kB/s |  38 kB     00:00    
+(3/4): llvm3.9-devel-3.9.1-13.fc28.x86_64.rpm   2.4 MB/s | 2.0 MB     00:00    
+(4/4): llvm3.9-libs-3.9.1-13.fc28.x86_64.rpm     11 MB/s |  12 MB     00:01    
 --------------------------------------------------------------------------------
-Total                                           3.3 MB/s |  16 MB     00:05     
+Total                                           6.8 MB/s |  16 MB     00:02     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -130,4 +130,4 @@ The packages you requested declare the following system dependencies. Please mak
     llvm3.9-devel
 
 # Run eval $(opam env) to update the current shell environment
-31 1532150647 1532150672
+31 1532266896 1532266919

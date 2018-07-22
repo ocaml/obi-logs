@@ -12,7 +12,7 @@ Name        : gcc-c++
 Version     : 8.1.1
 Release     : 5.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:49 2018
+Install Date: Sat Jul 21 06:33:02 2018
 Group       : Development/Languages
 Size        : 30589214
 License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
@@ -64,7 +64,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -93,8 +93,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: gmp-devel perl-Pod-Html pkgconfig zlib-devel
 The following command needs to be run through "sudo":
     yum install -y gmp-devel perl-Pod-Html pkgconfig zlib-devel
-Fedora 28 - x86_64 - Updates                    4.4 MB/s |  20 MB     00:04    
-Last metadata expiration check: 0:00:09 ago on Sat Jul 21 05:37:35 2018.
+Fedora 28 - x86_64 - Updates                     26 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:19:57 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -114,12 +114,12 @@ Install  4 Packages
 Total download size: 359 k
 Installed size: 550 k
 Downloading Packages:
-(1/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.4 MB/s | 187 kB     00:00    
-(2/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 579 kB/s |  85 kB     00:00    
-(3/4): zlib-devel-1.2.11-8.fc28.x86_64.rpm      745 kB/s |  55 kB     00:00    
-(4/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm           96 kB/s |  31 kB     00:00    
+(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          683 kB/s |  31 kB     00:00    
+(2/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 1.2 MB/s |  85 kB     00:00    
+(3/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.4 MB/s | 187 kB     00:00    
+(4/4): zlib-devel-1.2.11-8.fc28.x86_64.rpm      1.1 MB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           183 kB/s | 359 kB     00:01     
+Total                                           257 kB/s | 359 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -298,8 +298,8 @@ The following actions will be performed:
 -> removed   dune.1.0.0
 -> installed base-bytes.base
 -> installed conf-gmp.1
--> installed conf-gmp-powm-sec.1
 -> installed conf-perl.1
+-> installed conf-gmp-powm-sec.1
 -> installed conf-pkg-config.1.1
 -> installed conf-zlib.1
 -> installed jbuilder.1.0+beta17
@@ -323,8 +323,8 @@ The following actions will be performed:
 -> installed typerep.v0.9.0
 -> installed zarith.1.7
 -> installed ppx_core.v0.9.3
--> installed cryptokit.1.13
 -> installed ppx_optcomp.v0.9.0
+-> installed cryptokit.1.13
 -> installed ppx_driver.v0.9.2
 -> installed fieldslib.v0.9.0
 -> installed ppx_here.v0.9.1
@@ -365,24 +365,24 @@ The following actions will be performed:
 -> installed re2.v0.9.1
 -> installed textutils.v0.9.0
 -> installed async.v0.9.0
-[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 47".
+[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
 
 #=== ERROR while compiling core_extended.v0.9.1 ===============================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.9.1
-# command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 47
+# command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
 # exit-code            1
-# env-file             ~/.opam/log/core_extended-10-19076c.env
-# output-file          ~/.opam/log/core_extended-10-19076c.out
+# env-file             ~/.opam/log/core_extended-10-b459e6.env
+# output-file          ~/.opam/log/core_extended-10-b459e6.out
 ### output ###
 #       ocamlc src/core_extended.{cmi,cmo,cmt}
 #     ocamlopt src/core_extended.{cmx,o}
 #         bash src/config_ext.h
-#       ocamlc src/extended_int_stubs.o
-#       ocamlc src/malloc_stubs.o
 #       ocamlc src/posix_clock_stubs.o
+#       ocamlc src/extended_int_stubs.o
 #       ocamlc src/unix_pseudo_terminal_stubs.o
 #       ocamlc src/low_level_debug_stubs.o
+#       ocamlc src/malloc_stubs.o
 #       ocamlc src/extended_unix_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
 # extended_unix_stubs.c: In function 'quota_query':
@@ -521,5 +521,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721053752.export"
-31 1532151449 1532151766
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722132012.export"
+31 1532265592 1532265901

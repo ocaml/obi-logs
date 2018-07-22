@@ -46,7 +46,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -77,7 +77,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:50 2018
+Install Date: Sat Jul 21 06:33:03 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -97,8 +97,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: gdbm-devel gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
 The following command needs to be run through "sudo":
     yum install -y gdbm-devel gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
-Fedora 28 - x86_64 - Updates                     32 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Jul 21 05:10:30 2018.
+Fedora 28 - x86_64 - Updates                     48 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:20:49 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -111,12 +111,14 @@ Installing:
  pcre-devel               x86_64      8.42-2.fc28            updates      550 k
  perl-Pod-Html            noarch      1.22.02-412.fc28       updates       85 k
  zlib-devel               x86_64      1.2.11-8.fc28          updates       55 k
+Upgrading:
+ krb5-libs                x86_64      1.16.1-13.fc28         updates      842 k
 Installing dependencies:
  gmp-c++                  x86_64      1:6.1.2-7.fc28         fedora        31 k
  keyutils-libs-devel      x86_64      1.5.10-6.fc28          fedora        47 k
- krb5-devel               x86_64      1.16.1-10.fc28         updates      544 k
+ krb5-devel               x86_64      1.16.1-13.fc28         updates      545 k
  libcom_err-devel         x86_64      1.44.2-0.fc28          updates       37 k
- libkadm5                 x86_64      1.16.1-10.fc28         updates      182 k
+ libkadm5                 x86_64      1.16.1-13.fc28         updates      182 k
  libselinux-devel         x86_64      2.8-1.fc28             updates      197 k
  libsepol-devel           x86_64      2.8-1.fc28             updates       84 k
  libverto-devel           x86_64      0.3.0-5.fc28           fedora        17 k
@@ -130,82 +132,93 @@ Installing dependencies:
 Transaction Summary
 ================================================================================
 Install  20 Packages
+Upgrade   1 Package
 
-Total download size: 5.4 M
-Installed size: 11 M
+Total download size: 6.2 M
 Downloading Packages:
-(1/20): gmp-c++-6.1.2-7.fc28.x86_64.rpm         457 kB/s |  31 kB     00:00    
-(2/20): gmp-devel-6.1.2-7.fc28.x86_64.rpm       2.4 MB/s | 187 kB     00:00    
-(3/20): gdbm-devel-1.14.1-4.fc28.x86_64.rpm     646 kB/s |  64 kB     00:00    
-(4/20): pcre-cpp-8.42-2.fc28.x86_64.rpm         1.0 MB/s |  46 kB     00:00    
-(5/20): openssl-devel-1.1.0h-3.fc28.x86_64.rpm   14 MB/s | 1.9 MB     00:00    
-(6/20): pcre-utf16-8.42-2.fc28.x86_64.rpm       2.2 MB/s | 193 kB     00:00    
-(7/20): perl-Pod-Html-1.22.02-412.fc28.noarch.r 2.0 MB/s |  85 kB     00:00    
-(8/20): pcre-devel-8.42-2.fc28.x86_64.rpm       2.6 MB/s | 550 kB     00:00    
-(9/20): zlib-devel-1.2.11-8.fc28.x86_64.rpm     1.7 MB/s |  55 kB     00:00    
-(10/20): pcre-utf32-8.42-2.fc28.x86_64.rpm      1.8 MB/s | 184 kB     00:00    
-(11/20): libcom_err-devel-1.44.2-0.fc28.x86_64. 1.7 MB/s |  37 kB     00:00    
-(12/20): libkadm5-1.16.1-10.fc28.x86_64.rpm     3.7 MB/s | 182 kB     00:00    
-(13/20): libsepol-devel-2.8-1.fc28.x86_64.rpm   2.7 MB/s |  84 kB     00:00    
-(14/20): krb5-devel-1.16.1-10.fc28.x86_64.rpm   5.1 MB/s | 544 kB     00:00    
-(15/20): libselinux-devel-2.8-1.fc28.x86_64.rpm 2.9 MB/s | 197 kB     00:00    
-(16/20): keyutils-libs-devel-1.5.10-6.fc28.x86_ 3.2 MB/s |  47 kB     00:00    
-(17/20): libverto-devel-0.3.0-5.fc28.x86_64.rpm 1.1 MB/s |  17 kB     00:00    
-(18/20): pcre2-utf16-10.31-7.fc28.x86_64.rpm    4.0 MB/s | 221 kB     00:00    
-(19/20): pcre2-utf32-10.31-7.fc28.x86_64.rpm    4.3 MB/s | 213 kB     00:00    
-(20/20): pcre2-devel-10.31-7.fc28.x86_64.rpm    7.6 MB/s | 589 kB     00:00    
+(1/21): gdbm-devel-1.14.1-4.fc28.x86_64.rpm     1.7 MB/s |  64 kB     00:00    
+(2/21): gmp-devel-6.1.2-7.fc28.x86_64.rpm       4.4 MB/s | 187 kB     00:00    
+(3/21): gmp-c++-6.1.2-7.fc28.x86_64.rpm         2.2 MB/s |  31 kB     00:00    
+(4/21): krb5-libs-1.16.1-10.fc28_1.16.1-13.fc28 1.7 MB/s | 163 kB     00:00    
+(5/21): pcre-cpp-8.42-2.fc28.x86_64.rpm         3.3 MB/s |  46 kB     00:00    
+(6/21): openssl-devel-1.1.0h-3.fc28.x86_64.rpm   22 MB/s | 1.9 MB     00:00    
+(7/21): pcre-utf16-8.42-2.fc28.x86_64.rpm       4.8 MB/s | 193 kB     00:00    
+(8/21): pcre-devel-8.42-2.fc28.x86_64.rpm       4.4 MB/s | 550 kB     00:00    
+(9/21): perl-Pod-Html-1.22.02-412.fc28.noarch.r 2.7 MB/s |  85 kB     00:00    
+(10/21): zlib-devel-1.2.11-8.fc28.x86_64.rpm    2.3 MB/s |  55 kB     00:00    
+(11/21): libkadm5-1.16.1-13.fc28.x86_64.rpm      11 MB/s | 182 kB     00:00    
+(12/21): krb5-devel-1.16.1-13.fc28.x86_64.rpm    13 MB/s | 545 kB     00:00    
+(13/21): libcom_err-devel-1.44.2-0.fc28.x86_64. 2.5 MB/s |  37 kB     00:00    
+(14/21): pcre-utf32-8.42-2.fc28.x86_64.rpm      1.7 MB/s | 184 kB     00:00    
+(15/21): libsepol-devel-2.8-1.fc28.x86_64.rpm   5.6 MB/s |  84 kB     00:00    
+(16/21): libselinux-devel-2.8-1.fc28.x86_64.rpm 9.8 MB/s | 197 kB     00:00    
+(17/21): keyutils-libs-devel-1.5.10-6.fc28.x86_ 4.1 MB/s |  47 kB     00:00    
+(18/21): libverto-devel-0.3.0-5.fc28.x86_64.rpm 1.2 MB/s |  17 kB     00:00    
+(19/21): pcre2-utf16-10.31-7.fc28.x86_64.rpm     12 MB/s | 221 kB     00:00    
+(20/21): pcre2-devel-10.31-7.fc28.x86_64.rpm     17 MB/s | 589 kB     00:00    
+(21/21): pcre2-utf32-10.31-7.fc28.x86_64.rpm    8.3 MB/s | 213 kB     00:00    
+/usr/share/doc/krb5-libs/NOTICE: No such file or directory
+cannot reconstruct rpm from disk files
+Some packages were not downloaded. Retrying.
+krb5-libs-1.16.1-13.fc28.x86_64.rpm             5.5 MB/s | 842 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           4.6 MB/s | 5.4 MB     00:01     
+Total                                           2.9 MB/s | 6.4 MB     00:02     
+Failed Delta RPMs increased 6.2 MB of updates to 6.4 MB (-2.1% wasted)
 Running transaction check
 Transaction check succeeded.
 Running transaction test
 Transaction test succeeded.
 Running transaction
   Preparing        :                                                        1/1 
-  Installing       : pcre2-utf32-10.31-7.fc28.x86_64                       1/20 
-  Installing       : pcre2-utf16-10.31-7.fc28.x86_64                       2/20 
-  Installing       : pcre2-devel-10.31-7.fc28.x86_64                       3/20 
-  Installing       : libverto-devel-0.3.0-5.fc28.x86_64                    4/20 
-  Installing       : keyutils-libs-devel-1.5.10-6.fc28.x86_64              5/20 
-  Installing       : libsepol-devel-2.8-1.fc28.x86_64                      6/20 
-  Installing       : libselinux-devel-2.8-1.fc28.x86_64                    7/20 
-  Installing       : libcom_err-devel-1.44.2-0.fc28.x86_64                 8/20 
-  Installing       : libkadm5-1.16.1-10.fc28.x86_64                        9/20 
-  Installing       : krb5-devel-1.16.1-10.fc28.x86_64                     10/20 
-  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      11/20 
-  Installing       : pcre-utf32-8.42-2.fc28.x86_64                        12/20 
-  Installing       : pcre-utf16-8.42-2.fc28.x86_64                        13/20 
-  Installing       : pcre-cpp-8.42-2.fc28.x86_64                          14/20 
-  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                        15/20 
-  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                        15/20 
-  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                      16/20 
-  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                      16/20 
-  Installing       : pcre-devel-8.42-2.fc28.x86_64                        17/20 
-  Installing       : openssl-devel-1:1.1.0h-3.fc28.x86_64                 18/20 
-  Installing       : perl-Pod-Html-1.22.02-412.fc28.noarch                19/20 
-  Installing       : gdbm-devel-1:1.14.1-4.fc28.x86_64                    20/20 
-  Running scriptlet: gdbm-devel-1:1.14.1-4.fc28.x86_64                    20/20 
+  Upgrading        : krb5-libs-1.16.1-13.fc28.x86_64                       1/22 
+  Installing       : libkadm5-1.16.1-13.fc28.x86_64                        2/22 
+  Installing       : pcre2-utf32-10.31-7.fc28.x86_64                       3/22 
+  Installing       : pcre2-utf16-10.31-7.fc28.x86_64                       4/22 
+  Installing       : pcre2-devel-10.31-7.fc28.x86_64                       5/22 
+  Installing       : libverto-devel-0.3.0-5.fc28.x86_64                    6/22 
+  Installing       : keyutils-libs-devel-1.5.10-6.fc28.x86_64              7/22 
+  Installing       : libsepol-devel-2.8-1.fc28.x86_64                      8/22 
+  Installing       : libselinux-devel-2.8-1.fc28.x86_64                    9/22 
+  Installing       : libcom_err-devel-1.44.2-0.fc28.x86_64                10/22 
+  Installing       : krb5-devel-1.16.1-13.fc28.x86_64                     11/22 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      12/22 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                        13/22 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                        14/22 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                          15/22 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                        16/22 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                        16/22 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                      17/22 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                      17/22 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                        18/22 
+  Installing       : openssl-devel-1:1.1.0h-3.fc28.x86_64                 19/22 
+  Installing       : perl-Pod-Html-1.22.02-412.fc28.noarch                20/22 
+  Installing       : gdbm-devel-1:1.14.1-4.fc28.x86_64                    21/22 
+  Running scriptlet: gdbm-devel-1:1.14.1-4.fc28.x86_64                    21/22 
 install-info: No such file or directory for /usr/share/info/gdbm.info.gz
-  Verifying        : gdbm-devel-1:1.14.1-4.fc28.x86_64                     1/20 
-  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                       2/20 
-  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                         3/20 
-  Verifying        : openssl-devel-1:1.1.0h-3.fc28.x86_64                  4/20 
-  Verifying        : pcre-devel-8.42-2.fc28.x86_64                         5/20 
-  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                           6/20 
-  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                         7/20 
-  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                         8/20 
-  Verifying        : perl-Pod-Html-1.22.02-412.fc28.noarch                 9/20 
-  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                      10/20 
-  Verifying        : krb5-devel-1.16.1-10.fc28.x86_64                     11/20 
-  Verifying        : libkadm5-1.16.1-10.fc28.x86_64                       12/20 
-  Verifying        : libcom_err-devel-1.44.2-0.fc28.x86_64                13/20 
-  Verifying        : libselinux-devel-2.8-1.fc28.x86_64                   14/20 
-  Verifying        : libsepol-devel-2.8-1.fc28.x86_64                     15/20 
-  Verifying        : keyutils-libs-devel-1.5.10-6.fc28.x86_64             16/20 
-  Verifying        : libverto-devel-0.3.0-5.fc28.x86_64                   17/20 
-  Verifying        : pcre2-devel-10.31-7.fc28.x86_64                      18/20 
-  Verifying        : pcre2-utf16-10.31-7.fc28.x86_64                      19/20 
-  Verifying        : pcre2-utf32-10.31-7.fc28.x86_64                      20/20 
+  Cleanup          : krb5-libs-1.16.1-10.fc28.x86_64                      22/22 
+  Running scriptlet: krb5-libs-1.16.1-10.fc28.x86_64                      22/22 
+  Verifying        : gdbm-devel-1:1.14.1-4.fc28.x86_64                     1/22 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                       2/22 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                         3/22 
+  Verifying        : openssl-devel-1:1.1.0h-3.fc28.x86_64                  4/22 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                         5/22 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                           6/22 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                         7/22 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                         8/22 
+  Verifying        : perl-Pod-Html-1.22.02-412.fc28.noarch                 9/22 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                      10/22 
+  Verifying        : krb5-devel-1.16.1-13.fc28.x86_64                     11/22 
+  Verifying        : libkadm5-1.16.1-13.fc28.x86_64                       12/22 
+  Verifying        : libcom_err-devel-1.44.2-0.fc28.x86_64                13/22 
+  Verifying        : libselinux-devel-2.8-1.fc28.x86_64                   14/22 
+  Verifying        : libsepol-devel-2.8-1.fc28.x86_64                     15/22 
+  Verifying        : keyutils-libs-devel-1.5.10-6.fc28.x86_64             16/22 
+  Verifying        : libverto-devel-0.3.0-5.fc28.x86_64                   17/22 
+  Verifying        : pcre2-devel-10.31-7.fc28.x86_64                      18/22 
+  Verifying        : pcre2-utf16-10.31-7.fc28.x86_64                      19/22 
+  Verifying        : pcre2-utf32-10.31-7.fc28.x86_64                      20/22 
+  Verifying        : krb5-libs-1.16.1-13.fc28.x86_64                      21/22 
+  Verifying        : krb5-libs-1.16.1-10.fc28.x86_64                      22/22 
 
 Installed:
   gdbm-devel.x86_64 1:1.14.1-4.fc28                                             
@@ -216,9 +229,9 @@ Installed:
   zlib-devel.x86_64 1.2.11-8.fc28                                               
   gmp-c++.x86_64 1:6.1.2-7.fc28                                                 
   keyutils-libs-devel.x86_64 1.5.10-6.fc28                                      
-  krb5-devel.x86_64 1.16.1-10.fc28                                              
+  krb5-devel.x86_64 1.16.1-13.fc28                                              
   libcom_err-devel.x86_64 1.44.2-0.fc28                                         
-  libkadm5.x86_64 1.16.1-10.fc28                                                
+  libkadm5.x86_64 1.16.1-13.fc28                                                
   libselinux-devel.x86_64 2.8-1.fc28                                            
   libsepol-devel.x86_64 2.8-1.fc28                                              
   libverto-devel.x86_64 0.3.0-5.fc28                                            
@@ -228,6 +241,9 @@ Installed:
   pcre2-devel.x86_64 10.31-7.fc28                                               
   pcre2-utf16.x86_64 10.31-7.fc28                                               
   pcre2-utf32.x86_64 10.31-7.fc28                                               
+
+Upgraded:
+  krb5-libs.x86_64 1.16.1-13.fc28                                               
 
 Complete!
 The following command needs to be run through "sudo":
@@ -405,8 +421,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/themoviedb.0.8.1
 # command              ~/.opam/4.06/bin/ocaml setup.ml -configure --disable-utest --prefix /home/opam/.opam/4.06
 # exit-code            2
-# env-file             ~/.opam/log/themoviedb-10-4c69e9.env
-# output-file          ~/.opam/log/themoviedb-10-4c69e9.out
+# env-file             ~/.opam/log/themoviedb-10-c95c2f.env
+# output-file          ~/.opam/log/themoviedb-10-c95c2f.out
 ### output ###
 # File "./setup.ml", line 234, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -478,5 +494,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721051046.export"
-31 1532149826 1532150150
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722132107.export"
+31 1532265645 1532265976

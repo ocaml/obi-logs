@@ -47,7 +47,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -77,7 +77,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:50 2018
+Install Date: Sat Jul 21 06:33:03 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -97,8 +97,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: fuse-devel gmp-devel libcurl-devel perl-Pod-Html pkgconfig sqlite-devel zlib-devel
 The following command needs to be run through "sudo":
     yum install -y fuse-devel gmp-devel libcurl-devel perl-Pod-Html pkgconfig sqlite-devel zlib-devel
-Fedora 28 - x86_64 - Updates                     15 MB/s |  20 MB     00:01    
-Last metadata expiration check: 0:00:08 ago on Sat Jul 21 05:08:15 2018.
+Fedora 28 - x86_64 - Updates                     20 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Jul 22 13:15:25 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -123,17 +123,17 @@ Install  9 Packages
 Total download size: 2.0 M
 Installed size: 3.9 M
 Downloading Packages:
-(1/9): fuse-devel-2.9.7-11.fc28.x86_64.rpm      326 kB/s |  42 kB     00:00    
-(2/9): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.3 MB/s | 187 kB     00:00    
-(3/9): gmp-c++-6.1.2-7.fc28.x86_64.rpm          773 kB/s |  31 kB     00:00    
-(4/9): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 3.0 MB/s |  85 kB     00:00    
-(5/9): fuse-libs-2.9.7-11.fc28.x86_64.rpm       501 kB/s | 100 kB     00:00    
-(6/9): sqlite-devel-3.22.0-4.fc28.x86_64.rpm    6.4 MB/s | 153 kB     00:00    
-(7/9): sqlite-3.22.0-4.fc28.x86_64.rpm           15 MB/s | 623 kB     00:00    
-(8/9): zlib-devel-1.2.11-8.fc28.x86_64.rpm      1.9 MB/s |  55 kB     00:00    
-(9/9): libcurl-devel-7.59.0-5.fc28.x86_64.rpm   4.2 MB/s | 795 kB     00:00    
+(1/9): fuse-devel-2.9.7-11.fc28.x86_64.rpm      529 kB/s |  42 kB     00:00    
+(2/9): fuse-libs-2.9.7-11.fc28.x86_64.rpm       1.2 MB/s | 100 kB     00:00    
+(3/9): gmp-c++-6.1.2-7.fc28.x86_64.rpm          3.5 MB/s |  31 kB     00:00    
+(4/9): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.0 MB/s | 187 kB     00:00    
+(5/9): sqlite-devel-3.22.0-4.fc28.x86_64.rpm    3.8 MB/s | 153 kB     00:00    
+(6/9): sqlite-3.22.0-4.fc28.x86_64.rpm           11 MB/s | 623 kB     00:00    
+(7/9): libcurl-devel-7.59.0-5.fc28.x86_64.rpm   4.0 MB/s | 795 kB     00:00    
+(8/9): zlib-devel-1.2.11-8.fc28.x86_64.rpm      512 kB/s |  55 kB     00:00    
+(9/9): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 222 kB/s |  85 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.5 MB/s | 2.0 MB     00:01     
+Total                                           907 kB/s | 2.0 MB     00:02     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -278,8 +278,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/google-drive-ocamlfuse.0.5.20
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/google-drive-ocamlfuse-10-d78b51.env
-# output-file          ~/.opam/log/google-drive-ocamlfuse-10-d78b51.out
+# env-file             ~/.opam/log/google-drive-ocamlfuse-10-dc5c1b.env
+# output-file          ~/.opam/log/google-drive-ocamlfuse-10-dc5c1b.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -398,5 +398,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721050831.export"
-31 1532149690 1532149971
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131541.export"
+31 1532265321 1532265518

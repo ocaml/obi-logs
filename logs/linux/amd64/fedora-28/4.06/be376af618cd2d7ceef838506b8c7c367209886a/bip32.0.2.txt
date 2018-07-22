@@ -6,7 +6,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -71,15 +71,15 @@ The following actions will be performed:
 -> installed stdio.v0.11.0
 -> installed hex.1.2.0
 -> installed configurator.v0.11.0
-[ERROR] The compilation of secp256k1 failed at "/home/opam/.opam/4.06/bin/jbuilder build -p secp256k1 -j 47".
+[ERROR] The compilation of secp256k1 failed at "/home/opam/.opam/4.06/bin/jbuilder build -p secp256k1 -j 71".
 
 #=== ERROR while compiling secp256k1.0.4.0 ====================================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/secp256k1.0.4.0
-# command              ~/.opam/4.06/bin/jbuilder build -p secp256k1 -j 47
+# command              ~/.opam/4.06/bin/jbuilder build -p secp256k1 -j 71
 # exit-code            1
-# env-file             ~/.opam/log/secp256k1-11-fe7c16.env
-# output-file          ~/.opam/log/secp256k1-11-fe7c16.out
+# env-file             ~/.opam/log/secp256k1-10-329882.env
+# output-file          ~/.opam/log/secp256k1-10-329882.out
 ### output ###
 #       ocamlc src/secp256k1_wrap.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -o secp256k1_wrap.o secp256k1_wrap.c)
@@ -109,5 +109,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721053136.export"
-31 1532151094 1532151128
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131411.export"
+31 1532265248 1532265308

@@ -6,7 +6,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -75,8 +75,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/clangml.3.6.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/clangml-10-813bac.env
-# output-file          ~/.opam/log/clangml-10-813bac.out
+# env-file             ~/.opam/log/clangml-11-6c557a.env
+# output-file          ~/.opam/log/clangml-11-6c557a.out
 ### output ###
 # ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -84,24 +84,24 @@ The following actions will be performed:
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules tools/bridgen/bridgen.ml > tools/bridgen/bridgen.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules tools/bridgen/codegen.ml > tools/bridgen/codegen.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/denseIntMap.mli > util/denseIntMap.mli.depends
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/denseIntMap.cmi util/denseIntMap.mli
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/denseIntMap.cmi util/denseIntMap.mli
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/denseIntMap.ml > util/denseIntMap.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/prelude.ml > util/prelude.ml.depends
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/prelude.cmo util/prelude.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/prelude.cmo util/prelude.ml
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/formatx.ml > util/formatx.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/logger.ml > util/logger.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/option.ml > util/option.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntMap.mli > util/sparseIntMap.mli.depends
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/sparseIntMap.cmi util/sparseIntMap.mli
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/sparseIntMap.cmi util/sparseIntMap.mli
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntMap.ml > util/sparseIntMap.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntSet.mli > util/sparseIntSet.mli.depends
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/sparseIntSet.cmi util/sparseIntSet.mli
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/sparseIntSet.cmi util/sparseIntSet.mli
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntSet.ml > util/sparseIntSet.ml.depends
 # ocamlfind ocamldep -package deriving.syntax -syntax camlp4o -package bytes -modules util/various.ml > util/various.ml.depends
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/denseIntMap.cmo util/denseIntMap.ml
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/formatx.cmo util/formatx.ml
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/logger.cmo util/logger.ml
-# + ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I tools -I clang -o util/logger.cmo util/logger.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/denseIntMap.cmo util/denseIntMap.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/formatx.cmo util/formatx.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/logger.cmo util/logger.ml
+# + ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/logger.cmo util/logger.ml
 # File "util/logger.ml", line 70, characters 16-22:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
@@ -142,5 +142,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721051238.export"
-31 1532149956 1532150049
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722131953.export"
+31 1532265590 1532265731

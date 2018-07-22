@@ -8,7 +8,7 @@ Name        : kernel-headers
 Version     : 4.17.6
 Release     : 200.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 07:30:40 2018
+Install Date: Sat Jul 21 06:32:53 2018
 Group       : Unspecified
 Size        : 4593610
 License     : GPLv2 and Redistributable, no modification permitted
@@ -32,7 +32,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Jul 20 20:12:09 2018
+Install Date: Sun Jul 22 06:53:29 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -59,8 +59,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pkgconfig
-Fedora 28 - x86_64 - Updates                     40 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Jul 21 05:16:04 2018.
+Fedora 28 - x86_64 - Updates                     28 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:09 ago on Sun Jul 22 13:36:59 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 Nothing to do.
@@ -156,8 +156,8 @@ The following actions will be performed:
 -> installed io-page.2.0.1
 -> installed fmt.0.8.5
 -> installed mirage-device.1.1.0
--> installed mirage-block.1.1.0
 -> installed logs.0.6.2
+-> installed mirage-block.1.1.0
 -> installed mirage-block-lwt.1.1.0
 
 #=== ERROR while compiling solo5-kernel-ukvm.0.3.0 ============================#
@@ -165,8 +165,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0
 # command              /usr/bin/make ukvm
 # exit-code            2
-# env-file             ~/.opam/log/solo5-kernel-ukvm-10-1a1e04.env
-# output-file          ~/.opam/log/solo5-kernel-ukvm-10-1a1e04.out
+# env-file             ~/.opam/log/solo5-kernel-ukvm-10-be0162.env
+# output-file          ~/.opam/log/solo5-kernel-ukvm-10-be0162.out
 ### output ###
 # ./configure.sh
 # /usr/bin/make -C kernel ukvm
@@ -246,5 +246,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180721051615.export"
-31 1532150159 1532150241
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722133712.export"
+31 1532266614 1532266732
