@@ -451,20 +451,19 @@ The following actions will be performed:
 [ANSITerminal.0.8] found in cache
 [apron.20160125] found in cache
 [batteries.2.8.0] found in cache
-[bdd.0.3] found in cache
 [camlidl.1.05] found in cache
 [camlp4.4.06+1] found in cache
 [clangml.3.9.1.2] found in cache
-[clangml-transforms.0.23] found in cache
 [cppo.1.6.4] found in cache
 [deriving.0.8.1] found in cache
 [dolog.3.0] found in cache
-[memcad.1.0.0] found in cache
+[clangml-transforms.0.23] downloaded from https://github.com/Antique-team/clangml-transforms/archive/v0.23.tar.gz
 [mlbdd.0.6] found in cache
 [mlgmpidl.1.2.6-1] found in cache
 [num.1.1] found in cache
 [oasis.0.4.11] found in cache
 [obuild.0.1.10] found in cache
+[memcad.1.0.0] downloaded from https://github.com/Antique-team/memcad/archive/v1.0.0.tar.gz
 [ocamlbuild.0.12.0] found in cache
 [ocamlify.0.0.1] found in cache
 [ocamlmod.0.0.9] found in cache
@@ -472,7 +471,8 @@ The following actions will be performed:
 [parmap.1.0-rc10] found in cache
 [qcheck.0.8] found in cache
 [qtest.2.9] found in cache
-[setr.0.1.1] found in cache
+[setr.0.1.1] downloaded from https://github.com/arlencox/SETr/archive/v0.1.1.tar.gz
+[bdd.0.3] downloaded from https://www.lri.fr/~filliatr/ftp/ocaml/bdd/bdd-0.3.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -514,8 +514,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+default-unsafe-string/.opam-switch/build/clangml.3.9.1.2
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/clangml-11-eb68b1.env
-# output-file          ~/.opam/log/clangml-11-eb68b1.out
+# env-file             ~/.opam/log/clangml-11-46ade3.env
+# output-file          ~/.opam/log/clangml-11-46ade3.out
 ### output ###
 # ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
 # /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06+default-unsafe-string/lib/ocamlbuild /home/opam/.opam/4.06+default-unsafe-string/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06+default-unsafe-string/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -548,7 +548,7 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/sig.cmo tools/ocamlTypes/sig.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmi tools/ocamlTypes/codegen.mli
 # ocamlfind ocamldep -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -modules tools/ocamlTypes/codegen.ml > tools/ocamlTypes/codegen.ml.depends
-# ocamlfind ocamldep -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -package bytes -modules tools/ocamlTypes/parse.ml > tools/ocamlTypes/parse.ml.depends
+# ocamlfind ocamldep -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -package bytes -modules tools/ocamlTypes/parse.ml > tools/ocamlTypes/parse.ml.depends
 # ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/print.ml > tools/ocamlTypes/print.ml.depends
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/print.cmo tools/ocamlTypes/print.ml
 # ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/process.ml > tools/ocamlTypes/process.ml.depends
@@ -556,7 +556,7 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/type_graph.cmi tools/ocamlTypes/type_graph.mli
 # ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/type_graph.ml > tools/ocamlTypes/type_graph.ml.depends
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmo tools/ocamlTypes/codegen.ml
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmo tools/ocamlTypes/parse.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmo tools/ocamlTypes/parse.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/process.cmo tools/ocamlTypes/process.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/type_graph.cmo tools/ocamlTypes/type_graph.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I tools/bridgen -I clang -I tools -o tools/bridgen/codegen.cmo tools/bridgen/codegen.ml
@@ -590,8 +590,8 @@ The following actions will be performed:
 # + ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -for-pack OcamlTypes -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmx tools/ocamlTypes/codegen.ml
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
-# ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
-# + ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
+# ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
+# + ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
 # ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/process.cmx tools/ocamlTypes/process.ml
@@ -693,5 +693,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180722072943.export"
-31 1532244537 1532244819
+    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180723001720.export"
+31 1532304983 1532305389
