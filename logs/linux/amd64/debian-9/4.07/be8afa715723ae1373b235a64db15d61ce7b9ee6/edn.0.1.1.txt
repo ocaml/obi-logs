@@ -1,0 +1,104 @@
+$ opam depext -iy -j 2 edn.0.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0   [required by menhir]
+  - install menhir     20180703 [required by edn]
+  - install edn        0.1.1
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[edn.0.1.1] found in cache
+[menhir.20180703] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+-> installed menhir.20180703
+[ERROR] The compilation of edn failed at "/usr/bin/make".
+
+#=== ERROR while compiling edn.0.1.1 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/edn.0.1.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/edn-11-d8393c.env
+# output-file          ~/.opam/log/edn-11-d8393c.out
+### output ###
+# ocaml setup.ml -build 
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# /home/opam/.opam/4.07/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/edn.mli > src/edn.mli.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -o src/edn.cmi src/edn.mli
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/edn.ml > src/edn.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/common.ml > src/common.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/json.ml > src/json.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -o src/common.cmo src/common.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/writer.ml > src/writer.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -o src/writer.cmo src/writer.ml
+# + /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -o src/writer.cmo src/writer.ml
+# File "src/writer.ml", line 76, characters 24-25:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# + /home/opam/.opam/4.07/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.07/bin/ocamlbuild' src/edn.cma src/edn.cmxa src/edn.a src/edn.cmxs -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build edn 0.1.1
++- 
++- The following changes have been performed
+| - install menhir     20180703
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180723202417.export"
+31 1532377452 1532377519

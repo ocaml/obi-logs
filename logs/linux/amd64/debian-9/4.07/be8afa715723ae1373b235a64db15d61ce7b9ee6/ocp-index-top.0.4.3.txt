@@ -1,0 +1,318 @@
+$ opam depext -iy -j 2 ocp-index-top.0.4.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3          [required by cmdliner]
+  - install re              1.7.3        [required by ocp-index]
+  - install base-bytes      base         [required by cppo]
+  - install ocamlbuild      0.12.0       [required by ocp-index-top]
+  - install cppo            1.6.4        [required by ocp-index-top]
+  - install topkg           0.9.1        [required by ocp-index-top]
+  - install cppo_ocamlbuild 1.6.0        [required by ocp-index-top]
+  - install cmdliner        1.0.2        [required by ocp-index]
+  - install ocp-build       1.99.20-beta [required by ocp-index]
+  - install ocp-indent      1.6.1        [required by ocp-index]
+  - install ocp-index       1.1.5        [required by ocp-index-top] For ocp-browser, please also install package lambda-term
+  - install ocp-index-top   0.4.3
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocp-build.1.99.20-beta] found in cache
+[ocp-indent.1.6.1] found in cache
+[ocp-index.1.1.5] found in cache
+[ocp-index-top.0.4.3] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed ocp-build.1.99.20-beta
+-> installed ocp-indent.1.6.1
+[ERROR] The compilation of ocp-index failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocp-index.1.1.5 ====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/ocp-index.1.1.5
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ocp-index-11-6da777.env
+# output-file          ~/.opam/log/ocp-index-11-6da777.out
+### output ###
+# ocp-build -init 
+# tput: unknown terminal "none"
+# tput: No value for $TERM and no -T specified
+# stty: 'standard input': Inappropriate ioctl for device
+# Warning: file "/home/opam/.opam/4.07/.opam-switch/build/ocp-index.1.1.5/_obuild/ocp-build.root" does not exist. Creating with default values.
+# ocp-build ocp-index-lib 
+# tput: unknown terminal "none"
+# tput: No value for $TERM and no -T specified
+# stty: 'standard input': Inappropriate ioctl for device
+# Compiler: ocaml 4.07.0+beta2
+# ----- 38 env warnings -----
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocp-indent/dynlink"
+#   Disabling package "ocp-indent.dynlink".
+#     (from "/home/opam/.opam/4.07/lib/ocp-indent/META")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/ocamldoc"
+#   Disabling package "ocamldoc".
+#     (from "/home/opam/.opam/4.07/lib/ocamldoc/META")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4lib".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4Bin".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-r".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParserParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-rp".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-o".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParserParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-op".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4QuotationCommon".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedQuotationExpander".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4GrammarParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4AutoPrinter".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pr-p".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "pa_macro".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4o".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4fulllib".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4lib".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4Bin".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-r".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParserParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-rp".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-o".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParserParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-op".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4QuotationCommon".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedQuotationExpander".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4GrammarParser".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "Camlp4AutoPrinter".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pr-p".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "pa_macro".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4o".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.07/lib/ocaml/camlp4"
+#   Disabling package "camlp4fulllib".
+#     (from "/home/opam/.opam/4.07/lib/ocaml/ocp-build/camlp4.ocp")
+# ----- 1 project warnings -----
+# Warning: missing package "lambda-term":
+#   Disabling package "ocp-browser".
+#     (from "/home/opam/.opam/4.07/.opam-switch/build/ocp-index.1.1.5/src/ocp-index.ocp")
+# 0.01s _obuild/ocp-index-lib/trie.mlimods                               [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/indexMisc.mlipp                      [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/indexTypes.mlpp                      [ done ]
+# 0.01s _obuild/ocp-index-lib/trie.mlmods                                [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/indexMisc.mlpp                       [ done ]
+# 0.01s _obuild/ocp-index-lib/indexOut.mlimods                           [ done ]
+# 0.01s _obuild/ocp-index-lib/indexPredefined.mlimods                    [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/indexOut.mlpp                        [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/indexPredefined.mlpp                 [ done ]
+# 0.01s _obuild/ocp-index-lib/indexBuild.mlimods                         [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/libIndex.mlpp                        [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/libIndex.mlipp                       [ done ]
+# 0.01s _obuild/ocp-index-lib/indexScope.mlimods                         [ done ]
+# 0.01s _obuild/ocp-index-lib/_temp/indexBuild.mlpp                      [ done ]
+# 0.01s _obuild/ocp-index-lib/indexScope.mlmods                          [ done ]
+# 0.01s _obuild/ocp-index-lib/indexTypes.mlmods                          [ done ]
+# 0.01s _obuild/ocp-index-lib/indexMisc.mlimods                          [ done ]
+# 0.01s _obuild/ocp-index-lib/indexMisc.mlmods                           [ done ]
+# 0.01s _obuild/ocp-index-lib/indexOut.mlmods                            [ done ]
+# 0.01s _obuild/ocp-index-lib/indexPredefined.mlmods                     [ done ]
+# 0.01s _obuild/ocp-index-lib/libIndex.mlimods                           [ done ]
+# 0.01s _obuild/ocp-index-lib/libIndex.mlmods                            [ done ]
+# 0.02s _obuild/ocp-index-lib/indexScope.cmi                             [ done ]
+# 0.02s _obuild/ocp-index-lib/trie.cmi                                   [ done ]
+# 0.02s _obuild/ocp-index-lib/indexBuild.mlmods                          [ done ]
+# 0.02s _obuild/ocp-index-lib/indexTypes.cmo                             [ done ]
+# 0.03s _obuild/ocp-index-lib/trie.cmo                                   [ done ]
+# 0.02s _obuild/ocp-index-lib/indexMisc.cmi                              [ done ]
+# 0.02s _obuild/ocp-index-lib/indexPredefined.cmi                        [ done ]
+# 0.02s _obuild/ocp-index-lib/indexBuild.cmi                             [ done ]
+# 0.02s _obuild/ocp-index-lib/indexOut.cmi                               [ done ]
+# 0.06s _obuild/ocp-index-lib/indexScope.cmo                             [ done ]
+# 0.03s _obuild/ocp-index-lib/libIndex.cmi                               [ done ]
+# 0.07s _obuild/ocp-index-lib/trie.cmx                                   [ done ]
+# 0.08s _obuild/ocp-index-lib/indexScope.cmx                             [ done ]
+# -- stderr for ./_obuild/ocp-index-lib/indexScope.cmx --
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Nstream, and its interface was not compiled with -opaque
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Pos, and its interface was not compiled with -opaque
+# 0.03s _obuild/ocp-index-lib/indexPredefined.cmo                        [ done ]
+# 0.04s _obuild/ocp-index-lib/indexMisc.cmo                              [ done ]
+# 0.05s _obuild/ocp-index-lib/indexBuild.cmo                             [failed]
+# [55.1] Command failed: '/home/opam/.opam/4.07/bin/ocamlc.opt' '-g' '-w' '+1..39-4-9-37-40' '-safe-string' '-bin-annot' '-c' '-o' '_obuild/RULE-74c5c5ee3caf79d0086500fd544c1ad1/indexBuild.cmo' '-I' './_obuild/ocp-index-lib' '-I' './src' '-I' '/home/opam/.opam/4.07/lib/ocp-indent/utils' '-I' '/home/opam/.opam/4.07/lib/ocp-indent/lexer' '-I' '/home/opam/.opam/4.07/lib/ocaml/compiler-libs' '-impl' './_obuild/ocp-index-lib/_temp/indexBuild.mlpp'
+# -- stderr for ./_obuild/ocp-index-lib/indexBuild.cmo --
+# File "./src/indexBuild.ml", line 406, characters 30-40:
+# Error: Unbound record field Ident.name
+# 0.03s _obuild/ocp-index-lib/libIndex.cmo                               [ done ]
+# 0.03s _obuild/ocp-index-lib/indexTypes.cmx                             [ done ]
+# 0.10s _obuild/ocp-index-lib/indexOut.cmo                               [ done ]
+# 2 errors in 0.33s. 41 jobs (parallelism 2.7x), 46 files generated.
+# Error log:
+# Error:
+# [55.1] '/home/opam/.opam/4.07/bin/ocamlc.opt' '-g' '-w' '+1..39-4-9-37-40' '-safe-string' '-bin-annot' '-c' '-o' '_obuild/RULE-74c5c5ee3caf79d0086500fd544c1ad1/indexBuild.cmo' '-I' './_obuild/ocp-index-lib' '-I' './src' '-I' '/home/opam/.opam/4.07/lib/ocp-indent/utils' '-I' '/home/opam/.opam/4.07/lib/ocp-indent/lexer' '-I' '/home/opam/.opam/4.07/lib/ocaml/compiler-libs' '-impl' './_obuild/ocp-index-lib/_temp/indexBuild.mlpp'
+# 
+# File "./src/indexBuild.ml", line 406, characters 30-40:
+# Error: Unbound record field Ident.name
+# 
+# Error:
+# rule 55: target ./_obuild/ocp-index-lib/indexBuild.cmo not built
+# Makefile:20: recipe for target 'ocp-index-lib' failed
+# make: *** [ocp-index-lib] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocp-index 1.1.5
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install cmdliner        1.0.2
+| - install cppo            1.6.4
+| - install cppo_ocamlbuild 1.6.0
+| - install ocamlbuild      0.12.0
+| - install ocp-build       1.99.20-beta
+| - install ocp-indent      1.6.1
+| - install re              1.7.3
+| - install result          1.3
+| - install topkg           0.9.1
++- 
+
+<><> ocp-indent.1.6.1 installed successfully ><><><><><><><><><><><><><><><><><>
+=> This package requires additional configuration for use in editors. Install package 'user-setup', or manually:
+
+   * for Emacs, add these lines to ~/.emacs:
+     (add-to-list 'load-path "/home/opam/.opam/4.07/share/emacs/site-lisp")
+     (require 'ocp-indent)
+
+   * for Vim, add this line to ~/.vimrc:
+     set rtp^="/home/opam/.opam/4.07/share/ocp-indent/vim"
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180723202052.export"
+31 1532377250 1532377292
