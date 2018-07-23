@@ -146,23 +146,23 @@ The following actions will be performed:
 -> installed lwt.4.1.0
 -> installed ocamlbuild.0.12.0
 -> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
 -> installed sexplib0.v0.11.0
 -> installed parsexp.v0.11.0
--> installed ppx_tools_versioned.5.2
 -> installed sexplib.v0.11.0
--> installed base.v0.11.1
 -> installed cstruct.3.2.1
+-> installed base.v0.11.1
 -> installed cstruct-lwt.3.2.1
--> installed stdio.v0.11.0
--> installed configurator.v0.11.0
--> installed io-page.2.0.1
--> installed io-page-unix.2.0.1
 -> installed ppx_cstruct.3.2.1
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed astring.0.8.3
 -> installed duration.0.1.1
 -> installed mtime.1.1.0
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
 -> installed fmt.0.8.5
@@ -170,25 +170,25 @@ The following actions will be performed:
 -> installed mirage-device.1.1.0
 -> installed mirage-clock.1.3.0
 -> installed mirage-clock-lwt.1.3.0
+-> installed mirage-clock-unix.1.4.0
 -> installed mirage-flow.1.5.0
 -> installed mirage-channel.3.1.0
--> installed mirage-clock-unix.1.4.0
--> installed mirage-time.1.1.0
 -> installed mirage-flow-lwt.1.5.0
+-> installed mirage-channel-lwt.3.1.0
+-> installed mirage-time.1.1.0
 -> installed mirage-time-lwt.1.1.0
 -> installed ppxlib.0.3.0
--> installed mirage-channel-lwt.3.1.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
 -> installed uri.1.9.7
 -> installed dns.1.0.1
 -> installed dns-forward.0.10.0
-[ERROR] The compilation of dns-forward-lwt-unix failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p dns-forward-lwt-unix -j 47".
+[ERROR] The compilation of dns-forward-lwt-unix failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p dns-forward-lwt-unix -j 71".
 
 #=== ERROR while compiling dns-forward-lwt-unix.0.9.0 =========================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/dns-forward-lwt-unix.0.9.0
-# command              ~/.opam/4.06+flambda/bin/jbuilder build -p dns-forward-lwt-unix -j 47
+# command              ~/.opam/4.06+flambda/bin/jbuilder build -p dns-forward-lwt-unix -j 71
 # exit-code            1
 # env-file             ~/.opam/log/dns-forward-lwt-unix-11-e41632.env
 # output-file          ~/.opam/log/dns-forward-lwt-unix-11-e41632.out
@@ -264,5 +264,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180722134832.export"
-31 1532267306 1532267454
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180723032602.export"
+31 1532316353 1532316438

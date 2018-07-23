@@ -333,8 +333,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/dypgen.20120619-1
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/dypgen-11-038aac.env
-# output-file          ~/.opam/log/dypgen-11-038aac.out
+# env-file             ~/.opam/log/dypgen-12-038aac.env
+# output-file          ~/.opam/log/dypgen-12-038aac.out
 ### output ###
 # cd dyplib; /usr/bin/make
 # make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/dypgen.20120619-1/dyplib'
@@ -357,8 +357,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/bolt.1.4
 # command              /usr/bin/make all
 # exit-code            2
-# env-file             ~/.opam/log/bolt-11-c641d5.env
-# output-file          ~/.opam/log/bolt-11-c641d5.out
+# env-file             ~/.opam/log/bolt-12-c641d5.env
+# output-file          ~/.opam/log/bolt-12-c641d5.out
 ### output ###
 # echo 'bolt.cma' > bolt.itarget
 # (which ocamlopt && echo 'bolt.cmxa' >> bolt.itarget) || true
@@ -389,7 +389,6 @@ The following actions will be performed:
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/tree.ml > src/library/tree.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/utils.mli > src/library/utils.mli.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/utils.cmi src/library/utils.mli
-# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/signal.ml > src/library/signal.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/output.ml > src/library/output.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/name.ml > src/library/name.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/mode.ml > src/library/mode.ml.depends
@@ -403,6 +402,10 @@ The following actions will be performed:
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationNew.cmi src/library/configurationNew.mli
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationOld.cmi src/library/configurationOld.mli
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/level.ml > src/library/level.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/layout.ml > src/library/layout.ml.depends
+# cp /tmp/versionb4d751.ml src/library/version.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/version.mli > src/library/version.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/version.cmi src/library/version.mli
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/filter.ml > src/library/filter.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/event.ml > src/library/event.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/configurationOld.ml > src/library/configurationOld.ml.depends
@@ -416,11 +419,8 @@ The following actions will be performed:
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/configuration.ml > src/library/configuration.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/configParser.ml > src/library/configParser.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/utils.ml > src/library/utils.ml.depends
-# cp /tmp/versione39a08.ml src/library/version.ml
-# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/version.mli > src/library/version.mli.depends
-# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/version.cmi src/library/version.mli
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/version.ml > src/library/version.ml.depends
-# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/layout.ml > src/library/layout.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/library/signal.ml > src/library/signal.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/support/paje.mli > src/support/paje.mli.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/paje.cmi src/support/paje.mli
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/support/paje.ml > src/support/paje.ml.depends
@@ -431,11 +431,6 @@ The following actions will be performed:
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/daikon.cmi src/support/daikon.mli
 # /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules src/support/daikon.ml > src/support/daikon.ml.depends
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/tree.cmo src/library/tree.ml
-# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/signal.cmo src/library/signal.ml
-# + /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/signal.cmo src/library/signal.ml
-# File "src/library/signal.ml", line 47, characters 8-24:
-# Warning 3: deprecated: String.lowercase
-# Use String.lowercase_ascii instead.
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/output.cmo src/library/output.ml
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/name.cmo src/library/name.ml
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/mode.cmo src/library/mode.ml
@@ -445,6 +440,7 @@ The following actions will be performed:
 # File "src/library/level.ml", line 65, characters 8-24:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/layout.cmo src/library/layout.ml
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/filter.cmo src/library/filter.ml
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/event.cmo src/library/event.ml
 # + /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/event.cmo src/library/event.ml
@@ -466,7 +462,11 @@ The following actions will be performed:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/version.cmo src/library/version.ml
-# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/layout.cmo src/library/layout.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/signal.cmo src/library/signal.ml
+# + /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/signal.cmo src/library/signal.ml
+# File "src/library/signal.ml", line 47, characters 8-24:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/paje.cmo src/support/paje.ml
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/log4j.cmo src/support/log4j.ml
 # /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/daikon.cmo src/support/daikon.ml
@@ -525,5 +525,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180722140557.export"
-31 1532268337 1532268490
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180723032214.export"
+31 1532316111 1532316262
