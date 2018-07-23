@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 daft.0.0.2
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for daft.0.0.2: The following dependencies couldn't be met:
+          - daft -> fileutils < 0.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=daft.0.0.2 returned 20
+20 1532376358 1532376361

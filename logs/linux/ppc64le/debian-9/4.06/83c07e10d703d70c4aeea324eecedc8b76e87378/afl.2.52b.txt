@@ -1,0 +1,43 @@
+$ opam depext -iy -j 2 afl.2.52b
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install afl 2.52b
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[afl.2.52b] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of afl failed at "/usr/bin/make".
+
+#=== ERROR while compiling afl.2.52b ==========================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/afl.2.52b
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/afl-11-ad8886.env
+# output-file          ~/.opam/log/afl-11-ad8886.out
+### output ###
+# [*] Checking for the ability to compile x86 code...
+# /tmp/ccBHWNg2.s: Assembler messages:
+# /tmp/ccBHWNg2.s:13: Error: unrecognized opcode: `xorb'
+# 
+# Oops, looks like your compiler can't generate x86 code.
+# 
+# Don't panic! You can use the LLVM or QEMU mode, but see docs/INSTALL first.
+# (To ignore this error, set AFL_NO_X86=1 and try again.)
+# 
+# Makefile:52: recipe for target 'test_x86' failed
+# make: *** [test_x86] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build afl 2.52b
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532369160 1532369166

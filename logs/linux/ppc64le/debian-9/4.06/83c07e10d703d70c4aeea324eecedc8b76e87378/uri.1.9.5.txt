@@ -1,0 +1,260 @@
+$ opam depext -iy -j 2 uri.1.9.5
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install re                      1.7.3   [required by uri]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by sexplib]
+  - install base-bytes              base    [required by uri]
+  - install num                     1.1     [required by sexplib]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppx_sexp_conv]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by ppx_sexp_conv]
+  - install stringext               1.5.0   [required by uri]
+  - install sexplib                 v0.11.0 [required by uri]
+  - install stdio                   v0.11.0 [required by ppxlib]
+  - install ppxlib                  0.3.0   [required by ppx_sexp_conv]
+  - install ppx_sexp_conv           v0.11.2 [required by uri]
+  - install uri                     1.9.5
+===== 16 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[uri.1.9.5] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed parsexp.v0.11.0
+-> installed base.v0.11.1
+-> installed sexplib.v0.11.0
+-> installed stringext.1.5.0
+-> installed stdio.v0.11.0
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+[ERROR] The compilation of uri failed at "/home/opam/.opam/4.06/bin/jbuilder build -p uri -j 79".
+
+#=== ERROR while compiling uri.1.9.5 ==========================================#
+# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/uri.1.9.5
+# command              ~/.opam/4.06/bin/jbuilder build -p uri -j 79
+# exit-code            1
+# env-file             ~/.opam/log/uri-11-344343.env
+# output-file          ~/.opam/log/uri-11-344343.out
+### output ###
+#       ocamlc lib/.uri.objs/uri_re.{cmo,cmt}
+# File "lib/uri_re.ml", line 24, characters 19-30:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 25, characters 19-30:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 29, characters 17-28:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 35, characters 19-30:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 36, characters 15-26:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 39, characters 18-29:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 64, characters 14-25:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 72, characters 13-24:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 95, characters 15-26:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 107, characters 22-33:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 110, characters 19-35:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 111, characters 19-35:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 112, characters 20-36:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 113, characters 16-32:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 114, characters 11-27:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+#     ocamlopt lib/.uri.objs/uri_re.{cmx,o}
+# File "lib/uri_re.ml", line 24, characters 19-30:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 25, characters 19-30:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 29, characters 17-28:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 35, characters 19-30:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 36, characters 15-26:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 39, characters 18-29:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 64, characters 14-25:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 72, characters 13-24:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 95, characters 15-26:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 107, characters 22-33:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 110, characters 19-35:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 111, characters 19-35:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 112, characters 20-36:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 113, characters 16-32:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+# File "lib/uri_re.ml", line 114, characters 11-27:
+# Warning 3: deprecated: module Re_posix
+# Use Re.Posix
+#       ocamlc lib/.uri.objs/uri.{cmo,cmt}
+# File "lib/uri.ml", line 167, characters 23-39:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/uri.ml", line 194, characters 15-31:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/uri.ml", line 205, characters 26-42:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/uri.ml", line 284, characters 25-39:
+# Warning 3: deprecated: Char.uppercase
+# Use Char.uppercase_ascii instead.
+# File "lib/uri.ml", line 306, characters 33-50:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "lib/uri.ml", line 321, characters 27-44:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "lib/uri.ml", line 568, characters 17-33:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+#     ocamlopt lib/.uri.objs/uri.{cmx,o}
+# File "lib/uri.ml", line 167, characters 23-39:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/uri.ml", line 194, characters 15-31:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/uri.ml", line 205, characters 26-42:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "lib/uri.ml", line 284, characters 25-39:
+# Warning 3: deprecated: Char.uppercase
+# Use Char.uppercase_ascii instead.
+# File "lib/uri.ml", line 306, characters 33-50:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "lib/uri.ml", line 321, characters 27-44:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "lib/uri.ml", line 568, characters 17-33:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+#     ocamlopt lib/.uri_top.objs/uri_top.{cmx,o}
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Toploop, and its interface was not compiled with -opaque
+#     ocamlopt etc/.uri_services_full.objs/uri_services_full.{cmx,o}
+# /tmp/camlasm0fb44c.s: Assembler messages:
+# /tmp/camlasm0fb44c.s: Warning: TOC section size exceeds 64k
+#     ocamlopt etc/uri_services_full.cmxs (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -shared -linkall -I etc -o etc/uri_services_full.cmxs etc/uri_services_full.cmxa)
+# etc/uri_services_full.a(uri_services_full.o): In function `camlUri_services_full__tcp_port_of_service_1002':
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x30): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+17598
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x3c): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+13bb8
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x48): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+1e4e0
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x60): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+16c60
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0xb8): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+116a0
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0xe4): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+16f90
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0xf4): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+22038
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x10c): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+15508
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x154): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+20118
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x164): relocation truncated to fit: R_PPC64_TOC16_DS against `.toc'+20898
+# /home/opam/.opam/4.06/.opam-switch/build/uri.1.9.5/_build/default/etc/uri_services_full.ml:2:(.text+0x18c): additional relocation overflows omitted from the output
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build uri 1.9.5
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install parsexp                 v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723163603.export"
+31 1532363759 1532363864

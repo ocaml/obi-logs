@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 bitmasks.1.0.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bitmasks.1.0.0: The following dependencies couldn't be met:
+          - bitmasks -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=bitmasks.1.0.0 returned 20
+20 1532366088 1532366092

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ucorelib.0.2.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ucorelib.0.2.0: The following dependencies couldn't be met:
+          - ucorelib -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ucorelib.0.2.0 returned 20
+20 1532374121 1532374125
