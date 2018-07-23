@@ -106,11 +106,10 @@ The following actions will be performed:
 [camlp4.4.03+1] found in cache
 [camomile.1.0.1] found in cache
 [cmdliner.1.0.2] found in cache
-[cohttp.0.9.6] found in cache
 [cppo.1.6.4] found in cache
 [easy-format.1.3.1] found in cache
-[github.0.4.2] found in cache
-[lambda-term.1.10.1] found in cache
+[cohttp.0.9.6] downloaded from https://github.com/mirage/ocaml-cohttp/archive/ocaml-cohttp-0.9.6.tar.gz
+[github.0.4.2] downloaded from https://github.com/avsm/ocaml-github/archive/ocaml-github-0.4.2.tar.gz
 [lwt.2.4.5] found in cache
 [menhir.20180703] found in cache
 [ocamlbuild.0.12.0] found in cache
@@ -118,11 +117,12 @@ The following actions will be performed:
 [re.1.7.3] found in cache
 [react.1.2.1] found in cache
 [result.1.3] found in cache
-[ssl.0.4.7] found in cache
+[lambda-term.1.10.1] downloaded from https://github.com/diml/lambda-term/archive/1.10.1.tar.gz
 [topkg.0.9.1] found in cache
 [uri.1.3.12] found in cache
 [yojson.1.4.1] found in cache
 [zed.1.6] found in cache
+[ssl.0.4.7] downloaded from http://downloads.sourceforge.net/project/savonet/ocaml-ssl/0.4.7/ocaml-ssl-0.4.7.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -155,8 +155,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/ssl.0.4.7
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/ssl-11-33e41c.env
-# output-file          ~/.opam/log/ssl-11-33e41c.out
+# env-file             ~/.opam/log/ssl-11-2bfeb4.env
+# output-file          ~/.opam/log/ssl-11-2bfeb4.out
 ### output ###
 # /usr/bin/make -C src all
 # make[1]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
@@ -345,5 +345,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180722103219.export"
-31 1532255525 1532255687
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180723035714.export"
+31 1532318218 1532318441

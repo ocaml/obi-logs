@@ -439,9 +439,9 @@ The following actions will be performed:
 # Warning: -pp overrides the effect of -syntax partly
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -syntax camlp4o -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -I lib/bap_elf -o lib/bap_elf/elf_parse.cmi lib/bap_elf/elf_parse.mli
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -syntax camlp4o -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
-# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -syntax camlp4o -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
-# ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
 # + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -syntax camlp4o -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -I lib/bap_elf -o lib/bap_elf/elf_parse.cmi lib/bap_elf/elf_parse.mli
+# ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -syntax camlp4o -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
 # ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
 # /home/opam/.opam/4.03/bin/ocamlfind ocamldep -syntax camlp4o -predicates ppx_driver -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -modules lib/bap_elf/elf_parse.ml > lib/bap_elf/elf_parse.ml.depends
 # /home/opam/.opam/4.03/bin/ocamlfind ocamldep -syntax camlp4o -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package ppx_jane -package core_kernel -package camlp4 -package bitstring.syntax -package bitstring -package bap -modules lib/bap_elf/elf_internal_utils.mli > lib/bap_elf/elf_internal_utils.mli.depends
@@ -560,5 +560,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180722102616.export"
-31 1532255148 1532256106
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180723043212.export"
+31 1532320304 1532321241

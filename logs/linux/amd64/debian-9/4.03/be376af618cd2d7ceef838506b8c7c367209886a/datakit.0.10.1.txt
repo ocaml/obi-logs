@@ -306,14 +306,14 @@ The following actions will be performed:
 # Warning: This field is useless without a (public_name ...) field.
 # File "tests/datakit-bridge-github/jbuild", line 5, characters 13-34:
 # Warning: This field is useless without a (public_name ...) field.
-#     ocamldep src/datakit/datakit.dependsi.ocamldep-output
 #     ocamldep src/datakit/bin/main.depends.ocamldep-output
 #     ocamldep src/datakit/datakit.depends.ocamldep-output
-#     ocamldep src/datakit-io/datakit_io.dependsi.ocamldep-output
+#     ocamldep src/datakit/datakit.dependsi.ocamldep-output
 #     ocamldep src/datakit-conduit/datakit_conduit.depends.ocamldep-output
 #     ocamldep src/datakit-io/datakit_io.depends.ocamldep-output
 #     ocamldep src/datakit-log/datakit_log.depends.ocamldep-output
 #     ocamldep src/datakit-conduit/datakit_conduit.dependsi.ocamldep-output
+#     ocamldep src/datakit-io/datakit_io.dependsi.ocamldep-output
 #     ocamldep src/datakit-log/datakit_log.dependsi.ocamldep-output
 #       ocamlc src/datakit-conduit/datakit_conduit.{cmi,cmti}
 #       ocamlc src/datakit-log/datakit_log.{cmi,cmti}
@@ -424,5 +424,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180722112040.export"
-31 1532258423 1532258611
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180723044340.export"
+31 1532321004 1532321204

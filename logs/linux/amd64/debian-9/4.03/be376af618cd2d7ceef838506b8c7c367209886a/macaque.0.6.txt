@@ -90,10 +90,10 @@ The following actions will be performed:
 [calendar.2.04] found in cache
 [camlp4.4.03+1] found in cache
 [csv.2.1] found in cache
-[macaque.0.6] found in cache
 [ocamlbuild.0.12.0] found in cache
 [pcre.7.2.3] found in cache
-[pgocaml.1.7.1] found in cache
+[macaque.0.6] downloaded from http://forge.ocamlcore.org/frs/download.php/1027/macaque-0.6.tar.gz
+[pgocaml.1.7.1] downloaded from http://forge.ocamlcore.org/frs/download.php/1099/pgocaml-1.7.1.tgz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -116,8 +116,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/macaque.0.6
 # command              /usr/bin/make -C src
 # exit-code            2
-# env-file             ~/.opam/log/macaque-11-17d454.env
-# output-file          ~/.opam/log/macaque-11-17d454.out
+# env-file             ~/.opam/log/macaque-11-c0ceac.env
+# output-file          ~/.opam/log/macaque-11-c0ceac.out
 ### output ###
 # make: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/macaque.0.6/src'
 # ocamlbuild -tag annot pa_macaque.cmo
@@ -156,5 +156,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180722104713.export"
-31 1532256419 1532256625
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180723041912.export"
+31 1532319541 1532319694
