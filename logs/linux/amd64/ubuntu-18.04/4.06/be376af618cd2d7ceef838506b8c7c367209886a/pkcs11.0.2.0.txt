@@ -203,8 +203,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/pkcs11.0.2.0
 # command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false
 # exit-code            1
-# env-file             ~/.opam/log/pkcs11-14-48828f.env
-# output-file          ~/.opam/log/pkcs11-14-48828f.out
+# env-file             ~/.opam/log/pkcs11-13-48828f.env
+# output-file          ~/.opam/log/pkcs11-13-48828f.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package records -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_generator.ml > src/pkcs11_generator.ml.depends
@@ -491,5 +491,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722161429.export"
-31 1532276054 1532276196
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723011316.export"
+31 1532308381 1532308513

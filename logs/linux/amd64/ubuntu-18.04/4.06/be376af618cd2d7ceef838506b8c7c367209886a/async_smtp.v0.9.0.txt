@@ -295,18 +295,18 @@ The following actions will be performed:
 -> installed topkg.0.9.1
 -> installed integers.0.2.2
 -> installed ocamlnet.4.1.6
--> installed ctypes.0.14.0
--> installed typerep.v0.9.0
 -> installed json-wheel.1.0.6+safe-string
--> installed variantslib.v0.9.0
+-> installed typerep.v0.9.0
 -> installed ppx_typerep_conv.v0.9.0
--> installed zarith.1.7
+-> installed variantslib.v0.9.0
 -> installed ppx_variants_conv.v0.9.0
 -> installed bin_prot.v0.9.2
--> installed cryptokit.1.13
--> installed ppx_bin_prot.v0.9.0
+-> installed ctypes.0.14.0
 -> installed ppx_expect.v0.9.0
+-> installed zarith.1.7
+-> installed ppx_bin_prot.v0.9.0
 -> installed ppx_jane.v0.9.0
+-> installed cryptokit.1.13
 -> installed core_kernel.v0.9.1
 -> installed async_kernel.v0.9.0
 -> installed async_rpc_kernel.v0.9.0
@@ -337,9 +337,6 @@ The following actions will be performed:
 #         bash src/config_ext.h
 #       ocamlc src/extended_int_stubs.o
 #       ocamlc src/posix_clock_stubs.o
-#       ocamlc src/malloc_stubs.o
-#       ocamlc src/unix_pseudo_terminal_stubs.o
-#       ocamlc src/linebuf_stubs.o
 #       ocamlc src/extended_unix_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
 # extended_unix_stubs.c: In function 'quota_query':
@@ -390,6 +387,8 @@ The following actions will be performed:
 # /usr/include/x86_64-linux-gnu/sys/quota.h:130:12: note: expected 'const char *' but argument is of type 'int'
 #  extern int quotactl (int __cmd, const char *__special, int __id,
 #             ^~~~~~~~
+# 
+# Waiting for 1 job to finish.
 
 
 
@@ -485,5 +484,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722163448.export"
-31 1532277278 1532277553
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723012248.export"
+31 1532308954 1532309315

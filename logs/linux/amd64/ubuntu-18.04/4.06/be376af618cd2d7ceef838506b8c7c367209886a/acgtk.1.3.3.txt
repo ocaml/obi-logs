@@ -293,6 +293,7 @@ The following actions will be performed:
 ===== 17 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[acgtk.1.3.3] found in cache
 [ANSITerminal.0.8] found in cache
 [biniou.1.2.0] found in cache
 [bolt.1.4] found in cache
@@ -302,7 +303,6 @@ The following actions will be performed:
 [dypgen.20120619-1] found in cache
 [easy-format.1.3.1] found in cache
 [ocamlbuild.0.12.0] found in cache
-[acgtk.1.3.3] downloaded from http://calligramme.loria.fr/acg/software/acg-1.3.3-20171222.tar.gz
 [ocf.0.5.0] found in cache
 [ppx_tools.5.1+4.06.0] found in cache
 [yojson.1.4.1] found in cache
@@ -330,8 +330,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/dypgen.20120619-1
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/dypgen-13-bb845d.env
-# output-file          ~/.opam/log/dypgen-13-bb845d.out
+# env-file             ~/.opam/log/dypgen-13-038aac.env
+# output-file          ~/.opam/log/dypgen-13-038aac.out
 ### output ###
 # cd dyplib; /usr/bin/make
 # make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/dypgen.20120619-1/dyplib'
@@ -354,8 +354,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/bolt.1.4
 # command              /usr/bin/make all
 # exit-code            2
-# env-file             ~/.opam/log/bolt-13-bbce2a.env
-# output-file          ~/.opam/log/bolt-13-bbce2a.out
+# env-file             ~/.opam/log/bolt-13-c641d5.env
+# output-file          ~/.opam/log/bolt-13-c641d5.out
 ### output ###
 # echo 'bolt.cma' > bolt.itarget
 # (which ocamlopt && echo 'bolt.cmxa' >> bolt.itarget) || true
@@ -365,7 +365,7 @@ The following actions will be performed:
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # File "_tags", line 27, characters 19-27:
 # Warning: the tag "warnings" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# cp /tmp/versionab2ed7.ml src/library/version.ml
+# cp /tmp/versionf4590d.ml src/library/version.ml
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/version.mli > src/library/version.mli.depends
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/version.cmi src/library/version.mli
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/version.ml > src/library/version.ml.depends
@@ -392,23 +392,17 @@ The following actions will be performed:
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/tree.cmi src/library/tree.mli
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/tree.ml > src/library/tree.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/signal.ml > src/library/signal.ml.depends
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/output.ml > src/library/output.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/name.ml > src/library/name.ml.depends
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/mode.ml > src/library/mode.ml.depends
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/logger.mli > src/library/logger.mli.depends
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/logger.cmi src/library/logger.mli
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/logger.ml > src/library/logger.ml.depends
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configuration.mli > src/library/configuration.mli.depends
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configurationNew.mli > src/library/configurationNew.mli.depends
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configuration.cmi src/library/configuration.mli
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configurationOld.mli > src/library/configurationOld.mli.depends
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationNew.cmi src/library/configurationNew.mli
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationOld.cmi src/library/configurationOld.mli
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/level.ml > src/library/level.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/layout.ml > src/library/layout.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/filter.ml > src/library/filter.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/event.ml > src/library/event.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configurationOld.mli > src/library/configurationOld.mli.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configuration.mli > src/library/configuration.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configuration.cmi src/library/configuration.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationOld.cmi src/library/configurationOld.mli
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configurationOld.ml > src/library/configurationOld.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configurationNew.mli > src/library/configurationNew.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationNew.cmi src/library/configurationNew.mli
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configurationNew.ml > src/library/configurationNew.ml.depends
 # /home/opam/.opam/4.06/bin/ocamllex.opt -q src/library/configLexer.mll
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configLexer.ml > src/library/configLexer.ml.depends
@@ -418,15 +412,21 @@ The following actions will be performed:
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configLexer.cmo src/library/configLexer.ml
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configuration.ml > src/library/configuration.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/configParser.ml > src/library/configParser.ml.depends
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/paje.mli > src/support/paje.mli.depends
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/paje.cmi src/support/paje.mli
-# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/paje.ml > src/support/paje.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/output.ml > src/library/output.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/level.ml > src/library/level.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/mode.ml > src/library/mode.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/logger.mli > src/library/logger.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/logger.cmi src/library/logger.mli
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/library/logger.ml > src/library/logger.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/log4j.mli > src/support/log4j.mli.depends
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/log4j.cmi src/support/log4j.mli
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/log4j.ml > src/support/log4j.ml.depends
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/daikon.mli > src/support/daikon.mli.depends
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/daikon.cmi src/support/daikon.mli
 # /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/daikon.ml > src/support/daikon.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/paje.mli > src/support/paje.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/paje.cmi src/support/paje.mli
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules src/support/paje.ml > src/support/paje.ml.depends
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/version.cmo src/library/version.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/utils.cmo src/library/utils.ml
 # + /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/utils.cmo src/library/utils.ml
@@ -439,15 +439,7 @@ The following actions will be performed:
 # File "src/library/signal.ml", line 47, characters 8-24:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/output.cmo src/library/output.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/name.cmo src/library/name.ml
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/mode.cmo src/library/mode.ml
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/logger.cmo src/library/logger.ml
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/level.cmo src/library/level.ml
-# + /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/level.cmo src/library/level.ml
-# File "src/library/level.ml", line 65, characters 8-24:
-# Warning 3: deprecated: String.uppercase
-# Use String.uppercase_ascii instead.
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/layout.cmo src/library/layout.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/filter.cmo src/library/filter.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/event.cmo src/library/event.ml
@@ -464,7 +456,14 @@ The following actions will be performed:
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configurationNew.cmo src/library/configurationNew.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configuration.cmo src/library/configuration.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/configParser.cmo src/library/configParser.ml
-# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/paje.cmo src/support/paje.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/output.cmo src/library/output.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/level.cmo src/library/level.ml
+# + /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/level.cmo src/library/level.ml
+# File "src/library/level.ml", line 65, characters 8-24:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/mode.cmo src/library/mode.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/library -I src -I src/support -I src/syntax -I src/threads -o src/library/logger.cmo src/library/logger.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/log4j.cmo src/support/log4j.ml
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/daikon.cmo src/support/daikon.ml
 # + /home/opam/.opam/4.06/bin/ocamlc.opt -c -for-pack Bolt -I src/support -I src -I src/library -I src/syntax -I src/threads -o src/support/daikon.cmo src/support/daikon.ml
@@ -522,5 +521,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722160811.export"
-31 1532275667 1532275845
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723011839.export"
+31 1532308700 1532308830
