@@ -27,7 +27,7 @@ Retrieving: libfuse2-2.9.3-11.3.x86_64.rpm [done]
 Retrieving package libgmpxx4-5.1.3-7.15.x86_64 (3/9),  16.1 KiB ( 26.5 KiB unpacked)
 Retrieving: libgmpxx4-5.1.3-7.15.x86_64.rpm [done]
 Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (4/9), 408.9 KiB (794.8 KiB unpacked)
-Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [done]
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [.done (7.9 KiB/s)]
 Retrieving package libulockmgr1-2.9.3-11.3.x86_64 (5/9),  12.2 KiB ( 14.3 KiB unpacked)
 Retrieving: libulockmgr1-2.9.3-11.3.x86_64.rpm [done]
 Retrieving package gmp-devel-5.1.3-7.15.x86_64 (6/9),   1.2 MiB (  7.1 MiB unpacked)
@@ -37,7 +37,7 @@ Retrieving: sqlite3-devel-3.8.10.2-10.2.x86_64.rpm [done]
 Retrieving package fuse-devel-2.9.3-11.3.x86_64 (8/9),  70.7 KiB (280.7 KiB unpacked)
 Retrieving: fuse-devel-2.9.3-11.3.x86_64.rpm [done]
 Retrieving package libcurl-devel-7.37.0-36.1.x86_64 (9/9), 227.2 KiB (357.2 KiB unpacked)
-Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [done]
+Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [.done]
 Checking for file conflicts: [.......done]
 (1/9) Installing: fuse-2.9.3-11.3.x86_64 [.........done]
 Additional rpm output:
@@ -98,10 +98,10 @@ The following actions will be performed:
 [easy-format.1.3.1] found in cache
 [extlib.1.7.5] found in cache
 [gapi-ocaml.0.3.6] found in cache
+[google-drive-ocamlfuse.0.5.6] found in cache
 [ocamlbuild.0.12.0] found in cache
 [ocamlfuse.2.7.1-cvs5] found in cache
 [ocamlnet.4.1.6] found in cache
-[google-drive-ocamlfuse.0.5.6] downloaded from https://forge.ocamlcore.org/frs/download.php/1449/google-drive-ocamlfuse-0.5.6.tar.gz
 [ocurl.0.8.1] found in cache
 [result.1.3] found in cache
 [sexplib0.v0.11.0] found in cache
@@ -150,8 +150,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/google-drive-ocamlfuse.0.5.6
 # command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
 # exit-code            2
-# env-file             ~/.opam/log/google-drive-ocamlfuse-12-e1b347.env
-# output-file          ~/.opam/log/google-drive-ocamlfuse-12-e1b347.out
+# env-file             ~/.opam/log/google-drive-ocamlfuse-12-aaeb31.env
+# output-file          ~/.opam/log/google-drive-ocamlfuse-12-aaeb31.out
 ### output ###
 # File "./setup.ml", line 247, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -201,5 +201,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722145918.export"
-31 1532271538 1532271795
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723023110.export"
+31 1532312630 1532313225

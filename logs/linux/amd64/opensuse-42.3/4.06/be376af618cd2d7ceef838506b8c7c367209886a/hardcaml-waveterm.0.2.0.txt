@@ -171,6 +171,9 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/wave.cmo src/wave.ml
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/gfx.cmo src/gfx.ml
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/render.cmo src/render.ml
+# + ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/gfx.cmo src/gfx.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/write.cmo src/write.ml
 # + ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/wave.cmo src/wave.ml
 # ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
 # File "src/wave.ml", line 1:
@@ -231,5 +234,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722145008.export"
-31 1532270813 1532271142
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723023553.export"
+31 1532313155 1532313494

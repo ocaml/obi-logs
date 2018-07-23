@@ -2,21 +2,7 @@ $ opam depext -iy -j 2 freetds.0.4.1
 # Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
 # The following system packages are needed:
 m4
-Download (curl) error for 'http://download.opensuse.org/update/leap/42.3/oss/media.1/media':
-Error code: Curl error 52
-Error message: Empty reply from server
-
-Cannot read input: bad stream or EOF.
-The following command needs to be run through "sudo":
-    zypper --non-interactive install m4
-Loading repository data...
-Reading installed packages...
-'m4' is already installed.
-No update candidate for 'm4-1.4.16-6.3.x86_64'. The highest available version is already installed.
-Resolving package dependencies...
-
-Nothing to do.
-# OS packages installation successful
+# All required OS packages found.
 # Now letting OPAM install the packages
 The following actions will be performed:
   - install freetds 0.4.1
@@ -65,4 +51,4 @@ The following actions will be performed:
 +- 
 - No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-31 1532274070 1532274300
+31 1532310783 1532311023

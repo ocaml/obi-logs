@@ -14,12 +14,12 @@ The following actions will be performed:
 ===== 6 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[conf-secp256k1.1.0.0] found in cache
 [oasis.0.4.11] found in cache
 [ocamlbuild.0.12.0] found in cache
 [ocamlify.0.0.1] found in cache
 [ocamlmod.0.0.9] found in cache
-[secp256k1.0.1.5] found in cache
+[conf-secp256k1.1.0.0] downloaded from https://github.com/dakk/conf-secp256k1/archive/1.0.0.tar.gz
+[secp256k1.0.1.5] downloaded from https://github.com/dakk/secp256k1-ml/archive/0.1.5.zip
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed conf-secp256k1.1.0.0
@@ -34,8 +34,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/secp256k1.0.1.5
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/secp256k1-12-abfa5b.env
-# output-file          ~/.opam/log/secp256k1-12-abfa5b.out
+# env-file             ~/.opam/log/secp256k1-12-b67373.env
+# output-file          ~/.opam/log/secp256k1-12-b67373.out
 ### output ###
 # ocaml setup.ml -build 
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -66,5 +66,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722143357.export"
-31 1532269823 1532270083
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723024305.export"
+31 1532313774 1532313854

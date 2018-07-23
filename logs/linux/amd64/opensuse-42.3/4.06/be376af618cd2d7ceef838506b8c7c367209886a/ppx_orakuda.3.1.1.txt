@@ -23,7 +23,7 @@ Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (3/5),  24.0 KiB ( 34.6 KiB unpacked)
 Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (4/5),  15.7 KiB ( 10.2 KiB unpacked)
-Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
+Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [.done (242.5 KiB/s)]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (5/5), 224.5 KiB (263.5 KiB unpacked)
 Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
 Checking for file conflicts: [......done]
@@ -114,15 +114,17 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.06/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.06/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.07 sec)
+# *** omake: finished reading OMakefiles (0.15 sec)
 # --- Checking if ocamldep understands -modules... (yes)
+# *** omake: warning: stdout is not a tty, disabling the progress bar
+#    (use --progress to override).
 # - build lib ppx_orakuda_cformat.annot
 # + ocamlfind ocamlc -package pcre,spotlib,re.pcre -g -no-alias-deps -w A-3-4-9-40-41-42-44-45-48-49 -warn-error a -g -annot -bin-annot -I . -c ppx_orakuda_cformat.ml
 # File "ppx_orakuda_cformat.ml", line 80, characters 21-22:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
 # *** omake: 41/314 targets are up to date
-# *** omake: failed (0.37 sec, 4/4 scans, 4/10 rules, 27/140 digests)
+# *** omake: failed (0.78 sec, 4/4 scans, 4/10 rules, 27/140 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    lib/ppx_orakuda_cformat.annot
 #       depends on: lib/ppx_orakuda_cformat.ml
@@ -164,5 +166,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722154510.export"
-31 1532273887 1532274386
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723021116.export"
+31 1532311863 1532312052

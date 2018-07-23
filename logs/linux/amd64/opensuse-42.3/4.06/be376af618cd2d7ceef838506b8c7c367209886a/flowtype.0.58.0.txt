@@ -16,13 +16,13 @@ The following actions will be performed:
 ===== 8 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[flowtype.0.58.0] found in cache
 [gen.0.5.1] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
 [ppx_tools_versioned.5.2] found in cache
 [result.1.3] found in cache
 [sedlex.1.99.4] found in cache
-[flowtype.0.58.0] downloaded from https://github.com/facebook/flow/archive/v0.58.0.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -39,8 +39,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/flowtype.0.58.0
 # command              /usr/bin/env FLOW_RELEASE=1 make
 # exit-code            2
-# env-file             ~/.opam/log/flowtype-12-0f344c.env
-# output-file          ~/.opam/log/flowtype-12-0f344c.out
+# env-file             ~/.opam/log/flowtype-12-d67790.env
+# output-file          ~/.opam/log/flowtype-12-d67790.out
 ### output ###
 # ocamlbuild \
 # 	-use-ocamlfind -pkgs sedlex,compiler-libs.common,unix \
@@ -76,5 +76,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722155045.export"
-31 1532274638 1532274689
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723020830.export"
+31 1532311695 1532311727

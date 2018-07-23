@@ -54,10 +54,10 @@ The following actions will be performed:
 [ocamlbuild.0.12.0] found in cache
 [ocamlify.0.0.1] found in cache
 [ocamlmod.0.0.9] found in cache
-[owl.0.2.4] found in cache
 [plplot.5.11.0] found in cache
 [result.1.3] found in cache
 [topkg.0.9.1] found in cache
+[owl.0.2.4] downloaded from https://github.com/ryanrhymes/owl/archive/0.2.4.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -81,8 +81,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/plplot.5.11.0
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/plplot-12-27656f.env
-# output-file          ~/.opam/log/plplot-12-27656f.out
+# env-file             ~/.opam/log/plplot-12-7fbc68.env
+# output-file          ~/.opam/log/plplot-12-7fbc68.out
 ### output ###
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # Failure: No valid installation of plplot or plplotd found.
@@ -113,5 +113,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722150609.export"
-31 1532271517 1532272107
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723021516.export"
+31 1532312088 1532312318
