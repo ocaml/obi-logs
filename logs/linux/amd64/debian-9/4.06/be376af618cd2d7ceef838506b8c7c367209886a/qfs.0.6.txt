@@ -79,8 +79,8 @@ The following actions will be performed:
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
 [ppx_tools_versioned.5.2] found in cache
-[qfs.0.6] found in cache
 [result.1.3] found in cache
+[qfs.0.6] downloaded from https://github.com/ahrefs/ocaml-qfs/archive/0.6.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -100,8 +100,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/qfs.0.6
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/qfs-11-db5b53.env
-# output-file          ~/.opam/log/qfs-11-db5b53.out
+# env-file             ~/.opam/log/qfs-11-6e09d5.env
+# output-file          ~/.opam/log/qfs-11-6e09d5.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package lwt.ppx -package unix -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
@@ -141,5 +141,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722082841.export"
-31 1532248106 1532248176
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722234258.export"
+31 1532302963 1532303031

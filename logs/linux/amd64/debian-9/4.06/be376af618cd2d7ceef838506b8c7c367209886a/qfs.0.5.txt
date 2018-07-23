@@ -75,8 +75,8 @@ The following actions will be performed:
 [extlib.1.7.5] found in cache
 [lwt.4.1.0] found in cache
 [ocamlbuild.0.12.0] found in cache
-[qfs.0.5] found in cache
 [result.1.3] found in cache
+[qfs.0.5] downloaded from https://github.com/ahrefs/ocaml-qfs/archive/0.5.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -94,8 +94,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/qfs.0.5
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/qfs-11-a4cb4f.env
-# output-file          ~/.opam/log/qfs-11-a4cb4f.out
+# env-file             ~/.opam/log/qfs-11-71d49a.env
+# output-file          ~/.opam/log/qfs-11-71d49a.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -173,5 +173,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722082750.export"
-31 1532248056 1532248098
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722234205.export"
+31 1532302911 1532302954
