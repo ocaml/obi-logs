@@ -181,7 +181,6 @@ The following actions will be performed:
 -> installed base.v0.11.1
 -> installed parsexp.v0.11.0
 -> installed camlp4.4.07+1
--> installed sexplib.v0.11.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
 -> installed pcre.7.3.4
@@ -189,6 +188,7 @@ The following actions will be performed:
 -> installed fieldslib.v0.11.0
 -> installed ppx_fields_conv.v0.11.0
 -> installed ppx_sexp_conv.v0.11.2
+-> installed sexplib.v0.11.0
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed uchar.0.0.2
@@ -208,8 +208,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/podge.0.7.0
 # command              ~/.opam/4.07/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/podge-11-60130f.env
-# output-file          ~/.opam/log/podge-11-60130f.out
+# env-file             ~/.opam/log/podge-11-558c0e.env
+# output-file          ~/.opam/log/podge-11-558c0e.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -package yojson -package unix -package tyxml -package stringext -package re.pcre -package ezxmlm -package cohttp -package ANSITerminal -modules lib/podge.ml > lib/podge.ml.depends
@@ -297,5 +297,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180722090007.export"
-31 1532249998 1532250284
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180723054457.export"
+31 1532324687 1532324977
