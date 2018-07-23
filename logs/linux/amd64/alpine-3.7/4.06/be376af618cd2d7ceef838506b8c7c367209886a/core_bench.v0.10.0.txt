@@ -317,7 +317,7 @@ The following actions will be performed:
 # extended_unix_stubs.c:194:63: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
 #    quota.dqb_bsoftlimit = Int63_val(Field(v_bytes_limit, 0)) / QUOTA_BYTES_PER_SPACE_UNIT;
 #                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
-#     ocamlopt src/.core_extended.objs/core_extended__Lazy_sequence.{cmx,o}
+#       ocamlc src/.core_extended.objs/core_extended__Lazy_sequence.{cmo,cmt}
 # File "src/lazy_sequence.ml", line 848, characters 17-23:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
@@ -326,7 +326,7 @@ The following actions will be performed:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 8.5)
-#       ocamlc src/.core_extended.objs/core_extended__Lazy_sequence.{cmo,cmt}
+#     ocamlopt src/.core_extended.objs/core_extended__Lazy_sequence.{cmx,o}
 # File "src/lazy_sequence.ml", line 848, characters 17-23:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
@@ -408,5 +408,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722123450.export"
-31 1532262888 1532263172
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723045802.export"
+31 1532321880 1532322168

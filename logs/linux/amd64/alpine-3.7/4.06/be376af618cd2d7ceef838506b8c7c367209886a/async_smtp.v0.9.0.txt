@@ -246,17 +246,17 @@ The following actions will be performed:
 -> installed ppx_sexp_conv.v0.9.0
 -> installed ppx_assert.v0.9.0
 -> installed ppx_hash.v0.9.0
--> installed ppx_base.v0.9.0
 -> installed ocamlnet.4.1.6
--> installed configurator.v0.9.1
+-> installed ppx_base.v0.9.0
+-> installed json-wheel.1.0.6+safe-string
 -> installed ppx_sexp_message.v0.9.0
 -> installed ppx_sexp_value.v0.9.0
 -> installed ppx_traverse.v0.9.0
--> installed json-wheel.1.0.6+safe-string
+-> installed configurator.v0.9.1
 -> installed topkg.0.9.1
+-> installed integers.0.2.2
 -> installed ppx_custom_printf.v0.9.0
 -> installed typerep.v0.9.0
--> installed integers.0.2.2
 -> installed ppx_typerep_conv.v0.9.0
 -> installed variantslib.v0.9.0
 -> installed ppx_variants_conv.v0.9.0
@@ -289,13 +289,75 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.9.1
 # command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
 # exit-code            1
-# env-file             ~/.opam/log/core_extended-13-f42b1f.env
-# output-file          ~/.opam/log/core_extended-13-f42b1f.out
+# env-file             ~/.opam/log/core_extended-14-2382e8.env
+# output-file          ~/.opam/log/core_extended-14-2382e8.out
 ### output ###
 #       ocamlc src/core_extended.{cmi,cmo,cmt}
 #     ocamlopt src/core_extended.{cmx,o}
 #         bash src/config_ext.h
 # getconf: GNU_LIBC_VERSION: unknown variable
+#       ocamlc src/malloc_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o malloc_stubs.o malloc_stubs.c)
+# malloc_stubs.c: In function 'malloc_mallinfo_stub':
+# malloc_stubs.c:10:10: error: variable 'info' has initializer but incomplete type
+#    struct mallinfo info = mallinfo();
+#           ^~~~~~~~
+# malloc_stubs.c:10:26: warning: implicit declaration of function 'mallinfo' [-Wimplicit-function-declaration]
+#    struct mallinfo info = mallinfo();
+#                           ^~~~~~~~
+# malloc_stubs.c:10:19: error: storage size of 'info' isn't known
+#    struct mallinfo info = mallinfo();
+#                    ^~~~
+# malloc_stubs.c: At top level:
+# malloc_stubs.c:26:3: error: 'M_TRIM_THRESHOLD' undeclared here (not in a function)
+#    M_TRIM_THRESHOLD,
+#    ^~~~~~~~~~~~~~~~
+# malloc_stubs.c:27:3: error: 'M_TOP_PAD' undeclared here (not in a function)
+#    M_TOP_PAD,
+#    ^~~~~~~~~
+# malloc_stubs.c:28:3: error: 'M_MMAP_THRESHOLD' undeclared here (not in a function)
+#    M_MMAP_THRESHOLD,
+#    ^~~~~~~~~~~~~~~~
+# malloc_stubs.c:29:3: error: 'M_MMAP_MAX' undeclared here (not in a function)
+#    M_MMAP_MAX,
+#    ^~~~~~~~~~
+# malloc_stubs.c:30:3: error: 'M_CHECK_ACTION' undeclared here (not in a function)
+#    M_CHECK_ACTION,
+#    ^~~~~~~~~~~~~~
+# malloc_stubs.c: In function 'malloc_mallopt_stub':
+# malloc_stubs.c:36:13: warning: implicit declaration of function 'mallopt' [-Wimplicit-function-declaration]
+#    int ret = mallopt(options[Int_val(v_opt)], Int_val(v_n));
+#              ^~~~~~~
+# malloc_stubs.c: In function 'malloc_trim_stub':
+# malloc_stubs.c:43:13: warning: implicit declaration of function 'malloc_trim' [-Wimplicit-function-declaration]
+#    int ret = malloc_trim(Int_val(v_n));
+#              ^~~~~~~~~~~
+# malloc_stubs.c: In function 'malloc_stats_stub':
+# malloc_stubs.c:51:3: warning: implicit declaration of function 'malloc_stats' [-Wimplicit-function-declaration]
+#    malloc_stats();
+#    ^~~~~~~~~~~~
+#       ocamlc src/extended_unix_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
+# extended_unix_stubs.c: In function 'quota_query':
+# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# extended_unix_stubs.c:126:38: note: each undeclared identifier is reported only once for each function it appears in
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# extended_unix_stubs.c: In function 'quota_modify':
+# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:194:63: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    quota.dqb_bsoftlimit = Int63_val(Field(v_bytes_limit, 0)) / QUOTA_BYTES_PER_SPACE_UNIT;
+#                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
 #       ocamlc src/posix_clock_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o posix_clock_stubs.o posix_clock_stubs.c)
 # In file included from /home/opam/.opam/4.06/lib/jane-street-headers/ocaml_utils.h:6:0,
@@ -365,68 +427,6 @@ The following actions will be performed:
 # posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
 #    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
 #            ^~~~~~~~~~~~~~~~
-#       ocamlc src/extended_unix_stubs.o (exit 2)
-# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
-# extended_unix_stubs.c: In function 'quota_query':
-# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
-#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
-#                                       ^
-# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
-#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
-#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
-# extended_unix_stubs.c:126:38: note: each undeclared identifier is reported only once for each function it appears in
-#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
-#                                       ^
-# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
-#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
-#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
-# extended_unix_stubs.c: In function 'quota_modify':
-# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
-#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
-#                                       ^
-# extended_unix_stubs.c:194:63: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
-#    quota.dqb_bsoftlimit = Int63_val(Field(v_bytes_limit, 0)) / QUOTA_BYTES_PER_SPACE_UNIT;
-#                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
-#       ocamlc src/malloc_stubs.o (exit 2)
-# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o malloc_stubs.o malloc_stubs.c)
-# malloc_stubs.c: In function 'malloc_mallinfo_stub':
-# malloc_stubs.c:10:10: error: variable 'info' has initializer but incomplete type
-#    struct mallinfo info = mallinfo();
-#           ^~~~~~~~
-# malloc_stubs.c:10:26: warning: implicit declaration of function 'mallinfo' [-Wimplicit-function-declaration]
-#    struct mallinfo info = mallinfo();
-#                           ^~~~~~~~
-# malloc_stubs.c:10:19: error: storage size of 'info' isn't known
-#    struct mallinfo info = mallinfo();
-#                    ^~~~
-# malloc_stubs.c: At top level:
-# malloc_stubs.c:26:3: error: 'M_TRIM_THRESHOLD' undeclared here (not in a function)
-#    M_TRIM_THRESHOLD,
-#    ^~~~~~~~~~~~~~~~
-# malloc_stubs.c:27:3: error: 'M_TOP_PAD' undeclared here (not in a function)
-#    M_TOP_PAD,
-#    ^~~~~~~~~
-# malloc_stubs.c:28:3: error: 'M_MMAP_THRESHOLD' undeclared here (not in a function)
-#    M_MMAP_THRESHOLD,
-#    ^~~~~~~~~~~~~~~~
-# malloc_stubs.c:29:3: error: 'M_MMAP_MAX' undeclared here (not in a function)
-#    M_MMAP_MAX,
-#    ^~~~~~~~~~
-# malloc_stubs.c:30:3: error: 'M_CHECK_ACTION' undeclared here (not in a function)
-#    M_CHECK_ACTION,
-#    ^~~~~~~~~~~~~~
-# malloc_stubs.c: In function 'malloc_mallopt_stub':
-# malloc_stubs.c:36:13: warning: implicit declaration of function 'mallopt' [-Wimplicit-function-declaration]
-#    int ret = mallopt(options[Int_val(v_opt)], Int_val(v_n));
-#              ^~~~~~~
-# malloc_stubs.c: In function 'malloc_trim_stub':
-# malloc_stubs.c:43:13: warning: implicit declaration of function 'malloc_trim' [-Wimplicit-function-declaration]
-#    int ret = malloc_trim(Int_val(v_n));
-#              ^~~~~~~~~~~
-# malloc_stubs.c: In function 'malloc_stats_stub':
-# malloc_stubs.c:51:3: warning: implicit declaration of function 'malloc_stats' [-Wimplicit-function-declaration]
-#    malloc_stats();
-#    ^~~~~~~~~~~~
 # 
 # Waiting for 1 job to finish.
 
@@ -524,5 +524,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722130407.export"
-31 1532264643 1532265033
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723053210.export"
+31 1532323925 1532324520
