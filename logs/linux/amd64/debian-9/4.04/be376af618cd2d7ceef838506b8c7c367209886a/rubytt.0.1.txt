@@ -1,0 +1,274 @@
+$ opam depext -iy -j 2 rubytt.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3          [required by ppx_expect]
+  - install base-bytes              base           [required by ounit, stringext]
+  - install easy-format             1.3.1          [required by yojson]
+  - install ppx_tools               5.0            [required by ppx_bench, ppx_assert, ppx_expect]
+  - install ppx_derivers            1.0            [required by ppx_deriving]
+  - install result                  1.3            [required by alcotest]
+  - install conf-which              1              [required by biniou]
+  - install ocamlbuild              0.12.0         [required by core, ounit]
+  - install stringext               1.5.0          [required by rubytt]
+  - install cppo                    1.6.4          [required by yojson]
+  - install ocaml-migrate-parsetree 1.0.11         [required by ppx_deriving]
+  - install biniou                  1.2.0          [required by yojson]
+  - install variantslib             113.24.00      [required by core]
+  - install uchar                   0.0.2          [required by fmt]
+  - install typerep                 113.24.00      [required by core]
+  - install topkg                   0.9.1          [required by cmdliner, astring, fmt]
+  - install sexplib                 113.33.00+4.03 [required by core]
+  - install ppx_core                113.33.01+4.03 [required by ppx_bench, ppx_assert, ppx_expect]
+  - install ounit                   2.0.8          [required by rubytt]
+  - install fieldslib               113.24.00      [required by core]
+  - install bin_prot                113.33.00+4.03 [required by core]
+  - install cppo_ocamlbuild         1.6.0          [required by ppx_deriving]
+  - install yojson                  1.4.1          [required by rubytt]
+  - install cmdliner                1.0.2          [required by alcotest]
+  - install astring                 0.8.3          [required by alcotest]
+  - install ppx_optcomp             113.33.01+4.03 [required by ppx_driver]
+  - install ppx_deriving            4.2.1          [required by ppx_type_conv]
+  - install fmt                     0.8.5          [required by alcotest]
+  - install ppx_driver              113.33.02+4.03 [required by core]
+  - install alcotest                0.8.3          [required by rubytt]
+  - install ppx_type_conv           113.33.02+4.03 [required by ppx_assert]
+  - install ppx_pipebang            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_let                 113.33.00+4.03 [required by ppx_jane]
+  - install ppx_inline_test         113.33.00+4.03 [required by core]
+  - install ppx_here                113.33.00      [required by ppx_assert, ppx_jane]
+  - install ppx_variants_conv       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_typerep_conv        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_conv           113.33.01+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_fields_conv         113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_enumerate           113.33.00+4.03 [required by ppx_jane]
+  - install ppx_compare             113.33.00+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_bin_prot            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_bench               113.33.00+4.03 [required by core]
+  - install ppx_fail                113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_value          113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_message        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_custom_printf       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_assert              113.33.00      [required by core]
+  - install ppx_expect              113.33.01+4.03 [required by core]
+  - install ppx_jane                113.33.00      [required by core]
+  - install core_kernel             113.33.02+4.03 [required by core]
+  - install core                    113.33.02+4.03 [required by rubytt]
+  - install rubytt                  0.1
+===== 53 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[alcotest.0.8.3] found in cache
+[astring.0.8.3] found in cache
+[bin_prot.113.33.00+4.03] found in cache
+[biniou.1.2.0] found in cache
+[cmdliner.1.0.2] found in cache
+[core.113.33.02+4.03] found in cache
+[core_kernel.113.33.02+4.03] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[easy-format.1.3.1] found in cache
+[fieldslib.113.24.00] found in cache
+[fmt.0.8.5] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[ppx_assert.113.33.00] found in cache
+[ppx_bench.113.33.00+4.03] found in cache
+[ppx_bin_prot.113.33.00+4.03] found in cache
+[ppx_compare.113.33.00+4.03] found in cache
+[ppx_core.113.33.01+4.03] found in cache
+[ppx_custom_printf.113.33.00+4.03] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.113.33.02+4.03] found in cache
+[ppx_enumerate.113.33.00+4.03] found in cache
+[ppx_expect.113.33.01+4.03] found in cache
+[ppx_fail.113.33.00+4.03] found in cache
+[ppx_fields_conv.113.33.00+4.03] found in cache
+[ppx_here.113.33.00] found in cache
+[ppx_inline_test.113.33.00+4.03] found in cache
+[ppx_jane.113.33.00] found in cache
+[ppx_let.113.33.00+4.03] found in cache
+[ppx_optcomp.113.33.01+4.03] found in cache
+[ppx_pipebang.113.33.00+4.03] found in cache
+[ppx_sexp_conv.113.33.01+4.03] found in cache
+[ppx_sexp_message.113.33.00+4.03] found in cache
+[ppx_sexp_value.113.33.00+4.03] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_type_conv.113.33.02+4.03] found in cache
+[ppx_typerep_conv.113.33.00+4.03] found in cache
+[ppx_variants_conv.113.33.00+4.03] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rubytt.0.1] found in cache
+[sexplib.113.33.00+4.03] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.113.24.00] found in cache
+[uchar.0.0.2] found in cache
+[variantslib.113.24.00] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed ocamlbuild.0.12.0
+-> installed bin_prot.113.33.00+4.03
+-> installed cppo_ocamlbuild.1.6.0
+-> installed fieldslib.113.24.00
+-> installed ounit.2.0.8
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_core.113.33.01+4.03
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.113.33.00+4.03
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+[ERROR] The compilation of ppx_optcomp failed at "/usr/bin/make".
+-> installed astring.0.8.3
+-> installed typerep.113.24.00
+-> installed uchar.0.0.2
+-> installed variantslib.113.24.00
+-> installed yojson.1.4.1
+-> installed cmdliner.1.0.2
+-> installed fmt.0.8.5
+-> installed alcotest.0.8.3
+
+#=== ERROR while compiling ppx_optcomp.113.33.01+4.03 =========================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/ppx_optcomp.113.33.01+4.03
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ppx_optcomp-11-9a907f.env
+# output-file          ~/.opam/log/ppx_optcomp-11-9a907f.out
+### output ###
+# ocamlopt -o setup.exe setup.ml || \
+#   ocamlc -o setup.exe setup.ml || true
+# for f in setup.*; do [ $f = setup.exe -o $f = setup.ml ] || rm -f $f; done
+# ./setup.exe -configure 
+# 
+# Configuration: 
+# ocamlfind: ........................................... /home/opam/.opam/4.04/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.04/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.04/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.04/bin/ocamlbuild
+# Package name: ........................................ ppx_optcomp
+# Package version: ..................................... 113.33.00+4.03
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.04.2
+# standard_library_default: ............................ /home/opam/.opam/4.04/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.04/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.04/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+# native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ...................................... 
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_ppx_core: ........................................ /home/opam/.opam/4.04/lib/ppx_core
+# pkg_ppx_tools_metaquot: .............................. /home/opam/.opam/4.04/lib/ppx_tools
+# 
+# ./setup.exe -build 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -predicates ppx_driver -modules src/ppx_optcomp.mli > src/ppx_optcomp.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_optcomp.cmi src/ppx_optcomp.mli
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_optcomp.cmi src/ppx_optcomp.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -predicates ppx_driver -modules src/ppx_optcomp.ml > src/ppx_optcomp.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_optcomp.cmo src/ppx_optcomp.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_optcomp.cmo src/ppx_optcomp.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# Uncaught exception: Fl_topo.Inconsistent_ordering
+# Command exited with code 3.
+# E: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlbuild' src/ppx_optcomp.cma src/ppx_optcomp.cmxa src/ppx_optcomp.a src/ppx_optcomp.cmxs bin/optcomp.native -use-ocamlfind -tag debug' terminated with error code 10")
+# Makefile:16: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_optcomp 113.33.01+4.03
++- 
++- The following changes have been performed (the rest was aborted)
+| - install alcotest                0.8.3
+| - install astring                 0.8.3
+| - install base-bytes              base
+| - install bin_prot                113.33.00+4.03
+| - install biniou                  1.2.0
+| - install cmdliner                1.0.2
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install easy-format             1.3.1
+| - install fieldslib               113.24.00
+| - install fmt                     0.8.5
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ounit                   2.0.8
+| - install ppx_core                113.33.01+4.03
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_tools               5.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 113.33.00+4.03
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install typerep                 113.24.00
+| - install uchar                   0.0.2
+| - install variantslib             113.24.00
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722225751.export"
+31 1532300268 1532300330

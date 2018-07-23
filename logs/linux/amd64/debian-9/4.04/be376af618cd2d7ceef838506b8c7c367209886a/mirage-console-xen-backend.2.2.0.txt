@@ -125,8 +125,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/mirage-console-xen-backend.2.2.0
 # command              ~/.opam/4.04/bin/ocaml pkg/pkg.ml build --pkg-name mirage-console-xen-backend --pinned false
 # exit-code            1
-# env-file             ~/.opam/log/mirage-console-xen-backend-10-f48867.env
-# output-file          ~/.opam/log/mirage-console-xen-backend-10-f48867.out
+# env-file             ~/.opam/log/mirage-console-xen-backend-11-f48867.env
+# output-file          ~/.opam/log/mirage-console-xen-backend-11-f48867.out
 ### output ###
 # ocamlfind ocamldep -package 'lwt xenstore xen-gnt xen-evtchn shared-memory-ring' -package 'shared-memory-ring.console mirage-console-lwt' -package mirage-console-xen-proto -package bytes -modules xen/backend/conback.ml > xen/backend/conback.ml.depends
 # ocamlfind ocamldep -package 'lwt xenstore xen-gnt xen-evtchn shared-memory-ring' -package 'shared-memory-ring.console mirage-console-lwt' -package mirage-console-xen-proto -package bytes -modules xen/backend/conback.mli > xen/backend/conback.mli.depends
@@ -191,5 +191,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722120425.export"
-31 1532261063 1532261130
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722215931.export"
+31 1532296768 1532296848

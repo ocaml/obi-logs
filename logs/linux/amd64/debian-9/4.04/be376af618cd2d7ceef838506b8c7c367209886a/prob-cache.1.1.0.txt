@@ -149,9 +149,9 @@ The following actions will be performed:
 -> installed ppx_bench.113.33.00+4.03
 -> installed ppx_bin_prot.113.33.00+4.03
 -> installed ppx_compare.113.33.00+4.03
--> installed ppx_enumerate.113.33.00+4.03
--> installed sexplib.113.33.00+4.03
 -> installed ppx_fields_conv.113.33.00+4.03
+-> installed sexplib.113.33.00+4.03
+-> installed ppx_enumerate.113.33.00+4.03
 -> installed topkg.0.9.1
 -> installed oml.0.0.7
 -> installed typerep.113.24.00
@@ -179,8 +179,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/riakc_ppx.3.1.4
 # command              ~/.opam/4.04/bin/omake -j2
 # exit-code            2
-# env-file             ~/.opam/log/riakc_ppx-12-118edc.env
-# output-file          ~/.opam/log/riakc_ppx-12-118edc.out
+# env-file             ~/.opam/log/riakc_ppx-11-118edc.env
+# output-file          ~/.opam/log/riakc_ppx-11-118edc.out
 ### output ###
 # *** omake: reading OMakefiles
 # --- Checking for ocamlfind... (found /home/opam/.opam/4.04/bin/ocamlfind)
@@ -190,7 +190,7 @@ The following actions will be performed:
 # --- Checking for ocamllex.opt... (found /home/opam/.opam/4.04/bin/ocamllex.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
 # --- Checking whether ocamlopt can create cmxs plugins... (yes)
-# *** omake: finished reading OMakefiles (0.08 sec)
+# *** omake: finished reading OMakefiles (0.11 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build _build/lib mylogging.o
 # + ocamlfind ocamlc -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -safe-string -bin-annot -annot -warn-error P -thread -I . -c mylogging.ml
@@ -213,7 +213,7 @@ The following actions will be performed:
 # Warning 3: deprecated: Core.Std.String.Map.iter
 # [since 2015-10] Use iteri instead
 # *** omake: 54/241 targets are up to date
-# *** omake: failed (1.54 sec, 17/17 scans, 5/5 rules, 74/103 digests)
+# *** omake: failed (2.00 sec, 17/17 scans, 5/5 rules, 74/103 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    _build/lib/response.cmo
 #       depends on: _build/lib/response.ml
@@ -286,5 +286,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722121620.export"
-31 1532261778 1532262314
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722221125.export"
+31 1532297482 1532298105

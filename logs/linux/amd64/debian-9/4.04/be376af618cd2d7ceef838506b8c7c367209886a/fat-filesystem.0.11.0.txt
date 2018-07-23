@@ -176,8 +176,8 @@ The following actions will be performed:
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
 -> installed fmt.0.8.5
--> installed logs.0.6.2
 -> installed mirage-device.1.1.0
+-> installed logs.0.6.2
 -> installed ppxlib.0.3.0
 -> installed mirage-block.1.1.0
 -> installed mirage-block-lwt.1.1.0
@@ -418,11 +418,11 @@ The following actions will be performed:
 # findlib: [WARNING] Interface path.cmi occurs in several directories: lib, /home/opam/.opam/4.04/lib/ocaml/compiler-libs
 # findlib: [WARNING] Interface result.cmi occurs in several directories: lib, /home/opam/.opam/4.04/lib/result
 # findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
-# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -package cstruct -package cstruct.ppx -package lwt -package mirage-types -package re -package re.str -I lib -o lib/KV_RO.cmo lib/KV_RO.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -package cstruct -package cstruct.ppx -package lwt -package mirage-types -package re -package re.str -I lib -o lib/memoryIO.cmo lib/memoryIO.ml
 # findlib: [WARNING] Interface path.cmi occurs in several directories: lib, /home/opam/.opam/4.04/lib/ocaml/compiler-libs
 # findlib: [WARNING] Interface result.cmi occurs in several directories: lib, /home/opam/.opam/4.04/lib/result
 # findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
-# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -package cstruct -package cstruct.ppx -package lwt -package mirage-types -package re -package re.str -I lib -o lib/memoryIO.cmo lib/memoryIO.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -package cstruct -package cstruct.ppx -package lwt -package mirage-types -package re -package re.str -I lib -o lib/KV_RO.cmo lib/KV_RO.ml
 # findlib: [WARNING] Interface path.cmi occurs in several directories: lib, /home/opam/.opam/4.04/lib/ocaml/compiler-libs
 # findlib: [WARNING] Interface result.cmi occurs in several directories: lib, /home/opam/.opam/4.04/lib/result
 # findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
@@ -616,5 +616,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722120242.export"
-31 1532260951 1532261063
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722220737.export"
+31 1532297245 1532297356

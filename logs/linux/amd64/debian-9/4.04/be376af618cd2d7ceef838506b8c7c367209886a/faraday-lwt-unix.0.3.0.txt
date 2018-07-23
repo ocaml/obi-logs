@@ -45,8 +45,8 @@ The following actions will be performed:
 # env-file             ~/.opam/log/faraday-lwt-11-7db2be.env
 # output-file          ~/.opam/log/faraday-lwt-11-7db2be.out
 ### output ###
-#       ocamlc lwt/.faraday_lwt.objs/faraday_lwt.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I lwt/.faraday_lwt.objs -I /home/opam/.opam/4.04/lib/bytes -I /home/opam/.opam/4.04/lib/faraday -I /home/opam/.opam/4.04/lib/lwt -I /home/opam/.opam/4.04/lib/ocplib-endian -I /home/opam/.opam/4.04/lib/result -no-alias-deps -o lwt/.faraday_lwt.objs/faraday_lwt.cmo -c -impl lwt/faraday_lwt.ml)
+#     ocamlopt lwt/.faraday_lwt.objs/faraday_lwt.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlopt.opt -w -40 -safe-string -g -I lwt/.faraday_lwt.objs -I /home/opam/.opam/4.04/lib/bytes -I /home/opam/.opam/4.04/lib/faraday -I /home/opam/.opam/4.04/lib/lwt -I /home/opam/.opam/4.04/lib/ocplib-endian -I /home/opam/.opam/4.04/lib/result -no-alias-deps -o lwt/.faraday_lwt.objs/faraday_lwt.cmx -c -impl lwt/faraday_lwt.ml)
 # File "lwt/faraday_lwt.ml", line 1:
 # Error: The implementation lwt/faraday_lwt.ml
 #        does not match the interface lwt/.faraday_lwt.objs/faraday_lwt.cmi:
@@ -65,8 +65,8 @@ The following actions will be performed:
 #                    [ `Closed | `Ok of int ] Lwt.t) ->
 #            unit Lwt.t
 #        File "lwt/faraday_lwt.ml", line 3, characters 4-13: Actual declaration
-#     ocamlopt lwt/.faraday_lwt.objs/faraday_lwt.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlopt.opt -w -40 -safe-string -g -I lwt/.faraday_lwt.objs -I /home/opam/.opam/4.04/lib/bytes -I /home/opam/.opam/4.04/lib/faraday -I /home/opam/.opam/4.04/lib/lwt -I /home/opam/.opam/4.04/lib/ocplib-endian -I /home/opam/.opam/4.04/lib/result -no-alias-deps -o lwt/.faraday_lwt.objs/faraday_lwt.cmx -c -impl lwt/faraday_lwt.ml)
+#       ocamlc lwt/.faraday_lwt.objs/faraday_lwt.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I lwt/.faraday_lwt.objs -I /home/opam/.opam/4.04/lib/bytes -I /home/opam/.opam/4.04/lib/faraday -I /home/opam/.opam/4.04/lib/lwt -I /home/opam/.opam/4.04/lib/ocplib-endian -I /home/opam/.opam/4.04/lib/result -no-alias-deps -o lwt/.faraday_lwt.objs/faraday_lwt.cmo -c -impl lwt/faraday_lwt.ml)
 # File "lwt/faraday_lwt.ml", line 1:
 # Error: The implementation lwt/faraday_lwt.ml
 #        does not match the interface lwt/.faraday_lwt.objs/faraday_lwt.cmi:
@@ -104,5 +104,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722113920.export"
-31 1532259558 1532259577
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722225501.export"
+31 1532300099 1532300119

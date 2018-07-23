@@ -138,7 +138,6 @@ The following actions will be performed:
 ===== 80 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[asl.0.11] found in cache
 [astring.0.8.3] found in cache
 [base.v0.10.0] found in cache
 [base64.2.2.0] found in cache
@@ -150,25 +149,26 @@ The following actions will be performed:
 [cstruct.2.4.1] found in cache
 [cstruct-lwt.3.2.1] found in cache
 [cstruct-unix.3.2.1] found in cache
-[datakit-server.0.9.0] found in cache
-[dns.0.18.1] found in cache
-[dns-forward.0.7.2] found in cache
+[asl.0.11] downloaded from https://github.com/mirage/ocaml-asl/releases/download/0.11/asl-0.11.tbz
+[dns-forward.0.7.2] downloaded from https://github.com/djs55/ocaml-dns-forward/archive/v0.7.2.tar.gz
+[dns.0.18.1] downloaded from https://github.com/mirage/ocaml-dns/archive/v0.18.1.tar.gz
 [duration.0.1.1] found in cache
 [fd-send-recv.1.0.5] found in cache
+[datakit-server.0.9.0] downloaded from https://github.com/docker/datakit/releases/download/0.9.0/datakit-0.9.0.tbz
 [fmt.0.8.5] found in cache
 [hashcons.1.0.1] found in cache
-[hvsock.0.12.0] found in cache
 [io-page.1.6.1] found in cache
 [ipaddr.2.7.2] found in cache
 [logs.0.6.2] found in cache
-[lwt.2.6.0] found in cache
 [menhir.20180703] found in cache
 [mirage-clock-unix.1.0.0] found in cache
 [mirage-console.2.1.2] found in cache
 [mirage-flow.1.1.0] found in cache
+[hvsock.0.12.0] downloaded from https://github.com/mirage/ocaml-hvsock/archive/v0.12.0.tar.gz
 [mirage-profile.0.7.0] found in cache
 [mirage-types.2.8.0] found in cache
 [mirage-unix.2.6.0] found in cache
+[lwt.2.6.0] downloaded from https://github.com/ocsigen/lwt/archive/2.6.0.tar.gz
 [mtime.0.8.4] found in cache
 [named-pipe.0.4.0] found in cache
 [oasis.0.4.11] found in cache
@@ -193,7 +193,6 @@ The following actions will be performed:
 [ppx_tools_versioned.5.2] found in cache
 [ppx_traverse_builtins.v0.10.0] found in cache
 [ppx_type_conv.v0.10.0] found in cache
-[protocol-9p.0.8.0] found in cache
 [re.1.7.3] found in cache
 [result.1.3] found in cache
 [rresult.0.5.0] found in cache
@@ -201,15 +200,16 @@ The following actions will be performed:
 [shared-memory-ring.3.0.0] found in cache
 [stdio.v0.10.0] found in cache
 [stringext.1.5.0] found in cache
-[tar-format.0.6.1] found in cache
 [tcpip.2.8.1] found in cache
 [topkg.0.9.1] found in cache
 [uchar.0.0.2] found in cache
+[protocol-9p.0.8.0] downloaded from https://github.com/mirage/ocaml-9p/releases/download/v0.8.0/protocol-9p-0.8.0.tbz
 [uri.1.9.2] found in cache
-[uwt.0.0.3] found in cache
-[vpnkit.0.0.0] found in cache
+[tar-format.0.6.1] downloaded from https://github.com/mirage/ocaml-tar/archive/v0.6.1.tar.gz
 [win-error.0.3] found in cache
-[win-eventlog.0.2] found in cache
+[vpnkit.0.0.0] downloaded from https://github.com/djs55/vpnkit/archive/v0.0.0.tar.gz
+[win-eventlog.0.2] downloaded from https://github.com/djs55/ocaml-win-eventlog/archive/v0.2.tar.gz
+[uwt.0.0.3] downloaded from https://github.com/fdopen/uwt/releases/download/0.0.3/uwt-0.0.3.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -284,9 +284,9 @@ The following actions will be performed:
 -> installed uri.1.9.2
 -> installed tcpip.2.8.1
 -> installed dns.0.18.1
--> installed dns-forward.0.7.2
--> installed uwt.0.0.3
 -> installed charrua-core.0.3
+-> installed uwt.0.0.3
+-> installed dns-forward.0.7.2
 -> installed win-error.0.3
 -> installed win-eventlog.0.2
 -> installed protocol-9p.0.8.0
@@ -297,8 +297,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/pcap-format.0.5.1
 # command              ~/.opam/4.04/bin/jbuilder build -p pcap-format -j 71
 # exit-code            1
-# env-file             ~/.opam/log/pcap-format-11-517c05.env
-# output-file          ~/.opam/log/pcap-format-11-517c05.out
+# env-file             ~/.opam/log/pcap-format-11-da666f.env
+# output-file          ~/.opam/log/pcap-format-11-da666f.out
 ### output ###
 # File "lib/jbuild", line 5, characters 20-31:
 # Error: Library "ppx_cstruct" not found.
@@ -393,5 +393,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722121844.export"
-31 1532261905 1532262207
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722222117.export"
+31 1532298059 1532298450

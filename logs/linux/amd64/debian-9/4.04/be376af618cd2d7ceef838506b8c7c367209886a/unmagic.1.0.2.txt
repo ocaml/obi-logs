@@ -101,7 +101,7 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.04/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.04/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.14 sec)
+# *** omake: finished reading OMakefiles (0.11 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan src scan-ocaml-unmagic.ml
 # + ocamlfind ocamldep -package spotlib,typerep,ppx_typerep_conv -modules unmagic.ml
@@ -109,7 +109,7 @@ The following actions will be performed:
 # File "unmagic.ml", line 5, characters 29-36:
 # Error: Cannot locate deriver typerep
 # *** omake: 16/45 targets are up to date
-# *** omake: failed (0.23 sec, 1/1 scans, 0/0 rules, 11/76 digests)
+# *** omake: failed (0.17 sec, 1/1 scans, 0/0 rules, 11/76 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner src/scan-ocaml-unmagic.ml>
 #       depends on: src/unmagic.ml
@@ -148,5 +148,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722113610.export"
-31 1532259366 1532259528
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180722221652.export"
+31 1532297810 1532297917
