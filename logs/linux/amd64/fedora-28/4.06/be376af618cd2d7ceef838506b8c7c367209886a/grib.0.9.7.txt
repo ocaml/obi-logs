@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sun Jul 22 06:53:29 2018
+Install Date: Sun Jul 22 20:08:43 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     13 MB/s |  20 MB     00:01    
-Last metadata expiration check: 0:00:08 ago on Sun Jul 22 13:33:20 2018.
+Last metadata expiration check: 4:25:06 ago on Sun Jul 22 20:08:17 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -57,12 +56,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.9 MB/s | 193 kB     00:00    
-(2/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          442 kB/s |  46 kB     00:00    
-(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm        3.6 MB/s | 550 kB     00:00    
-(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        3.7 MB/s | 184 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          474 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.2 MB/s | 193 kB     00:00    
+(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        1.9 MB/s | 184 kB     00:00    
+(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        1.8 MB/s | 550 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           983 kB/s | 973 kB     00:00     
+Total                                           833 kB/s | 973 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -109,12 +108,12 @@ The following actions will be performed:
 [base.v0.11.1] found in cache
 [batteries.2.8.0] found in cache
 [configurator.v0.11.0] found in cache
-[grib.0.9.7] found in cache
 [num.1.1] found in cache
 [ocamlbuild.0.12.0] found in cache
 [pcre.7.3.4] found in cache
 [sexplib0.v0.11.0] found in cache
 [stdio.v0.11.0] found in cache
+[grib.0.9.7] downloaded from https://github.com/hcarty/ocaml-grib/archive/v0.9.7.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -125,9 +124,9 @@ The following actions will be performed:
 -> installed ocamlbuild.0.12.0
 -> installed base.v0.11.1
 -> installed stdio.v0.11.0
+-> installed batteries.2.8.0
 -> installed configurator.v0.11.0
 -> installed pcre.7.3.4
--> installed batteries.2.8.0
 [ERROR] The compilation of grib failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06".
 
 #=== ERROR while compiling grib.0.9.7 =========================================#
@@ -135,8 +134,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/grib.0.9.7
 # command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
 # exit-code            2
-# env-file             ~/.opam/log/grib-10-d977e0.env
-# output-file          ~/.opam/log/grib-10-d977e0.out
+# env-file             ~/.opam/log/grib-10-460b8d.env
+# output-file          ~/.opam/log/grib-10-460b8d.out
 ### output ###
 # File "./setup.ml", line 234, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -167,5 +166,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722133334.export"
-31 1532266396 1532266454
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723003328.export"
+31 1532305997 1532306063

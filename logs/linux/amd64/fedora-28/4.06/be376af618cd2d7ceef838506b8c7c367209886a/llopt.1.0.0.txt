@@ -10,7 +10,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sun Jul 22 06:53:29 2018
+Install Date: Sun Jul 22 20:08:43 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -38,7 +38,7 @@ Name        : python2
 Version     : 2.7.15
 Release     : 2.fc28
 Architecture: x86_64
-Install Date: Sat Jul 21 06:31:06 2018
+Install Date: Sun Jul 22 06:03:54 2018
 Group       : Development/Languages
 Size        : 80738
 License     : Python
@@ -67,8 +67,7 @@ implementation is within the "python2-libs" package.
 # The following new OS packages need to be installed: cmake pkgconfig
 The following command needs to be run through "sudo":
     yum install -y cmake pkgconfig
-Fedora 28 - x86_64 - Updates                     43 MB/s |  20 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Sun Jul 22 13:33:01 2018.
+Last metadata expiration check: 4:41:26 ago on Sun Jul 22 20:08:17 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -91,15 +90,15 @@ Install  7 Packages
 Total download size: 9.4 M
 Installed size: 28 M
 Downloading Packages:
-(1/7): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 415 kB/s |  38 kB     00:00    
-(2/7): cmake-rpm-macros-3.11.2-1.fc28.noarch.rp 3.2 MB/s |  38 kB     00:00    
-(3/7): jsoncpp-1.8.4-3.fc28.x86_64.rpm          2.3 MB/s |  92 kB     00:00    
-(4/7): cmake-data-3.11.2-1.fc28.noarch.rpm      8.3 MB/s | 1.3 MB     00:00    
-(5/7): rhash-1.3.5-2.fc28.x86_64.rpm            5.3 MB/s | 129 kB     00:00    
-(6/7): libuv-1.22.0-1.fc28.x86_64.rpm           7.6 MB/s | 132 kB     00:00    
-(7/7): cmake-3.11.2-1.fc28.x86_64.rpm            22 MB/s | 7.7 MB     00:00    
+(1/7): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 331 kB/s |  38 kB     00:00    
+(2/7): cmake-rpm-macros-3.11.2-1.fc28.noarch.rp 2.3 MB/s |  38 kB     00:00    
+(3/7): jsoncpp-1.8.4-3.fc28.x86_64.rpm          1.2 MB/s |  92 kB     00:00    
+(4/7): cmake-data-3.11.2-1.fc28.noarch.rpm      5.4 MB/s | 1.3 MB     00:00    
+(5/7): rhash-1.3.5-2.fc28.x86_64.rpm            3.3 MB/s | 129 kB     00:00    
+(6/7): libuv-1.22.0-1.fc28.x86_64.rpm           5.9 MB/s | 132 kB     00:00    
+(7/7): cmake-3.11.2-1.fc28.x86_64.rpm            14 MB/s | 7.7 MB     00:00    
 --------------------------------------------------------------------------------
-Total                                           5.9 MB/s | 9.4 MB     00:01     
+Total                                           4.8 MB/s | 9.4 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -247,5 +246,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180722133316.export"
-31 1532266377 1532266432
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180723004953.export"
+31 1532306976 1532307054

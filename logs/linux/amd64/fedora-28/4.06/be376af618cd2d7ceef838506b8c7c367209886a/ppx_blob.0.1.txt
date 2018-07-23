@@ -6,7 +6,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sun Jul 22 06:53:29 2018
+Install Date: Sun Jul 22 20:08:43 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -35,7 +35,7 @@ The following actions will be performed:
   - install ppx_blob 0.1
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[ppx_blob.0.1] found in cache
+[ppx_blob.0.1] downloaded from https://github.com/johnwhitington/ppx_blob/archive/v0.1.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [ERROR] The compilation of ppx_blob failed at "/usr/bin/make native-code".
@@ -45,8 +45,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/ppx_blob.0.1
 # command              /usr/bin/make native-code
 # exit-code            2
-# env-file             ~/.opam/log/ppx_blob-10-05296d.env
-# output-file          ~/.opam/log/ppx_blob-10-05296d.out
+# env-file             ~/.opam/log/ppx_blob-10-d0f245.env
+# output-file          ~/.opam/log/ppx_blob-10-d0f245.out
 ### output ###
 # make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/ppx_blob.0.1'
 # ocamlfind ocamldep ppx_blob.ml > ._d/ppx_blob.d
@@ -68,4 +68,4 @@ The following actions will be performed:
 +- 
 - No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-31 1532264917 1532264921
+31 1532305832 1532305839
