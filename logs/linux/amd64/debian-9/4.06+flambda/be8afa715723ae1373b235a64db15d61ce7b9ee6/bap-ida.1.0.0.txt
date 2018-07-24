@@ -1,0 +1,37 @@
+$ opam depext -iy -j 2 bap-ida.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bap-ida.1.0.0: The following dependencies couldn't be met:
+          - bap-ida -> bap-ida-plugin -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ppx_assert < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ppx_assert < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ppx_bench < 113.34.00+4.03 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ppx_bench < 113.34.00+4.03 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ppx_fields_conv < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-std = 1.2.0 -> ppx_jane < 113.34.00 -> ppx_fields_conv < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-strings < 1.4.0 -> core_kernel < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-strings < 1.4.0 -> core_kernel < v0.9.0 -> ppx_assert < 113.34.00 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-strings < 1.4.0 -> core_kernel < v0.9.0 -> ppx_assert < 113.34.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-strings < 1.4.0 -> core_kernel < v0.9.0 -> ppx_bench < 113.34.00+4.03 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> bap-strings < 1.4.0 -> core_kernel < v0.9.0 -> ppx_bench < 113.34.00+4.03 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> ezjsonm = 0.4.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - bap-ida -> bap-ida-plugin -> bap -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=bap-ida.1.0.0 returned 20
+20 1532390041 1532390045

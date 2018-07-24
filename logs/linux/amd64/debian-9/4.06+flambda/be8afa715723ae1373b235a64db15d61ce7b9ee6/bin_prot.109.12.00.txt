@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 bin_prot.109.12.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bin_prot.109.12.00: The following dependencies couldn't be met:
+          - bin_prot -> type_conv = 109.12.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=bin_prot.109.12.00 returned 20
+20 1532391217 1532391220
