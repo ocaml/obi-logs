@@ -1,0 +1,164 @@
+$ opam depext -iy -j 2 opam-solver.2.0.0~beta5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+perl-Pod-Html
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 20:13:48 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package perl-Pod-Html is not installed
+# The following new OS packages need to be installed: perl-Pod-Html
+The following command needs to be run through "sudo":
+    yum install -y perl-Pod-Html
+Fedora 28 - x86_64 - Updates                     45 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Tue Jul 24 02:45:32 2018.
+Dependencies resolved.
+================================================================================
+ Package             Arch         Version                   Repository     Size
+================================================================================
+Installing:
+ perl-Pod-Html       noarch       1.22.02-412.fc28          updates        85 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 85 k
+Installed size: 36 k
+Downloading Packages:
+[MIRROR] perl-Pod-Html-1.22.02-412.fc28.noarch.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/perl-Pod-Html-1.22.02-412.fc28.noarch.rpm
+perl-Pod-Html-1.22.02-412.fc28.noarch.rpm       961 kB/s |  85 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            99 kB/s |  85 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : perl-Pod-Html-1.22.02-412.fc28.noarch                  1/1 
+  Verifying        : perl-Pod-Html-1.22.02-412.fc28.noarch                  1/1 
+
+Installed:
+  perl-Pod-Html.noarch 1.22.02-412.fc28                                         
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides perl-Pod-Html
+perl-Pod-Html-1.22.02-412.fc28.noarch
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install   ocamlgraph       1.8.8                    [required by dose3]
+  - remove    dune             1.0.1                    [conflicts with jbuilder]
+  - install   opam-file-format 2.0.0~rc2                [required by opam-format]
+  - install   base-bytes       base                     [required by extlib]
+  - install   conf-perl        1                        [required by cudf, dose3]
+  - install   ocamlbuild       0.12.0                   [required by cudf, dose3]
+  - downgrade jbuilder         transition to 1.0+beta17 [required by opam-solver]
+  - install   re               1.7.3                    [required by dose3]
+  - install   cppo             1.6.4                    [required by dose3]
+  - install   opam-core        2.0.0~beta5              [required by opam-format]
+  - install   extlib           1.7.5                    [required by cudf, dose3]
+  - install   opam-format      2.0.0~beta5              [required by opam-solver]
+  - install   cudf             0.9                      [required by opam-solver]
+  - install   mccs             1.1+8                    [required by opam-solver]
+  - install   dose3            5.0.1                    [required by opam-solver]
+  - install   opam-solver      2.0.0~beta5
+===== 14 to install | 1 to downgrade | 1 to remove =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[cudf.0.9] found in cache
+[dose3.5.0.1] found in cache
+[extlib.1.7.5] found in cache
+[jbuilder.1.0+beta17] found in cache
+[mccs.1.1+8] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[opam-core.2.0.0~beta5] found in cache
+[opam-file-format.2.0.0~rc2] found in cache
+[opam-format.2.0.0~beta5] found in cache
+[opam-solver.2.0.0~beta5] found in cache
+[re.1.7.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> removed   jbuilder.transition
+-> removed   dune.1.0.1
+-> installed base-bytes.base
+-> installed conf-perl.1
+-> installed jbuilder.1.0+beta17
+-> installed cppo.1.6.4
+-> installed extlib.1.7.5
+-> installed ocamlbuild.0.12.0
+-> installed ocamlgraph.1.8.8
+-> installed opam-file-format.2.0.0~rc2
+-> installed re.1.7.3
+-> installed cudf.0.9
+[ERROR] The compilation of mccs failed at "/home/opam/.opam/4.06/bin/jbuilder build -p mccs".
+-> installed opam-core.2.0.0~beta5
+-> installed opam-format.2.0.0~beta5
+-> installed dose3.5.0.1
+
+#=== ERROR while compiling mccs.1.1+8 =========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mccs.1.1+8
+# command              ~/.opam/4.06/bin/jbuilder build -p mccs
+# exit-code            1
+# env-file             ~/.opam/log/mccs-10-15c04f.env
+# output-file          ~/.opam/log/mccs-10-15c04f.out
+### output ###
+# File "src/jbuild", line 31, characters 26-36:
+# Error: Unknown constructor universe
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mccs 1.1+8
++- 
++- The following changes have been performed (the rest was aborted)
+| - remove    dune             1.0.1
+| - downgrade jbuilder         transition to 1.0+beta17
+| - install   base-bytes       base
+| - install   conf-perl        1
+| - install   cppo             1.6.4
+| - install   cudf             0.9
+| - install   dose3            5.0.1
+| - install   extlib           1.7.5
+| - install   ocamlbuild       0.12.0
+| - install   ocamlgraph       1.8.8
+| - install   opam-core        2.0.0~beta5
+| - install   opam-file-format 2.0.0~rc2
+| - install   opam-format      2.0.0~beta5
+| - install   re               1.7.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180724024545.export"
+31 1532400327 1532400389
