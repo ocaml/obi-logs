@@ -1,0 +1,21 @@
+$ opam depext -iy -j 2 websocket.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for websocket.2.1: The following dependencies couldn't be met:
+          - websocket -> cohttp < 0.19.0 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket -> cohttp < 0.19.0 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket -> cohttp < 0.19.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket -> cohttp < 0.19.0 -> lwt < 2.5.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket -> cohttp < 0.19.0 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - websocket -> cohttp < 0.19.0 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket -> cohttp < 0.19.0 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=websocket.2.1 returned 20
+20 1532403661 1532403664
