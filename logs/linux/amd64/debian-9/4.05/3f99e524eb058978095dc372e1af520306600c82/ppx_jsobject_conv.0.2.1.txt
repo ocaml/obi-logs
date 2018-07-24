@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_jsobject_conv.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ppx_jsobject_conv.0.2.1: The following dependencies couldn't be met:
+          - ppx_jsobject_conv -> ppx_core < v0.9.0 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_jsobject_conv.0.2.1 returned 20
+20 1532467915 1532467918

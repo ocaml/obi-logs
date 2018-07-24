@@ -1,0 +1,56 @@
+$ opam depext -iy -j 2 ppx_getenv.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0     [required by ppx_getenv]
+  - install ppx_tools  5.0+4.05.0 [required by ppx_getenv]
+  - install ppx_getenv 1.0
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[ppx_getenv.1.0] found in cache
+[ppx_tools.5.0+4.05.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ppx_tools.5.0+4.05.0
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of ppx_getenv failed at "/home/opam/.opam/4.05/bin/ocaml pkg/build.ml native=true native-dynlink=true".
+
+#=== ERROR while compiling ppx_getenv.1.0 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/ppx_getenv.1.0
+# command              ~/.opam/4.05/bin/ocaml pkg/build.ml native=true native-dynlink=true
+# exit-code            10
+# env-file             ~/.opam/log/ppx_getenv-11-4519e5.env
+# output-file          ~/.opam/log/ppx_getenv-11-4519e5.out
+### output ###
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package ppx_tools.metaquot -modules src/ppx_getenv.ml > src/ppx_getenv.ml.depends
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_getenv.cmo src/ppx_getenv.ml
+# + ocamlfind ocamlc -c -bin-annot -safe-string -package ppx_tools.metaquot -w @5@8@10@11@12@14@23@24@26@29@40 -I src -o src/ppx_getenv.cmo src/ppx_getenv.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.05/lib/ocaml, /home/opam/.opam/4.05/lib/ocaml/compiler-libs
+# File "src/ppx_getenv.ml", line 22, characters 58-70:
+# Error: This variant pattern is expected to have type Parsetree.constant
+#        The constructor Const_string does not belong to type Parsetree.constant
+# Hint: Did you mean Pconst_string?
+# Command exited with code 2.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_getenv 1.0
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
+| - install ppx_tools  5.0+4.05.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180724211201.export"
+31 1532466718 1532466730
