@@ -1,0 +1,23 @@
+$ opam depext -iy -j 2 zenon.0.7.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlp5 7.06  [required by coq]
+  - install num    1.1   [required by coq]
+  - install coq    8.8.1 [required by zenon]
+  - install zenon  0.7.1
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp5.7.06] found in cache
+[coq.8.8.1] found in cache
+[num.1.1] found in cache
+[zenon.0.7.1] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - zenon.0.7.1
+
+40 1532393470 1532393475

@@ -1,0 +1,134 @@
+$ opam depext -iy -j 2 qfs.0.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+boost-dev
+m4
+pkgconfig
+m4
+pkgconf
+# The following new OS packages need to be installed: boost-dev
+The following command needs to be run through "sudo":
+    apk add boost-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/28) Installing linux-headers (4.4.6-r2)
+(2/28) Installing boost-date_time (1.62.0-r5)
+(3/28) Installing boost-system (1.62.0-r5)
+(4/28) Installing boost-filesystem (1.62.0-r5)
+(5/28) Installing boost-regex (1.62.0-r5)
+(6/28) Installing boost-graph (1.62.0-r5)
+(7/28) Installing libbz2 (1.0.6-r6)
+(8/28) Installing boost-iostreams (1.62.0-r5)
+(9/28) Installing boost-math (1.62.0-r5)
+(10/28) Installing boost-prg_exec_monitor (1.62.0-r5)
+(11/28) Installing boost-program_options (1.62.0-r5)
+(12/28) Installing libffi (3.2.1-r4)
+(13/28) Installing gdbm (1.13-r1)
+(14/28) Installing xz-libs (5.2.3-r1)
+(15/28) Installing sqlite-libs (3.21.0-r1)
+(16/28) Installing python3 (3.6.3-r9)
+(17/28) Installing boost-python3 (1.62.0-r5)
+(18/28) Installing python2 (2.7.14-r2)
+(19/28) Installing boost-python (1.62.0-r5)
+(20/28) Installing boost-random (1.62.0-r5)
+(21/28) Installing boost-serialization (1.62.0-r5)
+(22/28) Installing boost-signals (1.62.0-r5)
+(23/28) Installing boost-thread (1.62.0-r5)
+(24/28) Installing boost-unit_test_framework (1.62.0-r5)
+(25/28) Installing boost-wave (1.62.0-r5)
+(26/28) Installing boost-wserialization (1.62.0-r5)
+(27/28) Installing boost (1.62.0-r5)
+(28/28) Installing boost-dev (1.62.0-r5)
+Executing busybox-1.27.2-r11.trigger
+OK: 513 MiB in 101 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by lwt]
+  - install base-bytes              base   [required by qfs]
+  - install ocamlbuild              0.12.0 [required by qfs]
+  - install conf-pkg-config         1.1    [required by conf-boost]
+  - install ocaml-migrate-parsetree 1.0.11 [required by lwt_ppx]
+  - install cppo                    1.6.4  [required by extlib, lwt]
+  - install conf-boost              1      [required by qfs]
+  - install ppx_tools_versioned     5.2    [required by lwt_ppx]
+  - install lwt                     4.1.0  [required by qfs]         For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install extlib                  1.7.5  [required by qfs]
+  - install lwt_ppx                 1.2.1  [required by qfs]
+  - install qfs                     0.7
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[extlib.1.7.5] found in cache
+[lwt.4.1.0] found in cache
+[lwt_ppx.1.2.1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[qfs.0.7] found in cache
+[result.1.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-boost.1
+-> installed cppo.1.6.4
+-> installed extlib.1.7.5
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed lwt_ppx.1.2.1
+[ERROR] The compilation of qfs failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling qfs.0.7 ============================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/qfs.0.7
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/qfs-13-98caf1.env
+# output-file          ~/.opam/log/qfs-13-98caf1.out
+### output ###
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# src/qfs_stubs.c:4:27: fatal error: kfs/KfsClient.h: No such file or directory
+#  #include <kfs/KfsClient.h>
+#                            ^
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/libqfs_stubs.a src/dllqfs_stubs.so src/qfs.cma src/qfs.cmxa src/qfs.a src/qfs.cmxs src/example.native -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build qfs 0.7
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install conf-boost              1
+| - install conf-pkg-config         1.1
+| - install cppo                    1.6.4
+| - install extlib                  1.7.5
+| - install lwt                     4.1.0
+| - install lwt_ppx                 1.2.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
++- 
+
+<><> qfs.0.7 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires QFS development files installed, consult https://quantcast.github.io/qfs/
+     and https://github.com/quantcast/qfs/wiki/Developer-Documentation on how to build manually.
+
+     Tentative instructions for Debian : https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180724005211.export"
+31 1532393524 1532393563

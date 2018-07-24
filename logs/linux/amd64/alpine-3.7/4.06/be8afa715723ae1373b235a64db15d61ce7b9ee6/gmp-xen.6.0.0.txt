@@ -1,0 +1,37 @@
+$ opam depext -iy -j 2 gmp-xen.6.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+perl
+pkgconfig
+m4
+pkgconf
+# The following new OS packages need to be installed: perl
+The following command needs to be run through "sudo":
+    apk add perl
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/2) Installing libbz2 (1.0.6-r6)
+(2/2) Installing perl (5.26.2-r1)
+Executing busybox-1.27.2-r11.trigger
+OK: 241 MiB in 75 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-perl         1     [required by minios-xen]
+  - install conf-pkg-config   1.1   [required by mirage-xen-posix]
+  - install minios-xen        0.9   [required by mirage-xen-minios]
+  - install mirage-xen-minios 0.9.3 [required by mirage-xen-posix]
+  - install mirage-xen-posix  3.0.4 [required by gmp-xen]
+  - install gmp-xen           6.0.0
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[gmp-xen.6.0.0] found in cache
+[minios-xen.0.9] found in cache
+[mirage-xen-minios.0.9.3] found in cache
+[mirage-xen-posix.3.0.4] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - gmp-xen.6.0.0
+
+40 1532392933 1532392941

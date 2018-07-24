@@ -1,0 +1,80 @@
+$ opam depext -iy -j 2 sawja.1.5.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+zlib-dev
+m4
+# The following new OS packages need to be installed: zlib-dev
+The following command needs to be run through "sudo":
+    apk add zlib-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/1) Installing zlib-dev (1.2.11-r1)
+OK: 204 MiB in 74 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip       1.07   [required by javalib]
+  - install base-bytes    base   [required by extlib-compat]
+  - install ocamlbuild    0.12.0 [required by camlp4]
+  - install cppo          1.6.4  [required by extlib-compat]
+  - install camlp4        4.06+1 [required by javalib]
+  - install extlib-compat 1.7.2  [required by sawja]
+  - install javalib       2.3.4  [required by sawja]
+  - install sawja         1.5.3
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[camlzip.1.07] found in cache
+[cppo.1.6.4] found in cache
+[extlib-compat.1.7.2] found in cache
+[javalib.2.3.4] found in cache
+[ocamlbuild.0.12.0] found in cache
+[sawja.1.5.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camlzip.1.07
+-> installed cppo.1.6.4
+-> installed extlib-compat.1.7.2
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.06+1
+-> installed javalib.2.3.4
+[ERROR] The compilation of sawja failed at "/home/opam/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh".
+
+#=== ERROR while compiling sawja.1.5.3 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/sawja.1.5.3
+# command              ~/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh
+# exit-code            83
+# env-file             ~/.opam/log/sawja-13-a5b00a.env
+# output-file          ~/.opam/log/sawja-13-a5b00a.out
+### output ###
+# /home/opam/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh: line 88: fmt: command not found
+# /home/opam/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh: line 88: fmt: command not found
+# /home/opam/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh: line 88: fmt: command not found
+# /home/opam/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh: line 88: fmt: command not found
+# 
+# /home/opam/.opam/4.06/.opam-switch/build/sawja.1.5.3/./configure.sh: line 85: fmt: command not found
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sawja 1.5.3
++- 
++- The following changes have been performed
+| - install base-bytes    base
+| - install camlp4        4.06+1
+| - install camlzip       1.07
+| - install cppo          1.6.4
+| - install extlib-compat 1.7.2
+| - install javalib       2.3.4
+| - install ocamlbuild    0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180724004615.export"
+31 1532393172 1532393293

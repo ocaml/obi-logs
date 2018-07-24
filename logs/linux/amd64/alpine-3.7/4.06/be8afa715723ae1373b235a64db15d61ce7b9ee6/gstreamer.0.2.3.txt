@@ -1,0 +1,19 @@
+$ opam depext -iy -j 2 gstreamer.0.2.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+gst-plugins-base1-dev
+gstreamer1-dev
+m4
+m4
+# The following new OS packages need to be installed: gst-plugins-base1-dev gstreamer1-dev
+The following command needs to be run through "sudo":
+    apk add gst-plugins-base1-dev gstreamer1-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+ERROR: unsatisfiable constraints:
+  gst-plugins-base1-dev (missing):
+    required by: world[gst-plugins-base1-dev]
+  gstreamer1-dev (missing):
+    required by: world[gstreamer1-dev]
+OS package installation failed
+1 1532393357 1532393359
