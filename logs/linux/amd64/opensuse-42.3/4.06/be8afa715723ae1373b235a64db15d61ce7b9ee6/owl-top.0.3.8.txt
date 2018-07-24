@@ -1,0 +1,16 @@
+$ opam depext -iy -j 2 owl-top.0.3.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+openblas-devel
+# The following new OS packages need to be installed: openblas-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install openblas-devel
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/non-oss/suse/media.1/media':
+Error code: Curl error 56
+Error message: Recv failure: Connection reset by peer
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+ABORT request: Aborting requested by user
+OS package installation failed
+1 1532397606 1532397621

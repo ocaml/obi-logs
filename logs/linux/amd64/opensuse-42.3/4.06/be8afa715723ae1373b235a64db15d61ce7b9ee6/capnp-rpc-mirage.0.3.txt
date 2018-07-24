@@ -1,0 +1,16 @@
+$ opam depext -iy -j 2 capnp-rpc-mirage.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+capnproto
+gmp-devel
+m4
+which
+# The following new OS packages need to be installed: capnproto gmp-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install capnproto gmp-devel
+Loading repository data...
+Reading installed packages...
+'capnproto' not found in package names. Trying capabilities.
+No provider of 'capnproto' found.
+OS package installation failed
+1 1532395861 1532395890

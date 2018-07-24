@@ -1,0 +1,107 @@
+$ opam depext -iy -j 2 lemonade-sqlite.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+sqlite3-devel
+# The following new OS packages need to be installed: sqlite3-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install sqlite3-devel
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  libsqlite3-0 sqlite3-devel
+
+2 new packages to install.
+Overall download size: 548.1 KiB. Already cached: 0 B. After the operation, additional 1.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (1/2), 408.9 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [.done (674.7 KiB/s)]
+Retrieving package sqlite3-devel-3.8.10.2-10.2.x86_64 (2/2), 139.3 KiB (397.2 KiB unpacked)
+Retrieving: sqlite3-devel-3.8.10.2-10.2.x86_64.rpm [done]
+Checking for file conflicts: [...done]
+(1/2) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
+(2/2) Installing: sqlite3-devel-3.8.10.2-10.2.x86_64 [.........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0        [required by base]
+  - install conf-pkg-config 1.1            [required by conf-sqlite3]
+  - install conf-bmake      1.0            [required by lemonade-sqlite]
+  - install base            v0.11.1        [required by sqlite3]
+  - install conf-sqlite3    1              [required by sqlite3]
+  - install bsdowl          3.0.0-20150830 [required by lemonade-sqlite]
+  - install stdio           v0.11.0        [required by sqlite3]
+  - install broken          0.4.2          [required by lemonade-sqlite]
+  - install configurator    v0.11.0        [required by sqlite3]
+  - install mixture         1.0.0          [required by lemonade]
+  - install sqlite3         4.4.0          [required by lemonade-sqlite]
+  - install lemonade        0.6.0          [required by lemonade-sqlite]
+  - install lemonade-sqlite 0.1.0
+===== 13 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+[configurator.v0.11.0] found in cache
+[lemonade.0.6.0] found in cache
+[lemonade-sqlite.0.1.0] found in cache
+[mixture.1.0.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[sqlite3.4.4.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-bmake failed at "/usr/bin/sh ./detect_program.sh ./conf-bmake.config bmake".
+-> installed conf-pkg-config.1.1
+-> installed conf-sqlite3.1
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed sqlite3.4.4.0
+
+#=== ERROR while compiling conf-bmake.1.0 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-bmake.1.0
+# command              /usr/bin/sh ./detect_program.sh ./conf-bmake.config bmake
+# exit-code            1
+# env-file             ~/.opam/log/conf-bmake-12-2913ab.env
+# output-file          ~/.opam/log/conf-bmake-12-2913ab.out
+### output ###
+# Debug: program: bmake
+# Debug: output: ./conf-bmake.config
+# Debug: pwd: /home/opam/.opam/4.06/.opam-switch/build/conf-bmake.1.0
+# Debug: Looking for bmake in /home/opam/.opam/4.06/bin
+# Debug: Looking for bmake in /home/opam/.opam/plugins/bin
+# Debug: Looking for bmake in /home/opam/.opam/4.06/bin
+# Debug: Looking for bmake in /usr/local/sbin
+# Debug: Looking for bmake in /usr/local/bin
+# Debug: Looking for bmake in /usr/sbin
+# Debug: Looking for bmake in /usr/bin
+# Debug: Looking for bmake in /sbin
+# Debug: Looking for bmake in /bin
+# Debug: bmake: Not found in PATH.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-bmake 1.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base            v0.11.1
+| - install conf-pkg-config 1.1
+| - install conf-sqlite3    1
+| - install configurator    v0.11.0
+| - install sexplib0        v0.11.0
+| - install sqlite3         4.4.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180724022547.export"
+31 1532398659 1532399171

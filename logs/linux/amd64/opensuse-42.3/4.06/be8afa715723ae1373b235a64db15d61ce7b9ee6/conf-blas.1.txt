@@ -1,0 +1,30 @@
+$ opam depext -iy -j 2 conf-blas.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+blas-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install blas-devel
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 4 NEW packages are going to be installed:
+  blas-devel libblas3 libgfortran3 libquadmath0
+
+4 new packages to install.
+Overall download size: 545.4 KiB. Already cached: 0 B. After the operation, additional 1.8 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libquadmath0-7.3.1+r258812-10.1.x86_64 (1/4), 140.9 KiB (251.1 KiB unpacked)
+Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [.done (13.5 KiB/s)]
+Retrieving package libgfortran3-6.2.1+r239768-6.19.x86_64 (2/4), 265.4 KiB (  1.2 MiB unpacked)
+Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [error]
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/x86_64/libgfortran3-6.2.1+r239768-6.19.x86_64.rpm':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+Problem occurred during or after installation or removal of packages:
+Installation aborted by user
+Please see the above error message for a hint.
+OS package installation failed
+1 1532397633 1532397645
