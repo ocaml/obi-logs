@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 xen-disk.1.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for xen-disk.1.0.2: The following dependencies couldn't be met:
+          - xen-disk -> xen-block-driver -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+          - xen-disk -> xen-block-driver -> mirage-xen = 0.9.7 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xen-disk.1.0.2 returned 20
+20 1532463296 1532463298

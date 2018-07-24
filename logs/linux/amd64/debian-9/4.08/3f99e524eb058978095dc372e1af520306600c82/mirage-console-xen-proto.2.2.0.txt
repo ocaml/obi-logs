@@ -1,0 +1,23 @@
+$ opam depext -iy -j 2 mirage-console-xen-proto.2.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-console-xen-proto.2.2.0: The following dependencies couldn't be met:
+          - mirage-console-xen-proto -> xenstore -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - mirage-console-xen-proto -> xenstore -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-proto -> xenstore -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-proto -> xenstore -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-proto -> xenstore -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-proto -> xenstore -> cstruct < 0.5.2 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-proto -> xenstore -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-proto -> xenstore -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-console-xen-proto.2.2.0 returned 20
+20 1532464483 1532464485
