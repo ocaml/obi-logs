@@ -1,0 +1,152 @@
+$ opam depext -iy -j 2 unmagic.1.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install ppx_tools               5.0     [required by ppx_deriving]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by ppx_deriving]
+  - install re                      1.7.3   [required by ppx_test]
+  - install base-bytes              base    [required by cppo]
+  - install ocamlbuild              0.12.0  [required by ppx_deriving]
+  - install omake                   0.9.8.7 [required by unmagic]
+  - install base                    v0.11.1 [required by ppx_typerep_conv]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppx_typerep_conv]
+  - install cppo                    1.6.4   [required by ppx_deriving]
+  - install typerep                 v0.11.0 [required by unmagic]
+  - install stdio                   v0.11.0 [required by ppxlib]
+  - install ppx_tools_versioned     5.2     [required by ppxx]
+  - install cppo_ocamlbuild         1.6.0   [required by ppx_deriving]
+  - install ppxlib                  0.3.0   [required by ppx_typerep_conv]
+  - install ppxx                    2.3.1   [required by ppx_test]
+  - install ppx_deriving            4.1     [required by unmagic]
+  - install ppx_typerep_conv        v0.11.1 [required by unmagic]
+  - install ppx_test                1.6.0   [required by spotlib]
+  - install spotlib                 4.0.3   [required by unmagic]
+  - install unmagic                 1.0.2
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[omake.0.9.8.7] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.1] found in cache
+[ppx_test.1.6.0] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppxlib.0.3.0] found in cache
+[ppxx.2.3.1] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[spotlib.4.0.3] found in cache
+[stdio.v0.11.0] found in cache
+[typerep.v0.11.0] found in cache
+[unmagic.1.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_deriving.4.1
+-> installed ppx_tools_versioned.5.2
+-> installed omake.0.9.8.7
+-> installed ppxx.2.3.1
+-> installed sexplib0.v0.11.0
+-> installed ppx_test.1.6.0
+-> installed spotlib.4.0.3
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed typerep.v0.11.0
+-> installed ppxlib.0.3.0
+-> installed ppx_typerep_conv.v0.11.1
+[ERROR] The compilation of unmagic failed at "/home/opam/.opam/4.04/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling unmagic.1.0.2 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/unmagic.1.0.2
+# command              ~/.opam/4.04/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/unmagic-11-710800.env
+# output-file          ~/.opam/log/unmagic-11-710800.out
+### output ###
+# *** omake: reading OMakefiles
+# File OMyMakefile: line 57, characters 2-21:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 235, characters 3-26:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 745, characters 6-34:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.04/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.04/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.04/bin/ocamlopt.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# *** omake: finished reading OMakefiles (0.10 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - scan src scan-ocaml-unmagic.ml
+# + ocamlfind ocamldep -package spotlib,typerep,ppx_typerep_conv -modules unmagic.ml
+#      | Shell.ocamldep-postproc()
+# File "unmagic.ml", line 5, characters 29-36:
+# Error: Cannot locate deriver typerep
+# *** omake: 16/45 targets are up to date
+# *** omake: failed (0.18 sec, 1/1 scans, 0/0 rules, 11/76 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    <scanner src/scan-ocaml-unmagic.ml>
+#       depends on: src/unmagic.ml
+# E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; unset OCAMLPARAM; omake\"' terminated with error code 2")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build unmagic 1.0.2
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install omake                   0.9.8.7
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.1
+| - install ppx_test                1.6.0
+| - install ppx_tools               5.0
+| - install ppx_tools_versioned     5.2
+| - install ppx_typerep_conv        v0.11.1
+| - install ppxlib                  0.3.0
+| - install ppxx                    2.3.1
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib0                v0.11.0
+| - install spotlib                 4.0.3
+| - install stdio                   v0.11.0
+| - install typerep                 v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180725220337.export"
+31 1532556214 1532556325
