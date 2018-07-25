@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 flowtype.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for flowtype.0.3.0: The following dependencies couldn't be met:
+          - flowtype -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=flowtype.0.3.0 returned 20
+20 1532476777 1532476780
