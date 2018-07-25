@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-fs-unix.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for mirage-fs-unix.1.1.0: The following dependencies couldn't be met:
+          - mirage-fs-unix -> ocaml < 3.07
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-fs-unix.1.1.0 returned 20
+20 1532487823 1532487825

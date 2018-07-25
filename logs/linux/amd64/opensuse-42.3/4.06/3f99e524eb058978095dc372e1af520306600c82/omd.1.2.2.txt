@@ -1,0 +1,134 @@
+$ opam depext -iy -j 2 omd.1.2.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by omd]
+  - install omd        1.2.2
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[omd.1.2.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of omd failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling omd.1.2.2 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/omd.1.2.2
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/omd-12-be72be.env
+# output-file          ~/.opam/log/omd-12-be72be.out
+### output ###
+# File "./setup.ml", line 320, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 320, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 329, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 329, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 332, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 370, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 476, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1827, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1833, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_utils.mli > src/omd_utils.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_utils.cmi src/omd_utils.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_utils.ml > src/omd_utils.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_representation.mli > src/omd_representation.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_representation.cmi src/omd_representation.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_representation.ml > src/omd_representation.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_backend.mli > src/omd_backend.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_backend.cmi src/omd_backend.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_backend.ml > src/omd_backend.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_lexer.mli > src/omd_lexer.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_lexer.cmi src/omd_lexer.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_lexer.ml > src/omd_lexer.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_parser.mli > src/omd_parser.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_parser.cmi src/omd_parser.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd_parser.ml > src/omd_parser.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd.mli > src/omd.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd.cmi src/omd.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package bigarray -modules src/omd.ml > src/omd.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_utils.cmo src/omd_utils.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_representation.cmo src/omd_representation.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_representation.cmo src/omd_representation.ml
+# File "src/omd_representation.ml", line 20, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/omd_representation.ml", line 20, characters 31-42:
+# Warning 3: deprecated: String.copy
+# File "src/omd_representation.ml", line 28, characters 19-35:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/omd_representation.ml", line 28, characters 37-48:
+# Warning 3: deprecated: String.copy
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_backend.cmo src/omd_backend.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_lexer.cmo src/omd_lexer.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bigarray -I src -o src/omd_lexer.cmo src/omd_lexer.ml
+# File "src/omd_lexer.ml", line 344, characters 12-25:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "src/omd_lexer.ml", line 347, characters 8-25:
+# Warning 3: deprecated: String.unsafe_set
+# File "src/omd_lexer.ml", line 335, characters 0-406:
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val sub : (char, 'a, 'b) BA.Array1.t -> pos:int -> len:int -> bytes
+#        is not included in
+#          val sub : t -> pos:int -> len:int -> string
+#        File "src/omd_lexer.ml", line 188, characters 2-45:
+#          Expected declaration
+#        File "src/omd_lexer.ml", line 341, characters 6-9: Actual declaration
+# Command exited with code 2.
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/omd.cma src/omd.cmxa src/omd.a src/omd.cmxs src/omd_main.native -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build omd 1.2.2
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725013802.export"
+31 1532482487 1532482693

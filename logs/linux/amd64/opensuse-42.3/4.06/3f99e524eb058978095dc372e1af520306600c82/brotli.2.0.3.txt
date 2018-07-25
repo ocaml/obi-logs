@@ -1,0 +1,149 @@
+$ opam depext -iy -j 2 brotli.2.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlgraph       1.8.8     [required by opam-core]
+  - install result           1.3       [required by odoc]
+  - install opam-file-format 2.0.0~rc2 [required by opam-format]
+  - install conf-brotli      0.0.1     [required by brotli]
+  - install re               1.7.3     [required by tyxml, opam-core]
+  - install base-bytes       base      [required by cppo, astring, tyxml]
+  - install ocamlbuild       0.12.0    [required by bos]
+  - install octavius         1.2.0     [required by doc-ock]
+  - install cppo             1.6.4     [required by doc-ock]
+  - install uchar            0.0.2     [required by fmt, tyxml]
+  - install topkg            0.9.1     [required by bos]
+  - install menhir           20180703  [required by doc-ock-xml]
+  - install opam-core        2.0.0~rc3 [required by opam-format]
+  - install doc-ock          1.2.1     [required by odoc]
+  - install xmlm             1.3.0     [required by odoc]
+  - install rresult          0.5.0     [required by bos]
+  - install cmdliner         1.0.2     [required by odoc, opam-installer]
+  - install astring          0.8.3     [required by bos]
+  - install opam-format      2.0.0~rc3 [required by opam-installer]
+  - install doc-ock-xml      1.2.1     [required by odoc]
+  - install uutf             1.0.1     [required by tyxml]
+  - install fmt              0.8.5     [required by bos]
+  - install fpath            0.7.2     [required by odoc]
+  - install opam-installer   2.0.0~rc3 [required by brotli]
+  - install tyxml            4.2.0     [required by odoc]                 For tyxml's ppx, please install tyxml-ppx.
+  - install logs             0.6.2     [required by bos]
+  - install doc-ock-html     1.2.1     [required by odoc]
+  - install bos              0.2.0     [required by odoc]
+  - install odoc             1.2.0     [required by brotli]
+  - install brotli           2.0.3
+===== 30 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[bos.0.2.0] found in cache
+[brotli.2.0.3] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[doc-ock.1.2.1] found in cache
+[doc-ock-html.1.2.1] found in cache
+[doc-ock-xml.1.2.1] found in cache
+[fmt.0.8.5] found in cache
+[fpath.0.7.2] found in cache
+[logs.0.6.2] found in cache
+[menhir.20180703] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[octavius.1.2.0] found in cache
+[odoc.1.2.0] found in cache
+[opam-core.2.0.0~rc3] found in cache
+[opam-file-format.2.0.0~rc2] found in cache
+[opam-format.2.0.0~rc3] found in cache
+[opam-installer.2.0.0~rc3] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[topkg.0.9.1] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+[xmlm.1.3.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+[ERROR] The installation of conf-brotli failed at "pkg-config libbrotlidec libbrotlienc".
+-> installed ocamlbuild.0.12.0
+-> installed cppo.1.6.4
+-> installed ocamlgraph.1.8.8
+-> installed octavius.1.2.0
+-> installed doc-ock.1.2.1
+-> installed opam-file-format.2.0.0~rc2
+-> installed re.1.7.3
+-> installed opam-core.2.0.0~rc3
+-> installed opam-format.2.0.0~rc3
+-> installed result.1.3
+-> installed menhir.20180703
+-> installed uchar.0.0.2
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed fmt.0.8.5
+-> installed fpath.0.7.2
+-> installed opam-installer.2.0.0~rc3
+-> installed rresult.0.5.0
+-> installed uutf.1.0.1
+-> installed logs.0.6.2
+-> installed bos.0.2.0
+-> installed xmlm.1.3.0
+-> installed tyxml.4.2.0
+-> installed doc-ock-xml.1.2.1
+-> installed doc-ock-html.1.2.1
+-> installed odoc.1.2.0
+
+#=== ERROR while installing conf-brotli.0.0.1 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-brotli.0.0.1
+# command              /usr/bin/pkg-config libbrotlidec libbrotlienc
+# exit-code            1
+# env-file             ~/.opam/log/conf-brotli-12-a63268.env
+# output-file          ~/.opam/log/conf-brotli-12-a63268.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install conf-brotli 0.0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install astring          0.8.3
+| - install base-bytes       base
+| - install bos              0.2.0
+| - install cmdliner         1.0.2
+| - install cppo             1.6.4
+| - install doc-ock          1.2.1
+| - install doc-ock-html     1.2.1
+| - install doc-ock-xml      1.2.1
+| - install fmt              0.8.5
+| - install fpath            0.7.2
+| - install logs             0.6.2
+| - install menhir           20180703
+| - install ocamlbuild       0.12.0
+| - install ocamlgraph       1.8.8
+| - install octavius         1.2.0
+| - install odoc             1.2.0
+| - install opam-core        2.0.0~rc3
+| - install opam-file-format 2.0.0~rc2
+| - install opam-format      2.0.0~rc3
+| - install opam-installer   2.0.0~rc3
+| - install re               1.7.3
+| - install result           1.3
+| - install rresult          0.5.0
+| - install topkg            0.9.1
+| - install tyxml            4.2.0
+| - install uchar            0.0.2
+| - install uutf             1.0.1
+| - install xmlm             1.3.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725020010.export"
+31 1532483770 1532484071

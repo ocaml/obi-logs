@@ -1,0 +1,64 @@
+$ opam depext -iy -j 2 freetds.0.5.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install freetds 0.5.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[freetds.0.5.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of freetds failed at "/usr/bin/make".
+
+#=== ERROR while compiling freetds.0.5.1 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/freetds.0.5.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/freetds-12-1872ec.env
+# output-file          ~/.opam/log/freetds-12-1872ec.out
+### output ###
+# /usr/bin/make -C src byte
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/freetds.0.5.1/src'
+# ../Makefile.ocaml:52: .depend.ocaml: No such file or directory
+# Building .depend.ocaml ... 
+# ocamlc.opt  -dtypes -g   -c ct.mli
+# ocamlc.opt  -dtypes -g   -c ct.ml
+# ocamlc.opt  -dtypes -g   -c dblib.mli
+# ocamlc.opt  -dtypes -g   -c dblib.ml
+# File "dblib.ml", line 61, characters 10-14:
+# Warning 43: the label user is not optional.
+# File "dblib.ml", line 61, characters 16-24:
+# Warning 43: the label password is not optional.
+# File "dblib.ml", line 61, characters 26-33:
+# Warning 43: the label charset is not optional.
+# File "dblib.ml", line 61, characters 35-43:
+# Warning 43: the label language is not optional.
+# File "dblib.ml", line 61, characters 45-56:
+# Warning 43: the label application is not optional.
+# File "dblib.ml", line 76, characters 0-71:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# ocamlc.opt -pack -o freetds.cmo ct.cmo dblib.cmo
+# cc -Wall -fPIC -DOCAML_WORD_SIZE=64 -I'/home/opam/.opam/4.06/lib/ocaml'   -c -o ct_c.o ct_c.c
+# ct_c.c:20:22: fatal error: ctpublic.h: No such file or directory
+#  #include <ctpublic.h>
+#                       ^
+# compilation terminated.
+# <builtin>: recipe for target 'ct_c.o' failed
+# make[1]: *** [ct_c.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/freetds.0.5.1/src'
+# Makefile:22: recipe for target 'byte' failed
+# make: *** [byte] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build freetds 0.5.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532484410 1532484418
