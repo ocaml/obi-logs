@@ -1,0 +1,45 @@
+$ opam depext -iy -j 2 conf-tcl.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+pkgconfig
+pkgconf
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-pkg-config 1.1 [required by conf-tcl]
+  - install conf-tcl        1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of conf-tcl failed at "/bin/sh check.sh".
+
+#=== ERROR while compiling conf-tcl.1 =========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-tcl.1
+# command              /bin/sh check.sh
+# exit-code            1
+# env-file             ~/.opam/log/conf-tcl-13-ffb3fd.env
+# output-file          ~/.opam/log/conf-tcl-13-ffb3fd.out
+### output ###
+# compiletest.c:2:17: fatal error: tcl.h: No such file or directory
+#  #include <tcl.h>
+#                  ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-tcl 1
++- 
++- The following changes have been performed
+| - install conf-pkg-config 1.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725043131.export"
+31 1532493089 1532493094

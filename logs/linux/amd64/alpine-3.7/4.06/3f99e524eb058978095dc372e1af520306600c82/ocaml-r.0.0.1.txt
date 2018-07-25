@@ -1,0 +1,211 @@
+$ opam depext -iy -j 2 ocaml-r.0.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+R
+m4
+m4
+# The following new OS packages need to be installed: R
+The following command needs to be run through "sudo":
+    apk add R
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/32) Installing R-mathlib (3.4.2-r0)
+(2/32) Installing libxext (1.3.3-r2)
+(3/32) Installing libice (1.0.9-r2)
+(4/32) Installing libuuid (2.31-r0)
+(5/32) Installing libsm (1.2.2-r1)
+(6/32) Installing libxt (1.1.5-r1)
+(7/32) Installing libxmu (1.1.2-r1)
+(8/32) Installing libbz2 (1.0.6-r6)
+(9/32) Installing libxrender (0.9.10-r2)
+(10/32) Installing libpng (1.6.34-r1)
+(11/32) Installing freetype (2.8.1-r3)
+(12/32) Installing fontconfig (2.12.6-r0)
+(13/32) Installing pixman (0.34.0-r3)
+(14/32) Installing cairo (1.14.10-r0)
+(15/32) Installing libffi (3.2.1-r4)
+(16/32) Installing libintl (0.19.8.1-r1)
+(17/32) Installing libblkid (2.31-r0)
+(18/32) Installing libmount (2.31-r0)
+(19/32) Installing pcre (8.41-r1)
+(20/32) Installing glib (2.54.2-r0)
+(21/32) Installing icu-libs (59.1-r1)
+(22/32) Installing libjpeg-turbo (1.5.2-r0)
+(23/32) Installing xz-libs (5.2.3-r1)
+(24/32) Installing libquadmath (6.4.0-r5)
+(25/32) Installing libgfortran (6.4.0-r5)
+(26/32) Installing openblas (0.2.19-r3)
+(27/32) Installing libxft (2.3.2-r2)
+(28/32) Installing graphite2 (1.3.10-r0)
+(29/32) Installing harfbuzz (1.6.3-r0)
+(30/32) Installing pango (1.40.14-r0)
+(31/32) Installing tiff (4.0.9-r4)
+(32/32) Installing R (3.4.2-r0)
+Executing R-3.4.2-r0.post-install
+*
+* If you want to install R packages from CRAN that contains native extensions,
+* then you must also install R-dev.
+*
+Executing busybox-1.27.2-r11.trigger
+Executing glib-2.54.2-r0.trigger
+OK: 312 MiB in 105 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0   [required by menhir, camlp4, oasis]
+  - install calendar   2.04     [required by ocaml-r]
+  - install ocamlmod   0.0.9    [required by oasis]
+  - install ocamlify   0.0.1    [required by oasis]
+  - install menhir     20180703 [required by ocaml-r]
+  - install camlp4     4.06+1   [required by ocaml-r]
+  - install oasis      0.4.11   [required by ocaml-r]
+  - install ocaml-r    0.0.1
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[calendar.2.04] found in cache
+[camlp4.4.06+1] found in cache
+[menhir.20180703] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-r.0.0.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed calendar.2.04
+-> installed ocamlbuild.0.12.0
+-> installed menhir.20180703
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed camlp4.4.06+1
+[ERROR] The compilation of ocaml-r failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocaml-r.0.0.1 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ocaml-r.0.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ocaml-r-13-0162f9.env
+# output-file          ~/.opam/log/ocaml-r-13-0162f9.out
+### output ###
+# ocaml setup.ml -configure 
+# W: Cannot find source file matching module 'Standard' in library R.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'R_lang_parser_y' in library R_syntax.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'Standard' in library R.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'R_lang_parser_y' in library R_syntax.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# 
+# Configuration:
+# ocamlfind: ........................................... /home/opam/.opam/4.06/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.06/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.06/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.06/bin/ocamlbuild
+# Package name: ........................................ ocaml-r
+# Package version: ..................................... 2010-02-09
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.06.1
+# standard_library_default: ............................ /home/opam/.opam/4.06/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.06/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.06/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ......................................
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: .........................
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_calendar: ........................................ /home/opam/.opam/4.06/lib/calendar
+# menhir: .............................................. /home/opam/.opam/4.06/bin/menhir
+# pkg_camlp4_lib: ...................................... /home/opam/.opam/4.06/lib/ocaml/camlp4
+# pkg_camlp4_quotations_r: ............................. /home/opam/.opam/4.06/lib/ocaml/camlp4
+# pkg_camlp4_extend: ................................... /home/opam/.opam/4.06/lib/ocaml/camlp4
+# ocamldoc: ............................................ /home/opam/.opam/4.06/bin/ocamldoc
+# 
+# ocaml setup.ml -build 
+# W: Cannot find source file matching module 'Standard' in library R.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'R_lang_parser_y' in library R_syntax.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'Standard' in library R.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'R_lang_parser_y' in library R_syntax.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'R_lang_parser_y' in library R_syntax.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'R_lang_parser_y' in library R_syntax.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# W: Cannot find source file matching module 'Standard' in library R.
+# W: Use InterfacePatterns or ImplementationPatterns to define this file with feature "source_patterns".
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Package libR was not found in the pkg-config search path.
+# Perhaps you should add the directory containing `libR.pc'
+# to the PKG_CONFIG_PATH environment variable
+# Package 'libR', required by 'virtual:world', not found
+# Failure: pkg-config failed for cflags.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/math/libR_math_stubs.a src/math/dllR_math_stubs.so src/math/R_math.cma src/math/R_math.cmxa src/math/R_math.a src/math/R_math.cmxs src/libR_stubs.a src/dllR_stubs.so src/R.cma src/R.cmxa src/R.a src/R.cmxs src/R_interpreter.cmx src/R_interpreter.cmo src/base/R_base.cma src/base/R_base.cmxa src/base/R_base.a src/base/R_base.cmxs src/methods/R_methods.cma src/methods/R_methods.cmxa src/methods/R_methods.a src/methods/R_methods.cmxs src/syntax/R_syntax.cma src/syntax/R_syntax.cmxa src/syntax/R_syntax.a src/syntax/R_syntax.cmxs src/stats/R_stats.cma src/stats/R_stats.cmxa src/stats/R_stats.a src/stats/R_stats.cmxs src/graphics/R_graphics.cma src/graphics/R_graphics.cmxa src/graphics/R_graphics.a src/graphics/R_graphics.cmxs src/grDevices/R_grDevices.cma src/grDevices/R_grDevices.cmxa src/grDevices/R_grDevices.a src/grDevices/R_grDevices.cmxs examples/test_suite.byte -tag debug' terminated with error code 2")
+# make: *** [Makefile:7: build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocaml-r 0.0.1
++- 
++- The following changes have been performed
+| - install calendar   2.04
+| - install camlp4     4.06+1
+| - install menhir     20180703
+| - install oasis      0.4.11
+| - install ocamlbuild 0.12.0
+| - install ocamlify   0.0.1
+| - install ocamlmod   0.0.9
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    R
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725043444.export"
+31 1532493280 1532493394

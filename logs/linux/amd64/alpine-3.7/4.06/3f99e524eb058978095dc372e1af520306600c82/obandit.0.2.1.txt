@@ -1,0 +1,26 @@
+$ opam depext -iy -j 2 obandit.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3    [required by topkg]
+  - install ocamlbuild 0.12.0 [required by obandit]
+  - install num        1.1    [required by batteries]
+  - install topkg      0.9.1  [required by obandit]
+  - install batteries  2.8.0  [required by obandit]
+  - install obandit    0.2.1
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - obandit.0.2.1: curl error code 404
+
+40 1532493978 1532493985

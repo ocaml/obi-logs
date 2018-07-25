@@ -1,0 +1,42 @@
+$ opam depext -iy -j 2 assimp.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install assimp 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[assimp.0.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of assimp failed at "/usr/bin/make".
+
+#=== ERROR while compiling assimp.0.1 =========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/assimp.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/assimp-13-05296d.env
+# output-file          ~/.opam/log/assimp-13-05296d.out
+### output ###
+# ocamlc -c assimp.mli
+# ocamlc -c assimp.ml
+# ocamlc -c -ccopt "-std=gnu99 -ffast-math" ml_assimp.c
+# ml_assimp.c:10:26: fatal error: assimp/scene.h: No such file or directory
+#  #include <assimp/scene.h>
+#                           ^
+# compilation terminated.
+# make: *** [Makefile:5: ml_assimp.o] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build assimp 0.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532493744 1532493754
