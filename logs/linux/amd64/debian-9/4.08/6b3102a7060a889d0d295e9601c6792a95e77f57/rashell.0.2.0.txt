@@ -1,0 +1,153 @@
+$ opam depext -iy -j 2 rashell.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+bmake
+debianutils
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy bmake debianutils m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package bmake.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../bmake_20160220-2+b1_amd64.deb ...
+Unpacking bmake (20160220-2+b1) ...
+Setting up bmake (20160220-2+b1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result      1.3            [required by lwt]
+  - install conf-which  1              [required by biniou]
+  - install base-bytes  base           [required by cppo]
+  - install ocamlbuild  0.12.0         [required by menhir]
+  - install easy-format 1.3.1          [required by biniou, atd, yojson]
+  - install conf-bmake  1.0            [required by rashell]
+  - install cppo        1.6.4          [required by lwt]
+  - install menhir      20180703       [required by atd]
+  - install biniou      1.2.0          [required by atdgen]
+  - install bsdowl      3.0.0-20150830 [required by rashell]
+  - install lwt         4.1.0          [required by rashell]             For the PPX, please install package lwt_ppx
+                                                                         For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install atd         1.12.0         [required by atdgen]
+  - install yojson      1.4.1          [required by atdgen]
+  - install broken      0.4.2          [required by rashell]
+  - install atdgen      1.12.0         [required by rashell]
+  - install rashell     0.2.0
+===== 16 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[atd.1.12.0] found in cache
+[atdgen.1.12.0] found in cache
+[biniou.1.2.0] found in cache
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[lwt.4.1.0] found in cache
+[menhir.20180703] found in cache
+[ocamlbuild.0.12.0] found in cache
+[rashell.0.2.0] found in cache
+[result.1.3] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-bmake.1.0
+-> installed bsdowl.3.0.0-20150830
+[ERROR] The installation of broken failed at "/usr/bin/bmake -I/home/opam/.opam/4.08/share/bsdowl install".
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed yojson.1.4.1
+-> installed menhir.20180703
+-> installed atd.1.12.0
+-> installed atdgen.1.12.0
+
+#=== ERROR while installing broken.0.4.2 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/broken.0.4.2
+# command              /usr/bin/bmake -I/home/opam/.opam/4.08/share/bsdowl install
+# exit-code            1
+# env-file             ~/.opam/log/broken-11-384e1f.env
+# output-file          ~/.opam/log/broken-11-384e1f.out
+### output ###
+# ===> src (install)
+# install -d /home/opam/.opam/4.08/lib/broken
+# bmake[1]: .depend, 54: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./format.cmi
+# ocamlfind ocamlc -c -package "unix" -I /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/src -I /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/src -o broken.cmi broken.mli
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./sys.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./string.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./set.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./random.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./queue.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./printf.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./printexc.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./list.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./hashtbl.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./format.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./filename.cmx
+# bmake[1]: .depend, 52: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./arg.cmx
+# ocamlfind ocamlopt -c -package "unix" -I /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/src -I /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/src -o broken.cmx broken.ml
+# ocamlopt -a -o broken.cmxa broken.cmx
+# install -o opam -g opam -m 440 broken.cmxa /home/opam/.opam/4.08/lib/broken
+# install -o opam -g opam -m 440 broken.a /home/opam/.opam/4.08/lib/broken
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./sys.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./string.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./set.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./random.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./queue.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./printf.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./printexc.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./list.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./hashtbl.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./filename.cmi
+# bmake[1]: .depend, 39: ignoring stale .depend for /home/opam/.opam/4.08/lib/ocaml/./arg.cmi
+# ocamlfind ocamlc -c -package "unix" -I /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/src -I /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/src -o broken.cmo broken.ml
+# ocamlc -a -o broken.cma broken.cmo
+# install -o opam -g opam -m 440 broken.cma /home/opam/.opam/4.08/lib/broken
+# install -o opam -g opam -m 440 broken.cmi /home/opam/.opam/4.08/lib/broken
+# ===> meta (install)
+# install -d /home/opam/.opam/4.08/lib/broken
+# install -o opam -g opam -m 440 broken /home/opam/.opam/4.08/lib/broken/META
+# ===> manual (install)
+# install -d -o opam -g opam /home/opam/.opam/4.08/share/doc/broken/html
+# (cd broken_html && sh -c '(find $1 -depth $3 | cpio -dump $2 >/dev/null 2>&1) && find $1 -depth $3 -type d -exec chmod 755 $2/{} \; && find $1 -depth $3 -type f -exec chmod 440 $2/{} \;' COPYTREE_DOC . /home/opam/.opam/4.08/share/doc/broken/html)
+# *** Error code 127
+# 
+# Stop.
+# bmake[1]: stopped in /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2/manual
+# *** Error code 1
+# 
+# Stop.
+# bmake: stopped in /home/opam/.opam/4.08/.opam-switch/build/broken.0.4.2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install broken 0.4.2
++- 
++- The following changes have been performed (the rest was aborted)
+| - install atd         1.12.0
+| - install atdgen      1.12.0
+| - install base-bytes  base
+| - install biniou      1.2.0
+| - install bsdowl      3.0.0-20150830
+| - install conf-bmake  1.0
+| - install conf-which  1
+| - install cppo        1.6.4
+| - install easy-format 1.3.1
+| - install lwt         4.1.0
+| - install menhir      20180703
+| - install ocamlbuild  0.12.0
+| - install result      1.3
+| - install yojson      1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180725203702.export"
+31 1532551011 1532551061

@@ -1,0 +1,33 @@
+$ opam depext -iy -j 2 async-zmq.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for async-zmq.0.3.0: The following dependencies couldn't be met:
+          - async-zmq -> async < v0.10 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> core_kernel < 113.25.00 -> sexplib < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> core_kernel < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> ppx_inline_test < 113.25.00 -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> ppx_inline_test < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> core < v0.10 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - async-zmq -> async < v0.10 -> async_unix (= 109.11.00 | >= 109.14.00 & < 109.17.00) -> herelib (= 109.11.00 | >= 109.14.00 & < 109.35.00) -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - async-zmq -> async < v0.10 -> async_core (!= 108.00.02 & < 108.07.01 | = 109.12.00) -> core (!= 108.00.02 & < 108.07.01 | = 109.12.00) -> ocaml < 4.01.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=async-zmq.0.3.0 returned 20
+20 1532550588 1532550594

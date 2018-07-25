@@ -1,0 +1,375 @@
+$ opam depext -iy -j 2 dune-release.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libssl-dev
+m4
+perl
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libssl-dev m4 perl pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../05-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../06-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../07-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../08-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../09-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../10-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3     [required by opam-core, opam-lib]
+  - install num                     1.1       [required by sexplib]
+  - install camomile                1.0.1     [required by lambda-term]
+  - install result                  1.3       [required by odoc]
+  - install opam-file-format        2.0.0~rc2 [required by opam-format]
+  - install ocamlbuild              0.12.0    [required by bos, webbrowser]
+  - install magic-mime              1.1.0     [required by cohttp-lwt-unix]
+  - install base-bytes              base      [required by astring, ssl]
+  - install conf-perl               1         [required by cudf, dose3]
+  - install conf-pkg-config         1.1       [required by conf-openssl]
+  - install octavius                1.2.0     [required by doc-ock]
+  - install ocamlgraph              1.8.8     [required by opam-core, opam-lib]
+  - install ocaml-compiler-libs     v0.11.0   [required by ppxlib]
+  - install sexplib0                v0.11.0   [required by sexplib]
+  - install easy-format             1.3.1     [required by biniou, atd, yojson]
+  - install ppx_derivers            1.0       [required by ppxlib]
+  - install conf-which              1         [required by ssl]
+  - install ocaml-migrate-parsetree 1.0.11    [required by lwt]
+  - install uchar                   0.0.2     [required by fmt]
+  - install topkg                   0.9.1     [required by bos, webbrowser]
+  - install menhir                  20180703  [required by doc-ock-xml]
+  - install stringext               1.5.0     [required by github, github-unix]
+  - install cppo                    1.6.4     [required by doc-ock, opam-core]
+  - install base64                  2.2.0     [required by cohttp]
+  - install conf-openssl            1         [required by ssl]
+  - install parsexp                 v0.11.0   [required by sexplib]
+  - install base                    v0.11.1   [required by ppx_fields_conv, fieldslib, ppx_sexp_conv]
+  - install biniou                  1.2.0     [required by atdgen]
+  - install ppx_tools_versioned     5.2       [required by lwt, tyxml]
+  - install xmlm                    1.3.0     [required by odoc]
+  - install rresult                 0.5.0     [required by dune-release]
+  - install react                   1.2.1     [required by lambda-term]
+  - install cmdliner                1.0.2     [required by dune-release]
+  - install astring                 0.8.3     [required by bos, webbrowser]
+  - install atd                     1.12.0    [required by atdgen]
+  - install opam-core               2.0.0~rc3 [required by opam-format]
+  - install extlib                  1.7.5     [required by cudf, dose3]
+  - install doc-ock                 1.2.1     [required by odoc]
+  - install ssl                     0.5.5     [required by opam-publish]
+  - install sexplib                 v0.11.0   [required by cohttp]
+  - install stdio                   v0.11.0   [required by ppxlib]
+  - install yojson                  1.4.1     [required by github]
+  - install lwt                     3.3.0     [required by logs, github]                              For the PPX, please install package lwt_ppx
+                                                                                                      For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install zed                     1.6       [required by lambda-term]
+  - install uutf                    1.0.1     [required by tyxml]
+  - install fmt                     0.8.5     [required by dune-release]
+  - install fpath                   0.7.2     [required by bos, odoc]
+  - install opam-format             2.0.0~rc3 [required by dune-release]
+  - install cudf                    0.9       [required by opam-lib]
+  - install doc-ock-xml             1.2.1     [required by odoc]
+  - install ppxlib                  0.3.0     [required by ppx_fields_conv, fieldslib, ppx_sexp_conv]
+  - install atdgen                  1.12.0    [required by github]
+  - install lwt_react               1.1.1     [required by lambda-term]
+  - install tyxml                   4.2.0     [required by odoc]                                      For tyxml's ppx, please install tyxml-ppx.
+  - install jsonm                   1.0.1     [required by opam-lib]
+  - install logs                    0.6.2     [required by dune-release]
+  - install dose3                   5.0.1     [required by opam-lib]
+  - install ppx_sexp_conv           v0.11.2   [required by cohttp]
+  - install fieldslib               v0.11.0   [required by cohttp]
+  - install lambda-term             1.12.0    [required by github-unix]
+  - install doc-ock-html            1.2.1     [required by odoc]
+  - install bos                     0.2.0     [required by dune-release]
+  - install opam-lib                1.3.1     [required by opam-publish]
+  - install uri                     1.9.7     [required by github]
+  - install ipaddr                  2.8.0     [required by conduit-lwt-unix]
+  - install ppx_fields_conv         v0.11.0   [required by cohttp]
+  - install webbrowser              0.6.1     [required by dune-release]
+  - install odoc                    1.2.0     [required by dune-release]
+  - install conduit                 1.1.0     [required by conduit-lwt]
+  - install cohttp                  1.0.0     [required by github]
+  - install conduit-lwt             1.1.0     [required by conduit-lwt-unix]
+  - install cohttp-lwt              1.0.2     [required by github]
+  - install conduit-lwt-unix        1.1.0     [required by cohttp-lwt-unix]
+  - install github                  3.1.0     [required by opam-publish]
+  - install cohttp-lwt-unix         1.0.2     [required by github-unix]
+  - install github-unix             3.1.0     [required by opam-publish]
+  - install opam-publish            0.3.5     [required by dune-release]
+  - install dune-release            0.1.0
+===== 78 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[atd.1.12.0] found in cache
+[atdgen.1.12.0] found in cache
+[base.v0.11.1] found in cache
+[base64.2.2.0] found in cache
+[biniou.1.2.0] found in cache
+[bos.0.2.0] found in cache
+[camomile.1.0.1] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.1.0.0] found in cache
+[cohttp-lwt.1.0.2] found in cache
+[cohttp-lwt-unix.1.0.2] found in cache
+[conduit.1.1.0] found in cache
+[conduit-lwt.1.1.0] found in cache
+[conduit-lwt-unix.1.1.0] found in cache
+[cppo.1.6.4] found in cache
+[cudf.0.9] found in cache
+[doc-ock.1.2.1] found in cache
+[doc-ock-html.1.2.1] found in cache
+[doc-ock-xml.1.2.1] found in cache
+[dose3.5.0.1] found in cache
+[dune-release.0.1.0] found in cache
+[easy-format.1.3.1] found in cache
+[extlib.1.7.5] found in cache
+[fieldslib.v0.11.0] found in cache
+[fmt.0.8.5] found in cache
+[fpath.0.7.2] found in cache
+[github.3.1.0] found in cache
+[github-unix.3.1.0] found in cache
+[ipaddr.2.8.0] found in cache
+[jsonm.1.0.1] found in cache
+[lambda-term.1.12.0] found in cache
+[logs.0.6.2] found in cache
+[lwt.3.3.0] found in cache
+[lwt_react.1.1.1] found in cache
+[magic-mime.1.1.0] found in cache
+[menhir.20180703] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[octavius.1.2.0] found in cache
+[odoc.1.2.0] found in cache
+[opam-core.2.0.0~rc3] found in cache
+[opam-file-format.2.0.0~rc2] found in cache
+[opam-format.2.0.0~rc3] found in cache
+[opam-lib.1.3.1] found in cache
+[opam-publish.0.3.5] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[webbrowser.0.6.1] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[zed.1.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed camomile.1.0.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed conf-openssl.1
+-> installed easy-format.1.3.1
+-> installed extlib.1.7.5
+-> installed magic-mime.1.1.0
+-> installed num.1.1
+-> installed biniou.1.2.0
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed cudf.0.9
+-> installed ocamlgraph.1.8.8
+-> installed octavius.1.2.0
+[ERROR] The compilation of doc-ock failed at "/home/opam/.opam/4.08/bin/jbuilder build -p doc-ock -j 71".
+-> installed opam-file-format.2.0.0~rc2
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed menhir.20180703
+-> installed atd.1.12.0
+-> installed opam-core.2.0.0~rc3
+-> installed dose3.5.0.1
+-> installed result.1.3
+[ERROR] The compilation of ocaml-migrate-parsetree failed at "/home/opam/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71".
+-> installed opam-format.2.0.0~rc3
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed ssl.0.5.5
+-> installed base.v0.11.1
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed react.1.2.1
+-> installed fpath.0.7.2
+-> installed rresult.0.5.0
+-> installed stdio.v0.11.0
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed fmt.0.8.5
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed jsonm.1.0.1
+-> installed atdgen.1.12.0
+-> installed zed.1.6
+-> installed opam-lib.1.3.1
+
+#=== ERROR while compiling ocaml-migrate-parsetree.1.0.11 =====================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocaml-migrate-parsetree.1.0.11
+# command              ~/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71
+# exit-code            1
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-20ed0c.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-20ed0c.out
+### output ###
+#        ocaml src/ast-version,src/compiler-functions-file (exit 1)
+# (cd _build/default/src && /home/opam/.opam/4.08/bin/ocaml config/gen.ml 4.08.0+dev0-2018-04-09)
+# Unkown OCaml version 4.08.0+dev0-2018-04-09
+
+
+#=== ERROR while compiling doc-ock.1.2.1 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/doc-ock.1.2.1
+# command              ~/.opam/4.08/bin/jbuilder build -p doc-ock -j 71
+# exit-code            1
+# env-file             ~/.opam/log/doc-ock-11-064518.env
+# output-file          ~/.opam/log/doc-ock-11-064518.out
+### output ###
+#       ocamlc src/.docOck.objs/docOckCmt.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.docOck.objs -I /home/opam/.opam/4.08/lib/ocaml/compiler-libs -I /home/opam/.opam/4.08/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckCmt.cmo -c -impl src/docOckCmt.pp.ml)
+# File "src/docOckCmt.ml", line 46, characters 4-1410:
+# Warning 8: this pattern-matching is not exhaustive.
+# Here is an example of a case that is not matched:
+# Tpat_exception _
+# File "src/docOckCmt.ml", line 456, characters 50-56:
+# Error: This expression has type Typedtree.type_exception
+#        The field ext_id does not belong to type Typedtree.type_exception
+#       ocamlc src/.docOck.objs/docOckCmti.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.docOck.objs -I /home/opam/.opam/4.08/lib/ocaml/compiler-libs -I /home/opam/.opam/4.08/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckCmti.cmo -c -impl src/docOckCmti.pp.ml)
+# File "src/docOckCmti.ml", line 551, characters 46-49:
+# Error: This expression has type Typedtree.type_exception
+#        but an expression was expected of type Typedtree.extension_constructor
+#     ocamlopt src/.docOck.objs/docOckCmti.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I src/.docOck.objs -I /home/opam/.opam/4.08/lib/ocaml/compiler-libs -I /home/opam/.opam/4.08/lib/octavius -no-alias-deps -o src/.docOck.objs/docOckCmti.cmx -c -impl src/docOckCmti.pp.ml)
+# File "src/docOckCmti.ml", line 551, characters 46-49:
+# Error: This expression has type Typedtree.type_exception
+#        but an expression was expected of type Typedtree.extension_constructor
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build doc-ock                 1.2.1
+| - build ocaml-migrate-parsetree 1.0.11
++- 
++- The following changes have been performed (the rest was aborted)
+| - install astring             0.8.3
+| - install atd                 1.12.0
+| - install atdgen              1.12.0
+| - install base                v0.11.1
+| - install base-bytes          base
+| - install base64              2.2.0
+| - install biniou              1.2.0
+| - install camomile            1.0.1
+| - install cmdliner            1.0.2
+| - install conf-openssl        1
+| - install conf-perl           1
+| - install conf-pkg-config     1.1
+| - install conf-which          1
+| - install cppo                1.6.4
+| - install cudf                0.9
+| - install dose3               5.0.1
+| - install easy-format         1.3.1
+| - install extlib              1.7.5
+| - install fmt                 0.8.5
+| - install fpath               0.7.2
+| - install jsonm               1.0.1
+| - install magic-mime          1.1.0
+| - install menhir              20180703
+| - install num                 1.1
+| - install ocaml-compiler-libs v0.11.0
+| - install ocamlbuild          0.12.0
+| - install ocamlgraph          1.8.8
+| - install octavius            1.2.0
+| - install opam-core           2.0.0~rc3
+| - install opam-file-format    2.0.0~rc2
+| - install opam-format         2.0.0~rc3
+| - install opam-lib            1.3.1
+| - install parsexp             v0.11.0
+| - install ppx_derivers        1.0
+| - install re                  1.7.3
+| - install react               1.2.1
+| - install result              1.3
+| - install rresult             0.5.0
+| - install sexplib             v0.11.0
+| - install sexplib0            v0.11.0
+| - install ssl                 0.5.5
+| - install stdio               v0.11.0
+| - install stringext           1.5.0
+| - install topkg               0.9.1
+| - install uchar               0.0.2
+| - install uutf                1.0.1
+| - install xmlm                1.3.0
+| - install yojson              1.4.1
+| - install zed                 1.6
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180725203219.export"
+31 1532550726 1532550897
