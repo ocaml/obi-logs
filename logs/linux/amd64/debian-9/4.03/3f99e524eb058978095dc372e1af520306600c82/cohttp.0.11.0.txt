@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 cohttp.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for cohttp.0.11.0: The following dependencies couldn't be met:
+          - cohttp -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=cohttp.0.11.0 returned 20
+20 1532474824 1532474827
