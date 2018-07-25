@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 stemming.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for stemming.0.2.0: The following dependencies couldn't be met:
+          - stemming -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=stemming.0.2.0 returned 20
+20 1532490019 1532490022
