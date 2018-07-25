@@ -1,0 +1,68 @@
+$ opam depext -iy -j 2 solo5-kernel-virtio.0.2.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+pkgconfig
+package pkgconfig is not installed
+The following command needs to be run through "sudo":
+    yum install -y pkgconfig
+Last metadata expiration check: 0:00:00 ago on Wed Jul 25 05:07:42 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+Nothing to do.
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides pkgconfig
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-pkg-config     1.1   [required by solo5-kernel-virtio]
+  - install solo5-kernel-virtio 0.2.2
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[solo5-kernel-virtio.0.2.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of solo5-kernel-virtio failed at "/usr/bin/make virtio".
+
+#=== ERROR while compiling solo5-kernel-virtio.0.2.2 ==========================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.2
+# command              /usr/bin/make virtio
+# exit-code            2
+# env-file             ~/.opam/log/solo5-kernel-virtio-10-d2c37b.env
+# output-file          ~/.opam/log/solo5-kernel-virtio-10-d2c37b.out
+### output ###
+# ./configure.sh
+# /usr/bin/make -C kernel virtio
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.2/kernel'
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -DASM_FILE -c virtio/boot.S -o virtio/boot.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c virtio/kernel.c -o virtio/kernel.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c virtio/platform.c -o virtio/platform.o
+# virtio/platform.c:50:5: error: 'solo5_console_write' alias between functions of incompatible types 'int(const char *, size_t)' {aka 'int(const char *, long unsigned int)'} and 'int(const char *, int)' [-Werror=attribute-alias]
+#  int solo5_console_write(const char *, size_t)
+#      ^~~~~~~~~~~~~~~~~~~
+# virtio/platform.c:40:5: note: aliased declaration here
+#  int platform_puts(const char *buf, int n)
+#      ^~~~~~~~~~~~~
+# cc1: all warnings being treated as errors
+# make[1]: *** [Makefile:70: virtio/platform.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.2/kernel'
+# make: *** [Makefile:32: virtio] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build solo5-kernel-virtio 0.2.2
++- 
++- The following changes have been performed
+| - install conf-pkg-config 1.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725050745.export"
+31 1532495259 1532495268

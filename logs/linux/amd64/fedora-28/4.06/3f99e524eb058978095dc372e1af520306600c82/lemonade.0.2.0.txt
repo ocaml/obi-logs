@@ -1,0 +1,163 @@
+$ opam depext -iy -j 2 lemonade.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+bmake
+m4
+package bmake is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Tue Jul 24 20:13:14 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# The following new OS packages need to be installed: bmake
+The following command needs to be run through "sudo":
+    yum install -y bmake
+Last metadata expiration check: 0:00:00 ago on Wed Jul 25 05:10:09 2018.
+Dependencies resolved.
+================================================================================
+ Package          Arch           Version                  Repository       Size
+================================================================================
+Installing:
+ bmake            x86_64         20180512-1.fc28          updates         150 k
+Installing dependencies:
+ mk-files         noarch         20170505-1.fc28          fedora           95 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 245 k
+Installed size: 622 k
+Downloading Packages:
+(1/2): bmake-20180512-1.fc28.x86_64.rpm         2.0 MB/s | 150 kB     00:00    
+(2/2): mk-files-20170505-1.fc28.noarch.rpm      998 kB/s |  95 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           218 kB/s | 245 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : mk-files-20170505-1.fc28.noarch                        1/2 
+  Installing       : bmake-20180512-1.fc28.x86_64                           2/2 
+  Running scriptlet: bmake-20180512-1.fc28.x86_64                           2/2 
+  Verifying        : bmake-20180512-1.fc28.x86_64                           1/2 
+  Verifying        : mk-files-20170505-1.fc28.noarch                        2/2 
+
+Installed:
+  bmake.x86_64 20180512-1.fc28          mk-files.noarch 20170505-1.fc28         
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides bmake
+bmake-20180512-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-bmake 1.0            [required by lemonade]
+  - install bsdowl     3.0.0-20150830 [required by lemonade]
+  - install broken     0.4.2          [required by lemonade]
+  - install mixture    1.0.0          [required by lemonade]
+  - install lemonade   0.2.0
+===== 5 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+[lemonade.0.2.0] found in cache
+[mixture.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-bmake.1.0
+-> installed bsdowl.3.0.0-20150830
+-> installed broken.0.4.2
+-> installed mixture.1.0.0
+[ERROR] The compilation of lemonade failed at "/usr/bin/bmake -I/home/opam/.opam/4.06/share/bsdowl all".
+
+#=== ERROR while compiling lemonade.0.2.0 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/lemonade.0.2.0
+# command              /usr/bin/bmake -I/home/opam/.opam/4.06/share/bsdowl all
+# exit-code            1
+# env-file             ~/.opam/log/lemonade-10-0f1b61.env
+# output-file          ~/.opam/log/lemonade-10-0f1b61.out
+### output ###
+# /usr/bin/bmake depend
+# ===> src (depend)
+# (cd /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src && ocamldep -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I +. -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli lemonade_Type.ml lemonade_Type.mli lemonade_Lazy.ml lemonade_Lazy.mli lemonade_List.ml lemonade_List.mli lemonade_Maybe.ml lemonade_Maybe.mli lemonade_Retry.ml lemonade_Retry.mli lemonade_Success.ml lemonade_Success.mli) | sh -c '/usr/bin/sed -e "s@/home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src/*@@g" -e "s@/home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+# ===> meta (depend)
+# ===> manual (depend)
+# ===> testsuite (depend)
+# (cd /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/testsuite && ocamldep -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I +. -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -native testList.ml testMaybe.ml main.ml) | sh -c '/usr/bin/sed -e "s@/home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src/*@@g" -e "s@/home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src/*@@g"' -- OCAMLDEP_FILTER  > .depend
+# /usr/bin/bmake build
+# ===> src (build)
+# ocamlfind ocamlc -c -package "broken mixture" -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -o lemonade_Type.cmi lemonade_Type.mli
+# ocamlfind ocamlopt -c -package "broken mixture" -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -o lemonade_Type.cmx lemonade_Type.ml
+# ocamlfind ocamlc -c -package "broken mixture" -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -o lemonade_Lazy.cmi lemonade_Lazy.mli
+# ocamlfind ocamlopt -c -package "broken mixture" -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -I /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src -o lemonade_Lazy.cmx lemonade_Lazy.ml
+# File "lemonade_Lazy.ml", line 1:
+# Error: The implementation lemonade_Lazy.ml
+#        does not match the interface lemonade_Lazy.cmi:
+#        ...
+#        At position module T(M : <here>) : ...
+#        Modules do not match:
+#          Lemonade_Type.S
+#        is not included in
+#          Mixture_Monad.S
+#        At position module T(M : <here>) : ...
+#        The value `catch' is required but not provided
+#        File "mixture_Monad.mli", line 82, characters 2-53:
+#          Expected declaration
+# *** Error code 2
+# 
+# Stop.
+# bmake[2]: stopped in /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0/src
+# *** Error code 1
+# 
+# Stop.
+# bmake[1]: stopped in /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0
+# *** Error code 1
+# 
+# Stop.
+# bmake: stopped in /home/opam/.opam/4.06/.opam-switch/build/lemonade.0.2.0
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build lemonade 0.2.0
++- 
++- The following changes have been performed
+| - install broken     0.4.2
+| - install bsdowl     3.0.0-20150830
+| - install conf-bmake 1.0
+| - install mixture    1.0.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725051015.export"
+31 1532495406 1532495430

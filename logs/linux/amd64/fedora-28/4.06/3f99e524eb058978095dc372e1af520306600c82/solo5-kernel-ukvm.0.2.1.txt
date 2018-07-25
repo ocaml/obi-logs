@@ -1,0 +1,99 @@
+$ opam depext -iy -j 2 solo5-kernel-ukvm.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+kernel-headers
+pkgconfig
+Name        : kernel-headers
+Version     : 4.17.7
+Release     : 200.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:11:13 2018
+Group       : Unspecified
+Size        : 4593610
+License     : GPLv2 and Redistributable, no modification permitted
+Signature   : RSA/SHA256, Thu Jul 19 04:17:33 2018, Key ID e08e7e629db62fb1
+Source RPM  : kernel-4.17.7-200.fc28.src.rpm
+Build Date  : Tue Jul 17 17:25:26 2018
+Build Host  : bkernel02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://www.kernel.org/
+Bug URL     : https://bugz.fedoraproject.org/kernel
+Summary     : Header files for the Linux kernel for use by glibc
+Description :
+Kernel-headers includes the C header files that specify the interface
+between the Linux kernel and userspace libraries and programs.  The
+header files define structures and constants that are needed for
+building most standard programs and are also needed for rebuilding the
+glibc package.
+package pkgconfig is not installed
+# The following new OS packages need to be installed: pkgconfig
+The following command needs to be run through "sudo":
+    yum install -y pkgconfig
+Last metadata expiration check: 0:00:00 ago on Wed Jul 25 05:18:55 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+Nothing to do.
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides pkgconfig
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-pkg-config   1.1   [required by solo5-kernel-ukvm]
+  - install solo5-kernel-ukvm 0.2.1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[solo5-kernel-ukvm.0.2.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of solo5-kernel-ukvm failed at "/usr/bin/make ukvm".
+
+#=== ERROR while compiling solo5-kernel-ukvm.0.2.1 ============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1
+# command              /usr/bin/make ukvm
+# exit-code            2
+# env-file             ~/.opam/log/solo5-kernel-ukvm-10-d2c37b.env
+# output-file          ~/.opam/log/solo5-kernel-ukvm-10-d2c37b.out
+### output ###
+# ./configure.sh
+# /usr/bin/make -C kernel ukvm
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1/kernel'
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ukvm/kernel.c -o ukvm/kernel.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ukvm/gdt.c -o ukvm/gdt.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ukvm/io.c -o ukvm/io.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ukvm/platform.c -o ukvm/platform.o
+# ukvm/platform.c:43:5: error: 'solo5_console_write' alias between functions of incompatible types 'int(const char *, size_t)' {aka 'int(const char *, long unsigned int)'} and 'int(const char *, int)' [-Werror=attribute-alias]
+#  int solo5_console_write(const char *, size_t)
+#      ^~~~~~~~~~~~~~~~~~~
+# ukvm/platform.c:31:5: note: aliased declaration here
+#  int platform_puts(const char *buf, int n)
+#      ^~~~~~~~~~~~~
+# cc1: all warnings being treated as errors
+# make[1]: *** [Makefile:68: ukvm/platform.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.1/kernel'
+# make: *** [Makefile:39: ukvm] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build solo5-kernel-ukvm 0.2.1
++- 
++- The following changes have been performed
+| - install conf-pkg-config 1.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    kernel-headers
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725051859.export"
+31 1532495931 1532495942
