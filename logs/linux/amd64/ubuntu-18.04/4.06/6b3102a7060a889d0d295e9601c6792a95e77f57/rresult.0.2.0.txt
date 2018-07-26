@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 rresult.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for rresult.0.2.0: The following dependencies couldn't be met:
+          - rresult -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=rresult.0.2.0 returned 20
+20 1532583425 1532583427

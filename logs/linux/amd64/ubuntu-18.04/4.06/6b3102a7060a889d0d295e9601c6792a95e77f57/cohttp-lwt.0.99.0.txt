@@ -1,0 +1,25 @@
+$ opam depext -iy -j 2 cohttp-lwt.0.99.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for cohttp-lwt.0.99.0: The following dependencies couldn't be met:
+          - cohttp-lwt -> cohttp = 0.99.0 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - cohttp-lwt -> cohttp = 0.99.0 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cohttp satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=cohttp-lwt.0.99.0 returned 20
+20 1532582322 1532582325

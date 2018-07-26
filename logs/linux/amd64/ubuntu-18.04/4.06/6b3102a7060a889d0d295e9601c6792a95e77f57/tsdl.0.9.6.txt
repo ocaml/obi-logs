@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 tsdl.0.9.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+libffi-dev
+libsdl2-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libffi-dev libsdl2-dev m4 pkg-config
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/libudev-dev_237-3ubuntu10.2_amd64.deb  404  Not Found [IP: 91.189.88.162 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+OS package installation failed
+1 1532582062 1532582073

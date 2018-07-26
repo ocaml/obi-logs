@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 opium.0.10.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for opium.0.10.1: The following dependencies couldn't be met:
+          - opium -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=opium.0.10.1 returned 20
+20 1532582107 1532582110
