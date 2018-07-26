@@ -1,0 +1,87 @@
+$ opam depext -iy -j 2 camltemplate.1.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camltemplate 1.0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camltemplate.1.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of camltemplate failed at "/usr/bin/make".
+
+#=== ERROR while compiling camltemplate.1.0.2 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/camltemplate.1.0.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/camltemplate-11-1872ec.env
+# output-file          ~/.opam/log/camltemplate-11-1872ec.out
+### output ###
+# cd src; /usr/bin/make all
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/camltemplate.1.0.2/src'
+# ocamllex ctLexer.mll && \
+# ocamlyacc ctParser.mly && \
+# ocamlfind ocamlc  -linkpkg -c ctUtil.ml ctSourcePos.ml ctExceptions.ml ctTemplateModel.ml ctScope.ml ctTemplateTypes.ml ctContext.ml ctExpression.ml ctIdent.ml ctUnop.ml ctBinop.ml ctLiteral.ml ctFunctionCall.ml ctHashLookup.ml ctStatement.ml ctMacro.ml ctParserAux.ml ctParser.mli ctParser.ml ctLexer.ml ctWeb.ml ctTemplate.ml ctCache.mli ctCache.ml camlTemplate.mli camlTemplate.ml && \
+# ocamlfind ocamlc -thread -c camlTemplate_mt.ml && \
+# ocamlfind ocamlc -a -o camltemplate.cma  ctUtil.cmo  ctSourcePos.cmo  ctExceptions.cmo  ctTemplateModel.cmo  ctScope.cmo  ctTemplateTypes.cmo  ctContext.cmo  ctExpression.cmo  ctIdent.cmo  ctUnop.cmo  ctBinop.cmo  ctLiteral.cmo  ctFunctionCall.cmo  ctHashLookup.cmo  ctStatement.cmo  ctMacro.cmo  ctParserAux.cmo  ctParser.cmo  ctLexer.cmo  ctWeb.cmo  ctTemplate.cmo  ctCache.cmo  camlTemplate.cmo
+# 70 states, 559 transitions, table size 2656 bytes
+# 1807 additional bytes used for bindings
+# File "ctUtil.ml", line 43, characters 16-29:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "ctExpression.ml", line 83, characters 22-37:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 9.5)
+# File "ctExpression.ml", line 98, characters 22-39:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 9.5)
+# File "ctExpression.ml", line 190, characters 11-23:
+# Warning 17: the virtual method to_bool is not declared.
+# File "ctLexer.mll", line 235, characters 14-17:
+# Warning 26: unused variable pos.
+# File "ctLexer.mll", line 523, characters 26-29:
+# Warning 26: unused variable tok.
+# File "ctLexer.mll", line 973, characters 12-15:
+# Warning 26: unused variable pos.
+# File "ctWeb.ml", line 76, characters 19-33:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "ctWeb.ml", line 80, characters 18-32:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "ctWeb.ml", line 81, characters 18-62:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "ctWeb.ml", line 82, characters 18-64:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "ctWeb.ml", line 85, characters 21-33:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "ctWeb.ml", line 92, characters 47-60:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "ctWeb.ml", line 94, characters 4-5:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:30: recipe for target 'all' failed
+# make[1]: *** [all] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/camltemplate.1.0.2/src'
+# Makefile:14: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build camltemplate 1.0.2
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532639366 1532639370
