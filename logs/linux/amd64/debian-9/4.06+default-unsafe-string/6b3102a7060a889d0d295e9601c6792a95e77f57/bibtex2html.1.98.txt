@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 bibtex2html.1.98
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bibtex2html.1.98: The following dependencies couldn't be met:
+          - bibtex2html -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=bibtex2html.1.98 returned 20
+20 1532568188 1532568191
