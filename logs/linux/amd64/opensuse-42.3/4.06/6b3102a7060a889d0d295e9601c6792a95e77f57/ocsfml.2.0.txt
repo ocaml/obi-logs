@@ -1,0 +1,25 @@
+$ opam depext -iy -j 2 ocsfml.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocsfml 2.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocsfml.2.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling ocsfml.2.0 =========================================#
+"cmake": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocsfml 2.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532581009 1532581028
