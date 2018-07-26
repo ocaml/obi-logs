@@ -1,0 +1,75 @@
+$ opam depext -iy -j 2 cry.0.2.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install cry 0.2.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cry.0.2.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of cry failed at "/usr/bin/make".
+
+#=== ERROR while compiling cry.0.2.2 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/cry.0.2.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/cry-11-1872ec.env
+# output-file          ~/.opam/log/cry-11-1872ec.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.08/.opam-switch/build/cry.0.2.2/src'
+# make[2]: Entering directory '/home/opam/.opam/4.08/.opam-switch/build/cry.0.2.2/src'
+# making ._bcdi/cry.di from cry.mli
+# making ._d/cry.d from cry.ml
+# ocamlc.opt -c cry.mli
+# ocamlc.opt -c cry.ml
+# File "cry.ml", line 290, characters 12-25:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "cry.ml", line 292, characters 21-45:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "cry.ml", line 301, characters 6-28:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "cry.ml", line 302, characters 6-28:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "cry.ml", line 304, characters 6-28:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "cry.ml", line 317, characters 14-27:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "cry.ml", line 318, characters 8-49:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "cry.ml", line 319, characters 8-41:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "cry.ml", line 339, characters 38-49:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakefile:952: recipe for target 'cry.cmo' failed
+# make[2]: *** [cry.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/cry.0.2.2/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/cry.0.2.2/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build cry 0.2.2
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532636233 1532636239

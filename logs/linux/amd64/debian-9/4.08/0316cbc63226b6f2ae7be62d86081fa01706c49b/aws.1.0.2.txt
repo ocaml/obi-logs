@@ -1,0 +1,23 @@
+$ opam depext -iy -j 2 aws.1.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for aws.1.0.2: The following dependencies couldn't be met:
+          - aws -> nocrypto -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - aws -> nocrypto -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws -> nocrypto -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - aws -> nocrypto -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - aws -> nocrypto -> ppx_deriving -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws -> nocrypto -> ppx_deriving -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws -> nocrypto -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws -> nocrypto -> ctypes < 0.4.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=aws.1.0.2 returned 20
+20 1532636620 1532636623
