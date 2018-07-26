@@ -1,0 +1,88 @@
+$ opam depext -iy -j 2 orsvm_e1071.3.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+R
+The following command needs to be run through "sudo":
+    apk add R
+(1/32) Installing R-mathlib (3.4.2-r0)
+(2/32) Installing libxext (1.3.3-r2)
+(3/32) Installing libice (1.0.9-r2)
+(4/32) Installing libuuid (2.31-r0)
+(5/32) Installing libsm (1.2.2-r1)
+(6/32) Installing libxt (1.1.5-r1)
+(7/32) Installing libxmu (1.1.2-r1)
+(8/32) Installing libbz2 (1.0.6-r6)
+(9/32) Installing libxrender (0.9.10-r2)
+(10/32) Installing libpng (1.6.34-r1)
+(11/32) Installing freetype (2.8.1-r3)
+(12/32) Installing fontconfig (2.12.6-r0)
+(13/32) Installing pixman (0.34.0-r3)
+(14/32) Installing cairo (1.14.10-r0)
+(15/32) Installing libffi (3.2.1-r4)
+(16/32) Installing libintl (0.19.8.1-r1)
+(17/32) Installing libblkid (2.31-r0)
+(18/32) Installing libmount (2.31-r0)
+(19/32) Installing pcre (8.41-r1)
+(20/32) Installing glib (2.54.2-r0)
+(21/32) Installing icu-libs (59.1-r1)
+(22/32) Installing libjpeg-turbo (1.5.2-r0)
+(23/32) Installing xz-libs (5.2.3-r1)
+(24/32) Installing libquadmath (6.4.0-r5)
+(25/32) Installing libgfortran (6.4.0-r5)
+(26/32) Installing openblas (0.2.19-r3)
+(27/32) Installing libxft (2.3.2-r2)
+(28/32) Installing graphite2 (1.3.10-r0)
+(29/32) Installing harfbuzz (1.6.3-r0)
+(30/32) Installing pango (1.40.14-r0)
+(31/32) Installing tiff (4.0.9-r4)
+(32/32) Installing R (3.4.2-r0)
+Executing R-3.4.2-r0.post-install
+*
+* If you want to install R packages from CRAN that contains native extensions,
+* then you must also install R-dev.
+*
+Executing busybox-1.27.2-r11.trigger
+Executing glib-2.54.2-r0.trigger
+OK: 312 MiB in 105 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-r      1.0.0 [required by orsvm_e1071]
+  - install orsvm_e1071 3.0.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[orsvm_e1071.3.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-r.1.0.0
+[ERROR] The compilation of orsvm_e1071 failed at "/usr/bin/R CMD BATCH install_e1071.r".
+
+#=== ERROR while compiling orsvm_e1071.3.0.0 ==================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/orsvm_e1071.3.0.0
+# command              /usr/bin/R CMD BATCH install_e1071.r
+# exit-code            1
+# env-file             ~/.opam/log/orsvm_e1071-13-a00279.env
+# output-file          ~/.opam/log/orsvm_e1071-13-a00279.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build orsvm_e1071 3.0.0
++- 
++- The following changes have been performed
+| - install conf-r 1.0.0
++- 
+
+<><> orsvm_e1071.3.0.0 troubleshooting ><><><><><><><><><><><><><><><><><><><><>
+=> Please interact with R to install needed things in user-space:
+   R
+   install.packages('e1071', repos='http://cran.r-project.org')
+   install.packages('svmpath', repos='http://cran.r-project.org')
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725235247.export"
+31 1532562762 1532562770

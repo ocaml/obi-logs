@@ -1,0 +1,182 @@
+$ opam depext -iy -j 2 lbvs_consent.1.1.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+autoconf
+boost-dev
+m4
+pkgconfig
+python
+zlib-dev
+m4
+pkgconf
+# The following new OS packages need to be installed: autoconf boost-dev python zlib-dev
+The following command needs to be run through "sudo":
+    apk add autoconf boost-dev python zlib-dev
+(1/31) Installing libbz2 (1.0.6-r6)
+(2/31) Installing perl (5.26.2-r1)
+(3/31) Installing autoconf (2.69-r0)
+(4/31) Installing linux-headers (4.4.6-r2)
+(5/31) Installing boost-date_time (1.62.0-r5)
+(6/31) Installing boost-system (1.62.0-r5)
+(7/31) Installing boost-filesystem (1.62.0-r5)
+(8/31) Installing boost-regex (1.62.0-r5)
+(9/31) Installing boost-graph (1.62.0-r5)
+(10/31) Installing boost-iostreams (1.62.0-r5)
+(11/31) Installing boost-math (1.62.0-r5)
+(12/31) Installing boost-prg_exec_monitor (1.62.0-r5)
+(13/31) Installing boost-program_options (1.62.0-r5)
+(14/31) Installing libffi (3.2.1-r4)
+(15/31) Installing gdbm (1.13-r1)
+(16/31) Installing xz-libs (5.2.3-r1)
+(17/31) Installing sqlite-libs (3.21.0-r1)
+(18/31) Installing python3 (3.6.3-r9)
+(19/31) Installing boost-python3 (1.62.0-r5)
+(20/31) Installing python2 (2.7.14-r2)
+(21/31) Installing boost-python (1.62.0-r5)
+(22/31) Installing boost-random (1.62.0-r5)
+(23/31) Installing boost-serialization (1.62.0-r5)
+(24/31) Installing boost-signals (1.62.0-r5)
+(25/31) Installing boost-thread (1.62.0-r5)
+(26/31) Installing boost-unit_test_framework (1.62.0-r5)
+(27/31) Installing boost-wave (1.62.0-r5)
+(28/31) Installing boost-wserialization (1.62.0-r5)
+(29/31) Installing boost (1.62.0-r5)
+(30/31) Installing boost-dev (1.62.0-r5)
+(31/31) Installing zlib-dev (1.2.11-r1)
+Executing busybox-1.27.2-r11.trigger
+OK: 552 MiB in 104 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip         1.07     [required by lbvs_consent]
+  - install obuild          0.1.10   [required by lbvs_consent]
+  - install conf-openbabel  0.1      [required by lbvs_consent]
+  - install conf-rdkit      0.1      [required by lbvs_consent]
+  - install conf-which      1        [required by conf-autoconf]
+  - install base-bytes      base     [required by qcheck, qtest]
+  - install ocamlbuild      0.12.0   [required by dolog, batteries, parmap]
+  - install conf-pkg-config 1.1      [required by conf-boost]
+  - install num             1.1      [required by batteries]
+  - install conf-python-2-7 1.0      [required by lbvs_consent]
+  - install minivpt         2.0.0    [required by lbvs_consent]
+  - install minicli         4.0.0    [required by lbvs_consent]
+  - install conf-autoconf   0.1      [required by bitv]
+  - install parmap          1.0-rc10 [required by lbvs_consent]
+  - install ounit           2.0.8    [required by qcheck, qtest]
+  - install dolog           3.0      [required by lbvs_consent]
+  - install conf-boost      1        [required by lbvs_consent]
+  - install batteries       2.8.0    [required by lbvs_consent]
+  - install bitv            1.3      [required by lbvs_consent]
+  - install qcheck          0.8      [required by lbvs_consent]
+  - install cpm             4.0.0    [required by lbvs_consent]
+  - install qtest           2.9      [required by lbvs_consent]
+  - install lbvs_consent    1.1.3
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[bitv.1.3] found in cache
+[camlzip.1.07] found in cache
+[cpm.4.0.0] found in cache
+[dolog.3.0] found in cache
+[lbvs_consent.1.1.3] found in cache
+[minicli.4.0.0] found in cache
+[minivpt.2.0.0] found in cache
+[num.1.1] found in cache
+[obuild.0.1.10] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[parmap.1.0-rc10] found in cache
+[qcheck.0.8] found in cache
+[qtest.2.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-openbabel failed at "/usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel".
+[ERROR] The compilation of conf-rdkit failed at "/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \\\n              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral".
+-> installed base-bytes.base
+-> installed camlzip.1.07
+-> installed conf-pkg-config.1.1
+-> installed conf-boost.1
+-> installed conf-python-2-7.1.0
+-> installed conf-which.1
+-> installed num.1.1
+-> installed conf-autoconf.0.1
+-> installed obuild.0.1.10
+-> installed minicli.4.0.0
+-> installed minivpt.2.0.0
+-> installed ocamlbuild.0.12.0
+-> installed bitv.1.3
+-> installed dolog.3.0
+-> installed ounit.2.0.8
+-> installed parmap.1.0-rc10
+-> installed qcheck.0.8
+-> installed qtest.2.9
+-> installed batteries.2.8.0
+-> installed cpm.4.0.0
+
+#=== ERROR while compiling conf-rdkit.0.1 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-rdkit.0.1
+# command              /bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \
+              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral
+# exit-code            1
+# env-file             ~/.opam/log/conf-rdkit-13-4eee66.env
+# output-file          ~/.opam/log/conf-rdkit-13-4eee66.out
+### output ###
+# test.cpp:2:38: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
+#  #include "rdkit/RDGeneral/versions.h"
+#                                       ^
+# compilation terminated.
+# test.cpp:2:38: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
+#  #include "rdkit/RDGeneral/versions.h"
+#                                       ^
+# compilation terminated.
+
+
+#=== ERROR while compiling conf-openbabel.0.1 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-openbabel.0.1
+# command              /usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel
+# exit-code            1
+# env-file             ~/.opam/log/conf-openbabel-13-af57d6.env
+# output-file          ~/.opam/log/conf-openbabel-13-af57d6.out
+### output ###
+# test.cpp:1:27: fatal error: openbabel/mol.h: No such file or directory
+#  #include <openbabel/mol.h>
+#                            ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-openbabel 0.1
+| - build conf-rdkit     0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install batteries       2.8.0
+| - install bitv            1.3
+| - install camlzip         1.07
+| - install conf-autoconf   0.1
+| - install conf-boost      1
+| - install conf-pkg-config 1.1
+| - install conf-python-2-7 1.0
+| - install conf-which      1
+| - install cpm             4.0.0
+| - install dolog           3.0
+| - install minicli         4.0.0
+| - install minivpt         2.0.0
+| - install num             1.1
+| - install obuild          0.1.10
+| - install ocamlbuild      0.12.0
+| - install ounit           2.0.8
+| - install parmap          1.0-rc10
+| - install qcheck          0.8
+| - install qtest           2.9
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180726000207.export"
+31 1532563321 1532563358

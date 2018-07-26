@@ -1,0 +1,50 @@
+$ opam depext -iy -j 2 conf-r-mathlib.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+R-mathlib
+pkgconfig
+pkgconf
+# The following new OS packages need to be installed: R-mathlib
+The following command needs to be run through "sudo":
+    apk add R-mathlib
+(1/1) Installing R-mathlib (3.4.2-r0)
+OK: 204 MiB in 74 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-pkg-config 1.1 [required by conf-r-mathlib]
+  - install conf-r-mathlib  1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of conf-r-mathlib failed at "/usr/bin/pkg-config libRmath".
+
+#=== ERROR while compiling conf-r-mathlib.1 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-r-mathlib.1
+# command              /usr/bin/pkg-config libRmath
+# exit-code            1
+# env-file             ~/.opam/log/conf-r-mathlib-13-9b8556.env
+# output-file          ~/.opam/log/conf-r-mathlib-13-9b8556.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-r-mathlib 1
++- 
++- The following changes have been performed
+| - install conf-pkg-config 1.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    R-mathlib
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180726001012.export"
+31 1532563809 1532563814

@@ -1,0 +1,941 @@
+$ opam depext -iy -j 2 eigen.0.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+pkgconfig
+m4
+pkgconf
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by topkg]
+  - install base-bytes      base   [required by ctypes]
+  - install ocamlbuild      0.12.0 [required by eigen]
+  - install conf-pkg-config 1.1    [required by ctypes]
+  - install topkg           0.9.1  [required by integers]
+  - install ocamlmod        0.0.9  [required by oasis]
+  - install ocamlify        0.0.1  [required by oasis]
+  - install integers        0.2.2  [required by ctypes]
+  - install oasis           0.4.11 [required by eigen]
+  - install ctypes          0.14.0 [required by eigen]
+  - install eigen           0.0.3
+===== 11 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.14.0] found in cache
+[eigen.0.0.3] found in cache
+[integers.0.2.2] found in cache
+[oasis.0.4.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+-> installed oasis.0.4.11
+[ERROR] The compilation of eigen failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling eigen.0.0.3 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/eigen.0.0.3
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/eigen-13-c33e1c.env
+# output-file          ~/.opam/log/eigen-13-c33e1c.out
+### output ###
+# g++ -c -fPIC -ansi -Wno-extern-c-compat -Wno-c++11-long-long -I. eigen_dsmat.cpp -o eigen_dsmat.o
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:11:9: error: 'int64_t' does not name a type
+#  typedef int64_t INDEX;
+#          ^~~~~~~
+# eigen_dsmat.h:36:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols);
+#                                          ^~~~~
+# eigen_dsmat.h:36:53: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols);
+#                                                      ^~~~~
+# eigen_dsmat.h:36:63: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols);
+#                                                                ^
+# eigen_dsmat.h:38:43: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n);
+#                                            ^~~~~
+# eigen_dsmat.h:38:52: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n);
+#                                                     ^~~~~
+# eigen_dsmat.h:38:59: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n);
+#                                                            ^
+# eigen_dsmat.h:39:42: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n);
+#                                           ^~~~~
+# eigen_dsmat.h:39:51: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n);
+#                                                    ^~~~~
+# eigen_dsmat.h:39:58: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n);
+#                                                           ^
+# eigen_dsmat.h:40:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_s* c_eigen_dsmat_s_eye(INDEX m);
+#                                          ^~~~~
+# eigen_dsmat.h:41:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_s_rows(struct c_dsmat_s *m);
+#    ^~~~~
+# eigen_dsmat.h:42:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_s_cols(struct c_dsmat_s *m);
+#    ^~~~~
+# eigen_dsmat.h:43:56: error: 'INDEX' has not been declared
+#    dsmat_s_elt c_eigen_dsmat_s_get(struct c_dsmat_s *m, INDEX i, INDEX j);
+#                                                         ^~~~~
+# eigen_dsmat.h:43:65: error: 'INDEX' has not been declared
+#    dsmat_s_elt c_eigen_dsmat_s_get(struct c_dsmat_s *m, INDEX i, INDEX j);
+#                                                                  ^~~~~
+# eigen_dsmat.h:44:49: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_set(struct c_dsmat_s *m, INDEX i, INDEX j, dsmat_s_elt x);
+#                                                  ^~~~~
+# eigen_dsmat.h:44:58: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_set(struct c_dsmat_s *m, INDEX i, INDEX j, dsmat_s_elt x);
+#                                                           ^~~~~
+# eigen_dsmat.h:46:65: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_of_bigarray(dsmat_s_elt* x, INDEX m, INDEX n);
+#                                                                  ^~~~~
+# eigen_dsmat.h:46:74: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_of_bigarray(dsmat_s_elt* x, INDEX m, INDEX n);
+#                                                                           ^~~~~
+# eigen_dsmat.h:47:74: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_of_bigarray2(struct c_dsmat_s *x, dsmat_s_elt* y, INDEX m, INDEX n);
+#                                                                           ^~~~~
+# eigen_dsmat.h:47:83: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_of_bigarray2(struct c_dsmat_s *x, dsmat_s_elt* y, INDEX m, INDEX n);
+#                                                                                    ^~~~~
+# eigen_dsmat.h:50:55: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt*, INDEX, INDEX, dsmat_s_elt*, INDEX, INDEX);
+#                                                        ^~~~~
+# eigen_dsmat.h:50:62: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt*, INDEX, INDEX, dsmat_s_elt*, INDEX, INDEX);
+#                                                               ^~~~~
+# eigen_dsmat.h:50:83: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt*, INDEX, INDEX, dsmat_s_elt*, INDEX, INDEX);
+#                                                                                    ^~~~~
+# eigen_dsmat.h:50:90: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt*, INDEX, INDEX, dsmat_s_elt*, INDEX, INDEX);
+#                                                                                           ^~~~~
+# eigen_dsmat.h:51:61: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_transpose(dsmat_s_elt*, INDEX, INDEX);
+#                                                              ^~~~~
+# eigen_dsmat.h:51:68: error: 'INDEX' has not been declared
+#    struct c_dsmat_s* c_eigen_dsmat_s_transpose(dsmat_s_elt*, INDEX, INDEX);
+#                                                                     ^~~~~
+# eigen_dsmat.h:52:48: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_rows(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                 ^~~~~
+# eigen_dsmat.h:52:55: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_rows(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                        ^~~~~
+# eigen_dsmat.h:52:62: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_rows(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                               ^~~~~
+# eigen_dsmat.h:52:69: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_rows(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                      ^~~~~
+# eigen_dsmat.h:53:48: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_cols(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                 ^~~~~
+# eigen_dsmat.h:53:55: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_cols(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                        ^~~~~
+# eigen_dsmat.h:53:62: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_cols(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                               ^~~~~
+# eigen_dsmat.h:53:69: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_s_swap_cols(dsmat_s_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                      ^~~~~
+# eigen_dsmat.h:60:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols);
+#                                          ^~~~~
+# eigen_dsmat.h:60:53: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols);
+#                                                      ^~~~~
+# eigen_dsmat.h:60:63: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols);
+#                                                                ^
+# eigen_dsmat.h:62:43: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n);
+#                                            ^~~~~
+# eigen_dsmat.h:62:52: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n);
+#                                                     ^~~~~
+# eigen_dsmat.h:62:59: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n);
+#                                                            ^
+# eigen_dsmat.h:63:42: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n);
+#                                           ^~~~~
+# eigen_dsmat.h:63:51: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n);
+#                                                    ^~~~~
+# eigen_dsmat.h:63:58: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n);
+#                                                           ^
+# eigen_dsmat.h:64:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_d* c_eigen_dsmat_d_eye(INDEX m);
+#                                          ^~~~~
+# eigen_dsmat.h:65:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_d_rows(struct c_dsmat_d *m);
+#    ^~~~~
+# eigen_dsmat.h:66:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_d_cols(struct c_dsmat_d *m);
+#    ^~~~~
+# eigen_dsmat.h:67:56: error: 'INDEX' has not been declared
+#    dsmat_d_elt c_eigen_dsmat_d_get(struct c_dsmat_d *m, INDEX i, INDEX j);
+#                                                         ^~~~~
+# eigen_dsmat.h:67:65: error: 'INDEX' has not been declared
+#    dsmat_d_elt c_eigen_dsmat_d_get(struct c_dsmat_d *m, INDEX i, INDEX j);
+#                                                                  ^~~~~
+# eigen_dsmat.h:68:49: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_set(struct c_dsmat_d *m, INDEX i, INDEX j, dsmat_d_elt x);
+#                                                  ^~~~~
+# eigen_dsmat.h:68:58: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_set(struct c_dsmat_d *m, INDEX i, INDEX j, dsmat_d_elt x);
+#                                                           ^~~~~
+# eigen_dsmat.h:72:55: error: 'INDEX' has not been declared
+#    struct c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt*, INDEX, INDEX, dsmat_d_elt*, INDEX, INDEX);
+#                                                        ^~~~~
+# eigen_dsmat.h:72:62: error: 'INDEX' has not been declared
+#    struct c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt*, INDEX, INDEX, dsmat_d_elt*, INDEX, INDEX);
+#                                                               ^~~~~
+# eigen_dsmat.h:72:83: error: 'INDEX' has not been declared
+#    struct c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt*, INDEX, INDEX, dsmat_d_elt*, INDEX, INDEX);
+#                                                                                    ^~~~~
+# eigen_dsmat.h:72:90: error: 'INDEX' has not been declared
+#    struct c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt*, INDEX, INDEX, dsmat_d_elt*, INDEX, INDEX);
+#                                                                                           ^~~~~
+# eigen_dsmat.h:73:61: error: 'INDEX' has not been declared
+#    struct c_dsmat_d* c_eigen_dsmat_d_transpose(dsmat_d_elt*, INDEX, INDEX);
+#                                                              ^~~~~
+# eigen_dsmat.h:73:68: error: 'INDEX' has not been declared
+#    struct c_dsmat_d* c_eigen_dsmat_d_transpose(dsmat_d_elt*, INDEX, INDEX);
+#                                                                     ^~~~~
+# eigen_dsmat.h:74:48: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_rows(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                 ^~~~~
+# eigen_dsmat.h:74:55: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_rows(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                        ^~~~~
+# eigen_dsmat.h:74:62: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_rows(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                               ^~~~~
+# eigen_dsmat.h:74:69: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_rows(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                      ^~~~~
+# eigen_dsmat.h:75:48: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_cols(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                 ^~~~~
+# eigen_dsmat.h:75:55: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_cols(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                        ^~~~~
+# eigen_dsmat.h:75:62: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_cols(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                               ^~~~~
+# eigen_dsmat.h:75:69: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_d_swap_cols(dsmat_d_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                      ^~~~~
+# eigen_dsmat.h:82:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols);
+#                                          ^~~~~
+# eigen_dsmat.h:82:53: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols);
+#                                                      ^~~~~
+# eigen_dsmat.h:82:63: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols);
+#                                                                ^
+# eigen_dsmat.h:84:43: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n);
+#                                            ^~~~~
+# eigen_dsmat.h:84:52: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n);
+#                                                     ^~~~~
+# eigen_dsmat.h:84:59: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n);
+#                                                            ^
+# eigen_dsmat.h:85:42: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n);
+#                                           ^~~~~
+# eigen_dsmat.h:85:51: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n);
+#                                                    ^~~~~
+# eigen_dsmat.h:85:58: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n);
+#                                                           ^
+# eigen_dsmat.h:86:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_c* c_eigen_dsmat_c_eye(INDEX m);
+#                                          ^~~~~
+# eigen_dsmat.h:87:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_c_rows(struct c_dsmat_c *m);
+#    ^~~~~
+# eigen_dsmat.h:88:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_c_cols(struct c_dsmat_c *m);
+#    ^~~~~
+# eigen_dsmat.h:89:58: error: 'INDEX' has not been declared
+#    c_dsmat_c_elt c_eigen_dsmat_c_get(struct c_dsmat_c *m, INDEX i, INDEX j);
+#                                                           ^~~~~
+# eigen_dsmat.h:89:67: error: 'INDEX' has not been declared
+#    c_dsmat_c_elt c_eigen_dsmat_c_get(struct c_dsmat_c *m, INDEX i, INDEX j);
+#                                                                    ^~~~~
+# eigen_dsmat.h:90:49: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_set(struct c_dsmat_c *m, INDEX i, INDEX j, c_dsmat_c_elt x);
+#                                                  ^~~~~
+# eigen_dsmat.h:90:58: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_set(struct c_dsmat_c *m, INDEX i, INDEX j, c_dsmat_c_elt x);
+#                                                           ^~~~~
+# eigen_dsmat.h:94:57: error: 'INDEX' has not been declared
+#    struct c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt*, INDEX, INDEX, c_dsmat_c_elt*, INDEX, INDEX);
+#                                                          ^~~~~
+# eigen_dsmat.h:94:64: error: 'INDEX' has not been declared
+#    struct c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt*, INDEX, INDEX, c_dsmat_c_elt*, INDEX, INDEX);
+#                                                                 ^~~~~
+# eigen_dsmat.h:94:87: error: 'INDEX' has not been declared
+#    struct c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt*, INDEX, INDEX, c_dsmat_c_elt*, INDEX, INDEX);
+#                                                                                        ^~~~~
+# eigen_dsmat.h:94:94: error: 'INDEX' has not been declared
+#    struct c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt*, INDEX, INDEX, c_dsmat_c_elt*, INDEX, INDEX);
+#                                                                                               ^~~~~
+# eigen_dsmat.h:95:63: error: 'INDEX' has not been declared
+#    struct c_dsmat_c* c_eigen_dsmat_c_transpose(c_dsmat_c_elt*, INDEX, INDEX);
+#                                                                ^~~~~
+# eigen_dsmat.h:95:70: error: 'INDEX' has not been declared
+#    struct c_dsmat_c* c_eigen_dsmat_c_transpose(c_dsmat_c_elt*, INDEX, INDEX);
+#                                                                       ^~~~~
+# eigen_dsmat.h:96:50: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                   ^~~~~
+# eigen_dsmat.h:96:57: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                          ^~~~~
+# eigen_dsmat.h:96:64: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                 ^~~~~
+# eigen_dsmat.h:96:71: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                        ^~~~~
+# eigen_dsmat.h:97:50: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                   ^~~~~
+# eigen_dsmat.h:97:57: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                          ^~~~~
+# eigen_dsmat.h:97:64: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                 ^~~~~
+# eigen_dsmat.h:97:71: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                        ^~~~~
+# eigen_dsmat.h:104:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols);
+#                                          ^~~~~
+# eigen_dsmat.h:104:53: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols);
+#                                                      ^~~~~
+# eigen_dsmat.h:104:63: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols);
+#                                                                ^
+# eigen_dsmat.h:106:43: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n);
+#                                            ^~~~~
+# eigen_dsmat.h:106:52: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n);
+#                                                     ^~~~~
+# eigen_dsmat.h:106:59: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n);
+#                                                            ^
+# eigen_dsmat.h:107:42: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n);
+#                                           ^~~~~
+# eigen_dsmat.h:107:51: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n);
+#                                                    ^~~~~
+# eigen_dsmat.h:107:58: error: expression list treated as compound expression in initializer [-fpermissive]
+#    struct c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n);
+#                                                           ^
+# eigen_dsmat.h:108:41: error: 'INDEX' was not declared in this scope
+#    struct c_dsmat_z* c_eigen_dsmat_z_eye(INDEX m);
+#                                          ^~~~~
+# eigen_dsmat.h:109:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_z_rows(struct c_dsmat_z *m);
+#    ^~~~~
+# eigen_dsmat.h:110:3: error: 'INDEX' does not name a type
+#    INDEX c_eigen_dsmat_z_cols(struct c_dsmat_z *m);
+#    ^~~~~
+# eigen_dsmat.h:111:58: error: 'INDEX' has not been declared
+#    c_dsmat_z_elt c_eigen_dsmat_z_get(struct c_dsmat_z *m, INDEX i, INDEX j);
+#                                                           ^~~~~
+# eigen_dsmat.h:111:67: error: 'INDEX' has not been declared
+#    c_dsmat_z_elt c_eigen_dsmat_z_get(struct c_dsmat_z *m, INDEX i, INDEX j);
+#                                                                    ^~~~~
+# eigen_dsmat.h:112:49: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_set(struct c_dsmat_z *m, INDEX i, INDEX j, c_dsmat_z_elt x);
+#                                                  ^~~~~
+# eigen_dsmat.h:112:58: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_set(struct c_dsmat_z *m, INDEX i, INDEX j, c_dsmat_z_elt x);
+#                                                           ^~~~~
+# eigen_dsmat.h:116:57: error: 'INDEX' has not been declared
+#    struct c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt*, INDEX, INDEX, c_dsmat_z_elt*, INDEX, INDEX);
+#                                                          ^~~~~
+# eigen_dsmat.h:116:64: error: 'INDEX' has not been declared
+#    struct c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt*, INDEX, INDEX, c_dsmat_z_elt*, INDEX, INDEX);
+#                                                                 ^~~~~
+# eigen_dsmat.h:116:87: error: 'INDEX' has not been declared
+#    struct c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt*, INDEX, INDEX, c_dsmat_z_elt*, INDEX, INDEX);
+#                                                                                        ^~~~~
+# eigen_dsmat.h:116:94: error: 'INDEX' has not been declared
+#    struct c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt*, INDEX, INDEX, c_dsmat_z_elt*, INDEX, INDEX);
+#                                                                                               ^~~~~
+# eigen_dsmat.h:117:63: error: 'INDEX' has not been declared
+#    struct c_dsmat_z* c_eigen_dsmat_z_transpose(c_dsmat_z_elt*, INDEX, INDEX);
+#                                                                ^~~~~
+# eigen_dsmat.h:117:70: error: 'INDEX' has not been declared
+#    struct c_dsmat_z* c_eigen_dsmat_z_transpose(c_dsmat_z_elt*, INDEX, INDEX);
+#                                                                       ^~~~~
+# eigen_dsmat.h:118:50: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                   ^~~~~
+# eigen_dsmat.h:118:57: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                          ^~~~~
+# eigen_dsmat.h:118:64: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                 ^~~~~
+# eigen_dsmat.h:118:71: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                        ^~~~~
+# eigen_dsmat.h:119:50: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                   ^~~~~
+# eigen_dsmat.h:119:57: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                          ^~~~~
+# eigen_dsmat.h:119:64: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                 ^~~~~
+# eigen_dsmat.h:119:71: error: 'INDEX' has not been declared
+#    void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt*, INDEX, INDEX, INDEX, INDEX);
+#                                                                        ^~~~~
+# In file included from eigen_dsmat.cpp:13:0:
+# eigen_dsmat_s.cpp:23:32: error: redefinition of 'c_dsmat_s* c_eigen_dsmat_s_new'
+#  c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:36:21: note: 'c_dsmat_s* c_eigen_dsmat_s_new' previously defined here
+#    struct c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:13:0:
+# eigen_dsmat_s.cpp:23:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# eigen_dsmat_s.cpp:23:44: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_new(INDEX rows, INDEX cols)
+#                                             ^~~~~
+# eigen_dsmat_s.cpp:33:34: error: redefinition of 'c_dsmat_s* c_eigen_dsmat_s_zeros'
+#  c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:38:21: note: 'c_dsmat_s* c_eigen_dsmat_s_zeros' previously defined here
+#    struct c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:13:0:
+# eigen_dsmat_s.cpp:33:34: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# eigen_dsmat_s.cpp:33:43: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_zeros(INDEX m, INDEX n)
+#                                            ^~~~~
+# eigen_dsmat_s.cpp:40:33: error: redefinition of 'c_dsmat_s* c_eigen_dsmat_s_ones'
+#  c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:39:21: note: 'c_dsmat_s* c_eigen_dsmat_s_ones' previously defined here
+#    struct c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:13:0:
+# eigen_dsmat_s.cpp:40:33: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# eigen_dsmat_s.cpp:40:42: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_ones(INDEX m, INDEX n)
+#                                           ^~~~~
+# eigen_dsmat_s.cpp:46:32: error: redefinition of 'c_dsmat_s* c_eigen_dsmat_s_eye'
+#  c_dsmat_s* c_eigen_dsmat_s_eye(INDEX m)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:40:21: note: 'c_dsmat_s* c_eigen_dsmat_s_eye' previously defined here
+#    struct c_dsmat_s* c_eigen_dsmat_s_eye(INDEX m);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:13:0:
+# eigen_dsmat_s.cpp:46:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_s* c_eigen_dsmat_s_eye(INDEX m)
+#                                 ^~~~~
+# eigen_dsmat_s.cpp:53:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_s_rows(c_dsmat_s *m)
+#  ^~~~~
+# eigen_dsmat_s.cpp:58:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_s_cols(c_dsmat_s *m)
+#  ^~~~~
+# eigen_dsmat_s.cpp:63:47: error: 'INDEX' has not been declared
+#  dsmat_s_elt c_eigen_dsmat_s_get(c_dsmat_s *m, INDEX i, INDEX j)
+#                                                ^~~~~
+# eigen_dsmat_s.cpp:63:56: error: 'INDEX' has not been declared
+#  dsmat_s_elt c_eigen_dsmat_s_get(c_dsmat_s *m, INDEX i, INDEX j)
+#                                                         ^~~~~
+# eigen_dsmat_s.cpp:68:40: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_set(c_dsmat_s *m, INDEX i, INDEX j, dsmat_s_elt x)
+#                                         ^~~~~
+# eigen_dsmat_s.cpp:68:49: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_set(c_dsmat_s *m, INDEX i, INDEX j, dsmat_s_elt x)
+#                                                  ^~~~~
+# eigen_dsmat_s.cpp:79:58: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_of_bigarray(dsmat_s_elt* ptr, INDEX m, INDEX n)
+#                                                           ^~~~~
+# eigen_dsmat_s.cpp:79:67: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_of_bigarray(dsmat_s_elt* ptr, INDEX m, INDEX n)
+#                                                                    ^~~~~
+# eigen_dsmat_s.cpp:86:65: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_of_bigarray2(c_dsmat_s* x, dsmat_s_elt* y, INDEX m, INDEX n)
+#                                                                  ^~~~~
+# eigen_dsmat_s.cpp:86:74: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_of_bigarray2(c_dsmat_s* x, dsmat_s_elt* y, INDEX m, INDEX n)
+#                                                                           ^~~~~
+# eigen_dsmat_s.cpp:99:52: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt* x_ptr, INDEX xm, INDEX xn, dsmat_s_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                     ^~~~~
+# eigen_dsmat_s.cpp:99:62: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt* x_ptr, INDEX xm, INDEX xn, dsmat_s_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                               ^~~~~
+# eigen_dsmat_s.cpp:99:92: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt* x_ptr, INDEX xm, INDEX xn, dsmat_s_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                             ^~~~~
+# eigen_dsmat_s.cpp:99:102: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_dot(dsmat_s_elt* x_ptr, INDEX xm, INDEX xn, dsmat_s_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                                       ^~~~~
+# eigen_dsmat_s.cpp:106:58: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_transpose(dsmat_s_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                           ^~~~~
+# eigen_dsmat_s.cpp:106:68: error: 'INDEX' has not been declared
+#  c_dsmat_s* c_eigen_dsmat_s_transpose(dsmat_s_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                                     ^~~~~
+# eigen_dsmat_s.cpp:112:50: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_rows(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                   ^~~~~
+# eigen_dsmat_s.cpp:112:59: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_rows(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                            ^~~~~
+# eigen_dsmat_s.cpp:112:68: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_rows(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                     ^~~~~
+# eigen_dsmat_s.cpp:112:77: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_rows(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                              ^~~~~
+# eigen_dsmat_s.cpp:118:50: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_cols(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                   ^~~~~
+# eigen_dsmat_s.cpp:118:59: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_cols(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                            ^~~~~
+# eigen_dsmat_s.cpp:118:68: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_cols(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                     ^~~~~
+# eigen_dsmat_s.cpp:118:77: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_s_swap_cols(dsmat_s_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                              ^~~~~
+# In file included from eigen_dsmat.cpp:14:0:
+# eigen_dsmat_d.cpp:23:32: error: redefinition of 'c_dsmat_d* c_eigen_dsmat_d_new'
+#  c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:60:21: note: 'c_dsmat_d* c_eigen_dsmat_d_new' previously defined here
+#    struct c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:14:0:
+# eigen_dsmat_d.cpp:23:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# eigen_dsmat_d.cpp:23:44: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_new(INDEX rows, INDEX cols)
+#                                             ^~~~~
+# eigen_dsmat_d.cpp:33:34: error: redefinition of 'c_dsmat_d* c_eigen_dsmat_d_zeros'
+#  c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:62:21: note: 'c_dsmat_d* c_eigen_dsmat_d_zeros' previously defined here
+#    struct c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:14:0:
+# eigen_dsmat_d.cpp:33:34: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# eigen_dsmat_d.cpp:33:43: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_zeros(INDEX m, INDEX n)
+#                                            ^~~~~
+# eigen_dsmat_d.cpp:40:33: error: redefinition of 'c_dsmat_d* c_eigen_dsmat_d_ones'
+#  c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:63:21: note: 'c_dsmat_d* c_eigen_dsmat_d_ones' previously defined here
+#    struct c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:14:0:
+# eigen_dsmat_d.cpp:40:33: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# eigen_dsmat_d.cpp:40:42: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_ones(INDEX m, INDEX n)
+#                                           ^~~~~
+# eigen_dsmat_d.cpp:46:32: error: redefinition of 'c_dsmat_d* c_eigen_dsmat_d_eye'
+#  c_dsmat_d* c_eigen_dsmat_d_eye(INDEX m)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:64:21: note: 'c_dsmat_d* c_eigen_dsmat_d_eye' previously defined here
+#    struct c_dsmat_d* c_eigen_dsmat_d_eye(INDEX m);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:14:0:
+# eigen_dsmat_d.cpp:46:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_d* c_eigen_dsmat_d_eye(INDEX m)
+#                                 ^~~~~
+# eigen_dsmat_d.cpp:53:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_d_rows(c_dsmat_d *m)
+#  ^~~~~
+# eigen_dsmat_d.cpp:58:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_d_cols(c_dsmat_d *m)
+#  ^~~~~
+# eigen_dsmat_d.cpp:63:47: error: 'INDEX' has not been declared
+#  dsmat_d_elt c_eigen_dsmat_d_get(c_dsmat_d *m, INDEX i, INDEX j)
+#                                                ^~~~~
+# eigen_dsmat_d.cpp:63:56: error: 'INDEX' has not been declared
+#  dsmat_d_elt c_eigen_dsmat_d_get(c_dsmat_d *m, INDEX i, INDEX j)
+#                                                         ^~~~~
+# eigen_dsmat_d.cpp:68:40: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_set(c_dsmat_d *m, INDEX i, INDEX j, dsmat_d_elt x)
+#                                         ^~~~~
+# eigen_dsmat_d.cpp:68:49: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_set(c_dsmat_d *m, INDEX i, INDEX j, dsmat_d_elt x)
+#                                                  ^~~~~
+# eigen_dsmat_d.cpp:85:52: error: 'INDEX' has not been declared
+#  c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt* x_ptr, INDEX xm, INDEX xn, dsmat_d_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                     ^~~~~
+# eigen_dsmat_d.cpp:85:62: error: 'INDEX' has not been declared
+#  c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt* x_ptr, INDEX xm, INDEX xn, dsmat_d_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                               ^~~~~
+# eigen_dsmat_d.cpp:85:92: error: 'INDEX' has not been declared
+#  c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt* x_ptr, INDEX xm, INDEX xn, dsmat_d_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                             ^~~~~
+# eigen_dsmat_d.cpp:85:102: error: 'INDEX' has not been declared
+#  c_dsmat_d* c_eigen_dsmat_d_dot(dsmat_d_elt* x_ptr, INDEX xm, INDEX xn, dsmat_d_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                                       ^~~~~
+# eigen_dsmat_d.cpp:92:58: error: 'INDEX' has not been declared
+#  c_dsmat_d* c_eigen_dsmat_d_transpose(dsmat_d_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                           ^~~~~
+# eigen_dsmat_d.cpp:92:68: error: 'INDEX' has not been declared
+#  c_dsmat_d* c_eigen_dsmat_d_transpose(dsmat_d_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                                     ^~~~~
+# eigen_dsmat_d.cpp:98:50: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_rows(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                   ^~~~~
+# eigen_dsmat_d.cpp:98:59: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_rows(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                            ^~~~~
+# eigen_dsmat_d.cpp:98:68: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_rows(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                     ^~~~~
+# eigen_dsmat_d.cpp:98:77: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_rows(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                              ^~~~~
+# eigen_dsmat_d.cpp:104:50: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_cols(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                   ^~~~~
+# eigen_dsmat_d.cpp:104:59: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_cols(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                            ^~~~~
+# eigen_dsmat_d.cpp:104:68: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_cols(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                     ^~~~~
+# eigen_dsmat_d.cpp:104:77: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_d_swap_cols(dsmat_d_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                              ^~~~~
+# In file included from eigen_dsmat.cpp:15:0:
+# eigen_dsmat_c.cpp:42:32: error: redefinition of 'c_dsmat_c* c_eigen_dsmat_c_new'
+#  c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:82:21: note: 'c_dsmat_c* c_eigen_dsmat_c_new' previously defined here
+#    struct c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:15:0:
+# eigen_dsmat_c.cpp:42:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# eigen_dsmat_c.cpp:42:44: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_new(INDEX rows, INDEX cols)
+#                                             ^~~~~
+# eigen_dsmat_c.cpp:52:34: error: redefinition of 'c_dsmat_c* c_eigen_dsmat_c_zeros'
+#  c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:84:21: note: 'c_dsmat_c* c_eigen_dsmat_c_zeros' previously defined here
+#    struct c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:15:0:
+# eigen_dsmat_c.cpp:52:34: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# eigen_dsmat_c.cpp:52:43: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_zeros(INDEX m, INDEX n)
+#                                            ^~~~~
+# eigen_dsmat_c.cpp:59:33: error: redefinition of 'c_dsmat_c* c_eigen_dsmat_c_ones'
+#  c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:85:21: note: 'c_dsmat_c* c_eigen_dsmat_c_ones' previously defined here
+#    struct c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:15:0:
+# eigen_dsmat_c.cpp:59:33: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# eigen_dsmat_c.cpp:59:42: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_ones(INDEX m, INDEX n)
+#                                           ^~~~~
+# eigen_dsmat_c.cpp:65:32: error: redefinition of 'c_dsmat_c* c_eigen_dsmat_c_eye'
+#  c_dsmat_c* c_eigen_dsmat_c_eye(INDEX m)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:86:21: note: 'c_dsmat_c* c_eigen_dsmat_c_eye' previously defined here
+#    struct c_dsmat_c* c_eigen_dsmat_c_eye(INDEX m);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:15:0:
+# eigen_dsmat_c.cpp:65:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_c* c_eigen_dsmat_c_eye(INDEX m)
+#                                 ^~~~~
+# eigen_dsmat_c.cpp:72:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_c_rows(c_dsmat_c *m)
+#  ^~~~~
+# eigen_dsmat_c.cpp:77:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_c_cols(c_dsmat_c *m)
+#  ^~~~~
+# eigen_dsmat_c.cpp:82:49: error: 'INDEX' has not been declared
+#  c_dsmat_c_elt c_eigen_dsmat_c_get(c_dsmat_c *m, INDEX i, INDEX j)
+#                                                  ^~~~~
+# eigen_dsmat_c.cpp:82:58: error: 'INDEX' has not been declared
+#  c_dsmat_c_elt c_eigen_dsmat_c_get(c_dsmat_c *m, INDEX i, INDEX j)
+#                                                           ^~~~~
+# eigen_dsmat_c.cpp:88:40: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_set(c_dsmat_c *m, INDEX i, INDEX j, c_dsmat_c_elt x)
+#                                         ^~~~~
+# eigen_dsmat_c.cpp:88:49: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_set(c_dsmat_c *m, INDEX i, INDEX j, c_dsmat_c_elt x)
+#                                                  ^~~~~
+# eigen_dsmat_c.cpp:105:54: error: 'INDEX' has not been declared
+#  c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_c_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                       ^~~~~
+# eigen_dsmat_c.cpp:105:64: error: 'INDEX' has not been declared
+#  c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_c_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                 ^~~~~
+# eigen_dsmat_c.cpp:105:96: error: 'INDEX' has not been declared
+#  c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_c_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                                 ^~~~~
+# eigen_dsmat_c.cpp:105:106: error: 'INDEX' has not been declared
+#  c_dsmat_c* c_eigen_dsmat_c_dot(c_dsmat_c_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_c_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                                           ^~~~~
+# eigen_dsmat_c.cpp:112:60: error: 'INDEX' has not been declared
+#  c_dsmat_c* c_eigen_dsmat_c_transpose(c_dsmat_c_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                             ^~~~~
+# eigen_dsmat_c.cpp:112:70: error: 'INDEX' has not been declared
+#  c_dsmat_c* c_eigen_dsmat_c_transpose(c_dsmat_c_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                                       ^~~~~
+# eigen_dsmat_c.cpp:118:52: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                     ^~~~~
+# eigen_dsmat_c.cpp:118:61: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                              ^~~~~
+# eigen_dsmat_c.cpp:118:70: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                       ^~~~~
+# eigen_dsmat_c.cpp:118:79: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_rows(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                                ^~~~~
+# eigen_dsmat_c.cpp:124:52: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                     ^~~~~
+# eigen_dsmat_c.cpp:124:61: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                              ^~~~~
+# eigen_dsmat_c.cpp:124:70: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                       ^~~~~
+# eigen_dsmat_c.cpp:124:79: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_c_swap_cols(c_dsmat_c_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                                ^~~~~
+# In file included from eigen_dsmat.cpp:16:0:
+# eigen_dsmat_z.cpp:42:32: error: redefinition of 'c_dsmat_z* c_eigen_dsmat_z_new'
+#  c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:104:21: note: 'c_dsmat_z* c_eigen_dsmat_z_new' previously defined here
+#    struct c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:16:0:
+# eigen_dsmat_z.cpp:42:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols)
+#                                 ^~~~~
+# eigen_dsmat_z.cpp:42:44: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_new(INDEX rows, INDEX cols)
+#                                             ^~~~~
+# eigen_dsmat_z.cpp:52:34: error: redefinition of 'c_dsmat_z* c_eigen_dsmat_z_zeros'
+#  c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:106:21: note: 'c_dsmat_z* c_eigen_dsmat_z_zeros' previously defined here
+#    struct c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:16:0:
+# eigen_dsmat_z.cpp:52:34: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n)
+#                                   ^~~~~
+# eigen_dsmat_z.cpp:52:43: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_zeros(INDEX m, INDEX n)
+#                                            ^~~~~
+# eigen_dsmat_z.cpp:59:33: error: redefinition of 'c_dsmat_z* c_eigen_dsmat_z_ones'
+#  c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:107:21: note: 'c_dsmat_z* c_eigen_dsmat_z_ones' previously defined here
+#    struct c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n);
+#                      ^~~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:16:0:
+# eigen_dsmat_z.cpp:59:33: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n)
+#                                  ^~~~~
+# eigen_dsmat_z.cpp:59:42: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_ones(INDEX m, INDEX n)
+#                                           ^~~~~
+# eigen_dsmat_z.cpp:65:32: error: redefinition of 'c_dsmat_z* c_eigen_dsmat_z_eye'
+#  c_dsmat_z* c_eigen_dsmat_z_eye(INDEX m)
+#                                 ^~~~~
+# In file included from eigen_dsmat.cpp:9:0:
+# eigen_dsmat.h:108:21: note: 'c_dsmat_z* c_eigen_dsmat_z_eye' previously defined here
+#    struct c_dsmat_z* c_eigen_dsmat_z_eye(INDEX m);
+#                      ^~~~~~~~~~~~~~~~~~~
+# In file included from eigen_dsmat.cpp:16:0:
+# eigen_dsmat_z.cpp:65:32: error: 'INDEX' was not declared in this scope
+#  c_dsmat_z* c_eigen_dsmat_z_eye(INDEX m)
+#                                 ^~~~~
+# eigen_dsmat_z.cpp:72:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_z_rows(c_dsmat_z *m)
+#  ^~~~~
+# eigen_dsmat_z.cpp:77:1: error: 'INDEX' does not name a type
+#  INDEX c_eigen_dsmat_z_cols(c_dsmat_z *m)
+#  ^~~~~
+# eigen_dsmat_z.cpp:82:49: error: 'INDEX' has not been declared
+#  c_dsmat_z_elt c_eigen_dsmat_z_get(c_dsmat_z *m, INDEX i, INDEX j)
+#                                                  ^~~~~
+# eigen_dsmat_z.cpp:82:58: error: 'INDEX' has not been declared
+#  c_dsmat_z_elt c_eigen_dsmat_z_get(c_dsmat_z *m, INDEX i, INDEX j)
+#                                                           ^~~~~
+# eigen_dsmat_z.cpp:88:40: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_set(c_dsmat_z *m, INDEX i, INDEX j, c_dsmat_z_elt x)
+#                                         ^~~~~
+# eigen_dsmat_z.cpp:88:49: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_set(c_dsmat_z *m, INDEX i, INDEX j, c_dsmat_z_elt x)
+#                                                  ^~~~~
+# eigen_dsmat_z.cpp:105:54: error: 'INDEX' has not been declared
+#  c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_z_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                       ^~~~~
+# eigen_dsmat_z.cpp:105:64: error: 'INDEX' has not been declared
+#  c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_z_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                 ^~~~~
+# eigen_dsmat_z.cpp:105:96: error: 'INDEX' has not been declared
+#  c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_z_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                                 ^~~~~
+# eigen_dsmat_z.cpp:105:106: error: 'INDEX' has not been declared
+#  c_dsmat_z* c_eigen_dsmat_z_dot(c_dsmat_z_elt* x_ptr, INDEX xm, INDEX xn, c_dsmat_z_elt* y_ptr, INDEX ym, INDEX yn)
+#                                                                                                           ^~~~~
+# eigen_dsmat_z.cpp:112:60: error: 'INDEX' has not been declared
+#  c_dsmat_z* c_eigen_dsmat_z_transpose(c_dsmat_z_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                             ^~~~~
+# eigen_dsmat_z.cpp:112:70: error: 'INDEX' has not been declared
+#  c_dsmat_z* c_eigen_dsmat_z_transpose(c_dsmat_z_elt* x_ptr, INDEX xm, INDEX xn)
+#                                                                       ^~~~~
+# eigen_dsmat_z.cpp:118:52: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                     ^~~~~
+# eigen_dsmat_z.cpp:118:61: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                              ^~~~~
+# eigen_dsmat_z.cpp:118:70: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                       ^~~~~
+# eigen_dsmat_z.cpp:118:79: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_rows(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                                ^~~~~
+# eigen_dsmat_z.cpp:124:52: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                     ^~~~~
+# eigen_dsmat_z.cpp:124:61: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                              ^~~~~
+# eigen_dsmat_z.cpp:124:70: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                       ^~~~~
+# eigen_dsmat_z.cpp:124:79: error: 'INDEX' has not been declared
+#  void c_eigen_dsmat_z_swap_cols(c_dsmat_z_elt* ptr, INDEX m, INDEX n, INDEX i, INDEX j)
+#                                                                                ^~~~~
+# cc1plus: warning: unrecognized command line option '-Wno-c++11-long-long'
+# cc1plus: warning: unrecognized command line option '-Wno-extern-c-compat'
+# make: *** [Makefile:6: all] Error 1
+# cp: can't stat 'libeigen.a': No such file or directory
+# rm -rf _build *.byte *.a *.o *.so *.cmo *.cmi
+# /home/opam/.opam/4.06/.opam-switch/build/eigen.0.0.3
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.06/lib/ctypes -package ctypes.stubs -package ctypes -c lib/eigen_utils_stubs.c
+# mv eigen_utils_stubs.o lib/eigen_utils_stubs.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.06/lib/ctypes -package ctypes.stubs -package ctypes -c lib/ffi_eigen_generated_stub.c
+# mv ffi_eigen_generated_stub.o lib/ffi_eigen_generated_stub.o
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlmklib -o lib/eigen_stubs -L/home/opam/.opam/4.06/lib -leigen -lstdc++ lib/eigen_utils_stubs.o lib/ffi_eigen_generated_stub.o
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlmklib -o lib/eigen_stubs -L/home/opam/.opam/4.06/lib -leigen -lstdc++ lib/eigen_utils_stubs.o lib/ffi_eigen_generated_stub.o
+# /usr/lib/gcc/x86_64-alpine-linux-musl/6.4.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -leigen
+# collect2: error: ld returned 1 exit status
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/libeigen_stubs.a lib/dlleigen_stubs.so lib/eigen.cma lib/eigen.cmxa lib/eigen.a lib/eigen.cmxs -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build eigen 0.0.3
++- 
++- The following changes have been performed
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install ctypes          0.14.0
+| - install integers        0.2.2
+| - install oasis           0.4.11
+| - install ocamlbuild      0.12.0
+| - install ocamlify        0.0.1
+| - install ocamlmod        0.0.9
+| - install result          1.3
+| - install topkg           0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725235833.export"
+31 1532563111 1532563171

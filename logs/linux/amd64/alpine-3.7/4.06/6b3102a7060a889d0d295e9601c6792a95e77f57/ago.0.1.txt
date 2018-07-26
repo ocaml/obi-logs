@@ -1,0 +1,52 @@
+$ opam depext -iy -j 2 ago.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by ago]
+  - install ago        0.1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ago.0.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of ago failed at "/usr/bin/make".
+
+#=== ERROR while compiling ago.0.1 ============================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ago.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ago-13-e80101.env
+# output-file          ~/.opam/log/ago-13-e80101.out
+### output ###
+# ocamlbuild -libs unix ago.native
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules ago.ml > ago.ml.depends
+# /home/opam/.opam/4.06/bin/ocamllex.opt -q agolex.mll
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules agolex.ml > agolex.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o agolex.cmo agolex.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o ago.cmo ago.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -c -o agolex.cmx agolex.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt -c -o ago.cmx ago.ml
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa agolex.cmx ago.cmx -o ago.native
+# pod2man -s 1 -r "Alpha" -c "opam.ocaml.org" ago.pod > ago.1
+# /bin/sh: pod2man: not found
+# make: *** [Makefile:34: ago.1] Error 127
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ago 0.1
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180725234734.export"
+31 1532562452 1532562464
