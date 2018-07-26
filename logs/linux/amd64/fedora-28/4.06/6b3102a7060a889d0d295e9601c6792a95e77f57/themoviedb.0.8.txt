@@ -1,0 +1,481 @@
+$ opam depext -iy -j 2 themoviedb.0.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gdbm-devel
+gmp
+gmp-devel
+m4
+openssl-devel
+pcre-devel
+perl-Pod-Html
+pkgconfig
+which
+zlib-devel
+package gdbm-devel is not installed
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Thu Apr 26 13:03:41 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Jul 25 20:11:59 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package openssl-devel is not installed
+package pcre-devel is not installed
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:11:22 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+package zlib-devel is not installed
+# The following new OS packages need to be installed: gdbm-devel gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y gdbm-devel gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+Last metadata expiration check: 4:18:44 ago on Wed Jul 25 20:11:35 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                  Arch        Version                Repository    Size
+================================================================================
+Installing:
+ gdbm-devel               x86_64      1:1.14.1-4.fc28        fedora        64 k
+ gmp-devel                x86_64      1:6.1.2-7.fc28         fedora       187 k
+ openssl-devel            x86_64      1:1.1.0h-3.fc28        fedora       1.9 M
+ pcre-devel               x86_64      8.42-2.fc28            updates      550 k
+ perl-Pod-Html            noarch      1.22.02-412.fc28       updates       85 k
+ zlib-devel               x86_64      1.2.11-8.fc28          updates       55 k
+Installing dependencies:
+ gmp-c++                  x86_64      1:6.1.2-7.fc28         fedora        31 k
+ keyutils-libs-devel      x86_64      1.5.10-6.fc28          fedora        47 k
+ krb5-devel               x86_64      1.16.1-13.fc28         updates      545 k
+ libcom_err-devel         x86_64      1.44.2-0.fc28          updates       37 k
+ libkadm5                 x86_64      1.16.1-13.fc28         updates      182 k
+ libselinux-devel         x86_64      2.8-1.fc28             updates      197 k
+ libsepol-devel           x86_64      2.8-1.fc28             updates       84 k
+ libverto-devel           x86_64      0.3.0-5.fc28           fedora        17 k
+ pcre-cpp                 x86_64      8.42-2.fc28            updates       46 k
+ pcre-utf16               x86_64      8.42-2.fc28            updates      193 k
+ pcre-utf32               x86_64      8.42-2.fc28            updates      184 k
+ pcre2-devel              x86_64      10.31-7.fc28           updates      589 k
+ pcre2-utf16              x86_64      10.31-7.fc28           updates      221 k
+ pcre2-utf32              x86_64      10.31-7.fc28           updates      213 k
+
+Transaction Summary
+================================================================================
+Install  20 Packages
+
+Total download size: 5.4 M
+Installed size: 11 M
+Downloading Packages:
+(1/20): gmp-c++-6.1.2-7.fc28.x86_64.rpm         590 kB/s |  31 kB     00:00    
+(2/20): gdbm-devel-1.14.1-4.fc28.x86_64.rpm     819 kB/s |  64 kB     00:00    
+(3/20): gmp-devel-6.1.2-7.fc28.x86_64.rpm       1.6 MB/s | 187 kB     00:00    
+(4/20): pcre-cpp-8.42-2.fc28.x86_64.rpm         832 kB/s |  46 kB     00:00    
+(5/20): pcre-devel-8.42-2.fc28.x86_64.rpm       4.4 MB/s | 550 kB     00:00    
+(6/20): pcre-utf16-8.42-2.fc28.x86_64.rpm       6.0 MB/s | 193 kB     00:00    
+(7/20): pcre-utf32-8.42-2.fc28.x86_64.rpm       9.6 MB/s | 184 kB     00:00    
+(8/20): perl-Pod-Html-1.22.02-412.fc28.noarch.r 6.3 MB/s |  85 kB     00:00    
+(9/20): zlib-devel-1.2.11-8.fc28.x86_64.rpm     4.4 MB/s |  55 kB     00:00    
+(10/20): libkadm5-1.16.1-13.fc28.x86_64.rpm      12 MB/s | 182 kB     00:00    
+(11/20): libcom_err-devel-1.44.2-0.fc28.x86_64. 4.5 MB/s |  37 kB     00:00    
+(12/20): krb5-devel-1.16.1-13.fc28.x86_64.rpm    13 MB/s | 545 kB     00:00    
+(13/20): libselinux-devel-2.8-1.fc28.x86_64.rpm  13 MB/s | 197 kB     00:00    
+(14/20): libsepol-devel-2.8-1.fc28.x86_64.rpm   5.8 MB/s |  84 kB     00:00    
+(15/20): libverto-devel-0.3.0-5.fc28.x86_64.rpm 1.2 MB/s |  17 kB     00:00    
+(16/20): keyutils-libs-devel-1.5.10-6.fc28.x86_ 1.5 MB/s |  47 kB     00:00    
+(17/20): pcre2-utf16-10.31-7.fc28.x86_64.rpm     13 MB/s | 221 kB     00:00    
+(18/20): pcre2-devel-10.31-7.fc28.x86_64.rpm     14 MB/s | 589 kB     00:00    
+(19/20): pcre2-utf32-10.31-7.fc28.x86_64.rpm     12 MB/s | 213 kB     00:00    
+(20/20): openssl-devel-1.1.0h-3.fc28.x86_64.rpm 4.1 MB/s | 1.9 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           3.4 MB/s | 5.4 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pcre2-utf32-10.31-7.fc28.x86_64                       1/20 
+  Installing       : pcre2-utf16-10.31-7.fc28.x86_64                       2/20 
+  Installing       : pcre2-devel-10.31-7.fc28.x86_64                       3/20 
+  Installing       : libverto-devel-0.3.0-5.fc28.x86_64                    4/20 
+  Installing       : keyutils-libs-devel-1.5.10-6.fc28.x86_64              5/20 
+  Installing       : libsepol-devel-2.8-1.fc28.x86_64                      6/20 
+  Installing       : libselinux-devel-2.8-1.fc28.x86_64                    7/20 
+  Installing       : libcom_err-devel-1.44.2-0.fc28.x86_64                 8/20 
+  Installing       : libkadm5-1.16.1-13.fc28.x86_64                        9/20 
+  Installing       : krb5-devel-1.16.1-13.fc28.x86_64                     10/20 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      11/20 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                        12/20 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                        13/20 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                          14/20 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                        15/20 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                        15/20 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                      16/20 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                      16/20 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                        17/20 
+  Installing       : openssl-devel-1:1.1.0h-3.fc28.x86_64                 18/20 
+  Installing       : perl-Pod-Html-1.22.02-412.fc28.noarch                19/20 
+  Installing       : gdbm-devel-1:1.14.1-4.fc28.x86_64                    20/20 
+  Running scriptlet: gdbm-devel-1:1.14.1-4.fc28.x86_64                    20/20 
+install-info: No such file or directory for /usr/share/info/gdbm.info.gz
+  Verifying        : gdbm-devel-1:1.14.1-4.fc28.x86_64                     1/20 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                       2/20 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                         3/20 
+  Verifying        : openssl-devel-1:1.1.0h-3.fc28.x86_64                  4/20 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                         5/20 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                           6/20 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                         7/20 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                         8/20 
+  Verifying        : perl-Pod-Html-1.22.02-412.fc28.noarch                 9/20 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                      10/20 
+  Verifying        : krb5-devel-1.16.1-13.fc28.x86_64                     11/20 
+  Verifying        : libkadm5-1.16.1-13.fc28.x86_64                       12/20 
+  Verifying        : libcom_err-devel-1.44.2-0.fc28.x86_64                13/20 
+  Verifying        : libselinux-devel-2.8-1.fc28.x86_64                   14/20 
+  Verifying        : libsepol-devel-2.8-1.fc28.x86_64                     15/20 
+  Verifying        : keyutils-libs-devel-1.5.10-6.fc28.x86_64             16/20 
+  Verifying        : libverto-devel-0.3.0-5.fc28.x86_64                   17/20 
+  Verifying        : pcre2-devel-10.31-7.fc28.x86_64                      18/20 
+  Verifying        : pcre2-utf16-10.31-7.fc28.x86_64                      19/20 
+  Verifying        : pcre2-utf32-10.31-7.fc28.x86_64                      20/20 
+
+Installed:
+  gdbm-devel.x86_64 1:1.14.1-4.fc28                                             
+  gmp-devel.x86_64 1:6.1.2-7.fc28                                               
+  openssl-devel.x86_64 1:1.1.0h-3.fc28                                          
+  pcre-devel.x86_64 8.42-2.fc28                                                 
+  perl-Pod-Html.noarch 1.22.02-412.fc28                                         
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+  gmp-c++.x86_64 1:6.1.2-7.fc28                                                 
+  keyutils-libs-devel.x86_64 1.5.10-6.fc28                                      
+  krb5-devel.x86_64 1.16.1-13.fc28                                              
+  libcom_err-devel.x86_64 1.44.2-0.fc28                                         
+  libkadm5.x86_64 1.16.1-13.fc28                                                
+  libselinux-devel.x86_64 2.8-1.fc28                                            
+  libsepol-devel.x86_64 2.8-1.fc28                                              
+  libverto-devel.x86_64 0.3.0-5.fc28                                            
+  pcre-cpp.x86_64 8.42-2.fc28                                                   
+  pcre-utf16.x86_64 8.42-2.fc28                                                 
+  pcre-utf32.x86_64 8.42-2.fc28                                                 
+  pcre2-devel.x86_64 10.31-7.fc28                                               
+  pcre2-utf16.x86_64 10.31-7.fc28                                               
+  pcre2-utf32.x86_64 10.31-7.fc28                                               
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gdbm-devel gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+gdbm-devel-1.14.1-4.fc28.x86_64
+gmp-devel-6.1.2-7.fc28.x86_64
+openssl-devel-1.1.0h-3.fc28.x86_64
+pcre-devel-8.42-2.fc28.x86_64
+perl-Pod-Html-1.22.02-412.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-dbm                1.0.0   [required by dbm]
+  - install conf-gmp                1       [required by conf-gmp-powm-sec, zarith]
+  - install re                      1.7.3   [required by tyxml]
+  - install base-bytes              base    [required by ocamlnet, ipaddr, tyxml]
+  - install conf-perl               1       [required by zarith]
+  - install conf-pkg-config         1.1     [required by conf-zlib]
+  - install num                     1.1     [required by deriving]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by sexplib]
+  - install easy-format             1.3.1   [required by yojson]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by lwt]
+  - install conf-which              1       [required by biniou, ssl]
+  - install ocamlbuild              0.12.0  [required by themoviedb]
+  - install dbm                     1.2     [required by ocsigenserver]
+  - install conf-gmp-powm-sec       1       [required by cryptokit]
+  - install cppo                    1.6.4   [required by lwt]
+  - install zarith                  1.7     [required by cryptokit]
+  - install conf-zlib               1       [required by cryptokit]
+  - install conf-openssl            1       [required by ssl]
+  - install conf-libpcre            1       [required by pcre]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by ppx_sexp_conv, pcre]
+  - install ocaml-migrate-parsetree 1.0.11  [required by lwt]
+  - install biniou                  1.2.0   [required by yojson]
+  - install uchar                   0.0.2   [required by tyxml]
+  - install topkg                   0.9.1   [required by react, uutf]
+  - install ocamlmod                0.0.9   [required by oasis]
+  - install ocamlify                0.0.1   [required by oasis]
+  - install camlp4                  4.06+1  [required by lwt, ocsigenserver]
+  - install cryptokit               1.13    [required by ocsigenserver]
+  - install ssl                     0.5.5   [required by ocsigenserver]
+  - install sexplib                 v0.11.0 [required by ipaddr]
+  - install stdio                   v0.11.0 [required by pcre]
+  - install ppx_tools_versioned     5.2     [required by lwt]
+  - install yojson                  1.4.1   [required by themoviedb]
+  - install uutf                    1.0.1   [required by tyxml]
+  - install react                   1.2.1   [required by ocsigenserver]
+  - install oasis                   0.4.11  [required by deriving-yojson]
+  - install ppxlib                  0.3.0   [required by ppx_sexp_conv]
+  - install configurator            v0.11.0 [required by pcre]
+  - install lwt                     3.3.0   [required by themoviedb]                For the PPX, please install package lwt_ppx
+                                                                                    For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                    For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install tyxml                   4.2.0   [required by ocsigenserver]             For tyxml's ppx, please install tyxml-ppx.
+                                                                                    Tyxml's camlp4-based libraries (tyxml.syntax and tyxml.parser) are now deprecated and will be removed in the next major version.
+  - install deriving                0.8.1   [required by deriving-yojson]
+  - install ppx_sexp_conv           v0.11.2 [required by ipaddr]
+  - install pcre                    7.3.4   [required by ocsigenserver]
+  - install lwt_ssl                 1.1.2   [required by ocsigenserver]
+  - install lwt_react               1.1.1   [required by ocsigenserver]
+  - install deriving-yojson         0.3.1   [required by themoviedb]
+  - install ipaddr                  2.8.0   [required by ocsigenserver]
+  - install ocamlnet                4.1.6   [required by ocsigenserver]
+  - install ocsigenserver           2.9     [required by themoviedb]
+  - install themoviedb              0.8
+===== 53 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[dbm.1.2] found in cache
+[deriving.0.8.1] found in cache
+[deriving-yojson.0.3.1] found in cache
+[easy-format.1.3.1] found in cache
+[ipaddr.2.8.0] found in cache
+[lwt.3.3.0] found in cache
+[lwt_react.1.1.1] found in cache
+[lwt_ssl.1.1.2] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ocamlnet.4.1.6] found in cache
+[ocsigenserver.2.9] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[themoviedb.0.8] found in cache
+[topkg.0.9.1] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-dbm.1.0.0
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed conf-openssl.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed dbm.1.2
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed camlp4.4.06+1
+-> installed lwt.3.3.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed ssl.0.5.5
+-> installed lwt_ssl.1.1.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed deriving.0.8.1
+-> installed pcre.7.3.4
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ipaddr.2.8.0
+-> installed topkg.0.9.1
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed tyxml.4.2.0
+-> installed yojson.1.4.1
+-> installed deriving-yojson.0.3.1
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed ocamlnet.4.1.6
+-> installed ocsigenserver.2.9
+[ERROR] The compilation of themoviedb failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --disable-utest --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling themoviedb.0.8 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/themoviedb.0.8
+# command              ~/.opam/4.06/bin/ocaml setup.ml -configure --disable-utest --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/themoviedb-9-c95c2f.env
+# output-file          ~/.opam/log/themoviedb-9-c95c2f.out
+### output ###
+# File "./setup.ml", line 234, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 234, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build themoviedb 0.8
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install camlp4                  4.06+1
+| - install conf-dbm                1.0.0
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-libpcre            1
+| - install conf-openssl            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install dbm                     1.2
+| - install deriving                0.8.1
+| - install deriving-yojson         0.3.1
+| - install easy-format             1.3.1
+| - install ipaddr                  2.8.0
+| - install lwt                     3.3.0
+| - install lwt_react               1.1.1
+| - install lwt_ssl                 1.1.2
+| - install num                     1.1
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install ocamlnet                4.1.6
+| - install ocsigenserver           2.9
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install react                   1.2.1
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install ssl                     0.5.5
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install tyxml                   4.2.0
+| - install uchar                   0.0.2
+| - install uutf                    1.0.1
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180726003026.export"
+31 1532565015 1532565325

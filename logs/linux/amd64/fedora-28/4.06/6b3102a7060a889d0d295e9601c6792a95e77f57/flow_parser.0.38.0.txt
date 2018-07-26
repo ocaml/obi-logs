@@ -1,0 +1,88 @@
+$ opam depext -iy -j 2 flow_parser.0.38.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Jul 25 20:11:59 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild  0.12.0 [required by flow_parser]
+  - install flow_parser 0.38.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[flow_parser.0.38.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of flow_parser failed at "/usr/bin/sh -c cd src/parser && make ocamlfind-install".
+
+#=== ERROR while compiling flow_parser.0.38.0 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/flow_parser.0.38.0
+# command              /usr/bin/sh -c cd src/parser && make ocamlfind-install
+# exit-code            2
+# env-file             ~/.opam/log/flow_parser-10-e80101.env
+# output-file          ~/.opam/log/flow_parser-10-e80101.out
+### output ###
+# ocamlbuild parser_flow.cma parser_flow.cmxa
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parser_flow.ml > parser_flow.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules declaration_parser.ml > declaration_parser.ml.depends
+# /home/opam/.opam/4.06/bin/ocamllex.opt -q lexer_flow.mll
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules lexer_flow.ml > lexer_flow.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules loc.mli > loc.mli.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parse_error.ml > parse_error.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o loc.cmi loc.mli
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules spider_monkey_ast.ml > spider_monkey_ast.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o parse_error.cmo parse_error.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o spider_monkey_ast.cmo spider_monkey_ast.ml
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parser_common.ml > parser_common.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+# + /home/opam/.opam/4.06/bin/ocamlc.opt -c -o lexer_flow.cmo lexer_flow.ml
+# File "lexer_flow.mll", line 332, characters 4-24:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# make: *** [Makefile:115: ocamlfind-install] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build flow_parser 0.38.0
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180726004801.export"
+31 1532566078 1532566090

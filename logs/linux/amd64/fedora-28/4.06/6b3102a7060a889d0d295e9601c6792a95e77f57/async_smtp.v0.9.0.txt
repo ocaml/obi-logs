@@ -1,0 +1,640 @@
+$ opam depext -iy -j 2 async_smtp.v0.9.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gcc-c++
+gmp
+gmp-devel
+m4
+openssl-devel
+perl-Pod-Html
+pkgconfig
+zlib-devel
+Name        : gcc-c++
+Version     : 8.1.1
+Release     : 5.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:11:21 2018
+Group       : Development/Languages
+Size        : 30589214
+License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+Signature   : RSA/SHA256, Mon Jul 16 13:05:44 2018, Key ID e08e7e629db62fb1
+Source RPM  : gcc-8.1.1-5.fc28.src.rpm
+Build Date  : Thu Jul 12 20:08:05 2018
+Build Host  : buildvm-31.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gcc.gnu.org
+Bug URL     : https://bugz.fedoraproject.org/gcc
+Summary     : C++ support for GCC
+Description :
+This package adds C++ support to the GNU Compiler Collection.
+It includes support for most of the current C++ specification,
+including templates and exception handling.
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Thu Apr 26 13:03:41 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Jul 25 20:11:59 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package openssl-devel is not installed
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+package zlib-devel is not installed
+# The following new OS packages need to be installed: gmp-devel openssl-devel perl-Pod-Html pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y gmp-devel openssl-devel perl-Pod-Html pkgconfig zlib-devel
+Last metadata expiration check: 4:56:34 ago on Wed Jul 25 20:11:35 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                  Arch        Version                Repository    Size
+================================================================================
+Installing:
+ gmp-devel                x86_64      1:6.1.2-7.fc28         fedora       187 k
+ openssl-devel            x86_64      1:1.1.0h-3.fc28        fedora       1.9 M
+ perl-Pod-Html            noarch      1.22.02-412.fc28       updates       85 k
+ zlib-devel               x86_64      1.2.11-8.fc28          updates       55 k
+Installing dependencies:
+ gmp-c++                  x86_64      1:6.1.2-7.fc28         fedora        31 k
+ keyutils-libs-devel      x86_64      1.5.10-6.fc28          fedora        47 k
+ krb5-devel               x86_64      1.16.1-13.fc28         updates      545 k
+ libcom_err-devel         x86_64      1.44.2-0.fc28          updates       37 k
+ libkadm5                 x86_64      1.16.1-13.fc28         updates      182 k
+ libselinux-devel         x86_64      2.8-1.fc28             updates      197 k
+ libsepol-devel           x86_64      2.8-1.fc28             updates       84 k
+ libverto-devel           x86_64      0.3.0-5.fc28           fedora        17 k
+ pcre2-devel              x86_64      10.31-7.fc28           updates      589 k
+ pcre2-utf16              x86_64      10.31-7.fc28           updates      221 k
+ pcre2-utf32              x86_64      10.31-7.fc28           updates      213 k
+
+Transaction Summary
+================================================================================
+Install  15 Packages
+
+Total download size: 4.4 M
+Installed size: 8.0 M
+Downloading Packages:
+(1/15): gmp-c++-6.1.2-7.fc28.x86_64.rpm         545 kB/s |  31 kB     00:00    
+(2/15): gmp-devel-6.1.2-7.fc28.x86_64.rpm       2.1 MB/s | 187 kB     00:00    
+(3/15): zlib-devel-1.2.11-8.fc28.x86_64.rpm     711 kB/s |  55 kB     00:00    
+(4/15): perl-Pod-Html-1.22.02-412.fc28.noarch.r 791 kB/s |  85 kB     00:00    
+(5/15): openssl-devel-1.1.0h-3.fc28.x86_64.rpm  9.4 MB/s | 1.9 MB     00:00    
+(6/15): libcom_err-devel-1.44.2-0.fc28.x86_64.r 645 kB/s |  37 kB     00:00    
+(7/15): libkadm5-1.16.1-13.fc28.x86_64.rpm      1.8 MB/s | 182 kB     00:00    
+(8/15): libsepol-devel-2.8-1.fc28.x86_64.rpm    1.6 MB/s |  84 kB     00:00    
+(9/15): keyutils-libs-devel-1.5.10-6.fc28.x86_6 2.1 MB/s |  47 kB     00:00    
+(10/15): libverto-devel-0.3.0-5.fc28.x86_64.rpm 1.4 MB/s |  17 kB     00:00    
+(11/15): krb5-devel-1.16.1-13.fc28.x86_64.rpm   2.7 MB/s | 545 kB     00:00    
+(12/15): libselinux-devel-2.8-1.fc28.x86_64.rpm 1.7 MB/s | 197 kB     00:00    
+(13/15): pcre2-utf16-10.31-7.fc28.x86_64.rpm    3.4 MB/s | 221 kB     00:00    
+(14/15): pcre2-utf32-10.31-7.fc28.x86_64.rpm    2.5 MB/s | 213 kB     00:00    
+(15/15): pcre2-devel-10.31-7.fc28.x86_64.rpm    3.9 MB/s | 589 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           2.4 MB/s | 4.4 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pcre2-utf32-10.31-7.fc28.x86_64                       1/15 
+  Installing       : pcre2-utf16-10.31-7.fc28.x86_64                       2/15 
+  Installing       : pcre2-devel-10.31-7.fc28.x86_64                       3/15 
+  Installing       : libverto-devel-0.3.0-5.fc28.x86_64                    4/15 
+  Installing       : keyutils-libs-devel-1.5.10-6.fc28.x86_64              5/15 
+  Installing       : libsepol-devel-2.8-1.fc28.x86_64                      6/15 
+  Installing       : libselinux-devel-2.8-1.fc28.x86_64                    7/15 
+  Installing       : libcom_err-devel-1.44.2-0.fc28.x86_64                 8/15 
+  Installing       : libkadm5-1.16.1-13.fc28.x86_64                        9/15 
+  Installing       : krb5-devel-1.16.1-13.fc28.x86_64                     10/15 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      11/15 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                        12/15 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                        12/15 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                      13/15 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                      13/15 
+  Installing       : openssl-devel-1:1.1.0h-3.fc28.x86_64                 14/15 
+  Installing       : perl-Pod-Html-1.22.02-412.fc28.noarch                15/15 
+  Running scriptlet: perl-Pod-Html-1.22.02-412.fc28.noarch                15/15 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                       1/15 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                         2/15 
+  Verifying        : openssl-devel-1:1.1.0h-3.fc28.x86_64                  3/15 
+  Verifying        : perl-Pod-Html-1.22.02-412.fc28.noarch                 4/15 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                       5/15 
+  Verifying        : krb5-devel-1.16.1-13.fc28.x86_64                      6/15 
+  Verifying        : libkadm5-1.16.1-13.fc28.x86_64                        7/15 
+  Verifying        : libcom_err-devel-1.44.2-0.fc28.x86_64                 8/15 
+  Verifying        : libselinux-devel-2.8-1.fc28.x86_64                    9/15 
+  Verifying        : libsepol-devel-2.8-1.fc28.x86_64                     10/15 
+  Verifying        : keyutils-libs-devel-1.5.10-6.fc28.x86_64             11/15 
+  Verifying        : libverto-devel-0.3.0-5.fc28.x86_64                   12/15 
+  Verifying        : pcre2-devel-10.31-7.fc28.x86_64                      13/15 
+  Verifying        : pcre2-utf16-10.31-7.fc28.x86_64                      14/15 
+  Verifying        : pcre2-utf32-10.31-7.fc28.x86_64                      15/15 
+
+Installed:
+  gmp-devel.x86_64 1:6.1.2-7.fc28                                               
+  openssl-devel.x86_64 1:1.1.0h-3.fc28                                          
+  perl-Pod-Html.noarch 1.22.02-412.fc28                                         
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+  gmp-c++.x86_64 1:6.1.2-7.fc28                                                 
+  keyutils-libs-devel.x86_64 1.5.10-6.fc28                                      
+  krb5-devel.x86_64 1.16.1-13.fc28                                              
+  libcom_err-devel.x86_64 1.44.2-0.fc28                                         
+  libkadm5.x86_64 1.16.1-13.fc28                                                
+  libselinux-devel.x86_64 2.8-1.fc28                                            
+  libsepol-devel.x86_64 2.8-1.fc28                                              
+  libverto-devel.x86_64 0.3.0-5.fc28                                            
+  pcre2-devel.x86_64 10.31-7.fc28                                               
+  pcre2-utf16.x86_64 10.31-7.fc28                                               
+  pcre2-utf32.x86_64 10.31-7.fc28                                               
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gmp-devel openssl-devel perl-Pod-Html pkgconfig zlib-devel
+gmp-devel-6.1.2-7.fc28.x86_64
+openssl-devel-1.1.0h-3.fc28.x86_64
+perl-Pod-Html-1.22.02-412.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install   conf-gmp                       1                        [required by conf-gmp-powm-sec, zarith]
+  - install   num                            1.1                      [required by sexplib]
+  - install   ocamlbuild                     0.12.0                   [required by cryptokit]
+  - install   base-bytes                     base                     [required by ctypes, ounit]
+  - install   conf-perl                      1                        [required by zarith]
+  - install   conf-pkg-config                1.1                      [required by ctypes, conf-openssl, conf-zlib]
+  - remove    dune                           1.0.1                    [conflicts with jbuilder]
+  - install   conf-gmp-powm-sec              1                        [required by cryptokit]
+  - install   ounit                          2.0.8                    [required by email_message]
+  - install   ocamlnet                       4.1.6                    [required by json-wheel]
+  - install   inotify                        2.3                      [required by async_inotify]
+  - install   zarith                         1.7                      [required by cryptokit]
+  - install   conf-zlib                      1                        [required by cryptokit]
+  - install   conf-openssl                   1                        [required by async_ssl]
+  - downgrade jbuilder                       transition to 1.0+beta17 [required by async_smtp]
+  - install   json-wheel                     1.0.6+safe-string        [required by json-wheel_jane_street_overlay]
+  - install   cryptokit                      1.13                     [required by async_smtp]
+  - install   spawn                          v0.9.0                   [required by core]
+  - install   sexplib                        v0.9.3                   [required by core_extended]
+  - install   result                         1.3                      [required by topkg]
+  - install   re                             1.7.3                    [required by ppx_expect]
+  - install   ppx_traverse_builtins          v0.9.0                   [required by ppx_core, ppx_metaquot]
+  - install   ppx_derivers                   1.0                      [required by ppx_type_conv]
+  - install   octavius                       1.2.0                    [required by ppx_js_style]
+  - install   ocaml-compiler-libs            v0.9.0                   [required by ppx_core]
+  - install   magic-mime                     1.1.0                    [required by email_message]
+  - install   jane-street-headers            v0.9.0                   [required by core_kernel]
+  - install   base                           v0.9.4                   [required by async_ssl]
+  - install   topkg                          0.9.1                    [required by integers]
+  - install   ocaml-migrate-parsetree        1.0.7                    [required by async_smtp]
+  - install   typerep                        v0.9.0                   [required by core_kernel]
+  - install   stdio                          v0.9.1                   [required by async_ssl]
+  - install   integers                       0.2.2                    [required by ctypes]
+  - install   ppx_ast                        v0.9.2                   [required by ppx_core]
+  - install   ctypes                         0.14.0                   [required by async_ssl]
+  - install   ppx_core                       v0.9.3                   [required by ppx_assert, ppx_inline_test]
+  - install   ppx_optcomp                    v0.9.0                   [required by ppx_driver]
+  - install   ppx_driver                     v0.9.2                   [required by async_smtp]
+  - install   variantslib                    v0.9.0                   [required by core_kernel]
+  - install   ppx_metaquot                   v0.9.0                   [required by ppx_assert, ppx_inline_test]
+  - install   ppx_let                        v0.9.0                   [required by ppx_jane]
+  - install   ppx_here                       v0.9.1                   [required by ppx_assert, ppx_jane]
+  - install   fieldslib                      v0.9.0                   [required by core_extended]
+  - install   ppx_type_conv                  v0.9.1                   [required by ppx_assert]
+  - install   ppx_pipebang                   v0.9.0                   [required by ppx_jane]
+  - install   ppx_optional                   v0.9.0                   [required by ppx_jane]
+  - install   ppx_js_style                   v0.9.0                   [required by ppx_base]
+  - install   ppx_inline_test                v0.9.2                   [required by core_kernel]
+  - install   ppx_fail                       v0.9.0                   [required by ppx_jane]
+  - install   ppx_variants_conv              v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_typerep_conv               v0.9.0                   [required by ppx_jane]
+  - install   ppx_traverse                   v0.9.0                   [required by ppx_custom_printf, ppx_expect]
+  - install   ppx_sexp_conv                  v0.9.0                   [required by core_kernel]
+  - install   ppx_fields_conv                v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_enumerate                  v0.9.0                   [required by ppx_base]
+  - install   ppx_compare                    v0.9.0                   [required by bin_prot, ppx_assert]
+  - install   ppx_bench                      v0.9.1                   [required by ppx_jane]
+  - install   ppx_sexp_value                 v0.9.0                   [required by ppx_jane]
+  - install   ppx_sexp_message               v0.9.0                   [required by core_kernel]
+  - install   ppx_custom_printf              v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_hash                       v0.9.0                   [required by core_kernel]
+  - install   ppx_assert                     v0.9.0                   [required by core_kernel, core]
+  - install   bin_prot                       v0.9.2                   [required by core_extended]
+  - install   ppx_base                       v0.9.0                   [required by core_kernel]
+  - install   ppx_expect                     v0.9.0                   [required by ppx_jane]
+  - install   ppx_bin_prot                   v0.9.0                   [required by ppx_jane]
+  - install   configurator                   v0.9.1                   [required by async_ssl]
+  - install   ppx_jane                       v0.9.0                   [required by async_smtp]
+  - install   core_kernel                    v0.9.1                   [required by async_rpc_kernel, async_kernel, core_extended]
+  - install   re2                            v0.9.1                   [required by async_smtp]
+  - install   core                           v0.9.2                   [required by async_smtp]
+  - install   async_kernel                   v0.9.0                   [required by async]
+  - install   textutils                      v0.9.0                   [required by async_smtp]
+  - install   json-wheel_jane_street_overlay v0.9.0                   [required by async_smtp]
+  - install   async_unix                     v0.9.1                   [required by async]
+  - install   async_rpc_kernel               v0.9.0                   [required by async_extra]
+  - install   core_extended                  v0.9.1                   [required by async_smtp]
+  - install   async_extra                    v0.9.0                   [required by async]
+  - install   async                          v0.9.0                   [required by async_smtp]
+  - install   email_message                  v0.9.1                   [required by async_smtp]
+  - install   command_rpc                    v0.9.0                   [required by async_extended]
+  - install   async_ssl                      v0.9.1                   [required by async_smtp]
+  - install   async_shell                    v0.9.1                   [required by async_smtp]
+  - install   async_interactive              v0.9.0                   [required by async_extended]
+  - install   async_find                     v0.9.0                   [required by async_extended]
+  - install   async_inotify                  v0.9.0                   [required by async_extended]
+  - install   async_extended                 v0.9.0                   [required by async_smtp]
+  - install   async_smtp                     v0.9.0
+===== 86 to install | 1 to downgrade | 1 to remove =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.v0.9.0] found in cache
+[async_extended.v0.9.0] found in cache
+[async_extra.v0.9.0] found in cache
+[async_find.v0.9.0] found in cache
+[async_inotify.v0.9.0] found in cache
+[async_interactive.v0.9.0] found in cache
+[async_kernel.v0.9.0] found in cache
+[async_rpc_kernel.v0.9.0] found in cache
+[async_shell.v0.9.1] found in cache
+[async_smtp.v0.9.0] found in cache
+[async_ssl.v0.9.1] found in cache
+[async_unix.v0.9.1] found in cache
+[base.v0.9.4] found in cache
+[bin_prot.v0.9.2] found in cache
+[command_rpc.v0.9.0] found in cache
+[configurator.v0.9.1] found in cache
+[core.v0.9.2] found in cache
+[core_extended.v0.9.1] found in cache
+[core_kernel.v0.9.1] found in cache
+[cryptokit.1.13] found in cache
+[ctypes.0.14.0] found in cache
+[email_message.v0.9.1] found in cache
+[fieldslib.v0.9.0] found in cache
+[inotify.2.3] found in cache
+[integers.0.2.2] found in cache
+[jane-street-headers.v0.9.0] found in cache
+[jbuilder.1.0+beta17] found in cache
+[json-wheel.1.0.6+safe-string] found in cache
+[json-wheel_jane_street_overlay.v0.9.0] found in cache
+[magic-mime.1.1.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.7] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlnet.4.1.6] found in cache
+[octavius.1.2.0] found in cache
+[ounit.2.0.8] found in cache
+[ppx_assert.v0.9.0] found in cache
+[ppx_ast.v0.9.2] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_bench.v0.9.1] found in cache
+[ppx_bin_prot.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.3] found in cache
+[ppx_custom_printf.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_driver.v0.9.2] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_expect.v0.9.0] found in cache
+[ppx_fail.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_here.v0.9.1] found in cache
+[ppx_inline_test.v0.9.2] found in cache
+[ppx_jane.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_let.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_optional.v0.9.0] found in cache
+[ppx_pipebang.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_sexp_message.v0.9.0] found in cache
+[ppx_sexp_value.v0.9.0] found in cache
+[ppx_traverse.v0.9.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[ppx_typerep_conv.v0.9.0] found in cache
+[ppx_variants_conv.v0.9.0] found in cache
+[re.1.7.3] found in cache
+[re2.v0.9.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.9.3] found in cache
+[spawn.v0.9.0] found in cache
+[stdio.v0.9.1] found in cache
+[textutils.v0.9.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.9.0] found in cache
+[variantslib.v0.9.0] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> removed   jbuilder.transition
+-> removed   dune.1.0.1
+-> installed base-bytes.base
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-pkg-config.1.1
+-> installed conf-openssl.1
+-> installed conf-zlib.1
+-> installed jbuilder.1.0+beta17
+-> installed jane-street-headers.v0.9.0
+-> installed magic-mime.1.1.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed inotify.2.3
+-> installed octavius.1.2.0
+-> installed ounit.2.0.8
+-> installed ppx_derivers.1.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.7
+-> installed ppx_ast.v0.9.2
+-> installed sexplib.v0.9.3
+-> installed base.v0.9.4
+-> installed spawn.v0.9.0
+-> installed stdio.v0.9.1
+-> installed ppx_core.v0.9.3
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_driver.v0.9.2
+-> installed fieldslib.v0.9.0
+-> installed ppx_here.v0.9.1
+-> installed ppx_let.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_fail.v0.9.0
+-> installed ppx_inline_test.v0.9.2
+-> installed ppx_bench.v0.9.1
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_optional.v0.9.0
+-> installed ppx_pipebang.v0.9.0
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ppx_assert.v0.9.0
+-> installed ppx_hash.v0.9.0
+-> installed ocamlnet.4.1.6
+-> installed ppx_base.v0.9.0
+-> installed json-wheel.1.0.6+safe-string
+-> installed ppx_sexp_message.v0.9.0
+-> installed ppx_sexp_value.v0.9.0
+-> installed ppx_traverse.v0.9.0
+-> installed configurator.v0.9.1
+-> installed topkg.0.9.1
+-> installed ppx_custom_printf.v0.9.0
+-> installed typerep.v0.9.0
+-> installed integers.0.2.2
+-> installed ppx_typerep_conv.v0.9.0
+-> installed variantslib.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
+-> installed bin_prot.v0.9.2
+-> installed ppx_bin_prot.v0.9.0
+-> installed ppx_expect.v0.9.0
+-> installed ctypes.0.14.0
+-> installed zarith.1.7
+-> installed ppx_jane.v0.9.0
+-> installed cryptokit.1.13
+-> installed core_kernel.v0.9.1
+-> installed async_kernel.v0.9.0
+-> installed async_rpc_kernel.v0.9.0
+-> installed core.v0.9.2
+-> installed async_unix.v0.9.1
+-> installed async_extra.v0.9.0
+-> installed json-wheel_jane_street_overlay.v0.9.0
+-> installed re2.v0.9.1
+-> installed textutils.v0.9.0
+-> installed async.v0.9.0
+[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
+-> installed async_find.v0.9.0
+-> installed async_interactive.v0.9.0
+-> installed async_ssl.v0.9.1
+-> installed command_rpc.v0.9.0
+-> installed async_inotify.v0.9.0
+
+#=== ERROR while compiling core_extended.v0.9.1 ===============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.9.1
+# command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
+# exit-code            1
+# env-file             ~/.opam/log/core_extended-10-7b663a.env
+# output-file          ~/.opam/log/core_extended-10-7b663a.out
+### output ###
+#       ocamlc src/core_extended.{cmi,cmo,cmt}
+#     ocamlopt src/core_extended.{cmx,o}
+#         bash src/config_ext.h
+#       ocamlc src/extended_int_stubs.o
+#       ocamlc src/posix_clock_stubs.o
+#       ocamlc src/malloc_stubs.o
+#       ocamlc src/unix_pseudo_terminal_stubs.o
+#       ocamlc src/extended_unix_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
+# extended_unix_stubs.c: In function 'quota_query':
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:258:24: warning: passing argument 1 of 'quotactl' makes integer from pointer without a cast [-Wint-conversion]
+#  #define String_val(x) ((char *) Bp_val(x))
+# extended_unix_stubs.c:107:16: note: in definition of macro 'quota_control'
+#       quotactl((device), (cmd), (id), (parg))
+#                 ^~~~~~
+# extended_unix_stubs.c:156:21: note: in expansion of macro 'String_val'
+#    if (quota_control(String_val(v_path), cmd, id, (caddr_t)&quota))
+#                      ^~~~~~~~~~
+# In file included from extended_unix_stubs.c:19:
+# /usr/include/sys/quota.h:130:26: note: expected 'int' but argument is of type 'char *'
+#  extern int quotactl (int __cmd, const char *__special, int __id,
+#                       ~~~~^~~~~
+# extended_unix_stubs.c:107:25: warning: passing argument 2 of 'quotactl' makes pointer from integer without a cast [-Wint-conversion]
+#       quotactl((device), (cmd), (id), (parg))
+#                          ^~~~~
+# extended_unix_stubs.c:156:7: note: in expansion of macro 'quota_control'
+#    if (quota_control(String_val(v_path), cmd, id, (caddr_t)&quota))
+#        ^~~~~~~~~~~~~
+# In file included from extended_unix_stubs.c:19:
+# /usr/include/sys/quota.h:130:45: note: expected 'const char *' but argument is of type 'int'
+#  extern int quotactl (int __cmd, const char *__special, int __id,
+#                                  ~~~~~~~~~~~~^~~~~~~~~
+# extended_unix_stubs.c:109:44: error: 'struct dqblk' has no member named 'dqb_curbytes'; did you mean 'dqb_curinodes'?
+#  #  define QUOTA_SPACE_USED(quota) ((quota).dqb_curbytes)
+#                                             ^~~~~~~~~~~~
+# extended_unix_stubs.c:159:55: note: in expansion of macro 'QUOTA_SPACE_USED'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                                                        ^~~~~~~~~~~~~~~~
+# extended_unix_stubs.c: In function 'quota_modify':
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:258:24: warning: passing argument 1 of 'quotactl' makes integer from pointer without a cast [-Wint-conversion]
+#  #define String_val(x) ((char *) Bp_val(x))
+# extended_unix_stubs.c:107:16: note: in definition of macro 'quota_control'
+#       quotactl((device), (cmd), (id), (parg))
+#                 ^~~~~~
+# extended_unix_stubs.c:204:21: note: in expansion of macro 'String_val'
+#    if (quota_control(String_val(v_path), cmd, id, (caddr_t)&quota))
+#                      ^~~~~~~~~~
+# In file included from extended_unix_stubs.c:19:
+# /usr/include/sys/quota.h:130:26: note: expected 'int' but argument is of type 'char *'
+#  extern int quotactl (int __cmd, const char *__special, int __id,
+#                       ~~~~^~~~~
+# extended_unix_stubs.c:107:25: warning: passing argument 2 of 'quotactl' makes pointer from integer without a cast [-Wint-conversion]
+#       quotactl((device), (cmd), (id), (parg))
+#                          ^~~~~
+# extended_unix_stubs.c:204:7: note: in expansion of macro 'quota_control'
+#    if (quota_control(String_val(v_path), cmd, id, (caddr_t)&quota))
+#        ^~~~~~~~~~~~~
+# In file included from extended_unix_stubs.c:19:
+# /usr/include/sys/quota.h:130:45: note: expected 'const char *' but argument is of type 'int'
+#  extern int quotactl (int __cmd, const char *__special, int __id,
+#                                  ~~~~~~~~~~~~^~~~~~~~~
+# 
+# Waiting for 1 job to finish.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build core_extended v0.9.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - remove    dune                           1.0.1
+| - downgrade jbuilder                       transition to 1.0+beta17
+| - install   async                          v0.9.0
+| - install   async_extra                    v0.9.0
+| - install   async_find                     v0.9.0
+| - install   async_inotify                  v0.9.0
+| - install   async_interactive              v0.9.0
+| - install   async_kernel                   v0.9.0
+| - install   async_rpc_kernel               v0.9.0
+| - install   async_ssl                      v0.9.1
+| - install   async_unix                     v0.9.1
+| - install   base                           v0.9.4
+| - install   base-bytes                     base
+| - install   bin_prot                       v0.9.2
+| - install   command_rpc                    v0.9.0
+| - install   conf-gmp                       1
+| - install   conf-gmp-powm-sec              1
+| - install   conf-openssl                   1
+| - install   conf-perl                      1
+| - install   conf-pkg-config                1.1
+| - install   conf-zlib                      1
+| - install   configurator                   v0.9.1
+| - install   core                           v0.9.2
+| - install   core_kernel                    v0.9.1
+| - install   cryptokit                      1.13
+| - install   ctypes                         0.14.0
+| - install   fieldslib                      v0.9.0
+| - install   inotify                        2.3
+| - install   integers                       0.2.2
+| - install   jane-street-headers            v0.9.0
+| - install   json-wheel                     1.0.6+safe-string
+| - install   json-wheel_jane_street_overlay v0.9.0
+| - install   magic-mime                     1.1.0
+| - install   num                            1.1
+| - install   ocaml-compiler-libs            v0.9.0
+| - install   ocaml-migrate-parsetree        1.0.7
+| - install   ocamlbuild                     0.12.0
+| - install   ocamlnet                       4.1.6
+| - install   octavius                       1.2.0
+| - install   ounit                          2.0.8
+| - install   ppx_assert                     v0.9.0
+| - install   ppx_ast                        v0.9.2
+| - install   ppx_base                       v0.9.0
+| - install   ppx_bench                      v0.9.1
+| - install   ppx_bin_prot                   v0.9.0
+| - install   ppx_compare                    v0.9.0
+| - install   ppx_core                       v0.9.3
+| - install   ppx_custom_printf              v0.9.0
+| - install   ppx_derivers                   1.0
+| - install   ppx_driver                     v0.9.2
+| - install   ppx_enumerate                  v0.9.0
+| - install   ppx_expect                     v0.9.0
+| - install   ppx_fail                       v0.9.0
+| - install   ppx_fields_conv                v0.9.0
+| - install   ppx_hash                       v0.9.0
+| - install   ppx_here                       v0.9.1
+| - install   ppx_inline_test                v0.9.2
+| - install   ppx_jane                       v0.9.0
+| - install   ppx_js_style                   v0.9.0
+| - install   ppx_let                        v0.9.0
+| - install   ppx_metaquot                   v0.9.0
+| - install   ppx_optcomp                    v0.9.0
+| - install   ppx_optional                   v0.9.0
+| - install   ppx_pipebang                   v0.9.0
+| - install   ppx_sexp_conv                  v0.9.0
+| - install   ppx_sexp_message               v0.9.0
+| - install   ppx_sexp_value                 v0.9.0
+| - install   ppx_traverse                   v0.9.0
+| - install   ppx_traverse_builtins          v0.9.0
+| - install   ppx_type_conv                  v0.9.1
+| - install   ppx_typerep_conv               v0.9.0
+| - install   ppx_variants_conv              v0.9.0
+| - install   re                             1.7.3
+| - install   re2                            v0.9.1
+| - install   result                         1.3
+| - install   sexplib                        v0.9.3
+| - install   spawn                          v0.9.0
+| - install   stdio                          v0.9.1
+| - install   textutils                      v0.9.0
+| - install   topkg                          0.9.1
+| - install   typerep                        v0.9.0
+| - install   variantslib                    v0.9.0
+| - install   zarith                         1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180726010815.export"
+31 1532567285 1532567636

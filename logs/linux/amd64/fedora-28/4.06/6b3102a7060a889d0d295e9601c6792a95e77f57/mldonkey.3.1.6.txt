@@ -1,0 +1,133 @@
+$ opam depext -iy -j 2 mldonkey.3.1.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+pkgconfig
+zlib-devel
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Jul 25 20:11:59 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pkgconfig is not installed
+package zlib-devel is not installed
+# The following new OS packages need to be installed: pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y pkgconfig zlib-devel
+Last metadata expiration check: 4:22:52 ago on Wed Jul 25 20:11:35 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package            Arch           Version                Repository       Size
+================================================================================
+Installing:
+ zlib-devel         x86_64         1.2.11-8.fc28          updates          55 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 55 k
+Installed size: 138 k
+Downloading Packages:
+zlib-devel-1.2.11-8.fc28.x86_64.rpm             288 kB/s |  55 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            57 kB/s |  55 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                        1/1 
+  Running scriptlet: zlib-devel-1.2.11-8.fc28.x86_64                        1/1 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                        1/1 
+
+Installed:
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides pkgconfig zlib-devel
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild      0.12.0 [required by camlp4]
+  - install conf-pkg-config 1.1    [required by conf-zlib]
+  - install num             1.1    [required by mldonkey]
+  - install camlp4          4.06+1 [required by mldonkey]
+  - install conf-zlib       1      [required by mldonkey]
+  - install mldonkey        3.1.6
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[mldonkey.3.1.6] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+-> installed conf-zlib.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.06+1
+[ERROR] The compilation of mldonkey failed at "/usr/bin/make".
+
+#=== ERROR while compiling mldonkey.3.1.6 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mldonkey.3.1.6
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/mldonkey-10-f6c0a8.env
+# output-file          ~/.opam/log/mldonkey-10-f6c0a8.out
+### output ###
+# /home/opam/.opam/4.06/bin/ocamlc.opt -g -w -3  -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/networks/fasttrack  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -c src/utils/lib/syslog.mli
+# ocamlopt.opt -g -inline 10 -w -3    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/networks/fasttrack  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -c src/utils/lib/syslog.ml
+# File "src/utils/lib/syslog.ml", line 197, characters 50-53:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# make: *** [Makefile:5444: src/utils/lib/syslog.cmx] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mldonkey 3.1.6
++- 
++- The following changes have been performed
+| - install camlp4          4.06+1
+| - install conf-pkg-config 1.1
+| - install conf-zlib       1
+| - install num             1.1
+| - install ocamlbuild      0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180726003431.export"
+31 1532565263 1532565384
