@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 xenctrl.0.9.32
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for xenctrl.0.9.32: The following dependencies couldn't be met:
+          - xenctrl -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xenctrl.0.9.32 returned 20
+20 1532665975 1532665980

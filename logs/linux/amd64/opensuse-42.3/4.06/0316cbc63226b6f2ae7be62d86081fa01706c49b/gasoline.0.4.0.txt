@@ -1,0 +1,68 @@
+$ opam depext -iy -j 2 gasoline.0.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile      1.0.1          [required by gasoline]
+  - install conf-bmake    1.0            [required by gasoline]
+  - install bsdowl        3.0.0-20150830 [required by gasoline]
+  - install broken        0.4.2          [required by gasoline]
+  - install mixture       1.0.0          [required by lemonade]
+  - install configuration 0.4.1          [required by gasoline]
+  - install lemonade      0.6.0          [required by gasoline]
+  - install getopts       0.4.0          [required by gasoline]
+  - install gasoline      0.4.0
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+[camomile.1.0.1] found in cache
+[configuration.0.4.1] found in cache
+[gasoline.0.4.0] found in cache
+[getopts.0.4.0] found in cache
+[lemonade.0.6.0] found in cache
+[mixture.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-bmake failed at "/usr/bin/sh ./detect_program.sh ./conf-bmake.config bmake".
+-> installed camomile.1.0.1
+
+#=== ERROR while compiling conf-bmake.1.0 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-bmake.1.0
+# command              /usr/bin/sh ./detect_program.sh ./conf-bmake.config bmake
+# exit-code            1
+# env-file             ~/.opam/log/conf-bmake-12-487c34.env
+# output-file          ~/.opam/log/conf-bmake-12-487c34.out
+### output ###
+# Debug: program: bmake
+# Debug: output: ./conf-bmake.config
+# Debug: pwd: /home/opam/.opam/4.06/.opam-switch/build/conf-bmake.1.0
+# Debug: Looking for bmake in /home/opam/.opam/4.06/bin
+# Debug: Looking for bmake in /home/opam/.opam/plugins/bin
+# Debug: Looking for bmake in /home/opam/.opam/4.06/bin
+# Debug: Looking for bmake in /usr/local/sbin
+# Debug: Looking for bmake in /usr/local/bin
+# Debug: Looking for bmake in /usr/sbin
+# Debug: Looking for bmake in /usr/bin
+# Debug: Looking for bmake in /sbin
+# Debug: Looking for bmake in /bin
+# Debug: bmake: Not found in PATH.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-bmake 1.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install camomile 1.0.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727042302.export"
+31 1532665127 1532665414

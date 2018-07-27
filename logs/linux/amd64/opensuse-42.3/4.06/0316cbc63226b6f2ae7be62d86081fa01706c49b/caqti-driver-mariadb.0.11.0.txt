@@ -1,0 +1,33 @@
+$ opam depext -iy -j 2 caqti-driver-mariadb.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+libffi-devel
+m4
+# The following new OS packages need to be installed: libffi-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install libffi-devel
+Retrieving repository 'OSS Update' metadata [...done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+'libffi-devel' not found in package names. Trying capabilities.
+Resolving package dependencies...
+
+The following NEW package is going to be installed:
+  libffi-devel-gcc5
+
+1 new package to install.
+Overall download size: 74.7 KiB. Already cached: 0 B. After the operation, additional 240.6 KiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libffi-devel-gcc5-5.3.1+r233831-10.1.x86_64 (1/1),  74.7 KiB (240.6 KiB unpacked)
+Retrieving: libffi-devel-gcc5-5.3.1+r233831-10.1.x86_64.rpm [.error]
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/x86_64/libffi-devel-gcc5-5.3.1+r233831-10.1.x86_64.rpm':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+Problem occurred during or after installation or removal of packages:
+Installation aborted by user
+Please see the above error message for a hint.
+OS package installation failed
+1 1532663184 1532663630

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ounit.1.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for ounit.1.1.2: The following dependencies couldn't be met:
+          - ounit -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ounit.1.1.2 returned 20
+20 1532666086 1532666088

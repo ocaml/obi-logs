@@ -1,0 +1,54 @@
+$ opam depext -iy -j 2 aio.0.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install aio 0.0.3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[aio.0.0.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of aio failed at "/usr/bin/make".
+
+#=== ERROR while compiling aio.0.0.3 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/aio.0.0.3
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/aio-12-ad8886.env
+# output-file          ~/.opam/log/aio-12-ad8886.out
+### output ###
+# /usr/bin/make -C lib all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/aio.0.0.3/lib'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/aio.0.0.3/lib'
+# ocamldep aio.mli > ._bcdi/aio.di
+# ocamldep aio.ml > ._d/aio.d
+# ocamldep aio_buffer.ml > ._d/aio_buffer.d
+# ocamlc -c -cc "cc" -ccopt "-fPIC -O2 -g -W -Wall \
+# 			-DPIC   \
+# 			    -o aio_stubs.o " aio_stubs.c
+# aio_stubs.c:27:20: fatal error: libaio.h: No such file or directory
+#  #include <libaio.h>
+#                     ^
+# compilation terminated.
+# ../OCamlMakefile:1124: recipe for target 'aio_stubs.o' failed
+# make[2]: *** [aio_stubs.o] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/aio.0.0.3/lib'
+# ../OCamlMakefile:784: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/aio.0.0.3/lib'
+# Makefile:2: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build aio 0.0.3
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532663517 1532663756

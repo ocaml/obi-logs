@@ -1,0 +1,29 @@
+$ opam depext -iy -j 2 conf-glade.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-glade 2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-glade failed at "/usr/bin/pkg-config libglade-2.0".
+
+#=== ERROR while compiling conf-glade.2 =======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-glade.2
+# command              /usr/bin/pkg-config libglade-2.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-glade-12-ccabea.env
+# output-file          ~/.opam/log/conf-glade-12-ccabea.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-glade 2
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532665442 1532665637
