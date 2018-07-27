@@ -1,0 +1,298 @@
+$ opam depext -iy -j 2 dose.3.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result        1.3          [required by cmdliner]
+  - install re            1.7.3        [required by dose]
+  - install base-bytes    base         [required by extlib-compat]
+  - install ocamlbuild    0.12.0       [required by dose]
+  - install ocamlgraph    1.8.5        [required by dose]
+  - install cppo          1.6.4        [required by extlib-compat]
+  - install topkg         0.9.1        [required by cmdliner]
+  - install extlib-compat 1.7.2        [required by dose]
+  - install cmdliner      1.0.2        [required by ocp-build]
+  - install ocp-build     1.99.20-beta [required by dose]
+  - install cudf          0.6.3        [required by dose]
+  - install dose          3.1.2
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cudf.0.6.3] found in cache
+[dose.3.1.2] found in cache
+[extlib-compat.1.7.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.5] found in cache
+[ocp-build.1.99.20-beta] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ocamlbuild.0.12.0
+-> installed ocamlgraph.1.8.5
+-> installed cppo.1.6.4
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed extlib-compat.1.7.2
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed ocp-build.1.99.20-beta
+-> installed cudf.0.6.3
+[ERROR] The compilation of dose failed at "/home/opam/.opam/4.04/bin/ocp-build -scan dose -v 0".
+
+#=== ERROR while compiling dose.3.1.2 =========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/dose.3.1.2
+# command              ~/.opam/4.04/bin/ocp-build -scan dose -v 0
+# exit-code            2
+# env-file             ~/.opam/log/dose-11-d71026.env
+# output-file          ~/.opam/log/dose-11-d71026.out
+### output ###
+# tput: unknown terminal "none"
+# tput: No value for $TERM and no -T specified
+# stty: 'standard input': Inappropriate ioctl for device
+# Compiler: ocaml 4.04.2
+# ----- 36 env warnings -----
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4lib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4Bin".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-r".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-rp".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-op".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4QuotationCommon".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedQuotationExpander".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4GrammarParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4AutoPrinter".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pr-p".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "pa_macro".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4fulllib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4lib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4Bin".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-r".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-rp".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-op".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4QuotationCommon".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedQuotationExpander".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4GrammarParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4AutoPrinter".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pr-p".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "pa_macro".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4fulllib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# ........-- stdout for ./_obuild/dose/_temp/format822_lexer.ml --
+# 83 states, 1213 transitions, table size 5350 bytes
+# 5282 additional bytes used for bindings
+# ..-- stdout for ./_obuild/dose/_temp/packages_lexer.ml --
+# 20 states, 337 transitions, table size 1468 bytes
+# .................[110.1] Command failed: '/home/opam/.opam/4.04/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3d40add360fea6d9b140623d5bc0bea1/version.cmo' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './deb/version.ml'
+# -- stderr for ./_obuild/dose/Debian/version.cmo --
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# [51.1] Command failed: '/home/opam/.opam/4.04/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3fc35d12dee6985b3fbd5035dc3632f1/cudfSolver.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './common/cudfSolver.ml'
+# -- stderr for ./_obuild/dose/Common/cudfSolver.cmo --
+# File "./common/cudfSolver.ml", line 52, characters 24-42:
+# Error: Unbound module Re_pcre
+# [111.1] Command failed: '/home/opam/.opam/4.04/bin/ocamlopt.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-a240b83d459264666743b75c53d0f219/version.cmx' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './deb/version.ml'
+# -- stderr for ./_obuild/dose/Debian/version.cmx --
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# [39.1] Command failed: '/home/opam/.opam/4.04/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3968cac187c050da57fc529f4bd0d56e/cudfAdd.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './common/cudfAdd.ml'
+# -- stderr for ./_obuild/dose/Common/cudfAdd.cmo --
+# File "./common/cudfAdd.ml", line 112, characters 25-39:
+# Error: Unbound module Re_pcre
+# -- stderr for ./_obuild/dose/Common/util.cmo --
+# File "./common/util.ml", line 84, characters 6-23:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# -- stderr for ./_obuild/dose/Common/util.cmx --
+# File "./common/util.ml", line 84, characters 6-23:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# Finished
+# 10 errors in 0.32s. 71 jobs (parallelism 5.0x), 79 files generated.
+# Error log:
+# Error:
+# [110.1] '/home/opam/.opam/4.04/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3d40add360fea6d9b140623d5bc0bea1/version.cmo' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './deb/version.ml'
+# 
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# 
+# Error:
+# rule 110: target ./_obuild/dose/Debian/version.cmo not built
+# Error:
+# [51.1] '/home/opam/.opam/4.04/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3fc35d12dee6985b3fbd5035dc3632f1/cudfSolver.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './common/cudfSolver.ml'
+# 
+# File "./common/cudfSolver.ml", line 52, characters 24-42:
+# Error: Unbound module Re_pcre
+# 
+# Error:
+# rule 51: target ./_obuild/dose/Common/cudfSolver.cmi not built
+# Error:
+# rule 51: target ./_obuild/dose/Common/cudfSolver.cmo not built
+# Error:
+# [111.1] '/home/opam/.opam/4.04/bin/ocamlopt.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-a240b83d459264666743b75c53d0f219/version.cmx' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './deb/version.ml'
+# 
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# 
+# Error:
+# rule 111: target ./_obuild/dose/Debian/version.cmx not built
+# Error:
+# rule 111: target ./_obuild/dose/Debian/version.o not built
+# Error:
+# [39.1] '/home/opam/.opam/4.04/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3968cac187c050da57fc529f4bd0d56e/cudfAdd.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.04/lib/ocamlgraph' '-I' '/home/opam/.opam/4.04/lib/cudf' '-I' '/home/opam/.opam/4.04/lib/re' '-I' '/home/opam/.opam/4.04/lib/extlib' '-I' '/home/opam/.opam/4.04/lib/ocaml' './common/cudfAdd.ml'
+# 
+# File "./common/cudfAdd.ml", line 112, characters 25-39:
+# Error: Unbound module Re_pcre
+# 
+# Error:
+# rule 39: target ./_obuild/dose/Common/cudfAdd.cmo not built
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build dose 3.1.2
++- 
++- The following changes have been performed
+| - install base-bytes    base
+| - install cmdliner      1.0.2
+| - install cppo          1.6.4
+| - install cudf          0.6.3
+| - install extlib-compat 1.7.2
+| - install ocamlbuild    0.12.0
+| - install ocamlgraph    1.8.5
+| - install ocp-build     1.99.20-beta
+| - install re            1.7.3
+| - install result        1.3
+| - install topkg         0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180727213840.export"
+31 1532727518 1532727559
