@@ -1,0 +1,25 @@
+$ opam depext -iy -j 2 conf-wxwidgets.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-wxwidgets 3.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling conf-wxwidgets.3.0 =================================#
+"wx-config": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-wxwidgets 3.0
++- 
+- No changes have been performed
+
+<><> conf-wxwidgets.3.0 troubleshooting <><><><><><><><><><><><><><><><><><><><>
+=> This package requires wxWidgets 3.0 development packages installed on your system
+# Run eval $(opam env) to update the current shell environment
+31 1532667112 1532667117
