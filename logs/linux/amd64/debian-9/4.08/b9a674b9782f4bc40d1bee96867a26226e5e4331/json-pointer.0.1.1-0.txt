@@ -1,0 +1,121 @@
+$ opam depext -iy -j 2 json-pointer.0.1.1-0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result       1.3     [required by json-pointer]
+  - install conf-which   1       [required by biniou]
+  - install base-bytes   base    [required by json-pointer]
+  - install ocamlbuild   0.12.0  [required by json-pointer]
+  - install easy-format  1.3.1   [required by yojson]
+  - install cppo         1.6.4   [required by yojson]
+  - install biniou       1.2.0   [required by yojson]
+  - install yojson       1.4.1   [required by json-pointer]
+  - install json-pointer 0.1.1-0
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[biniou.1.2.0] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[json-pointer.0.1.1-0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed result.1.3
+-> installed yojson.1.4.1
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of json-pointer failed at "/home/opam/.opam/4.08/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling json-pointer.0.1.1-0 ===============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/json-pointer.0.1.1-0
+# command              ~/.opam/4.08/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/json-pointer-11-4f4523.env
+# output-file          ~/.opam/log/json-pointer-11-4f4523.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# /home/opam/.opam/4.08/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package bytes -package result -package str -package yojson -modules src/json_pointer.mli > src/json_pointer.mli.depends
+# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bytes -package result -package str -package yojson -I src -o src/json_pointer.cmi src/json_pointer.mli
+# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package bytes -package result -package str -package yojson -modules src/json_pointer.ml > src/json_pointer.ml.depends
+# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bytes -package result -package str -package yojson -I src -o src/json_pointer.cmo src/json_pointer.ml
+# + /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I src -package bytes -package result -package str -package yojson -I src -o src/json_pointer.cmo src/json_pointer.ml
+# File "src/json_pointer.ml", line 31, characters 75-77:
+# Error: This expression has type bytes list
+#        but an expression was expected of type string list
+#        Type bytes is not compatible with type string 
+# Command exited with code 2.
+# + /home/opam/.opam/4.08/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.08/bin/ocamlbuild' src/json-pointer.cma src/json-pointer.cmxa src/json-pointer.a src/json-pointer.cmxs src/eval.native -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build json-pointer 0.1.1-0
++- 
++- The following changes have been performed
+| - install base-bytes  base
+| - install biniou      1.2.0
+| - install conf-which  1
+| - install cppo        1.6.4
+| - install easy-format 1.3.1
+| - install ocamlbuild  0.12.0
+| - install result      1.3
+| - install yojson      1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180727202028.export"
+31 1532722826 1532722839

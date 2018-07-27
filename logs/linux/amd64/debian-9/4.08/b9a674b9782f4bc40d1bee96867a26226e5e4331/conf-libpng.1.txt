@@ -1,0 +1,49 @@
+$ opam depext -iy -j 2 conf-libpng.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libpng-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libpng-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpng16-16:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libpng16-16_1.6.28-1_amd64.deb ...
+Unpacking libpng16-16:amd64 (1.6.28-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Selecting previously unselected package libpng-dev:amd64.
+Preparing to unpack .../libpng-dev_1.6.28-1_amd64.deb ...
+Unpacking libpng-dev:amd64 (1.6.28-1) ...
+Selecting previously unselected package libpng-tools.
+Preparing to unpack .../libpng-tools_1.6.28-1_amd64.deb ...
+Unpacking libpng-tools (1.6.28-1) ...
+Setting up libpng16-16:amd64 (1.6.28-1) ...
+Setting up libpng-tools (1.6.28-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libpng-dev:amd64 (1.6.28-1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-libpng 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling conf-libpng.1 ======================================#
+"pkg-config": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-libpng 1
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libpng-dev
+
+# Run eval $(opam env) to update the current shell environment
+31 1532723567 1532723573
