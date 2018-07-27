@@ -1,0 +1,281 @@
+$ opam depext -iy -j 2 tar-format.0.7.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+time
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils m4 time
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package time.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../time_1.7-25.1+b1_amd64.deb ...
+Unpacking time (1.7-25.1+b1) ...
+Setting up time (1.7-25.1+b1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by tar-format]
+  - install base-num                base       [required by num]
+  - install re                      1.7.3      [required by tar-format]
+  - install conf-which              1          [required by conf-time]
+  - install base-bytes              base       [required by cstruct]
+  - install ocamlbuild              0.12.0     [required by tar-format]
+  - install ppx_tools               5.0+4.05.0 [required by ppx_cstruct]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install ocaml-migrate-parsetree 1.0.11     [required by cstruct]
+  - install num                     0          [required by sexplib]
+  - install conf-time               1          [required by cstruct]
+  - install cppo                    1.6.4      [required by ocplib-endian, lwt, ppx_deriving]
+  - install topkg                   0.9.1      [required by tar-format]
+  - install ppx_tools_versioned     5.2        [required by cstruct]
+  - install sexplib                 v0.11.0    [required by cstruct]
+  - install ocplib-endian           1.0        [required by cstruct]
+  - install lwt                     4.1.0      [required by tar-format]                       For the PPX, please install package lwt_ppx
+                                                                                              For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install cstruct                 2.4.1      [required by tar-format]
+  - install ppx_deriving            4.2.1      [required by ppx_cstruct]
+  - install cstruct-lwt             3.2.1      [required by tar-format]
+  - install ppx_cstruct             0          [required by tar-format]
+  - install tar-format              0.7.1
+===== 25 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.2.4.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[lwt.4.1.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-endian.1.0] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_tools.5.0+4.05.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[tar-format.0.7.1] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed conf-which.1
+-> installed conf-time.1
+-> installed cppo.1.6.4
+-> installed num.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0+4.05.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocplib-endian.1.0
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib0.v0.11.0
+-> installed ppx_deriving.4.2.1
+-> installed topkg.0.9.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.2.4.1
+-> installed ppx_cstruct.0
+-> installed cstruct-lwt.3.2.1
+[ERROR] The compilation of tar-format failed at "/home/opam/.opam/4.05/bin/ocaml pkg/pkg.ml build --pinned false --tests false --with-mirage false --with-lwt true".
+
+#=== ERROR while compiling tar-format.0.7.1 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/tar-format.0.7.1
+# command              ~/.opam/4.05/bin/ocaml pkg/pkg.ml build --pinned false --tests false --with-mirage false --with-lwt true
+# exit-code            1
+# env-file             ~/.opam/log/tar-format-11-32f7d5.env
+# output-file          ~/.opam/log/tar-format-11-32f7d5.out
+### output ###
+# ocamlfind ocamldep -package cstruct.ppx -package 'cstruct result re re.str' -modules lib/tar.ml > lib/tar.ml.depends
+# ocamlfind ocamldep -package 'cstruct result re re.str' -modules lib/tar.mli > lib/tar.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -principal -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar.cmi lib/tar.mli
+# ocamlfind ocamlopt -c -g -bin-annot -principal -package cstruct.ppx -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar.cmx lib/tar.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -principal -package cstruct.ppx -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar.cmx lib/tar.ml
+# [1mFile "[1mlib/tar.ml", line 33, characters 28-40[0m[0m:
+# [1;35mWarning[0m 3: deprecated: module Re_str
+# Use Re.Str
+# [1mFile "[1mlib/tar.ml", line 36, characters 29-42[0m[0m:
+# [1;35mWarning[0m 3: deprecated: module Re_str
+# Use Re.Str
+# [1mFile "[1mlib/tar.ml", line 37, characters 26-39[0m[0m:
+# [1;35mWarning[0m 3: deprecated: module Re_str
+# Use Re.Str
+# [1mFile "[1mlib/tar.ml", line 549, characters 2-13[0m[0m:
+# [1;35mWarning[0m 44: this open statement shadows the type identifier t (which is later used)
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value sizeof_hdr.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_file_name.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_file_mode.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_user_id.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_group_id.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_file_size.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_mod_time.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_chksum.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_link_name.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_magic.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value copy_hdr_version.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_version.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_uname.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_gname.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_devmajor.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_devminor.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_prefix.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value hexdump_hdr.
+# [1mFile "[1mlib/tar.ml", line 174, characters 8-26[0m[0m:
+# [1;35mWarning[0m 32: unused value to_detailed_string.
+# [1mFile "[1mlib/tar.ml", line 512, characters 4-11[0m[0m:
+# [1;35mWarning[0m 32: unused value is_zero.
+# ocamlfind ocamlopt -a -package 'cstruct result re re.str' -I lib lib/tar.cmx -o lib/tar.cmxa
+# ocamlfind ocamlopt -shared -linkall -package 'cstruct result re re.str' -I lib lib/tar.cmxa -o lib/tar.cmxs
+# ocamlfind ocamlc -c -g -bin-annot -principal -package cstruct.ppx -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar.cmo lib/tar.ml
+# + ocamlfind ocamlc -c -g -bin-annot -principal -package cstruct.ppx -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar.cmo lib/tar.ml
+# [1mFile "[1mlib/tar.ml", line 33, characters 28-40[0m[0m:
+# [1;35mWarning[0m 3: deprecated: module Re_str
+# Use Re.Str
+# [1mFile "[1mlib/tar.ml", line 36, characters 29-42[0m[0m:
+# [1;35mWarning[0m 3: deprecated: module Re_str
+# Use Re.Str
+# [1mFile "[1mlib/tar.ml", line 37, characters 26-39[0m[0m:
+# [1;35mWarning[0m 3: deprecated: module Re_str
+# Use Re.Str
+# [1mFile "[1mlib/tar.ml", line 549, characters 2-13[0m[0m:
+# [1;35mWarning[0m 44: this open statement shadows the type identifier t (which is later used)
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value sizeof_hdr.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_file_name.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_file_mode.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_user_id.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_group_id.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_file_size.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_mod_time.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_chksum.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_link_name.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_magic.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value copy_hdr_version.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_version.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_uname.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_gname.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_devmajor.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_devminor.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value blit_hdr_prefix.
+# [1mFile "[1m_none_", line 1[0m[0m:
+# [1;35mWarning[0m 32: unused value hexdump_hdr.
+# [1mFile "[1mlib/tar.ml", line 174, characters 8-26[0m[0m:
+# [1;35mWarning[0m 32: unused value to_detailed_string.
+# [1mFile "[1mlib/tar.ml", line 512, characters 4-11[0m[0m:
+# [1;35mWarning[0m 32: unused value is_zero.
+# ocamlfind ocamlc -a -package 'cstruct result re re.str' -I lib lib/tar.cmo -o lib/tar.cma
+# ocamlfind ocamldep -package 'cstruct result re re.str' -modules lib/tar_unix.ml > lib/tar_unix.ml.depends
+# ocamlfind ocamldep -package 'cstruct result re re.str' -modules lib/tar_unix.mli > lib/tar_unix.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -principal -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_unix.cmi lib/tar_unix.mli
+# ocamlfind ocamlopt -c -g -bin-annot -principal -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_unix.cmx lib/tar_unix.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -principal -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_unix.cmx lib/tar_unix.ml
+# [1mFile "[1mlib/tar_unix.ml", line 78, characters 8-17[0m[0m:
+# [1;35mWarning[0m 26: unused variable file_size.
+# ocamlfind ocamlopt -a -package 'cstruct result re re.str' -I lib lib/tar_unix.cmx -o lib/tar_unix.cmxa
+# ocamlfind ocamlopt -shared -linkall -package 'cstruct result re re.str' -I lib lib/tar_unix.cmxa -o lib/tar_unix.cmxs
+# ocamlfind ocamlc -c -g -bin-annot -principal -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_unix.cmo lib/tar_unix.ml
+# + ocamlfind ocamlc -c -g -bin-annot -principal -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_unix.cmo lib/tar_unix.ml
+# [1mFile "[1mlib/tar_unix.ml", line 78, characters 8-17[0m[0m:
+# [1;35mWarning[0m 26: unused variable file_size.
+# ocamlfind ocamlc -a -package 'cstruct result re re.str' -I lib lib/tar_unix.cmo -o lib/tar_unix.cma
+# ocamlfind ocamldep -package lwt -package 'cstruct result re re.str' -modules lib/tar_lwt_unix.ml > lib/tar_lwt_unix.ml.depends
+# ocamlfind ocamldep -package lwt -package 'cstruct result re re.str' -modules lib/tar_lwt_unix.mli > lib/tar_lwt_unix.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -principal -package lwt -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_lwt_unix.cmi lib/tar_lwt_unix.mli
+# + ocamlfind ocamlc -c -g -bin-annot -principal -package lwt -package 'cstruct result re re.str' -w +A -color always -I lib -o lib/tar_lwt_unix.cmi lib/tar_lwt_unix.mli
+# [1mFile "[1mlib/tar_lwt_unix.mli", line 19, characters 17-36[0m[0m:
+# [1;31mError[0m: Unbound module Lwt_unix
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'lib/tar.a' 'lib/tar.cmxs' 'lib/tar.cmxa' 'lib/tar.cma'
+#      'lib/tar.cmx' 'lib/tar.cmi' 'lib/tar.mli' 'lib/tar_unix.a'
+#      'lib/tar_unix.cmxs' 'lib/tar_unix.cmxa' 'lib/tar_unix.cma'
+#      'lib/tar_unix.cmx' 'lib/tar_unix.cmi' 'lib/tar_unix.mli'
+#      'lib/tar_lwt_unix.a' 'lib/tar_lwt_unix.cmxs' 'lib/tar_lwt_unix.cmxa'
+#      'lib/tar_lwt_unix.cma' 'lib/tar_lwt_unix.cmx' 'lib/tar_lwt_unix.cmi'
+#      'lib/tar_lwt_unix.mli']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build tar-format 0.7.1
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install base-num                base
+| - install conf-time               1
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 2.4.1
+| - install cstruct-lwt             3.2.1
+| - install lwt                     4.1.0
+| - install num                     0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocplib-endian           1.0
+| - install parsexp                 v0.11.0
+| - install ppx_cstruct             0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_tools               5.0+4.05.0
+| - install ppx_tools_versioned     5.2
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install topkg                   0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180726223742.export"
+31 1532644654 1532644722

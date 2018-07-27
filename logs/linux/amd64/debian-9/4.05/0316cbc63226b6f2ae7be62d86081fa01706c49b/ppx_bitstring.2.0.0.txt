@@ -1,0 +1,235 @@
+$ opam depext -iy -j 2 ppx_bitstring.2.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+time
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils m4 time
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package time.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../time_1.7-25.1+b1_amd64.deb ...
+Unpacking time (1.7-25.1+b1) ...
+Setting up time (1.7-25.1+b1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by ocaml-migrate-parsetree]
+  - install conf-which              1      [required by conf-time]
+  - install ocamlbuild              0.12.0 [required by camlp4]
+  - install ocaml-migrate-parsetree 1.0.11 [required by ppx_bitstring]
+  - install conf-time               1      [required by bitstring]
+  - install camlp4                  4.05+1 [required by bitstring]
+  - install ppx_tools_versioned     5.2    [required by ppx_bitstring]
+  - install bitstring               2.1.1  [required by ppx_bitstring]
+  - install ppx_bitstring           2.0.0
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[bitstring.2.1.1] found in cache
+[camlp4.4.05+1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_bitstring.2.0.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-which.1
+-> installed conf-time.1
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlbuild.0.12.0
+-> installed ppx_tools_versioned.5.2
+-> installed camlp4.4.05+1
+-> installed bitstring.2.1.1
+[ERROR] The compilation of ppx_bitstring failed at "/home/opam/.opam/4.05/bin/jbuilder build -p ppx_bitstring -j 71".
+
+#=== ERROR while compiling ppx_bitstring.2.0.0 ================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/ppx_bitstring.2.0.0
+# command              ~/.opam/4.05/bin/jbuilder build -p ppx_bitstring -j 71
+# exit-code            1
+# env-file             ~/.opam/log/ppx_bitstring-10-b4e351.env
+# output-file          ~/.opam/log/ppx_bitstring-10-b4e351.out
+### output ###
+#       ocamlc src/.ppx_bitstring.objs/ppx_bitstring.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.05/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.ppx_bitstring.objs -I /home/opam/.opam/4.05/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.05/lib/ocaml/compiler-libs -I /home/opam/.opam/4.05/lib/ppx_tools_versioned -I /home/opam/.opam/4.05/lib/result -no-alias-deps -o src/.ppx_bitstring.objs/ppx_bitstring.cmo -c -impl src/ppx_bitstring.pp.ml)
+# File "src/ppx_bitstring.ml", line 243, characters 21-50:
+# Error: This expression has type Lexing.lexbuf
+#        but an expression was expected of type
+#          < case : 'a; core_type : 'b; expression : 'c;
+#            extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#            out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#            out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#            pattern : 'm; signature : 'n; structure : 'o;
+#            toplevel_phrase : 'p; type_declaration : 'q; type_extension : 'r >
+#          Migrate_parsetree_versions.ocaml_version =
+#            (module Migrate_parsetree_versions.OCaml_version with type Ast.Ast_mapper.mapper = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_mapper and type Ast.Outcometree.out_class_type = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_class_type and type Ast.Outcometree.out_module_type = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_module_type and type Ast.Outcometree.out_phrase = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_phrase and type Ast.Outcometree.out_sig_item = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_sig_item and type Ast.Outcometree.out_type = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_type and type Ast.Outcometree.out_type_extension = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_type_extension and type Ast.Outcometree.out_value = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_out_value and type Ast.Parsetree.case = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_case and type Ast.Parsetree.core_type = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_core_type and type Ast.Parsetree.expression = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_expression and type Ast.Parsetree.extension_constructor = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_extension_constructor and type Ast.Parsetree.pattern = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_pattern and type Ast.Parsetree.signature = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_signature and type Ast.Parsetree.structure = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_structure and type Ast.Parsetree.toplevel_phrase = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_toplevel_phrase and type Ast.Parsetree.type_declaration = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_type_declaration and type Ast.Parsetree.type_extension = 
+#             < case : 'a; core_type : 'b; expression : 'c;
+#               extension_constructor : 'd; mapper : 'e; out_class_type : 'f;
+#               out_module_type : 'g; out_phrase : 'h; out_sig_item : 'i;
+#               out_type : 'j; out_type_extension : 'k; out_value : 'l;
+#               pattern : 'm; signature : 'n; structure : 'o;
+#               toplevel_phrase : 'p; type_declaration : 'q;
+#               type_extension : 'r >
+#             Migrate_parsetree_versions.get_type_extension)
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_bitstring 2.0.0
++- 
++- The following changes have been performed
+| - install bitstring               2.1.1
+| - install camlp4                  4.05+1
+| - install conf-time               1
+| - install conf-which              1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180726220847.export"
+31 1532642918 1532643045
