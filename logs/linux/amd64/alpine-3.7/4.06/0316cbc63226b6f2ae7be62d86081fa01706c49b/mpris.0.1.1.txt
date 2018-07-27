@@ -1,0 +1,179 @@
+$ opam depext -iy -j 2 mpris.0.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3       [required by lwt]
+  - install base-bytes base      [required by cppo]
+  - install ocamlbuild 0.12.0    [required by mpris]
+  - install cppo       1.6.4     [required by lwt]
+  - install topkg      0.9.1     [required by xmlm]
+  - install ocamlmod   0.0.9     [required by oasis]
+  - install ocamlify   0.0.1     [required by oasis]
+  - install camlp4     4.06+1    [required by lwt_camlp4, type_conv]
+  - install lwt        4.1.0     [required by obus]                  For the PPX, please install package lwt_ppx
+  - install xmlm       1.3.0     [required by obus]
+  - install react      1.2.1     [required by obus]
+  - install oasis      0.4.11    [required by mpris]
+  - install type_conv  113.00.02 [required by obus]
+  - install lwt_log    1.1.0     [required by obus]
+  - install lwt_camlp4 1.0.0     [required by obus]
+  - install lwt_react  1.1.1     [required by obus]
+  - install obus       1.1.8     [required by mpris]
+  - install mpris      0.1.1
+===== 18 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[cppo.1.6.4] found in cache
+[lwt.4.1.0] found in cache
+[lwt_camlp4.1.0.0] found in cache
+[lwt_log.1.1.0] found in cache
+[lwt_react.1.1.1] found in cache
+[mpris.0.1.1] found in cache
+[oasis.0.4.11] found in cache
+[obus.1.1.8] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[type_conv.113.00.02] found in cache
+[xmlm.1.3.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocamlbuild.0.12.0
+-> installed lwt_log.1.1.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed topkg.0.9.1
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed xmlm.1.3.0
+-> installed camlp4.4.06+1
+-> installed lwt_camlp4.1.0.0
+-> installed type_conv.113.00.02
+-> installed obus.1.1.8
+[ERROR] The compilation of mpris failed at "/usr/bin/make".
+
+#=== ERROR while compiling mpris.0.1.1 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mpris.0.1.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/mpris-13-6eda39.env
+# output-file          ~/.opam/log/mpris-13-6eda39.out
+### output ###
+# ocaml setup.ml -configure
+# 
+# Configuration:
+# ocamlfind: ........................................... /home/opam/.opam/4.06/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.06/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.06/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.06/bin/ocamlbuild
+# Package name: ........................................ mpris
+# Package version: ..................................... 0.1.0
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.06.1
+# standard_library_default: ............................ /home/opam/.opam/4.06/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.06/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.06/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ......................................
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: .........................
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_lwt: ............................................. /home/opam/.opam/4.06/lib/lwt
+# pkg_obus: ............................................ /home/opam/.opam/4.06/lib/obus
+# 
+# ocaml setup.ml -build -j 4
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 44, characters 36-50:
+# Warning: the tag "pkg_lwt.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 45, characters 33-47:
+# Warning: the tag "pkg_lwt.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 46, characters 32-46:
+# Warning: the tag "pkg_lwt.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package lwt -package obus -syntax camlp4o -modules lib/mpris_client_generic.mli > lib/mpris_client_generic.mli.depends
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package lwt -package obus -syntax camlp4o -modules lib/mpris_client_generic.mli > lib/mpris_client_generic.mli.depends
+# ocamlfind: Using -syntax, but no package is selected specifying a preprocessor as required for -syntax
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/mpris.cma lib/mpris.cmxa lib/mpris.a lib/mpris.cmxs clients/mpris_clients.cma clients/mpris_clients.cmxa clients/mpris_clients.a clients/mpris_clients.cmxs demo/demo_spotify.byte -tag debug -j 4' terminated with error code 10")
+# make: *** [Makefile:15: build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mpris 0.1.1
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install camlp4     4.06+1
+| - install cppo       1.6.4
+| - install lwt        4.1.0
+| - install lwt_camlp4 1.0.0
+| - install lwt_log    1.1.0
+| - install lwt_react  1.1.1
+| - install oasis      0.4.11
+| - install obus       1.1.8
+| - install ocamlbuild 0.12.0
+| - install ocamlify   0.0.1
+| - install ocamlmod   0.0.9
+| - install react      1.2.1
+| - install result     1.3
+| - install topkg      0.9.1
+| - install type_conv  113.00.02
+| - install xmlm       1.3.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727025701.export"
+31 1532660218 1532660416

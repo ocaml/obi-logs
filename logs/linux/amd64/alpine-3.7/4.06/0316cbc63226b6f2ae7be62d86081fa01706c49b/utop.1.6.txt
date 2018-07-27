@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 utop.1.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for utop.1.6: The following dependencies couldn't be met:
+          - utop -> ocaml = 4.01
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=utop.1.6 returned 20
+20 1532659676 1532659678

@@ -1,0 +1,470 @@
+$ opam depext -iy -j 2 genet.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+gmp-dev
+gtk+2.0-dev
+gtksourceview2-dev
+m4
+pcre-dev
+perl
+pkgconfig
+zlib-dev
+m4
+pkgconf
+# The following new OS packages need to be installed: gmp-dev gtk+2.0-dev gtksourceview2-dev pcre-dev perl zlib-dev
+The following command needs to be run through "sudo":
+    apk add gmp-dev gtk+2.0-dev gtksourceview2-dev pcre-dev perl zlib-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/116) Installing libgmpxx (6.1.2-r1)
+(2/116) Installing gmp-dev (6.1.2-r1)
+(3/116) Installing libffi (3.2.1-r4)
+(4/116) Installing libintl (0.19.8.1-r1)
+(5/116) Installing libuuid (2.31-r0)
+(6/116) Installing libblkid (2.31-r0)
+(7/116) Installing libmount (2.31-r0)
+(8/116) Installing pcre (8.41-r1)
+(9/116) Installing glib (2.54.2-r0)
+(10/116) Installing atk (2.26.1-r1)
+(11/116) Installing libbz2 (1.0.6-r6)
+(12/116) Installing perl (5.26.2-r1)
+(13/116) Installing gdbm (1.13-r1)
+(14/116) Installing sqlite-libs (3.21.0-r1)
+(15/116) Installing python2 (2.7.14-r2)
+(16/116) Installing gettext-asprintf (0.19.8.1-r1)
+(17/116) Installing libunistring (0.9.7-r0)
+(18/116) Installing gettext-libs (0.19.8.1-r1)
+(19/116) Installing libxml2 (2.9.7-r0)
+(20/116) Installing gettext (0.19.8.1-r1)
+(21/116) Installing gettext-dev (0.19.8.1-r1)
+(22/116) Installing zlib-dev (1.2.11-r1)
+(23/116) Installing bzip2-dev (1.0.6-r6)
+(24/116) Installing libffi-dev (3.2.1-r4)
+(25/116) Installing libfdisk (2.31-r0)
+(26/116) Installing libsmartcols (2.31-r0)
+(27/116) Installing util-linux-dev (2.31-r0)
+(28/116) Installing libpcre16 (8.41-r1)
+(29/116) Installing libpcre32 (8.41-r1)
+(30/116) Installing libpcrecpp (8.41-r1)
+(31/116) Installing pcre-dev (8.41-r1)
+(32/116) Installing glib-dev (2.54.2-r0)
+(33/116) Installing atk-dev (2.26.1-r1)
+(34/116) Installing libpng (1.6.34-r1)
+(35/116) Installing freetype (2.8.1-r3)
+(36/116) Installing fontconfig (2.12.6-r0)
+(37/116) Installing expat-dev (2.2.5-r0)
+(38/116) Installing libpng-dev (1.6.34-r1)
+(39/116) Installing freetype-dev (2.8.1-r3)
+(40/116) Installing fontconfig-dev (2.12.6-r0)
+(41/116) Installing libxrender (0.9.10-r2)
+(42/116) Installing renderproto (0.11.1-r3)
+(43/116) Installing libxrender-dev (0.9.10-r2)
+(44/116) Installing pixman (0.34.0-r3)
+(45/116) Installing pixman-dev (0.34.0-r3)
+(46/116) Installing util-macros (1.19.1-r1)
+(47/116) Installing xcb-util (0.4.0-r1)
+(48/116) Installing xcb-util-dev (0.4.0-r1)
+(49/116) Installing libxext (1.3.3-r2)
+(50/116) Installing libxext-dev (1.3.3-r2)
+(51/116) Installing cairo (1.14.10-r0)
+(52/116) Installing cairo-tools (1.14.10-r0)
+(53/116) Installing cairo-gobject (1.14.10-r0)
+(54/116) Installing cairo-dev (1.14.10-r0)
+(55/116) Installing perl-http-date (6.02-r1)
+(56/116) Installing perl-lwp-mediatypes (6.02-r1)
+(57/116) Installing perl-encode-locale (1.05-r1)
+(58/116) Installing perl-uri (1.71-r1)
+(59/116) Installing perl-io-html (1.001-r1)
+(60/116) Installing perl-http-message (6.13-r0)
+(61/116) Installing perl-http-cookies (6.04-r0)
+(62/116) Installing perl-net-http (6.09-r1)
+(63/116) Installing perl-http-daemon (6.01-r1)
+(64/116) Installing perl-html-tagset (3.20-r1)
+(65/116) Installing perl-html-parser (3.72-r2)
+(66/116) Installing perl-file-listing (6.04-r1)
+(67/116) Installing perl-www-robotrules (6.02-r1)
+(68/116) Installing perl-http-negotiate (6.01-r1)
+(69/116) Installing perl-capture-tiny (0.46-r0)
+(70/116) Installing perl-devel-symdump (2.18-r0)
+(71/116) Installing perl-test-pod (1.51-r1)
+(72/116) Installing perl-pod-coverage (0.23-r0)
+(73/116) Installing perl-try-tiny (0.28-r1)
+(74/116) Installing perl-libwww (6.29-r0)
+(75/116) Installing perl-xml-parser (2.44-r4)
+(76/116) Installing file (5.32-r0)
+(77/116) Installing intltool (0.51.0-r4)
+(78/116) Installing damageproto (1.2.1-r3)
+(79/116) Installing fixesproto (5.0-r2)
+(80/116) Installing libxdamage (1.1.4-r1)
+(81/116) Installing libxfixes (5.0.3-r1)
+(82/116) Installing libxfixes-dev (5.0.3-r1)
+(83/116) Installing libxdamage-dev (1.1.4-r1)
+(84/116) Installing libxft (2.3.2-r2)
+(85/116) Installing graphite2 (1.3.10-r0)
+(86/116) Installing harfbuzz (1.6.3-r0)
+(87/116) Installing pango (1.40.14-r0)
+(88/116) Installing icu-libs (59.1-r1)
+(89/116) Installing harfbuzz-icu (1.6.3-r0)
+(90/116) Installing graphite2-dev (1.3.10-r0)
+(91/116) Installing icu-dev (59.1-r1)
+(92/116) Installing harfbuzz-dev (1.6.3-r0)
+(93/116) Installing libxft-dev (2.3.2-r2)
+(94/116) Installing pango-dev (1.40.14-r0)
+(95/116) Installing shared-mime-info (1.9-r0)
+(96/116) Installing hicolor-icon-theme (0.17-r0)
+(97/116) Installing libjpeg-turbo (1.5.2-r0)
+(98/116) Installing gdk-pixbuf (2.36.10-r0)
+(99/116) Installing gtk-update-icon-cache (2.24.31-r0)
+(100/116) Installing libxcomposite (0.4.4-r1)
+(101/116) Installing libxcursor (1.1.15-r0)
+(102/116) Installing libxi (1.7.9-r1)
+(103/116) Installing libxrandr (1.5.1-r1)
+(104/116) Installing dbus-libs (1.10.24-r0)
+(105/116) Installing avahi-libs (0.6.32-r4)
+(106/116) Installing nettle (3.3-r0)
+(107/116) Installing libtasn1 (4.12-r3)
+(108/116) Installing p11-kit (0.23.2-r2)
+(109/116) Installing gnutls (3.6.1-r0)
+(110/116) Installing cups-libs (2.2.5-r0)
+(111/116) Installing gtk+2.0 (2.24.31-r0)
+Executing gtk+2.0-2.24.31-r0.post-install
+(112/116) Installing gdk-pixbuf-dev (2.36.10-r0)
+(113/116) Installing gtk+2.0-dev (2.24.31-r0)
+(114/116) Installing libxml2-dev (2.9.7-r0)
+(115/116) Installing gtksourceview2 (2.10.5-r0)
+(116/116) Installing gtksourceview2-dev (2.10.5-r0)
+Executing busybox-1.27.2-r11.trigger
+Executing glib-2.54.2-r0.trigger
+No schema files found: doing nothing.
+Executing shared-mime-info-1.9-r0.trigger
+Executing gdk-pixbuf-2.36.10-r0.trigger
+Executing gtk-update-icon-cache-2.24.31-r0.trigger
+OK: 377 MiB in 189 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp                1          [required by conf-gmp-powm-sec, zarith]
+  - install calendar                2.04       [required by rdf]
+  - install ppx_tools               5.1+4.06.0 [required by xtmpl]
+  - install re                      1.7.3      [required by xtmpl]
+  - install base-bytes              base       [required by ocamlnet]
+  - install conf-perl               1          [required by zarith]
+  - install conf-pkg-config         1.1        [required by conf-gtksourceview]
+  - install num                     1.1        [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by base, sexplib]
+  - install mysql                   1.2.2      [required by genet]
+  - install easy-format             1.3.1      [required by yojson]
+  - install ppx_derivers            1.0        [required by ppxlib]
+  - install result                  1.3        [required by topkg]
+  - install conf-which              1          [required by biniou]
+  - install ocamlbuild              0.12.0     [required by menhir, ocamlnet]
+  - install conf-glade              2          [required by genet]
+  - install conf-gnomecanvas        2          [required by genet]
+  - install conf-gmp-powm-sec       1          [required by cryptokit]
+  - install stringext               1.5.0      [required by uri]
+  - install gen                     0.5.1      [required by sedlex]
+  - install cppo                    1.6.4      [required by yojson]
+  - install zarith                  1.7        [required by cryptokit]
+  - install conf-zlib               1          [required by cryptokit]
+  - install conf-libpcre            1          [required by pcre]
+  - install conf-gtksourceview      2          [required by lablgtk, lablgtk-extras]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.1    [required by pcre]
+  - install ocaml-migrate-parsetree 1.0.11     [required by js_of_ocaml, js_of_ocaml-ppx]
+  - install biniou                  1.2.0      [required by yojson]
+  - install uchar                   0.0.2      [required by jsonm, js_of_ocaml]
+  - install topkg                   0.9.1      [required by jsonm, xmlm, uuidm]
+  - install menhir                  20180703   [required by genet]
+  - install camlp4                  4.06+1     [required by config-file, ocamldot]
+  - install cryptokit               1.13       [required by rdf]
+  - install lablgtk                 2.18.6     [required by genet]
+  - install sexplib                 v0.11.0    [required by uri]
+  - install stdio                   v0.11.0    [required by pcre]
+  - install ppx_tools_versioned     5.2        [required by js_of_ocaml, js_of_ocaml-ppx]
+  - install yojson                  1.4.1      [required by rdf]
+  - install xmlm                    1.3.0      [required by lablgtk-extras, rdf]
+  - install cmdliner                1.0.2      [required by uuidm]
+  - install config-file             1.2        [required by genet]
+  - install ocamldot                1.0        [required by genet]
+  - install ppxlib                  0.3.0      [required by ppx_sexp_conv]
+  - install configurator            v0.11.0    [required by pcre]
+  - install sedlex                  1.99.4     [required by rdf, xtmpl]
+  - install uutf                    1.0.1      [required by rdf, xtmpl]
+  - install uuidm                   0.9.6      [required by rdf]
+  - install js_of_ocaml-compiler    3.2.1      [required by js_of_ocaml]
+  - install lablgtk-extras          1.6        [required by genet]
+  - install ppx_sexp_conv           v0.11.2    [required by uri]
+  - install pcre                    7.3.4      [required by genet]
+  - install uunf                    11.0.0     [required by iri]
+  - install jsonm                   1.0.1      [required by rdf]
+  - install js_of_ocaml             3.2.0      [required by xtmpl]
+  - install uri                     1.9.7      [required by rdf]
+  - install ocamlnet                4.1.6      [required by genet]
+  - install iri                     0.4.0      [required by rdf, xtmpl]
+  - install js_of_ocaml-ppx         3.2.0      [required by xtmpl]
+  - install rdf                     0.11.0     [required by genet]
+  - install xtmpl                   0.17.0     [required by genet]
+  - install genet                   0.6
+===== 63 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[calendar.2.04] found in cache
+[camlp4.4.06+1] found in cache
+[cmdliner.1.0.2] found in cache
+[config-file.1.2] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[genet.0.6] found in cache
+[iri.0.4.0] found in cache
+[js_of_ocaml.3.2.0] found in cache
+[js_of_ocaml-compiler.3.2.1] found in cache
+[js_of_ocaml-ppx.3.2.0] found in cache
+[jsonm.1.0.1] found in cache
+[lablgtk.2.18.6] found in cache
+[lablgtk-extras.1.6] found in cache
+[menhir.20180703] found in cache
+[mysql.1.2.2] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamldot.1.0] found in cache
+[ocamlnet.4.1.6] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[rdf.0.11.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uuidm.0.9.6] found in cache
+[uunf.11.0.0] found in cache
+[uutf.1.0.1] found in cache
+[xmlm.1.3.0] found in cache
+[xtmpl.0.17.0] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-glade failed at "/usr/bin/pkg-config libglade-2.0".
+[ERROR] The compilation of conf-gnomecanvas failed at "/usr/bin/pkg-config libgnomecanvas-2.0".
+[ERROR] The compilation of mysql failed at "/home/opam/.opam/4.06/.opam-switch/build/mysql.1.2.2/./configure --prefix /home/opam/.opam/4.06".
+-> installed base-bytes.base
+-> installed calendar.2.04
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-pkg-config.1.1
+-> installed conf-gtksourceview.2
+-> installed conf-libpcre.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed gen.0.5.1
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed menhir.20180703
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed sedlex.1.99.4
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed stdio.v0.11.0
+-> installed camlp4.4.06+1
+-> installed configurator.v0.11.0
+-> installed config-file.1.2
+-> installed ppxlib.0.3.0
+-> installed pcre.7.3.4
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed ppx_sexp_conv.v0.11.2
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed uuidm.0.9.6
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed uri.1.9.7
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed js_of_ocaml-compiler.3.2.1
+-> installed js_of_ocaml.3.2.0
+-> installed js_of_ocaml-ppx.3.2.0
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed uunf.11.0.0
+-> installed iri.0.4.0
+-> installed xtmpl.0.17.0
+
+#=== ERROR while compiling mysql.1.2.2 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mysql.1.2.2
+# command              ~/.opam/4.06/.opam-switch/build/mysql.1.2.2/./configure --prefix /home/opam/.opam/4.06
+# exit-code            1
+# env-file             ~/.opam/log/mysql-13-b22031.env
+# output-file          ~/.opam/log/mysql-13-b22031.out
+### output ###
+# configure: checking for ocaml compiler and tools...
+# checking for ocamlc... ocamlc
+# checking for ocamlopt... ocamlopt
+# checking for ocamlfind... ocamlfind
+# checking whether ocamlopt supports natdynlink... yes
+# checking for a BSD-compatible install... /usr/bin/install -c
+# configure: checking for C compiler...
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# configure: checking for C header files...
+# checking how to run the C preprocessor... gcc -E
+# checking for grep that handles long lines and -e... /bin/grep
+# checking for egrep... /bin/grep -E
+# checking for ANSI C header files... yes
+# checking for mysql_config include... /home/opam/.opam/4.06/.opam-switch/build/mysql.1.2.2/./configure: line 3413: mysql_config: command not found
+# 
+# checking for mysql_config libs... /home/opam/.opam/4.06/.opam-switch/build/mysql.1.2.2/./configure: line 3422: mysql_config: command not found
+# 
+# configure: checking for mysql.h...
+# checking for sys/types.h... yes
+# checking for sys/stat.h... yes
+# checking for stdlib.h... yes
+# checking for string.h... yes
+# checking for memory.h... yes
+# checking for strings.h... yes
+# checking for inttypes.h... yes
+# checking for stdint.h... yes
+# checking for unistd.h... yes
+# checking mysql.h usability... no
+# checking mysql.h presence... no
+# checking for mysql.h... no
+# checking mysql/mysql.h usability... no
+# checking mysql/mysql.h presence... no
+# checking for mysql/mysql.h... no
+# configure: error: mysql.h not found
+
+
+#=== ERROR while compiling conf-gnomecanvas.2 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-gnomecanvas.2
+# command              /usr/bin/pkg-config libgnomecanvas-2.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-gnomecanvas-13-b1c0e4.env
+# output-file          ~/.opam/log/conf-gnomecanvas-13-b1c0e4.out
+
+
+#=== ERROR while compiling conf-glade.2 =======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-glade.2
+# command              /usr/bin/pkg-config libglade-2.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-glade-13-5bdbb6.env
+# output-file          ~/.opam/log/conf-glade-13-5bdbb6.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-glade       2
+| - build conf-gnomecanvas 2
+| - build mysql            1.2.2
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install calendar                2.04
+| - install camlp4                  4.06+1
+| - install cmdliner                1.0.2
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-gtksourceview      2
+| - install conf-libpcre            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install config-file             1.2
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install iri                     0.4.0
+| - install js_of_ocaml             3.2.0
+| - install js_of_ocaml-compiler    3.2.1
+| - install js_of_ocaml-ppx         3.2.0
+| - install jsonm                   1.0.1
+| - install menhir                  20180703
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sedlex                  1.99.4
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install uri                     1.9.7
+| - install uuidm                   0.9.6
+| - install uunf                    11.0.0
+| - install uutf                    1.0.1
+| - install xmlm                    1.3.0
+| - install xtmpl                   0.17.0
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+
+<><> mysql.1.2.2 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires mysql client library installed. Due to abundance of mysql forks with different names and
+     opam not dealing very well with depext alternatives currently - they are not described as dependencies of this package.
+
+     Please ensure that mysql client library is installed and mysql_config binary is available in PATH.
+     Two most popular ways to achieve that are described in conf-mysql and conf-mariadb packages.
+
+     See also discussion in https://github.com/ocaml/opam-repository/pull/10312
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727030210.export"
+31 1532660524 1532660724

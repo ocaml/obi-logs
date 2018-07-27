@@ -1,0 +1,230 @@
+$ opam depext -iy -j 2 xen-gnt-unix.3.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+xen-dev
+m4
+# The following new OS packages need to be installed: xen-dev
+The following command needs to be run through "sudo":
+    apk add xen-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/85) Installing libressl-dev (2.6.5-r0)
+(2/85) Installing libbz2 (1.0.6-r6)
+(3/85) Installing libffi (3.2.1-r4)
+(4/85) Installing gdbm (1.13-r1)
+(5/85) Installing sqlite-libs (3.21.0-r1)
+(6/85) Installing python2 (2.7.14-r2)
+(7/85) Installing python2-dev (2.7.14-r2)
+(8/85) Installing libuuid (2.31-r0)
+(9/85) Installing libblkid (2.31-r0)
+(10/85) Installing libfdisk (2.31-r0)
+(11/85) Installing libmount (2.31-r0)
+(12/85) Installing libsmartcols (2.31-r0)
+(13/85) Installing util-linux-dev (2.31-r0)
+(14/85) Installing libcom_err (1.43.7-r0)
+(15/85) Installing e2fsprogs-libs (1.43.7-r0)
+(16/85) Installing e2fsprogs-dev (1.43.7-r0)
+(17/85) Installing libintl (0.19.8.1-r1)
+(18/85) Installing libunistring (0.9.7-r0)
+(19/85) Installing libxml2 (2.9.7-r0)
+(20/85) Installing gettext (0.19.8.1-r1)
+(21/85) Installing zlib-dev (1.2.11-r1)
+(22/85) Installing dev86 (0.16.21-r0)
+(23/85) Installing perl (5.26.2-r1)
+(24/85) Installing texinfo (6.5-r0)
+(25/85) Installing hwdata-pci (0.305-r0)
+(26/85) Installing pciutils-libs (3.5.6-r0)
+(27/85) Installing pciutils-dev (3.5.6-r0)
+(28/85) Installing gettext-asprintf (0.19.8.1-r1)
+(29/85) Installing gettext-libs (0.19.8.1-r1)
+(30/85) Installing gettext-dev (0.19.8.1-r1)
+(31/85) Installing bzip2-dev (1.0.6-r6)
+(32/85) Installing libffi-dev (3.2.1-r4)
+(33/85) Installing pcre (8.41-r1)
+(34/85) Installing glib (2.54.2-r0)
+(35/85) Installing libpcre16 (8.41-r1)
+(36/85) Installing libpcre32 (8.41-r1)
+(37/85) Installing libpcrecpp (8.41-r1)
+(38/85) Installing pcre-dev (8.41-r1)
+(39/85) Installing glib-dev (2.54.2-r0)
+(40/85) Installing yajl (2.1.0-r0)
+(41/85) Installing yajl-dev (2.1.0-r0)
+(42/85) Installing libnl3 (3.2.28-r1)
+(43/85) Installing libnl3-cli (3.2.28-r1)
+(44/85) Installing libnl3-dev (3.2.28-r1)
+(45/85) Installing spice-protocol (0.12.13-r0)
+(46/85) Installing pixman (0.34.0-r3)
+(47/85) Installing pixman-dev (0.34.0-r3)
+(48/85) Installing libogg (1.3.3-r1)
+(49/85) Installing celt051 (0.5.1.3-r0)
+(50/85) Installing celt051-dev (0.5.1.3-r0)
+(51/85) Installing libxext (1.3.3-r2)
+(52/85) Installing libxinerama (1.1.3-r1)
+(53/85) Installing libxext-dev (1.3.3-r2)
+(54/85) Installing xineramaproto (1.2.1-r3)
+(55/85) Installing libxinerama-dev (1.1.3-r1)
+(56/85) Installing libjpeg-turbo (1.5.2-r0)
+(57/85) Installing opus (1.2.1-r1)
+(58/85) Installing db (5.3.28-r0)
+(59/85) Installing libsasl (2.1.26-r11)
+(60/85) Installing spice-server (0.14.0-r6)
+(61/85) Installing spice-dev (0.14.0-r6)
+(62/85) Installing nettle (3.3-r0)
+(63/85) Installing libtasn1 (4.12-r3)
+(64/85) Installing p11-kit (0.23.2-r2)
+(65/85) Installing gnutls (3.6.1-r0)
+(66/85) Installing gnutls-c++ (3.6.1-r0)
+(67/85) Installing libgmpxx (6.1.2-r1)
+(68/85) Installing gmp-dev (6.1.2-r1)
+(69/85) Installing nettle-dev (3.3-r0)
+(70/85) Installing libtasn1-dev (4.12-r3)
+(71/85) Installing p11-kit-dev (0.23.2-r2)
+(72/85) Installing gnutls-dev (3.6.1-r0)
+(73/85) Installing curl-dev (7.61.0-r0)
+(74/85) Installing libaio (0.3.110-r1)
+(75/85) Installing libaio-dev (0.3.110-r1)
+(76/85) Installing lzo (2.10-r2)
+(77/85) Installing lzo-dev (2.10-r2)
+(78/85) Installing xz-libs (5.2.3-r1)
+(79/85) Installing xz-dev (5.2.3-r1)
+(80/85) Installing linux-headers (4.4.6-r2)
+(81/85) Installing argp-standalone (1.3-r2)
+(82/85) Installing perl-utils (5.26.2-r1)
+(83/85) Installing perl-dev (5.26.2-r1)
+(84/85) Installing xen-libs (4.9.2-r3)
+(85/85) Installing xen-dev (4.9.2-r3)
+Executing busybox-1.27.2-r11.trigger
+Executing glib-2.54.2-r0.trigger
+No schema files found: doing nothing.
+OK: 376 MiB in 158 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0                v0.11.0 [required by base, sexplib]
+  - install result                  1.3     [required by cmdliner, lwt]
+  - install base-bytes              base    [required by io-page]
+  - install ocamlbuild              0.12.0  [required by cmdliner]
+  - install num                     1.1     [required by sexplib]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by configurator]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppx_cstruct]
+  - install cppo                    1.6.4   [required by lwt]
+  - install topkg                   0.9.1   [required by cmdliner]
+  - install sexplib                 v0.11.0 [required by cstruct]
+  - install stdio                   v0.11.0 [required by configurator]
+  - install ppx_tools_versioned     5.2     [required by ppx_cstruct]
+  - install ocplib-endian           1.0     [required by mirage-profile]
+  - install lwt                     4.1.0   [required by xen-gnt]          For the PPX, please install package lwt_ppx
+                                                                           For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cmdliner                1.0.2   [required by xen-gnt]
+  - install cstruct                 3.2.1   [required by io-page, xen-gnt]
+  - install configurator            v0.11.0 [required by io-page]
+  - install ppx_cstruct             3.2.1   [required by mirage-profile]
+  - install io-page                 2.0.1   [required by xen-gnt-unix]
+  - install mirage-profile          0.8.2   [required by xen-gnt]
+  - install xen-gnt                 3.0.1   [required by xen-gnt-unix]
+  - install xen-gnt-unix            3.0.0
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cstruct.3.2.1] found in cache
+[io-page.2.0.1] found in cache
+[lwt.4.1.0] found in cache
+[mirage-profile.0.8.2] found in cache
+[num.1.1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-endian.1.0] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[xen-gnt.3.0.1] found in cache
+[xen-gnt-unix.3.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed num.1.1
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocplib-endian.1.0
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib.v0.11.0
+-> installed base.v0.11.1
+-> installed cstruct.3.2.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed io-page.2.0.1
+-> installed topkg.0.9.1
+-> installed ppx_cstruct.3.2.1
+-> installed mirage-profile.0.8.2
+-> installed cmdliner.1.0.2
+-> installed xen-gnt.3.0.1
+[ERROR] The compilation of xen-gnt-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p xen-gnt-unix -j 71".
+
+#=== ERROR while compiling xen-gnt-unix.3.0.0 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/xen-gnt-unix.3.0.0
+# command              ~/.opam/4.06/bin/jbuilder build -p xen-gnt-unix -j 71
+# exit-code            1
+# env-file             ~/.opam/log/xen-gnt-unix-13-019cf5.env
+# output-file          ~/.opam/log/xen-gnt-unix-13-019cf5.out
+### output ###
+# File "/home/opam/.opam/4.06/lib/io-page/META", line 1, characters 0-0:
+# Error: Library "io-page-unix" not found.
+# -> required by library "io-page.unix" in /home/opam/.opam/4.06/lib/io-page
+# Hint: try: dune external-lib-deps --missing --profile release -p xen-gnt-unix @install
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build xen-gnt-unix 3.0.0
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install cmdliner                1.0.2
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cstruct                 3.2.1
+| - install io-page                 2.0.1
+| - install lwt                     4.1.0
+| - install mirage-profile          0.8.2
+| - install num                     1.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocplib-endian           1.0
+| - install parsexp                 v0.11.0
+| - install ppx_cstruct             3.2.1
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install xen-gnt                 3.0.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    xen-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727024945.export"
+31 1532659779 1532659834

@@ -1,0 +1,25 @@
+$ opam depext -iy -j 2 cmark.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+cmark
+homebrew
+libffi-dev
+m4
+osx
+pkgconfig
+m4
+pkgconf
+# The following new OS packages need to be installed: cmark homebrew libffi-dev osx
+The following command needs to be run through "sudo":
+    apk add cmark homebrew libffi-dev osx
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+ERROR: unsatisfiable constraints:
+  cmark (missing):
+    required by: world[cmark]
+  homebrew (missing):
+    required by: world[homebrew]
+  osx (missing):
+    required by: world[osx]
+OS package installation failed
+1 1532660972 1532660975

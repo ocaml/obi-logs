@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 safepass.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for safepass.1.2: The following dependencies couldn't be met:
+          - safepass -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=safepass.1.2 returned 20
+20 1532659336 1532659339

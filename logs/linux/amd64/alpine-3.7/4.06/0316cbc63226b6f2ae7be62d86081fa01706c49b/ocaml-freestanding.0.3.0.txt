@@ -1,0 +1,96 @@
+$ opam depext -iy -j 2 ocaml-freestanding.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+pkgconfig
+m4
+pkgconf
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocaml-src          4.06.1 [required by ocaml-freestanding]
+  - install conf-pkg-config    1.1    [required by ocaml-freestanding]
+  - install solo5-kernel-ukvm  0.3.0  [required by ocaml-freestanding]
+  - install ocaml-freestanding 0.3.0
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocaml-freestanding.0.3.0] found in cache
+[ocaml-src.4.06.1] found in cache
+[solo5-kernel-ukvm.0.3.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocaml-src.4.06.1
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of solo5-kernel-ukvm failed at "/usr/bin/make ukvm".
+
+#=== ERROR while compiling solo5-kernel-ukvm.0.3.0 ============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0
+# command              /usr/bin/make ukvm
+# exit-code            2
+# env-file             ~/.opam/log/solo5-kernel-ukvm-13-b76d46.env
+# output-file          ~/.opam/log/solo5-kernel-ukvm-13-b76d46.out
+### output ###
+# ./configure.sh
+# /usr/bin/make -C kernel ukvm
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/kernel'
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/kernel.c -o ukvm/kernel.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/platform.c -o ukvm/platform.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/platform_intr.c -o ukvm/platform_intr.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/time.c -o ukvm/time.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/platform_lifecycle.c -o ukvm/platform_lifecycle.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/yield.c -o ukvm/yield.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/tscclock.c -o ukvm/tscclock.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/console.c -o ukvm/console.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/net.c -o ukvm/net.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/block.c -o ukvm/block.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c abort.c -o abort.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c cpu_x86_64.c -o cpu_x86_64.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -DASM_FILE -c cpu_vectors_x86_64.S -o cpu_vectors_x86_64.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ee_printf.c -o ee_printf.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c intr.c -o intr.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c lib.c -o lib.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c mem.c -o mem.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c exit.c -o exit.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c log.c -o log.o
+# cc -nostdinc -fno-stack-protector -ffreestanding -mno-red-zone -mno-sse -mno-mmx -mno-aes -mno-avx -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c cmdline.c -o cmdline.o
+# ld -r -nostdlib -z max-page-size=0x1000 -static  -o ukvm/solo5.o ukvm/kernel.o ukvm/platform.o ukvm/platform_intr.o ukvm/time.o ukvm/platform_lifecycle.o ukvm/yield.o ukvm/tscclock.o ukvm/console.o ukvm/net.o ukvm/block.o abort.o cpu_x86_64.o cpu_vectors_x86_64.o ee_printf.o intr.o lib.o mem.o exit.o log.o cmdline.o
+# objcopy -w -G solo5_\* -G _start\* ukvm/solo5.o ukvm/solo5.o
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/kernel'
+# /usr/bin/make -C ukvm
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm'
+# ./ukvm-configure . blk net gdb dumpcore
+# mkdir -p _build-ukvm
+# cc -Wall -Werror -std=c99 -O2 -g  -DUKVM_MODULE_BLK -DUKVM_MODULE_NET -DUKVM_MODULE_GDB -DUKVM_MODULE_DUMPCORE -c /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm/ukvm_core.c -o _build-ukvm/ukvm_core.o
+# cc -Wall -Werror -std=c99 -O2 -g  -DUKVM_MODULE_BLK -DUKVM_MODULE_NET -DUKVM_MODULE_GDB -DUKVM_MODULE_DUMPCORE -c /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm/ukvm_elf.c -o _build-ukvm/ukvm_elf.o
+# cc -Wall -Werror -std=c99 -O2 -g  -DUKVM_MODULE_BLK -DUKVM_MODULE_NET -DUKVM_MODULE_GDB -DUKVM_MODULE_DUMPCORE -c /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm/ukvm_main.c -o _build-ukvm/ukvm_main.o
+# cc -Wall -Werror -std=c99 -O2 -g  -DUKVM_MODULE_BLK -DUKVM_MODULE_NET -DUKVM_MODULE_GDB -DUKVM_MODULE_DUMPCORE -c /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm/ukvm_module_blk.c -o _build-ukvm/ukvm_module_blk.o
+# cc -Wall -Werror -std=c99 -O2 -g  -DUKVM_MODULE_BLK -DUKVM_MODULE_NET -DUKVM_MODULE_GDB -DUKVM_MODULE_DUMPCORE -c /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm/ukvm_module_net.c -o _build-ukvm/ukvm_module_net.o
+# /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm/ukvm_module_net.c:44:22: fatal error: linux/if.h: No such file or directory
+#  #include <linux/if.h>
+#                       ^
+# compilation terminated.
+# make[1]: *** [Makefile.ukvm:23: _build-ukvm/ukvm_module_net.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.3.0/ukvm'
+# make: *** [GNUmakefile:40: ukvm] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build solo5-kernel-ukvm 0.3.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install conf-pkg-config 1.1
+| - install ocaml-src       4.06.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    linux-headers
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727025747.export"
+31 1532660264 1532660273
