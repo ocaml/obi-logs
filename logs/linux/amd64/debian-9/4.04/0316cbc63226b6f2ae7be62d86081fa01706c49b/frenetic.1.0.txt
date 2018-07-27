@@ -1,0 +1,42 @@
+$ opam depext -iy -j 2 frenetic.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by lwt]
+  - install base-bytes              base   [required by ocplib-endian, ounit]
+  - install ocamlbuild              0.12.0 [required by cstruct, openflow]
+  - install ocaml-migrate-parsetree 1.0.11 [required by lwt]
+  - install cppo                    1.6.4  [required by lwt, ocplib-endian]
+  - install ounit                   2.0.8  [required by frenetic]
+  - install camlp4                  4.04+1 [required by cstruct, openflow]
+  - install ppx_tools_versioned     5.2    [required by lwt]
+  - install ocplib-endian           1.0    [required by cstruct]
+  - install lwt                     3.3.0  [required by frenetic]             For the PPX, please install package lwt_ppx
+                                                                              For the Camlp4 syntax, please install package lwt_camlp4
+                                                                              For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cstruct                 1.2.0  [required by frenetic]
+  - install packet                  0.1.1  [required by frenetic]
+  - install openflow                0.2.0  [required by frenetic]
+  - install frenetic                1.0
+===== 14 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.04+1] found in cache
+[cppo.1.6.4] found in cache
+[cstruct.1.2.0] found in cache
+[lwt.3.3.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-endian.1.0] found in cache
+[openflow.0.2.0] found in cache
+[ounit.2.0.8] found in cache
+[packet.0.1.1] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - frenetic.1.0: Bad checksum
+
+40 1532648917 1532648925

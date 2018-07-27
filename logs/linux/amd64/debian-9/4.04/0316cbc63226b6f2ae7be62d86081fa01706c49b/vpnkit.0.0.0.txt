@@ -1,0 +1,397 @@
+$ opam depext -iy -j 2 vpnkit.0.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+pkg-config
+time
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils m4 pkg-config time
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../0-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../1-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../2-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../3-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../4-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../5-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../6-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package time.
+Preparing to unpack .../7-time_1.7-25.1+b1_amd64.deb ...
+Unpacking time (1.7-25.1+b1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../8-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../9-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up time (1.7-25.1+b1) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_traverse_builtins   v0.10.0  [required by ppx_core, ppx_metaquot]
+  - install re                      1.7.3    [required by dns, tar-format]
+  - install fd-send-recv            1.0.5    [required by vpnkit]
+  - install ppx_tools               5.0      [required by dns-forward, dns, pcap-format]
+  - install result                  1.3      [required by vpnkit]
+  - install omake                   0.10.3   [required by uwt]
+  - install base-num                base     [required by num]
+  - install ocamlbuild              0.12.0   [required by vpnkit]
+  - install base-bytes              base     [required by hvsock, datakit-server, astring, etc.]
+  - install conf-pkg-config         1.1      [required by uwt]
+  - install ocaml-compiler-libs     v0.10.0  [required by ppx_core]
+  - install ppx_derivers            1.0      [required by ppx_deriving]
+  - install conf-which              1        [required by hashcons]
+  - install ocaml-migrate-parsetree 1.0.11   [required by cstruct]
+  - install num                     0        [required by sexplib]
+  - install uchar                   0.0.2    [required by fmt]
+  - install topkg                   0.9.1    [required by datakit-server, astring, dns-forward]
+  - install ocamlmod                0.0.9    [required by oasis]
+  - install ocamlify                0.0.1    [required by oasis]
+  - install menhir                  20180703 [required by charrua-core]
+  - install win-error               0.3      [required by protocol-9p]
+  - install stringext               1.5.0    [required by uri]
+  - install lwt                     2.6.0    [required by vpnkit]
+  - install cppo                    1.6.4    [required by uwt]
+  - install base64                  2.2.0    [required by dns]
+  - install hashcons                1.0.1    [required by vpnkit]
+  - install conf-time               1        [required by cstruct]
+  - install ppx_tools_versioned     5.2      [required by cstruct]
+  - install ppx_ast                 v0.10.0  [required by ppx_core]
+  - install sexplib                 v0.10.0  [required by datakit-server, charrua-core, dns-forward]
+  - install rresult                 0.5.0    [required by datakit-server, dns-forward]
+  - install mtime                   0.8.4    [required by dns-forward]
+  - install duration                0.1.1    [required by hvsock]
+  - install cmdliner                1.0.2    [required by vpnkit]
+  - install astring                 0.8.3    [required by vpnkit]
+  - install oasis                   0.4.11   [required by vpnkit]
+  - install uwt                     0.0.3    [required by vpnkit]
+  - install ocplib-endian           1.0      [required by cstruct]
+  - install cppo_ocamlbuild         1.6.0    [required by ppx_deriving]
+  - install base                    v0.10.0  [required by ppx_core]
+  - install fmt                     0.8.5    [required by vpnkit]
+  - install ocb-stubblr             0.1.1    [required by named-pipe]
+  - install cstruct                 2.4.1    [required by pcap-format, dns-forward, datakit-server, etc.]
+  - install ppx_deriving            4.2.1    [required by charrua-core]
+  - install stdio                   v0.10.0  [required by ppx_core]
+  - install logs                    0.6.2    [required by vpnkit]
+  - install named-pipe              0.4.0    [required by vpnkit]
+  - install io-page                 1.6.1    [required by protocol-9p]
+  - install cstruct-unix            3.2.1    [required by charrua-core]
+  - install cstruct-lwt             3.2.1    [required by dns-forward, tar-format]
+  - install ppx_cstruct             0        [required by pcap-format, charrua-core, dns-forward, tar-format]
+  - install ppx_core                v0.10.0  [required by ppx_sexp_conv]
+  - install win-eventlog            0.2      [required by vpnkit]
+  - install asl                     0.11     [required by vpnkit]
+  - install pcap-format             0.5.1    [required by vpnkit]
+  - install mirage-profile          0.7.0    [required by dns]
+  - install ppx_optcomp             v0.10.0  [required by ppx_driver]
+  - install shared-memory-ring      3.0.0    [required by mirage-console]
+  - install ppx_driver              v0.10.4  [required by ppx_sexp_conv]
+  - install ppx_metaquot            v0.10.0  [required by ppx_sexp_conv]
+  - install ppx_type_conv           v0.10.0  [required by charrua-core]
+  - install ppx_sexp_conv           v0.10.0  [required by charrua-core, dns-forward]
+  - install uri                     1.9.2    [required by datakit-server, dns]
+  - install ipaddr                  2.7.2    [required by vpnkit]
+  - install mirage-types            2.8.0    [required by dns]
+  - install mirage-types-lwt        2.8.0    [required by vpnkit]
+  - install mirage-clock-unix       1.0.0    [required by mirage-unix]
+  - install dns                     0.18.1   [required by vpnkit]
+  - install tar-format              0.6.1    [required by vpnkit]
+  - install mirage-flow             1.1.0    [required by vpnkit]
+  - install channel                 1.1.1    [required by dns-forward]
+  - install mirage-unix             2.6.0    [required by tcpip]
+  - install hvsock                  0.12.0   [required by vpnkit]
+  - install protocol-9p             0.8.0    [required by datakit-server]
+  - install dns-forward             0.7.2    [required by vpnkit]
+  - install mirage-console          2.1.2    [required by tcpip]
+  - install datakit-server          0.9.0    [required by vpnkit]
+  - install tcpip                   2.8.1    [required by vpnkit]
+  - install charrua-core            0.3      [required by vpnkit]
+  - install vpnkit                  0.0.0
+===== 80 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[asl.0.11] found in cache
+[astring.0.8.3] found in cache
+[base.v0.10.0] found in cache
+[base64.2.2.0] found in cache
+[channel.1.1.1] found in cache
+[charrua-core.0.3] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.2.4.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[cstruct-unix.3.2.1] found in cache
+[datakit-server.0.9.0] found in cache
+[dns.0.18.1] found in cache
+[dns-forward.0.7.2] found in cache
+[duration.0.1.1] found in cache
+[fd-send-recv.1.0.5] found in cache
+[fmt.0.8.5] found in cache
+[hashcons.1.0.1] found in cache
+[hvsock.0.12.0] found in cache
+[io-page.1.6.1] found in cache
+[ipaddr.2.7.2] found in cache
+[logs.0.6.2] found in cache
+[lwt.2.6.0] found in cache
+[menhir.20180703] found in cache
+[mirage-clock-unix.1.0.0] found in cache
+[mirage-console.2.1.2] found in cache
+[mirage-flow.1.1.0] found in cache
+[mirage-profile.0.7.0] found in cache
+[mirage-types.2.8.0] found in cache
+[mirage-unix.2.6.0] found in cache
+[mtime.0.8.4] found in cache
+[named-pipe.0.4.0] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.10.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ocb-stubblr.0.1.1] found in cache
+[ocplib-endian.1.0] found in cache
+[omake.0.10.3] found in cache
+[pcap-format.0.5.1] found in cache
+[ppx_ast.v0.10.0] found in cache
+[ppx_core.v0.10.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.10.4] found in cache
+[ppx_metaquot.v0.10.0] found in cache
+[ppx_optcomp.v0.10.0] found in cache
+[ppx_sexp_conv.v0.10.0] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_traverse_builtins.v0.10.0] found in cache
+[ppx_type_conv.v0.10.0] found in cache
+[protocol-9p.0.8.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.v0.10.0] found in cache
+[shared-memory-ring.3.0.0] found in cache
+[stdio.v0.10.0] found in cache
+[stringext.1.5.0] found in cache
+[tar-format.0.6.1] found in cache
+[tcpip.2.8.1] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.2] found in cache
+[uwt.0.0.3] found in cache
+[vpnkit.0.0.0] found in cache
+[win-error.0.3] found in cache
+[win-eventlog.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed base64.2.2.0
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed conf-time.1
+-> installed cppo.1.6.4
+-> installed fd-send-recv.1.0.5
+-> installed hashcons.1.0.1
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.10.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed menhir.20180703
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed ocplib-endian.1.0
+-> installed omake.0.10.3
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed ppx_traverse_builtins.v0.10.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.2.6.0
+-> installed oasis.0.4.11
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_ast.v0.10.0
+-> installed ppx_deriving.4.2.1
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib.v0.10.0
+-> installed base.v0.10.0
+-> installed cstruct.2.4.1
+-> installed cstruct-lwt.3.2.1
+-> installed cstruct-unix.3.2.1
+-> installed ppx_cstruct.0
+[ERROR] The compilation of pcap-format failed at "/home/opam/.opam/4.04/bin/jbuilder build -p pcap-format -j 71".
+-> installed stdio.v0.10.0
+-> installed io-page.1.6.1
+-> installed ppx_core.v0.10.0
+-> installed ppx_optcomp.v0.10.0
+-> installed mirage-profile.0.7.0
+-> installed ppx_driver.v0.10.4
+-> installed shared-memory-ring.3.0.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed duration.0.1.1
+-> installed mtime.0.8.4
+-> installed ppx_metaquot.v0.10.0
+-> installed ocb-stubblr.0.1.1
+-> installed ppx_type_conv.v0.10.0
+-> installed named-pipe.0.4.0
+-> installed rresult.0.5.0
+-> installed uchar.0.0.2
+-> installed ppx_sexp_conv.v0.10.0
+-> installed fmt.0.8.5
+-> installed ipaddr.2.7.2
+-> installed logs.0.6.2
+-> installed asl.0.11
+-> installed mirage-types.2.8.0
+-> installed mirage-types-lwt.2.8.0
+-> installed channel.1.1.1
+-> installed mirage-clock-unix.1.0.0
+-> installed mirage-flow.1.1.0
+-> installed mirage-unix.2.6.0
+-> installed mirage-console.2.1.2
+-> installed hvsock.0.12.0
+-> installed tar-format.0.6.1
+-> installed uri.1.9.2
+-> installed tcpip.2.8.1
+-> installed dns.0.18.1
+-> installed charrua-core.0.3
+-> installed uwt.0.0.3
+-> installed dns-forward.0.7.2
+-> installed win-error.0.3
+-> installed win-eventlog.0.2
+-> installed protocol-9p.0.8.0
+-> installed datakit-server.0.9.0
+
+#=== ERROR while compiling pcap-format.0.5.1 ==================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/pcap-format.0.5.1
+# command              ~/.opam/4.04/bin/jbuilder build -p pcap-format -j 71
+# exit-code            1
+# env-file             ~/.opam/log/pcap-format-11-517c05.env
+# output-file          ~/.opam/log/pcap-format-11-517c05.out
+### output ###
+# File "lib/jbuild", line 5, characters 20-31:
+# Error: Library "ppx_cstruct" not found.
+# Hint: try: dune external-lib-deps --missing --profile release -p pcap-format @install
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build pcap-format 0.5.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install asl                     0.11
+| - install astring                 0.8.3
+| - install base                    v0.10.0
+| - install base-bytes              base
+| - install base-num                base
+| - install base64                  2.2.0
+| - install channel                 1.1.1
+| - install charrua-core            0.3
+| - install cmdliner                1.0.2
+| - install conf-pkg-config         1.1
+| - install conf-time               1
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 2.4.1
+| - install cstruct-lwt             3.2.1
+| - install cstruct-unix            3.2.1
+| - install datakit-server          0.9.0
+| - install dns                     0.18.1
+| - install dns-forward             0.7.2
+| - install duration                0.1.1
+| - install fd-send-recv            1.0.5
+| - install fmt                     0.8.5
+| - install hashcons                1.0.1
+| - install hvsock                  0.12.0
+| - install io-page                 1.6.1
+| - install ipaddr                  2.7.2
+| - install logs                    0.6.2
+| - install lwt                     2.6.0
+| - install menhir                  20180703
+| - install mirage-clock-unix       1.0.0
+| - install mirage-console          2.1.2
+| - install mirage-flow             1.1.0
+| - install mirage-profile          0.7.0
+| - install mirage-types            2.8.0
+| - install mirage-types-lwt        2.8.0
+| - install mirage-unix             2.6.0
+| - install mtime                   0.8.4
+| - install named-pipe              0.4.0
+| - install num                     0
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.10.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install ocb-stubblr             0.1.1
+| - install ocplib-endian           1.0
+| - install omake                   0.10.3
+| - install ppx_ast                 v0.10.0
+| - install ppx_core                v0.10.0
+| - install ppx_cstruct             0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              v0.10.4
+| - install ppx_metaquot            v0.10.0
+| - install ppx_optcomp             v0.10.0
+| - install ppx_sexp_conv           v0.10.0
+| - install ppx_tools               5.0
+| - install ppx_tools_versioned     5.2
+| - install ppx_traverse_builtins   v0.10.0
+| - install ppx_type_conv           v0.10.0
+| - install protocol-9p             0.8.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install rresult                 0.5.0
+| - install sexplib                 v0.10.0
+| - install shared-memory-ring      3.0.0
+| - install stdio                   v0.10.0
+| - install stringext               1.5.0
+| - install tar-format              0.6.1
+| - install tcpip                   2.8.1
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install uri                     1.9.2
+| - install uwt                     0.0.3
+| - install win-error               0.3
+| - install win-eventlog            0.2
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180726232517.export"
+31 1532647496 1532647905
