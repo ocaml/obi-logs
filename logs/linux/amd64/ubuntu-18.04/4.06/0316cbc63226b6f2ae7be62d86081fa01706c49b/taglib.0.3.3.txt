@@ -1,0 +1,116 @@
+$ opam depext -iy -j 2 taglib.0.3.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+libtag1-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libtag1-dev m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libicu60:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../libicu60_60.2-3ubuntu3_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
+Selecting previously unselected package libtag1v5-vanilla:amd64.
+Preparing to unpack .../libtag1v5-vanilla_1.11.1+dfsg.1-0.2build2_amd64.deb ...
+Unpacking libtag1v5-vanilla:amd64 (1.11.1+dfsg.1-0.2build2) ...
+Selecting previously unselected package libtag1v5:amd64.
+Preparing to unpack .../libtag1v5_1.11.1+dfsg.1-0.2build2_amd64.deb ...
+Unpacking libtag1v5:amd64 (1.11.1+dfsg.1-0.2build2) ...
+Selecting previously unselected package libtag1-dev:amd64.
+Preparing to unpack .../libtag1-dev_1.11.1+dfsg.1-0.2build2_amd64.deb ...
+Unpacking libtag1-dev:amd64 (1.11.1+dfsg.1-0.2build2) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libtag1v5-vanilla:amd64 (1.11.1+dfsg.1-0.2build2) ...
+Setting up libtag1v5:amd64 (1.11.1+dfsg.1-0.2build2) ...
+Setting up libtag1-dev:amd64 (1.11.1+dfsg.1-0.2build2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install taglib 0.3.3
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[taglib.0.3.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of taglib failed at "/home/opam/.opam/4.06/.opam-switch/build/taglib.0.3.3/./configure --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling taglib.0.3.3 =======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/taglib.0.3.3
+# command              ~/.opam/4.06/.opam-switch/build/taglib.0.3.3/./configure --prefix /home/opam/.opam/4.06
+# exit-code            1
+# env-file             ~/.opam/log/taglib-13-05296d.env
+# output-file          ~/.opam/log/taglib-13-05296d.out
+### output ###
+# configuring ocaml-taglib 0.3.3
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking build system type... x86_64-pc-linux-gnu
+# checking host system type... x86_64-pc-linux-gnu
+# checking for a BSD-compatible install... /usr/bin/install -c
+# checking for gcc... (cached) gcc
+# checking whether we are using the GNU C compiler... (cached) yes
+# checking whether gcc accepts -g... (cached) yes
+# checking for gcc option to accept ISO C89... (cached) none needed
+# checking for ar... ar
+# checking for ocamlc... ocamlc
+# OCaml version is 4.06.1
+# checking if ocaml compiler supports first-class modules... yes
+# OCaml library path is /home/opam/.opam/4.06/lib/ocaml
+# checking for ocamlopt... ocamlopt
+# checking for ocamlc.opt... ocamlc.opt
+# checking for ocamlopt.opt... ocamlopt.opt
+# checking for ocaml... ocaml
+# checking for ocamldep... ocamldep
+# checking for ocamldep.opt... ocamldep.opt
+# checking for ocamlmktop... ocamlmktop
+# checking for ocamlmklib... ocamlmklib
+# checking for ocamldoc... ocamldoc
+# checking for ocamldoc.opt... ocamldoc.opt
+# checking for ocamlbuild... no
+# checking for camlidl... no
+# checking for ocamllex... ocamllex
+# checking for ocamllex.opt... ocamllex.opt
+# checking for ocamlyacc... ocamlyacc
+# checking for camlp4... no
+# checking for camlp4boot... no
+# checking for camlp4o... no
+# checking for camlp4of... no
+# checking for camlp4oof... no
+# checking for camlp4orf... no
+# checking for camlp4prof... no
+# checking for camlp4r... no
+# checking for camlp4rf... no
+# checking for ocamlfind... ocamlfind
+# checking for ocaml standard library path... /home/opam/.opam/4.06/lib/ocaml
+# checking for caml/threads.h... no
+# checking for gcc option to produce PIC... -fPIC
+# checking for g++... g++
+# checking whether we are using the GNU C++ compiler... yes
+# checking whether g++ accepts -g... yes
+# checking for pkg-config... no
+# checking whether pkg-config knows about taglib >= 1.6... /home/opam/.opam/4.06/.opam-switch/build/taglib.0.3.3/./configure: line 5897: --exists: command not found
+# configure: error: taglib.pc not found.. Do you need to set PKG_CONFIG_PATH?
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build taglib 0.3.3
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libtag1-dev
+
+# Run eval $(opam env) to update the current shell environment
+31 1532670717 1532670728

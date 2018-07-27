@@ -1,0 +1,128 @@
+$ opam depext -iy -j 2 elf2json.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3    [required by topkg]
+  - install base-bytes base   [required by base64]
+  - install ocamlbuild 0.12.0 [required by elf2json]
+  - install base64     2.2.0  [required by elf2json]
+  - install uchar      0.0.2  [required by jsonm]
+  - install topkg      0.9.1  [required by jsonm]
+  - install rdr        2.0.1  [required by elf2json]
+  - install uutf       1.0.1  [required by jsonm]
+  - install jsonm      1.0.1  [required by elf2json]
+  - install elf2json   1.0.0
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base64.2.2.0] found in cache
+[elf2json.1.0.0] found in cache
+[jsonm.1.0.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[rdr.2.0.1] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of rdr failed at "/usr/bin/make".
+-> installed uchar.0.0.2
+-> installed topkg.0.9.1
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+
+#=== ERROR while compiling rdr.2.0.1 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/rdr.2.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/rdr-13-428508.env
+# output-file          ~/.opam/log/rdr-13-428508.out
+### output ###
+# ocaml setup.ml -build 
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -modules lib/utils/RdrUtils.ml > lib/utils/RdrUtils.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -modules lib/utils/Binary.ml > lib/utils/Binary.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -modules lib/utils/ByteCoverage.ml > lib/utils/ByteCoverage.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -modules lib/utils/Generics.ml > lib/utils/Generics.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -modules lib/utils/Input.ml > lib/utils/Input.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -modules lib/utils/Leb128.mli > lib/utils/Leb128.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/utils -o lib/utils/Binary.cmo lib/utils/Binary.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/utils -o lib/utils/Binary.cmo lib/utils/Binary.ml
+# File "lib/utils/Binary.ml", line 70, characters 4-10:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/utils/utils.cma lib/utils/utils.cmxa lib/utils/utils.a lib/utils/utils.cmxs lib/mach/mach.cma lib/mach/mach.cmxa lib/mach/mach.a lib/mach/mach.cmxs lib/elf/elf.cma lib/elf/elf.cmxa lib/elf/elf.a lib/elf/elf.cmxs lib/goblin/goblin.cma lib/goblin/goblin.cmxa lib/goblin/goblin.a lib/goblin/goblin.cmxs lib/rdr.cma lib/rdr.cmxa lib/rdr.a lib/rdr.cmxs src/rdrutils.cma src/rdrutils.cmxa src/rdrutils.a src/rdrutils.cmxs src/Rdr.native -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build rdr 2.0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes base
+| - install base64     2.2.0
+| - install jsonm      1.0.1
+| - install ocamlbuild 0.12.0
+| - install result     1.3
+| - install topkg      0.9.1
+| - install uchar      0.0.2
+| - install uutf       1.0.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727052533.export"
+31 1532669131 1532669152
