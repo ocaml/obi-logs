@@ -1,0 +1,19 @@
+$ opam depext -iy -j 2 mirage-console-xen-cli.2.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-console-xen-cli.2.2.0: The following dependencies couldn't be met:
+          - mirage-console-xen-cli -> cstruct < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-cli -> cstruct < 3.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-cli -> xenstore_transport -> xenstore -> cstruct (< 2.0.0 | >= 3.2.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-cli -> xenstore_transport -> xenstore -> cstruct (< 2.0.0 | >= 3.2.0) -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen-cli -> xenstore_transport -> xenstore -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cstruct satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-console-xen-cli.2.2.0 returned 20
+20 1532725189 1532725191
