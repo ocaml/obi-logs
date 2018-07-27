@@ -1,0 +1,87 @@
+$ opam depext -iy -j 2 immutable.0.0.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3      [required by reason, topkg]
+  - install base-bytes              base     [required by cppo]
+  - install ocamlbuild              0.12.0   [required by topkg]
+  - install ocaml-migrate-parsetree 1.0.11   [required by reason]
+  - install cppo                    1.6.4    [required by merlin-extend]
+  - install topkg                   0.8.1    [required by immutable]
+  - install menhir                  20171013 [required by reason]
+  - install merlin-extend           0.3      [required by reason]
+  - install reason                  3.2.0    [required by immutable]
+  - install immutable               0.0.9
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[immutable.0.0.9] found in cache
+[menhir.20171013] found in cache
+[merlin-extend.0.3] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[reason.3.2.0] found in cache
+[result.1.3] found in cache
+[topkg.0.8.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed merlin-extend.0.3
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed topkg.0.8.1
+-> installed menhir.20171013
+-> installed reason.3.2.0
+[ERROR] The compilation of immutable failed at "/usr/bin/make build".
+
+#=== ERROR while compiling immutable.0.0.9 ====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/immutable.0.0.9
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             ~/.opam/log/immutable-11-8dd074.env
+# output-file          ~/.opam/log/immutable-11-8dd074.out
+### output ###
+# ocamlbuild -package topkg pkg/build.native
+# /home/opam/.opam/4.03/bin/ocamldep.opt -modules pkg/build.ml > pkg/build.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlc.opt -c -I /home/opam/.opam/4.03/lib/bytes -I /home/opam/.opam/4.03/lib/result -I /home/opam/.opam/4.03/lib/topkg -I pkg -o pkg/build.cmo pkg/build.ml
+# /home/opam/.opam/4.03/bin/ocamlopt.opt -c -I /home/opam/.opam/4.03/lib/bytes -I /home/opam/.opam/4.03/lib/result -I /home/opam/.opam/4.03/lib/topkg -I pkg -o pkg/build.cmx pkg/build.ml
+# /home/opam/.opam/4.03/bin/ocamlopt.opt -I /home/opam/.opam/4.03/lib/bytes -I /home/opam/.opam/4.03/lib/result -I /home/opam/.opam/4.03/lib/topkg /home/opam/.opam/4.03/lib/result/result.cmxa /home/opam/.opam/4.03/lib/topkg/topkg.cmxa -I pkg pkg/build.cmx -o pkg/build.native
+# ./build.native build
+# sh: 1: rebuild: not found
+# build.native: [ERROR] cmd ['rebuild' '-use-ocamlfind' '-I' 'src/core' '-I' 'src/queues' '-I'
+#      'src/indexed' '-I' 'src/utils' '-I' 'src/maps' '-I' 'src/sets' 'opam'
+#      'pkg/META' 'pkg/META' 'src/Immutable.a' 'src/Immutable.cmxa'
+#      'src/Immutable.cma' 'src/Immutable.o' 'src/Immutable.cmi'
+#      'src/Immutable.cmx' 'src/Immutable.cmo']: exited with 127
+# Makefile:2: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build immutable 0.0.9
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install cppo                    1.6.4
+| - install menhir                  20171013
+| - install merlin-extend           0.3
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install reason                  3.2.0
+| - install result                  1.3
+| - install topkg                   0.8.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180727002716.export"
+31 1532651233 1532651277
