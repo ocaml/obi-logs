@@ -1,0 +1,170 @@
+$ opam depext -iy -j 2 grenier.0.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install grenier 0.5
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[grenier.0.5] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The installation of grenier failed at "make install".
+
+#=== ERROR while installing grenier.0.5 =======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/grenier.0.5
+# command              /usr/bin/make install
+# exit-code            2
+# env-file             ~/.opam/log/grenier-13-d2c37b.env
+# output-file          ~/.opam/log/grenier-13-d2c37b.out
+### output ###
+# for i in hll jmphash pcg orderme doubledouble physh baltree trope binpacking; do /usr/bin/make -C $i all; done
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/hll'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/hll'
+# ocamlc -c -g hll.ml
+# File "hll.ml", line 72, characters 17-18:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# ../OCamlMakefile:1076: recipe for target 'hll.cmo' failed
+# make[2]: *** [hll.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/hll'
+# ../OCamlMakefile:792: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/hll'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/jmphash'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/jmphash'
+# make[2]: 'jmphash.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/jmphash'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/jmphash'
+# make[2]: 'jmphash.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/jmphash'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/jmphash'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/pcg'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/pcg'
+# make[2]: 'pcg.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/pcg'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/pcg'
+# make[2]: 'pcg.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/pcg'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/pcg'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/orderme'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/orderme'
+# make[2]: 'orderme.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/orderme'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/orderme'
+# make[2]: 'orderme.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/orderme'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/orderme'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/doubledouble'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/doubledouble'
+# make[2]: 'doubledouble.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/doubledouble'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/doubledouble'
+# make[2]: 'doubledouble.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/doubledouble'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/doubledouble'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/physh'
+# make[1]: Nothing to be done for 'all'.
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/physh'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/baltree'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/baltree'
+# make[2]: 'baltree.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/baltree'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/baltree'
+# make[2]: 'baltree.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/baltree'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/baltree'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/trope'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/trope'
+# make[2]: 'trope.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/trope'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/trope'
+# make[2]: 'trope.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/trope'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/trope'
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/binpacking'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/binpacking'
+# make[2]: 'binpacking.cma' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/binpacking'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/binpacking'
+# make[2]: 'binpacking.cmxa' is up to date.
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/binpacking'
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/grenier.0.5/binpacking'
+# 
+# Installing library with ocamlfind
+# ocamlfind install  grenier META hll/hll.mli hll/hll.cmi hll/hll.cmx hll/hll_consts.cmi hll/hll_consts.cmx hll/hll.a hll/hll.cma hll/hll.cmxa jmphash/jmphash.mli jmphash/jmphash.cmi jmphash/jmphash.cmx jmphash/jmphash.a jmphash/jmphash.cma jmphash/jmphash.cmxa pcg/pcg.mli pcg/pcg.cmi pcg/pcg.cmx pcg/pcg.a pcg/pcg.cma pcg/pcg.cmxa orderme/order_list.mli orderme/order_indir.mli orderme/order_managed.mli orderme/order_list.cmi orderme/order_list.cmx orderme/order_indir.cmi orderme/order_indir.cmx orderme/order_managed.cmi orderme/order_managed.cmx orderme/orderme.a orderme/orderme.cma orderme/orderme.cmxa doubledouble/doubledouble.mli doubledouble/doubledouble.cmi doubledouble/doubledouble.cmo doubledouble/doubledouble.cmx physh/physh.mli physh/physh.cmi physh/physh.cmx physh/physh.a physh/physh.cma physh/physh.cmxa physh/lib_physh_stubs.a physh/dll_physh_stubs.so baltree/bt1.mli baltree/bt1.cmi baltree/bt1.cmx baltree/bt2.mli baltree/bt2.cmi baltree/bt2.cmx baltree/mbt.mli baltree/mbt.cmi baltree/mbt.cmx baltree/baltree.a baltree/baltree.cma baltree/baltree.cmxa binpacking/maxrects.mli binpacking/maxrects.cmi binpacking/maxrects.cmx binpacking/binpacking.a binpacking/binpacking.cma binpacking/binpacking.cmxa trope/trope.mli trope/trope.cmi trope/trope.cmx trope/trope.a trope/trope.cma trope/trope.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/trope.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/trope.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/trope.a
+# Installed /home/opam/.opam/4.06/lib/grenier/trope.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/trope.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/trope.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/binpacking.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/binpacking.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/binpacking.a
+# Installed /home/opam/.opam/4.06/lib/grenier/maxrects.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/maxrects.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/maxrects.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/baltree.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/baltree.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/baltree.a
+# Installed /home/opam/.opam/4.06/lib/grenier/mbt.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/mbt.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/mbt.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/bt2.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/bt2.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/bt2.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/bt1.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/bt1.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/bt1.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/lib_physh_stubs.a
+# Installed /home/opam/.opam/4.06/lib/grenier/physh.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/physh.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/physh.a
+# Installed /home/opam/.opam/4.06/lib/grenier/physh.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/physh.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/physh.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/doubledouble.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/doubledouble.cmo
+# Installed /home/opam/.opam/4.06/lib/grenier/doubledouble.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/doubledouble.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/orderme.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/orderme.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/orderme.a
+# Installed /home/opam/.opam/4.06/lib/grenier/order_managed.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/order_managed.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/order_indir.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/order_indir.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/order_list.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/order_list.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/order_managed.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/order_indir.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/order_list.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/pcg.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/pcg.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/pcg.a
+# Installed /home/opam/.opam/4.06/lib/grenier/pcg.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/pcg.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/pcg.mli
+# Installed /home/opam/.opam/4.06/lib/grenier/jmphash.cmxa
+# Installed /home/opam/.opam/4.06/lib/grenier/jmphash.cma
+# Installed /home/opam/.opam/4.06/lib/grenier/jmphash.a
+# Installed /home/opam/.opam/4.06/lib/grenier/jmphash.cmx
+# Installed /home/opam/.opam/4.06/lib/grenier/jmphash.cmi
+# Installed /home/opam/.opam/4.06/lib/grenier/jmphash.mli
+# ocamlfind: hll/hll.cmxa: No such file or directory
+# OCamlMakefile:1236: recipe for target 'libinstall' failed
+# make: *** [libinstall] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install grenier 0.5
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1532739197 1532739202
