@@ -1,0 +1,32 @@
+$ opam depext -iy -j 2 rdf.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+Download (curl) error for 'http://download.opensuse.org/update/leap/42.3/non-oss/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Cannot read input: bad stream or EOF.
+The following command needs to be run through "sudo":
+    zypper --non-interactive install m4
+Retrieving repository 'OSS Update' metadata [..
+Download (curl) error for 'http://download.opensuse.org/update/leap/42.3/oss/repodata/e56b21be892d72c1159fd34cd3f1ecce93f396ee1ea51bc4ded5bc82f0d91822-app-icons.tar.gz':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+error]
+Repository 'OSS Update' is invalid.
+[OSS Update|http://download.opensuse.org/update/leap/42.3/oss/] Valid metadata not found at specified URL
+Please check if the URIs defined for this repository are pointing to a valid repository.
+Warning: Skipping repository 'OSS Update' because of the above error.
+Some of the repositories have not been refreshed because of an error.
+Loading repository data...
+Reading installed packages...
+'m4' is already installed.
+No update candidate for 'm4-1.4.16-6.3.x86_64'. The highest available version is already installed.
+Resolving package dependencies...
+
+Nothing to do.
+OS package installation failed
+1 1532750428 1532750451

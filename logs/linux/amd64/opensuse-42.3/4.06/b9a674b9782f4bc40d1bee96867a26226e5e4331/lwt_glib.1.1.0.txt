@@ -1,0 +1,60 @@
+$ opam depext -iy -j 2 lwt_glib.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-glib-2     1     [required by lwt_glib]
+  - install result          1.3   [required by lwt]
+  - install base-bytes      base  [required by cppo]
+  - install conf-pkg-config 1.1   [required by lwt_glib]
+  - install cppo            1.6.4 [required by lwt]
+  - install lwt             4.1.0 [required by lwt_glib] For the PPX, please install package lwt_ppx
+                                                         For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install lwt_glib        1.1.0
+===== 7 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[lwt.4.1.0] found in cache
+[lwt_glib.1.1.0] found in cache
+[result.1.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-glib-2 failed at "/usr/bin/pkg-config glib-2.0".
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed result.1.3
+-> installed cppo.1.6.4
+-> installed lwt.4.1.0
+
+#=== ERROR while compiling conf-glib-2.1 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-glib-2.1
+# command              /usr/bin/pkg-config glib-2.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-glib-2-12-865888.env
+# output-file          ~/.opam/log/conf-glib-2-12-865888.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-glib-2 1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install cppo            1.6.4
+| - install lwt             4.1.0
+| - install result          1.3
++- 
+
+<><> conf-glib-2.1 troubleshooting ><><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires GLib 2 development files installed on your system
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180728042621.export"
+31 1532751734 1532751990

@@ -1,0 +1,172 @@
+$ opam depext -iy -j 2 hardcaml-vpi.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+libffi-devel
+m4
+which
+# The following new OS packages need to be installed: libffi-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install libffi-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+'libffi-devel' not found in package names. Trying capabilities.
+Resolving package dependencies...
+
+The following NEW package is going to be installed:
+  libffi-devel-gcc5
+
+1 new package to install.
+Overall download size: 74.7 KiB. Already cached: 0 B. After the operation, additional 240.6 KiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libffi-devel-gcc5-5.3.1+r233831-10.1.x86_64 (1/1),  74.7 KiB (240.6 KiB unpacked)
+Retrieving: libffi-devel-gcc5-5.3.1+r233831-10.1.x86_64.rpm [.done]
+Checking for file conflicts: [...done]
+(1/1) Installing: libffi-devel-gcc5-5.3.1+r233831-10.1.x86_64 [........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ctypes-foreign          0.4.0  [required by hardcaml-vpi]
+  - install easy-format             1.3.1  [required by yojson]
+  - install result                  1.3    [required by topkg, ocaml-migrate-parsetree]
+  - install conf-which              1      [required by biniou]
+  - install base-bytes              base   [required by ctypes, hardcaml]
+  - install ocamlbuild              0.12.0 [required by hardcaml-vpi]
+  - install conf-pkg-config         1.1    [required by ctypes]
+  - install num                     1.1    [required by hardcaml]
+  - install ocaml-migrate-parsetree 1.0.11 [required by js_of_ocaml]
+  - install biniou                  1.2.0  [required by yojson]
+  - install cppo                    1.6.4  [required by js_of_ocaml-compiler]
+  - install uchar                   0.0.2  [required by js_of_ocaml]
+  - install topkg                   0.9.1  [required by hardcaml]
+  - install camlp4                  4.06+1 [required by hardcaml]
+  - install ppx_tools_versioned     5.2    [required by js_of_ocaml]
+  - install yojson                  1.4.1  [required by js_of_ocaml-compiler]
+  - install integers                0.2.2  [required by ctypes]
+  - install cmdliner                1.0.2  [required by js_of_ocaml-compiler]
+  - install astring                 0.8.3  [required by hardcaml]
+  - install js_of_ocaml-camlp4      3.1.0  [required by hardcaml]
+  - install ctypes                  0.14.0 [required by hardcaml-vpi]
+  - install js_of_ocaml-compiler    3.2.1  [required by js_of_ocaml]
+  - install js_of_ocaml             3.2.0  [required by hardcaml]
+  - install hardcaml                1.2.0  [required by hardcaml-vpi]
+  - install hardcaml-vpi            0.2
+===== 25 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.06+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[ctypes.0.14.0] found in cache
+[easy-format.1.3.1] found in cache
+[hardcaml.1.2.0] found in cache
+[hardcaml-vpi.0.2] found in cache
+[integers.0.2.2] found in cache
+[js_of_ocaml.3.2.0] found in cache
+[js_of_ocaml-camlp4.3.1.0] found in cache
+[js_of_ocaml-compiler.3.2.1] found in cache
+[num.1.1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed ctypes-foreign.0.4.0
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+-> installed uchar.0.0.2
+-> installed yojson.1.4.1
+-> installed js_of_ocaml-compiler.3.2.1
+-> installed js_of_ocaml.3.2.0
+-> installed camlp4.4.06+1
+-> installed js_of_ocaml-camlp4.3.1.0
+-> installed hardcaml.1.2.0
+[ERROR] The compilation of hardcaml-vpi failed at "/usr/bin/make all".
+
+#=== ERROR while compiling hardcaml-vpi.0.2 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/hardcaml-vpi.0.2
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/hardcaml-vpi-12-13a48c.env
+# output-file          ~/.opam/log/hardcaml-vpi-12-13a48c.out
+### output ###
+# ocamlbuild -use-ocamlfind  cosim_icarus.cmo vpi.cmo
+# ocamlfind ocamldep -package 'ctypes.foreign, hardcaml' -modules cosim_icarus.mli > cosim_icarus.mli.depends
+# ocamlfind ocamldep -package 'ctypes.foreign, hardcaml' -modules vpi.mli > vpi.mli.depends
+# ocamlfind ocamlc -c -package 'ctypes.foreign, hardcaml' -o vpi.cmi vpi.mli
+# ocamlfind ocamlc -c -package 'ctypes.foreign, hardcaml' -o cosim_icarus.cmi cosim_icarus.mli
+# ocamlfind ocamldep -package 'ctypes.foreign, hardcaml' -modules cosim_icarus.ml > cosim_icarus.ml.depends
+# ocamlfind ocamlc -c -package 'ctypes.foreign, hardcaml' -o cosim_icarus.cmo cosim_icarus.ml
+# ocamlfind ocamldep -package 'ctypes.foreign, hardcaml' -modules vpi.ml > vpi.ml.depends
+# ocamlfind ocamlc -c -package 'ctypes.foreign, hardcaml' -o vpi.cmo vpi.ml
+# ocamlfind c -output-obj -package bigarray,num,hardcaml,ctypes.foreign -linkpkg -o cosim_o.o \
+# 	_build/vpi.cmo _build/cosim_icarus.cmo
+# mv cosim_o.o _build/cosim_o.o
+# ocamlfind c -c -ccopt "`iverilog-vpi --cflags` -o _build/cosim_c.o" -g cosim_c.c 
+# /bin/sh: iverilog-vpi: command not found
+# cosim_c.c:5:22: fatal error: vpi_user.h: No such file or directory
+#  #include "vpi_user.h"
+#                       ^
+# compilation terminated.
+# Makefile:17: recipe for target 'vpi' failed
+# make: *** [vpi] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build hardcaml-vpi 0.2
++- 
++- The following changes have been performed
+| - install astring                 0.8.3
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install camlp4                  4.06+1
+| - install cmdliner                1.0.2
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install ctypes                  0.14.0
+| - install ctypes-foreign          0.4.0
+| - install easy-format             1.3.1
+| - install hardcaml                1.2.0
+| - install integers                0.2.2
+| - install js_of_ocaml             3.2.0
+| - install js_of_ocaml-camlp4      3.1.0
+| - install js_of_ocaml-compiler    3.2.1
+| - install num                     1.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180728033603.export"
+31 1532748925 1532749128

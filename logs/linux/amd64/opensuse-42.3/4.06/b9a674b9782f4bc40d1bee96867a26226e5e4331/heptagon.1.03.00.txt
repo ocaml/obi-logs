@@ -1,0 +1,228 @@
+$ opam depext -iy -j 2 heptagon.1.03.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlgraph 1.8.8    [required by heptagon]
+  - install ocamlbuild 0.12.0   [required by heptagon]
+  - install menhir     20180703 [required by heptagon]
+  - install camlp4     4.06+1   [required by heptagon]
+  - install heptagon   1.03.00
+===== 5 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[heptagon.1.03.00] found in cache
+[menhir.20180703] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+-> installed menhir.20180703
+-> installed ocamlgraph.1.8.8
+-> installed camlp4.4.06+1
+[ERROR] The compilation of heptagon failed at "/usr/bin/make".
+
+#=== ERROR while compiling heptagon.1.03.00 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/heptagon.1.03.00
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/heptagon-12-44ea43.env
+# output-file          ~/.opam/log/heptagon-12-44ea43.out
+### output ###
+# (cd compiler/; /usr/bin/make)
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/heptagon.1.03.00/compiler'
+# STDLIB=/home/opam/.opam/4.06/lib/heptagon ocamlbuild -use-ocamlfind heptc.byte
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild_config.ml myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Warning: your ocamlbuild rule "ocaml: ml & mli -> odoc" uses the ~tags parameter,
+#                      which is deprecated and ignored.
+# ocamlfind ocamldep -package ocamlgraph -modules main/heptc.ml > main/heptc.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -package camlp4 -pp camlp4of -modules preproc.ml > preproc.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -package camlp4 -pp camlp4of -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o preproc.cmo preproc.ml
+# ocamlfind ocamldep -package ocamlgraph -pp 'camlp4o preproc.cmo' -modules utilities/global/compiler_options.ml > utilities/global/compiler_options.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/names.ml > global/names.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/misc.mli > utilities/misc.mli.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities -I global -I main -I minils -I heptagon -I obc -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o utilities/misc.cmi utilities/misc.mli
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/names.cmo global/names.ml
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/global/compiler_timings.ml > utilities/global/compiler_timings.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -pp 'camlp4o preproc.cmo' -I utilities/global -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/minils -I utilities/ctrln -o utilities/global/compiler_options.cmo utilities/global/compiler_options.ml
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/global/compiler_utils.ml > utilities/global/compiler_utils.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities/global -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/minils -I utilities/ctrln -o utilities/global/compiler_timings.cmo utilities/global/compiler_timings.ml
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/global/errors.ml > utilities/global/errors.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/location.ml > global/location.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities/global -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/minils -I utilities/ctrln -o utilities/global/errors.cmo utilities/global/errors.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/location.cmo global/location.ml
+# ocamlfind ocamldep -package ocamlgraph -modules global/global_printer.ml > global/global_printer.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/clocks.ml > global/clocks.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/idents.mli > global/idents.mli.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/types.ml > global/types.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/idents.cmi global/idents.mli
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/types.cmo global/types.ml
+# ocamlfind ocamldep -package ocamlgraph -modules global/modules.ml > global/modules.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities/global -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/minils -I utilities/ctrln -o utilities/global/compiler_utils.cmo utilities/global/compiler_utils.ml
+# + ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities/global -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/minils -I utilities/ctrln -o utilities/global/compiler_utils.cmo utilities/global/compiler_utils.ml
+# File "utilities/global/compiler_utils.ml", line 100, characters 2-21:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# ocamlfind ocamldep -package ocamlgraph -modules global/signature.ml > global/signature.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/clocks.cmo global/clocks.ml
+# ocamlfind ocamldep -package ocamlgraph -modules global/linearity.ml > global/linearity.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/linearity.cmo global/linearity.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/signature.cmo global/signature.ml
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/pp_tools.mli > utilities/pp_tools.mli.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/modules.cmo global/modules.ml
+# + ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/modules.cmo global/modules.ml
+# File "global/modules.ml", line 54, characters 2-28:
+# Warning 50: unattached documentation comment (ignored)
+# File "global/modules.ml", line 118, characters 15-34:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities -I global -I main -I minils -I heptagon -I obc -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o utilities/pp_tools.cmi utilities/pp_tools.mli
+# ocamlfind ocamldep -package ocamlgraph -modules main/hept2mls.ml > main/hept2mls.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/heptagon.ml > heptagon/heptagon.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules minils/minils.ml > minils/minils.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/initial.ml > global/initial.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/minils/interference_graph.ml > utilities/minils/interference_graph.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/global_compare.ml > global/global_compare.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/global_printer.cmo global/global_printer.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/global_compare.cmo global/global_compare.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/initial.cmo global/initial.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities/minils -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/ctrln -o utilities/minils/interference_graph.cmo utilities/minils/interference_graph.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon -I global -I main -I minils -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/heptagon.cmo heptagon/heptagon.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I minils -I global -I main -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o minils/minils.cmo minils/minils.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/main/hept_compiler.ml > heptagon/main/hept_compiler.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/automata.ml > heptagon/transformations/automata.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/hept_mapfold.ml > heptagon/hept_mapfold.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/global_mapfold.ml > global/global_mapfold.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/global_mapfold.cmo global/global_mapfold.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/hept_utils.ml > heptagon/hept_utils.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/stateful.ml > heptagon/analysis/stateful.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon -I global -I main -I minils -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/hept_mapfold.cmo heptagon/hept_mapfold.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/stateful.cmo heptagon/analysis/stateful.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon -I global -I main -I minils -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/hept_utils.cmo heptagon/hept_utils.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/block.ml > heptagon/transformations/block.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/boolean.mli > heptagon/transformations/boolean.mli.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/causality.ml > heptagon/analysis/causality.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/causal.ml > heptagon/analysis/causal.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/sgraph.ml > utilities/sgraph.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities -I global -I main -I minils -I heptagon -I obc -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o utilities/sgraph.cmo utilities/sgraph.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/causal.cmo heptagon/analysis/causal.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/completion.ml > heptagon/transformations/completion.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/contracts.ml > heptagon/transformations/contracts.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/every.ml > heptagon/transformations/every.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/reset.ml > heptagon/transformations/reset.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/reset.cmo heptagon/transformations/reset.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/hept_clocking.ml > heptagon/analysis/hept_clocking.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/check_signature.ml > global/check_signature.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/check_signature.cmo global/check_signature.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/hept_printer.ml > heptagon/hept_printer.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/initialization.ml > heptagon/analysis/initialization.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/inline.ml > heptagon/transformations/inline.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon -I global -I main -I minils -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/hept_printer.cmo heptagon/hept_printer.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/itfusion.ml > heptagon/transformations/itfusion.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules global/static.ml > global/static.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o global/static.cmo global/static.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/last.ml > heptagon/transformations/last.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/linear_typing.ml > heptagon/analysis/linear_typing.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/normalize.ml > heptagon/transformations/normalize.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/present.ml > heptagon/transformations/present.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/transformations/switch.ml > heptagon/transformations/switch.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/typing.ml > heptagon/analysis/typing.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules utilities/global/printf_parser.ml > utilities/global/printf_parser.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I utilities/global -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/minils -I utilities/ctrln -o utilities/global/printf_parser.cmo utilities/global/printf_parser.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/analysis/unsafe.ml > heptagon/analysis/unsafe.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/automata.cmo heptagon/transformations/automata.ml
+# + ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/automata.cmo heptagon/transformations/automata.ml
+# File "heptagon/transformations/automata.ml", line 75, characters 10-27:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/block.cmo heptagon/transformations/block.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/boolean.cmi heptagon/transformations/boolean.mli
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/causality.cmo heptagon/analysis/causality.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/completion.cmo heptagon/transformations/completion.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/contracts.cmo heptagon/transformations/contracts.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/every.cmo heptagon/transformations/every.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/hept_clocking.cmo heptagon/analysis/hept_clocking.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/initialization.cmo heptagon/analysis/initialization.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/inline.cmo heptagon/transformations/inline.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/itfusion.cmo heptagon/transformations/itfusion.ml
+# + ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/itfusion.cmo heptagon/transformations/itfusion.ml
+# File "heptagon/transformations/itfusion.ml", line 137, characters 8-503:
+# Warning 50: unattached documentation comment (ignored)
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/last.cmo heptagon/transformations/last.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/linear_typing.cmo heptagon/analysis/linear_typing.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/normalize.cmo heptagon/transformations/normalize.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/present.cmo heptagon/transformations/present.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/transformations -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/transformations/switch.cmo heptagon/transformations/switch.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/typing.cmo heptagon/analysis/typing.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/analysis -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/transformations -I heptagon/main -I heptagon/parsing -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/analysis/unsafe.cmo heptagon/analysis/unsafe.ml
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/main/hept_parser_scoper.ml > heptagon/main/hept_parser_scoper.ml.depends
+# /home/opam/.opam/4.06/bin/ocamllex.opt -q heptagon/parsing/hept_lexer.mll
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/parsing/hept_lexer.ml > heptagon/parsing/hept_lexer.ml.depends
+# menhir --raw-depend --ocamldep 'ocamlfind ocamldep -modules' heptagon/parsing/hept_parser.mly > heptagon/parsing/hept_parser.mly.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/parsing/hept_parsetree.ml > heptagon/parsing/hept_parsetree.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_parsetree.cmo heptagon/parsing/hept_parsetree.ml
+# menhir --ocamlc 'ocamlfind ocamlc -g -dtypes -w Ae -warn-error PU -w -9-48 -package menhirLib -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln' --infer --explain --table heptagon/parsing/hept_parser.mly
+# + menhir --ocamlc 'ocamlfind ocamlc -g -dtypes -w Ae -warn-error PU -w -9-48 -package menhirLib -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln' --infer --explain --table heptagon/parsing/hept_parser.mly
+# Warning: 2 states have shift/reduce conflicts.
+# Warning: 4 states have reduce/reduce conflicts.
+# Warning: 3 shift/reduce conflicts were arbitrarily resolved.
+# Warning: 4 reduce/reduce conflicts were arbitrarily resolved.
+# ocamlfind ocamldep -package menhirLib -package ocamlgraph -modules heptagon/parsing/hept_parser.mli > heptagon/parsing/hept_parser.mli.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package menhirLib -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_parser.cmi heptagon/parsing/hept_parser.mli
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/parsing/hept_scoping.ml > heptagon/parsing/hept_scoping.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/parsing/hept_static_scoping.ml > heptagon/parsing/hept_static_scoping.ml.depends
+# ocamlfind ocamldep -package ocamlgraph -modules heptagon/parsing/hept_parsetree_mapfold.ml > heptagon/parsing/hept_parsetree_mapfold.ml.depends
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_scoping.cmo heptagon/parsing/hept_scoping.ml
+# + ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_scoping.cmo heptagon/parsing/hept_scoping.ml
+# File "heptagon/parsing/hept_scoping.ml", line 160, characters 2-21:
+# Warning 50: ambiguous documentation comment
+# File "heptagon/parsing/hept_scoping.ml", line 164, characters 2-22:
+# Warning 50: ambiguous documentation comment
+# File "heptagon/parsing/hept_scoping.ml", line 170, characters 2-58:
+# Warning 50: ambiguous documentation comment
+# File "heptagon/parsing/hept_scoping.ml", line 173, characters 2-18:
+# Warning 50: ambiguous documentation comment
+# File "heptagon/parsing/hept_scoping.ml", line 178, characters 2-19:
+# Warning 50: ambiguous documentation comment
+# File "heptagon/parsing/hept_scoping.ml", line 183, characters 2-22:
+# Warning 50: ambiguous documentation comment
+# File "heptagon/parsing/hept_scoping.ml", line 189, characters 2-33:
+# Warning 50: ambiguous documentation comment
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_parsetree_mapfold.cmo heptagon/parsing/hept_parsetree_mapfold.ml
+# ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_lexer.cmo heptagon/parsing/hept_lexer.ml
+# + ocamlfind ocamlc -c -g -dtypes -w Ae -warn-error PU -w -9-48 -package ocamlgraph -I heptagon/parsing -I global -I main -I minils -I heptagon -I obc -I utilities -I minils/sigali -I minils/analysis -I minils/transformations -I minils/main -I minils/ctrln -I heptagon/analysis -I heptagon/transformations -I heptagon/main -I heptagon/ctrln -I obc/transformations -I obc/main -I obc/c -I obc/java -I utilities/global -I utilities/minils -I utilities/ctrln -o heptagon/parsing/hept_lexer.cmo heptagon/parsing/hept_lexer.ml
+# File "heptagon/parsing/hept_lexer.mll", line 115, characters 28-41:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "heptagon/parsing/hept_lexer.mll", line 126, characters 36-50:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:21: recipe for target 'byte' failed
+# make[1]: *** [byte] Error 10
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/heptagon.1.03.00/compiler'
+# Makefile:6: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build heptagon 1.03.00
++- 
++- The following changes have been performed
+| - install camlp4     4.06+1
+| - install menhir     20180703
+| - install ocamlbuild 0.12.0
+| - install ocamlgraph 1.8.8
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180728042319.export"
+31 1532751783 1532751876

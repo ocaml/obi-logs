@@ -1,0 +1,32 @@
+$ opam depext -iy -j 2 duppy.0.5.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+pcre-devel
+# The following new OS packages need to be installed: pcre-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install pcre-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 5 NEW packages are going to be installed:
+  libpcre16-0 libpcrecpp0 libpcreposix0 libstdc++-devel pcre-devel
+
+5 new packages to install.
+Overall download size: 416.3 KiB. Already cached: 0 B. After the operation, additional 714.7 KiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/5),   4.8 KiB (   72   B unpacked)
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [.error]
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/x86_64/libstdc++-devel-4.8-11.16.x86_64.rpm':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+Problem occurred during or after installation or removal of packages:
+Installation aborted by user
+Please see the above error message for a hint.
+OS package installation failed
+1 1532750403 1532750456
