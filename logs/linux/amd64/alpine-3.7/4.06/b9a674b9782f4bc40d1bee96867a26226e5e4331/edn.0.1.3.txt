@@ -1,0 +1,71 @@
+$ opam depext -iy -j 2 edn.0.1.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3      [required by topkg]
+  - install ocamlbuild 0.12.0   [required by menhir, topkg]
+  - install topkg      0.9.1    [required by edn]
+  - install menhir     20180703 [required by edn]
+  - install edn        0.1.3
+===== 5 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[edn.0.1.3] found in cache
+[menhir.20180703] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed topkg.0.9.1
+-> installed menhir.20180703
+[ERROR] The compilation of edn failed at "/home/opam/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false".
+
+#=== ERROR while compiling edn.0.1.3 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/edn.0.1.3
+# command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false
+# exit-code            1
+# env-file             ~/.opam/log/edn-13-9a098e.env
+# output-file          ~/.opam/log/edn-13-9a098e.out
+### output ###
+# ocamlfind ocamldep -modules src/edn_json.ml > src/edn_json.ml.depends
+# ocamlfind ocamldep -modules src/edn_common.ml > src/edn_common.ml.depends
+# ocamlfind ocamldep -modules src/edn_writer.ml > src/edn_writer.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -I src -I test -o src/edn_common.cmo src/edn_common.ml
+# ocamlfind ocamlc -c -g -bin-annot -I src -I test -o src/edn_writer.cmo src/edn_writer.ml
+# + ocamlfind ocamlc -c -g -bin-annot -I src -I test -o src/edn_writer.cmo src/edn_writer.ml
+# File "src/edn_writer.ml", line 76, characters 24-25:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/edn.a' 'src/edn.cmxs' 'src/edn.cmxa' 'src/edn.cma'
+#      'src/edn.cmx' 'src/edn.cmi' 'src/edn.mli' 'src/edn_common.cmx'
+#      'src/edn_parser.cmx' 'src/edn_writer.cmx' 'src/edn_read.cmx'
+#      'src/edn_util.cmx' 'src/edn_json.cmx']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build edn 0.1.3
++- 
++- The following changes have been performed
+| - install menhir     20180703
+| - install ocamlbuild 0.12.0
+| - install result     1.3
+| - install topkg      0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180727232934.export"
+31 1532734171 1532734210

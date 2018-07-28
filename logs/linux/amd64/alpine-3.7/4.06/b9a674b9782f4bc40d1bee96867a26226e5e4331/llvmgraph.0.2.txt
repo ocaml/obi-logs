@@ -1,0 +1,18 @@
+$ opam depext -iy -j 2 llvmgraph.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+cmake
+llvm6
+m4
+pkgconfig
+python
+m4
+pkgconf
+# The following new OS packages need to be installed: cmake llvm6 python
+The following command needs to be run through "sudo":
+    apk add cmake llvm6 python
+ERROR: unsatisfiable constraints:
+  llvm6 (missing):
+    required by: world[llvm6]
+OS package installation failed
+1 1532733321 1532733324
