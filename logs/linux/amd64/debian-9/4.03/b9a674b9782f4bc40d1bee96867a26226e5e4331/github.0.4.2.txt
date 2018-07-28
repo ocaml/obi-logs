@@ -1,0 +1,349 @@
+$ opam depext -iy -j 2 github.0.4.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libssl-dev
+m4
+ncurses-dev
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libssl-dev m4 ncurses-dev pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../05-libtinfo-dev_6.0+20161126-1+deb9u2_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (6.0+20161126-1+deb9u2) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../06-libncurses5-dev_6.0+20161126-1+deb9u2_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (6.0+20161126-1+deb9u2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../07-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../08-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up libtinfo-dev:amd64 (6.0+20161126-1+deb9u2) ...
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up libncurses5-dev:amd64 (6.0+20161126-1+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile        1.0.1    [required by zed]
+  - install easy-format     1.3.1    [required by atd]
+  - install result          1.3      [required by cmdliner]
+  - install re              1.7.3    [required by cohttp]
+  - install conf-which      1        [required by biniou, camlp4]
+  - install base-bytes      base     [required by ounit, zed]
+  - install ocamlbuild      0.12.0   [required by github]
+  - install conf-pkg-config 1.1      [required by conf-ncurses]
+  - install ssl             0.4.7    [required by github]
+  - install biniou          1.2.0    [required by atdgen]
+  - install cppo            1.6.4    [required by yojson]
+  - install topkg           0.9.1    [required by cmdliner]
+  - install ounit           2.0.8    [required by cohttp]
+  - install menhir          20180703 [required by atd]
+  - install camlp4          4.03+1   [required by lwt]
+  - install conf-ncurses    1        [required by lwt]
+  - install yojson          1.4.1    [required by github]
+  - install react           1.2.1    [required by lambda-term]
+  - install cmdliner        1.0.2    [required by github]
+  - install uri             1.3.12   [required by github]
+  - install atd             2.0.0    [required by atdgen]
+  - install atdgen-runtime  2.0.0    [required by atdgen]
+  - install zed             1.6      [required by lambda-term]
+  - install lwt             2.4.5    [required by github]
+  - install atdgen          2.0.0    [required by github]
+  - install lambda-term     1.10.1   [required by github]
+  - install cohttp          0.9.6    [required by github]
+  - install github          0.4.2
+===== 28 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[atd.2.0.0] found in cache
+[atdgen.2.0.0] found in cache
+[atdgen-runtime.2.0.0] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.03+1] found in cache
+[camomile.1.0.1] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.0.9.6] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[github.0.4.2] found in cache
+[lambda-term.1.10.1] found in cache
+[lwt.2.4.5] found in cache
+[menhir.20180703] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[ssl.0.4.7] found in cache
+[topkg.0.9.1] found in cache
+[uri.1.3.12] found in cache
+[yojson.1.4.1] found in cache
+[zed.1.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camomile.1.0.1
+-> installed conf-pkg-config.1.1
+-> installed conf-ncurses.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+[ERROR] The compilation of ssl failed at "/usr/bin/make".
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed menhir.20180703
+-> installed atd.2.0.0
+-> installed ounit.2.0.8
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed react.1.2.1
+-> installed uri.1.3.12
+-> installed yojson.1.4.1
+-> installed atdgen-runtime.2.0.0
+-> installed atdgen.2.0.0
+-> installed zed.1.6
+-> installed camlp4.4.03+1
+
+#=== ERROR while compiling ssl.0.4.7 ==========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/ssl.0.4.7
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ssl-12-33e41c.env
+# output-file          ~/.opam/log/ssl-12-33e41c.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# make[2]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# make[3]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# make[4]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# making ._bcdi/ssl.di from ssl.mli
+# making ._d/ssl.d from ssl.ml
+# ocamlc -c -cc "gcc" -ccopt "-fPIC -g -O2 -DHAVE_TLS11 -DHAVE_TLS12 -ansi -DCAML_NAME_SPACE -Wall \
+# 			-DPIC   \
+# 			    -o ssl_stubs.o " ssl_stubs.c 
+# ssl_stubs.c: In function 'get_method':
+# ssl_stubs.c:278:20: warning: implicit declaration of function 'SSLv3_client_method' [-Wimplicit-function-declaration]
+#            method = SSLv3_client_method();
+#                     ^~~~~~~~~~~~~~~~~~~
+# ssl_stubs.c:278:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+#            method = SSLv3_client_method();
+#                   ^
+# ssl_stubs.c:282:20: warning: implicit declaration of function 'SSLv3_server_method' [-Wimplicit-function-declaration]
+#            method = SSLv3_server_method();
+#                     ^~~~~~~~~~~~~~~~~~~
+# ssl_stubs.c:282:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+#            method = SSLv3_server_method();
+#                   ^
+# ssl_stubs.c:286:20: warning: implicit declaration of function 'SSLv3_method' [-Wimplicit-function-declaration]
+#            method = SSLv3_method();
+#                     ^~~~~~~~~~~~
+# ssl_stubs.c:286:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+#            method = SSLv3_method();
+#                   ^
+# ssl_stubs.c:295:11: warning: 'TLSv1_client_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_client_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1614:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_client_method(void)) /* TLSv1.0 */
+#  ^
+# ssl_stubs.c:299:11: warning: 'TLSv1_server_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_server_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1613:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_server_method(void)) /* TLSv1.0 */
+#  ^
+# ssl_stubs.c:303:11: warning: 'TLSv1_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1612:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_method(void)) /* TLSv1.0 */
+#  ^
+# ssl_stubs.c:313:11: warning: 'TLSv1_1_client_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_1_client_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1620:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_client_method(void)) /* TLSv1.1 */
+#  ^
+# ssl_stubs.c:317:11: warning: 'TLSv1_1_server_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_1_server_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1619:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_server_method(void)) /* TLSv1.1 */
+#  ^
+# ssl_stubs.c:321:11: warning: 'TLSv1_1_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_1_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1618:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_method(void)) /* TLSv1.1 */
+#  ^
+# ssl_stubs.c:332:11: warning: 'TLSv1_2_client_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_2_client_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1626:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_client_method(void)) /* TLSv1.2 */
+#  ^
+# ssl_stubs.c:336:11: warning: 'TLSv1_2_server_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_2_server_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1625:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_server_method(void)) /* TLSv1.2 */
+#  ^
+# ssl_stubs.c:340:11: warning: 'TLSv1_2_method' is deprecated [-Wdeprecated-declarations]
+#            method = TLSv1_2_method();
+#            ^~~~~~
+# In file included from /usr/include/openssl/ct.h:13:0,
+#                  from /usr/include/openssl/ssl.h:61,
+#                  from ssl_stubs.c:47:
+# /usr/include/openssl/ssl.h:1624:1: note: declared here
+#  DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_method(void)) /* TLSv1.2 */
+#  ^
+# ssl_stubs.c: In function 'ocaml_ssl_get_cipher_version':
+# ssl_stubs.c:611:11: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+#    version = SSL_CIPHER_get_version(cipher);
+#            ^
+# ssl_stubs.c: In function 'client_verify_callback':
+# ssl_stubs.c:1063:14: error: dereferencing pointer to incomplete type 'X509_STORE_CTX {aka struct x509_store_ctx_st}'
+#    depth = ctx->error_depth;
+#               ^~
+# At top level:
+# ssl_stubs.c:197:13: warning: 'dyn_destroy_function' defined but not used [-Wunused-function]
+#  static void dyn_destroy_function(struct CRYPTO_dynlock_value *l, const char *file, int line)
+#              ^~~~~~~~~~~~~~~~~~~~
+# ssl_stubs.c:189:13: warning: 'dyn_lock_function' defined but not used [-Wunused-function]
+#  static void dyn_lock_function(int mode, struct CRYPTO_dynlock_value *l, const char *file, int line)
+#              ^~~~~~~~~~~~~~~~~
+# ssl_stubs.c:177:37: warning: 'dyn_create_function' defined but not used [-Wunused-function]
+#  static struct CRYPTO_dynlock_value *dyn_create_function(const char *file, int line)
+#                                      ^~~~~~~~~~~~~~~~~~~
+# ssl_stubs.c:172:22: warning: 'id_function' defined but not used [-Wunused-function]
+#  static unsigned long id_function(void)
+#                       ^~~~~~~~~~~
+# ssl_stubs.c:164:13: warning: 'locking_function' defined but not used [-Wunused-function]
+#  static void locking_function(int mode, int n, const char *file, int line)
+#              ^~~~~~~~~~~~~~~~
+# OCamlMakefile:1013: recipe for target 'ssl_stubs.o' failed
+# make[4]: *** [ssl_stubs.o] Error 2
+# make[4]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# OCamlMakefile:716: recipe for target 'byte-code-library' failed
+# make[3]: *** [byte-code-library] Error 2
+# make[3]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# OCamlMakefile:1093: recipe for target 'subproj_ssl' failed
+# make[2]: *** [subproj_ssl] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# Makefile:72: recipe for target 'bcl' failed
+# make[1]: *** [bcl] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/ssl.0.4.7/src'
+# Makefile:9: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ssl 0.4.7
++- 
++- The following changes have been performed (the rest was aborted)
+| - install atd             2.0.0
+| - install atdgen          2.0.0
+| - install atdgen-runtime  2.0.0
+| - install base-bytes      base
+| - install biniou          1.2.0
+| - install camlp4          4.03+1
+| - install camomile        1.0.1
+| - install cmdliner        1.0.2
+| - install conf-ncurses    1
+| - install conf-pkg-config 1.1
+| - install conf-which      1
+| - install cppo            1.6.4
+| - install easy-format     1.3.1
+| - install menhir          20180703
+| - install ocamlbuild      0.12.0
+| - install ounit           2.0.8
+| - install re              1.7.3
+| - install react           1.2.1
+| - install result          1.3
+| - install topkg           0.9.1
+| - install uri             1.3.12
+| - install yojson          1.4.1
+| - install zed             1.6
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libssl-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180728051855.export"
+31 1532755116 1532755286
