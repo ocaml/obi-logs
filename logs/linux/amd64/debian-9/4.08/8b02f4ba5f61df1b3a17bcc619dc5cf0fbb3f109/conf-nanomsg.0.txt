@@ -1,0 +1,41 @@
+$ opam depext -iy -j 2 conf-nanomsg.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libnanomsg-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libnanomsg-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libnanomsg4.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libnanomsg4_0.8~beta+dfsg-1+b1_amd64.deb ...
+Unpacking libnanomsg4 (0.8~beta+dfsg-1+b1) ...
+Selecting previously unselected package libnanomsg-dev.
+Preparing to unpack .../libnanomsg-dev_0.8~beta+dfsg-1+b1_amd64.deb ...
+Unpacking libnanomsg-dev (0.8~beta+dfsg-1+b1) ...
+Setting up libnanomsg4 (0.8~beta+dfsg-1+b1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libnanomsg-dev (0.8~beta+dfsg-1+b1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-nanomsg 0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling conf-nanomsg.0 =====================================#
+"pkg-config": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-nanomsg 0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libnanomsg-dev
+
+# Run eval $(opam env) to update the current shell environment
+31 1532809416 1532809422

@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 capnp-rpc-unix.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for capnp-rpc-unix.0.1: The following dependencies couldn't be met:
+          - capnp-rpc-unix -> capnp-rpc-lwt < 0.2 -> capnp >= 3.0.0 -> extunix -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt < 0.2 -> capnp >= 3.0.0 -> extunix -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt < 0.2 -> capnp >= 3.0.0 -> extunix -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=capnp-rpc-unix.0.1 returned 20
+20 1532809554 1532809556

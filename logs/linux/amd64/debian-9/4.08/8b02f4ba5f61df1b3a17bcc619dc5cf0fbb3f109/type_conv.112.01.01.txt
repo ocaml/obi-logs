@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 type_conv.112.01.01
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for type_conv.112.01.01: The following dependencies couldn't be met:
+          - type_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=type_conv.112.01.01 returned 20
+20 1532809551 1532809553
