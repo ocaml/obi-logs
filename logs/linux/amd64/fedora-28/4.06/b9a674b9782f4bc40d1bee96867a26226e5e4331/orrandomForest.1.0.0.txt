@@ -1,0 +1,2131 @@
+$ opam depext -iy -j 2 orrandomForest.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+R
+m4
+package R is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Fri Jul 27 20:10:18 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# The following new OS packages need to be installed: R
+The following command needs to be run through "sudo":
+    yum install -y R
+Fedora 28 - x86_64 - Updates                     29 MB/s |  20 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sat Jul 28 02:50:21 2018.
+Dependencies resolved.
+================================================================================
+ Package                  Arch   Version                          Repository
+                                                                           Size
+================================================================================
+Installing:
+ R                        x86_64 3.5.0-4.fc28                     updates  33 k
+Installing dependencies:
+ R-core                   x86_64 3.5.0-4.fc28                     updates  56 M
+ R-core-devel             x86_64 3.5.0-4.fc28                     updates 111 k
+ R-devel                  x86_64 3.5.0-4.fc28                     updates  32 k
+ R-java                   x86_64 3.5.0-4.fc28                     updates  33 k
+ R-java-devel             x86_64 3.5.0-4.fc28                     updates  33 k
+ adobe-mappings-cmap      noarch 20171205-3.fc28                  fedora  2.1 M
+ adobe-mappings-cmap-deprecated
+                          noarch 20171205-3.fc28                  fedora  117 k
+ adobe-mappings-pdf       noarch 20180407-1.fc28                  updates 706 k
+ alsa-lib                 x86_64 1.1.6-2.fc28                     fedora  430 k
+ annobin                  x86_64 5.7-2.fc28                       updates  85 k
+ avahi-glib               x86_64 0.7-12.fc28                      fedora   14 k
+ bc                       x86_64 1.07.1-5.fc28                    fedora  128 k
+ bzip2-devel              x86_64 1.0.6-26.fc28                    fedora  223 k
+ cairo                    x86_64 1.15.12-2.fc28                   updates 720 k
+ copy-jdk-configs         noarch 3.7-1.fc28                       updates  26 k
+ cups                     x86_64 1:2.2.6-15.fc28                  updates 1.4 M
+ cups-client              x86_64 1:2.2.6-15.fc28                  updates 164 k
+ cups-filesystem          noarch 1:2.2.6-15.fc28                  updates 105 k
+ cups-filters             x86_64 1.20.0-9.fc28                    updates 773 k
+ cups-filters-libs        x86_64 1.20.0-9.fc28                    updates 132 k
+ cups-libs                x86_64 1:2.2.6-15.fc28                  updates 428 k
+ desktop-file-utils       x86_64 0.23-8.fc28                      fedora   79 k
+ dwz                      x86_64 0.12-7.fc28                      fedora  107 k
+ expat-devel              x86_64 2.2.5-3.fc28                     fedora   54 k
+ file                     x86_64 5.33-7.fc28                      updates  74 k
+ fontconfig               x86_64 2.13.0-4.fc28                    updates 253 k
+ fontconfig-devel         x86_64 2.13.0-4.fc28                    updates 144 k
+ fontpackages-filesystem  noarch 1.44-21.fc28                     fedora   15 k
+ fpc-srpm-macros          noarch 1.1-4.fc28                       fedora  7.5 k
+ freetype                 x86_64 2.8-10.fc28                      fedora  384 k
+ freetype-devel           x86_64 2.8-10.fc28                      fedora  453 k
+ fribidi                  x86_64 1.0.2-1.fc28                     updates  84 k
+ gcc-gfortran             x86_64 8.1.1-5.fc28                     updates  11 M
+ ghc-srpm-macros          noarch 1.4.2-7.fc28                     fedora  8.2 k
+ ghostscript              x86_64 9.23-4.fc28                      updates  77 k
+ giflib                   x86_64 5.1.4-1.fc28                     fedora   50 k
+ gnat-srpm-macros         noarch 4-5.fc28                         fedora  8.8 k
+ go-srpm-macros           noarch 2-16.fc28                        fedora   13 k
+ google-droid-sans-fonts  noarch 20120715-13.fc28                 fedora  2.5 M
+ graphite2                x86_64 1.3.10-5.fc28                    fedora  119 k
+ harfbuzz                 x86_64 1.7.5-3.fc28                     fedora  293 k
+ java-1.8.0-openjdk       x86_64 1:1.8.0.172-12.b11.fc28          updates 248 k
+ java-1.8.0-openjdk-devel x86_64 1:1.8.0.172-12.b11.fc28          updates 9.8 M
+ java-1.8.0-openjdk-headless
+                          x86_64 1:1.8.0.172-12.b11.fc28          updates  32 M
+ javapackages-tools       noarch 5.0.0-14.fc28                    updates  51 k
+ jbig2dec-libs            x86_64 0.14-2.fc28                      fedora   66 k
+ jbigkit-libs             x86_64 2.1-12.fc28                      fedora   53 k
+ lcms2                    x86_64 2.9-2.fc28                       fedora  164 k
+ libICE                   x86_64 1.0.9-12.fc28                    fedora   72 k
+ libRmath                 x86_64 3.5.0-4.fc28                     updates 141 k
+ libRmath-devel           x86_64 3.5.0-4.fc28                     updates  38 k
+ libSM                    x86_64 1.2.2-8.fc28                     fedora   44 k
+ libXaw                   x86_64 1.0.13-8.fc28                    fedora  193 k
+ libXcomposite            x86_64 0.4.4-12.fc28                    fedora   27 k
+ libXcursor               x86_64 1.1.15-1.fc28                    fedora   35 k
+ libXext                  x86_64 1.3.3-8.fc28                     fedora   44 k
+ libXfixes                x86_64 5.0.3-5.fc28                     fedora   24 k
+ libXft                   x86_64 2.3.2-8.fc28                     fedora   65 k
+ libXft-devel             x86_64 2.3.2-8.fc28                     fedora   24 k
+ libXi                    x86_64 1.7.9-6.fc28                     fedora   48 k
+ libXinerama              x86_64 1.1.3-10.fc28                    fedora   19 k
+ libXmu                   x86_64 1.1.2-8.fc28                     fedora   77 k
+ libXpm                   x86_64 3.5.12-5.fc28                    fedora   57 k
+ libXrandr                x86_64 1.5.1-5.fc28                     fedora   32 k
+ libXrender               x86_64 0.9.10-5.fc28                    fedora   32 k
+ libXrender-devel         x86_64 0.9.10-5.fc28                    fedora   21 k
+ libXt                    x86_64 1.1.5-7.fc28                     fedora  184 k
+ libXtst                  x86_64 1.2.3-5.fc28                     fedora   25 k
+ libXxf86misc             x86_64 1.0.3-15.fc28                    fedora   25 k
+ libXxf86vm               x86_64 1.1.4-7.fc28                     fedora   22 k
+ libdatrie                x86_64 0.2.9-7.fc28                     fedora   32 k
+ liberation-fonts-common  noarch 1:1.07.4-11.fc28                 fedora   33 k
+ liberation-mono-fonts    noarch 1:1.07.4-11.fc28                 fedora  233 k
+ libfontenc               x86_64 1.1.3-7.fc28                     fedora   36 k
+ libgfortran              x86_64 8.1.1-5.fc28                     updates 656 k
+ libgs                    x86_64 9.23-4.fc28                      updates 3.0 M
+ libicu                   x86_64 60.2-2.fc28                      fedora  8.8 M
+ libicu-devel             x86_64 60.2-2.fc28                      fedora  920 k
+ libidn                   x86_64 1.34-3.fc28                      updates 234 k
+ libijs                   x86_64 0.35-4.fc28                      fedora   28 k
+ libjpeg-turbo            x86_64 1.5.3-6.fc28                     updates 154 k
+ libmcpp                  x86_64 2.7.2-20.fc28                    fedora   80 k
+ libpaper                 x86_64 1.1.24-21.fc28                   fedora   43 k
+ libpng                   x86_64 2:1.6.34-3.fc28                  fedora  125 k
+ libpng-devel             x86_64 2:1.6.34-3.fc28                  fedora  326 k
+ libquadmath              x86_64 8.1.1-5.fc28                     updates 186 k
+ libquadmath-devel        x86_64 8.1.1-5.fc28                     updates  39 k
+ libthai                  x86_64 0.1.27-2.fc28                    fedora  202 k
+ libtiff                  x86_64 4.0.9-10.fc28                    updates 186 k
+ libuuid-devel            x86_64 2.32.1-1.fc28                    updates  91 k
+ lksctp-tools             x86_64 1.0.16-9.fc28                    fedora   96 k
+ lua                      x86_64 5.3.4-10.fc28                    fedora  191 k
+ lua-posix                x86_64 33.3.1-8.fc28                    fedora  175 k
+ mcpp                     x86_64 2.7.2-20.fc28                    fedora   30 k
+ nim-srpm-macros          noarch 1-1.fc28                         fedora  7.6 k
+ ocaml-srpm-macros        noarch 5-2.fc27                         fedora  7.8 k
+ openblas-Rblas           x86_64 0.3.1-1.fc28                     updates 4.2 M
+ openblas-srpm-macros     noarch 2-2.fc27                         fedora  6.6 k
+ openjpeg2                x86_64 2.3.0-6.fc28                     fedora  153 k
+ pango                    x86_64 1.42.1-2.fc28                    updates 283 k
+ pcre-cpp                 x86_64 8.42-2.fc28                      updates  46 k
+ pcre-devel               x86_64 8.42-2.fc28                      updates 550 k
+ pcre-utf16               x86_64 8.42-2.fc28                      updates 193 k
+ pcre-utf32               x86_64 8.42-2.fc28                      updates 184 k
+ perl-Class-Inspector     noarch 1.32-2.fc28                      fedora   35 k
+ perl-Filter              x86_64 2:1.58-2.fc28                    fedora   81 k
+ perl-Text-Unidecode      noarch 1.30-5.fc28                      fedora  148 k
+ perl-Unicode-EastAsianWidth
+                          noarch 1.33-12.fc28                     fedora   15 k
+ perl-XML-Parser          x86_64 2.44-10.fc28                     fedora  225 k
+ perl-XML-XPath           noarch 1.42-2.fc28                      fedora   87 k
+ perl-encoding            x86_64 4:2.22-3.fc28                    fedora   67 k
+ perl-libintl-perl        x86_64 1.29-2.fc28                      fedora  816 k
+ perl-open                noarch 1.11-412.fc28                    updates  75 k
+ perl-srpm-macros         noarch 1-25.fc28                        fedora  9.7 k
+ pixman                   x86_64 0.34.0-8.fc28                    updates 247 k
+ poppler                  x86_64 0.62.0-2.fc28                    updates 915 k
+ poppler-data             noarch 0.4.9-1.fc28                     updates 2.1 M
+ poppler-utils            x86_64 0.62.0-2.fc28                    updates 216 k
+ python-srpm-macros       noarch 3-30.fc28                        updates  11 k
+ qpdf                     x86_64 7.1.1-6.fc28                     updates  59 k
+ qpdf-libs                x86_64 7.1.1-6.fc28                     updates 355 k
+ qt5-srpm-macros          noarch 5.10.1-1.fc28                    fedora  9.6 k
+ redhat-rpm-config        noarch 108-1.fc28                       updates  77 k
+ rust-srpm-macros         noarch 5-2.fc28                         fedora  8.1 k
+ tcl                      x86_64 1:8.6.8-1.fc28                   fedora  1.1 M
+ tcl-devel                x86_64 1:8.6.8-1.fc28                   fedora  189 k
+ texinfo                  x86_64 6.5-4.fc28                       updates 1.2 M
+ texinfo-tex              x86_64 6.5-4.fc28                       updates 159 k
+ texlive-ae               noarch 6:svn15878.1.4-47.fc28.2         updates 118 k
+ texlive-algorithms       noarch 6:svn38085.0.1-47.fc28.2         updates  48 k
+ texlive-amscls           noarch 6:svn36804.0-47.fc28.2           updates  77 k
+ texlive-amsfonts         noarch 6:svn29208.3.04-47.fc28.2        updates 3.6 M
+ texlive-amsmath          noarch 6:svn41561-47.fc28.2             updates  71 k
+ texlive-anysize          noarch 6:svn15878.0-47.fc28.2           updates  37 k
+ texlive-attachfile       noarch 6:svn38830-47.fc28.2             updates  46 k
+ texlive-auto-pst-pdf     noarch 6:svn23723.0.6-47.fc28.2         updates  41 k
+ texlive-avantgar         noarch 6:svn31835.0-47.fc28.2           updates 317 k
+ texlive-babel            noarch 6:svn40706-47.fc28.2             updates  76 k
+ texlive-babel-english    noarch 6:svn30264.3.3p-47.fc28.2        updates  44 k
+ texlive-babelbib         noarch 6:svn25245.1.31-47.fc28.2        updates  71 k
+ texlive-base             x86_64 7:20170520-37.fc28               updates 931 k
+ texlive-beamer           noarch 6:svn36461.3.36-47.fc28.2        updates 274 k
+ texlive-bera             noarch 6:svn20031.0-47.fc28.2           updates 366 k
+ texlive-beton            noarch 6:svn15878.0-47.fc28.2           updates  40 k
+ texlive-bibtex           x86_64 7:20170520-37.fc28               updates 451 k
+ texlive-bookman          noarch 6:svn31835.0-47.fc28.2           updates 358 k
+ texlive-booktabs         noarch 6:svn40846-47.fc28.2             updates  42 k
+ texlive-breakurl         noarch 6:svn29901.1.40-47.fc28.2        updates  42 k
+ texlive-breqn            noarch 6:svn38099.0.98d-47.fc28.2       updates  68 k
+ texlive-caption          noarch 6:svn41409-47.fc28.2             updates  78 k
+ texlive-carlisle         noarch 6:svn18258.0-47.fc28.2           updates  51 k
+ texlive-charter          noarch 6:svn15878.0-47.fc28.2           updates 220 k
+ texlive-chngcntr         noarch 6:svn17157.1.0a-47.fc28.2        updates  40 k
+ texlive-cite             noarch 6:svn36428.5.5-47.fc28.2         updates  56 k
+ texlive-cm               noarch 6:svn32865.0-47.fc28.2           updates 311 k
+ texlive-cm-super         noarch 6:svn15878.0-47.fc28.2           updates  62 M
+ texlive-cmap             noarch 6:svn41168-47.fc28.2             updates  46 k
+ texlive-cmextra          noarch 6:svn32831.0-47.fc28.2           updates  65 k
+ texlive-collection-basic noarch 6:svn41149-47.20160520.fc28      updates  36 k
+ texlive-collection-fontsrecommended
+                          noarch 6:svn35830.0-47.20160520.fc28    updates  36 k
+ texlive-collection-latex noarch 6:svn41011-47.20160520.fc28      updates  35 k
+ texlive-collection-latexrecommended
+                          noarch 6:svn35765.0-47.20160520.fc28    updates  36 k
+ texlive-colortbl         noarch 6:svn29803.v1.0a-47.fc28.2       updates  42 k
+ texlive-courier          noarch 6:svn35058.0-47.fc28.2           updates 536 k
+ texlive-crop             noarch 6:svn15878.1.5-47.fc28.2         updates  43 k
+ texlive-csquotes         noarch 6:svn39538-47.fc28.2             updates  60 k
+ texlive-ctable           noarch 6:svn38672-47.fc28.2             updates  42 k
+ texlive-currfile         noarch 6:svn40725-47.fc28.2             updates  46 k
+ texlive-dvipdfmx         x86_64 7:20170520-37.fc28               updates 3.0 M
+ texlive-dvipdfmx-def     noarch 6:svn40328-47.fc28.2             updates  43 k
+ texlive-dvips            x86_64 7:20170520-37.fc28               updates 694 k
+ texlive-dvisvgm-def      noarch 6:svn41011-47.fc28.2             updates  44 k
+ texlive-ec               noarch 6:svn25033.1.0-47.fc28.2         updates 495 k
+ texlive-enctex           noarch 6:svn34957.0-47.fc28.2           updates  71 k
+ texlive-enumitem         noarch 6:svn24146.3.5.2-47.fc28.2       updates  50 k
+ texlive-environ          noarch 6:svn33821.0.3-47.fc28.2         updates  41 k
+ texlive-epsf             noarch 6:svn21461.2.7.4-47.fc28.2       updates  44 k
+ texlive-eso-pic          noarch 6:svn37925.2.0g-47.fc28.2        updates  44 k
+ texlive-etex             noarch 6:svn37057.0-47.fc28.2           updates  53 k
+ texlive-etex-pkg         noarch 6:svn39355-47.fc28.2             updates  41 k
+ texlive-etoolbox         noarch 6:svn38031.2.2a-47.fc28.2        updates  50 k
+ texlive-euenc            noarch 6:svn19795.0.1h-47.fc28.2        updates  47 k
+ texlive-euler            noarch 6:svn17261.2.5-47.fc28.2         updates  42 k
+ texlive-euro             noarch 6:svn22191.1.1-47.fc28.2         updates  41 k
+ texlive-eurosym          noarch 6:svn17265.1.4_subrfix-47.fc28.2 updates 177 k
+ texlive-extsizes         noarch 6:svn17263.1.4a-47.fc28.2        updates  52 k
+ texlive-fancybox         noarch 6:svn18304.1.4-47.fc28.2         updates  48 k
+ texlive-fancyhdr         noarch 6:svn15878.3.1-47.fc28.2         updates  47 k
+ texlive-fancyref         noarch 6:svn15878.0.9c-47.fc28.2        updates  44 k
+ texlive-fancyvrb         noarch 6:svn18492.2.8-47.fc28.2         updates  52 k
+ texlive-filecontents     noarch 6:svn24250.1.3-47.fc28.2         updates  41 k
+ texlive-filehook         noarch 6:svn24280.0.5d-47.fc28.2        updates  46 k
+ texlive-finstrut         noarch 6:svn21719.0.5-47.fc28.2         updates  45 k
+ texlive-fix2col          noarch 6:svn38770-47.fc28.2             updates  41 k
+ texlive-float            noarch 6:svn15878.1.3d-47.fc28.2        updates  41 k
+ texlive-fontspec         noarch 6:svn41262-47.fc28.2             updates  68 k
+ texlive-footmisc         noarch 6:svn23330.5.5b-47.fc28.2        updates  48 k
+ texlive-fp               noarch 6:svn15878.0-47.fc28.2           updates  61 k
+ texlive-fpl              noarch 6:svn15878.1.002-47.fc28.2       updates 399 k
+ texlive-geometry         noarch 6:svn19716.5.6-47.fc28.2         updates  48 k
+ texlive-glyphlist        noarch 7:20170520-37.fc28               updates  38 k
+ texlive-graphics         noarch 6:svn41015-47.fc28.2             updates  58 k
+ texlive-graphics-cfg     noarch 6:svn40269-47.fc28.2             updates  38 k
+ texlive-graphics-def     noarch 6:svn41879-47.fc28.2             updates  67 k
+ texlive-gsftopk          x86_64 7:20170520-37.fc28               updates  34 k
+ texlive-helvetic         noarch 6:svn31835.0-47.fc28.2           updates 642 k
+ texlive-hyperref         noarch 6:svn41396-47.fc28.2             updates 162 k
+ texlive-hyph-utf8        noarch 6:svn41189-47.fc28.2             updates  53 k
+ texlive-hyphen-base      noarch 6:svn41138-47.fc28.2             updates  58 k
+ texlive-ifetex           noarch 6:svn24853.1.2-47.fc28.2         updates  43 k
+ texlive-ifluatex         noarch 6:svn41346-47.fc28.2             updates  44 k
+ texlive-ifplatform       noarch 6:svn21156.0.4-47.fc28.2         updates  41 k
+ texlive-iftex            noarch 6:svn29654.0.2-47.fc28.2         updates  43 k
+ texlive-ifxetex          noarch 6:svn19685.0.5-47.fc28.2         updates  40 k
+ texlive-inconsolata      noarch 6:svn39839-47.fc28.2             updates 262 k
+ texlive-index            noarch 6:svn24099.4.1beta-47.fc28.2     updates  48 k
+ texlive-jknapltx         noarch 6:svn19440.0-47.fc28.2           updates  51 k
+ texlive-kastrup          noarch 6:svn15878.0-47.fc28.2           updates  37 k
+ texlive-knuth-lib        noarch 6:svn35820.0-47.fc28.2           updates  71 k
+ texlive-knuth-local      noarch 6:svn38627-47.fc28.2             updates  64 k
+ texlive-koma-script      noarch 6:svn41508-47.fc28.2             updates 6.5 M
+ texlive-kpathsea         x86_64 7:20170520-37.fc28               updates 1.1 M
+ texlive-l3experimental   noarch 6:svn41163-47.fc28.2             updates  88 k
+ texlive-l3kernel         noarch 6:svn41246-47.fc28.2             updates 157 k
+ texlive-l3packages       noarch 6:svn41246-47.fc28.2             updates  61 k
+ texlive-latex            noarch 7:20170520-37.fc28               updates  13 M
+ texlive-latex-fonts      noarch 6:svn28888.0-47.fc28.2           updates  64 k
+ texlive-latexconfig      noarch 6:svn40274-47.fc28.2             updates  41 k
+ texlive-lib              x86_64 7:20170520-37.fc28               updates 429 k
+ texlive-lineno           noarch 6:svn21442.4.41-47.fc28.2        updates 104 k
+ texlive-listings         noarch 6:svn37534.1.6-47.fc28.2         updates 170 k
+ texlive-lm               noarch 6:svn28119.2.004-47.fc28.2       updates  13 M
+ texlive-lm-math          noarch 6:svn36915.1.959-47.fc28.2       updates 451 k
+ texlive-ltabptch         noarch 6:svn17533.1.74d-47.fc28.2       updates  43 k
+ texlive-ltxmisc          noarch 6:svn21927.0-47.fc28.2           updates  53 k
+ texlive-lua-alt-getopt   noarch 6:svn29349.0.7.0-47.fc28.2       updates  37 k
+ texlive-lualatex-math    noarch 6:svn40621-47.fc28.2             updates  45 k
+ texlive-lualibs          noarch 6:svn40370-47.fc28.2             updates 161 k
+ texlive-luaotfload       noarch 7:20170520-37.fc28               updates 780 k
+ texlive-luatex           x86_64 7:20170520-37.fc28               updates 4.5 M
+ texlive-luatexbase       noarch 6:svn38550-47.fc28.2             updates  41 k
+ texlive-makeindex        x86_64 7:20170520-37.fc28               updates 434 k
+ texlive-manfnt-font      noarch 6:svn35799.0-47.fc28.2           updates  61 k
+ texlive-marginnote       noarch 6:svn41382-47.fc28.2             updates  42 k
+ texlive-marvosym         noarch 6:svn29349.2.2a-47.fc28.2        updates 170 k
+ texlive-mathpazo         noarch 6:svn15878.1.003-47.fc28.2       updates 108 k
+ texlive-mathtools        noarch 6:svn38833-47.fc28.2             updates  62 k
+ texlive-mdwtools         noarch 6:svn15878.1.05.4-47.fc28.2      updates  61 k
+ texlive-memoir           noarch 6:svn41203-47.fc28.2             updates 124 k
+ texlive-metafont         x86_64 7:20170520-37.fc28               updates 251 k
+ texlive-metalogo         noarch 6:svn18611.0.12-47.fc28.2        updates  41 k
+ texlive-mflogo           noarch 6:svn38628-47.fc28.2             updates  41 k
+ texlive-mflogo-font      noarch 6:svn36898.1.002-47.fc28.2       updates  56 k
+ texlive-mfnfss           noarch 6:svn19410.0-47.fc28.2           updates  41 k
+ texlive-mfware           x86_64 7:20170520-37.fc28               updates 102 k
+ texlive-microtype        noarch 6:svn41127-47.fc28.2             updates  91 k
+ texlive-mparhack         noarch 6:svn15878.1.4-47.fc28.2         updates  43 k
+ texlive-mptopdf          noarch 7:20170520-37.fc28               updates  54 k
+ texlive-ms               noarch 6:svn29849.0-47.fc28.2           updates  45 k
+ texlive-multido          noarch 6:svn18302.1.42-47.fc28.2        updates  43 k
+ texlive-natbib           noarch 6:svn20668.8.31b-47.fc28.2       updates  56 k
+ texlive-ncntrsbk         noarch 6:svn31835.0-47.fc28.2           updates 364 k
+ texlive-ntgclass         noarch 6:svn15878.2.1a-47.fc28.2        updates  60 k
+ texlive-oberdiek         noarch 7:20170520-37.fc28               updates  15 M
+ texlive-palatino         noarch 6:svn31835.0-47.fc28.2           updates 411 k
+ texlive-paralist         noarch 6:svn39247-47.fc28.2             updates  42 k
+ texlive-parallel         noarch 6:svn15878.0-47.fc28.2           updates  42 k
+ texlive-parskip          noarch 6:svn19963.2.0-47.fc28.2         updates  40 k
+ texlive-pdfpages         noarch 6:svn40638-47.fc28.2             updates  57 k
+ texlive-pdftex           x86_64 7:20170520-37.fc28               updates 1.8 M
+ texlive-pdftex-def       noarch 6:svn22653.0.06d-47.fc28.2       updates  55 k
+ texlive-pgf              noarch 6:svn40966-47.fc28.2             updates 832 k
+ texlive-plain            noarch 6:svn40274-47.fc28.2             updates 484 k
+ texlive-powerdot         noarch 6:svn38984-47.fc28.2             updates  72 k
+ texlive-psfrag           noarch 6:svn15878.3.04-47.fc28.2        updates  40 k
+ texlive-pslatex          noarch 6:svn16416.0-47.fc28.2           updates  46 k
+ texlive-psnfss           noarch 6:svn33946.9.2a-47.fc28.2        updates  67 k
+ texlive-pspicture        noarch 6:svn15878.0-47.fc28.2           updates  41 k
+ texlive-pst-3d           noarch 6:svn17257.1.10-47.fc28.2        updates  43 k
+ texlive-pst-blur         noarch 6:svn15878.2.0-47.fc28.2         updates  41 k
+ texlive-pst-coil         noarch 6:svn37377.1.07-47.fc28.2        updates  43 k
+ texlive-pst-eps          noarch 6:svn15878.1.0-47.fc28.2         updates  42 k
+ texlive-pst-fill         noarch 6:svn15878.1.01-47.fc28.2        updates  43 k
+ texlive-pst-grad         noarch 6:svn15878.1.06-47.fc28.2        updates  43 k
+ texlive-pst-math         noarch 6:svn34786.0.63-47.fc28.2        updates  44 k
+ texlive-pst-node         noarch 6:svn40743-47.fc28.2             updates  66 k
+ texlive-pst-ovl          noarch 6:svn40873-47.fc28.2             updates  41 k
+ texlive-pst-pdf          noarch 7:20170520-37.fc28               updates 961 k
+ texlive-pst-plot         noarch 6:svn41242-47.fc28.2             updates  62 k
+ texlive-pst-slpe         noarch 6:svn24391.1.31-47.fc28.2        updates  42 k
+ texlive-pst-text         noarch 6:svn15878.1.00-47.fc28.2        updates  43 k
+ texlive-pst-tools        noarch 6:svn34067.0.05-47.fc28.2        updates  44 k
+ texlive-pst-tree         noarch 6:svn24142.1.12-47.fc28.2        updates  46 k
+ texlive-pstricks         noarch 6:svn41321-47.fc28.2             updates 125 k
+ texlive-pstricks-add     noarch 6:svn40744-47.fc28.2             updates  64 k
+ texlive-pxfonts          noarch 6:svn15878.0-47.fc28.2           updates 522 k
+ texlive-qstest           noarch 6:svn15878.0-47.fc28.2           updates  44 k
+ texlive-rcs              noarch 6:svn15878.0-47.fc28.2           updates  53 k
+ texlive-rotating         noarch 6:svn16832.2.16b-47.fc28.2       updates  42 k
+ texlive-rsfs             noarch 6:svn15878.0-47.fc28.2           updates  94 k
+ texlive-sansmath         noarch 6:svn17997.1.1-47.fc28.2         updates  39 k
+ texlive-sansmathaccent   noarch 6:svn30187.0-47.fc28.2           updates  56 k
+ texlive-sauerj           noarch 6:svn15878.0-47.fc28.2           updates  45 k
+ texlive-section          noarch 6:svn20180.0-47.fc28.2           updates  48 k
+ texlive-seminar          noarch 6:svn34011.1.62-47.fc28.2        updates  73 k
+ texlive-sepnum           noarch 6:svn20186.2.0-47.fc28.2         updates  41 k
+ texlive-setspace         noarch 6:svn24881.6.7a-47.fc28.2        updates  43 k
+ texlive-showexpl         noarch 6:svn32737.v0.3l-47.fc28.2       updates  43 k
+ texlive-soul             noarch 6:svn15878.2.4-47.fc28.2         updates  45 k
+ texlive-subfig           noarch 6:svn15878.1.3-47.fc28.2         updates  46 k
+ texlive-symbol           noarch 6:svn31835.0-47.fc28.2           updates  79 k
+ texlive-tetex            noarch 7:20170520-37.fc28               updates 392 k
+ texlive-tex              x86_64 7:20170520-37.fc28               updates 182 k
+ texlive-tex-gyre         noarch 6:svn18651.2.004-47.fc28.2       updates 7.0 M
+ texlive-tex-gyre-math    noarch 6:svn41264-47.fc28.2             updates 1.4 M
+ texlive-tex-ini-files    noarch 6:svn40533-47.fc28.2             updates  40 k
+ texlive-texconfig        noarch 7:20170520-37.fc28               updates  29 k
+ texlive-texlive-common-doc
+                          noarch 6:svn40682-47.fc28.2             updates 234 k
+ texlive-texlive-docindex noarch 6:svn41430-47.fc28.2             updates 168 k
+ texlive-texlive-en       noarch 7:20170520-37.fc28               updates 1.5 M
+ texlive-texlive-msg-translations
+                          noarch 6:svn41431-47.fc28.2             updates 161 k
+ texlive-texlive-scripts  noarch 7:20170520-37.fc28               updates  31 k
+ texlive-texlive.infra    noarch 7:20170520-37.fc28               updates 153 k
+ texlive-textcase         noarch 6:svn15878.0-47.fc28.2           updates  40 k
+ texlive-thumbpdf         noarch 7:20170520-37.fc28               updates  41 k
+ texlive-times            noarch 6:svn35058.0-47.fc28.2           updates 365 k
+ texlive-tipa             noarch 6:svn29349.1.3-47.fc28.2         updates 2.8 M
+ texlive-tools            noarch 6:svn40934-47.fc28.2             updates  88 k
+ texlive-trimspaces       noarch 6:svn15878.1.1-47.fc28.2         updates  40 k
+ texlive-txfonts          noarch 6:svn15878.0-47.fc28.2           updates 794 k
+ texlive-type1cm          noarch 6:svn21820.0-47.fc28.2           updates  41 k
+ texlive-typehtml         noarch 6:svn17134.0-47.fc28.2           updates  46 k
+ texlive-ucharcat         noarch 6:svn38907-47.fc28.2             updates  40 k
+ texlive-ucs              noarch 6:svn35853.2.2-47.fc28.2         updates 386 k
+ texlive-underscore       noarch 6:svn18261.0-47.fc28.2           updates  43 k
+ texlive-unicode-data     noarch 6:svn39808-47.fc28.2             updates 293 k
+ texlive-unicode-math     noarch 6:svn38462-47.fc28.2             updates  86 k
+ texlive-updmap-map       noarch 6:svn41159-47.fc28.2             updates 203 k
+ texlive-url              noarch 6:svn32528.3.4-47.fc28.2         updates  44 k
+ texlive-utopia           noarch 6:svn15878.0-47.fc28.2           updates 252 k
+ texlive-varwidth         noarch 6:svn24104.0.92-47.fc28.2        updates  43 k
+ texlive-wasy             noarch 6:svn35831.0-47.fc28.2           updates  61 k
+ texlive-wasy2-ps         noarch 6:svn35830.0-47.fc28.2           updates 250 k
+ texlive-wasysym          noarch 6:svn15878.2.0-47.fc28.2         updates  42 k
+ texlive-xcolor           noarch 6:svn41044-47.fc28.2             updates  57 k
+ texlive-xdvi             x86_64 7:20170520-37.fc28               updates 350 k
+ texlive-xkeyval          noarch 6:svn35741.2.7a-47.fc28.2        updates  58 k
+ texlive-xunicode         noarch 6:svn30466.0.981-47.fc28.2       updates  69 k
+ texlive-zapfchan         noarch 6:svn31835.0-47.fc28.2           updates 127 k
+ texlive-zapfding         noarch 6:svn31835.0-47.fc28.2           updates  89 k
+ tk                       x86_64 1:8.6.8-1.fc28                   fedora  1.6 M
+ tk-devel                 x86_64 1:8.6.8-1.fc28                   fedora  497 k
+ tre                      x86_64 0.8.0-22.20140228gitc2f5d13.fc28 fedora   46 k
+ tre-common               noarch 0.8.0-22.20140228gitc2f5d13.fc28 fedora   36 k
+ tre-devel                x86_64 0.8.0-22.20140228gitc2f5d13.fc28 fedora   16 k
+ ttmkfdir                 x86_64 3.0.9-54.fc28                    fedora   60 k
+ tzdata-java              noarch 2018e-1.fc28                     updates 185 k
+ urw-base35-bookman-fonts noarch 20170801-10.fc28                 updates 856 k
+ urw-base35-c059-fonts    noarch 20170801-10.fc28                 updates 883 k
+ urw-base35-d050000l-fonts
+                          noarch 20170801-10.fc28                 updates  78 k
+ urw-base35-fonts         noarch 20170801-10.fc28                 updates  11 k
+ urw-base35-fonts-common  noarch 20170801-10.fc28                 updates  22 k
+ urw-base35-gothic-fonts  noarch 20170801-10.fc28                 updates 653 k
+ urw-base35-nimbus-mono-ps-fonts
+                          noarch 20170801-10.fc28                 updates 800 k
+ urw-base35-nimbus-roman-fonts
+                          noarch 20170801-10.fc28                 updates 864 k
+ urw-base35-nimbus-sans-fonts
+                          noarch 20170801-10.fc28                 updates 1.3 M
+ urw-base35-p052-fonts    noarch 20170801-10.fc28                 updates 981 k
+ urw-base35-standard-symbols-ps-fonts
+                          noarch 20170801-10.fc28                 updates  43 k
+ urw-base35-z003-fonts    noarch 20170801-10.fc28                 updates 278 k
+ xdg-utils                noarch 1.1.3-2.fc28                     updates  84 k
+ xorg-x11-font-utils      x86_64 1:7.5-38.fc28                    updates  95 k
+ xorg-x11-fonts-Type1     noarch 7.5-19.fc28                      fedora  521 k
+ xorg-x11-server-utils    x86_64 7.7-24.fc28                      fedora  193 k
+ xz-devel                 x86_64 5.2.4-2.fc28                     updates  61 k
+ zlib-devel               x86_64 1.2.11-8.fc28                    updates  55 k
+ zziplib                  x86_64 0.13.68-1.fc28                   fedora   89 k
+Installing weak dependencies:
+ perl-File-ShareDir       noarch 1.104-3.fc28                     fedora   28 k
+
+Transaction Summary
+================================================================================
+Install  378 Packages
+
+Total download size: 324 M
+Installed size: 763 M
+Downloading Packages:
+(1/378): R-3.5.0-4.fc28.x86_64.rpm              465 kB/s |  33 kB     00:00    
+(2/378): R-java-3.5.0-4.fc28.x86_64.rpm         428 kB/s |  33 kB     00:00    
+(3/378): libRmath-3.5.0-4.fc28.x86_64.rpm       7.1 MB/s | 141 kB     00:00    
+(4/378): libICE-1.0.9-12.fc28.x86_64.rpm        2.1 MB/s |  72 kB     00:00    
+(5/378): libSM-1.2.2-8.fc28.x86_64.rpm          1.8 MB/s |  44 kB     00:00    
+(6/378): libXext-1.3.3-8.fc28.x86_64.rpm        5.1 MB/s |  44 kB     00:00    
+(7/378): libXmu-1.1.2-8.fc28.x86_64.rpm         5.5 MB/s |  77 kB     00:00    
+(8/378): libXt-1.1.5-7.fc28.x86_64.rpm           12 MB/s | 184 kB     00:00    
+(9/378): libpng-1.6.34-3.fc28.x86_64.rpm         11 MB/s | 125 kB     00:00    
+(10/378): tcl-8.6.8-1.fc28.x86_64.rpm            15 MB/s | 1.1 MB     00:00    
+(11/378): tk-8.6.8-1.fc28.x86_64.rpm             17 MB/s | 1.6 MB     00:00    
+(12/378): tre-0.8.0-22.20140228gitc2f5d13.fc28. 2.4 MB/s |  46 kB     00:00    
+(13/378): freetype-2.8-10.fc28.x86_64.rpm        15 MB/s | 384 kB     00:00    
+(14/378): libXft-2.3.2-8.fc28.x86_64.rpm        6.3 MB/s |  65 kB     00:00    
+(15/378): tre-common-0.8.0-22.20140228gitc2f5d1 1.6 MB/s |  36 kB     00:00    
+(16/378): libXrender-0.9.10-5.fc28.x86_64.rpm   2.9 MB/s |  32 kB     00:00    
+(17/378): libicu-60.2-2.fc28.x86_64.rpm          25 MB/s | 8.8 MB     00:00    
+(18/378): cairo-1.15.12-2.fc28.x86_64.rpm       7.7 MB/s | 720 kB     00:00    
+(19/378): cups-client-2.2.6-15.fc28.x86_64.rpm  8.2 MB/s | 164 kB     00:00    
+(20/378): cups-filesystem-2.2.6-15.fc28.noarch. 9.5 MB/s | 105 kB     00:00    
+(21/378): cups-libs-2.2.6-15.fc28.x86_64.rpm     11 MB/s | 428 kB     00:00    
+(22/378): cups-2.2.6-15.fc28.x86_64.rpm          13 MB/s | 1.4 MB     00:00    
+(23/378): fribidi-1.0.2-1.fc28.x86_64.rpm       5.6 MB/s |  84 kB     00:00    
+(24/378): libjpeg-turbo-1.5.3-6.fc28.x86_64.rpm 8.8 MB/s | 154 kB     00:00    
+(25/378): libquadmath-8.1.1-5.fc28.x86_64.rpm    10 MB/s | 186 kB     00:00    
+(26/378): libgfortran-8.1.1-5.fc28.x86_64.rpm    13 MB/s | 656 kB     00:00    
+(27/378): libtiff-4.0.9-10.fc28.x86_64.rpm      8.1 MB/s | 186 kB     00:00    
+(28/378): jbigkit-libs-2.1-12.fc28.x86_64.rpm   4.3 MB/s |  53 kB     00:00    
+(29/378): pango-1.42.1-2.fc28.x86_64.rpm        9.8 MB/s | 283 kB     00:00    
+(30/378): harfbuzz-1.7.5-3.fc28.x86_64.rpm       12 MB/s | 293 kB     00:00    
+(31/378): libthai-0.1.27-2.fc28.x86_64.rpm      9.0 MB/s | 202 kB     00:00    
+(32/378): graphite2-1.3.10-5.fc28.x86_64.rpm    7.3 MB/s | 119 kB     00:00    
+(33/378): libdatrie-0.2.9-7.fc28.x86_64.rpm     3.1 MB/s |  32 kB     00:00    
+(34/378): redhat-rpm-config-108-1.fc28.noarch.r 6.3 MB/s |  77 kB     00:00    
+(35/378): file-5.33-7.fc28.x86_64.rpm           6.0 MB/s |  74 kB     00:00    
+(36/378): dwz-0.12-7.fc28.x86_64.rpm            2.7 MB/s | 107 kB     00:00    
+(37/378): fpc-srpm-macros-1.1-4.fc28.noarch.rpm 410 kB/s | 7.5 kB     00:00    
+(38/378): ghc-srpm-macros-1.4.2-7.fc28.noarch.r 524 kB/s | 8.2 kB     00:00    
+(39/378): gnat-srpm-macros-4-5.fc28.noarch.rpm  432 kB/s | 8.8 kB     00:00    
+(40/378): go-srpm-macros-2-16.fc28.noarch.rpm   751 kB/s |  13 kB     00:00    
+(41/378): nim-srpm-macros-1-1.fc28.noarch.rpm   997 kB/s | 7.6 kB     00:00    
+(42/378): ocaml-srpm-macros-5-2.fc27.noarch.rpm 525 kB/s | 7.8 kB     00:00    
+(43/378): openblas-srpm-macros-2-2.fc27.noarch. 820 kB/s | 6.6 kB     00:00    
+(44/378): perl-srpm-macros-1-25.fc28.noarch.rpm 708 kB/s | 9.7 kB     00:00    
+(45/378): openblas-Rblas-0.3.1-1.fc28.x86_64.rp  13 MB/s | 4.2 MB     00:00    
+(46/378): qt5-srpm-macros-5.10.1-1.fc28.noarch. 285 kB/s | 9.6 kB     00:00    
+(47/378): texlive-collection-latexrecommended-s 3.6 MB/s |  36 kB     00:00    
+(48/378): rust-srpm-macros-5-2.fc28.noarch.rpm  283 kB/s | 8.1 kB     00:00    
+(49/378): xdg-utils-1.1.3-2.fc28.noarch.rpm     5.1 MB/s |  84 kB     00:00    
+(50/378): texlive-dvips-20170520-37.fc28.x86_64  14 MB/s | 694 kB     00:00    
+(51/378): desktop-file-utils-0.23-8.fc28.x86_64 3.0 MB/s |  79 kB     00:00    
+(52/378): R-devel-3.5.0-4.fc28.x86_64.rpm       2.6 MB/s |  32 kB     00:00    
+(53/378): libRmath-devel-3.5.0-4.fc28.x86_64.rp 4.6 MB/s |  38 kB     00:00    
+(54/378): fontpackages-filesystem-1.44-21.fc28. 1.1 MB/s |  15 kB     00:00    
+(55/378): fontconfig-2.13.0-4.fc28.x86_64.rpm    11 MB/s | 253 kB     00:00    
+(56/378): texlive-base-20170520-37.fc28.x86_64.  16 MB/s | 931 kB     00:00    
+(57/378): texlive-latex-fonts-svn28888.0-47.fc2 5.8 MB/s |  64 kB     00:00    
+(58/378): texlive-kpathsea-20170520-37.fc28.x86  14 MB/s | 1.1 MB     00:00    
+(59/378): texlive-anysize-svn15878.0-47.fc28.2. 3.8 MB/s |  37 kB     00:00    
+(60/378): texlive-lib-20170520-37.fc28.x86_64.r  12 MB/s | 429 kB     00:00    
+(61/378): texlive-beamer-svn36461.3.36-47.fc28.  12 MB/s | 274 kB     00:00    
+(62/378): texlive-booktabs-svn40846-47.fc28.2.n 4.3 MB/s |  42 kB     00:00    
+(63/378): texlive-breqn-svn38099.0.98d-47.fc28. 7.5 MB/s |  68 kB     00:00    
+(64/378): texlive-caption-svn41409-47.fc28.2.no 8.2 MB/s |  78 kB     00:00    
+(65/378): texlive-cite-svn36428.5.5-47.fc28.2.n 6.5 MB/s |  56 kB     00:00    
+(66/378): texlive-cmap-svn41168-47.fc28.2.noarc 5.3 MB/s |  46 kB     00:00    
+(67/378): texlive-collection-fontsrecommended-s 3.8 MB/s |  36 kB     00:00    
+(68/378): texlive-collection-latex-svn41011-47. 3.6 MB/s |  35 kB     00:00    
+(69/378): texlive-crop-svn15878.1.5-47.fc28.2.n 5.0 MB/s |  43 kB     00:00    
+(70/378): texlive-ctable-svn38672-47.fc28.2.noa 4.6 MB/s |  42 kB     00:00    
+(71/378): texlive-eso-pic-svn37925.2.0g-47.fc28 5.0 MB/s |  44 kB     00:00    
+(72/378): texlive-euenc-svn19795.0.1h-47.fc28.2 5.1 MB/s |  47 kB     00:00    
+(73/378): texlive-euler-svn17261.2.5-47.fc28.2. 5.1 MB/s |  42 kB     00:00    
+(74/378): texlive-extsizes-svn17263.1.4a-47.fc2 5.6 MB/s |  52 kB     00:00    
+(75/378): R-core-3.5.0-4.fc28.x86_64.rpm         37 MB/s |  56 MB     00:01    
+(76/378): texlive-fancybox-svn18304.1.4-47.fc28 174 kB/s |  48 kB     00:00    
+(77/378): texlive-fancyref-svn15878.0.9c-47.fc2 161 kB/s |  44 kB     00:00    
+(78/378): texlive-fancyvrb-svn18492.2.8-47.fc28 3.2 MB/s |  52 kB     00:00    
+(79/378): texlive-float-svn15878.1.3d-47.fc28.2 4.3 MB/s |  41 kB     00:00    
+(80/378): texlive-fontspec-svn41262-47.fc28.2.n 4.5 MB/s |  68 kB     00:00    
+(81/378): texlive-fp-svn15878.0-47.fc28.2.noarc 3.9 MB/s |  61 kB     00:00    
+(82/378): texlive-index-svn24099.4.1beta-47.fc2 3.3 MB/s |  48 kB     00:00    
+(83/378): texlive-jknapltx-svn19440.0-47.fc28.2 3.2 MB/s |  51 kB     00:00    
+(84/378): texlive-l3experimental-svn41163-47.fc 6.8 MB/s |  88 kB     00:00    
+(85/378): texlive-l3packages-svn41246-47.fc28.2 5.9 MB/s |  61 kB     00:00    
+(86/378): texlive-l3kernel-svn41246-47.fc28.2.n 6.8 MB/s | 157 kB     00:00    
+(87/378): texlive-lineno-svn21442.4.41-47.fc28.  11 MB/s | 104 kB     00:00    
+(88/378): texlive-mathtools-svn38833-47.fc28.2. 6.2 MB/s |  62 kB     00:00    
+(89/378): texlive-mdwtools-svn15878.1.05.4-47.f 7.7 MB/s |  61 kB     00:00    
+(90/378): texlive-listings-svn37534.1.6-47.fc28 6.6 MB/s | 170 kB     00:00    
+(91/378): texlive-memoir-svn41203-47.fc28.2.noa  14 MB/s | 124 kB     00:00    
+(92/378): texlive-metalogo-svn18611.0.12-47.fc2 5.3 MB/s |  41 kB     00:00    
+(93/378): texlive-microtype-svn41127-47.fc28.2.  10 MB/s |  91 kB     00:00    
+(94/378): texlive-ms-svn29849.0-47.fc28.2.noarc 5.7 MB/s |  45 kB     00:00    
+(95/378): texlive-ntgclass-svn15878.2.1a-47.fc2 7.7 MB/s |  60 kB     00:00    
+(96/378): texlive-parskip-svn19963.2.0-47.fc28. 5.1 MB/s |  40 kB     00:00    
+(97/378): texlive-pdfpages-svn40638-47.fc28.2.n 6.6 MB/s |  57 kB     00:00    
+(98/378): texlive-powerdot-svn38984-47.fc28.2.n 4.9 MB/s |  72 kB     00:00    
+(99/378): texlive-psfrag-svn15878.3.04-47.fc28. 4.2 MB/s |  40 kB     00:00    
+(100/378): texlive-rcs-svn15878.0-47.fc28.2.noa 6.1 MB/s |  53 kB     00:00    
+(101/378): texlive-rotating-svn16832.2.16b-47.f 4.7 MB/s |  42 kB     00:00    
+(102/378): texlive-sansmath-svn17997.1.1-47.fc2 5.2 MB/s |  39 kB     00:00    
+(103/378): texlive-section-svn20180.0-47.fc28.2 5.6 MB/s |  48 kB     00:00    
+(104/378): texlive-sepnum-svn20186.2.0-47.fc28. 4.9 MB/s |  41 kB     00:00    
+(105/378): texlive-seminar-svn34011.1.62-47.fc2 5.1 MB/s |  73 kB     00:00    
+(106/378): texlive-setspace-svn24881.6.7a-47.fc 4.9 MB/s |  43 kB     00:00    
+(107/378): texlive-subfig-svn15878.1.3-47.fc28. 5.2 MB/s |  46 kB     00:00    
+(108/378): texlive-textcase-svn15878.0-47.fc28. 4.7 MB/s |  40 kB     00:00    
+(109/378): texlive-thumbpdf-20170520-37.fc28.no 4.6 MB/s |  41 kB     00:00    
+(110/378): texlive-typehtml-svn17134.0-47.fc28. 5.7 MB/s |  46 kB     00:00    
+(111/378): texlive-underscore-svn18261.0-47.fc2 4.9 MB/s |  43 kB     00:00    
+(112/378): texlive-xcolor-svn41044-47.fc28.2.no 6.2 MB/s |  57 kB     00:00    
+(113/378): texlive-xkeyval-svn35741.2.7a-47.fc2 4.1 MB/s |  58 kB     00:00    
+(114/378): texlive-ae-svn15878.1.4-47.fc28.2.no  12 MB/s | 118 kB     00:00    
+(115/378): texlive-amsmath-svn41561-47.fc28.2.n 7.2 MB/s |  71 kB     00:00    
+(116/378): texlive-amscls-svn36804.0-47.fc28.2. 5.0 MB/s |  77 kB     00:00    
+(117/378): texlive-babel-english-svn30264.3.3p- 5.3 MB/s |  44 kB     00:00    
+(118/378): texlive-babelbib-svn25245.1.31-47.fc 7.7 MB/s |  71 kB     00:00    
+(119/378): texlive-babel-svn40706-47.fc28.2.noa 4.7 MB/s |  76 kB     00:00    
+(120/378): texlive-carlisle-svn18258.0-47.fc28. 5.5 MB/s |  51 kB     00:00    
+(121/378): texlive-collection-basic-svn41149-47 3.4 MB/s |  36 kB     00:00    
+(122/378): texlive-colortbl-svn29803.v1.0a-47.f 5.1 MB/s |  42 kB     00:00    
+(123/378): texlive-dvisvgm-def-svn41011-47.fc28 4.8 MB/s |  44 kB     00:00    
+(124/378): texlive-fancyhdr-svn15878.3.1-47.fc2 5.3 MB/s |  47 kB     00:00    
+(125/378): texlive-fix2col-svn38770-47.fc28.2.n 5.1 MB/s |  41 kB     00:00    
+(126/378): texlive-geometry-svn19716.5.6-47.fc2 6.6 MB/s |  48 kB     00:00    
+(127/378): texlive-graphics-cfg-svn40269-47.fc2 3.9 MB/s |  38 kB     00:00    
+(128/378): texlive-graphics-svn41015-47.fc28.2. 4.4 MB/s |  58 kB     00:00    
+(129/378): texlive-hyperref-svn41396-47.fc28.2.  15 MB/s | 162 kB     00:00    
+(130/378): texlive-latexconfig-svn40274-47.fc28 5.0 MB/s |  41 kB     00:00    
+(131/378): texlive-ltxmisc-svn21927.0-47.fc28.2 6.4 MB/s |  53 kB     00:00    
+(132/378): texlive-mfnfss-svn19410.0-47.fc28.2. 5.0 MB/s |  41 kB     00:00    
+(133/378): texlive-mptopdf-20170520-37.fc28.noa 7.1 MB/s |  54 kB     00:00    
+(134/378): texlive-natbib-svn20668.8.31b-47.fc2 7.6 MB/s |  56 kB     00:00    
+(135/378): texlive-koma-script-svn41508-47.fc28  20 MB/s | 6.5 MB     00:00    
+(136/378): texlive-pdftex-def-svn22653.0.06d-47 5.9 MB/s |  55 kB     00:00    
+(137/378): texlive-pslatex-svn16416.0-47.fc28.2 5.1 MB/s |  46 kB     00:00    
+(138/378): texlive-psnfss-svn33946.9.2a-47.fc28 7.4 MB/s |  67 kB     00:00    
+(139/378): texlive-pspicture-svn15878.0-47.fc28 4.5 MB/s |  41 kB     00:00    
+(140/378): texlive-tools-svn40934-47.fc28.2.noa 8.9 MB/s |  88 kB     00:00    
+(141/378): texlive-url-svn32528.3.4-47.fc28.2.n 4.9 MB/s |  44 kB     00:00    
+(142/378): texlive-avantgar-svn31835.0-47.fc28.  12 MB/s | 317 kB     00:00    
+(143/378): texlive-bookman-svn31835.0-47.fc28.2  14 MB/s | 358 kB     00:00    
+(144/378): texlive-charter-svn15878.0-47.fc28.2  12 MB/s | 220 kB     00:00    
+(145/378): texlive-oberdiek-20170520-37.fc28.no  45 MB/s |  15 MB     00:00    
+(146/378): texlive-cmextra-svn32831.0-47.fc28.2 5.3 MB/s |  65 kB     00:00    
+(147/378): texlive-courier-svn35058.0-47.fc28.2  29 MB/s | 536 kB     00:00    
+(148/378): texlive-ec-svn25033.1.0-47.fc28.2.no  26 MB/s | 495 kB     00:00    
+(149/378): texlive-euro-svn22191.1.1-47.fc28.2. 3.3 MB/s |  41 kB     00:00    
+(150/378): texlive-eurosym-svn17265.1.4_subrfix  15 MB/s | 177 kB     00:00    
+(151/378): texlive-fpl-svn15878.1.002-47.fc28.2  30 MB/s | 399 kB     00:00    
+(152/378): texlive-helvetic-svn31835.0-47.fc28.  32 MB/s | 642 kB     00:00    
+(153/378): texlive-lm-math-svn36915.1.959-47.fc  29 MB/s | 451 kB     00:00    
+(154/378): texlive-lm-svn28119.2.004-47.fc28.2.  48 MB/s |  13 MB     00:00    
+(155/378): texlive-manfnt-font-svn35799.0-47.fc 5.0 MB/s |  61 kB     00:00    
+(156/378): texlive-marvosym-svn29349.2.2a-47.fc  15 MB/s | 170 kB     00:00    
+(157/378): texlive-mathpazo-svn15878.1.003-47.f  11 MB/s | 108 kB     00:00    
+(158/378): texlive-mflogo-font-svn36898.1.002-4 6.3 MB/s |  56 kB     00:00    
+(159/378): texlive-ncntrsbk-svn31835.0-47.fc28.  23 MB/s | 364 kB     00:00    
+(160/378): texlive-palatino-svn31835.0-47.fc28.  28 MB/s | 411 kB     00:00    
+(161/378): texlive-pxfonts-svn15878.0-47.fc28.2  30 MB/s | 522 kB     00:00    
+(162/378): texlive-rsfs-svn15878.0-47.fc28.2.no  10 MB/s |  94 kB     00:00    
+(163/378): texlive-symbol-svn31835.0-47.fc28.2. 9.0 MB/s |  79 kB     00:00    
+(164/378): texlive-tex-gyre-math-svn41264-47.fc  39 MB/s | 1.4 MB     00:00    
+(165/378): texlive-tex-gyre-svn18651.2.004-47.f  44 MB/s | 7.0 MB     00:00    
+(166/378): texlive-times-svn35058.0-47.fc28.2.n  25 MB/s | 365 kB     00:00    
+(167/378): texlive-tipa-svn29349.1.3-47.fc28.2.  40 MB/s | 2.8 MB     00:00    
+(168/378): texlive-txfonts-svn15878.0-47.fc28.2  35 MB/s | 794 kB     00:00    
+(169/378): texlive-utopia-svn15878.0-47.fc28.2.  18 MB/s | 252 kB     00:00    
+(170/378): texlive-wasy-svn35831.0-47.fc28.2.no 6.4 MB/s |  61 kB     00:00    
+(171/378): texlive-wasy2-ps-svn35830.0-47.fc28.  20 MB/s | 250 kB     00:00    
+(172/378): texlive-wasysym-svn15878.2.0-47.fc28 5.3 MB/s |  42 kB     00:00    
+(173/378): texlive-zapfchan-svn31835.0-47.fc28.  13 MB/s | 127 kB     00:00    
+(174/378): texlive-zapfding-svn31835.0-47.fc28. 9.9 MB/s |  89 kB     00:00    
+(175/378): texlive-amsfonts-svn29208.3.04-47.fc  43 MB/s | 3.6 MB     00:00    
+(176/378): texlive-bibtex-20170520-37.fc28.x86_  27 MB/s | 451 kB     00:00    
+(177/378): texlive-cm-svn32865.0-47.fc28.2.noar  21 MB/s | 311 kB     00:00    
+(178/378): texlive-dvipdfmx-20170520-37.fc28.x8  41 MB/s | 3.0 MB     00:00    
+(179/378): texlive-dvipdfmx-def-svn40328-47.fc2 3.5 MB/s |  43 kB     00:00    
+(180/378): texlive-enctex-svn34957.0-47.fc28.2. 6.2 MB/s |  71 kB     00:00    
+(181/378): texlive-etex-pkg-svn39355-47.fc28.2. 3.8 MB/s |  41 kB     00:00    
+(182/378): texlive-etex-svn37057.0-47.fc28.2.no 6.3 MB/s |  53 kB     00:00    
+(183/378): texlive-glyphlist-20170520-37.fc28.n 4.6 MB/s |  38 kB     00:00    
+(184/378): texlive-gsftopk-20170520-37.fc28.x86 4.2 MB/s |  34 kB     00:00    
+(185/378): texlive-hyph-utf8-svn41189-47.fc28.2 5.9 MB/s |  53 kB     00:00    
+(186/378): texlive-hyphen-base-svn41138-47.fc28 6.4 MB/s |  58 kB     00:00    
+(187/378): texlive-ifluatex-svn41346-47.fc28.2. 4.6 MB/s |  44 kB     00:00    
+(188/378): texlive-ifxetex-svn19685.0.5-47.fc28 4.9 MB/s |  40 kB     00:00    
+(189/378): texlive-knuth-lib-svn35820.0-47.fc28 6.5 MB/s |  71 kB     00:00    
+(190/378): texlive-knuth-local-svn38627-47.fc28 7.1 MB/s |  64 kB     00:00    
+(191/378): texlive-lua-alt-getopt-svn29349.0.7. 4.2 MB/s |  37 kB     00:00    
+(192/378): texlive-latex-20170520-37.fc28.noarc 6.9 MB/s |  13 MB     00:01    
+(193/378): texlive-luatex-20170520-37.fc28.x86_  12 MB/s | 4.5 MB     00:00    
+(194/378): zziplib-0.13.68-1.fc28.x86_64.rpm    1.2 MB/s |  89 kB     00:00    
+(195/378): texlive-metafont-20170520-37.fc28.x8  21 MB/s | 251 kB     00:00    
+(196/378): texlive-mflogo-svn38628-47.fc28.2.no 5.4 MB/s |  41 kB     00:00    
+(197/378): texlive-mfware-20170520-37.fc28.x86_  12 MB/s | 102 kB     00:00    
+(198/378): texlive-makeindex-20170520-37.fc28.x 6.9 MB/s | 434 kB     00:00    
+(199/378): texlive-pdftex-20170520-37.fc28.x86_  40 MB/s | 1.8 MB     00:00    
+(200/378): texlive-tetex-20170520-37.fc28.noarc  31 MB/s | 392 kB     00:00    
+(201/378): texlive-tex-20170520-37.fc28.x86_64.  18 MB/s | 182 kB     00:00    
+(202/378): texlive-plain-svn40274-47.fc28.2.noa 8.6 MB/s | 484 kB     00:00    
+(203/378): texlive-tex-ini-files-svn40533-47.fc 3.6 MB/s |  40 kB     00:00    
+(204/378): texlive-texconfig-20170520-37.fc28.n 3.5 MB/s |  29 kB     00:00    
+(205/378): texlive-texlive-common-doc-svn40682-  19 MB/s | 234 kB     00:00    
+(206/378): texlive-texlive-docindex-svn41430-47 8.0 MB/s | 168 kB     00:00    
+(207/378): texlive-texlive-en-20170520-37.fc28.  39 MB/s | 1.5 MB     00:00    
+(208/378): texlive-texlive-msg-translations-svn 6.2 MB/s | 161 kB     00:00    
+(209/378): texlive-texlive-scripts-20170520-37. 3.5 MB/s |  31 kB     00:00    
+(210/378): texlive-texlive.infra-20170520-37.fc 8.7 MB/s | 153 kB     00:00    
+(211/378): perl-Text-Unidecode-1.30-5.fc28.noar 5.4 MB/s | 148 kB     00:00    
+(212/378): perl-XML-XPath-1.42-2.fc28.noarch.rp 5.4 MB/s |  87 kB     00:00    
+(213/378): perl-XML-Parser-2.44-10.fc28.x86_64. 5.2 MB/s | 225 kB     00:00    
+(214/378): texlive-updmap-map-svn41159-47.fc28.  19 MB/s | 203 kB     00:00    
+(215/378): texlive-unicode-data-svn39808-47.fc2  12 MB/s | 293 kB     00:00    
+(216/378): texlive-xdvi-20170520-37.fc28.x86_64  30 MB/s | 350 kB     00:00    
+(217/378): libXi-1.7.9-6.fc28.x86_64.rpm        5.7 MB/s |  48 kB     00:00    
+(218/378): libXaw-1.0.13-8.fc28.x86_64.rpm      2.6 MB/s | 193 kB     00:00    
+(219/378): texlive-pgf-svn40966-47.fc28.2.noarc  16 MB/s | 832 kB     00:00    
+(220/378): libXpm-3.5.12-5.fc28.x86_64.rpm      515 kB/s |  57 kB     00:00    
+(221/378): texlive-sansmathaccent-svn30187.0-47 6.7 MB/s |  56 kB     00:00    
+(222/378): texlive-ucs-svn35853.2.2-47.fc28.2.n  28 MB/s | 386 kB     00:00    
+(223/378): annobin-5.7-2.fc28.x86_64.rpm        8.8 MB/s |  85 kB     00:00    
+(224/378): python-srpm-macros-3-30.fc28.noarch. 1.5 MB/s |  11 kB     00:00    
+(225/378): avahi-glib-0.7-12.fc28.x86_64.rpm    620 kB/s |  14 kB     00:00    
+(226/378): cups-filters-libs-1.20.0-9.fc28.x86_  14 MB/s | 132 kB     00:00    
+(227/378): cups-filters-1.20.0-9.fc28.x86_64.rp  17 MB/s | 773 kB     00:00    
+(228/378): lcms2-2.9-2.fc28.x86_64.rpm           11 MB/s | 164 kB     00:00    
+(229/378): bc-1.07.1-5.fc28.x86_64.rpm          4.2 MB/s | 128 kB     00:00    
+(230/378): liberation-mono-fonts-1.07.4-11.fc28  11 MB/s | 233 kB     00:00    
+(231/378): pixman-0.34.0-8.fc28.x86_64.rpm       14 MB/s | 247 kB     00:00    
+(232/378): liberation-fonts-common-1.07.4-11.fc 1.0 MB/s |  33 kB     00:00    
+(233/378): R-core-devel-3.5.0-4.fc28.x86_64.rpm  10 MB/s | 111 kB     00:00    
+(234/378): R-java-devel-3.5.0-4.fc28.x86_64.rpm 3.2 MB/s |  33 kB     00:00    
+(235/378): pcre-devel-8.42-2.fc28.x86_64.rpm     27 MB/s | 550 kB     00:00    
+(236/378): pcre-cpp-8.42-2.fc28.x86_64.rpm      5.0 MB/s |  46 kB     00:00    
+(237/378): pcre-utf16-8.42-2.fc28.x86_64.rpm     14 MB/s | 193 kB     00:00    
+(238/378): pcre-utf32-8.42-2.fc28.x86_64.rpm    3.1 MB/s | 184 kB     00:00    
+(239/378): qpdf-7.1.1-6.fc28.x86_64.rpm         6.7 MB/s |  59 kB     00:00    
+(240/378): qpdf-libs-7.1.1-6.fc28.x86_64.rpm     19 MB/s | 355 kB     00:00    
+(241/378): texinfo-tex-6.5-4.fc28.x86_64.rpm     13 MB/s | 159 kB     00:00    
+(242/378): texinfo-6.5-4.fc28.x86_64.rpm         27 MB/s | 1.2 MB     00:00    
+(243/378): perl-Unicode-EastAsianWidth-1.33-12. 659 kB/s |  15 kB     00:00    
+(244/378): perl-libintl-perl-1.29-2.fc28.x86_64  14 MB/s | 816 kB     00:00    
+(245/378): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm  33 MB/s |  11 MB     00:00    
+(246/378): texlive-inconsolata-svn39839-47.fc28 3.6 MB/s | 262 kB     00:00    
+(247/378): xz-devel-5.2.4-2.fc28.x86_64.rpm     7.4 MB/s |  61 kB     00:00    
+(248/378): zlib-devel-1.2.11-8.fc28.x86_64.rpm  5.4 MB/s |  55 kB     00:00    
+(249/378): bzip2-devel-1.0.6-26.fc28.x86_64.rpm  14 MB/s | 223 kB     00:00    
+(250/378): libicu-devel-60.2-2.fc28.x86_64.rpm   28 MB/s | 920 kB     00:00    
+(251/378): tcl-devel-8.6.8-1.fc28.x86_64.rpm    6.8 MB/s | 189 kB     00:00    
+(252/378): tre-devel-0.8.0-22.20140228gitc2f5d1 1.0 MB/s |  16 kB     00:00    
+(253/378): tk-devel-8.6.8-1.fc28.x86_64.rpm      14 MB/s | 497 kB     00:00    
+(254/378): libXft-devel-2.3.2-8.fc28.x86_64.rpm 1.1 MB/s |  24 kB     00:00    
+(255/378): perl-open-1.11-412.fc28.noarch.rpm   8.2 MB/s |  75 kB     00:00    
+(256/378): perl-encoding-2.22-3.fc28.x86_64.rpm 3.0 MB/s |  67 kB     00:00    
+(257/378): perl-Filter-1.58-2.fc28.x86_64.rpm   3.6 MB/s |  81 kB     00:00    
+(258/378): fontconfig-devel-2.13.0-4.fc28.x86_6  14 MB/s | 144 kB     00:00    
+(259/378): freetype-devel-2.8-10.fc28.x86_64.rp  19 MB/s | 453 kB     00:00    
+(260/378): libXrender-devel-0.9.10-5.fc28.x86_6 770 kB/s |  21 kB     00:00    
+(261/378): libpng-devel-1.6.34-3.fc28.x86_64.rp  19 MB/s | 326 kB     00:00    
+(262/378): ghostscript-9.23-4.fc28.x86_64.rpm   9.7 MB/s |  77 kB     00:00    
+(263/378): adobe-mappings-cmap-20171205-3.fc28.  28 MB/s | 2.1 MB     00:00    
+(264/378): adobe-mappings-cmap-deprecated-20171  10 MB/s | 117 kB     00:00    
+(265/378): libgs-9.23-4.fc28.x86_64.rpm          29 MB/s | 3.0 MB     00:00    
+(266/378): jbig2dec-libs-0.14-2.fc28.x86_64.rpm 6.3 MB/s |  66 kB     00:00    
+(267/378): libijs-0.35-4.fc28.x86_64.rpm        3.4 MB/s |  28 kB     00:00    
+(268/378): libpaper-1.1.24-21.fc28.x86_64.rpm   5.2 MB/s |  43 kB     00:00    
+(269/378): openjpeg2-2.3.0-6.fc28.x86_64.rpm     14 MB/s | 153 kB     00:00    
+(270/378): texlive-pst-ovl-svn40873-47.fc28.2.n 5.0 MB/s |  41 kB     00:00    
+(271/378): google-droid-sans-fonts-20120715-13.  31 MB/s | 2.5 MB     00:00    
+(272/378): texlive-filehook-svn24280.0.5d-47.fc 2.4 MB/s |  46 kB     00:00    
+(273/378): texlive-enumitem-svn24146.3.5.2-47.f 5.4 MB/s |  50 kB     00:00    
+(274/378): texlive-pst-blur-svn15878.2.0-47.fc2 4.4 MB/s |  41 kB     00:00    
+(275/378): texlive-pst-grad-svn15878.1.06-47.fc 5.3 MB/s |  43 kB     00:00    
+(276/378): texlive-pst-slpe-svn24391.1.31-47.fc 5.3 MB/s |  42 kB     00:00    
+(277/378): texlive-pst-text-svn15878.1.00-47.fc 4.7 MB/s |  43 kB     00:00    
+(278/378): texlive-pstricks-svn41321-47.fc28.2.  12 MB/s | 125 kB     00:00    
+(279/378): texlive-type1cm-svn21820.0-47.fc28.2 5.3 MB/s |  41 kB     00:00    
+(280/378): poppler-utils-0.62.0-2.fc28.x86_64.r  19 MB/s | 216 kB     00:00    
+(281/378): poppler-0.62.0-2.fc28.x86_64.rpm      30 MB/s | 915 kB     00:00    
+(282/378): texlive-graphics-def-svn41879-47.fc2 4.1 MB/s |  67 kB     00:00    
+(283/378): texlive-parallel-svn15878.0-47.fc28. 4.7 MB/s |  42 kB     00:00    
+(284/378): texlive-qstest-svn15878.0-47.fc28.2. 4.4 MB/s |  44 kB     00:00    
+(285/378): texlive-sauerj-svn15878.0-47.fc28.2. 5.3 MB/s |  45 kB     00:00    
+(286/378): texlive-soul-svn15878.2.4-47.fc28.2. 4.2 MB/s |  45 kB     00:00    
+(287/378): texlive-unicode-math-svn38462-47.fc2 8.3 MB/s |  86 kB     00:00    
+(288/378): texlive-footmisc-svn23330.5.5b-47.fc 6.2 MB/s |  48 kB     00:00    
+(289/378): texlive-ifetex-svn24853.1.2-47.fc28. 5.4 MB/s |  43 kB     00:00    
+(290/378): texlive-beton-svn15878.0-47.fc28.2.n 4.9 MB/s |  40 kB     00:00    
+(291/378): texlive-algorithms-svn38085.0.1-47.f 5.8 MB/s |  48 kB     00:00    
+(292/378): texlive-finstrut-svn21719.0.5-47.fc2 5.7 MB/s |  45 kB     00:00    
+(293/378): texlive-ltabptch-svn17533.1.74d-47.f 5.5 MB/s |  43 kB     00:00    
+(294/378): texlive-csquotes-svn39538-47.fc28.2. 6.9 MB/s |  60 kB     00:00    
+(295/378): texlive-etoolbox-svn38031.2.2a-47.fc 6.1 MB/s |  50 kB     00:00    
+(296/378): texlive-marginnote-svn41382-47.fc28. 5.2 MB/s |  42 kB     00:00    
+(297/378): texlive-mparhack-svn15878.1.4-47.fc2 5.3 MB/s |  43 kB     00:00    
+(298/378): texlive-iftex-svn29654.0.2-47.fc28.2 4.5 MB/s |  43 kB     00:00    
+(299/378): texlive-kastrup-svn15878.0-47.fc28.2 4.0 MB/s |  37 kB     00:00    
+(300/378): texlive-xunicode-svn30466.0.981-47.f 7.8 MB/s |  69 kB     00:00    
+(301/378): texlive-currfile-svn40725-47.fc28.2. 5.6 MB/s |  46 kB     00:00    
+(302/378): texlive-luaotfload-20170520-37.fc28.  24 MB/s | 780 kB     00:00    
+(303/378): texlive-epsf-svn21461.2.7.4-47.fc28. 4.0 MB/s |  44 kB     00:00    
+(304/378): adobe-mappings-pdf-20180407-1.fc28.n  21 MB/s | 706 kB     00:00    
+(305/378): libidn-1.34-3.fc28.x86_64.rpm         14 MB/s | 234 kB     00:00    
+(306/378): urw-base35-fonts-20170801-10.fc28.no 1.3 MB/s |  11 kB     00:00    
+(307/378): poppler-data-0.4.9-1.fc28.noarch.rpm  26 MB/s | 2.1 MB     00:00    
+(308/378): urw-base35-fonts-common-20170801-10. 977 kB/s |  22 kB     00:00    
+(309/378): urw-base35-standard-symbols-ps-fonts 3.7 MB/s |  43 kB     00:00    
+(310/378): urw-base35-z003-fonts-20170801-10.fc  15 MB/s | 278 kB     00:00    
+(311/378): urw-base35-p052-fonts-20170801-10.fc  22 MB/s | 981 kB     00:00    
+(312/378): urw-base35-nimbus-sans-fonts-2017080  21 MB/s | 1.3 MB     00:00    
+(313/378): urw-base35-nimbus-roman-fonts-201708  21 MB/s | 864 kB     00:00    
+(314/378): urw-base35-nimbus-mono-ps-fonts-2017  21 MB/s | 800 kB     00:00    
+(315/378): urw-base35-gothic-fonts-20170801-10.  20 MB/s | 653 kB     00:00    
+(316/378): urw-base35-d050000l-fonts-20170801-1 6.5 MB/s |  78 kB     00:00    
+(317/378): urw-base35-c059-fonts-20170801-10.fc  27 MB/s | 883 kB     00:00    
+(318/378): urw-base35-bookman-fonts-20170801-10  21 MB/s | 856 kB     00:00    
+(319/378): xorg-x11-server-utils-7.7-24.fc28.x8 9.2 MB/s | 193 kB     00:00    
+(320/378): libXcursor-1.1.15-1.fc28.x86_64.rpm  2.9 MB/s |  35 kB     00:00    
+(321/378): libXinerama-1.1.3-10.fc28.x86_64.rpm 2.4 MB/s |  19 kB     00:00    
+(322/378): libXrandr-1.5.1-5.fc28.x86_64.rpm    3.0 MB/s |  32 kB     00:00    
+(323/378): libXxf86misc-1.0.3-15.fc28.x86_64.rp 3.4 MB/s |  25 kB     00:00    
+(324/378): libXxf86vm-1.1.4-7.fc28.x86_64.rpm   2.9 MB/s |  22 kB     00:00    
+(325/378): mcpp-2.7.2-20.fc28.x86_64.rpm        3.9 MB/s |  30 kB     00:00    
+(326/378): libXfixes-5.0.3-5.fc28.x86_64.rpm    3.1 MB/s |  24 kB     00:00    
+(327/378): libmcpp-2.7.2-20.fc28.x86_64.rpm     8.3 MB/s |  80 kB     00:00    
+(328/378): libquadmath-devel-8.1.1-5.fc28.x86_6 4.7 MB/s |  39 kB     00:00    
+(329/378): libuuid-devel-2.32.1-1.fc28.x86_64.r  10 MB/s |  91 kB     00:00    
+(330/378): expat-devel-2.2.5-3.fc28.x86_64.rpm  6.3 MB/s |  54 kB     00:00    
+(331/378): java-1.8.0-openjdk-1.8.0.172-12.b11.  19 MB/s | 248 kB     00:00    
+(332/378): texlive-cm-super-svn15878.0-47.fc28.  17 MB/s |  62 MB     00:03    
+(333/378): alsa-lib-1.1.6-2.fc28.x86_64.rpm      13 MB/s | 430 kB     00:00    
+(334/378): giflib-5.1.4-1.fc28.x86_64.rpm       4.8 MB/s |  50 kB     00:00    
+(335/378): libXcomposite-0.4.4-12.fc28.x86_64.r 2.8 MB/s |  27 kB     00:00    
+(336/378): libXtst-1.2.3-5.fc28.x86_64.rpm      2.5 MB/s |  25 kB     00:00    
+(337/378): java-1.8.0-openjdk-devel-1.8.0.172-1  19 MB/s | 9.8 MB     00:00    
+(338/378): javapackages-tools-5.0.0-14.fc28.noa 3.5 MB/s |  51 kB     00:00    
+(339/378): lksctp-tools-1.0.16-9.fc28.x86_64.rp 3.8 MB/s |  96 kB     00:00    
+(340/378): ttmkfdir-3.0.9-54.fc28.x86_64.rpm    2.8 MB/s |  60 kB     00:00    
+(341/378): xorg-x11-font-utils-7.5-38.fc28.x86_ 6.6 MB/s |  95 kB     00:00    
+(342/378): libfontenc-1.1.3-7.fc28.x86_64.rpm   4.2 MB/s |  36 kB     00:00    
+(343/378): texlive-lualatex-math-svn40621-47.fc 5.7 MB/s |  45 kB     00:00    
+(344/378): texlive-ucharcat-svn38907-47.fc28.2. 5.2 MB/s |  40 kB     00:00    
+(345/378): texlive-auto-pst-pdf-svn23723.0.6-47 5.3 MB/s |  41 kB     00:00    
+(346/378): texlive-bera-svn20031.0-47.fc28.2.no  13 MB/s | 366 kB     00:00    
+(347/378): texlive-breakurl-svn29901.1.40-47.fc 4.2 MB/s |  42 kB     00:00    
+(348/378): texlive-chngcntr-svn17157.1.0a-47.fc 5.1 MB/s |  40 kB     00:00    
+(349/378): texlive-filecontents-svn24250.1.3-47 4.4 MB/s |  41 kB     00:00    
+(350/378): texlive-multido-svn18302.1.42-47.fc2 5.0 MB/s |  43 kB     00:00    
+(351/378): xorg-x11-fonts-Type1-7.5-19.fc28.noa 2.1 MB/s | 521 kB     00:00    
+(352/378): texlive-paralist-svn39247-47.fc28.2. 4.3 MB/s |  42 kB     00:00    
+(353/378): texlive-pst-3d-svn17257.1.10-47.fc28 4.7 MB/s |  43 kB     00:00    
+(354/378): texlive-pst-coil-svn37377.1.07-47.fc 4.7 MB/s |  43 kB     00:00    
+(355/378): texlive-pst-eps-svn15878.1.0-47.fc28 5.0 MB/s |  42 kB     00:00    
+(356/378): texlive-pst-fill-svn15878.1.01-47.fc 4.9 MB/s |  43 kB     00:00    
+(357/378): texlive-pst-node-svn40743-47.fc28.2. 7.7 MB/s |  66 kB     00:00    
+(358/378): texlive-pst-plot-svn41242-47.fc28.2. 7.6 MB/s |  62 kB     00:00    
+(359/378): texlive-pst-tools-svn34067.0.05-47.f 5.8 MB/s |  44 kB     00:00    
+(360/378): texlive-pst-tree-svn24142.1.12-47.fc 6.1 MB/s |  46 kB     00:00    
+(361/378): texlive-pstricks-add-svn40744-47.fc2 7.1 MB/s |  64 kB     00:00    
+(362/378): texlive-showexpl-svn32737.v0.3l-47.f 4.5 MB/s |  43 kB     00:00    
+(363/378): texlive-pst-math-svn34786.0.63-47.fc 5.4 MB/s |  44 kB     00:00    
+(364/378): texlive-lualibs-svn40370-47.fc28.2.n  10 MB/s | 161 kB     00:00    
+(365/378): texlive-luatexbase-svn38550-47.fc28. 3.9 MB/s |  41 kB     00:00    
+(366/378): texlive-ifplatform-svn21156.0.4-47.f 4.9 MB/s |  41 kB     00:00    
+(367/378): copy-jdk-configs-3.7-1.fc28.noarch.r 2.9 MB/s |  26 kB     00:00    
+(368/378): texlive-pst-pdf-20170520-37.fc28.noa  24 MB/s | 961 kB     00:00    
+(369/378): lua-posix-33.3.1-8.fc28.x86_64.rpm   6.4 MB/s | 175 kB     00:00    
+(370/378): tzdata-java-2018e-1.fc28.noarch.rpm   12 MB/s | 185 kB     00:00    
+(371/378): texlive-attachfile-svn38830-47.fc28. 5.8 MB/s |  46 kB     00:00    
+(372/378): lua-5.3.4-10.fc28.x86_64.rpm         6.8 MB/s | 191 kB     00:00    
+(373/378): texlive-varwidth-svn24104.0.92-47.fc 4.6 MB/s |  43 kB     00:00    
+(374/378): texlive-environ-svn33821.0.3-47.fc28 4.4 MB/s |  41 kB     00:00    
+(375/378): texlive-trimspaces-svn15878.1.1-47.f 4.3 MB/s |  40 kB     00:00    
+(376/378): perl-File-ShareDir-1.104-3.fc28.noar 2.5 MB/s |  28 kB     00:00    
+(377/378): perl-Class-Inspector-1.32-2.fc28.noa 2.1 MB/s |  35 kB     00:00    
+(378/378): java-1.8.0-openjdk-headless-1.8.0.17  28 MB/s |  32 MB     00:01    
+--------------------------------------------------------------------------------
+Total                                            40 MB/s | 324 MB     00:08     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Running scriptlet: texlive-base-7:20170520-37.fc28.x86_64                 1/1 
+  Running scriptlet: copy-jdk-configs-3.7-1.fc28.noarch                     1/1 
+  Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.172-12.b11.fc28.   1/1 
+  Preparing        :                                                        1/1 
+  Running scriptlet: texlive-base-7:20170520-37.fc28.x86_64               1/378 
+  Installing       : texlive-base-7:20170520-37.fc28.x86_64               1/378 
+  Installing       : libXext-1.3.3-8.fc28.x86_64                          2/378 
+  Running scriptlet: libXext-1.3.3-8.fc28.x86_64                          2/378 
+  Installing       : texlive-lib-7:20170520-37.fc28.x86_64                3/378 
+  Running scriptlet: texlive-lib-7:20170520-37.fc28.x86_64                3/378 
+  Installing       : texlive-kpathsea-7:20170520-37.fc28.x86_64           4/378 
+  Running scriptlet: texlive-kpathsea-7:20170520-37.fc28.x86_64           4/378 
+  Installing       : libpng-2:1.6.34-3.fc28.x86_64                        5/378 
+  Installing       : freetype-2.8-10.fc28.x86_64                          6/378 
+  Installing       : libjpeg-turbo-1.5.3-6.fc28.x86_64                    7/378 
+  Installing       : texlive-amsmath-6:svn41561-47.fc28.2.noarch          8/378 
+  Installing       : libXrender-0.9.10-5.fc28.x86_64                      9/378 
+  Running scriptlet: libXrender-0.9.10-5.fc28.x86_64                      9/378 
+  Installing       : texlive-ifxetex-6:svn19685.0.5-47.fc28.2.noarch     10/378 
+  Installing       : texlive-ifluatex-6:svn41346-47.fc28.2.noarch        11/378 
+  Installing       : libICE-1.0.9-12.fc28.x86_64                         12/378 
+  Running scriptlet: libICE-1.0.9-12.fc28.x86_64                         12/378 
+  Installing       : texlive-booktabs-6:svn40846-47.fc28.2.noarch        13/378 
+  Installing       : texlive-url-6:svn32528.3.4-47.fc28.2.noarch         14/378 
+  Installing       : texlive-etex-pkg-6:svn39355-47.fc28.2.noarch        15/378 
+  Installing       : cups-libs-1:2.2.6-15.fc28.x86_64                    16/378 
+  Installing       : texlive-etoolbox-6:svn38031.2.2a-47.fc28.2.noarc    17/378 
+  Installing       : libSM-1.2.2-8.fc28.x86_64                           18/378 
+  Running scriptlet: libSM-1.2.2-8.fc28.x86_64                           18/378 
+  Installing       : libXt-1.1.5-7.fc28.x86_64                           19/378 
+  Running scriptlet: libXt-1.1.5-7.fc28.x86_64                           19/378 
+  Installing       : libXmu-1.1.2-8.fc28.x86_64                          20/378 
+  Running scriptlet: libXmu-1.1.2-8.fc28.x86_64                          20/378 
+  Installing       : texlive-hyphen-base-6:svn41138-47.fc28.2.noarch     21/378 
+  Installing       : texlive-knuth-lib-6:svn35820.0-47.fc28.2.noarch     22/378 
+  Installing       : texlive-plain-6:svn40274-47.fc28.2.noarch           23/378 
+  Installing       : libXi-1.7.9-6.fc28.x86_64                           24/378 
+  Running scriptlet: libXi-1.7.9-6.fc28.x86_64                           24/378 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                     25/378 
+  Installing       : lcms2-2.9-2.fc28.x86_64                             26/378 
+  Running scriptlet: lcms2-2.9-2.fc28.x86_64                             26/378 
+  Installing       : fontpackages-filesystem-1.44-21.fc28.noarch         27/378 
+  Installing       : urw-base35-fonts-common-20170801-10.fc28.noarch     28/378 
+  Installing       : libquadmath-8.1.1-5.fc28.x86_64                     29/378 
+  Running scriptlet: libquadmath-8.1.1-5.fc28.x86_64                     29/378 
+  Installing       : libgfortran-8.1.1-5.fc28.x86_64                     30/378 
+  Running scriptlet: libgfortran-8.1.1-5.fc28.x86_64                     30/378 
+  Installing       : texlive-latex-fonts-6:svn28888.0-47.fc28.2.noarc    31/378 
+  Installing       : texlive-fp-6:svn15878.0-47.fc28.2.noarch            32/378 
+  Installing       : texlive-babel-6:svn40706-47.fc28.2.noarch           33/378 
+  Installing       : texlive-graphics-cfg-6:svn40269-47.fc28.2.noarch    34/378 
+  Installing       : texlive-graphics-6:svn41015-47.fc28.2.noarch        35/378 
+  Installing       : texlive-tools-6:svn40934-47.fc28.2.noarch           36/378 
+  Installing       : texlive-xkeyval-6:svn35741.2.7a-47.fc28.2.noarch    37/378 
+  Installing       : texlive-caption-6:svn41409-47.fc28.2.noarch         38/378 
+  Installing       : texlive-colortbl-6:svn29803.v1.0a-47.fc28.2.noar    39/378 
+  Installing       : texlive-etex-6:svn37057.0-47.fc28.2.noarch          40/378 
+  Installing       : texlive-tex-ini-files-6:svn40533-47.fc28.2.noarc    41/378 
+  Installing       : texlive-multido-6:svn18302.1.42-47.fc28.2.noarch    42/378 
+  Installing       : tcl-1:8.6.8-1.fc28.x86_64                           43/378 
+  Running scriptlet: tcl-1:8.6.8-1.fc28.x86_64                           43/378 
+  Installing       : tcl-devel-1:8.6.8-1.fc28.x86_64                     44/378 
+  Installing       : texlive-subfig-6:svn15878.1.3-47.fc28.2.noarch      45/378 
+  Installing       : texlive-carlisle-6:svn18258.0-47.fc28.2.noarch      46/378 
+  Installing       : texlive-babelbib-6:svn25245.1.31-47.fc28.2.noarc    47/378 
+  Installing       : texlive-dvips-7:20170520-37.fc28.x86_64             48/378 
+  Running scriptlet: texlive-dvips-7:20170520-37.fc28.x86_64             48/378 
+  Installing       : qpdf-libs-7.1.1-6.fc28.x86_64                       49/378 
+  Running scriptlet: qpdf-libs-7.1.1-6.fc28.x86_64                       49/378 
+  Installing       : texlive-euler-6:svn17261.2.5-47.fc28.2.noarch       50/378 
+  Installing       : texlive-fancybox-6:svn18304.1.4-47.fc28.2.noarch    51/378 
+  Installing       : texlive-float-6:svn15878.1.3d-47.fc28.2.noarch      52/378 
+  Installing       : texlive-index-6:svn24099.4.1beta-47.fc28.2.noarc    53/378 
+  Installing       : texlive-setspace-6:svn24881.6.7a-47.fc28.2.noarc    54/378 
+  Installing       : texlive-underscore-6:svn18261.0-47.fc28.2.noarch    55/378 
+  Installing       : texlive-latexconfig-6:svn40274-47.fc28.2.noarch     56/378 
+  Installing       : texlive-natbib-6:svn20668.8.31b-47.fc28.2.noarch    57/378 
+  Installing       : texlive-ec-6:svn25033.1.0-47.fc28.2.noarch          58/378 
+  Installing       : texlive-wasy-6:svn35831.0-47.fc28.2.noarch          59/378 
+  Installing       : texlive-glyphlist-7:20170520-37.fc28.noarch         60/378 
+  Installing       : texlive-lua-alt-getopt-6:svn29349.0.7.0-47.fc28.    61/378 
+  Installing       : texlive-unicode-data-6:svn39808-47.fc28.2.noarch    62/378 
+  Installing       : texlive-pst-ovl-6:svn40873-47.fc28.2.noarch         63/378 
+  Installing       : texlive-enumitem-6:svn24146.3.5.2-47.fc28.2.noar    64/378 
+  Installing       : texlive-graphics-def-6:svn41879-47.fc28.2.noarch    65/378 
+  Installing       : texlive-footmisc-6:svn23330.5.5b-47.fc28.2.noarc    66/378 
+  Installing       : openjpeg2-2.3.0-6.fc28.x86_64                       67/378 
+  Installing       : adobe-mappings-cmap-20171205-3.fc28.noarch          68/378 
+  Installing       : bzip2-devel-1.0.6-26.fc28.x86_64                    69/378 
+  Installing       : libXpm-3.5.12-5.fc28.x86_64                         70/378 
+  Running scriptlet: libXpm-3.5.12-5.fc28.x86_64                         70/378 
+  Installing       : perl-XML-Parser-2.44-10.fc28.x86_64                 71/378 
+  Installing       : perl-Text-Unidecode-1.30-5.fc28.noarch              72/378 
+  Installing       : fribidi-1.0.2-1.fc28.x86_64                         73/378 
+  Running scriptlet: fribidi-1.0.2-1.fc28.x86_64                         73/378 
+  Installing       : cups-filesystem-1:2.2.6-15.fc28.noarch              74/378 
+  Installing       : libicu-60.2-2.fc28.x86_64                           75/378 
+  Running scriptlet: libicu-60.2-2.fc28.x86_64                           75/378 
+  Installing       : libRmath-3.5.0-4.fc28.x86_64                        76/378 
+  Running scriptlet: libRmath-3.5.0-4.fc28.x86_64                        76/378 
+  Installing       : libRmath-devel-3.5.0-4.fc28.x86_64                  77/378 
+  Installing       : libicu-devel-60.2-2.fc28.x86_64                     78/378 
+  Installing       : libXaw-1.0.13-8.fc28.x86_64                         79/378 
+  Running scriptlet: libXaw-1.0.13-8.fc28.x86_64                         79/378 
+  Installing       : texlive-xdvi-7:20170520-37.fc28.x86_64              80/378 
+  Installing       : adobe-mappings-cmap-deprecated-20171205-3.fc28.n    81/378 
+  Installing       : texlive-dvipdfmx-7:20170520-37.fc28.x86_64          82/378 
+  Installing       : qpdf-7.1.1-6.fc28.x86_64                            83/378 
+  Installing       : texlive-fancyref-6:svn15878.0.9c-47.fc28.2.noarc    84/378 
+  Installing       : texlive-mathtools-6:svn38833-47.fc28.2.noarch       85/378 
+  Installing       : texlive-qstest-6:svn15878.0-47.fc28.2.noarch        86/378 
+  Installing       : texlive-ltabptch-6:svn17533.1.74d-47.fc28.2.noar    87/378 
+  Installing       : texlive-crop-6:svn15878.1.5-47.fc28.2.noarch        88/378 
+  Installing       : texlive-microtype-6:svn41127-47.fc28.2.noarch       89/378 
+  Installing       : texlive-psfrag-6:svn15878.3.04-47.fc28.2.noarch     90/378 
+  Installing       : texlive-sauerj-6:svn15878.0-47.fc28.2.noarch        91/378 
+  Installing       : texlive-csquotes-6:svn39538-47.fc28.2.noarch        92/378 
+  Installing       : texlive-euro-6:svn22191.1.1-47.fc28.2.noarch        93/378 
+  Installing       : openblas-Rblas-0.3.1-1.fc28.x86_64                  94/378 
+  Running scriptlet: openblas-Rblas-0.3.1-1.fc28.x86_64                  94/378 
+  Installing       : libquadmath-devel-8.1.1-5.fc28.x86_64               95/378 
+  Installing       : gcc-gfortran-8.1.1-5.fc28.x86_64                    96/378 
+  Running scriptlet: gcc-gfortran-8.1.1-5.fc28.x86_64                    96/378 
+  Installing       : liberation-fonts-common-1:1.07.4-11.fc28.noarch     97/378 
+  Installing       : liberation-mono-fonts-1:1.07.4-11.fc28.noarch       98/378 
+  Installing       : fontconfig-2.13.0-4.fc28.x86_64                     99/378 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                     99/378 
+  Installing       : libXft-2.3.2-8.fc28.x86_64                         100/378 
+  Running scriptlet: libXft-2.3.2-8.fc28.x86_64                         100/378 
+  Running scriptlet: tk-1:8.6.8-1.fc28.x86_64                           101/378 
+  Installing       : tk-1:8.6.8-1.fc28.x86_64                           101/378 
+  Running scriptlet: tk-1:8.6.8-1.fc28.x86_64                           101/378 
+  Installing       : google-droid-sans-fonts-20120715-13.fc28.noarch    102/378 
+  Installing       : libpng-devel-2:1.6.34-3.fc28.x86_64                103/378 
+  Installing       : freetype-devel-2.8-10.fc28.x86_64                  104/378 
+  Installing       : libXtst-1.2.3-5.fc28.x86_64                        105/378 
+  Running scriptlet: libXtst-1.2.3-5.fc28.x86_64                        105/378 
+  Installing       : cups-client-1:2.2.6-15.fc28.x86_64                 106/378 
+  Running scriptlet: cups-client-1:2.2.6-15.fc28.x86_64                 106/378 
+  Installing       : libXrender-devel-0.9.10-5.fc28.x86_64              107/378 
+  Installing       : libXrandr-1.5.1-5.fc28.x86_64                      108/378 
+  Running scriptlet: libXrandr-1.5.1-5.fc28.x86_64                      108/378 
+  Installing       : ttmkfdir-3.0.9-54.fc28.x86_64                      109/378 
+  Installing       : texlive-anysize-6:svn15878.0-47.fc28.2.noarch      110/378 
+  Installing       : texlive-cite-6:svn36428.5.5-47.fc28.2.noarch       111/378 
+  Installing       : texlive-cmap-6:svn41168-47.fc28.2.noarch           112/378 
+  Installing       : texlive-euenc-6:svn19795.0.1h-47.fc28.2.noarch     113/378 
+  Installing       : texlive-mdwtools-6:svn15878.1.05.4-47.fc28.2.noa   114/378 
+  Installing       : texlive-ntgclass-6:svn15878.2.1a-47.fc28.2.noarc   115/378 
+  Installing       : texlive-parskip-6:svn19963.2.0-47.fc28.2.noarch    116/378 
+  Installing       : texlive-rcs-6:svn15878.0-47.fc28.2.noarch          117/378 
+  Installing       : texlive-sansmath-6:svn17997.1.1-47.fc28.2.noarch   118/378 
+  Installing       : texlive-section-6:svn20180.0-47.fc28.2.noarch      119/378 
+  Installing       : texlive-sepnum-6:svn20186.2.0-47.fc28.2.noarch     120/378 
+  Installing       : texlive-textcase-6:svn15878.0-47.fc28.2.noarch     121/378 
+  Installing       : texlive-babel-english-6:svn30264.3.3p-47.fc28.2.   122/378 
+  Installing       : texlive-dvisvgm-def-6:svn41011-47.fc28.2.noarch    123/378 
+  Installing       : texlive-fancyhdr-6:svn15878.3.1-47.fc28.2.noarch   124/378 
+  Installing       : texlive-fix2col-6:svn38770-47.fc28.2.noarch        125/378 
+  Installing       : texlive-mfnfss-6:svn19410.0-47.fc28.2.noarch       126/378 
+  Installing       : texlive-pdftex-def-6:svn22653.0.06d-47.fc28.2.no   127/378 
+  Installing       : texlive-pslatex-6:svn16416.0-47.fc28.2.noarch      128/378 
+  Installing       : texlive-pspicture-6:svn15878.0-47.fc28.2.noarch    129/378 
+  Installing       : texlive-charter-6:svn15878.0-47.fc28.2.noarch      130/378 
+  Installing       : texlive-cmextra-6:svn32831.0-47.fc28.2.noarch      131/378 
+  Installing       : texlive-fpl-6:svn15878.1.002-47.fc28.2.noarch      132/378 
+  Installing       : texlive-lm-math-6:svn36915.1.959-47.fc28.2.noarc   133/378 
+  Installing       : texlive-mathpazo-6:svn15878.1.003-47.fc28.2.noar   134/378 
+  Installing       : texlive-tex-gyre-math-6:svn41264-47.fc28.2.noarc   135/378 
+  Installing       : texlive-utopia-6:svn15878.0-47.fc28.2.noarch       136/378 
+  Installing       : texlive-wasysym-6:svn15878.2.0-47.fc28.2.noarch    137/378 
+  Installing       : texlive-bibtex-7:20170520-37.fc28.x86_64           138/378 
+  Installing       : texlive-dvipdfmx-def-6:svn40328-47.fc28.2.noarch   139/378 
+  Installing       : texlive-enctex-6:svn34957.0-47.fc28.2.noarch       140/378 
+  Installing       : texlive-gsftopk-7:20170520-37.fc28.x86_64          141/378 
+  Installing       : texlive-hyph-utf8-6:svn41189-47.fc28.2.noarch      142/378 
+  Installing       : texlive-knuth-local-6:svn38627-47.fc28.2.noarch    143/378 
+  Installing       : texlive-makeindex-7:20170520-37.fc28.x86_64        144/378 
+  Installing       : texlive-mflogo-6:svn38628-47.fc28.2.noarch         145/378 
+  Installing       : texlive-mfware-7:20170520-37.fc28.x86_64           146/378 
+  Installing       : texlive-texconfig-7:20170520-37.fc28.noarch        147/378 
+  Installing       : texlive-texlive-docindex-6:svn41430-47.fc28.2.no   148/378 
+  Installing       : texlive-texlive-en-7:20170520-37.fc28.noarch       149/378 
+  Running scriptlet: texlive-texlive-en-7:20170520-37.fc28.noarch       149/378 
+  Installing       : texlive-texlive-msg-translations-6:svn41431-47.f   150/378 
+  Installing       : texlive-updmap-map-6:svn41159-47.fc28.2.noarch     151/378 
+  Installing       : texlive-type1cm-6:svn21820.0-47.fc28.2.noarch      152/378 
+  Installing       : texlive-parallel-6:svn15878.0-47.fc28.2.noarch     153/378 
+  Installing       : texlive-soul-6:svn15878.2.4-47.fc28.2.noarch       154/378 
+  Installing       : texlive-ifetex-6:svn24853.1.2-47.fc28.2.noarch     155/378 
+  Installing       : texlive-beton-6:svn15878.0-47.fc28.2.noarch        156/378 
+  Installing       : texlive-finstrut-6:svn21719.0.5-47.fc28.2.noarch   157/378 
+  Installing       : texlive-lineno-6:svn21442.4.41-47.fc28.2.noarch    158/378 
+  Installing       : texlive-marginnote-6:svn41382-47.fc28.2.noarch     159/378 
+  Installing       : texlive-mparhack-6:svn15878.1.4-47.fc28.2.noarch   160/378 
+  Installing       : texlive-iftex-6:svn29654.0.2-47.fc28.2.noarch      161/378 
+  Installing       : texlive-kastrup-6:svn15878.0-47.fc28.2.noarch      162/378 
+  Installing       : texlive-epsf-6:svn21461.2.7.4-47.fc28.2.noarch     163/378 
+  Installing       : texlive-ucharcat-6:svn38907-47.fc28.2.noarch       164/378 
+  Installing       : texlive-chngcntr-6:svn17157.1.0a-47.fc28.2.noarc   165/378 
+  Installing       : texlive-filecontents-6:svn24250.1.3-47.fc28.2.no   166/378 
+  Installing       : texlive-paralist-6:svn39247-47.fc28.2.noarch       167/378 
+  Installing       : texlive-pst-math-6:svn34786.0.63-47.fc28.2.noarc   168/378 
+  Installing       : texlive-lualibs-6:svn40370-47.fc28.2.noarch        169/378 
+  Installing       : texlive-varwidth-6:svn24104.0.92-47.fc28.2.noarc   170/378 
+  Installing       : texlive-trimspaces-6:svn15878.1.1-47.fc28.2.noar   171/378 
+  Installing       : texlive-environ-6:svn33821.0.3-47.fc28.2.noarch    172/378 
+  Installing       : libXinerama-1.1.3-10.fc28.x86_64                   173/378 
+  Running scriptlet: libXinerama-1.1.3-10.fc28.x86_64                   173/378 
+  Installing       : libXxf86misc-1.0.3-15.fc28.x86_64                  174/378 
+  Running scriptlet: libXxf86misc-1.0.3-15.fc28.x86_64                  174/378 
+  Installing       : libXxf86vm-1.1.4-7.fc28.x86_64                     175/378 
+  Running scriptlet: libXxf86vm-1.1.4-7.fc28.x86_64                     175/378 
+  Installing       : perl-Class-Inspector-1.32-2.fc28.noarch            176/378 
+  Installing       : lua-5.3.4-10.fc28.x86_64                           177/378 
+  Installing       : tzdata-java-2018e-1.fc28.noarch                    178/378 
+  Installing       : lua-posix-33.3.1-8.fc28.x86_64                     179/378 
+  Installing       : copy-jdk-configs-3.7-1.fc28.noarch                 180/378 
+  Installing       : libfontenc-1.1.3-7.fc28.x86_64                     181/378 
+  Running scriptlet: libfontenc-1.1.3-7.fc28.x86_64                     181/378 
+  Installing       : xorg-x11-font-utils-1:7.5-38.fc28.x86_64           182/378 
+  Installing       : xorg-x11-fonts-Type1-7.5-19.fc28.noarch            183/378 
+  Running scriptlet: xorg-x11-fonts-Type1-7.5-19.fc28.noarch            183/378 
+  Installing       : lksctp-tools-1.0.16-9.fc28.x86_64                  184/378 
+  Running scriptlet: lksctp-tools-1.0.16-9.fc28.x86_64                  184/378 
+  Installing       : javapackages-tools-5.0.0-14.fc28.noarch            185/378 
+  Installing       : java-1.8.0-openjdk-headless-1:1.8.0.172-12.b11.f   186/378 
+  Running scriptlet: java-1.8.0-openjdk-headless-1:1.8.0.172-12.b11.f   186/378 
+  Installing       : libXcomposite-0.4.4-12.fc28.x86_64                 187/378 
+  Running scriptlet: libXcomposite-0.4.4-12.fc28.x86_64                 187/378 
+  Installing       : giflib-5.1.4-1.fc28.x86_64                         188/378 
+  Installing       : alsa-lib-1.1.6-2.fc28.x86_64                       189/378 
+  Running scriptlet: alsa-lib-1.1.6-2.fc28.x86_64                       189/378 
+  Installing       : java-1.8.0-openjdk-1:1.8.0.172-12.b11.fc28.x86_6   190/378 
+  Running scriptlet: java-1.8.0-openjdk-1:1.8.0.172-12.b11.fc28.x86_6   190/378 
+  Installing       : java-1.8.0-openjdk-devel-1:1.8.0.172-12.b11.fc28   191/378 
+  Running scriptlet: java-1.8.0-openjdk-devel-1:1.8.0.172-12.b11.fc28   191/378 
+  Installing       : expat-devel-2.2.5-3.fc28.x86_64                    192/378 
+  Installing       : libuuid-devel-2.32.1-1.fc28.x86_64                 193/378 
+  Installing       : fontconfig-devel-2.13.0-4.fc28.x86_64              194/378 
+  Installing       : libXft-devel-2.3.2-8.fc28.x86_64                   195/378 
+  Installing       : tk-devel-1:8.6.8-1.fc28.x86_64                     196/378 
+  Installing       : libmcpp-2.7.2-20.fc28.x86_64                       197/378 
+  Running scriptlet: libmcpp-2.7.2-20.fc28.x86_64                       197/378 
+  Installing       : mcpp-2.7.2-20.fc28.x86_64                          198/378 
+  Installing       : libXfixes-5.0.3-5.fc28.x86_64                      199/378 
+  Running scriptlet: libXfixes-5.0.3-5.fc28.x86_64                      199/378 
+  Installing       : libXcursor-1.1.15-1.fc28.x86_64                    200/378 
+  Running scriptlet: libXcursor-1.1.15-1.fc28.x86_64                    200/378 
+  Installing       : xorg-x11-server-utils-7.7-24.fc28.x86_64           201/378 
+  Installing       : urw-base35-z003-fonts-20170801-10.fc28.noarch      202/378 
+  Running scriptlet: urw-base35-z003-fonts-20170801-10.fc28.noarch      202/378 
+  Installing       : urw-base35-standard-symbols-ps-fonts-20170801-10   203/378 
+  Running scriptlet: urw-base35-standard-symbols-ps-fonts-20170801-10   203/378 
+  Installing       : urw-base35-p052-fonts-20170801-10.fc28.noarch      204/378 
+  Running scriptlet: urw-base35-p052-fonts-20170801-10.fc28.noarch      204/378 
+  Installing       : urw-base35-nimbus-sans-fonts-20170801-10.fc28.no   205/378 
+  Running scriptlet: urw-base35-nimbus-sans-fonts-20170801-10.fc28.no   205/378 
+  Installing       : urw-base35-nimbus-roman-fonts-20170801-10.fc28.n   206/378 
+  Running scriptlet: urw-base35-nimbus-roman-fonts-20170801-10.fc28.n   206/378 
+  Installing       : urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28   207/378 
+  Running scriptlet: urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28   207/378 
+  Installing       : urw-base35-gothic-fonts-20170801-10.fc28.noarch    208/378 
+  Running scriptlet: urw-base35-gothic-fonts-20170801-10.fc28.noarch    208/378 
+  Installing       : urw-base35-d050000l-fonts-20170801-10.fc28.noarc   209/378 
+  Running scriptlet: urw-base35-d050000l-fonts-20170801-10.fc28.noarc   209/378 
+  Installing       : urw-base35-c059-fonts-20170801-10.fc28.noarch      210/378 
+  Running scriptlet: urw-base35-c059-fonts-20170801-10.fc28.noarch      210/378 
+  Installing       : urw-base35-bookman-fonts-20170801-10.fc28.noarch   211/378 
+  Running scriptlet: urw-base35-bookman-fonts-20170801-10.fc28.noarch   211/378 
+  Installing       : urw-base35-fonts-20170801-10.fc28.noarch           212/378 
+  Installing       : libidn-1.34-3.fc28.x86_64                          213/378 
+  Running scriptlet: libidn-1.34-3.fc28.x86_64                          213/378 
+install-info: No such file or directory for /usr/share/info/libidn.info.gz
+  Installing       : adobe-mappings-pdf-20180407-1.fc28.noarch          214/378 
+  Installing       : poppler-data-0.4.9-1.fc28.noarch                   215/378 
+  Installing       : libpaper-1.1.24-21.fc28.x86_64                     216/378 
+  Installing       : libijs-0.35-4.fc28.x86_64                          217/378 
+  Installing       : jbig2dec-libs-0.14-2.fc28.x86_64                   218/378 
+  Running scriptlet: jbig2dec-libs-0.14-2.fc28.x86_64                   218/378 
+  Installing       : perl-Filter-2:1.58-2.fc28.x86_64                   219/378 
+  Installing       : perl-encoding-4:2.22-3.fc28.x86_64                 220/378 
+  Installing       : perl-open-1.11-412.fc28.noarch                     221/378 
+  Installing       : perl-XML-XPath-1.42-2.fc28.noarch                  222/378 
+  Installing       : texlive-texlive.infra-7:20170520-37.fc28.noarch    223/378 
+  Installing       : texlive-tetex-7:20170520-37.fc28.noarch            224/378 
+  Installing       : texlive-amsfonts-6:svn29208.3.04-47.fc28.2.noarc   225/378 
+  Installing       : texlive-psnfss-6:svn33946.9.2a-47.fc28.2.noarch    226/378 
+  Installing       : texlive-cm-6:svn32865.0-47.fc28.2.noarch           227/378 
+  Installing       : texlive-lm-6:svn28119.2.004-47.fc28.2.noarch       228/378 
+  Installing       : texlive-courier-6:svn35058.0-47.fc28.2.noarch      229/378 
+  Installing       : texlive-helvetic-6:svn31835.0-47.fc28.2.noarch     230/378 
+  Installing       : texlive-marvosym-6:svn29349.2.2a-47.fc28.2.noarc   231/378 
+  Installing       : texlive-times-6:svn35058.0-47.fc28.2.noarch        232/378 
+  Installing       : texlive-zapfding-6:svn31835.0-47.fc28.2.noarch     233/378 
+  Installing       : texlive-tex-7:20170520-37.fc28.x86_64              234/378 
+  Running scriptlet: texlive-tex-7:20170520-37.fc28.x86_64              234/378 
+  Installing       : texlive-mptopdf-7:20170520-37.fc28.noarch          235/378 
+  Running scriptlet: texlive-mptopdf-7:20170520-37.fc28.noarch          235/378 
+  Installing       : texlive-avantgar-6:svn31835.0-47.fc28.2.noarch     236/378 
+  Installing       : texlive-bookman-6:svn31835.0-47.fc28.2.noarch      237/378 
+  Installing       : texlive-eurosym-6:svn17265.1.4_subrfix-47.fc28.2   238/378 
+  Installing       : texlive-manfnt-font-6:svn35799.0-47.fc28.2.noarc   239/378 
+  Installing       : texlive-mflogo-font-6:svn36898.1.002-47.fc28.2.n   240/378 
+  Installing       : texlive-ncntrsbk-6:svn31835.0-47.fc28.2.noarch     241/378 
+  Installing       : texlive-palatino-6:svn31835.0-47.fc28.2.noarch     242/378 
+  Installing       : texlive-pxfonts-6:svn15878.0-47.fc28.2.noarch      243/378 
+  Installing       : texlive-rsfs-6:svn15878.0-47.fc28.2.noarch         244/378 
+  Installing       : texlive-symbol-6:svn31835.0-47.fc28.2.noarch       245/378 
+  Installing       : texlive-txfonts-6:svn15878.0-47.fc28.2.noarch      246/378 
+  Installing       : texlive-wasy2-ps-6:svn35830.0-47.fc28.2.noarch     247/378 
+  Installing       : texlive-zapfchan-6:svn31835.0-47.fc28.2.noarch     248/378 
+  Installing       : texlive-metafont-7:20170520-37.fc28.x86_64         249/378 
+  Running scriptlet: texlive-metafont-7:20170520-37.fc28.x86_64         249/378 
+  Installing       : xz-devel-5.2.4-2.fc28.x86_64                       250/378 
+  Installing       : perl-libintl-perl-1.29-2.fc28.x86_64               251/378 
+  Installing       : perl-Unicode-EastAsianWidth-1.33-12.fc28.noarch    252/378 
+  Installing       : texinfo-6.5-4.fc28.x86_64                          253/378 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                      254/378 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                      255/378 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                        256/378 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                      257/378 
+  Installing       : pixman-0.34.0-8.fc28.x86_64                        258/378 
+  Running scriptlet: pixman-0.34.0-8.fc28.x86_64                        258/378 
+  Installing       : cairo-1.15.12-2.fc28.x86_64                        259/378 
+  Installing       : bc-1.07.1-5.fc28.x86_64                            260/378 
+  Running scriptlet: bc-1.07.1-5.fc28.x86_64                            260/378 
+  Installing       : avahi-glib-0.7-12.fc28.x86_64                      261/378 
+  Installing       : python-srpm-macros-3-30.fc28.noarch                262/378 
+  Installing       : annobin-5.7-2.fc28.x86_64                          263/378 
+  Running scriptlet: annobin-5.7-2.fc28.x86_64                          263/378 
+  Installing       : texlive-texlive-common-doc-6:svn40682-47.fc28.2.   264/378 
+  Installing       : zziplib-0.13.68-1.fc28.x86_64                      265/378 
+  Running scriptlet: zziplib-0.13.68-1.fc28.x86_64                      265/378 
+  Installing       : desktop-file-utils-0.23-8.fc28.x86_64              266/378 
+  Installing       : xdg-utils-1.1.3-2.fc28.noarch                      267/378 
+  Installing       : rust-srpm-macros-5-2.fc28.noarch                   268/378 
+  Installing       : qt5-srpm-macros-5.10.1-1.fc28.noarch               269/378 
+  Installing       : perl-srpm-macros-1-25.fc28.noarch                  270/378 
+  Installing       : openblas-srpm-macros-2-2.fc27.noarch               271/378 
+  Installing       : ocaml-srpm-macros-5-2.fc27.noarch                  272/378 
+  Installing       : nim-srpm-macros-1-1.fc28.noarch                    273/378 
+  Installing       : go-srpm-macros-2-16.fc28.noarch                    274/378 
+  Installing       : gnat-srpm-macros-4-5.fc28.noarch                   275/378 
+  Installing       : ghc-srpm-macros-1.4.2-7.fc28.noarch                276/378 
+  Installing       : fpc-srpm-macros-1.1-4.fc28.noarch                  277/378 
+  Installing       : dwz-0.12-7.fc28.x86_64                             278/378 
+  Installing       : file-5.33-7.fc28.x86_64                            279/378 
+  Installing       : redhat-rpm-config-108-1.fc28.noarch                280/378 
+  Installing       : libdatrie-0.2.9-7.fc28.x86_64                      281/378 
+  Running scriptlet: libdatrie-0.2.9-7.fc28.x86_64                      281/378 
+  Installing       : libthai-0.1.27-2.fc28.x86_64                       282/378 
+  Running scriptlet: libthai-0.1.27-2.fc28.x86_64                       282/378 
+  Installing       : graphite2-1.3.10-5.fc28.x86_64                     283/378 
+  Installing       : harfbuzz-1.7.5-3.fc28.x86_64                       284/378 
+  Running scriptlet: harfbuzz-1.7.5-3.fc28.x86_64                       284/378 
+  Installing       : pango-1.42.1-2.fc28.x86_64                         285/378 
+  Running scriptlet: pango-1.42.1-2.fc28.x86_64                         285/378 
+  Installing       : jbigkit-libs-2.1-12.fc28.x86_64                    286/378 
+  Running scriptlet: jbigkit-libs-2.1-12.fc28.x86_64                    286/378 
+  Installing       : libtiff-4.0.9-10.fc28.x86_64                       287/378 
+  Installing       : poppler-0.62.0-2.fc28.x86_64                       288/378 
+  Running scriptlet: poppler-0.62.0-2.fc28.x86_64                       288/378 
+  Installing       : texlive-luatex-7:20170520-37.fc28.x86_64           289/378 
+  Running scriptlet: texlive-luatex-7:20170520-37.fc28.x86_64           289/378 
+  Installing       : texlive-pdftex-7:20170520-37.fc28.x86_64           290/378 
+  Running scriptlet: texlive-pdftex-7:20170520-37.fc28.x86_64           290/378 
+  Installing       : texlive-texlive-scripts-7:20170520-37.fc28.noarc   291/378 
+  Installing       : texlive-collection-basic-6:svn41149-47.20160520.   292/378 
+  Installing       : texinfo-tex-6.5-4.fc28.x86_64                      293/378 
+  Running scriptlet: texinfo-tex-6.5-4.fc28.x86_64                      293/378 
+  Installing       : poppler-utils-0.62.0-2.fc28.x86_64                 294/378 
+  Installing       : cups-filters-libs-1.20.0-9.fc28.x86_64             295/378 
+  Running scriptlet: cups-filters-libs-1.20.0-9.fc28.x86_64             295/378 
+  Installing       : libgs-9.23-4.fc28.x86_64                           296/378 
+  Installing       : ghostscript-9.23-4.fc28.x86_64                     297/378 
+  Installing       : texlive-thumbpdf-7:20170520-37.fc28.noarch         298/378 
+  Installing       : texlive-memoir-6:svn41203-47.fc28.2.noarch         299/378 
+  Installing       : texlive-eso-pic-6:svn37925.2.0g-47.fc28.2.noarch   300/378 
+  Installing       : texlive-pgf-6:svn40966-47.fc28.2.noarch            301/378 
+  Installing       : texlive-xcolor-6:svn41044-47.fc28.2.noarch         302/378 
+  Installing       : texlive-geometry-6:svn19716.5.6-47.fc28.2.noarch   303/378 
+  Installing       : texlive-xunicode-6:svn30466.0.981-47.fc28.2.noar   304/378 
+  Installing       : texlive-tipa-6:svn29349.1.3-47.fc28.2.noarch       305/378 
+  Installing       : texlive-algorithms-6:svn38085.0.1-47.fc28.2.noar   306/378 
+  Installing       : texlive-bera-6:svn20031.0-47.fc28.2.noarch         307/378 
+  Installing       : texlive-latex-7:20170520-37.fc28.noarch            308/378 
+  Running scriptlet: texlive-latex-7:20170520-37.fc28.noarch            308/378 
+  Installing       : texlive-hyperref-6:svn41396-47.fc28.2.noarch       309/378 
+  Installing       : texlive-filehook-6:svn24280.0.5d-47.fc28.2.noarc   310/378 
+  Installing       : texlive-currfile-6:svn40725-47.fc28.2.noarch       311/378 
+  Installing       : texlive-breakurl-6:svn29901.1.40-47.fc28.2.noarc   312/378 
+  Installing       : texlive-luaotfload-7:20170520-37.fc28.noarch       313/378 
+  Installing       : texlive-luatexbase-6:svn38550-47.fc28.2.noarch     314/378 
+  Installing       : texlive-ifplatform-6:svn21156.0.4-47.fc28.2.noar   315/378 
+  Installing       : texlive-fontspec-6:svn41262-47.fc28.2.noarch       316/378 
+  Installing       : texlive-l3packages-6:svn41246-47.fc28.2.noarch     317/378 
+  Installing       : texlive-unicode-math-6:svn38462-47.fc28.2.noarch   318/378 
+  Installing       : texlive-lualatex-math-6:svn40621-47.fc28.2.noarc   319/378 
+  Installing       : texlive-l3kernel-6:svn41246-47.fc28.2.noarch       320/378 
+  Installing       : texlive-ms-6:svn29849.0-47.fc28.2.noarch           321/378 
+  Installing       : texlive-koma-script-6:svn41508-47.fc28.2.noarch    322/378 
+  Installing       : texlive-listings-6:svn37534.1.6-47.fc28.2.noarch   323/378 
+  Installing       : texlive-oberdiek-7:20170520-37.fc28.noarch         324/378 
+  Installing       : texlive-attachfile-6:svn38830-47.fc28.2.noarch     325/378 
+  Installing       : texlive-showexpl-6:svn32737.v0.3l-47.fc28.2.noar   326/378 
+  Installing       : texlive-fancyvrb-6:svn18492.2.8-47.fc28.2.noarch   327/378 
+  Installing       : texlive-pst-grad-6:svn15878.1.06-47.fc28.2.noarc   328/378 
+  Installing       : texlive-pst-text-6:svn15878.1.00-47.fc28.2.noarc   329/378 
+  Installing       : texlive-pst-3d-6:svn17257.1.10-47.fc28.2.noarch    330/378 
+  Installing       : texlive-pst-coil-6:svn37377.1.07-47.fc28.2.noarc   331/378 
+  Installing       : texlive-pst-eps-6:svn15878.1.0-47.fc28.2.noarch    332/378 
+  Installing       : texlive-pst-fill-6:svn15878.1.01-47.fc28.2.noarc   333/378 
+  Installing       : texlive-pst-node-6:svn40743-47.fc28.2.noarch       334/378 
+  Installing       : texlive-pst-plot-6:svn41242-47.fc28.2.noarch       335/378 
+  Installing       : texlive-pst-tools-6:svn34067.0.05-47.fc28.2.noar   336/378 
+  Installing       : texlive-pst-tree-6:svn24142.1.12-47.fc28.2.noarc   337/378 
+  Installing       : texlive-pstricks-add-6:svn40744-47.fc28.2.noarch   338/378 
+  Installing       : texlive-auto-pst-pdf-6:svn23723.0.6-47.fc28.2.no   339/378 
+  Installing       : texlive-pstricks-6:svn41321-47.fc28.2.noarch       340/378 
+  Installing       : texlive-pst-pdf-7:20170520-37.fc28.noarch          341/378 
+  Installing       : texlive-rotating-6:svn16832.2.16b-47.fc28.2.noar   342/378 
+  Installing       : texlive-amscls-6:svn36804.0-47.fc28.2.noarch       343/378 
+  Installing       : texlive-cm-super-6:svn15878.0-47.fc28.2.noarch     344/378 
+  Installing       : texlive-ctable-6:svn38672-47.fc28.2.noarch         345/378 
+  Installing       : texlive-pst-blur-6:svn15878.2.0-47.fc28.2.noarch   346/378 
+  Installing       : texlive-pst-slpe-6:svn24391.1.31-47.fc28.2.noarc   347/378 
+  Installing       : texlive-powerdot-6:svn38984-47.fc28.2.noarch       348/378 
+  Installing       : texlive-pdfpages-6:svn40638-47.fc28.2.noarch       349/378 
+  Installing       : texlive-tex-gyre-6:svn18651.2.004-47.fc28.2.noar   350/378 
+  Installing       : texlive-collection-fontsrecommended-6:svn35830.0   351/378 
+  Installing       : texlive-breqn-6:svn38099.0.98d-47.fc28.2.noarch    352/378 
+  Installing       : texlive-l3experimental-6:svn41163-47.fc28.2.noar   353/378 
+  Installing       : texlive-metalogo-6:svn18611.0.12-47.fc28.2.noarc   354/378 
+  Installing       : texlive-sansmathaccent-6:svn30187.0-47.fc28.2.no   355/378 
+  Installing       : texlive-seminar-6:svn34011.1.62-47.fc28.2.noarch   356/378 
+  Installing       : texlive-ltxmisc-6:svn21927.0-47.fc28.2.noarch      357/378 
+  Installing       : texlive-ucs-6:svn35853.2.2-47.fc28.2.noarch        358/378 
+  Installing       : texlive-beamer-6:svn36461.3.36-47.fc28.2.noarch    359/378 
+  Installing       : texlive-extsizes-6:svn17263.1.4a-47.fc28.2.noarc   360/378 
+  Installing       : texlive-jknapltx-6:svn19440.0-47.fc28.2.noarch     361/378 
+  Installing       : texlive-typehtml-6:svn17134.0-47.fc28.2.noarch     362/378 
+  Installing       : texlive-ae-6:svn15878.1.4-47.fc28.2.noarch         363/378 
+  Installing       : texlive-collection-latex-6:svn41011-47.20160520.   364/378 
+  Installing       : texlive-collection-latexrecommended-6:svn35765.0   365/378 
+  Installing       : texlive-inconsolata-6:svn39839-47.fc28.2.noarch    366/378 
+  Installing       : cups-1:2.2.6-15.fc28.x86_64                        367/378 
+  Running scriptlet: cups-1:2.2.6-15.fc28.x86_64                        367/378 
+  Installing       : cups-filters-1.20.0-9.fc28.x86_64                  368/378 
+  Running scriptlet: cups-filters-1.20.0-9.fc28.x86_64                  368/378 
+  Installing       : tre-common-0.8.0-22.20140228gitc2f5d13.fc28.noar   369/378 
+  Installing       : tre-0.8.0-22.20140228gitc2f5d13.fc28.x86_64        370/378 
+  Running scriptlet: tre-0.8.0-22.20140228gitc2f5d13.fc28.x86_64        370/378 
+  Installing       : R-core-3.5.0-4.fc28.x86_64                         371/378 
+  Running scriptlet: R-core-3.5.0-4.fc28.x86_64                         371/378 
+  Installing       : R-java-3.5.0-4.fc28.x86_64                         372/378 
+  Running scriptlet: R-java-3.5.0-4.fc28.x86_64                         372/378 
+  Installing       : tre-devel-0.8.0-22.20140228gitc2f5d13.fc28.x86_6   373/378 
+  Installing       : R-core-devel-3.5.0-4.fc28.x86_64                   374/378 
+  Installing       : R-java-devel-3.5.0-4.fc28.x86_64                   375/378 
+  Running scriptlet: R-java-devel-3.5.0-4.fc28.x86_64                   375/378 
+  Installing       : R-devel-3.5.0-4.fc28.x86_64                        376/378 
+  Installing       : R-3.5.0-4.fc28.x86_64                              377/378 
+  Installing       : perl-File-ShareDir-1.104-3.fc28.noarch             378/378 
+  Running scriptlet: texlive-base-7:20170520-37.fc28.x86_64             378/378 
+  Running scriptlet: copy-jdk-configs-3.7-1.fc28.noarch                 378/378 
+  Running scriptlet: java-1.8.0-openjdk-1:1.8.0.172-12.b11.fc28.x86_6   378/378 
+  Running scriptlet: java-1.8.0-openjdk-devel-1:1.8.0.172-12.b11.fc28   378/378 
+  Running scriptlet: urw-base35-z003-fonts-20170801-10.fc28.noarch      378/378 
+  Running scriptlet: urw-base35-standard-symbols-ps-fonts-20170801-10   378/378 
+  Running scriptlet: urw-base35-p052-fonts-20170801-10.fc28.noarch      378/378 
+  Running scriptlet: urw-base35-nimbus-sans-fonts-20170801-10.fc28.no   378/378 
+  Running scriptlet: urw-base35-nimbus-roman-fonts-20170801-10.fc28.n   378/378 
+  Running scriptlet: urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28   378/378 
+  Running scriptlet: urw-base35-gothic-fonts-20170801-10.fc28.noarch    378/378 
+  Running scriptlet: urw-base35-d050000l-fonts-20170801-10.fc28.noarc   378/378 
+  Running scriptlet: urw-base35-c059-fonts-20170801-10.fc28.noarch      378/378 
+  Running scriptlet: urw-base35-bookman-fonts-20170801-10.fc28.noarch   378/378 
+  Running scriptlet: texlive-tex-7:20170520-37.fc28.x86_64              378/378 
+  Running scriptlet: texlive-mptopdf-7:20170520-37.fc28.noarch          378/378 
+  Running scriptlet: texlive-metafont-7:20170520-37.fc28.x86_64         378/378 
+  Running scriptlet: texlive-luatex-7:20170520-37.fc28.x86_64           378/378 
+  Running scriptlet: texlive-pdftex-7:20170520-37.fc28.x86_64           378/378 
+  Running scriptlet: texlive-latex-7:20170520-37.fc28.noarch            378/378 
+  Running scriptlet: R-core-3.5.0-4.fc28.x86_64                         378/378 
+  Running scriptlet: perl-File-ShareDir-1.104-3.fc28.noarch             378/378 
+  Running scriptlet: texlive-kpathsea-7:20170520-37.fc28.x86_64         378/378 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                    378/378 
+  Running scriptlet: desktop-file-utils-0.23-8.fc28.x86_64              378/378 
+  Verifying        : R-3.5.0-4.fc28.x86_64                                1/378 
+  Verifying        : R-java-3.5.0-4.fc28.x86_64                           2/378 
+  Verifying        : R-core-3.5.0-4.fc28.x86_64                           3/378 
+  Verifying        : libRmath-3.5.0-4.fc28.x86_64                         4/378 
+  Verifying        : libICE-1.0.9-12.fc28.x86_64                          5/378 
+  Verifying        : libSM-1.2.2-8.fc28.x86_64                            6/378 
+  Verifying        : libXext-1.3.3-8.fc28.x86_64                          7/378 
+  Verifying        : libXmu-1.1.2-8.fc28.x86_64                           8/378 
+  Verifying        : libXt-1.1.5-7.fc28.x86_64                            9/378 
+  Verifying        : libicu-60.2-2.fc28.x86_64                           10/378 
+  Verifying        : libpng-2:1.6.34-3.fc28.x86_64                       11/378 
+  Verifying        : tcl-1:8.6.8-1.fc28.x86_64                           12/378 
+  Verifying        : tk-1:8.6.8-1.fc28.x86_64                            13/378 
+  Verifying        : tre-0.8.0-22.20140228gitc2f5d13.fc28.x86_64         14/378 
+  Verifying        : freetype-2.8-10.fc28.x86_64                         15/378 
+  Verifying        : libXft-2.3.2-8.fc28.x86_64                          16/378 
+  Verifying        : tre-common-0.8.0-22.20140228gitc2f5d13.fc28.noar    17/378 
+  Verifying        : libXrender-0.9.10-5.fc28.x86_64                     18/378 
+  Verifying        : cairo-1.15.12-2.fc28.x86_64                         19/378 
+  Verifying        : cups-1:2.2.6-15.fc28.x86_64                         20/378 
+  Verifying        : cups-client-1:2.2.6-15.fc28.x86_64                  21/378 
+  Verifying        : cups-filesystem-1:2.2.6-15.fc28.noarch              22/378 
+  Verifying        : cups-libs-1:2.2.6-15.fc28.x86_64                    23/378 
+  Verifying        : fribidi-1.0.2-1.fc28.x86_64                         24/378 
+  Verifying        : libgfortran-8.1.1-5.fc28.x86_64                     25/378 
+  Verifying        : libjpeg-turbo-1.5.3-6.fc28.x86_64                   26/378 
+  Verifying        : libquadmath-8.1.1-5.fc28.x86_64                     27/378 
+  Verifying        : libtiff-4.0.9-10.fc28.x86_64                        28/378 
+  Verifying        : jbigkit-libs-2.1-12.fc28.x86_64                     29/378 
+  Verifying        : openblas-Rblas-0.3.1-1.fc28.x86_64                  30/378 
+  Verifying        : pango-1.42.1-2.fc28.x86_64                          31/378 
+  Verifying        : harfbuzz-1.7.5-3.fc28.x86_64                        32/378 
+  Verifying        : libthai-0.1.27-2.fc28.x86_64                        33/378 
+  Verifying        : graphite2-1.3.10-5.fc28.x86_64                      34/378 
+  Verifying        : libdatrie-0.2.9-7.fc28.x86_64                       35/378 
+  Verifying        : redhat-rpm-config-108-1.fc28.noarch                 36/378 
+  Verifying        : file-5.33-7.fc28.x86_64                             37/378 
+  Verifying        : dwz-0.12-7.fc28.x86_64                              38/378 
+  Verifying        : fpc-srpm-macros-1.1-4.fc28.noarch                   39/378 
+  Verifying        : ghc-srpm-macros-1.4.2-7.fc28.noarch                 40/378 
+  Verifying        : gnat-srpm-macros-4-5.fc28.noarch                    41/378 
+  Verifying        : go-srpm-macros-2-16.fc28.noarch                     42/378 
+  Verifying        : nim-srpm-macros-1-1.fc28.noarch                     43/378 
+  Verifying        : ocaml-srpm-macros-5-2.fc27.noarch                   44/378 
+  Verifying        : openblas-srpm-macros-2-2.fc27.noarch                45/378 
+  Verifying        : perl-srpm-macros-1-25.fc28.noarch                   46/378 
+  Verifying        : qt5-srpm-macros-5.10.1-1.fc28.noarch                47/378 
+  Verifying        : rust-srpm-macros-5-2.fc28.noarch                    48/378 
+  Verifying        : texlive-collection-latexrecommended-6:svn35765.0    49/378 
+  Verifying        : texlive-dvips-7:20170520-37.fc28.x86_64             50/378 
+  Verifying        : xdg-utils-1.1.3-2.fc28.noarch                       51/378 
+  Verifying        : desktop-file-utils-0.23-8.fc28.x86_64               52/378 
+  Verifying        : R-devel-3.5.0-4.fc28.x86_64                         53/378 
+  Verifying        : libRmath-devel-3.5.0-4.fc28.x86_64                  54/378 
+  Verifying        : fontconfig-2.13.0-4.fc28.x86_64                     55/378 
+  Verifying        : fontpackages-filesystem-1.44-21.fc28.noarch         56/378 
+  Verifying        : texlive-base-7:20170520-37.fc28.x86_64              57/378 
+  Verifying        : texlive-kpathsea-7:20170520-37.fc28.x86_64          58/378 
+  Verifying        : texlive-latex-fonts-6:svn28888.0-47.fc28.2.noarc    59/378 
+  Verifying        : texlive-lib-7:20170520-37.fc28.x86_64               60/378 
+  Verifying        : texlive-anysize-6:svn15878.0-47.fc28.2.noarch       61/378 
+  Verifying        : texlive-beamer-6:svn36461.3.36-47.fc28.2.noarch     62/378 
+  Verifying        : texlive-booktabs-6:svn40846-47.fc28.2.noarch        63/378 
+  Verifying        : texlive-breqn-6:svn38099.0.98d-47.fc28.2.noarch     64/378 
+  Verifying        : texlive-caption-6:svn41409-47.fc28.2.noarch         65/378 
+  Verifying        : texlive-cite-6:svn36428.5.5-47.fc28.2.noarch        66/378 
+  Verifying        : texlive-cmap-6:svn41168-47.fc28.2.noarch            67/378 
+  Verifying        : texlive-collection-fontsrecommended-6:svn35830.0    68/378 
+  Verifying        : texlive-collection-latex-6:svn41011-47.20160520.    69/378 
+  Verifying        : texlive-crop-6:svn15878.1.5-47.fc28.2.noarch        70/378 
+  Verifying        : texlive-ctable-6:svn38672-47.fc28.2.noarch          71/378 
+  Verifying        : texlive-eso-pic-6:svn37925.2.0g-47.fc28.2.noarch    72/378 
+  Verifying        : texlive-euenc-6:svn19795.0.1h-47.fc28.2.noarch      73/378 
+  Verifying        : texlive-euler-6:svn17261.2.5-47.fc28.2.noarch       74/378 
+  Verifying        : texlive-extsizes-6:svn17263.1.4a-47.fc28.2.noarc    75/378 
+  Verifying        : texlive-fancybox-6:svn18304.1.4-47.fc28.2.noarch    76/378 
+  Verifying        : texlive-fancyref-6:svn15878.0.9c-47.fc28.2.noarc    77/378 
+  Verifying        : texlive-fancyvrb-6:svn18492.2.8-47.fc28.2.noarch    78/378 
+  Verifying        : texlive-float-6:svn15878.1.3d-47.fc28.2.noarch      79/378 
+  Verifying        : texlive-fontspec-6:svn41262-47.fc28.2.noarch        80/378 
+  Verifying        : texlive-fp-6:svn15878.0-47.fc28.2.noarch            81/378 
+  Verifying        : texlive-index-6:svn24099.4.1beta-47.fc28.2.noarc    82/378 
+  Verifying        : texlive-jknapltx-6:svn19440.0-47.fc28.2.noarch      83/378 
+  Verifying        : texlive-koma-script-6:svn41508-47.fc28.2.noarch     84/378 
+  Verifying        : texlive-l3experimental-6:svn41163-47.fc28.2.noar    85/378 
+  Verifying        : texlive-l3kernel-6:svn41246-47.fc28.2.noarch        86/378 
+  Verifying        : texlive-l3packages-6:svn41246-47.fc28.2.noarch      87/378 
+  Verifying        : texlive-lineno-6:svn21442.4.41-47.fc28.2.noarch     88/378 
+  Verifying        : texlive-listings-6:svn37534.1.6-47.fc28.2.noarch    89/378 
+  Verifying        : texlive-mathtools-6:svn38833-47.fc28.2.noarch       90/378 
+  Verifying        : texlive-mdwtools-6:svn15878.1.05.4-47.fc28.2.noa    91/378 
+  Verifying        : texlive-memoir-6:svn41203-47.fc28.2.noarch          92/378 
+  Verifying        : texlive-metalogo-6:svn18611.0.12-47.fc28.2.noarc    93/378 
+  Verifying        : texlive-microtype-6:svn41127-47.fc28.2.noarch       94/378 
+  Verifying        : texlive-ms-6:svn29849.0-47.fc28.2.noarch            95/378 
+  Verifying        : texlive-ntgclass-6:svn15878.2.1a-47.fc28.2.noarc    96/378 
+  Verifying        : texlive-parskip-6:svn19963.2.0-47.fc28.2.noarch     97/378 
+  Verifying        : texlive-pdfpages-6:svn40638-47.fc28.2.noarch        98/378 
+  Verifying        : texlive-powerdot-6:svn38984-47.fc28.2.noarch        99/378 
+  Verifying        : texlive-psfrag-6:svn15878.3.04-47.fc28.2.noarch    100/378 
+  Verifying        : texlive-rcs-6:svn15878.0-47.fc28.2.noarch          101/378 
+  Verifying        : texlive-rotating-6:svn16832.2.16b-47.fc28.2.noar   102/378 
+  Verifying        : texlive-sansmath-6:svn17997.1.1-47.fc28.2.noarch   103/378 
+  Verifying        : texlive-section-6:svn20180.0-47.fc28.2.noarch      104/378 
+  Verifying        : texlive-seminar-6:svn34011.1.62-47.fc28.2.noarch   105/378 
+  Verifying        : texlive-sepnum-6:svn20186.2.0-47.fc28.2.noarch     106/378 
+  Verifying        : texlive-setspace-6:svn24881.6.7a-47.fc28.2.noarc   107/378 
+  Verifying        : texlive-subfig-6:svn15878.1.3-47.fc28.2.noarch     108/378 
+  Verifying        : texlive-textcase-6:svn15878.0-47.fc28.2.noarch     109/378 
+  Verifying        : texlive-thumbpdf-7:20170520-37.fc28.noarch         110/378 
+  Verifying        : texlive-typehtml-6:svn17134.0-47.fc28.2.noarch     111/378 
+  Verifying        : texlive-underscore-6:svn18261.0-47.fc28.2.noarch   112/378 
+  Verifying        : texlive-xcolor-6:svn41044-47.fc28.2.noarch         113/378 
+  Verifying        : texlive-xkeyval-6:svn35741.2.7a-47.fc28.2.noarch   114/378 
+  Verifying        : texlive-ae-6:svn15878.1.4-47.fc28.2.noarch         115/378 
+  Verifying        : texlive-amscls-6:svn36804.0-47.fc28.2.noarch       116/378 
+  Verifying        : texlive-amsmath-6:svn41561-47.fc28.2.noarch        117/378 
+  Verifying        : texlive-babel-english-6:svn30264.3.3p-47.fc28.2.   118/378 
+  Verifying        : texlive-babel-6:svn40706-47.fc28.2.noarch          119/378 
+  Verifying        : texlive-babelbib-6:svn25245.1.31-47.fc28.2.noarc   120/378 
+  Verifying        : texlive-carlisle-6:svn18258.0-47.fc28.2.noarch     121/378 
+  Verifying        : texlive-collection-basic-6:svn41149-47.20160520.   122/378 
+  Verifying        : texlive-colortbl-6:svn29803.v1.0a-47.fc28.2.noar   123/378 
+  Verifying        : texlive-dvisvgm-def-6:svn41011-47.fc28.2.noarch    124/378 
+  Verifying        : texlive-fancyhdr-6:svn15878.3.1-47.fc28.2.noarch   125/378 
+  Verifying        : texlive-fix2col-6:svn38770-47.fc28.2.noarch        126/378 
+  Verifying        : texlive-geometry-6:svn19716.5.6-47.fc28.2.noarch   127/378 
+  Verifying        : texlive-graphics-cfg-6:svn40269-47.fc28.2.noarch   128/378 
+  Verifying        : texlive-graphics-6:svn41015-47.fc28.2.noarch       129/378 
+  Verifying        : texlive-hyperref-6:svn41396-47.fc28.2.noarch       130/378 
+  Verifying        : texlive-latex-7:20170520-37.fc28.noarch            131/378 
+  Verifying        : texlive-latexconfig-6:svn40274-47.fc28.2.noarch    132/378 
+  Verifying        : texlive-ltxmisc-6:svn21927.0-47.fc28.2.noarch      133/378 
+  Verifying        : texlive-mfnfss-6:svn19410.0-47.fc28.2.noarch       134/378 
+  Verifying        : texlive-mptopdf-7:20170520-37.fc28.noarch          135/378 
+  Verifying        : texlive-natbib-6:svn20668.8.31b-47.fc28.2.noarch   136/378 
+  Verifying        : texlive-oberdiek-7:20170520-37.fc28.noarch         137/378 
+  Verifying        : texlive-pdftex-def-6:svn22653.0.06d-47.fc28.2.no   138/378 
+  Verifying        : texlive-pslatex-6:svn16416.0-47.fc28.2.noarch      139/378 
+  Verifying        : texlive-psnfss-6:svn33946.9.2a-47.fc28.2.noarch    140/378 
+  Verifying        : texlive-pspicture-6:svn15878.0-47.fc28.2.noarch    141/378 
+  Verifying        : texlive-tools-6:svn40934-47.fc28.2.noarch          142/378 
+  Verifying        : texlive-url-6:svn32528.3.4-47.fc28.2.noarch        143/378 
+  Verifying        : texlive-avantgar-6:svn31835.0-47.fc28.2.noarch     144/378 
+  Verifying        : texlive-bookman-6:svn31835.0-47.fc28.2.noarch      145/378 
+  Verifying        : texlive-charter-6:svn15878.0-47.fc28.2.noarch      146/378 
+  Verifying        : texlive-cm-super-6:svn15878.0-47.fc28.2.noarch     147/378 
+  Verifying        : texlive-cmextra-6:svn32831.0-47.fc28.2.noarch      148/378 
+  Verifying        : texlive-courier-6:svn35058.0-47.fc28.2.noarch      149/378 
+  Verifying        : texlive-ec-6:svn25033.1.0-47.fc28.2.noarch         150/378 
+  Verifying        : texlive-euro-6:svn22191.1.1-47.fc28.2.noarch       151/378 
+  Verifying        : texlive-eurosym-6:svn17265.1.4_subrfix-47.fc28.2   152/378 
+  Verifying        : texlive-fpl-6:svn15878.1.002-47.fc28.2.noarch      153/378 
+  Verifying        : texlive-helvetic-6:svn31835.0-47.fc28.2.noarch     154/378 
+  Verifying        : texlive-lm-math-6:svn36915.1.959-47.fc28.2.noarc   155/378 
+  Verifying        : texlive-lm-6:svn28119.2.004-47.fc28.2.noarch       156/378 
+  Verifying        : texlive-manfnt-font-6:svn35799.0-47.fc28.2.noarc   157/378 
+  Verifying        : texlive-marvosym-6:svn29349.2.2a-47.fc28.2.noarc   158/378 
+  Verifying        : texlive-mathpazo-6:svn15878.1.003-47.fc28.2.noar   159/378 
+  Verifying        : texlive-mflogo-font-6:svn36898.1.002-47.fc28.2.n   160/378 
+  Verifying        : texlive-ncntrsbk-6:svn31835.0-47.fc28.2.noarch     161/378 
+  Verifying        : texlive-palatino-6:svn31835.0-47.fc28.2.noarch     162/378 
+  Verifying        : texlive-pxfonts-6:svn15878.0-47.fc28.2.noarch      163/378 
+  Verifying        : texlive-rsfs-6:svn15878.0-47.fc28.2.noarch         164/378 
+  Verifying        : texlive-symbol-6:svn31835.0-47.fc28.2.noarch       165/378 
+  Verifying        : texlive-tex-gyre-math-6:svn41264-47.fc28.2.noarc   166/378 
+  Verifying        : texlive-tex-gyre-6:svn18651.2.004-47.fc28.2.noar   167/378 
+  Verifying        : texlive-times-6:svn35058.0-47.fc28.2.noarch        168/378 
+  Verifying        : texlive-tipa-6:svn29349.1.3-47.fc28.2.noarch       169/378 
+  Verifying        : texlive-txfonts-6:svn15878.0-47.fc28.2.noarch      170/378 
+  Verifying        : texlive-utopia-6:svn15878.0-47.fc28.2.noarch       171/378 
+  Verifying        : texlive-wasy-6:svn35831.0-47.fc28.2.noarch         172/378 
+  Verifying        : texlive-wasy2-ps-6:svn35830.0-47.fc28.2.noarch     173/378 
+  Verifying        : texlive-wasysym-6:svn15878.2.0-47.fc28.2.noarch    174/378 
+  Verifying        : texlive-zapfchan-6:svn31835.0-47.fc28.2.noarch     175/378 
+  Verifying        : texlive-zapfding-6:svn31835.0-47.fc28.2.noarch     176/378 
+  Verifying        : texlive-amsfonts-6:svn29208.3.04-47.fc28.2.noarc   177/378 
+  Verifying        : texlive-bibtex-7:20170520-37.fc28.x86_64           178/378 
+  Verifying        : texlive-cm-6:svn32865.0-47.fc28.2.noarch           179/378 
+  Verifying        : texlive-dvipdfmx-7:20170520-37.fc28.x86_64         180/378 
+  Verifying        : texlive-dvipdfmx-def-6:svn40328-47.fc28.2.noarch   181/378 
+  Verifying        : texlive-enctex-6:svn34957.0-47.fc28.2.noarch       182/378 
+  Verifying        : texlive-etex-pkg-6:svn39355-47.fc28.2.noarch       183/378 
+  Verifying        : texlive-etex-6:svn37057.0-47.fc28.2.noarch         184/378 
+  Verifying        : texlive-glyphlist-7:20170520-37.fc28.noarch        185/378 
+  Verifying        : texlive-gsftopk-7:20170520-37.fc28.x86_64          186/378 
+  Verifying        : texlive-hyph-utf8-6:svn41189-47.fc28.2.noarch      187/378 
+  Verifying        : texlive-hyphen-base-6:svn41138-47.fc28.2.noarch    188/378 
+  Verifying        : texlive-ifluatex-6:svn41346-47.fc28.2.noarch       189/378 
+  Verifying        : texlive-ifxetex-6:svn19685.0.5-47.fc28.2.noarch    190/378 
+  Verifying        : texlive-knuth-lib-6:svn35820.0-47.fc28.2.noarch    191/378 
+  Verifying        : texlive-knuth-local-6:svn38627-47.fc28.2.noarch    192/378 
+  Verifying        : texlive-lua-alt-getopt-6:svn29349.0.7.0-47.fc28.   193/378 
+  Verifying        : texlive-luatex-7:20170520-37.fc28.x86_64           194/378 
+  Verifying        : zziplib-0.13.68-1.fc28.x86_64                      195/378 
+  Verifying        : texlive-makeindex-7:20170520-37.fc28.x86_64        196/378 
+  Verifying        : texlive-metafont-7:20170520-37.fc28.x86_64         197/378 
+  Verifying        : texlive-mflogo-6:svn38628-47.fc28.2.noarch         198/378 
+  Verifying        : texlive-mfware-7:20170520-37.fc28.x86_64           199/378 
+  Verifying        : texlive-pdftex-7:20170520-37.fc28.x86_64           200/378 
+  Verifying        : texlive-plain-6:svn40274-47.fc28.2.noarch          201/378 
+  Verifying        : texlive-tetex-7:20170520-37.fc28.noarch            202/378 
+  Verifying        : texlive-tex-7:20170520-37.fc28.x86_64              203/378 
+  Verifying        : texlive-tex-ini-files-6:svn40533-47.fc28.2.noarc   204/378 
+  Verifying        : texlive-texconfig-7:20170520-37.fc28.noarch        205/378 
+  Verifying        : texlive-texlive-common-doc-6:svn40682-47.fc28.2.   206/378 
+  Verifying        : texlive-texlive-docindex-6:svn41430-47.fc28.2.no   207/378 
+  Verifying        : texlive-texlive-en-7:20170520-37.fc28.noarch       208/378 
+  Verifying        : texlive-texlive-msg-translations-6:svn41431-47.f   209/378 
+  Verifying        : texlive-texlive-scripts-7:20170520-37.fc28.noarc   210/378 
+  Verifying        : texlive-texlive.infra-7:20170520-37.fc28.noarch    211/378 
+  Verifying        : perl-Text-Unidecode-1.30-5.fc28.noarch             212/378 
+  Verifying        : perl-XML-Parser-2.44-10.fc28.x86_64                213/378 
+  Verifying        : perl-XML-XPath-1.42-2.fc28.noarch                  214/378 
+  Verifying        : texlive-unicode-data-6:svn39808-47.fc28.2.noarch   215/378 
+  Verifying        : texlive-updmap-map-6:svn41159-47.fc28.2.noarch     216/378 
+  Verifying        : texlive-xdvi-7:20170520-37.fc28.x86_64             217/378 
+  Verifying        : libXaw-1.0.13-8.fc28.x86_64                        218/378 
+  Verifying        : libXi-1.7.9-6.fc28.x86_64                          219/378 
+  Verifying        : libXpm-3.5.12-5.fc28.x86_64                        220/378 
+  Verifying        : texlive-pgf-6:svn40966-47.fc28.2.noarch            221/378 
+  Verifying        : texlive-sansmathaccent-6:svn30187.0-47.fc28.2.no   222/378 
+  Verifying        : texlive-ucs-6:svn35853.2.2-47.fc28.2.noarch        223/378 
+  Verifying        : annobin-5.7-2.fc28.x86_64                          224/378 
+  Verifying        : python-srpm-macros-3-30.fc28.noarch                225/378 
+  Verifying        : cups-filters-1.20.0-9.fc28.x86_64                  226/378 
+  Verifying        : avahi-glib-0.7-12.fc28.x86_64                      227/378 
+  Verifying        : cups-filters-libs-1.20.0-9.fc28.x86_64             228/378 
+  Verifying        : bc-1.07.1-5.fc28.x86_64                            229/378 
+  Verifying        : lcms2-2.9-2.fc28.x86_64                            230/378 
+  Verifying        : liberation-mono-fonts-1:1.07.4-11.fc28.noarch      231/378 
+  Verifying        : liberation-fonts-common-1:1.07.4-11.fc28.noarch    232/378 
+  Verifying        : pixman-0.34.0-8.fc28.x86_64                        233/378 
+  Verifying        : R-core-devel-3.5.0-4.fc28.x86_64                   234/378 
+  Verifying        : R-java-devel-3.5.0-4.fc28.x86_64                   235/378 
+  Verifying        : gcc-gfortran-8.1.1-5.fc28.x86_64                   236/378 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                      237/378 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                        238/378 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                      239/378 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                      240/378 
+  Verifying        : qpdf-7.1.1-6.fc28.x86_64                           241/378 
+  Verifying        : qpdf-libs-7.1.1-6.fc28.x86_64                      242/378 
+  Verifying        : texinfo-tex-6.5-4.fc28.x86_64                      243/378 
+  Verifying        : texinfo-6.5-4.fc28.x86_64                          244/378 
+  Verifying        : perl-Unicode-EastAsianWidth-1.33-12.fc28.noarch    245/378 
+  Verifying        : perl-libintl-perl-1.29-2.fc28.x86_64               246/378 
+  Verifying        : texlive-inconsolata-6:svn39839-47.fc28.2.noarch    247/378 
+  Verifying        : xz-devel-5.2.4-2.fc28.x86_64                       248/378 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                    249/378 
+  Verifying        : bzip2-devel-1.0.6-26.fc28.x86_64                   250/378 
+  Verifying        : libicu-devel-60.2-2.fc28.x86_64                    251/378 
+  Verifying        : tcl-devel-1:8.6.8-1.fc28.x86_64                    252/378 
+  Verifying        : tk-devel-1:8.6.8-1.fc28.x86_64                     253/378 
+  Verifying        : tre-devel-0.8.0-22.20140228gitc2f5d13.fc28.x86_6   254/378 
+  Verifying        : libXft-devel-2.3.2-8.fc28.x86_64                   255/378 
+  Verifying        : perl-open-1.11-412.fc28.noarch                     256/378 
+  Verifying        : perl-encoding-4:2.22-3.fc28.x86_64                 257/378 
+  Verifying        : perl-Filter-2:1.58-2.fc28.x86_64                   258/378 
+  Verifying        : fontconfig-devel-2.13.0-4.fc28.x86_64              259/378 
+  Verifying        : freetype-devel-2.8-10.fc28.x86_64                  260/378 
+  Verifying        : libXrender-devel-0.9.10-5.fc28.x86_64              261/378 
+  Verifying        : libpng-devel-2:1.6.34-3.fc28.x86_64                262/378 
+  Verifying        : ghostscript-9.23-4.fc28.x86_64                     263/378 
+  Verifying        : libgs-9.23-4.fc28.x86_64                           264/378 
+  Verifying        : adobe-mappings-cmap-20171205-3.fc28.noarch         265/378 
+  Verifying        : adobe-mappings-cmap-deprecated-20171205-3.fc28.n   266/378 
+  Verifying        : google-droid-sans-fonts-20120715-13.fc28.noarch    267/378 
+  Verifying        : jbig2dec-libs-0.14-2.fc28.x86_64                   268/378 
+  Verifying        : libijs-0.35-4.fc28.x86_64                          269/378 
+  Verifying        : libpaper-1.1.24-21.fc28.x86_64                     270/378 
+  Verifying        : openjpeg2-2.3.0-6.fc28.x86_64                      271/378 
+  Verifying        : texlive-pst-ovl-6:svn40873-47.fc28.2.noarch        272/378 
+  Verifying        : texlive-filehook-6:svn24280.0.5d-47.fc28.2.noarc   273/378 
+  Verifying        : texlive-enumitem-6:svn24146.3.5.2-47.fc28.2.noar   274/378 
+  Verifying        : texlive-pst-blur-6:svn15878.2.0-47.fc28.2.noarch   275/378 
+  Verifying        : texlive-pst-grad-6:svn15878.1.06-47.fc28.2.noarc   276/378 
+  Verifying        : texlive-pst-slpe-6:svn24391.1.31-47.fc28.2.noarc   277/378 
+  Verifying        : texlive-pst-text-6:svn15878.1.00-47.fc28.2.noarc   278/378 
+  Verifying        : texlive-pstricks-6:svn41321-47.fc28.2.noarch       279/378 
+  Verifying        : texlive-type1cm-6:svn21820.0-47.fc28.2.noarch      280/378 
+  Verifying        : poppler-0.62.0-2.fc28.x86_64                       281/378 
+  Verifying        : poppler-utils-0.62.0-2.fc28.x86_64                 282/378 
+  Verifying        : texlive-graphics-def-6:svn41879-47.fc28.2.noarch   283/378 
+  Verifying        : texlive-parallel-6:svn15878.0-47.fc28.2.noarch     284/378 
+  Verifying        : texlive-qstest-6:svn15878.0-47.fc28.2.noarch       285/378 
+  Verifying        : texlive-sauerj-6:svn15878.0-47.fc28.2.noarch       286/378 
+  Verifying        : texlive-soul-6:svn15878.2.4-47.fc28.2.noarch       287/378 
+  Verifying        : texlive-unicode-math-6:svn38462-47.fc28.2.noarch   288/378 
+  Verifying        : texlive-footmisc-6:svn23330.5.5b-47.fc28.2.noarc   289/378 
+  Verifying        : texlive-ifetex-6:svn24853.1.2-47.fc28.2.noarch     290/378 
+  Verifying        : texlive-beton-6:svn15878.0-47.fc28.2.noarch        291/378 
+  Verifying        : texlive-algorithms-6:svn38085.0.1-47.fc28.2.noar   292/378 
+  Verifying        : texlive-finstrut-6:svn21719.0.5-47.fc28.2.noarch   293/378 
+  Verifying        : texlive-ltabptch-6:svn17533.1.74d-47.fc28.2.noar   294/378 
+  Verifying        : texlive-csquotes-6:svn39538-47.fc28.2.noarch       295/378 
+  Verifying        : texlive-etoolbox-6:svn38031.2.2a-47.fc28.2.noarc   296/378 
+  Verifying        : texlive-marginnote-6:svn41382-47.fc28.2.noarch     297/378 
+  Verifying        : texlive-mparhack-6:svn15878.1.4-47.fc28.2.noarch   298/378 
+  Verifying        : texlive-iftex-6:svn29654.0.2-47.fc28.2.noarch      299/378 
+  Verifying        : texlive-kastrup-6:svn15878.0-47.fc28.2.noarch      300/378 
+  Verifying        : texlive-luaotfload-7:20170520-37.fc28.noarch       301/378 
+  Verifying        : texlive-xunicode-6:svn30466.0.981-47.fc28.2.noar   302/378 
+  Verifying        : texlive-currfile-6:svn40725-47.fc28.2.noarch       303/378 
+  Verifying        : texlive-epsf-6:svn21461.2.7.4-47.fc28.2.noarch     304/378 
+  Verifying        : poppler-data-0.4.9-1.fc28.noarch                   305/378 
+  Verifying        : adobe-mappings-pdf-20180407-1.fc28.noarch          306/378 
+  Verifying        : libidn-1.34-3.fc28.x86_64                          307/378 
+  Verifying        : urw-base35-fonts-20170801-10.fc28.noarch           308/378 
+  Verifying        : urw-base35-fonts-common-20170801-10.fc28.noarch    309/378 
+  Verifying        : urw-base35-z003-fonts-20170801-10.fc28.noarch      310/378 
+  Verifying        : urw-base35-standard-symbols-ps-fonts-20170801-10   311/378 
+  Verifying        : urw-base35-p052-fonts-20170801-10.fc28.noarch      312/378 
+  Verifying        : urw-base35-nimbus-sans-fonts-20170801-10.fc28.no   313/378 
+  Verifying        : urw-base35-nimbus-roman-fonts-20170801-10.fc28.n   314/378 
+  Verifying        : urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28   315/378 
+  Verifying        : urw-base35-gothic-fonts-20170801-10.fc28.noarch    316/378 
+  Verifying        : urw-base35-d050000l-fonts-20170801-10.fc28.noarc   317/378 
+  Verifying        : urw-base35-c059-fonts-20170801-10.fc28.noarch      318/378 
+  Verifying        : urw-base35-bookman-fonts-20170801-10.fc28.noarch   319/378 
+  Verifying        : xorg-x11-server-utils-7.7-24.fc28.x86_64           320/378 
+  Verifying        : libXcursor-1.1.15-1.fc28.x86_64                    321/378 
+  Verifying        : libXinerama-1.1.3-10.fc28.x86_64                   322/378 
+  Verifying        : libXrandr-1.5.1-5.fc28.x86_64                      323/378 
+  Verifying        : libXxf86misc-1.0.3-15.fc28.x86_64                  324/378 
+  Verifying        : libXxf86vm-1.1.4-7.fc28.x86_64                     325/378 
+  Verifying        : mcpp-2.7.2-20.fc28.x86_64                          326/378 
+  Verifying        : libXfixes-5.0.3-5.fc28.x86_64                      327/378 
+  Verifying        : libmcpp-2.7.2-20.fc28.x86_64                       328/378 
+  Verifying        : libquadmath-devel-8.1.1-5.fc28.x86_64              329/378 
+  Verifying        : libuuid-devel-2.32.1-1.fc28.x86_64                 330/378 
+  Verifying        : expat-devel-2.2.5-3.fc28.x86_64                    331/378 
+  Verifying        : java-1.8.0-openjdk-devel-1:1.8.0.172-12.b11.fc28   332/378 
+  Verifying        : java-1.8.0-openjdk-1:1.8.0.172-12.b11.fc28.x86_6   333/378 
+  Verifying        : java-1.8.0-openjdk-headless-1:1.8.0.172-12.b11.f   334/378 
+  Verifying        : alsa-lib-1.1.6-2.fc28.x86_64                       335/378 
+  Verifying        : giflib-5.1.4-1.fc28.x86_64                         336/378 
+  Verifying        : libXcomposite-0.4.4-12.fc28.x86_64                 337/378 
+  Verifying        : libXtst-1.2.3-5.fc28.x86_64                        338/378 
+  Verifying        : xorg-x11-fonts-Type1-7.5-19.fc28.noarch            339/378 
+  Verifying        : javapackages-tools-5.0.0-14.fc28.noarch            340/378 
+  Verifying        : lksctp-tools-1.0.16-9.fc28.x86_64                  341/378 
+  Verifying        : ttmkfdir-3.0.9-54.fc28.x86_64                      342/378 
+  Verifying        : xorg-x11-font-utils-1:7.5-38.fc28.x86_64           343/378 
+  Verifying        : libfontenc-1.1.3-7.fc28.x86_64                     344/378 
+  Verifying        : texlive-lualatex-math-6:svn40621-47.fc28.2.noarc   345/378 
+  Verifying        : texlive-ucharcat-6:svn38907-47.fc28.2.noarch       346/378 
+  Verifying        : texlive-auto-pst-pdf-6:svn23723.0.6-47.fc28.2.no   347/378 
+  Verifying        : texlive-bera-6:svn20031.0-47.fc28.2.noarch         348/378 
+  Verifying        : texlive-breakurl-6:svn29901.1.40-47.fc28.2.noarc   349/378 
+  Verifying        : texlive-chngcntr-6:svn17157.1.0a-47.fc28.2.noarc   350/378 
+  Verifying        : texlive-filecontents-6:svn24250.1.3-47.fc28.2.no   351/378 
+  Verifying        : texlive-multido-6:svn18302.1.42-47.fc28.2.noarch   352/378 
+  Verifying        : texlive-paralist-6:svn39247-47.fc28.2.noarch       353/378 
+  Verifying        : texlive-pst-3d-6:svn17257.1.10-47.fc28.2.noarch    354/378 
+  Verifying        : texlive-pst-coil-6:svn37377.1.07-47.fc28.2.noarc   355/378 
+  Verifying        : texlive-pst-eps-6:svn15878.1.0-47.fc28.2.noarch    356/378 
+  Verifying        : texlive-pst-fill-6:svn15878.1.01-47.fc28.2.noarc   357/378 
+  Verifying        : texlive-pst-node-6:svn40743-47.fc28.2.noarch       358/378 
+  Verifying        : texlive-pst-plot-6:svn41242-47.fc28.2.noarch       359/378 
+  Verifying        : texlive-pst-tools-6:svn34067.0.05-47.fc28.2.noar   360/378 
+  Verifying        : texlive-pst-tree-6:svn24142.1.12-47.fc28.2.noarc   361/378 
+  Verifying        : texlive-pstricks-add-6:svn40744-47.fc28.2.noarch   362/378 
+  Verifying        : texlive-showexpl-6:svn32737.v0.3l-47.fc28.2.noar   363/378 
+  Verifying        : texlive-pst-math-6:svn34786.0.63-47.fc28.2.noarc   364/378 
+  Verifying        : texlive-lualibs-6:svn40370-47.fc28.2.noarch        365/378 
+  Verifying        : texlive-luatexbase-6:svn38550-47.fc28.2.noarch     366/378 
+  Verifying        : texlive-ifplatform-6:svn21156.0.4-47.fc28.2.noar   367/378 
+  Verifying        : texlive-pst-pdf-7:20170520-37.fc28.noarch          368/378 
+  Verifying        : copy-jdk-configs-3.7-1.fc28.noarch                 369/378 
+  Verifying        : lua-posix-33.3.1-8.fc28.x86_64                     370/378 
+  Verifying        : tzdata-java-2018e-1.fc28.noarch                    371/378 
+  Verifying        : lua-5.3.4-10.fc28.x86_64                           372/378 
+  Verifying        : texlive-attachfile-6:svn38830-47.fc28.2.noarch     373/378 
+  Verifying        : texlive-varwidth-6:svn24104.0.92-47.fc28.2.noarc   374/378 
+  Verifying        : texlive-environ-6:svn33821.0.3-47.fc28.2.noarch    375/378 
+  Verifying        : texlive-trimspaces-6:svn15878.1.1-47.fc28.2.noar   376/378 
+  Verifying        : perl-File-ShareDir-1.104-3.fc28.noarch             377/378 
+  Verifying        : perl-Class-Inspector-1.32-2.fc28.noarch            378/378 
+
+Installed:
+  R.x86_64 3.5.0-4.fc28                                                         
+  perl-File-ShareDir.noarch 1.104-3.fc28                                        
+  R-core.x86_64 3.5.0-4.fc28                                                    
+  R-core-devel.x86_64 3.5.0-4.fc28                                              
+  R-devel.x86_64 3.5.0-4.fc28                                                   
+  R-java.x86_64 3.5.0-4.fc28                                                    
+  R-java-devel.x86_64 3.5.0-4.fc28                                              
+  adobe-mappings-cmap.noarch 20171205-3.fc28                                    
+  adobe-mappings-cmap-deprecated.noarch 20171205-3.fc28                         
+  adobe-mappings-pdf.noarch 20180407-1.fc28                                     
+  alsa-lib.x86_64 1.1.6-2.fc28                                                  
+  annobin.x86_64 5.7-2.fc28                                                     
+  avahi-glib.x86_64 0.7-12.fc28                                                 
+  bc.x86_64 1.07.1-5.fc28                                                       
+  bzip2-devel.x86_64 1.0.6-26.fc28                                              
+  cairo.x86_64 1.15.12-2.fc28                                                   
+  copy-jdk-configs.noarch 3.7-1.fc28                                            
+  cups.x86_64 1:2.2.6-15.fc28                                                   
+  cups-client.x86_64 1:2.2.6-15.fc28                                            
+  cups-filesystem.noarch 1:2.2.6-15.fc28                                        
+  cups-filters.x86_64 1.20.0-9.fc28                                             
+  cups-filters-libs.x86_64 1.20.0-9.fc28                                        
+  cups-libs.x86_64 1:2.2.6-15.fc28                                              
+  desktop-file-utils.x86_64 0.23-8.fc28                                         
+  dwz.x86_64 0.12-7.fc28                                                        
+  expat-devel.x86_64 2.2.5-3.fc28                                               
+  file.x86_64 5.33-7.fc28                                                       
+  fontconfig.x86_64 2.13.0-4.fc28                                               
+  fontconfig-devel.x86_64 2.13.0-4.fc28                                         
+  fontpackages-filesystem.noarch 1.44-21.fc28                                   
+  fpc-srpm-macros.noarch 1.1-4.fc28                                             
+  freetype.x86_64 2.8-10.fc28                                                   
+  freetype-devel.x86_64 2.8-10.fc28                                             
+  fribidi.x86_64 1.0.2-1.fc28                                                   
+  gcc-gfortran.x86_64 8.1.1-5.fc28                                              
+  ghc-srpm-macros.noarch 1.4.2-7.fc28                                           
+  ghostscript.x86_64 9.23-4.fc28                                                
+  giflib.x86_64 5.1.4-1.fc28                                                    
+  gnat-srpm-macros.noarch 4-5.fc28                                              
+  go-srpm-macros.noarch 2-16.fc28                                               
+  google-droid-sans-fonts.noarch 20120715-13.fc28                               
+  graphite2.x86_64 1.3.10-5.fc28                                                
+  harfbuzz.x86_64 1.7.5-3.fc28                                                  
+  java-1.8.0-openjdk.x86_64 1:1.8.0.172-12.b11.fc28                             
+  java-1.8.0-openjdk-devel.x86_64 1:1.8.0.172-12.b11.fc28                       
+  java-1.8.0-openjdk-headless.x86_64 1:1.8.0.172-12.b11.fc28                    
+  javapackages-tools.noarch 5.0.0-14.fc28                                       
+  jbig2dec-libs.x86_64 0.14-2.fc28                                              
+  jbigkit-libs.x86_64 2.1-12.fc28                                               
+  lcms2.x86_64 2.9-2.fc28                                                       
+  libICE.x86_64 1.0.9-12.fc28                                                   
+  libRmath.x86_64 3.5.0-4.fc28                                                  
+  libRmath-devel.x86_64 3.5.0-4.fc28                                            
+  libSM.x86_64 1.2.2-8.fc28                                                     
+  libXaw.x86_64 1.0.13-8.fc28                                                   
+  libXcomposite.x86_64 0.4.4-12.fc28                                            
+  libXcursor.x86_64 1.1.15-1.fc28                                               
+  libXext.x86_64 1.3.3-8.fc28                                                   
+  libXfixes.x86_64 5.0.3-5.fc28                                                 
+  libXft.x86_64 2.3.2-8.fc28                                                    
+  libXft-devel.x86_64 2.3.2-8.fc28                                              
+  libXi.x86_64 1.7.9-6.fc28                                                     
+  libXinerama.x86_64 1.1.3-10.fc28                                              
+  libXmu.x86_64 1.1.2-8.fc28                                                    
+  libXpm.x86_64 3.5.12-5.fc28                                                   
+  libXrandr.x86_64 1.5.1-5.fc28                                                 
+  libXrender.x86_64 0.9.10-5.fc28                                               
+  libXrender-devel.x86_64 0.9.10-5.fc28                                         
+  libXt.x86_64 1.1.5-7.fc28                                                     
+  libXtst.x86_64 1.2.3-5.fc28                                                   
+  libXxf86misc.x86_64 1.0.3-15.fc28                                             
+  libXxf86vm.x86_64 1.1.4-7.fc28                                                
+  libdatrie.x86_64 0.2.9-7.fc28                                                 
+  liberation-fonts-common.noarch 1:1.07.4-11.fc28                               
+  liberation-mono-fonts.noarch 1:1.07.4-11.fc28                                 
+  libfontenc.x86_64 1.1.3-7.fc28                                                
+  libgfortran.x86_64 8.1.1-5.fc28                                               
+  libgs.x86_64 9.23-4.fc28                                                      
+  libicu.x86_64 60.2-2.fc28                                                     
+  libicu-devel.x86_64 60.2-2.fc28                                               
+  libidn.x86_64 1.34-3.fc28                                                     
+  libijs.x86_64 0.35-4.fc28                                                     
+  libjpeg-turbo.x86_64 1.5.3-6.fc28                                             
+  libmcpp.x86_64 2.7.2-20.fc28                                                  
+  libpaper.x86_64 1.1.24-21.fc28                                                
+  libpng.x86_64 2:1.6.34-3.fc28                                                 
+  libpng-devel.x86_64 2:1.6.34-3.fc28                                           
+  libquadmath.x86_64 8.1.1-5.fc28                                               
+  libquadmath-devel.x86_64 8.1.1-5.fc28                                         
+  libthai.x86_64 0.1.27-2.fc28                                                  
+  libtiff.x86_64 4.0.9-10.fc28                                                  
+  libuuid-devel.x86_64 2.32.1-1.fc28                                            
+  lksctp-tools.x86_64 1.0.16-9.fc28                                             
+  lua.x86_64 5.3.4-10.fc28                                                      
+  lua-posix.x86_64 33.3.1-8.fc28                                                
+  mcpp.x86_64 2.7.2-20.fc28                                                     
+  nim-srpm-macros.noarch 1-1.fc28                                               
+  ocaml-srpm-macros.noarch 5-2.fc27                                             
+  openblas-Rblas.x86_64 0.3.1-1.fc28                                            
+  openblas-srpm-macros.noarch 2-2.fc27                                          
+  openjpeg2.x86_64 2.3.0-6.fc28                                                 
+  pango.x86_64 1.42.1-2.fc28                                                    
+  pcre-cpp.x86_64 8.42-2.fc28                                                   
+  pcre-devel.x86_64 8.42-2.fc28                                                 
+  pcre-utf16.x86_64 8.42-2.fc28                                                 
+  pcre-utf32.x86_64 8.42-2.fc28                                                 
+  perl-Class-Inspector.noarch 1.32-2.fc28                                       
+  perl-Filter.x86_64 2:1.58-2.fc28                                              
+  perl-Text-Unidecode.noarch 1.30-5.fc28                                        
+  perl-Unicode-EastAsianWidth.noarch 1.33-12.fc28                               
+  perl-XML-Parser.x86_64 2.44-10.fc28                                           
+  perl-XML-XPath.noarch 1.42-2.fc28                                             
+  perl-encoding.x86_64 4:2.22-3.fc28                                            
+  perl-libintl-perl.x86_64 1.29-2.fc28                                          
+  perl-open.noarch 1.11-412.fc28                                                
+  perl-srpm-macros.noarch 1-25.fc28                                             
+  pixman.x86_64 0.34.0-8.fc28                                                   
+  poppler.x86_64 0.62.0-2.fc28                                                  
+  poppler-data.noarch 0.4.9-1.fc28                                              
+  poppler-utils.x86_64 0.62.0-2.fc28                                            
+  python-srpm-macros.noarch 3-30.fc28                                           
+  qpdf.x86_64 7.1.1-6.fc28                                                      
+  qpdf-libs.x86_64 7.1.1-6.fc28                                                 
+  qt5-srpm-macros.noarch 5.10.1-1.fc28                                          
+  redhat-rpm-config.noarch 108-1.fc28                                           
+  rust-srpm-macros.noarch 5-2.fc28                                              
+  tcl.x86_64 1:8.6.8-1.fc28                                                     
+  tcl-devel.x86_64 1:8.6.8-1.fc28                                               
+  texinfo.x86_64 6.5-4.fc28                                                     
+  texinfo-tex.x86_64 6.5-4.fc28                                                 
+  texlive-ae.noarch 6:svn15878.1.4-47.fc28.2                                    
+  texlive-algorithms.noarch 6:svn38085.0.1-47.fc28.2                            
+  texlive-amscls.noarch 6:svn36804.0-47.fc28.2                                  
+  texlive-amsfonts.noarch 6:svn29208.3.04-47.fc28.2                             
+  texlive-amsmath.noarch 6:svn41561-47.fc28.2                                   
+  texlive-anysize.noarch 6:svn15878.0-47.fc28.2                                 
+  texlive-attachfile.noarch 6:svn38830-47.fc28.2                                
+  texlive-auto-pst-pdf.noarch 6:svn23723.0.6-47.fc28.2                          
+  texlive-avantgar.noarch 6:svn31835.0-47.fc28.2                                
+  texlive-babel.noarch 6:svn40706-47.fc28.2                                     
+  texlive-babel-english.noarch 6:svn30264.3.3p-47.fc28.2                        
+  texlive-babelbib.noarch 6:svn25245.1.31-47.fc28.2                             
+  texlive-base.x86_64 7:20170520-37.fc28                                        
+  texlive-beamer.noarch 6:svn36461.3.36-47.fc28.2                               
+  texlive-bera.noarch 6:svn20031.0-47.fc28.2                                    
+  texlive-beton.noarch 6:svn15878.0-47.fc28.2                                   
+  texlive-bibtex.x86_64 7:20170520-37.fc28                                      
+  texlive-bookman.noarch 6:svn31835.0-47.fc28.2                                 
+  texlive-booktabs.noarch 6:svn40846-47.fc28.2                                  
+  texlive-breakurl.noarch 6:svn29901.1.40-47.fc28.2                             
+  texlive-breqn.noarch 6:svn38099.0.98d-47.fc28.2                               
+  texlive-caption.noarch 6:svn41409-47.fc28.2                                   
+  texlive-carlisle.noarch 6:svn18258.0-47.fc28.2                                
+  texlive-charter.noarch 6:svn15878.0-47.fc28.2                                 
+  texlive-chngcntr.noarch 6:svn17157.1.0a-47.fc28.2                             
+  texlive-cite.noarch 6:svn36428.5.5-47.fc28.2                                  
+  texlive-cm.noarch 6:svn32865.0-47.fc28.2                                      
+  texlive-cm-super.noarch 6:svn15878.0-47.fc28.2                                
+  texlive-cmap.noarch 6:svn41168-47.fc28.2                                      
+  texlive-cmextra.noarch 6:svn32831.0-47.fc28.2                                 
+  texlive-collection-basic.noarch 6:svn41149-47.20160520.fc28                   
+  texlive-collection-fontsrecommended.noarch 6:svn35830.0-47.20160520.fc28      
+  texlive-collection-latex.noarch 6:svn41011-47.20160520.fc28                   
+  texlive-collection-latexrecommended.noarch 6:svn35765.0-47.20160520.fc28      
+  texlive-colortbl.noarch 6:svn29803.v1.0a-47.fc28.2                            
+  texlive-courier.noarch 6:svn35058.0-47.fc28.2                                 
+  texlive-crop.noarch 6:svn15878.1.5-47.fc28.2                                  
+  texlive-csquotes.noarch 6:svn39538-47.fc28.2                                  
+  texlive-ctable.noarch 6:svn38672-47.fc28.2                                    
+  texlive-currfile.noarch 6:svn40725-47.fc28.2                                  
+  texlive-dvipdfmx.x86_64 7:20170520-37.fc28                                    
+  texlive-dvipdfmx-def.noarch 6:svn40328-47.fc28.2                              
+  texlive-dvips.x86_64 7:20170520-37.fc28                                       
+  texlive-dvisvgm-def.noarch 6:svn41011-47.fc28.2                               
+  texlive-ec.noarch 6:svn25033.1.0-47.fc28.2                                    
+  texlive-enctex.noarch 6:svn34957.0-47.fc28.2                                  
+  texlive-enumitem.noarch 6:svn24146.3.5.2-47.fc28.2                            
+  texlive-environ.noarch 6:svn33821.0.3-47.fc28.2                               
+  texlive-epsf.noarch 6:svn21461.2.7.4-47.fc28.2                                
+  texlive-eso-pic.noarch 6:svn37925.2.0g-47.fc28.2                              
+  texlive-etex.noarch 6:svn37057.0-47.fc28.2                                    
+  texlive-etex-pkg.noarch 6:svn39355-47.fc28.2                                  
+  texlive-etoolbox.noarch 6:svn38031.2.2a-47.fc28.2                             
+  texlive-euenc.noarch 6:svn19795.0.1h-47.fc28.2                                
+  texlive-euler.noarch 6:svn17261.2.5-47.fc28.2                                 
+  texlive-euro.noarch 6:svn22191.1.1-47.fc28.2                                  
+  texlive-eurosym.noarch 6:svn17265.1.4_subrfix-47.fc28.2                       
+  texlive-extsizes.noarch 6:svn17263.1.4a-47.fc28.2                             
+  texlive-fancybox.noarch 6:svn18304.1.4-47.fc28.2                              
+  texlive-fancyhdr.noarch 6:svn15878.3.1-47.fc28.2                              
+  texlive-fancyref.noarch 6:svn15878.0.9c-47.fc28.2                             
+  texlive-fancyvrb.noarch 6:svn18492.2.8-47.fc28.2                              
+  texlive-filecontents.noarch 6:svn24250.1.3-47.fc28.2                          
+  texlive-filehook.noarch 6:svn24280.0.5d-47.fc28.2                             
+  texlive-finstrut.noarch 6:svn21719.0.5-47.fc28.2                              
+  texlive-fix2col.noarch 6:svn38770-47.fc28.2                                   
+  texlive-float.noarch 6:svn15878.1.3d-47.fc28.2                                
+  texlive-fontspec.noarch 6:svn41262-47.fc28.2                                  
+  texlive-footmisc.noarch 6:svn23330.5.5b-47.fc28.2                             
+  texlive-fp.noarch 6:svn15878.0-47.fc28.2                                      
+  texlive-fpl.noarch 6:svn15878.1.002-47.fc28.2                                 
+  texlive-geometry.noarch 6:svn19716.5.6-47.fc28.2                              
+  texlive-glyphlist.noarch 7:20170520-37.fc28                                   
+  texlive-graphics.noarch 6:svn41015-47.fc28.2                                  
+  texlive-graphics-cfg.noarch 6:svn40269-47.fc28.2                              
+  texlive-graphics-def.noarch 6:svn41879-47.fc28.2                              
+  texlive-gsftopk.x86_64 7:20170520-37.fc28                                     
+  texlive-helvetic.noarch 6:svn31835.0-47.fc28.2                                
+  texlive-hyperref.noarch 6:svn41396-47.fc28.2                                  
+  texlive-hyph-utf8.noarch 6:svn41189-47.fc28.2                                 
+  texlive-hyphen-base.noarch 6:svn41138-47.fc28.2                               
+  texlive-ifetex.noarch 6:svn24853.1.2-47.fc28.2                                
+  texlive-ifluatex.noarch 6:svn41346-47.fc28.2                                  
+  texlive-ifplatform.noarch 6:svn21156.0.4-47.fc28.2                            
+  texlive-iftex.noarch 6:svn29654.0.2-47.fc28.2                                 
+  texlive-ifxetex.noarch 6:svn19685.0.5-47.fc28.2                               
+  texlive-inconsolata.noarch 6:svn39839-47.fc28.2                               
+  texlive-index.noarch 6:svn24099.4.1beta-47.fc28.2                             
+  texlive-jknapltx.noarch 6:svn19440.0-47.fc28.2                                
+  texlive-kastrup.noarch 6:svn15878.0-47.fc28.2                                 
+  texlive-knuth-lib.noarch 6:svn35820.0-47.fc28.2                               
+  texlive-knuth-local.noarch 6:svn38627-47.fc28.2                               
+  texlive-koma-script.noarch 6:svn41508-47.fc28.2                               
+  texlive-kpathsea.x86_64 7:20170520-37.fc28                                    
+  texlive-l3experimental.noarch 6:svn41163-47.fc28.2                            
+  texlive-l3kernel.noarch 6:svn41246-47.fc28.2                                  
+  texlive-l3packages.noarch 6:svn41246-47.fc28.2                                
+  texlive-latex.noarch 7:20170520-37.fc28                                       
+  texlive-latex-fonts.noarch 6:svn28888.0-47.fc28.2                             
+  texlive-latexconfig.noarch 6:svn40274-47.fc28.2                               
+  texlive-lib.x86_64 7:20170520-37.fc28                                         
+  texlive-lineno.noarch 6:svn21442.4.41-47.fc28.2                               
+  texlive-listings.noarch 6:svn37534.1.6-47.fc28.2                              
+  texlive-lm.noarch 6:svn28119.2.004-47.fc28.2                                  
+  texlive-lm-math.noarch 6:svn36915.1.959-47.fc28.2                             
+  texlive-ltabptch.noarch 6:svn17533.1.74d-47.fc28.2                            
+  texlive-ltxmisc.noarch 6:svn21927.0-47.fc28.2                                 
+  texlive-lua-alt-getopt.noarch 6:svn29349.0.7.0-47.fc28.2                      
+  texlive-lualatex-math.noarch 6:svn40621-47.fc28.2                             
+  texlive-lualibs.noarch 6:svn40370-47.fc28.2                                   
+  texlive-luaotfload.noarch 7:20170520-37.fc28                                  
+  texlive-luatex.x86_64 7:20170520-37.fc28                                      
+  texlive-luatexbase.noarch 6:svn38550-47.fc28.2                                
+  texlive-makeindex.x86_64 7:20170520-37.fc28                                   
+  texlive-manfnt-font.noarch 6:svn35799.0-47.fc28.2                             
+  texlive-marginnote.noarch 6:svn41382-47.fc28.2                                
+  texlive-marvosym.noarch 6:svn29349.2.2a-47.fc28.2                             
+  texlive-mathpazo.noarch 6:svn15878.1.003-47.fc28.2                            
+  texlive-mathtools.noarch 6:svn38833-47.fc28.2                                 
+  texlive-mdwtools.noarch 6:svn15878.1.05.4-47.fc28.2                           
+  texlive-memoir.noarch 6:svn41203-47.fc28.2                                    
+  texlive-metafont.x86_64 7:20170520-37.fc28                                    
+  texlive-metalogo.noarch 6:svn18611.0.12-47.fc28.2                             
+  texlive-mflogo.noarch 6:svn38628-47.fc28.2                                    
+  texlive-mflogo-font.noarch 6:svn36898.1.002-47.fc28.2                         
+  texlive-mfnfss.noarch 6:svn19410.0-47.fc28.2                                  
+  texlive-mfware.x86_64 7:20170520-37.fc28                                      
+  texlive-microtype.noarch 6:svn41127-47.fc28.2                                 
+  texlive-mparhack.noarch 6:svn15878.1.4-47.fc28.2                              
+  texlive-mptopdf.noarch 7:20170520-37.fc28                                     
+  texlive-ms.noarch 6:svn29849.0-47.fc28.2                                      
+  texlive-multido.noarch 6:svn18302.1.42-47.fc28.2                              
+  texlive-natbib.noarch 6:svn20668.8.31b-47.fc28.2                              
+  texlive-ncntrsbk.noarch 6:svn31835.0-47.fc28.2                                
+  texlive-ntgclass.noarch 6:svn15878.2.1a-47.fc28.2                             
+  texlive-oberdiek.noarch 7:20170520-37.fc28                                    
+  texlive-palatino.noarch 6:svn31835.0-47.fc28.2                                
+  texlive-paralist.noarch 6:svn39247-47.fc28.2                                  
+  texlive-parallel.noarch 6:svn15878.0-47.fc28.2                                
+  texlive-parskip.noarch 6:svn19963.2.0-47.fc28.2                               
+  texlive-pdfpages.noarch 6:svn40638-47.fc28.2                                  
+  texlive-pdftex.x86_64 7:20170520-37.fc28                                      
+  texlive-pdftex-def.noarch 6:svn22653.0.06d-47.fc28.2                          
+  texlive-pgf.noarch 6:svn40966-47.fc28.2                                       
+  texlive-plain.noarch 6:svn40274-47.fc28.2                                     
+  texlive-powerdot.noarch 6:svn38984-47.fc28.2                                  
+  texlive-psfrag.noarch 6:svn15878.3.04-47.fc28.2                               
+  texlive-pslatex.noarch 6:svn16416.0-47.fc28.2                                 
+  texlive-psnfss.noarch 6:svn33946.9.2a-47.fc28.2                               
+  texlive-pspicture.noarch 6:svn15878.0-47.fc28.2                               
+  texlive-pst-3d.noarch 6:svn17257.1.10-47.fc28.2                               
+  texlive-pst-blur.noarch 6:svn15878.2.0-47.fc28.2                              
+  texlive-pst-coil.noarch 6:svn37377.1.07-47.fc28.2                             
+  texlive-pst-eps.noarch 6:svn15878.1.0-47.fc28.2                               
+  texlive-pst-fill.noarch 6:svn15878.1.01-47.fc28.2                             
+  texlive-pst-grad.noarch 6:svn15878.1.06-47.fc28.2                             
+  texlive-pst-math.noarch 6:svn34786.0.63-47.fc28.2                             
+  texlive-pst-node.noarch 6:svn40743-47.fc28.2                                  
+  texlive-pst-ovl.noarch 6:svn40873-47.fc28.2                                   
+  texlive-pst-pdf.noarch 7:20170520-37.fc28                                     
+  texlive-pst-plot.noarch 6:svn41242-47.fc28.2                                  
+  texlive-pst-slpe.noarch 6:svn24391.1.31-47.fc28.2                             
+  texlive-pst-text.noarch 6:svn15878.1.00-47.fc28.2                             
+  texlive-pst-tools.noarch 6:svn34067.0.05-47.fc28.2                            
+  texlive-pst-tree.noarch 6:svn24142.1.12-47.fc28.2                             
+  texlive-pstricks.noarch 6:svn41321-47.fc28.2                                  
+  texlive-pstricks-add.noarch 6:svn40744-47.fc28.2                              
+  texlive-pxfonts.noarch 6:svn15878.0-47.fc28.2                                 
+  texlive-qstest.noarch 6:svn15878.0-47.fc28.2                                  
+  texlive-rcs.noarch 6:svn15878.0-47.fc28.2                                     
+  texlive-rotating.noarch 6:svn16832.2.16b-47.fc28.2                            
+  texlive-rsfs.noarch 6:svn15878.0-47.fc28.2                                    
+  texlive-sansmath.noarch 6:svn17997.1.1-47.fc28.2                              
+  texlive-sansmathaccent.noarch 6:svn30187.0-47.fc28.2                          
+  texlive-sauerj.noarch 6:svn15878.0-47.fc28.2                                  
+  texlive-section.noarch 6:svn20180.0-47.fc28.2                                 
+  texlive-seminar.noarch 6:svn34011.1.62-47.fc28.2                              
+  texlive-sepnum.noarch 6:svn20186.2.0-47.fc28.2                                
+  texlive-setspace.noarch 6:svn24881.6.7a-47.fc28.2                             
+  texlive-showexpl.noarch 6:svn32737.v0.3l-47.fc28.2                            
+  texlive-soul.noarch 6:svn15878.2.4-47.fc28.2                                  
+  texlive-subfig.noarch 6:svn15878.1.3-47.fc28.2                                
+  texlive-symbol.noarch 6:svn31835.0-47.fc28.2                                  
+  texlive-tetex.noarch 7:20170520-37.fc28                                       
+  texlive-tex.x86_64 7:20170520-37.fc28                                         
+  texlive-tex-gyre.noarch 6:svn18651.2.004-47.fc28.2                            
+  texlive-tex-gyre-math.noarch 6:svn41264-47.fc28.2                             
+  texlive-tex-ini-files.noarch 6:svn40533-47.fc28.2                             
+  texlive-texconfig.noarch 7:20170520-37.fc28                                   
+  texlive-texlive-common-doc.noarch 6:svn40682-47.fc28.2                        
+  texlive-texlive-docindex.noarch 6:svn41430-47.fc28.2                          
+  texlive-texlive-en.noarch 7:20170520-37.fc28                                  
+  texlive-texlive-msg-translations.noarch 6:svn41431-47.fc28.2                  
+  texlive-texlive-scripts.noarch 7:20170520-37.fc28                             
+  texlive-texlive.infra.noarch 7:20170520-37.fc28                               
+  texlive-textcase.noarch 6:svn15878.0-47.fc28.2                                
+  texlive-thumbpdf.noarch 7:20170520-37.fc28                                    
+  texlive-times.noarch 6:svn35058.0-47.fc28.2                                   
+  texlive-tipa.noarch 6:svn29349.1.3-47.fc28.2                                  
+  texlive-tools.noarch 6:svn40934-47.fc28.2                                     
+  texlive-trimspaces.noarch 6:svn15878.1.1-47.fc28.2                            
+  texlive-txfonts.noarch 6:svn15878.0-47.fc28.2                                 
+  texlive-type1cm.noarch 6:svn21820.0-47.fc28.2                                 
+  texlive-typehtml.noarch 6:svn17134.0-47.fc28.2                                
+  texlive-ucharcat.noarch 6:svn38907-47.fc28.2                                  
+  texlive-ucs.noarch 6:svn35853.2.2-47.fc28.2                                   
+  texlive-underscore.noarch 6:svn18261.0-47.fc28.2                              
+  texlive-unicode-data.noarch 6:svn39808-47.fc28.2                              
+  texlive-unicode-math.noarch 6:svn38462-47.fc28.2                              
+  texlive-updmap-map.noarch 6:svn41159-47.fc28.2                                
+  texlive-url.noarch 6:svn32528.3.4-47.fc28.2                                   
+  texlive-utopia.noarch 6:svn15878.0-47.fc28.2                                  
+  texlive-varwidth.noarch 6:svn24104.0.92-47.fc28.2                             
+  texlive-wasy.noarch 6:svn35831.0-47.fc28.2                                    
+  texlive-wasy2-ps.noarch 6:svn35830.0-47.fc28.2                                
+  texlive-wasysym.noarch 6:svn15878.2.0-47.fc28.2                               
+  texlive-xcolor.noarch 6:svn41044-47.fc28.2                                    
+  texlive-xdvi.x86_64 7:20170520-37.fc28                                        
+  texlive-xkeyval.noarch 6:svn35741.2.7a-47.fc28.2                              
+  texlive-xunicode.noarch 6:svn30466.0.981-47.fc28.2                            
+  texlive-zapfchan.noarch 6:svn31835.0-47.fc28.2                                
+  texlive-zapfding.noarch 6:svn31835.0-47.fc28.2                                
+  tk.x86_64 1:8.6.8-1.fc28                                                      
+  tk-devel.x86_64 1:8.6.8-1.fc28                                                
+  tre.x86_64 0.8.0-22.20140228gitc2f5d13.fc28                                   
+  tre-common.noarch 0.8.0-22.20140228gitc2f5d13.fc28                            
+  tre-devel.x86_64 0.8.0-22.20140228gitc2f5d13.fc28                             
+  ttmkfdir.x86_64 3.0.9-54.fc28                                                 
+  tzdata-java.noarch 2018e-1.fc28                                               
+  urw-base35-bookman-fonts.noarch 20170801-10.fc28                              
+  urw-base35-c059-fonts.noarch 20170801-10.fc28                                 
+  urw-base35-d050000l-fonts.noarch 20170801-10.fc28                             
+  urw-base35-fonts.noarch 20170801-10.fc28                                      
+  urw-base35-fonts-common.noarch 20170801-10.fc28                               
+  urw-base35-gothic-fonts.noarch 20170801-10.fc28                               
+  urw-base35-nimbus-mono-ps-fonts.noarch 20170801-10.fc28                       
+  urw-base35-nimbus-roman-fonts.noarch 20170801-10.fc28                         
+  urw-base35-nimbus-sans-fonts.noarch 20170801-10.fc28                          
+  urw-base35-p052-fonts.noarch 20170801-10.fc28                                 
+  urw-base35-standard-symbols-ps-fonts.noarch 20170801-10.fc28                  
+  urw-base35-z003-fonts.noarch 20170801-10.fc28                                 
+  xdg-utils.noarch 1.1.3-2.fc28                                                 
+  xorg-x11-font-utils.x86_64 1:7.5-38.fc28                                      
+  xorg-x11-fonts-Type1.noarch 7.5-19.fc28                                       
+  xorg-x11-server-utils.x86_64 7.7-24.fc28                                      
+  xz-devel.x86_64 5.2.4-2.fc28                                                  
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+  zziplib.x86_64 0.13.68-1.fc28                                                 
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides R
+R-3.5.0-4.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-r         1.0.0  [required by orrandomForest]
+  - install ocamlbuild     0.12.0 [required by dolog]
+  - install dolog          3.0    [required by orrandomForest]
+  - install orrandomForest 1.0.0
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[dolog.3.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[orrandomForest.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-r.1.0.0
+-> installed ocamlbuild.0.12.0
+-> installed dolog.3.0
+[ERROR] The compilation of orrandomForest failed at "/usr/bin/R CMD BATCH files/install_randomForest.r".
+
+#=== ERROR while compiling orrandomForest.1.0.0 ===============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/orrandomForest.1.0.0
+# command              /usr/bin/R CMD BATCH files/install_randomForest.r
+# exit-code            1
+# env-file             ~/.opam/log/orrandomForest-10-629056.env
+# output-file          ~/.opam/log/orrandomForest-10-629056.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build orrandomForest 1.0.0
++- 
++- The following changes have been performed
+| - install conf-r     1.0.0
+| - install dolog      3.0
+| - install ocamlbuild 0.12.0
++- 
+
+<><> orrandomForest.1.0.0 troubleshooting <><><><><><><><><><><><><><><><><><><>
+=> Please interact with R to install needed things in user-space:
+   R
+   install.packages('Marix', repos='http://cran.r-project.org')
+   install.packages('randomForest', repos='http://cran.r-project.org')
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180728025249.export"
+31 1532746216 1532746383
