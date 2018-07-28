@@ -1,0 +1,104 @@
+$ opam depext -iy -j 2 ppx_fun.0.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by topkg]
+  - install ppx_traverse_builtins   v0.10.0 [required by ppx_core]
+  - install base-num                base    [required by num]
+  - install ocamlbuild              0.12.0  [required by ppx_fun]
+  - install ocaml-compiler-libs     v0.10.0 [required by ppx_core]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppx_driver]
+  - install num                     0       [required by sexplib]
+  - install topkg                   0.9.1   [required by ppx_fun]
+  - install ppx_ast                 v0.10.0 [required by ppx_core]
+  - install sexplib                 v0.10.0 [required by base, stdio]
+  - install base                    v0.10.0 [required by ppx_core]
+  - install stdio                   v0.10.0 [required by ppx_core]
+  - install ppx_core                v0.10.0 [required by ppx_fun]
+  - install ppx_optcomp             v0.10.0 [required by ppx_driver]
+  - install ppx_driver              v0.10.4 [required by ppx_fun]
+  - install ppx_fun                 0.0.1
+===== 16 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.10.0] found in cache
+[ocaml-compiler-libs.v0.10.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_ast.v0.10.0] found in cache
+[ppx_core.v0.10.0] found in cache
+[ppx_driver.v0.10.4] found in cache
+[ppx_fun.0.0.1] found in cache
+[ppx_optcomp.v0.10.0] found in cache
+[ppx_traverse_builtins.v0.10.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.10.0] found in cache
+[stdio.v0.10.0] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-num.base
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.10.0
+-> installed ppx_traverse_builtins.v0.10.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib.v0.10.0
+-> installed ppx_ast.v0.10.0
+-> installed topkg.0.9.1
+-> installed base.v0.10.0
+-> installed stdio.v0.10.0
+-> installed ppx_core.v0.10.0
+-> installed ppx_optcomp.v0.10.0
+-> installed ppx_driver.v0.10.4
+[ERROR] The compilation of ppx_fun failed at "/home/opam/.opam/4.05/bin/ocaml pkg/pkg.ml build --tests true".
+
+#=== ERROR while compiling ppx_fun.0.0.1 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/ppx_fun.0.0.1
+# command              ~/.opam/4.05/bin/ocaml pkg/pkg.ml build --tests true
+# exit-code            1
+# env-file             ~/.opam/log/ppx_fun-11-59956a.env
+# output-file          ~/.opam/log/ppx_fun-11-59956a.out
+### output ###
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package ppx_core -package ppx_tools.metaquot -modules src/ppx_fun.ml > src/ppx_fun.ml.depends
+# + ocamlfind ocamldep -package ppx_core -package ppx_tools.metaquot -modules src/ppx_fun.ml > src/ppx_fun.ml.depends
+# ocamlfind: Package `ppx_tools.metaquot' not found
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'pkg/META' 'src/ppx_fun.native' 'test/test.native']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_fun 0.0.1
++- 
++- The following changes have been performed
+| - install base                    v0.10.0
+| - install base-num                base
+| - install num                     0
+| - install ocaml-compiler-libs     v0.10.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_ast                 v0.10.0
+| - install ppx_core                v0.10.0
+| - install ppx_driver              v0.10.4
+| - install ppx_optcomp             v0.10.0
+| - install ppx_traverse_builtins   v0.10.0
+| - install result                  1.3
+| - install sexplib                 v0.10.0
+| - install stdio                   v0.10.0
+| - install topkg                   0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180728011849.export"
+31 1532740726 1532740796
