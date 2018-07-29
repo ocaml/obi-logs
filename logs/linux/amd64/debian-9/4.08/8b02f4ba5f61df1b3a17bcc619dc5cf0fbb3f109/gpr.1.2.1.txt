@@ -167,8 +167,10 @@ The following actions will be performed:
 [core.v0.11.2] found in cache
 [core_kernel.v0.11.1] found in cache
 [fieldslib.v0.11.0] found in cache
+[gpr.1.2.1] found in cache
 [gsl.1.22.0] found in cache
 [jane-street-headers.v0.11.0] found in cache
+[lacaml.9.2.2] found in cache
 [num.1.1] found in cache
 [ocaml-compiler-libs.v0.11.0] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
@@ -180,8 +182,6 @@ The following actions will be performed:
 [ppx_bench.v0.11.0] found in cache
 [ppx_bin_prot.v0.11.1] found in cache
 [ppx_compare.v0.11.1] found in cache
-[gpr.1.2.1] downloaded from https://github.com/mmottl/gpr/releases/download/v1.2.1/gpr-1.2.1.tar.gz
-[lacaml.9.2.2] downloaded from https://github.com/mmottl/lacaml/releases/download/v9.2.2/lacaml-9.2.2.tar.gz
 [ppx_custom_printf.v0.11.0] found in cache
 [ppx_derivers.1.0] found in cache
 [ppx_enumerate.v0.11.1] found in cache
@@ -235,17 +235,17 @@ The following actions will be performed:
 -> installed spawn.v0.12.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
--> installed lacaml.9.2.2
--> installed typerep.v0.11.0
 -> installed gsl.1.22.0
+-> installed typerep.v0.11.0
+-> installed lacaml.9.2.2
 
 #=== ERROR while compiling ocaml-migrate-parsetree.1.0.11 =====================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.08/.opam-switch/build/ocaml-migrate-parsetree.1.0.11
 # command              ~/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71
 # exit-code            1
-# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-3774ad.env
-# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-3774ad.out
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-cfdb44.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-cfdb44.out
 ### output ###
 #        ocaml src/ast-version,src/compiler-functions-file (exit 1)
 # (cd _build/default/src && /home/opam/.opam/4.08/bin/ocaml config/gen.ml 4.08.0+dev0-2018-04-09)
@@ -285,5 +285,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180728201701.export"
-31 1532809004 1532809134
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180729202821.export"
+31 1532896087 1532896167

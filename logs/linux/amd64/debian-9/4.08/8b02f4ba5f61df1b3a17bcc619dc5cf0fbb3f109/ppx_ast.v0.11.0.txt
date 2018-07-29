@@ -20,12 +20,12 @@ The following actions will be performed:
 [base.v0.11.1] found in cache
 [ocaml-compiler-libs.v0.11.0] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
-[ppx_ast.v0.11.0] found in cache
 [ppx_derivers.1.0] found in cache
 [ppxlib.0.2.1] found in cache
 [result.1.3] found in cache
 [sexplib0.v0.11.0] found in cache
 [stdio.v0.11.0] found in cache
+[ppx_ast.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_ast-v0.11.0.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed ocaml-compiler-libs.v0.11.0
@@ -41,8 +41,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.08/.opam-switch/build/ocaml-migrate-parsetree.1.0.11
 # command              ~/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71
 # exit-code            1
-# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-27656f.env
-# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-27656f.out
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-7fbc68.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-7fbc68.out
 ### output ###
 #        ocaml src/ast-version,src/compiler-functions-file (exit 1)
 # (cd _build/default/src && /home/opam/.opam/4.08/bin/ocaml config/gen.ml 4.08.0+dev0-2018-04-09)
@@ -65,5 +65,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180728201948.export"
-31 1532809186 1532809214
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180729202418.export"
+31 1532895855 1532895905
