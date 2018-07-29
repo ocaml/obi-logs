@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ocamlnet.3.6.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for ocamlnet.3.6.3: The following dependencies couldn't be met:
+          - ocamlnet -> ocaml < 4.01.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ocamlnet.3.6.3 returned 20
+20 1532821277 1532821279
