@@ -1,0 +1,93 @@
+$ opam depext -iy -j 2 mccs.1.1+2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+glpk
+m4
+# The following new OS packages need to be installed: glpk
+The following command needs to be run through "sudo":
+    zypper --non-interactive install glpk
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  glpk libglpk36
+
+2 new packages to install.
+Overall download size: 450.3 KiB. Already cached: 0 B. After the operation, additional 1.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libglpk36-4.55-6.1.x86_64 (1/2), 393.4 KiB (956.1 KiB unpacked)
+Retrieving: libglpk36-4.55-6.1.x86_64.rpm [..done]
+Retrieving package glpk-4.55-6.1.x86_64 (2/2),  56.9 KiB (232.0 KiB unpacked)
+Retrieving: glpk-4.55-6.1.x86_64.rpm [done]
+Checking for file conflicts: [.......done]
+(1/2) Installing: libglpk36-4.55-6.1.x86_64 [...........done]
+(2/2) Installing: glpk-4.55-6.1.x86_64 [........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes base   [required by extlib]
+  - install conf-perl  1      [required by cudf]
+  - install ocamlbuild 0.12.0 [required by cudf]
+  - install conf-glpk  1      [required by mccs]
+  - install cppo       1.6.4  [required by extlib]
+  - install extlib     1.7.5  [required by cudf]
+  - install cudf       0.9    [required by mccs]
+  - install mccs       1.1+2
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[cudf.0.9] found in cache
+[extlib.1.7.5] found in cache
+[mccs.1.1+2] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-glpk.1
+-> installed conf-perl.1
+-> installed cppo.1.6.4
+-> installed extlib.1.7.5
+-> installed ocamlbuild.0.12.0
+-> installed cudf.0.9
+[ERROR] The compilation of mccs failed at "/home/opam/.opam/4.06/bin/jbuilder build -p mccs".
+
+#=== ERROR while compiling mccs.1.1+2 =========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mccs.1.1+2
+# command              ~/.opam/4.06/bin/jbuilder build -p mccs
+# exit-code            1
+# env-file             ~/.opam/log/mccs-12-4aef26.env
+# output-file          ~/.opam/log/mccs-12-4aef26.out
+### output ###
+#          gcc src/glpk_solver.o (exit 1)
+# (cd _build/default/src && /usr/bin/gcc -I /home/opam/.opam/4.06/lib/ocaml -O2 -fno-strict-aliasing -fwrapv -fno-builtin-memcmp -fPIC -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cudf -I /home/opam/.opam/4.06/lib/extlib -g -I . -std=c++11 -o glpk_solver.o -c glpk_solver.cpp)
+# In file included from glpk_solver.cpp:11:0:
+# ./glpk_solver.h:15:18: fatal error: glpk.h: No such file or directory
+#  #include <glpk.h>
+#                   ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mccs 1.1+2
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install conf-glpk  1
+| - install conf-perl  1
+| - install cppo       1.6.4
+| - install cudf       0.9
+| - install extlib     1.7.5
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729063712.export"
+31 1532845774 1532846243

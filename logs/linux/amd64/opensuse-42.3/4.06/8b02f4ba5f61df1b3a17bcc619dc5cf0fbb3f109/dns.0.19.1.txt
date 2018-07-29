@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 dns.0.19.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for dns.0.19.1: The following dependencies couldn't be met:
+          - dns -> uri < 1.9.4 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns -> uri < 1.9.4 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=dns.0.19.1 returned 20
+20 1532843509 1532843511

@@ -1,0 +1,121 @@
+$ opam depext -iy -j 2 duppy.0.4.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+pcre-devel
+# The following new OS packages need to be installed: pcre-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install pcre-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 5 NEW packages are going to be installed:
+  libpcre16-0 libpcrecpp0 libpcreposix0 libstdc++-devel pcre-devel
+
+5 new packages to install.
+Overall download size: 416.3 KiB. Already cached: 0 B. After the operation, additional 714.7 KiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/5),   4.8 KiB (   72   B unpacked)
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [.done]
+Retrieving package libpcre16-0-8.39-11.1.x86_64 (2/5), 147.2 KiB (406.3 KiB unpacked)
+Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
+Retrieving package libpcrecpp0-8.39-11.1.x86_64 (3/5),  24.0 KiB ( 34.6 KiB unpacked)
+Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
+Retrieving package libpcreposix0-8.39-11.1.x86_64 (4/5),  15.7 KiB ( 10.2 KiB unpacked)
+Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
+Retrieving package pcre-devel-8.39-11.1.x86_64 (5/5), 224.5 KiB (263.5 KiB unpacked)
+Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
+Checking for file conflicts: [......done]
+(1/5) Installing: libstdc++-devel-4.8-11.16.x86_64 [.....done]
+(2/5) Installing: libpcre16-0-8.39-11.1.x86_64 [.........done]
+(3/5) Installing: libpcrecpp0-8.39-11.1.x86_64 [....done]
+(4/5) Installing: libpcreposix0-8.39-11.1.x86_64 [.....done]
+(5/5) Installing: pcre-devel-8.39-11.1.x86_64 [..........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install base-bytes      base    [required by pcre]
+  - install conf-pkg-config 1.1     [required by conf-libpcre]
+  - install base            v0.11.1 [required by pcre]
+  - install conf-libpcre    1       [required by pcre]
+  - install stdio           v0.11.0 [required by pcre]
+  - install configurator    v0.11.0 [required by pcre]
+  - install pcre            7.3.4   [required by duppy]
+  - install duppy           0.4.2
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[duppy.0.4.2] found in cache
+[pcre.7.3.4] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+[ERROR] The compilation of duppy failed at "/usr/bin/make".
+
+#=== ERROR while compiling duppy.0.4.2 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/duppy.0.4.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/duppy-12-130d46.env
+# output-file          ~/.opam/log/duppy-12-130d46.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.4.2/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.4.2/src'
+# making ._bcdi/duppy.di from duppy.mli
+# making ._d/duppy.d from duppy.ml
+# ocamlc.opt -thread -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/opam/.opam/4.06/include -Wall -DCAML_NAME_SPACE \
+# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include  \
+# 			  -I/home/opam/.opam/4.06/lib/pcre  -o duppy_stubs.o " duppy_stubs.c 
+# ar rcs libduppy_stubs.a  duppy_stubs.o
+# ocamlc.opt -thread -c -I /home/opam/.opam/4.06/lib/pcre duppy.mli
+# ocamlc.opt -thread -c -I /home/opam/.opam/4.06/lib/pcre duppy.ml
+# File "duppy.ml", line 89, characters 45-48:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# OCamlMakefile:952: recipe for target 'duppy.cmo' failed
+# make[2]: *** [duppy.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.4.2/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.4.2/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build duppy 0.4.2
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install conf-libpcre    1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install pcre            7.3.4
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729071048.export"
+31 1532847780 1532848271

@@ -1,0 +1,52 @@
+$ opam depext -iy -j 2 sodium.0.5.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes      base   [required by sodium]
+  - install ocamlbuild      0.12.0 [required by sodium]
+  - install conf-pkg-config 1.1    [required by conf-libsodium, ctypes]
+  - install ctypes          0.5.1  [required by sodium]
+  - install conf-libsodium  1      [required by sodium]
+  - install sodium          0.5.0
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.5.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[sodium.0.5.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of conf-libsodium failed at "/usr/bin/pkg-config libsodium".
+-> installed ocamlbuild.0.12.0
+-> installed ctypes.0.5.1
+
+#=== ERROR while compiling conf-libsodium.1 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-libsodium.1
+# command              /usr/bin/pkg-config libsodium
+# exit-code            1
+# env-file             ~/.opam/log/conf-libsodium-12-e4db2f.env
+# output-file          ~/.opam/log/conf-libsodium-12-e4db2f.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-libsodium 1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install ctypes          0.5.1
+| - install ocamlbuild      0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729060732.export"
+31 1532844218 1532844460

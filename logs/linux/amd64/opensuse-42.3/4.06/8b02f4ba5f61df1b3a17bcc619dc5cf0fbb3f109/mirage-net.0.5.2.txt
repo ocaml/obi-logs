@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-net.0.5.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for mirage-net.0.5.2: The following dependencies couldn't be met:
+          - mirage-net -> mirage < 0.9.1 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-net.0.5.2 returned 20
+20 1532846307 1532846312
