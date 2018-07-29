@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 pgx_unix.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for pgx_unix.0.1: The following dependencies couldn't be met:
+          - pgx_unix -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=pgx_unix.0.1 returned 20
+20 1532842360 1532842363

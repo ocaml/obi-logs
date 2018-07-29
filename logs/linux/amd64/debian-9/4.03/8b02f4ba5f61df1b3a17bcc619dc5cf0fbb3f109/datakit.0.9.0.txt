@@ -1,0 +1,35 @@
+$ opam depext -iy -j 2 datakit.0.9.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for datakit.0.9.0: The following dependencies couldn't be met:
+          - datakit -> conduit < 0.99 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> conduit < 0.99 -> pa_sexp_conv < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> conduit < 0.99 -> ipaddr (>= 2.5.0 & < 2.8.0) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> conduit < 0.99 -> ipaddr (>= 2.5.0 & < 2.8.0) -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> conduit < 0.99 -> ipaddr (>= 2.5.0 & < 2.8.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> datakit-server = 0.9.0 -> mirage-types-lwt >= 2.6.0 -> mirage-types >= 2.6.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> datakit-server = 0.9.0 -> mirage-types-lwt >= 2.6.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> datakit-server = 0.9.0 -> mirage-flow-lwt -> mirage-flow >= 1.2.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> datakit-server = 0.9.0 -> mirage-flow-lwt -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - datakit -> git >= 1.9.3
+          - datakit -> irmin = 0.12.0
+        Your request can't be satisfied:
+          - No available version of datakit-server satisfies the constraints
+          - No available version of ipaddr satisfies the constraints
+          - conduit (>= 0.15.0 & < 1.0.0) is in conflict with mirage-types-lwt < 3.0.0
+          - git = 1.9.3 is in conflict with mirage-flow > 1.1.0
+          - irmin = 0.12.0 is in conflict with git >= 1.10.0
+          - irmin = 0.12.0 is in conflict with mirage-types >= 3.0.0
+          - mirage-types (>= 2.6.0 & < 3.0.0) is in conflict with ipaddr < 2.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=datakit.0.9.0 returned 20
+20 1532842185 1532842201
