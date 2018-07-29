@@ -25,16 +25,16 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/CamlGI.0.6
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/CamlGI-11-57f057.env
-# output-file          ~/.opam/log/CamlGI-11-57f057.out
+# env-file             ~/.opam/log/CamlGI-10-57f057.env
+# output-file          ~/.opam/log/CamlGI-10-57f057.out
 ### output ###
 # Makefile:134: .depend: No such file or directory
 # ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
 # ocamlc -dtypes -I +threads -c camlGI.mli
 # ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
-# File "/tmp/ocamlpp1ea08e", line 383, characters 14-31:
+# File "/tmp/ocamlpp857bf7", line 383, characters 14-31:
 # Warning 3: deprecated: Stdlib.String.unsafe_set
-# File "/tmp/ocamlpp1ea08e", line 383, characters 32-33:
+# File "/tmp/ocamlpp857bf7", line 383, characters 32-33:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
 # Makefile:52: recipe for target 'camlGI.cma' failed
@@ -53,5 +53,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180728204408.export"
-31 1532810646 1532810756
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180729210015.export"
+31 1532898013 1532898122

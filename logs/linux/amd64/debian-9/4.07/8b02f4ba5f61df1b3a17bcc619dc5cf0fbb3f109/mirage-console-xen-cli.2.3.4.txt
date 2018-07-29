@@ -161,27 +161,27 @@ The following actions will be performed:
 -> installed ppx_cstruct.3.2.1
 -> installed mirage-profile.0.8.2
 -> installed shared-memory-ring.3.0.1
--> installed ppxlib.0.3.0
 -> installed shared-memory-ring-lwt.3.0.1
 -> installed topkg.0.9.1
--> installed ppx_sexp_conv.v0.11.2
+-> installed ppxlib.0.3.0
 -> installed cmdliner.1.0.2
+-> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
--> installed fmt.0.8.5
 [ERROR] The compilation of xenctrl failed at "/usr/bin/make".
+-> installed xen-evtchn.2.0.0
+-> installed xen-gnt.3.0.1
+-> installed xenstore.2.0.0
+-> installed fmt.0.8.5
 -> installed mirage-device.1.1.0
 -> installed mirage-flow.1.5.0
 -> installed logs.0.6.2
 -> installed mirage-console.2.3.5
 -> installed mirage-unix.3.0.8
--> installed xen-evtchn.2.0.0
--> installed xen-gnt.3.0.1
--> installed xenstore.2.0.0
+-> installed xenstore_transport.1.0.0
 -> installed mirage-console-lwt.2.3.5
 -> installed mirage-console-unix.2.3.5
--> installed xenstore_transport.1.0.0
 -> installed mirage-console-xen-proto.2.3.5
 -> installed mirage-console-xen-backend.2.3.3
 
@@ -190,8 +190,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/xenctrl.0.9.31
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/xenctrl-11-0ba55e.env
-# output-file          ~/.opam/log/xenctrl-11-0ba55e.out
+# env-file             ~/.opam/log/xenctrl-11-6eb9f4.env
+# output-file          ~/.opam/log/xenctrl-11-6eb9f4.out
 ### output ###
 # File "setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: Stdlib.String.lowercase
@@ -396,5 +396,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180728210629.export"
-31 1532811981 1532812102
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180729204359.export"
+31 1532897032 1532897138

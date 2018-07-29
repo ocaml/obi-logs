@@ -105,8 +105,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/hardcaml-waveterm.0.2.0
 # command              ~/.opam/4.07/bin/ocaml pkg/pkg.ml build
 # exit-code            1
-# env-file             ~/.opam/log/hardcaml-waveterm-11-33a8b3.env
-# output-file          ~/.opam/log/hardcaml-waveterm-11-33a8b3.out
+# env-file             ~/.opam/log/hardcaml-waveterm-10-33a8b3.env
+# output-file          ~/.opam/log/hardcaml-waveterm-10-33a8b3.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package lambda-term -package hardcaml -package astring -modules src/lTerm_waveterm_compat.mli > src/lTerm_waveterm_compat.mli.depends
@@ -178,6 +178,9 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/wave.cmo src/wave.ml
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/gfx.cmo src/gfx.ml
 # ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/render.cmo src/render.ml
+# + ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/gfx.cmo src/gfx.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/write.cmo src/write.ml
 # + ocamlfind ocamlc -c -g -bin-annot -package lambda-term -package hardcaml -package astring -I src -o src/wave.cmo src/wave.ml
 # ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
 # File "src/wave.ml", line 1:
@@ -239,5 +242,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180728205813.export"
-31 1532811491 1532811662
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180729204538.export"
+31 1532897136 1532897340
