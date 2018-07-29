@@ -1,0 +1,14 @@
+$ opam depext -iy -j 2 conf-mpi.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+openmpi-dev
+pkgconfig
+pkgconf
+# The following new OS packages need to be installed: openmpi-dev
+The following command needs to be run through "sudo":
+    apk add openmpi-dev
+ERROR: unsatisfiable constraints:
+  openmpi-dev (missing):
+    required by: world[openmpi-dev]
+OS package installation failed
+1 1532902740 1532902743

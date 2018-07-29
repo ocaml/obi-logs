@@ -1,0 +1,137 @@
+$ opam depext -iy -j 2 jingoo.1.2.13
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+pcre-dev
+pkgconfig
+m4
+pkgconf
+# The following new OS packages need to be installed: pcre-dev
+The following command needs to be run through "sudo":
+    apk add pcre-dev
+(1/5) Installing libpcre16 (8.41-r1)
+(2/5) Installing libpcre32 (8.41-r1)
+(3/5) Installing pcre (8.41-r1)
+(4/5) Installing libpcrecpp (8.41-r1)
+(5/5) Installing pcre-dev (8.41-r1)
+Executing busybox-1.27.2-r11.trigger
+OK: 207 MiB in 78 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3     [required by topkg]
+  - install sexplib0        v0.11.0 [required by base]
+  - install base-bytes      base    [required by ounit, pcre]
+  - install ocamlbuild      0.12.0  [required by ounit, uutf]
+  - install conf-pkg-config 1.1     [required by conf-libpcre]
+  - install base            v0.11.1 [required by pcre]
+  - install uchar           0.0.2   [required by uutf]
+  - install topkg           0.9.1   [required by uutf]
+  - install ounit           2.0.8   [required by jingoo]
+  - install conf-libpcre    1       [required by pcre]
+  - install stdio           v0.11.0 [required by pcre]
+  - install uutf            1.0.1   [required by jingoo]
+  - install configurator    v0.11.0 [required by pcre]
+  - install pcre            7.3.4   [required by jingoo]
+  - install jingoo          1.2.13
+===== 15 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[jingoo.1.2.13] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[pcre.7.3.4] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed ounit.2.0.8
+-> installed stdio.v0.11.0
+-> installed topkg.0.9.1
+-> installed uchar.0.0.2
+-> installed configurator.v0.11.0
+-> installed uutf.1.0.1
+-> installed pcre.7.3.4
+[ERROR] The compilation of jingoo failed at "/usr/bin/make".
+
+#=== ERROR while compiling jingoo.1.2.13 ======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/jingoo.1.2.13
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/jingoo-12-079eb0.env
+# output-file          ~/.opam/log/jingoo-12-079eb0.out
+### output ###
+# /usr/bin/make -C src
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/jingoo.1.2.13/src'
+# ocamlyacc jg_parser.mly
+# 1 rule never reduced
+# 228 shift/reduce conflicts, 121 reduce/reduce conflicts.
+# ocamllex jg_lexer.mll
+# 222 states, 11207 transitions, table size 46160 bytes
+# ocamlfind ocamlc -g -package unix,dynlink,pcre,uutf -c jg_types.mli jg_types.ml jg_utils.ml jg_stub.mli jg_stub.ml jg_parser.mli jg_parser.ml jg_lexer.ml jg_runtime.ml jg_interp.ml jg_template.mli jg_template.ml 
+# File "jg_utils.ml", line 113, characters 14-27:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "jg_runtime.ml", line 520, characters 24-40:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# File "jg_runtime.ml", line 525, characters 24-40:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "jg_runtime.ml", line 590, characters 18-34:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "jg_runtime.ml", line 627, characters 24-41:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "jg_runtime.ml", line 779, characters 5-22:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "jg_interp.ml", line 198, characters 24-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# make[1]: *** [Makefile:36: jingoo.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/jingoo.1.2.13/src'
+# make: *** [Makefile:2: all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build jingoo 1.2.13
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install conf-libpcre    1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install ocamlbuild      0.12.0
+| - install ounit           2.0.8
+| - install pcre            7.3.4
+| - install result          1.3
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
+| - install topkg           0.9.1
+| - install uchar           0.0.2
+| - install uutf            1.0.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729222203.export"
+31 1532902919 1532902972

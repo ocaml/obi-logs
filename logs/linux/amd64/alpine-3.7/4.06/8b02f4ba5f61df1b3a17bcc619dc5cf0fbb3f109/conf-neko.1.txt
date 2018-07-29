@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 conf-neko.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+neko-dev
+The following command needs to be run through "sudo":
+    apk add neko-dev
+ERROR: unsatisfiable constraints:
+  neko-dev (missing):
+    required by: world[neko-dev]
+OS package installation failed
+1 1532902980 1532902983

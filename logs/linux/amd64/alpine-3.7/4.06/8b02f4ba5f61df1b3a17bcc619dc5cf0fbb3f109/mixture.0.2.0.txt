@@ -1,0 +1,14 @@
+$ opam depext -iy -j 2 mixture.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+bmake
+m4
+m4
+# The following new OS packages need to be installed: bmake
+The following command needs to be run through "sudo":
+    apk add bmake
+ERROR: unsatisfiable constraints:
+  bmake (missing):
+    required by: world[bmake]
+OS package installation failed
+1 1532900974 1532900977
