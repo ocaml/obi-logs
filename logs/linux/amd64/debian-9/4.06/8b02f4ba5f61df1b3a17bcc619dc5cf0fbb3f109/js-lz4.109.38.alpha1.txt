@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 js-lz4.109.38.alpha1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for js-lz4.109.38.alpha1: The following dependencies couldn't be met:
+          - js-lz4 -> core < 111.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=js-lz4.109.38.alpha1 returned 20
+20 1532818340 1532818343

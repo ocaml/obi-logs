@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 mirage-console-xen.2.3.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-console-xen.2.3.3: The following dependencies couldn't be met:
+          - mirage-console-xen -> mirage-xen < 3.0.2 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen -> mirage-xen < 3.0.2 -> mirage-xen-ocaml >= 2.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-console-xen -> mirage-xen < 3.0.2 -> io-page < 2.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-console-xen.2.3.3 returned 20
+20 1532817995 1532817997
