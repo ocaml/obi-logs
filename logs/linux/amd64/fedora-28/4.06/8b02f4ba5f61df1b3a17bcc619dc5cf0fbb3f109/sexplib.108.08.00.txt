@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 sexplib.108.08.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for sexplib.108.08.00: The following dependencies couldn't be met:
+          - sexplib -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=sexplib.108.08.00 returned 20
+20 1532927304 1532927308

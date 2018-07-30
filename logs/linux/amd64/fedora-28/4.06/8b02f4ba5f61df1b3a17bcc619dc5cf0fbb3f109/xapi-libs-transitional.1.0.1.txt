@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 xapi-libs-transitional.1.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for xapi-libs-transitional.1.0.1: The following dependencies couldn't be met:
+          - xapi-libs-transitional -> rpc >= 1.9.51 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xapi-libs-transitional.1.0.1 returned 20
+20 1532927486 1532927488

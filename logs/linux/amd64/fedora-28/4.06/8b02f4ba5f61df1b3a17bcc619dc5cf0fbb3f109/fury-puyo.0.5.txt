@@ -1,0 +1,95 @@
+$ opam depext -iy -j 2 fury-puyo.0.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Sun Jul 29 20:10:02 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-sdl-ttf   1      [required by fury-puyo]
+  - install conf-sdl-image 1      [required by fury-puyo]
+  - install ocamlbuild     0.12.0 [required by fury-puyo]
+  - install conf-sdl-mixer 1      [required by fury-puyo]
+  - install ocamlsdl       0.9.1  [required by fury-puyo]
+  - install fury-puyo      0.5
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[fury-puyo.0.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlsdl.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-sdl-image failed at "/usr/bin/pkg-config SDL_image".
+[ERROR] The compilation of conf-sdl-mixer failed at "/usr/bin/pkg-config SDL_mixer".
+[ERROR] The compilation of conf-sdl-ttf failed at "/usr/bin/pkg-config SDL_ttf".
+-> installed ocamlbuild.0.12.0
+
+#=== ERROR while compiling conf-sdl-ttf.1 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdl-ttf.1
+# command              /usr/bin/pkg-config SDL_ttf
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdl-ttf-10-6cc03f.env
+# output-file          ~/.opam/log/conf-sdl-ttf-10-6cc03f.out
+
+
+#=== ERROR while compiling conf-sdl-mixer.1 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdl-mixer.1
+# command              /usr/bin/pkg-config SDL_mixer
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdl-mixer-10-a00279.env
+# output-file          ~/.opam/log/conf-sdl-mixer-10-a00279.out
+
+
+#=== ERROR while compiling conf-sdl-image.1 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdl-image.1
+# command              /usr/bin/pkg-config SDL_image
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdl-image-10-d8a4ae.env
+# output-file          ~/.opam/log/conf-sdl-image-10-d8a4ae.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-sdl-image 1
+| - build conf-sdl-mixer 1
+| - build conf-sdl-ttf   1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180730054312.export"
+31 1532929390 1532929397
