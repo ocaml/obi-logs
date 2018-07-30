@@ -6,7 +6,7 @@ pcre-devel
 # The following new OS packages need to be installed: pcre-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install pcre-devel
-Retrieving repository 'OSS Update' metadata [..done]
+Retrieving repository 'OSS Update' metadata [...done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -25,9 +25,9 @@ Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (3/5),  24.0 KiB ( 34.6 KiB unpacked)
 Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (4/5),  15.7 KiB ( 10.2 KiB unpacked)
-Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [.done]
+Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (5/5), 224.5 KiB (263.5 KiB unpacked)
-Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
+Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [.done]
 Checking for file conflicts: [......done]
 (1/5) Installing: libstdc++-devel-4.8-11.16.x86_64 [.....done]
 (2/5) Installing: libpcre16-0-8.39-11.1.x86_64 [.........done]
@@ -186,8 +186,8 @@ The following actions will be performed:
 #          val contents : t -> string
 #        File "cformat.ml", line 55, characters 2-28: Expected declaration
 #        File "cformat.ml", line 73, characters 6-14: Actual declaration
-# *** omake: 69/125 targets are up to date
-# *** omake: failed (1.23 sec, 20/20 scans, 12/12 rules, 42/79 digests)
+# *** omake: 66/125 targets are up to date
+# *** omake: failed (1.14 sec, 20/20 scans, 9/9 rules, 39/76 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    cformat.cmo
 #       depends on: cformat.ml
@@ -227,5 +227,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729064950.export"
-31 1532846851 1532847175
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180730002327.export"
+31 1532910022 1532910388

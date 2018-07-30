@@ -6,7 +6,7 @@ m4
 # The following new OS packages need to be installed: libffi-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libffi-devel
-Retrieving repository 'OSS Update' metadata [..done]
+Retrieving repository 'OSS Update' metadata [...done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -103,8 +103,8 @@ The following actions will be performed:
 -> installed ptime.0.8.4
 -> installed stdio.v0.11.0
 -> installed ppxlib.0.3.0
--> installed ppx_sexp_conv.v0.11.2
 -> installed ctypes.0.14.0
+-> installed ppx_sexp_conv.v0.11.2
 [ERROR] The compilation of mariadb failed at "/home/opam/.opam/4.06/.opam-switch/build/mariadb.1.0.1/./configure --prefix=/home/opam/.opam/4.06".
 -> installed uri.1.9.7
 -> installed caqti.0.10.1
@@ -114,8 +114,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/mariadb.1.0.1
 # command              ~/.opam/4.06/.opam-switch/build/mariadb.1.0.1/./configure --prefix=/home/opam/.opam/4.06
 # exit-code            1
-# env-file             ~/.opam/log/mariadb-12-0bf5ba.env
-# output-file          ~/.opam/log/mariadb-12-0bf5ba.out
+# env-file             ~/.opam/log/mariadb-12-4e078c.env
+# output-file          ~/.opam/log/mariadb-12-4e078c.out
 ### output ###
 # Could not detect a MariaDB client library
 
@@ -155,5 +155,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729071109.export"
-31 1532847828 1532848335
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729230323.export"
+31 1532905353 1532905508

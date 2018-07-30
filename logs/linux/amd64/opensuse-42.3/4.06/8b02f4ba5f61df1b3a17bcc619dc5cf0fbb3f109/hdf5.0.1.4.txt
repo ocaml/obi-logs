@@ -15,8 +15,8 @@ The following actions will be performed:
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [cppo.1.6.4] found in cache
 [cppo_ocamlbuild.1.6.0] found in cache
-[hdf5.0.1.4] found in cache
 [ocamlbuild.0.12.0] found in cache
+[hdf5.0.1.4] downloaded from https://github.com/vbrankov/hdf5-ocaml/archive/v0.1.4.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -30,8 +30,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/hdf5.0.1.4
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/hdf5-12-f6c0a8.env
-# output-file          ~/.opam/log/hdf5-12-f6c0a8.out
+# env-file             ~/.opam/log/hdf5-12-58a313.env
+# output-file          ~/.opam/log/hdf5-12-58a313.out
 ### output ###
 # ocaml setup.ml -build 
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -62,5 +62,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729061220.export"
-31 1532844507 1532844752
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180729230409.export"
+31 1532905419 1532905469
