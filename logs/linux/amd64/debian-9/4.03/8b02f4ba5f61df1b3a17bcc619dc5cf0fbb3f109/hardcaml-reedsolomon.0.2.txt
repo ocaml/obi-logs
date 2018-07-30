@@ -120,8 +120,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/hardcaml-reedsolomon.0.2
 # command              /usr/bin/make all
 # exit-code            2
-# env-file             ~/.opam/log/hardcaml-reedsolomon-10-c95c2f.env
-# output-file          ~/.opam/log/hardcaml-reedsolomon-10-c95c2f.out
+# env-file             ~/.opam/log/hardcaml-reedsolomon-11-c95c2f.env
+# output-file          ~/.opam/log/hardcaml-reedsolomon-11-c95c2f.out
 ### output ###
 # ocaml setup.ml -configure
 # File "./setup.ml", line 318, characters 20-36:
@@ -158,9 +158,9 @@ The following actions will be performed:
 # Warning 3: deprecated: String.uncapitalize
 # Use String.uncapitalize_ascii instead.
 # ocamlfind: Package `hardcaml-examples.app' not found
-# W: Field 'pkg_hardcaml_examples_app' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d hardcaml-examples.app > '/tmp/oasis-7da3d0.txt'' terminated with error code 2
+# W: Field 'pkg_hardcaml_examples_app' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d hardcaml-examples.app > '/tmp/oasis-f1f2fd.txt'' terminated with error code 2
 # ocamlfind: Package `hardcaml-examples.app' not found
-# W: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d hardcaml-examples.app > '/tmp/oasis-834617.txt'' terminated with error code 2")
+# W: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d hardcaml-examples.app > '/tmp/oasis-070fe3.txt'' terminated with error code 2")
 # E: Cannot find findlib package hardcaml-examples.app
 # E: Failure("1 configuration error")
 # Makefile:22: recipe for target 'setup.data' failed
@@ -216,5 +216,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180729052213.export"
-31 1532841730 1532842064
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180730030858.export"
+31 1532920136 1532920470

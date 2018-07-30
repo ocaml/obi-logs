@@ -112,8 +112,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/sqlexpr.0.7.1
 # command              ~/.opam/4.03/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.03
 # exit-code            1
-# env-file             ~/.opam/log/sqlexpr-10-dc8a32.env
-# output-file          ~/.opam/log/sqlexpr-10-dc8a32.out
+# env-file             ~/.opam/log/sqlexpr-11-dc8a32.env
+# output-file          ~/.opam/log/sqlexpr-11-dc8a32.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -149,7 +149,7 @@ The following actions will be performed:
 # Warning 3: deprecated: String.uncapitalize
 # Use String.uncapitalize_ascii instead.
 # ocamlfind: Package `lwt.syntax' not found
-# W: Field 'pkg_lwt_syntax' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-d28a1a.txt'' terminated with error code 2
+# W: Field 'pkg_lwt_syntax' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-c025d8.txt'' terminated with error code 2
 # E: Cannot find findlib package lwt.syntax
 # E: Failure("1 configuration error")
 
@@ -178,5 +178,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180729044301.export"
-31 1532839364 1532839534
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180730024815.export"
+31 1532918882 1532919005

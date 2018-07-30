@@ -60,7 +60,6 @@ The following actions will be performed:
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [bin_prot.113.33.00+4.03] found in cache
-[bistro.0.2.0] found in cache
 [core.113.33.02+4.03] found in cache
 [core_kernel.113.33.01+4.03] found in cache
 [cppo.1.6.4] found in cache
@@ -77,6 +76,7 @@ The following actions will be performed:
 [ppx_bin_prot.113.33.00+4.03] found in cache
 [ppx_compare.113.33.00+4.03] found in cache
 [ppx_core.113.33.01+4.03] found in cache
+[bistro.0.2.0] downloaded from https://github.com/pveber/bistro/archive/v0.2.0.tar.gz
 [ppx_custom_printf.113.33.00+4.03] found in cache
 [ppx_deriving.4.1.5] found in cache
 [ppx_driver.113.33.02+4.03] found in cache
@@ -140,17 +140,17 @@ The following actions will be performed:
 -> installed rresult.0.5.0
 -> installed typerep.113.24.00
 -> installed uchar.0.0.2
--> installed uutf.1.0.1
 -> installed ppx_type_conv.113.33.02+4.03
 -> installed ppx_bin_prot.113.33.00+4.03
 -> installed ppx_compare.113.33.00+4.03
 -> installed ppx_enumerate.113.33.00+4.03
 -> installed ppx_fields_conv.113.33.00+4.03
+-> installed ppx_typerep_conv.113.33.00+4.03
+-> installed uutf.1.0.1
 -> installed ppx_sexp_conv.113.33.01+4.03
 -> installed ppx_assert.113.33.00
 -> installed ppx_custom_printf.113.33.00+4.03
 -> installed ppx_sexp_message.113.33.00+4.03
--> installed ppx_typerep_conv.113.33.00+4.03
 -> installed tyxml.4.2.0
 -> installed ppx_sexp_value.113.33.00+4.03
 -> installed variantslib.113.24.00
@@ -166,11 +166,11 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/bistro.0.2.0
 # command              ~/.opam/4.03/.opam-switch/build/bistro.0.2.0/./configure --prefix=/home/opam/.opam/4.03
 # exit-code            1
-# env-file             ~/.opam/log/bistro-11-dd9ccc.env
-# output-file          ~/.opam/log/bistro-11-dd9ccc.out
+# env-file             ~/.opam/log/bistro-11-bf7d22.env
+# output-file          ~/.opam/log/bistro-11-bf7d22.out
 ### output ###
 # ocamlfind: Package `lwt.preemptive' not found
-# W: Field 'pkg_lwt_preemptive' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.preemptive > '/tmp/oasis-d293d9.txt'' terminated with error code 2
+# W: Field 'pkg_lwt_preemptive' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.preemptive > '/tmp/oasis-659126.txt'' terminated with error code 2
 # E: Cannot find findlib package lwt.preemptive
 # E: Failure("1 configuration error")
 
@@ -234,5 +234,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180729054033.export"
-31 1532842831 1532843247
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180730030221.export"
+31 1532919738 1532920302

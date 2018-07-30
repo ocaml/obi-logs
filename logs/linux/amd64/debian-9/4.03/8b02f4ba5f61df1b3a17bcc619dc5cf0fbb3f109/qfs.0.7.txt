@@ -102,8 +102,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/qfs.0.7
 # command              ~/.opam/4.03/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/qfs-10-98caf1.env
-# output-file          ~/.opam/log/qfs-10-98caf1.out
+# env-file             ~/.opam/log/qfs-11-98caf1.env
+# output-file          ~/.opam/log/qfs-11-98caf1.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.03/lib/ocamlbuild /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -g -ccopt -x -ccopt c++ -ccopt -Wall -ccopt -Wno-write-strings -package unix -package lwt_ppx -package lwt.unix -package extlib -package bytes -c src/qfs_stubs.c
@@ -145,5 +145,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180729053604.export"
-31 1532842551 1532842597
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180730024820.export"
+31 1532918887 1532918929

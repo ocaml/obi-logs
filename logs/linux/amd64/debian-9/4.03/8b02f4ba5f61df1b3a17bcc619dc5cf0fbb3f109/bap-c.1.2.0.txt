@@ -443,7 +443,6 @@ The following actions will be performed:
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package bap-api -package bap -I lib/bap_c -o lib/bap_c/bap_c_size.cmo lib/bap_c/bap_c_size.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package bap-api -package bap -I lib/bap_c -o lib/bap_c/bap_c_type_mapper.cmo lib/bap_c/bap_c_type_mapper.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package bap-api -package bap -I lib/bap_c -o lib/bap_c/bap_c_type_printer.cmo lib/bap_c/bap_c_type_printer.ml
-# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package bap-api -package bap -I lib/bap_c -o lib/bap_c/bap_c_parser.cmo lib/bap_c/bap_c_parser.ml
 # + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package bap-api -package bap -I lib/bap_c -o lib/bap_c/bap_c_type_mapper.cmo lib/bap_c/bap_c_type_mapper.ml
 # File "lib/bap_c/bap_c_type_mapper.ml", line 5, characters 16-24:
 # Warning 3: deprecated: module Bap.Std.Monad
@@ -556,5 +555,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180729052830.export"
-31 1532842084 1532842990
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180730030656.export"
+31 1532919989 1532920883
