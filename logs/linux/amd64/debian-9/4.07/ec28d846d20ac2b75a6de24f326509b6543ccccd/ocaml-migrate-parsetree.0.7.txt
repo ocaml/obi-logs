@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ocaml-migrate-parsetree.0.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ocaml-migrate-parsetree.0.7: The following dependencies couldn't be met:
+          - ocaml-migrate-parsetree -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ocaml-migrate-parsetree.0.7 returned 20
+20 1532982647 1532982649

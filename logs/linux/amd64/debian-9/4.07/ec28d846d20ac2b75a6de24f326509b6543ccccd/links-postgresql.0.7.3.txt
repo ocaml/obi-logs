@@ -1,0 +1,382 @@
+$ opam depext -iy -j 2 links-postgresql.0.7.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libpq-dev
+libssl-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libpq-dev libssl-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../05-libpq5_9.6.9-0+deb9u1_amd64.deb ...
+Unpacking libpq5:amd64 (9.6.9-0+deb9u1) ...
+Selecting previously unselected package libpq-dev.
+Preparing to unpack .../06-libpq-dev_9.6.9-0+deb9u1_amd64.deb ...
+Unpacking libpq-dev (9.6.9-0+deb9u1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../07-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../08-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Setting up libpq5:amd64 (9.6.9-0+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libpq-dev (9.6.9-0+deb9u1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install magic-mime              1.1.0      [required by cohttp-lwt-unix]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install re                      1.7.3      [required by cohttp]
+  - install base-bytes              base       [required by postgresql]
+  - install conf-pkg-config         1.1        [required by conf-openssl]
+  - install num                     1.1        [required by sexplib]
+  - install safepass                3.0        [required by links]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install easy-format             1.3.1      [required by yojson]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by ppx_deriving, linenoise, lwt, ppx_deriving_yojson]
+  - install conf-which              1          [required by biniou]
+  - install ocamlbuild              0.12.0     [required by ppx_deriving, ppx_deriving_yojson]
+  - install stringext               1.5.0      [required by cohttp]
+  - install cppo                    1.6.4      [required by ppx_deriving, lwt, ppx_deriving_yojson]
+  - install base64                  2.2.0      [required by links]
+  - install ANSITerminal            0.8        [required by links]
+  - install conf-openssl            1          [required by ssl]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.1    [required by postgresql]
+  - install ocaml-migrate-parsetree 1.0.11     [required by lwt, ppx_deriving]
+  - install linenoise               1.1.0      [required by links]
+  - install biniou                  1.2.0      [required by yojson]
+  - install uchar                   0.0.2      [required by jsonm]
+  - install topkg                   0.9.1      [required by jsonm]
+  - install ocplib-endian           1.0        [required by websocket]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving, ppx_deriving_yojson]
+  - install ssl                     0.5.5      [required by lwt_ssl]
+  - install sexplib                 v0.11.0    [required by cohttp]
+  - install stdio                   v0.11.0    [required by postgresql]
+  - install ppx_tools_versioned     5.2        [required by lwt]
+  - install yojson                  1.4.1      [required by ppx_deriving_yojson]
+  - install cmdliner                1.0.2      [required by cohttp-lwt-unix]
+  - install astring                 0.8.3      [required by websocket]
+  - install ppx_deriving            4.2.1      [required by links]
+  - install ppxlib                  0.3.0      [required by ppx_fields_conv, fieldslib, ppx_sexp_conv]
+  - install configurator            v0.11.0    [required by postgresql]
+  - install lwt                     3.3.0      [required by links]                                             For the PPX, please install package lwt_ppx
+                                                                                                               For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install uutf                    1.0.1      [required by jsonm]
+  - install fmt                     0.8.5      [required by cohttp-lwt-unix]
+  - install ppx_deriving_yojson     3.1        [required by links]
+  - install ppx_sexp_conv           v0.11.2    [required by cohttp]
+  - install fieldslib               v0.11.0    [required by cohttp]
+  - install postgresql              4.4.0      [required by links-postgresql]
+  - install lwt_ssl                 1.1.2      [required by websocket-lwt]
+  - install jsonm                   1.0.1      [required by cohttp]
+  - install logs                    0.6.2      [required by cohttp-lwt-unix]
+  - install uri                     1.9.7      [required by cohttp]
+  - install ipaddr                  2.8.0      [required by websocket-lwt]
+  - install ppx_fields_conv         v0.11.0    [required by cohttp]
+  - install conduit                 1.1.0      [required by conduit-lwt]
+  - install cohttp                  1.0.0      [required by links]
+  - install conduit-lwt             1.1.0      [required by conduit-lwt-unix]
+  - install websocket               2.10       [required by websocket-lwt]
+  - install cohttp-lwt              1.0.2      [required by cohttp-lwt-unix]
+  - install conduit-lwt-unix        1.1.0      [required by cohttp-lwt-unix]
+  - install cohttp-lwt-unix         1.0.2      [required by websocket-lwt]
+  - install websocket-lwt           2.11       [required by links]
+  - install links                   0.7.3      [required by links-postgresql]
+  - install links-postgresql        0.7.3
+===== 61 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ANSITerminal.0.8] found in cache
+[astring.0.8.3] found in cache
+[base.v0.11.1] found in cache
+[base64.2.2.0] found in cache
+[biniou.1.2.0] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.1.0.0] found in cache
+[cohttp-lwt.1.0.2] found in cache
+[cohttp-lwt-unix.1.0.2] found in cache
+[conduit.1.1.0] found in cache
+[conduit-lwt.1.1.0] found in cache
+[conduit-lwt-unix.1.1.0] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[easy-format.1.3.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[fmt.0.8.5] found in cache
+[ipaddr.2.8.0] found in cache
+[jsonm.1.0.1] found in cache
+[linenoise.1.1.0] found in cache
+[links.0.7.3] found in cache
+[links-postgresql.0.7.3] found in cache
+[logs.0.6.2] found in cache
+[lwt.3.3.0] found in cache
+[lwt_ssl.1.1.2] found in cache
+[magic-mime.1.1.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-endian.1.0] found in cache
+[parsexp.v0.11.0] found in cache
+[postgresql.4.4.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_deriving_yojson.3.1] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[safepass.3.0] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[websocket.2.10] found in cache
+[websocket-lwt.2.11] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ANSITerminal.0.8
+-> installed base64.2.2.0
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed conf-openssl.1
+-> installed biniou.1.2.0
+-> installed magic-mime.1.1.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed linenoise.1.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocplib-endian.1.0
+-> installed ppx_tools_versioned.5.2
+-> installed ppx_deriving.4.2.1
+-> installed safepass.3.0
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed lwt.3.3.0
+-> installed parsexp.v0.11.0
+-> installed ssl.0.5.5
+-> installed lwt_ssl.1.1.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed postgresql.4.4.0
+-> installed sexplib.v0.11.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed ppxlib.0.3.0
+-> installed fieldslib.v0.11.0
+-> installed fmt.0.8.5
+-> installed ppx_fields_conv.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ipaddr.2.8.0
+-> installed logs.0.6.2
+-> installed uutf.1.0.1
+-> installed uri.1.9.7
+-> installed jsonm.1.0.1
+-> installed conduit.1.1.0
+-> installed cohttp.1.0.0
+-> installed conduit-lwt.1.1.0
+-> installed cohttp-lwt.1.0.2
+-> installed websocket.2.10
+-> installed yojson.1.4.1
+-> installed conduit-lwt-unix.1.1.0
+-> installed ppx_deriving_yojson.3.1
+-> installed cohttp-lwt-unix.1.0.2
+-> installed websocket-lwt.2.11
+[ERROR] The compilation of links failed at "/home/opam/.opam/4.07/bin/jbuilder build -p links -j 71".
+
+#=== ERROR while compiling links.0.7.3 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/links.0.7.3
+# command              ~/.opam/4.07/bin/jbuilder build -p links -j 71
+# exit-code            1
+# env-file             ~/.opam/log/links-11-2e6686.env
+# output-file          ~/.opam/log/links-11-2e6686.out
+### output ###
+#       ocamlc core/.links.objs/closures.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -w -40 -safe-string -dtypes -w Ae-44-45-60 -g -cclib -lunix -thread -g -bin-annot -I core/.links.objs -I /home/opam/.opam/4.07/lib/ANSITerminal -I /home/opam/.opam/4.07/lib/astring -I /home/opam/.opam/4.07/lib/base -I /home/opam/.opam/4.07/lib/base/caml -I /home/opam/.opam/4.07/lib/base/shadow_stdlib -I /home/opam/.opam/4.07/lib/base64 -I /home/opam/.opam/4.07/lib/biniou -I /home/opam/.opam/4.07/lib/bytes -I /home/opam/.opam/4.07/lib/cohttp -I /home/opam/.opam/4.07/lib/cohttp-lwt -I /home/opam/.opam/4.07/lib/cohttp-lwt-unix -I /home/opam/.opam/4.07/lib/conduit -I /home/opam/.opam/4.07/lib/conduit-lwt -I /home/opam/.opam/4.07/lib/conduit-lwt-unix -I /home/opam/.opam/4.07/lib/easy-format -I /home/opam/.opam/4.07/lib/fieldslib -I /home/opam/.opam/4.07/lib/findlib -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/ipaddr -I /home/opam/.opam/4.07/lib/ipaddr/unix -I /home/opam/.opam/4.07/lib/linenoise -I /home/opam/.opam/4.07/lib/logs -I /home/opam/.opam/4.07/lib/lwt -I /home/opam/.opam/4.07/lib/lwt_ssl -I /home/opam/.opam/4.07/lib/magic-mime -I /home/opam/.opam/4.07/lib/ocaml/threads -I /home/opam/.opam/4.07/lib/ocplib-endian -I /home/opam/.opam/4.07/lib/parsexp -I /home/opam/.opam/4.07/lib/ppx_deriving -I /home/opam/.opam/4.07/lib/ppx_deriving_yojson -I /home/opam/.opam/4.07/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.07/lib/re -I /home/opam/.opam/4.07/lib/re/emacs -I /home/opam/.opam/4.07/lib/re/posix -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/safepass -I /home/opam/.opam/4.07/lib/sexplib -I /home/opam/.opam/4.07/lib/sexplib0 -I /home/opam/.opam/4.07/lib/ssl -I /home/opam/.opam/4.07/lib/stringext -I /home/opam/.opam/4.07/lib/uchar -I /home/opam/.opam/4.07/lib/uri -I /home/opam/.opam/4.07/lib/uri/services -I /home/opam/.opam/4.07/lib/websocket -I /home/opam/.opam/4.07/lib/websocket-lwt/cohttp -I /home/opam/.opam/4.07/lib/yojson -no-alias-deps -o core/.links.objs/closures.cmo -c -impl core/closures.pp.ml)
+# File "core/closures.ml", line 327, characters 26-27:
+# Error: This expression has type
+#          < binder : Ir.binder -> Ir.binder * 'b;
+#            binding : Ir.binding -> Ir.binding * 'b;
+#            bindings : Ir.binding list -> Ir.binding list * 'b;
+#            computation : Ir.computation ->
+#                          Ir.computation * Types.datatype * 'b;
+#            constant : Ir.constant -> Ir.constant * Types.datatype * 'b;
+#            get_type_environment : Ir.Transform.environment;
+#            list : 'a.
+#                     ('b -> 'a -> 'a * Types.datatype * 'b) ->
+#                     'a list -> 'a list * Types.datatype list * 'b;
+#            lookup_type : Ir.var -> Types.datatype;
+#            name_map : 'a.
+#                         ('b -> 'a -> 'a * Types.datatype * 'b) ->
+#                         'a Ir.name_map ->
+#                         'a Ir.name_map * Types.datatype Ir.name_map * 'b;
+#            option : 'a.
+#                       ('b -> 'a -> 'a * Types.datatype * 'b) ->
+#                       'a option -> 'a option * Types.datatype option * 'b;
+#            optionu : 'a. ('b -> 'a -> 'a * 'b) -> 'a option -> 'a option * 'b;
+#            pop_hoisted_bindings : Ir.binding list * 'b;
+#            program : Ir.program -> Ir.program * Types.datatype * 'b;
+#            push_binding : Ir.binding -> 'b;
+#            set_context : Ir.binder list -> Ir.var -> Utility.IntSet.t -> 'b;
+#            special : Ir.special -> Ir.special * Types.datatype * 'b;
+#            tail_computation : Ir.tail_computation ->
+#                               Ir.tail_computation * Types.datatype * 'b;
+#            value : Ir.value -> Ir.value * Types.datatype * 'b;
+#            var : Ir.var -> Ir.var * Types.datatype * 'b;
+#            var_map : 'a.
+#                        ('b -> 'a -> 'a * Types.datatype * 'b) ->
+#                        'a Ir.var_map ->
+#                        'a Ir.var_map * Types.datatype Ir.var_map * 'b;
+#            .. >
+#          as 'b
+#        but an expression was expected of type 'weak6
+#        Self type cannot escape its class
+#       ocamlc core/.links.objs/lib.{cmo,cmt}
+# File "core/lib.ml", line 1610, characters 66-102:
+# Warning 48: implicit elimination of optional argument ?variant
+#     ocamlopt core/.links.objs/lib.{cmx,o}
+# File "core/lib.ml", line 1610, characters 66-102:
+# Warning 48: implicit elimination of optional argument ?variant
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build links 0.7.3
++- 
++- The following changes have been performed (the rest was aborted)
+| - install ANSITerminal            0.8
+| - install astring                 0.8.3
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install base64                  2.2.0
+| - install biniou                  1.2.0
+| - install cmdliner                1.0.2
+| - install cohttp                  1.0.0
+| - install cohttp-lwt              1.0.2
+| - install cohttp-lwt-unix         1.0.2
+| - install conduit                 1.1.0
+| - install conduit-lwt             1.1.0
+| - install conduit-lwt-unix        1.1.0
+| - install conf-openssl            1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install easy-format             1.3.1
+| - install fieldslib               v0.11.0
+| - install fmt                     0.8.5
+| - install ipaddr                  2.8.0
+| - install jsonm                   1.0.1
+| - install linenoise               1.1.0
+| - install logs                    0.6.2
+| - install lwt                     3.3.0
+| - install lwt_ssl                 1.1.2
+| - install magic-mime              1.1.0
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocplib-endian           1.0
+| - install parsexp                 v0.11.0
+| - install postgresql              4.4.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_deriving_yojson     3.1
+| - install ppx_fields_conv         v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install safepass                3.0
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install ssl                     0.5.5
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install uri                     1.9.7
+| - install uutf                    1.0.1
+| - install websocket               2.10
+| - install websocket-lwt           2.11
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180730204639.export"
+31 1532983586 1532983792
