@@ -64,7 +64,7 @@ The following actions will be performed:
 # echo 'let default_path = "/usr/local/lib/phox"' >> version.ml;\
 # echo "let delim = ':'" >> version.ml;\
 # 
-# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli affichage.mli lexer.mli flags.mli interact.mli data_info.mli restart.mli prover.mli oldeduction.mli bindlib.mli tex.mli safe_add.mli majlistes.mli typing.mli hilbert.mli module.mli option.mli compile.mli parse_cmd.mli parser.mli version.mli data.mli data_base.mli undo.mli main.mli pattern.mli ptypes.mli basic.mli eval.mli cache.mli parse_lambda.mli typespoids.mli splitting.mli new_cmd.mli local.mli files.mli typunif.mli resolution.mli lambda_util.mli poids.mli lambda.mli rewrite.mli inductive.mli myhashtbl.mli af2_basic.mli types.mli print.mli type_check.mli proof_general.mli > .depend
+# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli basic.mli flags.mli data.mli restart.mli oldeduction.mli lambda.mli bindlib.mli tex.mli safe_add.mli majlistes.mli typing.mli interact.mli module.mli option.mli compile.mli parser.mli myhashtbl.mli version.mli data_base.mli undo.mli lexer.mli main.mli pattern.mli ptypes.mli prover.mli eval.mli hilbert.mli parse_lambda.mli typespoids.mli splitting.mli data_info.mli local.mli files.mli typunif.mli resolution.mli parse_cmd.mli lambda_util.mli poids.mli rewrite.mli affichage.mli af2_basic.mli new_cmd.mli types.mli print.mli inductive.mli type_check.mli proof_general.mli cache.mli > .depend
 # ocamlfind ocamlc -g -pp camlp4o -rectypes -c version.mli
 # ocamlfind ocamlopt -pp camlp4o -rectypes -c version.ml
 # ocamlfind ocamlc -g -pp camlp4o -rectypes -c restart.mli
@@ -104,5 +104,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180729033654.export"
-31 1532835412 1532835530
+    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180730004033.export"
+31 1532911230 1532911352
