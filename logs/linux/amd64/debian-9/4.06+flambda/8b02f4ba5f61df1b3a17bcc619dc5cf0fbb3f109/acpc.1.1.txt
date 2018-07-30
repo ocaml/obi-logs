@@ -577,7 +577,6 @@ The following actions will be performed:
 ===== 11 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[acpc.1.1] found in cache
 [batteries.2.8.0] found in cache
 [dolog.0.6] found in cache
 [num.1.1] found in cache
@@ -585,6 +584,7 @@ The following actions will be performed:
 [ocamlbuild.0.12.0] found in cache
 [parmap.1.0-rc10] found in cache
 [vector3.0.2.1] found in cache
+[acpc.1.1] downloaded from https://github.com/UnixJunkie/ACPC/archive/v1.1.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed conf-which.1
@@ -603,8 +603,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/dolog.0.6
 # command              ~/.opam/4.06+flambda/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06+flambda
 # exit-code            2
-# env-file             ~/.opam/log/dolog-11-a5656e.env
-# output-file          ~/.opam/log/dolog-11-a5656e.out
+# env-file             ~/.opam/log/dolog-11-a5b00a.env
+# output-file          ~/.opam/log/dolog-11-a5b00a.out
 ### output ###
 # File "./setup.ml", line 234, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -633,5 +633,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180729041759.export"
-31 1532837842 1532837938
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180730034255.export"
+31 1532922138 1532922249
