@@ -20,18 +20,18 @@ The following actions will be performed:
 # env-file             ~/.opam/log/minilight-11-d2c37b.env
 # output-file          ~/.opam/log/minilight-11-d2c37b.out
 ### output ###
-# + as -o 'ocaml/src/random2.o' '/tmp/camlasmafd463.s'
-# + as -o 'ocaml/src/vector3f.o' '/tmp/camlasm49ccd3.s'
-# + as -o 'ocaml/src/triangle.o' '/tmp/camlasm2bf286.s'
-# + as -o 'ocaml/src/spatialIndex.o' '/tmp/camlasmaf3f9b.s'
-# + as -o 'ocaml/src/scene.o' '/tmp/camlasm42f23e.s'
-# + as -o 'ocaml/src/surfacePoint.o' '/tmp/camlasmc0505c.s'
-# + as -o 'ocaml/src/rayTracer.o' '/tmp/camlasmbf6bea.s'
-# + as -o 'ocaml/src/image.o' '/tmp/camlasm24f038.s'
-# + as -o 'ocaml/src/camera.o' '/tmp/camlasmbf4778.s'
-# + as -o 'ocaml/src/minilight.o' '/tmp/camlasm86cf1d.s'
-# + as -o '/tmp/camlstartupda7d37.o' '/tmp/camlstartupe476eb.s'
-# + gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT -o 'minilight-ocaml'   '-Locaml/src' '-L/home/opam/.opam/4.05/lib/ocaml'  '/tmp/camlstartupda7d37.o' '/home/opam/.opam/4.05/lib/ocaml/std_exit.o' 'ocaml/src/minilight.o' 'ocaml/src/camera.o' 'ocaml/src/image.o' 'ocaml/src/rayTracer.o' 'ocaml/src/surfacePoint.o' 'ocaml/src/scene.o' 'ocaml/src/spatialIndex.o' 'ocaml/src/triangle.o' 'ocaml/src/vector3f.o' 'ocaml/src/random2.o' '/home/opam/.opam/4.05/lib/ocaml/unix.a' '/home/opam/.opam/4.05/lib/ocaml/stdlib.a' '-lunix' '/home/opam/.opam/4.05/lib/ocaml/libasmrun.a' -lm  -ldl
+# + as -o 'ocaml/src/random2.o' '/tmp/camlasmcb181d.s'
+# + as -o 'ocaml/src/vector3f.o' '/tmp/camlasm8209ab.s'
+# + as -o 'ocaml/src/triangle.o' '/tmp/camlasm27c6a1.s'
+# + as -o 'ocaml/src/spatialIndex.o' '/tmp/camlasm007edc.s'
+# + as -o 'ocaml/src/scene.o' '/tmp/camlasm05a62f.s'
+# + as -o 'ocaml/src/surfacePoint.o' '/tmp/camlasm41c66d.s'
+# + as -o 'ocaml/src/rayTracer.o' '/tmp/camlasm6db8fc.s'
+# + as -o 'ocaml/src/image.o' '/tmp/camlasmf3e1c9.s'
+# + as -o 'ocaml/src/camera.o' '/tmp/camlasma449e5.s'
+# + as -o 'ocaml/src/minilight.o' '/tmp/camlasm7efa61.s'
+# + as -o '/tmp/camlstartupa25858.o' '/tmp/camlstartupf9c390.s'
+# + gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT -o 'minilight-ocaml'   '-Locaml/src' '-L/home/opam/.opam/4.05/lib/ocaml'  '/tmp/camlstartupa25858.o' '/home/opam/.opam/4.05/lib/ocaml/std_exit.o' 'ocaml/src/minilight.o' 'ocaml/src/camera.o' 'ocaml/src/image.o' 'ocaml/src/rayTracer.o' 'ocaml/src/surfacePoint.o' 'ocaml/src/scene.o' 'ocaml/src/spatialIndex.o' 'ocaml/src/triangle.o' 'ocaml/src/vector3f.o' 'ocaml/src/random2.o' '/home/opam/.opam/4.05/lib/ocaml/unix.a' '/home/opam/.opam/4.05/lib/ocaml/stdlib.a' '-lunix' '/home/opam/.opam/4.05/lib/ocaml/libasmrun.a' -lm  -ldl
 # /usr/bin/ld: ocaml/src/camera.o: relocation R_X86_64_PC32 against symbol `tan@@GLIBC_2.2.5' can not be used when making a shared object; recompile with -fPIC
 # /usr/bin/ld: final link failed: Bad value
 # collect2: error: ld returned 1 exit status
@@ -46,4 +46,4 @@ The following actions will be performed:
 +- 
 - No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-31 1532831650 1532831655
+31 1532915178 1532915185

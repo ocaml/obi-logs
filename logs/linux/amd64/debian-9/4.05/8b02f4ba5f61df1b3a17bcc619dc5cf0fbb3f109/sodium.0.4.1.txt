@@ -85,15 +85,15 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/sodium.0.4.1
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/sodium-11-81a3ce.env
-# output-file          ~/.opam/log/sodium-11-81a3ce.out
+# env-file             ~/.opam/log/sodium-12-81a3ce.env
+# output-file          ~/.opam/log/sodium-12-81a3ce.out
 ### output ###
 # OCAML_LIB_DIR=/home/opam/.opam/4.05/lib/ctypes ocamlbuild -use-ocamlfind -classic-display  lib/sodium.cma lib/sodium.cmxa
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_bindgen.ml > lib_gen/sodium_bindgen.ml.depends
 # ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_bindings.ml > lib_gen/sodium_bindings.ml.depends
-# ocamlfind ocamldep -package ctypes.stubs -package bigarray -package bytes -modules lib/sodium_storage.ml > lib/sodium_storage.ml.depends
-# ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -package bigarray -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium_storage.cmo lib/sodium_storage.ml
+# ocamlfind ocamldep -package bigarray -package bytes -package ctypes.stubs -modules lib/sodium_storage.ml > lib/sodium_storage.ml.depends
+# ocamlfind ocamlc -c -bin-annot -safe-string -package bigarray -package bytes -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium_storage.cmo lib/sodium_storage.ml
 # ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_bindings.cmo lib_gen/sodium_bindings.ml
 # ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_bindgen.cmo lib_gen/sodium_bindgen.ml
 # ocamlfind ocamlc -linkpkg -package ctypes.stubs -I lib -I lib_gen lib/sodium_storage.cmo lib_gen/sodium_bindings.cmo lib_gen/sodium_bindgen.cmo -o lib_gen/sodium_bindgen.byte
@@ -129,5 +129,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180729032028.export"
-31 1532834416 1532834440
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180730014749.export"
+31 1532915257 1532915280

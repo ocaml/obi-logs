@@ -83,6 +83,7 @@ The following actions will be performed:
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
 [omake.0.10.3] found in cache
+[opium.0.15.0] found in cache
 [ppx_ast.v0.9.1] found in cache
 [ppx_core.v0.9.3] found in cache
 [ppx_derivers.1.0] found in cache
@@ -93,7 +94,6 @@ The following actions will be performed:
 [ppx_optcomp.v0.9.0] found in cache
 [ppx_sexp_conv.v0.9.0] found in cache
 [ppx_tools.5.0+4.05.0] found in cache
-[opium.0.15.0] downloaded from https://github.com/rgrinberg/opium/archive/v0.15.0.tar.gz
 [ppx_tools_versioned.5.2] found in cache
 [ppx_traverse_builtins.v0.9.0] found in cache
 [ppx_type_conv.v0.9.1] found in cache
@@ -164,8 +164,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/opium.0.15.0
 # command              /usr/bin/make install
 # exit-code            2
-# env-file             ~/.opam/log/opium-11-2443f5.env
-# output-file          ~/.opam/log/opium-11-2443f5.out
+# env-file             ~/.opam/log/opium-11-382142.env
+# output-file          ~/.opam/log/opium-11-382142.out
 ### output ###
 # *** omake: reading OMakefiles
 # --- Checking for ocamlfind... (found /home/opam/.opam/4.05/bin/ocamlfind)
@@ -174,7 +174,7 @@ The following actions will be performed:
 # --- Checking for ocamldep.opt... (found /home/opam/.opam/4.05/bin/ocamldep.opt)
 # --- Checking for ocamllex.opt... (found /home/opam/.opam/4.05/bin/ocamllex.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.07 sec)
+# *** omake: finished reading OMakefiles (0.06 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build opium_kernel opium_hmap.cmi
 # + ocamlfind ocamlc.opt -package hmap,cohttp.lwt-core,ppx_deriving,ppx_fields_conv,ppx_sexp_conv,ezjsonm -g -bin-annot -thread -g -I . -c opium_hmap.mli
@@ -199,42 +199,11 @@ The following actions will be performed:
 #   ocamlfind -toolchain <t> <command>
 # Abbreviations:
 #   e.g. ocamlfind opt instead of ocamlfind ocamlopt
-# - build opium_kernel opium_misc.o
-# + ocamlfind ocamlc.opt -package hmap,cohttp.lwt-core,ppx_deriving,ppx_fields_conv,ppx_sexp_conv,ezjsonm -g -bin-annot -thread -g -I . -c opium_misc.ml
-# Usage: ocamlfind query        [-help | other options] <package_name> ...
-#    or: ocamlfind ocamlc       [-help | other options] <file> ...
-#    or: ocamlfind ocamlcp      [-help | other options] <file> ...
-#    or: ocamlfind ocamlmklib   [-help | other options] <file> ...
-#    or: ocamlfind ocamlmktop   [-help | other options] <file> ...
-#    or: ocamlfind ocamlopt     [-help | other options] <file> ...
-#    or: ocamlfind ocamloptp    [-help | other options] <file> ...
-#    or: ocamlfind ocamldep     [-help | other options] <file> ...
-#    or: ocamlfind ocamlbrowser [-help | other options]
-#    or: ocamlfind ocamldoc     [-help | other options] <file> ...
-#    or: ocamlfind install      [-help | other options] <package_name> <file> ...
-#    or: ocamlfind remove       [-help | other options] <package_name>
-#    or: ocamlfind printppx     [-help | other options] <package_name> ...
-#    or: ocamlfind printconf    [-help] [variable]
-#    or: ocamlfind lint         [-help] <file>
-#    or: ocamlfind list
-#    or: ocamlfind pkg/cmd arg ...
-# Select toolchain with:
-#   ocamlfind -toolchain <t> <command>
-# Abbreviations:
-#   e.g. ocamlfind opt instead of ocamlfind ocamlopt
 # *** omake: 55/108 targets are up to date
-# *** omake: failed (0.35 sec, 18/18 scans, 3/3 rules, 26/58 digests)
+# *** omake: failed (0.27 sec, 18/18 scans, 2/2 rules, 26/58 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    opium_kernel/opium_hmap.cmi
 #       depends on: opium_kernel/opium_hmap.mli
-#    opium_kernel/opium_misc.cmi
-#       depends on: opium_kernel/opium_misc.ml
-#    opium_kernel/opium_misc.cmo
-#       depends on: opium_kernel/opium_misc.ml
-#    opium_kernel/opium_misc.cmx
-#       depends on: opium_kernel/opium_misc.ml
-#    opium_kernel/opium_misc.o
-#       depends on: opium_kernel/opium_misc.ml
 # Makefile:21: recipe for target 'install' failed
 # make: *** [install] Error 2
 
@@ -298,5 +267,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180729022943.export"
-31 1532831367 1532831641
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180730013311.export"
+31 1532914374 1532914569

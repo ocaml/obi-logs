@@ -74,6 +74,7 @@ The following actions will be performed:
 [cstruct.3.2.1] found in cache
 [easy-format.1.3.1] found in cache
 [fieldslib.v0.11.0] found in cache
+[key-parsers.0.8.1] found in cache
 [ocaml-compiler-libs.v0.11.0] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
@@ -83,7 +84,6 @@ The following actions will be performed:
 [ppx_custom_printf.v0.11.0] found in cache
 [ppx_derivers.1.0] found in cache
 [ppx_deriving.4.1.5] found in cache
-[key-parsers.0.8.1] downloaded from https://github.com/cryptosense/key-parsers/releases/download/0.8.1/key-parsers-0.8.1.tbz
 [ppx_deriving_yojson.3.1] found in cache
 [ppx_fields_conv.v0.11.0] found in cache
 [ppx_here.v0.11.0] found in cache
@@ -108,26 +108,26 @@ The following actions will be performed:
 -> installed conf-which.1
 -> installed cppo.1.6.4
 -> installed easy-format.1.3.1
+-> installed biniou.1.2.0
 -> installed num.0
 -> installed ocaml-compiler-libs.v0.11.0
 -> installed ocamlbuild.0.12.0
--> installed biniou.1.2.0
--> installed cppo_ocamlbuild.1.6.0
 -> installed ppx_derivers.1.0
 -> installed ppx_tools.5.0+4.05.0
+-> installed cppo_ocamlbuild.1.6.0
 -> installed result.1.3
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed ppx_deriving.4.1.5
 -> installed sexplib0.v0.11.0
 -> installed parsexp.v0.11.0
 -> installed sexplib.v0.11.0
--> installed base.v0.11.1
 -> installed cstruct.3.2.1
 -> installed topkg.0.9.1
 -> installed yojson.1.4.1
--> installed stdio.v0.11.0
+-> installed base.v0.11.1
 -> installed ppx_deriving_yojson.3.1
 -> installed zarith.1.7
+-> installed stdio.v0.11.0
 -> installed asn1-combinators.0.1.3
 -> installed ppxlib.0.3.0
 -> installed fieldslib.v0.11.0
@@ -147,8 +147,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/key-parsers.0.8.1
 # command              ~/.opam/4.05/bin/ocaml pkg/pkg.ml build --pinned false
 # exit-code            1
-# env-file             ~/.opam/log/key-parsers-11-fa94db.env
-# output-file          ~/.opam/log/key-parsers-11-fa94db.out
+# env-file             ~/.opam/log/key-parsers-11-b2c53e.env
+# output-file          ~/.opam/log/key-parsers-11-b2c53e.out
 ### output ###
 # ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package bin_prot -package result -package asn1-combinators -package zarith -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
 # + ocamlfind ocamldep -package ppx_deriving_yojson -package ppx_bin_prot -package ppx_deriving -package ppx_deriving.std -package ppx_deriving_yojson.runtime -package bin_prot -package result -package asn1-combinators -package zarith -modules src/kp_asn1.ml > src/kp_asn1.ml.depends
@@ -212,5 +212,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180729031633.export"
-31 1532834182 1532834368
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180730013629.export"
+31 1532914581 1532914694

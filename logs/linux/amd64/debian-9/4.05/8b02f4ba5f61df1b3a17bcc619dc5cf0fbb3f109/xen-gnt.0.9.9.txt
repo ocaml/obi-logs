@@ -86,8 +86,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/xen-gnt.0.9.9
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/xen-gnt-10-219760.env
-# output-file          ~/.opam/log/xen-gnt-10-219760.out
+# env-file             ~/.opam/log/xen-gnt-11-219760.env
+# output-file          ~/.opam/log/xen-gnt-11-219760.out
 ### output ###
 # ocaml setup.ml -configure --enable-tests
 # File "./setup.ml", line 234, characters 8-26:
@@ -324,83 +324,87 @@ The following actions will be performed:
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlopt -shared -linkall -I lib lib/xen_gnt.cmxa -o lib/xen_gnt.cmxs
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gntshr_stubs.c
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gnttab_stubs.c
-# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gntshr_stubs.c
-# lib/gntshr_stubs.c: In function 'stub_gntshr_open':
-# lib/gntshr_stubs.c:75:2: error: unknown type name 'xc_gntshr'
-#   xc_gntshr *xgh;
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gnttab_stubs.c
+# lib/gnttab_stubs.c: In function 'stub_gnttab_interface_open':
+# lib/gnttab_stubs.c:38:2: error: unknown type name 'xc_gnttab'
+#   xc_gnttab *xgh;
 #   ^~~~~~~~~
-# lib/gntshr_stubs.c:77:8: warning: implicit declaration of function 'xc_gntshr_open' [-Wimplicit-function-declaration]
-#   xgh = xc_gntshr_open(NULL, 0);
+# lib/gnttab_stubs.c:39:8: warning: implicit declaration of function 'xc_gnttab_open' [-Wimplicit-function-declaration]
+#   xgh = xc_gnttab_open(NULL, 0);
 #         ^~~~~~~~~~~~~~
-# lib/gntshr_stubs.c:77:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-#   xgh = xc_gntshr_open(NULL, 0);
+# lib/gnttab_stubs.c:39:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+#   xgh = xc_gnttab_open(NULL, 0);
 #       ^
-# lib/gntshr_stubs.c: In function 'stub_gntshr_close':
-# lib/gntshr_stubs.c:91:2: warning: implicit declaration of function 'xc_gntshr_close' [-Wimplicit-function-declaration]
-#   xc_gntshr_close(_G(xgh));
+# lib/gnttab_stubs.c: In function 'stub_gnttab_interface_close':
+# lib/gnttab_stubs.c:49:2: warning: implicit declaration of function 'xc_gnttab_close' [-Wimplicit-function-declaration]
+#   xc_gnttab_close(_G(xgh));
 #   ^~~~~~~~~~~~~~~
-# lib/gntshr_stubs.c:45:19: error: 'xc_gntshr' undeclared (first use in this function)
-#  #define _G(__g) ((xc_gntshr *)(__g))
+# lib/gnttab_stubs.c:33:19: error: 'xc_gnttab' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gnttab *)(__g))
 #                    ^
-# lib/gntshr_stubs.c:91:18: note: in expansion of macro '_G'
-#   xc_gntshr_close(_G(xgh));
+# lib/gnttab_stubs.c:49:18: note: in expansion of macro '_G'
+#   xc_gnttab_close(_G(xgh));
 #                   ^~
-# lib/gntshr_stubs.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
-#  #define _G(__g) ((xc_gntshr *)(__g))
+# lib/gnttab_stubs.c:33:19: note: each undeclared identifier is reported only once for each function it appears in
+#  #define _G(__g) ((xc_gnttab *)(__g))
 #                    ^
-# lib/gntshr_stubs.c:91:18: note: in expansion of macro '_G'
-#   xc_gntshr_close(_G(xgh));
+# lib/gnttab_stubs.c:49:18: note: in expansion of macro '_G'
+#   xc_gnttab_close(_G(xgh));
 #                   ^~
-# lib/gntshr_stubs.c:45:30: error: expected expression before ')' token
-#  #define _G(__g) ((xc_gntshr *)(__g))
+# lib/gnttab_stubs.c:33:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gnttab *)(__g))
 #                               ^
-# lib/gntshr_stubs.c:91:18: note: in expansion of macro '_G'
-#   xc_gntshr_close(_G(xgh));
+# lib/gnttab_stubs.c:49:18: note: in expansion of macro '_G'
+#   xc_gnttab_close(_G(xgh));
 #                   ^~
-# lib/gntshr_stubs.c: In function 'stub_gntshr_share_pages_batched':
-# lib/gntshr_stubs.c:120:8: warning: implicit declaration of function 'xc_gntshr_share_pages' [-Wimplicit-function-declaration]
-#   map = xc_gntshr_share_pages(_G(xgh), Int_val(domid), c_count, refs, Bool_val(writable));
-#         ^~~~~~~~~~~~~~~~~~~~~
-# lib/gntshr_stubs.c:45:19: error: 'xc_gntshr' undeclared (first use in this function)
-#  #define _G(__g) ((xc_gntshr *)(__g))
-#                    ^
-# lib/gntshr_stubs.c:120:30: note: in expansion of macro '_G'
-#   map = xc_gntshr_share_pages(_G(xgh), Int_val(domid), c_count, refs, Bool_val(writable));
-#                               ^~
-# lib/gntshr_stubs.c:45:30: error: expected expression before ')' token
-#  #define _G(__g) ((xc_gntshr *)(__g))
-#                               ^
-# lib/gntshr_stubs.c:120:30: note: in expansion of macro '_G'
-#   map = xc_gntshr_share_pages(_G(xgh), Int_val(domid), c_count, refs, Bool_val(writable));
-#                               ^~
-# lib/gntshr_stubs.c:45:30: error: expected expression before ')' token
-#  #define _G(__g) ((xc_gntshr *)(__g))
-#                               ^
-# lib/gntshr_stubs.c:124:15: note: in expansion of macro '_G'
-#    failwith_xc(_G(xgh));
-#                ^~
-# lib/gntshr_stubs.c: In function 'stub_gntshr_munmap_batched':
-# lib/gntshr_stubs.c:159:15: warning: implicit declaration of function 'xc_gntshr_munmap' [-Wimplicit-function-declaration]
-#   int result = xc_gntshr_munmap(_G(xgh), Data_bigarray_val(ml_map), pages);
+# lib/gnttab_stubs.c: In function 'stub_gnttab_unmap':
+# lib/gnttab_stubs.c:68:15: warning: implicit declaration of function 'xc_gnttab_munmap' [-Wimplicit-function-declaration]
+#   int result = xc_gnttab_munmap(_G(xgh), Caml_ba_data_val(array), pages);
 #                ^~~~~~~~~~~~~~~~
-# lib/gntshr_stubs.c:45:19: error: 'xc_gntshr' undeclared (first use in this function)
-#  #define _G(__g) ((xc_gntshr *)(__g))
+# lib/gnttab_stubs.c:33:19: error: 'xc_gnttab' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gnttab *)(__g))
 #                    ^
-# lib/gntshr_stubs.c:159:32: note: in expansion of macro '_G'
-#   int result = xc_gntshr_munmap(_G(xgh), Data_bigarray_val(ml_map), pages);
+# lib/gnttab_stubs.c:68:32: note: in expansion of macro '_G'
+#   int result = xc_gnttab_munmap(_G(xgh), Caml_ba_data_val(array), pages);
 #                                 ^~
-# lib/gntshr_stubs.c:45:30: error: expected expression before ')' token
-#  #define _G(__g) ((xc_gntshr *)(__g))
+# lib/gnttab_stubs.c:33:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gnttab *)(__g))
 #                               ^
-# lib/gntshr_stubs.c:159:32: note: in expansion of macro '_G'
-#   int result = xc_gntshr_munmap(_G(xgh), Data_bigarray_val(ml_map), pages);
+# lib/gnttab_stubs.c:68:32: note: in expansion of macro '_G'
+#   int result = xc_gnttab_munmap(_G(xgh), Caml_ba_data_val(array), pages);
 #                                 ^~
-# lib/gntshr_stubs.c:45:30: error: expected expression before ')' token
-#  #define _G(__g) ((xc_gntshr *)(__g))
+# lib/gnttab_stubs.c: In function 'stub_gnttab_map_fresh':
+# lib/gnttab_stubs.c:96:3: warning: implicit declaration of function 'xc_gnttab_map_grant_ref' [-Wimplicit-function-declaration]
+#    xc_gnttab_map_grant_ref(_G(xgh), Int_val(domid), Int_val(reference),
+#    ^~~~~~~~~~~~~~~~~~~~~~~
+# lib/gnttab_stubs.c:33:19: error: 'xc_gnttab' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gnttab *)(__g))
+#                    ^
+# lib/gnttab_stubs.c:96:27: note: in expansion of macro '_G'
+#    xc_gnttab_map_grant_ref(_G(xgh), Int_val(domid), Int_val(reference),
+#                            ^~
+# lib/gnttab_stubs.c:33:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gnttab *)(__g))
 #                               ^
-# lib/gntshr_stubs.c:161:15: note: in expansion of macro '_G'
-#    failwith_xc(_G(xgh));
-#                ^~
+# lib/gnttab_stubs.c:96:27: note: in expansion of macro '_G'
+#    xc_gnttab_map_grant_ref(_G(xgh), Int_val(domid), Int_val(reference),
+#                            ^~
+# lib/gnttab_stubs.c: In function 'stub_gnttab_mapv_batched':
+# lib/gnttab_stubs.c:128:3: warning: implicit declaration of function 'xc_gnttab_map_grant_refs' [-Wimplicit-function-declaration]
+#    xc_gnttab_map_grant_refs(_G(xgh),
+#    ^~~~~~~~~~~~~~~~~~~~~~~~
+# lib/gnttab_stubs.c:33:19: error: 'xc_gnttab' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gnttab *)(__g))
+#                    ^
+# lib/gnttab_stubs.c:128:28: note: in expansion of macro '_G'
+#    xc_gnttab_map_grant_refs(_G(xgh),
+#                             ^~
+# lib/gnttab_stubs.c:33:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gnttab *)(__g))
+#                               ^
+# lib/gnttab_stubs.c:128:28: note: in expansion of macro '_G'
+#    xc_gnttab_map_grant_refs(_G(xgh),
+#                             ^~
 # Command exited with code 2.
 # + /home/opam/.opam/4.05/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # File "myocamlbuild.ml", line 471, characters 43-62:
@@ -443,5 +447,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180729021837.export"
-31 1532830710 1532830849
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180730011725.export"
+31 1532913436 1532913620

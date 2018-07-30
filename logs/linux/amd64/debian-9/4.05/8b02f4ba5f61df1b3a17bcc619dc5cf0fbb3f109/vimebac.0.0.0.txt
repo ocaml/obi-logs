@@ -708,8 +708,8 @@ The following actions will be performed:
 -> installed grenier.0.7
 -> installed misuja.0.0.0
 -> installed nonstd.0.0.3
--> installed result.1.3
 -> installed ocamlbuild.0.12.0
+-> installed result.1.3
 -> installed sosa.0.3.0
 -> installed stb_image.0.4
 -> installed stb_truetype.0.6
@@ -730,8 +730,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/tsdl.0.9.6
 # command              ~/.opam/4.05/bin/ocaml pkg/pkg.ml build --pinned false
 # exit-code            1
-# env-file             ~/.opam/log/tsdl-11-c553ee.env
-# output-file          ~/.opam/log/tsdl-11-c553ee.out
+# env-file             ~/.opam/log/tsdl-10-c553ee.env
+# output-file          ~/.opam/log/tsdl-10-c553ee.out
 ### output ###
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamlc -g -thread -c src/tsdl_stubs.c
@@ -978,5 +978,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180729030645.export"
-31 1532833576 1532833634
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180730010912.export"
+31 1532912918 1532913013
