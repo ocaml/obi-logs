@@ -1,0 +1,590 @@
+$ opam depext -iy -j 2 bap-beagle.1.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+clang
+libgmp-dev
+m4
+perl
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy clang libgmp-dev m4 perl zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../1-python2.7-minimal_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking python2.7-minimal (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../2-python-minimal_2.7.13-2_amd64.deb ...
+Unpacking python-minimal (2.7.13-2) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../3-mime-support_3.60_all.deb ...
+Unpacking mime-support (3.60) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../4-libpython2.7-stdlib_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../5-python2.7_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking python2.7 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../6-libpython-stdlib_2.7.13-2_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.13-2) ...
+Setting up libpython2.7-minimal:amd64 (2.7.13-2+deb9u2) ...
+Setting up python2.7-minimal (2.7.13-2+deb9u2) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.13-2) ...
+Selecting previously unselected package python.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18453 files and directories currently installed.)
+Preparing to unpack .../00-python_2.7.13-2_amd64.deb ...
+Unpacking python (2.7.13-2) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../01-libpipeline1_1.4.1-2_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.4.1-2) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../02-libmagic-mgc_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking libmagic-mgc (1:5.30-1+deb9u2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../03-libmagic1_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.30-1+deb9u2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../04-file_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking file (1:5.30-1+deb9u2) ...
+Selecting previously unselected package libgc1c2:amd64.
+Preparing to unpack .../05-libgc1c2_1%3a7.4.2-8_amd64.deb ...
+Unpacking libgc1c2:amd64 (1:7.4.2-8) ...
+Selecting previously unselected package binfmt-support.
+Preparing to unpack .../06-binfmt-support_2.1.6-2_amd64.deb ...
+Unpacking binfmt-support (2.1.6-2) ...
+Selecting previously unselected package libllvm3.8:amd64.
+Preparing to unpack .../07-libllvm3.8_1%3a3.8.1-24_amd64.deb ...
+Unpacking libllvm3.8:amd64 (1:3.8.1-24) ...
+Selecting previously unselected package libclang1-3.8:amd64.
+Preparing to unpack .../08-libclang1-3.8_1%3a3.8.1-24_amd64.deb ...
+Unpacking libclang1-3.8:amd64 (1:3.8.1-24) ...
+Selecting previously unselected package libobjc4:amd64.
+Preparing to unpack .../09-libobjc4_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libobjc4:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libobjc-6-dev:amd64.
+Preparing to unpack .../10-libobjc-6-dev_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libobjc-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libclang-common-3.8-dev.
+Preparing to unpack .../11-libclang-common-3.8-dev_1%3a3.8.1-24_amd64.deb ...
+Unpacking libclang-common-3.8-dev (1:3.8.1-24) ...
+Selecting previously unselected package clang-3.8.
+Preparing to unpack .../12-clang-3.8_1%3a3.8.1-24_amd64.deb ...
+Unpacking clang-3.8 (1:3.8.1-24) ...
+Selecting previously unselected package clang.
+Preparing to unpack .../13-clang_1%3a3.8-36_amd64.deb ...
+Unpacking clang (1:3.8-36) ...
+Selecting previously unselected package libffi-dev:amd64.
+Preparing to unpack .../14-libffi-dev_3.2.1-6_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.2.1-6) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../15-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../16-libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../17-libtinfo-dev_6.0+20161126-1+deb9u2_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (6.0+20161126-1+deb9u2) ...
+Selecting previously unselected package llvm-3.8-runtime.
+Preparing to unpack .../18-llvm-3.8-runtime_1%3a3.8.1-24_amd64.deb ...
+Unpacking llvm-3.8-runtime (1:3.8.1-24) ...
+Selecting previously unselected package llvm-3.8.
+Preparing to unpack .../19-llvm-3.8_1%3a3.8.1-24_amd64.deb ...
+Unpacking llvm-3.8 (1:3.8.1-24) ...
+Selecting previously unselected package libjsoncpp1:amd64.
+Preparing to unpack .../20-libjsoncpp1_1.7.4-3_amd64.deb ...
+Unpacking libjsoncpp1:amd64 (1.7.4-3) ...
+Selecting previously unselected package llvm-3.8-dev.
+Preparing to unpack .../21-llvm-3.8-dev_1%3a3.8.1-24_amd64.deb ...
+Unpacking llvm-3.8-dev (1:3.8.1-24) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../22-zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libllvm3.8:amd64 (1:3.8.1-24) ...
+Setting up libclang-common-3.8-dev (1:3.8.1-24) ...
+Setting up mime-support (3.60) ...
+Setting up libtinfo-dev:amd64 (6.0+20161126-1+deb9u2) ...
+Setting up libclang1-3.8:amd64 (1:3.8.1-24) ...
+Setting up libgc1c2:amd64 (1:7.4.2-8) ...
+Setting up libffi-dev:amd64 (3.2.1-6) ...
+Setting up libpipeline1:amd64 (1.4.1-2) ...
+Setting up libmagic-mgc (1:5.30-1+deb9u2) ...
+Setting up libmagic1:amd64 (1:5.30-1+deb9u2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.13-2+deb9u2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libjsoncpp1:amd64 (1.7.4-3) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up binfmt-support (2.1.6-2) ...
+update-binfmts: warning: Couldn't load the binfmt_misc module.
+update-binfmts: warning: Couldn't load the binfmt_misc module.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libobjc4:amd64 (6.3.0-18+deb9u1) ...
+Setting up python2.7 (2.7.13-2+deb9u2) ...
+Setting up file (1:5.30-1+deb9u2) ...
+Setting up libpython-stdlib:amd64 (2.7.13-2) ...
+Setting up libobjc-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Setting up llvm-3.8-runtime (1:3.8.1-24) ...
+update-binfmts: warning: Couldn't load the binfmt_misc module.
+Setting up llvm-3.8 (1:3.8.1-24) ...
+Setting up python (2.7.13-2) ...
+Setting up llvm-3.8-dev (1:3.8.1-24) ...
+Setting up clang-3.8 (1:3.8.1-24) ...
+Setting up clang (1:3.8-36) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp                1      [required by zarith]
+  - install jane-street-headers     v0.9.0 [required by core_kernel]
+  - install re                      1.7.3  [required by uri]
+  - install ocaml-compiler-libs     v0.9.0 [required by ppx_core]
+  - install camomile                1.0.1  [required by lambda-term]
+  - install result                  1.3    [required by cmdliner]
+  - install base-num                base   [required by num]
+  - install ocamlbuild              0.12.0 [required by utop, cmdliner, uuidm]
+  - install base-bytes              base   [required by uuidm]
+  - install conf-perl               1      [required by zarith]
+  - install octavius                1.2.0  [required by ppx_js_style]
+  - install ocamlgraph              1.8.8  [required by graphlib]
+  - install camlzip                 1.07   [required by bap-std]
+  - install ppx_derivers            1.0    [required by ppx_type_conv]
+  - install ppx_traverse_builtins   v0.9.0 [required by ppx_core, ppx_metaquot]
+  - install ocaml-migrate-parsetree 1.0.11 [required by core_kernel]
+  - install num                     0      [required by core_kernel]
+  - install topkg                   0.9.1  [required by cmdliner, uuidm]
+  - install ocamlmod                0.0.9  [required by oasis]
+  - install ocamlify                0.0.1  [required by oasis]
+  - install stringext               1.5.0  [required by uri]
+  - install fileutils               0.5.3  [required by bap-std]
+  - install cppo                    1.6.4  [required by utop]
+  - install zarith                  1.7    [required by bap-std]
+  - install ppx_ast                 v0.9.1 [required by ppx_core]
+  - install sexplib                 v0.9.2 [required by uri]
+  - install react                   1.2.1  [required by utop]
+  - install cmdliner                1.0.2  [required by bap-beagle]
+  - install oasis                   0.4.7  [required by bap-std]
+  - install lwt                     4.1.0  [required by utop]                          For the PPX, please install package lwt_ppx
+  - install cppo_ocamlbuild         1.6.0  [required by utop]
+  - install base                    v0.9.3 [required by core_kernel]
+  - install zed                     1.6    [required by lambda-term]
+  - install uuidm                   0.9.6  [required by bap-primus]
+  - install lwt_react               1.1.1  [required by lambda-term]
+  - install lwt_log                 1.1.0  [required by lambda-term]
+  - install typerep                 v0.9.0 [required by core_kernel]
+  - install stdio                   v0.9.0 [required by core_kernel]
+  - install lambda-term             1.13   [required by utop]
+  - install ppx_core                v0.9.0 [required by ppx_assert, ppx_inline_test]
+  - install utop                    1.19.3 [required by bap-std]
+  - install ppx_optcomp             v0.9.0 [required by ppx_driver]
+  - install ppx_driver              v0.9.1 [required by core_kernel]
+  - install variantslib             v0.9.0 [required by core_kernel]
+  - install ppx_metaquot            v0.9.0 [required by ppx_assert, ppx_inline_test]
+  - install ppx_let                 v0.9.0 [required by ppx_jane]
+  - install ppx_here                v0.9.1 [required by ppx_assert, ppx_jane]
+  - install fieldslib               v0.9.0 [required by core_kernel]
+  - install ppx_type_conv           v0.9.1 [required by ppx_assert]
+  - install ppx_pipebang            v0.9.0 [required by ppx_jane]
+  - install ppx_optional            v0.9.0 [required by ppx_jane]
+  - install ppx_js_style            v0.9.0 [required by ppx_base]
+  - install ppx_inline_test         v0.9.2 [required by core_kernel]
+  - install ppx_fail                v0.9.0 [required by ppx_jane]
+  - install ppx_variants_conv       v0.9.0 [required by bin_prot, ppx_jane]
+  - install ppx_typerep_conv        v0.9.0 [required by ppx_jane]
+  - install ppx_traverse            v0.9.0 [required by ppx_custom_printf, ppx_expect]
+  - install ppx_sexp_conv           v0.9.0 [required by uri]
+  - install ppx_fields_conv         v0.9.0 [required by bin_prot, ppx_jane]
+  - install ppx_enumerate           v0.9.0 [required by ppx_base]
+  - install ppx_compare             v0.9.0 [required by bin_prot, ppx_assert]
+  - install ppx_bench               v0.9.1 [required by ppx_jane]
+  - install uri                     1.9.7  [required by bap-std]
+  - install ppx_sexp_value          v0.9.0 [required by ppx_jane]
+  - install ppx_sexp_message        v0.9.0 [required by core_kernel]
+  - install ppx_custom_printf       v0.9.0 [required by bin_prot, ppx_jane]
+  - install ppx_hash                v0.9.0 [required by core_kernel]
+  - install ppx_assert              v0.9.0 [required by core_kernel]
+  - install bin_prot                v0.9.1 [required by bap-std]
+  - install ppx_base                v0.9.0 [required by core_kernel]
+  - install ppx_expect              v0.9.0 [required by ppx_jane]
+  - install ppx_bin_prot            v0.9.0 [required by ppx_jane]
+  - install configurator            v0.9.1 [required by core_kernel]
+  - install ppx_jane                v0.9.0 [required by bap-std]
+  - install core_kernel             v0.9.0 [required by bap-std]
+  - install regular                 1.4.0  [required by bap-std]
+  - install monads                  1.4.0  [required by bap-primus]
+  - install graphlib                1.4.0  [required by bap-std]
+  - install ogre                    1.4.0  [required by bap-std]
+  - install bap-future              1.4.0  [required by bap-primus]
+  - install bap-std                 1.4.0  [required by bap-beagle]
+  - install bap-microx              1.4.0  [required by bap-beagle]
+  - install bap-api                 1.4.0  [required by bap-c]
+  - install bap-abi                 1.4.0  [required by bap-primus]
+  - install bap-c                   1.4.0  [required by bap-primus]
+  - install bap-primus              1.3.0  [required by bap-beagle]
+  - install bap-beagle              1.3.0
+===== 87 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[bap-abi.1.4.0] found in cache
+[bap-api.1.4.0] found in cache
+[bap-beagle.1.3.0] found in cache
+[bap-c.1.4.0] found in cache
+[bap-future.1.4.0] found in cache
+[bap-microx.1.4.0] found in cache
+[bap-primus.1.3.0] found in cache
+[bap-std.1.4.0] found in cache
+[base.v0.9.3] found in cache
+[bin_prot.v0.9.1] found in cache
+[camlzip.1.07] found in cache
+[camomile.1.0.1] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.9.1] found in cache
+[core_kernel.v0.9.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[fieldslib.v0.9.0] found in cache
+[fileutils.0.5.3] found in cache
+[graphlib.1.4.0] found in cache
+[jane-street-headers.v0.9.0] found in cache
+[lambda-term.1.13] found in cache
+[lwt.4.1.0] found in cache
+[lwt_log.1.1.0] found in cache
+[lwt_react.1.1.1] found in cache
+[monads.1.4.0] found in cache
+[oasis.0.4.7] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[octavius.1.2.0] found in cache
+[ogre.1.4.0] found in cache
+[ppx_assert.v0.9.0] found in cache
+[ppx_ast.v0.9.1] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_bench.v0.9.1] found in cache
+[ppx_bin_prot.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.0] found in cache
+[ppx_custom_printf.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_driver.v0.9.1] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_expect.v0.9.0] found in cache
+[ppx_fail.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_here.v0.9.1] found in cache
+[ppx_inline_test.v0.9.2] found in cache
+[ppx_jane.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_let.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_optional.v0.9.0] found in cache
+[ppx_pipebang.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_sexp_message.v0.9.0] found in cache
+[ppx_sexp_value.v0.9.0] found in cache
+[ppx_traverse.v0.9.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[ppx_typerep_conv.v0.9.0] found in cache
+[ppx_variants_conv.v0.9.0] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[regular.1.4.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.9.2] found in cache
+[stdio.v0.9.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.9.0] found in cache
+[uri.1.9.7] found in cache
+[utop.1.19.3] found in cache
+[uuidm.0.9.6] found in cache
+[variantslib.v0.9.0] found in cache
+[zarith.1.7] found in cache
+[zed.1.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed camlzip.1.07
+-> installed camomile.1.0.1
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed cppo.1.6.4
+-> installed jane-street-headers.v0.9.0
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocamlgraph.1.8.8
+-> installed ocamlify.0.0.1
+-> installed fileutils.0.5.3
+-> installed ocamlmod.0.0.9
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed lwt_log.1.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed oasis.0.4.7
+-> installed sexplib.v0.9.2
+-> installed ppx_ast.v0.9.1
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed base.v0.9.3
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed stdio.v0.9.0
+-> installed typerep.v0.9.0
+-> installed uuidm.0.9.6
+-> installed zarith.1.7
+-> installed zed.1.6
+-> installed ppx_core.v0.9.0
+-> installed lambda-term.1.13
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_driver.v0.9.1
+-> installed fieldslib.v0.9.0
+-> installed ppx_here.v0.9.1
+-> installed ppx_let.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_fail.v0.9.0
+-> installed ppx_inline_test.v0.9.2
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_optional.v0.9.0
+-> installed ppx_pipebang.v0.9.0
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_bench.v0.9.1
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ppx_assert.v0.9.0
+-> installed ppx_hash.v0.9.0
+-> installed ppx_sexp_message.v0.9.0
+-> installed ppx_sexp_value.v0.9.0
+-> installed ppx_traverse.v0.9.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed ppx_typerep_conv.v0.9.0
+-> installed uri.1.9.7
+-> installed utop.1.19.3
+-> installed ppx_custom_printf.v0.9.0
+-> installed variantslib.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
+-> installed bin_prot.v0.9.1
+-> installed ppx_expect.v0.9.0
+-> installed ppx_bin_prot.v0.9.0
+-> installed ppx_jane.v0.9.0
+-> installed core_kernel.v0.9.0
+-> installed regular.1.4.0
+-> installed monads.1.4.0
+-> installed bap-future.1.4.0
+-> installed ogre.1.4.0
+-> installed graphlib.1.4.0
+-> installed bap-std.1.4.0
+-> installed bap-abi.1.4.0
+-> installed bap-api.1.4.0
+-> installed bap-microx.1.4.0
+-> installed bap-c.1.4.0
+[ERROR] The compilation of bap-primus failed at "/usr/bin/make".
+
+#=== ERROR while compiling bap-primus.1.3.0 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/bap-primus.1.3.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/bap-primus-11-6cac8d.env
+# output-file          ~/.opam/log/bap-primus-11-6cac8d.out
+### output ###
+# ocaml setup.ml -quiet -build 
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package core_kernel -package findlib -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus.mli > lib/bap_primus/bap_primus.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus.cmi lib/bap_primus/bap_primus.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus.ml > lib/bap_primus/bap_primus.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_env.mli > lib/bap_primus/bap_primus_env.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_generator.mli > lib/bap_primus/bap_primus_generator.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_generator_types.ml > lib/bap_primus/bap_primus_generator_types.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_types.ml > lib/bap_primus/bap_primus_types.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_exn.mli > lib/bap_primus/bap_primus_exn.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator_types.cmo lib/bap_primus/bap_primus_generator_types.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_observation.mli > lib/bap_primus/bap_primus_observation.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_pos.mli > lib/bap_primus/bap_primus_pos.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_exn.cmi lib/bap_primus/bap_primus_exn.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_state.mli > lib/bap_primus/bap_primus_state.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_observation.cmi lib/bap_primus/bap_primus_observation.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_pos.cmi lib/bap_primus/bap_primus_pos.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_state.cmi lib/bap_primus/bap_primus_state.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_types.cmo lib/bap_primus/bap_primus_types.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmi lib/bap_primus/bap_primus_generator.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_interpreter.mli > lib/bap_primus/bap_primus_interpreter.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_linker.mli > lib/bap_primus/bap_primus_linker.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_lisp.mli > lib/bap_primus/bap_primus_lisp.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_machine.mli > lib/bap_primus/bap_primus_machine.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_main.mli > lib/bap_primus/bap_primus_main.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_memory.mli > lib/bap_primus/bap_primus_memory.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_value.mli > lib/bap_primus/bap_primus_value.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_env.cmi lib/bap_primus/bap_primus_env.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmi lib/bap_primus/bap_primus_interpreter.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_linker.cmi lib/bap_primus/bap_primus_linker.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_lisp.cmi lib/bap_primus/bap_primus_lisp.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_machine.cmi lib/bap_primus/bap_primus_machine.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_main.cmi lib/bap_primus/bap_primus_main.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_memory.cmi lib/bap_primus/bap_primus_memory.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_value.cmi lib/bap_primus/bap_primus_value.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_env.ml > lib/bap_primus/bap_primus_env.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_sexp.ml > lib/bap_primus/bap_primus_sexp.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_sexp.cmo lib/bap_primus/bap_primus_sexp.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_exn.ml > lib/bap_primus/bap_primus_exn.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_generator.ml > lib/bap_primus/bap_primus_generator.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_iterator.mli > lib/bap_primus/bap_primus_iterator.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_random.mli > lib/bap_primus/bap_primus_random.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_iterator.cmi lib/bap_primus/bap_primus_iterator.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_random.cmi lib/bap_primus/bap_primus_random.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_interpreter.ml > lib/bap_primus/bap_primus_interpreter.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_iterator.ml > lib/bap_primus/bap_primus_iterator.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_linker.ml > lib/bap_primus/bap_primus_linker.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_lisp.ml > lib/bap_primus/bap_primus_lisp.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_machine.ml > lib/bap_primus/bap_primus_machine.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_main.ml > lib/bap_primus/bap_primus_main.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_memory.ml > lib/bap_primus/bap_primus_memory.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_observation.ml > lib/bap_primus/bap_primus_observation.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_pos.ml > lib/bap_primus/bap_primus_pos.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_random.ml > lib/bap_primus/bap_primus_random.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_state.ml > lib/bap_primus/bap_primus_state.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -modules lib/bap_primus/bap_primus_value.ml > lib/bap_primus/bap_primus_value.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus.cmo lib/bap_primus/bap_primus.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_env.cmo lib/bap_primus/bap_primus_env.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_exn.cmo lib/bap_primus/bap_primus_exn.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmo lib/bap_primus/bap_primus_generator.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmo lib/bap_primus/bap_primus_interpreter.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmo lib/bap_primus/bap_primus_generator.ml
+# File "lib/bap_primus/bap_primus_generator.ml", line 11, characters 6-11:
+# Warning 3: deprecated: Core_kernel.Std.expm1
+# [since 2016-07] Use [Float.expm1]
+# File "lib/bap_primus/bap_primus_generator.ml", line 11, characters 29-34:
+# Warning 3: deprecated: Core_kernel.Std.log1p
+# [since 2016-07] Use [Float.log1p]
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_iterator.cmo lib/bap_primus/bap_primus_iterator.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_linker.cmo lib/bap_primus/bap_primus_linker.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmo lib/bap_primus/bap_primus_interpreter.ml
+# File "lib/bap_primus/bap_primus_interpreter.ml", line 445, characters 6-10:
+# Error: This pattern matches values of type bool
+#        but a pattern was expected which matches values of type
+#          equal:(bool -> bool -> bool) -> bool
+# Command exited with code 2.
+# Makefile:8: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build bap-primus 1.3.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install bap-abi                 1.4.0
+| - install bap-api                 1.4.0
+| - install bap-c                   1.4.0
+| - install bap-future              1.4.0
+| - install bap-microx              1.4.0
+| - install bap-std                 1.4.0
+| - install base                    v0.9.3
+| - install base-bytes              base
+| - install base-num                base
+| - install bin_prot                v0.9.1
+| - install camlzip                 1.07
+| - install camomile                1.0.1
+| - install cmdliner                1.0.2
+| - install conf-gmp                1
+| - install conf-perl               1
+| - install configurator            v0.9.1
+| - install core_kernel             v0.9.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install fieldslib               v0.9.0
+| - install fileutils               0.5.3
+| - install graphlib                1.4.0
+| - install jane-street-headers     v0.9.0
+| - install lambda-term             1.13
+| - install lwt                     4.1.0
+| - install lwt_log                 1.1.0
+| - install lwt_react               1.1.1
+| - install monads                  1.4.0
+| - install num                     0
+| - install oasis                   0.4.7
+| - install ocaml-compiler-libs     v0.9.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlgraph              1.8.8
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install octavius                1.2.0
+| - install ogre                    1.4.0
+| - install ppx_assert              v0.9.0
+| - install ppx_ast                 v0.9.1
+| - install ppx_base                v0.9.0
+| - install ppx_bench               v0.9.1
+| - install ppx_bin_prot            v0.9.0
+| - install ppx_compare             v0.9.0
+| - install ppx_core                v0.9.0
+| - install ppx_custom_printf       v0.9.0
+| - install ppx_derivers            1.0
+| - install ppx_driver              v0.9.1
+| - install ppx_enumerate           v0.9.0
+| - install ppx_expect              v0.9.0
+| - install ppx_fail                v0.9.0
+| - install ppx_fields_conv         v0.9.0
+| - install ppx_hash                v0.9.0
+| - install ppx_here                v0.9.1
+| - install ppx_inline_test         v0.9.2
+| - install ppx_jane                v0.9.0
+| - install ppx_js_style            v0.9.0
+| - install ppx_let                 v0.9.0
+| - install ppx_metaquot            v0.9.0
+| - install ppx_optcomp             v0.9.0
+| - install ppx_optional            v0.9.0
+| - install ppx_pipebang            v0.9.0
+| - install ppx_sexp_conv           v0.9.0
+| - install ppx_sexp_message        v0.9.0
+| - install ppx_sexp_value          v0.9.0
+| - install ppx_traverse            v0.9.0
+| - install ppx_traverse_builtins   v0.9.0
+| - install ppx_type_conv           v0.9.1
+| - install ppx_typerep_conv        v0.9.0
+| - install ppx_variants_conv       v0.9.0
+| - install re                      1.7.3
+| - install react                   1.2.1
+| - install regular                 1.4.0
+| - install result                  1.3
+| - install sexplib                 v0.9.2
+| - install stdio                   v0.9.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install typerep                 v0.9.0
+| - install uri                     1.9.7
+| - install utop                    1.19.3
+| - install uuidm                   0.9.6
+| - install variantslib             v0.9.0
+| - install zarith                  1.7
+| - install zed                     1.6
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180730045953.export"
+31 1532926754 1532927507

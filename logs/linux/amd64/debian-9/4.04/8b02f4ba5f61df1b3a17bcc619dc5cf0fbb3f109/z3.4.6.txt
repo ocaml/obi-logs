@@ -1,0 +1,216 @@
+$ opam depext -iy -j 2 z3.4.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libgmp-dev
+m4
+python2.7
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libgmp-dev m4 python2.7
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../1-python2.7-minimal_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking python2.7-minimal (2.7.13-2+deb9u2) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../2-libmagic-mgc_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking libmagic-mgc (1:5.30-1+deb9u2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../3-libmagic1_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.30-1+deb9u2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../4-file_1%3a5.30-1+deb9u2_amd64.deb ...
+Unpacking file (1:5.30-1+deb9u2) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../5-mime-support_3.60_all.deb ...
+Unpacking mime-support (3.60) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../6-libpython2.7-stdlib_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../7-python2.7_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking python2.7 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../8-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../9-libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up mime-support (3.60) ...
+Setting up libmagic-mgc (1:5.30-1+deb9u2) ...
+Setting up libmagic1:amd64 (1:5.30-1+deb9u2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.13-2+deb9u2) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.13-2+deb9u2) ...
+Setting up python2.7-minimal (2.7.13-2+deb9u2) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up python2.7 (2.7.13-2+deb9u2) ...
+Setting up file (1:5.30-1+deb9u2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-num        base [required by num]
+  - install conf-gmp        1    [required by z3]
+  - install conf-python-2-7 1.0  [required by z3]
+  - install num             0    [required by z3]
+  - install z3              4.6
+===== 5 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[z3.4.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-num.base
+-> installed conf-gmp.1
+-> installed num.0
+-> installed conf-python-2-7.1.0
+[ERROR] The compilation of z3 failed at "/usr/bin/make -C build -j 71".
+
+#=== ERROR while compiling z3.4.6 =============================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/z3.4.6
+# command              /usr/bin/make -C build -j 71
+# exit-code            2
+# env-file             ~/.opam/log/z3-11-e4db2f.env
+# output-file          ~/.opam/log/z3-11-e4db2f.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.04/.opam-switch/build/z3.4.6/build'
+# src/smt/smt_statistics.cpp
+# src/interp/iz3profiling.cpp
+# src/util/common_msgs.cpp
+# src/util/approx_nat.cpp
+# src/util/luby.cpp
+# src/api/dll/dll.cpp
+# ocamlc  -i -I api/ml -c ../src/api/ml/z3enums.ml > api/ml/z3enums.mli
+# src/util/timeit.cpp
+# src/util/cooperate.cpp
+# src/util/z3_exception.cpp
+# src/util/approx_set.cpp
+# src/util/memory_manager.cpp
+# ocamlc  -I api/ml -o api/ml/z3enums.cmi -c api/ml/z3enums.mli
+# ocamlc  -I api/ml -o api/ml/z3enums.cmo -c ../src/api/ml/z3enums.ml
+# src/api/api_log.cpp
+# src/util/util.cpp
+# src/util/timer.cpp
+# src/util/timeout.cpp
+# src/util/stack.cpp
+# src/util/scoped_timer.cpp
+# src/util/scoped_ctrl_c.cpp
+# src/util/page.cpp
+# ocamlc  -i -I api/ml -c ../src/api/ml/z3native.ml > api/ml/z3native.mli
+# src/util/bit_util.cpp
+# ocamlc  -I api/ml -o api/ml/z3native.cmi -c api/ml/z3native.mli
+# ocamlc  -I api/ml -o api/ml/z3native.cmo -c ../src/api/ml/z3native.ml
+# src/shell/z3_log_frontend.cpp
+# src/api/api_commands.cpp
+# src/util/mpn.cpp
+# src/util/fixed_bit_vector.cpp
+# cp ../src/api/ml/z3.mli api/ml/z3.mli
+# src/util/lbool.cpp
+# src/util/hash.cpp
+# ocamlc  -I api/ml -o api/ml/z3.cmi -c api/ml/z3.mli
+# src/util/warning.cpp
+# src/solver/smt_logics.cpp
+# src/util/small_object_allocator.cpp
+# src/api/z3_replayer.cpp
+# src/util/min_cut.cpp
+# src/util/debug.cpp
+# src/util/bit_vector.cpp
+# src/util/cmd_context_types.cpp
+# src/util/smt2_util.cpp
+# src/util/rlimit.cpp
+# src/interp/iz3scopes.cpp
+# src/util/trace.cpp
+# src/util/permutation.cpp
+# ocamlc  -I api/ml -o api/ml/z3.cmo -c ../src/api/ml/z3.ml
+# src/api/api_log_macros.cpp
+# src/math/automata/automaton.cpp
+# src/sat/sat_model_converter.cpp
+# src/sat/sat_par.cpp
+# src/sat/sat_clause_use_list.cpp
+# src/sat/sat_watched.cpp
+# src/util/symbol.cpp
+# src/util/mpz.cpp
+# src/util/statistics.cpp
+# src/sat/sat_clause.cpp
+# src/util/region.cpp
+# src/util/prime_generator.cpp
+# src/math/realclosure/mpz_matrix.cpp
+# src/util/gparams.cpp
+# src/util/mpq.cpp
+# src/util/env_params.cpp
+# src/smt/params/theory_bv_params.cpp
+# src/smt/params/theory_str_params.cpp
+# src/smt/params/preprocessor_params.cpp
+# src/ast/pattern/pattern_inference_params.cpp
+# src/smt/params/theory_pb_params.cpp
+# src/smt/params/dyn_ack_params.cpp
+# src/smt/params/qi_params.cpp
+# src/smt/params/theory_arith_params.cpp
+# src/smt/params/theory_array_params.cpp
+# src/sat/sat_config.cpp
+# src/util/params.cpp
+# src/util/rational.cpp
+# src/shell/mem_initializer.cpp
+# src/util/mpff.cpp
+# src/util/mpf.cpp
+# src/sat/sat_clause_set.cpp
+# src/util/mpq_inf.cpp
+# src/util/mpfx.cpp
+# src/api/dll/mem_initializer.cpp
+# src/smt/old_interval.cpp
+# src/math/euclid/euclidean_solver.cpp
+# src/ast/for_each_ast.cpp
+# src/ast/ast_lt.cpp
+# src/ast/has_free_vars.cpp
+# src/sat/sat_solver.cpp
+# src/tactic/arith/linear_equation.cpp
+# src/sat/sat_scc.cpp
+# src/sat/sat_simplifier.cpp
+# src/sat/sat_mus.cpp
+# src/sat/sat_iff3_finder.cpp
+# src/sat/sat_integrity_checker.cpp
+# src/sat/sat_elim_eqs.cpp
+# src/sat/sat_asymm_branch.cpp
+# src/sat/sat_cleaner.cpp
+# src/sat/dimacs.cpp
+# src/sat/sat_probing.cpp
+# src/util/mpbq.cpp
+# src/util/s_integer.cpp
+# src/util/inf_rational.cpp
+# src/util/hwf.cpp
+# src/util/sexpr.cpp
+# ocamlopt  -I api/ml -o api/ml/z3enums.cmx -c ../src/api/ml/z3enums.ml
+# ocamlopt  -I api/ml -o api/ml/z3native.cmx -c ../src/api/ml/z3native.ml
+# src/util/inf_int_rational.cpp
+# ocamlopt  -I api/ml -o api/ml/z3.cmx -c ../src/api/ml/z3.ml
+# File "../src/api/ml/z3.ml", line 1:
+# Error: Corrupted compiled interface
+# api/ml/z3native.cmi
+# Makefile:4424: recipe for target 'api/ml/z3.cmx' failed
+# make: *** [api/ml/z3.cmx] Error 2
+# make: *** Waiting for unfinished jobs....
+# make: Leaving directory '/home/opam/.opam/4.04/.opam-switch/build/z3.4.6/build'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build z3 4.6
++- 
++- The following changes have been performed
+| - install base-num        base
+| - install conf-gmp        1
+| - install conf-python-2-7 1.0
+| - install num             0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180730045530.export"
+31 1532926520 1532926548
