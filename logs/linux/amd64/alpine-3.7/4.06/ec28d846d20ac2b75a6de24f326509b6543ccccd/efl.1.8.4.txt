@@ -1,0 +1,48 @@
+$ opam depext -iy -j 2 efl.1.8.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+pkgconfig
+m4
+pkgconf
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild      0.12.0 [required by efl]
+  - install conf-pkg-config 1.1    [required by conf-efl]
+  - install conf-efl        1.8    [required by efl]
+  - install efl             1.8.4
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[efl.1.8.4] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of conf-efl failed at "/usr/bin/pkg-config elementary --atleast-version=1.8".
+-> installed ocamlbuild.0.12.0
+
+#=== ERROR while compiling conf-efl.1.8 =======================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-efl.1.8
+# command              /usr/bin/pkg-config elementary --atleast-version=1.8
+# exit-code            1
+# env-file             ~/.opam/log/conf-efl-13-a71bb4.env
+# output-file          ~/.opam/log/conf-efl-13-a71bb4.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-efl 1.8
++- 
++- The following changes have been performed (the rest was aborted)
+| - install conf-pkg-config 1.1
+| - install ocamlbuild      0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180730231330.export"
+31 1532992407 1532992418

@@ -1,0 +1,410 @@
+$ opam depext -iy -j 2 core_extended.v0.10.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_traverse_builtins   v0.10.0 [required by ppx_core, ppx_metaquot]
+  - install spawn                   v0.10.1 [required by core]
+  - install re                      1.7.3   [required by core_extended]
+  - install num                     1.1     [required by sexplib]
+  - install octavius                1.2.0   [required by ppx_js_style]
+  - install ocaml-compiler-libs     v0.10.0 [required by ppx_core]
+  - install ppx_derivers            1.0     [required by ppx_type_conv]
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install jane-street-headers     v0.10.0 [required by core_kernel]
+  - install sexplib                 v0.10.0 [required by core_extended]
+  - install ocaml-migrate-parsetree 1.0.11  [required by core_extended]
+  - install base                    v0.10.0 [required by bin_prot, core]
+  - install ppx_ast                 v0.10.0 [required by ppx_core]
+  - install typerep                 v0.10.0 [required by core_kernel]
+  - install stdio                   v0.10.0 [required by core]
+  - install ppx_core                v0.10.0 [required by ppx_fields_conv, ppx_compare, ppx_custom_printf, ppx_variants_conv]
+  - install configurator            v0.10.0 [required by core]
+  - install ppx_optcomp             v0.10.0 [required by ppx_driver]
+  - install ppx_driver              v0.10.4 [required by core_extended]
+  - install variantslib             v0.10.0 [required by ppx_variants_conv, core_kernel]
+  - install ppx_metaquot            v0.10.0 [required by ppx_fields_conv, ppx_compare, ppx_custom_printf, ppx_variants_conv]
+  - install ppx_let                 v0.10.0 [required by ppx_jane]
+  - install ppx_here                v0.10.0 [required by ppx_assert, ppx_jane]
+  - install fieldslib               v0.10.0 [required by core_extended]
+  - install ppx_type_conv           v0.10.0 [required by ppx_fields_conv, ppx_compare, ppx_variants_conv]
+  - install ppx_pipebang            v0.10.0 [required by ppx_jane]
+  - install ppx_optional            v0.10.0 [required by ppx_jane]
+  - install ppx_js_style            v0.10.0 [required by ppx_base]
+  - install ppx_inline_test         v0.10.1 [required by core_kernel]
+  - install ppx_fail                v0.10.0 [required by ppx_jane]
+  - install ppx_variants_conv       v0.10.0 [required by bin_prot]
+  - install ppx_typerep_conv        v0.10.0 [required by ppx_jane]
+  - install ppx_traverse            v0.10.0 [required by ppx_custom_printf]
+  - install ppx_sexp_conv           v0.10.0 [required by bin_prot]
+  - install ppx_fields_conv         v0.10.0 [required by bin_prot]
+  - install ppx_enumerate           v0.10.0 [required by ppx_base]
+  - install ppx_compare             v0.10.0 [required by bin_prot]
+  - install ppx_bench               v0.10.0 [required by ppx_jane]
+  - install ppx_sexp_value          v0.10.0 [required by ppx_jane]
+  - install ppx_sexp_message        v0.10.0 [required by core_kernel]
+  - install ppx_custom_printf       v0.10.0 [required by bin_prot]
+  - install ppx_hash                v0.10.0 [required by core_kernel]
+  - install ppx_assert              v0.10.0 [required by core]
+  - install bin_prot                v0.10.0 [required by core_extended]
+  - install ppx_base                v0.10.0 [required by core_kernel]
+  - install ppx_expect              v0.10.1 [required by ppx_jane]
+  - install ppx_bin_prot            v0.10.0 [required by ppx_jane]
+  - install ppx_jane                v0.10.0 [required by core_extended]
+  - install core_kernel             v0.10.0 [required by core_extended]
+  - install textutils_kernel        v0.10.0 [required by textutils]
+  - install re2                     v0.10.1 [required by core_extended]
+  - install core                    v0.10.0 [required by core_extended]
+  - install textutils               v0.10.0 [required by core_extended]
+  - install core_extended           v0.10.0
+===== 54 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.10.0] found in cache
+[bin_prot.v0.10.0] found in cache
+[configurator.v0.10.0] found in cache
+[core.v0.10.0] found in cache
+[core_extended.v0.10.0] found in cache
+[core_kernel.v0.10.0] found in cache
+[fieldslib.v0.10.0] found in cache
+[jane-street-headers.v0.10.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.10.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[octavius.1.2.0] found in cache
+[ppx_assert.v0.10.0] found in cache
+[ppx_ast.v0.10.0] found in cache
+[ppx_base.v0.10.0] found in cache
+[ppx_bench.v0.10.0] found in cache
+[ppx_bin_prot.v0.10.0] found in cache
+[ppx_compare.v0.10.0] found in cache
+[ppx_core.v0.10.0] found in cache
+[ppx_custom_printf.v0.10.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_driver.v0.10.4] found in cache
+[ppx_enumerate.v0.10.0] found in cache
+[ppx_expect.v0.10.1] found in cache
+[ppx_fail.v0.10.0] found in cache
+[ppx_fields_conv.v0.10.0] found in cache
+[ppx_hash.v0.10.0] found in cache
+[ppx_here.v0.10.0] found in cache
+[ppx_inline_test.v0.10.1] found in cache
+[ppx_jane.v0.10.0] found in cache
+[ppx_js_style.v0.10.0] found in cache
+[ppx_let.v0.10.0] found in cache
+[ppx_metaquot.v0.10.0] found in cache
+[ppx_optcomp.v0.10.0] found in cache
+[ppx_optional.v0.10.0] found in cache
+[ppx_pipebang.v0.10.0] found in cache
+[ppx_sexp_conv.v0.10.0] found in cache
+[ppx_sexp_message.v0.10.0] found in cache
+[ppx_sexp_value.v0.10.0] found in cache
+[ppx_traverse.v0.10.0] found in cache
+[ppx_traverse_builtins.v0.10.0] found in cache
+[ppx_type_conv.v0.10.0] found in cache
+[ppx_typerep_conv.v0.10.0] found in cache
+[ppx_variants_conv.v0.10.0] found in cache
+[re.1.7.3] found in cache
+[re2.v0.10.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.10.0] found in cache
+[spawn.v0.10.1] found in cache
+[stdio.v0.10.0] found in cache
+[textutils.v0.10.0] found in cache
+[textutils_kernel.v0.10.0] found in cache
+[typerep.v0.10.0] found in cache
+[variantslib.v0.10.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed jane-street-headers.v0.10.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.10.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed ppx_traverse_builtins.v0.10.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed sexplib.v0.10.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.10.0
+-> installed ppx_ast.v0.10.0
+-> installed spawn.v0.10.1
+-> installed stdio.v0.10.0
+-> installed configurator.v0.10.0
+-> installed typerep.v0.10.0
+-> installed ppx_core.v0.10.0
+-> installed ppx_optcomp.v0.10.0
+-> installed ppx_driver.v0.10.4
+-> installed fieldslib.v0.10.0
+-> installed ppx_here.v0.10.0
+-> installed ppx_let.v0.10.0
+-> installed ppx_metaquot.v0.10.0
+-> installed ppx_fail.v0.10.0
+-> installed ppx_inline_test.v0.10.1
+-> installed ppx_js_style.v0.10.0
+-> installed ppx_optional.v0.10.0
+-> installed ppx_pipebang.v0.10.0
+-> installed ppx_type_conv.v0.10.0
+-> installed ppx_bench.v0.10.0
+-> installed ppx_compare.v0.10.0
+-> installed ppx_enumerate.v0.10.0
+-> installed ppx_fields_conv.v0.10.0
+-> installed ppx_sexp_conv.v0.10.0
+-> installed ppx_assert.v0.10.0
+-> installed ppx_hash.v0.10.0
+-> installed ppx_sexp_message.v0.10.0
+-> installed ppx_sexp_value.v0.10.0
+-> installed ppx_traverse.v0.10.0
+-> installed ppx_base.v0.10.0
+-> installed ppx_typerep_conv.v0.10.0
+-> installed variantslib.v0.10.0
+-> installed ppx_variants_conv.v0.10.0
+-> installed ppx_custom_printf.v0.10.0
+-> installed bin_prot.v0.10.0
+-> installed ppx_expect.v0.10.1
+-> installed ppx_bin_prot.v0.10.0
+-> installed ppx_jane.v0.10.0
+-> installed core_kernel.v0.10.0
+-> installed core.v0.10.0
+-> installed textutils_kernel.v0.10.0
+-> installed textutils.v0.10.0
+-> installed re2.v0.10.1
+[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
+
+#=== ERROR while compiling core_extended.v0.10.0 ==============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.10.0
+# command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
+# exit-code            1
+# env-file             ~/.opam/log/core_extended-13-b1f732.env
+# output-file          ~/.opam/log/core_extended-13-b1f732.out
+### output ###
+#         bash src/config_ext.h
+# getconf: GNU_LIBC_VERSION: unknown variable
+#       ocamlc src/posix_clock_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/textutils_kernel -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o posix_clock_stubs.o posix_clock_stubs.c)
+# In file included from /home/opam/.opam/4.06/lib/jane-street-headers/ocaml_utils.h:6:0,
+#                  from posix_clock_stubs.c:1:
+# posix_clock_stubs.c: In function 'caml_clock_getres':
+# posix_clock_stubs.c:34:31: error: '__int64_t' undeclared (first use in this function)
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:34:31: note: each undeclared identifier is reported only once for each function it appears in
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:34:41: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                          ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:34:86: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                                                                       ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c: In function 'caml_clock_gettime':
+# posix_clock_stubs.c:40:31: error: '__int64_t' undeclared (first use in this function)
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:40:41: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                          ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:40:86: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                                                                       ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+#       ocamlc src/malloc_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/textutils_kernel -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o malloc_stubs.o malloc_stubs.c)
+# malloc_stubs.c: In function 'malloc_mallinfo_stub':
+# malloc_stubs.c:10:10: error: variable 'info' has initializer but incomplete type
+#    struct mallinfo info = mallinfo();
+#           ^~~~~~~~
+# malloc_stubs.c:10:26: warning: implicit declaration of function 'mallinfo' [-Wimplicit-function-declaration]
+#    struct mallinfo info = mallinfo();
+#                           ^~~~~~~~
+# malloc_stubs.c:10:19: error: storage size of 'info' isn't known
+#    struct mallinfo info = mallinfo();
+#                    ^~~~
+# malloc_stubs.c: At top level:
+# malloc_stubs.c:26:3: error: 'M_TRIM_THRESHOLD' undeclared here (not in a function)
+#    M_TRIM_THRESHOLD,
+#    ^~~~~~~~~~~~~~~~
+# malloc_stubs.c:27:3: error: 'M_TOP_PAD' undeclared here (not in a function)
+#    M_TOP_PAD,
+#    ^~~~~~~~~
+# malloc_stubs.c:28:3: error: 'M_MMAP_THRESHOLD' undeclared here (not in a function)
+#    M_MMAP_THRESHOLD,
+#    ^~~~~~~~~~~~~~~~
+# malloc_stubs.c:29:3: error: 'M_MMAP_MAX' undeclared here (not in a function)
+#    M_MMAP_MAX,
+#    ^~~~~~~~~~
+# malloc_stubs.c:30:3: error: 'M_CHECK_ACTION' undeclared here (not in a function)
+#    M_CHECK_ACTION,
+#    ^~~~~~~~~~~~~~
+# malloc_stubs.c: In function 'malloc_mallopt_stub':
+# malloc_stubs.c:36:13: warning: implicit declaration of function 'mallopt' [-Wimplicit-function-declaration]
+#    int ret = mallopt(options[Int_val(v_opt)], Int_val(v_n));
+#              ^~~~~~~
+# malloc_stubs.c: In function 'malloc_trim_stub':
+# malloc_stubs.c:43:13: warning: implicit declaration of function 'malloc_trim' [-Wimplicit-function-declaration]
+#    int ret = malloc_trim(Int_val(v_n));
+#              ^~~~~~~~~~~
+# malloc_stubs.c: In function 'malloc_stats_stub':
+# malloc_stubs.c:51:3: warning: implicit declaration of function 'malloc_stats' [-Wimplicit-function-declaration]
+#    malloc_stats();
+#    ^~~~~~~~~~~~
+#       ocamlc src/extended_unix_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/textutils_kernel -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
+# extended_unix_stubs.c: In function 'quota_query':
+# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# extended_unix_stubs.c:126:38: note: each undeclared identifier is reported only once for each function it appears in
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# extended_unix_stubs.c: In function 'quota_modify':
+# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:194:63: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    quota.dqb_bsoftlimit = Int63_val(Field(v_bytes_limit, 0)) / QUOTA_BYTES_PER_SPACE_UNIT;
+#                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+#     ocamlopt src/.core_extended.objs/core_extended__Lazy_sequence.{cmx,o}
+# File "src/lazy_sequence.ml", line 848, characters 17-23:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "src/lazy_sequence.ml", line 855, characters 17-23:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+#       ocamlc src/.core_extended.objs/core_extended__Lazy_sequence.{cmo,cmt}
+# File "src/lazy_sequence.ml", line 848, characters 17-23:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "src/lazy_sequence.ml", line 855, characters 17-23:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+#       ocamlc selector/src/.selector.objs/selector.{cmo,cmt}
+# File "selector/src/selector.ml", line 47, characters 31-50:
+# Warning 3: deprecated: module Re_perl
+# Use Re.Perl
+#     ocamlopt selector/src/.selector.objs/selector.{cmx,o}
+# File "selector/src/selector.ml", line 47, characters 31-50:
+# Warning 3: deprecated: module Re_perl
+# Use Re.Perl
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build core_extended v0.10.0
++- 
++- The following changes have been performed
+| - install base                    v0.10.0
+| - install bin_prot                v0.10.0
+| - install configurator            v0.10.0
+| - install core                    v0.10.0
+| - install core_kernel             v0.10.0
+| - install fieldslib               v0.10.0
+| - install jane-street-headers     v0.10.0
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.10.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install octavius                1.2.0
+| - install ppx_assert              v0.10.0
+| - install ppx_ast                 v0.10.0
+| - install ppx_base                v0.10.0
+| - install ppx_bench               v0.10.0
+| - install ppx_bin_prot            v0.10.0
+| - install ppx_compare             v0.10.0
+| - install ppx_core                v0.10.0
+| - install ppx_custom_printf       v0.10.0
+| - install ppx_derivers            1.0
+| - install ppx_driver              v0.10.4
+| - install ppx_enumerate           v0.10.0
+| - install ppx_expect              v0.10.1
+| - install ppx_fail                v0.10.0
+| - install ppx_fields_conv         v0.10.0
+| - install ppx_hash                v0.10.0
+| - install ppx_here                v0.10.0
+| - install ppx_inline_test         v0.10.1
+| - install ppx_jane                v0.10.0
+| - install ppx_js_style            v0.10.0
+| - install ppx_let                 v0.10.0
+| - install ppx_metaquot            v0.10.0
+| - install ppx_optcomp             v0.10.0
+| - install ppx_optional            v0.10.0
+| - install ppx_pipebang            v0.10.0
+| - install ppx_sexp_conv           v0.10.0
+| - install ppx_sexp_message        v0.10.0
+| - install ppx_sexp_value          v0.10.0
+| - install ppx_traverse            v0.10.0
+| - install ppx_traverse_builtins   v0.10.0
+| - install ppx_type_conv           v0.10.0
+| - install ppx_typerep_conv        v0.10.0
+| - install ppx_variants_conv       v0.10.0
+| - install re                      1.7.3
+| - install re2                     v0.10.1
+| - install result                  1.3
+| - install sexplib                 v0.10.0
+| - install spawn                   v0.10.1
+| - install stdio                   v0.10.0
+| - install textutils               v0.10.0
+| - install textutils_kernel        v0.10.0
+| - install typerep                 v0.10.0
+| - install variantslib             v0.10.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180730231948.export"
+31 1532992785 1532993204

@@ -1,0 +1,99 @@
+$ opam depext -iy -j 2 clangml.3.7.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes   base    [required by ANSITerminal]
+  - install ocamlbuild   0.12.0  [required by clangml]
+  - install num          1.1     [required by batteries, deriving]
+  - install ANSITerminal 0.8     [required by clangml]
+  - install ocamlmod     0.0.9   [required by oasis]
+  - install ocamlify     0.0.1   [required by oasis]
+  - install dolog        3.0     [required by clangml]
+  - install camlp4       4.06+1  [required by clangml]
+  - install batteries    2.8.0   [required by clangml]
+  - install oasis        0.4.11  [required by deriving]
+  - install deriving     0.8.1   [required by clangml]
+  - install clangml      3.7.0.1
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ANSITerminal.0.8] found in cache
+[batteries.2.8.0] found in cache
+[camlp4.4.06+1] found in cache
+[clangml.3.7.0.1] found in cache
+[deriving.0.8.1] found in cache
+[dolog.3.0] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ANSITerminal.0.8
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed batteries.2.8.0
+-> installed dolog.3.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed camlp4.4.06+1
+-> installed deriving.0.8.1
+[ERROR] The compilation of clangml failed at "/usr/bin/make".
+
+#=== ERROR while compiling clangml.3.7.0.1 ====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/clangml.3.7.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/clangml-12-3a52b4.env
+# output-file          ~/.opam/log/clangml-12-3a52b4.out
+### output ###
+# ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Fatal error: exception Myocamlbuild.No_command_found(_)
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 45, characters 15-31:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "myocamlbuild.ml", line 55, characters 4-16:
+# Warning 3: deprecated: Scanf.fscanf
+# Use Scanning.from_channel then Scanf.bscanf.
+# File "myocamlbuild.ml", line 334, characters 18-35:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.capitalize
+# Use String.capitalize_ascii instead.
+# make: *** [Makefile:15: mainClang.native] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build clangml 3.7.0.1
++- 
++- The following changes have been performed
+| - install ANSITerminal 0.8
+| - install base-bytes   base
+| - install batteries    2.8.0
+| - install camlp4       4.06+1
+| - install deriving     0.8.1
+| - install dolog        3.0
+| - install num          1.1
+| - install oasis        0.4.11
+| - install ocamlbuild   0.12.0
+| - install ocamlify     0.0.1
+| - install ocamlmod     0.0.9
++- 
+
+<><> clangml.3.7.0.1 troubleshooting ><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires llvm-3.7, clang-3.7, boost and binutils
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180730230922.export"
+31 1532992159 1532992300

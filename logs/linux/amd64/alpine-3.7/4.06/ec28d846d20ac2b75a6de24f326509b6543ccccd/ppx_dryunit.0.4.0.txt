@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_dryunit.0.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for ppx_dryunit.0.4.0: The following dependencies couldn't be met:
+          - ppx_dryunit -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_dryunit.0.4.0 returned 20
+20 1532992758 1532992761

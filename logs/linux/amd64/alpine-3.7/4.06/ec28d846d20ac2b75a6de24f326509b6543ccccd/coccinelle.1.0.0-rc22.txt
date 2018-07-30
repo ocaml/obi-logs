@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 coccinelle.1.0.0-rc22
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for coccinelle.1.0.0-rc22: The following dependencies couldn't be met:
+          - coccinelle -> menhir < 20141215 -> ocamlbuild < 0.9.1 -> base-ocamlbuild -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - coccinelle -> menhir < 20141215 -> ocamlbuild < 0.9.1 -> ocaml < 4.04
+              base of this switch (use `--unlock-base' to force)
+          - coccinelle -> menhir < 20141215 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=coccinelle.1.0.0-rc22 returned 20
+20 1532992812 1532992814

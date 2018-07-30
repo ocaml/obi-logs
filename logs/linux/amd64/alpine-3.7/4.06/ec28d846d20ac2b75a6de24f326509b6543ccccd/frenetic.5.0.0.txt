@@ -1,0 +1,705 @@
+$ opam depext -iy -j 2 frenetic.5.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install   num                     1.1                      [required by sexplib]
+  - install   ocamlbuild              0.12.0                   [required by mparser, menhir, ppx_deriving]
+  - install   base-bytes              base                     [required by base64, mparser]
+  - install   ocamlgraph              1.8.8                    [required by frenetic]
+  - remove    dune                    1.0.1                    [conflicts with jbuilder]
+  - install   ppx_tools               5.1+4.06.0               [required by ppx_deriving]
+  - install   conf-which              1                        [required by biniou]
+  - install   uchar                   0.0.2                    [required by jsonm]
+  - install   menhir                  20180703                 [required by frenetic]
+  - downgrade jbuilder                transition to 1.0+beta17 [required by frenetic]
+  - install   stringext               1.5.0                    [required by cohttp]
+  - install   spawn                   v0.9.0                   [required by core]
+  - install   sexplib                 v0.9.3                   [required by frenetic]
+  - install   result                  1.3                      [required by odoc, ppx_deriving]
+  - install   re                      1.7.3                    [required by cohttp, mparser]
+  - install   ppx_traverse_builtins   v0.9.0                   [required by ppx_core, ppx_metaquot]
+  - install   ppx_derivers            1.0                      [required by ppx_deriving]
+  - install   octavius                1.2.0                    [required by doc-ock]
+  - install   ocaml-compiler-libs     v0.9.0                   [required by ppx_core]
+  - install   magic-mime              1.1.0                    [required by cohttp-async]
+  - install   jane-street-headers     v0.9.0                   [required by core_kernel]
+  - install   gen                     0.5.1                    [required by sedlex]
+  - install   easy-format             1.3.1                    [required by yojson]
+  - install   cppo                    1.6.4                    [required by frenetic]
+  - install   base64                  2.2.0                    [required by frenetic]
+  - install   cstruct                 3.2.1                    [required by frenetic]
+  - install   base                    v0.9.4                   [required by core_kernel, core]
+  - install   topkg                   0.9.1                    [required by mirage-net-lwt, bos, jsonm, etc.]
+  - install   ocaml-migrate-parsetree 1.0.7                    [required by ppx_deriving, async_extended, async, etc.]
+  - install   mparser                 1.2.3                    [required by frenetic]
+  - install   biniou                  1.2.0                    [required by yojson]
+  - install   ocplib-endian           1.0                      [required by mirage-profile]
+  - install   lwt                     4.1.0                    [required by tcpip]                                      For the PPX, please install package lwt_ppx
+                                                                                                                        For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install   doc-ock                 1.2.1                    [required by odoc]
+  - install   cppo_ocamlbuild         1.6.0                    [required by ppx_deriving]
+  - install   mirage-random           1.1.0                    [required by tcpip]
+  - install   typerep                 v0.9.0                   [required by core_kernel]
+  - install   stdio                   v0.9.1                   [required by core_kernel, core]
+  - install   xmlm                    1.3.0                    [required by odoc]
+  - install   rresult                 0.5.0                    [required by tcpip]
+  - install   randomconv              0.1.0                    [required by tcpip]
+  - install   duration                0.1.1                    [required by tcpip]
+  - install   cmdliner                1.0.2                    [required by odoc]
+  - install   astring                 0.8.3                    [required by bos]
+  - install   ppx_tools_versioned     5.2                      [required by frenetic]
+  - install   ppx_ast                 v0.9.2                   [required by ppx_core]
+  - install   yojson                  1.4.1                    [required by frenetic]
+  - install   inotify                 2.3                      [required by async_inotify]
+  - install   cstruct-lwt             3.2.1                    [required by tcpip]
+  - install   ppx_deriving            4.2.1                    [required by frenetic]
+  - install   doc-ock-xml             1.2.1                    [required by odoc]
+  - install   uutf                    1.0.1                    [required by jsonm]
+  - install   fmt                     0.8.5                    [required by cohttp-async, tcpip]
+  - install   fpath                   0.7.2                    [required by odoc]
+  - install   sedlex                  1.99.4                   [required by frenetic]
+  - install   ppx_cstruct             3.2.1                    [required by frenetic]
+  - install   ppx_core                v0.9.3                   [required by frenetic]
+  - install   tyxml                   4.2.0                    [required by odoc]                                       For tyxml's ppx, please install tyxml-ppx.
+  - install   jsonm                   1.0.1                    [required by cohttp]
+  - install   mirage-flow             1.5.0                    [required by mirage-protocols]
+  - install   mirage-device           1.1.0                    [required by mirage-net, mirage-clock, mirage-protocols]
+  - install   logs                    0.6.2                    [required by cohttp-async, tcpip]
+  - install   mirage-profile          0.8.2                    [required by tcpip]
+  - install   ppx_optcomp             v0.9.0                   [required by ppx_driver]
+  - install   doc-ock-html            1.2.1                    [required by odoc]
+  - install   mirage-time             1.1.0                    [required by mirage-time-lwt]
+  - install   mirage-protocols        1.3.0                    [required by tcpip]
+  - install   mirage-net              1.1.1                    [required by tcpip]
+  - install   mirage-clock            1.3.0                    [required by tcpip]
+  - install   bos                     0.2.0                    [required by odoc]
+  - install   ppx_driver              v0.9.2                   [required by frenetic]
+  - install   mirage-time-lwt         1.1.0                    [required by tcpip]
+  - install   mirage-stack            1.2.0                    [required by mirage-stack-lwt]
+  - install   mirage-clock-lwt        1.3.0                    [required by tcpip]
+  - install   odoc                    1.2.0                    [required by frenetic]
+  - install   variantslib             v0.9.0                   [required by core_kernel]
+  - install   ppx_metaquot            v0.9.0                   [required by frenetic]
+  - install   ppx_let                 v0.9.0                   [required by ppx_jane]
+  - install   ppx_here                v0.9.1                   [required by ppx_assert, ppx_jane]
+  - install   fieldslib               v0.9.0                   [required by cohttp]
+  - install   ppx_type_conv           v0.9.1                   [required by cohttp]
+  - install   ppx_pipebang            v0.9.0                   [required by ppx_jane]
+  - install   ppx_optional            v0.9.0                   [required by ppx_jane]
+  - install   ppx_js_style            v0.9.0                   [required by ppx_base]
+  - install   ppx_inline_test         v0.9.2                   [required by core_kernel]
+  - install   ppx_fail                v0.9.0                   [required by ppx_jane]
+  - install   ppx_variants_conv       v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_typerep_conv        v0.9.0                   [required by ppx_jane]
+  - install   ppx_traverse            v0.9.0                   [required by ppx_custom_printf, ppx_expect]
+  - install   ppx_sexp_conv           v0.9.0                   [required by frenetic]
+  - install   ppx_fields_conv         v0.9.0                   [required by frenetic]
+  - install   ppx_enumerate           v0.9.0                   [required by frenetic]
+  - install   ppx_compare             v0.9.0                   [required by frenetic]
+  - install   ppx_bench               v0.9.1                   [required by ppx_jane]
+  - install   uri                     1.9.7                    [required by cohttp]
+  - install   ppx_sexp_value          v0.9.0                   [required by ppx_jane]
+  - install   ppx_sexp_message        v0.9.0                   [required by core_kernel]
+  - install   ppx_custom_printf       v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ipaddr                  2.8.0                    [required by frenetic]
+  - install   ppx_hash                v0.9.0                   [required by core_kernel]
+  - install   ppx_assert              v0.9.0                   [required by core_kernel, core]
+  - install   cohttp                  1.1.0                    [required by frenetic]
+  - install   bin_prot                v0.9.2                   [required by core_extended]
+  - install   mirage-stack-lwt        1.2.0                    [required by tcpip]
+  - install   mirage-protocols-lwt    1.3.0                    [required by tcpip]
+  - install   conduit                 1.1.0                    [required by conduit-async]
+  - install   ppx_base                v0.9.0                   [required by core_kernel]
+  - install   ppx_expect              v0.9.0                   [required by ppx_jane]
+  - install   ppx_bin_prot            v0.9.0                   [required by ppx_jane]
+  - install   configurator            v0.9.1                   [required by tcpip]
+  - install   ppx_jane                v0.9.0                   [required by async, async_extended]
+  - install   io-page                 2.0.1                    [required by io-page-unix, mirage-net-lwt]
+  - install   core_kernel             v0.9.1                   [required by cstruct-async]
+  - install   mirage-net-lwt          1.1.0                    [required by tcpip]
+  - install   io-page-unix            2.0.1                    [required by tcpip]
+  - install   re2                     v0.9.1                   [required by core_extended]
+  - install   core                    v0.9.2                   [required by frenetic]
+  - install   async_kernel            v0.9.0                   [required by async, cstruct-async]
+  - install   tcpip                   3.4.2                    [required by frenetic]
+  - install   textutils               v0.9.0                   [required by async_extended]
+  - install   async_unix              v0.9.1                   [required by async, cstruct-async]
+  - install   async_rpc_kernel        v0.9.0                   [required by async_extra]
+  - install   core_extended           v0.9.1                   [required by async_extended]
+  - install   cstruct-async           3.2.1                    [required by frenetic]
+  - install   async_extra             v0.9.0                   [required by async]
+  - install   async                   v0.9.0                   [required by frenetic]
+  - install   conduit-async           1.0.0                    [required by cohttp-async]
+  - install   command_rpc             v0.9.0                   [required by async_extended]
+  - install   async_shell             v0.9.1                   [required by async_extended]
+  - install   async_interactive       v0.9.0                   [required by async_extended]
+  - install   async_find              v0.9.0                   [required by async_extended]
+  - install   cohttp-async            1.0.0                    [required by frenetic]
+  - install   async_inotify           v0.9.0                   [required by async_extended]
+  - install   async_extended          v0.9.0                   [required by frenetic]
+  - install   frenetic                5.0.0
+===== 133 to install | 1 to downgrade | 1 to remove =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[async.v0.9.0] found in cache
+[async_extended.v0.9.0] found in cache
+[async_extra.v0.9.0] found in cache
+[async_find.v0.9.0] found in cache
+[async_inotify.v0.9.0] found in cache
+[async_interactive.v0.9.0] found in cache
+[async_kernel.v0.9.0] found in cache
+[async_rpc_kernel.v0.9.0] found in cache
+[async_shell.v0.9.1] found in cache
+[async_unix.v0.9.1] found in cache
+[base.v0.9.4] found in cache
+[base64.2.2.0] found in cache
+[bin_prot.v0.9.2] found in cache
+[biniou.1.2.0] found in cache
+[bos.0.2.0] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.1.1.0] found in cache
+[cohttp-async.1.0.0] found in cache
+[command_rpc.v0.9.0] found in cache
+[conduit.1.1.0] found in cache
+[conduit-async.1.0.0] found in cache
+[configurator.v0.9.1] found in cache
+[core.v0.9.2] found in cache
+[core_extended.v0.9.1] found in cache
+[core_kernel.v0.9.1] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[cstruct-async.3.2.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[doc-ock.1.2.1] found in cache
+[doc-ock-html.1.2.1] found in cache
+[doc-ock-xml.1.2.1] found in cache
+[duration.0.1.1] found in cache
+[easy-format.1.3.1] found in cache
+[fieldslib.v0.9.0] found in cache
+[fmt.0.8.5] found in cache
+[fpath.0.7.2] found in cache
+[frenetic.5.0.0] found in cache
+[gen.0.5.1] found in cache
+[inotify.2.3] found in cache
+[io-page.2.0.1] found in cache
+[io-page-unix.2.0.1] found in cache
+[ipaddr.2.8.0] found in cache
+[jane-street-headers.v0.9.0] found in cache
+[jbuilder.1.0+beta17] found in cache
+[jsonm.1.0.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[magic-mime.1.1.0] found in cache
+[menhir.20180703] found in cache
+[mirage-clock.1.3.0] found in cache
+[mirage-clock-lwt.1.3.0] found in cache
+[mirage-device.1.1.0] found in cache
+[mirage-flow.1.5.0] found in cache
+[mirage-net.1.1.1] found in cache
+[mirage-net-lwt.1.1.0] found in cache
+[mirage-profile.0.8.2] found in cache
+[mirage-protocols.1.3.0] found in cache
+[mirage-protocols-lwt.1.3.0] found in cache
+[mirage-random.1.1.0] found in cache
+[mirage-stack.1.2.0] found in cache
+[mirage-stack-lwt.1.2.0] found in cache
+[mirage-time.1.1.0] found in cache
+[mirage-time-lwt.1.1.0] found in cache
+[mparser.1.2.3] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.7] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[ocplib-endian.1.0] found in cache
+[octavius.1.2.0] found in cache
+[odoc.1.2.0] found in cache
+[ppx_assert.v0.9.0] found in cache
+[ppx_ast.v0.9.2] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_bench.v0.9.1] found in cache
+[ppx_bin_prot.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.3] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_custom_printf.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.9.2] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_expect.v0.9.0] found in cache
+[ppx_fail.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_here.v0.9.1] found in cache
+[ppx_inline_test.v0.9.2] found in cache
+[ppx_jane.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_let.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_optional.v0.9.0] found in cache
+[ppx_pipebang.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_sexp_message.v0.9.0] found in cache
+[ppx_sexp_value.v0.9.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_traverse.v0.9.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[ppx_typerep_conv.v0.9.0] found in cache
+[ppx_variants_conv.v0.9.0] found in cache
+[randomconv.0.1.0] found in cache
+[re.1.7.3] found in cache
+[re2.v0.9.1] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[sedlex.1.99.4] found in cache
+[sexplib.v0.9.3] found in cache
+[spawn.v0.9.0] found in cache
+[stdio.v0.9.1] found in cache
+[stringext.1.5.0] found in cache
+[tcpip.3.4.2] found in cache
+[textutils.v0.9.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.9.0] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[variantslib.v0.9.0] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> removed   jbuilder.transition
+-> removed   dune.1.0.1
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed jbuilder.1.0+beta17
+-> installed base64.2.2.0
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed gen.0.5.1
+-> installed jane-street-headers.v0.9.0
+-> installed magic-mime.1.1.0
+-> installed num.1.1
+-> installed biniou.1.2.0
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocamlgraph.1.8.8
+-> installed ocplib-endian.1.0
+-> installed octavius.1.2.0
+-> installed doc-ock.1.2.1
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed mparser.1.2.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed menhir.20180703
+-> installed ocaml-migrate-parsetree.1.0.7
+-> installed inotify.2.3
+-> installed ppx_ast.v0.9.2
+-> installed ppx_tools_versioned.5.2
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.v0.9.3
+-> installed cstruct.3.2.1
+-> installed base.v0.9.4
+-> installed cstruct-lwt.3.2.1
+-> installed mirage-random.1.1.0
+-> installed ppx_cstruct.3.2.1
+-> installed sedlex.1.99.4
+-> installed spawn.v0.9.0
+-> installed stdio.v0.9.1
+-> installed mirage-profile.0.8.2
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed duration.0.1.1
+-> installed ppx_core.v0.9.3
+-> installed fpath.0.7.2
+-> installed randomconv.0.1.0
+-> installed rresult.0.5.0
+-> installed typerep.v0.9.0
+-> installed uchar.0.0.2
+-> installed ppx_optcomp.v0.9.0
+-> installed fmt.0.8.5
+-> installed logs.0.6.2
+-> installed mirage-device.1.1.0
+-> installed mirage-clock.1.3.0
+-> installed mirage-clock-lwt.1.3.0
+-> installed mirage-flow.1.5.0
+-> installed mirage-net.1.1.1
+-> installed mirage-protocols.1.3.0
+-> installed bos.0.2.0
+-> installed mirage-time.1.1.0
+-> installed mirage-stack.1.2.0
+-> installed ppx_driver.v0.9.2
+-> installed fieldslib.v0.9.0
+-> installed mirage-time-lwt.1.1.0
+-> installed ppx_here.v0.9.1
+-> installed ppx_let.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_fail.v0.9.0
+-> installed ppx_inline_test.v0.9.2
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_optional.v0.9.0
+-> installed ppx_pipebang.v0.9.0
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_bench.v0.9.1
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ipaddr.2.8.0
+-> installed mirage-protocols-lwt.1.3.0
+-> installed mirage-stack-lwt.1.2.0
+-> installed ppx_assert.v0.9.0
+-> installed ppx_hash.v0.9.0
+-> installed ppx_sexp_message.v0.9.0
+-> installed ppx_sexp_value.v0.9.0
+-> installed ppx_traverse.v0.9.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
+-> installed ppx_custom_printf.v0.9.0
+-> installed ppx_typerep_conv.v0.9.0
+-> installed uri.1.9.7
+-> installed mirage-net-lwt.1.1.0
+-> installed conduit.1.1.0
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed cohttp.1.1.0
+-> installed tcpip.3.4.2
+-> installed variantslib.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
+-> installed bin_prot.v0.9.2
+-> installed ppx_expect.v0.9.0
+-> installed tyxml.4.2.0
+-> installed ppx_bin_prot.v0.9.0
+-> installed xmlm.1.3.0
+-> installed doc-ock-html.1.2.1
+-> installed ppx_jane.v0.9.0
+-> installed doc-ock-xml.1.2.1
+-> installed odoc.1.2.0
+-> installed yojson.1.4.1
+-> installed core_kernel.v0.9.1
+-> installed async_kernel.v0.9.0
+-> installed async_rpc_kernel.v0.9.0
+-> installed core.v0.9.2
+-> installed async_unix.v0.9.1
+-> installed async_extra.v0.9.0
+-> installed async.v0.9.0
+-> installed async_find.v0.9.0
+-> installed async_inotify.v0.9.0
+-> installed async_interactive.v0.9.0
+-> installed command_rpc.v0.9.0
+-> installed conduit-async.1.0.0
+-> installed cohttp-async.1.0.0
+-> installed cstruct-async.3.2.1
+-> installed textutils.v0.9.0
+-> installed re2.v0.9.1
+[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
+
+#=== ERROR while compiling core_extended.v0.9.1 ===============================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.9.1
+# command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
+# exit-code            1
+# env-file             ~/.opam/log/core_extended-14-c8f45e.env
+# output-file          ~/.opam/log/core_extended-14-c8f45e.out
+### output ###
+#       ocamlc src/core_extended.{cmi,cmo,cmt}
+#     ocamlopt src/core_extended.{cmx,o}
+#         bash src/config_ext.h
+# getconf: GNU_LIBC_VERSION: unknown variable
+#       ocamlc src/posix_clock_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o posix_clock_stubs.o posix_clock_stubs.c)
+# In file included from /home/opam/.opam/4.06/lib/jane-street-headers/ocaml_utils.h:6:0,
+#                  from posix_clock_stubs.c:1:
+# posix_clock_stubs.c: In function 'caml_clock_getres':
+# posix_clock_stubs.c:34:31: error: '__int64_t' undeclared (first use in this function)
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:34:31: note: each undeclared identifier is reported only once for each function it appears in
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:34:41: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                          ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:34:86: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                                                                       ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:34:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c: In function 'caml_clock_gettime':
+# posix_clock_stubs.c:40:31: error: '__int64_t' undeclared (first use in this function)
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:40:41: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                          ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+# posix_clock_stubs.c:40:86: error: expected ')' before 'tp'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#                                                                                       ^
+# /home/opam/.opam/4.06/lib/ocaml/caml/mlvalues.h:73:47: note: in definition of macro 'Val_long'
+#  #define Val_long(x)     ((intnat) (((uintnat)(x) << 1)) + 1)
+#                                                ^
+# posix_clock_stubs.c:40:11: note: in expansion of macro 'caml_alloc_int63'
+#    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
+#            ^~~~~~~~~~~~~~~~
+#       ocamlc src/malloc_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o malloc_stubs.o malloc_stubs.c)
+# malloc_stubs.c: In function 'malloc_mallinfo_stub':
+# malloc_stubs.c:10:10: error: variable 'info' has initializer but incomplete type
+#    struct mallinfo info = mallinfo();
+#           ^~~~~~~~
+# malloc_stubs.c:10:26: warning: implicit declaration of function 'mallinfo' [-Wimplicit-function-declaration]
+#    struct mallinfo info = mallinfo();
+#                           ^~~~~~~~
+# malloc_stubs.c:10:19: error: storage size of 'info' isn't known
+#    struct mallinfo info = mallinfo();
+#                    ^~~~
+# malloc_stubs.c: At top level:
+# malloc_stubs.c:26:3: error: 'M_TRIM_THRESHOLD' undeclared here (not in a function)
+#    M_TRIM_THRESHOLD,
+#    ^~~~~~~~~~~~~~~~
+# malloc_stubs.c:27:3: error: 'M_TOP_PAD' undeclared here (not in a function)
+#    M_TOP_PAD,
+#    ^~~~~~~~~
+# malloc_stubs.c:28:3: error: 'M_MMAP_THRESHOLD' undeclared here (not in a function)
+#    M_MMAP_THRESHOLD,
+#    ^~~~~~~~~~~~~~~~
+# malloc_stubs.c:29:3: error: 'M_MMAP_MAX' undeclared here (not in a function)
+#    M_MMAP_MAX,
+#    ^~~~~~~~~~
+# malloc_stubs.c:30:3: error: 'M_CHECK_ACTION' undeclared here (not in a function)
+#    M_CHECK_ACTION,
+#    ^~~~~~~~~~~~~~
+# malloc_stubs.c: In function 'malloc_mallopt_stub':
+# malloc_stubs.c:36:13: warning: implicit declaration of function 'mallopt' [-Wimplicit-function-declaration]
+#    int ret = mallopt(options[Int_val(v_opt)], Int_val(v_n));
+#              ^~~~~~~
+# malloc_stubs.c: In function 'malloc_trim_stub':
+# malloc_stubs.c:43:13: warning: implicit declaration of function 'malloc_trim' [-Wimplicit-function-declaration]
+#    int ret = malloc_trim(Int_val(v_n));
+#              ^~~~~~~~~~~
+# malloc_stubs.c: In function 'malloc_stats_stub':
+# malloc_stubs.c:51:3: warning: implicit declaration of function 'malloc_stats' [-Wimplicit-function-declaration]
+#    malloc_stats();
+#    ^~~~~~~~~~~~
+#       ocamlc src/extended_unix_stubs.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
+# extended_unix_stubs.c: In function 'quota_query':
+# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# extended_unix_stubs.c:126:38: note: each undeclared identifier is reported only once for each function it appears in
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:159:16: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    bytes_used = QUOTA_BYTES_PER_SPACE_UNIT * (int64_t) QUOTA_SPACE_USED(quota);
+#                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# extended_unix_stubs.c: In function 'quota_modify':
+# extended_unix_stubs.c:126:38: error: 'BLOCK_SIZE' undeclared (first use in this function)
+#  #  define QUOTA_BYTES_PER_SPACE_UNIT BLOCK_SIZE
+#                                       ^
+# extended_unix_stubs.c:194:63: note: in expansion of macro 'QUOTA_BYTES_PER_SPACE_UNIT'
+#    quota.dqb_bsoftlimit = Int63_val(Field(v_bytes_limit, 0)) / QUOTA_BYTES_PER_SPACE_UNIT;
+#                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+# 
+# Waiting for 1 job to finish.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build core_extended v0.9.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - remove    dune                    1.0.1
+| - downgrade jbuilder                transition to 1.0+beta17
+| - install   astring                 0.8.3
+| - install   async                   v0.9.0
+| - install   async_extra             v0.9.0
+| - install   async_find              v0.9.0
+| - install   async_inotify           v0.9.0
+| - install   async_interactive       v0.9.0
+| - install   async_kernel            v0.9.0
+| - install   async_rpc_kernel        v0.9.0
+| - install   async_unix              v0.9.1
+| - install   base                    v0.9.4
+| - install   base-bytes              base
+| - install   base64                  2.2.0
+| - install   bin_prot                v0.9.2
+| - install   biniou                  1.2.0
+| - install   bos                     0.2.0
+| - install   cmdliner                1.0.2
+| - install   cohttp                  1.1.0
+| - install   cohttp-async            1.0.0
+| - install   command_rpc             v0.9.0
+| - install   conduit                 1.1.0
+| - install   conduit-async           1.0.0
+| - install   conf-which              1
+| - install   configurator            v0.9.1
+| - install   core                    v0.9.2
+| - install   core_kernel             v0.9.1
+| - install   cppo                    1.6.4
+| - install   cppo_ocamlbuild         1.6.0
+| - install   cstruct                 3.2.1
+| - install   cstruct-async           3.2.1
+| - install   cstruct-lwt             3.2.1
+| - install   doc-ock                 1.2.1
+| - install   doc-ock-html            1.2.1
+| - install   doc-ock-xml             1.2.1
+| - install   duration                0.1.1
+| - install   easy-format             1.3.1
+| - install   fieldslib               v0.9.0
+| - install   fmt                     0.8.5
+| - install   fpath                   0.7.2
+| - install   gen                     0.5.1
+| - install   inotify                 2.3
+| - install   io-page                 2.0.1
+| - install   io-page-unix            2.0.1
+| - install   ipaddr                  2.8.0
+| - install   jane-street-headers     v0.9.0
+| - install   jsonm                   1.0.1
+| - install   logs                    0.6.2
+| - install   lwt                     4.1.0
+| - install   magic-mime              1.1.0
+| - install   menhir                  20180703
+| - install   mirage-clock            1.3.0
+| - install   mirage-clock-lwt        1.3.0
+| - install   mirage-device           1.1.0
+| - install   mirage-flow             1.5.0
+| - install   mirage-net              1.1.1
+| - install   mirage-net-lwt          1.1.0
+| - install   mirage-profile          0.8.2
+| - install   mirage-protocols        1.3.0
+| - install   mirage-protocols-lwt    1.3.0
+| - install   mirage-random           1.1.0
+| - install   mirage-stack            1.2.0
+| - install   mirage-stack-lwt        1.2.0
+| - install   mirage-time             1.1.0
+| - install   mirage-time-lwt         1.1.0
+| - install   mparser                 1.2.3
+| - install   num                     1.1
+| - install   ocaml-compiler-libs     v0.9.0
+| - install   ocaml-migrate-parsetree 1.0.7
+| - install   ocamlbuild              0.12.0
+| - install   ocamlgraph              1.8.8
+| - install   ocplib-endian           1.0
+| - install   octavius                1.2.0
+| - install   odoc                    1.2.0
+| - install   ppx_assert              v0.9.0
+| - install   ppx_ast                 v0.9.2
+| - install   ppx_base                v0.9.0
+| - install   ppx_bench               v0.9.1
+| - install   ppx_bin_prot            v0.9.0
+| - install   ppx_compare             v0.9.0
+| - install   ppx_core                v0.9.3
+| - install   ppx_cstruct             3.2.1
+| - install   ppx_custom_printf       v0.9.0
+| - install   ppx_derivers            1.0
+| - install   ppx_deriving            4.2.1
+| - install   ppx_driver              v0.9.2
+| - install   ppx_enumerate           v0.9.0
+| - install   ppx_expect              v0.9.0
+| - install   ppx_fail                v0.9.0
+| - install   ppx_fields_conv         v0.9.0
+| - install   ppx_hash                v0.9.0
+| - install   ppx_here                v0.9.1
+| - install   ppx_inline_test         v0.9.2
+| - install   ppx_jane                v0.9.0
+| - install   ppx_js_style            v0.9.0
+| - install   ppx_let                 v0.9.0
+| - install   ppx_metaquot            v0.9.0
+| - install   ppx_optcomp             v0.9.0
+| - install   ppx_optional            v0.9.0
+| - install   ppx_pipebang            v0.9.0
+| - install   ppx_sexp_conv           v0.9.0
+| - install   ppx_sexp_message        v0.9.0
+| - install   ppx_sexp_value          v0.9.0
+| - install   ppx_tools               5.1+4.06.0
+| - install   ppx_tools_versioned     5.2
+| - install   ppx_traverse            v0.9.0
+| - install   ppx_traverse_builtins   v0.9.0
+| - install   ppx_type_conv           v0.9.1
+| - install   ppx_typerep_conv        v0.9.0
+| - install   ppx_variants_conv       v0.9.0
+| - install   randomconv              0.1.0
+| - install   re                      1.7.3
+| - install   re2                     v0.9.1
+| - install   result                  1.3
+| - install   rresult                 0.5.0
+| - install   sedlex                  1.99.4
+| - install   sexplib                 v0.9.3
+| - install   spawn                   v0.9.0
+| - install   stdio                   v0.9.1
+| - install   stringext               1.5.0
+| - install   tcpip                   3.4.2
+| - install   textutils               v0.9.0
+| - install   topkg                   0.9.1
+| - install   typerep                 v0.9.0
+| - install   tyxml                   4.2.0
+| - install   uchar                   0.0.2
+| - install   uri                     1.9.7
+| - install   uutf                    1.0.1
+| - install   variantslib             v0.9.0
+| - install   xmlm                    1.3.0
+| - install   yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180730224938.export"
+31 1532990975 1532991337
