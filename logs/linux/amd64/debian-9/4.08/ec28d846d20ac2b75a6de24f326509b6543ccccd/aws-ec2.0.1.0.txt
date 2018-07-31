@@ -1,0 +1,33 @@
+$ opam depext -iy -j 2 aws-ec2.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for aws-ec2.0.1.0: The following dependencies couldn't be met:
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ppx_deriving -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ppx_deriving -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ppx_sexp_conv < v0.11.0 -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ppx_sexp_conv < v0.11.0 -> ppx_core < v0.11 -> base < v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ppx_sexp_conv < v0.11.0 -> ppx_core < v0.11 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> ppx_sexp_conv < v0.11.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws-ec2 -> aws >= 0.1.0 -> nocrypto -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=aws-ec2.0.1.0 returned 20
+20 1533011473 1533011476

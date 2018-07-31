@@ -1,0 +1,25 @@
+$ opam depext -iy -j 2 jenga.v0.9.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for jenga.v0.9.0: The following dependencies couldn't be met:
+          - jenga -> ppx_jane < v0.10 -> ppx_inline_test < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_inline_test < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_expect < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_expect < v0.10 -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_expect < v0.10 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_bench < 113.34.00+4.03 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_bench < 113.34.00+4.03 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ppx_bench < 113.34.00+4.03 -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - jenga -> ppx_jane < v0.10 -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=jenga.v0.9.0 returned 20
+20 1533012613 1533012618

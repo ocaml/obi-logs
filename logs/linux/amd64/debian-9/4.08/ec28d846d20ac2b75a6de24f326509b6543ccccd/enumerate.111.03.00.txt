@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 enumerate.111.03.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for enumerate.111.03.00: The following dependencies couldn't be met:
+          - enumerate -> type_conv = 109.60.01 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=enumerate.111.03.00 returned 20
+20 1533010596 1533010599
