@@ -1,0 +1,282 @@
+$ opam depext -iy -j 2 lbvs_consent.1.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+boost-devel
+m4
+python
+which
+# The following new OS packages need to be installed: boost-devel python
+The following command needs to be run through "sudo":
+    zypper --non-interactive install boost-devel python
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 40 NEW packages are going to be installed:
+  boost-devel boost-license1_54_0 libboost_atomic1_54_0 libboost_chrono1_54_0 libboost_context1_54_0 libboost_date_time1_54_0 libboost_filesystem1_54_0 libboost_graph1_54_0 libboost_graph_parallel1_54_0 libboost_iostreams1_54_0 libboost_locale1_54_0 libboost_log1_54_0 libboost_math1_54_0 libboost_mpi1_54_0 libboost_program_options1_54_0 libboost_python1_54_0 libboost_random1_54_0 libboost_regex1_54_0 libboost_serialization1_54_0 libboost_signals1_54_0 libboost_system1_54_0 libboost_test1_54_0 libboost_thread1_54_0 libboost_timer1_54_0 libboost_wave1_54_0 libfabric1 libibverbs libibverbs1 libicu52_1 libicu52_1-data libmlx5-1 libpsm2-2 libpsm2-compat librdmacm1 libsqlite3-0 libstdc++-devel openmpi-libs python rdma-core timezone
+
+40 new packages to install.
+Overall download size: 19.7 MiB. Already cached: 0 B. After the operation, additional 138.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package boost-license1_54_0-1.54.0-15.15.noarch (1/40),  17.5 KiB (  1.3 KiB unpacked)
+Retrieving: boost-license1_54_0-1.54.0-15.15.noarch.rpm [.done]
+Retrieving package libpsm2-2-10.2.103-2.6.x86_64 (2/40), 160.2 KiB (400.4 KiB unpacked)
+Retrieving: libpsm2-2-10.2.103-2.6.x86_64.rpm [done]
+Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (3/40), 408.9 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [done]
+Retrieving package libstdc++-devel-4.8-11.16.x86_64 (4/40),   4.8 KiB (   72   B unpacked)
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [done]
+Retrieving package libboost_test1_54_0-1.54.0-15.15.x86_64 (5/40), 189.3 KiB (728.5 KiB unpacked)
+Retrieving: libboost_test1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_system1_54_0-1.54.0-15.15.x86_64 (6/40),  20.6 KiB ( 14.3 KiB unpacked)
+Retrieving: libboost_system1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_signals1_54_0-1.54.0-15.15.x86_64 (7/40),  40.8 KiB ( 86.9 KiB unpacked)
+Retrieving: libboost_signals1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_serialization1_54_0-1.54.0-15.15.x86_64 (8/40), 138.0 KiB (751.8 KiB unpacked)
+Retrieving: libboost_serialization1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_random1_54_0-1.54.0-15.15.x86_64 (9/40),  20.5 KiB ( 10.3 KiB unpacked)
+Retrieving: libboost_random1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_python1_54_0-1.54.0-15.15.x86_64 (10/40), 104.7 KiB (315.9 KiB unpacked)
+Retrieving: libboost_python1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_program_options1_54_0-1.54.0-15.15.x86_64 (11/40), 126.1 KiB (456.7 KiB unpacked)
+Retrieving: libboost_program_options1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_math1_54_0-1.54.0-15.15.x86_64 (12/40), 258.6 KiB (967.5 KiB unpacked)
+Retrieving: libboost_math1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_iostreams1_54_0-1.54.0-15.15.x86_64 (13/40),  40.3 KiB (103.2 KiB unpacked)
+Retrieving: libboost_iostreams1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_date_time1_54_0-1.54.0-15.15.x86_64 (14/40),  31.5 KiB ( 70.7 KiB unpacked)
+Retrieving: libboost_date_time1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_context1_54_0-1.54.0-15.15.x86_64 (15/40),  18.3 KiB (  5.9 KiB unpacked)
+Retrieving: libboost_context1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_atomic1_54_0-1.54.0-15.15.x86_64 (16/40),  18.3 KiB (  5.8 KiB unpacked)
+Retrieving: libboost_atomic1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libpsm2-compat-10.2.103-2.6.x86_64 (17/40),  10.1 KiB ( 19.1 KiB unpacked)
+Retrieving: libpsm2-compat-10.2.103-2.6.x86_64.rpm [done]
+Retrieving package libboost_thread1_54_0-1.54.0-15.15.x86_64 (18/40),  39.6 KiB ( 95.0 KiB unpacked)
+Retrieving: libboost_thread1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_filesystem1_54_0-1.54.0-15.15.x86_64 (19/40),  47.1 KiB ( 91.3 KiB unpacked)
+Retrieving: libboost_filesystem1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_chrono1_54_0-1.54.0-15.15.x86_64 (20/40),  24.8 KiB ( 30.5 KiB unpacked)
+Retrieving: libboost_chrono1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_wave1_54_0-1.54.0-15.15.x86_64 (21/40), 174.3 KiB (  1.1 MiB unpacked)
+Retrieving: libboost_wave1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_log1_54_0-1.54.0-15.15.x86_64 (22/40), 550.9 KiB (  2.9 MiB unpacked)
+Retrieving: libboost_log1_54_0-1.54.0-15.15.x86_64.rpm [.done (7.5 MiB/s)]
+Retrieving package libboost_timer1_54_0-1.54.0-15.15.x86_64 (23/40),  22.7 KiB ( 18.4 KiB unpacked)
+Retrieving: libboost_timer1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libicu52_1-data-52.1-18.1.x86_64 (24/40),   5.2 MiB ( 22.4 MiB unpacked)
+Retrieving: libicu52_1-data-52.1-18.1.x86_64.rpm [done]
+Retrieving package rdma-core-14-8.1.x86_64 (25/40),  33.9 KiB ( 60.2 KiB unpacked)
+Retrieving: rdma-core-14-8.1.x86_64.rpm [done]
+Retrieving package timezone-2018e-51.1.x86_64 (26/40), 361.8 KiB (  1.2 MiB unpacked)
+Retrieving: timezone-2018e-51.1.x86_64.rpm [done]
+Retrieving package python-2.7.13-27.6.1.x86_64 (27/40), 313.8 KiB (  1.4 MiB unpacked)
+Retrieving: python-2.7.13-27.6.1.x86_64.rpm [done]
+Retrieving package libibverbs1-14-8.1.x86_64 (28/40),  37.7 KiB ( 82.1 KiB unpacked)
+Retrieving: libibverbs1-14-8.1.x86_64.rpm [done]
+Retrieving package libicu52_1-52.1-18.1.x86_64 (29/40),   1.4 MiB (  4.2 MiB unpacked)
+Retrieving: libicu52_1-52.1-18.1.x86_64.rpm [done]
+Retrieving package libmlx5-1-14-8.1.x86_64 (30/40),  41.4 KiB ( 98.4 KiB unpacked)
+Retrieving: libmlx5-1-14-8.1.x86_64.rpm [done]
+Retrieving package libibverbs-14-8.1.x86_64 (31/40), 124.5 KiB (374.2 KiB unpacked)
+Retrieving: libibverbs-14-8.1.x86_64.rpm [.done (13.2 KiB/s)]
+Retrieving package librdmacm1-14-8.1.x86_64 (32/40),  44.2 KiB ( 87.6 KiB unpacked)
+Retrieving: librdmacm1-14-8.1.x86_64.rpm [done]
+Retrieving package libboost_regex1_54_0-1.54.0-15.15.x86_64 (33/40), 270.3 KiB (  1.1 MiB unpacked)
+Retrieving: libboost_regex1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_locale1_54_0-1.54.0-15.15.x86_64 (34/40), 227.0 KiB (892.4 KiB unpacked)
+Retrieving: libboost_locale1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libfabric1-1.4.1-1.5.x86_64 (35/40), 307.7 KiB (871.1 KiB unpacked)
+Retrieving: libfabric1-1.4.1-1.5.x86_64.rpm [done]
+Retrieving package libboost_graph1_54_0-1.54.0-15.15.x86_64 (36/40), 107.8 KiB (336.7 KiB unpacked)
+Retrieving: libboost_graph1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package openmpi-libs-1.10.6-4.1.x86_64 (37/40),   2.3 MiB (  8.9 MiB unpacked)
+Retrieving: openmpi-libs-1.10.6-4.1.x86_64.rpm [done]
+Retrieving package libboost_mpi1_54_0-1.54.0-15.15.x86_64 (38/40),  70.6 KiB (271.9 KiB unpacked)
+Retrieving: libboost_mpi1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package libboost_graph_parallel1_54_0-1.54.0-15.15.x86_64 (39/40),  84.7 KiB (292.9 KiB unpacked)
+Retrieving: libboost_graph_parallel1_54_0-1.54.0-15.15.x86_64.rpm [done]
+Retrieving package boost-devel-1.54.0-15.15.x86_64 (40/40),   6.4 MiB ( 86.8 MiB unpacked)
+Retrieving: boost-devel-1.54.0-15.15.x86_64.rpm [.done (9.4 MiB/s)]
+Checking for file conflicts: [........done]
+( 1/40) Installing: boost-license1_54_0-1.54.0-15.15.noarch [.....done]
+( 2/40) Installing: libpsm2-2-10.2.103-2.6.x86_64 [.........done]
+( 3/40) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
+( 4/40) Installing: libstdc++-devel-4.8-11.16.x86_64 [.....done]
+( 5/40) Installing: libboost_test1_54_0-1.54.0-15.15.x86_64 [.........done]
+( 6/40) Installing: libboost_system1_54_0-1.54.0-15.15.x86_64 [....done]
+( 7/40) Installing: libboost_signals1_54_0-1.54.0-15.15.x86_64 [.....done]
+( 8/40) Installing: libboost_serialization1_54_0-1.54.0-15.15.x86_64 [.........done]
+( 9/40) Installing: libboost_random1_54_0-1.54.0-15.15.x86_64 [....done]
+(10/40) Installing: libboost_python1_54_0-1.54.0-15.15.x86_64 [........done]
+(11/40) Installing: libboost_program_options1_54_0-1.54.0-15.15.x86_64 [..........done]
+(12/40) Installing: libboost_math1_54_0-1.54.0-15.15.x86_64 [...........done]
+(13/40) Installing: libboost_iostreams1_54_0-1.54.0-15.15.x86_64 [.....done]
+(14/40) Installing: libboost_date_time1_54_0-1.54.0-15.15.x86_64 [....done]
+(15/40) Installing: libboost_context1_54_0-1.54.0-15.15.x86_64 [....done]
+(16/40) Installing: libboost_atomic1_54_0-1.54.0-15.15.x86_64 [....done]
+(17/40) Installing: libpsm2-compat-10.2.103-2.6.x86_64 [......done]
+(18/40) Installing: libboost_thread1_54_0-1.54.0-15.15.x86_64 [.....done]
+(19/40) Installing: libboost_filesystem1_54_0-1.54.0-15.15.x86_64 [.....done]
+(20/40) Installing: libboost_chrono1_54_0-1.54.0-15.15.x86_64 [....done]
+(21/40) Installing: libboost_wave1_54_0-1.54.0-15.15.x86_64 [............done]
+(22/40) Installing: libboost_log1_54_0-1.54.0-15.15.x86_64 [............done]
+(23/40) Installing: libboost_timer1_54_0-1.54.0-15.15.x86_64 [....done]
+(24/40) Installing: libicu52_1-data-52.1-18.1.x86_64 [............done]
+(25/40) Installing: rdma-core-14-8.1.x86_64 [.........done]
+Additional rpm output:
+Failed to connect to bus: No such file or directory
+
+
+(26/40) Installing: timezone-2018e-51.1.x86_64 [............done]
+Additional rpm output:
+warning: /etc/localtime created as /etc/localtime.rpmnew
+
+
+(27/40) Installing: python-2.7.13-27.6.1.x86_64 [............done]
+(28/40) Installing: libibverbs1-14-8.1.x86_64 [.....done]
+(29/40) Installing: libicu52_1-52.1-18.1.x86_64 [............done]
+(30/40) Installing: libmlx5-1-14-8.1.x86_64 [.....done]
+(31/40) Installing: libibverbs-14-8.1.x86_64 [...........done]
+(32/40) Installing: librdmacm1-14-8.1.x86_64 [.....done]
+(33/40) Installing: libboost_regex1_54_0-1.54.0-15.15.x86_64 [............done]
+(34/40) Installing: libboost_locale1_54_0-1.54.0-15.15.x86_64 [..........done]
+(35/40) Installing: libfabric1-1.4.1-1.5.x86_64 [..........done]
+(36/40) Installing: libboost_graph1_54_0-1.54.0-15.15.x86_64 [........done]
+(37/40) Installing: openmpi-libs-1.10.6-4.1.x86_64 [............done]
+(38/40) Installing: libboost_mpi1_54_0-1.54.0-15.15.x86_64 [.......done]
+(39/40) Installing: libboost_graph_parallel1_54_0-1.54.0-15.15.x86_64 [........done]
+(40/40) Installing: boost-devel-1.54.0-15.15.x86_64 [............done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip         1.07     [required by lbvs_consent]
+  - install obuild          0.1.10   [required by lbvs_consent]
+  - install conf-openbabel  0.1      [required by lbvs_consent]
+  - install conf-rdkit      0.1      [required by lbvs_consent]
+  - install conf-which      1        [required by conf-autoconf]
+  - install base-bytes      base     [required by qcheck, qtest]
+  - install ocamlbuild      0.12.0   [required by dolog, batteries, parmap]
+  - install conf-pkg-config 1.1      [required by conf-boost]
+  - install num             1.1      [required by batteries]
+  - install conf-python-2-7 1.0      [required by lbvs_consent]
+  - install minivpt         2.0.0    [required by lbvs_consent]
+  - install conf-autoconf   0.1      [required by bitv]
+  - install parmap          1.0-rc10 [required by lbvs_consent]
+  - install ounit           2.0.8    [required by qcheck, qtest]
+  - install dolog           3.0      [required by lbvs_consent]
+  - install conf-boost      1        [required by lbvs_consent]
+  - install batteries       2.8.0    [required by lbvs_consent]
+  - install bitv            1.3      [required by lbvs_consent]
+  - install qcheck          0.8      [required by lbvs_consent]
+  - install cpm             4.0.0    [required by lbvs_consent]
+  - install qtest           2.9      [required by lbvs_consent]
+  - install lbvs_consent    1.1.2
+===== 22 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[bitv.1.3] found in cache
+[camlzip.1.07] found in cache
+[cpm.4.0.0] found in cache
+[dolog.3.0] found in cache
+[lbvs_consent.1.1.2] found in cache
+[minivpt.2.0.0] found in cache
+[num.1.1] found in cache
+[obuild.0.1.10] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[parmap.1.0-rc10] found in cache
+[qcheck.0.8] found in cache
+[qtest.2.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-openbabel failed at "/usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel".
+[ERROR] The compilation of conf-rdkit failed at "/usr/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \\\n              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral".
+-> installed base-bytes.base
+-> installed camlzip.1.07
+-> installed conf-pkg-config.1.1
+-> installed conf-boost.1
+-> installed conf-python-2-7.1.0
+-> installed conf-which.1
+-> installed num.1.1
+-> installed conf-autoconf.0.1
+-> installed obuild.0.1.10
+-> installed minivpt.2.0.0
+-> installed ocamlbuild.0.12.0
+-> installed bitv.1.3
+-> installed dolog.3.0
+-> installed ounit.2.0.8
+-> installed parmap.1.0-rc10
+-> installed qcheck.0.8
+-> installed qtest.2.9
+-> installed batteries.2.8.0
+-> installed cpm.4.0.0
+
+#=== ERROR while compiling conf-rdkit.0.1 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-rdkit.0.1
+# command              /usr/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \
+              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral
+# exit-code            1
+# env-file             ~/.opam/log/conf-rdkit-12-8b8e2c.env
+# output-file          ~/.opam/log/conf-rdkit-12-8b8e2c.out
+### output ###
+# test.cpp:2:38: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
+#  #include "rdkit/RDGeneral/versions.h"
+#                                       ^
+# compilation terminated.
+# test.cpp:2:38: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
+#  #include "rdkit/RDGeneral/versions.h"
+#                                       ^
+# compilation terminated.
+
+
+#=== ERROR while compiling conf-openbabel.0.1 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-openbabel.0.1
+# command              /usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel
+# exit-code            1
+# env-file             ~/.opam/log/conf-openbabel-12-e80101.env
+# output-file          ~/.opam/log/conf-openbabel-12-e80101.out
+### output ###
+# test.cpp:1:27: fatal error: openbabel/mol.h: No such file or directory
+#  #include <openbabel/mol.h>
+#                            ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-openbabel 0.1
+| - build conf-rdkit     0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install batteries       2.8.0
+| - install bitv            1.3
+| - install camlzip         1.07
+| - install conf-autoconf   0.1
+| - install conf-boost      1
+| - install conf-pkg-config 1.1
+| - install conf-python-2-7 1.0
+| - install conf-which      1
+| - install cpm             4.0.0
+| - install dolog           3.0
+| - install minivpt         2.0.0
+| - install num             1.1
+| - install obuild          0.1.10
+| - install ocamlbuild      0.12.0
+| - install ounit           2.0.8
+| - install parmap          1.0-rc10
+| - install qcheck          0.8
+| - install qtest           2.9
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180731035336.export"
+31 1533008712 1533009254
