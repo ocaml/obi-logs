@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 dose.3.4.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for dose.3.4.2: The following dependencies couldn't be met:
+          - dose -> ocamlgraph = 1.8.6 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=dose.3.4.2 returned 20
+20 1532993952 1532993954
