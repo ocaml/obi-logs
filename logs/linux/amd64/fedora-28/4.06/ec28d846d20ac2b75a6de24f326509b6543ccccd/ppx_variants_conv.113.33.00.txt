@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_variants_conv.113.33.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for ppx_variants_conv.113.33.00: The following dependencies couldn't be met:
+          - ppx_variants_conv -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_variants_conv.113.33.00 returned 20
+20 1533014934 1533014937

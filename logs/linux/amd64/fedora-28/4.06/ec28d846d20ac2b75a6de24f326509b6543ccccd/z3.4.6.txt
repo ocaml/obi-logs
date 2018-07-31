@@ -1,0 +1,683 @@
+$ opam depext -iy -j 2 z3.4.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gmp
+gmp-devel
+m4
+python2
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Thu Apr 26 13:03:41 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Mon Jul 30 20:16:11 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+Name        : python2
+Version     : 2.7.15
+Release     : 2.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:09:37 2018
+Group       : Development/Languages
+Size        : 80738
+License     : Python
+Signature   : RSA/SHA256, Thu May 17 13:51:08 2018, Key ID e08e7e629db62fb1
+Source RPM  : python2-2.7.15-2.fc28.src.rpm
+Build Date  : Wed May 16 18:20:32 2018
+Build Host  : buildhw-09.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://www.python.org/
+Bug URL     : https://bugz.fedoraproject.org/python2
+Summary     : An interpreted, interactive, object-oriented programming language
+Description :
+Python 2 is an old version of the language that is incompatible with the 3.x
+line of releases. The language is mostly the same, but many details, especially
+how built-in objects like dictionaries and strings work, have changed
+considerably, and a lot of deprecated features have finally been removed in the
+3.x line.
+
+Note that documentation for Python 2 is provided in the python2-docs
+package.
+
+This package provides the "python2" executable; most of the actual
+implementation is within the "python2-libs" package.
+# The following new OS packages need to be installed: gmp-devel
+The following command needs to be run through "sudo":
+    yum install -y gmp-devel
+Fedora 28 - x86_64 - Updates                     36 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Tue Jul 31 05:18:55 2018.
+Dependencies resolved.
+================================================================================
+ Package           Arch           Version                  Repository      Size
+================================================================================
+Installing:
+ gmp-devel         x86_64         1:6.1.2-7.fc28           fedora         187 k
+Installing dependencies:
+ gmp-c++           x86_64         1:6.1.2-7.fc28           fedora          31 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 218 k
+Installed size: 377 k
+Downloading Packages:
+(1/2): gmp-c++-6.1.2-7.fc28.x86_64.rpm          455 kB/s |  31 kB     00:00    
+(2/2): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.6 MB/s | 187 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           887 kB/s | 218 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                          1/2 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                          1/2 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                        2/2 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                        2/2 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                        1/2 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                          2/2 
+
+Installed:
+  gmp-devel.x86_64 1:6.1.2-7.fc28         gmp-c++.x86_64 1:6.1.2-7.fc28        
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gmp-devel
+gmp-devel-6.1.2-7.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp        1   [required by z3]
+  - install num             1.1 [required by z3]
+  - install conf-python-2-7 1.0 [required by z3]
+  - install z3              4.6
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[num.1.1] found in cache
+[z3.4.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-gmp.1
+-> installed conf-python-2-7.1.0
+-> installed num.1.1
+[ERROR] The compilation of z3 failed at "/usr/bin/make -C build -j 71".
+
+#=== ERROR while compiling z3.4.6 =============================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/z3.4.6
+# command              /usr/bin/make -C build -j 71
+# exit-code            2
+# env-file             ~/.opam/log/z3-9-4f1270.env
+# output-file          ~/.opam/log/z3-9-4f1270.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/z3.4.6/build'
+# src/smt/smt_statistics.cpp
+# src/interp/iz3profiling.cpp
+# src/util/luby.cpp
+# src/util/common_msgs.cpp
+# src/util/approx_nat.cpp
+# ocamlc  -i -I api/ml -c ../src/api/ml/z3enums.ml > api/ml/z3enums.mli
+# src/api/dll/dll.cpp
+# src/util/z3_exception.cpp
+# src/util/timeit.cpp
+# src/util/memory_manager.cpp
+# src/util/cooperate.cpp
+# src/util/approx_set.cpp
+# ocamlc  -I api/ml -o api/ml/z3enums.cmi -c api/ml/z3enums.mli
+# ocamlc  -I api/ml -o api/ml/z3enums.cmo -c ../src/api/ml/z3enums.ml
+# src/util/util.cpp
+# src/util/timer.cpp
+# src/util/timeout.cpp
+# src/util/scoped_timer.cpp
+# src/util/scoped_ctrl_c.cpp
+# ocamlc  -i -I api/ml -c ../src/api/ml/z3native.ml > api/ml/z3native.mli
+# src/util/page.cpp
+# src/util/bit_util.cpp
+# ocamlc  -I api/ml -o api/ml/z3native.cmi -c api/ml/z3native.mli
+# ocamlc  -I api/ml -o api/ml/z3native.cmo -c ../src/api/ml/z3native.ml
+# src/shell/z3_log_frontend.cpp
+# src/api/api_commands.cpp
+# src/api/api_log.cpp
+# src/util/stack.cpp
+# src/util/mpn.cpp
+# src/util/hash.cpp
+# src/util/fixed_bit_vector.cpp
+# cp ../src/api/ml/z3.mli api/ml/z3.mli
+# src/util/lbool.cpp
+# ocamlc  -I api/ml -o api/ml/z3.cmi -c api/ml/z3.mli
+# src/solver/smt_logics.cpp
+# src/util/warning.cpp
+# src/util/small_object_allocator.cpp
+# ocamlc  -I api/ml -o api/ml/z3.cmo -c ../src/api/ml/z3.ml
+# src/api/z3_replayer.cpp
+# src/interp/iz3scopes.cpp
+# src/math/automata/automaton.cpp
+# src/util/trace.cpp
+# src/util/symbol.cpp
+# src/util/statistics.cpp
+# src/util/smt2_util.cpp
+# src/util/rlimit.cpp
+# src/util/prime_generator.cpp
+# src/util/min_cut.cpp
+# src/util/region.cpp
+# src/util/permutation.cpp
+# src/util/debug.cpp
+# src/util/cmd_context_types.cpp
+# src/util/bit_vector.cpp
+# src/api/api_log_macros.cpp
+# src/sat/sat_watched.cpp
+# src/sat/sat_model_converter.cpp
+# src/sat/sat_clause_use_list.cpp
+# src/sat/sat_par.cpp
+# src/sat/sat_clause_set.cpp
+# src/sat/sat_clause.cpp
+# ocamlopt  -I api/ml -o api/ml/z3enums.cmx -c ../src/api/ml/z3enums.ml
+# ocamlopt  -I api/ml -o api/ml/z3native.cmx -c ../src/api/ml/z3native.ml
+# src/util/mpz.cpp
+# ocamlopt  -I api/ml -o api/ml/z3.cmx -c ../src/api/ml/z3.ml
+# src/math/euclid/euclidean_solver.cpp
+# src/math/realclosure/mpz_matrix.cpp
+# src/util/mpq_inf.cpp
+# src/util/mpq.cpp
+# src/util/mpfx.cpp
+# src/util/gparams.cpp
+# src/util/mpff.cpp
+# src/util/env_params.cpp
+# src/shell/mem_initializer.cpp
+# src/smt/old_interval.cpp
+# src/smt/params/theory_str_params.cpp
+# src/smt/params/theory_bv_params.cpp
+# src/smt/params/theory_array_params.cpp
+# src/smt/params/qi_params.cpp
+# src/smt/params/dyn_ack_params.cpp
+# src/smt/params/theory_pb_params.cpp
+# src/smt/params/preprocessor_params.cpp
+# src/smt/params/theory_arith_params.cpp
+# src/ast/pattern/pattern_inference_params.cpp
+# src/tactic/arith/linear_equation.cpp
+# src/math/realclosure/realclosure.cpp
+# src/math/interval/interval_mpq.cpp
+# src/sat/sat_solver.cpp
+# src/sat/sat_simplifier.cpp
+# src/sat/sat_scc.cpp
+# src/sat/sat_mus.cpp
+# src/sat/sat_integrity_checker.cpp
+# src/sat/sat_iff3_finder.cpp
+# src/sat/sat_elim_eqs.cpp
+# src/sat/sat_config.cpp
+# src/sat/sat_cleaner.cpp
+# src/sat/sat_asymm_branch.cpp
+# src/sat/dimacs.cpp
+# src/sat/sat_probing.cpp
+# src/util/sexpr.cpp
+# src/util/s_integer.cpp
+# src/util/rational.cpp
+# src/util/params.cpp
+# src/util/mpf.cpp
+# src/util/mpbq.cpp
+# src/util/inf_rational.cpp
+# src/util/inf_int_rational.cpp
+# src/util/hwf.cpp
+# src/api/dll/mem_initializer.cpp
+# src/shell/dimacs_frontend.cpp
+# src/muz/spacer/spacer_matrix.cpp
+# src/muz/base/bind_variables.cpp
+# src/tactic/arith/bound_propagator.cpp
+# src/ast/for_each_ast.cpp
+# src/ast/ast_lt.cpp
+# src/ast/has_free_vars.cpp
+# src/math/subpaving/subpaving_mpff.cpp
+# src/math/subpaving/subpaving_mpf.cpp
+# src/math/subpaving/subpaving_hwf.cpp
+# src/math/subpaving/subpaving.cpp
+# src/math/subpaving/subpaving_mpfx.cpp
+# src/math/subpaving/subpaving_mpq.cpp
+# src/math/simplex/simplex.cpp
+# src/math/hilbert/hilbert_basis.cpp
+# src/util/inf_s_integer.cpp
+# src/muz/rel/tbv.cpp
+# src/smt/uses_theory.cpp
+# src/smt/smt_value_sort.cpp
+# src/smt/smt_quantifier_stat.cpp
+# src/smt/arith_eq_solver.cpp
+# src/smt/proto_model/value_factory.cpp
+# src/smt/params/smt_params.cpp
+# src/cmd_context/pdecl.cpp
+# src/ackermannization/ackr_helper.cpp
+# src/math/subpaving/tactic/expr2subpaving.cpp
+# src/parsers/util/simple_parser.cpp
+# src/parsers/util/scanner.cpp
+# src/parsers/util/cost_parser.cpp
+# src/ast/rewriter/mk_extract_proc.cpp
+# src/ast/rewriter/datatype_rewriter.cpp
+# src/ast/used_vars.cpp
+# src/ast/pb_decl_plugin.cpp
+# src/ast/num_occurs.cpp
+# src/ast/macro_substitution.cpp
+# src/ast/format.cpp
+# src/ast/func_decl_dependencies.cpp
+# src/ast/for_each_expr.cpp
+# src/ast/factor_equivs.cpp
+# src/ast/expr_stat.cpp
+# src/ast/expr_map.cpp
+# src/ast/expr_functors.cpp
+# src/ast/decl_collector.cpp
+# src/ast/ast_util.cpp
+# src/ast/ast_translation.cpp
+# src/ast/ast_ll_pp.cpp
+# src/ast/act_cache.cpp
+# src/ast/occurs.cpp
+# src/ast/pp.cpp
+# src/math/simplex/model_based_opt.cpp
+# src/nlsat/nlsat_types.cpp
+# src/math/polynomial/polynomial_cache.cpp
+# src/util/lp/lp_utils.cpp
+# src/shell/main.cpp
+# src/smt/cost_evaluator.cpp
+# src/cmd_context/tactic_manager.cpp
+# src/model/model_core.cpp
+# src/ast/rewriter/distribute_forall.cpp
+# src/ast/rewriter/ast_counter.cpp
+# src/ast/reg_decl_plugins.cpp
+# src/ast/fpa_decl_plugin.cpp
+# src/ast/ast_smt_pp.cpp
+# src/nlsat/nlsat_interval_set.cpp
+# src/nlsat/nlsat_clause.cpp
+# src/math/polynomial/rpolynomial.cpp
+# src/math/polynomial/polynomial.cpp
+# src/math/polynomial/algebraic_numbers.cpp
+# src/api/dll/gparams_register_modules.cpp
+# src/shell/gparams_register_modules.cpp
+# src/muz/spacer/spacer_mev_array.cpp
+# src/muz/spacer/spacer_antiunify.cpp
+# src/muz/spacer/spacer_sym_mux.cpp
+# src/muz/pdr/pdr_sym_mux.cpp
+# src/muz/base/dl_boogie_proof.cpp
+# src/qe/qe_dl_plugin.cpp
+# src/qe/qe_datatype_plugin.cpp
+# src/qe/qe_bool_plugin.cpp
+# src/qe/qe_array_plugin.cpp
+# src/qe/nlarith_util.cpp
+# src/qe/qe_bv_plugin.cpp
+# src/smt/smt_literal.cpp
+# src/smt/fingerprints.cpp
+# src/smt/cached_var_subst.cpp
+# src/smt/elim_term_ite.cpp
+# src/smt/smt_farkas_util.cpp
+# src/smt/proto_model/struct_factory.cpp
+# src/smt/proto_model/proto_model.cpp
+# src/smt/proto_model/numeral_factory.cpp
+# src/smt/proto_model/datatype_factory.cpp
+# src/smt/proto_model/array_factory.cpp
+# src/ast/pattern/pattern_inference.cpp
+# src/ast/fpa/fpa2bv_converter.cpp
+# src/cmd_context/check_logic.cpp
+# src/interp/iz3mgr.cpp
+# src/ast/proofs/proof_utils.cpp
+# src/ast/proofs/proof_checker.cpp
+# src/tactic/arith/bv2real_rewriter.cpp
+# src/math/grobner/grobner.cpp
+# src/parsers/util/pattern_validation.cpp
+# src/tactic/replace_proof_converter.cpp
+# src/tactic/proof_converter.cpp
+# src/tactic/equiv_proof_converter.cpp
+# src/model/model_v2_pp.cpp
+# src/model/model2expr.cpp
+# src/model/model.cpp
+# src/model/func_interp.cpp
+# src/model/model_pp.cpp
+# src/ast/normal_forms/nnf.cpp
+# src/ast/normal_forms/name_exprs.cpp
+# src/ast/normal_forms/defined_names.cpp
+# src/ast/normal_forms/pull_quant.cpp
+# src/ast/rewriter/th_rewriter.cpp
+# src/ast/rewriter/rewriter.cpp
+# src/ast/rewriter/pb_rewriter.cpp
+# src/ast/rewriter/pb2bv_rewriter.cpp
+# src/ast/rewriter/mk_simplified_app.cpp
+# src/ast/rewriter/maximize_ac_sharing.cpp
+# src/ast/rewriter/label_rewriter.cpp
+# src/ast/rewriter/inj_axiom.cpp
+# src/ast/rewriter/fpa_rewriter.cpp
+# src/ast/rewriter/factor_rewriter.cpp
+# src/ast/rewriter/expr_safe_replace.cpp
+# src/ast/rewriter/expr_replacer.cpp
+# src/ast/rewriter/enum2bv_rewriter.cpp
+# src/ast/rewriter/elim_bounds.cpp
+# src/ast/rewriter/dl_rewriter.cpp
+# src/ast/rewriter/bv_rewriter.cpp
+# src/ast/rewriter/bv_elim.cpp
+# src/ast/rewriter/bv_bounds.cpp
+# src/ast/rewriter/bool_rewriter.cpp
+# src/ast/rewriter/der.cpp
+# src/ast/rewriter/pull_ite_tree.cpp
+# src/ast/rewriter/seq_rewriter.cpp
+# src/ast/rewriter/var_subst.cpp
+# src/ast/rewriter/bv_trailing.cpp
+# src/ast/rewriter/quant_hoist.cpp
+# src/ast/rewriter/push_app_ite.cpp
+# src/ast/rewriter/array_rewriter.cpp
+# src/ast/rewriter/arith_rewriter.cpp
+# src/ast/well_sorted.cpp
+# src/ast/static_features.cpp
+# src/ast/seq_decl_plugin.cpp
+# src/ast/expr_substitution.cpp
+# src/ast/expr2var.cpp
+# src/ast/expr2polynomial.cpp
+# src/ast/datatype_decl_plugin.cpp
+# src/ast/bv_decl_plugin.cpp
+# src/ast/ast_smt2_pp.cpp
+# src/ast/ast_pp_util.cpp
+# src/ast/ast_pp_dot.cpp
+# src/ast/ast.cpp
+# src/ast/array_decl_plugin.cpp
+# src/ast/arith_decl_plugin.cpp
+# src/ast/expr_abstract.cpp
+# src/ast/shared_occs.cpp
+# src/ast/dl_decl_plugin.cpp
+# src/nlsat/nlsat_evaluator.cpp
+# src/math/polynomial/upolynomial.cpp
+# src/math/polynomial/sexpr2upolynomial.cpp
+# src/util/lp/binary_heap_priority_queue_instances.cpp
+# src/util/lp/lp_settings_instances.cpp
+# src/api/api_fpa.cpp
+# src/api/api_datatype.cpp
+# src/api/api_context.cpp
+# src/api/api_ast.cpp
+# src/api/api_array.cpp
+# src/api/api_arith.cpp
+# src/api/api_algebraic.cpp
+# src/api/api_ast_map.cpp
+# src/api/api_ast_vector.cpp
+# src/api/api_bv.cpp
+# src/opt/pb_sls.cpp
+# src/muz/spacer/spacer_qe_project.cpp
+# src/muz/rel/doc.cpp
+# src/qe/qe_arith_plugin.cpp
+# src/qe/qe_mbp.cpp
+# src/tactic/bv/bit_blaster_model_converter.cpp
+# src/smt/watch_list.cpp
+# src/smt/theory_opt.cpp
+# src/smt/smt_clause.cpp
+# src/smt/smt_cg_table.cpp
+# src/smt/smt_almost_cg_table.cpp
+# src/smt/expr_context_simplifier.cpp
+# src/ast/rewriter/bit_blaster/bit_blaster.cpp
+# src/ast/rewriter/bit_blaster/bit_blaster_rewriter.cpp
+# src/ast/fpa/fpa2bv_rewriter.cpp
+# src/ast/fpa/bv2fpa_converter.cpp
+# src/interp/iz3pp.cpp
+# src/ackermannization/ackr_model_converter.cpp
+# src/ackermannization/lackr_model_constructor.cpp
+# src/solver/check_sat_result.cpp
+# src/ast/substitution/substitution.cpp
+# src/ast/substitution/matcher.cpp
+# src/ast/substitution/unifier.cpp
+# src/ast/substitution/substitution_tree.cpp
+# src/tactic/model_converter.cpp
+# src/tactic/horn_subsume_model_converter.cpp
+# src/model/model_smt2_pp.cpp
+# src/tactic/extension_model_converter.cpp
+# src/model/model_implicant.cpp
+# src/model/model_evaluator.cpp
+# src/ast/macros/macro_util.cpp
+# src/ast/rewriter/bit2int.cpp
+# src/ast/ast_printer.cpp
+# src/nlsat/nlsat_explain.cpp
+# src/nlsat/nlsat_solver.cpp
+# src/math/polynomial/upolynomial_factorization.cpp
+# src/util/lp/binary_heap_upair_queue_instances.cpp
+# src/util/lp/indexed_vector_instances.cpp
+# src/util/lp/dense_matrix_instances.cpp
+# src/api/api_stats.cpp
+# src/api/api_seq.cpp
+# src/api/api_rcf.cpp
+# src/api/api_quant.cpp
+# src/api/api_qe.cpp
+# src/api/api_polynomial.cpp
+# src/api/api_pb.cpp
+# src/api/api_params.cpp
+# src/api/api_numeral.cpp
+# src/api/api_model.cpp
+# src/api/api_goal.cpp
+# src/opt/opt_pareto.cpp
+# src/opt/mss.cpp
+# src/tactic/smtlogics/qfufbv_ackr_model_converter.cpp
+# src/tactic/ufbv/ufbv_rewriter.cpp
+# src/muz/spacer/spacer_unsat_core_learner.cpp
+# src/muz/spacer/spacer_farkas_learner.cpp
+# src/muz/spacer/spacer_unsat_core_plugin.cpp
+# src/muz/base/hnf.cpp
+# src/duality/duality_profiling.cpp
+# src/duality/duality_wrapper.cpp
+# src/qe/qe_datatypes.cpp
+# src/qe/qe_arrays.cpp
+# src/qe/qe_arith.cpp
+# src/smt/smt_implied_equalities.cpp
+# src/smt/smt_solver.cpp
+# src/cmd_context/context_params.cpp
+# src/interp/iz3proof.cpp
+# src/interp/iz3checker.cpp
+# src/interp/iz3base.cpp
+# src/ackermannization/lackr_model_converter_lazy.cpp
+# src/ackermannization/ackermannize_bv_model_converter.cpp
+# src/solver/solver_na2as.cpp
+# src/solver/solver.cpp
+# src/solver/mus.cpp
+# src/solver/combined_solver.cpp
+# src/tactic/aig/aig.cpp
+# src/tactic/arith/pb2bv_model_converter.cpp
+# src/tactic/arith/bv2int_rewriter.cpp
+# src/tactic/arith/bound_manager.cpp
+# src/sat/tactic/atom2bool_var.cpp
+# src/tactic/core/collect_occs.cpp
+# src/tactic/goal_util.cpp
+# src/tactic/goal_shared_occs.cpp
+# src/tactic/filter_model_converter.cpp
+# src/tactic/goal_num_occurs.cpp
+# src/tactic/goal.cpp
+# src/ast/macros/quasi_macros.cpp
+# src/ast/macros/macro_manager.cpp
+# src/api/api_parsers.cpp
+# src/api/api_config_params.cpp
+# src/tactic/portfolio/fd_solver.cpp
+# src/tactic/portfolio/enum2bv_solver.cpp
+# src/tactic/portfolio/bounded_int2bv_solver.cpp
+# src/tactic/portfolio/pb2bv_solver.cpp
+# src/tactic/fpa/fpa2bv_model_converter.cpp
+# src/muz/spacer/spacer_virtual_solver.cpp
+# src/muz/spacer/spacer_itp_solver.cpp
+# src/muz/pdr/pdr_smt_context_manager.cpp
+# src/duality/duality_solver.cpp
+# src/qe/qsat.cpp
+# src/qe/qe_sat_tactic.cpp
+# src/duality/duality_rpfp.cpp
+# src/qe/qe_cmd.cpp
+# src/qe/nlqsat.cpp
+# src/tactic/sls/sls_engine.cpp
+# src/tactic/bv/bvarray2uf_rewriter.cpp
+# src/smt/smt2_extra_cmds.cpp
+# src/ast/pattern/expr_pattern_match.cpp
+# src/parsers/smt2/marshal.cpp
+# src/cmd_context/extra_cmds/subpaving_cmds.cpp
+# src/cmd_context/extra_cmds/polynomial_cmds.cpp
+# src/cmd_context/extra_cmds/dbg_cmds.cpp
+# src/cmd_context/simplify_cmd.cpp
+# src/cmd_context/parametric_cmd.cpp
+# src/cmd_context/interpolant_cmds.cpp
+# src/cmd_context/eval_cmd.cpp
+# src/cmd_context/echo_tactic.cpp
+# src/cmd_context/cmd_context_to_goal.cpp
+# src/cmd_context/cmd_context.cpp
+# src/cmd_context/basic_cmds.cpp
+# src/cmd_context/cmd_util.cpp
+# src/interp/iz3proof_itp.cpp
+# src/interp/iz3interp.cpp
+# src/ackermannization/lackr.cpp
+# src/solver/tactic2solver.cpp
+# src/solver/solver2tactic.cpp
+# src/solver/solver_pool.cpp
+# src/nlsat/tactic/goal2nlsat.cpp
+# src/tactic/arith/probe_arith.cpp
+# src/tactic/arith/arith_bounds_tactic.cpp
+# src/sat/tactic/goal2sat.cpp
+# src/tactic/core/cofactor_elim_term_ite.cpp
+# src/tactic/tactic.cpp
+# src/tactic/probe.cpp
+# src/ast/macros/macro_finder.cpp
+# src/util/lp/permutation_matrix_instances.cpp
+# src/util/lp/matrix_instances.cpp
+# src/opt/optsmt.cpp
+# src/tactic/portfolio/smt_strategic_solver.cpp
+# src/tactic/ufbv/ufbv_rewriter_tactic.cpp
+# src/tactic/ufbv/quasi_macros_tactic.cpp
+# src/tactic/ufbv/macro_finder_tactic.cpp
+# src/tactic/nlsat_smt/nl_purify_tactic.cpp
+# src/muz/pdr/pdr_farkas_learner.cpp
+# src/qe/qe_tactic.cpp
+# src/qe/qe_lite.cpp
+# src/tactic/sls/bvsls_opt_engine.cpp
+# src/smt/tactic/smt_tactic.cpp
+# src/tactic/bv/max_bv_sharing_tactic.cpp
+# src/tactic/bv/elim_small_bv_tactic.cpp
+# src/tactic/bv/dt2bv_tactic.cpp
+# src/tactic/bv/bvarray2uf_tactic.cpp
+# src/tactic/bv/bv_size_reduction_tactic.cpp
+# src/tactic/bv/bv1_blaster_tactic.cpp
+# src/tactic/bv/bit_blaster_tactic.cpp
+# src/smt/asserted_formulas.cpp
+# src/parsers/smt2/smt2scanner.cpp
+# src/parsers/smt2/smt2parser.cpp
+# src/cmd_context/tactic_cmds.cpp
+# src/interp/iz3translate_direct.cpp
+# src/interp/iz3translate.cpp
+# src/ackermannization/ackr_bound_probe.cpp
+# src/tactic/aig/aig_tactic.cpp
+# In file included from ../src/util/lp/permutation_matrix.hpp:21,
+#                  from ../src/util/lp/permutation_matrix_instances.cpp:22:
+# ../src/util/lp/permutation_matrix.h: In member function 'unsigned int* lp::permutation_matrix<T, X>::values() const':
+# ../src/util/lp/permutation_matrix.h:135:44: error: cannot convert 'const vector<unsigned int>' to 'unsigned int*' in return
+#          unsigned * values() const { return m_permutation; }
+#                                             ^~~~~~~~~~~~~
+# src/nlsat/tactic/nlsat_tactic.cpp
+# src/tactic/arith/recover_01_tactic.cpp
+# src/tactic/arith/normalize_bounds_tactic.cpp
+# src/tactic/arith/nla2bv_tactic.cpp
+# src/tactic/arith/lia2pb_tactic.cpp
+# make: *** [Makefile:456: util/lp/permutation_matrix_instances.o] Error 1
+# make: *** Waiting for unfinished jobs....
+# In file included from ../src/opt/optsmt.cpp:35:
+# ../src/smt/theory_arith.h: In member function 'bool smt::theory_arith<Ext>::has_var(expr*) const':
+# ../src/smt/theory_arith.h:518:58: warning: invalid use of incomplete type 'class smt::context'
+#          bool has_var(expr * v) const { return get_context().e_internalized(v) && get_context().get_enode(v)->get_th_var(get_id()) != null_theory_var; }
+#                                                ~~~~~~~~~~~^~
+# In file included from ../src/opt/opt_solver.h:29,
+#                  from ../src/opt/optsmt.h:22,
+#                  from ../src/opt/optsmt.cpp:32:
+# ../src/smt/smt_kernel.h:43:11: note: forward declaration of 'class smt::context'
+#      class context;
+#            ^~~~~~~
+# In file included from ../src/opt/optsmt.cpp:35:
+# ../src/smt/theory_arith.h:518:93: warning: invalid use of incomplete type 'class smt::context'
+#          bool has_var(expr * v) const { return get_context().e_internalized(v) && get_context().get_enode(v)->get_th_var(get_id()) != null_theory_var; }
+#                                                                                   ~~~~~~~~~~~^~
+# In file included from ../src/opt/opt_solver.h:29,
+#                  from ../src/opt/optsmt.h:22,
+#                  from ../src/opt/optsmt.cpp:32:
+# ../src/smt/smt_kernel.h:43:11: note: forward declaration of 'class smt::context'
+#      class context;
+#            ^~~~~~~
+# In file included from ../src/opt/optsmt.cpp:35:
+# ../src/smt/theory_arith.h: In member function 'smt::theory_var smt::theory_arith<Ext>::expr2var(expr*) const':
+# ../src/smt/theory_arith.h:519:107: warning: invalid use of incomplete type 'class smt::context'
+#          theory_var expr2var(expr * v) const { SASSERT(get_context().e_internalized(v)); return get_context().get_enode(v)->get_th_var(get_id()); }
+#                                                                                                 ~~~~~~~~~~~^~
+# In file included from ../src/opt/opt_solver.h:29,
+#                  from ../src/opt/optsmt.h:22,
+#                  from ../src/opt/optsmt.cpp:32:
+# ../src/smt/smt_kernel.h:43:11: note: forward declaration of 'class smt::context'
+#      class context;
+#            ^~~~~~~
+# In file included from ../src/opt/optsmt.cpp:35:
+# ../src/smt/theory_arith.h: In member function 'bool smt::theory_arith<Ext>::is_free(expr*) const':
+# ../src/smt/theory_arith.h:576:39: warning: invalid use of incomplete type 'class smt::context'
+#              return is_free(get_context().get_enode(n)->get_th_var(get_id()));
+#                             ~~~~~~~~~~~^~
+# In file included from ../src/opt/opt_solver.h:29,
+#                  from ../src/opt/optsmt.h:22,
+#                  from ../src/opt/optsmt.cpp:32:
+# ../src/smt/smt_kernel.h:43:11: note: forward declaration of 'class smt::context'
+#      class context;
+#            ^~~~~~~
+# make: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/z3.4.6/build'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build z3 4.6
++- 
++- The following changes have been performed
+| - install conf-gmp        1
+| - install conf-python-2-7 1.0
+| - install num             1.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180731051908.export"
+31 1533014332 1533014390

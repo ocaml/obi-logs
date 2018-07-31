@@ -1,0 +1,337 @@
+$ opam depext -iy -j 2 stog.0.16.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+which
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Mon Jul 30 20:16:11 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:11:22 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install easy-format             1.3.1      [required by yojson]
+  - install result                  1.3        [required by lwt]
+  - install ppx_tools               5.1+4.06.0 [required by ocf]
+  - install re                      1.7.3      [required by xtmpl]
+  - install conf-which              1          [required by biniou]
+  - install base-bytes              base       [required by ocamlnet]
+  - install ocamlbuild              0.12.0     [required by ocamlnet]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_blob]
+  - install biniou                  1.2.0      [required by yojson]
+  - install gen                     0.5.1      [required by sedlex]
+  - install cppo                    1.6.4      [required by lwt]
+  - install uchar                   0.0.2      [required by js_of_ocaml]
+  - install topkg                   0.9.1      [required by uunf]
+  - install ocamlnet                4.1.6      [required by stog]
+  - install camlp4                  4.06+1     [required by ulex]
+  - install ppx_tools_versioned     5.2        [required by js_of_ocaml, js_of_ocaml-ppx]
+  - install ppx_blob                0.4.0      [required by stog]
+  - install yojson                  1.4.1      [required by ocf]
+  - install lwt                     4.1.0      [required by stog]                         For the PPX, please install package lwt_ppx
+                                                                                          For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                          For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cmdliner                1.0.2      [required by uunf, js_of_ocaml-compiler]
+  - install ulex                    1.2        [required by higlo]
+  - install sedlex                  1.99.4     [required by xtmpl]
+  - install ocf                     0.5.0      [required by stog]
+  - install uutf                    1.0.1      [required by xtmpl]
+  - install js_of_ocaml-compiler    3.2.1      [required by js_of_ocaml]
+  - install uunf                    11.0.0     [required by iri]
+  - install js_of_ocaml             3.2.0      [required by stog]
+  - install iri                     0.4.0      [required by xtmpl]
+  - install js_of_ocaml-ppx         3.2.0      [required by xtmpl]
+  - install xtmpl                   0.17.0     [required by stog]
+  - install higlo                   0.6        [required by stog]
+  - install stog                    0.16.0
+===== 32 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[biniou.1.2.0] found in cache
+[camlp4.4.06+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[higlo.0.6] found in cache
+[iri.0.4.0] found in cache
+[js_of_ocaml.3.2.0] found in cache
+[js_of_ocaml-compiler.3.2.1] found in cache
+[js_of_ocaml-ppx.3.2.0] found in cache
+[lwt.4.1.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlnet.4.1.6] found in cache
+[ocf.0.5.0] found in cache
+[ppx_blob.0.4.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+[stog.0.16.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[ulex.1.2] found in cache
+[uunf.11.0.0] found in cache
+[uutf.1.0.1] found in cache
+[xtmpl.0.17.0] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed gen.0.5.1
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed camlp4.4.06+1
+-> installed ppx_tools.5.1+4.06.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_blob.0.4.0
+-> installed ppx_tools_versioned.5.2
+-> installed ocamlnet.4.1.6
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed sedlex.1.99.4
+-> installed ulex.1.2
+-> installed yojson.1.4.1
+-> installed ocf.0.5.0
+-> installed uutf.1.0.1
+-> installed js_of_ocaml-compiler.3.2.1
+-> installed js_of_ocaml.3.2.0
+-> installed js_of_ocaml-ppx.3.2.0
+-> installed uunf.11.0.0
+-> installed iri.0.4.0
+-> installed xtmpl.0.17.0
+-> installed higlo.0.6
+[ERROR] The compilation of stog failed at "/usr/bin/make all".
+
+#=== ERROR while compiling stog.0.16.0 ========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/stog.0.16.0
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/stog-10-f1ad14.env
+# output-file          ~/.opam/log/stog-10-f1ad14.out
+### output ###
+# cd src && /usr/bin/make all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/stog.0.16.0/src'
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_install.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_error.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_msg.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_misc.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_highlight.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_config.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_trie.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_tmap.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_graph.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_path.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter_types.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_url.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_types.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_intl.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_find.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_tags.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_io.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_info.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_ocaml_types.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_deps.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_tmpl.mli
+# /home/opam/.opam/4.06/bin/ocamlyacc -v stog_filter_parser.mly
+# 6 shift/reduce conflicts.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter_parser.mli
+# /home/opam/.opam/4.06/bin/ocamllex.opt stog_filter_lexer.mll
+# 22 states, 335 transitions, table size 1472 bytes
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -i stog_filter_lexer.ml > stog_filter_lexer.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter_lexer.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_html5.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_engine.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_ocaml.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_exec.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_svg.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_of_latex.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_latex.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_cut.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_list.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_html.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_blocks.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_plug.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_dyn.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_init.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_server_mode.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_install.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_error.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_msg.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_misc.ml
+# File "stog_misc.ml", line 185, characters 13-27:
+# Warning 3: deprecated: Char.lowercase
+# Use Char.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_highlight.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_config.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_trie.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_tmap.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_graph.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_path.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_url.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_intl.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_find.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_tags.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_io.ml
+# File "stog_io.ml", line 67, characters 8-24:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_info.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_ocaml_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_deps.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_tmpl.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter_parser.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter_lexer.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_filter.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_html5.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_engine.ml
+# File "stog_engine.ml", line 549, characters 8-24:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "stog_engine.ml", line 578, characters 26-42:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_ocaml.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_exec.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_svg.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_of_latex.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_latex.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_cut.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_list.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_html.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_blocks.ml
+# File "stog_blocks.ml", line 281, characters 14-31:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_plug.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_dyn.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_init.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_server_mode.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -o stog.cmxa stog_install.cmx stog_error.cmx stog_msg.cmx stog_misc.cmx stog_highlight.cmx stog_config.cmx stog_trie.cmx stog_tmap.cmx stog_graph.cmx stog_path.cmx stog_filter_types.cmx stog_url.cmx stog_types.cmx stog_intl.cmx stog_find.cmx stog_tags.cmx stog_io.cmx stog_info.cmx stog_ocaml_types.cmx stog_deps.cmx stog_tmpl.cmx stog_filter_parser.cmx stog_filter_lexer.cmx stog_filter.cmx stog_html5.cmx stog_engine.cmx stog_ocaml.cmx stog_exec.cmx stog_svg.cmx stog_of_latex.cmx stog_latex.cmx stog_cut.cmx stog_list.cmx stog_html.cmx stog_blocks.cmx stog_plug.cmx stog_dyn.cmx stog_init.cmx stog_server_mode.cmx
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -o stog.cmxs stog_install.cmx stog_error.cmx stog_msg.cmx stog_misc.cmx stog_highlight.cmx stog_config.cmx stog_trie.cmx stog_tmap.cmx stog_graph.cmx stog_path.cmx stog_filter_types.cmx stog_url.cmx stog_types.cmx stog_intl.cmx stog_find.cmx stog_tags.cmx stog_io.cmx stog_info.cmx stog_ocaml_types.cmx stog_deps.cmx stog_tmpl.cmx stog_filter_parser.cmx stog_filter_lexer.cmx stog_filter.cmx stog_html5.cmx stog_engine.cmx stog_ocaml.cmx stog_exec.cmx stog_svg.cmx stog_of_latex.cmx stog_latex.cmx stog_cut.cmx stog_list.cmx stog_html.cmx stog_blocks.cmx stog_plug.cmx stog_dyn.cmx stog_init.cmx stog_server_mode.cmx
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_main.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx -verbose -linkall -linkpkg -o stog -I +ocamldoc -annot -rectypes -g -thread  -safe-string  stog.cmxa stog_main.cmx
+# Effective set of compiler predicates: pkg_unix,pkg_threads.posix,pkg_threads,pkg_ppx_blob,pkg_bytes,pkg_gen,pkg_sedlex,pkg_uchar,pkg_uutf,pkg_re,pkg_re.str,pkg_uunf,pkg_uunf.string,pkg_iri,pkg_xtmpl,pkg_str,pkg_bigarray,pkg_netsys,pkg_netstring,pkg_easy-format,pkg_biniou,pkg_yojson,pkg_ocf,pkg_ocf.ppx,pkg_dynlink,pkg_camlp4,pkg_ulex,pkg_higlo,pkg_higlo.dot,pkg_higlo.json,pkg_higlo.ocaml,pkg_higlo.xml,pkg_higlo.lexers,pkg_result,pkg_lwt,pkg_lwt.unix,pkg_xtmpl.ppx,autolink,mt,mt_posix,native
+# + ocamlopt.opt -verbose -linkall -o stog -I /home/opam/.opam/4.06/lib/ocaml/ocamldoc -annot -rectypes -g -safe-string -thread -I /home/opam/.opam/4.06/lib/ppx_blob -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/gen -I /home/opam/.opam/4.06/lib/sedlex -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uutf -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/str -I /home/opam/.opam/4.06/lib/uunf -I /home/opam/.opam/4.06/lib/iri -I /home/opam/.opam/4.06/lib/netsys -I /home/opam/.opam/4.06/lib/netstring -I /home/opam/.opam/4.06/lib/easy-format -I /home/opam/.opam/4.06/lib/biniou -I /home/opam/.opam/4.06/lib/yojson -I /home/opam/.opam/4.06/lib/ocf -I /home/opam/.opam/4.06/lib/ocaml/camlp4 -I /home/opam/.opam/4.06/lib/ulex -I /home/opam/.opam/4.06/lib/higlo -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/xtmpl -ppx "/home/opam/.opam/4.06/lib/ppx_blob/./ppx.exe --as-ppx" -ppx "/home/opam/.opam/4.06/lib/sedlex/./ppx_sedlex --as-ppx" -ppx /home/opam/.opam/4.06/lib/ocf/./ppx_ocf -ppx /home/opam/.opam/4.06/lib/xtmpl/./ppx_xtmpl /home/opam/.opam/4.06/lib/ocaml/unix.cmxa /home/opam/.opam/4.06/lib/ocaml/threads/threads.cmxa /home/opam/.opam/4.06/lib/gen/gen.cmxa /home/opam/.opam/4.06/lib/sedlex/sedlexing.cmxa /home/opam/.opam/4.06/lib/uutf/uutf.cmxa /home/opam/.opam/4.06/lib/re/re.cmxa /home/opam/.opam/4.06/lib/re/str/re_str.cmxa /home/opam/.opam/4.06/lib/uunf/uunf.cmxa /home/opam/.opam/4.06/lib/uunf/uunf_string.cmxa /home/opam/.opam/4.06/lib/iri/iri.cmxa /home/opam/.opam/4.06/lib/xtmpl/xtmpl.cmxa /home/opam/.opam/4.06/lib/ocaml/str.cmxa /home/opam/.opam/4.06/lib/ocaml/bigarray.cmxa /home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt.cmxa /home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt_init.cmx /home/opam/.opam/4.06/lib/netsys/netsys.cmxa /home/opam/.opam/4.06/lib/netstring/netstring.cmxa /home/opam/.opam/4.06/lib/easy-format/easy_format.cmxa /home/opam/.opam/4.06/lib/biniou/biniou.cmxa /home/opam/.opam/4.06/lib/yojson/yojson.cmxa /home/opam/.opam/4.06/lib/ocf/ocf.cmxa /home/opam/.opam/4.06/lib/ocaml/dynlink.cmxa /home/opam/.opam/4.06/lib/ulex/ulexing.cmxa /home/opam/.opam/4.06/lib/higlo/higlo.cmx /home/opam/.opam/4.06/lib/higlo/higlo_dot.cmx /home/opam/.opam/4.06/lib/higlo/higlo_json.cmx /home/opam/.opam/4.06/lib/higlo/higlo_ocaml.cmx /home/opam/.opam/4.06/lib/higlo/higlo_xml.cmx /home/opam/.opam/4.06/lib/result/result.cmxa /home/opam/.opam/4.06/lib/lwt/lwt.cmxa /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa stog.cmxa stog_main.cmx
+# + as -o '/tmp/camlstartup6873bb.o' '/tmp/camlstartupc905af.s'
+# + gcc -O2 -fno-strict-aliasing -fwrapv -Wall -fno-tree-vrp -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DCAML_NAME_SPACE  -Wl,-E -o 'stog'   '-L/home/opam/.opam/4.06/lib/ocaml/ocamldoc' '-L/home/opam/.opam/4.06/lib/ppx_blob' '-L/home/opam/.opam/4.06/lib/bytes' '-L/home/opam/.opam/4.06/lib/gen' '-L/home/opam/.opam/4.06/lib/sedlex' '-L/home/opam/.opam/4.06/lib/uchar' '-L/home/opam/.opam/4.06/lib/uutf' '-L/home/opam/.opam/4.06/lib/re' '-L/home/opam/.opam/4.06/lib/re/str' '-L/home/opam/.opam/4.06/lib/uunf' '-L/home/opam/.opam/4.06/lib/iri' '-L/home/opam/.opam/4.06/lib/netsys' '-L/home/opam/.opam/4.06/lib/netstring' '-L/home/opam/.opam/4.06/lib/easy-format' '-L/home/opam/.opam/4.06/lib/biniou' '-L/home/opam/.opam/4.06/lib/yojson' '-L/home/opam/.opam/4.06/lib/ocf' '-L/home/opam/.opam/4.06/lib/ocaml/camlp4' '-L/home/opam/.opam/4.06/lib/ulex' '-L/home/opam/.opam/4.06/lib/higlo' '-L/home/opam/.opam/4.06/lib/result' '-L/home/opam/.opam/4.06/lib/lwt' '-L/home/opam/.opam/4.06/lib/lwt/unix' '-L/home/opam/.opam/4.06/lib/xtmpl' '-L/home/opam/.opam/4.06/lib/ocaml/threads' '-L/home/opam/.opam/4.06/lib/ocaml' -Wl,-E '/tmp/camlstartup6873bb.o' '/home/opam/.opam/4.06/lib/ocaml/std_exit.o' 'stog_main.o' 'stog.a' '/home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.a' '/home/opam/.opam/4.06/lib/lwt/lwt.a' '/home/opam/.opam/4.06/lib/result/result.a' '/home/opam/.opam/4.06/lib/higlo/higlo_xml.o' '/home/opam/.opam/4.06/lib/higlo/higlo_ocaml.o' '/home/opam/.opam/4.06/lib/higlo/higlo_json.o' '/home/opam/.opam/4.06/lib/higlo/higlo_dot.o' '/home/opam/.opam/4.06/lib/higlo/higlo.o' '/home/opam/.opam/4.06/lib/ulex/ulexing.a' '/home/opam/.opam/4.06/lib/ocaml/dynlink.a' '/home/opam/.opam/4.06/lib/ocf/ocf.a' '/home/opam/.opam/4.06/lib/yojson/yojson.a' '/home/opam/.opam/4.06/lib/biniou/biniou.a' '/home/opam/.opam/4.06/lib/easy-format/easy_format.a' '/home/opam/.opam/4.06/lib/netstring/netstring.a' '/home/opam/.opam/4.06/lib/netsys/netsys.a' '/home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt_init.o' '/home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt.a' '/home/opam/.opam/4.06/lib/ocaml/bigarray.a' '/home/opam/.opam/4.06/lib/ocaml/str.a' '/home/opam/.opam/4.06/lib/xtmpl/xtmpl.a' '/home/opam/.opam/4.06/lib/iri/iri.a' '/home/opam/.opam/4.06/lib/uunf/uunf_string.a' '/home/opam/.opam/4.06/lib/uunf/uunf.a' '/home/opam/.opam/4.06/lib/re/str/re_str.a' '/home/opam/.opam/4.06/lib/re/re.a' '/home/opam/.opam/4.06/lib/uutf/uutf.a' '/home/opam/.opam/4.06/lib/sedlex/sedlexing.a' '/home/opam/.opam/4.06/lib/gen/gen.a' '/home/opam/.opam/4.06/lib/ocaml/threads/threads.a' '/home/opam/.opam/4.06/lib/ocaml/unix.a' '/home/opam/.opam/4.06/lib/ocaml/stdlib.a' '-llwt_unix_stubs' '-lpthread' '-lnetsys' '-lrt' '-lpthread' '-lbigarray' '-lcamlstr' '-lthreadsnat' '-lpthread' '-lunix' '/home/opam/.opam/4.06/lib/ocaml/libasmrun.a' -lm  -ldl
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_gen_tmpl.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c stog_gen_tmpl.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx -verbose \
+# -linkall -linkpkg -o stog-tmpl -I +ocamldoc -annot -rectypes -g -thread  -safe-string  stog.cmxa stog_gen_tmpl.cmx
+# Effective set of compiler predicates: pkg_unix,pkg_threads.posix,pkg_threads,pkg_ppx_blob,pkg_bytes,pkg_gen,pkg_sedlex,pkg_uchar,pkg_uutf,pkg_re,pkg_re.str,pkg_uunf,pkg_uunf.string,pkg_iri,pkg_xtmpl,pkg_str,pkg_bigarray,pkg_netsys,pkg_netstring,pkg_easy-format,pkg_biniou,pkg_yojson,pkg_ocf,pkg_ocf.ppx,pkg_dynlink,pkg_camlp4,pkg_ulex,pkg_higlo,pkg_higlo.dot,pkg_higlo.json,pkg_higlo.ocaml,pkg_higlo.xml,pkg_higlo.lexers,pkg_result,pkg_lwt,pkg_lwt.unix,pkg_xtmpl.ppx,autolink,mt,mt_posix,native
+# + ocamlopt.opt -verbose -linkall -o stog-tmpl -I /home/opam/.opam/4.06/lib/ocaml/ocamldoc -annot -rectypes -g -safe-string -thread -I /home/opam/.opam/4.06/lib/ppx_blob -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/gen -I /home/opam/.opam/4.06/lib/sedlex -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uutf -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/str -I /home/opam/.opam/4.06/lib/uunf -I /home/opam/.opam/4.06/lib/iri -I /home/opam/.opam/4.06/lib/netsys -I /home/opam/.opam/4.06/lib/netstring -I /home/opam/.opam/4.06/lib/easy-format -I /home/opam/.opam/4.06/lib/biniou -I /home/opam/.opam/4.06/lib/yojson -I /home/opam/.opam/4.06/lib/ocf -I /home/opam/.opam/4.06/lib/ocaml/camlp4 -I /home/opam/.opam/4.06/lib/ulex -I /home/opam/.opam/4.06/lib/higlo -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/xtmpl -ppx "/home/opam/.opam/4.06/lib/ppx_blob/./ppx.exe --as-ppx" -ppx "/home/opam/.opam/4.06/lib/sedlex/./ppx_sedlex --as-ppx" -ppx /home/opam/.opam/4.06/lib/ocf/./ppx_ocf -ppx /home/opam/.opam/4.06/lib/xtmpl/./ppx_xtmpl /home/opam/.opam/4.06/lib/ocaml/unix.cmxa /home/opam/.opam/4.06/lib/ocaml/threads/threads.cmxa /home/opam/.opam/4.06/lib/gen/gen.cmxa /home/opam/.opam/4.06/lib/sedlex/sedlexing.cmxa /home/opam/.opam/4.06/lib/uutf/uutf.cmxa /home/opam/.opam/4.06/lib/re/re.cmxa /home/opam/.opam/4.06/lib/re/str/re_str.cmxa /home/opam/.opam/4.06/lib/uunf/uunf.cmxa /home/opam/.opam/4.06/lib/uunf/uunf_string.cmxa /home/opam/.opam/4.06/lib/iri/iri.cmxa /home/opam/.opam/4.06/lib/xtmpl/xtmpl.cmxa /home/opam/.opam/4.06/lib/ocaml/str.cmxa /home/opam/.opam/4.06/lib/ocaml/bigarray.cmxa /home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt.cmxa /home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt_init.cmx /home/opam/.opam/4.06/lib/netsys/netsys.cmxa /home/opam/.opam/4.06/lib/netstring/netstring.cmxa /home/opam/.opam/4.06/lib/easy-format/easy_format.cmxa /home/opam/.opam/4.06/lib/biniou/biniou.cmxa /home/opam/.opam/4.06/lib/yojson/yojson.cmxa /home/opam/.opam/4.06/lib/ocf/ocf.cmxa /home/opam/.opam/4.06/lib/ocaml/dynlink.cmxa /home/opam/.opam/4.06/lib/ulex/ulexing.cmxa /home/opam/.opam/4.06/lib/higlo/higlo.cmx /home/opam/.opam/4.06/lib/higlo/higlo_dot.cmx /home/opam/.opam/4.06/lib/higlo/higlo_json.cmx /home/opam/.opam/4.06/lib/higlo/higlo_ocaml.cmx /home/opam/.opam/4.06/lib/higlo/higlo_xml.cmx /home/opam/.opam/4.06/lib/result/result.cmxa /home/opam/.opam/4.06/lib/lwt/lwt.cmxa /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa stog.cmxa stog_gen_tmpl.cmx
+# + as -o '/tmp/camlstartup25d6ec.o' '/tmp/camlstartup6328e2.s'
+# + gcc -O2 -fno-strict-aliasing -fwrapv -Wall -fno-tree-vrp -D_FILE_OFFSET_BITS=64 -D_REENTRANT -DCAML_NAME_SPACE  -Wl,-E -o 'stog-tmpl'   '-L/home/opam/.opam/4.06/lib/ocaml/ocamldoc' '-L/home/opam/.opam/4.06/lib/ppx_blob' '-L/home/opam/.opam/4.06/lib/bytes' '-L/home/opam/.opam/4.06/lib/gen' '-L/home/opam/.opam/4.06/lib/sedlex' '-L/home/opam/.opam/4.06/lib/uchar' '-L/home/opam/.opam/4.06/lib/uutf' '-L/home/opam/.opam/4.06/lib/re' '-L/home/opam/.opam/4.06/lib/re/str' '-L/home/opam/.opam/4.06/lib/uunf' '-L/home/opam/.opam/4.06/lib/iri' '-L/home/opam/.opam/4.06/lib/netsys' '-L/home/opam/.opam/4.06/lib/netstring' '-L/home/opam/.opam/4.06/lib/easy-format' '-L/home/opam/.opam/4.06/lib/biniou' '-L/home/opam/.opam/4.06/lib/yojson' '-L/home/opam/.opam/4.06/lib/ocf' '-L/home/opam/.opam/4.06/lib/ocaml/camlp4' '-L/home/opam/.opam/4.06/lib/ulex' '-L/home/opam/.opam/4.06/lib/higlo' '-L/home/opam/.opam/4.06/lib/result' '-L/home/opam/.opam/4.06/lib/lwt' '-L/home/opam/.opam/4.06/lib/lwt/unix' '-L/home/opam/.opam/4.06/lib/xtmpl' '-L/home/opam/.opam/4.06/lib/ocaml/threads' '-L/home/opam/.opam/4.06/lib/ocaml' -Wl,-E '/tmp/camlstartup25d6ec.o' '/home/opam/.opam/4.06/lib/ocaml/std_exit.o' 'stog_gen_tmpl.o' 'stog.a' '/home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.a' '/home/opam/.opam/4.06/lib/lwt/lwt.a' '/home/opam/.opam/4.06/lib/result/result.a' '/home/opam/.opam/4.06/lib/higlo/higlo_xml.o' '/home/opam/.opam/4.06/lib/higlo/higlo_ocaml.o' '/home/opam/.opam/4.06/lib/higlo/higlo_json.o' '/home/opam/.opam/4.06/lib/higlo/higlo_dot.o' '/home/opam/.opam/4.06/lib/higlo/higlo.o' '/home/opam/.opam/4.06/lib/ulex/ulexing.a' '/home/opam/.opam/4.06/lib/ocaml/dynlink.a' '/home/opam/.opam/4.06/lib/ocf/ocf.a' '/home/opam/.opam/4.06/lib/yojson/yojson.a' '/home/opam/.opam/4.06/lib/biniou/biniou.a' '/home/opam/.opam/4.06/lib/easy-format/easy_format.a' '/home/opam/.opam/4.06/lib/netstring/netstring.a' '/home/opam/.opam/4.06/lib/netsys/netsys.a' '/home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt_init.o' '/home/opam/.opam/4.06/lib/netsys/netsys_oothr_mt.a' '/home/opam/.opam/4.06/lib/ocaml/bigarray.a' '/home/opam/.opam/4.06/lib/ocaml/str.a' '/home/opam/.opam/4.06/lib/xtmpl/xtmpl.a' '/home/opam/.opam/4.06/lib/iri/iri.a' '/home/opam/.opam/4.06/lib/uunf/uunf_string.a' '/home/opam/.opam/4.06/lib/uunf/uunf.a' '/home/opam/.opam/4.06/lib/re/str/re_str.a' '/home/opam/.opam/4.06/lib/re/re.a' '/home/opam/.opam/4.06/lib/uutf/uutf.a' '/home/opam/.opam/4.06/lib/sedlex/sedlexing.a' '/home/opam/.opam/4.06/lib/gen/gen.a' '/home/opam/.opam/4.06/lib/ocaml/threads/threads.a' '/home/opam/.opam/4.06/lib/ocaml/unix.a' '/home/opam/.opam/4.06/lib/ocaml/stdlib.a' '-llwt_unix_stubs' '-lpthread' '-lnetsys' '-lrt' '-lpthread' '-lbigarray' '-lcamlstr' '-lthreadsnat' '-lpthread' '-lunix' '/home/opam/.opam/4.06/lib/ocaml/libasmrun.a' -lm  -ldl
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package ,ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx  -I +ocamldoc -annot -rectypes -g -thread  -safe-string  -c latex2stog.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -o latex2stog -package ppx_blob,xtmpl,netstring,ocf,ocf.ppx,dynlink,unix,str,higlo.lexers,lwt.unix,xtmpl.ppx -linkall -linkpkg stog.cmxa latex2stog.cmx
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "_none_", line 1:
+# Error: No implementations provided for the following modules:
+#          Thread referenced from /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa(Lwt_preemptive)
+#          Mutex referenced from /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa(Lwt_preemptive)
+#          Condition referenced from /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa(Lwt_preemptive)
+# make[1]: *** [Makefile:307: latex2stog] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/stog.0.16.0/src'
+# make: *** [Makefile:38: src] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build stog 0.16.0
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install camlp4                  4.06+1
+| - install cmdliner                1.0.2
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install higlo                   0.6
+| - install iri                     0.4.0
+| - install js_of_ocaml             3.2.0
+| - install js_of_ocaml-compiler    3.2.1
+| - install js_of_ocaml-ppx         3.2.0
+| - install lwt                     4.1.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlnet                4.1.6
+| - install ocf                     0.5.0
+| - install ppx_blob                0.4.0
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sedlex                  1.99.4
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install ulex                    1.2
+| - install uunf                    11.0.0
+| - install uutf                    1.0.1
+| - install xtmpl                   0.17.0
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180731052059.export"
+31 1533014457 1533014703
