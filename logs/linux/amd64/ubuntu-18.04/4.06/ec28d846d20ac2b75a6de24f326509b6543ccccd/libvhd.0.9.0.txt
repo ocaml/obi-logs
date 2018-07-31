@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 libvhd.0.9.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+blktap-dev
+m4
+uuid-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy blktap-dev m4 uuid-dev
+E: Unable to locate package blktap-dev
+OS package installation failed
+1 1533012464 1533012473

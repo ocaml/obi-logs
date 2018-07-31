@@ -1,0 +1,60 @@
+$ opam depext -iy -j 2 operf-micro.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install operf-micro 0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[operf-micro.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of operf-micro failed at "/usr/bin/make".
+
+#=== ERROR while compiling operf-micro.0.2 ====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/operf-micro.0.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/operf-micro-13-05296d.env
+# output-file          ~/.opam/log/operf-micro-13-05296d.out
+### output ###
+# /usr/bin/make -C builder all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/operf-micro.0.2/builder'
+# echo "let name = \"operf-micro\"" > static_config.ml
+# echo "let prefix = \"/home/opam/.opam/4.06\"" >> static_config.ml
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.mli
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c static_config.ml
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+# ocamlyacc parser.mly
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c files.ml
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c parser.mli
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c parser.ml
+# ocamllex lexer.mll
+# 21 states, 475 transitions, table size 2026 bytes
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c lexer.ml
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c loc.mli
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c loc.ml
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c utils.ml
+# ocamlc -w +1..45-4-44-42 -g -bin-annot -principal -c command.mli
+# ocamlopt -w +1..45-4-44-42 -g -bin-annot -principal -c command.ml
+# File "command.ml", line 85, characters 27-30:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:30: recipe for target 'command.cmx' failed
+# make[1]: *** [command.cmx] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/operf-micro.0.2/builder'
+# Makefile:9: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build operf-micro 0.2
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533012493 1533012499
