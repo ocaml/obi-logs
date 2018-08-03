@@ -108,11 +108,11 @@ The following actions will be performed:
 # cc -shared -lsodium -o _build/lib/dllsodium.so
 # ocamlbuild -use-ocamlfind lib/sodium.cma lib/sodium.cmxa
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# ocamlfind ocamldep -package bigarray -package ctypes.foreign -package bytes -modules lib/sodium.mli > lib/sodium.mli.depends
-# ocamlfind ocamlc -c -package bigarray -package ctypes.foreign -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium.cmi lib/sodium.mli
-# ocamlfind ocamldep -package bigarray -package ctypes.foreign -package bytes -modules lib/sodium.ml > lib/sodium.ml.depends
-# ocamlfind ocamlc -c -package bigarray -package ctypes.foreign -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium.cmo lib/sodium.ml
-# + ocamlfind ocamlc -c -package bigarray -package ctypes.foreign -package bytes -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium.cmo lib/sodium.ml
+# ocamlfind ocamldep -package bytes -package bigarray -package ctypes.foreign -modules lib/sodium.mli > lib/sodium.mli.depends
+# ocamlfind ocamlc -c -package bytes -package bigarray -package ctypes.foreign -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium.cmi lib/sodium.mli
+# ocamlfind ocamldep -package bytes -package bigarray -package ctypes.foreign -modules lib/sodium.ml > lib/sodium.ml.depends
+# ocamlfind ocamlc -c -package bytes -package bigarray -package ctypes.foreign -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium.cmo lib/sodium.ml
+# + ocamlfind ocamlc -c -package bytes -package bigarray -package ctypes.foreign -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium.cmo lib/sodium.ml
 # File "lib/sodium.ml", line 117, characters 65-68:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
@@ -140,5 +140,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803071701.export"
-31 1533280610 1533280654
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803210241.export"
+31 1533330151 1533330194

@@ -147,7 +147,7 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.06/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.06/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.09 sec)
+# *** omake: finished reading OMakefiles (0.08 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build lib ppx_orakuda_cformat.annot
 # + ocamlfind ocamlc -package pcre,spotlib,re.pcre -g -no-alias-deps -w A-3-4-9-40-41-42-44-45-48-49 -warn-error a -g -annot -bin-annot -I . -c ppx_orakuda_cformat.ml
@@ -155,7 +155,7 @@ The following actions will be performed:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
 # *** omake: 41/314 targets are up to date
-# *** omake: failed (0.47 sec, 4/4 scans, 4/10 rules, 27/140 digests)
+# *** omake: failed (0.42 sec, 4/4 scans, 4/10 rules, 27/140 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    lib/ppx_orakuda_cformat.annot
 #       depends on: lib/ppx_orakuda_cformat.ml
@@ -197,5 +197,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803065628.export"
-31 1533279379 1533279476
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803210016.export"
+31 1533330007 1533330107
