@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 planets.0.1.14
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for planets.0.1.14: The following dependencies couldn't be met:
+          - planets -> core < 113.24.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=planets.0.1.14 returned 20
+20 1533276623 1533276626
