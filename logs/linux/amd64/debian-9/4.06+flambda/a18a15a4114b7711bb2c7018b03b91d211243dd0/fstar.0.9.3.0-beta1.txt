@@ -1,0 +1,351 @@
+$ opam depext -iy -j 2 fstar.0.9.3.0-beta1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libgmp-dev
+m4
+perl
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libgmp-dev m4 perl
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp    1             [required by zarith]
+  - install conf-which  1             [required by biniou]
+  - install base-bytes  base          [required by stdint]
+  - install conf-perl   1             [required by zarith]
+  - install ocamlbuild  0.12.0        [required by fstar]
+  - install easy-format 1.3.1         [required by yojson]
+  - install num         1.1           [required by fstar]
+  - install stdint      0.5.1         [required by fstar]
+  - install cppo        1.6.4         [required by yojson]
+  - install zarith      1.7           [required by fstar]
+  - install biniou      1.2.0         [required by yojson]
+  - install batteries   2.8.0         [required by fstar]
+  - install yojson      1.4.1         [required by fstar]
+  - install fstar       0.9.3.0-beta1
+===== 14 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[biniou.1.2.0] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[fstar.0.9.3.0-beta1] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[stdint.0.5.1] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed stdint.0.5.1
+-> installed yojson.1.4.1
+-> installed zarith.1.7
+-> installed batteries.2.8.0
+[ERROR] The compilation of fstar failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06+flambda -C src/ocaml-output".
+
+#=== ERROR while compiling fstar.0.9.3.0-beta1 ================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1
+# command              /usr/bin/make PREFIX=/home/opam/.opam/4.06+flambda -C src/ocaml-output
+# exit-code            2
+# env-file             ~/.opam/log/fstar-11-65c165.env
+# output-file          ~/.opam/log/fstar-11-65c165.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# make -j 1 -C ../../lib/ml
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/lib/ml'
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c MkPrims.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c prims.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_ST.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Float.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Char.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Int8.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_UInt8.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Int16.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_UInt16.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Int32.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Int64.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_BaseTypes.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_All.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_IO.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Heap.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_List.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Option.ml
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_String.ml
+# File "FStar_String.ml", line 16, characters 16-32:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind opt -thread -package zarith,batteries -linkpkg -g   -c FStar_Set.ml
+# ocamlfind ocamlopt -a MkPrims.cmx ./prims.cmx FStar_ST.cmx FStar_Float.cmx FStar_Char.cmx FStar_Int8.cmx FStar_UInt8.cmx FStar_Int16.cmx FStar_UInt16.cmx FStar_Int32.cmx FStar_Int64.cmx FStar_BaseTypes.cmx FStar_All.cmx FStar_IO.cmx FStar_Heap.cmx FStar_List.cmx FStar_Option.cmx FStar_String.cmx FStar_Set.cmx -o fstarlib.cmxa
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/lib/ml'
+# /usr/bin/make prep
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# cat ../parser/parse.fsy | sed 's/^[/][/].*//g' | sed 's/^[#].*//g' | sed 's/^open .*//g' > parse.mly
+# ocamlyacc parse.mly
+# 6 shift/reduce conflicts.
+# rm -f FStar_Parser_Parse.ml
+# echo "open Prims" > FStar_Parser_Parse.ml
+# echo "open FStar_List" >> FStar_Parser_Parse.ml
+# echo "open FStar_Util" >> FStar_Parser_Parse.ml
+# echo "open FStar_Range" >> FStar_Parser_Parse.ml
+# echo "open FStar_Options" >> FStar_Parser_Parse.ml
+# echo "open FStar_Absyn_Syntax" >> FStar_Parser_Parse.ml
+# echo "open FStar_Absyn_Const" >> FStar_Parser_Parse.ml
+# echo "open FStar_Absyn_Util" >> FStar_Parser_Parse.ml
+# echo "open FStar_Parser_AST" >> FStar_Parser_Parse.ml
+# echo "open FStar_Parser_Util" >> FStar_Parser_Parse.ml
+# echo "open FStar_Const" >> FStar_Parser_Parse.ml
+# echo "open FStar_Ident" >> FStar_Parser_Parse.ml
+# cat parse.ml >> FStar_Parser_Parse.ml
+# ocamllex ../parser/ml/lex.mll -o FStar_Parser_LexFStar.ml
+# 228 states, 6018 transitions, table size 25440 bytes
+# 2422 additional bytes used for bindings
+# cp ../parser/ml/parseit.ml FStar_Parser_ParseIt.ml
+# cp ../basic/ml/FStar_Util.ml ../basic/ml/FStar_Bytes.ml ../basic/ml/FStar_Getopt.ml ../basic/ml/FStar_Range.ml ../basic/ml/FStar_Platform.ml ../basic/ml/FStar_Unionfind.ml ../parser/ml/FStar_Parser_Util.ml ../fstar/ml/main.ml .
+# fatal: Not a git repository (or any of the parent directories): .git
+# Not a git repository
+# To compare two paths outside a working tree:
+# usage: git diff [--no-index] <path> <path>
+# echo 'let version = "0.9.3.0-beta1"' > FStar_Version.ml
+# echo 'let platform = "Linux_x86_64"' >> FStar_Version.ml
+# echo 'let compiler = "OCaml 4.06.1"' >> FStar_Version.ml
+# echo 'let date = "2018-08-03T05:32:50+01:00"' >> FStar_Version.ml
+# echo 'let commit= " (dirty)"' >> FStar_Version.ml
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# /usr/bin/make depend
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# ocamldep *.ml > .depend
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# /usr/bin/make fstar.exe
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Util.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Bytes.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Getopt.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Range.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Platform.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Unionfind.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_Util.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Version.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Options.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Ident.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Const.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Absyn_Syntax.ml
+# File "FStar_Absyn_Syntax.ml", line 656, characters 2-3:
+# Warning 11: this match case is unused.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Absyn_Const.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Absyn_Visit.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Absyn_Util.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Absyn_Print.ml
+# File "FStar_Absyn_Print.ml", line 683, characters 4-11:
+# Warning 26: unused variable bin_eop.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_Syntax.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_Const.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_Subst.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_Free.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_InstFV.ml
+# File "FStar_Syntax_InstFV.ml", line 19, characters 74-107:
+# Warning 12: this sub-pattern is unused.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_Util.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Syntax_Print.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Env.ml
+# File "FStar_Tc_Env.ml", line 404, characters 4-15:
+# Warning 26: unused variable print_mlift.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Recheck.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Normalize.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Errors.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Rel.ml
+# File "FStar_Tc_Rel.ml", line 2270, characters 4-7:
+# Warning 26: unused variable max.
+# File "FStar_Tc_Rel.ml", line 3453, characters 4-5:
+# Warning 26: unused variable r.
+# File "FStar_Tc_Rel.ml", line 3527, characters 4-5:
+# Warning 26: unused variable r.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Util.ml
+# File "FStar_Tc_Util.ml", line 1690, characters 4-5:
+# Warning 26: unused variable k.
+# File "FStar_Tc_Util.ml", line 2764, characters 4-24:
+# Warning 26: unused variable hide_uvar_nums_saved.
+# File "FStar_Tc_Util.ml", line 2767, characters 4-25:
+# Warning 26: unused variable print_implicits_saved.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Tc_Tc.ml
+# File "FStar_Tc_Tc.ml", line 564, characters 4-5:
+# Warning 26: unused variable k.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_ToSMT_Term.ml
+# File "FStar_ToSMT_Term.ml", line 1242, characters 4-14:
+# Warning 26: unused variable bvar_index.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_ToSMT_Z3.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_ToSMT_SplitQueryCases.ml
+# File "FStar_ToSMT_SplitQueryCases.ml", line 133, characters 4-5:
+# Warning 26: unused variable l.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_ToSMT_Encode.ml
+# File "FStar_ToSMT_Encode.ml", line 2178, characters 2-40:
+# Warning 11: this match case is unused.
+# File "FStar_ToSMT_Encode.ml", line 2655, characters 4-14:
+# Warning 26: unused variable unboxInt_l.
+# File "FStar_ToSMT_Encode.ml", line 3132, characters 4-12:
+# Warning 26: unused variable precedes.
+# File "FStar_ToSMT_Encode.ml", line 3190, characters 4-16:
+# Warning 26: unused variable mk_int_alias.
+# File "FStar_ToSMT_Encode.ml", line 3229, characters 4-5:
+# Warning 26: unused variable r.
+# File "FStar_ToSMT_Encode.ml", line 3555, characters 4-23:
+# Warning 26: unused variable mk_foralltyp_interp.
+# File "FStar_ToSMT_Encode.ml", line 3602, characters 4-23:
+# Warning 26: unused variable mk_existstyp_interp.
+# File "FStar_ToSMT_Encode.ml", line 4374, characters 4-9:
+# Warning 26: unused variable guard.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Format.ml
+# File "FStar_Format.ml", line 12, characters 2-3:
+# Warning 11: this match case is unused.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Common.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Env.ml
+# File "FStar_TypeChecker_Env.ml", line 364, characters 4-8:
+# Warning 26: unused variable mark.
+# File "FStar_TypeChecker_Env.ml", line 380, characters 4-14:
+# Warning 26: unused variable reset_mark.
+# File "FStar_TypeChecker_Env.ml", line 1340, characters 4-15:
+# Warning 26: unused variable print_mlift.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Normalize.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Errors.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Rel.ml
+# File "FStar_TypeChecker_Rel.ml", line 805, characters 4-14:
+# Warning 26: unused variable conj_guard.
+# File "FStar_TypeChecker_Rel.ml", line 1186, characters 4-7:
+# Warning 26: unused variable t2'.
+# File "FStar_TypeChecker_Rel.ml", line 1294, characters 4-8:
+# Warning 26: unused variable fail.
+# File "FStar_TypeChecker_Rel.ml", line 2046, characters 4-5:
+# Warning 26: unused variable b.
+# File "FStar_TypeChecker_Rel.ml", line 2316, characters 4-7:
+# Warning 26: unused variable max.
+# File "FStar_TypeChecker_Rel.ml", line 2818, characters 4-5:
+# Warning 26: unused variable r.
+# File "FStar_TypeChecker_Rel.ml", line 3680, characters 4-5:
+# Warning 26: unused variable r.
+# File "FStar_TypeChecker_Rel.ml", line 3751, characters 4-5:
+# Warning 26: unused variable r.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Util.ml
+# File "FStar_TypeChecker_Util.ml", line 1149, characters 4-5:
+# Warning 26: unused variable k.
+# File "FStar_TypeChecker_Util.ml", line 1570, characters 4-7:
+# Warning 26: unused variable kwp.
+# File "FStar_TypeChecker_Util.ml", line 2283, characters 4-5:
+# Warning 26: unused variable t.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_DMFF.ml
+# File "FStar_TypeChecker_DMFF.ml", line 69, characters 4-11:
+# Warning 26: unused variable unknown.
+# File "FStar_TypeChecker_DMFF.ml", line 296, characters 4-11:
+# Warning 26: unused variable c_lift1.
+# File "FStar_TypeChecker_DMFF.ml", line 788, characters 4-6:
+# Warning 26: unused variable wp.
+# File "FStar_TypeChecker_DMFF.ml", line 1080, characters 2-34:
+# Warning 12: this sub-pattern is unused.
+# File "FStar_TypeChecker_DMFF.ml", line 1192, characters 4-6:
+# Warning 26: unused variable mk.
+# File "FStar_TypeChecker_DMFF.ml", line 2028, characters 4-6:
+# Warning 26: unused variable mk.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_TypeChecker_Tc.ml
+# File "FStar_TypeChecker_Tc.ml", line 1648, characters 4-6:
+# Warning 26: unused variable c0.
+# File "FStar_TypeChecker_Tc.ml", line 2852, characters 4-19:
+# Warning 26: unused variable uvars_to_string.
+# File "FStar_TypeChecker_Tc.ml", line 3032, characters 4-5:
+# Warning 26: unused variable g.
+# File "FStar_TypeChecker_Tc.ml", line 5278, characters 4-8:
+# Warning 26: unused variable env0.
+# File "FStar_TypeChecker_Tc.ml", line 5363, characters 4-20:
+# Warning 26: unused variable positive_if_pure.
+# File "FStar_TypeChecker_Tc.ml", line 6394, characters 4-10:
+# Warning 26: unused variable ed_src.
+# File "FStar_TypeChecker_Tc.ml", line 6397, characters 4-10:
+# Warning 26: unused variable ed_tgt.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_AST.ml
+# File "FStar_Parser_AST.ml", line 1602, characters 4-5:
+# Warning 26: unused variable i.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_DesugarEnv.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_Desugar.ml
+# File "FStar_Parser_Desugar.ml", line 369, characters 2-171:
+# Warning 11: this match case is unused.
+# File "FStar_Parser_Desugar.ml", line 1894, characters 4-17:
+# Warning 26: unused variable head_and_args.
+# File "FStar_Parser_Desugar.ml", line 3260, characters 4-9:
+# Warning 26: unused variable quals.
+# File "FStar_Parser_Desugar.ml", line 3923, characters 4-9:
+# Warning 26: unused variable decls.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_Env.ml
+# File "FStar_Parser_Env.ml", line 367, characters 4-11:
+# Warning 26: unused variable recname.
+# File "FStar_Parser_Env.ml", line 807, characters 4-12:
+# Warning 26: unused variable this_env.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_Interleave.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_ToSyntax.ml
+# File "FStar_Parser_ToSyntax.ml", line 736, characters 4-12:
+# Warning 26: unused variable resolvea.
+# File "FStar_Parser_ToSyntax.ml", line 2345, characters 4-14:
+# Warning 26: unused variable connective.
+# File "FStar_Parser_ToSyntax.ml", line 2369, characters 4-7:
+# Warning 26: unused variable pos.
+# File "FStar_Parser_ToSyntax.ml", line 3291, characters 4-9:
+# Warning 26: unused variable tycon.
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_Parse.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_Lexhelp.ml
+# ocamlfind ocamlopt -thread -package batteries,zarith,yojson -linkpkg -g -w "-28" -annot -I ../../lib/ml/  -w -8   -c FStar_Parser_LexFStar.ml
+# File "../parser/ml/lex.mll", line 120, characters 25-42:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:124: recipe for target 'FStar_Parser_LexFStar.cmx' failed
+# make[1]: *** [FStar_Parser_LexFStar.cmx] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+# Makefile:60: recipe for target 'all' failed
+# make: *** [all] Error 2
+# make: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build fstar 0.9.3.0-beta1
++- 
++- The following changes have been performed
+| - install base-bytes  base
+| - install batteries   2.8.0
+| - install biniou      1.2.0
+| - install conf-gmp    1
+| - install conf-perl   1
+| - install conf-which  1
+| - install cppo        1.6.4
+| - install easy-format 1.3.1
+| - install num         1.1
+| - install ocamlbuild  0.12.0
+| - install stdint      0.5.1
+| - install yojson      1.4.1
+| - install zarith      1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180803043141.export"
+31 1533270692 1533270806
