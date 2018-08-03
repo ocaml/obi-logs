@@ -33,6 +33,7 @@ The following actions will be performed:
 [omake.0.9.8.7] found in cache
 [ppx_derivers.1.0] found in cache
 [ppx_deriving.4.2.1] found in cache
+[ppx_meta_conv.2.8.0] found in cache
 [ppx_test.1.6.0] found in cache
 [ppx_tools.5.0] found in cache
 [ppx_tools_versioned.5.2] found in cache
@@ -40,7 +41,6 @@ The following actions will be performed:
 [re.1.7.3] found in cache
 [result.1.3] found in cache
 [spotlib.4.0.3] found in cache
-[ppx_meta_conv.2.8.0] downloaded from https://bitbucket.org/camlspotter/ppx_meta_conv/get/2.8.0.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -57,8 +57,8 @@ The following actions will be performed:
 -> installed ppx_tools_versioned.5.2
 -> installed ppxx.2.3.1
 -> installed ppx_test.1.6.0
--> installed spotlib.4.0.3
 -> installed omake.0.9.8.7
+-> installed spotlib.4.0.3
 [ERROR] The compilation of ppx_meta_conv failed at "/home/opam/.opam/4.04/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling ppx_meta_conv.2.8.0 ================================#
@@ -66,8 +66,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/ppx_meta_conv.2.8.0
 # command              ~/.opam/4.04/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/ppx_meta_conv-11-949df2.env
-# output-file          ~/.opam/log/ppx_meta_conv-11-949df2.out
+# env-file             ~/.opam/log/ppx_meta_conv-11-e2a9df.env
+# output-file          ~/.opam/log/ppx_meta_conv-11-e2a9df.out
 ### output ###
 # *** omake: reading OMakefiles
 # File OMyMakefile: line 57, characters 2-21:
@@ -92,7 +92,7 @@ The following actions will be performed:
 # Checking package tiny_json
 # ocamlfind: Package `tiny_json' not found
 # Package tiny_json is not available...
-# *** omake: finished reading OMakefiles (0.11 sec)
+# *** omake: finished reading OMakefiles (0.12 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build src ppx_meta_conv.cmx
 # + ocamlfind ocamlc -package ppx_deriving.api,ocaml-compiler-libs.common,ocaml-migrate-parsetree,spotlib,ppxx -g -w A-3-4-9-40-41-42-44-45-48 -warn-error a -g -annot -bin-annot -package ppx_tools_versioned.metaquot_404 -I . -c ppx_meta_conv.ml
@@ -102,7 +102,7 @@ The following actions will be performed:
 #        Type string is not compatible with type
 #          Ast_405.Ast_helper.str = string Location.loc 
 # *** omake: 37/173 targets are up to date
-# *** omake: failed (0.32 sec, 2/2 scans, 2/3 rules, 21/136 digests)
+# *** omake: failed (0.36 sec, 2/2 scans, 2/3 rules, 21/136 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    src/ppx_meta_conv.annot
 #       depends on: src/ppx_meta_conv.ml
@@ -143,5 +143,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803001102.export"
-31 1533255060 1533255123
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803213147.export"
+31 1533331904 1533331968

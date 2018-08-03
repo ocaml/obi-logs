@@ -72,7 +72,6 @@ The following actions will be performed:
 [base64.2.2.0] found in cache
 [biniou.1.2.0] found in cache
 [cmdliner.1.0.2] found in cache
-[coclobas.0.0.2] found in cache
 [cohttp.0.22.0] found in cache
 [conduit.0.15.4] found in cache
 [cppo.1.6.4] found in cache
@@ -84,6 +83,7 @@ The following actions will be performed:
 [logs.0.6.2] found in cache
 [lwt.3.3.0] found in cache
 [magic-mime.1.1.0] found in cache
+[coclobas.0.0.2] downloaded from https://github.com/hammerlab/coclobas/archive/coclobas.0.0.2.tar.gz
 [menhir.20180703] found in cache
 [nonstd.0.0.3] found in cache
 [oasis.0.4.11] found in cache
@@ -159,10 +159,10 @@ The following actions will be performed:
 -> installed sosa.0.3.0
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
--> installed cmdliner.1.0.2
 -> installed base.v0.9.3
--> installed uchar.0.0.2
+-> installed cmdliner.1.0.2
 -> installed stdio.v0.9.0
+-> installed uchar.0.0.2
 -> installed fmt.0.8.5
 -> installed logs.0.6.2
 -> installed uuidm.0.9.6
@@ -188,8 +188,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/coclobas.0.0.2
 # command              /usr/bin/make byte
 # exit-code            2
-# env-file             ~/.opam/log/coclobas-11-c9a7fe.env
-# output-file          ~/.opam/log/coclobas-11-c9a7fe.out
+# env-file             ~/.opam/log/coclobas-11-9b4504.env
+# output-file          ~/.opam/log/coclobas-11-9b4504.out
 ### output ###
 # Makefile:3: _build/project.mk: No such file or directory
 # ocamlbuild -use-ocamlfind -plugin-tag "package(solvuu-build,nonstd)" project.mk
@@ -272,5 +272,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803010011.export"
-31 1533258006 1533258191
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803214022.export"
+31 1533332415 1533332708

@@ -357,14 +357,16 @@ The following actions will be performed:
 -> installed base.v0.9.3
 -> installed camlp4.4.04+1
 -> installed stdio.v0.9.0
--> installed ppx_core.v0.9.0
 -> installed optcomp.1.6
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed cmdliner.1.0.2
--> installed ppx_optcomp.v0.9.0
+-> installed ppx_core.v0.9.0
 -> installed react.1.2.1
 -> installed lwt_react.1.1.1
+-> installed ppx_optcomp.v0.9.0
+-> installed typerep.v0.9.0
+-> installed ulex.1.2
 -> installed ppx_driver.v0.9.1
 -> installed fieldslib.v0.9.0
 -> installed ppx_here.v0.9.1
@@ -388,13 +390,11 @@ The following actions will be performed:
 -> installed ppx_traverse.v0.9.0
 -> installed ppx_base.v0.9.0
 -> installed configurator.v0.9.1
--> installed typerep.v0.9.0
--> installed ppx_custom_printf.v0.9.0
--> installed ulex.1.2
+-> installed ppx_typerep_conv.v0.9.0
 -> installed uri.1.9.7
 -> installed uuidm.0.9.6
 -> installed variantslib.v0.9.0
--> installed ppx_typerep_conv.v0.9.0
+-> installed ppx_custom_printf.v0.9.0
 -> installed xmlm.1.3.0
 -> installed ppx_variants_conv.v0.9.0
 -> installed bin_prot.v0.9.1
@@ -426,7 +426,7 @@ The following actions will be performed:
 # output-file          ~/.opam/log/bap-frames-11-63a33f.out
 ### output ###
 # ocamlfind: Package `ppx_deriving.std' not found
-# W: Field 'pkg_ppx_deriving_std' is not set: Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d ppx_deriving.std > '/tmp/oasis-d0abb1.txt'' terminated with error code 2
+# W: Field 'pkg_ppx_deriving_std' is not set: Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d ppx_deriving.std > '/tmp/oasis-6ae75a.txt'' terminated with error code 2
 # E: Cannot find findlib package ppx_deriving.std
 # E: Failure("1 configuration error")
 
@@ -531,5 +531,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803001826.export"
-31 1533255481 1533256108
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803222456.export"
+31 1533335068 1533335787

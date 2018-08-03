@@ -320,8 +320,8 @@ The following actions will be performed:
 -> installed ocaml-compiler-libs.v0.9.0
 -> installed ocamlbuild.0.12.0
 -> installed cppo_ocamlbuild.1.6.0
--> installed ocamlgraph.1.8.8
 -> installed fileutils.0.5.3
+-> installed ocamlgraph.1.8.8
 -> installed ocamlify.0.0.1
 -> installed ocamlmod.0.0.9
 -> installed octavius.1.2.0
@@ -397,8 +397,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/bap-taint-propagator.1.1.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/bap-taint-propagator-11-2e3011.env
-# output-file          ~/.opam/log/bap-taint-propagator-11-2e3011.out
+# env-file             ~/.opam/log/bap-taint-propagator-10-2e3011.env
+# output-file          ~/.opam/log/bap-taint-propagator-10-2e3011.out
 ### output ###
 # ocaml setup.ml -quiet -build 
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package core_kernel -package findlib -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -518,5 +518,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803010126.export"
-31 1533258051 1533258671
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803213811.export"
+31 1533332258 1533333056
