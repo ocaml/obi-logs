@@ -136,16 +136,16 @@ The following actions will be performed:
 -> installed ocaml-compiler-libs.v0.11.0
 -> installed ppx_derivers.1.0
 -> installed ppx_tools.5.1+4.06.0
--> installed result.1.3
 -> installed ocamlbuild.0.12.0
+-> installed result.1.3
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed ocplib-endian.1.0
--> installed ppx_tools_versioned.5.2
 -> installed sexplib0.v0.11.0
--> installed lwt.3.3.0
 -> installed parsexp.v0.11.0
+-> installed ppx_tools_versioned.5.2
 -> installed base.v0.11.1
 -> installed sexplib.v0.11.0
+-> installed lwt.3.3.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
 -> installed cstruct.3.2.1
@@ -284,7 +284,6 @@ The following actions will be performed:
 # Warning: the tag "pkg_lwt.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
 # /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/xenmmap_stubs.c
 # /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/xenctrl_stubs.c
-# mv xenmmap_stubs.o lib/xenmmap_stubs.o
 # + /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/xenctrl_stubs.c
 # lib/xenctrl_stubs.c: In function 'stub_xc_interface_is_fake':
 # lib/xenctrl_stubs.c:132:16: warning: implicit declaration of function 'xc_interface_is_fake' [-Wimplicit-function-declaration]
@@ -384,5 +383,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180803025331.export"
-31 1533264804 1533264896
+    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180803230516.export"
+31 1533337509 1533337623
