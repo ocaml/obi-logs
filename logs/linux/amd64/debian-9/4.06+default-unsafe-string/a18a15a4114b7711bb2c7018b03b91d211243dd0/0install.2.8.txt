@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 0install.2.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for 0install.2.8: The following dependencies couldn't be met:
+          - 0install -> ocaml < 4.02
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=0install.2.8 returned 20
+20 1533263207 1533263209

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 horned_worm.0.3.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for horned_worm.0.3.1: The following dependencies couldn't be met:
+          - horned_worm -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=horned_worm.0.3.1 returned 20
+20 1533265064 1533265066

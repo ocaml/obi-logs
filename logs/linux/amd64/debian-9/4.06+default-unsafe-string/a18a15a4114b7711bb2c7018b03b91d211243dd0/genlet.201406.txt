@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 genlet.201406
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for genlet.201406: The following dependencies couldn't be met:
+          - genlet -> base-metaocaml-ocamlfind -> ocaml-variants (= 4.02.1+BER & = 4.02.1+modular-implicits-ber & = 4.04.0+BER)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=genlet.201406 returned 20
+20 1533263917 1533263919
