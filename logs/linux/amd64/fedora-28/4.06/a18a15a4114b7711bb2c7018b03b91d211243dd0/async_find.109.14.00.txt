@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 async_find.109.14.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for async_find.109.14.00: The following dependencies couldn't be met:
+          - async_find -> sexplib = 109.14.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=async_find.109.14.00 returned 20
+20 1533261820 1533261823

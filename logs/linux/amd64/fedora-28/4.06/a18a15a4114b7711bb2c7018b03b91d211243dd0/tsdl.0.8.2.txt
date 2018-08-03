@@ -1,0 +1,319 @@
+$ opam depext -iy -j 2 tsdl.0.8.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+SDL2-devel
+libffi-devel
+m4
+pkgconfig
+package SDL2-devel is not installed
+package libffi-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Thu Aug  2 23:10:27 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pkgconfig is not installed
+# The following new OS packages need to be installed: SDL2-devel libffi-devel pkgconfig
+The following command needs to be run through "sudo":
+    yum install -y SDL2-devel libffi-devel pkgconfig
+Last metadata expiration check: 2:45:35 ago on Thu Aug  2 23:10:02 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package               Arch     Version                         Repository
+                                                                           Size
+================================================================================
+Installing:
+ SDL2-devel            x86_64   2.0.8-5.fc28                    updates   255 k
+ libffi-devel          x86_64   3.1-16.fc28                     fedora     27 k
+Installing dependencies:
+ SDL2                  x86_64   2.0.8-5.fc28                    updates   403 k
+ hwdata                noarch   0.313-1.fc28                    updates   1.5 M
+ libXdamage            x86_64   1.1.4-12.fc28                   fedora     26 k
+ libXdamage-devel      x86_64   1.1.4-12.fc28                   fedora     14 k
+ libXext               x86_64   1.3.3-8.fc28                    fedora     44 k
+ libXext-devel         x86_64   1.3.3-8.fc28                    fedora     79 k
+ libXfixes             x86_64   5.0.3-5.fc28                    fedora     24 k
+ libXfixes-devel       x86_64   5.0.3-5.fc28                    fedora     18 k
+ libXxf86vm            x86_64   1.1.4-7.fc28                    fedora     22 k
+ libXxf86vm-devel      x86_64   1.1.4-7.fc28                    fedora     23 k
+ libdrm                x86_64   2.4.92-1.fc28                   updates   153 k
+ libdrm-devel          x86_64   2.4.92-1.fc28                   updates   142 k
+ libglvnd              x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates    94 k
+ libglvnd-core-devel   x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates    23 k
+ libglvnd-devel        x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates    15 k
+ libglvnd-egl          x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates    48 k
+ libglvnd-gles         x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates    39 k
+ libglvnd-glx          x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates   130 k
+ libglvnd-opengl       x86_64   1:1.0.1-0.7.git5baa1e5.fc28     updates    47 k
+ libpciaccess          x86_64   0.13.4-8.fc28                   fedora     31 k
+ libwayland-client     x86_64   1.15.0-1.fc28                   fedora     38 k
+ libwayland-server     x86_64   1.15.0-1.fc28                   fedora     44 k
+ libxshmfence          x86_64   1.3-1.fc28                      fedora     12 k
+ mesa-libEGL           x86_64   18.0.5-3.fc28                   updates   119 k
+ mesa-libEGL-devel     x86_64   18.0.5-3.fc28                   updates    47 k
+ mesa-libGL            x86_64   18.0.5-3.fc28                   updates   177 k
+ mesa-libGLES          x86_64   18.0.5-3.fc28                   updates    28 k
+ mesa-libGLES-devel    x86_64   18.0.5-3.fc28                   updates    71 k
+ mesa-libgbm           x86_64   18.0.5-3.fc28                   updates    51 k
+ mesa-libglapi         x86_64   18.0.5-3.fc28                   updates    58 k
+
+Transaction Summary
+================================================================================
+Install  32 Packages
+
+Total download size: 3.7 M
+Installed size: 14 M
+Downloading Packages:
+(1/32): libffi-devel-3.1-16.fc28.x86_64.rpm     695 kB/s |  27 kB     00:00    
+(2/32): mesa-libEGL-devel-18.0.5-3.fc28.x86_64. 722 kB/s |  47 kB     00:00    
+(3/32): SDL2-devel-2.0.8-5.fc28.x86_64.rpm      1.6 MB/s | 255 kB     00:00    
+(4/32): libwayland-client-1.15.0-1.fc28.x86_64. 2.9 MB/s |  38 kB     00:00    
+(5/32): libwayland-server-1.15.0-1.fc28.x86_64. 4.6 MB/s |  44 kB     00:00    
+(6/32): mesa-libEGL-18.0.5-3.fc28.x86_64.rpm    1.5 MB/s | 119 kB     00:00    
+(7/32): libxshmfence-1.3-1.fc28.x86_64.rpm      1.5 MB/s |  12 kB     00:00    
+(8/32): SDL2-2.0.8-5.fc28.x86_64.rpm            1.9 MB/s | 403 kB     00:00    
+(9/32): mesa-libGLES-18.0.5-3.fc28.x86_64.rpm   910 kB/s |  28 kB     00:00    
+(10/32): mesa-libGLES-devel-18.0.5-3.fc28.x86_6 2.1 MB/s |  71 kB     00:00    
+(11/32): mesa-libglapi-18.0.5-3.fc28.x86_64.rpm 2.0 MB/s |  58 kB     00:00    
+(12/32): libglvnd-devel-1.0.1-0.7.git5baa1e5.fc 842 kB/s |  15 kB     00:00    
+(13/32): libglvnd-core-devel-1.0.1-0.7.git5baa1 1.3 MB/s |  23 kB     00:00    
+(14/32): libglvnd-egl-1.0.1-0.7.git5baa1e5.fc28 1.4 MB/s |  48 kB     00:00    
+(15/32): libglvnd-1.0.1-0.7.git5baa1e5.fc28.x86 1.8 MB/s |  94 kB     00:00    
+(16/32): libglvnd-gles-1.0.1-0.7.git5baa1e5.fc2 1.1 MB/s |  39 kB     00:00    
+(17/32): libglvnd-opengl-1.0.1-0.7.git5baa1e5.f 1.7 MB/s |  47 kB     00:00    
+(18/32): libXext-1.3.3-8.fc28.x86_64.rpm        4.2 MB/s |  44 kB     00:00    
+(19/32): libglvnd-glx-1.0.1-0.7.git5baa1e5.fc28 2.8 MB/s | 130 kB     00:00    
+(20/32): libXdamage-1.1.4-12.fc28.x86_64.rpm    3.9 MB/s |  26 kB     00:00    
+(21/32): libXxf86vm-1.1.4-7.fc28.x86_64.rpm     2.4 MB/s |  22 kB     00:00    
+(22/32): libXfixes-5.0.3-5.fc28.x86_64.rpm      1.1 MB/s |  24 kB     00:00    
+(23/32): libpciaccess-0.13.4-8.fc28.x86_64.rpm  2.8 MB/s |  31 kB     00:00    
+(24/32): mesa-libGL-18.0.5-3.fc28.x86_64.rpm    2.7 MB/s | 177 kB     00:00    
+(25/32): libXdamage-devel-1.1.4-12.fc28.x86_64. 586 kB/s |  14 kB     00:00    
+(26/32): libdrm-2.4.92-1.fc28.x86_64.rpm        2.9 MB/s | 153 kB     00:00    
+(27/32): libXfixes-devel-5.0.3-5.fc28.x86_64.rp 1.9 MB/s |  18 kB     00:00    
+(28/32): libdrm-devel-2.4.92-1.fc28.x86_64.rpm  2.3 MB/s | 142 kB     00:00    
+(29/32): libXext-devel-1.3.3-8.fc28.x86_64.rpm  2.4 MB/s |  79 kB     00:00    
+(30/32): libXxf86vm-devel-1.1.4-7.fc28.x86_64.r 595 kB/s |  23 kB     00:00    
+(31/32): mesa-libgbm-18.0.5-3.fc28.x86_64.rpm   2.4 MB/s |  51 kB     00:00    
+(32/32): hwdata-0.313-1.fc28.noarch.rpm         5.6 MB/s | 1.5 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           2.2 MB/s | 3.7 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libglvnd-1:1.0.1-0.7.git5baa1e5.fc28.x86_64           1/32 
+  Installing       : libXext-1.3.3-8.fc28.x86_64                           2/32 
+  Running scriptlet: libXext-1.3.3-8.fc28.x86_64                           2/32 
+  Installing       : libXfixes-5.0.3-5.fc28.x86_64                         3/32 
+  Running scriptlet: libXfixes-5.0.3-5.fc28.x86_64                         3/32 
+  Installing       : mesa-libglapi-18.0.5-3.fc28.x86_64                    4/32 
+  Running scriptlet: mesa-libglapi-18.0.5-3.fc28.x86_64                    4/32 
+  Installing       : libXdamage-1.1.4-12.fc28.x86_64                       5/32 
+  Running scriptlet: libXdamage-1.1.4-12.fc28.x86_64                       5/32 
+  Installing       : libXfixes-devel-5.0.3-5.fc28.x86_64                   6/32 
+  Installing       : libXxf86vm-1.1.4-7.fc28.x86_64                        7/32 
+  Running scriptlet: libXxf86vm-1.1.4-7.fc28.x86_64                        7/32 
+  Installing       : libXext-devel-1.3.3-8.fc28.x86_64                     8/32 
+  Installing       : libxshmfence-1.3-1.fc28.x86_64                        9/32 
+  Running scriptlet: libxshmfence-1.3-1.fc28.x86_64                        9/32 
+  Installing       : libwayland-server-1.15.0-1.fc28.x86_64               10/32 
+  Installing       : libXxf86vm-devel-1.1.4-7.fc28.x86_64                 11/32 
+  Installing       : libXdamage-devel-1.1.4-12.fc28.x86_64                12/32 
+  Installing       : libglvnd-opengl-1:1.0.1-0.7.git5baa1e5.fc28.x86_64   13/32 
+  Installing       : hwdata-0.313-1.fc28.noarch                           14/32 
+  Installing       : libpciaccess-0.13.4-8.fc28.x86_64                    15/32 
+  Installing       : libdrm-2.4.92-1.fc28.x86_64                          16/32 
+  Installing       : libglvnd-glx-1:1.0.1-0.7.git5baa1e5.fc28.x86_64      17/32 
+  Installing       : mesa-libGL-18.0.5-3.fc28.x86_64                      18/32 
+  Installing       : libdrm-devel-2.4.92-1.fc28.x86_64                    19/32 
+  Installing       : mesa-libgbm-18.0.5-3.fc28.x86_64                     20/32 
+  Running scriptlet: mesa-libgbm-18.0.5-3.fc28.x86_64                     20/32 
+  Installing       : libglvnd-core-devel-1:1.0.1-0.7.git5baa1e5.fc28.x8   21/32 
+  Installing       : libwayland-client-1.15.0-1.fc28.x86_64               22/32 
+  Installing       : libglvnd-egl-1:1.0.1-0.7.git5baa1e5.fc28.x86_64      23/32 
+  Installing       : mesa-libEGL-18.0.5-3.fc28.x86_64                     24/32 
+  Installing       : libglvnd-gles-1:1.0.1-0.7.git5baa1e5.fc28.x86_64     25/32 
+  Installing       : libglvnd-devel-1:1.0.1-0.7.git5baa1e5.fc28.x86_64    26/32 
+  Installing       : mesa-libEGL-devel-18.0.5-3.fc28.x86_64               27/32 
+  Installing       : mesa-libGLES-18.0.5-3.fc28.x86_64                    28/32 
+  Installing       : mesa-libGLES-devel-18.0.5-3.fc28.x86_64              29/32 
+  Installing       : SDL2-2.0.8-5.fc28.x86_64                             30/32 
+  Installing       : SDL2-devel-2.0.8-5.fc28.x86_64                       31/32 
+  Installing       : libffi-devel-3.1-16.fc28.x86_64                      32/32 
+  Running scriptlet: libffi-devel-3.1-16.fc28.x86_64                      32/32 
+install-info: No such file or directory for /usr/share/info/libffi.info.gz
+  Verifying        : SDL2-devel-2.0.8-5.fc28.x86_64                        1/32 
+  Verifying        : SDL2-2.0.8-5.fc28.x86_64                              2/32 
+  Verifying        : libffi-devel-3.1-16.fc28.x86_64                       3/32 
+  Verifying        : mesa-libEGL-devel-18.0.5-3.fc28.x86_64                4/32 
+  Verifying        : mesa-libEGL-18.0.5-3.fc28.x86_64                      5/32 
+  Verifying        : libwayland-client-1.15.0-1.fc28.x86_64                6/32 
+  Verifying        : libwayland-server-1.15.0-1.fc28.x86_64                7/32 
+  Verifying        : libxshmfence-1.3-1.fc28.x86_64                        8/32 
+  Verifying        : mesa-libGLES-devel-18.0.5-3.fc28.x86_64               9/32 
+  Verifying        : mesa-libGLES-18.0.5-3.fc28.x86_64                    10/32 
+  Verifying        : mesa-libglapi-18.0.5-3.fc28.x86_64                   11/32 
+  Verifying        : libglvnd-devel-1:1.0.1-0.7.git5baa1e5.fc28.x86_64    12/32 
+  Verifying        : libglvnd-1:1.0.1-0.7.git5baa1e5.fc28.x86_64          13/32 
+  Verifying        : libglvnd-core-devel-1:1.0.1-0.7.git5baa1e5.fc28.x8   14/32 
+  Verifying        : libglvnd-egl-1:1.0.1-0.7.git5baa1e5.fc28.x86_64      15/32 
+  Verifying        : libglvnd-gles-1:1.0.1-0.7.git5baa1e5.fc28.x86_64     16/32 
+  Verifying        : libglvnd-glx-1:1.0.1-0.7.git5baa1e5.fc28.x86_64      17/32 
+  Verifying        : libglvnd-opengl-1:1.0.1-0.7.git5baa1e5.fc28.x86_64   18/32 
+  Verifying        : mesa-libGL-18.0.5-3.fc28.x86_64                      19/32 
+  Verifying        : libXext-1.3.3-8.fc28.x86_64                          20/32 
+  Verifying        : libXdamage-1.1.4-12.fc28.x86_64                      21/32 
+  Verifying        : libXfixes-5.0.3-5.fc28.x86_64                        22/32 
+  Verifying        : libXxf86vm-1.1.4-7.fc28.x86_64                       23/32 
+  Verifying        : libdrm-2.4.92-1.fc28.x86_64                          24/32 
+  Verifying        : libpciaccess-0.13.4-8.fc28.x86_64                    25/32 
+  Verifying        : libdrm-devel-2.4.92-1.fc28.x86_64                    26/32 
+  Verifying        : libXdamage-devel-1.1.4-12.fc28.x86_64                27/32 
+  Verifying        : libXext-devel-1.3.3-8.fc28.x86_64                    28/32 
+  Verifying        : libXfixes-devel-5.0.3-5.fc28.x86_64                  29/32 
+  Verifying        : libXxf86vm-devel-1.1.4-7.fc28.x86_64                 30/32 
+  Verifying        : mesa-libgbm-18.0.5-3.fc28.x86_64                     31/32 
+  Verifying        : hwdata-0.313-1.fc28.noarch                           32/32 
+
+Installed:
+  SDL2-devel.x86_64 2.0.8-5.fc28                                                
+  libffi-devel.x86_64 3.1-16.fc28                                               
+  SDL2.x86_64 2.0.8-5.fc28                                                      
+  hwdata.noarch 0.313-1.fc28                                                    
+  libXdamage.x86_64 1.1.4-12.fc28                                               
+  libXdamage-devel.x86_64 1.1.4-12.fc28                                         
+  libXext.x86_64 1.3.3-8.fc28                                                   
+  libXext-devel.x86_64 1.3.3-8.fc28                                             
+  libXfixes.x86_64 5.0.3-5.fc28                                                 
+  libXfixes-devel.x86_64 5.0.3-5.fc28                                           
+  libXxf86vm.x86_64 1.1.4-7.fc28                                                
+  libXxf86vm-devel.x86_64 1.1.4-7.fc28                                          
+  libdrm.x86_64 2.4.92-1.fc28                                                   
+  libdrm-devel.x86_64 2.4.92-1.fc28                                             
+  libglvnd.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                                   
+  libglvnd-core-devel.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                        
+  libglvnd-devel.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                             
+  libglvnd-egl.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                               
+  libglvnd-gles.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                              
+  libglvnd-glx.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                               
+  libglvnd-opengl.x86_64 1:1.0.1-0.7.git5baa1e5.fc28                            
+  libpciaccess.x86_64 0.13.4-8.fc28                                             
+  libwayland-client.x86_64 1.15.0-1.fc28                                        
+  libwayland-server.x86_64 1.15.0-1.fc28                                        
+  libxshmfence.x86_64 1.3-1.fc28                                                
+  mesa-libEGL.x86_64 18.0.5-3.fc28                                              
+  mesa-libEGL-devel.x86_64 18.0.5-3.fc28                                        
+  mesa-libGL.x86_64 18.0.5-3.fc28                                               
+  mesa-libGLES.x86_64 18.0.5-3.fc28                                             
+  mesa-libGLES-devel.x86_64 18.0.5-3.fc28                                       
+  mesa-libgbm.x86_64 18.0.5-3.fc28                                              
+  mesa-libglapi.x86_64 18.0.5-3.fc28                                            
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides SDL2-devel libffi-devel pkgconfig
+SDL2-devel-2.0.8-5.fc28.x86_64
+libffi-devel-3.1-16.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by topkg]
+  - install conf-sdl2       1      [required by tsdl]
+  - install base-bytes      base   [required by ctypes]
+  - install ocamlbuild      0.12.0 [required by tsdl]
+  - install conf-pkg-config 1.1    [required by ctypes]
+  - install ctypes-foreign  0.4.0  [required by tsdl]
+  - install topkg           0.9.1  [required by integers]
+  - install integers        0.2.2  [required by ctypes]
+  - install ctypes          0.14.0 [required by tsdl]
+  - install tsdl            0.8.2
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.14.0] found in cache
+[integers.0.2.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[tsdl.0.8.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-sdl2.1
+-> installed ctypes-foreign.0.4.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+[ERROR] The compilation of tsdl failed at "/home/opam/.opam/4.06/bin/ocaml pkg/git.ml".
+
+#=== ERROR while compiling tsdl.0.8.2 =========================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/tsdl.0.8.2
+# command              ~/.opam/4.06/bin/ocaml pkg/git.ml
+# exit-code            2
+# env-file             ~/.opam/log/tsdl-10-aaa640.env
+# output-file          ~/.opam/log/tsdl-10-aaa640.out
+### output ###
+# File "pkg/topkg-ext.ml", line 42, characters 12-25:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "pkg/topkg-ext.ml", line 71, characters 24-25:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# File "pkg/config.ml", line 6, characters 10-24:
+# Error: Unbound module Config_default
+# File "./pkg/git.ml", line 9, characters 5-15:
+# Error: Unbound module Dir
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build tsdl 0.8.2
++- 
++- The following changes have been performed
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install conf-sdl2       1
+| - install ctypes          0.14.0
+| - install ctypes-foreign  0.4.0
+| - install integers        0.2.2
+| - install ocamlbuild      0.12.0
+| - install result          1.3
+| - install topkg           0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803015545.export"
+31 1533261332 1533261377

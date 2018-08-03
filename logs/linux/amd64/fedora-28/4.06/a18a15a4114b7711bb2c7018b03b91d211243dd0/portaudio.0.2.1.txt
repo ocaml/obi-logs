@@ -1,0 +1,114 @@
+$ opam depext -iy -j 2 portaudio.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Thu Aug  2 23:10:27 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install portaudio 0.2.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[portaudio.0.2.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of portaudio failed at "/home/opam/.opam/4.06/.opam-switch/build/portaudio.0.2.1/./configure --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling portaudio.0.2.1 ====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/portaudio.0.2.1
+# command              ~/.opam/4.06/.opam-switch/build/portaudio.0.2.1/./configure --prefix /home/opam/.opam/4.06
+# exit-code            1
+# env-file             ~/.opam/log/portaudio-10-05296d.env
+# output-file          ~/.opam/log/portaudio-10-05296d.out
+### output ###
+# configuring ocaml-portaudio 0.2.1
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking build system type... x86_64-unknown-linux-gnu
+# checking host system type... x86_64-unknown-linux-gnu
+# checking for a BSD-compatible install... /usr/bin/install -c
+# checking that calling user is not root... ok
+# checking for gcc... (cached) gcc
+# checking whether we are using the GNU C compiler... (cached) yes
+# checking whether gcc accepts -g... (cached) yes
+# checking for gcc option to accept ISO C89... (cached) none needed
+# checking for ar... ar
+# checking for ocamlc... ocamlc
+# OCaml version is 4.06.1
+# checking if ocaml compiler supports first-class modules... yes
+# OCaml library path is /home/opam/.opam/4.06/lib/ocaml
+# checking for ocamlopt... ocamlopt
+# checking for ocamlc.opt... ocamlc.opt
+# checking for ocamlopt.opt... ocamlopt.opt
+# checking for ocaml... ocaml
+# checking for ocamldep... ocamldep
+# checking for ocamldep.opt... ocamldep.opt
+# checking for ocamlmktop... ocamlmktop
+# checking for ocamlmklib... ocamlmklib
+# checking for ocamldoc... ocamldoc
+# checking for ocamldoc.opt... ocamldoc.opt
+# checking for ocamlbuild... no
+# checking for camlidl... no
+# checking for ocamllex... ocamllex
+# checking for ocamllex.opt... ocamllex.opt
+# checking for ocamlyacc... ocamlyacc
+# checking for camlp4... no
+# checking for camlp4boot... no
+# checking for camlp4o... no
+# checking for camlp4of... no
+# checking for camlp4oof... no
+# checking for camlp4orf... no
+# checking for camlp4prof... no
+# checking for camlp4r... no
+# checking for camlp4rf... no
+# checking for ocamlfind... ocamlfind
+# checking for ocaml standard library path... /home/opam/.opam/4.06/lib/ocaml
+# checking for caml/threads.h... no
+# checking for gcc option to produce PIC... -fPIC
+# checking for pkg-config... /usr/bin/pkg-config
+# checking pkg-config is at least version 0.9.0... yes
+# checking whether pkg-config knows about portaudio-2.0... configure: error: portaudio-2.0.pc not found.. Do you need to set PKG_CONFIG_PATH?
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build portaudio 0.2.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533259372 1533259377

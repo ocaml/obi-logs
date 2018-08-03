@@ -1,0 +1,487 @@
+$ opam depext -iy -j 2 lbvs_consent.1.1.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+autoconf
+boost-devel
+m4
+pkgconfig
+python2
+which
+zlib-devel
+package autoconf is not installed
+package boost-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Thu Aug  2 23:10:27 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pkgconfig is not installed
+Name        : python2
+Version     : 2.7.15
+Release     : 2.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:09:37 2018
+Group       : Development/Languages
+Size        : 80738
+License     : Python
+Signature   : RSA/SHA256, Thu May 17 13:51:08 2018, Key ID e08e7e629db62fb1
+Source RPM  : python2-2.7.15-2.fc28.src.rpm
+Build Date  : Wed May 16 18:20:32 2018
+Build Host  : buildhw-09.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://www.python.org/
+Bug URL     : https://bugz.fedoraproject.org/python2
+Summary     : An interpreted, interactive, object-oriented programming language
+Description :
+Python 2 is an old version of the language that is incompatible with the 3.x
+line of releases. The language is mostly the same, but many details, especially
+how built-in objects like dictionaries and strings work, have changed
+considerably, and a lot of deprecated features have finally been removed in the
+3.x line.
+
+Note that documentation for Python 2 is provided in the python2-docs
+package.
+
+This package provides the "python2" executable; most of the actual
+implementation is within the "python2-libs" package.
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Mon Jul 23 06:11:22 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+package zlib-devel is not installed
+# The following new OS packages need to be installed: autoconf boost-devel pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y autoconf boost-devel pkgconfig zlib-devel
+Last metadata expiration check: 2:09:49 ago on Thu Aug  2 23:10:02 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                    Arch        Version              Repository    Size
+================================================================================
+Installing:
+ autoconf                   noarch      2.69-27.fc28         fedora       710 k
+ boost-devel                x86_64      1.66.0-8.fc28        updates       10 M
+ zlib-devel                 x86_64      1.2.11-8.fc28        updates       55 k
+Upgrading:
+ boost-atomic               x86_64      1.66.0-8.fc28        updates       53 k
+ boost-chrono               x86_64      1.66.0-8.fc28        updates       62 k
+ boost-date-time            x86_64      1.66.0-8.fc28        updates       68 k
+ boost-system               x86_64      1.66.0-8.fc28        updates       57 k
+ boost-thread               x86_64      1.66.0-8.fc28        updates       97 k
+Installing dependencies:
+ boost                      x86_64      1.66.0-8.fc28        updates       50 k
+ boost-container            x86_64      1.66.0-8.fc28        updates       82 k
+ boost-context              x86_64      1.66.0-8.fc28        updates       54 k
+ boost-coroutine            x86_64      1.66.0-8.fc28        updates       70 k
+ boost-fiber                x86_64      1.66.0-8.fc28        updates      165 k
+ boost-filesystem           x86_64      1.66.0-8.fc28        updates       88 k
+ boost-graph                x86_64      1.66.0-8.fc28        updates      152 k
+ boost-iostreams            x86_64      1.66.0-8.fc28        updates       78 k
+ boost-locale               x86_64      1.66.0-8.fc28        updates      304 k
+ boost-log                  x86_64      1.66.0-8.fc28        updates      486 k
+ boost-math                 x86_64      1.66.0-8.fc28        updates      303 k
+ boost-numpy                x86_64      1.66.0-8.fc28        updates       65 k
+ boost-program-options      x86_64      1.66.0-8.fc28        updates      179 k
+ boost-python2              x86_64      1.66.0-8.fc28        updates      136 k
+ boost-random               x86_64      1.66.0-8.fc28        updates       61 k
+ boost-regex                x86_64      1.66.0-8.fc28        updates      320 k
+ boost-serialization        x86_64      1.66.0-8.fc28        updates      163 k
+ boost-signals              x86_64      1.66.0-8.fc28        updates       78 k
+ boost-stacktrace           x86_64      1.66.0-8.fc28        updates       75 k
+ boost-test                 x86_64      1.66.0-8.fc28        updates      290 k
+ boost-timer                x86_64      1.66.0-8.fc28        updates       60 k
+ boost-type_erasure         x86_64      1.66.0-8.fc28        updates       69 k
+ boost-wave                 x86_64      1.66.0-8.fc28        updates      230 k
+ libgfortran                x86_64      8.1.1-5.fc28         updates      656 k
+ libicu                     x86_64      60.2-2.fc28          fedora       8.8 M
+ libicu-devel               x86_64      60.2-2.fc28          fedora       920 k
+ libquadmath                x86_64      8.1.1-5.fc28         updates      186 k
+ libquadmath-devel          x86_64      8.1.1-5.fc28         updates       39 k
+ openblas                   x86_64      0.3.1-2.fc28         updates       29 k
+ openblas-serial            x86_64      0.3.1-2.fc28         updates      4.5 M
+ openblas-threads           x86_64      0.3.1-2.fc28         updates      4.7 M
+ python2-nose               noarch      1.3.7-19.fc28        fedora       267 k
+ python2-numpy              x86_64      1:1.14.5-1.fc28      updates      3.7 M
+
+Transaction Summary
+================================================================================
+Install  36 Packages
+Upgrade   5 Packages
+
+Total download size: 38 M
+Downloading Packages:
+(1/41): boost-1.66.0-8.fc28.x86_64.rpm          750 kB/s |  50 kB     00:00    
+(2/41): autoconf-2.69-27.fc28.noarch.rpm        2.8 MB/s | 710 kB     00:00    
+(3/41): boost-container-1.66.0-8.fc28.x86_64.rp 2.6 MB/s |  82 kB     00:00    
+(4/41): boost-context-1.66.0-8.fc28.x86_64.rpm  3.9 MB/s |  54 kB     00:00    
+(5/41): libicu-devel-60.2-2.fc28.x86_64.rpm     3.5 MB/s | 920 kB     00:00    
+(6/41): boost-coroutine-1.66.0-8.fc28.x86_64.rp 2.3 MB/s |  70 kB     00:00    
+(7/41): boost-filesystem-1.66.0-8.fc28.x86_64.r 2.5 MB/s |  88 kB     00:00    
+(8/41): boost-fiber-1.66.0-8.fc28.x86_64.rpm    3.5 MB/s | 165 kB     00:00    
+(9/41): boost-graph-1.66.0-8.fc28.x86_64.rpm    4.6 MB/s | 152 kB     00:00    
+(10/41): boost-iostreams-1.66.0-8.fc28.x86_64.r 2.4 MB/s |  78 kB     00:00    
+(11/41): boost-locale-1.66.0-8.fc28.x86_64.rpm  6.4 MB/s | 304 kB     00:00    
+(12/41): boost-log-1.66.0-8.fc28.x86_64.rpm     6.6 MB/s | 486 kB     00:00    
+(13/41): boost-math-1.66.0-8.fc28.x86_64.rpm    7.5 MB/s | 303 kB     00:00    
+(14/41): boost-numpy-1.66.0-8.fc28.x86_64.rpm   4.0 MB/s |  65 kB     00:00    
+(15/41): boost-program-options-1.66.0-8.fc28.x8 5.1 MB/s | 179 kB     00:00    
+(16/41): boost-python2-1.66.0-8.fc28.x86_64.rpm 3.7 MB/s | 136 kB     00:00    
+(17/41): boost-random-1.66.0-8.fc28.x86_64.rpm  1.9 MB/s |  61 kB     00:00    
+(18/41): boost-serialization-1.66.0-8.fc28.x86_ 5.6 MB/s | 163 kB     00:00    
+(19/41): boost-signals-1.66.0-8.fc28.x86_64.rpm 3.6 MB/s |  78 kB     00:00    
+(20/41): boost-stacktrace-1.66.0-8.fc28.x86_64. 3.2 MB/s |  75 kB     00:00    
+(21/41): boost-test-1.66.0-8.fc28.x86_64.rpm    5.8 MB/s | 290 kB     00:00    
+(22/41): boost-timer-1.66.0-8.fc28.x86_64.rpm   3.3 MB/s |  60 kB     00:00    
+(23/41): boost-type_erasure-1.66.0-8.fc28.x86_6 3.1 MB/s |  69 kB     00:00    
+(24/41): boost-wave-1.66.0-8.fc28.x86_64.rpm    6.6 MB/s | 230 kB     00:00    
+(25/41): boost-regex-1.66.0-8.fc28.x86_64.rpm   1.3 MB/s | 320 kB     00:00    
+(26/41): zlib-devel-1.2.11-8.fc28.x86_64.rpm    1.8 MB/s |  55 kB     00:00    
+(27/41): libquadmath-devel-8.1.1-5.fc28.x86_64. 2.7 MB/s |  39 kB     00:00    
+(28/41): libquadmath-8.1.1-5.fc28.x86_64.rpm    2.9 MB/s | 186 kB     00:00    
+(29/41): boost-devel-1.66.0-8.fc28.x86_64.rpm   9.8 MB/s |  10 MB     00:01    
+(30/41): libicu-60.2-2.fc28.x86_64.rpm           19 MB/s | 8.8 MB     00:00    
+(31/41): python2-nose-1.3.7-19.fc28.noarch.rpm  1.3 MB/s | 267 kB     00:00    
+(32/41): libgfortran-8.1.1-5.fc28.x86_64.rpm    8.7 MB/s | 656 kB     00:00    
+(33/41): openblas-0.3.1-2.fc28.x86_64.rpm       2.2 MB/s |  29 kB     00:00    
+(34/41): openblas-threads-0.3.1-2.fc28.x86_64.r  28 MB/s | 4.7 MB     00:00    
+(35/41): boost-atomic-1.66.0-8.fc28.x86_64.rpm  564 kB/s |  53 kB     00:00    
+(36/41): boost-chrono-1.66.0-8.fc28.x86_64.rpm  979 kB/s |  62 kB     00:00    
+(37/41): boost-date-time-1.66.0-8.fc28.x86_64.r 1.4 MB/s |  68 kB     00:00    
+(38/41): python2-numpy-1.14.5-1.fc28.x86_64.rpm 5.1 MB/s | 3.7 MB     00:00    
+(39/41): boost-system-1.66.0-8.fc28.x86_64.rpm  1.2 MB/s |  57 kB     00:00    
+(40/41): boost-thread-1.66.0-8.fc28.x86_64.rpm  2.7 MB/s |  97 kB     00:00    
+(41/41): openblas-serial-0.3.1-2.fc28.x86_64.rp  13 MB/s | 4.5 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                            13 MB/s |  38 MB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : boost-system-1.66.0-8.fc28.x86_64                     1/46 
+  Upgrading        : boost-chrono-1.66.0-8.fc28.x86_64                     2/46 
+  Upgrading        : boost-thread-1.66.0-8.fc28.x86_64                     3/46 
+  Installing       : boost-filesystem-1.66.0-8.fc28.x86_64                 4/46 
+  Installing       : libicu-60.2-2.fc28.x86_64                             5/46 
+  Running scriptlet: libicu-60.2-2.fc28.x86_64                             5/46 
+  Installing       : boost-regex-1.66.0-8.fc28.x86_64                      6/46 
+  Upgrading        : boost-date-time-1.66.0-8.fc28.x86_64                  7/46 
+  Installing       : boost-context-1.66.0-8.fc28.x86_64                    8/46 
+  Installing       : boost-timer-1.66.0-8.fc28.x86_64                      9/46 
+  Upgrading        : boost-atomic-1.66.0-8.fc28.x86_64                    10/46 
+  Installing       : boost-python2-1.66.0-8.fc28.x86_64                   11/46 
+  Installing       : boost-log-1.66.0-8.fc28.x86_64                       12/46 
+  Installing       : boost-test-1.66.0-8.fc28.x86_64                      13/46 
+  Installing       : boost-coroutine-1.66.0-8.fc28.x86_64                 14/46 
+  Installing       : boost-fiber-1.66.0-8.fc28.x86_64                     15/46 
+  Installing       : boost-wave-1.66.0-8.fc28.x86_64                      16/46 
+  Installing       : boost-graph-1.66.0-8.fc28.x86_64                     17/46 
+  Installing       : boost-locale-1.66.0-8.fc28.x86_64                    18/46 
+  Installing       : boost-type_erasure-1.66.0-8.fc28.x86_64              19/46 
+  Installing       : boost-random-1.66.0-8.fc28.x86_64                    20/46 
+  Installing       : openblas-0.3.1-2.fc28.x86_64                         21/46 
+  Running scriptlet: openblas-0.3.1-2.fc28.x86_64                         21/46 
+  Installing       : libquadmath-8.1.1-5.fc28.x86_64                      22/46 
+  Running scriptlet: libquadmath-8.1.1-5.fc28.x86_64                      22/46 
+  Installing       : libgfortran-8.1.1-5.fc28.x86_64                      23/46 
+  Running scriptlet: libgfortran-8.1.1-5.fc28.x86_64                      23/46 
+  Installing       : boost-stacktrace-1.66.0-8.fc28.x86_64                24/46 
+  Installing       : boost-signals-1.66.0-8.fc28.x86_64                   25/46 
+  Installing       : boost-serialization-1.66.0-8.fc28.x86_64             26/46 
+  Installing       : boost-program-options-1.66.0-8.fc28.x86_64           27/46 
+  Installing       : boost-math-1.66.0-8.fc28.x86_64                      28/46 
+  Installing       : boost-iostreams-1.66.0-8.fc28.x86_64                 29/46 
+  Installing       : boost-container-1.66.0-8.fc28.x86_64                 30/46 
+  Installing       : openblas-threads-0.3.1-2.fc28.x86_64                 31/46 
+  Running scriptlet: openblas-threads-0.3.1-2.fc28.x86_64                 31/46 
+  Installing       : openblas-serial-0.3.1-2.fc28.x86_64                  32/46 
+  Installing       : libquadmath-devel-8.1.1-5.fc28.x86_64                33/46 
+  Installing       : libicu-devel-60.2-2.fc28.x86_64                      34/46 
+  Installing       : python2-nose-1.3.7-19.fc28.noarch                    35/46 
+  Installing       : python2-numpy-1:1.14.5-1.fc28.x86_64                 36/46 
+  Installing       : boost-numpy-1.66.0-8.fc28.x86_64                     37/46 
+  Installing       : boost-1.66.0-8.fc28.x86_64                           38/46 
+  Installing       : boost-devel-1.66.0-8.fc28.x86_64                     39/46 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      40/46 
+  Installing       : autoconf-2.69-27.fc28.noarch                         41/46 
+  Running scriptlet: autoconf-2.69-27.fc28.noarch                         41/46 
+install-info: No such file or directory for /usr/share/info/autoconf.info
+  Cleanup          : boost-thread-1.66.0-7.fc28.x86_64                    42/46 
+  Cleanup          : boost-chrono-1.66.0-7.fc28.x86_64                    43/46 
+  Cleanup          : boost-system-1.66.0-7.fc28.x86_64                    44/46 
+  Cleanup          : boost-date-time-1.66.0-7.fc28.x86_64                 45/46 
+  Cleanup          : boost-atomic-1.66.0-7.fc28.x86_64                    46/46 
+  Running scriptlet: boost-atomic-1.66.0-7.fc28.x86_64                    46/46 
+  Verifying        : autoconf-2.69-27.fc28.noarch                          1/46 
+  Verifying        : boost-devel-1.66.0-8.fc28.x86_64                      2/46 
+  Verifying        : boost-1.66.0-8.fc28.x86_64                            3/46 
+  Verifying        : libicu-devel-60.2-2.fc28.x86_64                       4/46 
+  Verifying        : boost-container-1.66.0-8.fc28.x86_64                  5/46 
+  Verifying        : boost-context-1.66.0-8.fc28.x86_64                    6/46 
+  Verifying        : boost-coroutine-1.66.0-8.fc28.x86_64                  7/46 
+  Verifying        : boost-fiber-1.66.0-8.fc28.x86_64                      8/46 
+  Verifying        : boost-filesystem-1.66.0-8.fc28.x86_64                 9/46 
+  Verifying        : boost-graph-1.66.0-8.fc28.x86_64                     10/46 
+  Verifying        : boost-iostreams-1.66.0-8.fc28.x86_64                 11/46 
+  Verifying        : boost-locale-1.66.0-8.fc28.x86_64                    12/46 
+  Verifying        : boost-log-1.66.0-8.fc28.x86_64                       13/46 
+  Verifying        : boost-math-1.66.0-8.fc28.x86_64                      14/46 
+  Verifying        : boost-numpy-1.66.0-8.fc28.x86_64                     15/46 
+  Verifying        : boost-program-options-1.66.0-8.fc28.x86_64           16/46 
+  Verifying        : boost-python2-1.66.0-8.fc28.x86_64                   17/46 
+  Verifying        : boost-random-1.66.0-8.fc28.x86_64                    18/46 
+  Verifying        : boost-regex-1.66.0-8.fc28.x86_64                     19/46 
+  Verifying        : boost-serialization-1.66.0-8.fc28.x86_64             20/46 
+  Verifying        : boost-signals-1.66.0-8.fc28.x86_64                   21/46 
+  Verifying        : boost-stacktrace-1.66.0-8.fc28.x86_64                22/46 
+  Verifying        : boost-test-1.66.0-8.fc28.x86_64                      23/46 
+  Verifying        : boost-timer-1.66.0-8.fc28.x86_64                     24/46 
+  Verifying        : boost-type_erasure-1.66.0-8.fc28.x86_64              25/46 
+  Verifying        : boost-wave-1.66.0-8.fc28.x86_64                      26/46 
+  Verifying        : libicu-60.2-2.fc28.x86_64                            27/46 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                      28/46 
+  Verifying        : libquadmath-devel-8.1.1-5.fc28.x86_64                29/46 
+  Verifying        : libquadmath-8.1.1-5.fc28.x86_64                      30/46 
+  Verifying        : python2-numpy-1:1.14.5-1.fc28.x86_64                 31/46 
+  Verifying        : python2-nose-1.3.7-19.fc28.noarch                    32/46 
+  Verifying        : openblas-threads-0.3.1-2.fc28.x86_64                 33/46 
+  Verifying        : libgfortran-8.1.1-5.fc28.x86_64                      34/46 
+  Verifying        : openblas-0.3.1-2.fc28.x86_64                         35/46 
+  Verifying        : openblas-serial-0.3.1-2.fc28.x86_64                  36/46 
+  Verifying        : boost-atomic-1.66.0-8.fc28.x86_64                    37/46 
+  Verifying        : boost-chrono-1.66.0-8.fc28.x86_64                    38/46 
+  Verifying        : boost-date-time-1.66.0-8.fc28.x86_64                 39/46 
+  Verifying        : boost-system-1.66.0-8.fc28.x86_64                    40/46 
+  Verifying        : boost-thread-1.66.0-8.fc28.x86_64                    41/46 
+  Verifying        : boost-atomic-1.66.0-7.fc28.x86_64                    42/46 
+  Verifying        : boost-chrono-1.66.0-7.fc28.x86_64                    43/46 
+  Verifying        : boost-date-time-1.66.0-7.fc28.x86_64                 44/46 
+  Verifying        : boost-system-1.66.0-7.fc28.x86_64                    45/46 
+  Verifying        : boost-thread-1.66.0-7.fc28.x86_64                    46/46 
+
+Installed:
+  autoconf.noarch 2.69-27.fc28                                                  
+  boost-devel.x86_64 1.66.0-8.fc28                                              
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+  boost.x86_64 1.66.0-8.fc28                                                    
+  boost-container.x86_64 1.66.0-8.fc28                                          
+  boost-context.x86_64 1.66.0-8.fc28                                            
+  boost-coroutine.x86_64 1.66.0-8.fc28                                          
+  boost-fiber.x86_64 1.66.0-8.fc28                                              
+  boost-filesystem.x86_64 1.66.0-8.fc28                                         
+  boost-graph.x86_64 1.66.0-8.fc28                                              
+  boost-iostreams.x86_64 1.66.0-8.fc28                                          
+  boost-locale.x86_64 1.66.0-8.fc28                                             
+  boost-log.x86_64 1.66.0-8.fc28                                                
+  boost-math.x86_64 1.66.0-8.fc28                                               
+  boost-numpy.x86_64 1.66.0-8.fc28                                              
+  boost-program-options.x86_64 1.66.0-8.fc28                                    
+  boost-python2.x86_64 1.66.0-8.fc28                                            
+  boost-random.x86_64 1.66.0-8.fc28                                             
+  boost-regex.x86_64 1.66.0-8.fc28                                              
+  boost-serialization.x86_64 1.66.0-8.fc28                                      
+  boost-signals.x86_64 1.66.0-8.fc28                                            
+  boost-stacktrace.x86_64 1.66.0-8.fc28                                         
+  boost-test.x86_64 1.66.0-8.fc28                                               
+  boost-timer.x86_64 1.66.0-8.fc28                                              
+  boost-type_erasure.x86_64 1.66.0-8.fc28                                       
+  boost-wave.x86_64 1.66.0-8.fc28                                               
+  libgfortran.x86_64 8.1.1-5.fc28                                               
+  libicu.x86_64 60.2-2.fc28                                                     
+  libicu-devel.x86_64 60.2-2.fc28                                               
+  libquadmath.x86_64 8.1.1-5.fc28                                               
+  libquadmath-devel.x86_64 8.1.1-5.fc28                                         
+  openblas.x86_64 0.3.1-2.fc28                                                  
+  openblas-serial.x86_64 0.3.1-2.fc28                                           
+  openblas-threads.x86_64 0.3.1-2.fc28                                          
+  python2-nose.noarch 1.3.7-19.fc28                                             
+  python2-numpy.x86_64 1:1.14.5-1.fc28                                          
+
+Upgraded:
+  boost-atomic.x86_64 1.66.0-8.fc28        boost-chrono.x86_64 1.66.0-8.fc28    
+  boost-date-time.x86_64 1.66.0-8.fc28     boost-system.x86_64 1.66.0-8.fc28    
+  boost-thread.x86_64 1.66.0-8.fc28       
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides autoconf boost-devel pkgconfig zlib-devel
+autoconf-2.69-27.fc28.noarch
+boost-devel-1.66.0-8.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip         1.07     [required by lbvs_consent]
+  - install obuild          0.1.10   [required by lbvs_consent]
+  - install conf-openbabel  0.1      [required by lbvs_consent]
+  - install conf-rdkit      0.1      [required by lbvs_consent]
+  - install conf-which      1        [required by conf-autoconf]
+  - install base-bytes      base     [required by qcheck, qtest]
+  - install ocamlbuild      0.12.0   [required by dolog, batteries, parmap]
+  - install conf-pkg-config 1.1      [required by conf-boost]
+  - install num             1.1      [required by batteries]
+  - install conf-python-2-7 1.0      [required by lbvs_consent]
+  - install minivpt         2.0.0    [required by lbvs_consent]
+  - install minicli         4.0.0    [required by lbvs_consent]
+  - install conf-autoconf   0.1      [required by bitv]
+  - install parmap          1.0-rc10 [required by lbvs_consent]
+  - install ounit           2.0.8    [required by qcheck, qtest]
+  - install dolog           3.0      [required by lbvs_consent]
+  - install conf-boost      1        [required by lbvs_consent]
+  - install batteries       2.8.0    [required by lbvs_consent]
+  - install bitv            1.3      [required by lbvs_consent]
+  - install qcheck          0.8      [required by lbvs_consent]
+  - install cpm             4.0.0    [required by lbvs_consent]
+  - install qtest           2.9      [required by lbvs_consent]
+  - install lbvs_consent    1.1.3
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[bitv.1.3] found in cache
+[camlzip.1.07] found in cache
+[cpm.4.0.0] found in cache
+[dolog.3.0] found in cache
+[lbvs_consent.1.1.3] found in cache
+[minicli.4.0.0] found in cache
+[minivpt.2.0.0] found in cache
+[num.1.1] found in cache
+[obuild.0.1.10] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[parmap.1.0-rc10] found in cache
+[qcheck.0.8] found in cache
+[qtest.2.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-openbabel failed at "/usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel".
+[ERROR] The compilation of conf-rdkit failed at "/usr/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \\\n              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral".
+-> installed base-bytes.base
+-> installed camlzip.1.07
+-> installed conf-pkg-config.1.1
+-> installed conf-boost.1
+-> installed conf-python-2-7.1.0
+-> installed conf-which.1
+-> installed num.1.1
+-> installed conf-autoconf.0.1
+-> installed obuild.0.1.10
+-> installed minicli.4.0.0
+-> installed minivpt.2.0.0
+-> installed ocamlbuild.0.12.0
+-> installed bitv.1.3
+-> installed dolog.3.0
+-> installed ounit.2.0.8
+-> installed parmap.1.0-rc10
+-> installed qcheck.0.8
+-> installed qtest.2.9
+-> installed batteries.2.8.0
+-> installed cpm.4.0.0
+
+#=== ERROR while compiling conf-rdkit.0.1 =====================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-rdkit.0.1
+# command              /usr/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \
+              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral
+# exit-code            1
+# env-file             ~/.opam/log/conf-rdkit-10-4eee66.env
+# output-file          ~/.opam/log/conf-rdkit-10-4eee66.out
+### output ###
+# test.cpp:2:10: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
+#  #include "rdkit/RDGeneral/versions.h"
+#           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# compilation terminated.
+# test.cpp:2:10: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
+#  #include "rdkit/RDGeneral/versions.h"
+#           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# compilation terminated.
+
+
+#=== ERROR while compiling conf-openbabel.0.1 =================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-openbabel.0.1
+# command              /usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel
+# exit-code            1
+# env-file             ~/.opam/log/conf-openbabel-10-af57d6.env
+# output-file          ~/.opam/log/conf-openbabel-10-af57d6.out
+### output ###
+# test.cpp:1:10: fatal error: openbabel/mol.h: No such file or directory
+#  #include <openbabel/mol.h>
+#           ^~~~~~~~~~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-openbabel 0.1
+| - build conf-rdkit     0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install batteries       2.8.0
+| - install bitv            1.3
+| - install camlzip         1.07
+| - install conf-autoconf   0.1
+| - install conf-boost      1
+| - install conf-pkg-config 1.1
+| - install conf-python-2-7 1.0
+| - install conf-which      1
+| - install cpm             4.0.0
+| - install dolog           3.0
+| - install minicli         4.0.0
+| - install minivpt         2.0.0
+| - install num             1.1
+| - install obuild          0.1.10
+| - install ocamlbuild      0.12.0
+| - install ounit           2.0.8
+| - install parmap          1.0-rc10
+| - install qcheck          0.8
+| - install qtest           2.9
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803012007.export"
+31 1533259187 1533259248
