@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 sociaml-tumblr-api.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for sociaml-tumblr-api.0.1.0: The following dependencies couldn't be met:
+          - sociaml-tumblr-api -> sociaml-oauth-client < 0.5.0
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=sociaml-tumblr-api.0.1.0 returned 20
+20 1533291122 1533291125

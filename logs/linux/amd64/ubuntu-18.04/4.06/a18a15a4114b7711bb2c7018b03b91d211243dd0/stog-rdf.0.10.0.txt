@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 stog-rdf.0.10.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for stog-rdf.0.10.0: The following dependencies couldn't be met:
+          - stog-rdf -> stog = 0.10.0 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=stog-rdf.0.10.0 returned 20
+20 1533290723 1533290726
