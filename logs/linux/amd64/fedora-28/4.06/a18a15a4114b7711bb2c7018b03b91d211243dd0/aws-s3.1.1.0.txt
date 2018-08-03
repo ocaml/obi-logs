@@ -116,7 +116,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: gmp-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
 The following command needs to be run through "sudo":
     yum install -y gmp-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
-Last metadata expiration check: 2:47:34 ago on Thu Aug  2 23:10:02 2018.
+Fedora 28 - x86_64 - Updates                     34 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Fri Aug  3 11:16:16 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -140,16 +141,16 @@ Install  8 Packages
 Total download size: 1.3 M
 Installed size: 3.1 M
 Downloading Packages:
-(1/8): gmp-c++-6.1.2-7.fc28.x86_64.rpm          593 kB/s |  31 kB     00:00    
-(2/8): pcre-cpp-8.42-2.fc28.x86_64.rpm          1.0 MB/s |  46 kB     00:00    
-(3/8): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.6 MB/s | 187 kB     00:00    
-(4/8): pcre-utf32-8.42-2.fc28.x86_64.rpm        2.8 MB/s | 184 kB     00:00    
-(5/8): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.9 MB/s | 193 kB     00:00    
-(6/8): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 3.2 MB/s |  85 kB     00:00    
-(7/8): pcre-devel-8.42-2.fc28.x86_64.rpm        2.5 MB/s | 550 kB     00:00    
-(8/8): zlib-devel-1.2.11-8.fc28.x86_64.rpm      1.9 MB/s |  55 kB     00:00    
+(1/8): gmp-c++-6.1.2-7.fc28.x86_64.rpm          410 kB/s |  31 kB     00:00    
+(2/8): pcre-devel-8.42-2.fc28.x86_64.rpm        5.0 MB/s | 550 kB     00:00    
+(3/8): pcre-utf16-8.42-2.fc28.x86_64.rpm        9.4 MB/s | 193 kB     00:00    
+(4/8): pcre-cpp-8.42-2.fc28.x86_64.rpm          759 kB/s |  46 kB     00:00    
+(5/8): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.2 MB/s | 187 kB     00:00    
+(6/8): pcre-utf32-8.42-2.fc28.x86_64.rpm        8.2 MB/s | 184 kB     00:00    
+(7/8): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 2.5 MB/s |  85 kB     00:00    
+(8/8): zlib-devel-1.2.11-8.fc28.x86_64.rpm      856 kB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           853 kB/s | 1.3 MB     00:01     
+Total                                           1.0 MB/s | 1.3 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -512,8 +513,8 @@ The following actions will be performed:
 -> installed ppx_expect.v0.9.0
 -> installed zarith.1.7
 -> installed cryptokit.1.13
--> installed ppx_bin_prot.v0.9.0
 -> installed nocrypto.0.5.4-1
+-> installed ppx_bin_prot.v0.9.0
 -> installed ppx_jane.v0.9.0
 -> installed core_kernel.v0.9.1
 -> installed async_kernel.v0.9.0
@@ -544,9 +545,6 @@ The following actions will be performed:
 #     ocamlopt src/core_extended.{cmx,o}
 #         bash src/config_ext.h
 #       ocamlc src/extended_int_stubs.o
-#       ocamlc src/posix_clock_stubs.o
-#       ocamlc src/malloc_stubs.o
-#       ocamlc src/unix_pseudo_terminal_stubs.o
 #       ocamlc src/extended_unix_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
 # extended_unix_stubs.c: In function 'quota_query':
@@ -726,5 +724,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803015741.export"
-31 1533261451 1533261734
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803111630.export"
+31 1533294972 1533295288

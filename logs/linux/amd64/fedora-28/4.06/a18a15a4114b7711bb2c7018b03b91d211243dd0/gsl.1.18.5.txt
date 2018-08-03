@@ -34,7 +34,8 @@ Install m4 if you need a macro processor.
 # The following new OS packages need to be installed: gsl-devel
 The following command needs to be run through "sudo":
     yum install -y gsl-devel
-Last metadata expiration check: 2:07:32 ago on Thu Aug  2 23:10:02 2018.
+Fedora 28 - x86_64 - Updates                     13 MB/s |  21 MB     00:01    
+Last metadata expiration check: 0:00:08 ago on Fri Aug  3 10:46:36 2018.
 Dependencies resolved.
 ================================================================================
  Package                 Arch         Version               Repository     Size
@@ -54,13 +55,13 @@ Install  5 Packages
 Total download size: 2.9 M
 Installed size: 8.3 M
 Downloading Packages:
-(1/5): automake-1.15.1-5.fc28.noarch.rpm        2.6 MB/s | 706 kB     00:00    
-(2/5): gsl-devel-2.4-3.fc27.x86_64.rpm          1.8 MB/s | 563 kB     00:00    
-(3/5): gsl-2.4-3.fc27.x86_64.rpm                3.2 MB/s | 1.0 MB     00:00    
-(4/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 728 kB/s |  23 kB     00:00    
-(5/5): autoconf-2.69-27.fc28.noarch.rpm         6.4 MB/s | 710 kB     00:00    
+(1/5): gsl-devel-2.4-3.fc27.x86_64.rpm          5.5 MB/s | 563 kB     00:00    
+(2/5): automake-1.15.1-5.fc28.noarch.rpm        6.3 MB/s | 706 kB     00:00    
+(3/5): gsl-2.4-3.fc27.x86_64.rpm                7.7 MB/s | 1.0 MB     00:00    
+(4/5): autoconf-2.69-27.fc28.noarch.rpm          13 MB/s | 710 kB     00:00    
+(5/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 290 kB/s |  23 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           2.2 MB/s | 2.9 MB     00:01     
+Total                                           1.6 MB/s | 2.9 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -115,8 +116,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/gsl.1.18.5
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/gsl-9-be72be.env
-# output-file          ~/.opam/log/gsl-9-be72be.out
+# env-file             ~/.opam/log/gsl-10-be72be.env
+# output-file          ~/.opam/log/gsl-10-be72be.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -310,5 +311,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803011740.export"
-31 1533259051 1533259076
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803104653.export"
+31 1533293192 1533293230

@@ -57,7 +57,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: openssl-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y openssl-devel pkgconfig
-Last metadata expiration check: 2:50:29 ago on Thu Aug  2 23:10:02 2018.
+Fedora 28 - x86_64 - Updates                     42 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:06 ago on Fri Aug  3 11:03:17 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -85,23 +86,20 @@ Install  12 Packages
 Total download size: 4.1 M
 Installed size: 7.6 M
 Downloading Packages:
-[MIRROR] libkadm5-1.16.1-13.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/l/libkadm5-1.16.1-13.fc28.x86_64.rpm
-[MIRROR] krb5-devel-1.16.1-13.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/k/krb5-devel-1.16.1-13.fc28.x86_64.rpm
 (1/12): libkadm5-1.16.1-13.fc28.x86_64.rpm      1.7 MB/s | 182 kB     00:00    
-[MIRROR] zlib-devel-1.2.11-8.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/z/zlib-devel-1.2.11-8.fc28.x86_64.rpm
-(2/12): openssl-devel-1.1.0h-3.fc28.x86_64.rpm   15 MB/s | 1.9 MB     00:00    
-(3/12): zlib-devel-1.2.11-8.fc28.x86_64.rpm     1.9 MB/s |  55 kB     00:00    
-(4/12): krb5-devel-1.16.1-13.fc28.x86_64.rpm    3.8 MB/s | 545 kB     00:00    
-(5/12): libselinux-devel-2.8-1.fc28.x86_64.rpm  7.9 MB/s | 197 kB     00:00    
-(6/12): libsepol-devel-2.8-1.fc28.x86_64.rpm    4.6 MB/s |  84 kB     00:00    
-(7/12): keyutils-libs-devel-1.5.10-6.fc28.x86_6 2.0 MB/s |  47 kB     00:00    
-(8/12): libcom_err-devel-1.44.2-0.fc28.x86_64.r 641 kB/s |  37 kB     00:00    
-(9/12): libverto-devel-0.3.0-5.fc28.x86_64.rpm  594 kB/s |  17 kB     00:00    
-(10/12): pcre2-utf16-10.31-7.fc28.x86_64.rpm     15 MB/s | 221 kB     00:00    
-(11/12): pcre2-devel-10.31-7.fc28.x86_64.rpm     23 MB/s | 589 kB     00:00    
+(2/12): zlib-devel-1.2.11-8.fc28.x86_64.rpm     4.6 MB/s |  55 kB     00:00    
+(3/12): krb5-devel-1.16.1-13.fc28.x86_64.rpm    4.4 MB/s | 545 kB     00:00    
+(4/12): libcom_err-devel-1.44.2-0.fc28.x86_64.r 3.1 MB/s |  37 kB     00:00    
+(5/12): openssl-devel-1.1.0h-3.fc28.x86_64.rpm   13 MB/s | 1.9 MB     00:00    
+(6/12): libselinux-devel-2.8-1.fc28.x86_64.rpm  6.8 MB/s | 197 kB     00:00    
+(7/12): libsepol-devel-2.8-1.fc28.x86_64.rpm    3.0 MB/s |  84 kB     00:00    
+(8/12): keyutils-libs-devel-1.5.10-6.fc28.x86_6 1.8 MB/s |  47 kB     00:00    
+(9/12): pcre2-utf16-10.31-7.fc28.x86_64.rpm     9.5 MB/s | 221 kB     00:00    
+(10/12): libverto-devel-0.3.0-5.fc28.x86_64.rpm 352 kB/s |  17 kB     00:00    
+(11/12): pcre2-devel-10.31-7.fc28.x86_64.rpm     13 MB/s | 589 kB     00:00    
 (12/12): pcre2-utf32-10.31-7.fc28.x86_64.rpm     10 MB/s | 213 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           2.6 MB/s | 4.1 MB     00:01     
+Total                                           3.1 MB/s | 4.1 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -300,17 +298,17 @@ The following actions will be performed:
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed astring.0.8.3
--> installed cmdliner.1.0.2
--> installed uchar.0.0.2
 -> installed ppxlib.0.3.0
+-> installed cmdliner.1.0.2
 -> installed fieldslib.v0.11.0
--> installed fmt.0.8.5
--> installed ppx_fields_conv.v0.11.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
--> installed logs.0.6.2
--> installed uutf.1.0.1
+-> installed ppx_fields_conv.v0.11.0
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
 -> installed uri.1.9.7
+-> installed uutf.1.0.1
+-> installed logs.0.6.2
 -> installed jsonm.1.0.1
 -> installed conduit.1.1.0
 -> installed cohttp.1.0.0
@@ -663,5 +661,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803020037.export"
-31 1533261626 1533261988
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803110329.export"
+31 1533294192 1533294414

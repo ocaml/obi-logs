@@ -75,7 +75,7 @@ The following actions will be performed:
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
 # --- Checking whether ocamlopt can create cmxs plugins... (yes)
 # --- Checking if ocamldep understands -modules... (yes)
-# *** omake: finished reading OMakefiles (0.15 sec)
+# *** omake: finished reading OMakefiles (0.16 sec)
 # - build runtime random_gen.cmi
 # + ocamlfind ocamlc -package dynlink,camlp4,extlib,bytes,camlp4.macro -w +a-3-4-32-44-48 -warn-error +a-3-4-6-7-9-18-27..29-32..99 -bin-annot -syntax camlp4o -ppopt -DLITTLE_ENDIAN -for-pack Extprot -g -g -I . -c random_gen.ml
 # File "random_gen.ml", line 37, characters 0-2194:
@@ -87,8 +87,8 @@ The following actions will be performed:
 #          val rand_string : int t -> string t
 #        File "random_gen.ml", line 17, characters 2-37: Expected declaration
 #        File "random_gen.ml", line 64, characters 6-17: Actual declaration
-# *** omake: 130/218 targets are up to date
-# *** omake: failed (0.87 sec, 33/33 scans, 18/35 rules, 95/131 digests)
+# *** omake: 126/218 targets are up to date
+# *** omake: failed (0.81 sec, 33/33 scans, 17/31 rules, 91/127 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    runtime/random_gen.cmi
 #       depends on: runtime/random_gen.ml
@@ -116,5 +116,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803013033.export"
-31 1533259831 1533259935
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803112858.export"
+31 1533295735 1533295843

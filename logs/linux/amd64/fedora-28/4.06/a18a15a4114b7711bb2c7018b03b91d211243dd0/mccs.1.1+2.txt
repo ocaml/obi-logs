@@ -36,7 +36,8 @@ package perl-Pod-Html is not installed
 # The following new OS packages need to be installed: glpk perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y glpk perl-Pod-Html
-Last metadata expiration check: 2:46:41 ago on Thu Aug  2 23:10:02 2018.
+Fedora 28 - x86_64 - Updates                     45 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:06 ago on Fri Aug  3 11:02:59 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch         Version                   Repository     Size
@@ -58,15 +59,15 @@ Install  7 Packages
 Total download size: 8.9 M
 Installed size: 33 M
 Downloading Packages:
-(1/7): glpk-4.61-4.fc28.x86_64.rpm              5.9 MB/s | 408 kB     00:00    
-(2/7): suitesparse-4.4.6-11.fc28.x86_64.rpm      12 MB/s | 1.0 MB     00:00    
-(3/7): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 848 kB/s |  85 kB     00:00    
-(4/7): tbb-2018.5-1.fc28.x86_64.rpm             1.3 MB/s | 158 kB     00:00    
-(5/7): libquadmath-8.1.1-5.fc28.x86_64.rpm      3.1 MB/s | 186 kB     00:00    
-(6/7): libgfortran-8.1.1-5.fc28.x86_64.rpm      3.4 MB/s | 656 kB     00:00    
-(7/7): atlas-3.10.3-5.fc28.x86_64.rpm           9.6 MB/s | 6.4 MB     00:00    
+(1/7): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 807 kB/s |  85 kB     00:00    
+(2/7): tbb-2018.5-1.fc28.x86_64.rpm              10 MB/s | 158 kB     00:00    
+(3/7): glpk-4.61-4.fc28.x86_64.rpm              2.2 MB/s | 408 kB     00:00    
+(4/7): suitesparse-4.4.6-11.fc28.x86_64.rpm     4.9 MB/s | 1.0 MB     00:00    
+(5/7): libquadmath-8.1.1-5.fc28.x86_64.rpm      2.3 MB/s | 186 kB     00:00    
+(6/7): atlas-3.10.3-5.fc28.x86_64.rpm           6.2 MB/s | 6.4 MB     00:01    
+(7/7): libgfortran-8.1.1-5.fc28.x86_64.rpm      602 kB/s | 656 kB     00:01    
 --------------------------------------------------------------------------------
-Total                                           4.8 MB/s | 8.9 MB     00:01     
+Total                                           3.9 MB/s | 8.9 MB     00:02     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -140,8 +141,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/mccs.1.1+2
 # command              ~/.opam/4.06/bin/jbuilder build -p mccs
 # exit-code            1
-# env-file             ~/.opam/log/mccs-11-4aef26.env
-# output-file          ~/.opam/log/mccs-11-4aef26.out
+# env-file             ~/.opam/log/mccs-10-4aef26.env
+# output-file          ~/.opam/log/mccs-10-4aef26.out
 ### output ###
 #          gcc src/glpk_solver.o (exit 1)
 # (cd _build/default/src && /usr/bin/gcc -I /home/opam/.opam/4.06/lib/ocaml -O2 -fno-strict-aliasing -fwrapv -fPIC -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cudf -I /home/opam/.opam/4.06/lib/extlib -g -I . -std=c++11 -o glpk_solver.o -c glpk_solver.cpp)
@@ -169,5 +170,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803015652.export"
-31 1533261399 1533261426
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803110316.export"
+31 1533294176 1533294209
