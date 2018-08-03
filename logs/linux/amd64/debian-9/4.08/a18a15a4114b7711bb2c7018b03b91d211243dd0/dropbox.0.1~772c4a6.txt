@@ -1,0 +1,47 @@
+$ opam depext -iy -j 2 dropbox.0.1~772c4a6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for dropbox.0.1~772c4a6: The following dependencies couldn't be met:
+          - dropbox -> cohttp < 0.99 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> uri < 1.5.0 -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> uri < 1.5.0 -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> uri < 1.5.0 -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - dropbox -> cohttp < 0.99 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> pa_fields_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> fieldslib < 113.01.00 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - dropbox -> cohttp < 0.99 -> fieldslib < 113.01.00 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> fieldslib < 113.01.00 -> type_conv (!= 108.07.00 & != 108.08.00 & != 109.13.00 & < 109.20.00) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> stdio < v0.10 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ppx_core < v0.10 -> stdio < v0.10 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> ppx_driver < v0.10.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - dropbox -> cohttp < 0.99 -> conduit < 0.16.0 -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=dropbox.0.1~772c4a6 returned 20
+20 1533251835 1533251838

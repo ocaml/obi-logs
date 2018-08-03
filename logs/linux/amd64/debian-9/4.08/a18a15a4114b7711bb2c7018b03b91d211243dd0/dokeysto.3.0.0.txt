@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 dokeysto.3.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for dokeysto.3.0.0: The following dependencies couldn't be met:
+          - dokeysto -> extunix -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - dokeysto -> extunix -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - dokeysto -> extunix -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=dokeysto.3.0.0 returned 20
+20 1533252212 1533252214

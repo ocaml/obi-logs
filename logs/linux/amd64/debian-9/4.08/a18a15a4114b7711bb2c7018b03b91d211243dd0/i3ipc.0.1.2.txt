@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 i3ipc.0.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for i3ipc.0.1.2: The following dependencies couldn't be met:
+          - i3ipc -> ppx_deriving_yojson -> ppx_deriving < 5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - i3ipc -> ppx_deriving_yojson -> ppx_deriving < 5.0 -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - i3ipc -> ppx_deriving_yojson -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=i3ipc.0.1.2 returned 20
+20 1533252960 1533252963

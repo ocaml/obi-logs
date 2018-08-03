@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 bes.0.9.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bes.0.9.3: The following dependencies couldn't be met:
+          - bes -> ospec >= 0.3.0 -> ocaml >= broken
+              no matching version
+          - bes -> ospec >= 0.3.0 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - bes -> ospec >= 0.3.0 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=bes.0.9.3 returned 20
+20 1533253471 1533253473
