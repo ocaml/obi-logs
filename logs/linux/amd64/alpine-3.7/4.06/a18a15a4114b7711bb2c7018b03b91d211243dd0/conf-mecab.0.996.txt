@@ -1,0 +1,34 @@
+$ opam depext -iy -j 2 conf-mecab.0.996
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-mecab 0.996
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-mecab failed at "/usr/bin/cc test.c -I/usr/local/include -L/usr/local/lib -lmecab".
+
+#=== ERROR while compiling conf-mecab.0.996 ===================================#
+# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-mecab.0.996
+# command              /usr/bin/cc test.c -I/usr/local/include -L/usr/local/lib -lmecab
+# exit-code            1
+# env-file             ~/.opam/log/conf-mecab-13-9b8556.env
+# output-file          ~/.opam/log/conf-mecab-13-9b8556.out
+### output ###
+# test.c:1:19: fatal error: mecab.h: No such file or directory
+#  #include <mecab.h>
+#                    ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-mecab 0.996
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533267001 1533267004

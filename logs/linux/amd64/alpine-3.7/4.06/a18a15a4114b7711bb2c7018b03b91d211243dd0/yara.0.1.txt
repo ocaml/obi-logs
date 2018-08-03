@@ -1,0 +1,19 @@
+$ opam depext -iy -j 2 yara.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+libffi-dev
+libyara-dev
+m4
+pkgconfig
+m4
+pkgconf
+# The following new OS packages need to be installed: libffi-dev libyara-dev
+The following command needs to be run through "sudo":
+    apk add libffi-dev libyara-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+ERROR: unsatisfiable constraints:
+  libyara-dev (missing):
+    required by: world[libyara-dev]
+OS package installation failed
+1 1533266034 1533266036

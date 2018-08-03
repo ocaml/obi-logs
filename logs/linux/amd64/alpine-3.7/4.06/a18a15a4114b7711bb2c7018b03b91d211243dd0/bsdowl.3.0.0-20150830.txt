@@ -1,0 +1,16 @@
+$ opam depext -iy -j 2 bsdowl.3.0.0-20150830
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+bmake
+m4
+m4
+# The following new OS packages need to be installed: bmake
+The following command needs to be run through "sudo":
+    apk add bmake
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+ERROR: unsatisfiable constraints:
+  bmake (missing):
+    required by: world[bmake]
+OS package installation failed
+1 1533267050 1533267053

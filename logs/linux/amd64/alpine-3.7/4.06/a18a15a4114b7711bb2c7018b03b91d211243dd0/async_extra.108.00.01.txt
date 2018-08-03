@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 async_extra.108.00.01
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for async_extra.108.00.01: The following dependencies couldn't be met:
+          - async_extra -> async_core < 108.00.02 -> core < 108.00.02
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=async_extra.108.00.01 returned 20
+20 1533266008 1533266011
