@@ -897,13 +897,13 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/owl.0.2.9
 # command              ~/.opam/4.07/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.07 --bindir /home/opam/.opam/4.07/bin
 # exit-code            1
-# env-file             ~/.opam/log/owl-11-dcea06.env
-# output-file          ~/.opam/log/owl-11-dcea06.out
+# env-file             ~/.opam/log/owl-10-dcea06.env
+# output-file          ~/.opam/log/owl-10-dcea06.out
 ### output ###
 # ocamlfind: Package `ocaml-compiler-libs' not found
-# W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/opam/.opam/4.07/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-43b055.txt'' terminated with error code 2
+# W: Field 'pkg_ocaml_compiler_libs' is not set: Command ''/home/opam/.opam/4.07/bin/ocamlfind' query -format %d ocaml-compiler-libs > '/tmp/oasis-913c8f.txt'' terminated with error code 2
 # ocamlfind: Package `ocaml-compiler-libs.toplevel' not found
-# W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/opam/.opam/4.07/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-6a775a.txt'' terminated with error code 2
+# W: Field 'pkg_ocaml_compiler_libs_toplevel' is not set: Command ''/home/opam/.opam/4.07/bin/ocamlfind' query -format %d ocaml-compiler-libs.toplevel > '/tmp/oasis-1e4d94.txt'' terminated with error code 2
 # E: Cannot find findlib package ocaml-compiler-libs
 # E: Cannot find findlib package ocaml-compiler-libs.toplevel
 # E: Failure("2 configuration errors")
@@ -947,5 +947,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180803063244.export"
-31 1533277921 1533278118
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804013644.export"
+31 1533346555 1533346805

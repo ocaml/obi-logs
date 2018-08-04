@@ -92,8 +92,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/radare2.0.0.1
 # command              ~/.opam/4.07/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/radare2-11-e1fae6.env
-# output-file          ~/.opam/log/radare2-11-e1fae6.out
+# env-file             ~/.opam/log/radare2-12-e1fae6.env
+# output-file          ~/.opam/log/radare2-12-e1fae6.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -package yojson -package unix -modules src/r2.mli > src/r2.mli.depends
@@ -138,5 +138,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180803062456.export"
-31 1533277489 1533277550
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804014823.export"
+31 1533347296 1533347357
