@@ -46,7 +46,7 @@ The following actions will be performed:
 [ERROR] The compilation of containers failed at "/usr/bin/make build".
 
 #=== ERROR while compiling containers.0.16.1 ==================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.07/.opam-switch/build/containers.0.16.1
 # command              /usr/bin/make build
 # exit-code            2
@@ -225,14 +225,8 @@ The following actions will be performed:
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -shared -I src/core src/core/containers.cmxa src/core/CCVector.cmx src/core/CCPrint.cmx src/core/CCError.cmx src/core/CCHeap.cmx src/core/CCList.cmx src/core/CCOpt.cmx src/core/CCPair.cmx src/core/CCFun.cmx src/core/CCHash.cmx src/core/CCInt.cmx src/core/CCBool.cmx src/core/CCFloat.cmx src/core/CCArray.cmx src/core/CCRef.cmx src/core/CCSet.cmx src/core/CCOrd.cmx src/core/CCRandom.cmx src/core/CCString.cmx src/core/CCHashtbl.cmx src/core/CCMap.cmx src/core/CCFormat.cmx src/core/CCIO.cmx src/core/CCInt64.cmx src/core/CCChar.cmx src/core/CCResult.cmx src/core/containers.cmx -o src/core/containers.cmxs
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -package bytes -modules src/io/containers_io_is_deprecated.ml > src/io/containers_io_is_deprecated.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/io -o src/io/containers_io_is_deprecated.cmo src/io/containers_io_is_deprecated.ml
-# + /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/io -o src/io/containers_io_is_deprecated.cmo src/io/containers_io_is_deprecated.ml
-# File "src/io/containers_io_is_deprecated.ml", line 1, characters 0-313:
-# Warning 50: unattached documentation comment (ignored)
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -a -I src/io src/io/containers_io_is_deprecated.cmo -o src/io/containers_io.cma
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/io -o src/io/containers_io_is_deprecated.cmx src/io/containers_io_is_deprecated.ml
-# + /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -short-paths -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/io -o src/io/containers_io_is_deprecated.cmx src/io/containers_io_is_deprecated.ml
-# File "src/io/containers_io_is_deprecated.ml", line 1, characters 0-313:
-# Warning 50: unattached documentation comment (ignored)
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -a -I src/io src/io/containers_io_is_deprecated.cmx -o src/io/containers_io.cmxa
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -shared -I src/io src/io/containers_io.cmxa src/io/containers_io_is_deprecated.cmx -o src/io/containers_io.cmxs
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -package bytes -package unix -modules src/unix/CCUnix.mli > src/unix/CCUnix.mli.depends
@@ -479,5 +473,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804012231.export"
-31 1533345748 1533345808
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804205008.export"
+31 1533415806 1533415860

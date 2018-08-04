@@ -143,14 +143,14 @@ The following actions will be performed:
 -> installed sexplib0.v0.11.0
 -> installed ocplib-endian.1.0
 -> installed parsexp.v0.11.0
+-> installed base.v0.11.1
 -> installed sexplib.v0.11.0
 -> installed spawn.v0.12.0
--> installed xml-light.2.4
--> installed base.v0.11.1
--> installed amqp-client.2.0.2
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
 -> installed typerep.v0.11.0
+-> installed xml-light.2.4
+-> installed amqp-client.2.0.2
 -> installed ppxlib.0.3.0
 -> installed fieldslib.v0.11.0
 -> installed ppx_compare.v0.11.1
@@ -191,7 +191,7 @@ The following actions will be performed:
 [ERROR] The compilation of amqp-client-async failed at "/home/opam/.opam/4.07/bin/jbuilder build -p amqp-client-async -j 71".
 
 #=== ERROR while compiling amqp-client-async.2.0.2 ============================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.07/.opam-switch/build/amqp-client-async.2.0.2
 # command              ~/.opam/4.07/bin/jbuilder build -p amqp-client-async -j 71
 # exit-code            1
@@ -200,7 +200,7 @@ The following actions will be performed:
 ### output ###
 #     ocamldep async/src/.amqp_client_async.objs/spec.ml.d (exit 2)
 # (cd _build/default && /home/opam/.opam/4.07/bin/ocamldep.opt -modules -impl async/src/spec.ml) > _build/default/async/src/.amqp_client_async.objs/spec.ml.d
-# File "¿Èı‚U        ", line 47216639647459, characters 2-3:
+# File "spec/gen_spec.ml", line 394, characters 2-3:
 # Error: Syntax error
 
 
@@ -273,5 +273,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804014046.export"
-31 1533346844 1533347113
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804203221.export"
+31 1533414739 1533415013

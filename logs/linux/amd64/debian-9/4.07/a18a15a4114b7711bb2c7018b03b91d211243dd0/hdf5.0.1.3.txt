@@ -86,7 +86,7 @@ The following actions will be performed:
 [ERROR] The compilation of hdf5 failed at "/usr/bin/make".
 
 #=== ERROR while compiling hdf5.0.1.3 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.07/.opam-switch/build/hdf5.0.1.3
 # command              /usr/bin/make
 # exit-code            2
@@ -178,7 +178,7 @@ The following actions will be performed:
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/raw/h5tb.ml > lib/raw/h5tb.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/raw/h5t.ml > lib/raw/h5t.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/raw/h5z.ml > lib/raw/h5z.ml.depends
-# cppo -V OCAML:4.07.0+beta2 -o lib/raw/h5_raw.ml lib/raw/h5_raw.cppo.ml
+# cppo -V OCAML:4.07.0 -o lib/raw/h5_raw.ml lib/raw/h5_raw.cppo.ml
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/raw/h5_raw.ml > lib/raw/h5_raw.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/raw/hid.ml > lib/raw/hid.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/raw/hsize.ml > lib/raw/hsize.ml.depends
@@ -224,7 +224,7 @@ The following actions will be performed:
 # touch lib/raw/hdf5_raw.mli  ; if  /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -pack -g -annot -bin-annot -I lib/raw lib/raw/hid.cmx lib/raw/h5i.cmx lib/raw/h5_raw.cmx lib/raw/h5o.cmx lib/raw/h5t.cmx lib/raw/h5a.cmx lib/raw/hsize.cmx lib/raw/h5d.cmx lib/raw/h5f.cmx lib/raw/h5l.cmx lib/raw/h5g.cmx lib/raw/h5lt.cmx lib/raw/h5z.cmx lib/raw/layout.cmx lib/raw/h5p.cmx lib/raw/h5r.cmx lib/raw/h5s.cmx lib/raw/h5tb.cmx -o lib/raw/hdf5_raw.cmx  ; then  rm -f lib/raw/hdf5_raw.mli  ; else  rm -f lib/raw/hdf5_raw.mli  ; exit 1; fi
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -a -cclib -lhdf5_raw_stubs -cclib -L/usr/lib/x86_64-linux-gnu/hdf5/serial -cclib -lhdf5 -cclib -lhdf5_hl -I lib/raw lib/raw/hdf5_raw.cmx -o lib/raw/hdf5_raw.cmxa
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlopt -shared -I lib/raw -I lib/raw lib/raw/hdf5_raw.cmxa lib/raw/hdf5_raw.cmx -o lib/raw/hdf5_raw.cmxs
-# cppo -V OCAML:4.07.0+beta2 -o lib/ppx/ppx_h5struct.ml lib/ppx/ppx_h5struct.cppo.ml
+# cppo -V OCAML:4.07.0 -o lib/ppx/ppx_h5struct.ml lib/ppx/ppx_h5struct.cppo.ml
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -package compiler-libs.common -modules lib/ppx/ppx_h5struct.ml > lib/ppx/ppx_h5struct.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package compiler-libs.common -I lib/ppx -o lib/ppx/ppx_h5struct.cmo lib/ppx/ppx_h5struct.ml
 # + /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package compiler-libs.common -I lib/ppx -o lib/ppx/ppx_h5struct.cmo lib/ppx/ppx_h5struct.ml
@@ -244,13 +244,13 @@ The following actions will be performed:
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/caml/float_intf.ml > lib/caml/float_intf.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/raw -I lib/caml -I lib/raw -o lib/caml/float_intf.cmo lib/caml/float_intf.ml
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/raw -I lib/caml -I lib/raw -o lib/caml/h5.cmi lib/caml/h5.mli
-# cppo -V OCAML:4.07.0+beta2 -o lib/caml/h5.ml lib/caml/h5.cppo.ml
+# cppo -V OCAML:4.07.0 -o lib/caml/h5.ml lib/caml/h5.cppo.ml
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/caml/h5.ml > lib/caml/h5.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/caml/struct.mli > lib/caml/struct.mli.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/caml/struct_intf.ml > lib/caml/struct_intf.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/raw -I lib/caml -I lib/raw -o lib/caml/struct_intf.cmo lib/caml/struct_intf.ml
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/raw -I lib/caml -I lib/raw -o lib/caml/struct.cmi lib/caml/struct.mli
-# cppo -V OCAML:4.07.0+beta2 -o lib/caml/struct.ml lib/caml/struct.cppo.ml
+# cppo -V OCAML:4.07.0 -o lib/caml/struct.ml lib/caml/struct.cppo.ml
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/caml/struct.ml > lib/caml/struct.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules lib/caml/type.ml > lib/caml/type.ml.depends
 # /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib/raw -I lib/caml -I lib/raw -o lib/caml/field.cmo lib/caml/field.ml
@@ -283,5 +283,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804013338.export"
-31 1533346411 1533346441
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804203042.export"
+31 1533414634 1533414663

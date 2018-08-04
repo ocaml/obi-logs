@@ -6,32 +6,30 @@ $ opam depext -iy -j 2 datakit.0.12.0
               base of this switch (use `--unlock-base' to force)
           - datakit -> datakit-server-9p >= 0.12.0 -> sexplib -> parsexp >= v0.11 -> jbuilder >= 1.0+beta18.1
           - datakit -> jbuilder < 1.0+beta18
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> stdio >= v0.11 -> jbuilder >= 1.0+beta18.1
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> jbuilder >= 1.0+beta18.1
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> base -> ocaml < 4.07.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> base -> ocaml < 4.07.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> base -> sexplib0
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> ocaml < 4.06.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> configurator -> base -> sexplib0 -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> mirage-channel-lwt -> io-page -> ocaml < 4.06.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> sexplib >= 113.24.00 -> parsexp >= v0.11 -> jbuilder >= 1.0+beta18.1
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> sexplib >= 113.24.00 -> ocaml < 4.06.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> sexplib >= 113.24.00 -> parsexp >= v0.11 -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> sexplib >= 113.24.00 -> ocaml < 4.06.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> protocol-9p (= 0.11.0 | = 0.12.0) -> sexplib >= 113.24.00 -> jbuilder >= 1.0+beta18.1
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> ppx_sexp_conv -> base -> sexplib0
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> ppx_sexp_conv -> base -> ocaml < 4.07.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> protocol-9p (= 0.11.0 | = 0.12.0) -> sexplib >= 113.24.00 -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> ppx_sexp_conv -> base -> sexplib0 -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> ppx_sexp_conv -> base -> ocaml < 4.07.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> ppx_sexp_conv -> ocaml < 4.03
+          - datakit -> protocol-9p-unix < 0.12.1 -> ppx_sexp_conv -> ocaml < 4.03
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> ppx_sexp_conv -> ppx_core < v0.11 -> ocaml < 4.06.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> ppx_sexp_conv -> ppx_core < v0.11 -> ocaml < 4.06.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> ppx_sexp_conv -> ppx_core < v0.11 -> base < v0.11 -> ocaml < 4.07.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> ppx_sexp_conv -> ppx_core < v0.11 -> base < v0.11 -> ocaml < 4.07.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> ppx_sexp_conv -> sexplib0
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> io-page-unix >= 2.0.0 -> configurator -> stdio >= v0.11 -> jbuilder >= 1.0+beta18.1
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> io-page-unix >= 2.0.0 -> configurator -> jbuilder >= 1.0+beta18.1
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> io-page-unix >= 2.0.0 -> configurator -> base -> ocaml < 4.07.0
+          - datakit -> protocol-9p-unix < 0.12.1 -> ppx_sexp_conv -> sexplib0 -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> io-page-unix >= 2.0.0 -> configurator -> jbuilder >= 1.0+beta18.1
+          - datakit -> protocol-9p-unix < 0.12.1 -> io-page-unix >= 2.0.0 -> configurator -> base -> ocaml < 4.07.0
               base of this switch (use `--unlock-base' to force)
-          - datakit -> protocol-9p-unix (>= 0.11.0 & < 0.12.1) -> io-page-unix >= 2.0.0 -> configurator -> base -> sexplib0
+          - datakit -> protocol-9p-unix < 0.12.1 -> io-page-unix >= 2.0.0 -> configurator -> base -> sexplib0 -> jbuilder >= 1.0+beta18.1
         Your request can't be satisfied:
           - No available version of jbuilder satisfies the constraints
           - configurator >= v0.11.0 is in conflict with jbuilder = 1.0+beta19
@@ -39,4 +37,4 @@ $ opam depext -iy -j 2 datakit.0.12.0
 
 
 Command failed: opam list --readonly --external  --resolve=datakit.0.12.0 returned 20
-20 1533347059 1533347063
+20 1533415003 1533415007

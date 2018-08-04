@@ -21,7 +21,7 @@ The following actions will be performed:
 [ERROR] The compilation of phox failed at "/usr/bin/make".
 
 #=== ERROR while compiling phox.0.89.170929 ===================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.07/.opam-switch/build/phox.0.89.170929
 # command              /usr/bin/make
 # exit-code            2
@@ -64,7 +64,7 @@ The following actions will be performed:
 # echo 'let default_path = "/usr/local/lib/phox"' >> version.ml;\
 # echo "let delim = ':'" >> version.ml;\
 # 
-# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli affichage.mli basic.mli flags.mli interact.mli data_info.mli types.mli oldeduction.mli new_cmd.mli bindlib.mli tex.mli safe_add.mli majlistes.mli typing.mli local.mli lexer.mli module.mli option.mli compile.mli parser.mli type_check.mli version.mli data.mli data_base.mli undo.mli typespoids.mli main.mli prover.mli eval.mli hilbert.mli parse_lambda.mli pattern.mli splitting.mli lambda.mli files.mli typunif.mli resolution.mli parse_cmd.mli lambda_util.mli poids.mli rewrite.mli inductive.mli myhashtbl.mli af2_basic.mli restart.mli ptypes.mli print.mli cache.mli proof_general.mli > .depend
+# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli basic.mli module.mli data.mli flags.mli data_info.mli restart.mli oldeduction.mli myhashtbl.mli bindlib.mli tex.mli lambda_util.mli safe_add.mli majlistes.mli typing.mli local.mli option.mli compile.mli version.mli data_base.mli undo.mli lexer.mli parser.mli pattern.mli ptypes.mli interact.mli prover.mli eval.mli hilbert.mli parse_lambda.mli typespoids.mli splitting.mli new_cmd.mli files.mli typunif.mli resolution.mli main.mli affichage.mli poids.mli lambda.mli rewrite.mli inductive.mli af2_basic.mli types.mli print.mli parse_cmd.mli type_check.mli proof_general.mli cache.mli > .depend
 # ocamlfind ocamlc -g -pp camlp4o -rectypes -c version.mli
 # ocamlfind ocamlopt -pp camlp4o -rectypes -c version.ml
 # ocamlfind ocamlc -g -pp camlp4o -rectypes -c restart.mli
@@ -104,5 +104,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804013337.export"
-31 1533346414 1533346593
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804204941.export"
+31 1533415779 1533415894

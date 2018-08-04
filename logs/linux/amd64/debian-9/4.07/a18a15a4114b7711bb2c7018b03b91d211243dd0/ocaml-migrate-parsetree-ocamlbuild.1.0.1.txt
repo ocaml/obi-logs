@@ -24,16 +24,16 @@ The following actions will be performed:
 [ERROR] The compilation of ocaml-migrate-parsetree-ocamlbuild failed at "/home/opam/.opam/4.07/bin/jbuilder build -p ocaml-migrate-parsetree-ocamlbuild -j 71".
 
 #=== ERROR while compiling ocaml-migrate-parsetree-ocamlbuild.1.0.1 ===========#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.07.0+beta2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.07/.opam-switch/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1
 # command              ~/.opam/4.07/bin/jbuilder build -p ocaml-migrate-parsetree-ocamlbuild -j 71
 # exit-code            1
-# env-file             ~/.opam/log/ocaml-migrate-parsetree-ocamlbuild-11-01feda.env
-# output-file          ~/.opam/log/ocaml-migrate-parsetree-ocamlbuild-11-01feda.out
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-ocamlbuild-12-01feda.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-ocamlbuild-12-01feda.out
 ### output ###
 #        ocaml (internal) (exit 1)
 # (cd src && /home/opam/.opam/4.07/bin/ocaml -I +compiler-libs /home/opam/.opam/4.07/.opam-switch/build/ocaml-migrate-parsetree-ocamlbuild.1.0.1/_build/.jbuilds/default/src/jbuild.ml)
-# Unkown OCaml version 4.07.0+beta2
+# Unkown OCaml version 4.07.0
 
 
 
@@ -49,5 +49,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804013651.export"
-31 1533346609 1533346626
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804204437.export"
+31 1533415474 1533415492
