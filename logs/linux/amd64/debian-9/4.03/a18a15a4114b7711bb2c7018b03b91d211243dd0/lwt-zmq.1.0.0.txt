@@ -71,8 +71,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/lwt-zmq.1.0.0
 # command              ~/.opam/4.03/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.03
 # exit-code            1
-# env-file             ~/.opam/log/lwt-zmq-11-5b77f6.env
-# output-file          ~/.opam/log/lwt-zmq-11-5b77f6.out
+# env-file             ~/.opam/log/lwt-zmq-10-5b77f6.env
+# output-file          ~/.opam/log/lwt-zmq-10-5b77f6.out
 ### output ###
 # File "./setup.ml", line 234, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -132,11 +132,11 @@ The following actions will be performed:
 # Warning 3: deprecated: String.capitalize
 # Use String.capitalize_ascii instead.
 # ocamlfind: Package `lwt.syntax' not found
-# W: Field 'pkg_lwt_syntax' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-b57673.txt'' terminated with error code 2
+# W: Field 'pkg_lwt_syntax' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-55582a.txt'' terminated with error code 2
 # ocamlfind: Package `lwt.syntax' not found
-# W: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-a9a38d.txt'' terminated with error code 2")
+# W: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-caf828.txt'' terminated with error code 2")
 # ocamlfind: Package `lwt.syntax' not found
-# W: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-017670.txt'' terminated with error code 2")
+# W: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d lwt.syntax > '/tmp/oasis-2c8955.txt'' terminated with error code 2")
 # E: Cannot find findlib package lwt.syntax
 # E: Failure("1 configuration error")
 
@@ -161,5 +161,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180803094816.export"
-31 1533289688 1533289745
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804003139.export"
+31 1533342693 1533342733

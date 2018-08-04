@@ -61,24 +61,12 @@ The following actions will be performed:
 # stty: 'standard input': Inappropriate ioctl for device
 # Compiler: ocaml 4.03.0
 # Warning: 36 old env warnings were not printed (add --env-warnings)
-# ........-- stdout for ./_obuild/dose/_temp/format822_lexer.ml --
+# ...........-- stdout for ./_obuild/dose/_temp/packages_lexer.ml --
+# 20 states, 337 transitions, table size 1468 bytes
+# -- stdout for ./_obuild/dose/_temp/format822_lexer.ml --
 # 83 states, 1213 transitions, table size 5350 bytes
 # 5282 additional bytes used for bindings
-# ..-- stdout for ./_obuild/dose/_temp/packages_lexer.ml --
-# 20 states, 337 transitions, table size 1468 bytes
-# .................[111.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlopt.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-a240b83d459264666743b75c53d0f219/version.cmx' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
-# -- stderr for ./_obuild/dose/Debian/version.cmx --
-# File "./deb/version.ml", line 183, characters 20-34:
-# Error: Unbound module Re_pcre
-# [110.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3d40add360fea6d9b140623d5bc0bea1/version.cmo' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
-# -- stderr for ./_obuild/dose/Debian/version.cmo --
-# File "./deb/version.ml", line 183, characters 20-34:
-# Error: Unbound module Re_pcre
-# [39.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3968cac187c050da57fc529f4bd0d56e/cudfAdd.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfAdd.ml'
-# -- stderr for ./_obuild/dose/Common/cudfAdd.cmo --
-# File "./common/cudfAdd.ml", line 112, characters 25-39:
-# Error: Unbound module Re_pcre
-# [51.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3fc35d12dee6985b3fbd5035dc3632f1/cudfSolver.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfSolver.ml'
+# .................[51.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3fc35d12dee6985b3fbd5035dc3632f1/cudfSolver.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfSolver.ml'
 # -- stderr for ./_obuild/dose/Common/cudfSolver.cmo --
 # File "./common/cudfSolver.ml", line 52, characters 24-42:
 # Error: Unbound module Re_pcre
@@ -86,13 +74,43 @@ The following actions will be performed:
 # File "./common/util.ml", line 84, characters 6-23:
 # Warning 3: deprecated: String.capitalize
 # Use String.capitalize_ascii instead.
+# [110.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3d40add360fea6d9b140623d5bc0bea1/version.cmo' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
+# -- stderr for ./_obuild/dose/Debian/version.cmo --
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# [111.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlopt.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-a240b83d459264666743b75c53d0f219/version.cmx' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
+# -- stderr for ./_obuild/dose/Debian/version.cmx --
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# [39.1] Command failed: '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3968cac187c050da57fc529f4bd0d56e/cudfAdd.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfAdd.ml'
+# -- stderr for ./_obuild/dose/Common/cudfAdd.cmo --
+# File "./common/cudfAdd.ml", line 112, characters 25-39:
+# Error: Unbound module Re_pcre
 # -- stderr for ./_obuild/dose/Common/util.cmx --
 # File "./common/util.ml", line 84, characters 6-23:
 # Warning 3: deprecated: String.capitalize
 # Use String.capitalize_ascii instead.
 # Finished
-# 10 errors in 0.27s. 71 jobs (parallelism 5.5x), 79 files generated.
+# 10 errors in 0.37s. 55 jobs (parallelism 5.1x), 61 files generated.
 # Error log:
+# Error:
+# [51.1] '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3fc35d12dee6985b3fbd5035dc3632f1/cudfSolver.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfSolver.ml'
+# 
+# File "./common/cudfSolver.ml", line 52, characters 24-42:
+# Error: Unbound module Re_pcre
+# 
+# Error:
+# rule 51: target ./_obuild/dose/Common/cudfSolver.cmi not built
+# Error:
+# rule 51: target ./_obuild/dose/Common/cudfSolver.cmo not built
+# Error:
+# [110.1] '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3d40add360fea6d9b140623d5bc0bea1/version.cmo' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
+# 
+# File "./deb/version.ml", line 183, characters 20-34:
+# Error: Unbound module Re_pcre
+# 
+# Error:
+# rule 110: target ./_obuild/dose/Debian/version.cmo not built
 # Error:
 # [111.1] '/home/opam/.opam/4.03/bin/ocamlopt.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-a240b83d459264666743b75c53d0f219/version.cmx' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
 # 
@@ -104,14 +122,6 @@ The following actions will be performed:
 # Error:
 # rule 111: target ./_obuild/dose/Debian/version.o not built
 # Error:
-# [110.1] '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3d40add360fea6d9b140623d5bc0bea1/version.cmo' '-for-pack' 'Debian' '-I' './_obuild/dose/Debian' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './deb/version.ml'
-# 
-# File "./deb/version.ml", line 183, characters 20-34:
-# Error: Unbound module Re_pcre
-# 
-# Error:
-# rule 110: target ./_obuild/dose/Debian/version.cmo not built
-# Error:
 # [39.1] '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3968cac187c050da57fc529f4bd0d56e/cudfAdd.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfAdd.ml'
 # 
 # File "./common/cudfAdd.ml", line 112, characters 25-39:
@@ -119,16 +129,6 @@ The following actions will be performed:
 # 
 # Error:
 # rule 39: target ./_obuild/dose/Common/cudfAdd.cmo not built
-# Error:
-# [51.1] '/home/opam/.opam/4.03/bin/ocamlc.opt' '-bin-annot' '-c' '-o' '_obuild/RULE-3fc35d12dee6985b3fbd5035dc3632f1/cudfSolver.cmo' '-for-pack' 'Common' '-I' './_obuild/dose/Common' '-I' './_obuild/dose' '-I' '.' '-I' '/home/opam/.opam/4.03/lib/ocamlgraph' '-I' '/home/opam/.opam/4.03/lib/cudf' '-I' '/home/opam/.opam/4.03/lib/re' '-I' '/home/opam/.opam/4.03/lib/extlib' '-I' '/home/opam/.opam/4.03/lib/ocaml' './common/cudfSolver.ml'
-# 
-# File "./common/cudfSolver.ml", line 52, characters 24-42:
-# Error: Unbound module Re_pcre
-# 
-# Error:
-# rule 51: target ./_obuild/dose/Common/cudfSolver.cmi not built
-# Error:
-# rule 51: target ./_obuild/dose/Common/cudfSolver.cmo not built
 
 
 
@@ -152,5 +152,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180803091812.export"
-31 1533287890 1533287991
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804011549.export"
+31 1533345347 1533345498

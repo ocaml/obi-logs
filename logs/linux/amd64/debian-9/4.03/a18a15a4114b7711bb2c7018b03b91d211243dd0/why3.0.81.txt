@@ -754,10 +754,10 @@ The following actions will be performed:
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [alt-ergo.1.01] found in cache
 [camlp4.4.03+1] found in cache
+[lablgtk.2.16.0] found in cache
 [ocamlbuild.0.12.0] found in cache
+[why3.0.81] found in cache
 [zarith.1.7] found in cache
-[lablgtk.2.16.0] downloaded from https://forge.ocamlcore.org/frs/download.php/979/lablgtk-2.16.0.tar.gz
-[why3.0.81] downloaded from https://gforge.inria.fr/frs/download.php/33491/why3-0.81.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-num.base
@@ -775,7 +775,7 @@ The following actions will be performed:
 
 #=== ERROR while compiling why3.0.81 ==========================================#
 These patches didn't apply at /home/opam/.opam/4.03/.opam-switch/build/why3.0.81:
-  - configure.patch: "/usr/bin/patch -p1 -i /home/opam/.opam/log/processed-patch-11-9a098e" exited with code 1
+  - configure.patch: "/usr/bin/patch -p1 -i /home/opam/.opam/log/processed-patch-11-b67373" exited with code 1
 
 
 
@@ -800,5 +800,5 @@ These patches didn't apply at /home/opam/.opam/4.03/.opam-switch/build/why3.0.81
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180803095524.export"
-31 1533290041 1533290306
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804004537.export"
+31 1533343473 1533343674

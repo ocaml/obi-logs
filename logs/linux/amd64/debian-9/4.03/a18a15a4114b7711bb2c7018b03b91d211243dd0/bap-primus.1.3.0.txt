@@ -463,7 +463,6 @@ The following actions will be performed:
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_env.cmo lib/bap_primus/bap_primus_env.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_exn.cmo lib/bap_primus/bap_primus_exn.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmo lib/bap_primus/bap_primus_generator.ml
-# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmo lib/bap_primus/bap_primus_interpreter.ml
 # + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmo lib/bap_primus/bap_primus_generator.ml
 # File "lib/bap_primus/bap_primus_generator.ml", line 11, characters 6-11:
 # Warning 3: deprecated: Core_kernel.Std.expm1
@@ -471,6 +470,7 @@ The following actions will be performed:
 # File "lib/bap_primus/bap_primus_generator.ml", line 11, characters 29-34:
 # Warning 3: deprecated: Core_kernel.Std.log1p
 # [since 2016-07] Use [Float.log1p]
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmo lib/bap_primus/bap_primus_interpreter.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_iterator.cmo lib/bap_primus/bap_primus_iterator.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_linker.cmo lib/bap_primus/bap_primus_linker.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_lisp.cmo lib/bap_primus/bap_primus_lisp.ml
@@ -577,5 +577,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180803085235.export"
-31 1533286324 1533287722
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804003836.export"
+31 1533343093 1533344055
