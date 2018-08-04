@@ -1,0 +1,124 @@
+$ opam depext -iy -j 2 dune_watch.0.2.0
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxx]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by lwt]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install re                      1.7.3      [required by ppx_test]
+  - install camlon                  2.0.2      [required by dune_watch]
+  - install base-bytes              base       [required by cppo]
+  - install ocamlbuild              0.12.0     [required by ppx_deriving]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_deriving, ppxx]
+  - install cppo                    1.6.4      [required by lwt]
+  - install ppx_tools_versioned     5.2        [required by ppx_monadic]
+  - install lwt                     4.1.0      [required by dune_watch]                 For the PPX, please install package lwt_ppx
+                                                                                        For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install ppxx                    2.3.1      [required by ppx_meta_conv, ppx_monadic]
+  - install ppx_deriving            4.2.1      [required by ppx_meta_conv]
+  - install ppx_test                1.6.0      [required by spotlib]
+  - install ppx_monadic             2.3.0      [required by dune_watch]
+  - install spotlib                 4.0.3      [required by ppx_meta_conv]
+  - install ppx_meta_conv           4.0.0      [required by dune_watch]
+  - install dune_watch              0.2.0
+===== 20 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlon.2.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[dune_watch.0.2.0] found in cache
+[lwt.4.1.0] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_meta_conv.4.0.0] found in cache
+[ppx_monadic.2.3.0] found in cache
+[ppx_test.1.6.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxx.2.3.1] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[spotlib.4.0.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camlon.2.0.2
+-> installed cppo.1.6.4
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ocamlbuild.0.12.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed cppo_ocamlbuild.1.6.0
+-> installed lwt.4.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed ppxx.2.3.1
+-> installed ppx_deriving.4.2.1
+-> installed ppx_monadic.2.3.0
+-> installed ppx_test.1.6.0
+-> installed spotlib.4.0.3
+-> installed ppx_meta_conv.4.0.0
+[ERROR] The compilation of dune_watch failed at "/home/opam/.opam/4.06/bin/jbuilder build -p dune_watch -j 79".
+
+#=== ERROR while compiling dune_watch.0.2.0 ===================================#
+# context              2.0.0 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/dune_watch.0.2.0
+# command              ~/.opam/4.06/bin/jbuilder build -p dune_watch -j 79
+# exit-code            1
+# env-file             ~/.opam/log/dune_watch-11-0096ce.env
+# output-file          ~/.opam/log/dune_watch-11-0096ce.out
+### output ###
+#     ocamlopt dune_watch.exe (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -o dune_watch.exe -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/camlon -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.06/lib/ocaml/compiler-libs -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_deriving -I /home/opam/.opam/4.06/lib/ppx_meta_conv/ocaml -I /home/opam/.opam/4.06/lib/ppx_meta_conv/runtime -I /home/opam/.opam/4.06/lib/ppx_test/runtime -I /home/opam/.opam/4.06/lib/ppx_tools_versioned -I /home/opam/.opam/4.06/lib/ppxx -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/pcre -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/spotlib /home/opam/.opam/4.06/lib/result/result.cmxa /home/opam/.opam/4.06/lib/ppx_deriving/ppx_deriving_runtime.cmxa /home/opam/.opam/4.06/lib/lwt/lwt.cmxa /home/opam/.opam/4.06/lib/ocaml/unix.cmxa /home/opam/.opam/4.06/lib/ocaml/bigarray.cmxa /home/opam/.opam/4.06/lib/ocaml/threads/threads.cmxa /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa /home/opam/.opam/4.06/lib/camlon/camlon.cmxa /home/opam/.opam/4.06/lib/ocaml/compiler-libs/ocamlcommon.cmxa /home/opam/.opam/4.06/lib/ocaml-migrate-parsetree/migrate_parsetree.cmxa /home/opam/.opam/4.06/lib/ppx_tools_versioned/ppx_tools_versioned.cmxa /home/opam/.opam/4.06/lib/ppxx/ppxx.cmxa /home/opam/.opam/4.06/lib/re/re.cmxa /home/opam/.opam/4.06/lib/re/pcre/re_pcre.cmxa /home/opam/.opam/4.06/lib/ppx_test/runtime/ppx_test.cmxa /home/opam/.opam/4.06/lib/ocaml/str.cmxa /home/opam/.opam/4.06/lib/spotlib/spotlib.cmxa /home/opam/.opam/4.06/lib/ppx_meta_conv/runtime/meta_conv.cmxa /home/opam/.opam/4.06/lib/ppx_meta_conv/ocaml/ppx_meta_conv_ocaml.cmxa .dune_watch.eobjs/dune_watch.cmx)
+# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/unix/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek':
+# /home/opam/.opam/4.06/.opam-switch/build/lwt.4.1.0/_build/default/src/unix/unix_lseek_job.c:96:(.text+0xb8): call to `result_lseek.part.0' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
+# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/unix/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek_64':
+# /home/opam/.opam/4.06/.opam-switch/build/lwt.4.1.0/_build/default/src/unix/unix_lseek_job.c:117:(.text+0x134): call to `result_lseek_64.part.1' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
+# /usr/bin/ld: final link failed: Bad value
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build dune_watch 0.2.0
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install camlon                  2.0.2
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install lwt                     4.1.0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_meta_conv           4.0.0
+| - install ppx_monadic             2.3.0
+| - install ppx_test                1.6.0
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2
+| - install ppxx                    2.3.1
+| - install re                      1.7.3
+| - install result                  1.3
+| - install spotlib                 4.0.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804012137.export"
+31 1533345695 1533345753

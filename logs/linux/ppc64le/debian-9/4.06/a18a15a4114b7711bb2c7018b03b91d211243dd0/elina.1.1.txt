@@ -1,0 +1,94 @@
+$ opam depext -iy -j 2 elina.1.1
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libgmp-dev
+libmpfr-dev
+m4
+perl
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libgmp-dev libmpfr-dev m4 perl
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:ppc64el.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17539 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_ppc64el.deb ...
+Unpacking libgmpxx4ldbl:ppc64el (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:ppc64el.
+Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_ppc64el.deb ...
+Unpacking libgmp-dev:ppc64el (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libmpfr-dev:ppc64el.
+Preparing to unpack .../libmpfr-dev_3.1.5-1_ppc64el.deb ...
+Unpacking libmpfr-dev:ppc64el (3.1.5-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libgmpxx4ldbl:ppc64el (2:6.1.2+dfsg-1) ...
+Setting up libgmp-dev:ppc64el (2:6.1.2+dfsg-1) ...
+Setting up libmpfr-dev:ppc64el (3.1.5-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlidl    1.05     [required by elina]
+  - install conf-gmp   1        [required by mlgmpidl]
+  - install conf-perl  1        [required by elina]
+  - install ocamlbuild 0.12.0   [required by apron]
+  - install conf-mpfr  1        [required by mlgmpidl]
+  - install mlgmpidl   1.2.7    [required by elina]
+  - install apron      20160125 [required by elina]
+  - install elina      1.1
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[apron.20160125] found in cache
+[camlidl.1.05] found in cache
+[mlgmpidl.1.2.7] found in cache
+[ocamlbuild.0.12.0] found in cache
+[elina.1.1] downloaded from http://files.srl.inf.ethz.ch/elina-1.1.tar.gz
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed camlidl.1.05
+-> installed conf-gmp.1
+-> installed conf-mpfr.1
+-> installed conf-perl.1
+-> installed ocamlbuild.0.12.0
+-> installed mlgmpidl.1.2.7
+-> installed apron.20160125
+[ERROR] The compilation of elina failed at "/usr/bin/make -j79".
+
+#=== ERROR while compiling elina.1.1 ==========================================#
+# context              2.0.0 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/elina.1.1
+# command              /usr/bin/make -j79
+# exit-code            2
+# env-file             ~/.opam/log/elina-11-e19ae3.env
+# output-file          ~/.opam/log/elina-11-e19ae3.out
+### output ###
+# (cd elina_linearize; make all)
+# make[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/elina.1.1/elina_linearize'
+# cc -c -Wcast-qual -Wswitch -Wall -Wextra -Wundef -Wcast-align -Wno-unused -U__STRICT_ANSI__ -fPIC -O3 -DNDEBUG -Werror-implicit-function-declaration -Wbad-function-cast -Wstrict-prototypes -Wno-strict-overflow -std=c99 -g  -DNUM_LONGLONGRAT -DNUM_DOUBLE -DTHRESHOLD=0.75 -DTIMING -D_GNU_SOURCE -pthread -fno-tree-vectorize -m64 -march=native  -DHAS_APRON    -I/home/opam/.opam/4.06/share/apron/include -I../apron_interface -o elina_generic.o elina_generic.c  -lmpfr  -lgmp -lm -L/home/opam/.opam/4.06/share/apron/lib -lapron	
+# cc: error: unrecognized command line option '-march=native'; did you mean '-mcpu=native'?
+# Makefile:51: recipe for target 'elina_generic.o' failed
+# make[1]: *** [elina_generic.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/elina.1.1/elina_linearize'
+# Makefile:46: recipe for target 'c' failed
+# make: *** [c] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build elina 1.1
++- 
++- The following changes have been performed
+| - install apron      20160125
+| - install camlidl    1.05
+| - install conf-gmp   1
+| - install conf-mpfr  1
+| - install conf-perl  1
+| - install mlgmpidl   1.2.7
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804041005.export"
+31 1533355796 1533355848

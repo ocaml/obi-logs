@@ -1,0 +1,407 @@
+$ opam depext -iy -j 2 qcow-format.0.4.1
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_tools               5.1+4.06.0 [required by qcow-format]
+  - install base-bytes              base       [required by qcow-format]
+  - install num                     1.1        [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by qcow-format]
+  - install ocamlbuild              0.12.0     [required by mirage-block-unix, logs, cmdliner, etc.]
+  - install cppo                    1.6.4      [required by ppx_deriving]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.1    [required by configurator]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_deriving]
+  - install uchar                   0.0.2      [required by fmt]
+  - install topkg                   0.9.1      [required by fmt, astring, cmdliner, logs]
+  - install ocamlmod                0.0.9      [required by oasis]
+  - install ocamlify                0.0.1      [required by oasis]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install sexplib                 v0.11.0    [required by qcow-format]
+  - install stdio                   v0.11.0    [required by configurator]
+  - install ppx_tools_versioned     5.2        [required by lwt, ppx_cstruct]
+  - install cmdliner                1.0.2      [required by qcow-format]
+  - install astring                 0.8.3      [required by qcow-format]
+  - install oasis                   0.4.11     [required by qcow-format]
+  - install ppx_deriving            4.2.1      [required by qcow-format]
+  - install cstruct                 3.2.1      [required by qcow-format]
+  - install ppxlib                  0.2.1      [required by ppx_type_conv]
+  - install configurator            v0.11.0    [required by io-page-unix]
+  - install lwt                     3.3.0      [required by qcow-format]                             For the PPX, please install package lwt_ppx
+                                                                                                     For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install fmt                     0.8.5      [required by qcow-format]
+  - install ppx_cstruct             3.2.1      [required by mirage-block-unix]
+  - install ppx_type_conv           v0.11.0    [required by qcow-format]
+  - install ppx_sexp_conv           v0.11.1    [required by qcow-format]
+  - install io-page                 2.0.1      [required by io-page-unix, mirage-block-unix]
+  - install cstruct-lwt             3.2.1      [required by mirage-block-unix]
+  - install logs                    0.6.2      [required by qcow-format]
+  - install ipaddr                  2.8.0      [required by mirage-types-lwt]
+  - install io-page-unix            2.0.1      [required by qcow-format]
+  - install mirage-types            2.8.0      [required by mirage-block-unix]
+  - install mirage-types-lwt        2.8.0      [required by qcow-format]
+  - install mirage-block-unix       2.3.0      [required by qcow-format]
+  - install mirage-block            0.2        [required by qcow-format]
+  - install qcow-format             0.4.1
+===== 42 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[base.v0.11.1] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[fmt.0.8.5] found in cache
+[io-page.2.0.1] found in cache
+[io-page-unix.2.0.1] found in cache
+[ipaddr.2.8.0] found in cache
+[logs.0.6.2] found in cache
+[lwt.3.3.0] found in cache
+[mirage-block.0.2] found in cache
+[mirage-block-unix.2.3.0] found in cache
+[mirage-types.2.8.0] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_sexp_conv.v0.11.1] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_type_conv.v0.11.0] found in cache
+[ppxlib.0.2.1] found in cache
+[qcow-format.0.4.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed ppx_deriving.4.2.1
+-> installed ppx_tools_versioned.5.2
+-> installed lwt.3.3.0
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.3.2.1
+-> installed cstruct-lwt.3.2.1
+-> installed oasis.0.4.11
+-> installed ppx_cstruct.3.2.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
+-> installed logs.0.6.2
+-> installed ppxlib.0.2.1
+-> installed ppx_type_conv.v0.11.0
+-> installed ppx_sexp_conv.v0.11.1
+-> installed ipaddr.2.8.0
+-> installed mirage-types.2.8.0
+-> installed mirage-types-lwt.2.8.0
+-> installed mirage-block.0.2
+-> installed mirage-block-unix.2.3.0
+[ERROR] The compilation of qcow-format failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06".
+
+#=== ERROR while compiling qcow-format.0.4.1 ==================================#
+# context              2.0.0 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/qcow-format.0.4.1
+# command              /usr/bin/make PREFIX=/home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/qcow-format-11-5c1d4e.env
+# output-file          ~/.opam/log/qcow-format-11-5c1d4e.out
+### output ###
+# oasis setup
+# ocamlopt.opt -o setup.bin setup.ml 2>/dev/null || ocamlopt -o setup.bin setup.ml 2>/dev/null || ocamlc -o setup.bin setup.ml
+# rm -f setup.cmx setup.cmi setup.o setup.cmo
+# ./setup.bin -configure      --prefix /home/opam/.opam/4.06
+# 
+# Configuration:
+# ocamlfind: ........................................... /home/opam/.opam/4.06/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.06/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.06/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.06/bin/ocamlbuild
+# Package name: ........................................ qcow
+# Package version: ..................................... 0.4.1
+# os_type: ............................................. Unix
+# system: .............................................. elf
+# architecture: ........................................ power
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.06.1
+# standard_library_default: ............................ /home/opam/.opam/4.06/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.06/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.06/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... ppc64le
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /home/opam/.opam/4.06
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ......................................
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: .........................
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_result: .......................................... /home/opam/.opam/4.06/lib/result
+# pkg_cstruct: ......................................... /home/opam/.opam/4.06/lib/cstruct
+# pkg_sexplib: ......................................... /home/opam/.opam/4.06/lib/sexplib
+# pkg_ppx_sexp_conv: ................................... /home/opam/.opam/4.06/lib/ppx_sexp_conv
+# pkg_mirage_types_lwt: ................................ /home/opam/.opam/4.06/lib/mirage-types
+# pkg_lwt: ............................................. /home/opam/.opam/4.06/lib/lwt
+# pkg_io_page: ......................................... /home/opam/.opam/4.06/lib/io-page
+# pkg_logs: ............................................ /home/opam/.opam/4.06/lib/logs
+# pkg_astring: ......................................... /home/opam/.opam/4.06/lib/astring
+# ocamldoc: ............................................ /home/opam/.opam/4.06/bin/ocamldoc
+# pkg_lwt_unix: ........................................ /home/opam/.opam/4.06/lib/lwt
+# pkg_cmdliner: ........................................ /home/opam/.opam/4.06/lib/cmdliner
+# pkg_cstruct_lwt: ..................................... /home/opam/.opam/4.06/lib/cstruct
+# pkg_logs_fmt: ........................................ /home/opam/.opam/4.06/lib/logs
+# pkg_mirage_block_unix: ............................... /home/opam/.opam/4.06/lib/mirage-block-unix
+# pkg_mirage_block: .................................... /home/opam/.opam/4.06/lib/mirage-block
+# pkg_io_page_unix: .................................... /home/opam/.opam/4.06/lib/io-page
+# 
+# ./setup.bin -build -classic-display
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 67, characters 31-42:
+# Warning: the tag "pkg_ezjsonm" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 74, characters 31-55:
+# Warning: the tag "pkg_mirage-block-ramdisk" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 77, characters 31-38:
+# Warning: the tag "pkg_nbd" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 78, characters 31-42:
+# Warning: the tag "pkg_nbd.lwt" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 79, characters 31-40:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 86, characters 23-34:
+# Warning: the tag "pkg_ezjsonm" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 93, characters 23-47:
+# Warning: the tag "pkg_mirage-block-ramdisk" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 96, characters 23-30:
+# Warning: the tag "pkg_nbd" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 97, characters 23-34:
+# Warning: the tag "pkg_nbd.lwt" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 98, characters 23-32:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_s.mli > lib/qcow_s.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_s.cmi lib/qcow_s.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_header.mli > lib/qcow_header.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_header.cmi lib/qcow_header.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_header.ml > lib/qcow_header.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_error.mli > lib/qcow_error.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_types.mli > lib/qcow_types.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_error.cmi lib/qcow_error.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_types.cmi lib/qcow_types.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_error.ml > lib/qcow_error.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_types.ml > lib/qcow_types.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_virtual.mli > lib/qcow_virtual.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_virtual.cmi lib/qcow_virtual.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_virtual.ml > lib/qcow_virtual.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_physical.mli > lib/qcow_physical.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_physical.cmi lib/qcow_physical.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow_physical.ml > lib/qcow_physical.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow.mli > lib/qcow.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow.cmi lib/qcow.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules lib/qcow.ml > lib/qcow.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_header.cmo lib/qcow_header.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_header.cmo lib/qcow_header.ml
+# File "lib/qcow_header.ml", line 424, characters 6-10:
+# Warning 26: unused variable size.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_error.cmo lib/qcow_error.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_types.cmo lib/qcow_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_virtual.cmo lib/qcow_virtual.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_physical.cmo lib/qcow_physical.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow.cmo lib/qcow.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow.cmo lib/qcow.ml
+# File "lib/qcow.ml", line 411, characters 10-22:
+# Warning 26: unused variable table_offset.
+# File "lib/qcow.ml", line 421, characters 10-22:
+# Warning 26: unused variable table_offset.
+# File "lib/qcow.ml", line 449, characters 10-22:
+# Warning 26: unused variable table_offset.
+# File "lib/qcow.ml", line 585, characters 14-21:
+# Warning 26: unused variable buf_len.
+# File "lib/qcow.ml", line 614, characters 8-12:
+# Warning 26: unused variable addr.
+# File "lib/qcow.ml", line 648, characters 8-12:
+# Warning 26: unused variable addr.
+# File "lib/qcow.ml", line 778, characters 8-25:
+# Warning 26: unused variable next_free_cluster.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -a -I lib lib/qcow_error.cmo lib/qcow_types.cmo lib/qcow_header.cmo lib/qcow_physical.cmo lib/qcow_virtual.cmo lib/qcow.cmo -o lib/qcow.cma
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_error.cmx lib/qcow_error.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_types.cmx lib/qcow_types.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_header.cmx lib/qcow_header.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_header.cmx lib/qcow_header.ml
+# File "lib/qcow_header.ml", line 424, characters 6-10:
+# Warning 26: unused variable size.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_physical.cmx lib/qcow_physical.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow_virtual.cmx lib/qcow_virtual.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow.cmx lib/qcow.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package astring -package cstruct -package io-page -package logs -package lwt -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -o lib/qcow.cmx lib/qcow.ml
+# File "lib/qcow.ml", line 411, characters 10-22:
+# Warning 26: unused variable table_offset.
+# File "lib/qcow.ml", line 421, characters 10-22:
+# Warning 26: unused variable table_offset.
+# File "lib/qcow.ml", line 449, characters 10-22:
+# Warning 26: unused variable table_offset.
+# File "lib/qcow.ml", line 585, characters 14-21:
+# Warning 26: unused variable buf_len.
+# File "lib/qcow.ml", line 614, characters 8-12:
+# Warning 26: unused variable addr.
+# File "lib/qcow.ml", line 648, characters 8-12:
+# Warning 26: unused variable addr.
+# File "lib/qcow.ml", line 778, characters 8-25:
+# Warning 26: unused variable next_free_cluster.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -I lib lib/qcow_error.cmx lib/qcow_types.cmx lib/qcow_header.cmx lib/qcow_physical.cmx lib/qcow_virtual.cmx lib/qcow.cmx -o lib/qcow.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -linkall -I lib lib/qcow.cmxa -o lib/qcow.cmxs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules cli/main.ml > cli/main.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules cli/common.ml > cli/common.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -modules cli/impl.ml > cli/impl.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/common.cmo cli/common.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/common.cmo cli/common.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/impl.cmo cli/impl.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/impl.cmo cli/impl.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/main.cmo cli/main.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/main.cmo cli/main.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/common.cmx cli/common.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/common.cmx cli/common.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/impl.cmx cli/impl.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/impl.cmx cli/impl.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/main.cmx cli/main.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -I lib -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I cli -I lib -o cli/main.cmx cli/main.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -g -linkpkg -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -I cli lib/qcow.cmxa cli/common.cmx lib/qcow_error.cmx lib/qcow_types.cmx lib/qcow_header.cmx lib/qcow_physical.cmx lib/qcow_virtual.cmx lib/qcow.cmx cli/impl.cmx cli/main.cmx -o cli/main.native
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -g -linkpkg -package astring -package cmdliner -package cstruct -package cstruct.lwt -package io-page -package io-page.unix -package logs -package logs.fmt -package lwt -package lwt.unix -package mirage-block -package mirage-block-unix -package mirage-types.lwt -package ppx_sexp_conv -package result -package sexplib -I lib -I cli lib/qcow.cmxa cli/common.cmx lib/qcow_error.cmx lib/qcow_types.cmx lib/qcow_header.cmx lib/qcow_physical.cmx lib/qcow_virtual.cmx lib/qcow.cmx cli/impl.cmx cli/main.cmx -o cli/main.native
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek':
+# /home/opam/.opam/4.06/.opam-switch/build/lwt.3.3.0/_build/default/src/unix/unix_lseek_job.c:113:(.text+0xb8): call to `result_lseek.part.0' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
+# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek_64':
+# /home/opam/.opam/4.06/.opam-switch/build/lwt.3.3.0/_build/default/src/unix/unix_lseek_job.c:134:(.text+0x134): call to `result_lseek_64.part.1' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
+# /usr/bin/ld: final link failed: Bad value
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/qcow.cma lib/qcow.cmxa lib/qcow.a lib/qcow.cmxs cli/main.native -tag debug -classic-display' terminated with error code 10")
+# Makefile:24: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build qcow-format 0.4.1
++- 
++- The following changes have been performed
+| - install astring                 0.8.3
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install cmdliner                1.0.2
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 3.2.1
+| - install cstruct-lwt             3.2.1
+| - install fmt                     0.8.5
+| - install io-page                 2.0.1
+| - install io-page-unix            2.0.1
+| - install ipaddr                  2.8.0
+| - install logs                    0.6.2
+| - install lwt                     3.3.0
+| - install mirage-block            0.2
+| - install mirage-block-unix       2.3.0
+| - install mirage-types            2.8.0
+| - install mirage-types-lwt        2.8.0
+| - install num                     1.1
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install parsexp                 v0.11.0
+| - install ppx_cstruct             3.2.1
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_sexp_conv           v0.11.1
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2
+| - install ppx_type_conv           v0.11.0
+| - install ppxlib                  0.2.1
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804004130.export"
+31 1533343282 1533343434

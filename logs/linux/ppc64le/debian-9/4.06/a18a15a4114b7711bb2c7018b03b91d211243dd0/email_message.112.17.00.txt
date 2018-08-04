@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 email_message.112.17.00
+# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for email_message.112.17.00: The following dependencies couldn't be met:
+          - email_message -> pa_test >= 112.24.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=email_message.112.17.00 returned 20
+20 1533361095 1533361099
