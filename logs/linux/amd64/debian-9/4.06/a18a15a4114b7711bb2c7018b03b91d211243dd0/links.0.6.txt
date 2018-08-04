@@ -125,38 +125,38 @@ The following actions will be performed:
 -> installed ppx_deriving.4.2.1
 -> installed ppx_tools_versioned.5.2
 -> installed sexplib.v0.9.3
--> installed base.v0.9.4
 -> installed camlp4.4.06+1
+-> installed base.v0.9.4
 -> installed lwt.3.3.0
 -> installed stdio.v0.9.1
--> installed ppx_core.v0.9.3
--> installed ppx_optcomp.v0.9.0
--> installed ppx_driver.v0.9.2
 -> installed deriving.0.8.1
--> installed fieldslib.v0.9.0
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
--> installed ppx_metaquot.v0.9.0
 -> installed cmdliner.1.0.2
 -> installed uchar.0.0.2
--> installed ppx_type_conv.v0.9.1
+-> installed ppx_core.v0.9.3
 -> installed fmt.0.8.5
+-> installed ppx_optcomp.v0.9.0
+-> installed logs.0.6.2
+-> installed ppx_driver.v0.9.2
+-> installed fieldslib.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_type_conv.v0.9.1
 -> installed ppx_fields_conv.v0.9.0
 -> installed ppx_sexp_conv.v0.9.0
 -> installed ipaddr.2.8.0
--> installed logs.0.6.2
 -> installed uri.1.9.7
 -> installed conduit.0.15.4
 -> installed cohttp.0.22.0
 [ERROR] The compilation of links failed at "/usr/bin/make nc".
 
 #=== ERROR while compiling links.0.6 ==========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/links.0.6
 # command              /usr/bin/make nc
 # exit-code            2
-# env-file             ~/.opam/log/links-11-067cf9.env
-# output-file          ~/.opam/log/links-11-067cf9.out
+# env-file             ~/.opam/log/links-11-a707b8.env
+# output-file          ~/.opam/log/links-11-a707b8.out
 ### output ###
 # ocamlfind: Package `sqlite3' not found
 # ocamlfind: Package `mysql' not found
@@ -463,5 +463,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803211821.export"
-31 1533331098 1533331351
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804211453.export"
+31 1533417290 1533417519

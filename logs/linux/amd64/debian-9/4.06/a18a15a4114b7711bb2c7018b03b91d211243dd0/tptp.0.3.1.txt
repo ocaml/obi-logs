@@ -34,8 +34,8 @@ The following actions will be performed:
 [menhir.20180703] found in cache
 [ocamlbuild.0.12.0] found in cache
 [pprint.20180528] found in cache
-[tptp.0.3.1] found in cache
 [zarith.1.7] found in cache
+[tptp.0.3.1] downloaded from https://forge.ocamlcore.org/frs/download.php/1437/tptp-0.3.1.tar.bz2
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed conf-gmp.1
@@ -47,12 +47,12 @@ The following actions will be performed:
 [ERROR] The compilation of tptp failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06".
 
 #=== ERROR while compiling tptp.0.3.1 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/tptp.0.3.1
 # command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
 # exit-code            2
-# env-file             ~/.opam/log/tptp-11-320155.env
-# output-file          ~/.opam/log/tptp-11-320155.out
+# env-file             ~/.opam/log/tptp-11-626d32.env
+# output-file          ~/.opam/log/tptp-11-626d32.out
 ### output ###
 # File "./setup.ml", line 247, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -78,5 +78,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803211407.export"
-31 1533330840 1533330880
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804210933.export"
+31 1533416965 1533417016

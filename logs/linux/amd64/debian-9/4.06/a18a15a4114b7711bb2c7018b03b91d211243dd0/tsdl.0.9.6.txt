@@ -671,12 +671,12 @@ The following actions will be performed:
 [ERROR] The compilation of tsdl failed at "/home/opam/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false".
 
 #=== ERROR while compiling tsdl.0.9.6 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/tsdl.0.9.6
 # command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false
 # exit-code            1
-# env-file             ~/.opam/log/tsdl-11-b21ac6.env
-# output-file          ~/.opam/log/tsdl-11-b21ac6.out
+# env-file             ~/.opam/log/tsdl-10-b21ac6.env
+# output-file          ~/.opam/log/tsdl-10-b21ac6.out
 ### output ###
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamlc -g -thread -c src/tsdl_stubs.c
@@ -911,5 +911,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803210608.export"
-31 1533330339 1533330402
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804205527.export"
+31 1533416099 1533416164
