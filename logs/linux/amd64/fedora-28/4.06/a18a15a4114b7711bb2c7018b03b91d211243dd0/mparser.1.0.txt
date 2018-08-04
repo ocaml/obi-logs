@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     31 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Fri Aug  3 11:25:09 2018.
+Fedora 28 - x86_64 - Updates                     42 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sat Aug  4 02:22:54 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -57,12 +57,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          914 kB/s |  46 kB     00:00    
-(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        2.9 MB/s | 193 kB     00:00    
-(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm        5.6 MB/s | 550 kB     00:00    
-(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        3.7 MB/s | 184 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          1.4 MB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        4.7 MB/s | 193 kB     00:00    
+(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm         10 MB/s | 550 kB     00:00    
+(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        8.6 MB/s | 184 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.0 MB/s | 973 kB     00:00     
+Total                                           1.7 MB/s | 973 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -129,8 +129,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/mparser.1.0
 # command              /usr/bin/make build
 # exit-code            2
-# env-file             ~/.opam/log/mparser-9-03408a.env
-# output-file          ~/.opam/log/mparser-9-03408a.out
+# env-file             ~/.opam/log/mparser-10-03408a.env
+# output-file          ~/.opam/log/mparser-10-03408a.out
 ### output ###
 # ocaml setup.ml -configure 
 # File "./setup.ml", line 213, characters 8-26:
@@ -161,5 +161,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803112523.export"
-31 1533295504 1533295561
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804022307.export"
+31 1533349370 1533349422

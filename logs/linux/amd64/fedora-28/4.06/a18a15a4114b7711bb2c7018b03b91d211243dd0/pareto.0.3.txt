@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: gsl-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y gsl-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     37 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Fri Aug  3 11:12:56 2018.
+Fedora 28 - x86_64 - Updates                     34 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sat Aug  4 02:17:49 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -58,13 +58,14 @@ Install  5 Packages
 Total download size: 2.9 M
 Installed size: 8.3 M
 Downloading Packages:
-(1/5): gsl-devel-2.4-3.fc27.x86_64.rpm          4.2 MB/s | 563 kB     00:00    
-(2/5): automake-1.15.1-5.fc28.noarch.rpm        4.9 MB/s | 706 kB     00:00    
-(3/5): gsl-2.4-3.fc27.x86_64.rpm                6.6 MB/s | 1.0 MB     00:00    
-(4/5): autoconf-2.69-27.fc28.noarch.rpm          15 MB/s | 710 kB     00:00    
-(5/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 400 kB/s |  23 kB     00:00    
+(1/5): gsl-devel-2.4-3.fc27.x86_64.rpm          5.3 MB/s | 563 kB     00:00    
+(2/5): automake-1.15.1-5.fc28.noarch.rpm        5.7 MB/s | 706 kB     00:00    
+(3/5): gsl-2.4-3.fc27.x86_64.rpm                6.5 MB/s | 1.0 MB     00:00    
+[MIRROR] perl-Thread-Queue-3.13-1.fc28.noarch.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/perl-Thread-Queue-3.13-1.fc28.noarch.rpm
+(4/5): autoconf-2.69-27.fc28.noarch.rpm         8.6 MB/s | 710 kB     00:00    
+(5/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 267 kB/s |  23 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           2.4 MB/s | 2.9 MB     00:01     
+Total                                           1.6 MB/s | 2.9 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -193,5 +194,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803111308.export"
-31 1533294773 1533294809
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021805.export"
+31 1533349064 1533349134

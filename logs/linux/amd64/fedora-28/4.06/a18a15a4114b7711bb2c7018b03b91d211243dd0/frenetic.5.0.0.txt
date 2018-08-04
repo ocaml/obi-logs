@@ -30,7 +30,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -403,6 +403,7 @@ The following actions will be performed:
 -> installed rresult.0.5.0
 -> installed typerep.v0.9.0
 -> installed uchar.0.0.2
+-> installed ppx_optcomp.v0.9.0
 -> installed fmt.0.8.5
 -> installed mirage-device.1.1.0
 -> installed logs.0.6.2
@@ -414,12 +415,9 @@ The following actions will be performed:
 -> installed bos.0.2.0
 -> installed mirage-time.1.1.0
 -> installed mirage-stack.1.2.0
--> installed ppx_optcomp.v0.9.0
--> installed mirage-time-lwt.1.1.0
--> installed uutf.1.0.1
--> installed jsonm.1.0.1
 -> installed ppx_driver.v0.9.2
 -> installed fieldslib.v0.9.0
+-> installed mirage-time-lwt.1.1.0
 -> installed ppx_here.v0.9.1
 -> installed ppx_let.v0.9.0
 -> installed ppx_metaquot.v0.9.0
@@ -448,55 +446,57 @@ The following actions will be performed:
 -> installed io-page-unix.2.0.1
 -> installed ppx_custom_printf.v0.9.0
 -> installed ppx_typerep_conv.v0.9.0
--> installed tyxml.4.2.0
--> installed mirage-net-lwt.1.1.0
 -> installed uri.1.9.7
+-> installed mirage-net-lwt.1.1.0
 -> installed conduit.1.1.0
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed cohttp.1.1.0
 -> installed tcpip.3.4.2
 -> installed variantslib.v0.9.0
--> installed cohttp.1.1.0
--> installed xmlm.1.3.0
--> installed doc-ock-html.1.2.1
+-> installed tyxml.4.2.0
 -> installed ppx_variants_conv.v0.9.0
 -> installed bin_prot.v0.9.2
--> installed doc-ock-xml.1.2.1
--> installed ppx_bin_prot.v0.9.0
 -> installed ppx_expect.v0.9.0
+-> installed xmlm.1.3.0
+-> installed doc-ock-html.1.2.1
+-> installed ppx_bin_prot.v0.9.0
+-> installed ppx_jane.v0.9.0
+-> installed doc-ock-xml.1.2.1
 -> installed odoc.1.2.0
 -> installed yojson.1.4.1
--> installed ppx_jane.v0.9.0
 -> installed core_kernel.v0.9.1
 -> installed async_kernel.v0.9.0
 -> installed async_rpc_kernel.v0.9.0
 -> installed core.v0.9.2
 -> installed async_unix.v0.9.1
 -> installed async_extra.v0.9.0
+-> installed cstruct-async.3.2.1
+-> installed re2.v0.9.1
+-> installed textutils.v0.9.0
 -> installed async.v0.9.0
+[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
 -> installed async_find.v0.9.0
 -> installed async_interactive.v0.9.0
 -> installed command_rpc.v0.9.0
 -> installed conduit-async.1.0.0
 -> installed async_inotify.v0.9.0
--> installed cstruct-async.3.2.1
--> installed re2.v0.9.1
--> installed textutils.v0.9.0
 -> installed cohttp-async.1.0.0
-[ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
 
 #=== ERROR while compiling core_extended.v0.9.1 ===============================#
 # context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.9.1
 # command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
 # exit-code            1
-# env-file             ~/.opam/log/core_extended-10-b77458.env
-# output-file          ~/.opam/log/core_extended-10-b77458.out
+# env-file             ~/.opam/log/core_extended-10-faaf2e.env
+# output-file          ~/.opam/log/core_extended-10-faaf2e.out
 ### output ###
 #       ocamlc src/core_extended.{cmi,cmo,cmt}
 #     ocamlopt src/core_extended.{cmx,o}
 #         bash src/config_ext.h
 #       ocamlc src/extended_int_stubs.o
-#       ocamlc src/posix_clock_stubs.o
 #       ocamlc src/malloc_stubs.o
+#       ocamlc src/posix_clock_stubs.o
 #       ocamlc src/extended_unix_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
 # extended_unix_stubs.c: In function 'quota_query':
@@ -696,5 +696,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803111547.export"
-31 1533294944 1533295325
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021934.export"
+31 1533349171 1533349578

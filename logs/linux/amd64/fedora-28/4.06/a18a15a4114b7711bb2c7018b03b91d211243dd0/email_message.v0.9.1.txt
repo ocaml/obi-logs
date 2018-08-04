@@ -64,7 +64,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -93,8 +93,7 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: gmp-devel perl-Pod-Html pkgconfig zlib-devel
 The following command needs to be run through "sudo":
     yum install -y gmp-devel perl-Pod-Html pkgconfig zlib-devel
-Fedora 28 - x86_64 - Updates                     16 MB/s |  21 MB     00:01    
-Last metadata expiration check: 0:00:07 ago on Fri Aug  3 11:07:02 2018.
+Last metadata expiration check: 5:50:45 ago on Fri Aug  3 20:14:34 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -114,12 +113,12 @@ Install  4 Packages
 Total download size: 359 k
 Installed size: 550 k
 Downloading Packages:
-(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          370 kB/s |  31 kB     00:00    
-(2/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 886 kB/s |  85 kB     00:00    
-(3/4): zlib-devel-1.2.11-8.fc28.x86_64.rpm      2.4 MB/s |  55 kB     00:00    
-(4/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.5 MB/s | 187 kB     00:00    
+(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          327 kB/s |  31 kB     00:00    
+(2/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.9 MB/s | 187 kB     00:00    
+(3/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 621 kB/s |  85 kB     00:00    
+(4/4): zlib-devel-1.2.11-8.fc28.x86_64.rpm      544 kB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           254 kB/s | 359 kB     00:01     
+Total                                           228 kB/s | 359 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -298,8 +297,8 @@ The following actions will be performed:
 -> removed   dune.1.0.1
 -> installed base-bytes.base
 -> installed conf-gmp.1
--> installed conf-gmp-powm-sec.1
 -> installed conf-perl.1
+-> installed conf-gmp-powm-sec.1
 -> installed conf-pkg-config.1.1
 -> installed conf-zlib.1
 -> installed jbuilder.1.0+beta17
@@ -379,7 +378,8 @@ The following actions will be performed:
 #     ocamlopt src/core_extended.{cmx,o}
 #         bash src/config_ext.h
 #       ocamlc src/extended_int_stubs.o
-#       ocamlc src/malloc_stubs.o
+#       ocamlc src/posix_clock_stubs.o
+#       ocamlc src/unix_pseudo_terminal_stubs.o
 #       ocamlc src/extended_unix_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
 # extended_unix_stubs.c: In function 'quota_query':
@@ -518,5 +518,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803110716.export"
-31 1533294418 1533294713
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020524.export"
+31 1533348315 1533348605

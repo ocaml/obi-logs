@@ -7,7 +7,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,8 +34,7 @@ package xen-devel is not installed
 # The following new OS packages need to be installed: xen-devel
 The following command needs to be run through "sudo":
     yum install -y xen-devel
-Fedora 28 - x86_64 - Updates                     44 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Fri Aug  3 11:24:38 2018.
+Last metadata expiration check: 5:57:11 ago on Fri Aug  3 20:14:34 2018.
 Dependencies resolved.
 ================================================================================
  Package               Arch          Version               Repository      Size
@@ -57,15 +56,21 @@ Install  7 Packages
 Total download size: 1.7 M
 Installed size: 4.6 M
 Downloading Packages:
-(1/7): libuuid-devel-2.32.1-1.fc28.x86_64.rpm   2.7 MB/s |  91 kB     00:00    
-(2/7): xen-devel-4.10.1-5.fc28.x86_64.rpm       5.3 MB/s | 346 kB     00:00    
-(3/7): e2fsprogs-libs-1.44.2-0.fc28.x86_64.rpm  6.1 MB/s | 198 kB     00:00    
-(4/7): yajl-2.1.0-10.fc28.x86_64.rpm            700 kB/s |  39 kB     00:00    
-(5/7): xen-licenses-4.10.1-5.fc28.x86_64.rpm     11 MB/s | 124 kB     00:00    
-(6/7): libnl3-3.4.0-3.fc28.x86_64.rpm           2.1 MB/s | 307 kB     00:00    
-(7/7): xen-libs-4.10.1-5.fc28.x86_64.rpm        2.3 MB/s | 639 kB     00:00    
+[MIRROR] xen-devel-4.10.1-5.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/x/xen-devel-4.10.1-5.fc28.x86_64.rpm
+[MIRROR] libuuid-devel-2.32.1-1.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/l/libuuid-devel-2.32.1-1.fc28.x86_64.rpm
+[MIRROR] xen-libs-4.10.1-5.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/x/xen-libs-4.10.1-5.fc28.x86_64.rpm
+(1/7): libuuid-devel-2.32.1-1.fc28.x86_64.rpm   752 kB/s |  91 kB     00:00    
+[MIRROR] e2fsprogs-libs-1.44.2-0.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/e/e2fsprogs-libs-1.44.2-0.fc28.x86_64.rpm
+(2/7): xen-devel-4.10.1-5.fc28.x86_64.rpm       2.2 MB/s | 346 kB     00:00    
+(3/7): e2fsprogs-libs-1.44.2-0.fc28.x86_64.rpm  5.6 MB/s | 198 kB     00:00    
+(4/7): xen-libs-4.10.1-5.fc28.x86_64.rpm        3.7 MB/s | 639 kB     00:00    
+[MIRROR] libnl3-3.4.0-3.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libnl3-3.4.0-3.fc28.x86_64.rpm
+[MIRROR] yajl-2.1.0-10.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/y/yajl-2.1.0-10.fc28.x86_64.rpm
+(5/7): xen-licenses-4.10.1-5.fc28.x86_64.rpm    8.3 MB/s | 124 kB     00:00    
+(6/7): yajl-2.1.0-10.fc28.x86_64.rpm            464 kB/s |  39 kB     00:00    
+(7/7): libnl3-3.4.0-3.fc28.x86_64.rpm           3.0 MB/s | 307 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.0 MB/s | 1.7 MB     00:01     
+Total                                           894 kB/s | 1.7 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -489,5 +494,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803112452.export"
-31 1533295474 1533295602
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021152.export"
+31 1533348701 1533348836

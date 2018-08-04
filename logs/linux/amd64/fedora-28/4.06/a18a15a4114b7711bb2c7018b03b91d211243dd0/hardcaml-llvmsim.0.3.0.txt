@@ -13,7 +13,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -90,8 +90,7 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: cmake libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y cmake libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     18 MB/s |  21 MB     00:01    
-Last metadata expiration check: 0:00:07 ago on Fri Aug  3 11:25:08 2018.
+Last metadata expiration check: 5:46:27 ago on Fri Aug  3 20:14:34 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -115,16 +114,19 @@ Install  8 Packages
 Total download size: 9.4 M
 Installed size: 28 M
 Downloading Packages:
-(1/8): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 261 kB/s |  38 kB     00:00    
-(2/8): cmake-rpm-macros-3.11.2-1.fc28.noarch.rp 446 kB/s |  38 kB     00:00    
-(3/8): jsoncpp-1.8.4-3.fc28.x86_64.rpm          1.1 MB/s |  92 kB     00:00    
-(4/8): cmake-data-3.11.2-1.fc28.noarch.rpm      4.0 MB/s | 1.3 MB     00:00    
-(5/8): libffi-devel-3.1-16.fc28.x86_64.rpm      507 kB/s |  27 kB     00:00    
-(6/8): rhash-1.3.5-2.fc28.x86_64.rpm            1.8 MB/s | 129 kB     00:00    
-(7/8): libuv-1.22.0-1.fc28.x86_64.rpm           9.4 MB/s | 132 kB     00:00    
-(8/8): cmake-3.11.2-1.fc28.x86_64.rpm           8.9 MB/s | 7.7 MB     00:00    
+(1/8): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 1.2 MB/s |  38 kB     00:00    
+(2/8): cmake-rpm-macros-3.11.2-1.fc28.noarch.rp 3.4 MB/s |  38 kB     00:00    
+(3/8): cmake-data-3.11.2-1.fc28.noarch.rpm       16 MB/s | 1.3 MB     00:00    
+[MIRROR] jsoncpp-1.8.4-3.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/j/jsoncpp-1.8.4-3.fc28.x86_64.rpm
+[MIRROR] rhash-1.3.5-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/r/rhash-1.3.5-2.fc28.x86_64.rpm
+(4/8): jsoncpp-1.8.4-3.fc28.x86_64.rpm          918 kB/s |  92 kB     00:00    
+(5/8): rhash-1.3.5-2.fc28.x86_64.rpm            1.8 MB/s | 129 kB     00:00    
+[MIRROR] libffi-devel-3.1-16.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libffi-devel-3.1-16.fc28.x86_64.rpm
+(6/8): libuv-1.22.0-1.fc28.x86_64.rpm            14 MB/s | 132 kB     00:00    
+(7/8): libffi-devel-3.1-16.fc28.x86_64.rpm      1.1 MB/s |  27 kB     00:00    
+(8/8): cmake-3.11.2-1.fc28.x86_64.rpm            31 MB/s | 7.7 MB     00:00    
 --------------------------------------------------------------------------------
-Total                                           6.0 MB/s | 9.4 MB     00:01     
+Total                                           7.4 MB/s | 9.4 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -338,5 +340,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803112524.export"
-31 1533295504 1533295651
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020108.export"
+31 1533348057 1533348196

@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     28 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Fri Aug  3 10:45:24 2018.
+Fedora 28 - x86_64 - Updates                     34 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sat Aug  4 02:19:11 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -57,12 +57,16 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          463 kB/s |  46 kB     00:00    
-(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.7 MB/s | 193 kB     00:00    
-(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        4.5 MB/s | 184 kB     00:00    
-(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        2.6 MB/s | 550 kB     00:00    
+[MIRROR] pcre-devel-8.42-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/pcre-devel-8.42-2.fc28.x86_64.rpm
+[MIRROR] pcre-utf16-8.42-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/pcre-utf16-8.42-2.fc28.x86_64.rpm
+(1/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        531 kB/s | 193 kB     00:00    
+(2/4): pcre-devel-8.42-2.fc28.x86_64.rpm        1.4 MB/s | 550 kB     00:00    
+[MIRROR] pcre-utf32-8.42-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/pcre-utf32-8.42-2.fc28.x86_64.rpm
+[MIRROR] pcre-cpp-8.42-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/pcre-cpp-8.42-2.fc28.x86_64.rpm
+(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        249 kB/s | 184 kB     00:00    
+(4/4): pcre-cpp-8.42-2.fc28.x86_64.rpm           41 kB/s |  46 kB     00:01    
 --------------------------------------------------------------------------------
-Total                                           2.2 MB/s | 973 kB     00:00     
+Total                                           590 kB/s | 973 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -173,5 +177,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803104536.export"
-31 1533293120 1533293307
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021925.export"
+31 1533349146 1533349339

@@ -38,7 +38,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -64,8 +64,7 @@ Install m4 if you need a macro processor.
 # The following new OS packages need to be installed: gmp-devel
 The following command needs to be run through "sudo":
     yum install -y gmp-devel
-Fedora 28 - x86_64 - Updates                     34 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Fri Aug  3 11:08:39 2018.
+Last metadata expiration check: 5:55:29 ago on Fri Aug  3 20:14:34 2018.
 Dependencies resolved.
 ================================================================================
  Package           Arch           Version                  Repository      Size
@@ -82,10 +81,12 @@ Install  2 Packages
 Total download size: 218 k
 Installed size: 377 k
 Downloading Packages:
-(1/2): gmp-c++-6.1.2-7.fc28.x86_64.rpm          590 kB/s |  31 kB     00:00    
-(2/2): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.5 MB/s | 187 kB     00:00    
+[MIRROR] gmp-c++-6.1.2-7.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/g/gmp-c++-6.1.2-7.fc28.x86_64.rpm
+[MIRROR] gmp-devel-6.1.2-7.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/g/gmp-devel-6.1.2-7.fc28.x86_64.rpm
+(1/2): gmp-c++-6.1.2-7.fc28.x86_64.rpm          203 kB/s |  31 kB     00:00    
+(2/2): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.1 MB/s | 187 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           354 kB/s | 218 kB     00:00     
+Total                                           337 kB/s | 218 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -286,5 +287,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803110852.export"
-31 1533294515 1533294546
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021007.export"
+31 1533348599 1533348621

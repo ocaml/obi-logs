@@ -10,7 +10,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,20 +36,20 @@ Install m4 if you need a macro processor.
 # The following new OS packages need to be installed: libogg-devel libvorbis-devel
 The following command needs to be run through "sudo":
     yum install -y libogg-devel libvorbis-devel
-Fedora 28 - x86_64 - Updates                     30 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:10 ago on Fri Aug  3 11:19:11 2018.
+Fedora 28 - x86_64 - Updates                     26 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sat Aug  4 02:23:31 2018.
 Dependencies resolved.
 ================================================================================
  Package                 Arch         Version               Repository     Size
 ================================================================================
 Installing:
  libogg-devel            x86_64       2:1.3.2-10.fc28       fedora         18 k
- libvorbis-devel         x86_64       1:1.3.6-1.fc28        fedora         24 k
+ libvorbis-devel         x86_64       1:1.3.6-3.fc28        updates        25 k
 Installing dependencies:
  autoconf                noarch       2.69-27.fc28          fedora        710 k
  automake                noarch       1.15.1-5.fc28         fedora        706 k
  libogg                  x86_64       2:1.3.2-10.fc28       fedora         30 k
- libvorbis               x86_64       1:1.3.6-1.fc28        fedora        195 k
+ libvorbis               x86_64       1:1.3.6-3.fc28        updates       195 k
  perl-Thread-Queue       noarch       3.13-1.fc28           updates        23 k
 
 Transaction Summary
@@ -59,15 +59,19 @@ Install  7 Packages
 Total download size: 1.7 M
 Installed size: 4.9 M
 Downloading Packages:
-(1/7): libogg-1.3.2-10.fc28.x86_64.rpm          311 kB/s |  30 kB     00:00    
-(2/7): libogg-devel-1.3.2-10.fc28.x86_64.rpm    170 kB/s |  18 kB     00:00    
-(3/7): libvorbis-devel-1.3.6-1.fc28.x86_64.rpm  2.1 MB/s |  24 kB     00:00    
-(4/7): automake-1.15.1-5.fc28.noarch.rpm        5.0 MB/s | 706 kB     00:00    
-(5/7): autoconf-2.69-27.fc28.noarch.rpm          12 MB/s | 710 kB     00:00    
-(6/7): libvorbis-1.3.6-1.fc28.x86_64.rpm        3.3 MB/s | 195 kB     00:00    
-(7/7): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 384 kB/s |  23 kB     00:00    
+[MIRROR] automake-1.15.1-5.fc28.noarch.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/a/automake-1.15.1-5.fc28.noarch.rpm
+[MIRROR] libogg-1.3.2-10.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libogg-1.3.2-10.fc28.x86_64.rpm
+[MIRROR] libogg-devel-1.3.2-10.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libogg-devel-1.3.2-10.fc28.x86_64.rpm
+(1/7): libogg-devel-1.3.2-10.fc28.x86_64.rpm    283 kB/s |  18 kB     00:00    
+(2/7): libogg-1.3.2-10.fc28.x86_64.rpm          452 kB/s |  30 kB     00:00    
+[MIRROR] autoconf-2.69-27.fc28.noarch.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/a/autoconf-2.69-27.fc28.noarch.rpm
+(3/7): libvorbis-devel-1.3.6-3.fc28.x86_64.rpm  2.0 MB/s |  25 kB     00:00    
+(4/7): automake-1.15.1-5.fc28.noarch.rpm        6.3 MB/s | 706 kB     00:00    
+(5/7): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 3.3 MB/s |  23 kB     00:00    
+(6/7): libvorbis-1.3.6-3.fc28.x86_64.rpm        3.4 MB/s | 195 kB     00:00    
+(7/7): autoconf-2.69-27.fc28.noarch.rpm         8.6 MB/s | 710 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.1 MB/s | 1.7 MB     00:01     
+Total                                           1.0 MB/s | 1.7 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -75,7 +79,7 @@ Transaction test succeeded.
 Running transaction
   Preparing        :                                                        1/1 
   Installing       : libogg-2:1.3.2-10.fc28.x86_64                          1/7 
-  Installing       : libvorbis-1:1.3.6-1.fc28.x86_64                        2/7 
+  Installing       : libvorbis-1:1.3.6-3.fc28.x86_64                        2/7 
   Installing       : perl-Thread-Queue-3.13-1.fc28.noarch                   3/7 
   Installing       : autoconf-2.69-27.fc28.noarch                           4/7 
   Running scriptlet: autoconf-2.69-27.fc28.noarch                           4/7 
@@ -84,27 +88,27 @@ install-info: No such file or directory for /usr/share/info/autoconf.info
   Running scriptlet: automake-1.15.1-5.fc28.noarch                          5/7 
 install-info: No such file or directory for /usr/share/info/automake.info.gz
   Installing       : libogg-devel-2:1.3.2-10.fc28.x86_64                    6/7 
-  Installing       : libvorbis-devel-1:1.3.6-1.fc28.x86_64                  7/7 
-  Running scriptlet: libvorbis-devel-1:1.3.6-1.fc28.x86_64                  7/7 
+  Installing       : libvorbis-devel-1:1.3.6-3.fc28.x86_64                  7/7 
+  Running scriptlet: libvorbis-devel-1:1.3.6-3.fc28.x86_64                  7/7 
   Verifying        : libogg-devel-2:1.3.2-10.fc28.x86_64                    1/7 
   Verifying        : automake-1.15.1-5.fc28.noarch                          2/7 
   Verifying        : libogg-2:1.3.2-10.fc28.x86_64                          3/7 
   Verifying        : autoconf-2.69-27.fc28.noarch                           4/7 
-  Verifying        : libvorbis-devel-1:1.3.6-1.fc28.x86_64                  5/7 
-  Verifying        : libvorbis-1:1.3.6-1.fc28.x86_64                        6/7 
+  Verifying        : libvorbis-devel-1:1.3.6-3.fc28.x86_64                  5/7 
+  Verifying        : libvorbis-1:1.3.6-3.fc28.x86_64                        6/7 
   Verifying        : perl-Thread-Queue-3.13-1.fc28.noarch                   7/7 
 
 Installed:
-  libogg-devel.x86_64 2:1.3.2-10.fc28    libvorbis-devel.x86_64 1:1.3.6-1.fc28  
+  libogg-devel.x86_64 2:1.3.2-10.fc28    libvorbis-devel.x86_64 1:1.3.6-3.fc28  
   autoconf.noarch 2.69-27.fc28           automake.noarch 1.15.1-5.fc28          
-  libogg.x86_64 2:1.3.2-10.fc28          libvorbis.x86_64 1:1.3.6-1.fc28        
+  libogg.x86_64 2:1.3.2-10.fc28          libvorbis.x86_64 1:1.3.6-3.fc28        
   perl-Thread-Queue.noarch 3.13-1.fc28  
 
 Complete!
 The following command needs to be run through "sudo":
     rpm -q --whatprovides libogg-devel libvorbis-devel
 libogg-devel-1.3.2-10.fc28.x86_64
-libvorbis-devel-1.3.6-1.fc28.x86_64
+libvorbis-devel-1.3.6-3.fc28.x86_64
 # OS packages installation successful
 # Now letting OPAM install the packages
 The following actions will be performed:
@@ -173,5 +177,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803111929.export"
-31 1533295146 1533295177
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804022345.export"
+31 1533349406 1533349431

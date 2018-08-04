@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     35 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Fri Aug  3 11:06:53 2018.
+Last metadata expiration check: 5:54:45 ago on Fri Aug  3 20:14:34 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -53,9 +52,10 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-libffi-devel-3.1-16.fc28.x86_64.rpm             368 kB/s |  27 kB     00:00    
+[MIRROR] libffi-devel-3.1-16.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libffi-devel-3.1-16.fc28.x86_64.rpm
+libffi-devel-3.1-16.fc28.x86_64.rpm             321 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            44 kB/s |  27 kB     00:00     
+Total                                            45 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -139,5 +139,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803110706.export"
-31 1533294409 1533294457
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020923.export"
+31 1533348555 1533348598

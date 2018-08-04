@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -55,8 +55,7 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: autoconf
 The following command needs to be run through "sudo":
     yum install -y autoconf
-Fedora 28 - x86_64 - Updates                     24 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Fri Aug  3 11:08:02 2018.
+Last metadata expiration check: 5:58:03 ago on Fri Aug  3 20:14:34 2018.
 Dependencies resolved.
 ================================================================================
  Package           Arch            Version                Repository       Size
@@ -71,9 +70,9 @@ Install  1 Package
 Total download size: 710 k
 Installed size: 2.2 M
 Downloading Packages:
-autoconf-2.69-27.fc28.noarch.rpm                5.3 MB/s | 710 kB     00:00    
+autoconf-2.69-27.fc28.noarch.rpm                7.1 MB/s | 710 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           2.0 MB/s | 710 kB     00:00     
+Total                                           803 kB/s | 710 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -235,10 +234,9 @@ The following actions will be performed:
 -> installed mtime.1.1.0
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
--> installed ppxlib.0.3.0
 -> installed fmt.0.8.5
--> installed logs.0.6.2
 -> installed mirage-device.1.1.0
+-> installed logs.0.6.2
 -> installed mirage-clock.1.3.0
 -> installed mirage-flow.1.5.0
 -> installed mirage-channel.3.1.0
@@ -247,9 +245,10 @@ The following actions will be performed:
 -> installed mirage-clock-unix.1.4.0
 -> installed mirage-time.1.1.0
 -> installed mirage-channel-lwt.3.1.0
+-> installed ppxlib.0.3.0
+-> installed mirage-time-lwt.1.1.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
--> installed mirage-time-lwt.1.1.0
 -> installed uri.1.9.7
 -> installed dns.1.0.1
 -> installed dns-forward.0.10.0
@@ -260,15 +259,15 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/dns-forward-lwt-unix.0.9.0
 # command              ~/.opam/4.06/bin/jbuilder build -p dns-forward-lwt-unix -j 71
 # exit-code            1
-# env-file             ~/.opam/log/dns-forward-lwt-unix-10-e41632.env
-# output-file          ~/.opam/log/dns-forward-lwt-unix-10-e41632.out
+# env-file             ~/.opam/log/dns-forward-lwt-unix-12-e41632.env
+# output-file          ~/.opam/log/dns-forward-lwt-unix-12-e41632.out
 ### output ###
-#     ocamlopt lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cstruct -I /home/opam/.opam/4.06/lib/cstruct-lwt -I /home/opam/.opam/4.06/lib/dns -I /home/opam/.opam/4.06/lib/dns-forward -I /home/opam/.opam/4.06/lib/duration -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/hashcons -I /home/opam/.opam/4.06/lib/io-page -I /home/opam/.opam/4.06/lib/io-page-unix -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/mirage-channel -I /home/opam/.opam/4.06/lib/mirage-channel-lwt -I /home/opam/.opam/4.06/lib/mirage-clock -I /home/opam/.opam/4.06/lib/mirage-clock-lwt -I /home/opam/.opam/4.06/lib/mirage-clock-unix -I /home/opam/.opam/4.06/lib/mirage-device -I /home/opam/.opam/4.06/lib/mirage-flow -I /home/opam/.opam/4.06/lib/mirage-flow-lwt -I /home/opam/.opam/4.06/lib/mirage-time -I /home/opam/.opam/4.06/lib/mirage-time-lwt -I /home/opam/.opam/4.06/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.06/lib/ocaml/compiler-libs -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_tools_versioned -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/re/str -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/rresult -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmx -c -impl lwt/dns_forward_lwt_unix.ml)
-# File "lwt/dns_forward_lwt_unix.ml", line 464, characters 22-37:
-# Error: Unbound module Rpc.Client.Make
 #       ocamlc lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cstruct -I /home/opam/.opam/4.06/lib/cstruct-lwt -I /home/opam/.opam/4.06/lib/dns -I /home/opam/.opam/4.06/lib/dns-forward -I /home/opam/.opam/4.06/lib/duration -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/hashcons -I /home/opam/.opam/4.06/lib/io-page -I /home/opam/.opam/4.06/lib/io-page-unix -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/mirage-channel -I /home/opam/.opam/4.06/lib/mirage-channel-lwt -I /home/opam/.opam/4.06/lib/mirage-clock -I /home/opam/.opam/4.06/lib/mirage-clock-lwt -I /home/opam/.opam/4.06/lib/mirage-clock-unix -I /home/opam/.opam/4.06/lib/mirage-device -I /home/opam/.opam/4.06/lib/mirage-flow -I /home/opam/.opam/4.06/lib/mirage-flow-lwt -I /home/opam/.opam/4.06/lib/mirage-time -I /home/opam/.opam/4.06/lib/mirage-time-lwt -I /home/opam/.opam/4.06/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.06/lib/ocaml/compiler-libs -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_tools_versioned -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/re/str -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/rresult -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmo -c -impl lwt/dns_forward_lwt_unix.ml)
+# File "lwt/dns_forward_lwt_unix.ml", line 464, characters 22-37:
+# Error: Unbound module Rpc.Client.Make
+#     ocamlopt lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cstruct -I /home/opam/.opam/4.06/lib/cstruct-lwt -I /home/opam/.opam/4.06/lib/dns -I /home/opam/.opam/4.06/lib/dns-forward -I /home/opam/.opam/4.06/lib/duration -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/hashcons -I /home/opam/.opam/4.06/lib/io-page -I /home/opam/.opam/4.06/lib/io-page-unix -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/mirage-channel -I /home/opam/.opam/4.06/lib/mirage-channel-lwt -I /home/opam/.opam/4.06/lib/mirage-clock -I /home/opam/.opam/4.06/lib/mirage-clock-lwt -I /home/opam/.opam/4.06/lib/mirage-clock-unix -I /home/opam/.opam/4.06/lib/mirage-device -I /home/opam/.opam/4.06/lib/mirage-flow -I /home/opam/.opam/4.06/lib/mirage-flow-lwt -I /home/opam/.opam/4.06/lib/mirage-time -I /home/opam/.opam/4.06/lib/mirage-time-lwt -I /home/opam/.opam/4.06/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.06/lib/ocaml/compiler-libs -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_tools_versioned -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/re/str -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/rresult -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmx -c -impl lwt/dns_forward_lwt_unix.ml)
 # File "lwt/dns_forward_lwt_unix.ml", line 464, characters 22-37:
 # Error: Unbound module Rpc.Client.Make
 
@@ -334,5 +333,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803110813.export"
-31 1533294478 1533294604
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021241.export"
+31 1533348753 1533348885

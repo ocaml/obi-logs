@@ -7,7 +7,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,8 +34,7 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: zlib-devel
 The following command needs to be run through "sudo":
     yum install -y zlib-devel
-Fedora 28 - x86_64 - Updates                     31 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Fri Aug  3 11:28:19 2018.
+Last metadata expiration check: 5:55:49 ago on Fri Aug  3 20:14:34 2018.
 Dependencies resolved.
 ================================================================================
  Package            Arch           Version                Repository       Size
@@ -50,9 +49,9 @@ Install  1 Package
 Total download size: 55 k
 Installed size: 138 k
 Downloading Packages:
-zlib-devel-1.2.11-8.fc28.x86_64.rpm             1.7 MB/s |  55 kB     00:00    
+zlib-devel-1.2.11-8.fc28.x86_64.rpm             1.8 MB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           277 kB/s |  55 kB     00:00     
+Total                                           101 kB/s |  55 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -93,13 +92,13 @@ The following actions will be performed:
 # env-file             ~/.opam/log/npy-10-865888.env
 # output-file          ~/.opam/log/npy-10-865888.out
 ### output ###
-#       ocamlc src/.npy.objs/npy.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/opam/.opam/4.06/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
+#     ocamlopt src/.npy.objs/npy.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/opam/.opam/4.06/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
 # File "src/npy.ml", line 94, characters 29-40:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
-#     ocamlopt src/.npy.objs/npy.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/opam/.opam/4.06/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
+#       ocamlc src/.npy.objs/npy.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.npy.objs -I /home/opam/.opam/4.06/lib/camlzip/../zip -no-alias-deps -o src/.npy.objs/npy.cmo -c -impl src/npy.ml)
 # File "src/npy.ml", line 94, characters 29-40:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
@@ -116,5 +115,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803112831.export"
-31 1533295696 1533295714
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021027.export"
+31 1533348619 1533348630

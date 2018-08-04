@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Thu Aug  2 23:10:27 2018
+Install Date: Fri Aug  3 20:15:14 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     34 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:06 ago on Fri Aug  3 10:54:03 2018.
+Last metadata expiration check: 5:54:05 ago on Fri Aug  3 20:14:34 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -53,9 +52,9 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-libffi-devel-3.1-16.fc28.x86_64.rpm             521 kB/s |  27 kB     00:00    
+libffi-devel-3.1-16.fc28.x86_64.rpm             355 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            31 kB/s |  27 kB     00:00     
+Total                                            40 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -113,8 +112,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/gdal.0.3.0
 # command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
 # exit-code            2
-# env-file             ~/.opam/log/gdal-10-f9bace.env
-# output-file          ~/.opam/log/gdal-10-f9bace.out
+# env-file             ~/.opam/log/gdal-11-f9bace.env
+# output-file          ~/.opam/log/gdal-11-f9bace.out
 ### output ###
 # File "./setup.ml", line 247, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -142,5 +141,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803105414.export"
-31 1533293638 1533293686
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020844.export"
+31 1533348514 1533348562
