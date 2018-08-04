@@ -663,67 +663,67 @@ The following actions will be performed:
 # ocamlfind ocamldep -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -modules main.ml > main.ml.depends
 # ocamlfind ocamldep -modules action.ml > action.ml.depends
 # ocamlfind ocamldep -modules bin/bin.mli > bin/bin.mli.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o bin/bin.cmi bin/bin.mli
+# ocamlfind ocamlc -c -dtypes -I bin -I server -I net -o bin/bin.cmi bin/bin.mli
 # ocamlfind ocamldep -modules common.ml > common.ml.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o action.cmo action.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o action.cmo action.ml
 # ocamlfind ocamldep -modules config.mli > config.mli.depends
 # ocamlfind ocamldep -modules game.ml > game.ml.depends
 # ocamlfind ocamldep -modules block.mli > block.mli.depends
 # ocamlfind ocamldep -modules cell.ml > cell.ml.depends
 # ocamlfind ocamldep -modules puyo.ml > puyo.ml.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o puyo.cmo puyo.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o puyo.cmo puyo.ml
 # ocamlfind ocamldep -modules matrix.mli > matrix.mli.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o cell.cmo cell.ml
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o matrix.cmi matrix.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o cell.cmo cell.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o matrix.cmi matrix.mli
 # ocamlfind ocamldep -modules generator.mli > generator.mli.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o block.cmi block.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o block.cmi block.mli
 # ocamlfind ocamldep -modules rand.mli > rand.mli.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o rand.cmi rand.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o rand.cmi rand.mli
 # ocamlfind ocamldep -modules gfx.mli > gfx.mli.depends
 # ocamlfind ocamldep -modules misc.ml > misc.ml.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o generator.cmi generator.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o gfx.cmi gfx.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o misc.cmo misc.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o generator.cmi generator.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o gfx.cmi gfx.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o misc.cmo misc.ml
 # ocamlfind ocamldep -modules highscores.mli > highscores.mli.depends
 # ocamlfind ocamldep -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -modules IO.mli > IO.mli.depends
 # ocamlfind ocamldep -modules replay.mli > replay.mli.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o game.cmo game.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o game.cmo game.ml
 # ocamlfind ocamldep -modules score.mli > score.mli.depends
 # ocamlfind ocamldep -modules version.ml > version.ml.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o config.cmi config.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o highscores.cmi highscores.mli
-# ocamlfind ocamlc -c -dtypes -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -I bin -I net -I server -o IO.cmi IO.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o replay.cmi replay.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o score.cmi score.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o version.cmo version.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o config.cmi config.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o highscores.cmi highscores.mli
+# ocamlfind ocamlc -c -dtypes -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -I server -I bin -I net -o IO.cmi IO.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o replay.cmi replay.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o score.cmi score.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o version.cmo version.ml
 # ocamlfind ocamldep -modules cpu.ml > cpu.ml.depends
 # ocamlfind ocamldep -modules draw.ml > draw.ml.depends
 # ocamlfind ocamldep -modules sprites.ml > sprites.ml.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o common.cmo common.ml
-# + ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o common.cmo common.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o common.cmo common.ml
+# + ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o common.cmo common.ml
 # File "common.ml", line 82, characters 13-29:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o sprites.cmo sprites.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o sprites.cmo sprites.ml
 # ocamlfind ocamldep -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -modules menu.mli > menu.mli.depends
 # ocamlfind ocamldep -modules online.ml > online.ml.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o draw.cmo draw.ml
-# + ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o draw.cmo draw.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o draw.cmo draw.ml
+# + ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o draw.cmo draw.ml
 # File "draw.ml", line 289, characters 11-27:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
-# ocamlfind ocamlc -c -dtypes -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -I bin -I net -I server -o menu.cmi menu.mli
+# ocamlfind ocamlc -c -dtypes -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -I server -I bin -I net -o menu.cmi menu.mli
 # ocamlfind ocamldep -modules net/net.mli > net/net.mli.depends
 # ocamlfind ocamldep -modules protocol.ml > protocol.ml.depends
-# ocamlfind ocamlc -c -dtypes -I net -I bin -I server -o net/net.cmi net/net.mli
+# ocamlfind ocamlc -c -dtypes -I net -I server -I bin -o net/net.cmi net/net.mli
 # ocamlfind ocamldep -modules syncs.mli > syncs.mli.depends
 # ocamlfind ocamldep -modules net/udp.mli > net/udp.mli.depends
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o protocol.cmo protocol.ml
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o syncs.cmi syncs.mli
-# ocamlfind ocamlc -c -dtypes -I net -I bin -I server -o net/udp.cmi net/udp.mli
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o cpu.cmo cpu.ml
-# ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o online.cmo online.ml
-# + ocamlfind ocamlc -c -dtypes -I bin -I net -I server -o online.cmo online.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o protocol.cmo protocol.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o syncs.cmi syncs.mli
+# ocamlfind ocamlc -c -dtypes -I net -I server -I bin -o net/udp.cmi net/udp.mli
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o cpu.cmo cpu.ml
+# ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o online.cmo online.ml
+# + ocamlfind ocamlc -c -dtypes -I server -I bin -I net -o online.cmo online.ml
 # File "online.ml", line 85, characters 27-43:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
@@ -736,10 +736,10 @@ The following actions will be performed:
 # File "online.ml", line 353, characters 17-33:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
-# ocamlfind ocamlc -c -dtypes -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -I bin -I net -I server -o main.cmo main.ml
+# ocamlfind ocamlc -c -dtypes -package unix -package sdl.sdlttf -package sdl.sdlimage -package sdl -I server -I bin -I net -o main.cmo main.ml
 # ocamlfind ocamldep -modules bin/bin.ml > bin/bin.ml.depends
-# ocamlfind ocamlopt -c -dtypes -I bin -I net -I server -o bin/bin.cmx bin/bin.ml
-# + ocamlfind ocamlopt -c -dtypes -I bin -I net -I server -o bin/bin.cmx bin/bin.ml
+# ocamlfind ocamlopt -c -dtypes -I bin -I server -I net -o bin/bin.cmx bin/bin.ml
+# + ocamlfind ocamlopt -c -dtypes -I bin -I server -I net -o bin/bin.cmx bin/bin.ml
 # File "bin/bin.ml", line 92, characters 6-24:
 # Warning 3: deprecated: String.set
 # Use Bytes.set instead.
@@ -766,5 +766,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180803034020.export"
-31 1533267591 1533267634
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804030214.export"
+31 1533351705 1533351751

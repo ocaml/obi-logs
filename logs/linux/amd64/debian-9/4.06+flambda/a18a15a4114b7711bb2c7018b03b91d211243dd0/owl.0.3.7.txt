@@ -874,9 +874,9 @@ The following actions will be performed:
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmx -c -impl src/owl/owl_sparse_dok_matrix.ml)
 # File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
 # Error: Unbound value Owl_utils.marshal_to_file
-#       ocamlc src/owl/.owl.objs/owl_algodiff.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_algodiff.cmo -c -impl src/owl/owl_algodiff.ml)
-# File "src/owl/optimise/owl_algodiff.ml", line 10, characters 38-57:
+#       ocamlc src/owl/.owl.objs/owl_regression.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression.cmo -c -impl src/owl/owl_regression.ml)
+# File "src/owl/optimise/owl_regression.ml", line 13, characters 40-59:
 # Error: Signature mismatch:
 #        ...
 #        The value `transpose_conv3d_backward_kernel' is required but not provided
@@ -938,9 +938,9 @@ The following actions will be performed:
 #        The value `transpose_conv1d' is required but not provided
 #        File "src/base/types/owl_types_ndarray_basic.ml", line 201, characters 2-75:
 #          Expected declaration
-#       ocamlc src/owl/.owl.objs/owl_regression.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_regression.cmo -c -impl src/owl/owl_regression.ml)
-# File "src/owl/optimise/owl_regression.ml", line 13, characters 40-59:
+#       ocamlc src/owl/.owl.objs/owl_algodiff.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_algodiff.cmo -c -impl src/owl/owl_algodiff.ml)
+# File "src/owl/optimise/owl_algodiff.ml", line 10, characters 38-57:
 # Error: Signature mismatch:
 #        ...
 #        The value `transpose_conv3d_backward_kernel' is required but not provided
@@ -975,15 +975,15 @@ The following actions will be performed:
 # File "src/owl/dense/owl_dense_ndarray_a.ml", line 129, characters 41-48:
 # Error: This expression has type int but an expression was expected of type
 #          'a array array
+#       ocamlc src/owl/.owl.objs/owl_sparse_ndarray_generic.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_ndarray_generic.cmo -c -impl src/owl/owl_sparse_ndarray_generic.ml)
+# File "src/owl/sparse/owl_sparse_ndarray_generic.ml", line 540, characters 15-40:
+# Error: Unbound value Owl_utils.marshal_to_file
 #       ocamlc src/owl/.owl.objs/owl_dense_ndarray_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_generic.cmo -c -impl src/owl/owl_dense_ndarray_generic.ml)
 # File "src/owl/dense/owl_dense_ndarray_generic.ml", line 152, characters 54-61:
 # Error: This expression has type int but an expression was expected of type
 #          int array array
-#       ocamlc src/owl/.owl.objs/owl_sparse_ndarray_generic.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_ndarray_generic.cmo -c -impl src/owl/owl_sparse_ndarray_generic.ml)
-# File "src/owl/sparse/owl_sparse_ndarray_generic.ml", line 540, characters 15-40:
-# Error: Unbound value Owl_utils.marshal_to_file
 #       ocamlc src/owl/.owl.objs/owl_sparse_matrix_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_sparse_matrix_generic.cmo -c -impl src/owl/owl_sparse_matrix_generic.ml)
 # File "src/owl/sparse/owl_sparse_matrix_generic.ml", line 581, characters 15-40:
@@ -1032,5 +1032,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180803041141.export"
-31 1533269454 1533269752
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804024924.export"
+31 1533350909 1533351231

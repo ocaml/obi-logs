@@ -109,8 +109,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/uunf.11.0.0
 # command              ~/.opam/4.06+flambda/bin/ocaml pkg/pkg.ml build --pinned false --with-uutf true --with-cmdliner true
 # exit-code            1
-# env-file             ~/.opam/log/uunf-11-4976ab.env
-# output-file          ~/.opam/log/uunf-11-4976ab.out
+# env-file             ~/.opam/log/uunf-12-4976ab.env
+# output-file          ~/.opam/log/uunf-12-4976ab.out
 ### output ###
 # ocamlfind ocamldep -package bytes -package uchar -modules src/uunf_tmap.ml > src/uunf_tmap.ml.depends
 # ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmap.cmo src/uunf_tmap.ml
@@ -178,5 +178,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180803041839.export"
-31 1533269916 1533270180
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804023820.export"
+31 1533350297 1533350624
