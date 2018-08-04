@@ -11,8 +11,10 @@ pkgconf
 # The following new OS packages need to be installed: neko-dev pcre-dev zlib-dev
 The following command needs to be run through "sudo":
     apk add neko-dev pcre-dev zlib-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 ERROR: unsatisfiable constraints:
   neko-dev (missing):
     required by: world[neko-dev]
 OS package installation failed
-1 1533265034 1533265036
+1 1533353477 1533353480

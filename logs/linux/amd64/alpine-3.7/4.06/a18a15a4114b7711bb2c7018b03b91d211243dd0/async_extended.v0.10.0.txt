@@ -169,9 +169,9 @@ The following actions will be performed:
 -> installed inotify.2.3
 -> installed sexplib.v0.10.0
 -> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.10.0
 -> installed ppx_ast.v0.10.0
 -> installed spawn.v0.10.1
--> installed base.v0.10.0
 -> installed stdio.v0.10.0
 -> installed configurator.v0.10.0
 -> installed typerep.v0.10.0
@@ -377,6 +377,10 @@ The following actions will be performed:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 8.5)
+#       ocamlc selector/src/.selector.objs/selector.{cmo,cmt}
+# File "selector/src/selector.ml", line 47, characters 31-50:
+# Warning 3: deprecated: module Re_perl
+# Use Re.Perl
 #     ocamlopt src/.core_extended.objs/core_extended__Lazy_sequence.{cmx,o}
 # File "src/lazy_sequence.ml", line 848, characters 17-23:
 # Warning 52: Code should not depend on the actual values of
@@ -386,10 +390,6 @@ The following actions will be performed:
 # Warning 52: Code should not depend on the actual values of
 # this constructor's arguments. They are only for information
 # and may change in future versions. (See manual section 8.5)
-#       ocamlc selector/src/.selector.objs/selector.{cmo,cmt}
-# File "selector/src/selector.ml", line 47, characters 31-50:
-# Warning 3: deprecated: module Re_perl
-# Use Re.Perl
 #     ocamlopt selector/src/.selector.objs/selector.{cmx,o}
 # File "selector/src/selector.ml", line 47, characters 31-50:
 # Warning 3: deprecated: module Re_perl
@@ -475,5 +475,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803030508.export"
-31 1533265506 1533265760
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804033627.export"
+31 1533353784 1533354127

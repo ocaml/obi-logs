@@ -9,6 +9,8 @@ pkgconf
 # The following new OS packages need to be installed: libressl-dev
 The following command needs to be run through "sudo":
     apk add libressl-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 (1/1) Installing libressl-dev (2.6.5-r0)
 OK: 219 MiB in 74 packages
 # OS packages installation successful
@@ -147,16 +149,16 @@ The following actions will be performed:
 -> installed ppx_type_conv.v0.9.1
 -> installed ppx_fields_conv.v0.9.0
 -> installed ppx_sexp_conv.v0.9.0
+-> installed camlp4.4.06+1
 -> installed ipaddr.2.8.0
 -> installed stringext.1.5.0
+-> installed lwt.3.3.0
 -> installed topkg.0.9.1
--> installed cmdliner.1.0.2
 -> installed uchar.0.0.2
--> installed camlp4.4.06+1
--> installed fmt.0.8.5
 -> installed uri.1.9.7
 -> installed yojson.1.4.1
--> installed lwt.3.3.0
+-> installed cmdliner.1.0.2
+-> installed fmt.0.8.5
 -> installed logs.0.6.2
 -> installed conduit.0.15.4
 -> installed cohttp.0.22.0
@@ -235,5 +237,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803030225.export"
-31 1533265341 1533265498
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804033455.export"
+31 1533353691 1533353881

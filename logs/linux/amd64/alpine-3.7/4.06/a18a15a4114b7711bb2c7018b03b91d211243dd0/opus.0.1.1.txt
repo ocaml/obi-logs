@@ -7,6 +7,8 @@ m4
 # The following new OS packages need to be installed: libogg-dev
 The following command needs to be run through "sudo":
     apk add libogg-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 (1/2) Installing libogg (1.3.3-r1)
 (2/2) Installing libogg-dev (1.3.3-r1)
 OK: 204 MiB in 75 packages
@@ -100,5 +102,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803025313.export"
-31 1533264790 1533264798
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804032758.export"
+31 1533353275 1533353284

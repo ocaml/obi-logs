@@ -149,11 +149,11 @@ The following actions will be performed:
 #  |        fftw_plan_dft_1d(n, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
 #  |        return 0;
 #  |      }
-# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configurator9fde83/c-test-3/test.exe' '/tmp/ocaml-configurator9fde83/c-test-3/test.c' '-lfftw3' '-lfftw3f'
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configurator1c0932/c-test-3/test.exe' '/tmp/ocaml-configurator1c0932/c-test-3/test.c' '-lfftw3' '-lfftw3f'
 # -> process exited with code 1
 # -> stdout:
 # -> stderr:
-#  | /tmp/ocaml-configurator9fde83/c-test-3/test.c:1:19: fatal error: fftw3.h: No such file or directory
+#  | /tmp/ocaml-configurator1c0932/c-test-3/test.c:1:19: fatal error: fftw3.h: No such file or directory
 #  |  #include <fftw3.h>
 #  |                    ^
 #  | compilation terminated.
@@ -176,5 +176,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803032542.export"
-31 1533266740 1533266770
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804032727.export"
+31 1533353244 1533353278

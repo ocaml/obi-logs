@@ -8,6 +8,8 @@ m4
 # The following new OS packages need to be installed: qt5-qtbase-dev qt5-qtdeclarative-dev
 The following command needs to be run through "sudo":
     apk add qt5-qtbase-dev qt5-qtdeclarative-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 (1/120) Installing linux-headers (4.4.6-r2)
 (2/120) Installing libpciaccess (0.13.5-r1)
 (3/120) Installing libdrm (2.4.88-r0)
@@ -175,5 +177,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803025722.export"
-31 1533265035 1533265050
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804030619.export"
+31 1533351971 1533351989

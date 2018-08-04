@@ -7,8 +7,10 @@ pkgconf
 # The following new OS packages need to be installed: openmpi-dev
 The following command needs to be run through "sudo":
     apk add openmpi-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 ERROR: unsatisfiable constraints:
   openmpi-dev (missing):
     required by: world[openmpi-dev]
 OS package installation failed
-1 1533264867 1533264870
+1 1533353443 1533353445

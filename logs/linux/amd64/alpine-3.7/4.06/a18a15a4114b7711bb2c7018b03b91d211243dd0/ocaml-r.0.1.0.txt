@@ -8,6 +8,8 @@ pkgconf
 # The following new OS packages need to be installed: R R-mathlib
 The following command needs to be run through "sudo":
     apk add R R-mathlib
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 (1/32) Installing R-mathlib (3.4.2-r0)
 (2/32) Installing libxext (1.3.3-r2)
 (3/32) Installing libice (1.0.9-r2)
@@ -106,5 +108,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803030501.export"
-31 1533265497 1533265528
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804033257.export"
+31 1533353572 1533353610

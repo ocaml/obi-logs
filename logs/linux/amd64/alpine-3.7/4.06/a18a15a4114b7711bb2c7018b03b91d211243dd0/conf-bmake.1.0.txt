@@ -4,8 +4,10 @@ $ opam depext -iy -j 2 conf-bmake.1.0
 bmake
 The following command needs to be run through "sudo":
     apk add bmake
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
 ERROR: unsatisfiable constraints:
   bmake (missing):
     required by: world[bmake]
 OS package installation failed
-1 1533265411 1533265413
+1 1533352756 1533352759
