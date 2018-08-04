@@ -1,0 +1,29 @@
+$ opam depext -iy -j 2 email_message.v0.9.1
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for email_message.v0.9.1: The following dependencies couldn't be met:
+          - email_message -> core < v0.10 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> ppx_assert < 113.34.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> ppx_assert < 113.34.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> ppx_assert < 113.34.00 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> core_kernel < 113.34.00+4.03 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> core_kernel < 113.34.00+4.03 -> ppx_assert < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> core_kernel < 113.34.00+4.03 -> ppx_assert < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> core_kernel < 113.34.00+4.03 -> ppx_bench < 113.34.00+4.03 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> core_kernel < 113.34.00+4.03 -> ppx_bench < 113.34.00+4.03 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - email_message -> core < v0.10 -> core_kernel < 113.34.00+4.03 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=email_message.v0.9.1 returned 20
+20 1533351094 1533351111

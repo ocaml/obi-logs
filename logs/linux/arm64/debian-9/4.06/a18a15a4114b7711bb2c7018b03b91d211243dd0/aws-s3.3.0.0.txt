@@ -1,0 +1,707 @@
+$ opam depext -iy -j 2 aws-s3.3.0.0
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libpcre3-dev
+m4
+pkg-config
+# The following new OS packages need to be installed: libpcre3-dev pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libpcre3-dev pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0v5:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17565 files and directories currently installed.)
+Preparing to unpack .../00-libpcrecpp0v5_2%3a8.39-3_arm64.deb ...
+Unpacking libpcrecpp0v5:arm64 (2:8.39-3) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:arm64.
+Preparing to unpack .../02-libicu57_57.1-6+deb9u2_arm64.deb ...
+Unpacking libicu57:arm64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:arm64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-2.2+deb9u2_arm64.deb ...
+Unpacking libxml2:arm64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:arm64.
+Preparing to unpack .../04-libglib2.0-0_2.50.3-2_arm64.deb ...
+Unpacking libglib2.0-0:arm64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../05-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libpcre16-3:arm64.
+Preparing to unpack .../06-libpcre16-3_2%3a8.39-3_arm64.deb ...
+Unpacking libpcre16-3:arm64 (2:8.39-3) ...
+Selecting previously unselected package libpcre32-3:arm64.
+Preparing to unpack .../07-libpcre32-3_2%3a8.39-3_arm64.deb ...
+Unpacking libpcre32-3:arm64 (2:8.39-3) ...
+Selecting previously unselected package libpcre3-dev:arm64.
+Preparing to unpack .../08-libpcre3-dev_2%3a8.39-3_arm64.deb ...
+Unpacking libpcre3-dev:arm64 (2:8.39-3) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_arm64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_arm64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_arm64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:arm64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:arm64 (57.1-6+deb9u2) ...
+Setting up libxml2:arm64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libpcrecpp0v5:arm64 (2:8.39-3) ...
+Setting up libpcre32-3:arm64 (2:8.39-3) ...
+Setting up libpcre16-3:arm64 (2:8.39-3) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libpcre3-dev:arm64 (2:8.39-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers         v0.11.0 [required by core_kernel]
+  - install re                          1.7.3   [required by cohttp]
+  - install num                         1.1     [required by sexplib]
+  - install spawn                       v0.12.0 [required by core]
+  - install result                      1.3     [required by cmdliner]
+  - install ocamlbuild                  0.12.0  [required by digestif, cmdliner, ounit]
+  - install xml-light                   2.4     [required by aws-s3]
+  - install base-bytes                  base    [required by digestif, ounit]
+  - install conf-pkg-config             1.1     [required by conf-libpcre]
+  - install octavius                    1.2.0   [required by ppx_js_style]
+  - install ocaml-compiler-libs         v0.11.0 [required by ppxlib]
+  - install sexplib0                    v0.11.0 [required by ppx_sexp_conv, sexplib]
+  - install easy-format                 1.3.1   [required by yojson]
+  - install ppx_derivers                1.0     [required by ppxlib]
+  - install conf-which                  1       [required by biniou]
+  - install ocaml-migrate-parsetree     1.0.11  [required by core]
+  - install uchar                       0.0.2   [required by jsonm]
+  - install topkg                       0.9.1   [required by cmdliner, digestif]
+  - install stringext                   1.5.0   [required by cohttp]
+  - install ounit                       2.0.8   [required by aws-s3]
+  - install cppo                        1.6.4   [required by yojson]
+  - install base64                      2.2.0   [required by cohttp]
+  - install conf-libpcre                1       [required by pcre]
+  - install parsexp                     v0.11.0 [required by sexplib]
+  - install base                        v0.11.1 [required by ppx_protocol_conv_json, core, ppx_protocol_conv_xml_light]
+  - install biniou                      1.2.0   [required by yojson]
+  - install digestif                    0.5     [required by aws-s3]
+  - install cmdliner                    1.0.2   [required by aws-s3]
+  - install sexplib                     v0.11.0 [required by cohttp, core]
+  - install typerep                     v0.11.0 [required by core_kernel]
+  - install stdio                       v0.11.0 [required by core]
+  - install yojson                      1.4.1   [required by aws-s3]
+  - install uutf                        1.0.1   [required by jsonm]
+  - install ppxlib                      0.2.1   [required by core]
+  - install configurator                v0.11.0 [required by core]
+  - install jsonm                       1.0.1   [required by cohttp]
+  - install variantslib                 v0.11.0 [required by core_kernel]
+  - install ppx_typerep_conv            v0.11.0 [required by ppx_jane]
+  - install ppx_type_conv               v0.11.0 [required by cohttp]
+  - install ppx_sexp_conv               v0.11.1 [required by cohttp]
+  - install ppx_pipebang                v0.11.0 [required by ppx_jane]
+  - install ppx_optional                v0.11.0 [required by ppx_jane]
+  - install ppx_optcomp                 v0.11.0 [required by ppx_jane]
+  - install ppx_metaquot                v0.11.0 [required by ppx_protocol_conv]
+  - install ppx_let                     v0.11.0 [required by ppx_jane]
+  - install ppx_js_style                v0.11.0 [required by ppx_base]
+  - install ppx_inline_test             v0.11.0 [required by core_kernel]
+  - install ppx_here                    v0.11.0 [required by ppx_assert, ppx_jane]
+  - install ppx_enumerate               v0.11.0 [required by ppx_base]
+  - install ppx_driver                  v0.11.0 [required by ppx_protocol_conv]
+  - install ppx_core                    v0.11.0 [required by ppx_protocol_conv]
+  - install ppx_compare                 v0.11.0 [required by ppx_assert, bin_prot, ppx_base]
+  - install fieldslib                   v0.11.0 [required by cohttp]
+  - install pcre                        7.3.4   [required by ocaml-inifiles]
+  - install ppx_variants_conv           v0.11.0 [required by bin_prot, ppx_jane]
+  - install uri                         1.9.7   [required by cohttp]
+  - install ppx_custom_printf           v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_bench                   v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_value              v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_message            v0.11.0 [required by core_kernel]
+  - install ppx_fail                    v0.11.0 [required by ppx_jane]
+  - install ppx_protocol_conv           2.0.0   [required by ppx_protocol_conv_json, ppx_protocol_conv_xml_light]
+  - install ppx_hash                    v0.11.0 [required by core_kernel]
+  - install ppx_assert                  v0.11.0 [required by core]
+  - install ppx_fields_conv             v0.11.0 [required by cohttp]
+  - install ocaml-inifiles              1.2     [required by aws-s3]
+  - install ppx_protocol_conv_xml_light 2.0.0   [required by aws-s3]
+  - install ppx_protocol_conv_json      2.0.0   [required by aws-s3]
+  - install ppx_base                    v0.11.0 [required by core_kernel]
+  - install ppx_expect                  v0.11.0 [required by ppx_jane]
+  - install cohttp                      1.1.0   [required by aws-s3]
+  - install bin_prot                    v0.11.0 [required by core_kernel]
+  - install ppx_bin_prot                v0.11.0 [required by ppx_jane]
+  - install ppx_jane                    v0.11.0 [required by core]
+  - install splittable_random           v0.11.0 [required by core_kernel]
+  - install core_kernel                 v0.11.1 [required by core]
+  - install core                        v0.11.2 [required by aws-s3]
+  - install aws-s3                      3.0.0
+===== 78 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[base64.2.2.0] found in cache
+[bin_prot.v0.11.0] found in cache
+[biniou.1.2.0] found in cache
+[cmdliner.1.0.2] found in cache
+[aws-s3.3.0.0] downloaded from https://github.com/andersfugmann/aws-s3/archive/3.0.0.tar.gz
+[configurator.v0.11.0] found in cache
+[core.v0.11.2] found in cache
+[core_kernel.v0.11.1] found in cache
+[cppo.1.6.4] found in cache
+[cohttp.1.1.0] downloaded from https://github.com/mirage/ocaml-cohttp/releases/download/v1.1.0/cohttp-1.1.0.tbz
+[easy-format.1.3.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[jane-street-headers.v0.11.0] found in cache
+[jsonm.1.0.1] found in cache
+[num.1.1] found in cache
+[digestif.0.5] downloaded from https://github.com/mirage/digestif/releases/download/v0.5/digestif-0.5.tbz
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocaml-inifiles.1.2] downloaded from http://archive.ubuntu.com/ubuntu/pool/universe/o/ocaml-inifiles/ocaml-inifiles_1.2.orig.tar.gz
+[octavius.1.2.0] found in cache
+[ounit.2.0.8] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_bin_prot-v0.11.0.tar.gz
+[ppx_compare.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_compare-v0.11.0.tar.gz
+[ppx_core.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_core-v0.11.0.tar.gz
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_driver.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_driver-v0.11.0.tar.gz
+[ppx_enumerate.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_enumerate-v0.11.0.tar.gz
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_hash.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_hash-v0.11.0.tar.gz
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_metaquot.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_metaquot-v0.11.0.tar.gz
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_protocol_conv.2.0.0] downloaded from https://github.com/andersfugmann/ppx_protocol_conv/archive/2.0.0.tar.gz
+[ppx_protocol_conv_json.2.0.0] downloaded from https://github.com/andersfugmann/ppx_protocol_conv/archive/2.0.0.tar.gz
+[ppx_protocol_conv_xml_light.2.0.0] downloaded from https://github.com/andersfugmann/ppx_protocol_conv/archive/2.0.0.tar.gz
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.1] downloaded from https://github.com/janestreet/ppx_sexp_conv/releases/download/v0.11.1/ppx_sexp_conv-v0.11.1.tbz
+[ppx_type_conv.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_type_conv-v0.11.0.tar.gz
+[ppx_typerep_conv.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_typerep_conv-v0.11.0.tar.gz
+[ppx_variants_conv.v0.11.0] downloaded from https://ocaml.janestreet.com/ocaml-core/v0.11/files/ppx_variants_conv-v0.11.0.tar.gz
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[ppxlib.0.2.1] downloaded from https://github.com/ocaml-ppx/ppxlib/releases/download/0.2.1/ppxlib-0.2.1.tbz
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[spawn.v0.12.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.11.0] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[variantslib.v0.11.0] found in cache
+[xml-light.2.4] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed conf-libpcre.1
+-> installed jane-street-headers.v0.11.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ounit.2.0.8
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed spawn.v0.12.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed base.v0.11.1
+-> installed cmdliner.1.0.2
+-> installed digestif.0.5
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed ocaml-inifiles.1.2
+-> installed typerep.v0.11.0
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed xml-light.2.4
+-> installed yojson.1.4.1
+-> installed ppxlib.0.2.1
+-> installed fieldslib.v0.11.0
+-> installed ppx_compare.v0.11.0
+-> installed ppx_core.v0.11.0
+-> installed ppx_driver.v0.11.0
+-> installed ppx_enumerate.v0.11.0
+-> installed ppx_here.v0.11.0
+-> installed ppx_fields_conv.v0.11.0
+-> installed ppx_inline_test.v0.11.0
+-> installed ppx_fail.v0.11.0
+-> installed ppx_js_style.v0.11.0
+-> installed ppx_let.v0.11.0
+-> installed ppx_metaquot.v0.11.0
+-> installed ppx_optcomp.v0.11.0
+-> installed ppx_optional.v0.11.0
+-> installed ppx_pipebang.v0.11.0
+-> installed ppx_sexp_conv.v0.11.1
+-> installed ppx_assert.v0.11.0
+-> installed ppx_bench.v0.11.0
+-> installed ppx_custom_printf.v0.11.0
+-> installed ppx_hash.v0.11.0
+-> installed ppx_base.v0.11.0
+-> installed ppx_sexp_message.v0.11.0
+-> installed ppx_sexp_value.v0.11.0
+-> installed ppx_type_conv.v0.11.0
+-> installed ppx_typerep_conv.v0.11.0
+-> installed uri.1.9.7
+-> installed ppx_protocol_conv.2.0.0
+-> installed ppx_protocol_conv_json.2.0.0
+-> installed ppx_protocol_conv_xml_light.2.0.0
+-> installed variantslib.v0.11.0
+-> installed cohttp.1.1.0
+-> installed ppx_variants_conv.v0.11.0
+-> installed bin_prot.v0.11.0
+-> installed ppx_expect.v0.11.0
+-> installed ppx_bin_prot.v0.11.0
+-> installed ppx_jane.v0.11.0
+-> installed splittable_random.v0.11.0
+-> installed core_kernel.v0.11.1
+[ERROR] The compilation of core failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core -j 95".
+
+#=== ERROR while compiling core.v0.11.2 =======================================#
+# context              2.0.0 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/core.v0.11.2
+# command              ~/.opam/4.06/bin/jbuilder build -p core -j 95
+# exit-code            1
+# env-file             ~/.opam/log/core-11-b00cf4.env
+# output-file          ~/.opam/log/core-11-b00cf4.out
+### output ###
+#     discover src/config.h (exit 2)
+# (cd _build/default/src && config/discover.exe -ocamlc /home/opam/.opam/4.06/bin/ocamlc.opt)
+# run: /home/opam/.opam/4.06/bin/ocamlc.opt -config
+# -> process exited with code 0
+# -> stdout:
+#  | version: 4.06.1
+#  | standard_library_default: /home/opam/.opam/4.06/lib/ocaml
+#  | standard_library: /home/opam/.opam/4.06/lib/ocaml
+#  | standard_runtime: /home/opam/.opam/4.06/bin/ocamlrun
+#  | ccomp_type: cc
+#  | c_compiler: gcc
+#  | ocamlc_cflags: -O2 -fno-strict-aliasing -fwrapv -fPIC
+#  | ocamlc_cppflags: -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | ocamlopt_cflags: -O2 -fno-strict-aliasing -fwrapv
+#  | ocamlopt_cppflags: -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | bytecomp_c_compiler: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | native_c_compiler: gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | bytecomp_c_libraries: -lm  -ldl  -lpthread                  
+#  | native_c_libraries: -lm  -ldl
+#  | native_pack_linker: ld -r -o 
+#  | ranlib: ranlib
+#  | cc_profile: -pg
+#  | architecture: arm64
+#  | model: default
+#  | int_size: 63
+#  | word_size: 64
+#  | system: linux
+#  | asm: as
+#  | asm_cfi_supported: true
+#  | with_frame_pointers: false
+#  | ext_exe: 
+#  | ext_obj: .o
+#  | ext_asm: .s
+#  | ext_lib: .a
+#  | ext_dll: .so
+#  | os_type: Unix
+#  | default_executable_name: a.out
+#  | systhread_supported: true
+#  | host: aarch64-unknown-linux-gnu
+#  | target: aarch64-unknown-linux-gnu
+#  | profiling: false
+#  | flambda: false
+#  | spacetime: false
+#  | safe_string: false
+#  | default_safe_string: true
+#  | flat_float_array: true
+#  | afl_instrument: false
+#  | windows_unicode: false
+#  | exec_magic_number: Caml1999X011
+#  | cmi_magic_number: Caml1999I022
+#  | cmo_magic_number: Caml1999O022
+#  | cma_magic_number: Caml1999A022
+#  | cmx_magic_number: Caml1999Y022
+#  | cmxa_magic_number: Caml1999Z022
+#  | ast_impl_magic_number: Caml1999M022
+#  | ast_intf_magic_number: Caml1999N022
+#  | cmxs_magic_number: Caml1999D022
+#  | cmt_magic_number: Caml1999T022
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <time.h>
+#  | 
+#  | int main()
+#  | {
+#  |   struct timespec ts;
+#  |   clock_gettime(CLOCK_REALTIME, &ts);
+#  |   clock_settime(CLOCK_REALTIME, &ts);
+#  |   clock_getres(CLOCK_REALTIME, &ts);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-1/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-1/test.c' '-lrt'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #define JSC_THREAD_ID_METHOD 1
+#  | #include "/home/opam/.opam/4.06/.opam-switch/build/core.v0.11.2/_build/default/src/thread_id.h"
+#  | 
+#  | int main ()
+#  | {
+#  |   GET_THREAD_ID;
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-3/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-3/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+#  | In file included from /tmp/ocaml-configuratorc9d046/c-test-3/test.c:3:0:
+#  | /tmp/ocaml-configuratorc9d046/c-test-3/test.c: In function 'main':
+#  | /home/opam/.opam/4.06/.opam-switch/build/core.v0.11.2/_build/default/src/thread_id.h:11:23: warning: implicit declaration of function 'syscall' [-Wimplicit-function-declaration]
+#  |  #define GET_THREAD_ID syscall(SYS_gettid)
+#  |                        ^
+#  | /tmp/ocaml-configuratorc9d046/c-test-3/test.c:7:3: note: in expansion of macro 'GET_THREAD_ID'
+#  |    GET_THREAD_ID;
+#  |    ^~~~~~~~~~~~~
+# compiling c program:
+#  | 
+#  | #include <sys/eventfd.h>
+#  | 
+#  | int main()
+#  | {
+#  |   int fd = eventfd(0, 0);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-5/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-5/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <sys/timerfd.h>
+#  | 
+#  | int main()
+#  | {
+#  |   timerfd_create(0, 0);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-7/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-7/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <wordexp.h>
+#  | 
+#  | int main()
+#  | {
+#  |   wordexp_t w;
+#  |   wordexp("", &w, 0);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-9/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-9/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <sys/types.h>
+#  | #include <sys/socket.h>
+#  | 
+#  | int main()
+#  | {
+#  |    send(0, "", 0, MSG_NOSIGNAL);
+#  |    return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-11/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-11/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <sys/types.h>
+#  | #include <sys/socket.h>
+#  | 
+#  | int main()
+#  | {
+#  |    send(0, "", 0, SO_NOSIGPIPE);
+#  |    return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-13/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-13/test.c'
+# -> process exited with code 1
+# -> stdout:
+# -> stderr:
+#  | /tmp/ocaml-configuratorc9d046/c-test-13/test.c: In function 'main':
+#  | /tmp/ocaml-configuratorc9d046/c-test-13/test.c:7:19: error: 'SO_NOSIGPIPE' undeclared (first use in this function)
+#  |     send(0, "", 0, SO_NOSIGPIPE);
+#  |                    ^~~~~~~~~~~~
+#  | /tmp/ocaml-configuratorc9d046/c-test-13/test.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+# compiling c program:
+#  | 
+#  | #include <unistd.h>
+#  | 
+#  | int main()
+#  | {
+#  |   fdatasync(0);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-15/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-15/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #define _GNU_SOURCE
+#  | #include <sys/socket.h>
+#  | 
+#  | int main () {
+#  |   recvmmsg(0, 0, 0, 0, 0);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-17/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-17/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <pthread.h>
+#  | #include <time.h>
+#  | 
+#  | int main()
+#  | {
+#  |    pthread_mutex_t m;
+#  |    struct timespec ts;
+#  |    pthread_mutex_timedlock(&m, &ts);
+#  |    return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-19/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-19/test.c' '-lpthread'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <pthread.h>
+#  | #include <time.h>
+#  | 
+#  | int main()
+#  | {
+#  |    clockid_t clock;
+#  |    pthread_getcpuclockid(pthread_self(), &clock);
+#  |    return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-21/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-21/test.c' '-lpthread'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | 
+#  | #include <stdlib.h>
+#  | 
+#  | int main () {
+#  |   mkostemp("", 0);
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-23/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-23/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+#  | /tmp/ocaml-configuratorc9d046/c-test-23/test.c: In function 'main':
+#  | /tmp/ocaml-configuratorc9d046/c-test-23/test.c:5:3: warning: implicit declaration of function 'mkostemp' [-Wimplicit-function-declaration]
+#  |    mkostemp("", 0);
+#  |    ^~~~~~~~
+# compiling c program:
+#  | #include <stdio.h>
+#  | #include <sys/resource.h>
+#  | 
+#  | int main()
+#  | {
+#  | #if defined(RLIMIT_AS)
+#  |   printf("RLIMIT_AS=b:true\n");
+#  | #else
+#  |   printf("RLIMIT_AS=b:false\n");
+#  | #endif
+#  | #if defined(RLIMIT_NICE)
+#  |   printf("RLIMIT_NICE=b:true\n");
+#  | #else
+#  |   printf("RLIMIT_NICE=b:false\n");
+#  | #endif
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-25/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-25/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# run: /tmp/ocaml-configuratorc9d046/c-test-25/test.exe
+# -> process exited with code 0
+# -> stdout:
+#  | RLIMIT_AS=b:true
+#  | RLIMIT_NICE=b:true
+# -> stderr:
+# compiling c program:
+#  | #include <stdio.h>
+#  | #include <caml/config.h>
+#  | 
+#  | int main()
+#  | {
+#  | #if defined(ARCH_BIG_ENDIAN)
+#  |   printf("ARCH_BIG_ENDIAN=b:true\n");
+#  | #else
+#  |   printf("ARCH_BIG_ENDIAN=b:false\n");
+#  | #endif
+#  | #if defined(ARCH_SIXTYFOUR)
+#  |   printf("ARCH_SIXTYFOUR=b:true\n");
+#  | #else
+#  |   printf("ARCH_SIXTYFOUR=b:false\n");
+#  | #endif
+#  |   return 0;
+#  | }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configuratorc9d046/c-test-28/test.exe' '/tmp/ocaml-configuratorc9d046/c-test-28/test.c'
+# -> process exited with code 0
+# -> stdout:
+# -> stderr:
+# run: /tmp/ocaml-configuratorc9d046/c-test-28/test.exe
+# -> process exited with code 0
+# -> stdout:
+#  | ARCH_BIG_ENDIAN=b:false
+#  | ARCH_SIXTYFOUR=b:true
+# -> stderr:
+# Fatal error: exception (runtime-lib/runtime.ml.E "comparison failed"
+#   ((switch true) vs (switch false) (Loc src/config/discover.ml:205:15)))
+# Raised at file "src/configurator.ml", line 511, characters 13-22
+# Called from file "src/config/discover.ml", line 136, characters 2-1023
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build core v0.11.2
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                        v0.11.1
+| - install base-bytes                  base
+| - install base64                      2.2.0
+| - install bin_prot                    v0.11.0
+| - install biniou                      1.2.0
+| - install cmdliner                    1.0.2
+| - install cohttp                      1.1.0
+| - install conf-libpcre                1
+| - install conf-pkg-config             1.1
+| - install conf-which                  1
+| - install configurator                v0.11.0
+| - install core_kernel                 v0.11.1
+| - install cppo                        1.6.4
+| - install digestif                    0.5
+| - install easy-format                 1.3.1
+| - install fieldslib                   v0.11.0
+| - install jane-street-headers         v0.11.0
+| - install jsonm                       1.0.1
+| - install num                         1.1
+| - install ocaml-compiler-libs         v0.11.0
+| - install ocaml-inifiles              1.2
+| - install ocaml-migrate-parsetree     1.0.11
+| - install ocamlbuild                  0.12.0
+| - install octavius                    1.2.0
+| - install ounit                       2.0.8
+| - install parsexp                     v0.11.0
+| - install pcre                        7.3.4
+| - install ppx_assert                  v0.11.0
+| - install ppx_base                    v0.11.0
+| - install ppx_bench                   v0.11.0
+| - install ppx_bin_prot                v0.11.0
+| - install ppx_compare                 v0.11.0
+| - install ppx_core                    v0.11.0
+| - install ppx_custom_printf           v0.11.0
+| - install ppx_derivers                1.0
+| - install ppx_driver                  v0.11.0
+| - install ppx_enumerate               v0.11.0
+| - install ppx_expect                  v0.11.0
+| - install ppx_fail                    v0.11.0
+| - install ppx_fields_conv             v0.11.0
+| - install ppx_hash                    v0.11.0
+| - install ppx_here                    v0.11.0
+| - install ppx_inline_test             v0.11.0
+| - install ppx_jane                    v0.11.0
+| - install ppx_js_style                v0.11.0
+| - install ppx_let                     v0.11.0
+| - install ppx_metaquot                v0.11.0
+| - install ppx_optcomp                 v0.11.0
+| - install ppx_optional                v0.11.0
+| - install ppx_pipebang                v0.11.0
+| - install ppx_protocol_conv           2.0.0
+| - install ppx_protocol_conv_json      2.0.0
+| - install ppx_protocol_conv_xml_light 2.0.0
+| - install ppx_sexp_conv               v0.11.1
+| - install ppx_sexp_message            v0.11.0
+| - install ppx_sexp_value              v0.11.0
+| - install ppx_type_conv               v0.11.0
+| - install ppx_typerep_conv            v0.11.0
+| - install ppx_variants_conv           v0.11.0
+| - install ppxlib                      0.2.1
+| - install re                          1.7.3
+| - install result                      1.3
+| - install sexplib                     v0.11.0
+| - install sexplib0                    v0.11.0
+| - install spawn                       v0.12.0
+| - install splittable_random           v0.11.0
+| - install stdio                       v0.11.0
+| - install stringext                   1.5.0
+| - install topkg                       0.9.1
+| - install typerep                     v0.11.0
+| - install uchar                       0.0.2
+| - install uri                         1.9.7
+| - install uutf                        1.0.1
+| - install variantslib                 v0.11.0
+| - install xml-light                   2.4
+| - install yojson                      1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804002627.export"
+31 1533342337 1533343361

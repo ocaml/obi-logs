@@ -1,0 +1,43 @@
+$ opam depext -iy -j 2 landmarks.1.0
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install landmarks 1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[landmarks.1.0] downloaded from https://github.com/LexiFi/landmarks/archive/v1.0.zip
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of landmarks failed at "/usr/bin/make".
+
+#=== ERROR while compiling landmarks.1.0 ======================================#
+# context              2.0.0 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/landmarks.1.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/landmarks-11-d0f245.env
+# output-file          ~/.opam/log/landmarks-11-d0f245.out
+### output ###
+# ocamldep -I . *.mli *.ml > .depend
+# ocamlopt -ccopt -fPIC -c clock.c
+# clock.c: In function 'caml_highres_clock':
+# clock.c:20:5: error: impossible constraint in 'asm'
+#      __asm__ __volatile__ ("rdtsc" : "=a"(lo), "=d"(hi));
+#      ^~~~~~~
+# Makefile:62: recipe for target 'clock.o' failed
+# make[1]: *** [clock.o] Error 2
+# Makefile:15: recipe for target 'landmarks' failed
+# make: *** [landmarks] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build landmarks 1.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533341936 1533341964

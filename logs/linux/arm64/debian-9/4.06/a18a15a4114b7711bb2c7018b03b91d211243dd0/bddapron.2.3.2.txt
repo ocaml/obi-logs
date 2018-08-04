@@ -1,0 +1,275 @@
+$ opam depext -iy -j 2 bddapron.2.3.2
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libgmp-dev
+libmpfr-dev
+m4
+perl
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libgmp-dev libmpfr-dev m4 perl
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17565 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_arm64.deb ...
+Unpacking libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:arm64.
+Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_arm64.deb ...
+Unpacking libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libmpfr-dev:arm64.
+Preparing to unpack .../libmpfr-dev_3.1.5-1_arm64.deb ...
+Unpacking libmpfr-dev:arm64 (3.1.5-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
+Setting up libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
+Setting up libmpfr-dev:arm64 (3.1.5-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlidl    1.05     [required by apron, mlcuddidl]
+  - install conf-gmp   1        [required by mlgmpidl]
+  - install conf-perl  1        [required by apron]
+  - install ocamlbuild 0.12.0   [required by bddapron]
+  - install conf-mpfr  1        [required by mlgmpidl]
+  - install mlcuddidl  3.0.3    [required by bddapron]
+  - install camllib    1.3.2    [required by bddapron]
+  - install mlgmpidl   1.2.7    [required by apron]
+  - install apron      20160125 [required by bddapron]
+  - install bddapron   2.3.2
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlidl.1.05] found in cache
+[apron.20160125] downloaded from http://apron.gforge.inria.fr/apron-20160125.tar.gz
+[bddapron.2.3.2] downloaded from http://nberth.space/pool/bddapron/bddapron-2.3.2.tar.gz
+[camllib.1.3.2] downloaded from http://nberth.space/pool/camllib/camllib-1.3.2.tar.gz
+[mlcuddidl.3.0.3] found in cache
+[ocamlbuild.0.12.0] found in cache
+[mlgmpidl.1.2.7] downloaded from https://github.com/nberth/mlgmpidl/archive/1.2.7.tar.gz
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed camlidl.1.05
+-> installed conf-gmp.1
+-> installed conf-mpfr.1
+-> installed conf-perl.1
+[ERROR] The compilation of mlgmpidl failed at "/usr/bin/make".
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of camllib failed at "/usr/bin/make".
+-> installed mlcuddidl.3.0.3
+
+#=== ERROR while compiling mlgmpidl.1.2.7 =====================================#
+# context              2.0.0 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mlgmpidl.1.2.7
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/mlgmpidl-12-268fea.env
+# output-file          ~/.opam/log/mlgmpidl-12-268fea.out
+### output ###
+# tmpdir=$(mktemp -d tmp.XXXXXX);				\
+# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
+# { cp mpz.idl ${tmpdir}/mpz.idl;					\
+#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpz.idl;		\
+#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpz_stubs.c >mpz_caml.c;	\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpz.ml >mpz.ml;		\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpz.mli >mpz.mli; }
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpz.mli
+# tmpdir=$(mktemp -d tmp.XXXXXX);				\
+# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
+# { cp mpq.idl ${tmpdir}/mpq.idl;					\
+#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpq.idl;		\
+#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpq_stubs.c >mpq_caml.c;	\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpq.ml >mpq.ml;		\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpq.mli >mpq.mli; }
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpq.mli
+# tmpdir=$(mktemp -d tmp.XXXXXX);				\
+# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
+# { cp mpf.idl ${tmpdir}/mpf.idl;					\
+#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpf.idl;		\
+#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpf_stubs.c >mpf_caml.c;	\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpf.ml >mpf.ml;		\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpf.mli >mpf.mli; }
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpf.mli
+# tmpdir=$(mktemp -d tmp.XXXXXX);				\
+# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
+# { cp mpfr.idl ${tmpdir}/mpfr.idl;					\
+#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpfr.idl;		\
+#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpfr_stubs.c >mpfr_caml.c;	\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpfr.ml >mpfr.ml;		\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpfr.mli >mpfr.mli; }
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfr.mli
+# tmpdir=$(mktemp -d tmp.XXXXXX);				\
+# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
+# { cp gmp_random.idl ${tmpdir}/gmp_random.idl;					\
+#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/gmp_random.idl;		\
+#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/gmp_random_stubs.c >gmp_random_caml.c;	\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/gmp_random.ml >gmp_random.ml;		\
+#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/gmp_random.mli >gmp_random.mli; }
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c gmp_random.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpzf.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpqf.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfrf.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpz.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpq.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfr.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c gmp_random.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpzf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpqf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfrf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpz_caml.o mpz_caml.c
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpq_caml.o mpq_caml.c
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpf_caml.o mpf_caml.c
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpfr_caml.o mpfr_caml.c
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o gmp_random_caml.o gmp_random_caml.c
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o gmp_caml.o gmp_caml.c
+# /home/opam/.opam/4.06/bin/ocamlmklib -oc gmp_caml mpz_caml.o mpq_caml.o mpf_caml.o mpfr_caml.o gmp_random_caml.o gmp_caml.o   -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl
+# /home/opam/.opam/4.06/bin/ocamlmklib -oc gmp_caml.p mpz_caml.o mpq_caml.o mpf_caml.o mpfr_caml.o gmp_random_caml.o gmp_caml.o   -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -a -o gmp.cma mpz.cmo mpq.cmo mpf.cmo mpfr.cmo gmp_random.cmo mpzf.cmo mpqf.cmo mpfrf.cmo \
+# -dllib -lgmp_caml -ccopt -L/home/opam/.opam/4.06/lib/stublibs -ccopt -L/home/opam/.opam/4.06/lib/gmp -ccopt "  -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl" -ccopt -L/home/opam/.opam/4.06/lib/ocaml -ccopt -L/home/opam/.opam/4.06/lib/camlidl    -cclib -lmpfr -cclib -lgmp -cclib -lcamlidl
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpz.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpq.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpfr.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c gmp_random.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpzf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpqf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpfrf.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -a -o gmp.cmxa mpz.cmx mpq.cmx mpf.cmx mpfr.cmx gmp_random.cmx mpzf.cmx mpqf.cmx mpfrf.cmx \
+# -cclib -lgmp_caml -ccopt -L/home/opam/.opam/4.06/lib/stublibs -ccopt -L/home/opam/.opam/4.06/lib/gmp -ccopt "  -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl" -ccopt -L/home/opam/.opam/4.06/lib/ocaml -ccopt -L/home/opam/.opam/4.06/lib/camlidl    -cclib -lmpfr -cclib -lgmp -cclib -lcamlidl
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -linkall -shared -o gmp.cmxs -I . gmp.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -p -annot -inline 20  -c -o mpz.p.cmx mpz.ml
+# Profiling with "gprof" is not supported on this platform.
+# Makefile:276: recipe for target 'mpz.p.cmx' failed
+# make: *** [mpz.p.cmx] Error 2
+# rm gmp_caml.o mpz_caml.o mpf_caml.o mpq_caml.o gmp_random_caml.o mpfr_caml.o
+
+
+#=== ERROR while compiling camllib.1.3.2 ======================================#
+# context              2.0.0 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/camllib.1.3.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/camllib-12-4937ca.env
+# output-file          ~/.opam/log/camllib-12-4937ca.out
+### output ###
+# ocamldep print.ml sette.ml pSette.ml mappe.ml pMappe.ml hashhe.ml pHashhe.ml setteI.ml setteS.ml mappeI.ml mappeS.ml hashheI.ml hashheIB.ml hashheS.ml dMappe.ml pDMappe.ml dHashhe.ml pDHashhe.ml setList.ml multiSetList.ml ilist.ml fGraph1.ml fGraph.ml sHGraph.ml pSHGraph.ml symbol.ml union.ml statistic.ml time.ml rational.ml parse.ml print.mli sette.mli pSette.mli mappe.mli pMappe.mli hashhe.mli pHashhe.mli setteI.mli setteS.mli mappeI.mli mappeS.mli hashheI.mli hashheIB.mli hashheS.mli dMappe.mli pDMappe.mli dHashhe.mli pDHashhe.mli setList.mli multiSetList.mli ilist.mli fGraph1.mli fGraph.mli sHGraph.mli pSHGraph.mli symbol.mli union.mli statistic.mli time.mli rational.mli parse.mli > Makefile.depend
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/print.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/sette.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pSette.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pMappe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashhe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pHashhe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setteI.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setteS.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappeI.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappeS.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheI.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheIB.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheS.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/dMappe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pDMappe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/dHashhe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pDHashhe.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setList.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/multiSetList.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/ilist.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/fGraph1.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/fGraph.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/sHGraph.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pSHGraph.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/symbol.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/union.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/statistic.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/time.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/rational.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/parse.mli
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/print.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/sette.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pSette.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pMappe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashhe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pHashhe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setteI.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setteS.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappeI.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappeS.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheI.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheIB.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheS.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/dMappe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pDMappe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/dHashhe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pDHashhe.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setList.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/multiSetList.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/ilist.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/fGraph1.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/fGraph.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/sHGraph.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pSHGraph.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/symbol.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/union.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/statistic.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/time.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/rational.ml
+# ocamlc.opt -annot -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/parse.ml
+# ocamlc.opt -annot -g -a print.cmo sette.cmo pSette.cmo mappe.cmo pMappe.cmo hashhe.cmo pHashhe.cmo setteI.cmo setteS.cmo mappeI.cmo mappeS.cmo hashheI.cmo hashheIB.cmo hashheS.cmo dMappe.cmo pDMappe.cmo dHashhe.cmo pDHashhe.cmo setList.cmo multiSetList.cmo ilist.cmo fGraph1.cmo fGraph.cmo sHGraph.cmo pSHGraph.cmo symbol.cmo union.cmo statistic.cmo time.cmo rational.cmo parse.cmo -o camllib.cma
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/print.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/sette.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pSette.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pMappe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashhe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pHashhe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setteI.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setteS.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappeI.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/mappeS.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheI.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheIB.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/hashheS.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/dMappe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pDMappe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/dHashhe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pDHashhe.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/setList.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/multiSetList.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/ilist.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/fGraph1.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/fGraph.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/sHGraph.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/pSHGraph.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/symbol.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/union.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/statistic.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/time.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/rational.ml
+# ocamlopt.opt -annot -inline 10 -g -c /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/parse.ml
+# ocamlopt.opt -annot -inline 10 -g -a print.cmx sette.cmx pSette.cmx mappe.cmx pMappe.cmx hashhe.cmx pHashhe.cmx setteI.cmx setteS.cmx mappeI.cmx mappeS.cmx hashheI.cmx hashheIB.cmx hashheS.cmx dMappe.cmx pDMappe.cmx dHashhe.cmx pDHashhe.cmx setList.cmx multiSetList.cmx ilist.cmx fGraph1.cmx fGraph.cmx sHGraph.cmx pSHGraph.cmx symbol.cmx union.cmx statistic.cmx time.cmx rational.cmx parse.cmx -o camllib.cmxa
+# ocamlopt.opt -p -annot -inline 10 -g -c -o print.p.cmx /home/opam/.opam/4.06/.opam-switch/build/camllib.1.3.2/print.ml
+# Profiling with "gprof" is not supported on this platform.
+# Makefile:111: recipe for target 'print.p.cmx' failed
+# make: *** [print.p.cmx] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build camllib  1.3.2
+| - build mlgmpidl 1.2.7
++- 
++- The following changes have been performed (the rest was aborted)
+| - install camlidl    1.05
+| - install conf-gmp   1
+| - install conf-mpfr  1
+| - install conf-perl  1
+| - install mlcuddidl  3.0.3
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804012906.export"
+31 1533346106 1533346274

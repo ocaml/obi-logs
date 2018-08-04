@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 oasis-mirage.0.3.0a
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for oasis-mirage.0.3.0a: The following dependencies couldn't be met:
+          - oasis-mirage -> ocamlbuild < 0.9.0 -> base-ocamlbuild -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=oasis-mirage.0.3.0a returned 20
+20 1533347946 1533347961

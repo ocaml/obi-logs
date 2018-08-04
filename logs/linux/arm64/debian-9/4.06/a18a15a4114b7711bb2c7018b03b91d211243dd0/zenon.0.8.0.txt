@@ -1,0 +1,21 @@
+$ opam depext -iy -j 2 zenon.0.8.0
+# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlp5 7.06  [required by coq]
+  - install num    1.1   [required by coq]
+  - install coq    8.8.1 [required by zenon]
+  - install zenon  0.8.0
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp5.7.06] found in cache
+[coq.8.8.1] found in cache
+[num.1.1] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - zenon.0.8.0: Curl failed
+
+40 1533354542 1533354567
