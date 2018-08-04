@@ -8,7 +8,7 @@ m4
 # The following new OS packages need to be installed: blas-devel gsl-devel lapack-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install blas-devel gsl-devel lapack-devel
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [.....done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -21,19 +21,19 @@ The following 8 NEW packages are going to be installed:
 Overall download size: 3.4 MiB. Already cached: 0 B. After the operation, additional 11.2 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package gsl-1.16-9.4.x86_64 (1/8), 811.6 KiB (  2.6 MiB unpacked)
-Retrieving: gsl-1.16-9.4.x86_64.rpm [.done]
+Retrieving: gsl-1.16-9.4.x86_64.rpm [done]
 Retrieving package gsl-devel-1.16-9.4.x86_64 (2/8), 426.4 KiB (  1.2 MiB unpacked)
 Retrieving: gsl-devel-1.16-9.4.x86_64.rpm [done]
 Retrieving package libquadmath0-7.3.1+r258812-10.1.x86_64 (3/8), 140.9 KiB (251.1 KiB unpacked)
-Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [.done]
+Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [done]
 Retrieving package libgfortran3-6.2.1+r239768-6.19.x86_64 (4/8), 265.4 KiB (  1.2 MiB unpacked)
-Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [done]
+Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [.done (8.1 MiB/s)]
 Retrieving package libblas3-3.5.0-11.3.x86_64 (5/8), 132.2 KiB (362.6 KiB unpacked)
 Retrieving: libblas3-3.5.0-11.3.x86_64.rpm [done]
 Retrieving package liblapack3-3.5.0-11.3.x86_64 (6/8),   1.7 MiB (  5.6 MiB unpacked)
 Retrieving: liblapack3-3.5.0-11.3.x86_64.rpm [done]
 Retrieving package blas-devel-3.5.0-11.3.x86_64 (7/8),   6.9 KiB (    0   B unpacked)
-Retrieving: blas-devel-3.5.0-11.3.x86_64.rpm [.done]
+Retrieving: blas-devel-3.5.0-11.3.x86_64.rpm [done]
 Retrieving package lapack-devel-3.5.0-11.3.x86_64 (8/8),   7.2 KiB (    0   B unpacked)
 Retrieving: lapack-devel-3.5.0-11.3.x86_64.rpm [done]
 Checking for file conflicts: [.......done]
@@ -189,8 +189,8 @@ The following actions will be performed:
 -> installed spawn.v0.12.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
--> installed gsl.1.22.0
 -> installed lacaml.9.2.2
+-> installed gsl.1.22.0
 -> installed ppxlib.0.3.0
 -> installed fieldslib.v0.11.0
 -> installed ppx_compare.v0.11.1
@@ -529,5 +529,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803051929.export"
-31 1533273206 1533273765
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804043556.export"
+31 1533356897 1533357541

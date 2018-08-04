@@ -11,8 +11,8 @@ The following actions will be performed:
 ===== 3 to install =====
 
 <><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[lablqml.0.5] found in cache
 [ocamlbuild.0.12.0] found in cache
-[lablqml.0.5] downloaded from https://github.com/Kakadu/lablqml/archive/0.5.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [ERROR] The compilation of conf-qt failed at "/usr/bin/sh -exc min=\"5.2.1\" cur=`PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH qmake -query QT_VERSION`; res=`printf \"$min\\n$cur\\n\" | sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -n | head -n 1`; [ \"$res\" = \"$min\" ]".
@@ -23,8 +23,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/conf-qt.5.2.1
 # command              /usr/bin/sh -exc min="5.2.1" cur=`PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH qmake -query QT_VERSION`; res=`printf "$min\n$cur\n" | sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -n | head -n 1`; [ "$res" = "$min" ]
 # exit-code            127
-# env-file             ~/.opam/log/conf-qt-12-b76d46.env
-# output-file          ~/.opam/log/conf-qt-12-b76d46.out
+# env-file             ~/.opam/log/conf-qt-12-a71bb4.env
+# output-file          ~/.opam/log/conf-qt-12-a71bb4.out
 ### output ###
 # + min=5.2.1
 # ++ PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -44,5 +44,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803045508.export"
-31 1533272007 1533272120
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804045743.export"
+31 1533358644 1533358669

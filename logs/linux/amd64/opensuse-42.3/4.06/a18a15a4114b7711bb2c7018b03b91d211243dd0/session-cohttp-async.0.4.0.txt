@@ -228,13 +228,13 @@ The following actions will be performed:
 -> installed lwt.4.1.0
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed sexplib0.v0.11.0
--> installed base.v0.11.1
 -> installed parsexp.v0.11.0
+-> installed base.v0.11.1
 -> installed ppx_deriving.4.2.1
+-> installed sexplib.v0.11.0
 -> installed spawn.v0.12.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
--> installed sexplib.v0.11.0
 -> installed cstruct.3.2.1
 -> installed cstruct-lwt.3.2.1
 -> installed stringext.1.5.0
@@ -244,14 +244,14 @@ The following actions will be performed:
 -> installed cpuid.0.1.1
 -> installed typerep.v0.11.0
 -> installed uchar.0.0.2
+-> installed fmt.0.8.5
 -> installed ppxlib.0.3.0
 -> installed fieldslib.v0.11.0
--> installed fmt.0.8.5
+-> installed logs.0.6.2
 -> installed ppx_compare.v0.11.1
 -> installed ppx_enumerate.v0.11.1
--> installed ppx_fields_conv.v0.11.0
 -> installed ppx_here.v0.11.0
--> installed logs.0.6.2
+-> installed ppx_fields_conv.v0.11.0
 -> installed ppx_inline_test.v0.11.0
 -> installed ppx_fail.v0.11.0
 -> installed ppx_js_style.v0.11.0
@@ -326,10 +326,6 @@ The following actions will be performed:
 # Error: The function applied to this argument has type
 #          ?extract_exn:bool -> ?readme:(unit -> string) -> Core__Command.t
 # This argument cannot be applied without label
-#       ocamlc cohttp-async/bin/.cohttp_curl_async.eobjs/cohttp_server_async.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I cohttp-async/bin/.cohttp_curl_async.eobjs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -I cohttp-async/src/.cohttp_async.objs -I cohttp_server/.cohttp_server.objs -no-alias-deps -o cohttp-async/bin/.cohttp_curl_async.eobjs/cohttp_server_async.cmo -c -impl cohttp-async/bin/cohttp_server_async.ml)
-# File "cohttp-async/bin/cohttp_server_async.ml", line 123, characters 5-16:
-# Error: Unbound value Tcp.on_port
 #       ocamlc cohttp-async/src/.cohttp_async.objs/cohttp_async__Server.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I cohttp-async/src/.cohttp_async.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -no-alias-deps -open Cohttp_async -o cohttp-async/src/.cohttp_async.objs/cohttp_async__Server.cmo -c -impl cohttp-async/src/server.ml)
 # File "cohttp-async/src/server.ml", line 110, characters 23-39:
@@ -344,6 +340,10 @@ The following actions will be performed:
 # File "cohttp-async/src/client.ml", line 69, characters 8-27:
 # Warning 3: deprecated: Async.Deferred.all_ignore
 # [since 2018-02] Use [all_unit]
+#       ocamlc cohttp-async/bin/.cohttp_curl_async.eobjs/cohttp_server_async.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I cohttp-async/bin/.cohttp_curl_async.eobjs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -I cohttp-async/src/.cohttp_async.objs -I cohttp_server/.cohttp_server.objs -no-alias-deps -o cohttp-async/bin/.cohttp_curl_async.eobjs/cohttp_server_async.cmo -c -impl cohttp-async/bin/cohttp_server_async.ml)
+# File "cohttp-async/bin/cohttp_server_async.ml", line 123, characters 5-16:
+# Error: Unbound value Tcp.on_port
 
 
 
@@ -443,5 +443,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180803052336.export"
-31 1533273542 1533274024
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804053817.export"
+31 1533360593 1533361315
