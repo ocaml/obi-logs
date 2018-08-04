@@ -8,7 +8,7 @@ which
 # The following new OS packages need to be installed: libcurl-devel pcre-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libcurl-devel pcre-devel
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -21,11 +21,11 @@ The following 6 NEW packages are going to be installed:
 Overall download size: 643.4 KiB. Already cached: 0 B. After the operation, additional 1.0 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/6),   4.8 KiB (   72   B unpacked)
-Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [.done]
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [done]
 Retrieving package libcurl-devel-7.37.0-36.1.x86_64 (2/6), 227.2 KiB (357.2 KiB unpacked)
-Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [done]
+Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [.done]
 Retrieving package libpcre16-0-8.39-11.1.x86_64 (3/6), 147.2 KiB (406.3 KiB unpacked)
-Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [.done (3.1 MiB/s)]
+Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (4/6),  24.0 KiB ( 34.6 KiB unpacked)
 Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (5/6),  15.7 KiB ( 10.2 KiB unpacked)
@@ -277,7 +277,7 @@ The following actions will be performed:
 -> installed re2.v0.11.0
 
 #=== ERROR while compiling libevent.0.8.1 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/libevent.0.8.1
 # command              /usr/bin/make
 # exit-code            2
@@ -378,5 +378,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804043355.export"
-31 1533356865 1533357535
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804223211.export"
+31 1533421497 1533422233

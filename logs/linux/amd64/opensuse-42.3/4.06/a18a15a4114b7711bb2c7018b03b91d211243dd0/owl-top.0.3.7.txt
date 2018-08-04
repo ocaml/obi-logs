@@ -6,7 +6,7 @@ openblas-devel
 # The following new OS packages need to be installed: openblas-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install openblas-devel
-Retrieving repository 'OSS Update' metadata [...done]
+Retrieving repository 'OSS Update' metadata [.done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -44,8 +44,8 @@ update-alternatives: using /usr/lib64/libopenblas_pthreads.so.0 to provide /usr/
 update-alternatives: using /usr/lib64/libopenblas_pthreads.so.0 to provide /usr/lib64/libcblas.so.3 (libcblas.so.3) in auto mode
 update-alternatives: using /usr/lib64/libopenblas_pthreads.so.0 to provide /usr/lib64/liblapack.so.3 (liblapack.so.3) in auto mode
 update-alternatives: using /usr/lib64/libopenblas_pthreads.so.0 to provide /usr/lib64/libopenblas.so.0 (libopenblas.so.0) in auto mode
-/var/tmp/rpm-tmp.98QAnE: line 17: [: =: unary operator expected
-/var/tmp/rpm-tmp.98QAnE: line 20: [: =: unary operator expected
+/var/tmp/rpm-tmp.SYsM4J: line 17: [: =: unary operator expected
+/var/tmp/rpm-tmp.SYsM4J: line 20: [: =: unary operator expected
 
 
 (5/6) Installing: libopenblas_pthreads-devel-0.2.19-4.3.x86_64 [.....done]
@@ -103,29 +103,29 @@ The following actions will be performed:
 -> installed base-bytes.base
 -> installed conf-pkg-config.1.1
 -> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ocamlify.0.0.1
+[ERROR] The compilation of plplot failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+-> installed ocamlmod.0.0.9
 -> installed owl-base.0.3.8
 -> installed result.1.3
 -> installed sexplib0.v0.11.0
--> installed ocamlbuild.0.12.0
-[ERROR] The compilation of plplot failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
 -> installed base.v0.11.1
--> installed ocamlify.0.0.1
--> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
 -> installed stdio.v0.11.0
--> installed configurator.v0.11.0
 -> installed topkg.0.9.1
+-> installed configurator.v0.11.0
 -> installed integers.0.2.2
 -> installed ctypes.0.14.0
--> installed oasis.0.4.11
 -> installed eigen.0.0.5
 
 #=== ERROR while compiling plplot.5.11.0 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/plplot.5.11.0
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/plplot-12-e86963.env
-# output-file          ~/.opam/log/plplot-12-e86963.out
+# env-file             ~/.opam/log/plplot-12-813bac.env
+# output-file          ~/.opam/log/plplot-12-813bac.out
 ### output ###
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # Failure: No valid installation of plplot or plplotd found.
@@ -133,7 +133,7 @@ The following actions will be performed:
 
 
 #=== ERROR while compiling conf-openblas.0.2.0 ================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-openblas.0.2.0
 # command              /usr/bin/sh -exc cc $CFLAGS test.c -lopenblas
 # exit-code            1
@@ -179,5 +179,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804051710.export"
-31 1533359788 1533360018
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804201744.export"
+31 1533413519 1533414019

@@ -7,7 +7,7 @@ which
 # The following new OS packages need to be installed: gmp-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install gmp-devel
-Retrieving repository 'OSS Update' metadata [.....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -170,14 +170,14 @@ The following actions will be performed:
 -> installed uutf.1.0.1
 -> installed yojson.1.4.1
 -> installed atdgen-runtime.2.0.0
+-> installed ppxlib.0.3.0
 -> installed atdgen.2.0.0
 -> installed zarith.1.7
--> installed ppxlib.0.3.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed nocrypto.0.5.4-1
 
 #=== ERROR while compiling conf-zmq.0.1 =======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-zmq.0.1
 # command              /usr/bin/cc test.c -I/usr/local/include -L/usr/local/lib -lzmq
 # exit-code            1
@@ -246,5 +246,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804055013.export"
-31 1533361785 1533361886
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804201915.export"
+31 1533413920 1533414085

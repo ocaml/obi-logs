@@ -4,7 +4,7 @@ $ opam depext -iy -j 2 conf-llvm.4.0.0
 llvm4
 The following command needs to be run through "sudo":
     zypper --non-interactive install llvm4
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -17,9 +17,9 @@ The following 2 NEW packages are going to be installed:
 Overall download size: 11.5 MiB. Already cached: 0 B. After the operation, additional 49.9 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libLLVM4-4.0.1-5.1.x86_64 (1/2),   9.7 MiB ( 43.2 MiB unpacked)
-Retrieving: libLLVM4-4.0.1-5.1.x86_64.rpm [..done (6.9 MiB/s)]
+Retrieving: libLLVM4-4.0.1-5.1.x86_64.rpm [.done]
 Retrieving package llvm4-4.0.1-5.1.x86_64 (2/2),   1.8 MiB (  6.7 MiB unpacked)
-Retrieving: llvm4-4.0.1-5.1.x86_64.rpm [done]
+Retrieving: llvm4-4.0.1-5.1.x86_64.rpm [.done (13.5 KiB/s)]
 Checking for file conflicts: [....done]
 (1/2) Installing: libLLVM4-4.0.1-5.1.x86_64 [............done]
 (2/2) Installing: llvm4-4.0.1-5.1.x86_64 [............done]
@@ -38,7 +38,7 @@ The following actions will be performed:
 [ERROR] The compilation of conf-llvm failed at "/bin/bash -ex configure.sh 4.0.0".
 
 #=== ERROR while compiling conf-llvm.4.0.0 ====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-llvm.4.0.0
 # command              /bin/bash -ex configure.sh 4.0.0
 # exit-code            1
@@ -101,4 +101,4 @@ The packages you requested declare the following system dependencies. Please mak
     llvm4
 
 # Run eval $(opam env) to update the current shell environment
-31 1533358596 1533359011
+31 1533421637 1533422058

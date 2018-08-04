@@ -6,7 +6,7 @@ m4
 # The following new OS packages need to be installed: gsl-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install gsl-devel
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [...done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -19,9 +19,9 @@ The following 2 NEW packages are going to be installed:
 Overall download size: 1.2 MiB. Already cached: 0 B. After the operation, additional 3.8 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package gsl-1.16-9.4.x86_64 (1/2), 811.6 KiB (  2.6 MiB unpacked)
-Retrieving: gsl-1.16-9.4.x86_64.rpm [done]
+Retrieving: gsl-1.16-9.4.x86_64.rpm [.done (3.8 MiB/s)]
 Retrieving package gsl-devel-1.16-9.4.x86_64 (2/2), 426.4 KiB (  1.2 MiB unpacked)
-Retrieving: gsl-devel-1.16-9.4.x86_64.rpm [.done (16.4 KiB/s)]
+Retrieving: gsl-devel-1.16-9.4.x86_64.rpm [done]
 Checking for file conflicts: [.......done]
 (1/2) Installing: gsl-1.16-9.4.x86_64 [............done]
 (2/2) Installing: gsl-devel-1.16-9.4.x86_64 [............done]
@@ -57,7 +57,7 @@ The following actions will be performed:
 [ERROR] The compilation of pareto failed at "/home/opam/.opam/4.06/.opam-switch/build/pareto.0.3/./configure --prefix /home/opam/.opam/4.06".
 
 #=== ERROR while compiling pareto.0.3 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/pareto.0.3
 # command              ~/.opam/4.06/.opam-switch/build/pareto.0.3/./configure --prefix /home/opam/.opam/4.06
 # exit-code            1
@@ -120,5 +120,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804054042.export"
-31 1533360934 1533361312
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804225852.export"
+31 1533423097 1533423564

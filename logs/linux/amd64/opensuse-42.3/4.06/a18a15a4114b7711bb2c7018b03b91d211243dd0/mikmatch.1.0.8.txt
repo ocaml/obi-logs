@@ -2,7 +2,23 @@ $ opam depext -iy -j 2 mikmatch.1.0.8
 # Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
 # The following system packages are needed:
 m4
-# All required OS packages found.
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/non-oss/suse/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Cannot read input: bad stream or EOF.
+The following command needs to be run through "sudo":
+    zypper --non-interactive install m4
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+'m4' is already installed.
+No update candidate for 'm4-1.4.16-6.3.x86_64'. The highest available version is already installed.
+Resolving package dependencies...
+
+Nothing to do.
+# OS packages installation successful
 # Now letting OPAM install the packages
 The following actions will be performed:
   - install ocamlbuild 0.12.0 [required by camlp4]
@@ -24,7 +40,7 @@ The following actions will be performed:
 [ERROR] The compilation of mikmatch failed at "/usr/bin/make str".
 
 #=== ERROR while compiling mikmatch.1.0.8 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/mikmatch.1.0.8
 # command              /usr/bin/make str
 # exit-code            2
@@ -120,5 +136,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804054003.export"
-31 1533360962 1533361292
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804221257.export"
+31 1533420574 1533420869

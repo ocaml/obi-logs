@@ -72,21 +72,21 @@ The following actions will be performed:
 -> installed cstruct.3.2.1
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
--> installed ppx_cstruct.3.2.1
 -> installed io-page.2.0.1
 -> installed topkg.0.9.1
+-> installed ppx_cstruct.3.2.1
 -> installed mirage-profile.0.8.2
 -> installed cmdliner.1.0.2
 -> installed xen-gnt.3.0.1
-[ERROR] The compilation of xen-gnt-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p xen-gnt-unix -j 47".
+[ERROR] The compilation of xen-gnt-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p xen-gnt-unix -j 71".
 
 #=== ERROR while compiling xen-gnt-unix.3.0.0 =================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/xen-gnt-unix.3.0.0
-# command              ~/.opam/4.06/bin/jbuilder build -p xen-gnt-unix -j 47
+# command              ~/.opam/4.06/bin/jbuilder build -p xen-gnt-unix -j 71
 # exit-code            1
-# env-file             ~/.opam/log/xen-gnt-unix-12-156e0f.env
-# output-file          ~/.opam/log/xen-gnt-unix-12-156e0f.out
+# env-file             ~/.opam/log/xen-gnt-unix-12-019cf5.env
+# output-file          ~/.opam/log/xen-gnt-unix-12-019cf5.out
 ### output ###
 # File "/home/opam/.opam/4.06/lib/io-page/META", line 1, characters 0-0:
 # Error: Library "io-page-unix" not found.
@@ -126,5 +126,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804050252.export"
-31 1533358720 1533359027
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804220009.export"
+31 1533419795 1533420055

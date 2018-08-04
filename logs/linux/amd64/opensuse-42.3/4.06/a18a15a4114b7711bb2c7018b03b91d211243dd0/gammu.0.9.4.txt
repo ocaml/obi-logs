@@ -1,0 +1,30 @@
+$ opam depext -iy -j 2 gammu.0.9.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+gammu-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install gammu-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 8 NEW packages are going to be installed:
+  gammu-devel libGammu7 libbluetooth3 libdbi3 libgsmsd7 libmysqlclient18 libpq5 unixODBC
+
+8 new packages to install.
+Overall download size: 1.8 MiB. Already cached: 0 B. After the operation, additional 7.3 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libdbi3-0.9.0.g33-6.4.x86_64 (1/8),  38.2 KiB (103.3 KiB unpacked)
+Retrieving: libdbi3-0.9.0.g33-6.4.x86_64.rpm [..error]
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/x86_64/libdbi3-0.9.0.g33-6.4.x86_64.rpm':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+Problem occurred during or after installation or removal of packages:
+Installation aborted by user
+Please see the above error message for a hint.
+OS package installation failed
+1 1533420328 1533420579

@@ -6,7 +6,7 @@ pcre-devel
 # The following new OS packages need to be installed: pcre-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install pcre-devel
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -21,11 +21,11 @@ Continue? [y/n/...? shows all options] (y): y
 Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/5),   4.8 KiB (   72   B unpacked)
 Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [done]
 Retrieving package libpcre16-0-8.39-11.1.x86_64 (2/5), 147.2 KiB (406.3 KiB unpacked)
-Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
+Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [.done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (3/5),  24.0 KiB ( 34.6 KiB unpacked)
 Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (4/5),  15.7 KiB ( 10.2 KiB unpacked)
-Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [.done]
+Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (5/5), 224.5 KiB (263.5 KiB unpacked)
 Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
 Checking for file conflicts: [......done]
@@ -93,20 +93,20 @@ The following actions will be performed:
 -> installed ppx_test.1.6.0
 -> installed sexplib0.v0.11.0
 -> installed base.v0.11.1
--> installed camlp4.4.06+1
 -> installed spotlib.4.0.3
 -> installed stdio.v0.11.0
+-> installed camlp4.4.06+1
 -> installed configurator.v0.11.0
 -> installed pcre.7.3.4
 [ERROR] The compilation of orakuda failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling orakuda.1.1.1 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/orakuda.1.1.1
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/orakuda-13-127107.env
-# output-file          ~/.opam/log/orakuda-13-127107.out
+# env-file             ~/.opam/log/orakuda-12-127107.env
+# output-file          ~/.opam/log/orakuda-12-127107.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -158,7 +158,7 @@ The following actions will be performed:
 # File OMyMakefile: line 781, characters 6-34:
 #    Warning: old-style foreach expression.
 #    This expression should use a => binding.
-# *** omake: finished reading OMakefiles (0.19 sec)
+# *** omake: finished reading OMakefiles (0.15 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build . regexp.cmi
 # + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c regexp.mli
@@ -186,8 +186,12 @@ The following actions will be performed:
 #          val contents : t -> string
 #        File "cformat.ml", line 55, characters 2-28: Expected declaration
 #        File "cformat.ml", line 73, characters 6-14: Actual declaration
-# *** omake: 70/125 targets are up to date
-# *** omake: failed (1.11 sec, 20/20 scans, 13/13 rules, 43/80 digests)
+# - build pa pa_hash.o
+# + ocamlfind ocamlopt -annot -bin-annot -package pcre,camlp4 -g -w A-3-4-9-40-42-44-45-48 -warn-error a -pp camlp4of -I . -c pa_hash.ml
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
+# *** omake: 61/125 targets are up to date
+# *** omake: failed (1.49 sec, 17/17 scans, 10/10 rules, 36/73 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    cformat.cmo
 #       depends on: cformat.ml
@@ -227,5 +231,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804055030.export"
-31 1533361515 1533362013
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804224553.export"
+31 1533422717 1533422873

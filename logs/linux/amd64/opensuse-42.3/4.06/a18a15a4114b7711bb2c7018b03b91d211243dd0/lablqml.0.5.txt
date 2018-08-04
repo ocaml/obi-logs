@@ -19,12 +19,12 @@ The following actions will be performed:
 -> installed ocamlbuild.0.12.0
 
 #=== ERROR while compiling conf-qt.5.2.1 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-qt.5.2.1
 # command              /usr/bin/sh -exc min="5.2.1" cur=`PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH qmake -query QT_VERSION`; res=`printf "$min\n$cur\n" | sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -n | head -n 1`; [ "$res" = "$min" ]
 # exit-code            127
-# env-file             ~/.opam/log/conf-qt-12-a71bb4.env
-# output-file          ~/.opam/log/conf-qt-12-a71bb4.out
+# env-file             ~/.opam/log/conf-qt-13-a71bb4.env
+# output-file          ~/.opam/log/conf-qt-13-a71bb4.out
 ### output ###
 # + min=5.2.1
 # ++ PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -44,5 +44,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804045743.export"
-31 1533358644 1533358669
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804224221.export"
+31 1533422534 1533422556

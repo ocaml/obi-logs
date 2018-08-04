@@ -36,7 +36,7 @@ The following actions will be performed:
 [ERROR] The compilation of ppx_monadic failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling ppx_monadic.1.0.4 ==================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/ppx_monadic.1.0.4
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
@@ -54,7 +54,7 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.06/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.06/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.06 sec)
+# *** omake: finished reading OMakefiles (0.07 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build ppx monadic.cmi
 # + ocamlfind ocamlc -annot -bin-annot -package compiler-libs.common,ppx_tools.metaquot,ppxx -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c monadic.mli
@@ -66,7 +66,7 @@ The following actions will be performed:
 # Error: This expression has type Parsetree.expression
 #        but an expression was expected of type Ast_405.Parsetree.expression
 # *** omake: 29/85 targets are up to date
-# *** omake: failed (0.30 sec, 5/5 scans, 2/2 rules, 17/94 digests)
+# *** omake: failed (0.34 sec, 5/5 scans, 2/2 rules, 17/94 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    ppx/monadic.cmx
 #       depends on: ppx/monadic.ml
@@ -92,5 +92,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804053321.export"
-31 1533360546 1533360842
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804220014.export"
+31 1533419797 1533420056

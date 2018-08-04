@@ -6,7 +6,7 @@ python
 # The following new OS packages need to be installed: python
 The following command needs to be run through "sudo":
     zypper --non-interactive install python
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -19,9 +19,9 @@ The following 2 NEW packages are going to be installed:
 Overall download size: 722.6 KiB. Already cached: 0 B. After the operation, additional 2.2 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (1/2), 408.9 KiB (794.8 KiB unpacked)
-Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [done]
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [.done]
 Retrieving package python-2.7.13-27.6.1.x86_64 (2/2), 313.8 KiB (  1.4 MiB unpacked)
-Retrieving: python-2.7.13-27.6.1.x86_64.rpm [.done]
+Retrieving: python-2.7.13-27.6.1.x86_64.rpm [done]
 Checking for file conflicts: [......done]
 (1/2) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
 (2/2) Installing: python-2.7.13-27.6.1.x86_64 [............done]
@@ -60,7 +60,7 @@ The following actions will be performed:
 -> installed ctypes.0.14.0
 
 #=== ERROR while compiling conf-llvm.3.8 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-llvm.3.8
 # command              /bin/bash -ex configure.sh 3.8
 # exit-code            1
@@ -130,5 +130,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804053759.export"
-31 1533360593 1533361109
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804225139.export"
+31 1533422619 1533423129

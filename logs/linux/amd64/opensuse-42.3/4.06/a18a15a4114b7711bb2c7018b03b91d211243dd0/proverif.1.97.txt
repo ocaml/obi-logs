@@ -6,7 +6,7 @@ m4
 # The following new OS packages need to be installed: graphviz
 The following command needs to be run through "sudo":
     zypper --non-interactive install graphviz
-Retrieving repository 'OSS Update' metadata [.....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -19,7 +19,7 @@ The following 9 NEW packages are going to be installed:
 Overall download size: 2.5 MiB. Already cached: 0 B. After the operation, additional 62.6 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package xbitmaps-1.1.1-15.3.noarch (1/9),  27.2 KiB (176.3 KiB unpacked)
-Retrieving: xbitmaps-1.1.1-15.3.noarch.rpm [.done]
+Retrieving: xbitmaps-1.1.1-15.3.noarch.rpm [done]
 Retrieving package libICE6-1.0.9-7.1.x86_64 (2/9),  41.2 KiB (100.2 KiB unpacked)
 Retrieving: libICE6-1.0.9-7.1.x86_64.rpm [done]
 Retrieving package libXext6-1.3.3-6.3.x86_64 (3/9),  28.5 KiB ( 71.8 KiB unpacked)
@@ -31,11 +31,11 @@ Retrieving: libSM6-1.2.2-8.3.x86_64.rpm [done]
 Retrieving package libXt6-1.1.5-4.3.x86_64 (6/9), 152.7 KiB (407.6 KiB unpacked)
 Retrieving: libXt6-1.1.5-4.3.x86_64.rpm [done]
 Retrieving package libXmu6-1.1.2-8.3.x86_64 (7/9),  45.3 KiB (105.0 KiB unpacked)
-Retrieving: libXmu6-1.1.2-8.3.x86_64.rpm [done]
+Retrieving: libXmu6-1.1.2-8.3.x86_64.rpm [.done (7.9 KiB/s)]
 Retrieving package libXaw7-1.0.13-5.3.1.x86_64 (8/9), 166.6 KiB (457.8 KiB unpacked)
 Retrieving: libXaw7-1.0.13-5.3.1.x86_64.rpm [done]
 Retrieving package graphviz-2.38.0-9.1.x86_64 (9/9),   2.0 MiB ( 61.2 MiB unpacked)
-Retrieving: graphviz-2.38.0-9.1.x86_64.rpm [done]
+Retrieving: graphviz-2.38.0-9.1.x86_64.rpm [.done (6.0 MiB/s)]
 Checking for file conflicts: [.......done]
 (1/9) Installing: xbitmaps-1.1.1-15.3.noarch [........done]
 (2/9) Installing: libICE6-1.0.9-7.1.x86_64 [.....done]
@@ -62,7 +62,7 @@ The following actions will be performed:
 [ERROR] The compilation of proverif failed at "/home/opam/.opam/4.06/.opam-switch/build/proverif.1.97/./build ocb.native".
 
 #=== ERROR while compiling proverif.1.97 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/proverif.1.97
 # command              ~/.opam/4.06/.opam-switch/build/proverif.1.97/./build ocb.native
 # exit-code            10
@@ -281,5 +281,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804051956.export"
-31 1533359503 1533360010
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804224021.export"
+31 1533421952 1533422435

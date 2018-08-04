@@ -1,0 +1,20 @@
+$ opam depext -iy -j 2 cordova-plugin-datepicker.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+which
+Download (curl) error for 'http://download.opensuse.org/update/leap/42.3/oss/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Cannot read input: bad stream or EOF.
+The following command needs to be run through "sudo":
+    zypper --non-interactive install m4 which
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+ABORT request: Aborting requested by user
+OS package installation failed
+1 1533420120 1533420130

@@ -6,7 +6,7 @@ m4
 # The following new OS packages need to be installed: graphviz
 The following command needs to be run through "sudo":
     zypper --non-interactive install graphviz
-Retrieving repository 'OSS Update' metadata [....done]
+Retrieving repository 'OSS Update' metadata [..done]
 Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -31,7 +31,7 @@ Retrieving: libSM6-1.2.2-8.3.x86_64.rpm [done]
 Retrieving package libXt6-1.1.5-4.3.x86_64 (6/9), 152.7 KiB (407.6 KiB unpacked)
 Retrieving: libXt6-1.1.5-4.3.x86_64.rpm [done]
 Retrieving package libXmu6-1.1.2-8.3.x86_64 (7/9),  45.3 KiB (105.0 KiB unpacked)
-Retrieving: libXmu6-1.1.2-8.3.x86_64.rpm [.done]
+Retrieving: libXmu6-1.1.2-8.3.x86_64.rpm [.done (7.9 KiB/s)]
 Retrieving package libXaw7-1.0.13-5.3.1.x86_64 (8/9), 166.6 KiB (457.8 KiB unpacked)
 Retrieving: libXaw7-1.0.13-5.3.1.x86_64.rpm [done]
 Retrieving package graphviz-2.38.0-9.1.x86_64 (9/9),   2.0 MiB ( 61.2 MiB unpacked)
@@ -62,7 +62,7 @@ The following actions will be performed:
 [ERROR] The compilation of proverif failed at "/home/opam/.opam/4.06/.opam-switch/build/proverif.1.97pl1/./build ocb.native".
 
 #=== ERROR while compiling proverif.1.97pl1 ===================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/proverif.1.97pl1
 # command              ~/.opam/4.06/.opam-switch/build/proverif.1.97pl1/./build ocb.native
 # exit-code            10
@@ -281,5 +281,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804052856.export"
-31 1533360025 1533360553
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804224738.export"
+31 1533422453 1533422873
