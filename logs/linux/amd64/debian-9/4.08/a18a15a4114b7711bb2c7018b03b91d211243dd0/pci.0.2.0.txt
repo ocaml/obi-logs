@@ -89,126 +89,107 @@ The following actions will be performed:
 -> installed base-bytes.base
 -> installed conf-pkg-config.1.1
 -> installed result.1.3
--> installed ocamlbuild.0.12.0
--> installed topkg.0.9.1
--> installed integers.0.2.2
--> installed ctypes.0.14.0
-[ERROR] The compilation of pci failed at "/usr/bin/make".
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
-#=== ERROR while compiling pci.0.2.0 ==========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/pci.0.2.0
-# command              /usr/bin/make
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/pci-11-9dee53.env
-# output-file          ~/.opam/log/pci-11-9dee53.out
+# env-file             ~/.opam/log/ocamlbuild-11-0c525f.env
+# output-file          ~/.opam/log/ocamlbuild-11-0c525f.out
 ### output ###
-# ocaml setup.ml -build 
-# File "./setup.ml", line 318, characters 20-36:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 318, characters 42-58:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 327, characters 14-30:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 327, characters 38-54:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 330, characters 25-41:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 368, characters 10-26:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 474, characters 13-29:
-# Warning 3: deprecated: Stdlib.String.lowercase
-# Use String.lowercase_ascii instead.
-# File "./setup.ml", line 1825, characters 16-33:
-# Warning 3: deprecated: Stdlib.String.capitalize
-# Use String.capitalize_ascii instead.
-# File "./setup.ml", line 1831, characters 16-35:
-# Warning 3: deprecated: Stdlib.String.uncapitalize
-# Use String.uncapitalize_ascii instead.
-# File "setup.ml", line 5847, characters 11-28:
-# Warning 3: deprecated: Stdlib.String.capitalize
-# Use String.capitalize_ascii instead.
-# File "setup.ml", line 5848, characters 11-30:
-# Warning 3: deprecated: Stdlib.String.uncapitalize
-# Use String.uncapitalize_ascii instead.
-# W: Cannot find source file matching module 'Ffi_generated' in library pci
-# W: Cannot find source file matching module 'Ffi_generated_types' in library pci
-# /home/opam/.opam/4.08/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# File "_tags", line 44, characters 35-44:
-# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# File "_tags", line 48, characters 23-32:
-# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package ctypes.stubs -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -a -I bindings bindings/ffi_bindings.cmo -o bindings/pci_bindings.cma
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlopt -a -I bindings bindings/ffi_bindings.cmx -o bindings/pci_bindings.cmxa
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlopt -shared -I bindings bindings/pci_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/pci_bindings.cmxs
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -package ctypes.stubs -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -linkpkg -package ctypes.stubs -I bindings -I stubgen bindings/pci_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
-# stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -c lib/ffi_generated_stubs.c
-# mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlmklib -o lib/pci_stubs -lpci lib/ffi_generated_stubs.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/pci.mli > lib/pci.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package ctypes.stubs -I lib -I bindings -o lib/pci.cmi lib/pci.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/pci.ml > lib/pci.ml.depends
-# stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -package ctypes.stubs -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -linkpkg -package ctypes.stubs -I bindings -I stubgen bindings/pci_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
-# stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
-# gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/opam/.opam/4.08/lib/ctypes -I /home/opam/.opam/4.08/lib/ocaml -o stubgen/ffi_ml_types_subgen
-# stubgen/ffi_ml_types_subgen >> lib/ffi_generated_types.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/ffi_generated_types.ml > lib/ffi_generated_types.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package ctypes.stubs -I lib -I bindings -o lib/ffi_generated.cmo lib/ffi_generated.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package ctypes.stubs -I lib -I bindings -o lib/ffi_generated_types.cmo lib/ffi_generated_types.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package ctypes.stubs -I lib -I bindings -o lib/pci.cmo lib/pci.ml
-# + /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package ctypes.stubs -I lib -I bindings -o lib/pci.cmo lib/pci.ml
-# File "lib/pci.ml", line 106, characters 39-42:
-# Error: This expression has type bytes but an expression was expected of type
-#          string
-# Command exited with code 2.
-# + /home/opam/.opam/4.08/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# File "myocamlbuild.ml", line 518, characters 43-62:
-# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
-# Use String.uncapitalize_ascii instead.
-# File "myocamlbuild.ml", line 531, characters 51-70:
-# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
-# Use String.uncapitalize_ascii instead.
-# E: Failure("Command ''/home/opam/.opam/4.08/bin/ocamlbuild' bindings/pci_bindings.cma bindings/pci_bindings.cmxa bindings/pci_bindings.a bindings/pci_bindings.cmxs lib/libpci_stubs.a lib/dllpci_stubs.so lib/pci.cma lib/pci.cmxa lib/pci.a lib/pci.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte -tag debug' terminated with error code 10")
-# Makefile:7: recipe for target 'build' failed
-# make: *** [build] Error 1
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build pci 0.2.0
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
++- The following changes have been performed (the rest was aborted)
 | - install base-bytes      base
 | - install conf-pkg-config 1.1
-| - install ctypes          0.14.0
-| - install integers        0.2.2
-| - install ocamlbuild      0.12.0
 | - install result          1.3
-| - install topkg           0.9.1
 +- 
-
-The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
-    libpci-dev
-
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803203158.export"
-31 1533328309 1533328353
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180805030624.export"
+31 1533438374 1533438388

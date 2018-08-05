@@ -14,64 +14,100 @@ The following actions will be performed:
 [sonet.0.1.1] found in cache
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed ocamlbuild.0.12.0
-[ERROR] The compilation of sonet failed at "/usr/bin/make".
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
-#=== ERROR while compiling sonet.0.1.1 ========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/sonet.0.1.1
-# command              /usr/bin/make
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/sonet-11-e80101.env
-# output-file          ~/.opam/log/sonet-11-e80101.out
+# env-file             ~/.opam/log/ocamlbuild-11-ad8886.env
+# output-file          ~/.opam/log/ocamlbuild-11-ad8886.out
 ### output ###
-# ocamlbuild all.otarget
-# /home/opam/.opam/4.08/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# File "protocols/bencode/tests/_tags", line 1, characters 30-41:
-# Warning: the tag "use_bencode" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c eventloop/epoll_stubs.c
-# mv epoll_stubs.o eventloop/epoll_stubs.o
-# /home/opam/.opam/4.08/bin/ocamlmklib.opt -o eventloop/eventloop eventloop/epoll_stubs.o
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/async_conn.mli > eventloop/async_conn.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/eventloop.mli > eventloop/eventloop.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/eventloop.cmi eventloop/eventloop.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/async_conn.cmi eventloop/async_conn.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/async_conn.ml > eventloop/async_conn.ml.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/conn_map.ml > eventloop/conn_map.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/conn_map.cmo eventloop/conn_map.ml
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/epoll_poller.mli > eventloop/epoll_poller.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/net_events.mli > eventloop/net_events.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/net_events.cmi eventloop/net_events.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/epoll_poller.cmi eventloop/epoll_poller.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/epoll_poller.ml > eventloop/epoll_poller.ml.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/eventloop.ml > eventloop/eventloop.ml.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/unix_poller.mli > eventloop/unix_poller.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/unix_poller.cmi eventloop/unix_poller.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/net_events.ml > eventloop/net_events.ml.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules eventloop/unix_poller.ml > eventloop/unix_poller.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/async_conn.cmo eventloop/async_conn.ml
-# + /home/opam/.opam/4.08/bin/ocamlc.opt -c -I eventloop -o eventloop/async_conn.cmo eventloop/async_conn.ml
-# File "eventloop/async_conn.ml", line 56, characters 12-25:
-# Warning 3: deprecated: Stdlib.String.create
-# Use Bytes.create instead.
-# File "eventloop/async_conn.ml", line 62, characters 34-37:
-# Error: This expression has type bytes but an expression was expected of type
-#          string
-# Command exited with code 2.
-# Makefile:45: recipe for target 'all' failed
-# make: *** [all] Error 10
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build sonet 0.1.1
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
-| - install ocamlbuild 0.12.0
-+- 
+- No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803202804.export"
-31 1533328082 1533328093
+31 1533438221 1533438226

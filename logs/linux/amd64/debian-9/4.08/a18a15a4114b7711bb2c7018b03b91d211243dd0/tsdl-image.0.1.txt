@@ -699,260 +699,109 @@ The following actions will be performed:
 -> installed conf-sdl2.1
 -> installed ctypes-foreign.0.4.0
 -> installed result.1.3
--> installed ocamlbuild.0.12.0
--> installed ocamlify.0.0.1
--> installed ocamlmod.0.0.9
--> installed topkg.0.9.1
--> installed astring.0.8.3
--> installed integers.0.2.2
--> installed ctypes.0.14.0
--> installed ocb-stubblr.0.1.1
-[ERROR] The compilation of tsdl failed at "/home/opam/.opam/4.08/bin/ocaml pkg/pkg.ml build --pinned false".
--> installed oasis.0.4.11
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
-#=== ERROR while compiling tsdl.0.9.6 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/tsdl.0.9.6
-# command              ~/.opam/4.08/bin/ocaml pkg/pkg.ml build --pinned false
-# exit-code            1
-# env-file             ~/.opam/log/tsdl-11-93347f.env
-# output-file          ~/.opam/log/tsdl-11-93347f.out
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
+# exit-code            2
+# env-file             ~/.opam/log/ocamlbuild-11-51aaa5.env
+# output-file          ~/.opam/log/ocamlbuild-11-51aaa5.out
 ### output ###
-# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ocb-stubblr myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# ocamlfind ocamlc -g -thread -c src/tsdl_stubs.c
-# mv tsdl_stubs.o src/tsdl_stubs.o
-# ocamlfind ocamlmklib -o src/tsdl -ldopt -Wl,-no-as-needed -lSDL2 src/tsdl_stubs.o
-# ocamlfind ocamldep -modules support/consts.ml > support/consts.ml.depends
-# ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -I support -I src -I test -o support/consts.cmo support/consts.ml
-# ocamlfind ocamlc -g -thread -ccopt '-D_REENTRANT -I/usr/include/SDL2' -c support/consts_stub.c
-# + ocamlfind ocamlc -g -thread -ccopt '-D_REENTRANT -I/usr/include/SDL2' -c support/consts_stub.c
-# support/consts_stub.c: In function 'consts':
-# support/consts_stub.c:66:10: error: 'SDL_HINT_RENDER_LOGICAL_SIZE_MODE' undeclared (first use in this function)
-#    str_v (SDL_HINT_RENDER_LOGICAL_SIZE_MODE);
-#           ^
-# support/consts_stub.c:39:50: note: in definition of macro 'str_v'
-#  #define str_v(e) str_v(fd, "" # e, (const char *)e)
-#                                                   ^
-# support/consts_stub.c:66:10: note: each undeclared identifier is reported only once for each function it appears in
-#    str_v (SDL_HINT_RENDER_LOGICAL_SIZE_MODE);
-#           ^
-# support/consts_stub.c:39:50: note: in definition of macro 'str_v'
-#  #define str_v(e) str_v(fd, "" # e, (const char *)e)
-#                                                   ^
-# support/consts_stub.c:78:10: error: 'SDL_HINT_AUDIO_RESAMPLING_MODE' undeclared (first use in this function)
-#    str_v (SDL_HINT_AUDIO_RESAMPLING_MODE);
-#           ^
-# support/consts_stub.c:39:50: note: in definition of macro 'str_v'
-#  #define str_v(e) str_v(fd, "" # e, (const char *)e)
-#                                                   ^
-# support/consts_stub.c:79:10: error: 'SDL_HINT_MOUSE_NORMAL_SPEED_SCALE' undeclared (first use in this function)
-#    str_v (SDL_HINT_MOUSE_NORMAL_SPEED_SCALE);
-#           ^
-# support/consts_stub.c:39:50: note: in definition of macro 'str_v'
-#  #define str_v(e) str_v(fd, "" # e, (const char *)e)
-#                                                   ^
-# support/consts_stub.c:80:10: error: 'SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE' undeclared (first use in this function)
-#    str_v (SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE);
-#           ^
-# support/consts_stub.c:39:50: note: in definition of macro 'str_v'
-#  #define str_v(e) str_v(fd, "" # e, (const char *)e)
-#                                                   ^
-# support/consts_stub.c:81:10: error: 'SDL_HINT_TOUCH_MOUSE_EVENTS' undeclared (first use in this function)
-#    str_v (SDL_HINT_TOUCH_MOUSE_EVENTS);
-#           ^
-# support/consts_stub.c:39:50: note: in definition of macro 'str_v'
-#  #define str_v(e) str_v(fd, "" # e, (const char *)e)
-#                                                   ^
-# support/consts_stub.c:108:10: error: 'SDL_BLENDOPERATION_ADD' undeclared (first use in this function)
-#    int_v (SDL_BLENDOPERATION_ADD);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:109:10: error: 'SDL_BLENDOPERATION_SUBTRACT' undeclared (first use in this function)
-#    int_v (SDL_BLENDOPERATION_SUBTRACT);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:110:10: error: 'SDL_BLENDOPERATION_REV_SUBTRACT' undeclared (first use in this function)
-#    int_v (SDL_BLENDOPERATION_REV_SUBTRACT);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:111:10: error: 'SDL_BLENDOPERATION_MAXIMUM' undeclared (first use in this function)
-#    int_v (SDL_BLENDOPERATION_MAXIMUM);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:112:10: error: 'SDL_BLENDOPERATION_MINIMUM' undeclared (first use in this function)
-#    int_v (SDL_BLENDOPERATION_MINIMUM);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:114:10: error: 'SDL_BLENDFACTOR_ZERO' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_ZERO);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:115:10: error: 'SDL_BLENDFACTOR_ONE' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_ONE);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:116:10: error: 'SDL_BLENDFACTOR_SRC_COLOR' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_SRC_COLOR);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:117:10: error: 'SDL_BLENDFACTOR_ONE_MINUS_SRC_COLOR' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_ONE_MINUS_SRC_COLOR);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:118:10: error: 'SDL_BLENDFACTOR_SRC_ALPHA' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_SRC_ALPHA);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:119:10: error: 'SDL_BLENDFACTOR_ONE_MINUS_SRC_ALPHA' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_ONE_MINUS_SRC_ALPHA);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:120:10: error: 'SDL_BLENDFACTOR_DST_COLOR' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_DST_COLOR);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:121:10: error: 'SDL_BLENDFACTOR_ONE_MINUS_DST_COLOR' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_ONE_MINUS_DST_COLOR);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:122:10: error: 'SDL_BLENDFACTOR_DST_ALPHA' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_DST_ALPHA);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:123:10: error: 'SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA' undeclared (first use in this function)
-#    int_v (SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:202:10: error: 'SDL_WINDOW_VULKAN' undeclared (first use in this function)
-#    int_v (SDL_WINDOW_VULKAN);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:828:10: error: 'SDL_JOYSTICK_TYPE_UNKNOWN' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_UNKNOWN);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:829:10: error: 'SDL_JOYSTICK_TYPE_GAMECONTROLLER' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_GAMECONTROLLER);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:830:10: error: 'SDL_JOYSTICK_TYPE_WHEEL' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_WHEEL);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:831:10: error: 'SDL_JOYSTICK_TYPE_ARCADE_STICK' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_ARCADE_STICK);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:832:10: error: 'SDL_JOYSTICK_TYPE_FLIGHT_STICK' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_FLIGHT_STICK);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:833:10: error: 'SDL_JOYSTICK_TYPE_DANCE_PAD' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_DANCE_PAD);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:834:10: error: 'SDL_JOYSTICK_TYPE_GUITAR' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_GUITAR);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:835:10: error: 'SDL_JOYSTICK_TYPE_DRUM_KIT' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_DRUM_KIT);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:836:10: error: 'SDL_JOYSTICK_TYPE_ARCADE_PAD' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_ARCADE_PAD);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# support/consts_stub.c:837:10: error: 'SDL_JOYSTICK_TYPE_THROTTLE' undeclared (first use in this function)
-#    int_v (SDL_JOYSTICK_TYPE_THROTTLE);
-#           ^
-# support/consts_stub.c:36:41: note: in definition of macro 'int_v'
-#  #define int_v(e) int_v(fd, "" # e, (int)e)
-#                                          ^
-# Command exited with code 2.
-# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
-#      '-build-dir' '_build' '-plugin-tag' 'package(ocb-stubblr)' 'opam'
-#      'pkg/META' 'CHANGES.md' 'LICENSE.md' 'README.md' 'src/tsdl.a'
-#      'src/tsdl.cmxs' 'src/tsdl.cmxa' 'src/tsdl.cma' 'src/tsdl.cmx'
-#      'src/tsdl.cmi' 'src/tsdl.mli' 'src/tsdl_consts.cmx' 'src/tsdl_top.a'
-#      'src/tsdl_top.cmxs' 'src/tsdl_top.cmxa' 'src/tsdl_top.cma'
-#      'src/tsdl_top.cmx' 'src/tsdl_top_init.ml' 'src/dlltsdl.so'
-#      'src/libtsdl.a' 'README.md' 'CHANGES.md' 'test/min.ml' 'test/minc.c']: exited with 10
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build tsdl 0.9.6
+| - build ocamlbuild 0.12.0
 +- 
 +- The following changes have been performed (the rest was aborted)
-| - install astring         0.8.3
 | - install base-bytes      base
 | - install conf-pkg-config 1.1
 | - install conf-sdl2       1
-| - install ctypes          0.14.0
 | - install ctypes-foreign  0.4.0
-| - install integers        0.2.2
-| - install oasis           0.4.11
-| - install ocamlbuild      0.12.0
-| - install ocamlify        0.0.1
-| - install ocamlmod        0.0.9
-| - install ocb-stubblr     0.1.1
 | - install result          1.3
-| - install topkg           0.9.1
 +- 
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803204651.export"
-31 1533329182 1533329259
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180805025951.export"
+31 1533437965 1533437996

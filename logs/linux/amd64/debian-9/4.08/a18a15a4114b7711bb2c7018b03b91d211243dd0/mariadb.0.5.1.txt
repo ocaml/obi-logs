@@ -78,63 +78,108 @@ The following actions will be performed:
 -> installed conf-pkg-config.1.1
 -> installed ctypes-foreign.0.4.0
 -> installed result.1.3
--> installed ocamlbuild.0.12.0
--> installed topkg.0.9.1
--> installed integers.0.2.2
--> installed ctypes.0.14.0
-[ERROR] The compilation of mariadb failed at "/usr/bin/make".
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
-#=== ERROR while compiling mariadb.0.5.1 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/mariadb.0.5.1
-# command              /usr/bin/make
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/mariadb-11-3e450d.env
-# output-file          ~/.opam/log/mariadb-11-3e450d.out
+# env-file             ~/.opam/log/ocamlbuild-11-0c525f.env
+# output-file          ~/.opam/log/ocamlbuild-11-0c525f.out
 ### output ###
-# ocaml setup.ml -build 
-# W: Cannot find source file matching module 'Ffi_generated' in library mariadb
-# W: Cannot find source file matching module 'Ffi_generated_types' in library mariadb
-# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -a -warn-error +1..45 -I bindings bindings/ffi_bindings.cmo -o bindings/mariadb_bindings.cma
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlopt -a -warn-error +1..45 -I bindings bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxa
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlopt -shared -I bindings bindings/mariadb_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/mariadb_bindings.cmxs
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package ctypes.stubs -package ctypes.foreign -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -package ctypes.foreign -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -linkpkg -g -warn-error +1..45 -linkpkg -package ctypes.stubs -package ctypes.foreign -I bindings -I stubgen bindings/mariadb_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
-# stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
-# + /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/opam/.opam/4.08/lib/ctypes -package unix -package ctypes.stubs -package ctypes.foreign -c lib/ffi_generated_stubs.c
-# lib/ffi_generated_stubs.c:1:25: fatal error: mysql/mysql.h: No such file or directory
-#  #include <mysql/mysql.h>
-#                          ^
-# compilation terminated.
-# Command exited with code 2.
-# E: Failure("Command ''/home/opam/.opam/4.08/bin/ocamlbuild' bindings/mariadb_bindings.cma bindings/mariadb_bindings.cmxa bindings/mariadb_bindings.a bindings/mariadb_bindings.cmxs lib/libmariadb_stubs.a lib/dllmariadb_stubs.so lib/mariadb.cma lib/mariadb.cmxa lib/mariadb.a lib/mariadb.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte examples/select/nonblocking_select_example.native examples/blocking/blocking_example.native -use-ocamlfind -tag debug' terminated with error code 10")
-# Makefile:7: recipe for target 'build' failed
-# make: *** [build] Error 1
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build mariadb 0.5.1
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
++- The following changes have been performed (the rest was aborted)
 | - install base-bytes      base
 | - install conf-pkg-config 1.1
-| - install ctypes          0.14.0
 | - install ctypes-foreign  0.4.0
-| - install integers        0.2.2
-| - install ocamlbuild      0.12.0
 | - install result          1.3
-| - install topkg           0.9.1
 +- 
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803201601.export"
-31 1533327350 1533327400
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180805030053.export"
+31 1533438044 1533438057

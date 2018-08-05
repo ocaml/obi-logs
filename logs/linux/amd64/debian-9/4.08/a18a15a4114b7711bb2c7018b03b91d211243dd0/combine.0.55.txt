@@ -18,91 +18,106 @@ The following actions will be performed:
 [ocamlbuild.0.12.0] found in cache
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 -> installed num.1.1
--> installed ocamlbuild.0.12.0
--> installed menhir.20180703
-[ERROR] The compilation of combine failed at "/usr/bin/make".
 
-#=== ERROR while compiling combine.0.55 =======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/combine.0.55
-# command              /usr/bin/make
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/combine-11-1c4147.env
-# output-file          ~/.opam/log/combine-11-1c4147.out
+# env-file             ~/.opam/log/ocamlbuild-11-0c525f.env
+# output-file          ~/.opam/log/ocamlbuild-11-0c525f.out
 ### output ###
-# Makefile:306: .depend: No such file or directory
-# menhir  -v parser.mly
-# Note: the nonterminal symbol option (from parser.mly) is renamed parser_option.
-# perl -pi -e 's/4611686018427387903/max_int/g' parser.ml
-# ocamllex.opt lexer.mll
-# 60 states, 510 transitions, table size 2400 bytes
-# 1475 additional bytes used for bindings
-# echo "let version = \""0.55"\"" > version.ml
-# echo "let date = \""`date`"\"" >> version.ml
-# rm -f .depend
-# ocamldep.opt  *.ml *.mli > .depend
-# ocamlc.opt -c -g  matrix.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine matrix.ml
-# ocamlc.opt -c -g  dlx.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine dlx.ml
-# ocamlc.opt -c -g  zdd.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine zdd.ml
-# File "zdd.ml", line 84, characters 14-26:
-# Warning 3: deprecated: Stdlib.Array.create
-# Use Array.make instead.
-# ocamlc.opt -c -g  emc.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine emc.ml
-# ocamlc.opt -c -g  d4.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine d4.ml
-# ocamlc.opt -c -g  tiling.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine tiling.ml
-# ocamlc.opt -c -g  backtracking.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine backtracking.ml
-# ocamlc.opt -c -g  ast.mli
-# ocamlc.opt -c -g  parser.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine parser.ml
-# ocamlopt.opt -c -g -annot  -for-pack Combine lexer.ml
-# ocamlc.opt -c -g  interp.mli
-# ocamlopt.opt -c -g -annot  -for-pack Combine interp.ml
-# ocamlopt.opt  -pack -o combine.cmx matrix.cmx dlx.cmx zdd.cmx emc.cmx d4.cmx tiling.cmx backtracking.cmx ast.cmi parser.cmx lexer.cmx interp.cmx
-# ocamlopt.opt  -a -o combine.cmxa combine.cmx
-# ocamlc.opt -c -g  matrix.ml
-# ocamlc.opt -c -g  dlx.ml
-# ocamlc.opt -c -g  zdd.ml
-# File "zdd.ml", line 84, characters 14-26:
-# Warning 3: deprecated: Stdlib.Array.create
-# Use Array.make instead.
-# ocamlc.opt -c -g  emc.ml
-# ocamlc.opt -c -g  d4.ml
-# ocamlc.opt -c -g  tiling.ml
-# ocamlc.opt -c -g  backtracking.ml
-# ocamlc.opt -c -g  parser.ml
-# ocamlc.opt -c -g  lexer.ml
-# ocamlc.opt -c -g  interp.ml
-# ocamlc.opt  -pack -g -o combine.cmo matrix.cmo dlx.cmo zdd.cmo emc.cmo d4.cmo tiling.cmo backtracking.cmo ast.cmi parser.cmo lexer.cmo interp.cmo
-# ocamlopt.opt -c -g -annot  main.ml
-# ocamlopt.opt -g -annot  -o combine.opt nums.cmxa unix.cmxa combine.cmxa main.cmx
-# ocamlopt.opt -c -g -annot  sudoku.ml
-# File "sudoku.ml", line 124, characters 21-22:
-# Error: This expression has type string but an expression was expected of type
-#          bytes
-# Makefile:233: recipe for target 'sudoku.cmx' failed
-# make: *** [sudoku.cmx] Error 2
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build combine 0.55
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
-| - install menhir     20180703
-| - install num        1.1
-| - install ocamlbuild 0.12.0
++- The following changes have been performed (the rest was aborted)
+| - install num 1.1
 +- 
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803202423.export"
-31 1533327861 1533327898
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180805025045.export"
+31 1533437442 1533437451

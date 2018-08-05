@@ -783,189 +783,108 @@ The following actions will be performed:
 -> installed conf-gsl.1
 -> installed conf-pkg-config.1.1
 -> installed result.1.3
--> installed ocamlbuild.0.12.0
--> installed dolog.3.0
--> installed ocamlify.0.0.1
--> installed ocamlmod.0.0.9
--> installed gsl.1.19.3
--> installed plplot.5.11.0
--> installed topkg.0.9.1
--> installed integers.0.2.2
--> installed oasis.0.4.11
--> installed ctypes.0.14.0
--> installed eigen.0.0.5
-[ERROR] The compilation of owl failed at "/home/opam/.opam/4.08/bin/ocaml setup.ml -build".
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
-#=== ERROR while compiling owl.0.2.3 ==========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/owl.0.2.3
-# command              ~/.opam/4.08/bin/ocaml setup.ml -build
-# exit-code            1
-# env-file             ~/.opam/log/owl-11-7d8df8.env
-# output-file          ~/.opam/log/owl-11-7d8df8.out
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
+# exit-code            2
+# env-file             ~/.opam/log/ocamlbuild-11-52d546.env
+# output-file          ~/.opam/log/ocamlbuild-11-52d546.out
 ### output ###
-# Start compiling Owl ...
-# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -c lib/owl_dense_common_c.c
-# mv owl_dense_common_c.o lib/owl_dense_common_c.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -c lib/owl_dense_common_vec_cmp.c
-# mv owl_dense_common_vec_cmp.o lib/owl_dense_common_vec_cmp.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -c lib/owl_dense_common_vec_map.c
-# mv owl_dense_common_vec_map.o lib/owl_dense_common_vec_map.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -c lib/owl_dense_common_vec_fold.c
-# mv owl_dense_common_vec_fold.o lib/owl_dense_common_vec_fold.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -c lib/owl_dense_common_vec_combine.c
-# mv owl_dense_common_vec_combine.o lib/owl_dense_common_vec_combine.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -g -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -c lib/owl_cblas_generated_stub.c
-# mv owl_cblas_generated_stub.o lib/owl_cblas_generated_stub.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlmklib -o lib/owl_stubs lib/owl_dense_common_c.o lib/owl_dense_common_vec_cmp.o lib/owl_dense_common_vec_map.o lib/owl_dense_common_vec_fold.o lib/owl_dense_common_vec_combine.o lib/owl_cblas_generated_stub.o
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl.ml > lib/owl.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_algodiff.ml > lib/owl_algodiff.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_algodiff_ad.ml > lib/owl_algodiff_ad.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_matrix_s.mli > lib/owl_dense_matrix_s.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_matrix_generic.mli > lib/owl_dense_matrix_generic.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_generic.mli > lib/owl_dense_ndarray_generic.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_ndarray_generic.cmi lib/owl_dense_ndarray_generic.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_matrix_generic.cmi lib/owl_dense_matrix_generic.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_maths.mli > lib/owl_maths.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_matrix_s.cmi lib/owl_dense_matrix_s.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_maths.cmi lib/owl_maths.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_algodiff_numerical.mli > lib/owl_algodiff_numerical.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_matrix_d.mli > lib/owl_dense_matrix_d.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_vector_d.mli > lib/owl_dense_vector_d.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_vector_generic.ml > lib/owl_dense_vector_generic.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_types.ml > lib/owl_types.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_types.cmo lib/owl_types.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_vector_generic.cmo lib/owl_dense_vector_generic.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_matrix_d.cmi lib/owl_dense_matrix_d.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_vector_d.cmi lib/owl_dense_vector_d.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_algodiff_ad.cmo lib/owl_algodiff_ad.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_algodiff_numerical.cmi lib/owl_algodiff_numerical.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_cluster.ml > lib/owl_cluster.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_utils.ml > lib/owl_utils.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_utils.cmo lib/owl_utils.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_const.mli > lib/owl_const.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dataset.ml > lib/owl_dataset.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/topic/owl_topic_utils.ml > lib/topic/owl_topic_utils.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/topic/owl_topic_utils.cmo lib/topic/owl_topic_utils.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense.ml > lib/owl_dense.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_matrix.ml > lib/owl_dense_matrix.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_matrix_c.mli > lib/owl_dense_matrix_c.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_matrix_z.mli > lib/owl_dense_matrix_z.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_matrix_c.cmi lib/owl_dense_matrix_c.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_matrix_z.cmi lib/owl_dense_matrix_z.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray.ml > lib/owl_dense_ndarray.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_c.mli > lib/owl_dense_ndarray_c.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_s.mli > lib/owl_dense_ndarray_s.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_ndarray_s.cmi lib/owl_dense_ndarray_s.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_d.mli > lib/owl_dense_ndarray_d.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_z.mli > lib/owl_dense_ndarray_z.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_ndarray_d.cmi lib/owl_dense_ndarray_d.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_ndarray_c.cmi lib/owl_dense_ndarray_c.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_ndarray_z.cmi lib/owl_dense_ndarray_z.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_vector.ml > lib/owl_dense_vector.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_vector_c.mli > lib/owl_dense_vector_c.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_vector_s.mli > lib/owl_dense_vector_s.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_vector_z.mli > lib/owl_dense_vector_z.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_vector_c.cmi lib/owl_dense_vector_c.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_vector_s.cmi lib/owl_dense_vector_s.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_vector_z.cmi lib/owl_dense_vector_z.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_matrix.cmo lib/owl_dense_matrix.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_ndarray.cmo lib/owl_dense_ndarray.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_vector.cmo lib/owl_dense_vector.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_fft.mli > lib/owl_fft.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_linalg.mli > lib/owl_linalg.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_plot.mli > lib/owl_plot.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_regression.mli > lib/owl_regression.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse.ml > lib/owl_sparse.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_dok_matrix.mli > lib/owl_sparse_dok_matrix.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_matrix.ml > lib/owl_sparse_matrix.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_matrix_c.mli > lib/owl_sparse_matrix_c.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_matrix_generic.mli > lib/owl_sparse_matrix_generic.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_matrix_generic.cmi lib/owl_sparse_matrix_generic.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_matrix_d.mli > lib/owl_sparse_matrix_d.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_matrix_s.mli > lib/owl_sparse_matrix_s.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_matrix_z.mli > lib/owl_sparse_matrix_z.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_matrix_c.cmi lib/owl_sparse_matrix_c.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_matrix_d.cmi lib/owl_sparse_matrix_d.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_matrix_s.cmi lib/owl_sparse_matrix_s.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_matrix_z.cmi lib/owl_sparse_matrix_z.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_ndarray.ml > lib/owl_sparse_ndarray.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_ndarray_c.mli > lib/owl_sparse_ndarray_c.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_ndarray_generic.mli > lib/owl_sparse_ndarray_generic.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_ndarray_generic.cmi lib/owl_sparse_ndarray_generic.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_ndarray_d.mli > lib/owl_sparse_ndarray_d.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_ndarray_s.mli > lib/owl_sparse_ndarray_s.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_sparse_ndarray_z.mli > lib/owl_sparse_ndarray_z.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_ndarray_c.cmi lib/owl_sparse_ndarray_c.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_ndarray_d.cmi lib/owl_sparse_ndarray_d.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_ndarray_s.cmi lib/owl_sparse_ndarray_s.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_ndarray_z.cmi lib/owl_sparse_ndarray_z.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_dok_matrix.cmi lib/owl_sparse_dok_matrix.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_matrix.cmo lib/owl_sparse_matrix.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse_ndarray.cmo lib/owl_sparse_ndarray.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_stats.mli > lib/owl_stats.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_algodiff.cmo lib/owl_algodiff.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_cluster.cmo lib/owl_cluster.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_const.cmi lib/owl_const.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dataset.cmo lib/owl_dataset.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense.cmo lib/owl_dense.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_fft.cmi lib/owl_fft.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_linalg.cmi lib/owl_linalg.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_plot.cmi lib/owl_plot.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_regression.cmi lib/owl_regression.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_sparse.cmo lib/owl_sparse.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_stats.cmi lib/owl_stats.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_const.ml > lib/owl_const.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_maths.ml > lib/owl_maths.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_stats.ml > lib/owl_stats.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_common.ml > lib/owl_dense_common.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_cblas.ml > lib/owl_cblas.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_cblas_bindings.ml > lib/owl_cblas_bindings.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_cblas_generated.ml > lib/owl_cblas_generated.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_cblas_bindings.cmo lib/owl_cblas_bindings.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_cblas_generated.cmo lib/owl_cblas_generated.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_pretty.mli > lib/owl_pretty.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_cblas.cmo lib/owl_cblas.ml
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_pretty.cmi lib/owl_pretty.mli
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_s.ml > lib/owl_dense_ndarray_s.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_d.ml > lib/owl_dense_ndarray_d.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_c.ml > lib/owl_dense_ndarray_c.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_z.ml > lib/owl_dense_ndarray_z.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/owl_dense_ndarray_generic.ml > lib/owl_dense_ndarray_generic.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamldep -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -modules lib/backend/owl_backend_gsl_linalg.ml > lib/backend/owl_backend_gsl_linalg.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_common.cmo lib/owl_dense_common.ml
-# + /home/opam/.opam/4.08/bin/ocamlfind ocamlc -c -g -annot -bin-annot -ccopt -I/home/opam/.opam/4.08/lib/ctypes -ccopt -g -ccopt -O3 -ccopt -Ofast -package str -package plplot -package gsl -package eigen -package dolog -package ctypes.stubs -package ctypes -I lib -I lib/backend -I lib/ext -I lib/topic -o lib/owl_dense_common.cmo lib/owl_dense_common.ml
-# File "lib/owl_dense_common.ml", line 188, characters 17-34:
-# Error: Unbound value Eigen.Dense.S.dot
-# Command exited with code 2.
-# E: Failure("Command ''/home/opam/.opam/4.08/bin/ocamlbuild' lib/libowl_stubs.a lib/dllowl_stubs.so lib/owl.cma lib/owl.cmxa lib/owl.a lib/owl.cmxs lib/neural/owl_neural.cma lib/neural/owl_neural.cmxa lib/neural/owl_neural.a lib/neural/owl_neural.cmxs perftest/perf_common.cma perftest/perf_common.cmxa perftest/perf_common.a perftest/perf_common.cmxs perftest/perf_dense_real.native perftest/perf_sparse_real.native perftest/perf_sparse_complex.native perftest/perf_dense_ndarray.native perftest/perf_dense_matrix.native perftest/perf_sparse_ndarray.native perftest/perf_sparse_matrix.native perftest/perf_specific_fun.native examples/test_sgd.native examples/test_kmeans.native examples/test_log.native examples/test_svm.native examples/test_operation.native examples/test_lda.native examples/test_mnist.native examples/test_neural.native examples/test_lstm.native -use-ocamlfind -tag debug' terminated with error code 10")
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build owl 0.2.3
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
++- The following changes have been performed (the rest was aborted)
 | - install base-bytes      base
 | - install conf-gsl        1
 | - install conf-pkg-config 1.1
-| - install ctypes          0.14.0
-| - install dolog           3.0
-| - install eigen           0.0.5
-| - install gsl             1.19.3
-| - install integers        0.2.2
-| - install oasis           0.4.11
-| - install ocamlbuild      0.12.0
-| - install ocamlify        0.0.1
-| - install ocamlmod        0.0.9
-| - install plplot          5.11.0
 | - install result          1.3
-| - install topkg           0.9.1
 +- 
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803204429.export"
-31 1533329036 1533329204
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180805025017.export"
+31 1533437378 1533437421

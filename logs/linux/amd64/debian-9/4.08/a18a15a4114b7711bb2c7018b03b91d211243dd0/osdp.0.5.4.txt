@@ -114,133 +114,120 @@ The following actions will be performed:
 [zarith.1.7] found in cache
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 -> installed conf-gmp.1
 -> installed conf-perl.1
 -> installed conf-sdpa.1
 -> installed conf-which.1
 -> installed conf-autoconf.0.1
 -> installed num.1.1
--> installed ocamlbuild.0.12.0
--> installed zarith.1.7
 -> installed ocplib-simplex.0.3
-[ERROR] The compilation of osdp failed at "/usr/bin/make".
+-> installed zarith.1.7
 
-#=== ERROR while compiling osdp.0.5.4 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/osdp.0.5.4
-# command              /usr/bin/make
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/osdp-11-e01822.env
-# output-file          ~/.opam/log/osdp-11-e01822.out
+# env-file             ~/.opam/log/ocamlbuild-11-af3201.env
+# output-file          ~/.opam/log/ocamlbuild-11-af3201.out
 ### output ###
-# make -C src osdp
-# make[1]: Entering directory '/home/opam/.opam/4.08/.opam-switch/build/osdp.0.5.4/src'
-# ocamlbuild -use-ocamlfind -classic-display -no-links osdp.cma osdp_top.cmo osdp.cmxa osdp.cmxs 
-# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.08/lib/ocamlbuild /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.08/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# File "_tags", line 7, characters 18-30:
-# Warning: the tag "use_rounding" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c csdp_stubs.c
-# ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c moseksdp_stubs.c
-# ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c posdef_stubs.c
-# ocamlfind ocamlmklib -o osdp csdp_stubs.o moseksdp_stubs.o posdef_stubs.o
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.mli > csdp.mli.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.mli > sdpRet.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpRet.cmi sdpRet.mli
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmi csdp.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.ml > csdp.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.mli > ident.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmi ident.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.ml > ident.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.mli > linExpr.mli.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.mli > scalar.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o scalar.cmi scalar.mli
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmi linExpr.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.ml > linExpr.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.mli > utils.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o utils.cmi utils.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.mli > lmi.mli.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.mli > matrix.mli.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.mli > sdp.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmi matrix.mli
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdp.cmi sdp.mli
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmi lmi.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.ml > lmi.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.mli > posdef.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o posdef.cmi posdef.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.ml > matrix.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.mli > monomial.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o monomial.cmi monomial.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.ml > monomial.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.mli > moseksdp.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o moseksdp.cmi moseksdp.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.ml > moseksdp.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.mli > newtonPolytope.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o newtonPolytope.cmi newtonPolytope.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.ml > newtonPolytope.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.mli > polynomial.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o polynomial.cmi polynomial.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.ml > polynomial.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.ml > posdef.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.mli > preSdp.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o preSdp.cmi preSdp.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.ml > preSdp.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.ml > scalar.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.ml > sdp.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.mli > sdpa.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa.cmi sdpa.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.ml > sdpa.ml.depends
-# /home/opam/.opam/4.08/bin/ocamllex.opt -q sdpa_lexer.mll
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_lexer.ml > sdpa_lexer.ml.depends
-# /home/opam/.opam/4.08/bin/ocamlyacc sdpa_parser.mly
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.mli > sdpa_parser.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_parser.cmi sdpa_parser.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_paths.ml > sdpa_paths.ml.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_lexer.cmo sdpa_lexer.ml
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_paths.cmo sdpa_paths.ml
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.ml > sdpa_parser.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.ml > sdpRet.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.mli > sos.mli.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sos.cmi sos.mli
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.ml > sos.ml.depends
-# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.ml > utils.ml.depends
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmo csdp.ml
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmo ident.ml
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmo linExpr.ml
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmo lmi.ml
-# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
-# + ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
-# File "matrix.ml", line 111, characters 41-63:
-# Warning 3: deprecated: Stdlib.String.set
-# Use Bytes.set instead.
-# File "matrix.ml", line 112, characters 27-34:
-# Error: This expression has type bytes but an expression was expected of type
-#          string
-# Command exited with code 2.
-# Makefile:24: recipe for target 'osdp' failed
-# make[1]: *** [osdp] Error 10
-# make[1]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/osdp.0.5.4/src'
-# Makefile:40: recipe for target 'osdp' failed
-# make: *** [osdp] Error 2
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build osdp 0.5.4
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
++- The following changes have been performed (the rest was aborted)
 | - install conf-autoconf  0.1
 | - install conf-gmp       1
 | - install conf-perl      1
 | - install conf-sdpa      1
 | - install conf-which     1
 | - install num            1.1
-| - install ocamlbuild     0.12.0
 | - install ocplib-simplex 0.3
 | - install zarith         1.7
 +- 
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803203159.export"
-31 1533328305 1533328334
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180805025950.export"
+31 1533437978 1533437996

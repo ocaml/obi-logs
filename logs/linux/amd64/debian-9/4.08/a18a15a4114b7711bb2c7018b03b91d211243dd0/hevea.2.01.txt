@@ -14,116 +14,100 @@ The following actions will be performed:
 [ocamlbuild.0.12.0] found in cache
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed ocamlbuild.0.12.0
-[ERROR] The compilation of hevea failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.08".
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
-#=== ERROR while compiling hevea.2.01 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/hevea.2.01
-# command              /usr/bin/make PREFIX=/home/opam/.opam/4.08
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/hevea-11-50de41.env
-# output-file          ~/.opam/log/hevea-11-50de41.out
+# env-file             ~/.opam/log/ocamlbuild-10-ad8886.env
+# output-file          ~/.opam/log/ocamlbuild-10-ad8886.out
 ### output ###
-# sh ocb.sh opt
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules hevea.ml > hevea.ml.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules auxx.mli > auxx.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules colscan.mli > colscan.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules emisc.mli > emisc.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules count.mli > count.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o count.cmi count.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules esp.mli > esp.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules get.mli > get.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules length.mli > length.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules lexstate.mli > lexstate.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules misc.mli > misc.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules myStack.mli > myStack.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o misc.cmi misc.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o myStack.cmi myStack.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o length.cmi length.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o lexstate.cmi lexstate.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules hot.mli > hot.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules html.mli > html.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules outManager.mli > outManager.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules element.mli > element.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules out.mli > out.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules doOut.mli > doOut.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o doOut.cmi doOut.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules outUnicode.mli > outUnicode.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules tabular.mli > tabular.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o element.cmi element.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o out.cmi out.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o outUnicode.cmi outUnicode.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o tabular.cmi tabular.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o outManager.cmi outManager.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules image.mli > image.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules index.mli > index.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules info.mli > info.mli.depends
-# /home/opam/.opam/4.08/bin/ocamllex.opt -q infoRef.mll
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules infoRef.ml > infoRef.ml.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules myLexing.mli > myLexing.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules mysys.mli > mysys.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules parse_opts.mli > parse_opts.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules text.mli > text.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o myLexing.cmi myLexing.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o mysys.cmi mysys.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o parse_opts.cmi parse_opts.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o text.cmi text.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules latexscan.mli > latexscan.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules imageManager.mli > imageManager.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o imageManager.cmi imageManager.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules location.mli > location.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules myfiles.mli > myfiles.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules mylib.mli > mylib.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules noimage.mli > noimage.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules package.mli > package.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o latexscan.cmi latexscan.mli
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules save.mli > save.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules verb.mli > verb.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules videoc.mli > videoc.mli.depends
-# /home/opam/.opam/4.08/bin/ocamldep.opt -modules zyva.mli > zyva.mli.depends
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o auxx.cmi auxx.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o colscan.cmi colscan.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o emisc.cmi emisc.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o esp.cmi esp.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o get.cmi get.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o hot.cmi hot.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o html.cmi html.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o image.cmi image.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o index.cmi index.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o info.cmi info.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o infoRef.cmo infoRef.ml
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o location.cmi location.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o myfiles.cmi myfiles.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o mylib.cmi mylib.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o noimage.cmi noimage.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o package.cmi package.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o save.cmi save.mli
-# /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o verb.cmi verb.mli
-# + /home/opam/.opam/4.08/bin/ocamlc.opt -c -w +a-4-9 -annot -o infoRef.cmo infoRef.ml
-# File "infoRef.mll", line 127, characters 12-23:
-# Warning 3: deprecated: Stdlib.String.copy
-# File "infoRef.mll", line 130, characters 14-28:
-# Warning 3: deprecated: Stdlib.String.set
-# Use Bytes.set instead.
-# File "infoRef.mll", line 130, characters 14-17:
-# Error: This expression has type string but an expression was expected of type
-#          bytes
-# Command exited with code 2.
-# Makefile:59: recipe for target 'ocb-opt' failed
-# make: *** [ocb-opt] Error 10
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build hevea 2.01
+| - build ocamlbuild 0.12.0
 +- 
-+- The following changes have been performed
-| - install ocamlbuild 0.12.0
-+- 
+- No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180803201907.export"
-31 1533327545 1533327557
+31 1533437850 1533437859
