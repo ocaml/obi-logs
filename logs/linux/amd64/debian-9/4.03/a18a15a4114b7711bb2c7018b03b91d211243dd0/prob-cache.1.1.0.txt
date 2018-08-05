@@ -172,7 +172,7 @@ The following actions will be performed:
 [ERROR] The compilation of riakc_ppx failed at "/home/opam/.opam/4.03/bin/omake -j2".
 
 #=== ERROR while compiling riakc_ppx.3.1.4 ====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.03/.opam-switch/build/riakc_ppx.3.1.4
 # command              ~/.opam/4.03/bin/omake -j2
 # exit-code            2
@@ -187,7 +187,7 @@ The following actions will be performed:
 # --- Checking for ocamllex.opt... (found /home/opam/.opam/4.03/bin/ocamllex.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
 # --- Checking whether ocamlopt can create cmxs plugins... (yes)
-# *** omake: finished reading OMakefiles (0.12 sec)
+# *** omake: finished reading OMakefiles (0.13 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build _build/lib mylogging.o
 # + ocamlfind ocamlc -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -safe-string -bin-annot -annot -warn-error P -thread -I . -c mylogging.ml
@@ -209,8 +209,8 @@ The following actions will be performed:
 #        is not included in
 #          val parse_length : string -> (int, [> error ]) Result.t
 #        File "response.ml", line 10, characters 4-16: Actual declaration
-# *** omake: 58/241 targets are up to date
-# *** omake: failed (2.08 sec, 15/15 scans, 8/12 rules, 81/110 digests)
+# *** omake: 62/241 targets are up to date
+# *** omake: failed (2.53 sec, 15/15 scans, 9/16 rules, 85/114 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    _build/lib/response.cmo
 #       depends on: _build/lib/response.ml
@@ -282,5 +282,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804010528.export"
-31 1533344725 1533345392
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805021603.export"
+31 1533435361 1533435979

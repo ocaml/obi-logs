@@ -30,7 +30,7 @@ The following actions will be performed:
 [ERROR] The compilation of humane-re failed at "/usr/bin/make configure-no-tests".
 
 #=== ERROR while compiling humane-re.0.0.2 ====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.03/.opam-switch/build/humane-re.0.0.2
 # command              /usr/bin/make configure-no-tests
 # exit-code            2
@@ -40,7 +40,7 @@ The following actions will be performed:
 # oasis setup
 # ocaml setup.ml -configure
 # ocamlfind: Package `oUnit' not found
-# W: Field 'pkg_ounit' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d oUnit > '/tmp/oasis-9d455e.txt'' terminated with error code 2
+# W: Field 'pkg_ounit' is not set: Command ''/home/opam/.opam/4.03/bin/ocamlfind' query -format %d oUnit > '/tmp/oasis-374cc5.txt'' terminated with error code 2
 # E: Cannot find findlib package oUnit
 # E: Failure("1 configuration error")
 # Makefile:8: recipe for target 'configure-no-tests' failed
@@ -62,5 +62,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804004741.export"
-31 1533343658 1533343707
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805022902.export"
+31 1533436139 1533436187

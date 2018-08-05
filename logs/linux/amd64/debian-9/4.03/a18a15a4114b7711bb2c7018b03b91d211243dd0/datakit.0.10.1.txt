@@ -241,13 +241,13 @@ The following actions will be performed:
 -> installed named-pipe.0.4.0
 -> installed uchar.0.0.2
 -> installed fmt.0.8.5
+-> installed mirage-device.1.1.0
 -> installed logs.0.6.2
 -> installed asl.0.11
 -> installed irmin-watcher.0.3.0
--> installed mirage-device.1.1.0
--> installed bos.0.2.0
 -> installed mirage-clock.1.3.0
 -> installed mirage-flow.1.3.0
+-> installed bos.0.2.0
 -> installed mirage-channel.3.1.0
 -> installed mirage-kv.1.1.1
 -> installed mirage-flow-lwt.1.4.0
@@ -265,11 +265,11 @@ The following actions will be performed:
 -> installed ppx_driver.v0.9.1
 -> installed fieldslib.v0.9.0
 -> installed ppx_metaquot.v0.9.0
+-> installed ppx_js_style.v0.9.0
 -> installed ppx_type_conv.v0.9.0
 -> installed ppx_compare.v0.9.0
 -> installed ppx_enumerate.v0.9.0
 -> installed ppx_fields_conv.v0.9.0
--> installed ppx_js_style.v0.9.0
 -> installed ppx_sexp_conv.v0.9.0
 -> installed ipaddr.2.8.0
 -> installed ppx_hash.v0.9.0
@@ -291,12 +291,12 @@ The following actions will be performed:
 [ERROR] The compilation of datakit failed at "/home/opam/.opam/4.03/bin/jbuilder build -p datakit -j 71".
 
 #=== ERROR while compiling datakit.0.10.1 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.03/.opam-switch/build/datakit.0.10.1
 # command              ~/.opam/4.03/bin/jbuilder build -p datakit -j 71
 # exit-code            1
-# env-file             ~/.opam/log/datakit-11-69acff.env
-# output-file          ~/.opam/log/datakit-11-69acff.out
+# env-file             ~/.opam/log/datakit-12-69acff.env
+# output-file          ~/.opam/log/datakit-12-69acff.out
 ### output ###
 # File "ci/src/jbuild", line 11, characters 16-24:
 # Warning: 'per_file' was renamed 'per_module'. 'per_file' will be re-purposed in a future version and will take a list of  file names rather than module names.
@@ -318,7 +318,6 @@ The following actions will be performed:
 #       ocamlc src/datakit-conduit/datakit_conduit.{cmi,cmti}
 #       ocamlc src/datakit-log/datakit_log.{cmi,cmti}
 #       ocamlc src/datakit-io/datakit_io.{cmi,cmti}
-#       ocamlc src/datakit/ivfs_blob.{cmi,cmti}
 #     ocamlopt src/datakit-conduit/datakit_conduit.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.03/bin/ocamlopt.opt -w -40 -g -I /home/opam/.opam/4.03/lib/asetmap -I /home/opam/.opam/4.03/lib/astring -I /home/opam/.opam/4.03/lib/bos -I /home/opam/.opam/4.03/lib/bytes -I /home/opam/.opam/4.03/lib/cstruct -I /home/opam/.opam/4.03/lib/cstruct-lwt -I /home/opam/.opam/4.03/lib/datakit-server -I /home/opam/.opam/4.03/lib/duration -I /home/opam/.opam/4.03/lib/fmt -I /home/opam/.opam/4.03/lib/fpath -I /home/opam/.opam/4.03/lib/hvsock -I /home/opam/.opam/4.03/lib/hvsock/lwt -I /home/opam/.opam/4.03/lib/hvsock/lwt-unix -I /home/opam/.opam/4.03/lib/io-page -I /home/opam/.opam/4.03/lib/io-page-unix -I /home/opam/.opam/4.03/lib/logs -I /home/opam/.opam/4.03/lib/lwt -I /home/opam/.opam/4.03/lib/mirage-channel -I /home/opam/.opam/4.03/lib/mirage-channel-lwt -I /home/opam/.opam/4.03/lib/mirage-clock -I /home/opam/.opam/4.03/lib/mirage-device -I /home/opam/.opam/4.03/lib/mirage-flow -I /home/opam/.opam/4.03/lib/mirage-flow-lwt -I /home/opam/.opam/4.03/lib/mirage-kv -I /home/opam/.opam/4.03/lib/mirage-kv-lwt -I /home/opam/.opam/4.03/lib/mirage-time -I /home/opam/.opam/4.03/lib/mirage-time-lwt -I /home/opam/.opam/4.03/lib/ocaml -I /home/opam/.opam/4.03/lib/ocaml/threads -I /home/opam/.opam/4.03/lib/ocplib-endian -I /home/opam/.opam/4.03/lib/prometheus -I /home/opam/.opam/4.03/lib/protocol-9p -I /home/opam/.opam/4.03/lib/protocol-9p-unix -I /home/opam/.opam/4.03/lib/re -I /home/opam/.opam/4.03/lib/re/posix -I /home/opam/.opam/4.03/lib/result -I /home/opam/.opam/4.03/lib/rresult -I /home/opam/.opam/4.03/lib/sexplib -I /home/opam/.opam/4.03/lib/sexplib/0 -I /home/opam/.opam/4.03/lib/stringext -I /home/opam/.opam/4.03/lib/uchar -I /home/opam/.opam/4.03/lib/uri -no-alias-deps -I src/datakit-conduit -o src/datakit-conduit/datakit_conduit.cmx -c -impl src/datakit-conduit/datakit_conduit.ml)
 # File "src/datakit-conduit/datakit_conduit.ml", line 191, characters 17-46:
@@ -425,5 +424,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180804004802.export"
-31 1533343652 1533343863
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805022454.export"
+31 1533435859 1533436064
