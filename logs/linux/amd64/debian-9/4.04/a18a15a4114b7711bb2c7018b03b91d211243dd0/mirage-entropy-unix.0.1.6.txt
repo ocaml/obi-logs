@@ -98,12 +98,12 @@ The following actions will be performed:
 [ERROR] The compilation of mirage-entropy-unix failed at "/usr/bin/make unix-build".
 
 #=== ERROR while compiling mirage-entropy-unix.0.1.6 ==========================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.04/.opam-switch/build/mirage-entropy-unix.0.1.6
 # command              /usr/bin/make unix-build
 # exit-code            2
-# env-file             ~/.opam/log/mirage-entropy-unix-12-2450cb.env
-# output-file          ~/.opam/log/mirage-entropy-unix-12-2450cb.out
+# env-file             ~/.opam/log/mirage-entropy-unix-11-2450cb.env
+# output-file          ~/.opam/log/mirage-entropy-unix-11-2450cb.out
 ### output ###
 # OS=unix ./build
 # ocamlfind ocamldep -syntax camlp4o -package mirage-types -package lwt.syntax -package lwt.unix -package lwt -package cstruct.lwt -package cstruct -modules unix/entropy_unix.mli > unix/entropy_unix.mli.depends
@@ -152,5 +152,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803221810.export"
-31 1533334688 1533334813
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805053802.export"
+31 1533447479 1533447619

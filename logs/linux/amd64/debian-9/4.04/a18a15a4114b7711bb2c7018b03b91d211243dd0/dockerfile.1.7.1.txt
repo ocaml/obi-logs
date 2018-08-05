@@ -30,6 +30,7 @@ The following actions will be performed:
 [cmdliner.1.0.2] found in cache
 [cppo.1.6.4] found in cache
 [cppo_ocamlbuild.1.6.0] found in cache
+[dockerfile.1.7.1] found in cache
 [ocaml-compiler-libs.v0.11.0] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
@@ -42,7 +43,6 @@ The following actions will be performed:
 [sexplib0.v0.11.0] found in cache
 [stdio.v0.11.0] found in cache
 [topkg.0.9.1] found in cache
-[dockerfile.1.7.1] downloaded from https://github.com/avsm/ocaml-dockerfile/archive/v1.7.1.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -65,17 +65,17 @@ The following actions will be performed:
 [ERROR] The compilation of dockerfile failed at "/home/opam/.opam/4.04/.opam-switch/build/dockerfile.1.7.1/./configure --prefix=/home/opam/.opam/4.04".
 
 #=== ERROR while compiling dockerfile.1.7.1 ===================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.04/.opam-switch/build/dockerfile.1.7.1
 # command              ~/.opam/4.04/.opam-switch/build/dockerfile.1.7.1/./configure --prefix=/home/opam/.opam/4.04
 # exit-code            1
-# env-file             ~/.opam/log/dockerfile-11-843ffa.env
-# output-file          ~/.opam/log/dockerfile-11-843ffa.out
+# env-file             ~/.opam/log/dockerfile-11-c1a330.env
+# output-file          ~/.opam/log/dockerfile-11-c1a330.out
 ### output ###
 # ocamlfind: Package `sexplib' not found
-# W: Field 'pkg_sexplib' is not set: Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d sexplib > '/tmp/oasis-34eb4b.txt'' terminated with error code 2
+# W: Field 'pkg_sexplib' is not set: Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d sexplib > '/tmp/oasis-0b2a9d.txt'' terminated with error code 2
 # ocamlfind: Package `sexplib' not found
-# W: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d sexplib > '/tmp/oasis-990b2e.txt'' terminated with error code 2")
+# W: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlfind' query -format %d sexplib > '/tmp/oasis-79c509.txt'' terminated with error code 2")
 # E: Cannot find findlib package sexplib
 # E: Failure("1 configuration error")
 
@@ -107,5 +107,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803222805.export"
-31 1533335282 1533335402
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805053607.export"
+31 1533447364 1533447446

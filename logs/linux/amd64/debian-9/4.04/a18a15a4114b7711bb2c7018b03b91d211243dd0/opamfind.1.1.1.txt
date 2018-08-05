@@ -153,7 +153,7 @@ The following actions will be performed:
 [ERROR] The compilation of opamfind failed at "/home/opam/.opam/4.04/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling opamfind.1.1.1 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.04/.opam-switch/build/opamfind.1.1.1
 # command              ~/.opam/4.04/bin/ocaml setup.ml -build
 # exit-code            1
@@ -207,7 +207,7 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.04/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.04/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.05 sec)
+# *** omake: finished reading OMakefiles (0.06 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan src scan-ocaml-module_path.mli
 # + ocamlfind ocamldep -package spotlib,findlib,compiler-libs.common,ppx_meta_conv_ocaml,ppx_orakuda.regexp_re_pcre,ppx_monadic -modules module_path.mli
@@ -215,7 +215,7 @@ The following actions will be performed:
 # File "_none_", line 1:
 # Error: Cannot load /home/opam/.opam/4.04/lib/re/re_perl.cmxs: cannot find file /home/opam/.opam/4.04/lib/re/re_perl.cmxs in search path
 # *** omake: 16/79 targets are up to date
-# *** omake: failed (0.12 sec, 1/1 scans, 0/0 rules, 11/81 digests)
+# *** omake: failed (0.13 sec, 1/1 scans, 0/0 rules, 11/81 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner src/scan-ocaml-module_path.mli>
 #       depends on: src/module_path.mli
@@ -258,5 +258,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803221020.export"
-31 1533334211 1533334334
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805051046.export"
+31 1533445836 1533445959

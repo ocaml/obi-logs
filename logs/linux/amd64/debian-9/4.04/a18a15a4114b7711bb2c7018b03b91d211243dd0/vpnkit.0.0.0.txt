@@ -243,19 +243,17 @@ The following actions will be performed:
 -> installed ppx_tools_versioned.5.2
 -> installed sexplib.v0.10.0
 -> installed base.v0.10.0
--> installed stdio.v0.10.0
 -> installed cstruct.2.4.1
 -> installed cstruct-lwt.3.2.1
 -> installed cstruct-unix.3.2.1
--> installed ppx_core.v0.10.0
 -> installed ppx_cstruct.0
 [ERROR] The compilation of pcap-format failed at "/home/opam/.opam/4.04/bin/jbuilder build -p pcap-format -j 71".
--> installed ppx_optcomp.v0.10.0
+-> installed stdio.v0.10.0
 -> installed io-page.1.6.1
--> installed ppx_driver.v0.10.4
--> installed ppx_metaquot.v0.10.0
+-> installed ppx_core.v0.10.0
+-> installed ppx_optcomp.v0.10.0
 -> installed mirage-profile.0.7.0
--> installed ppx_type_conv.v0.10.0
+-> installed ppx_driver.v0.10.4
 -> installed shared-memory-ring.3.0.0
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
@@ -263,42 +261,44 @@ The following actions will be performed:
 -> installed cmdliner.1.0.2
 -> installed duration.0.1.1
 -> installed mtime.0.8.4
--> installed ppx_sexp_conv.v0.10.0
--> installed ipaddr.2.7.2
--> installed mirage-types.2.8.0
--> installed mirage-clock-unix.1.0.0
--> installed mirage-types-lwt.2.8.0
--> installed mirage-flow.1.1.0
--> installed mirage-unix.2.6.0
+-> installed ppx_metaquot.v0.10.0
 -> installed ocb-stubblr.0.1.1
--> installed mirage-console.2.1.2
--> installed rresult.0.5.0
--> installed tar-format.0.6.1
+-> installed ppx_type_conv.v0.10.0
 -> installed named-pipe.0.4.0
+-> installed rresult.0.5.0
 -> installed uchar.0.0.2
--> installed uri.1.9.2
+-> installed ppx_sexp_conv.v0.10.0
 -> installed fmt.0.8.5
+-> installed ipaddr.2.7.2
 -> installed logs.0.6.2
 -> installed asl.0.11
+-> installed mirage-types.2.8.0
+-> installed mirage-types-lwt.2.8.0
 -> installed channel.1.1.1
+-> installed mirage-clock-unix.1.0.0
+-> installed mirage-flow.1.1.0
+-> installed mirage-unix.2.6.0
+-> installed mirage-console.2.1.2
+-> installed hvsock.0.12.0
+-> installed tar-format.0.6.1
+-> installed uri.1.9.2
+-> installed tcpip.2.8.1
 -> installed dns.0.18.1
 -> installed dns-forward.0.7.2
--> installed hvsock.0.12.0
 -> installed uwt.0.0.3
--> installed win-error.0.3
--> installed protocol-9p.0.8.0
--> installed tcpip.2.8.1
--> installed datakit-server.0.9.0
--> installed win-eventlog.0.2
 -> installed charrua-core.0.3
+-> installed win-error.0.3
+-> installed win-eventlog.0.2
+-> installed protocol-9p.0.8.0
+-> installed datakit-server.0.9.0
 
 #=== ERROR while compiling pcap-format.0.5.1 ==================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.04/.opam-switch/build/pcap-format.0.5.1
 # command              ~/.opam/4.04/bin/jbuilder build -p pcap-format -j 71
 # exit-code            1
-# env-file             ~/.opam/log/pcap-format-11-21f32b.env
-# output-file          ~/.opam/log/pcap-format-11-21f32b.out
+# env-file             ~/.opam/log/pcap-format-11-517c05.env
+# output-file          ~/.opam/log/pcap-format-11-517c05.out
 ### output ###
 # File "lib/jbuild", line 5, characters 20-31:
 # Error: Library "ppx_cstruct" not found.
@@ -393,5 +393,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803213046.export"
-31 1533331830 1533332089
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805044846.export"
+31 1533444509 1533444797

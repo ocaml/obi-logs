@@ -410,7 +410,7 @@ The following actions will be performed:
 [ERROR] The compilation of bap-elf failed at "/usr/bin/make".
 
 #=== ERROR while compiling bap-elf.1.1.0 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.04/.opam-switch/build/bap-elf.1.1.0
 # command              /usr/bin/make
 # exit-code            2
@@ -442,9 +442,9 @@ The following actions will be performed:
 # Warning: -pp overrides the effect of -syntax partly
 # /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_parse.cmi lib/bap_elf/elf_parse.mli
 # /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
-# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
-# ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
 # + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_parse.cmi lib/bap_elf/elf_parse.mli
+# ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
 # ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
 # /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -predicates ppx_driver -predicates ppx_driver -modules lib/bap_elf/elf_parse.ml > lib/bap_elf/elf_parse.ml.depends
 # /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -modules lib/bap_elf/elf_internal_utils.mli > lib/bap_elf/elf_internal_utils.mli.depends
@@ -564,5 +564,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180803220406.export"
-31 1533333814 1533334490
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805051539.export"
+31 1533446113 1533446873
