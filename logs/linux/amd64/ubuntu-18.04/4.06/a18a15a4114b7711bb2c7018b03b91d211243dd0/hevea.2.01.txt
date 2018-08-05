@@ -18,7 +18,7 @@ The following actions will be performed:
 [ERROR] The compilation of hevea failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06".
 
 #=== ERROR while compiling hevea.2.01 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/hevea.2.01
 # command              /usr/bin/make PREFIX=/home/opam/.opam/4.06
 # exit-code            2
@@ -98,6 +98,8 @@ The following actions will be performed:
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -w +a-4-9 -annot -o mylib.cmi mylib.mli
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -w +a-4-9 -annot -o noimage.cmi noimage.mli
 # /home/opam/.opam/4.06/bin/ocamlc.opt -c -w +a-4-9 -annot -o package.cmi package.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -w +a-4-9 -annot -o save.cmi save.mli
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -w +a-4-9 -annot -o verb.cmi verb.mli
 # + /home/opam/.opam/4.06/bin/ocamlc.opt -c -w +a-4-9 -annot -o infoRef.cmo infoRef.ml
 # File "infoRef.mll", line 127, characters 12-23:
 # Warning 3: deprecated: String.copy
@@ -123,5 +125,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804034843.export"
-31 1533354518 1533354539
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804233544.export"
+31 1533425742 1533425754

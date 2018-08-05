@@ -36,7 +36,7 @@ The following actions will be performed:
 [ERROR] The compilation of ppx_monadic failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling ppx_monadic.1.0.4 ==================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/ppx_monadic.1.0.4
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
@@ -66,7 +66,7 @@ The following actions will be performed:
 # Error: This expression has type Parsetree.expression
 #        but an expression was expected of type Ast_405.Parsetree.expression
 # *** omake: 29/85 targets are up to date
-# *** omake: failed (0.42 sec, 5/5 scans, 2/2 rules, 17/94 digests)
+# *** omake: failed (0.38 sec, 5/5 scans, 2/2 rules, 17/94 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    ppx/monadic.cmx
 #       depends on: ppx/monadic.ml
@@ -92,5 +92,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804034046.export"
-31 1533354043 1533354101
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804234032.export"
+31 1533426030 1533426081
