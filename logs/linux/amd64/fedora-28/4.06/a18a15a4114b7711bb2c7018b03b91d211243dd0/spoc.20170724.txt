@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug  4 20:10:02 2018
+Install Date: Sun Aug  5 20:10:28 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     26 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:09 ago on Sun Aug  5 04:26:23 2018.
+Last metadata expiration check: 1:10:33 ago on Sun Aug  5 20:10:00 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -53,9 +52,9 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-libffi-devel-3.1-16.fc28.x86_64.rpm             557 kB/s |  27 kB     00:00    
+libffi-devel-3.1-16.fc28.x86_64.rpm             594 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           4.7 kB/s |  27 kB     00:05     
+Total                                            47 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -135,11 +134,11 @@ The following actions will be performed:
 # \033[43m\033[30mBuilding WebSpoc\033[0m
 # \033[31m[kernels_ext.cma]\033[0m
 # \033[36m[spoc_lib.js]\033[0m
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/spoc.20170724/Spoc/extension'
+# make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
 # /bin/sh: line 0: cd: too many arguments
 # make[1]: *** [Makefile:26: Js/spoc_lib.js] Error 1
 # make[1]: *** Waiting for unfinished jobs....
-# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/spoc.20170724/Spoc/extension'
-# make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
 # make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/spoc.20170724/Spoc/extension'
 # make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/spoc.20170724/Spoc'
 # make: *** [Makefile:4: all] Error 2
@@ -164,5 +163,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805042643.export"
-31 1533443178 1533443311
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805212037.export"
+31 1533504029 1533504139

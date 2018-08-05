@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug  4 20:10:02 2018
+Install Date: Sun Aug  5 20:10:28 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     13 MB/s |  21 MB     00:01    
-Last metadata expiration check: 0:00:09 ago on Sun Aug  5 04:22:54 2018.
+Last metadata expiration check: 1:20:36 ago on Sun Aug  5 20:10:00 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -57,12 +56,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          389 kB/s |  46 kB     00:00    
-(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.4 MB/s | 193 kB     00:00    
-(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm        3.6 MB/s | 550 kB     00:00    
-(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        3.8 MB/s | 184 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          771 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        2.8 MB/s | 193 kB     00:00    
+(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        4.8 MB/s | 184 kB     00:00    
+(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        3.8 MB/s | 550 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           931 kB/s | 973 kB     00:01     
+Total                                           937 kB/s | 973 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -135,8 +134,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/grib.0.9.7
 # command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
 # exit-code            2
-# env-file             ~/.opam/log/grib-9-d977e0.env
-# output-file          ~/.opam/log/grib-9-d977e0.out
+# env-file             ~/.opam/log/grib-10-d977e0.env
+# output-file          ~/.opam/log/grib-10-d977e0.out
 ### output ###
 # File "./setup.ml", line 234, characters 8-26:
 # Warning 3: deprecated: String.set
@@ -167,5 +166,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805042309.export"
-31 1533442969 1533443030
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805213040.export"
+31 1533504633 1533504680

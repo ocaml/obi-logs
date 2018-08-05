@@ -43,7 +43,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug  4 20:10:02 2018
+Install Date: Sun Aug  5 20:10:28 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -72,7 +72,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Sat Aug  4 06:08:56 2018
+Install Date: Sun Aug  5 06:06:48 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -91,8 +91,7 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: gmp-devel libffi-devel perl-Pod-Html pkgconfig
 The following command needs to be run through "sudo":
     yum install -y gmp-devel libffi-devel perl-Pod-Html pkgconfig
-Fedora 28 - x86_64 - Updates                     24 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:19:26 2018.
+Last metadata expiration check: 1:17:35 ago on Sun Aug  5 20:10:00 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -112,12 +111,12 @@ Install  4 Packages
 Total download size: 331 k
 Installed size: 439 k
 Downloading Packages:
-(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          809 kB/s |  31 kB     00:00    
-(2/4): libffi-devel-3.1-16.fc28.x86_64.rpm      687 kB/s |  27 kB     00:00    
-(3/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.1 MB/s | 187 kB     00:00    
-(4/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 957 kB/s |  85 kB     00:00    
+(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          395 kB/s |  31 kB     00:00    
+(2/4): libffi-devel-3.1-16.fc28.x86_64.rpm      333 kB/s |  27 kB     00:00    
+(3/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.0 MB/s | 187 kB     00:00    
+(4/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 971 kB/s |  85 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           285 kB/s | 331 kB     00:01     
+Total                                           360 kB/s | 331 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -252,8 +251,8 @@ The following actions will be performed:
 -> installed cppo.1.6.4
 -> installed ctypes-foreign.0.4.0
 -> installed easy-format.1.3.1
--> installed biniou.1.2.0
 -> installed num.1.1
+-> installed biniou.1.2.0
 -> installed ocaml-compiler-libs.v0.11.0
 -> installed ocamlbuild.0.12.0
 -> installed ppx_derivers.1.0
@@ -591,5 +590,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041941.export"
-31 1533442761 1533442898
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805212740.export"
+31 1533504451 1533504575

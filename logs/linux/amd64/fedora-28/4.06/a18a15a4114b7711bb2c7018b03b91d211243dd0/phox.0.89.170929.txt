@@ -6,7 +6,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug  4 20:10:02 2018
+Install Date: Sun Aug  5 20:10:28 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -90,7 +90,7 @@ The following actions will be performed:
 # echo 'let default_path = "/usr/local/lib/phox"' >> version.ml;\
 # echo "let delim = ':'" >> version.ml;\
 # 
-# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli affichage.mli lexer.mli flags.mli interact.mli data_info.mli restart.mli oldeduction.mli bindlib.mli tex.mli safe_add.mli majlistes.mli hilbert.mli module.mli option.mli compile.mli parse_cmd.mli parser.mli version.mli lambda.mli data.mli data_base.mli typespoids.mli ptypes.mli basic.mli prover.mli eval.mli cache.mli main.mli parse_lambda.mli pattern.mli splitting.mli undo.mli new_cmd.mli local.mli files.mli typunif.mli resolution.mli typing.mli lambda_util.mli poids.mli rewrite.mli inductive.mli myhashtbl.mli af2_basic.mli types.mli print.mli type_check.mli proof_general.mli > .depend
+# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli affichage.mli lexer.mli flags.mli interact.mli data_info.mli restart.mli typing.mli oldeduction.mli new_cmd.mli bindlib.mli tex.mli safe_add.mli majlistes.mli hilbert.mli module.mli option.mli compile.mli parser.mli version.mli data.mli data_base.mli undo.mli pattern.mli basic.mli prover.mli eval.mli cache.mli parse_lambda.mli typespoids.mli splitting.mli main.mli local.mli files.mli ptypes.mli typunif.mli resolution.mli parse_cmd.mli lambda_util.mli poids.mli lambda.mli rewrite.mli inductive.mli myhashtbl.mli af2_basic.mli types.mli print.mli type_check.mli proof_general.mli > .depend
 # ocamlfind ocamlc -g -pp camlp4o -rectypes -c version.mli
 # ocamlfind ocamlopt -pp camlp4o -rectypes -c version.ml
 # ocamlfind ocamlc -g -pp camlp4o -rectypes -c restart.mli
@@ -128,5 +128,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805042828.export"
-31 1533443306 1533443425
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805213958.export"
+31 1533505196 1533505305

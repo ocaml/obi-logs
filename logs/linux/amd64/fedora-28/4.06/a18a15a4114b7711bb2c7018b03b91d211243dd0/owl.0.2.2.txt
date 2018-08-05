@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug  4 20:10:02 2018
+Install Date: Sun Aug  5 20:10:28 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: gsl-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y gsl-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     29 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:39:44 2018.
+Last metadata expiration check: 1:05:56 ago on Sun Aug  5 20:10:00 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -58,13 +57,13 @@ Install  5 Packages
 Total download size: 2.9 M
 Installed size: 8.3 M
 Downloading Packages:
-(1/5): gsl-devel-2.4-3.fc27.x86_64.rpm          2.5 MB/s | 563 kB     00:00    
-(2/5): automake-1.15.1-5.fc28.noarch.rpm        2.6 MB/s | 706 kB     00:00    
-(3/5): gsl-2.4-3.fc27.x86_64.rpm                3.2 MB/s | 1.0 MB     00:00    
-(4/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 244 kB/s |  23 kB     00:00    
-(5/5): autoconf-2.69-27.fc28.noarch.rpm         4.2 MB/s | 710 kB     00:00    
+(1/5): automake-1.15.1-5.fc28.noarch.rpm        5.7 MB/s | 706 kB     00:00    
+(2/5): autoconf-2.69-27.fc28.noarch.rpm          18 MB/s | 710 kB     00:00    
+(3/5): gsl-2.4-3.fc27.x86_64.rpm                5.8 MB/s | 1.0 MB     00:00    
+(4/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 342 kB/s |  23 kB     00:00    
+(5/5): gsl-devel-2.4-3.fc27.x86_64.rpm          1.7 MB/s | 563 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.4 MB/s | 2.9 MB     00:02     
+Total                                           2.2 MB/s | 2.9 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -156,8 +155,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/plplot.5.11.0
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/plplot-11-27656f.env
-# output-file          ~/.opam/log/plplot-11-27656f.out
+# env-file             ~/.opam/log/plplot-10-27656f.env
+# output-file          ~/.opam/log/plplot-10-27656f.out
 ### output ###
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # Failure: No valid installation of plplot or plplotd found.
@@ -188,5 +187,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805044000.export"
-31 1533443980 1533444162
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805211602.export"
+31 1533503752 1533503931
