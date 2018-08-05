@@ -71,7 +71,7 @@ The following actions will be performed:
 [sexplib.v0.11.0] found in cache
 [sexplib0.v0.11.0] found in cache
 [topkg.0.9.1] found in cache
-[xen-gnt.2.1.0] downloaded from https://github.com/mirage/ocaml-gnt/archive/v2.1.0.tar.gz
+[xen-gnt.2.1.0] found in cache
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -97,12 +97,12 @@ The following actions will be performed:
 [ERROR] The compilation of xen-gnt failed at "/usr/bin/make".
 
 #=== ERROR while compiling xen-gnt.2.1.0 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.05/.opam-switch/build/xen-gnt.2.1.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/xen-gnt-11-805734.env
-# output-file          ~/.opam/log/xen-gnt-11-805734.out
+# env-file             ~/.opam/log/xen-gnt-11-6ab132.env
+# output-file          ~/.opam/log/xen-gnt-11-6ab132.out
 ### output ###
 # Makefile:8: config.mk: No such file or directory
 # ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
@@ -431,5 +431,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180804001639.export"
-31 1533341792 1533341976
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805040744.export"
+31 1533442057 1533442173
