@@ -20,12 +20,12 @@ The following actions will be performed:
 -> installed omake.0.10.3
 
 #=== ERROR while compiling conf-leveldb.1 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-leveldb.1
 # command              /usr/bin/cc -c test.cc
 # exit-code            1
-# env-file             ~/.opam/log/conf-leveldb-14-c61e7b.env
-# output-file          ~/.opam/log/conf-leveldb-14-c61e7b.out
+# env-file             ~/.opam/log/conf-leveldb-13-c61e7b.env
+# output-file          ~/.opam/log/conf-leveldb-13-c61e7b.out
 ### output ###
 # test.cc:1:24: fatal error: leveldb/db.h: No such file or directory
 #  #include <leveldb/db.h>
@@ -44,5 +44,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804031857.export"
-31 1533352735 1533352800
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805003101.export"
+31 1533429057 1533429120
