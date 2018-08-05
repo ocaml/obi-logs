@@ -67,26 +67,26 @@ The following actions will be performed:
 -> installed ppx_tools.5.1+4.06.0
 -> installed re.1.7.3
 -> installed result.1.3
--> installed topkg.0.9.1
 -> installed ocaml-migrate-parsetree.1.0.11
+-> installed topkg.0.9.1
+-> installed ppx_tools_versioned.5.2
 -> installed cmdliner.1.0.2
 -> installed uchar.0.0.2
 -> installed uutf.1.0.1
--> installed ppx_tools_versioned.5.2
-[ERROR] The compilation of uunf failed at "/home/opam/.opam/4.06+flambda/bin/ocaml pkg/pkg.ml build --pinned false --with-uutf true --with-cmdliner true".
--> installed yojson.1.4.1
 -> installed sedlex.1.99.4
+-> installed yojson.1.4.1
+[ERROR] The compilation of uunf failed at "/home/opam/.opam/4.06+flambda/bin/ocaml pkg/pkg.ml build --pinned false --with-uutf true --with-cmdliner true".
 -> installed js_of_ocaml-compiler.3.2.1
 -> installed js_of_ocaml.3.2.0
 -> installed js_of_ocaml-ppx.3.2.0
 
 #=== ERROR while compiling uunf.11.0.0 ========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/uunf.11.0.0
 # command              ~/.opam/4.06+flambda/bin/ocaml pkg/pkg.ml build --pinned false --with-uutf true --with-cmdliner true
 # exit-code            1
-# env-file             ~/.opam/log/uunf-11-f5dc8a.env
-# output-file          ~/.opam/log/uunf-11-f5dc8a.out
+# env-file             ~/.opam/log/uunf-11-ec5181.env
+# output-file          ~/.opam/log/uunf-11-ec5181.out
 ### output ###
 # ocamlfind ocamldep -package bytes -package uchar -modules src/uunf_tmap.ml > src/uunf_tmap.ml.depends
 # ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmap.cmo src/uunf_tmap.ml
@@ -148,5 +148,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804031216.export"
-31 1533352334 1533352394
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804235612.export"
+31 1533426970 1533427098

@@ -21,7 +21,7 @@ The following actions will be performed:
 [ERROR] The compilation of CamlGI failed at "/usr/bin/make".
 
 #=== ERROR while compiling CamlGI.0.6 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/CamlGI.0.6
 # command              /usr/bin/make
 # exit-code            2
@@ -32,9 +32,9 @@ The following actions will be performed:
 # ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" cgi_types.ml expires.ml cgi.ml dbiPool.ml cgi_common.ml cgi_std.ml template.ml camlGI.ml cgi_fast.ml cookie.ml sendmail.ml cgi_common.mli camlGI.mli > .depend
 # ocamlc -dtypes -I +threads -c camlGI.mli
 # ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
-# File "/tmp/ocamlpp05b07b", line 383, characters 14-31:
+# File "/tmp/ocamlpp99d4b3", line 383, characters 14-31:
 # Warning 3: deprecated: String.unsafe_set
-# File "/tmp/ocamlpp05b07b", line 383, characters 32-33:
+# File "/tmp/ocamlpp99d4b3", line 383, characters 32-33:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
 # Makefile:52: recipe for target 'camlGI.cma' failed
@@ -53,5 +53,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804025449.export"
-31 1533351286 1533351429
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180804235824.export"
+31 1533427101 1533427236
