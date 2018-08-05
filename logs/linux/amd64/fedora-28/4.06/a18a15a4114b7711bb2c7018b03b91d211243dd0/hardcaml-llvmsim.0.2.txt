@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Mon Jul 23 06:11:22 2018
+Install Date: Sat Aug  4 06:08:56 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -55,7 +55,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: libffi-devel
 The following command needs to be run through "sudo":
     yum install -y libffi-devel
-Last metadata expiration check: 5:44:01 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     25 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:43:31 2018.
 Dependencies resolved.
 ================================================================================
  Package              Arch           Version               Repository      Size
@@ -70,9 +71,9 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-libffi-devel-3.1-16.fc28.x86_64.rpm             173 kB/s |  27 kB     00:00    
+libffi-devel-3.1-16.fc28.x86_64.rpm             657 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            29 kB/s |  27 kB     00:00     
+Total                                            44 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -166,7 +167,7 @@ The following actions will be performed:
 -> installed hardcaml.1.2.0
 
 #=== ERROR while installing llvm.3.5 ==========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/llvm.3.5
 # command              /usr/bin/sh ./compile.sh install 3.5 make /home/opam/.opam/4.06 /home/opam/.opam/4.06/lib
 # exit-code            1
@@ -212,5 +213,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804015840.export"
-31 1533347910 1533348048
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805044345.export"
+31 1533444205 1533444350

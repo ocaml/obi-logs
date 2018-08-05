@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: librdkafka-devel zlib-devel
 The following command needs to be run through "sudo":
     yum install -y librdkafka-devel zlib-devel
-Last metadata expiration check: 5:45:06 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     36 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:29:47 2018.
 Dependencies resolved.
 ================================================================================
  Package                Arch         Version                Repository     Size
@@ -54,11 +55,11 @@ Install  3 Packages
 Total download size: 441 k
 Installed size: 1.3 M
 Downloading Packages:
-(1/3): zlib-devel-1.2.11-8.fc28.x86_64.rpm      313 kB/s |  55 kB     00:00    
-(2/3): librdkafka-devel-0.11.3-2.fc28.x86_64.rp 213 kB/s |  47 kB     00:00    
-(3/3): librdkafka-0.11.3-2.fc28.x86_64.rpm      988 kB/s | 339 kB     00:00    
+(1/3): zlib-devel-1.2.11-8.fc28.x86_64.rpm      866 kB/s |  55 kB     00:00    
+(2/3): librdkafka-devel-0.11.3-2.fc28.x86_64.rp 578 kB/s |  47 kB     00:00    
+(3/3): librdkafka-0.11.3-2.fc28.x86_64.rpm      3.7 MB/s | 339 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           382 kB/s | 441 kB     00:01     
+Total                                           388 kB/s | 441 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -117,7 +118,7 @@ The following actions will be performed:
 [ERROR] The compilation of kafka failed at "/home/opam/.opam/4.06/bin/jbuilder build -p kafka . -j 71 @install".
 
 #=== ERROR while compiling kafka.0.3 ==========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/kafka.0.3
 # command              ~/.opam/4.06/bin/jbuilder build -p kafka . -j 71 @install
 # exit-code            1
@@ -148,5 +149,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804015945.export"
-31 1533347976 1533348002
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805043002.export"
+31 1533443383 1533443420

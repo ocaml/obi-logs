@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Mon Jul 23 06:11:22 2018
+Install Date: Sat Aug  4 06:08:56 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -55,7 +55,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: wget
 The following command needs to be run through "sudo":
     yum install -y wget
-Last metadata expiration check: 5:58:26 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     37 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Aug  5 04:32:59 2018.
 Dependencies resolved.
 ================================================================================
  Package       Arch            Version                   Repository        Size
@@ -70,9 +71,9 @@ Install  1 Package
 Total download size: 719 k
 Installed size: 2.8 M
 Downloading Packages:
-wget-1.19.5-1.fc28.x86_64.rpm                   6.1 MB/s | 719 kB     00:00    
+wget-1.19.5-1.fc28.x86_64.rpm                   6.2 MB/s | 719 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           745 kB/s | 719 kB     00:00     
+Total                                           1.0 MB/s | 719 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -140,7 +141,7 @@ The following actions will be performed:
 [ERROR] The compilation of clangml failed at "/usr/bin/make".
 
 #=== ERROR while compiling clangml.3.9.1 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/clangml.3.9.1
 # command              /usr/bin/make
 # exit-code            2
@@ -188,5 +189,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021304.export"
-31 1533348776 1533348919
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805043312.export"
+31 1533443575 1533443727

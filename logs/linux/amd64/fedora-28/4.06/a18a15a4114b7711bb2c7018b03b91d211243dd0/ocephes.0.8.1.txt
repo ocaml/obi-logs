@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     15 MB/s |  21 MB     00:01    
-Last metadata expiration check: 0:00:08 ago on Sat Aug  4 02:16:13 2018.
+Fedora 28 - x86_64 - Updates                     38 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:17:25 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -53,10 +53,9 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-[MIRROR] libffi-devel-3.1-16.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libffi-devel-3.1-16.fc28.x86_64.rpm
-libffi-devel-3.1-16.fc28.x86_64.rpm             298 kB/s |  27 kB     00:00    
+libffi-devel-3.1-16.fc28.x86_64.rpm             973 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            45 kB/s |  27 kB     00:00     
+Total                                            34 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -100,7 +99,7 @@ The following actions will be performed:
 -> installed ocamlbuild.0.12.0
 
 #=== ERROR while compiling ctypes.0.5.1 =======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/ctypes.0.5.1
 # command              /usr/bin/make XEN=disable libffi.config
 # exit-code            2
@@ -131,5 +130,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021627.export"
-31 1533348969 1533348996
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041738.export"
+31 1533442641 1533442667

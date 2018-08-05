@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Last metadata expiration check: 5:46:49 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     35 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:29:33 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -56,12 +57,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          282 kB/s |  46 kB     00:00    
-(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.0 MB/s | 193 kB     00:00    
-(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        3.2 MB/s | 184 kB     00:00    
-(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        2.2 MB/s | 550 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          706 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        2.3 MB/s | 193 kB     00:00    
+(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        9.3 MB/s | 184 kB     00:00    
+(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        5.6 MB/s | 550 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.2 MB/s | 973 kB     00:00     
+Total                                           1.0 MB/s | 973 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -127,7 +128,7 @@ The following actions will be performed:
 [ERROR] The compilation of duppy failed at "/usr/bin/make".
 
 #=== ERROR while compiling duppy.0.6.0 ========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/duppy.0.6.0
 # command              /usr/bin/make
 # exit-code            2
@@ -175,5 +176,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020127.export"
-31 1533348079 1533348195
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805042948.export"
+31 1533443368 1533443498

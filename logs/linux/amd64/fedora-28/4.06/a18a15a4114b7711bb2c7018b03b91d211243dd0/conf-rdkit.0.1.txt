@@ -11,13 +11,13 @@ The following actions will be performed:
 [ERROR] The compilation of conf-rdkit failed at "/usr/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \\\n              c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral".
 
 #=== ERROR while compiling conf-rdkit.0.1 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/conf-rdkit.0.1
 # command              /usr/bin/sh -c c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDGeneral || \
               c++ test.cpp -o test -I/usr/local/include -L/usr/local/lib -lRDKitRDGeneral
 # exit-code            1
-# env-file             ~/.opam/log/conf-rdkit-10-9b8556.env
-# output-file          ~/.opam/log/conf-rdkit-10-9b8556.out
+# env-file             ~/.opam/log/conf-rdkit-11-9b8556.env
+# output-file          ~/.opam/log/conf-rdkit-11-9b8556.out
 ### output ###
 # test.cpp:2:10: fatal error: rdkit/RDGeneral/versions.h: No such file or directory
 #  #include "rdkit/RDGeneral/versions.h"
@@ -36,4 +36,4 @@ The following actions will be performed:
 +- 
 - No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-31 1533347925 1533347930
+31 1533442314 1533442319

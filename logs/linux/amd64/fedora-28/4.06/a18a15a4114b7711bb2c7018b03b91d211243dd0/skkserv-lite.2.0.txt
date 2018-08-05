@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,8 @@ package sqlite-devel is not installed
 # The following new OS packages need to be installed: pkgconfig sqlite-devel
 The following command needs to be run through "sudo":
     yum install -y pkgconfig sqlite-devel
-Last metadata expiration check: 5:52:11 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     21 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:13:23 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -54,10 +55,10 @@ Install  2 Packages
 Total download size: 776 k
 Installed size: 1.7 M
 Downloading Packages:
-(1/2): sqlite-devel-3.22.0-4.fc28.x86_64.rpm    2.4 MB/s | 153 kB     00:00    
-(2/2): sqlite-3.22.0-4.fc28.x86_64.rpm          6.4 MB/s | 623 kB     00:00    
+(1/2): sqlite-devel-3.22.0-4.fc28.x86_64.rpm    737 kB/s | 153 kB     00:00    
+(2/2): sqlite-3.22.0-4.fc28.x86_64.rpm          2.2 MB/s | 623 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.3 MB/s | 776 kB     00:00     
+Total                                           953 kB/s | 776 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -134,7 +135,7 @@ The following actions will be performed:
 [ERROR] The compilation of skkserv-lite failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling skkserv-lite.2.0 ===================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/skkserv-lite.2.0
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
@@ -238,5 +239,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020649.export"
-31 1533348401 1533348509
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041337.export"
+31 1533442398 1533442511

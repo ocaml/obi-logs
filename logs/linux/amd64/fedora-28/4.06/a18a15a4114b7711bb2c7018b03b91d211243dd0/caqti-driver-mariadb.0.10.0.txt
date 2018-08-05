@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     29 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Sat Aug  4 02:16:06 2018.
+Fedora 28 - x86_64 - Updates                     31 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Aug  5 04:34:13 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -53,9 +53,9 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-libffi-devel-3.1-16.fc28.x86_64.rpm             510 kB/s |  27 kB     00:00    
+libffi-devel-3.1-16.fc28.x86_64.rpm             484 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            33 kB/s |  27 kB     00:00     
+Total                                            48 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -155,19 +155,19 @@ The following actions will be performed:
 -> installed ptime.0.8.4
 -> installed stdio.v0.11.0
 -> installed ppxlib.0.3.0
--> installed ctypes.0.14.0
 -> installed ppx_sexp_conv.v0.11.2
+-> installed ctypes.0.14.0
 [ERROR] The compilation of mariadb failed at "/home/opam/.opam/4.06/.opam-switch/build/mariadb.1.0.1/./configure --prefix=/home/opam/.opam/4.06".
 -> installed uri.1.9.7
 -> installed caqti.0.10.0
 
 #=== ERROR while compiling mariadb.1.0.1 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/mariadb.1.0.1
 # command              ~/.opam/4.06/.opam-switch/build/mariadb.1.0.1/./configure --prefix=/home/opam/.opam/4.06
 # exit-code            1
-# env-file             ~/.opam/log/mariadb-10-4e078c.env
-# output-file          ~/.opam/log/mariadb-10-4e078c.out
+# env-file             ~/.opam/log/mariadb-10-0bf5ba.env
+# output-file          ~/.opam/log/mariadb-10-0bf5ba.out
 ### output ###
 # Could not detect a MariaDB client library
 
@@ -207,5 +207,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021621.export"
-31 1533348962 1533349082
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805043425.export"
+31 1533443648 1533443764

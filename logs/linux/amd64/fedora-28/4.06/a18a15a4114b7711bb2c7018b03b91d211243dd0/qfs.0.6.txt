@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,7 +36,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: boost-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y boost-devel pkgconfig
-Last metadata expiration check: 5:40:39 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     20 MB/s |  21 MB     00:01    
+Last metadata expiration check: 0:00:07 ago on Sun Aug  5 04:29:19 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -44,12 +45,6 @@ Dependencies resolved.
 ================================================================================
 Installing:
  boost-devel                x86_64      1.66.0-8.fc28        updates       10 M
-Upgrading:
- boost-atomic               x86_64      1.66.0-8.fc28        updates       53 k
- boost-chrono               x86_64      1.66.0-8.fc28        updates       62 k
- boost-date-time            x86_64      1.66.0-8.fc28        updates       68 k
- boost-system               x86_64      1.66.0-8.fc28        updates       57 k
- boost-thread               x86_64      1.66.0-8.fc28        updates       97 k
 Installing dependencies:
  boost                      x86_64      1.66.0-8.fc28        updates       50 k
  boost-container            x86_64      1.66.0-8.fc28        updates       82 k
@@ -88,151 +83,126 @@ Installing dependencies:
 Transaction Summary
 ================================================================================
 Install  34 Packages
-Upgrade   5 Packages
 
-Total download size: 38 M
+Total download size: 37 M
+Installed size: 256 M
 Downloading Packages:
-(1/39): boost-1.66.0-8.fc28.x86_64.rpm          1.1 MB/s |  50 kB     00:00    
-(2/39): boost-container-1.66.0-8.fc28.x86_64.rp 3.3 MB/s |  82 kB     00:00    
-(3/39): boost-context-1.66.0-8.fc28.x86_64.rpm  2.4 MB/s |  54 kB     00:00    
-(4/39): boost-coroutine-1.66.0-8.fc28.x86_64.rp 7.3 MB/s |  70 kB     00:00    
-(5/39): boost-fiber-1.66.0-8.fc28.x86_64.rpm    6.7 MB/s | 165 kB     00:00    
-(6/39): boost-filesystem-1.66.0-8.fc28.x86_64.r 3.7 MB/s |  88 kB     00:00    
-(7/39): boost-graph-1.66.0-8.fc28.x86_64.rpm    4.0 MB/s | 152 kB     00:00    
-(8/39): boost-iostreams-1.66.0-8.fc28.x86_64.rp 5.6 MB/s |  78 kB     00:00    
-(9/39): boost-locale-1.66.0-8.fc28.x86_64.rpm    10 MB/s | 304 kB     00:00    
-(10/39): libicu-devel-60.2-2.fc28.x86_64.rpm    2.6 MB/s | 920 kB     00:00    
-(11/39): boost-math-1.66.0-8.fc28.x86_64.rpm    6.1 MB/s | 303 kB     00:00    
-(12/39): boost-numpy-1.66.0-8.fc28.x86_64.rpm   2.0 MB/s |  65 kB     00:00    
-(13/39): boost-program-options-1.66.0-8.fc28.x8 6.3 MB/s | 179 kB     00:00    
-(14/39): boost-log-1.66.0-8.fc28.x86_64.rpm     1.9 MB/s | 486 kB     00:00    
-(15/39): boost-python2-1.66.0-8.fc28.x86_64.rpm 3.5 MB/s | 136 kB     00:00    
-(16/39): boost-random-1.66.0-8.fc28.x86_64.rpm  3.0 MB/s |  61 kB     00:00    
-(17/39): boost-serialization-1.66.0-8.fc28.x86_ 6.8 MB/s | 163 kB     00:00    
-(18/39): boost-regex-1.66.0-8.fc28.x86_64.rpm   6.8 MB/s | 320 kB     00:00    
-(19/39): boost-signals-1.66.0-8.fc28.x86_64.rpm 5.1 MB/s |  78 kB     00:00    
-(20/39): boost-stacktrace-1.66.0-8.fc28.x86_64. 4.6 MB/s |  75 kB     00:00    
-(21/39): boost-timer-1.66.0-8.fc28.x86_64.rpm   2.8 MB/s |  60 kB     00:00    
-(22/39): boost-test-1.66.0-8.fc28.x86_64.rpm    8.2 MB/s | 290 kB     00:00    
-(23/39): boost-type_erasure-1.66.0-8.fc28.x86_6 2.5 MB/s |  69 kB     00:00    
-(24/39): boost-wave-1.66.0-8.fc28.x86_64.rpm    7.7 MB/s | 230 kB     00:00    
-(25/39): libquadmath-devel-8.1.1-5.fc28.x86_64. 5.0 MB/s |  39 kB     00:00    
-(26/39): libquadmath-8.1.1-5.fc28.x86_64.rpm     13 MB/s | 186 kB     00:00    
-(27/39): boost-devel-1.66.0-8.fc28.x86_64.rpm    14 MB/s |  10 MB     00:00    
-(28/39): python2-nose-1.3.7-19.fc28.noarch.rpm  1.6 MB/s | 267 kB     00:00    
-(29/39): python2-numpy-1.14.5-1.fc28.x86_64.rpm  12 MB/s | 3.7 MB     00:00    
-(30/39): libgfortran-8.1.1-5.fc28.x86_64.rpm    7.9 MB/s | 656 kB     00:00    
-(31/39): openblas-0.3.1-2.fc28.x86_64.rpm       1.0 MB/s |  29 kB     00:00    
-(32/39): openblas-threads-0.3.1-2.fc28.x86_64.r 6.7 MB/s | 4.7 MB     00:00    
-(33/39): boost-atomic-1.66.0-8.fc28.x86_64.rpm  2.4 MB/s |  53 kB     00:00    
-(34/39): boost-chrono-1.66.0-8.fc28.x86_64.rpm  2.1 MB/s |  62 kB     00:00    
-(35/39): openblas-serial-0.3.1-2.fc28.x86_64.rp 7.4 MB/s | 4.5 MB     00:00    
-(36/39): boost-date-time-1.66.0-8.fc28.x86_64.r 1.2 MB/s |  68 kB     00:00    
-(37/39): boost-system-1.66.0-8.fc28.x86_64.rpm  1.6 MB/s |  57 kB     00:00    
-(38/39): boost-thread-1.66.0-8.fc28.x86_64.rpm  2.9 MB/s |  97 kB     00:00    
-(39/39): libicu-60.2-2.fc28.x86_64.rpm          3.7 MB/s | 8.8 MB     00:02    
+(1/34): boost-1.66.0-8.fc28.x86_64.rpm          606 kB/s |  50 kB     00:00    
+(2/34): libicu-devel-60.2-2.fc28.x86_64.rpm     8.3 MB/s | 920 kB     00:00    
+(3/34): boost-container-1.66.0-8.fc28.x86_64.rp 3.0 MB/s |  82 kB     00:00    
+(4/34): boost-coroutine-1.66.0-8.fc28.x86_64.rp 3.4 MB/s |  70 kB     00:00    
+(5/34): boost-fiber-1.66.0-8.fc28.x86_64.rpm    6.3 MB/s | 165 kB     00:00    
+(6/34): boost-filesystem-1.66.0-8.fc28.x86_64.r 5.3 MB/s |  88 kB     00:00    
+(7/34): boost-context-1.66.0-8.fc28.x86_64.rpm  674 kB/s |  54 kB     00:00    
+(8/34): boost-graph-1.66.0-8.fc28.x86_64.rpm    7.3 MB/s | 152 kB     00:00    
+(9/34): boost-iostreams-1.66.0-8.fc28.x86_64.rp 3.4 MB/s |  78 kB     00:00    
+(10/34): boost-locale-1.66.0-8.fc28.x86_64.rpm   11 MB/s | 304 kB     00:00    
+(11/34): boost-math-1.66.0-8.fc28.x86_64.rpm    1.3 MB/s | 303 kB     00:00    
+(12/34): boost-log-1.66.0-8.fc28.x86_64.rpm     1.8 MB/s | 486 kB     00:00    
+(13/34): boost-numpy-1.66.0-8.fc28.x86_64.rpm   3.4 MB/s |  65 kB     00:00    
+(14/34): boost-program-options-1.66.0-8.fc28.x8 7.8 MB/s | 179 kB     00:00    
+(15/34): boost-python2-1.66.0-8.fc28.x86_64.rpm 5.8 MB/s | 136 kB     00:00    
+(16/34): boost-random-1.66.0-8.fc28.x86_64.rpm  4.7 MB/s |  61 kB     00:00    
+(17/34): boost-regex-1.66.0-8.fc28.x86_64.rpm   9.7 MB/s | 320 kB     00:00    
+(18/34): boost-serialization-1.66.0-8.fc28.x86_ 6.8 MB/s | 163 kB     00:00    
+(19/34): boost-stacktrace-1.66.0-8.fc28.x86_64. 5.7 MB/s |  75 kB     00:00    
+(20/34): boost-signals-1.66.0-8.fc28.x86_64.rpm 4.8 MB/s |  78 kB     00:00    
+(21/34): boost-timer-1.66.0-8.fc28.x86_64.rpm   4.9 MB/s |  60 kB     00:00    
+(22/34): boost-type_erasure-1.66.0-8.fc28.x86_6 5.2 MB/s |  69 kB     00:00    
+(23/34): boost-test-1.66.0-8.fc28.x86_64.rpm    9.9 MB/s | 290 kB     00:00    
+(24/34): boost-wave-1.66.0-8.fc28.x86_64.rpm    9.6 MB/s | 230 kB     00:00    
+(25/34): libquadmath-devel-8.1.1-5.fc28.x86_64. 3.3 MB/s |  39 kB     00:00    
+(26/34): libquadmath-8.1.1-5.fc28.x86_64.rpm    8.5 MB/s | 186 kB     00:00    
+(27/34): boost-devel-1.66.0-8.fc28.x86_64.rpm    14 MB/s |  10 MB     00:00    
+(28/34): python2-nose-1.3.7-19.fc28.noarch.rpm  4.3 MB/s | 267 kB     00:00    
+(29/34): openblas-threads-0.3.1-2.fc28.x86_64.r  24 MB/s | 4.7 MB     00:00    
+(30/34): libgfortran-8.1.1-5.fc28.x86_64.rpm     13 MB/s | 656 kB     00:00    
+(31/34): openblas-0.3.1-2.fc28.x86_64.rpm       2.7 MB/s |  29 kB     00:00    
+(32/34): python2-numpy-1.14.5-1.fc28.x86_64.rpm 7.0 MB/s | 3.7 MB     00:00    
+(33/34): openblas-serial-0.3.1-2.fc28.x86_64.rp  15 MB/s | 4.5 MB     00:00    
+(34/34): libicu-60.2-2.fc28.x86_64.rpm           10 MB/s | 8.8 MB     00:00    
 --------------------------------------------------------------------------------
-Total                                            10 MB/s |  38 MB     00:03     
+Total                                            15 MB/s |  37 MB     00:02     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
 Transaction test succeeded.
 Running transaction
   Preparing        :                                                        1/1 
-  Upgrading        : boost-system-1.66.0-8.fc28.x86_64                     1/44 
-  Upgrading        : boost-chrono-1.66.0-8.fc28.x86_64                     2/44 
-  Upgrading        : boost-thread-1.66.0-8.fc28.x86_64                     3/44 
-  Installing       : boost-filesystem-1.66.0-8.fc28.x86_64                 4/44 
-  Installing       : libicu-60.2-2.fc28.x86_64                             5/44 
-  Running scriptlet: libicu-60.2-2.fc28.x86_64                             5/44 
-  Installing       : boost-regex-1.66.0-8.fc28.x86_64                      6/44 
-  Upgrading        : boost-date-time-1.66.0-8.fc28.x86_64                  7/44 
-  Installing       : boost-context-1.66.0-8.fc28.x86_64                    8/44 
-  Installing       : boost-timer-1.66.0-8.fc28.x86_64                      9/44 
-  Upgrading        : boost-atomic-1.66.0-8.fc28.x86_64                    10/44 
-  Installing       : boost-python2-1.66.0-8.fc28.x86_64                   11/44 
-  Installing       : boost-log-1.66.0-8.fc28.x86_64                       12/44 
-  Installing       : boost-test-1.66.0-8.fc28.x86_64                      13/44 
-  Installing       : boost-coroutine-1.66.0-8.fc28.x86_64                 14/44 
-  Installing       : boost-fiber-1.66.0-8.fc28.x86_64                     15/44 
-  Installing       : boost-wave-1.66.0-8.fc28.x86_64                      16/44 
-  Installing       : boost-graph-1.66.0-8.fc28.x86_64                     17/44 
-  Installing       : boost-locale-1.66.0-8.fc28.x86_64                    18/44 
-  Installing       : boost-type_erasure-1.66.0-8.fc28.x86_64              19/44 
-  Installing       : boost-random-1.66.0-8.fc28.x86_64                    20/44 
-  Installing       : openblas-0.3.1-2.fc28.x86_64                         21/44 
-  Running scriptlet: openblas-0.3.1-2.fc28.x86_64                         21/44 
-  Installing       : libquadmath-8.1.1-5.fc28.x86_64                      22/44 
-  Running scriptlet: libquadmath-8.1.1-5.fc28.x86_64                      22/44 
-  Installing       : libgfortran-8.1.1-5.fc28.x86_64                      23/44 
-  Running scriptlet: libgfortran-8.1.1-5.fc28.x86_64                      23/44 
-  Installing       : boost-stacktrace-1.66.0-8.fc28.x86_64                24/44 
-  Installing       : boost-signals-1.66.0-8.fc28.x86_64                   25/44 
-  Installing       : boost-serialization-1.66.0-8.fc28.x86_64             26/44 
-  Installing       : boost-program-options-1.66.0-8.fc28.x86_64           27/44 
-  Installing       : boost-math-1.66.0-8.fc28.x86_64                      28/44 
-  Installing       : boost-iostreams-1.66.0-8.fc28.x86_64                 29/44 
-  Installing       : boost-container-1.66.0-8.fc28.x86_64                 30/44 
-  Installing       : openblas-threads-0.3.1-2.fc28.x86_64                 31/44 
-  Running scriptlet: openblas-threads-0.3.1-2.fc28.x86_64                 31/44 
-  Installing       : openblas-serial-0.3.1-2.fc28.x86_64                  32/44 
-  Installing       : libquadmath-devel-8.1.1-5.fc28.x86_64                33/44 
-  Installing       : libicu-devel-60.2-2.fc28.x86_64                      34/44 
-  Installing       : python2-nose-1.3.7-19.fc28.noarch                    35/44 
-  Installing       : python2-numpy-1:1.14.5-1.fc28.x86_64                 36/44 
-  Installing       : boost-numpy-1.66.0-8.fc28.x86_64                     37/44 
-  Installing       : boost-1.66.0-8.fc28.x86_64                           38/44 
-  Installing       : boost-devel-1.66.0-8.fc28.x86_64                     39/44 
-  Cleanup          : boost-thread-1.66.0-7.fc28.x86_64                    40/44 
-  Cleanup          : boost-chrono-1.66.0-7.fc28.x86_64                    41/44 
-  Cleanup          : boost-system-1.66.0-7.fc28.x86_64                    42/44 
-  Cleanup          : boost-date-time-1.66.0-7.fc28.x86_64                 43/44 
-  Cleanup          : boost-atomic-1.66.0-7.fc28.x86_64                    44/44 
-  Running scriptlet: boost-atomic-1.66.0-7.fc28.x86_64                    44/44 
-  Verifying        : boost-devel-1.66.0-8.fc28.x86_64                      1/44 
-  Verifying        : boost-1.66.0-8.fc28.x86_64                            2/44 
-  Verifying        : libicu-devel-60.2-2.fc28.x86_64                       3/44 
-  Verifying        : boost-container-1.66.0-8.fc28.x86_64                  4/44 
-  Verifying        : boost-context-1.66.0-8.fc28.x86_64                    5/44 
-  Verifying        : boost-coroutine-1.66.0-8.fc28.x86_64                  6/44 
-  Verifying        : boost-fiber-1.66.0-8.fc28.x86_64                      7/44 
-  Verifying        : boost-filesystem-1.66.0-8.fc28.x86_64                 8/44 
-  Verifying        : boost-graph-1.66.0-8.fc28.x86_64                      9/44 
-  Verifying        : boost-iostreams-1.66.0-8.fc28.x86_64                 10/44 
-  Verifying        : boost-locale-1.66.0-8.fc28.x86_64                    11/44 
-  Verifying        : boost-log-1.66.0-8.fc28.x86_64                       12/44 
-  Verifying        : boost-math-1.66.0-8.fc28.x86_64                      13/44 
-  Verifying        : boost-numpy-1.66.0-8.fc28.x86_64                     14/44 
-  Verifying        : boost-program-options-1.66.0-8.fc28.x86_64           15/44 
-  Verifying        : boost-python2-1.66.0-8.fc28.x86_64                   16/44 
-  Verifying        : boost-random-1.66.0-8.fc28.x86_64                    17/44 
-  Verifying        : boost-regex-1.66.0-8.fc28.x86_64                     18/44 
-  Verifying        : boost-serialization-1.66.0-8.fc28.x86_64             19/44 
-  Verifying        : boost-signals-1.66.0-8.fc28.x86_64                   20/44 
-  Verifying        : boost-stacktrace-1.66.0-8.fc28.x86_64                21/44 
-  Verifying        : boost-test-1.66.0-8.fc28.x86_64                      22/44 
-  Verifying        : boost-timer-1.66.0-8.fc28.x86_64                     23/44 
-  Verifying        : boost-type_erasure-1.66.0-8.fc28.x86_64              24/44 
-  Verifying        : boost-wave-1.66.0-8.fc28.x86_64                      25/44 
-  Verifying        : libicu-60.2-2.fc28.x86_64                            26/44 
-  Verifying        : libquadmath-devel-8.1.1-5.fc28.x86_64                27/44 
-  Verifying        : libquadmath-8.1.1-5.fc28.x86_64                      28/44 
-  Verifying        : python2-numpy-1:1.14.5-1.fc28.x86_64                 29/44 
-  Verifying        : python2-nose-1.3.7-19.fc28.noarch                    30/44 
-  Verifying        : openblas-threads-0.3.1-2.fc28.x86_64                 31/44 
-  Verifying        : libgfortran-8.1.1-5.fc28.x86_64                      32/44 
-  Verifying        : openblas-0.3.1-2.fc28.x86_64                         33/44 
-  Verifying        : openblas-serial-0.3.1-2.fc28.x86_64                  34/44 
-  Verifying        : boost-atomic-1.66.0-8.fc28.x86_64                    35/44 
-  Verifying        : boost-chrono-1.66.0-8.fc28.x86_64                    36/44 
-  Verifying        : boost-date-time-1.66.0-8.fc28.x86_64                 37/44 
-  Verifying        : boost-system-1.66.0-8.fc28.x86_64                    38/44 
-  Verifying        : boost-thread-1.66.0-8.fc28.x86_64                    39/44 
-  Verifying        : boost-atomic-1.66.0-7.fc28.x86_64                    40/44 
-  Verifying        : boost-chrono-1.66.0-7.fc28.x86_64                    41/44 
-  Verifying        : boost-date-time-1.66.0-7.fc28.x86_64                 42/44 
-  Verifying        : boost-system-1.66.0-7.fc28.x86_64                    43/44 
-  Verifying        : boost-thread-1.66.0-7.fc28.x86_64                    44/44 
+  Installing       : libicu-60.2-2.fc28.x86_64                             1/34 
+  Running scriptlet: libicu-60.2-2.fc28.x86_64                             1/34 
+  Installing       : boost-filesystem-1.66.0-8.fc28.x86_64                 2/34 
+  Installing       : boost-regex-1.66.0-8.fc28.x86_64                      3/34 
+  Installing       : boost-context-1.66.0-8.fc28.x86_64                    4/34 
+  Installing       : boost-timer-1.66.0-8.fc28.x86_64                      5/34 
+  Installing       : boost-python2-1.66.0-8.fc28.x86_64                    6/34 
+  Installing       : boost-test-1.66.0-8.fc28.x86_64                       7/34 
+  Installing       : boost-coroutine-1.66.0-8.fc28.x86_64                  8/34 
+  Installing       : boost-fiber-1.66.0-8.fc28.x86_64                      9/34 
+  Installing       : boost-graph-1.66.0-8.fc28.x86_64                     10/34 
+  Installing       : boost-log-1.66.0-8.fc28.x86_64                       11/34 
+  Installing       : boost-wave-1.66.0-8.fc28.x86_64                      12/34 
+  Installing       : boost-locale-1.66.0-8.fc28.x86_64                    13/34 
+  Installing       : openblas-0.3.1-2.fc28.x86_64                         14/34 
+  Running scriptlet: openblas-0.3.1-2.fc28.x86_64                         14/34 
+  Installing       : libquadmath-8.1.1-5.fc28.x86_64                      15/34 
+  Running scriptlet: libquadmath-8.1.1-5.fc28.x86_64                      15/34 
+  Installing       : libgfortran-8.1.1-5.fc28.x86_64                      16/34 
+  Running scriptlet: libgfortran-8.1.1-5.fc28.x86_64                      16/34 
+  Installing       : boost-type_erasure-1.66.0-8.fc28.x86_64              17/34 
+  Installing       : boost-stacktrace-1.66.0-8.fc28.x86_64                18/34 
+  Installing       : boost-signals-1.66.0-8.fc28.x86_64                   19/34 
+  Installing       : boost-serialization-1.66.0-8.fc28.x86_64             20/34 
+  Installing       : boost-random-1.66.0-8.fc28.x86_64                    21/34 
+  Installing       : boost-program-options-1.66.0-8.fc28.x86_64           22/34 
+  Installing       : boost-math-1.66.0-8.fc28.x86_64                      23/34 
+  Installing       : boost-iostreams-1.66.0-8.fc28.x86_64                 24/34 
+  Installing       : boost-container-1.66.0-8.fc28.x86_64                 25/34 
+  Installing       : openblas-threads-0.3.1-2.fc28.x86_64                 26/34 
+  Running scriptlet: openblas-threads-0.3.1-2.fc28.x86_64                 26/34 
+  Installing       : openblas-serial-0.3.1-2.fc28.x86_64                  27/34 
+  Installing       : libquadmath-devel-8.1.1-5.fc28.x86_64                28/34 
+  Installing       : libicu-devel-60.2-2.fc28.x86_64                      29/34 
+  Installing       : python2-nose-1.3.7-19.fc28.noarch                    30/34 
+  Installing       : python2-numpy-1:1.14.5-1.fc28.x86_64                 31/34 
+  Installing       : boost-numpy-1.66.0-8.fc28.x86_64                     32/34 
+  Installing       : boost-1.66.0-8.fc28.x86_64                           33/34 
+  Installing       : boost-devel-1.66.0-8.fc28.x86_64                     34/34 
+  Running scriptlet: boost-devel-1.66.0-8.fc28.x86_64                     34/34 
+  Verifying        : boost-devel-1.66.0-8.fc28.x86_64                      1/34 
+  Verifying        : boost-1.66.0-8.fc28.x86_64                            2/34 
+  Verifying        : libicu-devel-60.2-2.fc28.x86_64                       3/34 
+  Verifying        : boost-container-1.66.0-8.fc28.x86_64                  4/34 
+  Verifying        : boost-context-1.66.0-8.fc28.x86_64                    5/34 
+  Verifying        : boost-coroutine-1.66.0-8.fc28.x86_64                  6/34 
+  Verifying        : boost-fiber-1.66.0-8.fc28.x86_64                      7/34 
+  Verifying        : boost-filesystem-1.66.0-8.fc28.x86_64                 8/34 
+  Verifying        : boost-graph-1.66.0-8.fc28.x86_64                      9/34 
+  Verifying        : boost-iostreams-1.66.0-8.fc28.x86_64                 10/34 
+  Verifying        : boost-locale-1.66.0-8.fc28.x86_64                    11/34 
+  Verifying        : boost-log-1.66.0-8.fc28.x86_64                       12/34 
+  Verifying        : boost-math-1.66.0-8.fc28.x86_64                      13/34 
+  Verifying        : boost-numpy-1.66.0-8.fc28.x86_64                     14/34 
+  Verifying        : boost-program-options-1.66.0-8.fc28.x86_64           15/34 
+  Verifying        : boost-python2-1.66.0-8.fc28.x86_64                   16/34 
+  Verifying        : boost-random-1.66.0-8.fc28.x86_64                    17/34 
+  Verifying        : boost-regex-1.66.0-8.fc28.x86_64                     18/34 
+  Verifying        : boost-serialization-1.66.0-8.fc28.x86_64             19/34 
+  Verifying        : boost-signals-1.66.0-8.fc28.x86_64                   20/34 
+  Verifying        : boost-stacktrace-1.66.0-8.fc28.x86_64                21/34 
+  Verifying        : boost-test-1.66.0-8.fc28.x86_64                      22/34 
+  Verifying        : boost-timer-1.66.0-8.fc28.x86_64                     23/34 
+  Verifying        : boost-type_erasure-1.66.0-8.fc28.x86_64              24/34 
+  Verifying        : boost-wave-1.66.0-8.fc28.x86_64                      25/34 
+  Verifying        : libicu-60.2-2.fc28.x86_64                            26/34 
+  Verifying        : libquadmath-devel-8.1.1-5.fc28.x86_64                27/34 
+  Verifying        : libquadmath-8.1.1-5.fc28.x86_64                      28/34 
+  Verifying        : python2-numpy-1:1.14.5-1.fc28.x86_64                 29/34 
+  Verifying        : python2-nose-1.3.7-19.fc28.noarch                    30/34 
+  Verifying        : openblas-threads-0.3.1-2.fc28.x86_64                 31/34 
+  Verifying        : libgfortran-8.1.1-5.fc28.x86_64                      32/34 
+  Verifying        : openblas-0.3.1-2.fc28.x86_64                         33/34 
+  Verifying        : openblas-serial-0.3.1-2.fc28.x86_64                  34/34 
 
 Installed:
   boost-devel.x86_64 1.66.0-8.fc28                                              
@@ -269,11 +239,6 @@ Installed:
   openblas-threads.x86_64 0.3.1-2.fc28                                          
   python2-nose.noarch 1.3.7-19.fc28                                             
   python2-numpy.x86_64 1:1.14.5-1.fc28                                          
-
-Upgraded:
-  boost-atomic.x86_64 1.66.0-8.fc28        boost-chrono.x86_64 1.66.0-8.fc28    
-  boost-date-time.x86_64 1.66.0-8.fc28     boost-system.x86_64 1.66.0-8.fc28    
-  boost-thread.x86_64 1.66.0-8.fc28       
 
 Complete!
 The following command needs to be run through "sudo":
@@ -321,7 +286,7 @@ The following actions will be performed:
 [ERROR] The compilation of qfs failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
 
 #=== ERROR while compiling qfs.0.6 ============================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/qfs.0.6
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
@@ -366,5 +331,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804015534.export"
-31 1533347708 1533347771
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805042945.export"
+31 1533443355 1533443424

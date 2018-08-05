@@ -11,7 +11,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -38,7 +38,8 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: gcc-gfortran libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y gcc-gfortran libffi-devel pkgconfig
-Last metadata expiration check: 5:58:23 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                    9.9 MB/s |  21 MB     00:02    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:48:35 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -59,14 +60,13 @@ Install  5 Packages
 Total download size: 12 M
 Installed size: 31 M
 Downloading Packages:
-[MIRROR] libffi-devel-3.1-16.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libffi-devel-3.1-16.fc28.x86_64.rpm
-(1/5): libffi-devel-3.1-16.fc28.x86_64.rpm      245 kB/s |  27 kB     00:00    
-(2/5): libgfortran-8.1.1-5.fc28.x86_64.rpm      5.0 MB/s | 656 kB     00:00    
-(3/5): libquadmath-devel-8.1.1-5.fc28.x86_64.rp 3.1 MB/s |  39 kB     00:00    
-(4/5): libquadmath-8.1.1-5.fc28.x86_64.rpm      5.6 MB/s | 186 kB     00:00    
-(5/5): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm      21 MB/s |  11 MB     00:00    
+(1/5): libffi-devel-3.1-16.fc28.x86_64.rpm      479 kB/s |  27 kB     00:00    
+(2/5): libgfortran-8.1.1-5.fc28.x86_64.rpm      5.2 MB/s | 656 kB     00:00    
+(3/5): libquadmath-devel-8.1.1-5.fc28.x86_64.rp 5.5 MB/s |  39 kB     00:00    
+(4/5): libquadmath-8.1.1-5.fc28.x86_64.rpm      1.6 MB/s | 186 kB     00:00    
+(5/5): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm      19 MB/s |  11 MB     00:00    
 --------------------------------------------------------------------------------
-Total                                           6.5 MB/s |  12 MB     00:01     
+Total                                           5.4 MB/s |  12 MB     00:02     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -157,7 +157,7 @@ The following actions will be performed:
 -> installed lbfgs.0.9
 
 #=== ERROR while compiling lacaml.7.2.6 =======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/lacaml.7.2.6
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
@@ -279,5 +279,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021305.export"
-31 1533348773 1533348904
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805044853.export"
+31 1533444510 1533444650

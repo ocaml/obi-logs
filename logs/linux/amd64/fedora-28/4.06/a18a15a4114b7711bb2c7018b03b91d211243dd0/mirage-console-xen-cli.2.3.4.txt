@@ -6,7 +6,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -164,33 +164,33 @@ The following actions will be performed:
 -> installed topkg.0.9.1
 -> installed ppxlib.0.3.0
 -> installed cmdliner.1.0.2
+-> installed ppx_sexp_conv.v0.11.2
 [ERROR] The compilation of xenctrl failed at "/home/opam/.opam/4.06/.opam-switch/build/xenctrl.0.9.31/./configure".
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
--> installed ppx_sexp_conv.v0.11.2
--> installed fmt.0.8.5
 -> installed ipaddr.2.8.0
+-> installed xen-evtchn.2.0.0
+-> installed xen-gnt.3.0.1
+-> installed xenstore.2.0.0
+-> installed fmt.0.8.5
 -> installed mirage-device.1.1.0
 -> installed mirage-flow.1.5.0
 -> installed logs.0.6.2
 -> installed mirage-console.2.3.5
 -> installed mirage-unix.3.0.8
--> installed xen-evtchn.2.0.0
--> installed xen-gnt.3.0.1
--> installed xenstore.2.0.0
+-> installed xenstore_transport.1.0.0
 -> installed mirage-console-lwt.2.3.5
 -> installed mirage-console-unix.2.3.5
--> installed xenstore_transport.1.0.0
 -> installed mirage-console-xen-proto.2.3.5
 -> installed mirage-console-xen-backend.2.3.3
 
 #=== ERROR while compiling xenctrl.0.9.31 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/xenctrl.0.9.31
 # command              ~/.opam/4.06/.opam-switch/build/xenctrl.0.9.31/./configure
 # exit-code            1
-# env-file             ~/.opam/log/xenctrl-9-d35bb9.env
-# output-file          ~/.opam/log/xenctrl-9-d35bb9.out
+# env-file             ~/.opam/log/xenctrl-10-d35bb9.env
+# output-file          ~/.opam/log/xenctrl-10-d35bb9.out
 ### output ###
 # File "configure.ml", line 176, characters 2-76:
 # Warning 20: this argument will not be used by the function.
@@ -260,5 +260,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804015520.export"
-31 1533347717 1533347841
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805042435.export"
+31 1533443072 1533443183

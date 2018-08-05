@@ -39,7 +39,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -66,8 +66,8 @@ package perl-Pod-Html is not installed
 # The following new OS packages need to be installed: gmp-devel perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y gmp-devel perl-Pod-Html
-Fedora 28 - x86_64 - Updates                     32 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Aug  4 02:19:18 2018.
+Fedora 28 - x86_64 - Updates                     24 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:15:49 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch         Version                   Repository     Size
@@ -85,11 +85,11 @@ Install  3 Packages
 Total download size: 303 k
 Installed size: 413 k
 Downloading Packages:
-(1/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 1.0 MB/s |  85 kB     00:00    
-(2/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          376 kB/s |  31 kB     00:00    
-(3/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.9 MB/s | 187 kB     00:00    
+(1/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          788 kB/s |  31 kB     00:00    
+(2/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.8 MB/s | 187 kB     00:00    
+(3/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 1.2 MB/s |  85 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           215 kB/s | 303 kB     00:01     
+Total                                           358 kB/s | 303 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -318,26 +318,22 @@ The following actions will be performed:
 -> installed lwt.4.1.0
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed sexplib0.v0.11.0
--> installed parsexp.v0.11.0
 -> installed base.v0.11.1
+-> installed parsexp.v0.11.0
 -> installed ppx_deriving.4.2.1
--> installed sexplib.v0.11.0
 -> installed spawn.v0.12.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
+-> installed sexplib.v0.11.0
 -> installed cstruct.3.2.1
 -> installed cstruct-lwt.3.2.1
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed astring.0.8.3
 -> installed ocb-stubblr.0.1.1
--> installed cpuid.0.1.1
--> installed typerep.v0.11.0
--> installed uchar.0.0.2
--> installed fmt.0.8.5
 -> installed ppxlib.0.3.0
+-> installed cpuid.0.1.1
 -> installed fieldslib.v0.11.0
--> installed logs.0.6.2
 -> installed ppx_compare.v0.11.1
 -> installed ppx_enumerate.v0.11.1
 -> installed ppx_here.v0.11.0
@@ -357,24 +353,28 @@ The following actions will be performed:
 -> installed ppx_hash.v0.11.1
 -> installed ppx_sexp_message.v0.11.0
 -> installed ppx_sexp_value.v0.11.0
+-> installed typerep.v0.11.0
+-> installed ppx_base.v0.11.0
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
 -> installed ppx_typerep_conv.v0.11.1
 -> installed uri.1.9.7
--> installed ppx_base.v0.11.0
 -> installed uutf.1.0.1
+-> installed logs.0.6.2
+-> installed jsonm.1.0.1
 -> installed conduit.1.1.0
 -> installed variantslib.v0.11.0
--> installed jsonm.1.0.1
+-> installed cohttp.1.0.0
+-> installed zarith.1.7
 -> installed ppx_variants_conv.v0.11.1
 -> installed bin_prot.v0.11.0
--> installed cohttp.1.0.0
--> installed ppx_expect.v0.11.0
--> installed zarith.1.7
--> installed ppx_bin_prot.v0.11.1
--> installed ppx_jane.v0.11.0
--> installed splittable_random.v0.11.0
 -> installed nocrypto.0.5.4-1
+-> installed ppx_bin_prot.v0.11.1
+-> installed ppx_expect.v0.11.0
 -> installed session.0.4.0
 -> installed session-cohttp.0.4.0
+-> installed ppx_jane.v0.11.0
+-> installed splittable_random.v0.11.0
 -> installed core_kernel.v0.11.1
 -> installed async_kernel.v0.11.1
 -> installed protocol_version_header.v0.11.0
@@ -387,23 +387,23 @@ The following actions will be performed:
 [ERROR] The compilation of cohttp-async failed at "/home/opam/.opam/4.06/bin/jbuilder build -p cohttp-async -j 71".
 
 #=== ERROR while compiling cohttp-async.1.0.0 =================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/cohttp-async.1.0.0
 # command              ~/.opam/4.06/bin/jbuilder build -p cohttp-async -j 71
 # exit-code            1
 # env-file             ~/.opam/log/cohttp-async-10-7bc429.env
 # output-file          ~/.opam/log/cohttp-async-10-7bc429.out
 ### output ###
-#       ocamlc cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I cohttp-async/src/.cohttp_async.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -no-alias-deps -open Cohttp_async -o cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.cmo -c -impl cohttp-async/src/io.ml)
+#     ocamlopt cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I cohttp-async/src/.cohttp_async.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -no-alias-deps -open Cohttp_async -o cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.cmx -c -impl cohttp-async/src/io.ml)
 # File "cohttp-async/src/io.ml", line 84, characters 12-25:
 # Warning 3: deprecated: Core.String.create
 # [since 2017-10] Use [Bytes.create] instead
 # File "cohttp-async/src/io.ml", line 86, characters 27-30:
 # Error: This expression has type bytes but an expression was expected of type
 #          Core.String.t = string
-#     ocamlopt cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I cohttp-async/src/.cohttp_async.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -no-alias-deps -open Cohttp_async -o cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.cmx -c -impl cohttp-async/src/io.ml)
+#       ocamlc cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -g -bin-annot -I cohttp-async/src/.cohttp_async.objs -I /home/opam/.opam/4.06/lib/astring -I /home/opam/.opam/4.06/lib/async -I /home/opam/.opam/4.06/lib/async_extra -I /home/opam/.opam/4.06/lib/async_kernel -I /home/opam/.opam/4.06/lib/async_rpc_kernel -I /home/opam/.opam/4.06/lib/async_unix -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/base64 -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cohttp -I /home/opam/.opam/4.06/lib/conduit -I /home/opam/.opam/4.06/lib/conduit-async -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/fmt -I /home/opam/.opam/4.06/lib/ipaddr -I /home/opam/.opam/4.06/lib/ipaddr/unix -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/logs -I /home/opam/.opam/4.06/lib/magic-mime -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/protocol_version_header -I /home/opam/.opam/4.06/lib/re -I /home/opam/.opam/4.06/lib/re/emacs -I /home/opam/.opam/4.06/lib/re/posix -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/stringext -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/uchar -I /home/opam/.opam/4.06/lib/uri -I /home/opam/.opam/4.06/lib/uri/services -I /home/opam/.opam/4.06/lib/variantslib -no-alias-deps -open Cohttp_async -o cohttp-async/src/.cohttp_async.objs/cohttp_async__Io.cmo -c -impl cohttp-async/src/io.ml)
 # File "cohttp-async/src/io.ml", line 84, characters 12-25:
 # Warning 3: deprecated: Core.String.create
 # [since 2017-10] Use [Bytes.create] instead
@@ -533,5 +533,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021931.export"
-31 1533349152 1533349482
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041604.export"
+31 1533442543 1533442881

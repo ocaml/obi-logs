@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,7 +34,8 @@ Install m4 if you need a macro processor.
 # The following new OS packages need to be installed: libogg-devel
 The following command needs to be run through "sudo":
     yum install -y libogg-devel
-Last metadata expiration check: 5:54:27 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     30 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:12:14 2018.
 Dependencies resolved.
 ================================================================================
  Package                 Arch         Version               Repository     Size
@@ -54,16 +55,13 @@ Install  5 Packages
 Total download size: 1.5 M
 Installed size: 4.0 M
 Downloading Packages:
-[MIRROR] libogg-1.3.2-10.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libogg-1.3.2-10.fc28.x86_64.rpm
-[MIRROR] libogg-devel-1.3.2-10.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libogg-devel-1.3.2-10.fc28.x86_64.rpm
-[MIRROR] automake-1.15.1-5.fc28.noarch.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/a/automake-1.15.1-5.fc28.noarch.rpm
-(1/5): libogg-devel-1.3.2-10.fc28.x86_64.rpm    157 kB/s |  18 kB     00:00    
-(2/5): autoconf-2.69-27.fc28.noarch.rpm         9.9 MB/s | 710 kB     00:00    
-(3/5): libogg-1.3.2-10.fc28.x86_64.rpm          148 kB/s |  30 kB     00:00    
-(4/5): automake-1.15.1-5.fc28.noarch.rpm        2.9 MB/s | 706 kB     00:00    
-(5/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 192 kB/s |  23 kB     00:00    
+(1/5): libogg-devel-1.3.2-10.fc28.x86_64.rpm    561 kB/s |  18 kB     00:00    
+(2/5): libogg-1.3.2-10.fc28.x86_64.rpm          684 kB/s |  30 kB     00:00    
+(3/5): automake-1.15.1-5.fc28.noarch.rpm        8.9 MB/s | 706 kB     00:00    
+(4/5): autoconf-2.69-27.fc28.noarch.rpm          12 MB/s | 710 kB     00:00    
+(5/5): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 312 kB/s |  23 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           808 kB/s | 1.5 MB     00:01     
+Total                                           979 kB/s | 1.5 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -111,12 +109,12 @@ The following actions will be performed:
 [ERROR] The compilation of flac failed at "/home/opam/.opam/4.06/.opam-switch/build/flac.0.1.1/./configure --prefix /home/opam/.opam/4.06/lib --mandir /home/opam/.opam/4.06/man".
 
 #=== ERROR while compiling flac.0.1.1 =========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/flac.0.1.1
 # command              ~/.opam/4.06/.opam-switch/build/flac.0.1.1/./configure --prefix /home/opam/.opam/4.06/lib --mandir /home/opam/.opam/4.06/man
 # exit-code            1
-# env-file             ~/.opam/log/flac-11-6cc03f.env
-# output-file          ~/.opam/log/flac-11-6cc03f.out
+# env-file             ~/.opam/log/flac-10-6cc03f.env
+# output-file          ~/.opam/log/flac-10-6cc03f.out
 ### output ###
 # configuring ocaml-flac 0.1.1
 # checking for gcc... gcc
@@ -182,5 +180,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020907.export"
-31 1533348537 1533348553
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041230.export"
+31 1533442330 1533442355

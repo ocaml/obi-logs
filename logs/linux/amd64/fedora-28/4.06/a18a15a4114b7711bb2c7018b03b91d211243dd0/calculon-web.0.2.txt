@@ -40,7 +40,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -68,7 +68,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Mon Jul 23 06:11:22 2018
+Install Date: Sat Aug  4 06:08:56 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -87,7 +87,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: gmp-devel perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y gmp-devel perl-Pod-Html
-Last metadata expiration check: 5:40:00 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                     35 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Aug  5 04:09:37 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch         Version                   Repository     Size
@@ -105,11 +106,11 @@ Install  3 Packages
 Total download size: 303 k
 Installed size: 413 k
 Downloading Packages:
-(1/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          125 kB/s |  31 kB     00:00    
-(2/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        710 kB/s | 187 kB     00:00    
-(3/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 299 kB/s |  85 kB     00:00    
+(1/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 484 kB/s |  85 kB     00:00    
+(2/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          146 kB/s |  31 kB     00:00    
+(3/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        526 kB/s | 187 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           229 kB/s | 303 kB     00:01     
+Total                                           167 kB/s | 303 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -327,47 +328,47 @@ The following actions will be performed:
 -> installed sequence.1.1
 -> installed sexplib.v0.10.0
 -> installed cstruct.3.2.1
--> installed lwt.3.3.0
 -> installed base.v0.10.0
+-> installed lwt.3.3.0
 -> installed cstruct-lwt.3.2.1
--> installed irc-client-lwt.0.6.1
 -> installed ppx_cstruct.3.2.1
+-> installed stdio.v0.10.0
+-> installed irc-client-lwt.0.6.1
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
 -> installed astring.0.8.3
 -> installed cmdliner.1.0.2
--> installed ptime.0.8.4
--> installed stdio.v0.10.0
+-> installed ppx_core.v0.10.0
 -> installed ocb-stubblr.0.1.1
+-> installed ppx_optcomp.v0.10.0
 -> installed cpuid.0.1.1
+-> installed ptime.0.8.4
 -> installed uchar.0.0.2
 -> installed containers.2.2
 -> installed fmt.0.8.5
--> installed ppx_core.v0.10.0
+-> installed ppx_driver.v0.10.4
+-> installed fieldslib.v0.10.0
 -> installed logs.0.6.2
 -> installed uutf.1.0.1
 -> installed jsonm.1.0.1
--> installed ppx_optcomp.v0.10.0
--> installed markup.0.7.7
--> installed ppx_driver.v0.10.4
--> installed fieldslib.v0.10.0
--> installed lambdasoup.0.6.3
--> installed yojson.1.4.1
 -> installed ppx_metaquot.v0.10.0
--> installed atdgen-runtime.2.0.0
+-> installed markup.0.7.7
 -> installed ppx_type_conv.v0.10.0
--> installed atdgen.2.0.0
+-> installed lambdasoup.0.6.3
 -> installed ppx_fields_conv.v0.10.0
--> installed zarith.1.7
+-> installed yojson.1.4.1
 -> installed ppx_sexp_conv.v0.10.0
--> installed asn1-combinators.0.2.0
+-> installed atdgen-runtime.2.0.0
 -> installed ipaddr.2.8.0
 -> installed uri.1.9.7
--> installed cohttp.1.1.0
+-> installed atdgen.2.0.0
 -> installed conduit.1.1.0
+-> installed cohttp.1.1.0
+-> installed conduit-lwt.1.1.0
+-> installed zarith.1.7
+-> installed asn1-combinators.0.2.0
 -> installed cohttp-lwt.1.0.2
 -> installed nocrypto.0.5.4-1
--> installed conduit-lwt.1.1.0
 -> installed x509.0.6.1
 -> installed tls.0.9.1
 -> installed irc-client-tls.0.6.1
@@ -377,7 +378,7 @@ The following actions will be performed:
 [ERROR] The compilation of calculon-web failed at "/home/opam/.opam/4.06/bin/jbuilder build -p calculon-web".
 
 #=== ERROR while compiling calculon-web.0.2 ===================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/calculon-web.0.2
 # command              ~/.opam/4.06/bin/jbuilder build -p calculon-web
 # exit-code            1
@@ -482,5 +483,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804015440.export"
-31 1533347665 1533347893
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805040952.export"
+31 1533442169 1533442425

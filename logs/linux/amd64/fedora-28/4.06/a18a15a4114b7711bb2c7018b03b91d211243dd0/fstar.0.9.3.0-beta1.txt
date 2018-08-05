@@ -40,7 +40,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -68,7 +68,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Mon Jul 23 06:11:22 2018
+Install Date: Sat Aug  4 06:08:56 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -87,8 +87,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: gmp-devel perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y gmp-devel perl-Pod-Html
-Fedora 28 - x86_64 - Updates                     16 MB/s |  21 MB     00:01    
-Last metadata expiration check: 0:00:05 ago on Sat Aug  4 02:16:51 2018.
+Fedora 28 - x86_64 - Updates                     37 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Aug  5 04:13:32 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch         Version                   Repository     Size
@@ -106,11 +106,11 @@ Install  3 Packages
 Total download size: 303 k
 Installed size: 413 k
 Downloading Packages:
-(1/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 946 kB/s |  85 kB     00:00    
-(2/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm           32 kB/s |  31 kB     00:00    
-(3/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        187 kB/s | 187 kB     00:01    
+(1/3): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 1.0 MB/s |  85 kB     00:00    
+(2/3): gmp-c++-6.1.2-7.fc28.x86_64.rpm          201 kB/s |  31 kB     00:00    
+(3/3): gmp-devel-6.1.2-7.fc28.x86_64.rpm        884 kB/s | 187 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           150 kB/s | 303 kB     00:02     
+Total                                           152 kB/s | 303 kB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -174,8 +174,8 @@ The following actions will be performed:
 -> installed conf-which.1
 -> installed cppo.1.6.4
 -> installed easy-format.1.3.1
--> installed biniou.1.2.0
 -> installed num.1.1
+-> installed biniou.1.2.0
 -> installed ocamlbuild.0.12.0
 -> installed stdint.0.5.1
 -> installed yojson.1.4.1
@@ -184,7 +184,7 @@ The following actions will be performed:
 [ERROR] The compilation of fstar failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output".
 
 #=== ERROR while compiling fstar.0.9.3.0-beta1 ================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/fstar.0.9.3.0-beta1
 # command              /usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output
 # exit-code            2
@@ -249,7 +249,7 @@ The following actions will be performed:
 # echo 'let version = "0.9.3.0-beta1"' > FStar_Version.ml
 # echo 'let platform = "Linux_x86_64"' >> FStar_Version.ml
 # echo 'let compiler = "OCaml 4.06.1"' >> FStar_Version.ml
-# echo 'let date = "2018-08-04T02:17:31+00:00"' >> FStar_Version.ml
+# echo 'let date = "2018-08-05T04:14:32+00:00"' >> FStar_Version.ml
 # echo 'let commit= " (dirty)"' >> FStar_Version.ml
 # make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.3.0-beta1/src/ocaml-output'
 # /usr/bin/make depend
@@ -462,5 +462,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021707.export"
-31 1533349007 1533349060
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041347.export"
+31 1533442408 1533442489

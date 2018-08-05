@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package sundials-devel is not installed
 # The following new OS packages need to be installed: lapack-devel sundials-devel
 The following command needs to be run through "sudo":
     yum install -y lapack-devel sundials-devel
-Fedora 28 - x86_64 - Updates                     26 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Sat Aug  4 02:21:04 2018.
+Fedora 28 - x86_64 - Updates                     15 MB/s |  21 MB     00:01    
+Last metadata expiration check: 0:00:09 ago on Sun Aug  5 04:39:23 2018.
 Dependencies resolved.
 ================================================================================
  Package                 Arch         Version               Repository     Size
@@ -70,32 +70,26 @@ Install  18 Packages
 Total download size: 39 M
 Installed size: 161 M
 Downloading Packages:
-[MIRROR] blas-devel-3.8.0-9.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/b/blas-devel-3.8.0-9.fc28.x86_64.rpm
-[MIRROR] lapack-3.8.0-9.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/l/lapack-3.8.0-9.fc28.x86_64.rpm
-[MIRROR] lapack-devel-3.8.0-9.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/l/lapack-devel-3.8.0-9.fc28.x86_64.rpm
-(1/18): blas-devel-3.8.0-9.fc28.x86_64.rpm      353 kB/s |  25 kB     00:00    
-(2/18): lapack-devel-3.8.0-9.fc28.x86_64.rpm    1.0 MB/s |  88 kB     00:00    
-[MIRROR] sundials-devel-3.1.0-4.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/s/sundials-devel-3.1.0-4.fc28.x86_64.rpm
-(3/18): blas-3.8.0-9.fc28.x86_64.rpm            7.2 MB/s | 428 kB     00:00    
-[MIRROR] sundials-3.1.0-4.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/s/sundials-3.1.0-4.fc28.x86_64.rpm
-(4/18): sundials-devel-3.1.0-4.fc28.x86_64.rpm  1.7 MB/s | 163 kB     00:00    
-[MIRROR] SuperLUMT-double-3.1.0-15.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/s/SuperLUMT-double-3.1.0-15.fc28.x86_64.rpm
-(5/18): SuperLUMT-double-3.1.0-15.fc28.x86_64.r 2.4 MB/s |  85 kB     00:00    
-(6/18): sundials-3.1.0-4.fc28.x86_64.rpm        3.8 MB/s | 445 kB     00:00    
-(7/18): suitesparse-4.4.6-11.fc28.x86_64.rpm     13 MB/s | 1.0 MB     00:00    
-(8/18): SuperLUMT-common-3.1.0-15.fc28.noarch.r  10 MB/s | 648 kB     00:00    
-(9/18): tbb-2018.5-1.fc28.x86_64.rpm            4.8 MB/s | 158 kB     00:00    
-(10/18): openblas-openmp-0.3.1-2.fc28.x86_64.rp  27 MB/s | 4.7 MB     00:00    
-(11/18): libgfortran-8.1.1-5.fc28.x86_64.rpm     15 MB/s | 656 kB     00:00    
-(12/18): lapack-3.8.0-9.fc28.x86_64.rpm          14 MB/s | 8.6 MB     00:00    
-(13/18): openblas-0.3.1-2.fc28.x86_64.rpm       514 kB/s |  29 kB     00:00    
-(14/18): libquadmath-8.1.1-5.fc28.x86_64.rpm     10 MB/s | 186 kB     00:00    
-(15/18): libquadmath-devel-8.1.1-5.fc28.x86_64. 3.1 MB/s |  39 kB     00:00    
-(16/18): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm    20 MB/s |  11 MB     00:00    
-(17/18): atlas-3.10.3-5.fc28.x86_64.rpm          23 MB/s | 6.4 MB     00:00    
-(18/18): openblas-serial-0.3.1-2.fc28.x86_64.rp 9.5 MB/s | 4.5 MB     00:00    
+(1/18): lapack-devel-3.8.0-9.fc28.x86_64.rpm    827 kB/s |  88 kB     00:00    
+(2/18): blas-3.8.0-9.fc28.x86_64.rpm            3.2 MB/s | 428 kB     00:00    
+(3/18): blas-devel-3.8.0-9.fc28.x86_64.rpm       79 kB/s |  25 kB     00:00    
+(4/18): sundials-devel-3.1.0-4.fc28.x86_64.rpm  722 kB/s | 163 kB     00:00    
+(5/18): SuperLUMT-double-3.1.0-15.fc28.x86_64.r 802 kB/s |  85 kB     00:00    
+(6/18): sundials-3.1.0-4.fc28.x86_64.rpm        1.2 MB/s | 445 kB     00:00    
+(7/18): SuperLUMT-common-3.1.0-15.fc28.noarch.r 1.9 MB/s | 648 kB     00:00    
+(8/18): lapack-3.8.0-9.fc28.x86_64.rpm          7.6 MB/s | 8.6 MB     00:01    
+(9/18): suitesparse-4.4.6-11.fc28.x86_64.rpm    1.7 MB/s | 1.0 MB     00:00    
+(10/18): tbb-2018.5-1.fc28.x86_64.rpm           1.7 MB/s | 158 kB     00:00    
+(11/18): libgfortran-8.1.1-5.fc28.x86_64.rpm    3.3 MB/s | 656 kB     00:00    
+(12/18): openblas-0.3.1-2.fc28.x86_64.rpm       2.3 MB/s |  29 kB     00:00    
+(13/18): openblas-openmp-0.3.1-2.fc28.x86_64.rp 9.0 MB/s | 4.7 MB     00:00    
+(14/18): libquadmath-8.1.1-5.fc28.x86_64.rpm    6.1 MB/s | 186 kB     00:00    
+(15/18): libquadmath-devel-8.1.1-5.fc28.x86_64. 2.4 MB/s |  39 kB     00:00    
+(16/18): openblas-serial-0.3.1-2.fc28.x86_64.rp 9.9 MB/s | 4.5 MB     00:00    
+(17/18): atlas-3.10.3-5.fc28.x86_64.rpm         8.6 MB/s | 6.4 MB     00:00    
+(18/18): gcc-gfortran-8.1.1-5.fc28.x86_64.rpm   4.6 MB/s |  11 MB     00:02    
 --------------------------------------------------------------------------------
-Total                                            19 MB/s |  39 MB     00:02     
+Total                                           8.4 MB/s |  39 MB     00:04     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -177,7 +171,7 @@ The following actions will be performed:
 [ERROR] The compilation of sundialsml failed at "/home/opam/.opam/4.06/.opam-switch/build/sundialsml.2.6.2p1/./configure --stubdir=/home/opam/.opam/4.06/lib/stublibs/ --libdir=/home/opam/.opam/4.06/lib/ --docdir=/home/opam/.opam/4.06/doc/".
 
 #=== ERROR while compiling sundialsml.2.6.2p1 =================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/sundialsml.2.6.2p1
 # command              ~/.opam/4.06/.opam-switch/build/sundialsml.2.6.2p1/./configure --stubdir=/home/opam/.opam/4.06/lib/stublibs/ --libdir=/home/opam/.opam/4.06/lib/ --docdir=/home/opam/.opam/4.06/doc/
 # exit-code            1
@@ -222,4 +216,4 @@ The packages you requested declare the following system dependencies. Please mak
     lapack-devel sundials-devel
 
 # Run eval $(opam env) to update the current shell environment
-31 1533349259 1533349292
+31 1533443959 1533443995

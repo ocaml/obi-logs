@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,8 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: pkgconfig zlib-devel
 The following command needs to be run through "sudo":
     yum install -y pkgconfig zlib-devel
-Fedora 28 - x86_64 - Updates                     16 MB/s |  21 MB     00:01    
-Last metadata expiration check: 0:00:08 ago on Sat Aug  4 02:23:31 2018.
+Fedora 28 - x86_64 - Updates                     29 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:07 ago on Sun Aug  5 04:16:28 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -53,10 +53,9 @@ Install  1 Package
 Total download size: 55 k
 Installed size: 138 k
 Downloading Packages:
-[MIRROR] zlib-devel-1.2.11-8.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/z/zlib-devel-1.2.11-8.fc28.x86_64.rpm
-zlib-devel-1.2.11-8.fc28.x86_64.rpm             707 kB/s |  55 kB     00:00    
+zlib-devel-1.2.11-8.fc28.x86_64.rpm             929 kB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            73 kB/s |  55 kB     00:00     
+Total                                            95 kB/s |  55 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -101,7 +100,7 @@ The following actions will be performed:
 [ERROR] The compilation of mldonkey failed at "/usr/bin/make".
 
 #=== ERROR while compiling mldonkey.3.1.6 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/mldonkey.3.1.6
 # command              /usr/bin/make
 # exit-code            2
@@ -131,5 +130,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804022344.export"
-31 1533349407 1533349535
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041640.export"
+31 1533442584 1533442722

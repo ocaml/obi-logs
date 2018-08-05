@@ -11,7 +11,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -38,7 +38,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Mon Jul 23 06:11:22 2018
+Install Date: Sat Aug  4 06:08:56 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -57,8 +57,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: autoconf automake
 The following command needs to be run through "sudo":
     yum install -y autoconf automake
-Fedora 28 - x86_64 - Updates                     29 MB/s |  21 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sat Aug  4 02:17:23 2018.
+Fedora 28 - x86_64 - Updates                     34 MB/s |  21 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Sun Aug  5 04:18:19 2018.
 Dependencies resolved.
 ================================================================================
  Package                 Arch         Version               Repository     Size
@@ -76,12 +76,11 @@ Install  3 Packages
 Total download size: 1.4 M
 Installed size: 4.0 M
 Downloading Packages:
-[MIRROR] perl-Thread-Queue-3.13-1.fc28.noarch.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/p/perl-Thread-Queue-3.13-1.fc28.noarch.rpm
-(1/3): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 192 kB/s |  23 kB     00:00    
-(2/3): automake-1.15.1-5.fc28.noarch.rpm        5.6 MB/s | 706 kB     00:00    
-(3/3): autoconf-2.69-27.fc28.noarch.rpm         5.1 MB/s | 710 kB     00:00    
+(1/3): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 406 kB/s |  23 kB     00:00    
+(2/3): autoconf-2.69-27.fc28.noarch.rpm         8.4 MB/s | 710 kB     00:00    
+(3/3): automake-1.15.1-5.fc28.noarch.rpm        6.2 MB/s | 706 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.2 MB/s | 1.4 MB     00:01     
+Total                                           951 kB/s | 1.4 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -130,7 +129,7 @@ The following actions will be performed:
 [ERROR] The compilation of parmap failed at "/usr/bin/make DESTDIR=/home/opam/.opam/4.06 OCAMLLIBDIR=lib".
 
 #=== ERROR while compiling parmap.1.0-rc8 =====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/parmap.1.0-rc8
 # command              /usr/bin/make DESTDIR=/home/opam/.opam/4.06 OCAMLLIBDIR=lib
 # exit-code            2
@@ -184,5 +183,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804021737.export"
-31 1533349039 1533349070
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041834.export"
+31 1533442694 1533442727

@@ -6,7 +6,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -66,7 +66,7 @@ The following actions will be performed:
 [ERROR] The compilation of ocp-index failed at "/usr/bin/make".
 
 #=== ERROR while compiling ocp-index.1.1.4 ====================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/ocp-index.1.1.4
 # command              /usr/bin/make
 # exit-code            2
@@ -236,51 +236,51 @@ The following actions will be performed:
 # Warning: missing package "lambda-term":
 #   Disabling package "ocp-browser".
 #     (from "/home/opam/.opam/4.06/.opam-switch/build/ocp-index.1.1.4/src/ocp-index.ocp")
-# 0.01s _obuild/ocp-index-lib/indexTypes.mlmods                          [ done ]
 # 0.01s _obuild/ocp-index-lib/trie.mlimods                               [ done ]
-# 0.01s _obuild/ocp-index-lib/trie.mlmods                                [ done ]
+# 0.01s _obuild/ocp-index-lib/indexTypes.mlmods                          [ done ]
 # 0.01s _obuild/ocp-index-lib/indexMisc.mlimods                          [ done ]
+# 0.01s _obuild/ocp-index-lib/trie.mlmods                                [ done ]
+# 0.01s _obuild/ocp-index-lib/indexMisc.mlmods                           [ done ]
 # 0.01s _obuild/ocp-index-lib/indexPredefined.mlimods                    [ done ]
 # 0.01s _obuild/ocp-index-lib/indexOut.mlimods                           [ done ]
-# 0.01s _obuild/ocp-index-lib/indexMisc.mlmods                           [ done ]
-# 0.01s _obuild/ocp-index-lib/indexPredefined.mlmods                     [ done ]
 # 0.01s _obuild/ocp-index-lib/indexBuild.mlimods                         [ done ]
-# 0.01s _obuild/ocp-index-lib/libIndex.mlmods                            [ done ]
-# 0.01s _obuild/ocp-index-lib/indexScope.mlimods                         [ done ]
-# 0.01s _obuild/ocp-index-lib/indexOut.mlmods                            [ done ]
 # 0.01s _obuild/ocp-index-lib/libIndex.mlimods                           [ done ]
+# 0.01s _obuild/ocp-index-lib/libIndex.mlmods                            [ done ]
+# 0.01s _obuild/ocp-index-lib/indexPredefined.mlmods                     [ done ]
+# 0.01s _obuild/ocp-index-lib/indexScope.mlimods                         [ done ]
+# 0.01s _obuild/ocp-index-lib/indexScope.mlmods                          [ done ]
+# 0.01s _obuild/ocp-index-lib/indexOut.mlmods                            [ done ]
 # 0.01s _obuild/ocp-index-lib/indexScope.cmi                             [ done ]
-# 0.02s _obuild/ocp-index-lib/indexScope.mlmods                          [ done ]
+# 0.01s _obuild/ocp-index-lib/trie.cmi                                   [ done ]
 # 0.02s _obuild/ocp-index-lib/indexBuild.mlmods                          [ done ]
-# 0.02s _obuild/ocp-index-lib/trie.cmi                                   [ done ]
 # 0.01s _obuild/ocp-index-lib/indexTypes.cmo                             [ done ]
-# 0.01s _obuild/ocp-index-lib/indexMisc.cmi                              [ done ]
 # 0.01s _obuild/ocp-index-lib/indexPredefined.cmi                        [ done ]
-# 0.01s _obuild/ocp-index-lib/indexOut.cmi                               [ done ]
 # 0.01s _obuild/ocp-index-lib/indexBuild.cmi                             [ done ]
-# 0.03s _obuild/ocp-index-lib/trie.cmo                                   [ done ]
+# 0.02s _obuild/ocp-index-lib/trie.cmo                                   [ done ]
+# 0.01s _obuild/ocp-index-lib/indexMisc.cmi                              [ done ]
+# 0.01s _obuild/ocp-index-lib/indexOut.cmi                               [ done ]
 # 0.01s _obuild/ocp-index-lib/indexPredefined.cmo                        [failed]
 # [41.1] Command failed: '/home/opam/.opam/4.06/bin/ocamlc.opt' '-g' '-w' '+1..39-4-9-37-40' '-safe-string' '-bin-annot' '-c' '-o' '_obuild/RULE-302bb1299b902478896101573f587c0b/indexPredefined.cmo' '-I' './_obuild/ocp-index-lib' '-I' './src' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/utils' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/lexer' '-I' '/home/opam/.opam/4.06/lib/ocaml/compiler-libs' './src/indexPredefined.ml'
 # -- stderr for ...ild/ocp-index-lib/indexPredefined.cmo --
 # File "./src/indexPredefined.ml", line 27, characters 6-227:
 # Error: Some record fields are undefined: otype_unboxed
-# 0.04s _obuild/ocp-index-lib/indexScope.cmo                             [ done ]
+# 0.03s _obuild/ocp-index-lib/indexScope.cmo                             [ done ]
 # 0.01s _obuild/ocp-index-lib/libIndex.cmi                               [ done ]
 # 0.03s _obuild/ocp-index-lib/indexMisc.cmo                              [ done ]
 # 0.07s _obuild/ocp-index-lib/trie.cmx                                   [ done ]
+# 0.05s _obuild/ocp-index-lib/indexBuild.cmo                             [failed]
+# [49.1] Command failed: '/home/opam/.opam/4.06/bin/ocamlc.opt' '-g' '-w' '+1..39-4-9-37-40' '-safe-string' '-bin-annot' '-c' '-o' '_obuild/RULE-74c5c5ee3caf79d0086500fd544c1ad1/indexBuild.cmo' '-I' './_obuild/ocp-index-lib' '-I' './src' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/utils' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/lexer' '-I' '/home/opam/.opam/4.06/lib/ocaml/compiler-libs' './src/indexBuild.ml'
+# -- stderr for ./_obuild/ocp-index-lib/indexBuild.cmo --
+# File "./src/indexBuild.ml", line 321, characters 35-284:
+# Error: Some record fields are undefined: otype_unboxed
 # 0.08s _obuild/ocp-index-lib/indexScope.cmx                             [ done ]
 # -- stderr for ./_obuild/ocp-index-lib/indexScope.cmx --
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Nstream, and its interface was not compiled with -opaque
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Pos, and its interface was not compiled with -opaque
-# 0.05s _obuild/ocp-index-lib/indexBuild.cmo                             [failed]
-# [49.1] Command failed: '/home/opam/.opam/4.06/bin/ocamlc.opt' '-g' '-w' '+1..39-4-9-37-40' '-safe-string' '-bin-annot' '-c' '-o' '_obuild/RULE-74c5c5ee3caf79d0086500fd544c1ad1/indexBuild.cmo' '-I' './_obuild/ocp-index-lib' '-I' './src' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/utils' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/lexer' '-I' '/home/opam/.opam/4.06/lib/ocaml/compiler-libs' './src/indexBuild.ml'
-# -- stderr for ./_obuild/ocp-index-lib/indexBuild.cmo --
-# File "./src/indexBuild.ml", line 321, characters 35-284:
-# Error: Some record fields are undefined: otype_unboxed
 # 0.07s _obuild/ocp-index-lib/indexOut.cmo                               [ done ]
-# 4 errors in 0.29s. 31 jobs (parallelism 2.2x), 34 files generated.
+# 4 errors in 0.26s. 31 jobs (parallelism 2.2x), 34 files generated.
 # Error log:
 # Error:
 # [41.1] '/home/opam/.opam/4.06/bin/ocamlc.opt' '-g' '-w' '+1..39-4-9-37-40' '-safe-string' '-bin-annot' '-c' '-o' '_obuild/RULE-302bb1299b902478896101573f587c0b/indexPredefined.cmo' '-I' './_obuild/ocp-index-lib' '-I' './src' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/utils' '-I' '/home/opam/.opam/4.06/lib/ocp-indent/lexer' '-I' '/home/opam/.opam/4.06/lib/ocaml/compiler-libs' './src/indexPredefined.ml'
@@ -329,5 +329,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804022122.export"
-31 1533349279 1533349319
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041543.export"
+31 1533442541 1533442580

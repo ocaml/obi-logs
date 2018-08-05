@@ -43,7 +43,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Fri Aug  3 20:15:14 2018
+Install Date: Sat Aug  4 20:10:02 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -72,7 +72,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Mon Jul 23 06:11:22 2018
+Install Date: Sat Aug  4 06:08:56 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -91,7 +91,8 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: gmp-devel libffi-devel perl-Pod-Html pkgconfig
 The following command needs to be run through "sudo":
     yum install -y gmp-devel libffi-devel perl-Pod-Html pkgconfig
-Last metadata expiration check: 5:55:12 ago on Fri Aug  3 20:14:34 2018.
+Fedora 28 - x86_64 - Updates                    9.3 MB/s |  21 MB     00:02    
+Last metadata expiration check: 0:00:13 ago on Sun Aug  5 04:19:38 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -111,15 +112,12 @@ Install  4 Packages
 Total download size: 331 k
 Installed size: 439 k
 Downloading Packages:
-[MIRROR] libffi-devel-3.1-16.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libffi-devel-3.1-16.fc28.x86_64.rpm
-[MIRROR] gmp-devel-6.1.2-7.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/g/gmp-devel-6.1.2-7.fc28.x86_64.rpm
-[MIRROR] gmp-c++-6.1.2-7.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/releases/28/Everything/x86_64/os/Packages/g/gmp-c++-6.1.2-7.fc28.x86_64.rpm
-(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          328 kB/s |  31 kB     00:00    
-(2/4): libffi-devel-3.1-16.fc28.x86_64.rpm      261 kB/s |  27 kB     00:00    
-(3/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.7 MB/s | 187 kB     00:00    
-(4/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 2.0 MB/s |  85 kB     00:00    
+(1/4): libffi-devel-3.1-16.fc28.x86_64.rpm      953 kB/s |  27 kB     00:00    
+(2/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          730 kB/s |  31 kB     00:00    
+(3/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.8 MB/s | 187 kB     00:00    
+(4/4): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 1.3 MB/s |  85 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           287 kB/s | 331 kB     00:01     
+Total                                           738 kB/s | 331 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -253,12 +251,12 @@ The following actions will be performed:
 -> installed ctypes-foreign.0.4.0
 -> installed easy-format.1.3.1
 -> installed num.1.1
--> installed biniou.1.2.0
 -> installed ocaml-compiler-libs.v0.11.0
 -> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed cppo_ocamlbuild.1.6.0
 -> installed ppx_derivers.1.0
 -> installed ppx_tools.5.1+4.06.0
--> installed cppo_ocamlbuild.1.6.0
 -> installed result.1.3
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed sexplib0.v0.11.0
@@ -292,12 +290,12 @@ The following actions will be performed:
 [ERROR] The compilation of pkcs11 failed at "/home/opam/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false --with-cmdliner false".
 
 #=== ERROR while compiling pkcs11.0.7.0 =======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/pkcs11.0.7.0
 # command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false --with-cmdliner false
 # exit-code            1
-# env-file             ~/.opam/log/pkcs11-10-20f1f3.env
-# output-file          ~/.opam/log/pkcs11-10-20f1f3.out
+# env-file             ~/.opam/log/pkcs11-9-20f1f3.env
+# output-file          ~/.opam/log/pkcs11-9-20f1f3.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -open Result -package ppx_deriving_yojson -package ppx_deriving.std -package key-parsers -package hex -package ctypes.stubs -package ctypes.foreign -modules src/pkcs11_generator.ml > src/pkcs11_generator.ml.depends
@@ -588,5 +586,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804020951.export"
-31 1533348581 1533348716
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805041959.export"
+31 1533442773 1533442983
