@@ -355,9 +355,9 @@ The following actions will be performed:
 -> installed topkg.0.9.1
 -> installed ppx_core.v0.9.0
 -> installed cmdliner.1.0.2
--> installed ppx_optcomp.v0.9.0
 -> installed react.1.2.1
 -> installed lwt_react.1.1.1
+-> installed ppx_optcomp.v0.9.0
 -> installed typerep.v0.9.0
 -> installed uuidm.0.9.6
 -> installed zarith.1.7
@@ -439,9 +439,9 @@ The following actions will be performed:
 # Warning: -pp overrides the effect of -syntax partly
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_parse.cmi lib/bap_elf/elf_parse.mli
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
-# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
-# ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
 # + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_parse.cmi lib/bap_elf/elf_parse.mli
+# ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I lib/bap_elf -o lib/bap_elf/elf_utils.cmi lib/bap_elf/elf_utils.mli
 # ocamlfind: [WARNING] -pp overrides the effect of -syntax partly
 # /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -predicates ppx_driver -predicates ppx_driver -modules lib/bap_elf/elf_parse.ml > lib/bap_elf/elf_parse.ml.depends
 # /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bap -package bitstring -syntax camlp4o -package bitstring.syntax -package camlp4 -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -modules lib/bap_elf/elf_internal_utils.mli > lib/bap_elf/elf_internal_utils.mli.depends
@@ -560,5 +560,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805020446.export"
-31 1533434659 1533435594
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180806035712.export"
+31 1533527809 1533528740

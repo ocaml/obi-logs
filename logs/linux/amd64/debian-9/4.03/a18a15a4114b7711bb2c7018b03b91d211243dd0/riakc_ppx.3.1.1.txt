@@ -116,22 +116,22 @@ The following actions will be performed:
 -> installed ppx_tools.5.0+4.03.0
 -> installed ppx_core.113.33.01+4.03
 -> installed omake.0.10.3
--> installed ppx_optcomp.113.33.00+4.03
 -> installed re.1.7.3
 -> installed result.1.3
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed ppx_deriving.4.1.5
--> installed ppx_driver.113.33.02+4.03
+-> installed ppx_optcomp.113.33.00+4.03
 -> installed ppx_deriving_protobuf.2.6
+-> installed ppx_tools_versioned.5.2
+-> installed ppx_driver.113.33.02+4.03
+-> installed bitstring.3.0.0
 -> installed ppx_here.113.33.00
 -> installed ppx_inline_test.113.33.00+4.03
 -> installed ppx_fail.113.33.00+4.03
 -> installed ppx_let.113.33.00+4.03
 -> installed ppx_pipebang.113.33.00+4.03
--> installed ppx_tools_versioned.5.2
--> installed ppx_bench.113.33.00+4.03
 -> installed ppx_type_conv.113.33.02+4.03
--> installed bitstring.3.0.0
+-> installed ppx_bench.113.33.00+4.03
 -> installed ppx_bin_prot.113.33.00+4.03
 -> installed ppx_compare.113.33.00+4.03
 -> installed ppx_enumerate.113.33.00+4.03
@@ -162,8 +162,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/riakc_ppx.3.1.1
 # command              ~/.opam/4.03/bin/omake -j2
 # exit-code            2
-# env-file             ~/.opam/log/riakc_ppx-11-cc094e.env
-# output-file          ~/.opam/log/riakc_ppx-11-cc094e.out
+# env-file             ~/.opam/log/riakc_ppx-11-f6ef8a.env
+# output-file          ~/.opam/log/riakc_ppx-11-f6ef8a.out
 ### output ###
 # *** omake: reading OMakefiles
 # --- Checking for ocamlfind... (found /home/opam/.opam/4.03/bin/ocamlfind)
@@ -180,7 +180,7 @@ The following actions will be performed:
 # File "response.ml", line 96, characters 32-33:
 # Error: Syntax error
 # *** omake: 28/230 targets are up to date
-# *** omake: failed (1.18 sec, 5/5 scans, 2/2 rules, 68/97 digests)
+# *** omake: failed (1.28 sec, 5/5 scans, 2/2 rules, 68/97 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner _build/lib/scan-ocaml-response.ml>
 #       depends on: _build/lib/response.ml
@@ -244,5 +244,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805025216.export"
-31 1533437533 1533438059
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180806034541.export"
+31 1533527138 1533527748

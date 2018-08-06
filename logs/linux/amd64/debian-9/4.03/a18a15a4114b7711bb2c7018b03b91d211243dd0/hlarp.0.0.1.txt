@@ -37,8 +37,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/hlarp.0.0.1
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/hlarp-12-331a6b.env
-# output-file          ~/.opam/log/hlarp-12-331a6b.out
+# env-file             ~/.opam/log/hlarp-11-331a6b.env
+# output-file          ~/.opam/log/hlarp-11-331a6b.out
 ### output ###
 # ocamlbuild -use-ocamlfind -package nonstd -package re -package cmdliner -package re.posix -package re.glob \
 #            -I src/app -I src/lib hlarp_cli.native \
@@ -91,5 +91,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805022007.export"
-31 1533435605 1533435624
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180806042354.export"
+31 1533529432 1533529447

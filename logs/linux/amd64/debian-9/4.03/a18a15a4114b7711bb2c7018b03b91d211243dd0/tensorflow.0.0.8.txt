@@ -146,22 +146,22 @@ The following actions will be performed:
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
 -> installed conf-pkg-config.1.1
+-> installed cppo.1.6.4
 -> installed ctypes-foreign.0.4.0
+-> installed ppx_tools.5.0+4.03.0
 -> installed ocamlbuild.0.12.0
 -> installed bin_prot.113.33.00+4.03
--> installed cppo.1.6.4
 -> installed cppo_ocamlbuild.1.6.0
 -> installed fieldslib.113.24.00
--> installed ppx_tools.5.0+4.03.0
 -> installed re.1.7.3
 -> installed result.1.3
+-> installed ppx_core.113.33.01+4.03
 -> installed ppx_deriving.4.1.5
 -> installed sexplib.113.33.00+4.03
 -> installed topkg.0.9.1
 -> installed cmdliner.1.0.2
--> installed ppx_core.113.33.01+4.03
--> installed integers.0.2.2
 -> installed ppx_optcomp.113.33.00+4.03
+-> installed integers.0.2.2
 -> installed ppx_driver.113.33.02+4.03
 -> installed ctypes.0.14.0
 -> installed ppx_here.113.33.00
@@ -194,15 +194,15 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/tensorflow.0.0.8
 # command              /usr/bin/make libtensorflowcstubs.a tensorflow_core.lib tensorflow.lib
 # exit-code            2
-# env-file             ~/.opam/log/tensorflow-12-672b03.env
-# output-file          ~/.opam/log/tensorflow-12-672b03.out
+# env-file             ~/.opam/log/tensorflow-11-672b03.env
+# output-file          ~/.opam/log/tensorflow-11-672b03.out
 ### output ###
 # ocamlbuild libtensorflowcstubs.a
 # /home/opam/.opam/4.03/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.03/lib/ocamlbuild /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tf_gen.ml > src/wrapper/tf_gen.ml.depends
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tf_bindings.ml > src/wrapper/tf_bindings.ml.depends
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tf_bindings.cmo src/wrapper/tf_bindings.ml
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tf_gen.cmo src/wrapper/tf_gen.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tf_bindings.cmo src/wrapper/tf_bindings.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tf_gen.cmo src/wrapper/tf_gen.ml
 # ocamlfind ocamlc -linkpkg -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper src/wrapper/tf_bindings.cmo src/wrapper/tf_gen.cmo -o src/wrapper/tf_gen.byte
 # src/wrapper/tf_gen.byte
 # ocamlfind ocamlc -package ctypes -package ctypes.foreign -package ctypes.stubs -c src/wrapper/tf_stubs.c
@@ -281,20 +281,20 @@ The following actions will be performed:
 # ocamlfind ocamlmklib -o tensorflowcstubs src/wrapper/tf_stubs.o
 # ocamlbuild tensorflow_core.cmxa tensorflow_core.cma tensorflow_core.cmxs tensorflow_core.cmx
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tensor.mli > src/wrapper/tensor.mli.depends
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tensor.cmi src/wrapper/tensor.mli
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tensor.cmi src/wrapper/tensor.mli
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tensor.ml > src/wrapper/tensor.ml.depends
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/wrapper.mli > src/wrapper/wrapper.mli.depends
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/wrapper.cmi src/wrapper/wrapper.mli
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/wrapper.cmi src/wrapper/wrapper.mli
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/wrapper.ml > src/wrapper/wrapper.ml.depends
 # ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tf_generated.ml > src/wrapper/tf_generated.ml.depends
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tf_generated.cmo src/wrapper/tf_generated.ml
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tensor.cmo src/wrapper/tensor.ml
-# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/wrapper.cmo src/wrapper/wrapper.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tf_generated.cmo src/wrapper/tf_generated.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tensor.cmo src/wrapper/tensor.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/wrapper.cmo src/wrapper/wrapper.ml
 # ocamlfind ocamlc -pack src/wrapper/tensor.cmo src/wrapper/wrapper.cmo -o tensorflow_core.cmo
-# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tensor.cmx src/wrapper/tensor.ml
-# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tf_bindings.cmx src/wrapper/tf_bindings.ml
-# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/tf_generated.cmx src/wrapper/tf_generated.ml
-# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/graph -I src/fnn -I src/piqi -o src/wrapper/wrapper.cmx src/wrapper/wrapper.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tensor.cmx src/wrapper/tensor.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tf_bindings.cmx src/wrapper/tf_bindings.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/tf_generated.cmx src/wrapper/tf_generated.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -I src -I src/fnn -I src/graph -I src/piqi -o src/wrapper/wrapper.cmx src/wrapper/wrapper.ml
 # touch tensorflow_core.mli  ; if  ocamlfind ocamlopt -pack -I src/wrapper src/wrapper/tensor.cmx src/wrapper/wrapper.cmx -o tensorflow_core.cmx  ; then  rm -f tensorflow_core.mli  ; else  rm -f tensorflow_core.mli  ; exit 1; fi
 # ocamlfind ocamlopt -a -cclib -ltensorflowcstubs -cclib -ltensorflow -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper src/wrapper/tf_bindings.cmx src/wrapper/tf_generated.cmx tensorflow_core.cmx -o tensorflow_core.cmxa
 # ocamlfind ocamlc -a -cclib -ltensorflowcstubs -cclib -ltensorflow -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper src/wrapper/tf_bindings.cmo src/wrapper/tf_generated.cmo tensorflow_core.cmo -o tensorflow_core.cma
@@ -363,5 +363,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180805022004.export"
-31 1533435594 1533435871
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180806034036.export"
+31 1533526825 1533527118
