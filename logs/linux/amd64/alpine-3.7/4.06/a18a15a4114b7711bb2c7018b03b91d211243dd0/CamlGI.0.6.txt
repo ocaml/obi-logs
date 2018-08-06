@@ -32,9 +32,9 @@ The following actions will be performed:
 # ocamldep -pp "camlp4o pa_macro.cmo pr_o.cmo" sendmail.ml cookie.ml cgi_fast.ml camlGI.ml template.ml cgi_std.ml cgi_common.ml dbiPool.ml cgi.ml expires.ml cgi_types.ml camlGI.mli cgi_common.mli > .depend
 # ocamlc -dtypes -I +threads -c camlGI.mli
 # ocamlc -pp "camlp4o pa_macro.cmo pr_o.cmo" -a -o camlGI.cma -dtypes -I +threads camlGI.ml
-# File "/tmp/ocamlpp3ac0b5", line 383, characters 14-31:
+# File "/tmp/ocamlpp2a5b1b", line 383, characters 14-31:
 # Warning 3: deprecated: String.unsafe_set
-# File "/tmp/ocamlpp3ac0b5", line 383, characters 32-33:
+# File "/tmp/ocamlpp2a5b1b", line 383, characters 32-33:
 # Error: This expression has type string but an expression was expected of type
 #          bytes
 # make: *** [Makefile:52: camlGI.cma] Error 2
@@ -52,5 +52,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805005911.export"
-31 1533430748 1533430895
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806060240.export"
+31 1533535357 1533535464

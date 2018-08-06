@@ -273,8 +273,8 @@ The following actions will be performed:
 -> installed base-bytes.base
 -> installed base64.2.2.0
 -> installed conf-which.1
--> installed cppo.1.6.4
 -> installed easy-format.1.3.1
+-> installed cppo.1.6.4
 -> installed gen.0.5.1
 -> installed jane-street-headers.v0.11.0
 -> installed magic-mime.1.1.0
@@ -299,17 +299,17 @@ The following actions will be performed:
 -> installed ppx_deriving.4.2.1
 -> installed sexplib0.v0.11.0
 -> installed parsexp.v0.11.0
+-> installed base.v0.11.1
 -> installed sedlex.1.99.4
 -> installed sexplib.v0.11.0
--> installed base.v0.11.1
--> installed cstruct.3.2.1
--> installed cstruct-lwt.3.2.1
--> installed mirage-random.1.1.0
 -> installed spawn.v0.12.0
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
+-> installed cstruct.3.2.1
+-> installed cstruct-lwt.3.2.1
 -> installed io-page.2.0.1
 -> installed io-page-unix.2.0.1
+-> installed mirage-random.1.1.0
 -> installed ppx_cstruct.3.2.1
 -> installed mirage-profile.0.8.2
 -> installed stringext.1.5.0
@@ -320,9 +320,11 @@ The following actions will be performed:
 -> installed rresult.0.5.0
 -> installed typerep.v0.11.0
 -> installed uchar.0.0.2
+-> installed ppxlib.0.2.1
+-> installed fieldslib.v0.11.0
 -> installed fmt.0.8.5
--> installed mirage-device.1.1.0
 -> installed logs.0.6.2
+-> installed mirage-device.1.1.0
 -> installed mirage-clock.1.3.0
 -> installed mirage-flow.1.5.0
 -> installed mirage-clock-lwt.1.3.0
@@ -330,14 +332,12 @@ The following actions will be performed:
 -> installed mirage-time.1.1.0
 -> installed mirage-protocols.1.3.0
 -> installed mirage-time-lwt.1.1.0
--> installed ppxlib.0.2.1
--> installed fieldslib.v0.11.0
--> installed mirage-stack.1.2.0
 -> installed ppx_compare.v0.11.0
 -> installed ppx_driver.v0.11.0
 -> installed ppx_enumerate.v0.11.0
--> installed ppx_here.v0.11.0
 -> installed ppx_fields_conv.v0.11.0
+-> installed ppx_here.v0.11.0
+-> installed mirage-stack.1.2.0
 -> installed ppx_inline_test.v0.11.0
 -> installed ppx_fail.v0.11.0
 -> installed ppx_js_style.v0.11.0
@@ -375,7 +375,7 @@ The following actions will be performed:
 -> installed ppx_jane.v0.11.0
 -> installed splittable_random.v0.11.0
 -> installed core_kernel.v0.11.1
-[ERROR] The compilation of core failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core -j 71".
+[ERROR] The compilation of core failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core -j 47".
 -> installed async_kernel.v0.11.1
 -> installed expect_test_helpers_kernel.v0.11.0
 -> installed protocol_version_header.v0.11.0
@@ -386,10 +386,10 @@ The following actions will be performed:
 #=== ERROR while compiling core.v0.11.2 =======================================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/core.v0.11.2
-# command              ~/.opam/4.06/bin/jbuilder build -p core -j 71
+# command              ~/.opam/4.06/bin/jbuilder build -p core -j 47
 # exit-code            1
-# env-file             ~/.opam/log/core-13-325093.env
-# output-file          ~/.opam/log/core-13-325093.out
+# env-file             ~/.opam/log/core-13-817d4b.env
+# output-file          ~/.opam/log/core-13-817d4b.out
 ### output ###
 #       ocamlc src/unix_time_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -ccopt -D_LARGEFILE64_SOURCE -ccopt -I../../core_kernel/src -o unix_time_stubs.o unix_time_stubs.c)
@@ -632,5 +632,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805005634.export"
-31 1533430591 1533430963
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806060009.export"
+31 1533535206 1533535577

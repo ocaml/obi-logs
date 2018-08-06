@@ -248,7 +248,6 @@ The following actions will be performed:
 -> installed uutf.1.0.1
 -> installed jsonm.1.0.1
 -> installed xml-light.2.4
--> installed yojson.1.4.1
 -> installed ppxlib.0.2.1
 -> installed fieldslib.v0.11.0
 -> installed ppx_compare.v0.11.0
@@ -280,28 +279,29 @@ The following actions will be performed:
 -> installed conduit.1.1.0
 -> installed ppx_protocol_conv.2.0.0
 -> installed cohttp.1.1.0
--> installed ppx_protocol_conv_json.2.0.0
 -> installed variantslib.v0.11.0
 -> installed ppx_protocol_conv_xml_light.2.0.0
+-> installed yojson.1.4.1
 -> installed ppx_variants_conv.v0.11.0
 -> installed bin_prot.v0.11.0
 -> installed ppx_expect.v0.11.0
+-> installed ppx_protocol_conv_json.2.0.0
 -> installed ppx_bin_prot.v0.11.0
 -> installed ppx_jane.v0.11.0
 -> installed splittable_random.v0.11.0
 -> installed core_kernel.v0.11.1
 -> installed async_kernel.v0.11.1
 -> installed protocol_version_header.v0.11.0
-[ERROR] The compilation of core failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core -j 71".
 -> installed async_rpc_kernel.v0.11.0
+[ERROR] The compilation of core failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core -j 47".
 
 #=== ERROR while compiling core.v0.11.2 =======================================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/core.v0.11.2
-# command              ~/.opam/4.06/bin/jbuilder build -p core -j 71
+# command              ~/.opam/4.06/bin/jbuilder build -p core -j 47
 # exit-code            1
-# env-file             ~/.opam/log/core-13-67002e.env
-# output-file          ~/.opam/log/core-13-67002e.out
+# env-file             ~/.opam/log/core-14-67002e.env
+# output-file          ~/.opam/log/core-14-67002e.out
 ### output ###
 #       ocamlc src/md5_stubs.o
 # md5_stubs.c:10:32: warning: '-pedantic' is not an option that controls warnings [-Wpragmas]
@@ -375,6 +375,12 @@ The following actions will be performed:
 # unix_time_stubs.c:49:11: note: in expansion of macro 'caml_alloc_int63'
 #    return (caml_alloc_int63 (((__int64_t)tp.tv_sec * 1000 * 1000 * 1000) + (__int64_t)tp.tv_nsec));
 #            ^~~~~~~~~~~~~~~~
+#       ocamlc src/linux_ext_stubs.o
+# linux_ext_stubs.c: In function 'linux_sendmsg_nonblocking_no_sigpipe_stub':
+# linux_ext_stubs.c:149:46: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+#    struct msghdr msghdr = { NULL, 0, NULL, 0, NULL, 0, 0 };
+#                                               ^~~~
+# linux_ext_stubs.c:149:46: note: (near initialization for 'msghdr.__pad1')
 #       ocamlc src/bigstring_stubs.o
 # bigstring_stubs.c:39:0: warning: "__BYTE_ORDER" redefined
 #  #define __BYTE_ORDER    _BYTE_ORDER
@@ -405,12 +411,6 @@ The following actions will be performed:
 #    struct msghdr msghdr = { NULL, 0, NULL, 0, NULL, 0, 0 };
 #                                               ^~~~
 # bigstring_stubs.c:713:46: note: (near initialization for 'msghdr.__pad1')
-#       ocamlc src/linux_ext_stubs.o
-# linux_ext_stubs.c: In function 'linux_sendmsg_nonblocking_no_sigpipe_stub':
-# linux_ext_stubs.c:149:46: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
-#    struct msghdr msghdr = { NULL, 0, NULL, 0, NULL, 0, 0 };
-#                                               ^~~~
-# linux_ext_stubs.c:149:46: note: (near initialization for 'msghdr.__pad1')
 #       ocamlc src/unix_stubs.o
 # unix_stubs.c:336:2: warning: #warning "_POSIX_SYNCHRONIZED_IO undefined or <= 0; aliasing unix_fdatasync to unix_fsync" [-Wcpp]
 #  #warning "_POSIX_SYNCHRONIZED_IO undefined or <= 0; aliasing unix_fdatasync to unix_fsync"
@@ -518,5 +518,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180805010028.export"
-31 1533430823 1533431165
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806054823.export"
+31 1533534500 1533534757
