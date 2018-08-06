@@ -200,14 +200,14 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/system.cmo support/system.ml
 # ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/urlparse.cmo support/urlparse.ml
 # ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/utils.cmo support/utils.ml
-# + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/hash.cmo support/hash.ml
-# File "support/hash.cppo.ml", line 7, characters 0-11:
-# Warning 44: this open statement shadows the module identifier String (which is later used)
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/locale.cmo support/locale.ml
 # File "support/locale.ml", line 5, characters 0-11:
 # Warning 44: this open statement shadows the module identifier String (which is later used)
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/urlparse.cmo support/urlparse.ml
 # File "support/urlparse.ml", line 5, characters 0-11:
+# Warning 44: this open statement shadows the module identifier String (which is later used)
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/hash.cmo support/hash.ml
+# File "support/hash.cppo.ml", line 7, characters 0-11:
 # Warning 44: this open statement shadows the module identifier String (which is later used)
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/argparse.cmo support/argparse.ml
 # File "support/argparse.ml", line 7, characters 0-11:
@@ -398,5 +398,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180804201928.export"
-31 1533413950 1533414083
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180806051735.export"
+31 1533532640 1533532696
