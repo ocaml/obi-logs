@@ -34,13 +34,13 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/humane-re.0.0.1
 # command              /usr/bin/make configure-no-tests
 # exit-code            2
-# env-file             ~/.opam/log/humane-re-16-dc82fa.env
-# output-file          ~/.opam/log/humane-re-16-dc82fa.out
+# env-file             ~/.opam/log/humane-re-11-dc82fa.env
+# output-file          ~/.opam/log/humane-re-11-dc82fa.out
 ### output ###
 # oasis setup
 # ocaml setup.ml -configure
 # ocamlfind: Package `oUnit' not found
-# W: Field 'pkg_ounit' is not set: Command ''/home/opam/.opam/4.05/bin/ocamlfind' query -format %d oUnit > '/tmp/oasis-cb366b.txt'' terminated with error code 2
+# W: Field 'pkg_ounit' is not set: Command ''/home/opam/.opam/4.05/bin/ocamlfind' query -format %d oUnit > '/tmp/oasis-4a83b9.txt'' terminated with error code 2
 # E: Cannot find findlib package oUnit
 # E: Failure("1 configuration error")
 # Makefile:8: recipe for target 'configure-no-tests' failed
@@ -62,5 +62,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805034647.export"
-31 1533440804 1533440865
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805231913.export"
+31 1533511151 1533511200

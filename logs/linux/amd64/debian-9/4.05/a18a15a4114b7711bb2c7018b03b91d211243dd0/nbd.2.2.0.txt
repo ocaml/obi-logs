@@ -65,6 +65,7 @@ The following actions will be performed:
 [lwt.2.7.1] found in cache
 [mirage-block-unix.1.2.2] found in cache
 [mirage-types.2.8.0] found in cache
+[nbd.2.2.0] found in cache
 [ocaml-compiler-libs.v0.11.0] found in cache
 [ocaml-migrate-parsetree.1.0.11] found in cache
 [ocamlbuild.0.12.0] found in cache
@@ -75,7 +76,6 @@ The following actions will be performed:
 [ppx_deriving.4.2.1] found in cache
 [ppx_sexp_conv.v0.11.2] found in cache
 [ppx_tools.5.0+4.05.0] found in cache
-[nbd.2.2.0] downloaded from https://github.com/xapi-project/nbd/archive/v2.2.0/nbd-2.2.0.tar.gz
 [ppx_tools_versioned.5.2] found in cache
 [ppxlib.0.3.0] found in cache
 [re.1.7.3] found in cache
@@ -111,34 +111,34 @@ The following actions will be performed:
 -> installed parsexp.v0.11.0
 -> installed sexplib.v0.11.0
 -> installed base.v0.11.1
--> installed stdio.v0.11.0
 -> installed cstruct.2.4.1
+-> installed stdio.v0.11.0
 -> installed io-page.1.6.1
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
--> installed ppxlib.0.3.0
 -> installed cmdliner.1.0.2
+-> installed ppxlib.0.3.0
 -> installed ppx_sexp_conv.v0.11.2
 -> installed ipaddr.2.8.0
--> installed uri.1.9.7
 -> installed mirage-types.2.8.0
 -> installed mirage-types-lwt.2.8.0
+-> installed uri.1.9.7
 -> installed mirage-block-unix.1.2.2
-[ERROR] The compilation of nbd failed at "/home/opam/.opam/4.05/bin/jbuilder build -p nbd -j 71".
+[ERROR] The compilation of nbd failed at "/home/opam/.opam/4.05/bin/jbuilder build -p nbd -j 47".
 
 #=== ERROR while compiling nbd.2.2.0 ==========================================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.05/.opam-switch/build/nbd.2.2.0
-# command              ~/.opam/4.05/bin/jbuilder build -p nbd -j 71
+# command              ~/.opam/4.05/bin/jbuilder build -p nbd -j 47
 # exit-code            1
-# env-file             ~/.opam/log/nbd-11-32d311.env
-# output-file          ~/.opam/log/nbd-11-32d311.out
+# env-file             ~/.opam/log/nbd-11-b3b8f9.env
+# output-file          ~/.opam/log/nbd-11-b3b8f9.out
 ### output ###
 #        ocaml (internal)
-# File "lib_test/jbuild", line 11, characters 51-53:
+# File "lwt/jbuild", line 11, characters 51-53:
 # Warning 14: illegal backslash escape in string.
 #        ocaml (internal)
-# File "lwt/jbuild", line 11, characters 51-53:
+# File "lib_test/jbuild", line 11, characters 51-53:
 # Warning 14: illegal backslash escape in string.
 #        ocaml (internal)
 # File "lib/jbuild", line 11, characters 51-53:
@@ -195,5 +195,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805033121.export"
-31 1533439870 1533440060
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805233854.export"
+31 1533512313 1533512400

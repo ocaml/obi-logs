@@ -300,7 +300,7 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/sig.cmo tools/ocamlTypes/sig.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmi tools/ocamlTypes/codegen.mli
 # ocamlfind ocamldep -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -modules tools/ocamlTypes/codegen.ml > tools/ocamlTypes/codegen.ml.depends
-# ocamlfind ocamldep -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -package bytes -modules tools/ocamlTypes/parse.ml > tools/ocamlTypes/parse.ml.depends
+# ocamlfind ocamldep -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -package bytes -modules tools/ocamlTypes/parse.ml > tools/ocamlTypes/parse.ml.depends
 # ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/print.ml > tools/ocamlTypes/print.ml.depends
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/print.cmo tools/ocamlTypes/print.ml
 # ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/process.ml > tools/ocamlTypes/process.ml.depends
@@ -308,7 +308,7 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/type_graph.cmi tools/ocamlTypes/type_graph.mli
 # ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/type_graph.ml > tools/ocamlTypes/type_graph.ml.depends
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmo tools/ocamlTypes/codegen.ml
-# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmo tools/ocamlTypes/parse.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmo tools/ocamlTypes/parse.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/process.cmo tools/ocamlTypes/process.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/type_graph.cmo tools/ocamlTypes/type_graph.ml
 # ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I tools/bridgen -I clang -I tools -o tools/bridgen/codegen.cmo tools/bridgen/codegen.ml
@@ -342,8 +342,8 @@ The following actions will be performed:
 # + ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -for-pack OcamlTypes -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmx tools/ocamlTypes/codegen.ml
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
-# ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
-# + ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
+# ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
+# + ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4.quotations -syntax camlp4o -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmx tools/ocamlTypes/parse.ml
 # File "_none_", line 1:
 # Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
 # ocamlfind ocamlopt -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -for-pack OcamlTypes -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/process.cmx tools/ocamlTypes/process.ml
@@ -362,7 +362,7 @@ The following actions will be performed:
 # File "tools/bridgen/bridgen.ml", line 35, characters 37-54:
 # Warning 3: deprecated: String.capitalize
 # Use String.capitalize_ascii instead.
-# ocamlfind ocamlopt -linkpkg -g -package dolog -package batteries -package camlp4.fulllib -package deriving -package bytes -I tools/bridgen -I tools util.cmx tools/bridgen/codegen.cmx tools/ocamlTypes.cmx tools/bridgen/bridgen.cmx -o tools/bridgen/bridgen.native
+# ocamlfind ocamlopt -linkpkg -g -package dolog -package camlp4.fulllib -package deriving -package batteries -package bytes -I tools/bridgen -I tools util.cmx tools/bridgen/codegen.cmx tools/ocamlTypes.cmx tools/bridgen/bridgen.cmx -o tools/bridgen/bridgen.native
 # tools/bridgen/bridgen.native plugin/c++ ast_bridge clang/clang/astBridge.ml
 # sed 's/deriving (Show)//g;s/= .*Bridge.* =/=/g' clang/clang/sloc.ml > clang/clang/slocBridge.ml
 # tools/bridgen/bridgen.native plugin/c++ sloc_bridge clang/clang/slocBridge.ml
@@ -431,5 +431,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805034455.export"
-31 1533440654 1533440936
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805233946.export"
+31 1533512346 1533512613

@@ -337,8 +337,8 @@ The following actions will be performed:
 -> installed ppx_ast.v0.9.1
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
--> installed cmdliner.1.0.2
 -> installed base.v0.9.4
+-> installed cmdliner.1.0.2
 -> installed react.1.2.1
 -> installed lwt_react.1.1.1
 -> installed stdio.v0.9.1
@@ -353,6 +353,7 @@ The following actions will be performed:
 -> installed fieldslib.v0.9.0
 -> installed ppx_here.v0.9.1
 -> installed ppx_let.v0.9.0
+-> installed utop.1.19.3
 -> installed ppx_metaquot.v0.9.0
 -> installed ppx_fail.v0.9.0
 -> installed ppx_inline_test.v0.9.2
@@ -374,9 +375,8 @@ The following actions will be performed:
 -> installed configurator.v0.9.1
 -> installed ppx_typerep_conv.v0.9.0
 -> installed uri.1.9.7
--> installed utop.1.19.3
--> installed ppx_custom_printf.v0.9.0
 -> installed variantslib.v0.9.0
+-> installed ppx_custom_printf.v0.9.0
 -> installed ppx_variants_conv.v0.9.0
 -> installed bin_prot.v0.9.2
 -> installed ppx_expect.v0.9.0
@@ -414,6 +414,16 @@ The following actions will be performed:
 # /home/opam/.opam/4.05/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-microx -package bap -modules plugins/propagate_taint/propagator.ml > plugins/propagate_taint/propagator.ml.depends
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-microx -package bap -I plugins/propagate_taint -o plugins/propagate_taint/propagate_taint_main.cmo plugins/propagate_taint/propagate_taint_main.ml
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-microx -package bap -I plugins/propagate_taint -o plugins/propagate_taint/propagator.cmo plugins/propagate_taint/propagator.ml
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-microx -package bap -I plugins/propagate_taint -o plugins/propagate_taint/propagator.cmo plugins/propagate_taint/propagator.ml
+# File "plugins/propagate_taint/propagator.ml", line 4, characters 5-15:
+# Warning 3: deprecated: module Microx
+# [since 2017-04] use Primus instead
+# File "plugins/propagate_taint/propagator.ml", line 7, characters 12-23:
+# Warning 3: deprecated: module Bap.Std.Monad
+# [since 2018-03] use the `monads' library instead of this module
+# File "plugins/propagate_taint/propagator.ml", line 216, characters 3-19:
+# Warning 3: deprecated: module Bap.Std.Monad
+# [since 2018-03] use the `monads' library instead of this module
 # + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-microx -package bap -I plugins/propagate_taint -o plugins/propagate_taint/propagate_taint_main.cmo plugins/propagate_taint/propagate_taint_main.ml
 # File "plugins/propagate_taint/propagate_taint_main.ml", line 5, characters 5-15:
 # Warning 3: deprecated: module Microx
@@ -518,5 +528,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805033110.export"
-31 1533439848 1533440555
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805223848.export"
+31 1533508702 1533509668

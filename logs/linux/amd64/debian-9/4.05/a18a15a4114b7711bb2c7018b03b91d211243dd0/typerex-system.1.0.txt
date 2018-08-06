@@ -194,63 +194,58 @@ The following actions will be performed:
 #   "/home/opam/.opam/4.05/lib/ocaml/camlp4"
 #   Disabling package "camlp4fulllib".
 #     (from "/home/opam/.opam/4.05/lib/ocaml/ocp-build/camlp4.ocp")
-# 0.02s _obuild/ocplib-bz2/bz2.mlimods                                   [ done ]
-# 0.02s _obuild/ocplib-bz2/bz2.mlmods                                    [ done ]
-# 0.02s _obuild/ocplib-zlib/zlib.mlimods                                 [ done ]
-# 0.02s _obuild/ocplib-zlib/zlib.mlmods                                  [ done ]
-# 0.02s _obuild/ocplib-zlib/gzip.mlimods                                 [ done ]
-# 0.02s _obuild/ocplib-zlib/gzip.mlmods                                  [ done ]
-# 0.02s _obuild/ocplib-zlib/zip.mlimods                                  [ done ]
-# 0.02s _obuild/ocplib-zlib/zip.mlmods                                   [ done ]
-# 0.02s _obuild/ocplib-digest/checksum.mlmods                            [ done ]
+# 0.01s _obuild/ocplib-bz2/bz2.mlmods                                    [ done ]
+# 0.01s _obuild/ocplib-bz2/bz2.mlimods                                   [ done ]
+# 0.01s _obuild/ocplib-zlib/zlib.mlimods                                 [ done ]
+# 0.01s _obuild/ocplib-zlib/zlib.mlmods                                  [ done ]
+# 0.01s _obuild/ocplib-zlib/gzip.mlimods                                 [ done ]
+# 0.01s _obuild/ocplib-zlib/gzip.mlmods                                  [ done ]
+# 0.01s _obuild/ocplib-zlib/zip.mlimods                                  [ done ]
+# 0.01s _obuild/ocplib-digest/checksum.mlmods                            [ done ]
+# 0.01s _obuild/ocplib-zlib/zlib.cmi                                     [ done ]
+# 0.02s _obuild/ocplib-bz2/bz2.cmi                                       [ done ]
 # 0.02s _obuild/ocplib-digest/base16.mlimods                             [ done ]
-# 0.02s _obuild/ocplib-digest/base16.mlmods                              [ done ]
-# 0.02s _obuild/ocplib-digest/base32.mlimods                             [ done ]
-# 0.02s _obuild/ocplib-digest/base32.mlmods                              [ done ]
-# 0.02s _obuild/ocplib-digest/base64.mlimods                             [ done ]
-# 0.02s _obuild/ocplib-digest/base64.mlmods                              [ done ]
-# 0.02s _obuild/ocplib-digest/base6427.mlimods                           [ done ]
-# 0.02s _obuild/ocplib-digest/base6427.mlmods                            [ done ]
-# 0.02s _obuild/ocplib-digest/makeDigest.mlmods                          [ done ]
-# 0.01s _obuild/ocplib-digest/md4.mlimods                                [ done ]
-# 0.01s _obuild/ocplib-digest/md4.mlmods                                 [ done ]
-# 0.02s _obuild/ocplib-zlib/zlibstubs.o                                  [failed]
+# 0.01s _obuild/ocplib-digest/base16.mlmods                              [ done ]
+# 0.03s _obuild/ocplib-zlib/zip.mlmods                                   [ done ]
+# 0.03s _obuild/ocplib-zlib/gzip.cmi                                     [ done ]
+# 0.02s _obuild/ocplib-bz2/bz2.cmo                                       [ done ]
+# 0.03s _obuild/ocplib-zlib/zip.cmi                                      [ done ]
+# 0.03s _obuild/ocplib-digest/checksum.cmo                               [ done ]
+# -- stderr for ./_obuild/ocplib-digest/checksum.cmo --
+# File "./libs/ocplib-digest/checksum.ml", line 39, characters 0-72:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# 0.01s _obuild/ocplib-digest/base16.cmi                                 [ done ]
+# 0.01s _obuild/ocplib-bz2/ocplib-bz2.cma                                [ done ]
+# 0.04s _obuild/ocplib-zlib/zlib.cmo                                     [ done ]
+# 0.08s _obuild/ocplib-zlib/zlibstubs.o                                  [failed]
 # [52.1] Command failed: '/home/opam/.opam/4.05/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.05/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.05/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/zlibstubs.c'
 # -- stderr for ./_obuild/ocplib-zlib/zlibstubs.o --
 # ./libs/ocplib-zlib/zlibstubs.c:15:18: fatal error: zlib.h: No such file or directory
 #  #include <zlib.h>
 #                   ^
 # compilation terminated.
-# 0.01s _obuild/ocplib-digest/md5.mlimods                                [ done ]
-# 0.01s _obuild/ocplib-digest/md5.mlmods                                 [ done ]
-# 0.01s _obuild/ocplib-digest/sha1.mlimods                               [ done ]
-# 0.01s _obuild/ocplib-digest/sha1.mlmods                                [ done ]
-# 0.01s _obuild/ocplib-digest/md5HMac.mlmods                             [ done ]
-# 0.01s _obuild/ocplib-digest/sha1HMac.mlimods                           [ done ]
-# 0.01s _obuild/ocplib-digest/sha1HMac.mlmods                            [ done ]
-# 0.01s _obuild/ocplib-bz2/bz2.cmi                                       [ done ]
-# 0.01s _obuild/ocplib-zlib/gzip.cmi                                     [ done ]
-# 0.01s _obuild/ocplib-zlib/zip.cmi                                      [ done ]
-# 0.01s _obuild/ocplib-digest/base16.cmi                                 [ done ]
-# 0.02s _obuild/ocplib-zlib/zlib.cmi                                     [ done ]
-# 0.01s _obuild/ocplib-digest/base32.cmi                                 [ done ]
-# 0.01s _obuild/ocplib-digest/base64.cmi                                 [ done ]
-# 0.01s _obuild/ocplib-digest/base6427.cmi                               [ done ]
-# 0.03s _obuild/ocplib-digest/checksum.cmo                               [ done ]
-# -- stderr for ./_obuild/ocplib-digest/checksum.cmo --
-# File "./libs/ocplib-digest/checksum.ml", line 39, characters 0-72:
-# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
-# 0.06s _obuild/ocplib-bz2/c_bz.o                                        [failed]
+# 0.02s _obuild/ocplib-digest/base32.mlmods                              [ done ]
+# 0.07s _obuild/ocplib-bz2/bz2.cmx                                       [ done ]
+# 0.04s _obuild/ocplib-digest/base16.cmo                                 [ done ]
+# 0.05s _obuild/ocplib-digest/base32.mlimods                             [ done ]
+# 0.11s _obuild/ocplib-bz2/c_bz.o                                        [failed]
 # [23.1] Command failed: '/home/opam/.opam/4.05/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.05/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.05/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/c_bz.c'
 # -- stderr for ./_obuild/ocplib-bz2/c_bz.o --
 # ./libs/ocplib-zlib/c_bz.c:27:19: fatal error: bzlib.h: No such file or directory
 #  #include <bzlib.h>
 #                    ^
 # compilation terminated.
-# 0.15s _obuild/ocplib-digest/sha1_c.o                                   [ done ]
-# 0.15s _obuild/ocplib-digest/md4_c.o                                    [ done ]
-# 0.21s _obuild/ocplib-digest/md5_c.o                                    [ done ]
-# 4 errors in 0.39s. 41 jobs (parallelism 2.9x), 42 files generated.
+# 0.07s _obuild/ocplib-zlib/gzip.cmo                                     [ done ]
+# 0.07s _obuild/ocplib-digest/checksum.cmx                               [ done ]
+# -- stderr for ./_obuild/ocplib-digest/checksum.cmx --
+# File "./libs/ocplib-digest/checksum.ml", line 39, characters 0-72:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# 0.09s _obuild/ocplib-zlib/zlib.cmx                                     [ done ]
+# 0.07s _obuild/ocplib-zlib/zip.cmo                                      [ done ]
+# 0.21s _obuild/ocplib-digest/sha1_c.o                                   [ done ]
+# 0.24s _obuild/ocplib-digest/md4_c.o                                    [ done ]
+# 0.28s _obuild/ocplib-digest/md5_c.o                                    [ done ]
+# 4 errors in 0.46s. 33 jobs (parallelism 3.8x), 38 files generated.
 # Error log:
 # Error:
 # [52.1] '/home/opam/.opam/4.05/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.05/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.05/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/zlibstubs.c'
@@ -291,5 +286,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805032235.export"
-31 1533439353 1533439390
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180805230946.export"
+31 1533510582 1533510633
