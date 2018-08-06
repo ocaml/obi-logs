@@ -514,7 +514,6 @@ The following actions will be performed:
 # /home/opam/.opam/4.04/bin/ocamlfind ocamldep -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-llvm -package bap-c -package bap-abi -package bap -modules plugins/x86/x86_tools_vector.ml > plugins/x86/x86_tools_vector.ml.depends
 # /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-llvm -package bap-c -package bap-abi -package bap -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_backend.cmo plugins/x86/x86_backend.ml
 # /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-llvm -package bap-c -package bap-abi -package bap -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_prefix.cmo plugins/x86/x86_prefix.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-llvm -package bap-c -package bap-abi -package bap -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_abi.cmo plugins/x86/x86_abi.ml
 # + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package ppx_jane -package core_kernel -package cmdliner -package bap-llvm -package bap-c -package bap-abi -package bap -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_prefix.cmo plugins/x86/x86_prefix.ml
 # File "plugins/x86/x86_prefix.ml", line 1:
 # Error: The implementation plugins/x86/x86_prefix.ml
@@ -644,5 +643,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805054150.export"
-31 1533447673 1533448811
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180806022106.export"
+31 1533522034 1533522788

@@ -256,8 +256,11 @@ The following actions will be performed:
 -> installed ppx_deriving.4.2.1
 -> installed ppx_tools_versioned.5.2
 -> installed ppx_optcomp.113.33.01+4.03
--> installed ppx_driver.113.33.02+4.03
 -> installed lwt.3.3.0
+-> installed sexplib.113.33.00+4.03
+-> installed ppx_driver.113.33.02+4.03
+-> installed cstruct.3.2.1
+-> installed hex.1.2.0
 -> installed ppx_here.113.33.00
 -> installed ppx_inline_test.113.33.00+4.03
 -> installed ppx_fail.113.33.00+4.03
@@ -268,20 +271,17 @@ The following actions will be performed:
 -> installed ppx_bin_prot.113.33.00+4.03
 -> installed ppx_compare.113.33.00+4.03
 -> installed ppx_enumerate.113.33.00+4.03
--> installed sexplib.113.33.00+4.03
--> installed cstruct.3.2.1
--> installed hex.1.2.0
 -> installed ppx_fields_conv.113.33.00+4.03
 -> installed ssl.0.5.5
--> installed stringext.1.5.0
--> installed topkg.0.9.1
--> installed cmdliner.1.0.2
 -> installed ppx_sexp_conv.113.33.01+4.03
--> installed ipaddr.2.7.2
 -> installed ppx_assert.113.33.00
 -> installed ppx_custom_printf.113.33.00+4.03
--> installed ppx_sexp_message.113.33.00+4.03
 -> installed ppx_sexp_value.113.33.00+4.03
+-> installed stringext.1.5.0
+-> installed ppx_sexp_message.113.33.00+4.03
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed ipaddr.2.7.2
 -> installed rresult.0.5.0
 -> installed type_conv.113.00.02
 -> installed typerep.113.24.00
@@ -317,8 +317,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/xen-api-client.0.9.8
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/xen-api-client-11-70bec8.env
-# output-file          ~/.opam/log/xen-api-client-11-70bec8.out
+# env-file             ~/.opam/log/xen-api-client-10-70bec8.env
+# output-file          ~/.opam/log/xen-api-client-10-70bec8.out
 ### output ###
 # ocamlopt.opt -o setup.bin setup.ml || ocamlopt -o setup.bin setup.ml || ocamlc -o setup.bin setup.ml
 # File "setup.ml", line 318, characters 20-36:
@@ -585,5 +585,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180805060013.export"
-31 1533448803 1533449421
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180806032756.export"
+31 1533526061 1533526845
