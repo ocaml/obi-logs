@@ -20,9 +20,9 @@ The following actions will be performed:
 # env-file             ~/.opam/log/ocamlformat_support-11-05296d.env
 # output-file          ~/.opam/log/ocamlformat_support-11-05296d.out
 ### output ###
-#     ocamlopt .format_.objs/format___Format.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmx -c -impl format.ml)
-# File "format.ml", line 1248, characters 31-34:
+#     ocamlopt .format_.objs/format_.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -no-alias-deps -open Format___ -o .format_.objs/format_.cmx -c -impl format_.ml)
+# File "format_.ml", line 1372, characters 31-34:
 # Error: This expression has type ('a, 'b) CamlinternalFormat.acc
 #        but an expression was expected of type formatter
 #       ocamlc .format_.objs/format_.{cmo,cmt} (exit 2)
@@ -30,14 +30,14 @@ The following actions will be performed:
 # File "format_.ml", line 1372, characters 31-34:
 # Error: This expression has type ('a, 'b) CamlinternalFormat.acc
 #        but an expression was expected of type formatter
-#       ocamlc .format_.objs/format___Format.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I .format_.objs -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmo -c -impl format.ml)
+#     ocamlopt .format_.objs/format___Format.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmx -c -impl format.ml)
 # File "format.ml", line 1248, characters 31-34:
 # Error: This expression has type ('a, 'b) CamlinternalFormat.acc
 #        but an expression was expected of type formatter
-#     ocamlopt .format_.objs/format_.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -no-alias-deps -open Format___ -o .format_.objs/format_.cmx -c -impl format_.ml)
-# File "format_.ml", line 1372, characters 31-34:
+#       ocamlc .format_.objs/format___Format.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I .format_.objs -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmo -c -impl format.ml)
+# File "format.ml", line 1248, characters 31-34:
 # Error: This expression has type ('a, 'b) CamlinternalFormat.acc
 #        but an expression was expected of type formatter
 
@@ -49,4 +49,4 @@ The following actions will be performed:
 +- 
 - No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-31 1533437517 1533437522
+31 1533515120 1533515124
