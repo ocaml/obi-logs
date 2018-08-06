@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 imaplet-lwt.0.1.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for imaplet-lwt.0.1.8: The following dependencies couldn't be met:
+          - imaplet-lwt -> x509 < 0.3.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - imaplet-lwt -> x509 < 0.3.0 -> nocrypto < 0.2.0 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=imaplet-lwt.0.1.8 returned 20
+20 1533587173 1533587176
