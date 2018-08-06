@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 stog.0.12.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for stog.0.12.0: The following dependencies couldn't be met:
+          - stog -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=stog.0.12.0 returned 20
+20 1533591687 1533591690

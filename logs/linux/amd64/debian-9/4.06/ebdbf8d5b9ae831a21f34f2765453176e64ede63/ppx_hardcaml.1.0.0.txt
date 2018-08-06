@@ -1,0 +1,199 @@
+$ opam depext -iy -j 2 ppx_hardcaml.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_traverse_builtins   v0.10.0    [required by ppx_core]
+  - install result                  1.3        [required by ocaml-migrate-parsetree]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_hardcaml]
+  - install base-bytes              base       [required by hardcaml, ounit]
+  - install ocamlbuild              0.12.0     [required by ppx_hardcaml]
+  - install num                     1.1        [required by hardcaml]
+  - install ocaml-compiler-libs     v0.10.0    [required by ppx_core]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_driver]
+  - install ounit                   2.0.8      [required by ppx_hardcaml]
+  - install ocamlmod                0.0.9      [required by oasis]
+  - install ocamlify                0.0.1      [required by oasis]
+  - install js-build-tools          113.33.04  [required by ppx_hardcaml]
+  - install camlp4                  4.06+1     [required by hardcaml]
+  - install sexplib                 v0.10.0    [required by base, stdio]
+  - install ppx_ast                 v0.10.0    [required by ppx_core]
+  - install oasis                   0.4.11     [required by ppx_hardcaml]
+  - install hardcaml                1.1.1      [required by ppx_hardcaml]
+  - install base                    v0.10.0    [required by ppx_core]
+  - install stdio                   v0.10.0    [required by ppx_core]
+  - install ppx_core                v0.10.0    [required by ppx_hardcaml]
+  - install ppx_optcomp             v0.10.0    [required by ppx_driver]
+  - install ppx_driver              v0.10.4    [required by ppx_hardcaml]
+  - install ppx_hardcaml            1.0.0
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.10.0] found in cache
+[camlp4.4.06+1] found in cache
+[hardcaml.1.1.1] found in cache
+[js-build-tools.113.33.04] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.10.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ounit.2.0.8] found in cache
+[ppx_ast.v0.10.0] found in cache
+[ppx_core.v0.10.0] found in cache
+[ppx_driver.v0.10.4] found in cache
+[ppx_hardcaml.1.0.0] found in cache
+[ppx_optcomp.v0.10.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_traverse_builtins.v0.10.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.10.0] found in cache
+[stdio.v0.10.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.10.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ppx_traverse_builtins.v0.10.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed js-build-tools.113.33.04
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed ounit.2.0.8
+-> installed ppx_ast.v0.10.0
+-> installed sexplib.v0.10.0
+-> installed base.v0.10.0
+-> installed camlp4.4.06+1
+-> installed stdio.v0.10.0
+-> installed ppx_core.v0.10.0
+-> installed ppx_optcomp.v0.10.0
+-> installed ppx_driver.v0.10.4
+-> installed hardcaml.1.1.1
+[ERROR] The compilation of ppx_hardcaml failed at "/usr/bin/make".
+
+#=== ERROR while compiling ppx_hardcaml.1.0.0 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ppx_hardcaml.1.0.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ppx_hardcaml-12-465f44.env
+# output-file          ~/.opam/log/ppx_hardcaml-12-465f44.out
+### output ###
+# ocamlfind ocamlopt -o setup.exe -linkpkg -package ocamlbuild,oasis.dynrun setup.ml || \
+#   ocamlfind ocamlc -o setup.exe -linkpkg -package ocamlbuild,oasis.dynrun setup.ml || true
+# for f in setup.*; do [ $f = setup.exe -o $f = setup.ml ] || rm -f $f; done
+# ./setup.exe -configure 
+# 
+# Configuration:
+# ocamlfind: ........................................... /home/opam/.opam/4.06/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.06/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.06/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.06/bin/ocamlbuild
+# Package name: ........................................ ppx_hardcaml
+# Package version: ..................................... 1.3.2
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.06.1
+# standard_library_default: ............................ /home/opam/.opam/4.06/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.06/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.06/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ......................................
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: .........................
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_compiler_libs_common: ............................ /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# pkg_ppx_tools: ....................................... /home/opam/.opam/4.06/lib/ppx_tools
+# pkg_ppx_tools_metaquot: .............................. /home/opam/.opam/4.06/lib/ppx_tools
+# pkg_ppx_core: ........................................ /home/opam/.opam/4.06/lib/ppx_core
+# pkg_ppx_driver: ...................................... /home/opam/.opam/4.06/lib/ppx_driver
+# 
+# ./setup.exe -build 
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package js-build-tools.ocamlbuild_goodies -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package js-build-tools.ocamlbuild_goodies -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind: Package `ppx_driver.ocamlbuild' not found
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/ppx_hardcaml.cma src/ppx_hardcaml.cmxa src/ppx_hardcaml.a src/ppx_hardcaml.cmxs as_ppx/ppx.native -use-ocamlfind -plugin-tags 'package(ppx_driver.ocamlbuild), package(js-build-tools.ocamlbuild_goodies)' -tag debug' terminated with error code 10")
+# Makefile:16: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_hardcaml 1.0.0
++- 
++- The following changes have been performed
+| - install base                    v0.10.0
+| - install base-bytes              base
+| - install camlp4                  4.06+1
+| - install hardcaml                1.1.1
+| - install js-build-tools          113.33.04
+| - install num                     1.1
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.10.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install ounit                   2.0.8
+| - install ppx_ast                 v0.10.0
+| - install ppx_core                v0.10.0
+| - install ppx_driver              v0.10.4
+| - install ppx_optcomp             v0.10.0
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_traverse_builtins   v0.10.0
+| - install result                  1.3
+| - install sexplib                 v0.10.0
+| - install stdio                   v0.10.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806211625.export"
+31 1533590183 1533590320
