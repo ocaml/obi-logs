@@ -6,8 +6,6 @@ m4
 # The following new OS packages need to be installed: gcc-fortran
 The following command needs to be run through "sudo":
     zypper --non-interactive install gcc-fortran
-Retrieving repository 'OSS Update' metadata [...done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -19,13 +17,13 @@ The following 4 NEW packages are going to be installed:
 Overall download size: 6.9 MiB. Already cached: 0 B. After the operation, additional 31.0 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libquadmath0-7.3.1+r258812-10.1.x86_64 (1/4), 140.9 KiB (251.1 KiB unpacked)
-Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [done]
+Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [.done]
 Retrieving package libgfortran3-6.2.1+r239768-6.19.x86_64 (2/4), 265.4 KiB (  1.2 MiB unpacked)
-Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [.done (3.0 MiB/s)]
+Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [done]
 Retrieving package gcc48-fortran-4.8.5-35.1.x86_64 (3/4),   6.5 MiB ( 29.6 MiB unpacked)
-Retrieving: gcc48-fortran-4.8.5-35.1.x86_64.rpm [done]
+Retrieving: gcc48-fortran-4.8.5-35.1.x86_64.rpm [.done (19.9 MiB/s)]
 Retrieving package gcc-fortran-4.8-11.16.x86_64 (4/4),   4.7 KiB (    0   B unpacked)
-Retrieving: gcc-fortran-4.8-11.16.x86_64.rpm [.done (7.9 KiB/s)]
+Retrieving: gcc-fortran-4.8-11.16.x86_64.rpm [done]
 Checking for file conflicts: [....done]
 (1/4) Installing: libquadmath0-7.3.1+r258812-10.1.x86_64 [.......done]
 (2/4) Installing: libgfortran3-6.2.1+r239768-6.19.x86_64 [...........done]
@@ -207,5 +205,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804220049.export"
-31 1533419668 1533420139
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806015821.export"
+31 1533520277 1533520793

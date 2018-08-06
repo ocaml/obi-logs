@@ -6,8 +6,6 @@ m4
 # The following new OS packages need to be installed: gcc-fortran
 The following command needs to be run through "sudo":
     zypper --non-interactive install gcc-fortran
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -19,7 +17,7 @@ The following 4 NEW packages are going to be installed:
 Overall download size: 6.9 MiB. Already cached: 0 B. After the operation, additional 31.0 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libquadmath0-7.3.1+r258812-10.1.x86_64 (1/4), 140.9 KiB (251.1 KiB unpacked)
-Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [.done (7.9 KiB/s)]
+Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [.done (5.3 KiB/s)]
 Retrieving package libgfortran3-6.2.1+r239768-6.19.x86_64 (2/4), 265.4 KiB (  1.2 MiB unpacked)
 Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [done]
 Retrieving package gcc48-fortran-4.8.5-35.1.x86_64 (3/4),   6.5 MiB ( 29.6 MiB unpacked)
@@ -207,5 +205,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804215236.export"
-31 1533419112 1533419648
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806014932.export"
+31 1533519721 1533520263

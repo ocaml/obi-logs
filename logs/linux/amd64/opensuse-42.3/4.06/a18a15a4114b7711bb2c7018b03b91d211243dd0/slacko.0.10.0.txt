@@ -7,8 +7,6 @@ which
 # The following new OS packages need to be installed: libopenssl-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libopenssl-devel
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -20,7 +18,7 @@ The following NEW package is going to be installed:
 Overall download size: 276.5 KiB. Already cached: 0 B. After the operation, additional 1.7 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libopenssl-devel-1.0.2j-25.1.x86_64 (1/1), 276.5 KiB (  1.7 MiB unpacked)
-Retrieving: libopenssl-devel-1.0.2j-25.1.x86_64.rpm [.done]
+Retrieving: libopenssl-devel-1.0.2j-25.1.x86_64.rpm [done]
 Checking for file conflicts: [....done]
 (1/1) Installing: libopenssl-devel-1.0.2j-25.1.x86_64 [............done]
 # OS packages installation successful
@@ -242,5 +240,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804221157.export"
-31 1533420273 1533420820
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806012457.export"
+31 1533518323 1533518808

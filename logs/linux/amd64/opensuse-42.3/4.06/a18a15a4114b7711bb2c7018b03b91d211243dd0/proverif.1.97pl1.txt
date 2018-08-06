@@ -6,8 +6,6 @@ m4
 # The following new OS packages need to be installed: graphviz
 The following command needs to be run through "sudo":
     zypper --non-interactive install graphviz
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -31,7 +29,7 @@ Retrieving: libSM6-1.2.2-8.3.x86_64.rpm [done]
 Retrieving package libXt6-1.1.5-4.3.x86_64 (6/9), 152.7 KiB (407.6 KiB unpacked)
 Retrieving: libXt6-1.1.5-4.3.x86_64.rpm [done]
 Retrieving package libXmu6-1.1.2-8.3.x86_64 (7/9),  45.3 KiB (105.0 KiB unpacked)
-Retrieving: libXmu6-1.1.2-8.3.x86_64.rpm [.done (7.9 KiB/s)]
+Retrieving: libXmu6-1.1.2-8.3.x86_64.rpm [done]
 Retrieving package libXaw7-1.0.13-5.3.1.x86_64 (8/9), 166.6 KiB (457.8 KiB unpacked)
 Retrieving: libXaw7-1.0.13-5.3.1.x86_64.rpm [done]
 Retrieving package graphviz-2.38.0-9.1.x86_64 (9/9),   2.0 MiB ( 61.2 MiB unpacked)
@@ -281,5 +279,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804224738.export"
-31 1533422453 1533422873
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806011903.export"
+31 1533518053 1533518365

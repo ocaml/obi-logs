@@ -8,8 +8,6 @@ which
 # The following new OS packages need to be installed: libcurl-devel pcre-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install libcurl-devel pcre-devel
-Retrieving repository 'OSS Update' metadata [......done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -29,7 +27,7 @@ Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (4/6),  24.0 KiB ( 34.6 KiB unpacked)
 Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (5/6),  15.7 KiB ( 10.2 KiB unpacked)
-Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
+Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [.done (7.9 KiB/s)]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (6/6), 224.5 KiB (263.5 KiB unpacked)
 Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
 Checking for file conflicts: [......done]
@@ -189,5 +187,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180804221930.export"
-31 1533421127 1533421564
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806005413.export"
+31 1533516363 1533517038

@@ -2,7 +2,21 @@ $ opam depext -iy -j 2 brotli.1.2.2
 # Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
 # The following system packages are needed:
 m4
-# All required OS packages found.
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Cannot read input: bad stream or EOF.
+The following command needs to be run through "sudo":
+    zypper --non-interactive install m4
+Loading repository data...
+Reading installed packages...
+'m4' is already installed.
+No update candidate for 'm4-1.4.16-6.3.x86_64'. The highest available version is already installed.
+Resolving package dependencies...
+
+Nothing to do.
+# OS packages installation successful
 # Now letting OPAM install the packages
 The following actions will be performed:
   - install ocamlbuild 0.12.0 [required by brotli]
@@ -20,4 +34,4 @@ The following actions will be performed:
 [ERROR] The sources of the following couldn't be obtained, aborting:
           - brotli.1.2.2: Bad checksum
 
-40 1533420146 1533420342
+40 1533516346 1533516582
