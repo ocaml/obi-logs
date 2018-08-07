@@ -1,0 +1,211 @@
+$ opam depext -iy -j 2 kinetic-client.0.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libgmp-dev
+m4
+perl
+pkg-config
+protobuf-compiler
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libgmp-dev m4 perl pkg-config protobuf-compiler zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../05-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../06-libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libprotobuf10:amd64.
+Preparing to unpack .../07-libprotobuf10_3.0.0-9_amd64.deb ...
+Unpacking libprotobuf10:amd64 (3.0.0-9) ...
+Selecting previously unselected package libprotoc10:amd64.
+Preparing to unpack .../08-libprotoc10_3.0.0-9_amd64.deb ...
+Unpacking libprotoc10:amd64 (3.0.0-9) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package protobuf-compiler.
+Preparing to unpack .../10-protobuf-compiler_3.0.0-9_amd64.deb ...
+Unpacking protobuf-compiler (3.0.0-9) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../11-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../12-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../13-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../14-zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up libprotobuf10:amd64 (3.0.0-9) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libprotoc10:amd64 (3.0.0-9) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up protobuf-compiler (3.0.0-9) ...
+Processing triggers for sgml-base (1.29) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp          1      [required by conf-gmp-powm-sec, zarith]
+  - install easy-format       1.3.1  [required by piqilib]
+  - install result            1.3    [required by lwt]
+  - install conf-which        1      [required by camlp4]
+  - install base-bytes        base   [required by piqi]
+  - install conf-perl         1      [required by zarith]
+  - install ocamlbuild        0.12.0 [required by kinetic-client]
+  - install conf-pkg-config   1.1    [required by conf-zlib]
+  - install conf-gmp-powm-sec 1      [required by cryptokit]
+  - install cppo              1.6.4  [required by lwt]
+  - install base64            2.2.0  [required by piqilib]
+  - install zarith            1.7    [required by cryptokit]
+  - install topkg             0.9.1  [required by xmlm]
+  - install camlp4            4.03+1 [required by optcomp, ulex]
+  - install conf-zlib         1      [required by cryptokit]
+  - install lwt               4.1.0  [required by kinetic-client]            For the PPX, please install package lwt_ppx
+                                                                             For the Camlp4 syntax, please install package lwt_camlp4
+                                                                             For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install xmlm              1.3.0  [required by piqilib]
+  - install ulex              1.2    [required by piqilib]
+  - install optcomp           1.6    [required by piqilib]
+  - install cryptokit         1.13   [required by kinetic-client]
+  - install piqilib           0.6.13 [required by piqi]
+  - install piqi              0.7.5  [required by kinetic-client]
+  - install kinetic-client    0.0.1
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base64.2.2.0] found in cache
+[camlp4.4.03+1] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[easy-format.1.3.1] found in cache
+[kinetic-client.0.0.1] found in cache
+[lwt.4.1.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[optcomp.1.6] found in cache
+[piqi.0.7.5] found in cache
+[piqilib.0.6.13] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[ulex.1.2] found in cache
+[xmlm.1.3.0] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed topkg.0.9.1
+-> installed xmlm.1.3.0
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed camlp4.4.03+1
+-> installed ulex.1.2
+-> installed optcomp.1.6
+-> installed piqilib.0.6.13
+-> installed piqi.0.7.5
+[ERROR] The compilation of kinetic-client failed at "/usr/bin/make".
+
+#=== ERROR while compiling kinetic-client.0.0.1 ===============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/kinetic-client.0.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/kinetic-client-11-eb9dcc.env
+# output-file          ~/.opam/log/kinetic-client-11-eb9dcc.out
+### output ###
+# piqi of-proto src/kinetic.proto -o src/kinetic.proto.piqi
+# [libprotobuf WARNING google/protobuf/compiler/parser.cc:547] No syntax specified for the proto file: src/kinetic.proto. Please use 'syntax = "proto2";' or 'syntax = "proto3";' to specify a syntax version. (Defaulted to proto2 syntax.)
+# piqic-ocaml --embed-piqi -C src src/kinetic.proto.piqi
+# patch -d src < src/kinetic_piqi.patch
+# patching file kinetic_piqi.ml
+# Hunk #1 FAILED at 236.
+# Hunk #2 FAILED at 602.
+# Hunk #3 FAILED at 1080.
+# Hunk #4 FAILED at 1463.
+# 4 out of 4 hunks FAILED -- saving rejects to file kinetic_piqi.ml.rej
+# Makefile:10: recipe for target 'kinetic_piqi_ml' failed
+# make: *** [kinetic_piqi_ml] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build kinetic-client 0.0.1
++- 
++- The following changes have been performed
+| - install base-bytes        base
+| - install base64            2.2.0
+| - install camlp4            4.03+1
+| - install conf-gmp          1
+| - install conf-gmp-powm-sec 1
+| - install conf-perl         1
+| - install conf-pkg-config   1.1
+| - install conf-which        1
+| - install conf-zlib         1
+| - install cppo              1.6.4
+| - install cryptokit         1.13
+| - install easy-format       1.3.1
+| - install lwt               4.1.0
+| - install ocamlbuild        0.12.0
+| - install optcomp           1.6
+| - install piqi              0.7.5
+| - install piqilib           0.6.13
+| - install result            1.3
+| - install topkg             0.9.1
+| - install ulex              1.2
+| - install xmlm              1.3.0
+| - install zarith            1.7
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    protobuf-compiler
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180807011739.export"
+31 1533604644 1533604795

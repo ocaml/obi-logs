@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 arakoon.1.8.12
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for arakoon.1.8.12: The following dependencies couldn't be met:
+          - arakoon -> sexplib = 113.00.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=arakoon.1.8.12 returned 20
+20 1533604977 1533604980
