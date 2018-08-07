@@ -1,0 +1,101 @@
+$ opam depext -iy -j 2 sqlite3EZ.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+sqlite3-devel
+# The following new OS packages need to be installed: sqlite3-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install sqlite3-devel
+Retrieving repository 'OSS Update' metadata [...done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  libsqlite3-0 sqlite3-devel
+
+2 new packages to install.
+Overall download size: 548.1 KiB. Already cached: 0 B. After the operation, additional 1.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (1/2), 408.9 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [done]
+Retrieving package sqlite3-devel-3.8.10.2-10.2.x86_64 (2/2), 139.3 KiB (397.2 KiB unpacked)
+Retrieving: sqlite3-devel-3.8.10.2-10.2.x86_64.rpm [..done (17.9 KiB/s)]
+Checking for file conflicts: [...done]
+(1/2) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
+(2/2) Installing: sqlite3-devel-3.8.10.2-10.2.x86_64 [.........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install ocamlbuild      0.12.0  [required by sqlite3EZ]
+  - install conf-pkg-config 1.1     [required by conf-sqlite3]
+  - install ocaml-twt       0.94.0  [required by sqlite3EZ]
+  - install base            v0.11.1 [required by sqlite3]
+  - install conf-sqlite3    1       [required by sqlite3]
+  - install stdio           v0.11.0 [required by sqlite3]
+  - install configurator    v0.11.0 [required by sqlite3]
+  - install sqlite3         4.4.0   [required by sqlite3EZ]
+  - install sqlite3EZ       0.1.0
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[ocaml-twt.0.94.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[sqlite3.4.4.0] found in cache
+[sqlite3EZ.0.1.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+-> installed conf-sqlite3.1
+-> installed ocaml-twt.0.94.0
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed sqlite3.4.4.0
+[ERROR] The compilation of sqlite3EZ failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling sqlite3EZ.0.1.0 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/sqlite3EZ.0.1.0
+# command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/sqlite3EZ-12-e1b101.env
+# output-file          ~/.opam/log/sqlite3EZ-12-e1b101.out
+### output ###
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sqlite3EZ 0.1.0
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install conf-pkg-config 1.1
+| - install conf-sqlite3    1
+| - install configurator    v0.11.0
+| - install ocaml-twt       0.94.0
+| - install ocamlbuild      0.12.0
+| - install sexplib0        v0.11.0
+| - install sqlite3         4.4.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806224159.export"
+31 1533594789 1533595345

@@ -1,0 +1,17 @@
+$ opam depext -iy -j 2 gstreamer.0.2.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+gstreamer-devel
+gstreamer-plugins-base-devel
+m4
+# The following new OS packages need to be installed: gstreamer-devel gstreamer-plugins-base-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install gstreamer-devel gstreamer-plugins-base-devel
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+ABORT request: Aborting requested by user
+OS package installation failed
+1 1533598126 1533598392

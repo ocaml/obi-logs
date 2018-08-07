@@ -1,0 +1,16 @@
+$ opam depext -iy -j 2 caqti-driver-sqlite3.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+sqlite3-devel
+# The following new OS packages need to be installed: sqlite3-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install sqlite3-devel
+Download (curl) error for 'http://download.opensuse.org/update/leap/42.3/non-oss/media.1/media':
+Error code: Curl error 52
+Error message: Empty reply from server
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+ABORT request: Aborting requested by user
+OS package installation failed
+1 1533595501 1533595523
