@@ -1,0 +1,75 @@
+$ opam depext -iy -j 2 yajl.0.7.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by yajl]
+  - install yajl       0.7.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[yajl.0.7.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The installation of yajl failed at "make install".
+
+#=== ERROR while installing yajl.0.7.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/yajl.0.7.0
+# command              /usr/bin/make install
+# exit-code            2
+# env-file             ~/.opam/log/yajl-13-e80101.env
+# output-file          ~/.opam/log/yajl-13-e80101.out
+### output ###
+# grep: unrecognized option: only-matching
+# BusyBox v1.27.2 (2018-06-06 09:08:44 UTC) multi-call binary.
+# 
+# Usage: grep [-HhnlLoqvsriwFE] [-m N] [-A/B/C N] PATTERN/-e PATTERN.../-f FILE [FILE]...
+# 
+# Search for PATTERN in FILEs (or stdin)
+# 
+# 	-H	Add 'filename:' prefix
+# 	-h	Do not add 'filename:' prefix
+# 	-n	Add 'line_no:' prefix
+# 	-l	Show only names of files that match
+# 	-L	Show only names of files that don't match
+# 	-c	Show only count of matching lines
+# 	-o	Show only the matching part of line
+# 	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+# 	-v	Select non-matching lines
+# 	-s	Suppress open and read errors
+# 	-r	Recurse
+# 	-i	Ignore case
+# 	-w	Match whole words only
+# 	-x	Match whole lines only
+# 	-F	PATTERN is a literal (not regexp)
+# 	-E	PATTERN is an extended regexp
+# 	-m N	Match up to N times per file
+# 	-A N	Print N lines of trailing context
+# 	-B N	Print N lines of leading context
+# 	-C N	Same as '-A N -B N'
+# 	-e PTRN	Pattern to match
+# 	-f FILE	Read pattern from file
+# cd upstream && ./configure --prefix /home/opam/.opam/4.06/.opam-switch/build/yajl.0.7.0/upstream/local && make install
+# env: can't execute 'ruby': No such file or directory
+# make: *** [Makefile:36: /home/opam/.opam/4.06/.opam-switch/build/yajl.0.7.0/upstream/local/lib/libyajl_s.a] Error 127
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install yajl 0.7.0
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180806221300.export"
+31 1533593578 1533593588

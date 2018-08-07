@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 cairo.0.4.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for cairo.0.4.1: The following dependencies couldn't be met:
+          - cairo -> ocaml = 3.12.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=cairo.0.4.1 returned 20
+20 1533592618 1533592620

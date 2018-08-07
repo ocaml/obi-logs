@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 regular.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for regular.1.0.0: The following dependencies couldn't be met:
+          - regular -> ocaml < 4.04
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=regular.1.0.0 returned 20
+20 1533591791 1533591794

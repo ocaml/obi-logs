@@ -1,0 +1,29 @@
+$ opam depext -iy -j 2 conf-ode.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-ode 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-ode failed at "/usr/bin/pkg-config ode".
+
+#=== ERROR while compiling conf-ode.1 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-ode.1
+# command              /usr/bin/pkg-config ode
+# exit-code            1
+# env-file             ~/.opam/log/conf-ode-13-ccabea.env
+# output-file          ~/.opam/log/conf-ode-13-ccabea.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-ode 1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533586373 1533586377

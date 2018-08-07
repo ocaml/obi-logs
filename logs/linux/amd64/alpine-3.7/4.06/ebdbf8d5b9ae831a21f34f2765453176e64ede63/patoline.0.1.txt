@@ -1,0 +1,50 @@
+$ opam depext -iy -j 2 patoline.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+pkgconfig
+sqlite-dev
+zlib-dev
+m4
+pkgconf
+# The following new OS packages need to be installed: sqlite-dev zlib-dev
+The following command needs to be run through "sudo":
+    apk add sqlite-dev zlib-dev
+(1/3) Installing sqlite-libs (3.21.0-r1)
+(2/3) Installing sqlite-dev (3.21.0-r1)
+(3/3) Installing zlib-dev (1.2.11-r1)
+OK: 206 MiB in 76 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile        1.0.1      [required by patoline]
+  - install camlzip         1.07       [required by patoline]
+  - install dypgen          20120619-1 [required by patoline]
+  - install sexplib0        v0.11.0    [required by base]
+  - install base-bytes      base       [required by cppo]
+  - install conf-pkg-config 1.1        [required by conf-sqlite3]
+  - install base            v0.11.1    [required by sqlite3]
+  - install cppo            1.6.4      [required by camlimages]
+  - install conf-sqlite3    1          [required by sqlite3]
+  - install stdio           v0.11.0    [required by sqlite3]
+  - install configurator    v0.11.0    [required by camlimages, sqlite3]
+  - install sqlite3         4.4.0      [required by patoline]
+  - install camlimages      5.0.1      [required by patoline]
+  - install patoline        0.1
+===== 14 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlimages.5.0.1] found in cache
+[camlzip.1.07] found in cache
+[camomile.1.0.1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[dypgen.20120619-1] found in cache
+[sexplib0.v0.11.0] found in cache
+[sqlite3.4.4.0] found in cache
+[stdio.v0.11.0] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - patoline.0.1: curl error code 404
+
+40 1533592898 1533592905

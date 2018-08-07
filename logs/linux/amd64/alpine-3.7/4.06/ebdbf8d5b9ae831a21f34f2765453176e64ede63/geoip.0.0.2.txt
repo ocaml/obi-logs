@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 geoip.0.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for geoip.0.0.2: The following dependencies couldn't be met:
+          - geoip -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=geoip.0.0.2 returned 20
+20 1533592670 1533592673

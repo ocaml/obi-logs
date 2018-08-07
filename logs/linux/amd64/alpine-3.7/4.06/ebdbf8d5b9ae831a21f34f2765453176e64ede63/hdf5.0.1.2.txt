@@ -1,0 +1,14 @@
+$ opam depext -iy -j 2 hdf5.0.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+hdf5-dev
+m4
+m4
+# The following new OS packages need to be installed: hdf5-dev
+The following command needs to be run through "sudo":
+    apk add hdf5-dev
+ERROR: unsatisfiable constraints:
+  hdf5-dev (missing):
+    required by: world[hdf5-dev]
+OS package installation failed
+1 1533591828 1533591831

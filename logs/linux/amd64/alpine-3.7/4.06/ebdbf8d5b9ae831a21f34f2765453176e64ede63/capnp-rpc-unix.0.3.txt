@@ -1,0 +1,228 @@
+$ opam depext -iy -j 2 capnp-rpc-unix.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+gmp-dev
+m4
+perl
+m4
+# The following new OS packages need to be installed: gmp-dev perl
+The following command needs to be run through "sudo":
+    apk add gmp-dev perl
+(1/4) Installing libgmpxx (6.1.2-r1)
+(2/4) Installing gmp-dev (6.1.2-r1)
+(3/4) Installing libbz2 (1.0.6-r6)
+(4/4) Installing perl (5.26.2-r1)
+Executing busybox-1.27.2-r11.trigger
+OK: 242 MiB in 77 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_traverse_builtins   v0.10.0    [required by ppx_core, ppx_metaquot]
+  - install conf-gmp                1          [required by zarith]
+  - install mirage-no-xen           1          [required by nocrypto]
+  - install conf-capnproto          0          [required by capnp-rpc-lwt]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install re                      1.7.3      [required by uri]
+  - install num                     1.1        [required by sexplib]
+  - install result                  1.3        [required by capnp, topkg, asn1-combinators, tls]
+  - install ocamlbuild              0.12.0     [required by astring]
+  - install jane-street-headers     v0.10.0    [required by core_kernel]
+  - install mirage-no-solo5         1          [required by nocrypto]
+  - install base-bytes              base       [required by astring]
+  - install conf-perl               1          [required by zarith]
+  - install octavius                1.2.0      [required by ppx_js_style]
+  - install ocaml-compiler-libs     v0.10.0    [required by ppx_core]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install sexplib                 v0.10.0    [required by tls, uri]
+  - install ocaml-migrate-parsetree 1.0.11     [required by core_kernel, ppx_cstruct]
+  - install uchar                   0.0.2      [required by fmt]
+  - install topkg                   0.9.1      [required by astring]
+  - install camlp4                  4.06+1     [required by extunix]
+  - install uint                    1.2.1      [required by capnp, capnp-rpc]
+  - install stringext               1.5.0      [required by uri]
+  - install res                     5.0.0      [required by capnp]
+  - install cppo                    1.6.4      [required by ocplib-endian]
+  - install base64                  2.2.0      [required by capnp-rpc-lwt]
+  - install zarith                  1.7        [required by asn1-combinators]
+  - install cstruct                 3.2.1      [required by mirage-flow-unix]
+  - install base                    v0.10.0    [required by core_kernel]
+  - install ppx_tools_versioned     5.2        [required by ppx_cstruct]
+  - install ppx_ast                 v0.10.0    [required by ppx_core]
+  - install ptime                   0.8.4      [required by capnp-rpc-lwt]
+  - install cmdliner                1.0.2      [required by capnp-rpc-unix]
+  - install astring                 0.8.3      [required by capnp-rpc-unix]
+  - install asetmap                 0.8.1      [required by capnp-rpc-lwt]
+  - install extunix                 0.1.6      [required by capnp]
+  - install ocplib-endian           1.0        [required by capnp]
+  - install lwt                     4.1.0      [required by capnp-rpc-lwt, mirage-flow-unix]     For the PPX, please install package lwt_ppx
+                                                                                                 For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                                 For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install typerep                 v0.10.0    [required by core_kernel]
+  - install stdio                   v0.10.0    [required by core_kernel]
+  - install ppx_cstruct             3.2.1      [required by tls]
+  - install asn1-combinators        0.2.0      [required by capnp-rpc-lwt]
+  - install fmt                     0.8.5      [required by capnp-rpc-unix]
+  - install ocb-stubblr             0.1.1      [required by nocrypto]
+  - install cstruct-lwt             3.2.1      [required by capnp-rpc-unix]
+  - install ppx_deriving            4.2.1      [required by tls]
+  - install ppx_core                v0.10.0    [required by ppx_assert, ppx_inline_test]
+  - install configurator            v0.10.0    [required by core_kernel]
+  - install mirage-flow             1.5.0      [required by mirage-flow-unix]
+  - install mirage-device           1.1.0      [required by mirage-clock]
+  - install logs                    0.6.2      [required by capnp-rpc-unix]
+  - install cpuid                   0.1.1      [required by nocrypto]
+  - install ppx_optcomp             v0.10.0    [required by ppx_driver]
+  - install mirage-kv               1.1.1      [required by mirage-kv-lwt]
+  - install mirage-clock            1.3.0      [required by capnp-rpc-lwt]
+  - install capnp-rpc               0.3.1      [required by capnp-rpc-lwt]
+  - install ppx_driver              v0.10.4    [required by core_kernel]
+  - install mirage-kv-lwt           1.1.0      [required by capnp-rpc-lwt]
+  - install mirage-flow-lwt         1.5.0      [required by capnp-rpc-lwt, mirage-flow-unix]
+  - install variantslib             v0.10.0    [required by core_kernel]
+  - install ppx_metaquot            v0.10.0    [required by ppx_assert, ppx_inline_test]
+  - install ppx_let                 v0.10.0    [required by ppx_jane]
+  - install ppx_here                v0.10.0    [required by ppx_assert, ppx_jane]
+  - install fieldslib               v0.10.0    [required by core_kernel]
+  - install mirage-flow-unix        1.5.0      [required by capnp-rpc-unix]
+  - install ppx_type_conv           v0.10.0    [required by ppx_assert, ppx_base]
+  - install ppx_pipebang            v0.10.0    [required by ppx_jane]
+  - install ppx_optional            v0.10.0    [required by ppx_jane]
+  - install ppx_js_style            v0.10.0    [required by ppx_base]
+  - install ppx_inline_test         v0.10.1    [required by core_kernel]
+  - install ppx_fail                v0.10.0    [required by ppx_jane]
+  - install ppx_variants_conv       v0.10.0    [required by bin_prot, ppx_jane]
+  - install ppx_typerep_conv        v0.10.0    [required by ppx_jane]
+  - install ppx_traverse            v0.10.0    [required by ppx_custom_printf, ppx_expect]
+  - install ppx_sexp_conv           v0.10.0    [required by tls, uri]
+  - install ppx_fields_conv         v0.10.0    [required by bin_prot, ppx_jane]
+  - install ppx_enumerate           v0.10.0    [required by ppx_base]
+  - install ppx_compare             v0.10.0    [required by ppx_assert, bin_prot, ppx_base]
+  - install ppx_bench               v0.10.0    [required by ppx_jane]
+  - install uri                     1.9.7      [required by capnp-rpc-lwt]
+  - install ppx_sexp_value          v0.10.0    [required by ppx_jane]
+  - install ppx_sexp_message        v0.10.0    [required by core_kernel]
+  - install ppx_custom_printf       v0.10.0    [required by bin_prot, ppx_jane]
+  - install nocrypto                0.5.4-1    [required by tls]
+  - install ppx_hash                v0.10.0    [required by core_kernel]
+  - install ppx_assert              v0.10.0    [required by core_kernel]
+  - install bin_prot                v0.10.0    [required by core_kernel]
+  - install x509                    0.6.1      [required by tls]
+  - install ppx_base                v0.10.0    [required by core_kernel]
+  - install ppx_expect              v0.10.1    [required by ppx_jane]
+  - install ppx_bin_prot            v0.10.0    [required by ppx_jane]
+  - install tls                     0.9.1      [required by capnp-rpc-lwt]
+  - install ppx_jane                v0.10.0    [required by core_kernel]
+  - install core_kernel             v0.10.0    [required by capnp]
+  - install capnp                   3.2.0      [required by capnp-rpc-lwt]
+  - install capnp-rpc-lwt           0.3.1      [required by capnp-rpc-unix]
+  - install capnp-rpc-unix          0.3
+===== 98 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[asetmap.0.8.1] found in cache
+[asn1-combinators.0.2.0] found in cache
+[astring.0.8.3] found in cache
+[base.v0.10.0] found in cache
+[base64.2.2.0] found in cache
+[bin_prot.v0.10.0] found in cache
+[camlp4.4.06+1] found in cache
+[capnp.3.2.0] found in cache
+[capnp-rpc.0.3.1] found in cache
+[capnp-rpc-lwt.0.3.1] found in cache
+[capnp-rpc-unix.0.3] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.10.0] found in cache
+[core_kernel.v0.10.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cpuid.0.1.1] found in cache
+[cstruct.3.2.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[extunix.0.1.6] found in cache
+[fieldslib.v0.10.0] found in cache
+[fmt.0.8.5] found in cache
+[jane-street-headers.v0.10.0] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[mirage-clock.1.3.0] found in cache
+[mirage-device.1.1.0] found in cache
+[mirage-flow.1.5.0] found in cache
+[mirage-flow-lwt.1.5.0] found in cache
+[mirage-flow-unix.1.5.0] found in cache
+[mirage-kv.1.1.1] found in cache
+[mirage-kv-lwt.1.1.0] found in cache
+[nocrypto.0.5.4-1] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.10.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocb-stubblr.0.1.1] found in cache
+[ocplib-endian.1.0] found in cache
+[octavius.1.2.0] found in cache
+[ppx_assert.v0.10.0] found in cache
+[ppx_ast.v0.10.0] found in cache
+[ppx_base.v0.10.0] found in cache
+[ppx_bench.v0.10.0] found in cache
+[ppx_bin_prot.v0.10.0] found in cache
+[ppx_compare.v0.10.0] found in cache
+[ppx_core.v0.10.0] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_custom_printf.v0.10.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.10.4] found in cache
+[ppx_enumerate.v0.10.0] found in cache
+[ppx_expect.v0.10.1] found in cache
+[ppx_fail.v0.10.0] found in cache
+[ppx_fields_conv.v0.10.0] found in cache
+[ppx_hash.v0.10.0] found in cache
+[ppx_here.v0.10.0] found in cache
+[ppx_inline_test.v0.10.1] found in cache
+[ppx_jane.v0.10.0] found in cache
+[ppx_js_style.v0.10.0] found in cache
+[ppx_let.v0.10.0] found in cache
+[ppx_metaquot.v0.10.0] found in cache
+[ppx_optcomp.v0.10.0] found in cache
+[ppx_optional.v0.10.0] found in cache
+[ppx_pipebang.v0.10.0] found in cache
+[ppx_sexp_conv.v0.10.0] found in cache
+[ppx_sexp_message.v0.10.0] found in cache
+[ppx_sexp_value.v0.10.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_traverse.v0.10.0] found in cache
+[ppx_traverse_builtins.v0.10.0] found in cache
+[ppx_type_conv.v0.10.0] found in cache
+[ppx_typerep_conv.v0.10.0] found in cache
+[ppx_variants_conv.v0.10.0] found in cache
+[ptime.0.8.4] found in cache
+[re.1.7.3] found in cache
+[res.5.0.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.10.0] found in cache
+[stdio.v0.10.0] found in cache
+[stringext.1.5.0] found in cache
+[tls.0.9.1] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.10.0] found in cache
+[uchar.0.0.2] found in cache
+[uint.1.2.1] found in cache
+[uri.1.9.7] found in cache
+[variantslib.v0.10.0] found in cache
+[x509.0.6.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling conf-capnproto.0 ===================================#
+"capnpc": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-capnproto 0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533592827 1533592838
