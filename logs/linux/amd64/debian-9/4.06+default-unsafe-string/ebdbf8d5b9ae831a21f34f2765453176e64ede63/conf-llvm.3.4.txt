@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 conf-llvm.3.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+llvm-3.4-dev
+# The following new OS packages need to be installed: llvm-3.4-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy llvm-3.4-dev
+E: Unable to locate package llvm-3.4-dev
+E: Couldn't find any package by glob 'llvm-3.4-dev'
+E: Couldn't find any package by regex 'llvm-3.4-dev'
+OS package installation failed
+1 1533619920 1533619929
