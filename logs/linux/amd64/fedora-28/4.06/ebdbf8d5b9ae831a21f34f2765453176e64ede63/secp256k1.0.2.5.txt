@@ -1,0 +1,62 @@
+$ opam depext -iy -j 2 secp256k1.0.2.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-secp256k1 1.0.0   [required by secp256k1]
+  - install sexplib0       v0.11.0 [required by base]
+  - install base           v0.11.1 [required by secp256k1]
+  - install stdio          v0.11.0 [required by secp256k1]
+  - install configurator   v0.11.0 [required by secp256k1]
+  - install secp256k1      0.2.5
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[conf-secp256k1.1.0.0] found in cache
+[configurator.v0.11.0] found in cache
+[secp256k1.0.2.5] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-secp256k1.1.0.0
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+[ERROR] The compilation of secp256k1 failed at "/home/opam/.opam/4.06/bin/jbuilder build -p secp256k1 -j 71".
+
+#=== ERROR while compiling secp256k1.0.2.5 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/secp256k1.0.2.5
+# command              ~/.opam/4.06/bin/jbuilder build -p secp256k1 -j 71
+# exit-code            1
+# env-file             ~/.opam/log/secp256k1-10-b50035.env
+# output-file          ~/.opam/log/secp256k1-10-b50035.out
+### output ###
+#       ocamlc src/secp256k1_wrap.o (exit 2)
+# (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -o secp256k1_wrap.o secp256k1_wrap.c)
+# secp256k1_wrap.c:9:10: fatal error: secp256k1.h: No such file or directory
+#  #include <secp256k1.h>
+#           ^~~~~~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build secp256k1 0.2.5
++- 
++- The following changes have been performed
+| - install base           v0.11.1
+| - install conf-secp256k1 1.0.0
+| - install configurator   v0.11.0
+| - install sexplib0       v0.11.0
+| - install stdio          v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180807022834.export"
+31 1533608912 1533608943

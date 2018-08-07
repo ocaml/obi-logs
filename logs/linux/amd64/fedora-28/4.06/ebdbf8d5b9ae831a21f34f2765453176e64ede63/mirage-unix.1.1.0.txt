@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-unix.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for mirage-unix.1.1.0: The following dependencies couldn't be met:
+          - mirage-unix -> io-page < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-unix.1.1.0 returned 20
+20 1533609689 1533609691

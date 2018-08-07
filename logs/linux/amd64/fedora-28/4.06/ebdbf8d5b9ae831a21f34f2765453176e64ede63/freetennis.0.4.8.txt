@@ -1,0 +1,524 @@
+$ opam depext -iy -j 2 freetennis.0.4.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gtk2-devel
+m4
+package gtk2-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Mon Aug  6 20:14:41 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# The following new OS packages need to be installed: gtk2-devel
+The following command needs to be run through "sudo":
+    yum install -y gtk2-devel
+Last metadata expiration check: 5:55:17 ago on Mon Aug  6 20:13:33 2018.
+Dependencies resolved.
+================================================================================
+ Package                     Arch       Version               Repository   Size
+================================================================================
+Installing:
+ gtk2-devel                  x86_64     2.24.32-2.fc28        fedora      3.0 M
+Installing dependencies:
+ aajohan-comfortaa-fonts     noarch     3.001-2.fc28          fedora      147 k
+ atk                         x86_64     2.28.1-1.fc28         fedora      271 k
+ atk-devel                   x86_64     2.28.1-1.fc28         fedora      191 k
+ bzip2-devel                 x86_64     1.0.6-26.fc28         fedora      223 k
+ cairo                       x86_64     1.15.12-2.fc28        updates     720 k
+ cairo-devel                 x86_64     1.15.12-2.fc28        updates     271 k
+ cups-libs                   x86_64     1:2.2.6-16.fc28       updates     429 k
+ expat-devel                 x86_64     2.2.5-3.fc28          fedora       54 k
+ fontconfig                  x86_64     2.13.0-4.fc28         updates     253 k
+ fontconfig-devel            x86_64     2.13.0-4.fc28         updates     144 k
+ fontpackages-filesystem     noarch     1.44-21.fc28          fedora       15 k
+ freetype                    x86_64     2.8-10.fc28           fedora      384 k
+ freetype-devel              x86_64     2.8-10.fc28           fedora      453 k
+ fribidi                     x86_64     1.0.2-1.fc28          updates      84 k
+ fribidi-devel               x86_64     1.0.2-1.fc28          updates      30 k
+ gdk-pixbuf2                 x86_64     2.36.12-1.fc28        fedora      465 k
+ gdk-pixbuf2-devel           x86_64     2.36.12-1.fc28        fedora      221 k
+ gdk-pixbuf2-modules         x86_64     2.36.12-1.fc28        fedora      107 k
+ glib2-devel                 x86_64     2.56.1-4.fc28         updates     460 k
+ graphite2                   x86_64     1.3.10-5.fc28         fedora      119 k
+ graphite2-devel             x86_64     1.3.10-5.fc28         fedora       44 k
+ gtk-update-icon-cache       x86_64     3.22.30-1.fc28        fedora       33 k
+ gtk2                        x86_64     2.24.32-2.fc28        fedora      3.4 M
+ harfbuzz                    x86_64     1.7.5-3.fc28          fedora      293 k
+ harfbuzz-devel              x86_64     1.7.5-3.fc28          fedora      180 k
+ harfbuzz-icu                x86_64     1.7.5-3.fc28          fedora       23 k
+ hicolor-icon-theme          noarch     0.17-2.fc28           fedora       47 k
+ jasper-libs                 x86_64     2.0.14-5.fc28         updates     166 k
+ jbigkit-libs                x86_64     2.1-12.fc28           fedora       53 k
+ libXcomposite               x86_64     0.4.4-12.fc28         fedora       27 k
+ libXcomposite-devel         x86_64     0.4.4-12.fc28         fedora       21 k
+ libXcursor                  x86_64     1.1.15-1.fc28         fedora       35 k
+ libXcursor-devel            x86_64     1.1.15-1.fc28         fedora       28 k
+ libXdamage                  x86_64     1.1.4-12.fc28         fedora       26 k
+ libXext                     x86_64     1.3.3-8.fc28          fedora       44 k
+ libXext-devel               x86_64     1.3.3-8.fc28          fedora       79 k
+ libXfixes                   x86_64     5.0.3-5.fc28          fedora       24 k
+ libXfixes-devel             x86_64     5.0.3-5.fc28          fedora       18 k
+ libXft                      x86_64     2.3.2-8.fc28          fedora       65 k
+ libXft-devel                x86_64     2.3.2-8.fc28          fedora       24 k
+ libXi                       x86_64     1.7.9-6.fc28          fedora       48 k
+ libXi-devel                 x86_64     1.7.9-6.fc28          fedora      110 k
+ libXinerama                 x86_64     1.1.3-10.fc28         fedora       19 k
+ libXinerama-devel           x86_64     1.1.3-10.fc28         fedora       18 k
+ libXrandr                   x86_64     1.5.1-5.fc28          fedora       32 k
+ libXrandr-devel             x86_64     1.5.1-5.fc28          fedora       25 k
+ libXrender                  x86_64     0.9.10-5.fc28         fedora       32 k
+ libXrender-devel            x86_64     0.9.10-5.fc28         fedora       21 k
+ libdatrie                   x86_64     0.2.9-7.fc28          fedora       32 k
+ libicu                      x86_64     60.2-2.fc28           fedora      8.8 M
+ libicu-devel                x86_64     60.2-2.fc28           fedora      920 k
+ libjpeg-turbo               x86_64     1.5.3-6.fc28          updates     154 k
+ libpng                      x86_64     2:1.6.34-6.fc28       updates     125 k
+ libpng-devel                x86_64     2:1.6.34-6.fc28       updates     326 k
+ libthai                     x86_64     0.1.27-2.fc28         fedora      202 k
+ libtiff                     x86_64     4.0.9-10.fc28         updates     186 k
+ libuuid-devel               x86_64     2.32.1-1.fc28         updates      91 k
+ pango                       x86_64     1.42.3-1.fc28         updates     295 k
+ pango-devel                 x86_64     1.42.3-1.fc28         updates     320 k
+ pcre-cpp                    x86_64     8.42-2.fc28           updates      46 k
+ pcre-devel                  x86_64     8.42-2.fc28           updates     550 k
+ pcre-utf16                  x86_64     8.42-2.fc28           updates     193 k
+ pcre-utf32                  x86_64     8.42-2.fc28           updates     184 k
+ pixman                      x86_64     0.34.0-8.fc28         updates     247 k
+ pixman-devel                x86_64     0.34.0-8.fc28         updates      19 k
+ zlib-devel                  x86_64     1.2.11-8.fc28         updates      55 k
+
+Transaction Summary
+================================================================================
+Install  67 Packages
+
+Total download size: 26 M
+Installed size: 105 M
+Downloading Packages:
+(1/67): atk-2.28.1-1.fc28.x86_64.rpm            715 kB/s | 271 kB     00:00    
+(2/67): freetype-2.8-10.fc28.x86_64.rpm         957 kB/s | 384 kB     00:00    
+(3/67): gdk-pixbuf2-2.36.12-1.fc28.x86_64.rpm   5.3 MB/s | 465 kB     00:00    
+(4/67): libXcomposite-0.4.4-12.fc28.x86_64.rpm  639 kB/s |  27 kB     00:00    
+(5/67): libXcursor-1.1.15-1.fc28.x86_64.rpm     1.1 MB/s |  35 kB     00:00    
+(6/67): libXdamage-1.1.4-12.fc28.x86_64.rpm     868 kB/s |  26 kB     00:00    
+(7/67): libXext-1.3.3-8.fc28.x86_64.rpm         2.0 MB/s |  44 kB     00:00    
+(8/67): gtk2-devel-2.24.32-2.fc28.x86_64.rpm    4.8 MB/s | 3.0 MB     00:00    
+(9/67): libXfixes-5.0.3-5.fc28.x86_64.rpm       967 kB/s |  24 kB     00:00    
+(10/67): libXi-1.7.9-6.fc28.x86_64.rpm          2.4 MB/s |  48 kB     00:00    
+(11/67): libXinerama-1.1.3-10.fc28.x86_64.rpm   878 kB/s |  19 kB     00:00    
+(12/67): libXrandr-1.5.1-5.fc28.x86_64.rpm      2.4 MB/s |  32 kB     00:00    
+(13/67): libXrender-0.9.10-5.fc28.x86_64.rpm    2.6 MB/s |  32 kB     00:00    
+(14/67): gtk2-2.24.32-2.fc28.x86_64.rpm          12 MB/s | 3.4 MB     00:00    
+(15/67): gtk-update-icon-cache-3.22.30-1.fc28.x 728 kB/s |  33 kB     00:00    
+(16/67): gdk-pixbuf2-modules-2.36.12-1.fc28.x86 2.1 MB/s | 107 kB     00:00    
+(17/67): hicolor-icon-theme-0.17-2.fc28.noarch. 1.5 MB/s |  47 kB     00:00    
+[MIRROR] cairo-1.15.12-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/c/cairo-1.15.12-2.fc28.x86_64.rpm
+[MIRROR] cairo-devel-1.15.12-2.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/c/cairo-devel-1.15.12-2.fc28.x86_64.rpm
+[MIRROR] fontconfig-2.13.0-4.fc28.x86_64.rpm: Status code: 404 for http://mirror.ox.ac.uk/sites/download.fedora.redhat.com/pub/fedora/linux/updates/28/Everything/x86_64/Packages/f/fontconfig-2.13.0-4.fc28.x86_64.rpm
+(18/67): fontconfig-2.13.0-4.fc28.x86_64.rpm    2.2 MB/s | 253 kB     00:00    
+(19/67): cairo-devel-1.15.12-2.fc28.x86_64.rpm  1.8 MB/s | 271 kB     00:00    
+(20/67): cairo-1.15.12-2.fc28.x86_64.rpm        4.1 MB/s | 720 kB     00:00    
+(21/67): fontpackages-filesystem-1.44-21.fc28.n 505 kB/s |  15 kB     00:00    
+(22/67): glib2-devel-2.56.1-4.fc28.x86_64.rpm   9.4 MB/s | 460 kB     00:00    
+(23/67): fribidi-1.0.2-1.fc28.x86_64.rpm        3.2 MB/s |  84 kB     00:00    
+(24/67): pango-1.42.3-1.fc28.x86_64.rpm         4.7 MB/s | 295 kB     00:00    
+(25/67): libXft-2.3.2-8.fc28.x86_64.rpm         1.0 MB/s |  65 kB     00:00    
+(26/67): harfbuzz-1.7.5-3.fc28.x86_64.rpm       3.3 MB/s | 293 kB     00:00    
+(27/67): libthai-0.1.27-2.fc28.x86_64.rpm       2.6 MB/s | 202 kB     00:00    
+(28/67): graphite2-1.3.10-5.fc28.x86_64.rpm     1.9 MB/s | 119 kB     00:00    
+(29/67): libdatrie-0.2.9-7.fc28.x86_64.rpm      617 kB/s |  32 kB     00:00    
+(30/67): pango-devel-1.42.3-1.fc28.x86_64.rpm   8.7 MB/s | 320 kB     00:00    
+(31/67): fontconfig-devel-2.13.0-4.fc28.x86_64. 3.3 MB/s | 144 kB     00:00    
+(32/67): atk-devel-2.28.1-1.fc28.x86_64.rpm     3.6 MB/s | 191 kB     00:00    
+(33/67): freetype-devel-2.8-10.fc28.x86_64.rpm  5.2 MB/s | 453 kB     00:00    
+(34/67): libXcomposite-devel-0.4.4-12.fc28.x86_ 532 kB/s |  21 kB     00:00    
+(35/67): gdk-pixbuf2-devel-2.36.12-1.fc28.x86_6 2.1 MB/s | 221 kB     00:00    
+(36/67): libXcursor-devel-1.1.15-1.fc28.x86_64. 562 kB/s |  28 kB     00:00    
+(37/67): libXext-devel-1.3.3-8.fc28.x86_64.rpm  1.9 MB/s |  79 kB     00:00    
+(38/67): libXfixes-devel-5.0.3-5.fc28.x86_64.rp 497 kB/s |  18 kB     00:00    
+(39/67): libXinerama-devel-1.1.3-10.fc28.x86_64 828 kB/s |  18 kB     00:00    
+(40/67): libXi-devel-1.7.9-6.fc28.x86_64.rpm    2.7 MB/s | 110 kB     00:00    
+(41/67): libXrandr-devel-1.5.1-5.fc28.x86_64.rp 1.3 MB/s |  25 kB     00:00    
+(42/67): cups-libs-2.2.6-16.fc28.x86_64.rpm      10 MB/s | 429 kB     00:00    
+(43/67): jbigkit-libs-2.1-12.fc28.x86_64.rpm    2.1 MB/s |  53 kB     00:00    
+(44/67): libtiff-4.0.9-10.fc28.x86_64.rpm       3.8 MB/s | 186 kB     00:00    
+(45/67): jasper-libs-2.0.14-5.fc28.x86_64.rpm   4.3 MB/s | 166 kB     00:00    
+(46/67): libpng-1.6.34-6.fc28.x86_64.rpm        5.7 MB/s | 125 kB     00:00    
+(47/67): libjpeg-turbo-1.5.3-6.fc28.x86_64.rpm  3.0 MB/s | 154 kB     00:00    
+(48/67): libpng-devel-1.6.34-6.fc28.x86_64.rpm   10 MB/s | 326 kB     00:00    
+(49/67): zlib-devel-1.2.11-8.fc28.x86_64.rpm    1.3 MB/s |  55 kB     00:00    
+(50/67): fribidi-devel-1.0.2-1.fc28.x86_64.rpm  872 kB/s |  30 kB     00:00    
+(51/67): bzip2-devel-1.0.6-26.fc28.x86_64.rpm   3.2 MB/s | 223 kB     00:00    
+(52/67): harfbuzz-icu-1.7.5-3.fc28.x86_64.rpm   530 kB/s |  23 kB     00:00    
+(53/67): harfbuzz-devel-1.7.5-3.fc28.x86_64.rpm 2.0 MB/s | 180 kB     00:00    
+(54/67): libXft-devel-2.3.2-8.fc28.x86_64.rpm   564 kB/s |  24 kB     00:00    
+(55/67): pcre-cpp-8.42-2.fc28.x86_64.rpm        2.5 MB/s |  46 kB     00:00    
+(56/67): pcre-devel-8.42-2.fc28.x86_64.rpm       13 MB/s | 550 kB     00:00    
+(57/67): pcre-utf32-8.42-2.fc28.x86_64.rpm      4.1 MB/s | 184 kB     00:00    
+(58/67): pcre-utf16-8.42-2.fc28.x86_64.rpm      3.2 MB/s | 193 kB     00:00    
+(59/67): libuuid-devel-2.32.1-1.fc28.x86_64.rpm 2.1 MB/s |  91 kB     00:00    
+(60/67): expat-devel-2.2.5-3.fc28.x86_64.rpm    988 kB/s |  54 kB     00:00    
+(61/67): pixman-devel-0.34.0-8.fc28.x86_64.rpm  824 kB/s |  19 kB     00:00    
+(62/67): libXrender-devel-0.9.10-5.fc28.x86_64. 598 kB/s |  21 kB     00:00    
+(63/67): pixman-0.34.0-8.fc28.x86_64.rpm        4.2 MB/s | 247 kB     00:00    
+(64/67): graphite2-devel-1.3.10-5.fc28.x86_64.r 1.1 MB/s |  44 kB     00:00    
+(65/67): aajohan-comfortaa-fonts-3.001-2.fc28.n 2.5 MB/s | 147 kB     00:00    
+(66/67): libicu-devel-60.2-2.fc28.x86_64.rpm    4.2 MB/s | 920 kB     00:00    
+(67/67): libicu-60.2-2.fc28.x86_64.rpm          6.9 MB/s | 8.8 MB     00:01    
+--------------------------------------------------------------------------------
+Total                                           6.5 MB/s |  26 MB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libXrender-0.9.10-5.fc28.x86_64                       1/67 
+  Running scriptlet: libXrender-0.9.10-5.fc28.x86_64                       1/67 
+  Installing       : libXext-1.3.3-8.fc28.x86_64                           2/67 
+  Running scriptlet: libXext-1.3.3-8.fc28.x86_64                           2/67 
+  Installing       : libpng-2:1.6.34-6.fc28.x86_64                         3/67 
+  Installing       : freetype-2.8-10.fc28.x86_64                           4/67 
+  Installing       : gdk-pixbuf2-2.36.12-1.fc28.x86_64                     5/67 
+  Running scriptlet: gdk-pixbuf2-2.36.12-1.fc28.x86_64                     5/67 
+  Installing       : libXext-devel-1.3.3-8.fc28.x86_64                     6/67 
+  Installing       : libXfixes-5.0.3-5.fc28.x86_64                         7/67 
+  Running scriptlet: libXfixes-5.0.3-5.fc28.x86_64                         7/67 
+  Installing       : libXfixes-devel-5.0.3-5.fc28.x86_64                   8/67 
+  Installing       : libXrender-devel-0.9.10-5.fc28.x86_64                 9/67 
+  Installing       : libXcursor-1.1.15-1.fc28.x86_64                      10/67 
+  Running scriptlet: libXcursor-1.1.15-1.fc28.x86_64                      10/67 
+  Installing       : libXi-1.7.9-6.fc28.x86_64                            11/67 
+  Running scriptlet: libXi-1.7.9-6.fc28.x86_64                            11/67 
+  Installing       : libXinerama-1.1.3-10.fc28.x86_64                     12/67 
+  Running scriptlet: libXinerama-1.1.3-10.fc28.x86_64                     12/67 
+  Installing       : libXrandr-1.5.1-5.fc28.x86_64                        13/67 
+  Running scriptlet: libXrandr-1.5.1-5.fc28.x86_64                        13/67 
+  Installing       : libjpeg-turbo-1.5.3-6.fc28.x86_64                    14/67 
+  Installing       : libXcomposite-0.4.4-12.fc28.x86_64                   15/67 
+  Running scriptlet: libXcomposite-0.4.4-12.fc28.x86_64                   15/67 
+  Installing       : atk-2.28.1-1.fc28.x86_64                             16/67 
+  Installing       : libXdamage-1.1.4-12.fc28.x86_64                      17/67 
+  Running scriptlet: libXdamage-1.1.4-12.fc28.x86_64                      17/67 
+  Installing       : pixman-0.34.0-8.fc28.x86_64                          18/67 
+  Running scriptlet: pixman-0.34.0-8.fc28.x86_64                          18/67 
+  Installing       : libicu-60.2-2.fc28.x86_64                            19/67 
+  Running scriptlet: libicu-60.2-2.fc28.x86_64                            19/67 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      20/67 
+  Installing       : libpng-devel-2:1.6.34-6.fc28.x86_64                  21/67 
+  Installing       : graphite2-1.3.10-5.fc28.x86_64                       22/67 
+  Installing       : harfbuzz-1.7.5-3.fc28.x86_64                         23/67 
+  Running scriptlet: harfbuzz-1.7.5-3.fc28.x86_64                         23/67 
+  Installing       : fribidi-1.0.2-1.fc28.x86_64                          24/67 
+  Running scriptlet: fribidi-1.0.2-1.fc28.x86_64                          24/67 
+  Installing       : fontpackages-filesystem-1.44-21.fc28.noarch          25/67 
+  Installing       : aajohan-comfortaa-fonts-3.001-2.fc28.noarch          26/67 
+  Installing       : fontconfig-2.13.0-4.fc28.x86_64                      27/67 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                      27/67 
+  Installing       : cairo-1.15.12-2.fc28.x86_64                          28/67 
+  Installing       : libXft-2.3.2-8.fc28.x86_64                           29/67 
+  Running scriptlet: libXft-2.3.2-8.fc28.x86_64                           29/67 
+  Installing       : fribidi-devel-1.0.2-1.fc28.x86_64                    30/67 
+  Installing       : harfbuzz-icu-1.7.5-3.fc28.x86_64                     31/67 
+  Running scriptlet: harfbuzz-icu-1.7.5-3.fc28.x86_64                     31/67 
+  Installing       : graphite2-devel-1.3.10-5.fc28.x86_64                 32/67 
+  Installing       : libicu-devel-60.2-2.fc28.x86_64                      33/67 
+  Installing       : pixman-devel-0.34.0-8.fc28.x86_64                    34/67 
+  Installing       : libXcomposite-devel-0.4.4-12.fc28.x86_64             35/67 
+  Installing       : jasper-libs-2.0.14-5.fc28.x86_64                     36/67 
+  Installing       : libXrandr-devel-1.5.1-5.fc28.x86_64                  37/67 
+  Installing       : libXinerama-devel-1.1.3-10.fc28.x86_64               38/67 
+  Installing       : libXi-devel-1.7.9-6.fc28.x86_64                      39/67 
+  Installing       : libXcursor-devel-1.1.15-1.fc28.x86_64                40/67 
+  Installing       : gtk-update-icon-cache-3.22.30-1.fc28.x86_64          41/67 
+  Installing       : expat-devel-2.2.5-3.fc28.x86_64                      42/67 
+  Installing       : libuuid-devel-2.32.1-1.fc28.x86_64                   43/67 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                        44/67 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                        45/67 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                          46/67 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                        47/67 
+  Installing       : glib2-devel-2.56.1-4.fc28.x86_64                     48/67 
+  Installing       : atk-devel-2.28.1-1.fc28.x86_64                       49/67 
+  Installing       : gdk-pixbuf2-devel-2.36.12-1.fc28.x86_64              50/67 
+  Installing       : harfbuzz-devel-1.7.5-3.fc28.x86_64                   51/67 
+  Installing       : bzip2-devel-1.0.6-26.fc28.x86_64                     52/67 
+  Installing       : freetype-devel-2.8-10.fc28.x86_64                    53/67 
+  Installing       : fontconfig-devel-2.13.0-4.fc28.x86_64                54/67 
+  Installing       : cairo-devel-1.15.12-2.fc28.x86_64                    55/67 
+  Installing       : libXft-devel-2.3.2-8.fc28.x86_64                     56/67 
+  Installing       : jbigkit-libs-2.1-12.fc28.x86_64                      57/67 
+  Running scriptlet: jbigkit-libs-2.1-12.fc28.x86_64                      57/67 
+  Installing       : libtiff-4.0.9-10.fc28.x86_64                         58/67 
+  Installing       : gdk-pixbuf2-modules-2.36.12-1.fc28.x86_64            59/67 
+  Installing       : cups-libs-1:2.2.6-16.fc28.x86_64                     60/67 
+  Installing       : libdatrie-0.2.9-7.fc28.x86_64                        61/67 
+  Running scriptlet: libdatrie-0.2.9-7.fc28.x86_64                        61/67 
+  Installing       : libthai-0.1.27-2.fc28.x86_64                         62/67 
+  Running scriptlet: libthai-0.1.27-2.fc28.x86_64                         62/67 
+  Installing       : pango-1.42.3-1.fc28.x86_64                           63/67 
+  Running scriptlet: pango-1.42.3-1.fc28.x86_64                           63/67 
+  Installing       : pango-devel-1.42.3-1.fc28.x86_64                     64/67 
+  Installing       : hicolor-icon-theme-0.17-2.fc28.noarch                65/67 
+  Installing       : gtk2-2.24.32-2.fc28.x86_64                           66/67 
+  Running scriptlet: gtk2-2.24.32-2.fc28.x86_64                           66/67 
+  Installing       : gtk2-devel-2.24.32-2.fc28.x86_64                     67/67 
+  Running scriptlet: gtk2-devel-2.24.32-2.fc28.x86_64                     67/67 
+  Running scriptlet: gdk-pixbuf2-2.36.12-1.fc28.x86_64                    67/67 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                      67/67 
+  Running scriptlet: hicolor-icon-theme-0.17-2.fc28.noarch                67/67 
+  Verifying        : gtk2-devel-2.24.32-2.fc28.x86_64                      1/67 
+  Verifying        : atk-2.28.1-1.fc28.x86_64                              2/67 
+  Verifying        : freetype-2.8-10.fc28.x86_64                           3/67 
+  Verifying        : gdk-pixbuf2-2.36.12-1.fc28.x86_64                     4/67 
+  Verifying        : gtk2-2.24.32-2.fc28.x86_64                            5/67 
+  Verifying        : libXcomposite-0.4.4-12.fc28.x86_64                    6/67 
+  Verifying        : libXcursor-1.1.15-1.fc28.x86_64                       7/67 
+  Verifying        : libXdamage-1.1.4-12.fc28.x86_64                       8/67 
+  Verifying        : libXext-1.3.3-8.fc28.x86_64                           9/67 
+  Verifying        : libXfixes-5.0.3-5.fc28.x86_64                        10/67 
+  Verifying        : libXi-1.7.9-6.fc28.x86_64                            11/67 
+  Verifying        : libXinerama-1.1.3-10.fc28.x86_64                     12/67 
+  Verifying        : libXrandr-1.5.1-5.fc28.x86_64                        13/67 
+  Verifying        : libXrender-0.9.10-5.fc28.x86_64                      14/67 
+  Verifying        : gdk-pixbuf2-modules-2.36.12-1.fc28.x86_64            15/67 
+  Verifying        : gtk-update-icon-cache-3.22.30-1.fc28.x86_64          16/67 
+  Verifying        : hicolor-icon-theme-0.17-2.fc28.noarch                17/67 
+  Verifying        : cairo-1.15.12-2.fc28.x86_64                          18/67 
+  Verifying        : cairo-devel-1.15.12-2.fc28.x86_64                    19/67 
+  Verifying        : fontconfig-2.13.0-4.fc28.x86_64                      20/67 
+  Verifying        : fontpackages-filesystem-1.44-21.fc28.noarch          21/67 
+  Verifying        : glib2-devel-2.56.1-4.fc28.x86_64                     22/67 
+  Verifying        : pango-1.42.3-1.fc28.x86_64                           23/67 
+  Verifying        : fribidi-1.0.2-1.fc28.x86_64                          24/67 
+  Verifying        : harfbuzz-1.7.5-3.fc28.x86_64                         25/67 
+  Verifying        : libXft-2.3.2-8.fc28.x86_64                           26/67 
+  Verifying        : libthai-0.1.27-2.fc28.x86_64                         27/67 
+  Verifying        : graphite2-1.3.10-5.fc28.x86_64                       28/67 
+  Verifying        : libdatrie-0.2.9-7.fc28.x86_64                        29/67 
+  Verifying        : pango-devel-1.42.3-1.fc28.x86_64                     30/67 
+  Verifying        : fontconfig-devel-2.13.0-4.fc28.x86_64                31/67 
+  Verifying        : freetype-devel-2.8-10.fc28.x86_64                    32/67 
+  Verifying        : atk-devel-2.28.1-1.fc28.x86_64                       33/67 
+  Verifying        : gdk-pixbuf2-devel-2.36.12-1.fc28.x86_64              34/67 
+  Verifying        : libXcomposite-devel-0.4.4-12.fc28.x86_64             35/67 
+  Verifying        : libXcursor-devel-1.1.15-1.fc28.x86_64                36/67 
+  Verifying        : libXext-devel-1.3.3-8.fc28.x86_64                    37/67 
+  Verifying        : libXfixes-devel-5.0.3-5.fc28.x86_64                  38/67 
+  Verifying        : libXi-devel-1.7.9-6.fc28.x86_64                      39/67 
+  Verifying        : libXinerama-devel-1.1.3-10.fc28.x86_64               40/67 
+  Verifying        : libXrandr-devel-1.5.1-5.fc28.x86_64                  41/67 
+  Verifying        : cups-libs-1:2.2.6-16.fc28.x86_64                     42/67 
+  Verifying        : libtiff-4.0.9-10.fc28.x86_64                         43/67 
+  Verifying        : jbigkit-libs-2.1-12.fc28.x86_64                      44/67 
+  Verifying        : jasper-libs-2.0.14-5.fc28.x86_64                     45/67 
+  Verifying        : libjpeg-turbo-1.5.3-6.fc28.x86_64                    46/67 
+  Verifying        : libpng-2:1.6.34-6.fc28.x86_64                        47/67 
+  Verifying        : libpng-devel-2:1.6.34-6.fc28.x86_64                  48/67 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                      49/67 
+  Verifying        : bzip2-devel-1.0.6-26.fc28.x86_64                     50/67 
+  Verifying        : fribidi-devel-1.0.2-1.fc28.x86_64                    51/67 
+  Verifying        : harfbuzz-devel-1.7.5-3.fc28.x86_64                   52/67 
+  Verifying        : harfbuzz-icu-1.7.5-3.fc28.x86_64                     53/67 
+  Verifying        : libicu-60.2-2.fc28.x86_64                            54/67 
+  Verifying        : libXft-devel-2.3.2-8.fc28.x86_64                     55/67 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                        56/67 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                          57/67 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                        58/67 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                        59/67 
+  Verifying        : libuuid-devel-2.32.1-1.fc28.x86_64                   60/67 
+  Verifying        : expat-devel-2.2.5-3.fc28.x86_64                      61/67 
+  Verifying        : pixman-devel-0.34.0-8.fc28.x86_64                    62/67 
+  Verifying        : libXrender-devel-0.9.10-5.fc28.x86_64                63/67 
+  Verifying        : pixman-0.34.0-8.fc28.x86_64                          64/67 
+  Verifying        : graphite2-devel-1.3.10-5.fc28.x86_64                 65/67 
+  Verifying        : libicu-devel-60.2-2.fc28.x86_64                      66/67 
+  Verifying        : aajohan-comfortaa-fonts-3.001-2.fc28.noarch          67/67 
+
+Installed:
+  gtk2-devel.x86_64 2.24.32-2.fc28                                              
+  aajohan-comfortaa-fonts.noarch 3.001-2.fc28                                   
+  atk.x86_64 2.28.1-1.fc28                                                      
+  atk-devel.x86_64 2.28.1-1.fc28                                                
+  bzip2-devel.x86_64 1.0.6-26.fc28                                              
+  cairo.x86_64 1.15.12-2.fc28                                                   
+  cairo-devel.x86_64 1.15.12-2.fc28                                             
+  cups-libs.x86_64 1:2.2.6-16.fc28                                              
+  expat-devel.x86_64 2.2.5-3.fc28                                               
+  fontconfig.x86_64 2.13.0-4.fc28                                               
+  fontconfig-devel.x86_64 2.13.0-4.fc28                                         
+  fontpackages-filesystem.noarch 1.44-21.fc28                                   
+  freetype.x86_64 2.8-10.fc28                                                   
+  freetype-devel.x86_64 2.8-10.fc28                                             
+  fribidi.x86_64 1.0.2-1.fc28                                                   
+  fribidi-devel.x86_64 1.0.2-1.fc28                                             
+  gdk-pixbuf2.x86_64 2.36.12-1.fc28                                             
+  gdk-pixbuf2-devel.x86_64 2.36.12-1.fc28                                       
+  gdk-pixbuf2-modules.x86_64 2.36.12-1.fc28                                     
+  glib2-devel.x86_64 2.56.1-4.fc28                                              
+  graphite2.x86_64 1.3.10-5.fc28                                                
+  graphite2-devel.x86_64 1.3.10-5.fc28                                          
+  gtk-update-icon-cache.x86_64 3.22.30-1.fc28                                   
+  gtk2.x86_64 2.24.32-2.fc28                                                    
+  harfbuzz.x86_64 1.7.5-3.fc28                                                  
+  harfbuzz-devel.x86_64 1.7.5-3.fc28                                            
+  harfbuzz-icu.x86_64 1.7.5-3.fc28                                              
+  hicolor-icon-theme.noarch 0.17-2.fc28                                         
+  jasper-libs.x86_64 2.0.14-5.fc28                                              
+  jbigkit-libs.x86_64 2.1-12.fc28                                               
+  libXcomposite.x86_64 0.4.4-12.fc28                                            
+  libXcomposite-devel.x86_64 0.4.4-12.fc28                                      
+  libXcursor.x86_64 1.1.15-1.fc28                                               
+  libXcursor-devel.x86_64 1.1.15-1.fc28                                         
+  libXdamage.x86_64 1.1.4-12.fc28                                               
+  libXext.x86_64 1.3.3-8.fc28                                                   
+  libXext-devel.x86_64 1.3.3-8.fc28                                             
+  libXfixes.x86_64 5.0.3-5.fc28                                                 
+  libXfixes-devel.x86_64 5.0.3-5.fc28                                           
+  libXft.x86_64 2.3.2-8.fc28                                                    
+  libXft-devel.x86_64 2.3.2-8.fc28                                              
+  libXi.x86_64 1.7.9-6.fc28                                                     
+  libXi-devel.x86_64 1.7.9-6.fc28                                               
+  libXinerama.x86_64 1.1.3-10.fc28                                              
+  libXinerama-devel.x86_64 1.1.3-10.fc28                                        
+  libXrandr.x86_64 1.5.1-5.fc28                                                 
+  libXrandr-devel.x86_64 1.5.1-5.fc28                                           
+  libXrender.x86_64 0.9.10-5.fc28                                               
+  libXrender-devel.x86_64 0.9.10-5.fc28                                         
+  libdatrie.x86_64 0.2.9-7.fc28                                                 
+  libicu.x86_64 60.2-2.fc28                                                     
+  libicu-devel.x86_64 60.2-2.fc28                                               
+  libjpeg-turbo.x86_64 1.5.3-6.fc28                                             
+  libpng.x86_64 2:1.6.34-6.fc28                                                 
+  libpng-devel.x86_64 2:1.6.34-6.fc28                                           
+  libthai.x86_64 0.1.27-2.fc28                                                  
+  libtiff.x86_64 4.0.9-10.fc28                                                  
+  libuuid-devel.x86_64 2.32.1-1.fc28                                            
+  pango.x86_64 1.42.3-1.fc28                                                    
+  pango-devel.x86_64 1.42.3-1.fc28                                              
+  pcre-cpp.x86_64 8.42-2.fc28                                                   
+  pcre-devel.x86_64 8.42-2.fc28                                                 
+  pcre-utf16.x86_64 8.42-2.fc28                                                 
+  pcre-utf32.x86_64 8.42-2.fc28                                                 
+  pixman.x86_64 0.34.0-8.fc28                                                   
+  pixman-devel.x86_64 0.34.0-8.fc28                                             
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gtk2-devel
+gtk2-devel-2.24.32-2.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0     v0.11.0 [required by base]
+  - install base-bytes   base    [required by cppo]
+  - install ocamlbuild   0.12.0  [required by camlp4]
+  - install base         v0.11.1 [required by configurator]
+  - install cppo         1.6.4   [required by camlimages]
+  - install camlp4       4.06+1  [required by lablgl]
+  - install stdio        v0.11.0 [required by configurator]
+  - install lablgl       1.05    [required by freetennis]
+  - install configurator v0.11.0 [required by camlimages]
+  - install ocamlsdl     0.9.1   [required by freetennis]
+  - install lablgtk      2.18.6  [required by freetennis]
+  - install camlimages   5.0.1   [required by freetennis]
+  - install freetennis   0.4.8
+===== 13 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlimages.5.0.1] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[freetennis.0.4.8] found in cache
+[lablgl.1.05] found in cache
+[lablgtk.2.18.6] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlsdl.0.9.1] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed camlp4.4.06+1
+[ERROR] The compilation of lablgl failed at "/usr/bin/make INSTALLDIR=/home/opam/.opam/4.06/lib/lablgl glut".
+
+#=== ERROR while compiling lablgl.1.05 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/lablgl.1.05
+# command              /usr/bin/make INSTALLDIR=/home/opam/.opam/4.06/lib/lablgl glut
+# exit-code            2
+# env-file             ~/.opam/log/lablgl-10-b446b1.env
+# output-file          ~/.opam/log/lablgl-10-b446b1.out
+### output ###
+# cd src && /usr/bin/make all LIBDIR="`ocamlc -where`"
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/lablgl.1.05/src'
+# ocamlc -pp camlp4o var2def.ml -o var2def
+# ocamlc -pp camlp4o var2switch.ml -o var2switch
+# File "var2switch.ml", line 25, characters 26-42:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# /usr/bin/make lablgl.cma
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/lablgl.1.05/src'
+# ocamlrun ../src/var2def < gl_tags.var > gl_tags.h
+# ocamlrun ../src/var2switch -table GL_ < gl_tags.var > gl_tags.c
+# ocamlc -c -w s -ccopt "-c -O  -I/usr/X11R6/include" ml_gl.c
+# ml_gl.c:10:10: fatal error: GL/gl.h: No such file or directory
+#  #include <GL/gl.h>
+#           ^~~~~~~~~
+# compilation terminated.
+# make[2]: *** [../Makefile.common:53: ml_gl.o] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/lablgl.1.05/src'
+# make[1]: *** [Makefile:27: all] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/lablgl.1.05/src'
+# make: *** [Makefile:15: lib] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build lablgl 1.05
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base         v0.11.1
+| - install base-bytes   base
+| - install camlp4       4.06+1
+| - install configurator v0.11.0
+| - install cppo         1.6.4
+| - install ocamlbuild   0.12.0
+| - install sexplib0     v0.11.0
+| - install stdio        v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180807020912.export"
+31 1533607727 1533607861
