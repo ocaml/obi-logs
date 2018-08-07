@@ -1,0 +1,434 @@
+$ opam depext -iy -j 2 datakit.0.10.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy m4 zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install   ppx_tools               5.0                      [required by protocol-9p-unix]
+  - remove    dune                    1.1.0                    [conflicts with jbuilder]
+  - install   base-num                base                     [required by num]
+  - install   ocamlbuild              0.12.0                   [required by mtime, irmin, astring, etc.]
+  - install   base-bytes              base                     [required by hvsock, astring, datakit-server, named-pipe]
+  - install   ocamlgraph              1.8.8                    [required by git, irmin]
+  - install   camlzip                 1.07                     [required by datakit]
+  - downgrade jbuilder                transition to 1.0+beta11 [required by datakit]
+  - install   num                     0                        [required by sexplib]
+  - install   uchar                   0.0.2                    [required by jsonm]
+  - install   win-error               0.3                      [required by protocol-9p-unix]
+  - install   stringext               1.5.0                    [required by conduit]
+  - install   result                  1.3                      [required by datakit]
+  - install   re                      1.7.3                    [required by prometheus-app]
+  - install   ppx_traverse_builtins   v0.9.0                   [required by ppx_core, ppx_metaquot]
+  - install   ppx_derivers            1.0                      [required by ppx_deriving]
+  - install   octavius                1.2.0                    [required by ppx_js_style]
+  - install   ocaml-compiler-libs     v0.9.0                   [required by ppx_core]
+  - install   magic-mime              1.1.0                    [required by cohttp]
+  - install   cppo                    1.6.1                    [required by lwt]
+  - install   base64                  2.2.0                    [required by cohttp]
+  - install   sexplib                 v0.9.2                   [required by conduit, datakit-server]
+  - install   topkg                   0.9.1                    [required by mtime, irmin, asetmap, etc.]
+  - install   ocaml-migrate-parsetree 1.0.7                    [required by fieldslib, ppx_sexp_conv, ppx_fields_conv]
+  - install   ocplib-endian           1.0                      [required by git]
+  - install   cppo_ocamlbuild         1.6.0                    [required by lwt]
+  - install   base                    v0.9.3                   [required by fieldslib]
+  - install   rresult                 0.5.0                    [required by datakit]
+  - install   mtime                   0.8.4                    [required by datakit]
+  - install   duration                0.1.1                    [required by hvsock]
+  - install   cmdliner                1.0.2                    [required by datakit]
+  - install   astring                 0.8.3                    [required by datakit]
+  - install   asetmap                 0.8.1                    [required by datakit]
+  - install   ppx_ast                 v0.9.1                   [required by ppx_core]
+  - install   cstruct                 3.1.1                    [required by datakit]
+  - install   ppx_deriving            4.2.1                    [required by conduit]
+  - install   lwt                     3.0.0                    [required by datakit]
+  - install   stdio                   v0.9.0                   [required by ppx_core, configurator]
+  - install   uutf                    1.0.1                    [required by jsonm]
+  - install   fmt                     0.8.5                    [required by datakit]
+  - install   ocb-stubblr             0.1.1                    [required by named-pipe]
+  - install   fpath                   0.7.2                    [required by bos]
+  - install   mstruct                 1.4.0                    [required by git]
+  - install   hex                     1.2.0                    [required by git, irmin]
+  - install   cstruct-lwt             3.2.1                    [required by protocol-9p-unix]
+  - install   ppx_core                v0.9.0                   [required by ppx_sexp_conv, ppx_fields_conv]
+  - install   jsonm                   1.0.1                    [required by irmin]
+  - install   prometheus              0.4                      [required by datakit-server, prometheus-app]
+  - install   mirage-flow             1.5.0                    [required by datakit]
+  - install   mirage-device           1.1.0                    [required by mirage-clock, mirage-time]
+  - install   logs                    0.6.2                    [required by datakit]
+  - install   named-pipe              0.4.0                    [required by datakit]
+  - install   ppx_optcomp             v0.9.0                   [required by conduit]
+  - install   mirage-channel          3.1.0                    [required by mirage-channel-lwt]
+  - install   mirage-time             1.1.0                    [required by mirage-time-lwt]
+  - install   mirage-kv               1.1.1                    [required by mirage-kv-lwt]
+  - install   mirage-clock            1.3.0                    [required by mirage-flow-lwt]
+  - install   win-eventlog            0.2                      [required by datakit]
+  - install   irmin-watcher           0.3.0                    [required by datakit]
+  - install   bos                     0.2.0                    [required by hvsock]
+  - install   asl                     0.11                     [required by datakit]
+  - install   ppx_driver              v0.9.1                   [required by conduit]
+  - install   mirage-time-lwt         1.1.0                    [required by hvsock]
+  - install   mirage-kv-lwt           1.1.0                    [required by protocol-9p-unix]
+  - install   mirage-flow-lwt         1.5.0                    [required by datakit-server, conduit, hvsock]
+  - install   ppx_metaquot            v0.9.0                   [required by ppx_sexp_conv, ppx_fields_conv]
+  - install   fieldslib               v0.9.0                   [required by cohttp]
+  - install   hvsock                  1.0.1                    [required by datakit]
+  - install   ppx_type_conv           v0.9.0                   [required by ppx_sexp_conv, ppx_fields_conv]
+  - install   ppx_js_style            v0.9.0                   [required by ppx_base]
+  - install   ppx_sexp_conv           v0.9.0                   [required by conduit]
+  - install   ppx_fields_conv         v0.9.0                   [required by cohttp]
+  - install   ppx_enumerate           v0.9.0                   [required by ppx_base]
+  - install   ppx_compare             v0.9.0                   [required by ppx_base]
+  - install   uri                     1.9.7                    [required by datakit]
+  - install   ipaddr                  2.8.0                    [required by conduit]
+  - install   ppx_hash                v0.9.0                   [required by ppx_base]
+  - install   irmin                   1.1.0                    [required by datakit]
+  - install   git                     1.10.0                   [required by datakit]
+  - install   conduit                 0.15.4                   [required by datakit]
+  - install   ppx_base                v0.9.0                   [required by configurator]
+  - install   irmin-git               1.1.0                    [required by datakit]
+  - install   cohttp                  0.22.0                   [required by prometheus-app]
+  - install   configurator            v0.9.1                   [required by io-page-unix]
+  - install   prometheus-app          0.3                      [required by datakit]
+  - install   io-page                 2.0.1                    [required by io-page-unix, mirage-channel-lwt]
+  - install   mirage-channel-lwt      3.1.0                    [required by protocol-9p-unix]
+  - install   io-page-unix            2.0.1                    [required by protocol-9p-unix]
+  - install   protocol-9p             0.12.1                   [required by datakit]
+  - install   protocol-9p-unix        0.12.1                   [required by datakit]
+  - install   datakit-server          0.10.1                   [required by datakit]
+  - install   datakit                 0.10.1
+===== 90 to install | 1 to downgrade | 1 to remove =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[asetmap.0.8.1] found in cache
+[asl.0.11] found in cache
+[astring.0.8.3] found in cache
+[base.v0.9.3] found in cache
+[base64.2.2.0] found in cache
+[bos.0.2.0] found in cache
+[camlzip.1.07] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.0.22.0] found in cache
+[conduit.0.15.4] found in cache
+[configurator.v0.9.1] found in cache
+[cppo.1.6.1] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.1.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[datakit.0.10.1] found in cache
+[datakit-server.0.10.1] found in cache
+[duration.0.1.1] found in cache
+[fieldslib.v0.9.0] found in cache
+[fmt.0.8.5] found in cache
+[fpath.0.7.2] found in cache
+[git.1.10.0] found in cache
+[hex.1.2.0] found in cache
+[hvsock.1.0.1] found in cache
+[io-page.2.0.1] found in cache
+[io-page-unix.2.0.1] found in cache
+[ipaddr.2.8.0] found in cache
+[irmin.1.1.0] found in cache
+[irmin-git.1.1.0] found in cache
+[irmin-watcher.0.3.0] found in cache
+[jbuilder.1.0+beta11] found in cache
+[jsonm.1.0.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.3.0.0] found in cache
+[magic-mime.1.1.0] found in cache
+[mirage-channel.3.1.0] found in cache
+[mirage-channel-lwt.3.1.0] found in cache
+[mirage-clock.1.3.0] found in cache
+[mirage-device.1.1.0] found in cache
+[mirage-flow.1.5.0] found in cache
+[mirage-flow-lwt.1.5.0] found in cache
+[mirage-kv.1.1.1] found in cache
+[mirage-kv-lwt.1.1.0] found in cache
+[mirage-time.1.1.0] found in cache
+[mirage-time-lwt.1.1.0] found in cache
+[mstruct.1.4.0] found in cache
+[mtime.0.8.4] found in cache
+[named-pipe.0.4.0] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.7] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[ocb-stubblr.0.1.1] found in cache
+[ocplib-endian.1.0] found in cache
+[octavius.1.2.0] found in cache
+[ppx_ast.v0.9.1] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.9.1] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.0] found in cache
+[prometheus.0.4] found in cache
+[prometheus-app.0.3] found in cache
+[protocol-9p.0.12.1] found in cache
+[protocol-9p-unix.0.12.1] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.v0.9.2] found in cache
+[stdio.v0.9.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[win-error.0.3] found in cache
+[win-eventlog.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> removed   jbuilder.transition
+-> removed   dune.1.1.0
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed camlzip.1.07
+-> installed jbuilder.1.0+beta11
+-> installed base64.2.2.0
+-> installed cppo.1.6.1
+-> installed magic-mime.1.1.0
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocamlgraph.1.8.8
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.7
+-> installed lwt.3.0.0
+-> installed ocplib-endian.1.0
+-> installed ppx_ast.v0.9.1
+-> installed sexplib.v0.9.2
+-> installed cstruct.3.1.1
+-> installed cstruct-lwt.3.2.1
+-> installed hex.1.2.0
+-> installed mstruct.1.4.0
+-> installed ppx_deriving.4.2.1
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed asetmap.0.8.1
+-> installed astring.0.8.3
+-> installed base.v0.9.3
+-> installed cmdliner.1.0.2
+-> installed duration.0.1.1
+-> installed fpath.0.7.2
+-> installed mtime.0.8.4
+-> installed ocb-stubblr.0.1.1
+-> installed rresult.0.5.0
+-> installed stdio.v0.9.0
+-> installed named-pipe.0.4.0
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
+-> installed mirage-device.1.1.0
+-> installed logs.0.6.2
+-> installed asl.0.11
+-> installed irmin-watcher.0.3.0
+-> installed mirage-clock.1.3.0
+-> installed mirage-flow.1.5.0
+-> installed bos.0.2.0
+-> installed mirage-channel.3.1.0
+-> installed mirage-kv.1.1.1
+-> installed mirage-flow-lwt.1.5.0
+-> installed mirage-time.1.1.0
+-> installed mirage-kv-lwt.1.1.0
+-> installed ppx_core.v0.9.0
+-> installed mirage-time-lwt.1.1.0
+-> installed hvsock.1.0.1
+-> installed prometheus.0.4
+-> installed uutf.1.0.1
+-> installed ppx_optcomp.v0.9.0
+-> installed jsonm.1.0.1
+-> installed win-error.0.3
+-> installed win-eventlog.0.2
+-> installed ppx_driver.v0.9.1
+-> installed fieldslib.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_type_conv.v0.9.0
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ipaddr.2.8.0
+-> installed ppx_hash.v0.9.0
+-> installed uri.1.9.7
+-> installed conduit.0.15.4
+-> installed git.1.10.0
+-> installed irmin.1.1.0
+-> installed irmin-git.1.1.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
+-> installed mirage-channel-lwt.3.1.0
+-> installed protocol-9p.0.12.1
+-> installed protocol-9p-unix.0.12.1
+-> installed datakit-server.0.10.1
+-> installed cohttp.0.22.0
+-> installed prometheus-app.0.3
+[ERROR] The compilation of datakit failed at "/home/opam/.opam/4.04/bin/jbuilder build -p datakit -j 71".
+
+#=== ERROR while compiling datakit.0.10.1 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/datakit.0.10.1
+# command              ~/.opam/4.04/bin/jbuilder build -p datakit -j 71
+# exit-code            1
+# env-file             ~/.opam/log/datakit-11-972718.env
+# output-file          ~/.opam/log/datakit-11-972718.out
+### output ###
+# File "ci/src/jbuild", line 11, characters 16-24:
+# Warning: 'per_file' was renamed 'per_module'. 'per_file' will be re-purposed in a future version and will take a list of  file names rather than module names.
+# File "ci/tests/jbuild", line 5, characters 13-23:
+# Warning: This field is useless without a (public_name ...) field.
+# File "tests/datakit/jbuild", line 5, characters 13-20:
+# Warning: This field is useless without a (public_name ...) field.
+# File "tests/datakit-bridge-github/jbuild", line 5, characters 13-34:
+# Warning: This field is useless without a (public_name ...) field.
+#     ocamldep src/datakit/bin/main.depends.ocamldep-output
+#     ocamldep src/datakit/datakit.depends.ocamldep-output
+#     ocamldep src/datakit/datakit.dependsi.ocamldep-output
+#     ocamldep src/datakit-conduit/datakit_conduit.depends.ocamldep-output
+#     ocamldep src/datakit-io/datakit_io.depends.ocamldep-output
+#     ocamldep src/datakit-log/datakit_log.depends.ocamldep-output
+#     ocamldep src/datakit-conduit/datakit_conduit.dependsi.ocamldep-output
+#     ocamldep src/datakit-io/datakit_io.dependsi.ocamldep-output
+#     ocamldep src/datakit-log/datakit_log.dependsi.ocamldep-output
+#       ocamlc src/datakit-conduit/datakit_conduit.{cmi,cmti}
+#       ocamlc src/datakit-log/datakit_log.{cmi,cmti}
+#       ocamlc src/datakit-io/datakit_io.{cmi,cmti}
+#       ocamlc src/datakit/ivfs_blob.{cmi,cmti}
+#       ocamlc src/datakit/autopush.{cmi,cmo,cmt}
+#     ocamlopt src/datakit-conduit/datakit_conduit.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlopt.opt -w -40 -g -I /home/opam/.opam/4.04/lib/asetmap -I /home/opam/.opam/4.04/lib/astring -I /home/opam/.opam/4.04/lib/bos -I /home/opam/.opam/4.04/lib/bytes -I /home/opam/.opam/4.04/lib/cstruct -I /home/opam/.opam/4.04/lib/cstruct-lwt -I /home/opam/.opam/4.04/lib/datakit-server -I /home/opam/.opam/4.04/lib/duration -I /home/opam/.opam/4.04/lib/fmt -I /home/opam/.opam/4.04/lib/fpath -I /home/opam/.opam/4.04/lib/hvsock -I /home/opam/.opam/4.04/lib/hvsock/lwt -I /home/opam/.opam/4.04/lib/hvsock/lwt-unix -I /home/opam/.opam/4.04/lib/io-page -I /home/opam/.opam/4.04/lib/io-page-unix -I /home/opam/.opam/4.04/lib/logs -I /home/opam/.opam/4.04/lib/lwt -I /home/opam/.opam/4.04/lib/mirage-channel -I /home/opam/.opam/4.04/lib/mirage-channel-lwt -I /home/opam/.opam/4.04/lib/mirage-clock -I /home/opam/.opam/4.04/lib/mirage-device -I /home/opam/.opam/4.04/lib/mirage-flow -I /home/opam/.opam/4.04/lib/mirage-flow-lwt -I /home/opam/.opam/4.04/lib/mirage-kv -I /home/opam/.opam/4.04/lib/mirage-kv-lwt -I /home/opam/.opam/4.04/lib/mirage-time -I /home/opam/.opam/4.04/lib/mirage-time-lwt -I /home/opam/.opam/4.04/lib/ocaml -I /home/opam/.opam/4.04/lib/ocaml/threads -I /home/opam/.opam/4.04/lib/ocplib-endian -I /home/opam/.opam/4.04/lib/ppx_deriving -I /home/opam/.opam/4.04/lib/prometheus -I /home/opam/.opam/4.04/lib/protocol-9p -I /home/opam/.opam/4.04/lib/protocol-9p-unix -I /home/opam/.opam/4.04/lib/re -I /home/opam/.opam/4.04/lib/re/posix -I /home/opam/.opam/4.04/lib/result -I /home/opam/.opam/4.04/lib/rresult -I /home/opam/.opam/4.04/lib/sexplib -I /home/opam/.opam/4.04/lib/sexplib/0 -I /home/opam/.opam/4.04/lib/stringext -I /home/opam/.opam/4.04/lib/uchar -I /home/opam/.opam/4.04/lib/uri -no-alias-deps -I src/datakit-conduit -o src/datakit-conduit/datakit_conduit.cmx -c -impl src/datakit-conduit/datakit_conduit.ml)
+# File "src/datakit-conduit/datakit_conduit.ml", line 191, characters 17-46:
+# Error: Unbound module Named_pipe_lwt
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build datakit 0.10.1
++- 
++- The following changes have been performed
+| - remove    dune                    1.1.0
+| - downgrade jbuilder                transition to 1.0+beta11
+| - install   asetmap                 0.8.1
+| - install   asl                     0.11
+| - install   astring                 0.8.3
+| - install   base                    v0.9.3
+| - install   base-bytes              base
+| - install   base-num                base
+| - install   base64                  2.2.0
+| - install   bos                     0.2.0
+| - install   camlzip                 1.07
+| - install   cmdliner                1.0.2
+| - install   cohttp                  0.22.0
+| - install   conduit                 0.15.4
+| - install   configurator            v0.9.1
+| - install   cppo                    1.6.1
+| - install   cppo_ocamlbuild         1.6.0
+| - install   cstruct                 3.1.1
+| - install   cstruct-lwt             3.2.1
+| - install   datakit-server          0.10.1
+| - install   duration                0.1.1
+| - install   fieldslib               v0.9.0
+| - install   fmt                     0.8.5
+| - install   fpath                   0.7.2
+| - install   git                     1.10.0
+| - install   hex                     1.2.0
+| - install   hvsock                  1.0.1
+| - install   io-page                 2.0.1
+| - install   io-page-unix            2.0.1
+| - install   ipaddr                  2.8.0
+| - install   irmin                   1.1.0
+| - install   irmin-git               1.1.0
+| - install   irmin-watcher           0.3.0
+| - install   jsonm                   1.0.1
+| - install   logs                    0.6.2
+| - install   lwt                     3.0.0
+| - install   magic-mime              1.1.0
+| - install   mirage-channel          3.1.0
+| - install   mirage-channel-lwt      3.1.0
+| - install   mirage-clock            1.3.0
+| - install   mirage-device           1.1.0
+| - install   mirage-flow             1.5.0
+| - install   mirage-flow-lwt         1.5.0
+| - install   mirage-kv               1.1.1
+| - install   mirage-kv-lwt           1.1.0
+| - install   mirage-time             1.1.0
+| - install   mirage-time-lwt         1.1.0
+| - install   mstruct                 1.4.0
+| - install   mtime                   0.8.4
+| - install   named-pipe              0.4.0
+| - install   num                     0
+| - install   ocaml-compiler-libs     v0.9.0
+| - install   ocaml-migrate-parsetree 1.0.7
+| - install   ocamlbuild              0.12.0
+| - install   ocamlgraph              1.8.8
+| - install   ocb-stubblr             0.1.1
+| - install   ocplib-endian           1.0
+| - install   octavius                1.2.0
+| - install   ppx_ast                 v0.9.1
+| - install   ppx_base                v0.9.0
+| - install   ppx_compare             v0.9.0
+| - install   ppx_core                v0.9.0
+| - install   ppx_derivers            1.0
+| - install   ppx_deriving            4.2.1
+| - install   ppx_driver              v0.9.1
+| - install   ppx_enumerate           v0.9.0
+| - install   ppx_fields_conv         v0.9.0
+| - install   ppx_hash                v0.9.0
+| - install   ppx_js_style            v0.9.0
+| - install   ppx_metaquot            v0.9.0
+| - install   ppx_optcomp             v0.9.0
+| - install   ppx_sexp_conv           v0.9.0
+| - install   ppx_tools               5.0
+| - install   ppx_traverse_builtins   v0.9.0
+| - install   ppx_type_conv           v0.9.0
+| - install   prometheus              0.4
+| - install   prometheus-app          0.3
+| - install   protocol-9p             0.12.1
+| - install   protocol-9p-unix        0.12.1
+| - install   re                      1.7.3
+| - install   result                  1.3
+| - install   rresult                 0.5.0
+| - install   sexplib                 v0.9.2
+| - install   stdio                   v0.9.0
+| - install   stringext               1.5.0
+| - install   topkg                   0.9.1
+| - install   uchar                   0.0.2
+| - install   uri                     1.9.7
+| - install   uutf                    1.0.1
+| - install   win-error               0.3
+| - install   win-eventlog            0.2
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180807010332.export"
+31 1533603769 1533603991
