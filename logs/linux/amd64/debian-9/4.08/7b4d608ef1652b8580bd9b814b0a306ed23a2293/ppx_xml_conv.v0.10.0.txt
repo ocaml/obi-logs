@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 ppx_xml_conv.v0.10.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ppx_xml_conv.v0.10.0: The following dependencies couldn't be met:
+          - ppx_xml_conv -> ppx_core < v0.11 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - ppx_xml_conv -> ppx_core < v0.11 -> base < v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_xml_conv.v0.10.0 returned 20
+20 1533675659 1533675661

@@ -1,0 +1,15 @@
+$ opam depext -iy -j 2 aws.0.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for aws.0.0.3: The following dependencies couldn't be met:
+          - aws -> ocsigenserver -> react < 1.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws -> ocsigenserver -> lwt < 3.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - aws -> ocsigenserver -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - aws -> ocsigenserver -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=aws.0.0.3 returned 20
+20 1533676697 1533676699
