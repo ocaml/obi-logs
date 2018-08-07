@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 iocamljs-kernel.0.4.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for iocamljs-kernel.0.4.8: The following dependencies couldn't be met:
+          - iocamljs-kernel -> js_of_ocaml < 2.8.4 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=iocamljs-kernel.0.4.8 returned 20
+20 1533611605 1533611610

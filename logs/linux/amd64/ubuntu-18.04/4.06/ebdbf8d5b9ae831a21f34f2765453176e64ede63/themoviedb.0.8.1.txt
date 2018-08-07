@@ -1,0 +1,328 @@
+$ opam depext -iy -j 2 themoviedb.0.8.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+debianutils
+libgdbm-dev
+libgmp-dev
+libpcre3-dev
+libssl-dev
+m4
+perl
+pkg-config
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libgdbm-dev libgmp-dev libpcre3-dev libssl-dev m4 perl pkg-config zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libglib2.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../00-libglib2.0-0_2.56.1-2ubuntu1_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../01-libglib2.0-data_2.56.1-2ubuntu1_all.deb ...
+Unpacking libglib2.0-data (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libicu60:amd64.
+Preparing to unpack .../02-libicu60_60.2-3ubuntu3_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-6.1ubuntu1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../04-shared-mime-info_1.9-2_amd64.deb ...
+Unpacking shared-mime-info (1.9-2) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../05-xdg-user-dirs_0.17-1ubuntu1_amd64.deb ...
+Unpacking xdg-user-dirs (0.17-1ubuntu1) ...
+Selecting previously unselected package libgdbm-dev:amd64.
+Preparing to unpack .../06-libgdbm-dev_1.14.1-6_amd64.deb ...
+Unpacking libgdbm-dev:amd64 (1.14.1-6) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../07-libgmpxx4ldbl_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../08-libgmp-dev_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../09-libpcre16-3_2%3a8.39-9_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-9) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../10-libpcre32-3_2%3a8.39-9_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-9) ...
+Selecting previously unselected package libpcrecpp0v5:amd64.
+Preparing to unpack .../11-libpcrecpp0v5_2%3a8.39-9_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-9) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../12-libpcre3-dev_2%3a8.39-9_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-9) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../13-libssl-dev_1.1.0g-2ubuntu4.1_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0g-2ubuntu4.1) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../14-libssl-doc_1.1.0g-2ubuntu4.1_all.deb ...
+Unpacking libssl-doc (1.1.0g-2ubuntu4.1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../15-pkg-config_0.29.1-0ubuntu2_amd64.deb ...
+Unpacking pkg-config (0.29.1-0ubuntu2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../16-zlib1g-dev_1%3a1.2.11.dfsg-0ubuntu2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-0ubuntu2) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3) ...
+Setting up libgdbm-dev:amd64 (1.14.1-6) ...
+Setting up libssl-dev:amd64 (1.1.0g-2ubuntu4.1) ...
+Setting up libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+No schema files found: doing nothing.
+Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Setting up pkg-config (0.29.1-0ubuntu2) ...
+Setting up libglib2.0-data (2.56.1-2ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up shared-mime-info (1.9-2) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-9) ...
+Setting up libpcre32-3:amd64 (2:8.39-9) ...
+Setting up libssl-doc (1.1.0g-2ubuntu4.1) ...
+Setting up libpcre16-3:amd64 (2:8.39-9) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Setting up xdg-user-dirs (0.17-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-0ubuntu2) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Setting up libpcre3-dev:amd64 (2:8.39-9) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-dbm                1.0.0   [required by dbm]
+  - install conf-gmp                1       [required by conf-gmp-powm-sec, zarith]
+  - install re                      1.7.3   [required by tyxml]
+  - install base-bytes              base    [required by ocamlnet, ipaddr, tyxml]
+  - install conf-perl               1       [required by zarith]
+  - install conf-pkg-config         1.1     [required by conf-zlib]
+  - install num                     1.1     [required by deriving]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by sexplib]
+  - install easy-format             1.3.1   [required by yojson]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by lwt]
+  - install conf-which              1       [required by biniou, ssl]
+  - install ocamlbuild              0.12.0  [required by themoviedb]
+  - install dbm                     1.2     [required by ocsigenserver]
+  - install conf-gmp-powm-sec       1       [required by cryptokit]
+  - install cppo                    1.6.4   [required by lwt]
+  - install zarith                  1.7     [required by cryptokit]
+  - install conf-zlib               1       [required by cryptokit]
+  - install conf-openssl            1       [required by ssl]
+  - install conf-libpcre            1       [required by pcre]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by ppx_sexp_conv, pcre]
+  - install ocaml-migrate-parsetree 1.0.11  [required by lwt]
+  - install biniou                  1.2.0   [required by yojson]
+  - install uchar                   0.0.2   [required by tyxml]
+  - install topkg                   0.9.1   [required by react, uutf]
+  - install ocamlmod                0.0.9   [required by oasis]
+  - install ocamlify                0.0.1   [required by oasis]
+  - install camlp4                  4.06+1  [required by lwt, ocsigenserver]
+  - install cryptokit               1.13    [required by ocsigenserver]
+  - install ssl                     0.5.5   [required by ocsigenserver]
+  - install sexplib                 v0.11.0 [required by ipaddr]
+  - install stdio                   v0.11.0 [required by pcre]
+  - install ppx_tools_versioned     5.2     [required by lwt]
+  - install yojson                  1.4.1   [required by themoviedb]
+  - install uutf                    1.0.1   [required by tyxml]
+  - install react                   1.2.1   [required by ocsigenserver]
+  - install oasis                   0.4.11  [required by deriving-yojson]
+  - install ppxlib                  0.3.0   [required by ppx_sexp_conv]
+  - install configurator            v0.11.0 [required by pcre]
+  - install lwt                     3.3.0   [required by themoviedb]                For the PPX, please install package lwt_ppx
+                                                                                    For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                    For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install tyxml                   4.2.0   [required by ocsigenserver]             For tyxml's ppx, please install tyxml-ppx.
+                                                                                    Tyxml's camlp4-based libraries (tyxml.syntax and tyxml.parser) are now deprecated and will be removed in the next major version.
+  - install deriving                0.8.1   [required by deriving-yojson]
+  - install ppx_sexp_conv           v0.11.2 [required by ipaddr]
+  - install pcre                    7.3.4   [required by ocsigenserver]
+  - install lwt_ssl                 1.1.2   [required by ocsigenserver]
+  - install lwt_react               1.1.1   [required by ocsigenserver]
+  - install deriving-yojson         0.3.1   [required by themoviedb]
+  - install ipaddr                  2.8.0   [required by ocsigenserver]
+  - install ocamlnet                4.1.6   [required by ocsigenserver]
+  - install ocsigenserver           2.9     [required by themoviedb]
+  - install themoviedb              0.8.1
+===== 53 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[dbm.1.2] found in cache
+[deriving.0.8.1] found in cache
+[deriving-yojson.0.3.1] found in cache
+[easy-format.1.3.1] found in cache
+[ipaddr.2.8.0] found in cache
+[lwt.3.3.0] found in cache
+[lwt_react.1.1.1] found in cache
+[lwt_ssl.1.1.2] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ocamlnet.4.1.6] found in cache
+[ocsigenserver.2.9] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[themoviedb.0.8.1] found in cache
+[topkg.0.9.1] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-dbm.1.0.0
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed conf-openssl.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed dbm.1.2
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed camlp4.4.06+1
+-> installed lwt.3.3.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed ssl.0.5.5
+-> installed lwt_ssl.1.1.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed deriving.0.8.1
+-> installed pcre.7.3.4
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ipaddr.2.8.0
+-> installed topkg.0.9.1
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed tyxml.4.2.0
+-> installed yojson.1.4.1
+-> installed deriving-yojson.0.3.1
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed ocamlnet.4.1.6
+-> installed ocsigenserver.2.9
+[ERROR] The compilation of themoviedb failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --disable-utest --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling themoviedb.0.8.1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/themoviedb.0.8.1
+# command              ~/.opam/4.06/bin/ocaml setup.ml -configure --disable-utest --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/themoviedb-13-c95c2f.env
+# output-file          ~/.opam/log/themoviedb-13-c95c2f.out
+### output ###
+# File "./setup.ml", line 234, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 234, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build themoviedb 0.8.1
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install camlp4                  4.06+1
+| - install conf-dbm                1.0.0
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-libpcre            1
+| - install conf-openssl            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install dbm                     1.2
+| - install deriving                0.8.1
+| - install deriving-yojson         0.3.1
+| - install easy-format             1.3.1
+| - install ipaddr                  2.8.0
+| - install lwt                     3.3.0
+| - install lwt_react               1.1.1
+| - install lwt_ssl                 1.1.2
+| - install num                     1.1
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install ocamlnet                4.1.6
+| - install ocsigenserver           2.9
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install react                   1.2.1
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install ssl                     0.5.5
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install tyxml                   4.2.0
+| - install uchar                   0.0.2
+| - install uutf                    1.0.1
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180807032222.export"
+31 1533612124 1533612460
