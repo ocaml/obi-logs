@@ -1,0 +1,235 @@
+$ opam depext -iy -j 2 pci.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+hwdata
+libpci-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy hwdata libpci-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libudev-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-libudev-dev_232-25+deb9u4_amd64.deb ...
+Unpacking libudev-dev:amd64 (232-25+deb9u4) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libkmod2:amd64.
+Preparing to unpack .../02-libkmod2_23-2_amd64.deb ...
+Unpacking libkmod2:amd64 (23-2) ...
+Selecting previously unselected package libpci3:amd64.
+Preparing to unpack .../03-libpci3_1%3a3.5.2-1_amd64.deb ...
+Unpacking libpci3:amd64 (1:3.5.2-1) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../04-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../05-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package pciutils.
+Preparing to unpack .../06-pciutils_1%3a3.5.2-1_amd64.deb ...
+Unpacking pciutils (1:3.5.2-1) ...
+Selecting previously unselected package libusb-1.0-0:amd64.
+Preparing to unpack .../07-libusb-1.0-0_2%3a1.0.21-1_amd64.deb ...
+Unpacking libusb-1.0-0:amd64 (2:1.0.21-1) ...
+Selecting previously unselected package usbutils.
+Preparing to unpack .../08-usbutils_1%3a007-4+b1_amd64.deb ...
+Unpacking usbutils (1:007-4+b1) ...
+Selecting previously unselected package hwdata.
+Preparing to unpack .../09-hwdata_0.290-1_all.deb ...
+Unpacking hwdata (0.290-1) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../10-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../11-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../12-zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Selecting previously unselected package libpci-dev.
+Preparing to unpack .../13-libpci-dev_1%3a3.5.2-1_amd64.deb ...
+Unpacking libpci-dev (1:3.5.2-1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../14-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../15-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../16-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../17-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libkmod2:amd64 (23-2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Setting up libusb-1.0-0:amd64 (2:1.0.21-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up libpci3:amd64 (1:3.5.2-1) ...
+Setting up libudev-dev:amd64 (232-25+deb9u4) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up usbutils (1:007-4+b1) ...
+Setting up pciutils (1:3.5.2-1) ...
+Setting up libpci-dev (1:3.5.2-1) ...
+Setting up hwdata (0.290-1) ...
+Processing triggers for sgml-base (1.29) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by topkg]
+  - install base-bytes      base   [required by ctypes]
+  - install ocamlbuild      0.12.0 [required by pci]
+  - install conf-pkg-config 1.1    [required by ctypes]
+  - install topkg           0.9.1  [required by integers]
+  - install integers        0.2.2  [required by ctypes]
+  - install ctypes          0.14.0 [required by pci]
+  - install pci             1.0.0
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.14.0] found in cache
+[integers.0.2.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[pci.1.0.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+[ERROR] The compilation of pci failed at "/usr/bin/make".
+
+#=== ERROR while compiling pci.1.0.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/pci.1.0.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/pci-10-9dee53.env
+# output-file          ~/.opam/log/pci-10-9dee53.out
+### output ###
+# ocaml setup.ml -build 
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# W: Cannot find source file matching module 'Ffi_generated' in library pci
+# W: Cannot find source file matching module 'Ffi_generated_types' in library pci
+# /home/opam/.opam/4.06+flambda/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06+flambda/lib/ocamlbuild /home/opam/.opam/4.06+flambda/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06+flambda/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 66, characters 35-44:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 70, characters 23-32:
+# Warning: the tag "pkg_oUnit" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules bindings/ffi_bindings.ml > bindings/ffi_bindings.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -I bindings -o bindings/ffi_bindings.cmo bindings/ffi_bindings.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -a -warn-error +1..45 -I bindings bindings/ffi_bindings.cmo -o bindings/pci_bindings.cma
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -warn-error +1..45 -package ctypes.stubs -I bindings -o bindings/ffi_bindings.cmx bindings/ffi_bindings.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlopt -a -warn-error +1..45 -I bindings bindings/ffi_bindings.cmx -o bindings/pci_bindings.cmxa
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlopt -shared -I bindings bindings/pci_bindings.cmxa bindings/ffi_bindings.cmx -o bindings/pci_bindings.cmxs
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules stubgen/ffi_stubgen.ml > stubgen/ffi_stubgen.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -I stubgen -I bindings -o stubgen/ffi_stubgen.cmo stubgen/ffi_stubgen.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -warn-error +1..45 -linkpkg -package ctypes.stubs -I bindings -I stubgen bindings/pci_bindings.cma stubgen/ffi_stubgen.cmo -o stubgen/ffi_stubgen.byte
+# stubgen/ffi_stubgen.byte -c > lib/ffi_generated_stubs.c
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -I lib -package ctypes -ccopt -I -ccopt /home/opam/.opam/4.06+flambda/lib/ctypes -c lib/ffi_generated_stubs.c
+# mv ffi_generated_stubs.o lib/ffi_generated_stubs.o
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlmklib -o lib/pci_stubs -lpci lib/ffi_generated_stubs.o
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/pci.mli > lib/pci.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.06+flambda/lib/ctypes -warn-error +1..45 -package ctypes.stubs -I lib -I bindings -o lib/pci.cmi lib/pci.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/pci.ml > lib/pci.ml.depends
+# stubgen/ffi_stubgen.byte -ml > lib/ffi_generated.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/ffi_generated.ml > lib/ffi_generated.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules stubgen/ffi_types_stubgen.ml > stubgen/ffi_types_stubgen.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -warn-error +1..45 -warn-error +1..45 -package ctypes.stubs -I stubgen -I bindings -o stubgen/ffi_types_stubgen.cmo stubgen/ffi_types_stubgen.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -warn-error +1..45 -linkpkg -package ctypes.stubs -I bindings -I stubgen bindings/pci_bindings.cma stubgen/ffi_types_stubgen.cmo -o stubgen/ffi_types_stubgen.byte
+# stubgen/ffi_types_stubgen.byte > stubgen/ffi_ml_types_stubgen.c
+# gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT stubgen/ffi_ml_types_stubgen.c -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/ocaml -o stubgen/ffi_ml_types_subgen
+# stubgen/ffi_ml_types_subgen >> lib/ffi_generated_types.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package ctypes.stubs -modules lib/ffi_generated_types.ml > lib/ffi_generated_types.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.06+flambda/lib/ctypes -warn-error +1..45 -package ctypes.stubs -I lib -I bindings -o lib/ffi_generated.cmo lib/ffi_generated.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.06+flambda/lib/ctypes -warn-error +1..45 -package ctypes.stubs -I lib -I bindings -o lib/ffi_generated_types.cmo lib/ffi_generated_types.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.06+flambda/lib/ctypes -warn-error +1..45 -package ctypes.stubs -I lib -I bindings -o lib/pci.cmo lib/pci.ml
+# + /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I bindings -ccopt -I -ccopt /home/opam/.opam/4.06+flambda/lib/ctypes -warn-error +1..45 -package ctypes.stubs -I lib -I bindings -o lib/pci.cmo lib/pci.ml
+# File "lib/pci.ml", line 81, characters 39-42:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# + /home/opam/.opam/4.06+flambda/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06+flambda/lib/ocamlbuild /home/opam/.opam/4.06+flambda/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06+flambda/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.06+flambda/bin/ocamlbuild' bindings/pci_bindings.cma bindings/pci_bindings.cmxa bindings/pci_bindings.a bindings/pci_bindings.cmxs lib/libpci_stubs.a lib/dllpci_stubs.so lib/pci.cma lib/pci.cmxa lib/pci.a lib/pci.cmxs stubgen/ffi_stubgen.byte stubgen/ffi_types_stubgen.byte -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build pci 1.0.0
++- 
++- The following changes have been performed
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install ctypes          0.14.0
+| - install integers        0.2.2
+| - install ocamlbuild      0.12.0
+| - install result          1.3
+| - install topkg           0.9.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    hwdata libpci-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180807051359.export"
+31 1533618826 1533618893

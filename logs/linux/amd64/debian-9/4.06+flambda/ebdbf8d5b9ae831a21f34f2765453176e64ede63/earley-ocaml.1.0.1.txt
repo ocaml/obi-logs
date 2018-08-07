@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 earley-ocaml.1.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for earley-ocaml.1.0.1: The following dependencies couldn't be met:
+          - earley-ocaml -> ocaml < 4.06.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=earley-ocaml.1.0.1 returned 20
+20 1533616562 1533616564
