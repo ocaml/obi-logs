@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 hardcaml-examples.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for hardcaml-examples.0.3.0: The following dependencies couldn't be met:
+          - hardcaml-examples -> hardcaml < 2.0.0 -> js_of_ocaml < 3.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - hardcaml-examples -> hardcaml < 2.0.0 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - hardcaml-examples -> hardcaml < 2.0.0 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=hardcaml-examples.0.3.0 returned 20
+20 1533621451 1533621454

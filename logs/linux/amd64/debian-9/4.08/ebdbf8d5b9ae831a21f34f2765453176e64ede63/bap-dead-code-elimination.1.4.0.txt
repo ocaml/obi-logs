@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 bap-dead-code-elimination.1.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bap-dead-code-elimination.1.4.0: The following dependencies couldn't be met:
+          - bap-dead-code-elimination -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=bap-dead-code-elimination.1.4.0 returned 20
+20 1533622122 1533622125
