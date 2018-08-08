@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 topkg-care.0.8.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for topkg-care.0.8.0: The following dependencies couldn't be met:
+          - topkg-care -> bos >= 0.1.5 -> topkg >= 0.9.0
+          - topkg-care -> topkg = 0.8.0
+        Your request can't be satisfied:
+          - No available version of topkg satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=topkg-care.0.8.0 returned 20
+20 1533762495 1533762497

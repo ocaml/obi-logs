@@ -1,0 +1,26 @@
+$ opam depext -iy -j 2 vhd-tool.0.7.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for vhd-tool.0.7.7: The following dependencies couldn't be met:
+          - vhd-tool -> cstruct >= 1.0.1 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vhd-tool -> cstruct >= 1.0.1 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - vhd-tool -> ssl >= 0.5.3
+          - vhd-tool -> tar-format = 0.5.1 -> cstruct (>= 1.9.0 & < 3.0.0) -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - vhd-tool -> tar-format = 0.5.1 -> cstruct (>= 1.9.0 & < 3.0.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vhd-tool -> vhd-format < 0.8.0 -> lwt < 2.4.7 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vhd-tool -> vhd-format < 0.8.0 -> cstruct < 2.0.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vhd-tool -> vhd-format < 0.8.0 -> cstruct < 2.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cstruct satisfies the constraints
+          - No available version of tar-format satisfies the constraints
+          - lwt = 2.4.5 is in conflict with ssl >= 0.5.0
+
+
+Command failed: opam list --readonly --external  --resolve=vhd-tool.0.7.7 returned 20
+20 1533764153 1533764157

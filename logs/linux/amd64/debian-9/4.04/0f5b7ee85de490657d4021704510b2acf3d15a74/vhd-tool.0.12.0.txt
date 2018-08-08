@@ -1,0 +1,496 @@
+$ opam depext -iy -j 2 vhd-tool.0.12.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libssl-dev
+libsystemd-dev
+m4
+pkg-config
+time
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libssl-dev libsystemd-dev m4 pkg-config time
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../05-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../06-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libsystemd-dev:amd64.
+Preparing to unpack .../07-libsystemd-dev_232-25+deb9u4_amd64.deb ...
+Unpacking libsystemd-dev:amd64 (232-25+deb9u4) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../08-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../09-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package time.
+Preparing to unpack .../10-time_1.7-25.1+b1_amd64.deb ...
+Unpacking time (1.7-25.1+b1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up time (1.7-25.1+b1) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libsystemd-dev:amd64 (232-25+deb9u4) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3          [required by vhd-tool]
+  - install fd-send-recv            1.0.5          [required by xapi-idl]
+  - install ppx_tools               5.0            [required by nbd, xenstore]
+  - install result                  1.3            [required by cmdliner, tar-format]
+  - install sha                     1.12           [required by vhd-tool]
+  - install ocamlbuild              0.12.0         [required by oasis, cohttp, cmdliner, etc.]
+  - install magic-mime              1.1.0          [required by cohttp]
+  - install base-bytes              base           [required by cohttp]
+  - install conf-pkg-config         1.1            [required by conf-openssl]
+  - install syslog                  1.4            [required by xapi-forkexecd]
+  - install easy-format             1.3.1          [required by yojson]
+  - install ppx_derivers            1.0            [required by ppx_deriving]
+  - install conf-which              1              [required by conf-time]
+  - install ocaml-migrate-parsetree 1.0.11         [required by cstruct]
+  - install variantslib             113.24.00      [required by async]
+  - install uchar                   0.0.2          [required by jsonm]
+  - install typerep                 113.24.00      [required by async]
+  - install topkg                   0.9.1          [required by cmdliner]
+  - install sexplib                 113.33.00+4.03 [required by nbd, cohttp, xapi-idl]
+  - install ppx_core                113.33.01+4.03 [required by ppx_bench, ppx_assert, ppx_expect]
+  - install ocamlmod                0.0.9          [required by oasis]
+  - install ocamlify                0.0.1          [required by oasis]
+  - install ocaml-systemd           1.2            [required by xapi-forkexecd]
+  - install fieldslib               113.24.00      [required by cohttp]
+  - install camlp4                  4.04+1         [required by lwt, type_conv]
+  - install bin_prot                113.33.00+4.03 [required by async]
+  - install stringext               1.5.0          [required by cohttp]
+  - install ounit                   2.0.8          [required by xapi-idl, xenstore]
+  - install omd                     1.3.1          [required by cow]
+  - install cppo                    1.6.4          [required by rpc]
+  - install base64                  2.2.0          [required by cohttp]
+  - install conf-openssl            1              [required by ssl]
+  - install conf-time               1              [required by cstruct]
+  - install biniou                  1.2.0          [required by yojson]
+  - install ppx_tools_versioned     5.2            [required by cstruct]
+  - install xmlm                    1.3.0          [required by xapi-idl]
+  - install rresult                 0.5.0          [required by vhd-format]
+  - install mtime                   0.8.4          [required by message-switch]
+  - install cmdliner                1.0.2          [required by vhd-tool]
+  - install ppx_optcomp             113.33.01+4.03 [required by conduit]
+  - install oasis                   0.4.11         [required by vhd-tool]
+  - install type_conv               113.00.02      [required by rpc]
+  - install ocplib-endian           1.0            [required by cstruct]
+  - install cppo_ocamlbuild         1.6.0          [required by lwt]
+  - install ssl                     0.5.5          [required by vhd-tool]
+  - install yojson                  1.4.1          [required by rpc]
+  - install bisect_ppx              1.3.4          [required by shared-block-ring]
+  - install uutf                    1.0.1          [required by jsonm]
+  - install uuidm                   0.9.6          [required by vhd-format]
+  - install ppx_driver              113.33.02+4.03 [required by async, conduit]
+  - install ppx_deriving            4.2.1          [required by cohttp, nbd]
+  - install lwt                     2.7.1          [required by vhd-tool]                          For module Lwt_ssl, please install package lwt_ssl
+  - install jsonm                   1.0.1          [required by ezjsonm]
+  - install ppx_pipebang            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_let                 113.33.00+4.03 [required by ppx_jane]
+  - install ppx_inline_test         113.33.00+4.03 [required by async]
+  - install ppx_here                113.33.00      [required by ppx_assert, ppx_jane]
+  - install ppx_type_conv           113.33.02+4.03 [required by ppx_assert]
+  - install logs                    0.6.2          [required by conduit, mirage-block-unix]
+  - install ppx_bench               113.33.00+4.03 [required by async]
+  - install ppx_fail                113.33.00+4.03 [required by ppx_jane]
+  - install ppx_variants_conv       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_typerep_conv        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_conv           113.33.01+4.03 [required by nbd, cohttp, xapi-idl]
+  - install ppx_fields_conv         113.33.00+4.03 [required by cohttp]
+  - install ppx_enumerate           113.33.00+4.03 [required by ppx_jane]
+  - install ppx_compare             113.33.00+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_bin_prot            113.33.00+4.03 [required by ppx_jane]
+  - install uri                     1.9.2          [required by vhd-tool]
+  - install ppx_sexp_value          113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_message        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_custom_printf       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ipaddr                  2.7.2          [required by conduit]
+  - install ppx_assert              113.33.00      [required by async]
+  - install ppx_expect              113.33.01+4.03 [required by async]
+  - install ppx_jane                113.33.00      [required by async]
+  - install core_kernel             113.33.02+4.03 [required by async_kernel, async_rpc_kernel]
+  - install core                    113.33.02+4.03 [required by async]
+  - install async_kernel            113.33.00      [required by async]
+  - install async_unix              113.33.00+4.03 [required by async]
+  - install async_rpc_kernel        113.33.00      [required by async_extra]
+  - install async_extra             113.33.00+4.03 [required by async]
+  - install async                   113.33.00      [required by cohttp]
+  - install cstruct                 2.4.1          [required by vhd-tool]
+  - install ppx_cstruct             0              [required by vhd-format, tar-format, xenstore]
+  - install io-page-unix            0.9.9          [required by vhd-tool]
+  - install io-page                 1.6.1          [required by nbd, vhd-format]
+  - install hex                     1.2.0          [required by ezjsonm]
+  - install cstruct-lwt             3.2.1          [required by tar-format]
+  - install xenstore                1.4.0          [required by vhd-tool]
+  - install vhd-format              0.9.2          [required by vhd-tool]
+  - install mirage-types            2.8.0          [required by nbd]
+  - install ezjsonm                 0.6.0          [required by cow]
+  - install xenstore_transport      0.9.6          [required by vhd-tool]
+  - install mirage-types-lwt        2.8.0          [required by nbd, tar-format]
+  - install mirage-clock-unix       1.0.0          [required by shared-block-ring]
+  - install mirage-block-unix       2.4.0          [required by nbd]
+  - install cow                     2.3.0          [required by rpc]
+  - install tar-format              0.6.1          [required by vhd-tool]
+  - install conduit                 0.14.5         [required by cohttp]
+  - install shared-block-ring       2.3.0          [required by message-switch]
+  - install nbd                     2.2.0          [required by vhd-tool]
+  - install rpc                     2.2.0          [required by xapi-idl, xapi-tapctl]
+  - install cohttp                  0.21.1         [required by vhd-tool]
+  - install xapi-rrd                1.0.2          [required by xapi-idl]
+  - install xapi-backtrace          0.4            [required by xapi-idl]
+  - install message-switch          1.4.0          [required by xapi-idl]
+  - install xapi-stdext             2.1.0          [required by xapi-idl, xapi-tapctl]
+  - install xapi-inventory          1.0.2          [required by xapi-idl]
+  - install xapi-idl                1.14.0         [required by vhd-tool]
+  - install xapi-forkexecd          1.4.0          [required by xapi-tapctl]
+  - install xapi-tapctl             1.0.1          [required by vhd-tool]
+  - install vhd-tool                0.12.0
+===== 113 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.113.33.00] found in cache
+[async_extra.113.33.00+4.03] found in cache
+[async_kernel.113.33.00] found in cache
+[async_rpc_kernel.113.33.00] found in cache
+[async_unix.113.33.00+4.03] found in cache
+[base64.2.2.0] found in cache
+[bin_prot.113.33.00+4.03] found in cache
+[biniou.1.2.0] found in cache
+[bisect_ppx.1.3.4] found in cache
+[camlp4.4.04+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.0.21.1] found in cache
+[conduit.0.14.5] found in cache
+[core.113.33.02+4.03] found in cache
+[core_kernel.113.33.02+4.03] found in cache
+[cow.2.3.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.2.4.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[easy-format.1.3.1] found in cache
+[ezjsonm.0.6.0] found in cache
+[fd-send-recv.1.0.5] found in cache
+[fieldslib.113.24.00] found in cache
+[hex.1.2.0] found in cache
+[io-page.1.6.1] found in cache
+[io-page-unix.0.9.9] found in cache
+[ipaddr.2.7.2] found in cache
+[jsonm.1.0.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.2.7.1] found in cache
+[magic-mime.1.1.0] found in cache
+[message-switch.1.4.0] found in cache
+[mirage-block-unix.2.4.0] found in cache
+[mirage-clock-unix.1.0.0] found in cache
+[mirage-types.2.8.0] found in cache
+[mtime.0.8.4] found in cache
+[nbd.2.2.0] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocaml-systemd.1.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ocplib-endian.1.0] found in cache
+[omd.1.3.1] found in cache
+[ounit.2.0.8] found in cache
+[ppx_assert.113.33.00] found in cache
+[ppx_bench.113.33.00+4.03] found in cache
+[ppx_bin_prot.113.33.00+4.03] found in cache
+[ppx_compare.113.33.00+4.03] found in cache
+[ppx_core.113.33.01+4.03] found in cache
+[ppx_custom_printf.113.33.00+4.03] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.113.33.02+4.03] found in cache
+[ppx_enumerate.113.33.00+4.03] found in cache
+[ppx_expect.113.33.01+4.03] found in cache
+[ppx_fail.113.33.00+4.03] found in cache
+[ppx_fields_conv.113.33.00+4.03] found in cache
+[ppx_here.113.33.00] found in cache
+[ppx_inline_test.113.33.00+4.03] found in cache
+[ppx_jane.113.33.00] found in cache
+[ppx_let.113.33.00+4.03] found in cache
+[ppx_optcomp.113.33.01+4.03] found in cache
+[ppx_pipebang.113.33.00+4.03] found in cache
+[ppx_sexp_conv.113.33.01+4.03] found in cache
+[ppx_sexp_message.113.33.00+4.03] found in cache
+[ppx_sexp_value.113.33.00+4.03] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_type_conv.113.33.02+4.03] found in cache
+[ppx_typerep_conv.113.33.00+4.03] found in cache
+[ppx_variants_conv.113.33.00+4.03] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rpc.2.2.0] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.113.33.00+4.03] found in cache
+[sha.1.12] found in cache
+[shared-block-ring.2.3.0] found in cache
+[ssl.0.5.5] found in cache
+[stringext.1.5.0] found in cache
+[syslog.1.4] found in cache
+[tar-format.0.6.1] found in cache
+[topkg.0.9.1] found in cache
+[type_conv.113.00.02] found in cache
+[typerep.113.24.00] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.2] found in cache
+[uuidm.0.9.6] found in cache
+[uutf.1.0.1] found in cache
+[variantslib.113.24.00] found in cache
+[vhd-format.0.9.2] found in cache
+[vhd-tool.0.12.0] found in cache
+[xapi-backtrace.0.4] found in cache
+[xapi-forkexecd.1.4.0] found in cache
+[xapi-idl.1.14.0] found in cache
+[xapi-inventory.1.0.2] found in cache
+[xapi-rrd.1.0.2] found in cache
+[xapi-stdext.2.1.0] found in cache
+[xenstore.1.4.0] found in cache
+[xenstore_transport.0.9.6] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[xapi-tapctl.1.0.1] downloaded from https://github.com/xapi-project/tapctl/archive/v1.0.1.tar.gz
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed conf-openssl.1
+-> installed conf-time.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed fd-send-recv.1.0.5
+-> installed magic-mime.1.1.0
+-> installed ocamlbuild.0.12.0
+-> installed bin_prot.113.33.00+4.03
+-> installed cppo_ocamlbuild.1.6.0
+-> installed fieldslib.113.24.00
+-> installed ocaml-systemd.1.2
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed ocplib-endian.1.0
+-> installed omd.1.3.1
+-> installed ounit.2.0.8
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed camlp4.4.04+1
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_core.113.33.01+4.03
+-> installed ppx_deriving.4.2.1
+-> installed ppx_tools_versioned.5.2
+[ERROR] The compilation of ppx_optcomp failed at "/usr/bin/make".
+-> installed sexplib.113.33.00+4.03
+-> installed sha.1.12
+-> installed ssl.0.5.5
+-> installed bisect_ppx.1.3.4
+-> installed stringext.1.5.0
+-> installed syslog.1.4
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed mtime.0.8.4
+-> installed rresult.0.5.0
+-> installed type_conv.113.00.02
+-> installed typerep.113.24.00
+-> installed uchar.0.0.2
+-> installed uuidm.0.9.6
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed variantslib.113.24.00
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed lwt.2.7.1
+-> installed logs.0.6.2
+
+#=== ERROR while compiling ppx_optcomp.113.33.01+4.03 =========================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/ppx_optcomp.113.33.01+4.03
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ppx_optcomp-11-a49ea0.env
+# output-file          ~/.opam/log/ppx_optcomp-11-a49ea0.out
+### output ###
+# ocamlopt -o setup.exe setup.ml || \
+#   ocamlc -o setup.exe setup.ml || true
+# for f in setup.*; do [ $f = setup.exe -o $f = setup.ml ] || rm -f $f; done
+# ./setup.exe -configure 
+# 
+# Configuration: 
+# ocamlfind: ........................................... /home/opam/.opam/4.04/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.04/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.04/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.04/bin/ocamlbuild
+# Package name: ........................................ ppx_optcomp
+# Package version: ..................................... 113.33.00+4.03
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.04.2
+# standard_library_default: ............................ /home/opam/.opam/4.04/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.04/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.04/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+# native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ...................................... 
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_ppx_core: ........................................ /home/opam/.opam/4.04/lib/ppx_core
+# pkg_ppx_tools_metaquot: .............................. /home/opam/.opam/4.04/lib/ppx_tools
+# 
+# ./setup.exe -build 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -predicates ppx_driver -modules src/ppx_optcomp.mli > src/ppx_optcomp.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_optcomp.cmi src/ppx_optcomp.mli
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_optcomp.cmi src/ppx_optcomp.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# Uncaught exception: Fl_topo.Inconsistent_ordering
+# Command exited with code 3.
+# E: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlbuild' src/ppx_optcomp.cma src/ppx_optcomp.cmxa src/ppx_optcomp.a src/ppx_optcomp.cmxs bin/optcomp.native -use-ocamlfind -tag debug' terminated with error code 10")
+# Makefile:16: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_optcomp 113.33.01+4.03
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes              base
+| - install base64                  2.2.0
+| - install bin_prot                113.33.00+4.03
+| - install biniou                  1.2.0
+| - install bisect_ppx              1.3.4
+| - install camlp4                  4.04+1
+| - install cmdliner                1.0.2
+| - install conf-openssl            1
+| - install conf-pkg-config         1.1
+| - install conf-time               1
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install easy-format             1.3.1
+| - install fd-send-recv            1.0.5
+| - install fieldslib               113.24.00
+| - install jsonm                   1.0.1
+| - install logs                    0.6.2
+| - install lwt                     2.7.1
+| - install magic-mime              1.1.0
+| - install mtime                   0.8.4
+| - install oasis                   0.4.11
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocaml-systemd           1.2
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install ocplib-endian           1.0
+| - install omd                     1.3.1
+| - install ounit                   2.0.8
+| - install ppx_core                113.33.01+4.03
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_tools               5.0
+| - install ppx_tools_versioned     5.2
+| - install re                      1.7.3
+| - install result                  1.3
+| - install rresult                 0.5.0
+| - install sexplib                 113.33.00+4.03
+| - install sha                     1.12
+| - install ssl                     0.5.5
+| - install stringext               1.5.0
+| - install syslog                  1.4
+| - install topkg                   0.9.1
+| - install type_conv               113.00.02
+| - install typerep                 113.24.00
+| - install uchar                   0.0.2
+| - install uuidm                   0.9.6
+| - install uutf                    1.0.1
+| - install variantslib             113.24.00
+| - install xmlm                    1.3.0
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180808212349.export"
+31 1533763410 1533763576
