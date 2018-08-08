@@ -1,0 +1,574 @@
+$ opam depext -iy -j 2 ocsigenserver.2.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libgdbm-dev
+libgmp-dev
+libpcre3-dev
+libssl-dev
+m4
+perl
+pkg-config
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libgdbm-dev libgmp-dev libpcre3-dev libssl-dev m4 perl pkg-config zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0v5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-libpcrecpp0v5_2%3a8.39-3_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-3) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../02-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libgdbm-dev:amd64.
+Preparing to unpack .../04-libgdbm-dev_1.8.3-14_amd64.deb ...
+Unpacking libgdbm-dev:amd64 (1.8.3-14) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../05-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../06-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../07-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../08-libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../09-libpcre16-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../10-libpcre32-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../11-libpcre3-dev_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-3) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../12-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../13-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../14-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../15-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../16-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../17-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../18-zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libgdbm-dev:amd64 (1.8.3-14) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-3) ...
+Setting up libpcre32-3:amd64 (2:8.39-3) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up libpcre16-3:amd64 (2:8.39-3) ...
+Setting up xml-core (0.17) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libpcre3-dev:amd64 (2:8.39-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-dbm                1.0.0   [required by dbm]
+  - install conf-gmp                1       [required by conf-gmp-powm-sec, zarith]
+  - install base-bytes              base    [required by ocamlnet, ipaddr, tyxml]
+  - install conf-perl               1       [required by zarith]
+  - install conf-pkg-config         1.1     [required by conf-zlib]
+  - install seq                     base    [required by re]
+  - install num                     1.1     [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by sexplib]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by lwt]
+  - install conf-which              1       [required by ssl]
+  - install ocamlbuild              0.12.0  [required by ocamlnet, camlp4, cryptokit, tyxml]
+  - install dbm                     1.2     [required by ocsigenserver]
+  - install conf-gmp-powm-sec       1       [required by cryptokit]
+  - install cppo                    1.6.4   [required by lwt]
+  - install zarith                  1.7     [required by cryptokit]
+  - install conf-zlib               1       [required by cryptokit]
+  - install conf-openssl            1       [required by ssl]
+  - install conf-libpcre            1       [required by pcre]
+  - install re                      1.8.0   [required by tyxml]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by ppx_sexp_conv, pcre]
+  - install ocaml-migrate-parsetree 1.0.11  [required by lwt]
+  - install uchar                   0.0.2   [required by tyxml]
+  - install topkg                   0.9.1   [required by react, uutf]
+  - install camlp4                  4.07+1  [required by ocsigenserver]
+  - install cryptokit               1.13    [required by ocsigenserver]
+  - install ssl                     0.5.5   [required by ocsigenserver]
+  - install sexplib                 v0.11.0 [required by ipaddr]
+  - install stdio                   v0.11.0 [required by pcre]
+  - install ppx_tools_versioned     5.2     [required by lwt, tyxml]
+  - install uutf                    1.0.1   [required by tyxml]
+  - install react                   1.2.1   [required by ocsigenserver]
+  - install ppxlib                  0.3.0   [required by ppx_sexp_conv]
+  - install configurator            v0.11.0 [required by pcre]
+  - install lwt                     3.3.0   [required by ocsigenserver]                      For the PPX, please install package lwt_ppx
+                                                                                             For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                             For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install tyxml                   4.2.0   [required by ocsigenserver]                      For tyxml's ppx, please install tyxml-ppx.
+                                                                                             Tyxml's camlp4-based libraries (tyxml.syntax and tyxml.parser) are now deprecated and will be removed in the next major version.
+  - install ppx_sexp_conv           v0.11.2 [required by ipaddr]
+  - install pcre                    7.3.4   [required by ocsigenserver]
+  - install lwt_ssl                 1.1.2   [required by ocsigenserver]
+  - install lwt_react               1.1.1   [required by ocsigenserver]
+  - install ipaddr                  2.8.0   [required by ocsigenserver]
+  - install ocamlnet                4.1.6   [required by ocsigenserver]
+  - install ocsigenserver           2.9
+===== 45 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlp4.4.07+1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[dbm.1.2] found in cache
+[ipaddr.2.8.0] found in cache
+[lwt.3.3.0] found in cache
+[lwt_react.1.1.1] found in cache
+[lwt_ssl.1.1.2] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlnet.4.1.6] found in cache
+[ocsigenserver.2.9] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.8.0] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-dbm.1.0.0
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed conf-openssl.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed dbm.1.2
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ppx_derivers.1.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed seq.base
+-> installed re.1.8.0
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed ssl.0.5.5
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed camlp4.4.07+1
+-> installed lwt.3.3.0
+-> installed lwt_ssl.1.1.2
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ipaddr.2.8.0
+-> installed topkg.0.9.1
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed tyxml.4.2.0
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed ocamlnet.4.1.6
+[ERROR] The compilation of ocsigenserver failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocsigenserver.2.9 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/ocsigenserver.2.9
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ocsigenserver-11-58e3e0.env
+# output-file          ~/.opam/log/ocsigenserver-11-58e3e0.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src'
+# cat files/META.in \
+#   | sed s/%%CAMLZIPNAME%%// \
+#   | sed s/%%NAME%%/ocsigenserver/g \
+#   | sed s/%%DEPS%%/lwt_ssl,bytes,lwt.preemptive,ipaddr,netstring,netstring-pcre,findlib,cryptokit,tyxml,tyxml.parser,dynlink/g \
+#   | sed s/%%BASEDEPS%%/lwt,ipaddr,bytes/g \
+#   > files/META
+# echo directory = \"../server\" > files/META.ocsigenserver
+# cat files/META.in \
+#   | sed s/%%CAMLZIPNAME%%// \
+#   | sed s/%%NAME%%/ocsigenserver/g \
+#   | sed s/%%DEPS%%/lwt_ssl,bytes,lwt.preemptive,ipaddr,netstring,netstring-pcre,findlib,cryptokit,tyxml,tyxml.parser,dynlink/g \
+#   | sed s/%%BASEDEPS%%/lwt,ipaddr,bytes/g \
+#   | sed "s%package \"\(polytables\|commandline\|baselib\)\" (%package \"\1\" (\n  directory = \"../baselib\"%" \
+#   | sed "s%package \"\(http\|cookies\)\" (%package \"\1\" (\n  directory = \"../http\"%" \
+#   | sed "s%directory = \"extensions\"%directory = \"../extensions\"%" \
+#   >> files/META.ocsigenserver
+# cat files/ocsigenserver.conf.in \
+#   | sed s%_LOGDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/var/log/ocsigenserver%g \
+#   | sed s%_DATADIR_%/home/opam/.opam/4.07/lib/ocsigenserver/var/lib/ocsigenserver%g \
+#   | sed s%_OCSIGENUSER_%opam%g \
+#   | sed s%_OCSIGENGROUP_%"opam"%g \
+#   | sed s%_COMMANDPIPE_%/home/opam/.opam/4.07/lib/ocsigenserver/var/run/ocsigenserver_command%g \
+#   | sed s%_MIMEFILE_%/home/opam/.opam/4.07/lib/ocsigenserver/etc/ocsigenserver/mime.types%g \
+#   | sed s%_METADIR_%/home/opam/.opam/4.07/lib%g \
+#   | sed s%_PROJECTNAME_%ocsigenserver%g \
+#   | sed s%_LIBDIR_%/home/opam/.opam/4.07/lib%g \
+#   | sed s%_EXTDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/extensions%g \
+#   | sed s%_CONFIGDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/etc/ocsigenserver%g \
+#   | sed s%_STATICPAGESDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/var/www%g \
+#   | sed s%_EXTPACKAGENAME_%ocsigenserver.ext%g \
+#   > ../ocsigenserver.conf.sample
+# mkdir -p ../local/etc ../local/var/log ../local/var/run
+# cat files/ocsigenserver.conf.in \
+#   | sed s%80\</port\>%8080\</port\>%g \
+#   | sed s%_LOGDIR_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/local/var/log%g \
+#   | sed s%_DATADIR_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/local/var/lib%g \
+#   | sed s%\<user\>_OCSIGENUSER_\</user\>%%g \
+#   | sed s%\<group\>_OCSIGENGROUP_\</group\>%%g \
+#   | sed s%_COMMANDPIPE_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/local/var/run/ocsigenserver_command%g \
+#   | sed s%_MIMEFILE_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/files/mime.types%g \
+#   | sed s%_METADIR_%/home/opam/.opam/4.07/lib\"/\>\<findlib\ path=\"/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/files/\"/\>\<findlib\ path=\"/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/extensions/files/%g \
+#   | sed s%_PROJECTNAME_%ocsigenserver%g \
+#   | sed s%_EXTLIBDIR_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/extensions/ocsipersist-dbm%g \
+#   | sed s%_CONFIGDIR_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/local/etc%g \
+#   | sed s%_STATICPAGESDIR_%/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/local/var/www%g \
+#   | sed s%_EXTPACKAGENAME_%ocsigenserver.ext%g \
+#   | sed s%\<\!--\ \<commandpipe%\<commandpipe%g \
+#   | sed s%\</commandpipe\>\ --\>%\</commandpipe\>%g \
+#   | sed s%\<\!--\ \<mimefile%\<mimefile%g \
+#   | sed s%\</mimefile\>\ --\>%\</mimefile\>%g \
+#   | sed s%store\ dir=\"/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/var/lib\"%store\ dir=\"/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/local/var/lib/ocsipersist\"%g \
+#   > ../local/etc/ocsigenserver.conf
+# /usr/bin/make -C baselib all
+# make[2]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/baselib'
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_lib_base.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_lib_base.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_lib.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_lib.ml
+# File "ocsigen_lib.ml", line 153, characters 10-21:
+# Warning 3: deprecated: String.copy
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_cache.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_cache.ml
+# cat ocsigen_config.ml.in \
+# | sed s%0000000000000000%2.9% \
+# | sed s%_WARNING_%"Warning: this file has been generated from ocsigen_config.ml.in - DO NOT MODIFY MANUALLY!"% \
+# | sed s%_LOGDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/var/log/ocsigenserver% \
+# | sed s%_DATADIR_%/home/opam/.opam/4.07/lib/ocsigenserver/var/lib/ocsigenserver%g \
+# | sed s%_BINDIR_%/home/opam/.opam/4.07/bin%g \
+# | sed s%_EXTDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/extensions%g \
+# | sed s%_STATICPAGESDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/var/www% \
+# | sed s%_UP_%/tmp%g \
+# | sed s%_OCSIGENUSER_%opam%g \
+# | sed s%_OCSIGENGROUP_%"opam"%g \
+# | sed s%_PROJECTNAME_%ocsigenserver%g \
+# | sed s%_COMMANDPIPE_%/home/opam/.opam/4.07/lib/ocsigenserver/var/run/ocsigenserver_command%g \
+# | sed s%_CONFIGDIR_%/home/opam/.opam/4.07/lib/ocsigenserver/etc/ocsigenserver% \
+# | sed s%_PREEMTIMPLEM_%Lwt_preemptive% \
+# | sed s%_ISNATIVE_%Dynlink.is_native%g \
+# | sed "s%_DEPS_%\"unix\";\"bigarray\";\"bytes\";\"result\";\"lwt\";\"lwt.log\";\"threads\";\"lwt.unix\";\"ssl\";\"lwt_ssl\";\"lwt.preemptive\";\"sexplib0\";\"ppx_sexp_conv.runtime-lib\";\"parsexp\";\"sexplib\";\"ipaddr\";\"str\";\"netsys\";\"netstring\";\"pcre\";\"netstring-pcre\";\"findlib.internal\";\"findlib\";\"zarith\";\"cryptokit\";\"uchar\";\"uutf\";\"seq\";\"re\";\"tyxml.functor\";\"tyxml\";\"camlp4\";\"dynlink\";\"camlp4.lib\";\"tyxml.parser\"; \"ocsigenserver.commandline\"; \"ocsigenserver.polytables\"; \"ocsigenserver.cookies\"; \"ocsigenserver.baselib\"; \"ocsigenserver.http\"; \"ocsigenserver\"; %g" \
+# > ocsigen_config.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_config.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_config.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_getcommandline.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_commandline.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_messages.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_messages.ml
+# File "ocsigen_messages.ml", line 151, characters 28-44:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ln -s dynlink_wrapper.natdynlink.ml dynlink_wrapper.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c dynlink_wrapper.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_loader.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_loader.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_stream.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_stream.ml
+# File "ocsigen_stream.ml", line 232, characters 11-39:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# File "ocsigen_stream.ml", line 235, characters 4-18:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -a -o baselib.cma ocsigen_lib_base.cmo ocsigen_lib.cmo ocsigen_cache.cmo ocsigen_config.cmo ocsigen_commandline.cmo ocsigen_messages.cmo dynlink_wrapper.cmo ocsigen_loader.cmo ocsigen_stream.cmo
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c commandline/ocsigen_getcommandline.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -a -o parsecommandline.cma commandline/ocsigen_getcommandline.cmo
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c nocommandline/ocsigen_getcommandline.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -a -o donotparsecommandline.cma nocommandline/ocsigen_getcommandline.cmo
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c polytables.mli
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c polytables.ml
+# ocamlfind ocamlc -no-keep-locs  -g -bin-annot  -thread -a -o polytables.cma polytables.cmo
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_lib_base.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_lib.ml
+# File "ocsigen_lib.ml", line 153, characters 10-21:
+# Warning 3: deprecated: String.copy
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_cache.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_config.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_commandline.ml
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Ocsigen_getcommandline, and its interface was not compiled with -opaque
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_messages.ml
+# File "ocsigen_messages.ml", line 151, characters 28-44:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c dynlink_wrapper.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_loader.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c ocsigen_stream.ml
+# File "ocsigen_stream.ml", line 232, characters 11-39:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# File "ocsigen_stream.ml", line 235, characters 4-18:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -a -o baselib.cmxa ocsigen_lib_base.cmx ocsigen_lib.cmx ocsigen_cache.cmx ocsigen_config.cmx ocsigen_commandline.cmx ocsigen_messages.cmx dynlink_wrapper.cmx ocsigen_loader.cmx ocsigen_stream.cmx
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c commandline/ocsigen_getcommandline.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -a -o parsecommandline.cmxa commandline/ocsigen_getcommandline.cmx
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c nocommandline/ocsigen_getcommandline.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -a -o donotparsecommandline.cmxa nocommandline/ocsigen_getcommandline.cmx
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -shared -linkall -o parsecommandline.cmxs parsecommandline.cmxa
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -shared -linkall -o donotparsecommandline.cmxs donotparsecommandline.cmxa
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -package bytes -package lwt.unix -package netstring -package netstring-pcre -package cryptokit -package findlib -package tyxml -package lwt.preemptive -package ipaddr -c polytables.ml
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -a -o polytables.cmxa polytables.cmx
+# ocamlfind ocamlopt -no-keep-locs  -g -bin-annot  -thread -shared -linkall -o polytables.cmxs polytables.cmxa
+# make[2]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/baselib'
+# /usr/bin/make -C http all
+# make[2]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/http'
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c multipart.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c multipart.ml
+# File "multipart.ml", line 47, characters 10-26:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c http_headers.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c http_headers.ml
+# File "http_headers.ml", line 22, characters 17-33:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_cookies.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_cookies.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_http_frame.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_http_frame.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_http_com.mli
+# File "ocsigen_http_com.mli", line 72, characters 19-39:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_charset_mime.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_senders.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_headers.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_headers.ml
+# File "ocsigen_headers.ml", line 134, characters 4-20:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamllex http_lexer.mll
+# 64 states, 3199 transitions, table size 13180 bytes
+# 8057 additional bytes used for bindings
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c http_lexer.ml
+# File "http_lexer.mll", line 40, characters 30-46:
+# Warning 3: deprecated: Stdlib.String.uppercase
+# Use String.uppercase_ascii instead.
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c framepp.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c framepp.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_http_com.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_charset_mime.ml
+# File "ocsigen_charset_mime.ml", line 45, characters 8-24:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ocsigen_charset_mime.ml", line 69, characters 28-44:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_senders.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -a -o http.cma multipart.cmo http_headers.cmo ocsigen_cookies.cmo ocsigen_http_frame.cmo ocsigen_headers.cmo http_lexer.cmo framepp.cmo ocsigen_http_com.cmo ocsigen_charset_mime.cmo ocsigen_senders.cmo
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c multipart.ml
+# File "multipart.ml", line 47, characters 10-26:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c http_headers.ml
+# File "http_headers.ml", line 22, characters 17-33:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_cookies.ml
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_http_frame.ml
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c http_lexer.ml
+# File "http_lexer.mll", line 40, characters 30-46:
+# Warning 3: deprecated: Stdlib.String.uppercase
+# Use String.uppercase_ascii instead.
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c framepp.ml
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_http_com.ml
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_charset_mime.ml
+# File "ocsigen_charset_mime.ml", line 45, characters 8-24:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ocsigen_charset_mime.ml", line 69, characters 28-44:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_senders.ml
+# ocamlfind ocamlopt  -g -bin-annot  -thread -I ../baselib -package bytes -package netstring -package netstring-pcre -package lwt_ssl -package tyxml -c ocsigen_headers.ml
+# File "ocsigen_headers.ml", line 134, characters 4-20:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlopt  -g -bin-annot  -thread -a -o http.cmxa multipart.cmx http_headers.cmx ocsigen_cookies.cmx ocsigen_http_frame.cmx ocsigen_headers.cmx http_lexer.cmx framepp.cmx ocsigen_http_com.cmx ocsigen_charset_mime.cmx ocsigen_senders.cmx
+# make[2]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/http'
+# /usr/bin/make -C server all
+# make[2]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/server'
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_socket.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_socket.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_request_info.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_request_info.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_command.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_command.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_extensions.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_range.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_range.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_extensions.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_parseconfig.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_parseconfig.ml
+# File "ocsigen_parseconfig.ml", line 699, characters 16-32:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_http_client.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_http_client.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_local_files.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_local_files.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_server.mli
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c ocsigen_server.ml
+# File "ocsigen_server.ml", line 108, characters 10-26:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ocsigen_server.ml", line 108, characters 31-47:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ocsigen_server.ml", line 229, characters 12-28:
+# Warning 3: deprecated: Ocsigen_lib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ocsigen_server.ml", line 759, characters 15-28:
+# Warning 3: deprecated: Ocsigen_lib.String.create
+# Use Bytes.create instead.
+# File "ocsigen_server.ml", line 1320, characters 17-45:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# File "ocsigen_server.ml", line 1326, characters 8-27:
+# Warning 3: deprecated: module Lwt_chan
+#  Use module Lwt_io.
+# ocamlfind ocamlc  -g -bin-annot  -thread -a -o ocsigenserver.cma ocsigen_socket.cmo ocsigen_request_info.cmo ocsigen_command.cmo ocsigen_range.cmo ocsigen_extensions.cmo ocsigen_parseconfig.cmo ocsigen_http_client.cmo ocsigen_local_files.cmo ocsigen_server.cmo
+# ocamlfind ocamlc  -g -bin-annot  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . -c server_main.ml
+# ocamlfind ocamlc  -g -bin-annot  -thread -o ocsigenserver -linkpkg -linkall  -thread -I ../baselib -I ../http -package lwt_ssl -package bytes -package lwt.preemptive -package ipaddr -package netstring -package netstring-pcre -package findlib -package cryptokit -package tyxml -package tyxml.parser -package dynlink -I . ../baselib/parsecommandline.cma ../baselib/baselib.cma ../baselib/polytables.cma ../http/http.cma ocsigenserver.cma server_main.cmo
+# File "_none_", line 1:
+# Error: Files ../baselib/baselib.cma(Ocsigen_commandline)
+#        and ../baselib/parsecommandline.cma(Ocsigen_getcommandline)
+#        make inconsistent assumptions over interface Ocsigen_getcommandline
+# Makefile:55: recipe for target 'ocsigenserver' failed
+# make[2]: *** [ocsigenserver] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src/server'
+# Makefile:4: recipe for target 'all' failed
+# make[1]: *** [all] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/ocsigenserver.2.9/src'
+# Makefile:8: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocsigenserver 2.9
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install camlp4                  4.07+1
+| - install conf-dbm                1.0.0
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-libpcre            1
+| - install conf-openssl            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install dbm                     1.2
+| - install ipaddr                  2.8.0
+| - install lwt                     3.3.0
+| - install lwt_react               1.1.1
+| - install lwt_ssl                 1.1.2
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlnet                4.1.6
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install re                      1.8.0
+| - install react                   1.2.1
+| - install result                  1.3
+| - install seq                     base
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install ssl                     0.5.5
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install tyxml                   4.2.0
+| - install uchar                   0.0.2
+| - install uutf                    1.0.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180808202501.export"
+31 1533759885 1533760147

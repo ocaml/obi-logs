@@ -1,0 +1,78 @@
+$ opam depext -iy -j 2 crc.0.9.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0   v0.11.0 [required by sexplib]
+  - install base-bytes base    [required by ounit]
+  - install ocamlbuild 0.12.0  [required by crc]
+  - install num        1.1     [required by sexplib]
+  - install parsexp    v0.11.0 [required by sexplib]
+  - install ounit      2.0.8   [required by crc]
+  - install sexplib    v0.11.0 [required by cstruct]
+  - install cstruct    3.2.1   [required by crc]
+  - install crc        0.9.0
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[crc.0.9.0] found in cache
+[cstruct.3.2.1] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[parsexp.v0.11.0] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed num.1.1
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.3.2.1
+-> installed ounit.2.0.8
+[ERROR] The compilation of crc failed at "/usr/bin/make".
+
+#=== ERROR while compiling crc.0.9.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/crc.0.9.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/crc-11-939863.env
+# output-file          ~/.opam/log/crc-11-939863.out
+### output ###
+# ocaml setup.ml -configure --enable-tests
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: Stdlib.String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:14: recipe for target 'setup.data' failed
+# make: *** [setup.data] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build crc 0.9.0
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install cstruct    3.2.1
+| - install num        1.1
+| - install ocamlbuild 0.12.0
+| - install ounit      2.0.8
+| - install parsexp    v0.11.0
+| - install sexplib    v0.11.0
+| - install sexplib0   v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180808203053.export"
+31 1533760248 1533760289
