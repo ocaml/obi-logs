@@ -1,0 +1,144 @@
+$ opam depext -iy -j 2 dockerfile.1.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by base]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by cmdliner, ppx_deriving]
+  - install base-bytes              base       [required by dockerfile]
+  - install ocamlbuild              0.12.0     [required by cmdliner, ppx_deriving]
+  - install ppx_tools               5.0+4.05.0 [required by ppx_deriving]
+  - install base                    v0.11.1    [required by ppx_sexp_conv]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_deriving, ppx_sexp_conv]
+  - install cppo                    1.6.4      [required by ppx_deriving]
+  - install topkg                   0.9.1      [required by cmdliner]
+  - install stdio                   v0.11.0    [required by ppxlib]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install cmdliner                1.0.2      [required by dockerfile]
+  - install ppxlib                  0.3.0      [required by ppx_sexp_conv]
+  - install ppx_deriving            4.2.1      [required by dockerfile]
+  - install ppx_sexp_conv           v0.11.2    [required by dockerfile]
+  - install dockerfile              1.3.0
+===== 18 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[dockerfile.1.3.0] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.0+4.05.0] found in cache
+[ppxlib.0.3.0] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0+4.05.0
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed cppo_ocamlbuild.1.6.0
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.11.1
+-> installed ppx_deriving.4.2.1
+-> installed topkg.0.9.1
+-> installed stdio.v0.11.0
+-> installed cmdliner.1.0.2
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+[ERROR] The compilation of dockerfile failed at "/home/opam/.opam/4.05/.opam-switch/build/dockerfile.1.3.0/./configure --prefix=/home/opam/.opam/4.05".
+
+#=== ERROR while compiling dockerfile.1.3.0 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/dockerfile.1.3.0
+# command              ~/.opam/4.05/.opam-switch/build/dockerfile.1.3.0/./configure --prefix=/home/opam/.opam/4.05
+# exit-code            1
+# env-file             ~/.opam/log/dockerfile-11-c1a330.env
+# output-file          ~/.opam/log/dockerfile-11-c1a330.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# ocamlfind: Package `sexplib' not found
+# W: Field 'pkg_sexplib' is not set: Command ''/home/opam/.opam/4.05/bin/ocamlfind' query -format %d sexplib > '/tmp/oasis-8d52e5.txt'' terminated with error code 2
+# ocamlfind: Package `sexplib' not found
+# W: Failure("Command ''/home/opam/.opam/4.05/bin/ocamlfind' query -format %d sexplib > '/tmp/oasis-179a17.txt'' terminated with error code 2")
+# E: Cannot find findlib package sexplib
+# E: Failure("1 configuration error")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build dockerfile 1.3.0
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install cmdliner                1.0.2
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.0+4.05.0
+| - install ppxlib                  0.3.0
+| - install result                  1.3
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180808020226.export"
+31 1533693744 1533693826
