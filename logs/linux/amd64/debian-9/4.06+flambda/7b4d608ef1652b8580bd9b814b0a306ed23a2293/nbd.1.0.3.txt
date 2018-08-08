@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 nbd.1.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for nbd.1.0.3: The following dependencies couldn't be met:
+          - nbd -> lwt < 2.6.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=nbd.1.0.3 returned 20
+20 1533694444 1533694447

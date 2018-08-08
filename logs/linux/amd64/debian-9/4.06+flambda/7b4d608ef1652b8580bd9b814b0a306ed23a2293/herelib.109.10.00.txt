@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 herelib.109.10.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for herelib.109.10.00: The following dependencies couldn't be met:
+          - herelib -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=herelib.109.10.00 returned 20
+20 1533694984 1533694986
