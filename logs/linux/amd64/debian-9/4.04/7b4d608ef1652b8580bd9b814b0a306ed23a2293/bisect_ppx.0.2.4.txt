@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 bisect_ppx.0.2.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for bisect_ppx.0.2.4: The following dependencies couldn't be met:
+          - bisect_ppx -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=bisect_ppx.0.2.4 returned 20
+20 1533698268 1533698273
