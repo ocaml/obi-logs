@@ -1,0 +1,37 @@
+$ opam depext -iy -j 2 sawja.1.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+zlib-dev
+m4
+# The following new OS packages need to be installed: zlib-dev
+The following command needs to be run through "sudo":
+    apk add zlib-dev
+(1/1) Installing zlib-dev (1.2.11-r1)
+OK: 204 MiB in 74 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile   1.0.1  [required by javalib]
+  - install camlzip    1.07   [required by javalib]
+  - install base-bytes base   [required by extlib]
+  - install ocamlbuild 0.12.0 [required by camlp4]
+  - install cppo       1.6.4  [required by extlib]
+  - install camlp4     4.06+1 [required by javalib]
+  - install extlib     1.7.5  [required by javalib]
+  - install javalib    2.3.5  [required by sawja]
+  - install sawja      1.5
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[camlzip.1.07] found in cache
+[camomile.1.0.1] found in cache
+[cppo.1.6.4] found in cache
+[extlib.1.7.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[sawja.1.5] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - javalib.2.3.5: Curl failed
+
+40 1533685877 1533686012

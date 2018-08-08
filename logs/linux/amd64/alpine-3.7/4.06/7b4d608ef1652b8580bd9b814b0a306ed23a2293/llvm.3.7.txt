@@ -1,0 +1,31 @@
+$ opam depext -iy -j 2 llvm.3.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+pkgconfig
+m4
+pkgconf
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by topkg]
+  - install base-bytes      base   [required by ctypes]
+  - install ocamlbuild      0.12.0 [required by llvm]
+  - install conf-pkg-config 1.1    [required by ctypes]
+  - install topkg           0.9.1  [required by integers]
+  - install integers        0.2.2  [required by ctypes]
+  - install ctypes          0.14.0 [required by llvm]
+  - install llvm            3.7
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.14.0] found in cache
+[integers.0.2.2] found in cache
+[llvm.3.7] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - llvm.3.7
+
+40 1533685672 1533685677

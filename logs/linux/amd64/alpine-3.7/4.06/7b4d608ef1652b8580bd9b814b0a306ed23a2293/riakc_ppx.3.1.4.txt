@@ -1,0 +1,15 @@
+$ opam depext -iy -j 2 riakc_ppx.3.1.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for riakc_ppx.3.1.4: The following dependencies couldn't be met:
+          - riakc_ppx -> async < v0.9 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - riakc_ppx -> async < v0.9 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - riakc_ppx -> async < v0.9 -> async_unix (= 109.10.00 | = 109.12.00 | = 109.15.00) -> herelib (= 109.10.00 | = 109.12.00 | = 109.15.00) -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - riakc_ppx -> async < v0.9 -> async_core (!= 109.10.00 & != 109.12.00 & < 109.19.00) -> core < 109.19.00 -> ocaml < 4.01.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=riakc_ppx.3.1.4 returned 20
+20 1533684838 1533684840

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-net-socket.0.9.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for mirage-net-socket.0.9.4: The following dependencies couldn't be met:
+          - mirage-net-socket -> mirage < 0.10.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-net-socket.0.9.4 returned 20
+20 1533684801 1533684803
