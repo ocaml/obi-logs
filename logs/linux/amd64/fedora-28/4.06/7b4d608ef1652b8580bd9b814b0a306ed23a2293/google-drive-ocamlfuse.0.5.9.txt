@@ -1,0 +1,332 @@
+$ opam depext -iy -j 2 google-drive-ocamlfuse.0.5.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+fuse-devel
+gmp
+gmp-devel
+libcurl-devel
+m4
+perl-Pod-Html
+pkgconfig
+sqlite-devel
+which
+zlib-devel
+package fuse-devel is not installed
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Thu Apr 26 13:03:41 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+package libcurl-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Tue Aug  7 20:11:14 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+package sqlite-devel is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Tue Aug  7 06:29:48 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+package zlib-devel is not installed
+# The following new OS packages need to be installed: fuse-devel gmp-devel libcurl-devel perl-Pod-Html pkgconfig sqlite-devel zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y fuse-devel gmp-devel libcurl-devel perl-Pod-Html pkgconfig sqlite-devel zlib-devel
+Last metadata expiration check: 3:06:02 ago on Tue Aug  7 20:10:46 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package             Arch         Version                   Repository     Size
+================================================================================
+Installing:
+ fuse-devel          x86_64       2.9.7-11.fc28             fedora         42 k
+ gmp-devel           x86_64       1:6.1.2-7.fc28            fedora        187 k
+ libcurl-devel       x86_64       7.59.0-5.fc28             updates       795 k
+ perl-Pod-Html       noarch       1.22.02-412.fc28          updates        85 k
+ sqlite-devel        x86_64       3.22.0-4.fc28             fedora        153 k
+ zlib-devel          x86_64       1.2.11-8.fc28             updates        55 k
+Installing dependencies:
+ fuse-libs           x86_64       2.9.7-11.fc28             fedora        100 k
+ gmp-c++             x86_64       1:6.1.2-7.fc28            fedora         31 k
+ sqlite              x86_64       3.22.0-4.fc28             fedora        623 k
+
+Transaction Summary
+================================================================================
+Install  9 Packages
+
+Total download size: 2.0 M
+Installed size: 3.9 M
+Downloading Packages:
+(1/9): fuse-devel-2.9.7-11.fc28.x86_64.rpm      1.1 MB/s |  42 kB     00:00    
+(2/9): gmp-c++-6.1.2-7.fc28.x86_64.rpm          1.7 MB/s |  31 kB     00:00    
+(3/9): fuse-libs-2.9.7-11.fc28.x86_64.rpm       1.7 MB/s | 100 kB     00:00    
+(4/9): gmp-devel-6.1.2-7.fc28.x86_64.rpm        2.9 MB/s | 187 kB     00:00    
+(5/9): perl-Pod-Html-1.22.02-412.fc28.noarch.rp 2.4 MB/s |  85 kB     00:00    
+(6/9): libcurl-devel-7.59.0-5.fc28.x86_64.rpm    11 MB/s | 795 kB     00:00    
+(7/9): zlib-devel-1.2.11-8.fc28.x86_64.rpm      5.4 MB/s |  55 kB     00:00    
+(8/9): sqlite-3.22.0-4.fc28.x86_64.rpm          2.7 MB/s | 623 kB     00:00    
+(9/9): sqlite-devel-3.22.0-4.fc28.x86_64.rpm    600 kB/s | 153 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.3 MB/s | 2.0 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : sqlite-3.22.0-4.fc28.x86_64                            1/9 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                          2/9 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                          2/9 
+  Installing       : fuse-libs-2.9.7-11.fc28.x86_64                         3/9 
+  Running scriptlet: fuse-libs-2.9.7-11.fc28.x86_64                         3/9 
+  Installing       : fuse-devel-2.9.7-11.fc28.x86_64                        4/9 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                        5/9 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                        5/9 
+  Installing       : sqlite-devel-3.22.0-4.fc28.x86_64                      6/9 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                        7/9 
+  Installing       : perl-Pod-Html-1.22.02-412.fc28.noarch                  8/9 
+  Installing       : libcurl-devel-7.59.0-5.fc28.x86_64                     9/9 
+  Running scriptlet: libcurl-devel-7.59.0-5.fc28.x86_64                     9/9 
+  Verifying        : fuse-devel-2.9.7-11.fc28.x86_64                        1/9 
+  Verifying        : fuse-libs-2.9.7-11.fc28.x86_64                         2/9 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                        3/9 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                          4/9 
+  Verifying        : libcurl-devel-7.59.0-5.fc28.x86_64                     5/9 
+  Verifying        : perl-Pod-Html-1.22.02-412.fc28.noarch                  6/9 
+  Verifying        : sqlite-devel-3.22.0-4.fc28.x86_64                      7/9 
+  Verifying        : sqlite-3.22.0-4.fc28.x86_64                            8/9 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                        9/9 
+
+Installed:
+  fuse-devel.x86_64 2.9.7-11.fc28       gmp-devel.x86_64 1:6.1.2-7.fc28         
+  libcurl-devel.x86_64 7.59.0-5.fc28    perl-Pod-Html.noarch 1.22.02-412.fc28   
+  sqlite-devel.x86_64 3.22.0-4.fc28     zlib-devel.x86_64 1.2.11-8.fc28         
+  fuse-libs.x86_64 2.9.7-11.fc28        gmp-c++.x86_64 1:6.1.2-7.fc28           
+  sqlite.x86_64 3.22.0-4.fc28          
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides fuse-devel gmp-devel libcurl-devel perl-Pod-Html pkgconfig sqlite-devel zlib-devel
+fuse-devel-2.9.7-11.fc28.x86_64
+gmp-devel-6.1.2-7.fc28.x86_64
+libcurl-devel-7.59.0-5.fc28.x86_64
+perl-Pod-Html-1.22.02-412.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+sqlite-devel-3.22.0-4.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlidl                1.05       [required by google-drive-ocamlfuse]
+  - install sexplib0               v0.11.0    [required by base]
+  - install conf-gmp               1          [required by conf-gmp-powm-sec, zarith]
+  - install easy-format            1.3.1      [required by yojson]
+  - install result                 1.3        [required by topkg]
+  - install conf-which             1          [required by biniou]
+  - install base-bytes             base       [required by extlib, ocamlnet]
+  - install conf-perl              1          [required by zarith]
+  - install ocamlbuild             0.12.0     [required by google-drive-ocamlfuse]
+  - install conf-pkg-config        1.1        [required by conf-sqlite3]
+  - install ocamlfuse              2.7.1-cvs5 [required by google-drive-ocamlfuse]
+  - install base                   v0.11.1    [required by sqlite3]
+  - install conf-gmp-powm-sec      1          [required by cryptokit]
+  - install biniou                 1.2.0      [required by yojson]
+  - install cppo                   1.6.4      [required by extlib, yojson]
+  - install zarith                 1.7        [required by cryptokit]
+  - install topkg                  0.9.1      [required by xmlm]
+  - install ocamlnet               4.1.6      [required by gapi-ocaml]
+  - install conf-zlib              1          [required by cryptokit]
+  - install conf-sqlite3           1          [required by sqlite3]
+  - install conf-libcurl           1          [required by ocurl]
+  - install stdio                  v0.11.0    [required by sqlite3]
+  - install yojson                 1.4.1      [required by gapi-ocaml]
+  - install extlib                 1.7.5      [required by gapi-ocaml]
+  - install xmlm                   1.3.0      [required by gapi-ocaml]
+  - install cryptokit              1.13       [required by gapi-ocaml]
+  - install ocurl                  0.8.2      [required by gapi-ocaml]
+  - install configurator           v0.11.0    [required by sqlite3]
+  - install gapi-ocaml             0.3.6      [required by google-drive-ocamlfuse]
+  - install sqlite3                4.4.0      [required by google-drive-ocamlfuse]
+  - install google-drive-ocamlfuse 0.5.9
+===== 31 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[camlidl.1.05] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[easy-format.1.3.1] found in cache
+[extlib.1.7.5] found in cache
+[gapi-ocaml.0.3.6] found in cache
+[google-drive-ocamlfuse.0.5.9] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlfuse.2.7.1-cvs5] found in cache
+[ocamlnet.4.1.6] found in cache
+[ocurl.0.8.2] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[sqlite3.4.4.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camlidl.1.05
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libcurl.1
+-> installed conf-sqlite3.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed extlib.1.7.5
+-> installed ocamlbuild.0.12.0
+-> installed ocamlfuse.2.7.1-cvs5
+-> installed ocurl.0.8.2
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed sqlite3.4.4.0
+-> installed topkg.0.9.1
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed ocamlnet.4.1.6
+-> installed gapi-ocaml.0.3.6
+[ERROR] The compilation of google-drive-ocamlfuse failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling google-drive-ocamlfuse.0.5.9 =======================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/google-drive-ocamlfuse.0.5.9
+# command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/google-drive-ocamlfuse-10-aaeb31.env
+# output-file          ~/.opam/log/google-drive-ocamlfuse-10-aaeb31.out
+### output ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build google-drive-ocamlfuse 0.5.9
++- 
++- The following changes have been performed
+| - install base              v0.11.1
+| - install base-bytes        base
+| - install biniou            1.2.0
+| - install camlidl           1.05
+| - install conf-gmp          1
+| - install conf-gmp-powm-sec 1
+| - install conf-libcurl      1
+| - install conf-perl         1
+| - install conf-pkg-config   1.1
+| - install conf-sqlite3      1
+| - install conf-which        1
+| - install conf-zlib         1
+| - install configurator      v0.11.0
+| - install cppo              1.6.4
+| - install cryptokit         1.13
+| - install easy-format       1.3.1
+| - install extlib            1.7.5
+| - install gapi-ocaml        0.3.6
+| - install ocamlbuild        0.12.0
+| - install ocamlfuse         2.7.1-cvs5
+| - install ocamlnet          4.1.6
+| - install ocurl             0.8.2
+| - install result            1.3
+| - install sexplib0          v0.11.0
+| - install sqlite3           4.4.0
+| - install stdio             v0.11.0
+| - install topkg             0.9.1
+| - install xmlm              1.3.0
+| - install yojson            1.4.1
+| - install zarith            1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180807231654.export"
+31 1533683804 1533683984

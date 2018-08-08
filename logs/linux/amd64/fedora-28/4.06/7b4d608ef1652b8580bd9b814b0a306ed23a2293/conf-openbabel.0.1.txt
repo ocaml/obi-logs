@@ -1,0 +1,34 @@
+$ opam depext -iy -j 2 conf-openbabel.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-openbabel 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-openbabel failed at "/usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel".
+
+#=== ERROR while compiling conf-openbabel.0.1 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-openbabel.0.1
+# command              /usr/bin/c++ -I/usr/include/openbabel-2.0 test.cpp -lopenbabel
+# exit-code            1
+# env-file             ~/.opam/log/conf-openbabel-10-9b8556.env
+# output-file          ~/.opam/log/conf-openbabel-10-9b8556.out
+### output ###
+# test.cpp:1:10: fatal error: openbabel/mol.h: No such file or directory
+#  #include <openbabel/mol.h>
+#           ^~~~~~~~~~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-openbabel 0.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533683370 1533683375

@@ -1,0 +1,179 @@
+$ opam depext -iy -j 2 duppy.0.6.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+pcre-devel
+pkgconfig
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Tue Aug  7 20:11:14 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pcre-devel is not installed
+package pkgconfig is not installed
+# The following new OS packages need to be installed: pcre-devel pkgconfig
+The following command needs to be run through "sudo":
+    yum install -y pcre-devel pkgconfig
+Last metadata expiration check: 3:02:02 ago on Tue Aug  7 20:10:46 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package            Arch           Version                Repository       Size
+================================================================================
+Installing:
+ pcre-devel         x86_64         8.42-2.fc28            updates         550 k
+Installing dependencies:
+ pcre-cpp           x86_64         8.42-2.fc28            updates          46 k
+ pcre-utf16         x86_64         8.42-2.fc28            updates         193 k
+ pcre-utf32         x86_64         8.42-2.fc28            updates         184 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 973 k
+Installed size: 2.6 M
+Downloading Packages:
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          1.4 MB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        4.8 MB/s | 193 kB     00:00    
+(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm         10 MB/s | 550 kB     00:00    
+(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        8.4 MB/s | 184 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.6 MB/s | 973 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                          1/4 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                          2/4 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                            3/4 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                          4/4 
+  Running scriptlet: pcre-devel-8.42-2.fc28.x86_64                          4/4 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                          1/4 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                            2/4 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                          3/4 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                          4/4 
+
+Installed:
+  pcre-devel.x86_64 8.42-2.fc28          pcre-cpp.x86_64 8.42-2.fc28           
+  pcre-utf16.x86_64 8.42-2.fc28          pcre-utf32.x86_64 8.42-2.fc28         
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides pcre-devel pkgconfig
+pcre-devel-8.42-2.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install base-bytes      base    [required by pcre]
+  - install ocamlbuild      0.12.0  [required by camlp4]
+  - install conf-pkg-config 1.1     [required by conf-libpcre]
+  - install base            v0.11.1 [required by pcre]
+  - install camlp4          4.06+1  [required by duppy]
+  - install conf-libpcre    1       [required by pcre]
+  - install stdio           v0.11.0 [required by pcre]
+  - install configurator    v0.11.0 [required by pcre]
+  - install pcre            7.3.4   [required by duppy]
+  - install duppy           0.6.1
+===== 11 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[duppy.0.6.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[pcre.7.3.4] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed camlp4.4.06+1
+[ERROR] The compilation of duppy failed at "/usr/bin/make".
+
+#=== ERROR while compiling duppy.0.6.1 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/duppy.0.6.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/duppy-11-2c7be2.env
+# output-file          ~/.opam/log/duppy-11-2c7be2.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
+# making ._bcdi/duppy.di from duppy.mli
+# making ._d/duppy.d from duppy.ml
+# ocamlc.opt -thread -c -cc "gcc" -ccopt "-fPIC -I/home/opam/.opam/4.06/include -Wall -DCAML_NAME_SPACE \
+# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include  \
+# 			  -I/home/opam/.opam/4.06/lib/pcre -I/home/opam/.opam/4.06/lib/bytes  -o duppy_stubs.o " duppy_stubs.c 
+# ar rcs libduppy_stubs.a  duppy_stubs.o
+# ocamlc.opt -thread -c -dtypes -g -w +A-4@5-7@8-9@11@12@20-35-44-45-50 -I /home/opam/.opam/4.06/lib/pcre -I /home/opam/.opam/4.06/lib/bytes duppy.mli
+# ocamlc.opt -thread -c -dtypes -g -w +A-4@5-7@8-9@11@12@20-35-44-45-50 -I /home/opam/.opam/4.06/lib/pcre -I /home/opam/.opam/4.06/lib/bytes duppy.ml
+# File "duppy.ml", line 87, characters 45-48:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# make[2]: *** [OCamlMakefile:952: duppy.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
+# make[1]: *** [OCamlMakefile:717: byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
+# make: *** [Makefile:12: all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build duppy 0.6.1
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install camlp4          4.06+1
+| - install conf-libpcre    1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install ocamlbuild      0.12.0
+| - install pcre            7.3.4
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180807231251.export"
+31 1533683564 1533683679

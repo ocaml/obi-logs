@@ -1,0 +1,82 @@
+$ opam depext -iy -j 2 conf-bap-llvm.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+which
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Tue Aug  7 06:29:48 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-which    1 [required by conf-bap-llvm]
+  - install conf-bap-llvm 1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-which.1
+[ERROR] The compilation of conf-bap-llvm failed at "/usr/bin/sh -x configure linux".
+
+#=== ERROR while compiling conf-bap-llvm.1 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-bap-llvm.1
+# command              /usr/bin/sh -x configure linux
+# exit-code            1
+# env-file             ~/.opam/log/conf-bap-llvm-10-5f1023.env
+# output-file          ~/.opam/log/conf-bap-llvm-10-5f1023.out
+### output ###
+# + configs='llvm-config-3.4 llvm-config-mp-3.4 llvm-config-3.8 llvm-config-mp-3.8 llvm-config'
+# + config=
+# + which ''
+# which: no  in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + for c in $configs
+# + which llvm-config-3.4
+# which: no llvm-config-3.4 in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + for c in $configs
+# + which llvm-config-mp-3.4
+# which: no llvm-config-mp-3.4 in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + for c in $configs
+# + which llvm-config-3.8
+# which: no llvm-config-3.8 in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + for c in $configs
+# + which llvm-config-mp-3.8
+# which: no llvm-config-mp-3.8 in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + for c in $configs
+# + which llvm-config
+# which: no llvm-config in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + which ''
+# which: no  in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-bap-llvm 1
++- 
++- The following changes have been performed
+| - install conf-which 1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180807231008.export"
+31 1533683406 1533683410
