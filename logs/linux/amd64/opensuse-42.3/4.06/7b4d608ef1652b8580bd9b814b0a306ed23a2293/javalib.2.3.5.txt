@@ -1,0 +1,28 @@
+$ opam depext -iy -j 2 javalib.2.3.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile   1.0.1  [required by javalib]
+  - install camlzip    1.07   [required by javalib]
+  - install base-bytes base   [required by extlib]
+  - install ocamlbuild 0.12.0 [required by camlp4]
+  - install cppo       1.6.4  [required by extlib]
+  - install camlp4     4.06+1 [required by javalib]
+  - install extlib     1.7.5  [required by javalib]
+  - install javalib    2.3.5
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[camlzip.1.07] found in cache
+[camomile.1.0.1] found in cache
+[cppo.1.6.4] found in cache
+[extlib.1.7.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - javalib.2.3.5: Curl failed
+
+40 1533706620 1533706821

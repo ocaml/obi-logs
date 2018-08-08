@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ocaml-manual.4.04.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for ocaml-manual.4.04.0: The following dependencies couldn't be met:
+          - ocaml-manual -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ocaml-manual.4.04.0 returned 20
+20 1533704688 1533704691
