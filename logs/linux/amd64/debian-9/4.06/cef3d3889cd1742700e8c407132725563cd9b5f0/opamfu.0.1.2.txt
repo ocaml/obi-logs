@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 opamfu.0.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for opamfu.0.1.2: The following dependencies couldn't be met:
+          - opamfu -> opam-lib = 1.2.0 -> dose = 3.2.2+opam -> ocamlgraph = 1.8.5 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=opamfu.0.1.2 returned 20
+20 1533851849 1533851851
