@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mlmpfr.3.1.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mlmpfr.3.1.6: The following dependencies couldn't be met:
+          - mlmpfr -> ocaml >= 4.04
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mlmpfr.3.1.6 returned 20
+20 1533768288 1533768291
