@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 opam-devel.2.0~alpha5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for opam-devel.2.0~alpha5: The following dependencies couldn't be met:
+          - opam-devel -> cmdliner < 1.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - opam-devel -> opam-client < 2.0.0~beta -> cmdliner >= 0.9.8 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cmdliner satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=opam-devel.2.0~alpha5 returned 20
+20 1533792249 1533792253

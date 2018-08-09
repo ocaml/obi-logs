@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_fields_conv.113.33.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+[ERROR] No solution for ppx_fields_conv.113.33.00: The following dependencies couldn't be met:
+          - ppx_fields_conv -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_fields_conv.113.33.00 returned 20
+20 1533793110 1533793112

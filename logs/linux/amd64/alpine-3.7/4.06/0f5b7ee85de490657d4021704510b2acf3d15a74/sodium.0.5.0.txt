@@ -1,0 +1,100 @@
+$ opam depext -iy -j 2 sodium.0.5.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+libsodium-dev
+m4
+pkgconfig
+m4
+pkgconf
+# The following new OS packages need to be installed: libsodium-dev
+The following command needs to be run through "sudo":
+    apk add libsodium-dev
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.7/community/x86_64/APKINDEX.tar.gz
+(1/2) Installing libsodium (1.0.15-r0)
+(2/2) Installing libsodium-dev (1.0.15-r0)
+OK: 205 MiB in 75 packages
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes      base   [required by sodium]
+  - install ocamlbuild      0.12.0 [required by sodium]
+  - install conf-pkg-config 1.1    [required by conf-libsodium, ctypes]
+  - install ctypes          0.5.1  [required by sodium]
+  - install conf-libsodium  1      [required by sodium]
+  - install sodium          0.5.0
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.5.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[sodium.0.5.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libsodium.1
+-> installed ocamlbuild.0.12.0
+-> installed ctypes.0.5.1
+[ERROR] The compilation of sodium failed at "/usr/bin/make".
+
+#=== ERROR while compiling sodium.0.5.0 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/sodium.0.5.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/sodium-13-81a3ce.env
+# output-file          ~/.opam/log/sodium-13-81a3ce.out
+### output ###
+# CTYPES_LIB_DIR=/home/opam/.opam/4.06/lib/ctypes OCAML_LIB_DIR=/home/opam/.opam/4.06/lib/ocaml ocamlbuild -use-ocamlfind -classic-display lib/sodium.cma lib/sodium.cmxa
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_bindgen.ml > lib_gen/sodium_bindgen.ml.depends
+# ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_bindings.ml > lib_gen/sodium_bindings.ml.depends
+# ocamlfind ocamldep -package bytes -package bigarray -package ctypes.stubs -modules lib/sodium_storage.ml > lib/sodium_storage.ml.depends
+# ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_types.ml > lib_gen/sodium_types.ml.depends
+# ocamlfind ocamldep -package ctypes.stubs -modules lib_gen/sodium_typegen.ml > lib_gen/sodium_typegen.ml.depends
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_types.cmo lib_gen/sodium_types.ml
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_typegen.cmo lib_gen/sodium_typegen.ml
+# ocamlfind ocamlc -linkpkg -package ctypes.stubs -I lib_gen lib_gen/sodium_types.cmo lib_gen/sodium_typegen.cmo -o lib_gen/sodium_typegen.byte
+# lib_gen/sodium_typegen.byte
+# cc -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/ocaml -o lib_gen/sodium_types_detect lib_gen/sodium_types_detect.c
+# lib_gen/sodium_types_detect > lib/sodium_types_detected.ml
+# ocamlfind ocamldep -package bytes -package bigarray -package ctypes.stubs -modules lib/sodium_types_detected.ml > lib/sodium_types_detected.ml.depends
+# ocamlfind ocamlc -c -bin-annot -safe-string -package bytes -package bigarray -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium_storage.cmo lib/sodium_storage.ml
+# ocamlfind ocamlc -c -bin-annot -safe-string -package bytes -package bigarray -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib -o lib/sodium_types_detected.cmo lib/sodium_types_detected.ml
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_bindings.cmo lib_gen/sodium_bindings.ml
+# ocamlfind ocamlc -c -bin-annot -safe-string -package ctypes.stubs -w @5@8@10@11@12@14@23@24@26@29 -I lib_gen -I lib -o lib_gen/sodium_bindgen.cmo lib_gen/sodium_bindgen.ml
+# ocamlfind ocamlc -linkpkg -package ctypes.stubs -I lib -I lib_gen lib/sodium_storage.cmo lib/sodium_types_detected.cmo lib_gen/sodium_types.cmo lib_gen/sodium_bindings.cmo lib_gen/sodium_bindgen.cmo -o lib_gen/sodium_bindgen.byte
+# lib_gen/sodium_bindgen.byte
+# ocamlfind ocamlc -ccopt -I/usr/local/include -I /home/opam/.opam/4.06/lib/ctypes -ccopt '--std=c99 -Wall -pedantic -Werror -Wno-pointer-sign' -c lib/sodium_stubs.c
+# + ocamlfind ocamlc -ccopt -I/usr/local/include -I /home/opam/.opam/4.06/lib/ctypes -ccopt '--std=c99 -Wall -pedantic -Werror -Wno-pointer-sign' -c lib/sodium_stubs.c
+# lib/sodium_stubs.c: In function 'caml__1_sodium_init':
+# lib/sodium_stubs.c:6:4: error: ignoring return value of 'sodium_init', declared with attribute warn_unused_result [-Werror=unused-result]
+#     sodium_init();
+#     ^~~~~~~~~~~~~
+# lib/sodium_stubs.c: In function 'caml__3_sodium_memcmp':
+# lib/sodium_stubs.c:21:4: error: ignoring return value of 'sodium_memcmp', declared with attribute warn_unused_result [-Werror=unused-result]
+#     sodium_memcmp(x13, x14, x15);
+#     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# cc1: all warnings being treated as errors
+# Command exited with code 2.
+# make: *** [Makefile:13: all] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sodium 0.5.0
++- 
++- The following changes have been performed
+| - install base-bytes      base
+| - install conf-libsodium  1
+| - install conf-pkg-config 1.1
+| - install ctypes          0.5.1
+| - install ocamlbuild      0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180809051156.export"
+31 1533791512 1533791531

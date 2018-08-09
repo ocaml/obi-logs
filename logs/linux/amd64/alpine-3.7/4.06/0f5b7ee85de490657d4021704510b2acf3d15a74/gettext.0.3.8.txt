@@ -1,0 +1,284 @@
+$ opam depext -iy -j 2 gettext.0.3.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
+# The following system packages are needed:
+m4
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile   1.0.1  [required by gettext]
+  - install base-bytes base   [required by gettext]
+  - install ocamlbuild 0.12.0 [required by fileutils, camlp4, ounit]
+  - install ounit      2.0.8  [required by gettext]
+  - install fileutils  0.5.3  [required by gettext]
+  - install camlp4     4.06+1 [required by gettext]
+  - install gettext    0.3.8
+===== 7 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[camomile.1.0.1] found in cache
+[fileutils.0.5.3] found in cache
+[gettext.0.3.8] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camomile.1.0.1
+-> installed ocamlbuild.0.12.0
+-> installed fileutils.0.5.3
+-> installed ounit.2.0.8
+-> installed camlp4.4.06+1
+[ERROR] The compilation of gettext failed at "/usr/bin/make".
+
+#=== ERROR while compiling gettext.0.3.8 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/gettext.0.3.8
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/gettext-13-f3fbb3.env
+# output-file          ~/.opam/log/gettext-13-f3fbb3.out
+### output ###
+# cd libgettext-ocaml          && /usr/bin/make all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/libgettext-ocaml'
+# ocamlfind ocamlc   -package "fileutils"   -c gettextConfig.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextCategory.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextTypes.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextUtils.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextModules.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextCompat.mli
+# ocamlfind ocamlc   -package "fileutils"   -c gettextCompat.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettext.mli
+# ocamlfind ocamlc   -package "fileutils"   -c gettext.ml
+# ocamlyacc -v gettextFormat_parser.mly
+# ocamlfind ocamlc   -package "fileutils"   -c gettextFormat_parser.mli
+# ocamlyacc -v gettextFormat_parser.mly
+# ocamlfind ocamlc   -package "fileutils"   -c gettextFormat_parser.ml
+# ocamllex.opt gettextFormat_lexer.mll
+# 12 states, 322 transitions, table size 1360 bytes
+# ocamlfind ocamlc   -package "fileutils"   -c gettextFormat_lexer.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextFormat.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextMo_int32.ml
+# File "gettextMo_int32.ml", line 111, characters 5-8:
+# Warning 10: this expression should have type unit.
+# ocamlyacc -v gettextMo_parser.mly
+# 14 shift/reduce conflicts.
+# ocamlfind ocamlc   -package "fileutils"   -c gettextMo_parser.mli
+# ocamlyacc -v gettextMo_parser.mly
+# 14 shift/reduce conflicts.
+# ocamlfind ocamlc   -package "fileutils"   -c gettextMo_parser.ml
+# File "gettextMo_parser.mly", line 102, characters 58-74:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# ocamllex.opt gettextMo_lexer.mll
+# 92 states, 658 transitions, table size 3184 bytes
+# 2330 additional bytes used for bindings
+# ocamlfind ocamlc   -package "fileutils"   -c gettextMo_lexer.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextMo.ml
+# File "gettextMo.ml", line 259, characters 13-36:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "gettextMo.ml", line 275, characters 15-38:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "gettextMo.ml", line 296, characters 15-38:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# ocamlfind ocamlc   -package "fileutils"   -c gettextDummy.ml
+# ocamlfind ocamlc   -a -o gettextBase.cma gettextConfig.cmo gettextCategory.cmo gettextTypes.cmo gettextUtils.cmo gettextModules.cmo gettextCompat.cmo gettext.cmo gettextFormat_parser.cmo gettextFormat_lexer.cmo gettextFormat.cmo gettextMo_int32.cmo gettextMo_parser.cmo gettextMo_lexer.cmo gettextMo.cmo gettextDummy.cmo 
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextConfig.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextCategory.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextTypes.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextUtils.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextModules.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextCompat.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettext.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextFormat_parser.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextFormat_lexer.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextFormat.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextMo_int32.ml
+# File "gettextMo_int32.ml", line 111, characters 5-8:
+# Warning 10: this expression should have type unit.
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextMo_parser.ml
+# File "gettextMo_parser.mly", line 102, characters 58-74:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextMo_lexer.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextMo.ml
+# File "gettextMo.ml", line 259, characters 13-36:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "gettextMo.ml", line 275, characters 15-38:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# File "gettextMo.ml", line 296, characters 15-38:
+# Warning 52: Code should not depend on the actual values of
+# this constructor's arguments. They are only for information
+# and may change in future versions. (See manual section 8.5)
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextDummy.ml
+# ocamlfind ocamlopt -a -o gettextBase.cmxa gettextConfig.cmx gettextCategory.cmx gettextTypes.cmx gettextUtils.cmx gettextModules.cmx gettextCompat.cmx gettext.cmx gettextFormat_parser.cmx gettextFormat_lexer.cmx gettextFormat.cmx gettextMo_int32.cmx gettextMo_parser.cmx gettextMo_lexer.cmx gettextMo.cmx gettextDummy.cmx 
+# ocamlfind ocamlc   -package "fileutils"   -c gettextLocale_types.ml
+# ocamlyacc -v gettextLocale_parser.mly
+# ocamlfind ocamlc   -package "fileutils"   -c gettextLocale_parser.mli
+# ocamlyacc -v gettextLocale_parser.mly
+# ocamlfind ocamlc   -package "fileutils"   -c gettextLocale_parser.ml
+# ocamllex.opt gettextLocale_lexer.mll
+# 6 states, 258 transitions, table size 1068 bytes
+# ocamlfind ocamlc   -package "fileutils"   -c gettextLocale_lexer.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextLocale.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextDomain.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextCharset.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextTranslate.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextRealize.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPo_utils.ml
+# ocamlyacc -v gettextPoComment_parser.mly
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPoComment_parser.mli
+# ocamlyacc -v gettextPoComment_parser.mly
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPoComment_parser.ml
+# ocamlyacc -v gettextPo_parser.mly
+# 12 shift/reduce conflicts.
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPo_parser.mli
+# ocamllex.opt gettextPo_lexer.mll
+# 70 states, 524 transitions, table size 2516 bytes
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPo_lexer.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPo_parser.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextPo.ml
+# ocamlfind ocamlc   -package "fileutils"   -c gettextCompile.ml
+# ocamlfind ocamlc   -a -o gettextExtension.cma gettextLocale_types.cmo gettextLocale_parser.cmo gettextLocale_lexer.cmo gettextLocale.cmo gettextDomain.cmo gettextCharset.cmo gettextTranslate.cmo gettextRealize.cmo gettextPo_utils.cmo gettextPoComment_parser.cmo gettextPo_lexer.cmo gettextPo_parser.cmo gettextPo.cmo gettextCompile.cmo 
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextLocale_types.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextLocale_parser.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextLocale_lexer.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextLocale.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextDomain.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextCharset.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextTranslate.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextRealize.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextPo_utils.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextPoComment_parser.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextPo_lexer.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextPo_parser.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextPo.ml
+# ocamlfind ocamlopt  -package "fileutils"   -c gettextCompile.ml
+# ocamlfind ocamlopt -a -o gettextExtension.cmxa gettextLocale_types.cmx gettextLocale_parser.cmx gettextLocale_lexer.cmx gettextLocale.cmx gettextDomain.cmx gettextCharset.cmx gettextTranslate.cmx gettextRealize.cmx gettextPo_utils.cmx gettextPoComment_parser.cmx gettextPo_lexer.cmx gettextPo_parser.cmx gettextPo.cmx gettextCompile.cmx 
+# ocamlc \
+#   -I +camlp4 \
+#   -I /home/opam/.opam/4.06/lib/ocaml/camlp4/Camlp4Parsers \
+#   -pp camlp4of \
+#   camlp4lib.cma \
+#   gettextBase.cma \
+#   gettextExtension.cma \
+#   -c pr_gettext.ml -o pr_gettext.cmo
+# /usr/bin/install -c -d /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib
+# ocamlfind remove -destdir /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib gettext 
+# ocamlfind: [WARNING] No such file: /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/META
+# ocamlfind  install -ldconf ignore -destdir /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib -patch-version 0.3.8 gettext \
+#   META gettextBase.cma gettextBase.cmxa gettextBase.a gettextTypes.cmi gettextDummy.cmi gettext.cmi               gettextConfig.cmx gettextCategory.cmx gettextTypes.cmx gettextUtils.cmx gettextModules.cmx gettextCompat.cmx gettext.cmx gettextFormat_parser.cmx gettextFormat_lexer.cmx gettextFormat.cmx gettextMo_int32.cmx gettextMo_parser.cmx gettextMo_lexer.cmx gettextMo.cmx gettextDummy.cmx gettextExtension.cma gettextExtension.cmxa gettextExtension.a gettextConfig.cmi gettextModules.cmi gettextFormat.cmi gettextMo.cmi gettextCategory.cmi gettextLocale.cmi gettextDomain.cmi gettextCharset.cmi gettextTranslate.cmi gettextRealize.cmi gettextPo.cmi gettextUtils.cmi gettextCompat.cmi gettextCompile.cmi          gettextLocale_types.cmx gettextLocale_parser.cmx gettextLocale_lexer.cmx gettextLocale.cmx gettextDomain.cmx gettextCharset.cmx gettextTranslate.cmx gettextRealize.cmx gettextPo_utils.cmx gettextPoComment_parser.cmx gettextPo_lexer.cmx gettextPo_parser.cmx gettextPo.cmx gettextCompile.cmx pr_gettext.cmo     gettextTypes.ml gettextDummy.ml gettext.mli gettextConfig.ml gettextModules.ml gettextFormat.ml gettextMo.ml gettextCategory.ml gettextLocale.ml gettextDomain.ml gettextCharset.ml gettextTranslate.ml gettextRealize.ml gettextPo.ml gettextUtils.ml gettextCompat.mli gettextCompile.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCompile.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCompat.mli
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextUtils.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPo.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextRealize.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextTranslate.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCharset.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextDomain.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextLocale.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCategory.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextMo.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextFormat.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextModules.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextConfig.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettext.mli
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextDummy.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextTypes.ml
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/pr_gettext.cmo
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCompile.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPo.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPo_parser.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPo_lexer.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPoComment_parser.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPo_utils.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextRealize.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextTranslate.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCharset.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextDomain.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextLocale.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextLocale_lexer.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextLocale_parser.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextLocale_types.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCompile.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCompat.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextUtils.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextPo.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextRealize.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextTranslate.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCharset.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextDomain.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextLocale.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCategory.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextMo.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextFormat.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextModules.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextConfig.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextExtension.a
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextExtension.cmxa
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextExtension.cma
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextDummy.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextMo.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextMo_lexer.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextMo_parser.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextMo_int32.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextFormat.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextFormat_lexer.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextFormat_parser.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettext.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCompat.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextModules.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextUtils.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextTypes.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextCategory.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextConfig.cmx
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettext.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextDummy.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextTypes.cmi
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextBase.a
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextBase.cmxa
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/gettextBase.cma
+# Installed /home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/_build/lib/gettext/META
+# rm gettextMo_parser.mli gettextMo_parser.ml gettextPoComment_parser.mli gettextPo_parser.mli gettextPo_parser.ml gettextMo_lexer.ml gettextPo_lexer.ml gettextFormat_parser.mli gettextFormat_parser.ml gettextPoComment_parser.ml gettextLocale_parser.ml gettextFormat_lexer.ml gettextLocale_lexer.ml gettextLocale_parser.mli
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/libgettext-ocaml'
+# cd libgettext-stub-ocaml     && /usr/bin/make all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/libgettext-stub-ocaml'
+# ocamlfind ocamlc   -c gettextStubCompat_stubs.c	
+# gettextStubCompat_stubs.c:27:21: fatal error: libintl.h: No such file or directory
+#  #include <libintl.h>
+#                      ^
+# compilation terminated.
+# make[1]: *** [../TopMakefile:294: gettextStubCompat_stubs.o] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/gettext.0.3.8/libgettext-stub-ocaml'
+# make: *** [Makefile:25: all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build gettext 0.3.8
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install camlp4     4.06+1
+| - install camomile   1.0.1
+| - install fileutils  0.5.3
+| - install ocamlbuild 0.12.0
+| - install ounit      2.0.8
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180809051741.export"
+31 1533791858 1533791998
