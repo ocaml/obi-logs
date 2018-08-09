@@ -1,0 +1,199 @@
+$ opam depext -iy -j 2 oml.0.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+gfortran
+libblas-dev
+libffi-dev
+liblapack-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy gfortran libblas-dev libffi-dev liblapack-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libglib2.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../00-libglib2.0-0_2.56.1-2ubuntu1_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../01-libglib2.0-data_2.56.1-2ubuntu1_all.deb ...
+Unpacking libglib2.0-data (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libicu60:amd64.
+Preparing to unpack .../02-libicu60_60.2-3ubuntu3_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-6.1ubuntu1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../04-shared-mime-info_1.9-2_amd64.deb ...
+Unpacking shared-mime-info (1.9-2) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../05-xdg-user-dirs_0.17-1ubuntu1_amd64.deb ...
+Unpacking xdg-user-dirs (0.17-1ubuntu1) ...
+Selecting previously unselected package libgfortran4:amd64.
+Preparing to unpack .../06-libgfortran4_7.3.0-16ubuntu3_amd64.deb ...
+Unpacking libgfortran4:amd64 (7.3.0-16ubuntu3) ...
+Selecting previously unselected package libgfortran-7-dev:amd64.
+Preparing to unpack .../07-libgfortran-7-dev_7.3.0-16ubuntu3_amd64.deb ...
+Unpacking libgfortran-7-dev:amd64 (7.3.0-16ubuntu3) ...
+Selecting previously unselected package gfortran-7.
+Preparing to unpack .../08-gfortran-7_7.3.0-16ubuntu3_amd64.deb ...
+Unpacking gfortran-7 (7.3.0-16ubuntu3) ...
+Selecting previously unselected package gfortran.
+Preparing to unpack .../09-gfortran_4%3a7.3.0-3ubuntu2_amd64.deb ...
+Unpacking gfortran (4:7.3.0-3ubuntu2) ...
+Selecting previously unselected package libblas3:amd64.
+Preparing to unpack .../10-libblas3_3.7.1-4ubuntu1_amd64.deb ...
+Unpacking libblas3:amd64 (3.7.1-4ubuntu1) ...
+Selecting previously unselected package libblas-dev:amd64.
+Preparing to unpack .../11-libblas-dev_3.7.1-4ubuntu1_amd64.deb ...
+Unpacking libblas-dev:amd64 (3.7.1-4ubuntu1) ...
+Selecting previously unselected package liblapack3:amd64.
+Preparing to unpack .../12-liblapack3_3.7.1-4ubuntu1_amd64.deb ...
+Unpacking liblapack3:amd64 (3.7.1-4ubuntu1) ...
+Selecting previously unselected package liblapack-dev:amd64.
+Preparing to unpack .../13-liblapack-dev_3.7.1-4ubuntu1_amd64.deb ...
+Unpacking liblapack-dev:amd64 (3.7.1-4ubuntu1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../14-pkg-config_0.29.1-0ubuntu2_amd64.deb ...
+Unpacking pkg-config (0.29.1-0ubuntu2) ...
+Selecting previously unselected package libffi-dev:amd64.
+Preparing to unpack .../15-libffi-dev_3.2.1-8_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.2.1-8) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3) ...
+Setting up libgfortran4:amd64 (7.3.0-16ubuntu3) ...
+Setting up libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+No schema files found: doing nothing.
+Setting up libffi-dev:amd64 (3.2.1-8) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Setting up pkg-config (0.29.1-0ubuntu2) ...
+Setting up libblas3:amd64 (3.7.1-4ubuntu1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+Setting up libglib2.0-data (2.56.1-2ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libgfortran-7-dev:amd64 (7.3.0-16ubuntu3) ...
+Setting up shared-mime-info (1.9-2) ...
+Setting up gfortran-7 (7.3.0-16ubuntu3) ...
+Setting up xdg-user-dirs (0.17-1ubuntu1) ...
+Setting up gfortran (4:7.3.0-3ubuntu2) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/f95.1.gz because associated file /usr/share/man/man1/gfortran.1.gz (of link group f95) doesn't exist
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f77 (f77) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/f77.1.gz because associated file /usr/share/man/man1/gfortran.1.gz (of link group f77) doesn't exist
+Setting up libblas-dev:amd64 (3.7.1-4ubuntu1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so to provide /usr/lib/x86_64-linux-gnu/libblas.so (libblas.so-x86_64-linux-gnu) in auto mode
+Setting up liblapack3:amd64 (3.7.1-4ubuntu1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3 to provide /usr/lib/x86_64-linux-gnu/liblapack.so.3 (liblapack.so.3-x86_64-linux-gnu) in auto mode
+Setting up liblapack-dev:amd64 (3.7.1-4ubuntu1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so to provide /usr/lib/x86_64-linux-gnu/liblapack.so (liblapack.so-x86_64-linux-gnu) in auto mode
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install conf-blas       1       [required by lacaml]
+  - install ctypes-foreign  0.4.0   [required by ocephes]
+  - install result          1.3     [required by topkg]
+  - install conf-lapack     1       [required by lacaml]
+  - install base-bytes      base    [required by lacaml, cppo, lbfgs]
+  - install ocamlbuild      0.12.0  [required by lacaml, ocephes]
+  - install conf-pkg-config 1.1     [required by ctypes]
+  - install base            v0.11.1 [required by lbfgs]
+  - install cppo            1.6.4   [required by oml]
+  - install topkg           0.9.1   [required by integers]
+  - install lacaml          9.2.2   [required by oml]
+  - install camlp4          4.06+1  [required by lbfgs]
+  - install stdio           v0.11.0 [required by lbfgs]
+  - install integers        0.2.2   [required by ctypes]
+  - install configurator    v0.11.0 [required by lbfgs]
+  - install ctypes          0.14.0  [required by ocephes]
+  - install lbfgs           0.9     [required by oml]
+  - install ocephes         0.8.2   [required by oml]
+  - install oml             0.0.6
+===== 20 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[ctypes.0.14.0] found in cache
+[integers.0.2.2] found in cache
+[lacaml.9.2.2] found in cache
+[lbfgs.0.9] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocephes.0.8.2] found in cache
+[oml.0.0.6] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-blas.1
+-> installed conf-lapack.1
+-> installed conf-pkg-config.1.1
+-> installed cppo.1.6.4
+-> installed ctypes-foreign.0.4.0
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed lacaml.9.2.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed camlp4.4.06+1
+-> installed lbfgs.0.9
+-> installed ctypes.0.14.0
+-> installed ocephes.0.8.2
+[ERROR] The compilation of oml failed at "/usr/bin/make build".
+
+#=== ERROR while compiling oml.0.0.6 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/oml.0.0.6
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             ~/.opam/log/oml-13-ce6777.env
+# output-file          ~/.opam/log/oml-13-ce6777.out
+### output ###
+# ocamlbuild -plugin-tag 'package(cppo_ocamlbuild)' -use-ocamlfind -package lacaml -package lbfgs -package ocephes -I src/lib oml.cma oml.cmxa oml.cmxs
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package cppo_ocamlbuild myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind: Package `cppo_ocamlbuild' not found
+# Command exited with code 2.
+# Makefile:42: recipe for target 'oml.cmxa' failed
+# make: *** [oml.cmxa] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build oml 0.0.6
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install camlp4          4.06+1
+| - install conf-blas       1
+| - install conf-lapack     1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install cppo            1.6.4
+| - install ctypes          0.14.0
+| - install ctypes-foreign  0.4.0
+| - install integers        0.2.2
+| - install lacaml          9.2.2
+| - install lbfgs           0.9
+| - install ocamlbuild      0.12.0
+| - install ocephes         0.8.2
+| - install result          1.3
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
+| - install topkg           0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180809042151.export"
+31 1533788495 1533788635

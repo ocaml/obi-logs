@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 conf-libpng.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+libpng12-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libpng12-dev
+E: Package 'libpng12-dev' has no installation candidate
+OS package installation failed
+1 1533788057 1533788062
