@@ -1,0 +1,27 @@
+$ opam depext -iy -j 2 github-hooks-unix.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for github-hooks-unix.0.2.0: The following dependencies couldn't be met:
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> ctypes < 0.4.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> ppx_deriving -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> ppx_deriving -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks-unix -> github-hooks >= 0.2.0 -> nocrypto -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=github-hooks-unix.0.2.0 returned 20
+20 1533770804 1533770810

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 qcow-tool.0.10.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for qcow-tool.0.10.0: The following dependencies couldn't be met:
+          - qcow-tool -> sha = 1.9 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=qcow-tool.0.10.0 returned 20
+20 1533770933 1533770935
