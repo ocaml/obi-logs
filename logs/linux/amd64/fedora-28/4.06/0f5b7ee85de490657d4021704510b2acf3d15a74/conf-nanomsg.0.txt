@@ -1,0 +1,29 @@
+$ opam depext -iy -j 2 conf-nanomsg.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-nanomsg 0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-nanomsg failed at "/usr/bin/pkg-config nanomsg".
+
+#=== ERROR while compiling conf-nanomsg.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-nanomsg.0
+# command              /usr/bin/pkg-config nanomsg
+# exit-code            1
+# env-file             ~/.opam/log/conf-nanomsg-10-ccabea.env
+# output-file          ~/.opam/log/conf-nanomsg-10-ccabea.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-nanomsg 0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533789391 1533789397
