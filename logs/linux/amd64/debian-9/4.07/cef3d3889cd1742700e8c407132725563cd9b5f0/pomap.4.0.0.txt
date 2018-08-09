@@ -1,0 +1,66 @@
+$ opam depext -iy -j 2 pomap.4.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install pomap 4.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[pomap.4.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of pomap failed at "/home/opam/.opam/4.07/bin/jbuilder build -p pomap -j 71".
+
+#=== ERROR while compiling pomap.4.0.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/pomap.4.0.0
+# command              ~/.opam/4.07/bin/jbuilder build -p pomap -j 71
+# exit-code            1
+# env-file             ~/.opam/log/pomap-11-05296d.env
+# output-file          ~/.opam/log/pomap-11-05296d.out
+### output ###
+#       ocamlc src/.pomap.objs/pomap__Store_impl.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -bin-annot -I src/.pomap.objs -intf-suffix .ml -no-alias-deps -open Pomap -o src/.pomap.objs/pomap__Store_impl.cmo -c -impl src/store_impl.ml)
+# File "src/store_impl.ml", line 104, characters 24-29:
+# Error: Signature mismatch:
+#        ...
+#        In module Set:
+#        The value `of_seq' is required but not provided
+#        File "set.mli", line 277, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `add_seq' is required but not provided
+#        File "set.mli", line 273, characters 4-37: Expected declaration
+#        In module Set:
+#        The value `to_seq' is required but not provided
+#        File "set.mli", line 269, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `to_seq_from' is required but not provided
+#        File "set.mli", line 264, characters 4-43: Expected declaration
+#     ocamlopt src/.pomap.objs/pomap__Store_impl.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlopt.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -I src/.pomap.objs -intf-suffix .ml -no-alias-deps -open Pomap -o src/.pomap.objs/pomap__Store_impl.cmx -c -impl src/store_impl.ml)
+# File "src/store_impl.ml", line 104, characters 24-29:
+# Error: Signature mismatch:
+#        ...
+#        In module Set:
+#        The value `of_seq' is required but not provided
+#        File "set.mli", line 277, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `add_seq' is required but not provided
+#        File "set.mli", line 273, characters 4-37: Expected declaration
+#        In module Set:
+#        The value `to_seq' is required but not provided
+#        File "set.mli", line 269, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `to_seq_from' is required but not provided
+#        File "set.mli", line 264, characters 4-43: Expected declaration
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build pomap 4.0.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533847260 1533847266
