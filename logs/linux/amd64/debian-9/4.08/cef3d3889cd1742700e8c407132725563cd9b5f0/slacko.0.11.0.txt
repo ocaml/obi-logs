@@ -1,0 +1,29 @@
+$ opam depext -iy -j 2 slacko.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for slacko.0.11.0: The following dependencies couldn't be met:
+          - slacko -> cohttp < 0.99 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> ppx_deriving -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> ppx_deriving -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> fieldslib < 113.01.00 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - slacko -> cohttp < 0.99 -> fieldslib < 113.01.00 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> fieldslib < 113.01.00 -> type_conv (!= 109.09.00 & < 109.20.00) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - slacko -> cohttp < 0.99 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=slacko.0.11.0 returned 20
+20 1533846895 1533846897

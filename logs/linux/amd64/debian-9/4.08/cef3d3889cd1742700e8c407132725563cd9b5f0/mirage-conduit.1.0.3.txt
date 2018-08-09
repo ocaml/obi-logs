@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-conduit.1.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-conduit.1.0.3: The following dependencies couldn't be met:
+          - mirage-conduit -> vchan >= 3.0.0 -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-conduit.1.0.3 returned 20
+20 1533846949 1533846951
