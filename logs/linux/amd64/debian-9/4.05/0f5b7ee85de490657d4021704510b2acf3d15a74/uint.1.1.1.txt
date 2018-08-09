@@ -1,0 +1,564 @@
+$ opam depext -iy -j 2 uint.1.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by uint]
+  - install uint       1.1.1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[uint.1.1.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of uint failed at "/home/opam/.opam/4.05/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling uint.1.1.1 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/uint.1.1.1
+# command              ~/.opam/4.05/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/uint-11-50de41.env
+# output-file          ~/.opam/log/uint-11-50de41.out
+### output ###
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 246, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 246, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 254, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 254, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 257, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 287, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 384, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1253, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1258, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "./setup.ml", line 1793, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 4920, characters 31-50:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 4921, characters 31-48:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 4922, characters 31-50:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 4923, characters 31-48:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# /home/opam/.opam/4.05/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamlc -g -c lib/uint32_stubs.c
+# + ocamlfind ocamlc -g -c lib/uint32_stubs.c
+# In file included from lib/uint32_stubs.c:12:0:
+# lib/uint32.h:6:30: error: unknown type name 'uint32'
+#  CAMLextern value copy_uint32(uint32 i);
+#                               ^~~~~~
+# lib/uint32_stubs.c: In function 'uint32_cmp':
+# lib/uint32_stubs.c:17:5: error: unknown type name 'uint32'
+#      uint32 i1 = Uint32_val(v1);
+#      ^~~~~~
+# In file included from lib/uint32_stubs.c:12:0:
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+#      uint32 i1 = Uint32_val(v1);
+#                  ^~~~~~~~~~
+# lib/uint32.h:4:27: note: each undeclared identifier is reported only once for each function it appears in
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+#      uint32 i1 = Uint32_val(v1);
+#                  ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# lib/uint32_stubs.c:17:17: note: in expansion of macro 'Uint32_val'
+#      uint32 i1 = Uint32_val(v1);
+#                  ^~~~~~~~~~
+# lib/uint32_stubs.c:18:12: error: expected ';' before 'i2'
+#      uint32 i2 = Uint32_val(v2);
+#             ^~
+# lib/uint32_stubs.c:19:18: error: 'i2' undeclared (first use in this function)
+#      return (i1 > i2) - (i1 < i2);
+#                   ^~
+# In file included from lib/uint32_stubs.c:12:0:
+# lib/uint32_stubs.c: In function 'uint32_hash':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+#      return Uint32_val(v);
+#             ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# lib/uint32_stubs.c:25:12: note: in expansion of macro 'Uint32_val'
+#      return Uint32_val(v);
+#             ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_serialize':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+#      caml_serialize_int_4(Uint32_val(v));
+#                           ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# lib/uint32_stubs.c:31:26: note: in expansion of macro 'Uint32_val'
+#      caml_serialize_int_4(Uint32_val(v));
+#                           ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_deserialize':
+# lib/uint32_stubs.c:38:8: error: 'uint32' undeclared (first use in this function)
+#      *((uint32 *) dst) = caml_deserialize_uint_4();
+#         ^~~~~~
+# lib/uint32_stubs.c:38:16: error: expected expression before ')' token
+#      *((uint32 *) dst) = caml_deserialize_uint_4();
+#                 ^
+# lib/uint32_stubs.c: At top level:
+# lib/uint32_stubs.c:52:13: error: unknown type name 'uint32'
+#  copy_uint32(uint32 i)
+#              ^~~~~~
+# In file included from lib/uint32_stubs.c:9:0:
+# lib/uint32_stubs.c: In function 'uint32_add':
+# lib/uint32_stubs.c:64:17: warning: implicit declaration of function 'copy_uint32' [-Wimplicit-function-declaration]
+#      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+#                  ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:64:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:64:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) + Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_sub':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:71:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:71:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) - Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_mul':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:78:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:78:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) * Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_div':
+# lib/uint32_stubs.c:85:5: error: unknown type name 'uint32'
+#      uint32 divisor = Uint32_val(v2);
+#      ^~~~~~
+# In file included from lib/uint32_stubs.c:12:0:
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+#      uint32 divisor = Uint32_val(v2);
+#                       ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# lib/uint32_stubs.c:85:22: note: in expansion of macro 'Uint32_val'
+#      uint32 divisor = Uint32_val(v2);
+#                       ^~~~~~~~~~
+# In file included from lib/uint32_stubs.c:9:0:
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:88:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:88:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) / divisor));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_mod':
+# lib/uint32_stubs.c:95:5: error: unknown type name 'uint32'
+#      uint32 divisor = Uint32_val(v2);
+#      ^~~~~~
+# In file included from lib/uint32_stubs.c:12:0:
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+#      uint32 divisor = Uint32_val(v2);
+#                       ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# lib/uint32_stubs.c:95:22: note: in expansion of macro 'Uint32_val'
+#      uint32 divisor = Uint32_val(v2);
+#                       ^~~~~~~~~~
+# In file included from lib/uint32_stubs.c:9:0:
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:98:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:98:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) % divisor));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_and':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:105:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:105:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) & Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_or':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:112:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:112:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) | Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_xor':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:119:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:119:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) ^ Uint32_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_shift_left':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:126:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:126:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) << Int_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_shift_right':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:133:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:133:29: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (copy_uint32(Uint32_val(v1) >> Int_val(v2)));
+#                              ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_to_int':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (Val_long(Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+#      CAMLreturn (Val_long(Uint32_val(v)));
+#                  ^~~~~~~~
+# lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (Val_long(Uint32_val(v)));
+#                           ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:147:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (Val_long(Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:147:17: note: in expansion of macro 'Val_long'
+#      CAMLreturn (Val_long(Uint32_val(v)));
+#                  ^~~~~~~~
+# lib/uint32_stubs.c:147:26: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (Val_long(Uint32_val(v)));
+#                           ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_of_float':
+# lib/uint32_stubs.c:154:30: error: 'uint32' undeclared (first use in this function)
+#      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+#                               ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:154:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32((uint32)Double_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_to_float':
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+#                                           ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:161:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:161:42: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (caml_copy_double((double)Uint32_val(v)));
+#                                           ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_of_int32':
+# lib/uint32_stubs.c:168:30: error: 'uint32' undeclared (first use in this function)
+#      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+#                               ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:168:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (copy_uint32((uint32)Int32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_to_int32':
+# lib/uint32_stubs.c:175:34: error: 'int32' undeclared (first use in this function)
+#      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+#                                   ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+#                                         ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# /home/opam/.opam/4.05/lib/ocaml/caml/memory.h:340:29: note: in definition of macro 'CAMLreturnT'
+#    type caml__temp_result = (result); \
+#                              ^~~~~~
+# lib/uint32_stubs.c:175:5: note: in expansion of macro 'CAMLreturn'
+#      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+#      ^~~~~~~~~~
+# lib/uint32_stubs.c:175:40: note: in expansion of macro 'Uint32_val'
+#      CAMLreturn (caml_copy_int32((int32)Uint32_val(v)));
+#                                         ^~~~~~~~~~
+# lib/uint32_stubs.c: In function 'uint32_bits_of_float':
+# lib/uint32_stubs.c:182:22: error: unknown type name 'uint32'
+#      union { float d; uint32 i; } u;
+#                       ^~~~~~
+# lib/uint32_stubs.c: In function 'uint32_float_of_bits':
+# lib/uint32_stubs.c:191:22: error: unknown type name 'uint32'
+#      union { float d; uint32 i; } u;
+#                       ^~~~~~
+# In file included from lib/uint32_stubs.c:12:0:
+# lib/uint32.h:4:27: error: 'uint32' undeclared (first use in this function)
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                            ^
+# lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+#      u.i = Uint32_val(v);
+#            ^~~~~~~~~~
+# lib/uint32.h:4:35: error: expected expression before ')' token
+#  #define Uint32_val(v) (*((uint32 *)Data_custom_val(v)))
+#                                    ^
+# lib/uint32_stubs.c:192:11: note: in expansion of macro 'Uint32_val'
+#      u.i = Uint32_val(v);
+#            ^~~~~~~~~~
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.05/bin/ocamlbuild' lib/libuint_stubs.a lib/dlluint_stubs.so lib/uint.cma lib/uint.cmxa lib/uint.a lib/uint.cmxs -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build uint 1.1.1
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180809021825.export"
+31 1533781103 1533781116

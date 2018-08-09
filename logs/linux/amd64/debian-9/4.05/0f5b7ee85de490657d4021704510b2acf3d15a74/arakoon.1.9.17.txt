@@ -1,0 +1,424 @@
+$ opam depext -iy -j 2 arakoon.1.9.17
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+help2man
+libbz2-dev
+libev-dev
+libsnappy-dev
+libssl-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils help2man libbz2-dev libev-dev libsnappy-dev libssl-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package bzip2-doc.
+Preparing to unpack .../03-bzip2-doc_1.0.6-8.1_all.deb ...
+Unpacking bzip2-doc (1.0.6-8.1) ...
+Selecting previously unselected package help2man.
+Preparing to unpack .../04-help2man_1.47.4_amd64.deb ...
+Unpacking help2man (1.47.4) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../05-libbz2-dev_1.0.6-8.1_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-8.1) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../06-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../07-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../08-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../09-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../10-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../11-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../12-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../13-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Selecting previously unselected package libev4.
+Preparing to unpack .../14-libev4_1%3a4.22-1+b1_amd64.deb ...
+Unpacking libev4 (1:4.22-1+b1) ...
+Selecting previously unselected package libev-dev.
+Preparing to unpack .../15-libev-dev_1%3a4.22-1+b1_amd64.deb ...
+Unpacking libev-dev (1:4.22-1+b1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../16-libsnappy1v5_1.1.3-3_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.3-3) ...
+Selecting previously unselected package libsnappy-dev:amd64.
+Preparing to unpack .../17-libsnappy-dev_1.1.3-3_amd64.deb ...
+Unpacking libsnappy-dev:amd64 (1.1.3-3) ...
+Setting up libev4 (1:4.22-1+b1) ...
+Setting up libbz2-dev:amd64 (1.0.6-8.1) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up bzip2-doc (1.0.6-8.1) ...
+Setting up libsnappy1v5:amd64 (1.1.3-3) ...
+Setting up help2man (1.47.4) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libev-dev (1:4.22-1+b1) ...
+Setting up libsnappy-dev:amd64 (1.1.3-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers     v0.11.0 [required by core_kernel]
+  - install re                      1.7.3   [required by redis, uri]
+  - install spawn                   v0.12.0 [required by core]
+  - install result                  1.3     [required by logs]
+  - install base-num                base    [required by num]
+  - install ocamlbuild              0.12.0  [required by arakoon]
+  - install base-bytes              base    [required by ocplib-endian, redis]
+  - install camlbz2                 0.6.0   [required by arakoon]
+  - install conf-pkg-config         1.1     [required by conf-snappy]
+  - install octavius                1.2.0   [required by ppx_js_style]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install conf-libev              4-11    [required by arakoon]
+  - install conf-which              1       [required by ssl]
+  - install ocaml-migrate-parsetree 1.0.11  [required by core]
+  - install num                     0       [required by sexplib]
+  - install topkg                   0.9.1   [required by logs, uuidm]
+  - install camlp4                  4.05+1  [required by optcomp]
+  - install stringext               1.5.0   [required by uri]
+  - install ounit                   2.0.8   [required by camltc]
+  - install cppo                    1.6.4   [required by ocplib-endian]
+  - install conf-snappy             1       [required by snappy]
+  - install conf-openssl            1       [required by ssl]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by core]
+  - install uuidm                   0.9.6   [required by redis]
+  - install optcomp                 1.6     [required by quickcheck]
+  - install ocplib-endian           1.0     [required by arakoon]
+  - install lwt                     4.1.0   [required by arakoon]                        For the PPX, please install package lwt_ppx
+                                                                                         For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                         For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install snappy                  0.1.1   [required by arakoon]
+  - install ssl                     0.5.5   [required by arakoon]
+  - install sexplib                 v0.11.0 [required by core, uri]
+  - install typerep                 v0.11.0 [required by core_kernel]
+  - install stdio                   v0.11.0 [required by core]
+  - install quickcheck              1.0.2   [required by arakoon]
+  - install redis                   0.3.3   [required by arakoon]
+  - install logs                    0.6.2   [required by camltc]
+  - install lwt_ssl                 1.1.2   [required by arakoon]
+  - install ppxlib                  0.3.0   [required by core]
+  - install configurator            v0.11.0 [required by core]
+  - install camltc                  0.9.7.0 [required by arakoon]
+  - install variantslib             v0.11.0 [required by core_kernel]
+  - install ppx_typerep_conv        v0.11.1 [required by ppx_jane]
+  - install ppx_sexp_conv           v0.11.2 [required by uri]
+  - install ppx_pipebang            v0.11.0 [required by ppx_jane]
+  - install ppx_optional            v0.11.0 [required by ppx_jane]
+  - install ppx_optcomp             v0.11.0 [required by ppx_jane]
+  - install ppx_let                 v0.11.0 [required by ppx_jane]
+  - install ppx_js_style            v0.11.0 [required by ppx_base]
+  - install ppx_inline_test         v0.11.0 [required by core_kernel]
+  - install ppx_here                v0.11.0 [required by ppx_assert, ppx_jane]
+  - install ppx_enumerate           v0.11.1 [required by ppx_base]
+  - install ppx_compare             v0.11.1 [required by ppx_assert, bin_prot, ppx_base]
+  - install fieldslib               v0.11.0 [required by core_kernel]
+  - install ppx_variants_conv       v0.11.1 [required by bin_prot, ppx_jane]
+  - install uri                     1.9.7   [required by arakoon]
+  - install ppx_custom_printf       v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_bench               v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_value          v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_message        v0.11.0 [required by core_kernel]
+  - install ppx_fail                v0.11.0 [required by ppx_jane]
+  - install ppx_hash                v0.11.1 [required by core_kernel]
+  - install ppx_assert              v0.11.0 [required by core]
+  - install ppx_fields_conv         v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_base                v0.11.0 [required by core_kernel]
+  - install ppx_expect              v0.11.0 [required by ppx_jane]
+  - install bin_prot                v0.11.0 [required by core_kernel]
+  - install ppx_bin_prot            v0.11.1 [required by ppx_jane]
+  - install ppx_jane                v0.11.0 [required by core]
+  - install splittable_random       v0.11.0 [required by core_kernel]
+  - install core_kernel             v0.11.1 [required by core]
+  - install core                    v0.11.2 [required by arakoon]
+  - install arakoon                 1.9.17
+===== 74 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[arakoon.1.9.17] found in cache
+[base.v0.11.1] found in cache
+[bin_prot.v0.11.0] found in cache
+[camlbz2.0.6.0] found in cache
+[camlp4.4.05+1] found in cache
+[camltc.0.9.7.0] found in cache
+[configurator.v0.11.0] found in cache
+[core.v0.11.2] found in cache
+[core_kernel.v0.11.1] found in cache
+[cppo.1.6.4] found in cache
+[fieldslib.v0.11.0] found in cache
+[jane-street-headers.v0.11.0] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[lwt_ssl.1.1.2] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-endian.1.0] found in cache
+[octavius.1.2.0] found in cache
+[optcomp.1.6] found in cache
+[ounit.2.0.8] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.0] found in cache
+[quickcheck.1.0.2] found in cache
+[re.1.7.3] found in cache
+[redis.0.3.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[snappy.0.1.1] found in cache
+[spawn.v0.12.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.11.0] found in cache
+[uri.1.9.7] found in cache
+[uuidm.0.9.6] found in cache
+[variantslib.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed camlbz2.0.6.0
+-> installed conf-libev.4-11
+-> installed conf-pkg-config.1.1
+-> installed conf-openssl.1
+-> installed conf-which.1
+-> installed conf-snappy.1
+-> installed cppo.1.6.4
+-> installed jane-street-headers.v0.11.0
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ocplib-endian.1.0
+-> installed octavius.1.2.0
+-> installed ounit.2.0.8
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed snappy.0.1.1
+-> installed spawn.v0.12.0
+-> installed ssl.0.5.5
+-> installed lwt_ssl.1.1.2
+-> installed stdio.v0.11.0
+-> installed camlp4.4.05+1
+-> installed configurator.v0.11.0
+-> installed ppxlib.0.3.0
+-> installed fieldslib.v0.11.0
+-> installed optcomp.1.6
+-> installed ppx_compare.v0.11.1
+-> installed ppx_enumerate.v0.11.1
+-> installed ppx_fields_conv.v0.11.0
+-> installed ppx_here.v0.11.0
+-> installed ppx_inline_test.v0.11.0
+-> installed ppx_fail.v0.11.0
+-> installed ppx_js_style.v0.11.0
+-> installed ppx_let.v0.11.0
+-> installed ppx_optcomp.v0.11.0
+-> installed ppx_optional.v0.11.0
+-> installed ppx_pipebang.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ppx_assert.v0.11.0
+-> installed ppx_bench.v0.11.0
+-> installed ppx_custom_printf.v0.11.0
+-> installed ppx_hash.v0.11.1
+-> installed ppx_sexp_message.v0.11.0
+-> installed ppx_sexp_value.v0.11.0
+-> installed quickcheck.1.0.2
+-> installed ppx_base.v0.11.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed logs.0.6.2
+-> installed typerep.v0.11.0
+-> installed ppx_typerep_conv.v0.11.1
+-> installed uri.1.9.7
+-> installed uuidm.0.9.6
+-> installed redis.0.3.3
+-> installed variantslib.v0.11.0
+-> installed ppx_variants_conv.v0.11.1
+-> installed bin_prot.v0.11.0
+-> installed ppx_bin_prot.v0.11.1
+-> installed ppx_expect.v0.11.0
+-> installed ppx_jane.v0.11.0
+-> installed splittable_random.v0.11.0
+-> installed camltc.0.9.7.0
+-> installed core_kernel.v0.11.1
+-> installed core.v0.11.2
+[ERROR] The compilation of arakoon failed at "/usr/bin/make".
+
+#=== ERROR while compiling arakoon.1.9.17 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/arakoon.1.9.17
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/arakoon-11-11604d.env
+# output-file          ~/.opam/log/arakoon-11-11604d.out
+### output ###
+# ocamlbuild -j 4 -use-ocamlfind arakoon.byte arakoon.native arakoon_client.cma arakoon_client.cmxa arakoon_client.a arakoon_client.cmxs plugin_helper.cmi
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind: Package `bisect' not found
+# ocamlfind ocamldep -package lwt -package core -package redis.lwt -package redis -package uri -package ocplib-endian -package snappy -pp camlp4of -package quickcheck -package dynlink -package camltc -package str -package bz2 -package oUnit -package lwt_ssl -package lwt.unix -package lwt.preemptive -modules logger_macro.ml > logger_macro.ml.depends
+# + ocamlfind ocamldep -package lwt -package core -package redis.lwt -package redis -package uri -package ocplib-endian -package snappy -pp camlp4of -package quickcheck -package dynlink -package camltc -package str -package bz2 -package oUnit -package lwt_ssl -package lwt.unix -package lwt.preemptive -modules logger_macro.ml > logger_macro.ml.depends
+# ocamlfind: Package `lwt.preemptive' not found
+# Command exited with code 2.
+# Makefile:19: recipe for target 'build' failed
+# make: *** [build] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build arakoon 1.9.17
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install base-num                base
+| - install bin_prot                v0.11.0
+| - install camlbz2                 0.6.0
+| - install camlp4                  4.05+1
+| - install camltc                  0.9.7.0
+| - install conf-libev              4-11
+| - install conf-openssl            1
+| - install conf-pkg-config         1.1
+| - install conf-snappy             1
+| - install conf-which              1
+| - install configurator            v0.11.0
+| - install core                    v0.11.2
+| - install core_kernel             v0.11.1
+| - install cppo                    1.6.4
+| - install fieldslib               v0.11.0
+| - install jane-street-headers     v0.11.0
+| - install logs                    0.6.2
+| - install lwt                     4.1.0
+| - install lwt_ssl                 1.1.2
+| - install num                     0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocplib-endian           1.0
+| - install octavius                1.2.0
+| - install optcomp                 1.6
+| - install ounit                   2.0.8
+| - install parsexp                 v0.11.0
+| - install ppx_assert              v0.11.0
+| - install ppx_base                v0.11.0
+| - install ppx_bench               v0.11.0
+| - install ppx_bin_prot            v0.11.1
+| - install ppx_compare             v0.11.1
+| - install ppx_custom_printf       v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_enumerate           v0.11.1
+| - install ppx_expect              v0.11.0
+| - install ppx_fail                v0.11.0
+| - install ppx_fields_conv         v0.11.0
+| - install ppx_hash                v0.11.1
+| - install ppx_here                v0.11.0
+| - install ppx_inline_test         v0.11.0
+| - install ppx_jane                v0.11.0
+| - install ppx_js_style            v0.11.0
+| - install ppx_let                 v0.11.0
+| - install ppx_optcomp             v0.11.0
+| - install ppx_optional            v0.11.0
+| - install ppx_pipebang            v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_sexp_message        v0.11.0
+| - install ppx_sexp_value          v0.11.0
+| - install ppx_typerep_conv        v0.11.1
+| - install ppx_variants_conv       v0.11.1
+| - install ppxlib                  0.3.0
+| - install quickcheck              1.0.2
+| - install re                      1.7.3
+| - install redis                   0.3.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install snappy                  0.1.1
+| - install spawn                   v0.12.0
+| - install splittable_random       v0.11.0
+| - install ssl                     0.5.5
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install typerep                 v0.11.0
+| - install uri                     1.9.7
+| - install uuidm                   0.9.6
+| - install variantslib             v0.11.0
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    help2man
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180809012748.export"
+31 1533778052 1533778381
