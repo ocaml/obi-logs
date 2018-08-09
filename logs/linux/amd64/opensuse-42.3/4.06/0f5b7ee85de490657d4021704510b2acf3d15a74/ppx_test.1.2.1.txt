@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_test.1.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for ppx_test.1.2.1: The following dependencies couldn't be met:
+          - ppx_test -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_test.1.2.1 returned 20
+20 1533773367 1533773369

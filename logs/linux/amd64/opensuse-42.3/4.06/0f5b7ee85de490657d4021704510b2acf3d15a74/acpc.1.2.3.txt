@@ -1,0 +1,90 @@
+$ opam depext -iy -j 2 acpc.1.2.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+which
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlgraph    1.8.8    [required by acpc]
+  - install conf-which    1        [required by conf-autoconf, conf-gnuplot]
+  - install base-bytes    base     [required by fileutils]
+  - install ocamlbuild    0.12.0   [required by parmap, fileutils, batteries, etc.]
+  - install num           1.1      [required by batteries]
+  - install obuild        0.1.10   [required by acpc]
+  - install conf-gnuplot  0.1      [required by acpc]
+  - install conf-autoconf 0.1      [required by acpc]
+  - install vector3       0.2.1    [required by acpc]
+  - install parmap        1.0-rc10 [required by acpc]
+  - install itv-tree      2.1      [required by acpc]
+  - install fileutils     0.5.3    [required by acpc]
+  - install dolog         3.0      [required by acpc]
+  - install batteries     2.8.0    [required by acpc]
+  - install acpc          1.2.3
+===== 15 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[acpc.1.2.3] found in cache
+[batteries.2.8.0] found in cache
+[dolog.3.0] found in cache
+[fileutils.0.5.3] found in cache
+[itv-tree.2.1] found in cache
+[num.1.1] found in cache
+[obuild.0.1.10] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[parmap.1.0-rc10] found in cache
+[vector3.0.2.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-which.1
+[ERROR] The compilation of conf-gnuplot failed at "/usr/bin/which gnuplot".
+-> installed conf-autoconf.0.1
+-> installed num.1.1
+-> installed obuild.0.1.10
+-> installed ocamlbuild.0.12.0
+-> installed batteries.2.8.0
+-> installed dolog.3.0
+-> installed fileutils.0.5.3
+-> installed itv-tree.2.1
+-> installed ocamlgraph.1.8.8
+-> installed parmap.1.0-rc10
+-> installed vector3.0.2.1
+
+#=== ERROR while compiling conf-gnuplot.0.1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-gnuplot.0.1
+# command              /usr/bin/which gnuplot
+# exit-code            1
+# env-file             ~/.opam/log/conf-gnuplot-12-81a3ce.env
+# output-file          ~/.opam/log/conf-gnuplot-12-81a3ce.out
+### output ###
+# /usr/bin/which: no gnuplot in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-gnuplot 0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes    base
+| - install batteries     2.8.0
+| - install conf-autoconf 0.1
+| - install conf-which    1
+| - install dolog         3.0
+| - install fileutils     0.5.3
+| - install itv-tree      2.1
+| - install num           1.1
+| - install obuild        0.1.10
+| - install ocamlbuild    0.12.0
+| - install ocamlgraph    1.8.8
+| - install parmap        1.0-rc10
+| - install vector3       0.2.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180809004518.export"
+31 1533775497 1533775571
