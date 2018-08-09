@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 statsd-client.1.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for statsd-client.1.0.1: The following dependencies couldn't be met:
+          - statsd-client -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=statsd-client.1.0.1 returned 20
+20 1533781559 1533781561
