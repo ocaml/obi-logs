@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 electrod.0.1.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for electrod.0.1.4: The following dependencies couldn't be met:
+          - electrod -> visitors -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - electrod -> visitors -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=electrod.0.1.4 returned 20
+20 1533932813 1533932816
