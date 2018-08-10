@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 rpc_parallel.113.24.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for rpc_parallel.113.24.00: The following dependencies couldn't be met:
+          - rpc_parallel -> ppx_assert < 113.25.00 -> ppx_type_conv < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - rpc_parallel -> ppx_assert < 113.25.00 -> ppx_type_conv < 113.25.00 -> ppx_deriving < 4.0 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - rpc_parallel -> ppx_assert < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=rpc_parallel.113.24.00 returned 20
+20 1533882151 1533882153
