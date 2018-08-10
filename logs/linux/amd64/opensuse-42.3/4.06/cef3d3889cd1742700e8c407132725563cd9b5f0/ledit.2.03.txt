@@ -1,0 +1,74 @@
+$ opam depext -iy -j 2 ledit.2.03
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlp5 7.06 [required by ledit]
+  - install ledit  2.03
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp5.7.06] found in cache
+[ledit.2.03] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed camlp5.7.06
+[ERROR] The compilation of ledit failed at "/usr/bin/make".
+
+#=== ERROR while compiling ledit.2.03 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ledit.2.03
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ledit-13-0325cb.env
+# output-file          ~/.opam/log/ledit-13-0325cb.out
+### output ###
+# camlp5r -I ext -loc loc ext/pa_def.ml -o ext/pa_def.ppo
+# ocamlc -I `camlp5 -where` -c -impl ext/pa_def.ppo
+# rm -f ext/pa_def.ppo
+# camlp5r -I ext -loc loc ext/pa_local.ml -o ext/pa_local.ppo
+# ocamlc -I `camlp5 -where` -c -impl ext/pa_local.ppo
+# rm -f ext/pa_local.ppo
+# camlp5r -I ext cursor.mli -o cursor.ppi
+# ocamlc -c -intf cursor.ppi
+# /bin/rm -f cursor.ppi
+# camlp5r -I ext cursor.ml -o cursor.ppo
+# ocamlc -I `camlp5 -where` -c -impl cursor.ppo
+# /bin/rm -f cursor.ppo
+# camlp5r -I ext ledit.mli -o ledit.ppi
+# ocamlc -c -intf ledit.ppi
+# /bin/rm -f ledit.ppi
+# camlp5r -I ext ledit.ml -o ledit.ppo
+# ocamlc -I `camlp5 -where` -c -impl ledit.ppo
+# File "ledit.ml", line 122, characters 32-48:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# File "ledit.ml", line 125, characters 46-62:
+# Warning 3: deprecated: String.uppercase
+# Use String.uppercase_ascii instead.
+# File "ledit.ml", line 130, characters 32-48:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ledit.ml", line 133, characters 46-62:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "ledit.ml", line 160, characters 48-52:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:73: recipe for target 'ledit.cmo' failed
+# make: *** [ledit.cmo] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ledit 2.03
++- 
++- The following changes have been performed
+| - install camlp5 7.06
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180810042304.export"
+31 1533874965 1533875076

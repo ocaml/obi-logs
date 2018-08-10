@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 lambdoc.1.0-beta2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for lambdoc.1.0-beta2: The following dependencies couldn't be met:
+          - lambdoc -> xstrp4 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=lambdoc.1.0-beta2 returned 20
+20 1533879244 1533879246
