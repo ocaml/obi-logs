@@ -1,0 +1,51 @@
+$ opam depext -iy -j 2 cry.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install cry 0.3.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cry.0.3.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of cry failed at "/usr/bin/make".
+
+#=== ERROR while compiling cry.0.3.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/cry.0.3.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/cry-13-1872ec.env
+# output-file          ~/.opam/log/cry-13-1872ec.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/cry.0.3.0/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/cry.0.3.0/src'
+# making ._bcdi/cry.di from cry.mli
+# making ._d/cry.d from cry.ml
+# ocamlc.opt -c -dtypes -I /home/opam/.opam/4.06/lib/bytes cry.mli
+# ocamlc.opt -c -dtypes -I /home/opam/.opam/4.06/lib/bytes cry.ml
+# File "cry.ml", line 216, characters 34-41:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# OCamlMakefile:952: recipe for target 'cry.cmo' failed
+# make[2]: *** [cry.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/cry.0.3.0/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/cry.0.3.0/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build cry 0.3.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533871879 1533871884

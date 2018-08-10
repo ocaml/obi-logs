@@ -1,0 +1,103 @@
+$ opam depext -iy -j 2 mldonkey.3.1.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+pkg-config
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy m4 pkg-config zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libglib2.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../0-libglib2.0-0_2.56.1-2ubuntu1_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../1-libglib2.0-data_2.56.1-2ubuntu1_all.deb ...
+Unpacking libglib2.0-data (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libicu60:amd64.
+Preparing to unpack .../2-libicu60_60.2-3ubuntu3_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../3-libxml2_2.9.4+dfsg1-6.1ubuntu1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../4-shared-mime-info_1.9-2_amd64.deb ...
+Unpacking shared-mime-info (1.9-2) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../5-xdg-user-dirs_0.17-1ubuntu1_amd64.deb ...
+Unpacking xdg-user-dirs (0.17-1ubuntu1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../6-pkg-config_0.29.1-0ubuntu2_amd64.deb ...
+Unpacking pkg-config (0.29.1-0ubuntu2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../7-zlib1g-dev_1%3a1.2.11.dfsg-0ubuntu2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-0ubuntu2) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3) ...
+Setting up libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+No schema files found: doing nothing.
+Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Setting up pkg-config (0.29.1-0ubuntu2) ...
+Setting up libglib2.0-data (2.56.1-2ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up shared-mime-info (1.9-2) ...
+Setting up xdg-user-dirs (0.17-1ubuntu1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-0ubuntu2) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild      0.12.0 [required by camlp4]
+  - install conf-pkg-config 1.1    [required by conf-zlib]
+  - install num             1.1    [required by mldonkey]
+  - install camlp4          4.06+1 [required by mldonkey]
+  - install conf-zlib       1      [required by mldonkey]
+  - install mldonkey        3.1.6
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[mldonkey.3.1.6] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+-> installed conf-zlib.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.06+1
+[ERROR] The compilation of mldonkey failed at "/usr/bin/make".
+
+#=== ERROR while compiling mldonkey.3.1.6 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mldonkey.3.1.6
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/mldonkey-13-f6c0a8.env
+# output-file          ~/.opam/log/mldonkey-13-f6c0a8.out
+### output ###
+# /home/opam/.opam/4.06/bin/ocamlc.opt -g -w -3  -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/networks/fasttrack  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -c src/utils/lib/syslog.mli
+# ocamlopt.opt -g -inline 10 -w -3    -I src/utils/extlib  -I src/utils/cdk  -I src/utils/bitstring  -I src/utils/lib  -I src/utils/ocamlrss  -I src/utils/xml-light  -I src/utils/net  -I tools  -I src/daemon/common  -I src/daemon/driver  -I src/utils/mp3tagui  -I src/config/unix  -I src/networks/fasttrack  -I src/networks/fileTP  -I src/networks/bittorrent  -I src/networks/donkey -I +camlp4 -c src/utils/lib/syslog.ml
+# File "src/utils/lib/syslog.ml", line 197, characters 50-53:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:5444: recipe for target 'src/utils/lib/syslog.cmx' failed
+# make: *** [src/utils/lib/syslog.cmx] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mldonkey 3.1.6
++- 
++- The following changes have been performed
+| - install camlp4          4.06+1
+| - install conf-pkg-config 1.1
+| - install conf-zlib       1
+| - install num             1.1
+| - install ocamlbuild      0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180810034234.export"
+31 1533872543 1533872674
