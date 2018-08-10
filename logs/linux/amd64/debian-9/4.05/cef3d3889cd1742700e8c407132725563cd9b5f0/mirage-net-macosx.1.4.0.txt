@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-net-macosx.1.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-net-macosx.1.4.0: The following dependencies couldn't be met:
+          - mirage-net-macosx -> vmnet
+              unmet availability conditions, e.g. os = "macos"
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-net-macosx.1.4.0 returned 20
+20 1533854663 1533854667
