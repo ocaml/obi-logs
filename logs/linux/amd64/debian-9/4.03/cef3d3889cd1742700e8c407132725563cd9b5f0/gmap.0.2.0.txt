@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 gmap.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for gmap.0.2.0: The following dependencies couldn't be met:
+          - gmap -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=gmap.0.2.0 returned 20
+20 1533863288 1533863291

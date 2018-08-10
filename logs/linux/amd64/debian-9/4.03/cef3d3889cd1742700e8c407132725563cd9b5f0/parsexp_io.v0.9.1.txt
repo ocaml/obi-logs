@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 parsexp_io.v0.9.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for parsexp_io.v0.9.1: The following dependencies couldn't be met:
+          - parsexp_io -> parsexp >= v0.9.1 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - parsexp_io -> parsexp >= v0.9.1 -> base >= v0.9.4 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - parsexp_io -> parsexp >= v0.9.1 -> base >= v0.9.4 -> sexplib >= v0.9.3 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=parsexp_io.v0.9.1 returned 20
+20 1533865754 1533865757

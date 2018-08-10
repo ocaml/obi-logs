@@ -1,0 +1,630 @@
+$ opam depext -iy -j 2 prob-cache.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3          [required by ppx_expect]
+  - install base-bytes              base           [required by containers]
+  - install result                  1.3            [required by sequence]
+  - install omake                   0.10.3         [required by riakc_ppx]
+  - install ocamlbuild              0.12.0         [required by containers, async, ppx_deriving_protobuf]
+  - install ppx_tools               5.0+4.03.0     [required by ppx_bench, ppx_assert, ppx_expect]
+  - install cppo                    1.6.4          [required by containers, ppx_deriving_protobuf]
+  - install sequence                1.1            [required by prob-cache]
+  - install ocaml-migrate-parsetree 1.0.11         [required by bitstring]
+  - install variantslib             113.24.00      [required by async]
+  - install typerep                 113.24.00      [required by async]
+  - install sexplib                 113.33.00+4.03 [required by async]
+  - install fieldslib               113.24.00      [required by async]
+  - install bin_prot                113.33.00+4.03 [required by async]
+  - install ppx_core                113.33.01+4.03 [required by ppx_bench, ppx_assert, ppx_expect]
+  - install cppo_ocamlbuild         1.6.0          [required by ppx_deriving_protobuf]
+  - install containers              0.11           [required by prob-cache]
+  - install ppx_tools_versioned     5.2            [required by bitstring]
+  - install ppx_optcomp             113.33.00+4.03 [required by ppx_driver]
+  - install ppx_deriving            4.1.5          [required by prob-cache]
+  - install bitstring               3.0.0          [required by riakc_ppx]
+  - install ppx_driver              113.33.02+4.03 [required by async]
+  - install ppx_deriving_protobuf   2.6            [required by prob-cache]
+  - install ppx_type_conv           113.33.02+4.03 [required by ppx_assert]
+  - install ppx_pipebang            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_let                 113.33.00+4.03 [required by ppx_jane]
+  - install ppx_inline_test         113.33.00+4.03 [required by async]
+  - install ppx_here                113.33.00      [required by ppx_assert, ppx_jane]
+  - install ppx_variants_conv       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_typerep_conv        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_conv           113.33.01+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_fields_conv         113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_enumerate           113.33.00+4.03 [required by ppx_jane]
+  - install ppx_compare             113.33.00+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_bin_prot            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_bench               113.33.00+4.03 [required by async]
+  - install ppx_fail                113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_value          113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_message        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_custom_printf       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_assert              113.33.00      [required by async]
+  - install ppx_expect              113.33.01+4.03 [required by async]
+  - install ppx_jane                113.33.00      [required by async]
+  - install core_kernel             113.33.01+4.03 [required by async_kernel, async_rpc_kernel]
+  - install core                    113.33.02+4.03 [required by prob-cache]
+  - install async_kernel            113.33.00      [required by async]
+  - install async_unix              113.33.00+4.03 [required by async]
+  - install async_rpc_kernel        113.33.00      [required by async_extra]
+  - install async_extra             113.33.00+4.03 [required by async]
+  - install async                   113.33.00      [required by prob-cache]
+  - install riakc_ppx               3.1.4          [required by prob-cache]
+  - install prob-cache              1.0.0
+===== 52 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.113.33.00] found in cache
+[async_extra.113.33.00+4.03] found in cache
+[async_kernel.113.33.00] found in cache
+[async_rpc_kernel.113.33.00] found in cache
+[async_unix.113.33.00+4.03] found in cache
+[bin_prot.113.33.00+4.03] found in cache
+[bitstring.3.0.0] found in cache
+[containers.0.11] found in cache
+[core.113.33.02+4.03] found in cache
+[core_kernel.113.33.01+4.03] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[fieldslib.113.24.00] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[omake.0.10.3] found in cache
+[ppx_assert.113.33.00] found in cache
+[ppx_bench.113.33.00+4.03] found in cache
+[ppx_bin_prot.113.33.00+4.03] found in cache
+[ppx_compare.113.33.00+4.03] found in cache
+[ppx_core.113.33.01+4.03] found in cache
+[ppx_custom_printf.113.33.00+4.03] found in cache
+[ppx_deriving.4.1.5] found in cache
+[ppx_deriving_protobuf.2.6] found in cache
+[ppx_driver.113.33.02+4.03] found in cache
+[ppx_enumerate.113.33.00+4.03] found in cache
+[ppx_expect.113.33.01+4.03] found in cache
+[ppx_fail.113.33.00+4.03] found in cache
+[ppx_fields_conv.113.33.00+4.03] found in cache
+[ppx_here.113.33.00] found in cache
+[ppx_inline_test.113.33.00+4.03] found in cache
+[ppx_jane.113.33.00] found in cache
+[ppx_let.113.33.00+4.03] found in cache
+[ppx_optcomp.113.33.00+4.03] found in cache
+[ppx_pipebang.113.33.00+4.03] found in cache
+[ppx_sexp_conv.113.33.01+4.03] found in cache
+[ppx_sexp_message.113.33.00+4.03] found in cache
+[ppx_sexp_value.113.33.00+4.03] found in cache
+[ppx_tools.5.0+4.03.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_type_conv.113.33.02+4.03] found in cache
+[ppx_typerep_conv.113.33.00+4.03] found in cache
+[ppx_variants_conv.113.33.00+4.03] found in cache
+[prob-cache.1.0.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[riakc_ppx.3.1.4] found in cache
+[sequence.1.1] found in cache
+[sexplib.113.33.00+4.03] found in cache
+[typerep.113.24.00] found in cache
+[variantslib.113.24.00] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed ocamlbuild.0.12.0
+-> installed bin_prot.113.33.00+4.03
+-> installed cppo_ocamlbuild.1.6.0
+-> installed fieldslib.113.24.00
+-> installed ppx_tools.5.0+4.03.0
+-> installed ppx_core.113.33.01+4.03
+-> installed omake.0.10.3
+-> installed ppx_optcomp.113.33.00+4.03
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_deriving.4.1.5
+-> installed ppx_driver.113.33.02+4.03
+-> installed ppx_deriving_protobuf.2.6
+-> installed ppx_here.113.33.00
+-> installed ppx_inline_test.113.33.00+4.03
+-> installed ppx_fail.113.33.00+4.03
+-> installed ppx_let.113.33.00+4.03
+-> installed ppx_pipebang.113.33.00+4.03
+-> installed ppx_tools_versioned.5.2
+-> installed bitstring.3.0.0
+-> installed ppx_type_conv.113.33.02+4.03
+-> installed ppx_bench.113.33.00+4.03
+-> installed ppx_bin_prot.113.33.00+4.03
+-> installed ppx_compare.113.33.00+4.03
+-> installed ppx_enumerate.113.33.00+4.03
+-> installed sequence.1.1
+-> installed ppx_fields_conv.113.33.00+4.03
+-> installed sexplib.113.33.00+4.03
+-> installed ppx_sexp_conv.113.33.01+4.03
+[ERROR] The compilation of containers failed at "/usr/bin/make build".
+-> installed ppx_assert.113.33.00
+-> installed ppx_custom_printf.113.33.00+4.03
+-> installed ppx_sexp_message.113.33.00+4.03
+-> installed typerep.113.24.00
+-> installed ppx_sexp_value.113.33.00+4.03
+-> installed variantslib.113.24.00
+-> installed ppx_typerep_conv.113.33.00+4.03
+-> installed ppx_variants_conv.113.33.00+4.03
+-> installed ppx_expect.113.33.01+4.03
+-> installed ppx_jane.113.33.00
+-> installed core_kernel.113.33.01+4.03
+-> installed async_kernel.113.33.00
+-> installed async_rpc_kernel.113.33.00
+-> installed core.113.33.02+4.03
+-> installed async_unix.113.33.00+4.03
+-> installed async_extra.113.33.00+4.03
+-> installed async.113.33.00
+[ERROR] The compilation of riakc_ppx failed at "/home/opam/.opam/4.03/bin/omake -j2".
+
+#=== ERROR while compiling riakc_ppx.3.1.4 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/riakc_ppx.3.1.4
+# command              ~/.opam/4.03/bin/omake -j2
+# exit-code            2
+# env-file             ~/.opam/log/riakc_ppx-12-5b4ccf.env
+# output-file          ~/.opam/log/riakc_ppx-12-5b4ccf.out
+### output ###
+# *** omake: reading OMakefiles
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.03/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.03/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.03/bin/ocamlopt.opt)
+# --- Checking for ocamldep.opt... (found /home/opam/.opam/4.03/bin/ocamldep.opt)
+# --- Checking for ocamllex.opt... (found /home/opam/.opam/4.03/bin/ocamllex.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# --- Checking whether ocamlopt can create cmxs plugins... (yes)
+# *** omake: finished reading OMakefiles (0.12 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - build _build/lib mylogging.o
+# + ocamlfind ocamlc -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -safe-string -bin-annot -annot -warn-error P -thread -I . -c mylogging.ml
+# File "mylogging.ml", line 34, characters 30-54:
+# Warning 3: deprecated: Core.Std.String.Map.iter
+# [since 2015-10] Use iteri instead
+# - build _build/lib mylogging.o
+# + ocamlfind ocamlopt -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -safe-string -bin-annot -annot -warn-error P -thread -I . -c mylogging.ml
+# File "mylogging.ml", line 34, characters 30-54:
+# Warning 3: deprecated: Core.Std.String.Map.iter
+# [since 2015-10] Use iteri instead
+# - build _build/lib response.cmo
+# + ocamlfind ocamlc -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -safe-string -bin-annot -annot -warn-error P -thread -I . -c response.ml
+# File "response.ml", line 1:
+# Error: The implementation response.ml
+#        does not match the interface response.cmi:
+#        Values do not match:
+#          val parse_length : bytes -> (int, [> `Overflow ]) Result.t
+#        is not included in
+#          val parse_length : string -> (int, [> error ]) Result.t
+#        File "response.ml", line 10, characters 4-16: Actual declaration
+# *** omake: 62/241 targets are up to date
+# *** omake: failed (2.43 sec, 15/15 scans, 9/16 rules, 85/114 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    _build/lib/response.cmo
+#       depends on: _build/lib/response.ml
+
+
+#=== ERROR while compiling containers.0.11 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/containers.0.11
+# command              /usr/bin/make build
+# exit-code            2
+# env-file             ~/.opam/log/containers-12-fb8789.env
+# output-file          ~/.opam/log/containers-12-fb8789.out
+### output ###
+# ocaml setup.ml -build 
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# make[1]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/containers.0.11'
+# make[1]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/containers.0.11'
+# make[1]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/containers.0.11'
+# make[1]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/containers.0.11'
+# W: Cannot find source file matching module 'containers_misc' in library containers_misc
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.03/lib/ocamlbuild /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCVector.mli > src/core/CCVector.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCVector.cmi src/core/CCVector.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCVector.ml > src/core/CCVector.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCPrint.mli > src/core/CCPrint.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCPrint.cmi src/core/CCPrint.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCPrint.ml > src/core/CCPrint.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCError.mli > src/core/CCError.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCError.cmi src/core/CCError.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCError.ml > src/core/CCError.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCHeap.mli > src/core/CCHeap.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCHeap.cmi src/core/CCHeap.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCHeap.ml > src/core/CCHeap.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCList.mli > src/core/CCList.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCList.cmi src/core/CCList.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCList.ml > src/core/CCList.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCOpt.mli > src/core/CCOpt.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCOpt.cmi src/core/CCOpt.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCOpt.ml > src/core/CCOpt.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCPair.mli > src/core/CCPair.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCPair.cmi src/core/CCPair.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCPair.ml > src/core/CCPair.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCFun.mli > src/core/CCFun.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCFun.cmi src/core/CCFun.mli
+# cppo -D 'OCAML_MAJOR 4' -D 'OCAML_MINOR 3' -o src/core/CCFun.ml src/core/CCFun.cppo.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCFun.ml > src/core/CCFun.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCHash.mli > src/core/CCHash.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCHash.cmi src/core/CCHash.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCHash.ml > src/core/CCHash.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCInt.mli > src/core/CCInt.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCInt.cmi src/core/CCInt.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCInt.ml > src/core/CCInt.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCBool.mli > src/core/CCBool.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCBool.cmi src/core/CCBool.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCBool.ml > src/core/CCBool.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCFloat.mli > src/core/CCFloat.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCFloat.cmi src/core/CCFloat.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCFloat.ml > src/core/CCFloat.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCArray.mli > src/core/CCArray.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCArray.cmi src/core/CCArray.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCArray.ml > src/core/CCArray.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCRef.mli > src/core/CCRef.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCRef.cmi src/core/CCRef.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCRef.ml > src/core/CCRef.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCSet.mli > src/core/CCSet.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCSet.cmi src/core/CCSet.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCSet.ml > src/core/CCSet.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCOrd.mli > src/core/CCOrd.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCOrd.cmi src/core/CCOrd.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCOrd.ml > src/core/CCOrd.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCRandom.mli > src/core/CCRandom.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCRandom.cmi src/core/CCRandom.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCRandom.ml > src/core/CCRandom.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCString.mli > src/core/CCString.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCString.cmi src/core/CCString.mli
+# cppo -D 'OCAML_MAJOR 4' -D 'OCAML_MINOR 3' -o src/core/CCString.ml src/core/CCString.cppo.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCString.ml > src/core/CCString.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCHashtbl.mli > src/core/CCHashtbl.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCHashtbl.cmi src/core/CCHashtbl.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCHashtbl.ml > src/core/CCHashtbl.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCMap.mli > src/core/CCMap.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCMap.cmi src/core/CCMap.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCMap.ml > src/core/CCMap.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCFormat.mli > src/core/CCFormat.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/core -o src/core/CCFormat.cmi src/core/CCFormat.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/CCFormat.ml > src/core/CCFormat.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/core/containers.ml > src/core/containers.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCVector.cmo src/core/CCVector.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCPrint.cmo src/core/CCPrint.ml
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCPrint.cmo src/core/CCPrint.ml
+# File "src/core/CCPrint.ml", line 150, characters 16-35:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCError.cmo src/core/CCError.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCHeap.cmo src/core/CCHeap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCList.cmo src/core/CCList.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCOpt.cmo src/core/CCOpt.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCPair.cmo src/core/CCPair.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCFun.cmo src/core/CCFun.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCHash.cmo src/core/CCHash.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCInt.cmo src/core/CCInt.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCBool.cmo src/core/CCBool.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCFloat.cmo src/core/CCFloat.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCArray.cmo src/core/CCArray.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCRef.cmo src/core/CCRef.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCSet.cmo src/core/CCSet.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCOrd.cmo src/core/CCOrd.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCRandom.cmo src/core/CCRandom.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCString.cmo src/core/CCString.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCHashtbl.cmo src/core/CCHashtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCMap.cmo src/core/CCMap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCFormat.cmo src/core/CCFormat.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/containers.cmo src/core/containers.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/core src/core/CCVector.cmo src/core/CCPrint.cmo src/core/CCError.cmo src/core/CCHeap.cmo src/core/CCList.cmo src/core/CCOpt.cmo src/core/CCPair.cmo src/core/CCFun.cmo src/core/CCHash.cmo src/core/CCInt.cmo src/core/CCBool.cmo src/core/CCFloat.cmo src/core/CCArray.cmo src/core/CCRef.cmo src/core/CCSet.cmo src/core/CCOrd.cmo src/core/CCRandom.cmo src/core/CCString.cmo src/core/CCHashtbl.cmo src/core/CCMap.cmo src/core/CCFormat.cmo src/core/containers.cmo -o src/core/containers.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCArray.cmx src/core/CCArray.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCBool.cmx src/core/CCBool.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCError.cmx src/core/CCError.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCFloat.cmx src/core/CCFloat.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCFormat.cmx src/core/CCFormat.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCFun.cmx src/core/CCFun.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -inline 20 -w -4 -w -44 -package bytes -I src/core -o src/core/CCHash.cmx src/core/CCHash.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCInt.cmx src/core/CCInt.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCList.cmx src/core/CCList.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCMap.cmx src/core/CCMap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCOpt.cmx src/core/CCOpt.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCPair.cmx src/core/CCPair.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCRandom.cmx src/core/CCRandom.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCRef.cmx src/core/CCRef.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCSet.cmx src/core/CCSet.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCString.cmx src/core/CCString.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -inline 25 -package bytes -I src/core -o src/core/CCVector.cmx src/core/CCVector.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCPrint.cmx src/core/CCPrint.ml
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCPrint.cmx src/core/CCPrint.ml
+# File "src/core/CCPrint.ml", line 150, characters 16-35:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCHeap.cmx src/core/CCHeap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCOrd.cmx src/core/CCOrd.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/CCHashtbl.cmx src/core/CCHashtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/core -o src/core/containers.cmx src/core/containers.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/core src/core/CCVector.cmx src/core/CCPrint.cmx src/core/CCError.cmx src/core/CCHeap.cmx src/core/CCList.cmx src/core/CCOpt.cmx src/core/CCPair.cmx src/core/CCFun.cmx src/core/CCHash.cmx src/core/CCInt.cmx src/core/CCBool.cmx src/core/CCFloat.cmx src/core/CCArray.cmx src/core/CCRef.cmx src/core/CCSet.cmx src/core/CCOrd.cmx src/core/CCRandom.cmx src/core/CCString.cmx src/core/CCHashtbl.cmx src/core/CCMap.cmx src/core/CCFormat.cmx src/core/containers.cmx -o src/core/containers.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/core src/core/containers.cmxa src/core/CCVector.cmx src/core/CCPrint.cmx src/core/CCError.cmx src/core/CCHeap.cmx src/core/CCList.cmx src/core/CCOpt.cmx src/core/CCPair.cmx src/core/CCFun.cmx src/core/CCHash.cmx src/core/CCInt.cmx src/core/CCBool.cmx src/core/CCFloat.cmx src/core/CCArray.cmx src/core/CCRef.cmx src/core/CCSet.cmx src/core/CCOrd.cmx src/core/CCRandom.cmx src/core/CCString.cmx src/core/CCHashtbl.cmx src/core/CCMap.cmx src/core/CCFormat.cmx src/core/containers.cmx -o src/core/containers.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/io/CCIO.mli > src/io/CCIO.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/io -o src/io/CCIO.cmi src/io/CCIO.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/io/CCIO.ml > src/io/CCIO.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/io -o src/io/CCIO.cmo src/io/CCIO.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/io src/io/CCIO.cmo -o src/io/containers_io.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/io -o src/io/CCIO.cmx src/io/CCIO.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/io src/io/CCIO.cmx -o src/io/containers_io.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/io src/io/containers_io.cmxa src/io/CCIO.cmx -o src/io/containers_io.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package unix -modules src/unix/CCUnix.mli > src/unix/CCUnix.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -package unix -I src/unix -o src/unix/CCUnix.cmi src/unix/CCUnix.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package unix -modules src/unix/CCUnix.ml > src/unix/CCUnix.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -package unix -I src/unix -o src/unix/CCUnix.cmo src/unix/CCUnix.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/unix src/unix/CCUnix.cmo -o src/unix/containers_unix.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -package unix -I src/unix -o src/unix/CCUnix.cmx src/unix/CCUnix.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/unix src/unix/CCUnix.cmx -o src/unix/containers_unix.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/unix src/unix/containers_unix.cmxa src/unix/CCUnix.cmx -o src/unix/containers_unix.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/sexp/CCSexp.mli > src/sexp/CCSexp.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/sexp -o src/sexp/CCSexp.cmi src/sexp/CCSexp.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/sexp/CCSexp.ml > src/sexp/CCSexp.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/sexp/CCSexpStream.mli > src/sexp/CCSexpStream.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/sexp -o src/sexp/CCSexpStream.cmi src/sexp/CCSexpStream.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/sexp/CCSexpStream.ml > src/sexp/CCSexpStream.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/sexp/CCSexpM.mli > src/sexp/CCSexpM.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/sexp -o src/sexp/CCSexpM.cmi src/sexp/CCSexpM.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/sexp/CCSexpM.ml > src/sexp/CCSexpM.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/sexp -o src/sexp/CCSexp.cmo src/sexp/CCSexp.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/sexp -o src/sexp/CCSexpStream.cmo src/sexp/CCSexpStream.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/sexp -o src/sexp/CCSexpM.cmo src/sexp/CCSexpM.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/sexp src/sexp/CCSexp.cmo src/sexp/CCSexpStream.cmo src/sexp/CCSexpM.cmo -o src/sexp/containers_sexp.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/sexp -o src/sexp/CCSexp.cmx src/sexp/CCSexp.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/sexp -o src/sexp/CCSexpStream.cmx src/sexp/CCSexpStream.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/sexp -o src/sexp/CCSexpM.cmx src/sexp/CCSexpM.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/sexp src/sexp/CCSexp.cmx src/sexp/CCSexpStream.cmx src/sexp/CCSexpM.cmx -o src/sexp/containers_sexp.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/sexp src/sexp/containers_sexp.cmxa src/sexp/CCSexp.cmx src/sexp/CCSexpStream.cmx src/sexp/CCSexpM.cmx -o src/sexp/containers_sexp.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMultiMap.mli > src/data/CCMultiMap.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCMultiMap.cmi src/data/CCMultiMap.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMultiMap.ml > src/data/CCMultiMap.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMultiSet.mli > src/data/CCMultiSet.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCMultiSet.cmi src/data/CCMultiSet.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMultiSet.ml > src/data/CCMultiSet.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCTrie.mli > src/data/CCTrie.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCTrie.cmi src/data/CCTrie.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCTrie.ml > src/data/CCTrie.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCFlatHashtbl.mli > src/data/CCFlatHashtbl.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCFlatHashtbl.cmi src/data/CCFlatHashtbl.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCFlatHashtbl.ml > src/data/CCFlatHashtbl.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCCache.mli > src/data/CCCache.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCCache.cmi src/data/CCCache.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCCache.ml > src/data/CCCache.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCPersistentHashtbl.mli > src/data/CCPersistentHashtbl.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCPersistentHashtbl.cmi src/data/CCPersistentHashtbl.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCPersistentHashtbl.ml > src/data/CCPersistentHashtbl.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCDeque.mli > src/data/CCDeque.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCDeque.cmi src/data/CCDeque.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCDeque.ml > src/data/CCDeque.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCFQueue.mli > src/data/CCFQueue.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCFQueue.cmi src/data/CCFQueue.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCFQueue.ml > src/data/CCFQueue.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCBV.mli > src/data/CCBV.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCBV.cmi src/data/CCBV.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCBV.ml > src/data/CCBV.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMixtbl.mli > src/data/CCMixtbl.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCMixtbl.cmi src/data/CCMixtbl.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMixtbl.ml > src/data/CCMixtbl.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMixmap.mli > src/data/CCMixmap.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCMixmap.cmi src/data/CCMixmap.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMixmap.ml > src/data/CCMixmap.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCRingBuffer.mli > src/data/CCRingBuffer.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCRingBuffer.cmi src/data/CCRingBuffer.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCRingBuffer.ml > src/data/CCRingBuffer.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCIntMap.mli > src/data/CCIntMap.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCIntMap.cmi src/data/CCIntMap.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCIntMap.ml > src/data/CCIntMap.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCPersistentArray.mli > src/data/CCPersistentArray.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCPersistentArray.cmi src/data/CCPersistentArray.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCPersistentArray.ml > src/data/CCPersistentArray.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMixset.mli > src/data/CCMixset.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/data -o src/data/CCMixset.cmi src/data/CCMixset.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/data/CCMixset.ml > src/data/CCMixset.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMultiMap.cmo src/data/CCMultiMap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMultiSet.cmo src/data/CCMultiSet.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCTrie.cmo src/data/CCTrie.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCFlatHashtbl.cmo src/data/CCFlatHashtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCCache.cmo src/data/CCCache.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCPersistentHashtbl.cmo src/data/CCPersistentHashtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCDeque.cmo src/data/CCDeque.ml
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCDeque.cmo src/data/CCDeque.ml
+# File "src/data/CCDeque.ml", line 32, characters 2-40:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCFQueue.cmo src/data/CCFQueue.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCBV.cmo src/data/CCBV.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMixtbl.cmo src/data/CCMixtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMixmap.cmo src/data/CCMixmap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCRingBuffer.cmo src/data/CCRingBuffer.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCIntMap.cmo src/data/CCIntMap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCPersistentArray.cmo src/data/CCPersistentArray.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMixset.cmo src/data/CCMixset.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/data src/data/CCMultiMap.cmo src/data/CCMultiSet.cmo src/data/CCTrie.cmo src/data/CCFlatHashtbl.cmo src/data/CCCache.cmo src/data/CCPersistentHashtbl.cmo src/data/CCDeque.cmo src/data/CCFQueue.cmo src/data/CCBV.cmo src/data/CCMixtbl.cmo src/data/CCMixmap.cmo src/data/CCRingBuffer.cmo src/data/CCIntMap.cmo src/data/CCPersistentArray.cmo src/data/CCMixset.cmo -o src/data/containers_data.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMultiMap.cmx src/data/CCMultiMap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMultiSet.cmx src/data/CCMultiSet.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCTrie.cmx src/data/CCTrie.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCFlatHashtbl.cmx src/data/CCFlatHashtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCCache.cmx src/data/CCCache.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCPersistentHashtbl.cmx src/data/CCPersistentHashtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCDeque.cmx src/data/CCDeque.ml
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCDeque.cmx src/data/CCDeque.ml
+# File "src/data/CCDeque.ml", line 32, characters 2-40:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCFQueue.cmx src/data/CCFQueue.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCBV.cmx src/data/CCBV.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMixtbl.cmx src/data/CCMixtbl.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMixmap.cmx src/data/CCMixmap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCRingBuffer.cmx src/data/CCRingBuffer.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCIntMap.cmx src/data/CCIntMap.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCPersistentArray.cmx src/data/CCPersistentArray.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/data -o src/data/CCMixset.cmx src/data/CCMixset.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/data src/data/CCMultiMap.cmx src/data/CCMultiSet.cmx src/data/CCTrie.cmx src/data/CCFlatHashtbl.cmx src/data/CCCache.cmx src/data/CCPersistentHashtbl.cmx src/data/CCDeque.cmx src/data/CCFQueue.cmx src/data/CCBV.cmx src/data/CCMixtbl.cmx src/data/CCMixmap.cmx src/data/CCRingBuffer.cmx src/data/CCIntMap.cmx src/data/CCPersistentArray.cmx src/data/CCMixset.cmx -o src/data/containers_data.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/data src/data/containers_data.cmxa src/data/CCMultiMap.cmx src/data/CCMultiSet.cmx src/data/CCTrie.cmx src/data/CCFlatHashtbl.cmx src/data/CCCache.cmx src/data/CCPersistentHashtbl.cmx src/data/CCDeque.cmx src/data/CCFQueue.cmx src/data/CCBV.cmx src/data/CCMixtbl.cmx src/data/CCMixmap.cmx src/data/CCRingBuffer.cmx src/data/CCIntMap.cmx src/data/CCPersistentArray.cmx src/data/CCMixset.cmx -o src/data/containers_data.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -modules src/iter/CCKTree.mli > src/iter/CCKTree.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -I src/iter -o src/iter/CCKTree.cmi src/iter/CCKTree.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -modules src/iter/CCKTree.ml > src/iter/CCKTree.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -modules src/iter/CCKList.mli > src/iter/CCKList.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -I src/iter -o src/iter/CCKList.cmi src/iter/CCKList.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -modules src/iter/CCKList.ml > src/iter/CCKList.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -I src/iter -o src/iter/CCKTree.cmo src/iter/CCKTree.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -I src/iter -o src/iter/CCKList.cmo src/iter/CCKList.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/iter src/iter/CCKTree.cmo src/iter/CCKList.cmo -o src/iter/containers_iter.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -I src/iter -o src/iter/CCKTree.cmx src/iter/CCKTree.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -I src/iter -o src/iter/CCKList.cmx src/iter/CCKList.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/iter src/iter/CCKTree.cmx src/iter/CCKList.cmx -o src/iter/containers_iter.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/iter src/iter/containers_iter.cmxa src/iter/CCKTree.cmx src/iter/CCKList.cmx -o src/iter/containers_iter.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/containers_string.ml > src/string/containers_string.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCApp_parse.mli > src/string/CCApp_parse.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCKMP.mli > src/string/CCKMP.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCLevenshtein.mli > src/string/CCLevenshtein.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCParse.mli > src/string/CCParse.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/string -o src/string/CCApp_parse.cmi src/string/CCApp_parse.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/string -o src/string/CCKMP.cmi src/string/CCKMP.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/string -o src/string/CCLevenshtein.cmi src/string/CCLevenshtein.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -package bytes -I src/string -o src/string/CCParse.cmi src/string/CCParse.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCKMP.ml > src/string/CCKMP.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCLevenshtein.ml > src/string/CCLevenshtein.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCApp_parse.ml > src/string/CCApp_parse.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -modules src/string/CCParse.ml > src/string/CCParse.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/containers_string.cmo src/string/containers_string.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCKMP.cmo src/string/CCKMP.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCLevenshtein.cmo src/string/CCLevenshtein.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCApp_parse.cmo src/string/CCApp_parse.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCParse.cmo src/string/CCParse.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -a -I src/string src/string/CCApp_parse.cmo src/string/CCKMP.cmo src/string/CCLevenshtein.cmo src/string/CCParse.cmo src/string/containers_string.cmo -o src/string/containers_string.cma
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCApp_parse.cmx src/string/CCApp_parse.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCKMP.cmx src/string/CCKMP.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCLevenshtein.cmx src/string/CCLevenshtein.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/CCParse.cmx src/string/CCParse.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -w A -w -4 -w -44 -package bytes -I src/string -o src/string/containers_string.cmx src/string/containers_string.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -a -I src/string src/string/CCApp_parse.cmx src/string/CCKMP.cmx src/string/CCLevenshtein.cmx src/string/CCParse.cmx src/string/containers_string.cmx -o src/string/containers_string.cmxa
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlopt -shared -I src/string src/string/containers_string.cmxa src/string/CCApp_parse.cmx src/string/CCKMP.cmx src/string/CCLevenshtein.cmx src/string/CCParse.cmx src/string/containers_string.cmx -o src/string/containers_string.cmxs
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/containers_advanced.ml > src/advanced/containers_advanced.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCBatch.mli > src/advanced/CCBatch.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCCat.mli > src/advanced/CCCat.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCLinq.mli > src/advanced/CCLinq.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCMonadIO.mli > src/advanced/CCMonadIO.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -I src/core -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/CCBatch.cmi src/advanced/CCBatch.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -I src/core -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/CCCat.cmi src/advanced/CCCat.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -I src/core -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/CCLinq.cmi src/advanced/CCLinq.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -I src/core -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/CCMonadIO.cmi src/advanced/CCMonadIO.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCLinq.ml > src/advanced/CCLinq.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCBatch.ml > src/advanced/CCBatch.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCCat.ml > src/advanced/CCCat.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package bytes -package sequence -modules src/advanced/CCMonadIO.ml > src/advanced/CCMonadIO.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -I src/core -w -4 -w -44 -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/containers_advanced.cmo src/advanced/containers_advanced.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -I src/core -w -4 -w -44 -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/CCLinq.cmo src/advanced/CCLinq.ml
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -w A -I src/core -w -4 -w -44 -package bytes -package sequence -I src/advanced -I src/core -o src/advanced/CCLinq.cmo src/advanced/CCLinq.ml
+# File "src/advanced/CCLinq.ml", line 262, characters 9-25:
+# Error: Unbound value Sequence.flatMap
+# Hint: Did you mean flat_map?
+# Command exited with code 2.
+# + ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.03/lib/ocamlbuild /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlbuild' src/core/containers.cma src/core/containers.cmxa src/core/containers.a src/core/containers.cmxs src/io/containers_io.cma src/io/containers_io.cmxa src/io/containers_io.a src/io/containers_io.cmxs src/unix/containers_unix.cma src/unix/containers_unix.cmxa src/unix/containers_unix.a src/unix/containers_unix.cmxs src/sexp/containers_sexp.cma src/sexp/containers_sexp.cmxa src/sexp/containers_sexp.a src/sexp/containers_sexp.cmxs src/data/containers_data.cma src/data/containers_data.cmxa src/data/containers_data.a src/data/containers_data.cmxs src/iter/containers_iter.cma src/iter/containers_iter.cmxa src/iter/containers_iter.a src/iter/containers_iter.cmxs src/string/containers_string.cma src/string/containers_string.cmxa src/string/containers_string.a src/string/containers_string.cmxs src/advanced/containers_advanced.cma src/advanced/containers_advanced.cmxa src/advanced/containers_advanced.a src/advanced/containers_advanced.cmxs src/bigarray/containers_bigarray.cma src/bigarray/containers_bigarray.cmxa src/bigarray/containers_bigarray.a src/bigarray/containers_bigarray.cmxs src/misc/containers_misc.cma src/misc/containers_misc.cmxa src/misc/containers_misc.a src/misc/containers_misc.cmxs src/threads/containers_thread.cma src/threads/containers_thread.cmxa src/threads/containers_thread.a src/threads/containers_thread.cmxs examples/lambda.native examples/id_sexp.native examples/id_sexp2.native -use-ocamlfind -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build containers 0.11
+| - build riakc_ppx  3.1.4
++- 
++- The following changes have been performed (the rest was aborted)
+| - install async                   113.33.00
+| - install async_extra             113.33.00+4.03
+| - install async_kernel            113.33.00
+| - install async_rpc_kernel        113.33.00
+| - install async_unix              113.33.00+4.03
+| - install base-bytes              base
+| - install bin_prot                113.33.00+4.03
+| - install bitstring               3.0.0
+| - install core                    113.33.02+4.03
+| - install core_kernel             113.33.01+4.03
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install fieldslib               113.24.00
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install omake                   0.10.3
+| - install ppx_assert              113.33.00
+| - install ppx_bench               113.33.00+4.03
+| - install ppx_bin_prot            113.33.00+4.03
+| - install ppx_compare             113.33.00+4.03
+| - install ppx_core                113.33.01+4.03
+| - install ppx_custom_printf       113.33.00+4.03
+| - install ppx_deriving            4.1.5
+| - install ppx_deriving_protobuf   2.6
+| - install ppx_driver              113.33.02+4.03
+| - install ppx_enumerate           113.33.00+4.03
+| - install ppx_expect              113.33.01+4.03
+| - install ppx_fail                113.33.00+4.03
+| - install ppx_fields_conv         113.33.00+4.03
+| - install ppx_here                113.33.00
+| - install ppx_inline_test         113.33.00+4.03
+| - install ppx_jane                113.33.00
+| - install ppx_let                 113.33.00+4.03
+| - install ppx_optcomp             113.33.00+4.03
+| - install ppx_pipebang            113.33.00+4.03
+| - install ppx_sexp_conv           113.33.01+4.03
+| - install ppx_sexp_message        113.33.00+4.03
+| - install ppx_sexp_value          113.33.00+4.03
+| - install ppx_tools               5.0+4.03.0
+| - install ppx_tools_versioned     5.2
+| - install ppx_type_conv           113.33.02+4.03
+| - install ppx_typerep_conv        113.33.00+4.03
+| - install ppx_variants_conv       113.33.00+4.03
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sequence                1.1
+| - install sexplib                 113.33.00+4.03
+| - install typerep                 113.24.00
+| - install variantslib             113.24.00
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180810013634.export"
+31 1533864992 1533865605
