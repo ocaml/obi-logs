@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-http-unix.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-http-unix.1.0.0: The following dependencies couldn't be met:
+          - mirage-http-unix -> mirage-tcpip-unix -> ipaddr < 2.0.0 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-http-unix.1.0.0 returned 20
+20 1533866905 1533866907

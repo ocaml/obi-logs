@@ -1,0 +1,209 @@
+$ opam depext -iy -j 2 sawja.1.5.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy m4 zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camomile   1.0.1  [required by javalib]
+  - install camlzip    1.07   [required by javalib]
+  - install base-bytes base   [required by extlib]
+  - install ocamlbuild 0.12.0 [required by camlp4]
+  - install cppo       1.6.4  [required by extlib]
+  - install camlp4     4.06+1 [required by javalib]
+  - install extlib     1.7.5  [required by javalib]
+  - install javalib    2.3.5  [required by sawja]
+  - install sawja      1.5.2
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[camlzip.1.07] found in cache
+[camomile.1.0.1] found in cache
+[cppo.1.6.4] found in cache
+[extlib.1.7.5] found in cache
+[javalib.2.3.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[sawja.1.5.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camlzip.1.07
+-> installed camomile.1.0.1
+-> installed cppo.1.6.4
+-> installed ocamlbuild.0.12.0
+-> installed extlib.1.7.5
+-> installed camlp4.4.06+1
+-> installed javalib.2.3.5
+[ERROR] The compilation of sawja failed at "/usr/bin/make".
+
+#=== ERROR while compiling sawja.1.5.2 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/sawja.1.5.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/sawja-11-ca81bd.env
+# output-file          ~/.opam/log/sawja-11-ca81bd.out
+### output ###
+# /usr/bin/make -C src
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sawja.1.5.2/src'
+# ocamlyacc heap_parser/parse_heap.mly
+# cp classDomainPtrees.ml classDomain.ml
+# rm -f safe.ml
+# for i in safe_domain.ml safe_var.ml safe_state.ml safe_constraints.ml safe_solver.ml; do \
+#   echo `basename $i .ml` | \
+#     awk 'BEGIN{ORS="";OFS="";}{print "module " toupper(substr($0,6,1)) substr($0,7,length($0)-6) "= struct\n";}' >> safe.ml;\
+#   echo "# 1 \""$i"\"" >> safe.ml;\
+#   cat $i >> safe.ml;\
+#   echo " end">> safe.ml;\
+# done
+# ocamllex heap_parser/lex_heap.mll	
+# 82 states, 4559 transitions, table size 18728 bytes
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -I dataflow_analyses/ iter.mli wlist.mli jProgram.mli classDomain.mli jsrInline.mli jControlFlow.mli jPrintUtil.mli jPrintHtml.mli jPrintPlugin.mli argPlugin.mli jCodePP.mli jBir.mli jBirPP.mli a3Bir.mli a3BirPP.mli jBirSSA.mli jBirSSAPP.mli a3BirSSA.mli a3BirSSAPP.mli dataflow_analyses/live_bir.mli dataflow_analyses/live_a3bir.mli safe.mli reachableMethods.mli jUtil.mli jType.mli heap_parser//parserType.mli heap_parser/parse_heap.mli heap_parser/heapParser.mli jCRA.mli XTA.mli jRTA.mli jRTAWithHeap.mli jRRTA.mli jCFAOptions.mli jCFADom.mli jCFAPrinter.mli jCFA.mli dataflow_analyses/reachDef.mli dataflow_analyses/availableExpr.mli jUtil.ml iter.ml iter2.ml wlist.ml jProgram.ml classDomain.ml jsrInline.ml jControlFlow.ml jPrintUtil.ml jPrintHtml.ml jPrintPlugin.ml argPlugin.ml jCodePP.ml cmn.ml bir.ml birA3.ml jBir.ml jBirPP.ml a3Bir.ml a3BirPP.ml dataflow_analyses/live_bir.ml dataflow_analyses/live_a3bir.ml jBirSSA.ml jBirSSAPP.ml a3BirSSA.ml a3BirSSAPP.ml safe.ml reachableMethods.ml jType.ml heap_parser//parserType.ml heap_parser//parse_heap.ml heap_parser/lex_heap.ml heap_parser/heapParser.ml jCRA.ml jRTA.ml jRTAWithHeap.ml jRRTA.ml XTA.ml jCFAOptions.ml jCFADom.ml jCFAPrinter.ml jCFA.ml dataflow_analyses/reachDef.ml dataflow_analyses/availableExpr.ml dataflow_analyses/availableExprSSA.ml > .depend
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamldep -package camlp4 -syntax camlp4o jNativeStubs.ml jNativeStubs.mli >> .depend
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c iter.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c wlist.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jProgram.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c classDomain.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jNativeStubs.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jsrInline.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jControlFlow.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jPrintUtil.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jPrintHtml.mli
+# File "jPrintHtml.mli", line 149, characters 2-26:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jPrintPlugin.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c argPlugin.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jCodePP.mli
+# File "jCodePP.mli", line 26, characters 0-17:
+# Warning 33: unused open JControlFlow.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jBir.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jBirPP.mli
+# File "jBirPP.mli", line 24, characters 0-17:
+# Warning 33: unused open JControlFlow.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c a3Bir.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c a3BirPP.mli
+# File "a3BirPP.mli", line 23, characters 0-17:
+# Warning 33: unused open JControlFlow.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jBirSSA.mli
+# File "jBirSSA.mli", line 29, characters 0-20:
+# Warning 50: unattached documentation comment (ignored)
+# File "jBirSSA.mli", line 340, characters 0-153:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jBirSSAPP.mli
+# File "jBirSSAPP.mli", line 23, characters 0-17:
+# Warning 33: unused open JControlFlow.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c a3BirSSA.mli
+# File "a3BirSSA.mli", line 30, characters 0-20:
+# Warning 50: unattached documentation comment (ignored)
+# File "a3BirSSA.mli", line 308, characters 0-153:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c a3BirSSAPP.mli
+# File "a3BirSSAPP.mli", line 24, characters 0-17:
+# Warning 33: unused open JControlFlow.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c dataflow_analyses/live_bir.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c dataflow_analyses/live_a3bir.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c safe.mli
+# File "safe.mli", line 119, characters 6-321:
+# Warning 50: ambiguous documentation comment
+# File "safe.mli", line 139, characters 6-178:
+# Warning 50: ambiguous documentation comment
+# File "safe.mli", line 173, characters 6-34:
+# Warning 50: ambiguous documentation comment
+# File "safe.mli", line 178, characters 6-105:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c reachableMethods.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jUtil.mli
+# File "jUtil.mli", line 27, characters 0-25:
+# Warning 33: unused open Javalib_pack.JBasics.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jType.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c heap_parser//parserType.mli
+# File "heap_parser//parserType.mli", line 70, characters 0-24:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c heap_parser/parse_heap.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c heap_parser/heapParser.mli
+# File "heap_parser/heapParser.mli", line 21, characters 0-12:
+# Warning 33: unused open Javalib_pack.JBasics.
+# File "heap_parser/heapParser.mli", line 22, characters 0-13:
+# Warning 33: unused open JProgram.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jCRA.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c XTA.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jRTA.mli
+# File "jRTA.mli", line 26, characters 0-12:
+# Warning 33: unused open Javalib_pack.Javalib.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jRTAWithHeap.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jRRTA.mli
+# File "jRRTA.mli", line 28, characters 0-12:
+# Warning 33: unused open Javalib_pack.Javalib.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jCFAOptions.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jCFADom.mli
+# File "jCFADom.mli", line 44, characters 2-201:
+# Warning 50: ambiguous documentation comment
+# File "jCFADom.mli", line 58, characters 0-120:
+# Warning 50: ambiguous documentation comment
+# File "jCFADom.mli", line 90, characters 2-287:
+# Warning 50: ambiguous documentation comment
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jCFAPrinter.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jCFA.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c dataflow_analyses/reachDef.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c dataflow_analyses/availableExpr.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jUtil.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c iter.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c iter2.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c iter2.ml
+# File "iter2.ml", line 311, characters 6-12:
+# Warning 26: unused variable id_scc.
+# File "iter2.ml", line 663, characters 6-16:
+# Warning 26: unused variable nb_of_cstr.
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c wlist.ml
+# /home/opam/.opam/4.06+flambda/bin/ocamlfind ocamlc -g -w Aer -annot -package javalib -I dataflow_analyses/ -I heap_parser/ -c jProgram.ml
+# File "jProgram.ml", line 220, characters 9-21:
+# Warning 41: i_interfaces belongs to several types: interface_node Javalib_pack.Javalib.jinterface
+# The first one was selected. Please disambiguate if this is wrong.
+# File "jProgram.ml", line 246, characters 6-18:
+# Warning 41: i_interfaces belongs to several types: interface_node Javalib_pack.Javalib.jinterface
+# The first one was selected. Please disambiguate if this is wrong.
+# File "jProgram.ml", line 254, characters 6-18:
+# Warning 41: c_interfaces belongs to several types: class_node Javalib_pack.Javalib.jclass
+# The first one was selected. Please disambiguate if this is wrong.
+# File "jProgram.ml", line 26, characters 0-12:
+# Warning 44: this open statement shadows the module identifier JPrint (which is later used)
+# File "jProgram.ml", line 393, characters 4-180:
+# Error: This expression has type string but an expression was expected of type
+#          ExtBytes.Bytes.t = bytes
+# Makefile:133: recipe for target 'jProgram.cmo' failed
+# make[1]: *** [jProgram.cmo] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sawja.1.5.2/src'
+# Makefile:25: recipe for target 'sawja' failed
+# make: *** [sawja] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sawja 1.5.2
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install camlp4     4.06+1
+| - install camlzip    1.07
+| - install camomile   1.0.1
+| - install cppo       1.6.4
+| - install extlib     1.7.5
+| - install javalib    2.3.5
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180810021152.export"
+31 1533867105 1533867288
