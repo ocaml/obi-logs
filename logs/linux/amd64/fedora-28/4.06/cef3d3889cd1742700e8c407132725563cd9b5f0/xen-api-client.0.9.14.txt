@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 xen-api-client.0.9.14
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for xen-api-client.0.9.14: The following dependencies couldn't be met:
+          - xen-api-client -> lwt < 3.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xen-api-client.0.9.14 returned 20
+20 1533869877 1533869880
