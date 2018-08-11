@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 obuild.0.1.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for obuild.0.1.7: The following dependencies couldn't be met:
+          - obuild -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=obuild.0.1.7 returned 20
+20 1534020962 1534020964
