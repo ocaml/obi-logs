@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 conduit.0.8.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for conduit.0.8.6: The following dependencies couldn't be met:
+          - conduit -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=conduit.0.8.6 returned 20
+20 1533945800 1533945803
