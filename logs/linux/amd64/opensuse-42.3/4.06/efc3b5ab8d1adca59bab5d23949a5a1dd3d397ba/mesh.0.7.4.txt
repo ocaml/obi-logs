@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mesh.0.7.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for mesh.0.7.4: The following dependencies couldn't be met:
+          - mesh -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mesh.0.7.4 returned 20
+20 1533955329 1533955331

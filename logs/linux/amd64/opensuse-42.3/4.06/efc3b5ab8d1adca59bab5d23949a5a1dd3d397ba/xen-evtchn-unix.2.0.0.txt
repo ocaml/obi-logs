@@ -1,0 +1,126 @@
+$ opam depext -iy -j 2 xen-evtchn-unix.2.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by cmdliner, lwt]
+  - install base-bytes      base   [required by cppo]
+  - install ocamlbuild      0.12.0 [required by cmdliner]
+  - install cppo            1.6.4  [required by lwt]
+  - install topkg           0.9.1  [required by cmdliner]
+  - install lwt             4.1.0  [required by xen-evtchn-unix] For the PPX, please install package lwt_ppx
+                                                                 For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cmdliner        1.0.2  [required by xen-evtchn-unix]
+  - install xen-evtchn      2.0.0  [required by xen-evtchn-unix]
+  - install xen-evtchn-unix 2.0.0
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[lwt.4.1.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[xen-evtchn.2.0.0] found in cache
+[xen-evtchn-unix.2.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed lwt.4.1.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed xen-evtchn.2.0.0
+[ERROR] The compilation of xen-evtchn-unix failed at "/home/opam/.opam/4.06/bin/jbuilder build -p xen-evtchn-unix -j 71".
+
+#=== ERROR while compiling xen-evtchn-unix.2.0.0 ==============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/xen-evtchn-unix.2.0.0
+# command              ~/.opam/4.06/bin/jbuilder build -p xen-evtchn-unix -j 71
+# exit-code            1
+# env-file             ~/.opam/log/xen-evtchn-unix-12-7736ca.env
+# output-file          ~/.opam/log/xen-evtchn-unix-12-7736ca.out
+### output ###
+#       ocamlc lib/eventchn_stubs.o (exit 2)
+# (cd _build/default/lib && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/xen-evtchn -ccopt -g -o eventchn_stubs.o eventchn_stubs.c)
+# eventchn_stubs.c:27:21: fatal error: xenctrl.h: No such file or directory
+#  #include <xenctrl.h>
+#                      ^
+# compilation terminated.
+#       ocamlc lib/.xen_evtchn_unix.objs/unix_activations.{cmi,cmo,cmt}
+# File "lib/unix_activations.ml", line 45, characters 46-65:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 56, characters 2-26:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 57, characters 14-30:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 58, characters 6-25:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 106, characters 13-31:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 107, characters 29-48:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+#     ocamlopt lib/.xen_evtchn_unix.objs/unix_activations.{cmx,o}
+# File "lib/unix_activations.ml", line 45, characters 46-65:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 56, characters 2-26:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 57, characters 14-30:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 58, characters 6-25:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 106, characters 13-31:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/unix_activations.ml", line 107, characters 29-48:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build xen-evtchn-unix 2.0.0
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install cmdliner   1.0.2
+| - install cppo       1.6.4
+| - install lwt        4.1.0
+| - install ocamlbuild 0.12.0
+| - install result     1.3
+| - install topkg      0.9.1
+| - install xen-evtchn 2.0.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180811032547.export"
+31 1533957694 1533957964

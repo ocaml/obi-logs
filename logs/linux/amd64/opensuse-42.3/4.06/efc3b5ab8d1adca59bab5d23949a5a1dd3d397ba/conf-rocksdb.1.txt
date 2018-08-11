@@ -1,0 +1,32 @@
+$ opam depext -iy -j 2 conf-rocksdb.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-rocksdb 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-rocksdb failed at "/usr/bin/cc -lrocksdb main.c".
+
+#=== ERROR while compiling conf-rocksdb.1 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-rocksdb.1
+# command              /usr/bin/cc -lrocksdb main.c
+# exit-code            1
+# env-file             ~/.opam/log/conf-rocksdb-12-9b8556.env
+# output-file          ~/.opam/log/conf-rocksdb-12-9b8556.out
+### output ###
+# /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/bin/ld: cannot find -lrocksdb
+# collect2: error: ld returned 1 exit status
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-rocksdb 1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1533954026 1533954168

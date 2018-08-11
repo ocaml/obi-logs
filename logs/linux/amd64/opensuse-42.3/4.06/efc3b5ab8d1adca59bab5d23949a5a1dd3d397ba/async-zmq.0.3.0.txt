@@ -1,0 +1,296 @@
+$ opam depext -iy -j 2 async-zmq.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers     v0.9.0     [required by core_kernel]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install re                      1.7.3      [required by ppx_expect]
+  - install ocaml-compiler-libs     v0.9.0     [required by ppx_core]
+  - install num                     1.1        [required by sexplib]
+  - install result                  1.3        [required by ppx_deriving]
+  - install omake                   0.10.3     [required by async-zmq]
+  - install ocamlbuild              0.12.0     [required by ppx_deriving, zmq]
+  - install spawn                   v0.9.0     [required by core]
+  - install base-bytes              base       [required by cppo, stdint]
+  - install conf-zmq                0.1        [required by zmq]
+  - install octavius                1.2.0      [required by ppx_js_style]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install ppx_traverse_builtins   v0.9.0     [required by ppx_core, ppx_metaquot]
+  - install sexplib                 v0.9.3     [required by async-zmq]
+  - install ocaml-migrate-parsetree 1.0.11     [required by async, ppx_deriving]
+  - install stdint                  0.5.1      [required by zmq]
+  - install cppo                    1.6.4      [required by ppx_deriving]
+  - install base                    v0.9.4     [required by core_kernel, core]
+  - install ppx_ast                 v0.9.2     [required by ppx_core]
+  - install zmq                     4.0-8      [required by async-zmq]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install typerep                 v0.9.0     [required by core_kernel]
+  - install stdio                   v0.9.1     [required by core_kernel, core]
+  - install ppx_deriving            4.2.1      [required by async-zmq]
+  - install ppx_core                v0.9.3     [required by ppx_assert, ppx_inline_test]
+  - install ppx_optcomp             v0.9.0     [required by ppx_driver]
+  - install ppx_driver              v0.9.2     [required by async]
+  - install variantslib             v0.9.0     [required by core_kernel]
+  - install ppx_metaquot            v0.9.0     [required by ppx_assert, ppx_inline_test]
+  - install ppx_let                 v0.9.0     [required by ppx_jane]
+  - install ppx_here                v0.9.1     [required by ppx_assert, ppx_jane]
+  - install fieldslib               v0.9.0     [required by core_kernel]
+  - install ppx_type_conv           v0.9.1     [required by ppx_assert]
+  - install ppx_pipebang            v0.9.0     [required by ppx_jane]
+  - install ppx_optional            v0.9.0     [required by ppx_jane]
+  - install ppx_js_style            v0.9.0     [required by ppx_base]
+  - install ppx_inline_test         v0.9.2     [required by core_kernel]
+  - install ppx_fail                v0.9.0     [required by ppx_jane]
+  - install ppx_variants_conv       v0.9.0     [required by bin_prot, ppx_jane]
+  - install ppx_typerep_conv        v0.9.0     [required by ppx_jane]
+  - install ppx_traverse            v0.9.0     [required by ppx_custom_printf, ppx_expect]
+  - install ppx_sexp_conv           v0.9.0     [required by async-zmq]
+  - install ppx_fields_conv         v0.9.0     [required by bin_prot, ppx_jane]
+  - install ppx_enumerate           v0.9.0     [required by ppx_base]
+  - install ppx_compare             v0.9.0     [required by bin_prot, ppx_assert]
+  - install ppx_bench               v0.9.1     [required by ppx_jane]
+  - install ppx_sexp_value          v0.9.0     [required by ppx_jane]
+  - install ppx_sexp_message        v0.9.0     [required by core_kernel]
+  - install ppx_custom_printf       v0.9.0     [required by bin_prot, ppx_jane]
+  - install ppx_hash                v0.9.0     [required by core_kernel]
+  - install ppx_assert              v0.9.0     [required by core_kernel, core]
+  - install bin_prot                v0.9.2     [required by core_kernel]
+  - install ppx_base                v0.9.0     [required by core_kernel]
+  - install ppx_expect              v0.9.0     [required by ppx_jane]
+  - install ppx_bin_prot            v0.9.0     [required by ppx_jane]
+  - install configurator            v0.9.1     [required by core_kernel, core]
+  - install ppx_jane                v0.9.0     [required by async]
+  - install core_kernel             v0.9.1     [required by async_kernel, async_rpc_kernel]
+  - install core                    v0.9.2     [required by async-zmq]
+  - install async_kernel            v0.9.0     [required by async]
+  - install async_unix              v0.9.1     [required by async]
+  - install async_rpc_kernel        v0.9.0     [required by async_extra]
+  - install async_extra             v0.9.0     [required by async]
+  - install async                   v0.9.0     [required by async-zmq]
+  - install async-zmq               0.3.0
+===== 66 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.v0.9.0] found in cache
+[async-zmq.0.3.0] found in cache
+[async_extra.v0.9.0] found in cache
+[async_kernel.v0.9.0] found in cache
+[async_rpc_kernel.v0.9.0] found in cache
+[async_unix.v0.9.1] found in cache
+[base.v0.9.4] found in cache
+[bin_prot.v0.9.2] found in cache
+[configurator.v0.9.1] found in cache
+[core.v0.9.2] found in cache
+[core_kernel.v0.9.1] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[fieldslib.v0.9.0] found in cache
+[jane-street-headers.v0.9.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[octavius.1.2.0] found in cache
+[omake.0.10.3] found in cache
+[ppx_assert.v0.9.0] found in cache
+[ppx_ast.v0.9.2] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_bench.v0.9.1] found in cache
+[ppx_bin_prot.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.3] found in cache
+[ppx_custom_printf.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.9.2] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_expect.v0.9.0] found in cache
+[ppx_fail.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_here.v0.9.1] found in cache
+[ppx_inline_test.v0.9.2] found in cache
+[ppx_jane.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_let.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_optional.v0.9.0] found in cache
+[ppx_pipebang.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_sexp_message.v0.9.0] found in cache
+[ppx_sexp_value.v0.9.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_traverse.v0.9.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[ppx_typerep_conv.v0.9.0] found in cache
+[ppx_variants_conv.v0.9.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.9.3] found in cache
+[spawn.v0.9.0] found in cache
+[stdint.0.5.1] found in cache
+[stdio.v0.9.1] found in cache
+[typerep.v0.9.0] found in cache
+[variantslib.v0.9.0] found in cache
+[zmq.4.0-8] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-zmq failed at "/usr/bin/cc test.c -I/usr/local/include -L/usr/local/lib -lzmq".
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed jane-street-headers.v0.9.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_ast.v0.9.2
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.v0.9.3
+-> installed omake.0.10.3
+-> installed spawn.v0.9.0
+-> installed stdint.0.5.1
+-> installed base.v0.9.4
+-> installed stdio.v0.9.1
+-> installed typerep.v0.9.0
+-> installed ppx_core.v0.9.3
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_driver.v0.9.2
+-> installed fieldslib.v0.9.0
+-> installed ppx_here.v0.9.1
+-> installed ppx_let.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_fail.v0.9.0
+-> installed ppx_inline_test.v0.9.2
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_optional.v0.9.0
+-> installed ppx_pipebang.v0.9.0
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_bench.v0.9.1
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ppx_assert.v0.9.0
+-> installed ppx_hash.v0.9.0
+-> installed ppx_sexp_message.v0.9.0
+-> installed ppx_sexp_value.v0.9.0
+-> installed ppx_traverse.v0.9.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed ppx_typerep_conv.v0.9.0
+-> installed variantslib.v0.9.0
+-> installed ppx_custom_printf.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
+-> installed bin_prot.v0.9.2
+-> installed ppx_expect.v0.9.0
+-> installed ppx_bin_prot.v0.9.0
+-> installed ppx_jane.v0.9.0
+-> installed core_kernel.v0.9.1
+-> installed async_kernel.v0.9.0
+-> installed async_rpc_kernel.v0.9.0
+-> installed core.v0.9.2
+-> installed async_unix.v0.9.1
+-> installed async_extra.v0.9.0
+-> installed async.v0.9.0
+
+#=== ERROR while compiling conf-zmq.0.1 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-zmq.0.1
+# command              /usr/bin/cc test.c -I/usr/local/include -L/usr/local/lib -lzmq
+# exit-code            1
+# env-file             ~/.opam/log/conf-zmq-12-c291cc.env
+# output-file          ~/.opam/log/conf-zmq-12-c291cc.out
+### output ###
+# test.c:1:17: fatal error: zmq.h: No such file or directory
+#  #include <zmq.h>
+#                  ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-zmq 0.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install async                   v0.9.0
+| - install async_extra             v0.9.0
+| - install async_kernel            v0.9.0
+| - install async_rpc_kernel        v0.9.0
+| - install async_unix              v0.9.1
+| - install base                    v0.9.4
+| - install base-bytes              base
+| - install bin_prot                v0.9.2
+| - install configurator            v0.9.1
+| - install core                    v0.9.2
+| - install core_kernel             v0.9.1
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install fieldslib               v0.9.0
+| - install jane-street-headers     v0.9.0
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.9.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install octavius                1.2.0
+| - install omake                   0.10.3
+| - install ppx_assert              v0.9.0
+| - install ppx_ast                 v0.9.2
+| - install ppx_base                v0.9.0
+| - install ppx_bench               v0.9.1
+| - install ppx_bin_prot            v0.9.0
+| - install ppx_compare             v0.9.0
+| - install ppx_core                v0.9.3
+| - install ppx_custom_printf       v0.9.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              v0.9.2
+| - install ppx_enumerate           v0.9.0
+| - install ppx_expect              v0.9.0
+| - install ppx_fail                v0.9.0
+| - install ppx_fields_conv         v0.9.0
+| - install ppx_hash                v0.9.0
+| - install ppx_here                v0.9.1
+| - install ppx_inline_test         v0.9.2
+| - install ppx_jane                v0.9.0
+| - install ppx_js_style            v0.9.0
+| - install ppx_let                 v0.9.0
+| - install ppx_metaquot            v0.9.0
+| - install ppx_optcomp             v0.9.0
+| - install ppx_optional            v0.9.0
+| - install ppx_pipebang            v0.9.0
+| - install ppx_sexp_conv           v0.9.0
+| - install ppx_sexp_message        v0.9.0
+| - install ppx_sexp_value          v0.9.0
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_traverse            v0.9.0
+| - install ppx_traverse_builtins   v0.9.0
+| - install ppx_type_conv           v0.9.1
+| - install ppx_typerep_conv        v0.9.0
+| - install ppx_variants_conv       v0.9.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.9.3
+| - install spawn                   v0.9.0
+| - install stdint                  0.5.1
+| - install stdio                   v0.9.1
+| - install typerep                 v0.9.0
+| - install variantslib             v0.9.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180811024326.export"
+31 1533955160 1533955609
