@@ -1,0 +1,73 @@
+$ opam depext -iy -j 2 mirage-http.3.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-http.3.0.0: The following dependencies couldn't be met:
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> ppx_type_conv >= v0.9.1 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> ipaddr >= 2.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> ipaddr >= 2.5.0 -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> ipaddr >= 2.5.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> pa_sexp_conv < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> ppx_driver < v0.9.0 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> ppx_driver < v0.9.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp (>= 0.18.0 & < 0.99) -> conduit < 0.16.0 -> sexplib < 113.24.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> conduit >= 0.15.0 -> ipaddr >= 2.5.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> conduit >= 0.15.0 -> ipaddr >= 2.5.0 -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> conduit >= 0.15.0 -> ipaddr >= 2.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ppx_core >= v0.9 -> base >= v0.9.4 -> sexplib >= v0.9.3 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ppx_core >= v0.9 -> base >= v0.9.4 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ppx_core >= v0.9 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ppx_core >= v0.9 -> stdio >= v0.9.1 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ppx_core >= v0.9 -> stdio >= v0.9.1 -> base >= v0.9.4 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ppx_core >= v0.9 -> stdio >= v0.9.1 -> base >= v0.9.4 -> sexplib >= v0.9.3 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> vchan >= 3.0.0 -> ppx_sexp_conv >= v0.9 -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> mirage-dns < 3.0.0 -> dns < 1.0.0 -> ipaddr < 2.8.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> mirage-dns < 3.0.0 -> dns < 1.0.0 -> ipaddr < 2.8.0 -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> mirage-dns < 3.0.0 -> dns < 1.0.0 -> ipaddr < 2.8.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> mirage-dns < 3.0.0 -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> mirage-conduit >= 2.2.0 -> conduit-lwt -> conduit >= 1.0.0
+          - mirage-http -> mirage-conduit >= 2.2.0 -> conduit-lwt -> lwt >= 3.0.0
+        Your request can't be satisfied:
+          - No available version of cohttp satisfies the constraints
+          - No available version of conduit satisfies the constraints
+          - No available version of ipaddr satisfies the constraints
+          - No available version of ppx_core satisfies the constraints
+          - cohttp (>= 0.9.2 & != 0.9.9 & < 0.9.12) is in conflict with lwt >= 2.4.7
+          - cohttp = 0.20.2 is in conflict with lwt >= 4.0.0
+          - conduit (>= 0.14.3 & != 0.15.0 & < 0.15.3) is in conflict with lwt >= 3.0.0
+          - conduit = 0.15.4 is in conflict with dns < 0.19.0
+          - conduit = 0.15.4 is in conflict with mirage-types-lwt < 3.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-http.3.0.0 returned 20
+20 1533967919 1533967932

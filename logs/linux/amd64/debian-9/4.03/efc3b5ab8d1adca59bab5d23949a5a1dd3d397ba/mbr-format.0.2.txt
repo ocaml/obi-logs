@@ -1,0 +1,19 @@
+$ opam depext -iy -j 2 mbr-format.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mbr-format.0.2: The following dependencies couldn't be met:
+          - mbr-format -> cstruct (>= 1.0.1 & < 2.0.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mbr-format -> cstruct (>= 1.0.1 & < 2.0.0) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mbr-format -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mbr-format -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mbr-format -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cstruct satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=mbr-format.0.2 returned 20
+20 1533931956 1533931960

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 owl.0.3.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for owl.0.3.8: The following dependencies couldn't be met:
+          - owl -> ocaml >= 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=owl.0.3.8 returned 20
+20 1533965956 1533965959

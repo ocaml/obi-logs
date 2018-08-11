@@ -1,0 +1,46 @@
+$ opam depext -iy -j 2 vpnkit.0.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for vpnkit.0.0.0: The following dependencies couldn't be met:
+          - vpnkit -> charrua-core >= 0.3 -> tcpip >= 3.0.0 -> lwt >= 2.7.0
+          - vpnkit -> charrua-core >= 0.3 -> tcpip >= 3.0.0 -> mirage-protocols < 1.3.0 -> mirage-flow >= 1.2.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> charrua-core >= 0.3 -> tcpip >= 3.0.0 -> mirage-stack-lwt >= 1.2.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> charrua-core >= 0.3 -> ipaddr >= 2.5.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> charrua-core >= 0.3 -> ipaddr >= 2.5.0 -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> charrua-core >= 0.3 -> ipaddr >= 2.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> charrua-core >= 0.3 -> cstruct < 3.0.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> charrua-core >= 0.3 -> cstruct < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> dns -> ipaddr < 2.8.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> dns -> ipaddr < 2.8.0 -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> dns -> ipaddr < 2.8.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> dns -> cstruct (< 1.6.0 | >= 3.0.2) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> dns-forward < 0.10.0 -> mirage-flow = 1.1.0
+          - vpnkit -> dns-forward < 0.10.0 -> lwt >= 2.6.0
+          - vpnkit -> dns-forward < 0.10.0 -> cstruct (>= 2.4 & < 3.0) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> dns-forward < 0.10.0 -> cstruct (>= 2.4 & < 3.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> lwt < 2.7.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - vpnkit -> named-pipe >= 0.4.0 -> lwt >= 2.4.7 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cstruct satisfies the constraints
+          - No available version of ipaddr satisfies the constraints
+          - No available version of lwt satisfies the constraints
+          - No available version of mirage-flow satisfies the constraints
+          - dns = 0.20.1 is in conflict with lwt < 3.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=vpnkit.0.0.0 returned 20
+20 1533965275 1533965280
