@@ -1,0 +1,83 @@
+$ opam depext -iy -j 2 pomap.3.0.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by pomap]
+  - install pomap      3.0.7
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[pomap.3.0.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of pomap failed at "/home/opam/.opam/4.07/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling pomap.3.0.7 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/pomap.3.0.7
+# command              ~/.opam/4.07/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/pomap-11-50de41.env
+# output-file          ~/.opam/log/pomap-11-50de41.out
+### output ###
+# /home/opam/.opam/4.07/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/display_hasse_impl.mli > src/display_hasse_impl.mli.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/display_hasse_intf.ml > src/display_hasse_intf.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/pomap_intf.ml > src/pomap_intf.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/store_intf.ml > src/store_intf.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/store_intf.cmo src/store_intf.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/display_hasse_intf.cmo src/display_hasse_intf.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/pomap_intf.cmo src/pomap_intf.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/display_hasse_impl.cmi src/display_hasse_impl.mli
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/display_hasse_impl.ml > src/display_hasse_impl.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/pomap_impl.mli > src/pomap_impl.mli.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/pomap_impl.cmi src/pomap_impl.mli
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/pomap_impl.ml > src/pomap_impl.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/store_impl.mli > src/store_impl.mli.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/store_impl.cmi src/store_impl.mli
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/ptset.mli > src/ptset.mli.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/ptset.cmi src/ptset.mli
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/ptset.ml > src/ptset.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamldep -modules src/store_impl.ml > src/store_impl.ml.depends
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/display_hasse_impl.cmo src/display_hasse_impl.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/pomap_impl.cmo src/pomap_impl.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/ptset.cmo src/ptset.ml
+# /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/store_impl.cmo src/store_impl.ml
+# + /home/opam/.opam/4.07/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -strict-sequence -w Aer-44 -I src -o src/store_impl.cmo src/store_impl.ml
+# File "src/store_impl.ml", line 104, characters 24-29:
+# Error: Signature mismatch:
+#        ...
+#        In module Set:
+#        The value `of_seq' is required but not provided
+#        File "set.mli", line 277, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `add_seq' is required but not provided
+#        File "set.mli", line 273, characters 4-37: Expected declaration
+#        In module Set:
+#        The value `to_seq' is required but not provided
+#        File "set.mli", line 269, characters 4-31: Expected declaration
+#        In module Set:
+#        The value `to_seq_from' is required but not provided
+#        File "set.mli", line 264, characters 4-43: Expected declaration
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.07/bin/ocamlbuild' src/pomap.cma src/pomap.cmxa src/pomap.a src/pomap.cmxs examples/hasse/hasse.native -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build pomap 3.0.7
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180810224221.export"
+31 1533940939 1533940954
