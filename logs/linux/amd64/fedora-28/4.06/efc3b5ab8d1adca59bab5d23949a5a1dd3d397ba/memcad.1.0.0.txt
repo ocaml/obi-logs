@@ -1,0 +1,798 @@
+$ opam depext -iy -j 2 memcad.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gmp
+gmp-devel
+graphviz
+m4
+mpfr-devel
+ncurses-devel
+perl-Pod-Html
+pkgconfig
+wget
+which
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Thu Apr 26 13:03:41 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+package graphviz is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Fri Aug 10 20:11:25 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package mpfr-devel is not installed
+package ncurses-devel is not installed
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+package wget is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Fri Aug 10 06:36:08 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# The following new OS packages need to be installed: gmp-devel graphviz mpfr-devel ncurses-devel perl-Pod-Html pkgconfig wget
+The following command needs to be run through "sudo":
+    yum install -y gmp-devel graphviz mpfr-devel ncurses-devel perl-Pod-Html pkgconfig wget
+Last metadata expiration check: 4:42:54 ago on Fri Aug 10 20:10:58 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                            Arch   Version                Repository
+                                                                           Size
+================================================================================
+Installing:
+ gmp-devel                          x86_64 1:6.1.2-7.fc28         fedora  187 k
+ graphviz                           x86_64 2.40.1-23.fc28         updates 1.8 M
+ mpfr-devel                         x86_64 3.1.6-1.fc28           fedora   80 k
+ ncurses-devel                      x86_64 6.1-5.20180224.fc28    updates 527 k
+ perl-Pod-Html                      noarch 1.22.02-413.fc28       updates  85 k
+ wget                               x86_64 1.19.5-1.fc28          updates 719 k
+Installing dependencies:
+ adobe-mappings-cmap                noarch 20171205-3.fc28        fedora  2.1 M
+ adobe-mappings-cmap-deprecated     noarch 20171205-3.fc28        fedora  117 k
+ adobe-mappings-pdf                 noarch 20180407-1.fc28        updates 706 k
+ atk                                x86_64 2.28.1-1.fc28          fedora  271 k
+ cairo                              x86_64 1.15.12-2.fc28         updates 720 k
+ cups-libs                          x86_64 1:2.2.6-16.fc28        updates 429 k
+ fontconfig                         x86_64 2.13.0-4.fc28          updates 253 k
+ fontpackages-filesystem            noarch 1.44-21.fc28           fedora   15 k
+ freetype                           x86_64 2.8-10.fc28            fedora  384 k
+ fribidi                            x86_64 1.0.2-1.fc28           updates  84 k
+ gd                                 x86_64 2.2.5-3.fc28           fedora  142 k
+ gdk-pixbuf2                        x86_64 2.36.12-1.fc28         fedora  465 k
+ gdk-pixbuf2-modules                x86_64 2.36.12-1.fc28         fedora  107 k
+ gmp-c++                            x86_64 1:6.1.2-7.fc28         fedora   31 k
+ google-droid-sans-fonts            noarch 20120715-13.fc28       fedora  2.5 M
+ graphite2                          x86_64 1.3.10-5.fc28          fedora  119 k
+ gtk-update-icon-cache              x86_64 3.22.30-1.fc28         fedora   33 k
+ gtk2                               x86_64 2.24.32-2.fc28         fedora  3.4 M
+ gts                                x86_64 0.7.6-33.20121130.fc28 fedora  235 k
+ harfbuzz                           x86_64 1.7.5-3.fc28           fedora  293 k
+ hicolor-icon-theme                 noarch 0.17-2.fc28            fedora   47 k
+ jasper-libs                        x86_64 2.0.14-5.fc28          updates 166 k
+ jbig2dec-libs                      x86_64 0.14-2.fc28            fedora   66 k
+ jbigkit-libs                       x86_64 2.1-12.fc28            fedora   53 k
+ lasi                               x86_64 1.1.2-10.fc28          fedora   49 k
+ lcms2                              x86_64 2.9-2.fc28             fedora  164 k
+ libICE                             x86_64 1.0.9-12.fc28          fedora   72 k
+ libSM                              x86_64 1.2.2-8.fc28           fedora   44 k
+ libXaw                             x86_64 1.0.13-8.fc28          fedora  193 k
+ libXcomposite                      x86_64 0.4.4-12.fc28          fedora   27 k
+ libXcursor                         x86_64 1.1.15-1.fc28          fedora   35 k
+ libXdamage                         x86_64 1.1.4-12.fc28          fedora   26 k
+ libXext                            x86_64 1.3.3-8.fc28           fedora   44 k
+ libXfixes                          x86_64 5.0.3-5.fc28           fedora   24 k
+ libXft                             x86_64 2.3.2-8.fc28           fedora   65 k
+ libXi                              x86_64 1.7.9-6.fc28           fedora   48 k
+ libXinerama                        x86_64 1.1.3-10.fc28          fedora   19 k
+ libXmu                             x86_64 1.1.2-8.fc28           fedora   77 k
+ libXpm                             x86_64 3.5.12-5.fc28          fedora   57 k
+ libXrandr                          x86_64 1.5.1-5.fc28           fedora   32 k
+ libXrender                         x86_64 0.9.10-5.fc28          fedora   32 k
+ libXt                              x86_64 1.1.5-7.fc28           fedora  184 k
+ libXxf86misc                       x86_64 1.0.3-15.fc28          fedora   25 k
+ libXxf86vm                         x86_64 1.1.4-7.fc28           fedora   22 k
+ libdatrie                          x86_64 0.2.9-7.fc28           fedora   32 k
+ libfontenc                         x86_64 1.1.3-7.fc28           fedora   36 k
+ libgs                              x86_64 9.23-5.fc28            updates 3.0 M
+ libidn                             x86_64 1.34-3.fc28            updates 234 k
+ libijs                             x86_64 0.35-4.fc28            fedora   28 k
+ libjpeg-turbo                      x86_64 1.5.3-6.fc28           updates 154 k
+ libmcpp                            x86_64 2.7.2-20.fc28          fedora   80 k
+ libpaper                           x86_64 1.1.24-21.fc28         fedora   43 k
+ libpng                             x86_64 2:1.6.34-6.fc28        updates 125 k
+ librsvg2                           x86_64 2.42.3-1.fc28          fedora  462 k
+ libthai                            x86_64 0.1.28-1.fc28          updates 204 k
+ libtiff                            x86_64 4.0.9-10.fc28          updates 186 k
+ libwebp                            x86_64 1.0.0-1.fc28           updates 272 k
+ mcpp                               x86_64 2.7.2-20.fc28          fedora   30 k
+ ncurses-c++-libs                   x86_64 6.1-5.20180224.fc28    updates  54 k
+ netpbm                             x86_64 10.82.00-1.fc28        fedora  205 k
+ openjpeg2                          x86_64 2.3.0-6.fc28           fedora  153 k
+ pango                              x86_64 1.42.3-1.fc28          updates 295 k
+ pixman                             x86_64 0.34.0-8.fc28          updates 247 k
+ urw-base35-bookman-fonts           noarch 20170801-10.fc28       updates 856 k
+ urw-base35-c059-fonts              noarch 20170801-10.fc28       updates 883 k
+ urw-base35-d050000l-fonts          noarch 20170801-10.fc28       updates  78 k
+ urw-base35-fonts                   noarch 20170801-10.fc28       updates  11 k
+ urw-base35-fonts-common            noarch 20170801-10.fc28       updates  22 k
+ urw-base35-gothic-fonts            noarch 20170801-10.fc28       updates 653 k
+ urw-base35-nimbus-mono-ps-fonts    noarch 20170801-10.fc28       updates 800 k
+ urw-base35-nimbus-roman-fonts      noarch 20170801-10.fc28       updates 864 k
+ urw-base35-nimbus-sans-fonts       noarch 20170801-10.fc28       updates 1.3 M
+ urw-base35-p052-fonts              noarch 20170801-10.fc28       updates 981 k
+ urw-base35-standard-symbols-ps-fonts
+                                    noarch 20170801-10.fc28       updates  43 k
+ urw-base35-z003-fonts              noarch 20170801-10.fc28       updates 278 k
+ xorg-x11-font-utils                x86_64 1:7.5-38.fc28          updates  95 k
+ xorg-x11-fonts-ISO8859-1-100dpi    noarch 7.5-19.fc28            fedora  1.1 M
+ xorg-x11-server-utils              x86_64 7.7-24.fc28            fedora  193 k
+
+Transaction Summary
+================================================================================
+Install  84 Packages
+
+Total download size: 31 M
+Installed size: 101 M
+Downloading Packages:
+(1/84): gmp-c++-6.1.2-7.fc28.x86_64.rpm         392 kB/s |  31 kB     00:00    
+(2/84): gmp-devel-6.1.2-7.fc28.x86_64.rpm       1.8 MB/s | 187 kB     00:00    
+(3/84): atk-2.28.1-1.fc28.x86_64.rpm            6.1 MB/s | 271 kB     00:00    
+(4/84): freetype-2.8-10.fc28.x86_64.rpm         2.1 MB/s | 384 kB     00:00    
+(5/84): gd-2.2.5-3.fc28.x86_64.rpm              837 kB/s | 142 kB     00:00    
+(6/84): gdk-pixbuf2-2.36.12-1.fc28.x86_64.rpm    16 MB/s | 465 kB     00:00    
+(7/84): gtk2-2.24.32-2.fc28.x86_64.rpm           26 MB/s | 3.4 MB     00:00    
+(8/84): lasi-1.1.2-10.fc28.x86_64.rpm           1.3 MB/s |  49 kB     00:00    
+(9/84): libICE-1.0.9-12.fc28.x86_64.rpm         3.4 MB/s |  72 kB     00:00    
+(10/84): libSM-1.2.2-8.fc28.x86_64.rpm          2.0 MB/s |  44 kB     00:00    
+(11/84): libXaw-1.0.13-8.fc28.x86_64.rpm        8.6 MB/s | 193 kB     00:00    
+(12/84): libXext-1.3.3-8.fc28.x86_64.rpm        3.8 MB/s |  44 kB     00:00    
+(13/84): libXmu-1.1.2-8.fc28.x86_64.rpm         6.1 MB/s |  77 kB     00:00    
+(14/84): libXpm-3.5.12-5.fc28.x86_64.rpm        2.6 MB/s |  57 kB     00:00    
+(15/84): libXrender-0.9.10-5.fc28.x86_64.rpm    2.7 MB/s |  32 kB     00:00    
+(16/84): libXt-1.1.5-7.fc28.x86_64.rpm          8.1 MB/s | 184 kB     00:00    
+(17/84): librsvg2-2.42.3-1.fc28.x86_64.rpm       18 MB/s | 462 kB     00:00    
+(18/84): graphviz-2.40.1-23.fc28.x86_64.rpm     2.3 MB/s | 1.8 MB     00:00    
+(19/84): gdk-pixbuf2-modules-2.36.12-1.fc28.x86 656 kB/s | 107 kB     00:00    
+(20/84): gtk-update-icon-cache-3.22.30-1.fc28.x 2.2 MB/s |  33 kB     00:00    
+(21/84): gts-0.7.6-33.20121130.fc28.x86_64.rpm  374 kB/s | 235 kB     00:00    
+(22/84): hicolor-icon-theme-0.17-2.fc28.noarch. 4.0 MB/s |  47 kB     00:00    
+(23/84): libXcomposite-0.4.4-12.fc28.x86_64.rpm 1.7 MB/s |  27 kB     00:00    
+(24/84): libXcursor-1.1.15-1.fc28.x86_64.rpm    2.0 MB/s |  35 kB     00:00    
+(25/84): xorg-x11-fonts-ISO8859-1-100dpi-7.5-19 3.1 MB/s | 1.1 MB     00:00    
+(26/84): libXdamage-1.1.4-12.fc28.x86_64.rpm    1.0 MB/s |  26 kB     00:00    
+(27/84): libXfixes-5.0.3-5.fc28.x86_64.rpm      811 kB/s |  24 kB     00:00    
+(28/84): libXinerama-1.1.3-10.fc28.x86_64.rpm   1.5 MB/s |  19 kB     00:00    
+(29/84): libXi-1.7.9-6.fc28.x86_64.rpm          3.4 MB/s |  48 kB     00:00    
+(30/84): libXrandr-1.5.1-5.fc28.x86_64.rpm      2.3 MB/s |  32 kB     00:00    
+(31/84): mpfr-devel-3.1.6-1.fc28.x86_64.rpm     3.3 MB/s |  80 kB     00:00    
+(32/84): ncurses-c++-libs-6.1-5.20180224.fc28.x 900 kB/s |  54 kB     00:00    
+(33/84): netpbm-10.82.00-1.fc28.x86_64.rpm      2.1 MB/s | 205 kB     00:00    
+(34/84): ncurses-devel-6.1-5.20180224.fc28.x86_ 5.7 MB/s | 527 kB     00:00    
+(35/84): xorg-x11-font-utils-7.5-38.fc28.x86_64 6.1 MB/s |  95 kB     00:00    
+(36/84): libfontenc-1.1.3-7.fc28.x86_64.rpm     2.7 MB/s |  36 kB     00:00    
+(37/84): perl-Pod-Html-1.22.02-413.fc28.noarch. 1.6 MB/s |  85 kB     00:00    
+(38/84): cairo-1.15.12-2.fc28.x86_64.rpm        9.3 MB/s | 720 kB     00:00    
+(39/84): fontpackages-filesystem-1.44-21.fc28.n 1.3 MB/s |  15 kB     00:00    
+(40/84): fontconfig-2.13.0-4.fc28.x86_64.rpm    2.7 MB/s | 253 kB     00:00    
+(41/84): libpng-1.6.34-6.fc28.x86_64.rpm        6.9 MB/s | 125 kB     00:00    
+(42/84): fribidi-1.0.2-1.fc28.x86_64.rpm        5.6 MB/s |  84 kB     00:00    
+(43/84): harfbuzz-1.7.5-3.fc28.x86_64.rpm        12 MB/s | 293 kB     00:00    
+(44/84): libXft-2.3.2-8.fc28.x86_64.rpm         5.3 MB/s |  65 kB     00:00    
+(45/84): pango-1.42.3-1.fc28.x86_64.rpm         4.0 MB/s | 295 kB     00:00    
+(46/84): graphite2-1.3.10-5.fc28.x86_64.rpm     5.6 MB/s | 119 kB     00:00    
+(47/84): wget-1.19.5-1.fc28.x86_64.rpm          3.1 MB/s | 719 kB     00:00    
+(48/84): jbigkit-libs-2.1-12.fc28.x86_64.rpm    4.2 MB/s |  53 kB     00:00    
+(49/84): libtiff-4.0.9-10.fc28.x86_64.rpm       4.3 MB/s | 186 kB     00:00    
+(50/84): cups-libs-2.2.6-16.fc28.x86_64.rpm     8.1 MB/s | 429 kB     00:00    
+(51/84): jasper-libs-2.0.14-5.fc28.x86_64.rpm   3.8 MB/s | 166 kB     00:00    
+(52/84): libjpeg-turbo-1.5.3-6.fc28.x86_64.rpm  4.4 MB/s | 154 kB     00:00    
+(53/84): libdatrie-0.2.9-7.fc28.x86_64.rpm      2.8 MB/s |  32 kB     00:00    
+(54/84): libthai-0.1.28-1.fc28.x86_64.rpm       4.0 MB/s | 204 kB     00:00    
+(55/84): libwebp-1.0.0-1.fc28.x86_64.rpm        3.4 MB/s | 272 kB     00:00    
+(56/84): adobe-mappings-cmap-deprecated-2017120 5.3 MB/s | 117 kB     00:00    
+(57/84): adobe-mappings-cmap-20171205-3.fc28.no  23 MB/s | 2.1 MB     00:00    
+(58/84): jbig2dec-libs-0.14-2.fc28.x86_64.rpm   2.6 MB/s |  66 kB     00:00    
+(59/84): lcms2-2.9-2.fc28.x86_64.rpm            9.8 MB/s | 164 kB     00:00    
+(60/84): libijs-0.35-4.fc28.x86_64.rpm          2.1 MB/s |  28 kB     00:00    
+(61/84): google-droid-sans-fonts-20120715-13.fc  18 MB/s | 2.5 MB     00:00    
+(62/84): libpaper-1.1.24-21.fc28.x86_64.rpm     1.6 MB/s |  43 kB     00:00    
+(63/84): urw-base35-fonts-20170801-10.fc28.noar 907 kB/s |  11 kB     00:00    
+(64/84): openjpeg2-2.3.0-6.fc28.x86_64.rpm      6.4 MB/s | 153 kB     00:00    
+(65/84): urw-base35-fonts-common-20170801-10.fc 1.1 MB/s |  22 kB     00:00    
+(66/84): urw-base35-standard-symbols-ps-fonts-2 2.4 MB/s |  43 kB     00:00    
+(67/84): libgs-9.23-5.fc28.x86_64.rpm            11 MB/s | 3.0 MB     00:00    
+(68/84): urw-base35-z003-fonts-20170801-10.fc28 3.0 MB/s | 278 kB     00:00    
+(69/84): urw-base35-p052-fonts-20170801-10.fc28 7.0 MB/s | 981 kB     00:00    
+(70/84): urw-base35-nimbus-sans-fonts-20170801- 9.1 MB/s | 1.3 MB     00:00    
+(71/84): urw-base35-nimbus-roman-fonts-20170801 5.3 MB/s | 864 kB     00:00    
+(72/84): urw-base35-nimbus-mono-ps-fonts-201708 8.8 MB/s | 800 kB     00:00    
+(73/84): urw-base35-d050000l-fonts-20170801-10. 4.7 MB/s |  78 kB     00:00    
+(74/84): urw-base35-gothic-fonts-20170801-10.fc 8.7 MB/s | 653 kB     00:00    
+(75/84): xorg-x11-server-utils-7.7-24.fc28.x86_ 8.0 MB/s | 193 kB     00:00    
+(76/84): libXxf86misc-1.0.3-15.fc28.x86_64.rpm  2.1 MB/s |  25 kB     00:00    
+(77/84): libXxf86vm-1.1.4-7.fc28.x86_64.rpm     1.9 MB/s |  22 kB     00:00    
+(78/84): urw-base35-bookman-fonts-20170801-10.f  12 MB/s | 856 kB     00:00    
+(79/84): mcpp-2.7.2-20.fc28.x86_64.rpm          2.7 MB/s |  30 kB     00:00    
+(80/84): libmcpp-2.7.2-20.fc28.x86_64.rpm       6.3 MB/s |  80 kB     00:00    
+(81/84): urw-base35-c059-fonts-20170801-10.fc28 8.3 MB/s | 883 kB     00:00    
+(82/84): pixman-0.34.0-8.fc28.x86_64.rpm        8.0 MB/s | 247 kB     00:00    
+(83/84): libidn-1.34-3.fc28.x86_64.rpm          7.9 MB/s | 234 kB     00:00    
+(84/84): adobe-mappings-pdf-20180407-1.fc28.noa  13 MB/s | 706 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           9.9 MB/s |  31 MB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libXext-1.3.3-8.fc28.x86_64                           1/84 
+  Running scriptlet: libXext-1.3.3-8.fc28.x86_64                           1/84 
+  Installing       : libXrender-0.9.10-5.fc28.x86_64                       2/84 
+  Running scriptlet: libXrender-0.9.10-5.fc28.x86_64                       2/84 
+  Installing       : libpng-2:1.6.34-6.fc28.x86_64                         3/84 
+  Installing       : freetype-2.8-10.fc28.x86_64                           4/84 
+  Installing       : gdk-pixbuf2-2.36.12-1.fc28.x86_64                     5/84 
+  Running scriptlet: gdk-pixbuf2-2.36.12-1.fc28.x86_64                     5/84 
+  Installing       : libjpeg-turbo-1.5.3-6.fc28.x86_64                     6/84 
+  Installing       : libICE-1.0.9-12.fc28.x86_64                           7/84 
+  Running scriptlet: libICE-1.0.9-12.fc28.x86_64                           7/84 
+  Installing       : fontpackages-filesystem-1.44-21.fc28.noarch           8/84 
+  Installing       : urw-base35-fonts-common-20170801-10.fc28.noarch       9/84 
+  Installing       : libXfixes-5.0.3-5.fc28.x86_64                        10/84 
+  Running scriptlet: libXfixes-5.0.3-5.fc28.x86_64                        10/84 
+  Installing       : libXpm-3.5.12-5.fc28.x86_64                          11/84 
+  Running scriptlet: libXpm-3.5.12-5.fc28.x86_64                          11/84 
+  Installing       : libXcursor-1.1.15-1.fc28.x86_64                      12/84 
+  Running scriptlet: libXcursor-1.1.15-1.fc28.x86_64                      12/84 
+  Installing       : google-droid-sans-fonts-20120715-13.fc28.noarch      13/84 
+  Installing       : fontconfig-2.13.0-4.fc28.x86_64                      14/84 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                      14/84 
+  Installing       : libSM-1.2.2-8.fc28.x86_64                            15/84 
+  Running scriptlet: libSM-1.2.2-8.fc28.x86_64                            15/84 
+  Installing       : libXt-1.1.5-7.fc28.x86_64                            16/84 
+  Running scriptlet: libXt-1.1.5-7.fc28.x86_64                            16/84 
+  Installing       : libXmu-1.1.2-8.fc28.x86_64                           17/84 
+  Running scriptlet: libXmu-1.1.2-8.fc28.x86_64                           17/84 
+  Installing       : libXrandr-1.5.1-5.fc28.x86_64                        18/84 
+  Running scriptlet: libXrandr-1.5.1-5.fc28.x86_64                        18/84 
+  Installing       : libXi-1.7.9-6.fc28.x86_64                            19/84 
+  Running scriptlet: libXi-1.7.9-6.fc28.x86_64                            19/84 
+  Installing       : libXinerama-1.1.3-10.fc28.x86_64                     20/84 
+  Running scriptlet: libXinerama-1.1.3-10.fc28.x86_64                     20/84 
+  Installing       : adobe-mappings-cmap-20171205-3.fc28.noarch           21/84 
+  Installing       : cups-libs-1:2.2.6-16.fc28.x86_64                     22/84 
+  Installing       : fribidi-1.0.2-1.fc28.x86_64                          23/84 
+  Running scriptlet: fribidi-1.0.2-1.fc28.x86_64                          23/84 
+  Installing       : atk-2.28.1-1.fc28.x86_64                             24/84 
+  Installing       : adobe-mappings-cmap-deprecated-20171205-3.fc28.noa   25/84 
+  Installing       : libXaw-1.0.13-8.fc28.x86_64                          26/84 
+  Running scriptlet: libXaw-1.0.13-8.fc28.x86_64                          26/84 
+  Installing       : libXft-2.3.2-8.fc28.x86_64                           27/84 
+  Running scriptlet: libXft-2.3.2-8.fc28.x86_64                           27/84 
+  Installing       : libXdamage-1.1.4-12.fc28.x86_64                      28/84 
+  Running scriptlet: libXdamage-1.1.4-12.fc28.x86_64                      28/84 
+  Installing       : jasper-libs-2.0.14-5.fc28.x86_64                     29/84 
+  Installing       : gtk-update-icon-cache-3.22.30-1.fc28.x86_64          30/84 
+  Installing       : libXxf86misc-1.0.3-15.fc28.x86_64                    31/84 
+  Running scriptlet: libXxf86misc-1.0.3-15.fc28.x86_64                    31/84 
+  Installing       : libXxf86vm-1.1.4-7.fc28.x86_64                       32/84 
+  Running scriptlet: libXxf86vm-1.1.4-7.fc28.x86_64                       32/84 
+  Installing       : libidn-1.34-3.fc28.x86_64                            33/84 
+  Running scriptlet: libidn-1.34-3.fc28.x86_64                            33/84 
+install-info: No such file or directory for /usr/share/info/libidn.info.gz
+  Installing       : adobe-mappings-pdf-20180407-1.fc28.noarch            34/84 
+  Installing       : pixman-0.34.0-8.fc28.x86_64                          35/84 
+  Running scriptlet: pixman-0.34.0-8.fc28.x86_64                          35/84 
+  Installing       : cairo-1.15.12-2.fc28.x86_64                          36/84 
+  Installing       : libmcpp-2.7.2-20.fc28.x86_64                         37/84 
+  Running scriptlet: libmcpp-2.7.2-20.fc28.x86_64                         37/84 
+  Installing       : mcpp-2.7.2-20.fc28.x86_64                            38/84 
+  Installing       : xorg-x11-server-utils-7.7-24.fc28.x86_64             39/84 
+  Installing       : openjpeg2-2.3.0-6.fc28.x86_64                        40/84 
+  Installing       : libpaper-1.1.24-21.fc28.x86_64                       41/84 
+  Installing       : libijs-0.35-4.fc28.x86_64                            42/84 
+  Installing       : lcms2-2.9-2.fc28.x86_64                              43/84 
+  Running scriptlet: lcms2-2.9-2.fc28.x86_64                              43/84 
+  Installing       : jbig2dec-libs-0.14-2.fc28.x86_64                     44/84 
+  Running scriptlet: jbig2dec-libs-0.14-2.fc28.x86_64                     44/84 
+  Installing       : libdatrie-0.2.9-7.fc28.x86_64                        45/84 
+  Running scriptlet: libdatrie-0.2.9-7.fc28.x86_64                        45/84 
+  Installing       : libthai-0.1.28-1.fc28.x86_64                         46/84 
+  Running scriptlet: libthai-0.1.28-1.fc28.x86_64                         46/84 
+  Installing       : libwebp-1.0.0-1.fc28.x86_64                          47/84 
+  Installing       : jbigkit-libs-2.1-12.fc28.x86_64                      48/84 
+  Running scriptlet: jbigkit-libs-2.1-12.fc28.x86_64                      48/84 
+  Installing       : libtiff-4.0.9-10.fc28.x86_64                         49/84 
+  Installing       : gd-2.2.5-3.fc28.x86_64                               50/84 
+  Running scriptlet: gd-2.2.5-3.fc28.x86_64                               50/84 
+  Installing       : gdk-pixbuf2-modules-2.36.12-1.fc28.x86_64            51/84 
+  Installing       : graphite2-1.3.10-5.fc28.x86_64                       52/84 
+  Installing       : harfbuzz-1.7.5-3.fc28.x86_64                         53/84 
+  Running scriptlet: harfbuzz-1.7.5-3.fc28.x86_64                         53/84 
+  Installing       : pango-1.42.3-1.fc28.x86_64                           54/84 
+  Running scriptlet: pango-1.42.3-1.fc28.x86_64                           54/84 
+  Installing       : lasi-1.1.2-10.fc28.x86_64                            55/84 
+  Running scriptlet: lasi-1.1.2-10.fc28.x86_64                            55/84 
+  Installing       : librsvg2-2.42.3-1.fc28.x86_64                        56/84 
+  Installing       : libfontenc-1.1.3-7.fc28.x86_64                       57/84 
+  Running scriptlet: libfontenc-1.1.3-7.fc28.x86_64                       57/84 
+  Installing       : xorg-x11-font-utils-1:7.5-38.fc28.x86_64             58/84 
+  Installing       : xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.fc28.noarch   59/84 
+  Running scriptlet: xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.fc28.noarch   59/84 
+  Installing       : urw-base35-z003-fonts-20170801-10.fc28.noarch        60/84 
+  Running scriptlet: urw-base35-z003-fonts-20170801-10.fc28.noarch        60/84 
+  Installing       : urw-base35-standard-symbols-ps-fonts-20170801-10.f   61/84 
+  Running scriptlet: urw-base35-standard-symbols-ps-fonts-20170801-10.f   61/84 
+  Installing       : urw-base35-p052-fonts-20170801-10.fc28.noarch        62/84 
+  Running scriptlet: urw-base35-p052-fonts-20170801-10.fc28.noarch        62/84 
+  Installing       : urw-base35-nimbus-sans-fonts-20170801-10.fc28.noar   63/84 
+  Running scriptlet: urw-base35-nimbus-sans-fonts-20170801-10.fc28.noar   63/84 
+  Installing       : urw-base35-nimbus-roman-fonts-20170801-10.fc28.noa   64/84 
+  Running scriptlet: urw-base35-nimbus-roman-fonts-20170801-10.fc28.noa   64/84 
+  Installing       : urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28.n   65/84 
+  Running scriptlet: urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28.n   65/84 
+  Installing       : urw-base35-gothic-fonts-20170801-10.fc28.noarch      66/84 
+  Running scriptlet: urw-base35-gothic-fonts-20170801-10.fc28.noarch      66/84 
+  Installing       : urw-base35-d050000l-fonts-20170801-10.fc28.noarch    67/84 
+  Running scriptlet: urw-base35-d050000l-fonts-20170801-10.fc28.noarch    67/84 
+  Installing       : urw-base35-c059-fonts-20170801-10.fc28.noarch        68/84 
+  Running scriptlet: urw-base35-c059-fonts-20170801-10.fc28.noarch        68/84 
+  Installing       : urw-base35-bookman-fonts-20170801-10.fc28.noarch     69/84 
+  Running scriptlet: urw-base35-bookman-fonts-20170801-10.fc28.noarch     69/84 
+  Installing       : urw-base35-fonts-20170801-10.fc28.noarch             70/84 
+  Installing       : libgs-9.23-5.fc28.x86_64                             71/84 
+  Installing       : ncurses-c++-libs-6.1-5.20180224.fc28.x86_64          72/84 
+  Installing       : netpbm-10.82.00-1.fc28.x86_64                        73/84 
+  Installing       : gts-0.7.6-33.20121130.fc28.x86_64                    74/84 
+  Running scriptlet: gts-0.7.6-33.20121130.fc28.x86_64                    74/84 
+  Installing       : libXcomposite-0.4.4-12.fc28.x86_64                   75/84 
+  Running scriptlet: libXcomposite-0.4.4-12.fc28.x86_64                   75/84 
+  Installing       : hicolor-icon-theme-0.17-2.fc28.noarch                76/84 
+  Installing       : gtk2-2.24.32-2.fc28.x86_64                           77/84 
+  Running scriptlet: gtk2-2.24.32-2.fc28.x86_64                           77/84 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                        78/84 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                        78/84 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                      79/84 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                      79/84 
+  Installing       : mpfr-devel-3.1.6-1.fc28.x86_64                       80/84 
+  Running scriptlet: mpfr-devel-3.1.6-1.fc28.x86_64                       80/84 
+  Installing       : graphviz-2.40.1-23.fc28.x86_64                       81/84 
+  Running scriptlet: graphviz-2.40.1-23.fc28.x86_64                       81/84 
+  Installing       : ncurses-devel-6.1-5.20180224.fc28.x86_64             82/84 
+  Installing       : wget-1.19.5-1.fc28.x86_64                            83/84 
+  Running scriptlet: wget-1.19.5-1.fc28.x86_64                            83/84 
+install-info: No such file or directory for /usr/share/info/wget.info.gz
+  Installing       : perl-Pod-Html-1.22.02-413.fc28.noarch                84/84 
+  Running scriptlet: urw-base35-z003-fonts-20170801-10.fc28.noarch        84/84 
+  Running scriptlet: urw-base35-standard-symbols-ps-fonts-20170801-10.f   84/84 
+  Running scriptlet: urw-base35-p052-fonts-20170801-10.fc28.noarch        84/84 
+  Running scriptlet: urw-base35-nimbus-sans-fonts-20170801-10.fc28.noar   84/84 
+  Running scriptlet: urw-base35-nimbus-roman-fonts-20170801-10.fc28.noa   84/84 
+  Running scriptlet: urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28.n   84/84 
+  Running scriptlet: urw-base35-gothic-fonts-20170801-10.fc28.noarch      84/84 
+  Running scriptlet: urw-base35-d050000l-fonts-20170801-10.fc28.noarch    84/84 
+  Running scriptlet: urw-base35-c059-fonts-20170801-10.fc28.noarch        84/84 
+  Running scriptlet: urw-base35-bookman-fonts-20170801-10.fc28.noarch     84/84 
+  Running scriptlet: perl-Pod-Html-1.22.02-413.fc28.noarch                84/84 
+  Running scriptlet: gdk-pixbuf2-2.36.12-1.fc28.x86_64                    84/84 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                      84/84 
+  Running scriptlet: hicolor-icon-theme-0.17-2.fc28.noarch                84/84 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                       1/84 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                         2/84 
+  Verifying        : graphviz-2.40.1-23.fc28.x86_64                        3/84 
+  Verifying        : atk-2.28.1-1.fc28.x86_64                              4/84 
+  Verifying        : freetype-2.8-10.fc28.x86_64                           5/84 
+  Verifying        : gd-2.2.5-3.fc28.x86_64                                6/84 
+  Verifying        : gdk-pixbuf2-2.36.12-1.fc28.x86_64                     7/84 
+  Verifying        : gtk2-2.24.32-2.fc28.x86_64                            8/84 
+  Verifying        : gts-0.7.6-33.20121130.fc28.x86_64                     9/84 
+  Verifying        : lasi-1.1.2-10.fc28.x86_64                            10/84 
+  Verifying        : libICE-1.0.9-12.fc28.x86_64                          11/84 
+  Verifying        : libSM-1.2.2-8.fc28.x86_64                            12/84 
+  Verifying        : libXaw-1.0.13-8.fc28.x86_64                          13/84 
+  Verifying        : libXext-1.3.3-8.fc28.x86_64                          14/84 
+  Verifying        : libXmu-1.1.2-8.fc28.x86_64                           15/84 
+  Verifying        : libXpm-3.5.12-5.fc28.x86_64                          16/84 
+  Verifying        : libXrender-0.9.10-5.fc28.x86_64                      17/84 
+  Verifying        : libXt-1.1.5-7.fc28.x86_64                            18/84 
+  Verifying        : librsvg2-2.42.3-1.fc28.x86_64                        19/84 
+  Verifying        : xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.fc28.noarch   20/84 
+  Verifying        : gdk-pixbuf2-modules-2.36.12-1.fc28.x86_64            21/84 
+  Verifying        : gtk-update-icon-cache-3.22.30-1.fc28.x86_64          22/84 
+  Verifying        : hicolor-icon-theme-0.17-2.fc28.noarch                23/84 
+  Verifying        : libXcomposite-0.4.4-12.fc28.x86_64                   24/84 
+  Verifying        : libXcursor-1.1.15-1.fc28.x86_64                      25/84 
+  Verifying        : libXdamage-1.1.4-12.fc28.x86_64                      26/84 
+  Verifying        : libXfixes-5.0.3-5.fc28.x86_64                        27/84 
+  Verifying        : libXi-1.7.9-6.fc28.x86_64                            28/84 
+  Verifying        : libXinerama-1.1.3-10.fc28.x86_64                     29/84 
+  Verifying        : libXrandr-1.5.1-5.fc28.x86_64                        30/84 
+  Verifying        : netpbm-10.82.00-1.fc28.x86_64                        31/84 
+  Verifying        : mpfr-devel-3.1.6-1.fc28.x86_64                       32/84 
+  Verifying        : ncurses-devel-6.1-5.20180224.fc28.x86_64             33/84 
+  Verifying        : ncurses-c++-libs-6.1-5.20180224.fc28.x86_64          34/84 
+  Verifying        : perl-Pod-Html-1.22.02-413.fc28.noarch                35/84 
+  Verifying        : wget-1.19.5-1.fc28.x86_64                            36/84 
+  Verifying        : xorg-x11-font-utils-1:7.5-38.fc28.x86_64             37/84 
+  Verifying        : libfontenc-1.1.3-7.fc28.x86_64                       38/84 
+  Verifying        : cairo-1.15.12-2.fc28.x86_64                          39/84 
+  Verifying        : fontconfig-2.13.0-4.fc28.x86_64                      40/84 
+  Verifying        : fontpackages-filesystem-1.44-21.fc28.noarch          41/84 
+  Verifying        : libpng-2:1.6.34-6.fc28.x86_64                        42/84 
+  Verifying        : pango-1.42.3-1.fc28.x86_64                           43/84 
+  Verifying        : fribidi-1.0.2-1.fc28.x86_64                          44/84 
+  Verifying        : harfbuzz-1.7.5-3.fc28.x86_64                         45/84 
+  Verifying        : libXft-2.3.2-8.fc28.x86_64                           46/84 
+  Verifying        : graphite2-1.3.10-5.fc28.x86_64                       47/84 
+  Verifying        : cups-libs-1:2.2.6-16.fc28.x86_64                     48/84 
+  Verifying        : libtiff-4.0.9-10.fc28.x86_64                         49/84 
+  Verifying        : jbigkit-libs-2.1-12.fc28.x86_64                      50/84 
+  Verifying        : jasper-libs-2.0.14-5.fc28.x86_64                     51/84 
+  Verifying        : libjpeg-turbo-1.5.3-6.fc28.x86_64                    52/84 
+  Verifying        : libwebp-1.0.0-1.fc28.x86_64                          53/84 
+  Verifying        : libthai-0.1.28-1.fc28.x86_64                         54/84 
+  Verifying        : libdatrie-0.2.9-7.fc28.x86_64                        55/84 
+  Verifying        : libgs-9.23-5.fc28.x86_64                             56/84 
+  Verifying        : adobe-mappings-cmap-20171205-3.fc28.noarch           57/84 
+  Verifying        : adobe-mappings-cmap-deprecated-20171205-3.fc28.noa   58/84 
+  Verifying        : google-droid-sans-fonts-20120715-13.fc28.noarch      59/84 
+  Verifying        : jbig2dec-libs-0.14-2.fc28.x86_64                     60/84 
+  Verifying        : lcms2-2.9-2.fc28.x86_64                              61/84 
+  Verifying        : libijs-0.35-4.fc28.x86_64                            62/84 
+  Verifying        : libpaper-1.1.24-21.fc28.x86_64                       63/84 
+  Verifying        : openjpeg2-2.3.0-6.fc28.x86_64                        64/84 
+  Verifying        : urw-base35-fonts-20170801-10.fc28.noarch             65/84 
+  Verifying        : urw-base35-fonts-common-20170801-10.fc28.noarch      66/84 
+  Verifying        : urw-base35-z003-fonts-20170801-10.fc28.noarch        67/84 
+  Verifying        : urw-base35-standard-symbols-ps-fonts-20170801-10.f   68/84 
+  Verifying        : urw-base35-p052-fonts-20170801-10.fc28.noarch        69/84 
+  Verifying        : urw-base35-nimbus-sans-fonts-20170801-10.fc28.noar   70/84 
+  Verifying        : urw-base35-nimbus-roman-fonts-20170801-10.fc28.noa   71/84 
+  Verifying        : urw-base35-nimbus-mono-ps-fonts-20170801-10.fc28.n   72/84 
+  Verifying        : urw-base35-gothic-fonts-20170801-10.fc28.noarch      73/84 
+  Verifying        : urw-base35-d050000l-fonts-20170801-10.fc28.noarch    74/84 
+  Verifying        : urw-base35-c059-fonts-20170801-10.fc28.noarch        75/84 
+  Verifying        : urw-base35-bookman-fonts-20170801-10.fc28.noarch     76/84 
+  Verifying        : xorg-x11-server-utils-7.7-24.fc28.x86_64             77/84 
+  Verifying        : libXxf86misc-1.0.3-15.fc28.x86_64                    78/84 
+  Verifying        : libXxf86vm-1.1.4-7.fc28.x86_64                       79/84 
+  Verifying        : mcpp-2.7.2-20.fc28.x86_64                            80/84 
+  Verifying        : libmcpp-2.7.2-20.fc28.x86_64                         81/84 
+  Verifying        : pixman-0.34.0-8.fc28.x86_64                          82/84 
+  Verifying        : adobe-mappings-pdf-20180407-1.fc28.noarch            83/84 
+  Verifying        : libidn-1.34-3.fc28.x86_64                            84/84 
+
+Installed:
+  gmp-devel.x86_64 1:6.1.2-7.fc28                                               
+  graphviz.x86_64 2.40.1-23.fc28                                                
+  mpfr-devel.x86_64 3.1.6-1.fc28                                                
+  ncurses-devel.x86_64 6.1-5.20180224.fc28                                      
+  perl-Pod-Html.noarch 1.22.02-413.fc28                                         
+  wget.x86_64 1.19.5-1.fc28                                                     
+  adobe-mappings-cmap.noarch 20171205-3.fc28                                    
+  adobe-mappings-cmap-deprecated.noarch 20171205-3.fc28                         
+  adobe-mappings-pdf.noarch 20180407-1.fc28                                     
+  atk.x86_64 2.28.1-1.fc28                                                      
+  cairo.x86_64 1.15.12-2.fc28                                                   
+  cups-libs.x86_64 1:2.2.6-16.fc28                                              
+  fontconfig.x86_64 2.13.0-4.fc28                                               
+  fontpackages-filesystem.noarch 1.44-21.fc28                                   
+  freetype.x86_64 2.8-10.fc28                                                   
+  fribidi.x86_64 1.0.2-1.fc28                                                   
+  gd.x86_64 2.2.5-3.fc28                                                        
+  gdk-pixbuf2.x86_64 2.36.12-1.fc28                                             
+  gdk-pixbuf2-modules.x86_64 2.36.12-1.fc28                                     
+  gmp-c++.x86_64 1:6.1.2-7.fc28                                                 
+  google-droid-sans-fonts.noarch 20120715-13.fc28                               
+  graphite2.x86_64 1.3.10-5.fc28                                                
+  gtk-update-icon-cache.x86_64 3.22.30-1.fc28                                   
+  gtk2.x86_64 2.24.32-2.fc28                                                    
+  gts.x86_64 0.7.6-33.20121130.fc28                                             
+  harfbuzz.x86_64 1.7.5-3.fc28                                                  
+  hicolor-icon-theme.noarch 0.17-2.fc28                                         
+  jasper-libs.x86_64 2.0.14-5.fc28                                              
+  jbig2dec-libs.x86_64 0.14-2.fc28                                              
+  jbigkit-libs.x86_64 2.1-12.fc28                                               
+  lasi.x86_64 1.1.2-10.fc28                                                     
+  lcms2.x86_64 2.9-2.fc28                                                       
+  libICE.x86_64 1.0.9-12.fc28                                                   
+  libSM.x86_64 1.2.2-8.fc28                                                     
+  libXaw.x86_64 1.0.13-8.fc28                                                   
+  libXcomposite.x86_64 0.4.4-12.fc28                                            
+  libXcursor.x86_64 1.1.15-1.fc28                                               
+  libXdamage.x86_64 1.1.4-12.fc28                                               
+  libXext.x86_64 1.3.3-8.fc28                                                   
+  libXfixes.x86_64 5.0.3-5.fc28                                                 
+  libXft.x86_64 2.3.2-8.fc28                                                    
+  libXi.x86_64 1.7.9-6.fc28                                                     
+  libXinerama.x86_64 1.1.3-10.fc28                                              
+  libXmu.x86_64 1.1.2-8.fc28                                                    
+  libXpm.x86_64 3.5.12-5.fc28                                                   
+  libXrandr.x86_64 1.5.1-5.fc28                                                 
+  libXrender.x86_64 0.9.10-5.fc28                                               
+  libXt.x86_64 1.1.5-7.fc28                                                     
+  libXxf86misc.x86_64 1.0.3-15.fc28                                             
+  libXxf86vm.x86_64 1.1.4-7.fc28                                                
+  libdatrie.x86_64 0.2.9-7.fc28                                                 
+  libfontenc.x86_64 1.1.3-7.fc28                                                
+  libgs.x86_64 9.23-5.fc28                                                      
+  libidn.x86_64 1.34-3.fc28                                                     
+  libijs.x86_64 0.35-4.fc28                                                     
+  libjpeg-turbo.x86_64 1.5.3-6.fc28                                             
+  libmcpp.x86_64 2.7.2-20.fc28                                                  
+  libpaper.x86_64 1.1.24-21.fc28                                                
+  libpng.x86_64 2:1.6.34-6.fc28                                                 
+  librsvg2.x86_64 2.42.3-1.fc28                                                 
+  libthai.x86_64 0.1.28-1.fc28                                                  
+  libtiff.x86_64 4.0.9-10.fc28                                                  
+  libwebp.x86_64 1.0.0-1.fc28                                                   
+  mcpp.x86_64 2.7.2-20.fc28                                                     
+  ncurses-c++-libs.x86_64 6.1-5.20180224.fc28                                   
+  netpbm.x86_64 10.82.00-1.fc28                                                 
+  openjpeg2.x86_64 2.3.0-6.fc28                                                 
+  pango.x86_64 1.42.3-1.fc28                                                    
+  pixman.x86_64 0.34.0-8.fc28                                                   
+  urw-base35-bookman-fonts.noarch 20170801-10.fc28                              
+  urw-base35-c059-fonts.noarch 20170801-10.fc28                                 
+  urw-base35-d050000l-fonts.noarch 20170801-10.fc28                             
+  urw-base35-fonts.noarch 20170801-10.fc28                                      
+  urw-base35-fonts-common.noarch 20170801-10.fc28                               
+  urw-base35-gothic-fonts.noarch 20170801-10.fc28                               
+  urw-base35-nimbus-mono-ps-fonts.noarch 20170801-10.fc28                       
+  urw-base35-nimbus-roman-fonts.noarch 20170801-10.fc28                         
+  urw-base35-nimbus-sans-fonts.noarch 20170801-10.fc28                          
+  urw-base35-p052-fonts.noarch 20170801-10.fc28                                 
+  urw-base35-standard-symbols-ps-fonts.noarch 20170801-10.fc28                  
+  urw-base35-z003-fonts.noarch 20170801-10.fc28                                 
+  xorg-x11-font-utils.x86_64 1:7.5-38.fc28                                      
+  xorg-x11-fonts-ISO8859-1-100dpi.noarch 7.5-19.fc28                            
+  xorg-x11-server-utils.x86_64 7.7-24.fc28                                      
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gmp-devel graphviz mpfr-devel ncurses-devel perl-Pod-Html pkgconfig wget
+gmp-devel-6.1.2-7.fc28.x86_64
+graphviz-2.40.1-23.fc28.x86_64
+mpfr-devel-3.1.6-1.fc28.x86_64
+ncurses-devel-6.1-5.20180224.fc28.x86_64
+perl-Pod-Html-1.22.02-413.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+wget-1.19.5-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install mlbdd              0.6      [required by setr]
+  - install conf-gmp           1        [required by mlgmpidl]
+  - install base-bytes         base     [required by ounit, qtest]
+  - install conf-perl          1        [required by apron]
+  - install conf-pkg-config    1.1      [required by conf-ncurses]
+  - install num                1.1      [required by batteries]
+  - install camlidl            1.05     [required by apron]
+  - install obuild             0.1.10   [required by memcad]
+  - install conf-binutils      0.2      [required by clangml]
+  - install conf-which         1        [required by conf-graphviz]
+  - install ocamlbuild         0.12.0   [required by parmap, apron, ounit, setr]
+  - install conf-mpfr          1        [required by mlgmpidl]
+  - install cppo               1.6.4    [required by setr]
+  - install ANSITerminal       0.8      [required by clangml]
+  - install conf-ncurses       1        [required by clangml]
+  - install bdd                0.3      [required by memcad]
+  - install conf-wget          1        [required by clangml]
+  - install conf-graphviz      0.1      [required by memcad]
+  - install parmap             1.0-rc10 [required by memcad]
+  - install ounit              2.0.8    [required by memcad]
+  - install ocamlmod           0.0.9    [required by oasis]
+  - install ocamlify           0.0.1    [required by oasis]
+  - install dolog              3.0      [required by clangml-transforms]
+  - install camlp4             4.06+1   [required by clangml]
+  - install batteries          2.8.0    [required by clangml-transforms]
+  - install mlgmpidl           1.2.7    [required by apron]
+  - install setr               0.1.1    [required by memcad]
+  - install qcheck             0.8      [required by qtest]
+  - install oasis              0.4.11   [required by deriving]
+  - install apron              20160125 [required by memcad]
+  - install qtest              2.9      [required by memcad]
+  - install deriving           0.8.1    [required by clangml-transforms]
+  - install clangml            3.9.1.2  [required by clangml-transforms]
+  - install clangml-transforms 0.23     [required by memcad]
+  - install memcad             1.0.0
+===== 35 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ANSITerminal.0.8] found in cache
+[apron.20160125] found in cache
+[batteries.2.8.0] found in cache
+[bdd.0.3] found in cache
+[camlidl.1.05] found in cache
+[camlp4.4.06+1] found in cache
+[clangml.3.9.1.2] found in cache
+[clangml-transforms.0.23] found in cache
+[cppo.1.6.4] found in cache
+[deriving.0.8.1] found in cache
+[dolog.3.0] found in cache
+[memcad.1.0.0] found in cache
+[mlbdd.0.6] found in cache
+[mlgmpidl.1.2.7] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[obuild.0.1.10] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ounit.2.0.8] found in cache
+[parmap.1.0-rc10] found in cache
+[qcheck.0.8] found in cache
+[qtest.2.9] found in cache
+[setr.0.1.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ANSITerminal.0.8
+-> installed camlidl.1.05
+-> installed conf-binutils.0.2
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-ncurses.1
+-> installed conf-which.1
+-> installed conf-graphviz.0.1
+-> installed conf-mpfr.1
+-> installed conf-wget.1
+-> installed cppo.1.6.4
+-> installed mlbdd.0.6
+-> installed num.1.1
+-> installed obuild.0.1.10
+-> installed bdd.0.3
+-> installed ocamlbuild.0.12.0
+-> installed batteries.2.8.0
+-> installed dolog.3.0
+-> installed mlgmpidl.1.2.7
+-> installed apron.20160125
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed camlp4.4.06+1
+-> installed ounit.2.0.8
+-> installed parmap.1.0-rc10
+-> installed qcheck.0.8
+-> installed qtest.2.9
+-> installed setr.0.1.1
+-> installed oasis.0.4.11
+-> installed deriving.0.8.1
+[ERROR] The compilation of clangml failed at "/usr/bin/make".
+
+#=== ERROR while compiling clangml.3.9.1.2 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/clangml.3.9.1.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/clangml-10-eb68b1.env
+# output-file          ~/.opam/log/clangml-10-eb68b1.out
+### output ###
+# ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# which: no clang++-3.9 in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# which: no clang++ in (/home/opam/usr/clang39/bin)
+# Fatal error: exception Myocamlbuild.No_command_found("[clang++-3.9; /home/opam/usr/clang39/bin/clang++]")
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 88, characters 15-31:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "myocamlbuild.ml", line 98, characters 4-16:
+# Warning 3: deprecated: Scanf.fscanf
+# Use Scanning.from_channel then Scanf.bscanf.
+# make: *** [Makefile:16: mainClang.native] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build clangml 3.9.1.2
++- 
++- The following changes have been performed (the rest was aborted)
+| - install ANSITerminal    0.8
+| - install apron           20160125
+| - install base-bytes      base
+| - install batteries       2.8.0
+| - install bdd             0.3
+| - install camlidl         1.05
+| - install camlp4          4.06+1
+| - install conf-binutils   0.2
+| - install conf-gmp        1
+| - install conf-graphviz   0.1
+| - install conf-mpfr       1
+| - install conf-ncurses    1
+| - install conf-perl       1
+| - install conf-pkg-config 1.1
+| - install conf-wget       1
+| - install conf-which      1
+| - install cppo            1.6.4
+| - install deriving        0.8.1
+| - install dolog           3.0
+| - install mlbdd           0.6
+| - install mlgmpidl        1.2.7
+| - install num             1.1
+| - install oasis           0.4.11
+| - install obuild          0.1.10
+| - install ocamlbuild      0.12.0
+| - install ocamlify        0.0.1
+| - install ocamlmod        0.0.9
+| - install ounit           2.0.8
+| - install parmap          1.0-rc10
+| - install qcheck          0.8
+| - install qtest           2.9
+| - install setr            0.1.1
++- 
+
+<><> clangml.3.9.1.2 troubleshooting ><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires llvm-3.9, clang-3.9, boost and binutils
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180811005428.export"
+31 1533948829 1533949034

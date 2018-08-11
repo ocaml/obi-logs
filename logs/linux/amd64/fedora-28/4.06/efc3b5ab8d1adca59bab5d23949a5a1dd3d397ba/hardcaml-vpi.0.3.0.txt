@@ -1,0 +1,244 @@
+$ opam depext -iy -j 2 hardcaml-vpi.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+libffi-devel
+m4
+pkgconfig
+which
+package libffi-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Fri Aug 10 20:11:25 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pkgconfig is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Fri Aug 10 06:36:08 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# The following new OS packages need to be installed: libffi-devel pkgconfig
+The following command needs to be run through "sudo":
+    yum install -y libffi-devel pkgconfig
+Last metadata expiration check: 4:38:31 ago on Fri Aug 10 20:10:58 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package              Arch           Version               Repository      Size
+================================================================================
+Installing:
+ libffi-devel         x86_64         3.1-16.fc28           fedora          27 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 27 k
+Installed size: 27 k
+Downloading Packages:
+libffi-devel-3.1-16.fc28.x86_64.rpm             391 kB/s |  27 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            49 kB/s |  27 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libffi-devel-3.1-16.fc28.x86_64                        1/1 
+  Running scriptlet: libffi-devel-3.1-16.fc28.x86_64                        1/1 
+install-info: No such file or directory for /usr/share/info/libffi.info.gz
+  Verifying        : libffi-devel-3.1-16.fc28.x86_64                        1/1 
+
+Installed:
+  libffi-devel.x86_64 3.1-16.fc28                                               
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides libffi-devel pkgconfig
+libffi-devel-3.1-16.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ctypes-foreign          0.4.0  [required by hardcaml-vpi]
+  - install easy-format             1.3.1  [required by yojson]
+  - install result                  1.3    [required by topkg, ocaml-migrate-parsetree]
+  - install conf-which              1      [required by biniou]
+  - install base-bytes              base   [required by ctypes, hardcaml]
+  - install ocamlbuild              0.12.0 [required by hardcaml-vpi]
+  - install conf-pkg-config         1.1    [required by ctypes]
+  - install num                     1.1    [required by hardcaml]
+  - install ocaml-migrate-parsetree 1.0.11 [required by js_of_ocaml]
+  - install biniou                  1.2.0  [required by yojson]
+  - install cppo                    1.6.4  [required by js_of_ocaml-compiler]
+  - install uchar                   0.0.2  [required by js_of_ocaml]
+  - install topkg                   0.9.1  [required by hardcaml-vpi]
+  - install camlp4                  4.06+1 [required by hardcaml]
+  - install ppx_tools_versioned     5.2    [required by js_of_ocaml]
+  - install yojson                  1.4.1  [required by js_of_ocaml-compiler]
+  - install integers                0.2.2  [required by ctypes]
+  - install cmdliner                1.0.2  [required by js_of_ocaml-compiler]
+  - install astring                 0.8.3  [required by hardcaml]
+  - install js_of_ocaml-camlp4      3.1.0  [required by hardcaml]
+  - install ctypes                  0.14.0 [required by hardcaml-vpi]
+  - install js_of_ocaml-compiler    3.2.1  [required by js_of_ocaml]
+  - install js_of_ocaml             3.2.0  [required by hardcaml]
+  - install hardcaml                1.2.0  [required by hardcaml-vpi]
+  - install hardcaml-vpi            0.3.0
+===== 25 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.06+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[ctypes.0.14.0] found in cache
+[easy-format.1.3.1] found in cache
+[hardcaml.1.2.0] found in cache
+[hardcaml-vpi.0.3.0] found in cache
+[integers.0.2.2] found in cache
+[js_of_ocaml.3.2.0] found in cache
+[js_of_ocaml-camlp4.3.1.0] found in cache
+[js_of_ocaml-compiler.3.2.1] found in cache
+[num.1.1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed ctypes-foreign.0.4.0
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+-> installed uchar.0.0.2
+-> installed yojson.1.4.1
+-> installed js_of_ocaml-compiler.3.2.1
+-> installed js_of_ocaml.3.2.0
+-> installed camlp4.4.06+1
+-> installed js_of_ocaml-camlp4.3.1.0
+-> installed hardcaml.1.2.0
+[ERROR] The compilation of hardcaml-vpi failed at "/usr/bin/make vpi".
+
+#=== ERROR while compiling hardcaml-vpi.0.3.0 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/hardcaml-vpi.0.3.0
+# command              /usr/bin/make vpi
+# exit-code            2
+# env-file             ~/.opam/log/hardcaml-vpi-10-13a48c.env
+# output-file          ~/.opam/log/hardcaml-vpi-10-13a48c.out
+### output ###
+# VPI_CFLAGS=`iverilog-vpi --cflags` \
+# VPI_LDFLAGS=`iverilog-vpi --ldflags` \
+# VPI_LDLIBS=`iverilog-vpi --ldlibs` \
+# OCAML_LDPATH=`ocamlc -where` \
+# CTYPES_LDPATH=`opam config var ctypes:lib` \
+# ocaml pkg/pkg.ml build
+# /bin/sh: iverilog-vpi: command not found
+# /bin/sh: iverilog-vpi: command not found
+# /bin/sh: iverilog-vpi: command not found
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamlc -g -package ctypes.foreign -package hardcaml -c cosim_c.c
+# + ocamlfind ocamlc -g -package ctypes.foreign -package hardcaml -c cosim_c.c
+# cosim_c.c:5:10: fatal error: vpi_user.h: No such file or directory
+#  #include "vpi_user.h"
+#           ^~~~~~~~~~~~
+# compilation terminated.
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'cosim.vpi']: exited with 10
+# make: *** [Makefile:22: vpi] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build hardcaml-vpi 0.3.0
++- 
++- The following changes have been performed
+| - install astring                 0.8.3
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install camlp4                  4.06+1
+| - install cmdliner                1.0.2
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install ctypes                  0.14.0
+| - install ctypes-foreign          0.4.0
+| - install easy-format             1.3.1
+| - install hardcaml                1.2.0
+| - install integers                0.2.2
+| - install js_of_ocaml             3.2.0
+| - install js_of_ocaml-camlp4      3.1.0
+| - install js_of_ocaml-compiler    3.2.1
+| - install num                     1.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180811004933.export"
+31 1533948564 1533948727

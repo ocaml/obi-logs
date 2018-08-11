@@ -1,0 +1,371 @@
+$ opam depext -iy -j 2 owl.0.2.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gsl-devel
+m4
+openblas-devel
+pkgconfig
+which
+package gsl-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Fri Aug 10 20:11:25 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package openblas-devel is not installed
+package pkgconfig is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Fri Aug 10 06:36:08 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# The following new OS packages need to be installed: gsl-devel openblas-devel pkgconfig
+The following command needs to be run through "sudo":
+    yum install -y gsl-devel openblas-devel pkgconfig
+Last metadata expiration check: 4:51:37 ago on Fri Aug 10 20:10:58 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                   Arch        Version               Repository    Size
+================================================================================
+Installing:
+ gsl-devel                 x86_64      2.4-3.fc27            fedora       563 k
+ openblas-devel            x86_64      0.3.2-1.fc28          updates       91 k
+Installing dependencies:
+ autoconf                  noarch      2.69-27.fc28          fedora       710 k
+ automake                  noarch      1.15.1-5.fc28         fedora       706 k
+ gsl                       x86_64      2.4-3.fc27            fedora       1.0 M
+ libgfortran               x86_64      8.1.1-5.fc28          updates      656 k
+ libquadmath               x86_64      8.1.1-5.fc28          updates      186 k
+ openblas                  x86_64      0.3.2-1.fc28          updates       29 k
+ openblas-openmp           x86_64      0.3.2-1.fc28          updates      4.7 M
+ openblas-openmp64         x86_64      0.3.2-1.fc28          updates      4.6 M
+ openblas-openmp64_        x86_64      0.3.2-1.fc28          updates      4.6 M
+ openblas-serial           x86_64      0.3.2-1.fc28          updates      4.5 M
+ openblas-serial64         x86_64      0.3.2-1.fc28          updates      4.5 M
+ openblas-serial64_        x86_64      0.3.2-1.fc28          updates      4.4 M
+ openblas-srpm-macros      noarch      2-2.fc27              fedora       6.6 k
+ openblas-threads          x86_64      0.3.2-1.fc28          updates      4.7 M
+ openblas-threads64        x86_64      0.3.2-1.fc28          updates      4.6 M
+ openblas-threads64_       x86_64      0.3.2-1.fc28          updates      4.6 M
+ perl-Thread-Queue         noarch      3.13-1.fc28           updates       23 k
+
+Transaction Summary
+================================================================================
+Install  19 Packages
+
+Total download size: 45 M
+Installed size: 372 M
+Downloading Packages:
+[MIRROR] gsl-devel-2.4-3.fc27.x86_64.rpm: Curl error (28): Timeout was reached for https://mirror.sucs.org/pub/linux/fedora/releases/28/Everything/x86_64/os/Packages/g/gsl-devel-2.4-3.fc27.x86_64.rpm [Connection timed out after 30000 milliseconds]
+[MIRROR] automake-1.15.1-5.fc28.noarch.rpm: Curl error (28): Timeout was reached for https://mirror.sucs.org/pub/linux/fedora/releases/28/Everything/x86_64/os/Packages/a/automake-1.15.1-5.fc28.noarch.rpm [Connection timed out after 30000 milliseconds]
+[MIRROR] gsl-2.4-3.fc27.x86_64.rpm: Curl error (28): Timeout was reached for https://mirror.sucs.org/pub/linux/fedora/releases/28/Everything/x86_64/os/Packages/g/gsl-2.4-3.fc27.x86_64.rpm [Connection timed out after 30000 milliseconds]
+(1/19): automake-1.15.1-5.fc28.noarch.rpm        22 kB/s | 706 kB     00:31    
+(2/19): gsl-devel-2.4-3.fc27.x86_64.rpm          18 kB/s | 563 kB     00:31    
+(3/19): openblas-devel-0.3.2-1.fc28.x86_64.rpm  2.6 MB/s |  91 kB     00:00    
+(4/19): openblas-0.3.2-1.fc28.x86_64.rpm        756 kB/s |  29 kB     00:00    
+(5/19): openblas-openmp-0.3.2-1.fc28.x86_64.rpm  17 MB/s | 4.7 MB     00:00    
+(6/19): openblas-openmp64-0.3.2-1.fc28.x86_64.r  30 MB/s | 4.6 MB     00:00    
+(7/19): openblas-openmp64_-0.3.2-1.fc28.x86_64.  31 MB/s | 4.6 MB     00:00    
+(8/19): openblas-serial-0.3.2-1.fc28.x86_64.rpm  29 MB/s | 4.5 MB     00:00    
+(9/19): openblas-serial64-0.3.2-1.fc28.x86_64.r  22 MB/s | 4.5 MB     00:00    
+(10/19): openblas-serial64_-0.3.2-1.fc28.x86_64  23 MB/s | 4.4 MB     00:00    
+(11/19): openblas-threads-0.3.2-1.fc28.x86_64.r  24 MB/s | 4.7 MB     00:00    
+(12/19): openblas-threads64-0.3.2-1.fc28.x86_64  28 MB/s | 4.6 MB     00:00    
+(13/19): gsl-2.4-3.fc27.x86_64.rpm               30 kB/s | 1.0 MB     00:33    
+(14/19): openblas-threads64_-0.3.2-1.fc28.x86_6  22 MB/s | 4.6 MB     00:00    
+(15/19): perl-Thread-Queue-3.13-1.fc28.noarch.r 748 kB/s |  23 kB     00:00    
+(16/19): openblas-srpm-macros-2-2.fc27.noarch.r  52 kB/s | 6.6 kB     00:00    
+(17/19): libgfortran-8.1.1-5.fc28.x86_64.rpm     18 MB/s | 656 kB     00:00    
+(18/19): libquadmath-8.1.1-5.fc28.x86_64.rpm    4.6 MB/s | 186 kB     00:00    
+(19/19): autoconf-2.69-27.fc28.noarch.rpm       335 kB/s | 710 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                           1.3 MB/s |  45 MB     00:34     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : openblas-0.3.2-1.fc28.x86_64                          1/19 
+  Running scriptlet: openblas-0.3.2-1.fc28.x86_64                          1/19 
+  Installing       : libquadmath-8.1.1-5.fc28.x86_64                       2/19 
+  Running scriptlet: libquadmath-8.1.1-5.fc28.x86_64                       2/19 
+  Installing       : libgfortran-8.1.1-5.fc28.x86_64                       3/19 
+  Running scriptlet: libgfortran-8.1.1-5.fc28.x86_64                       3/19 
+  Installing       : openblas-openmp-0.3.2-1.fc28.x86_64                   4/19 
+  Running scriptlet: openblas-openmp-0.3.2-1.fc28.x86_64                   4/19 
+  Installing       : openblas-openmp64-0.3.2-1.fc28.x86_64                 5/19 
+  Running scriptlet: openblas-openmp64-0.3.2-1.fc28.x86_64                 5/19 
+  Installing       : openblas-openmp64_-0.3.2-1.fc28.x86_64                6/19 
+  Running scriptlet: openblas-openmp64_-0.3.2-1.fc28.x86_64                6/19 
+  Installing       : openblas-serial-0.3.2-1.fc28.x86_64                   7/19 
+  Installing       : openblas-serial64-0.3.2-1.fc28.x86_64                 8/19 
+  Running scriptlet: openblas-serial64-0.3.2-1.fc28.x86_64                 8/19 
+  Installing       : openblas-serial64_-0.3.2-1.fc28.x86_64                9/19 
+  Running scriptlet: openblas-serial64_-0.3.2-1.fc28.x86_64                9/19 
+  Installing       : openblas-threads-0.3.2-1.fc28.x86_64                 10/19 
+  Running scriptlet: openblas-threads-0.3.2-1.fc28.x86_64                 10/19 
+  Installing       : openblas-threads64-0.3.2-1.fc28.x86_64               11/19 
+  Running scriptlet: openblas-threads64-0.3.2-1.fc28.x86_64               11/19 
+  Installing       : openblas-threads64_-0.3.2-1.fc28.x86_64              12/19 
+  Running scriptlet: openblas-threads64_-0.3.2-1.fc28.x86_64              12/19 
+  Installing       : perl-Thread-Queue-3.13-1.fc28.noarch                 13/19 
+  Installing       : openblas-srpm-macros-2-2.fc27.noarch                 14/19 
+  Installing       : autoconf-2.69-27.fc28.noarch                         15/19 
+  Running scriptlet: autoconf-2.69-27.fc28.noarch                         15/19 
+install-info: No such file or directory for /usr/share/info/autoconf.info
+  Installing       : automake-1.15.1-5.fc28.noarch                        16/19 
+  Running scriptlet: automake-1.15.1-5.fc28.noarch                        16/19 
+install-info: No such file or directory for /usr/share/info/automake.info.gz
+  Installing       : gsl-2.4-3.fc27.x86_64                                17/19 
+  Running scriptlet: gsl-2.4-3.fc27.x86_64                                17/19 
+  Installing       : gsl-devel-2.4-3.fc27.x86_64                          18/19 
+  Running scriptlet: gsl-devel-2.4-3.fc27.x86_64                          18/19 
+  Installing       : openblas-devel-0.3.2-1.fc28.x86_64                   19/19 
+  Running scriptlet: openblas-devel-0.3.2-1.fc28.x86_64                   19/19 
+  Verifying        : gsl-devel-2.4-3.fc27.x86_64                           1/19 
+  Verifying        : automake-1.15.1-5.fc28.noarch                         2/19 
+  Verifying        : gsl-2.4-3.fc27.x86_64                                 3/19 
+  Verifying        : autoconf-2.69-27.fc28.noarch                          4/19 
+  Verifying        : openblas-devel-0.3.2-1.fc28.x86_64                    5/19 
+  Verifying        : openblas-0.3.2-1.fc28.x86_64                          6/19 
+  Verifying        : openblas-openmp-0.3.2-1.fc28.x86_64                   7/19 
+  Verifying        : openblas-openmp64-0.3.2-1.fc28.x86_64                 8/19 
+  Verifying        : openblas-openmp64_-0.3.2-1.fc28.x86_64                9/19 
+  Verifying        : openblas-serial-0.3.2-1.fc28.x86_64                  10/19 
+  Verifying        : openblas-serial64-0.3.2-1.fc28.x86_64                11/19 
+  Verifying        : openblas-serial64_-0.3.2-1.fc28.x86_64               12/19 
+  Verifying        : openblas-threads-0.3.2-1.fc28.x86_64                 13/19 
+  Verifying        : openblas-threads64-0.3.2-1.fc28.x86_64               14/19 
+  Verifying        : openblas-threads64_-0.3.2-1.fc28.x86_64              15/19 
+  Verifying        : openblas-srpm-macros-2-2.fc27.noarch                 16/19 
+  Verifying        : perl-Thread-Queue-3.13-1.fc28.noarch                 17/19 
+  Verifying        : libgfortran-8.1.1-5.fc28.x86_64                      18/19 
+  Verifying        : libquadmath-8.1.1-5.fc28.x86_64                      19/19 
+
+Installed:
+  gsl-devel.x86_64 2.4-3.fc27                                                   
+  openblas-devel.x86_64 0.3.2-1.fc28                                            
+  autoconf.noarch 2.69-27.fc28                                                  
+  automake.noarch 1.15.1-5.fc28                                                 
+  gsl.x86_64 2.4-3.fc27                                                         
+  libgfortran.x86_64 8.1.1-5.fc28                                               
+  libquadmath.x86_64 8.1.1-5.fc28                                               
+  openblas.x86_64 0.3.2-1.fc28                                                  
+  openblas-openmp.x86_64 0.3.2-1.fc28                                           
+  openblas-openmp64.x86_64 0.3.2-1.fc28                                         
+  openblas-openmp64_.x86_64 0.3.2-1.fc28                                        
+  openblas-serial.x86_64 0.3.2-1.fc28                                           
+  openblas-serial64.x86_64 0.3.2-1.fc28                                         
+  openblas-serial64_.x86_64 0.3.2-1.fc28                                        
+  openblas-srpm-macros.noarch 2-2.fc27                                          
+  openblas-threads.x86_64 0.3.2-1.fc28                                          
+  openblas-threads64.x86_64 0.3.2-1.fc28                                        
+  openblas-threads64_.x86_64 0.3.2-1.fc28                                       
+  perl-Thread-Queue.noarch 3.13-1.fc28                                          
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gsl-devel openblas-devel pkgconfig
+gsl-devel-2.4-3.fc27.x86_64
+openblas-devel-0.3.2-1.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0  [required by base]
+  - install easy-format     1.3.1    [required by biniou, atd, yojson]
+  - install result          1.3      [required by topkg]
+  - install conf-which      1        [required by biniou]
+  - install base-bytes      base     [required by ctypes]
+  - install ocamlbuild      0.12.0   [required by owl]
+  - install conf-pkg-config 1.1      [required by ctypes, gsl]
+  - install conf-openblas   0.2.0    [required by owl]
+  - install conf-gsl        1        [required by owl]
+  - install base            v0.11.1  [required by gsl]
+  - install biniou          1.2.0    [required by atdgen]
+  - install cppo            1.6.4    [required by yojson]
+  - install topkg           0.9.1    [required by integers]
+  - install plplot          5.11.0   [required by owl]
+  - install ocamlmod        0.0.9    [required by oasis]
+  - install ocamlify        0.0.1    [required by oasis]
+  - install menhir          20180703 [required by atd]
+  - install dolog           3.0      [required by owl]
+  - install stdio           v0.11.0  [required by gsl]
+  - install yojson          1.4.1    [required by atdgen]
+  - install integers        0.2.2    [required by ctypes]
+  - install oasis           0.4.11   [required by owl]
+  - install atd             1.12.0   [required by atdgen]
+  - install configurator    v0.11.0  [required by gsl]
+  - install ctypes          0.14.0   [required by owl]
+  - install atdgen          1.12.0   [required by owl]
+  - install gsl             1.22.0   [required by owl]
+  - install eigen           0.0.5    [required by owl]
+  - install owl             0.2.9
+===== 29 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[atd.1.12.0] found in cache
+[atdgen.1.12.0] found in cache
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[ctypes.0.14.0] found in cache
+[dolog.3.0] found in cache
+[easy-format.1.3.1] found in cache
+[eigen.0.0.5] found in cache
+[gsl.1.22.0] found in cache
+[integers.0.2.2] found in cache
+[menhir.20180703] found in cache
+[oasis.0.4.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[owl.0.2.9] found in cache
+[plplot.5.11.0] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-openblas failed at "/usr/bin/sh -exc cc $CFLAGS test.c -lopenblas".
+-> installed base-bytes.base
+-> installed conf-gsl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of plplot failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+-> installed dolog.3.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed menhir.20180703
+-> installed atd.1.12.0
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed oasis.0.4.11
+-> installed stdio.v0.11.0
+-> installed topkg.0.9.1
+-> installed configurator.v0.11.0
+-> installed integers.0.2.2
+-> installed gsl.1.22.0
+-> installed yojson.1.4.1
+-> installed atdgen.1.12.0
+-> installed ctypes.0.14.0
+-> installed eigen.0.0.5
+
+#=== ERROR while compiling plplot.5.11.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/plplot.5.11.0
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/plplot-10-cea78b.env
+# output-file          ~/.opam/log/plplot-10-cea78b.out
+### output ###
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Failure: No valid installation of plplot or plplotd found.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/libplplot_stubs.a src/dllplplot_stubs.so src/plplot.cma src/plplot.cmxa src/plplot.a src/plplot.cmxs -tag debug' terminated with error code 2")
+
+
+#=== ERROR while compiling conf-openblas.0.2.0 ================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-openblas.0.2.0
+# command              /usr/bin/sh -exc cc $CFLAGS test.c -lopenblas
+# exit-code            1
+# env-file             ~/.opam/log/conf-openblas-10-201c9f.env
+# output-file          ~/.opam/log/conf-openblas-10-201c9f.out
+### output ###
+# + cc test.c -lopenblas
+# test.c:1:10: fatal error: cblas.h: No such file or directory
+#  #include <cblas.h>
+#           ^~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-openblas 0.2.0
+| - build plplot        5.11.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install atd             1.12.0
+| - install atdgen          1.12.0
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install biniou          1.2.0
+| - install conf-gsl        1
+| - install conf-pkg-config 1.1
+| - install conf-which      1
+| - install configurator    v0.11.0
+| - install cppo            1.6.4
+| - install ctypes          0.14.0
+| - install dolog           3.0
+| - install easy-format     1.3.1
+| - install eigen           0.0.5
+| - install gsl             1.22.0
+| - install integers        0.2.2
+| - install menhir          20180703
+| - install oasis           0.4.11
+| - install ocamlbuild      0.12.0
+| - install ocamlify        0.0.1
+| - install ocamlmod        0.0.9
+| - install result          1.3
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
+| - install topkg           0.9.1
+| - install yojson          1.4.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    openblas-devel
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180811010331.export"
+31 1533949347 1533949753
