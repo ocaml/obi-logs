@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_bitstring.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for ppx_bitstring.1.0.0: The following dependencies couldn't be met:
+          - ppx_bitstring -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_bitstring.1.0.0 returned 20
+20 1533961880 1533961883

@@ -1,0 +1,99 @@
+$ opam depext -iy -j 2 fstar.0.9.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0  [required by fstar]
+  - install num        1.1     [required by fstar]
+  - install batteries  2.8.0   [required by fstar]
+  - install fstar      0.9.2.0
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[fstar.0.9.2.0] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed batteries.2.8.0
+[ERROR] The compilation of fstar failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output".
+
+#=== ERROR while compiling fstar.0.9.2.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/fstar.0.9.2.0
+# command              /usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output
+# exit-code            2
+# env-file             ~/.opam/log/fstar-13-320155.env
+# output-file          ~/.opam/log/fstar-13-320155.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.2.0/src/ocaml-output'
+# make prep
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.2.0/src/ocaml-output'
+# cat ../parser/parse.fsy | sed 's/^[/][/].*//g' | sed 's/^[#].*//g' | sed 's/^open .*//g' > parse.mly
+# ocamlyacc parse.mly
+# 13 rules never reduced
+# 6 shift/reduce conflicts.
+# rm -f FStar_Parser_Parse.ml
+# echo "open Prims" > FStar_Parser_Parse.ml
+# echo "open FStar_List" >> FStar_Parser_Parse.ml
+# echo "open FStar_Util" >> FStar_Parser_Parse.ml
+# echo "open FStar_Range" >> FStar_Parser_Parse.ml
+# echo "open FStar_Options" >> FStar_Parser_Parse.ml
+# echo "open FStar_Absyn_Syntax" >> FStar_Parser_Parse.ml
+# echo "open FStar_Absyn_Const" >> FStar_Parser_Parse.ml
+# echo "open FStar_Absyn_Util" >> FStar_Parser_Parse.ml
+# echo "open FStar_Parser_AST" >> FStar_Parser_Parse.ml
+# echo "open FStar_Parser_Util" >> FStar_Parser_Parse.ml
+# cat parse.ml >> FStar_Parser_Parse.ml
+# ocamllex ../parser/ml/lex.mll -o FStar_Parser_LexFStar.ml
+# 190 states, 5078 transitions, table size 21452 bytes
+# 2194 additional bytes used for bindings
+# cp ../parser/ml/parseit.ml FStar_Parser_ParseIt.ml
+# cp ../../lib/ml/native_int/prims.ml ../../lib/ml/FStar_ST.ml ../../lib/ml/FStar_All.ml ../../lib/ml/FStar_Option.ml ../../lib/ml/FStar_List.ml ../../lib/ml/FStar_Char.ml ../../lib/ml/FStar_String.ml ../basic/ml/FStar_Util.ml ../basic/ml/FStar_Bytes.ml ../basic/ml/FStar_Getopt.ml ../basic/ml/FStar_Range.ml ../basic/ml/FStar_Platform.ml ../basic/ml/FStar_Unionfind.ml ../parser/ml/FStar_Parser_Util.ml ../fstar/ml/main.ml .
+# ocamldep  *.ml > .depend
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.2.0/src/ocaml-output'
+# make fstar.exe
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.2.0/src/ocaml-output'
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c prims.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_ST.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_All.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_Option.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_List.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_Char.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_String.ml
+# File "FStar_String.ml", line 16, characters 16-32:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_Util.ml
+# ocamlfind ocamlopt -thread -package batteries -linkpkg -g  -w -8  -c FStar_Bytes.ml
+# File "FStar_Bytes.ml", line 19, characters 18-22:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Makefile:100: recipe for target 'FStar_Bytes.cmx' failed
+# make[1]: *** [FStar_Bytes.cmx] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.2.0/src/ocaml-output'
+# Makefile:40: recipe for target 'all' failed
+# make: *** [all] Error 2
+# make: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.2.0/src/ocaml-output'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build fstar 0.9.2.0
++- 
++- The following changes have been performed
+| - install batteries  2.8.0
+| - install num        1.1
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180811042218.export"
+31 1533961335 1533961382
