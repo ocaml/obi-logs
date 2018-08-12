@@ -127,8 +127,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.07/.opam-switch/build/0install.2.12.3
 # command              /usr/bin/make all
 # exit-code            2
-# env-file             ~/.opam/log/0install-10-371737.env
-# output-file          ~/.opam/log/0install-10-371737.out
+# env-file             ~/.opam/log/0install-11-371737.env
+# output-file          ~/.opam/log/0install-11-371737.out
 ### output ###
 # [ -d "/home/opam/.opam/4.07/.opam-switch/build/0install.2.12.3/build" ] || mkdir "/home/opam/.opam/4.07/.opam-switch/build/0install.2.12.3/build"
 # [ -d "/home/opam/.opam/4.07/.opam-switch/build/0install.2.12.3/dist" ] || mkdir "/home/opam/.opam/4.07/.opam-switch/build/0install.2.12.3/dist"
@@ -206,6 +206,9 @@ The following actions will be performed:
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/urlparse.cmo support/urlparse.ml
 # File "support/urlparse.ml", line 5, characters 0-11:
 # Warning 44: this open statement shadows the module identifier String (which is later used)
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/gpg.cmo support/gpg.ml
+# File "support/gpg.ml", line 5, characters 0-11:
+# Warning 44: this open statement shadows the module identifier String (which is later used)
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/locale.cmo support/locale.ml
 # File "support/locale.ml", line 5, characters 0-11:
 # Warning 44: this open statement shadows the module identifier String (which is later used)
@@ -214,9 +217,6 @@ The following actions will be performed:
 # Warning 44: this open statement shadows the module identifier String (which is later used)
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/qdom.cmo support/qdom.ml
 # File "support/qdom.ml", line 5, characters 0-11:
-# Warning 44: this open statement shadows the module identifier String (which is later used)
-# + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/gpg.cmo support/gpg.ml
-# File "support/gpg.ml", line 5, characters 0-11:
 # Warning 44: this open statement shadows the module identifier String (which is later used)
 # + ocamlfind ocamlc -c -g -bin-annot -safe-string -thread -strict-sequence -package sha -for-pack Support -w A-4-48-58 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt_react,lwt.preemptive,curl.lwt,dynlink -I support -o support/system.cmo support/system.ml
 # File "support/system.ml", line 5, characters 0-11:
@@ -398,5 +398,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180812033813.export"
-31 1534045078 1534045169
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180812205104.export"
+31 1534107053 1534107125
