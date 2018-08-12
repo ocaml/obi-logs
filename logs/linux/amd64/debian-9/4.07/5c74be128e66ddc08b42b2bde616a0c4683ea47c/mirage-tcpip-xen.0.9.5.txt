@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mirage-tcpip-xen.0.9.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-tcpip-xen.0.9.5: The following dependencies couldn't be met:
+          - mirage-tcpip-xen -> mirage-xen = 0.9.9 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-tcpip-xen.0.9.5 returned 20
+20 1534044741 1534044744

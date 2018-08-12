@@ -1,0 +1,274 @@
+$ opam depext -iy -j 2 ocamlformat.0.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by cmdliner, ocaml-migrate-parsetree]
+  - install ocamlformat_support     0.4     [required by ocamlformat]
+  - install sexplib0                v0.11.0 [required by base]
+  - install ocamlbuild              0.12.0  [required by cmdliner]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ocamlformat]
+  - install base                    v0.11.1 [required by ocamlformat]
+  - install topkg                   0.9.1   [required by cmdliner]
+  - install stdio                   v0.11.0 [required by ocamlformat]
+  - install cmdliner                1.0.2   [required by ocamlformat]
+  - install ocamlformat             0.5
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[cmdliner.1.0.2] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlformat.0.5] found in cache
+[ocamlformat_support.0.4] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlformat_support.0.4
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib0.v0.11.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+[ERROR] The compilation of ocamlformat failed at "/home/opam/.opam/4.07/bin/jbuilder build -p ocamlformat -j 71".
+
+#=== ERROR while compiling ocamlformat.0.5 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/ocamlformat.0.5
+# command              ~/.opam/4.07/bin/jbuilder build -p ocamlformat -j 71
+# exit-code            1
+# env-file             ~/.opam/log/ocamlformat-11-3ef480.env
+# output-file          ~/.opam/log/ocamlformat-11-3ef480.out
+### output ###
+#       ocamlc src/import/.import.objs/Import.{cmi,cmti} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -strict-formats -strict-sequence -principal -w +a-3-4-6-9-40-41-42-44-45-48@50 -short-paths -bin-annot -keep-docs -unboxed-types -noassert -bin-annot -I src/import/.import.objs -I /home/opam/.opam/4.07/lib/base -I /home/opam/.opam/4.07/lib/base/caml -I /home/opam/.opam/4.07/lib/base/shadow_stdlib -I /home/opam/.opam/4.07/lib/sexplib0 -I /home/opam/.opam/4.07/lib/stdio -no-alias-deps -o src/import/.import.objs/Import.cmi -c -intf src/import/Import.mli)
+# File "src/import/Import.mli", line 16, characters 4-137:
+# Error: In this `with' constraint, the new definition of Format
+#        does not match its original definition in the constrained signature:
+#        Modules do not match:
+#          sig
+#            type formatter = Format.formatter
+#            val pp_open_box : formatter -> int -> unit
+#            val open_box : int -> unit
+#            val pp_close_box : formatter -> unit -> unit
+#            val close_box : unit -> unit
+#            val pp_open_hbox : formatter -> unit -> unit
+#            val open_hbox : unit -> unit
+#            val pp_open_vbox : formatter -> int -> unit
+#            val open_vbox : int -> unit
+#            val pp_open_hvbox : formatter -> int -> unit
+#            val open_hvbox : int -> unit
+#            val pp_open_hovbox : formatter -> int -> unit
+#            val open_hovbox : int -> unit
+#            val pp_print_string : formatter -> string -> unit
+#            val print_string : string -> unit
+#            val pp_print_as : formatter -> int -> string -> unit
+#            val print_as : int -> string -> unit
+#            val pp_print_int : formatter -> int -> unit
+#            val print_int : int -> unit
+#            val pp_print_float : formatter -> float -> unit
+#            val print_float : float -> unit
+#            val pp_print_char : formatter -> char -> unit
+#            val print_char : char -> unit
+#            val pp_print_bool : formatter -> bool -> unit
+#            val print_bool : bool -> unit
+#            val pp_print_space : formatter -> unit -> unit
+#            val print_space : unit -> unit
+#            val pp_print_cut : formatter -> unit -> unit
+#            val print_cut : unit -> unit
+#            val pp_print_break : formatter -> int -> int -> unit
+#            val print_break : int -> int -> unit
+#            val pp_force_newline : formatter -> unit -> unit
+#            val force_newline : unit -> unit
+#            val pp_print_if_newline : formatter -> unit -> unit
+#            val print_if_newline : unit -> unit
+#            val pp_print_flush : formatter -> unit -> unit
+#            val print_flush : unit -> unit
+#            val pp_print_newline : formatter -> unit -> unit
+#            val print_newline : unit -> unit
+#            val pp_set_margin : formatter -> int -> unit
+#            val set_margin : int -> unit
+#            val pp_get_margin : formatter -> unit -> int
+#            val get_margin : unit -> int
+#            val pp_set_max_indent : formatter -> int -> unit
+#            val set_max_indent : int -> unit
+#            val pp_get_max_indent : formatter -> unit -> int
+#            val get_max_indent : unit -> int
+#            val pp_set_max_boxes : formatter -> int -> unit
+#            val set_max_boxes : int -> unit
+#            val pp_get_max_boxes : formatter -> unit -> int
+#            val get_max_boxes : unit -> int
+#            val pp_over_max_boxes : formatter -> unit -> bool
+#            val over_max_boxes : unit -> bool
+#            val pp_open_tbox : formatter -> unit -> unit
+#            val open_tbox : unit -> unit
+#            val pp_close_tbox : formatter -> unit -> unit
+#            val close_tbox : unit -> unit
+#            val pp_set_tab : formatter -> unit -> unit
+#            val set_tab : unit -> unit
+#            val pp_print_tab : formatter -> unit -> unit
+#            val print_tab : unit -> unit
+#            val pp_print_tbreak : formatter -> int -> int -> unit
+#            val print_tbreak : int -> int -> unit
+#            val pp_set_ellipsis_text : formatter -> string -> unit
+#            val set_ellipsis_text : string -> unit
+#            val pp_get_ellipsis_text : formatter -> unit -> string
+#            val get_ellipsis_text : unit -> string
+#            type tag = string
+#            val pp_open_tag : formatter -> tag -> unit
+#            val open_tag : tag -> unit
+#            val pp_close_tag : formatter -> unit -> unit
+#            val close_tag : unit -> unit
+#            val pp_set_tags : formatter -> bool -> unit
+#            val set_tags : bool -> unit
+#            val pp_set_print_tags : formatter -> bool -> unit
+#            val set_print_tags : bool -> unit
+#            val pp_set_mark_tags : formatter -> bool -> unit
+#            val set_mark_tags : bool -> unit
+#            val pp_get_print_tags : formatter -> unit -> bool
+#            val get_print_tags : unit -> bool
+#            val pp_get_mark_tags : formatter -> unit -> bool
+#            val get_mark_tags : unit -> bool
+#            val pp_set_formatter_out_channel :
+#              formatter -> out_channel -> unit
+#            val set_formatter_out_channel : out_channel -> unit
+#            val pp_set_formatter_output_functions :
+#              formatter ->
+#              (tag -> int -> int -> unit) -> (unit -> unit) -> unit
+#            val set_formatter_output_functions :
+#              (tag -> int -> int -> unit) -> (unit -> unit) -> unit
+#            val pp_get_formatter_output_functions :
+#              formatter ->
+#              unit -> (tag -> int -> int -> unit) * (unit -> unit)
+#            val get_formatter_output_functions :
+#              unit -> (tag -> int -> int -> unit) * (unit -> unit)
+#            type formatter_out_functions =
+#              Format.formatter_out_functions = {
+#              out_string : tag -> int -> int -> unit;
+#              out_flush : unit -> unit;
+#              out_newline : unit -> unit;
+#              out_spaces : int -> unit;
+#              out_indent : int -> unit;
+#            }
+#            val pp_set_formatter_out_functions :
+#              formatter -> formatter_out_functions -> unit
+#            val set_formatter_out_functions : formatter_out_functions -> unit
+#            val pp_get_formatter_out_functions :
+#              formatter -> unit -> formatter_out_functions
+#            val get_formatter_out_functions : unit -> formatter_out_functions
+#            type formatter_tag_functions =
+#              Format.formatter_tag_functions = {
+#              mark_open_tag : tag -> tag;
+#              mark_close_tag : tag -> tag;
+#              print_open_tag : tag -> unit;
+#              print_close_tag : tag -> unit;
+#            }
+#            val pp_set_formatter_tag_functions :
+#              formatter -> formatter_tag_functions -> unit
+#            val set_formatter_tag_functions : formatter_tag_functions -> unit
+#            val pp_get_formatter_tag_functions :
+#              formatter -> unit -> formatter_tag_functions
+#            val get_formatter_tag_functions : unit -> formatter_tag_functions
+#            val formatter_of_out_channel : out_channel -> formatter
+#            val std_formatter : formatter
+#            val err_formatter : formatter
+#            val formatter_of_buffer : Buffer.t -> formatter
+#            val stdbuf : Buffer.t
+#            val str_formatter : formatter
+#            val flush_str_formatter : unit -> tag
+#            val make_formatter :
+#              (tag -> int -> int -> unit) -> (unit -> unit) -> formatter
+#            val formatter_of_out_functions :
+#              formatter_out_functions -> formatter
+#            type symbolic_output_item =
+#              Format.symbolic_output_item =
+#                Output_flush
+#              | Output_newline
+#              | Output_string of tag
+#              | Output_spaces of int
+#              | Output_indent of int
+#            type symbolic_output_buffer = Format.symbolic_output_buffer
+#            val make_symbolic_output_buffer : unit -> symbolic_output_buffer
+#            val clear_symbolic_output_buffer : symbolic_output_buffer -> unit
+#            val get_symbolic_output_buffer :
+#              symbolic_output_buffer -> symbolic_output_item list
+#            val flush_symbolic_output_buffer :
+#              symbolic_output_buffer -> symbolic_output_item list
+#            val add_symbolic_output_item :
+#              symbolic_output_buffer -> symbolic_output_item -> unit
+#            val formatter_of_symbolic_output_buffer :
+#              symbolic_output_buffer -> formatter
+#            val pp_print_list :
+#              ?pp_sep:(formatter -> unit -> unit) ->
+#              (formatter -> 'a -> unit) -> formatter -> 'a list -> unit
+#            val pp_print_text : formatter -> tag -> unit
+#            val fprintf : formatter -> ('a, formatter, unit) format -> 'a
+#            val printf : ('a, formatter, unit) format -> 'a
+#            val eprintf : ('a, formatter, unit) format -> 'a
+#            val sprintf : ('a, unit, tag) format -> 'a
+#            val asprintf : ('a, formatter, unit, tag) format4 -> 'a
+#            val ifprintf : formatter -> ('a, formatter, unit) format -> 'a
+#            val kfprintf :
+#              (formatter -> 'a) ->
+#              formatter -> ('b, formatter, unit, 'a) format4 -> 'b
+#            val ikfprintf :
+#              (formatter -> 'a) ->
+#              formatter -> ('b, formatter, unit, 'a) format4 -> 'b
+#            val ksprintf : (tag -> 'a) -> ('b, unit, tag, 'a) format4 -> 'b
+#            val kasprintf :
+#              (tag -> 'a) -> ('b, formatter, unit, 'a) format4 -> 'b
+#            val bprintf : Buffer.t -> ('a, formatter, unit) format -> 'a
+#            val kprintf : (tag -> 'a) -> ('b, unit, tag, 'a) format4 -> 'b
+#            val set_all_formatter_output_functions :
+#              out:(tag -> int -> int -> unit) ->
+#              flush:(unit -> unit) ->
+#              newline:(unit -> unit) -> spaces:(int -> unit) -> unit
+#            val get_all_formatter_output_functions :
+#              unit ->
+#              (tag -> int -> int -> unit) * (unit -> unit) * (unit -> unit) *
+#              (int -> unit)
+#            val pp_set_all_formatter_output_functions :
+#              formatter ->
+#              out:(tag -> int -> int -> unit) ->
+#              flush:(unit -> unit) ->
+#              newline:(unit -> unit) -> spaces:(int -> unit) -> unit
+#            val pp_get_all_formatter_output_functions :
+#              formatter ->
+#              unit ->
+#              (tag -> int -> int -> unit) * (unit -> unit) * (unit -> unit) *
+#              (int -> unit)
+#          end
+#        is not included in
+#          (module Format)
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlformat 0.5
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install cmdliner                1.0.2
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlformat_support     0.4
+| - install result                  1.3
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180812035233.export"
+31 1534045951 1534045970

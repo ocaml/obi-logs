@@ -1,0 +1,265 @@
+$ opam depext -iy -j 2 orakuda.1.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libpcre3-dev
+m4
+pkg-config
+# The following new OS packages need to be installed: libpcre3-dev pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libpcre3-dev pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0v5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-libpcrecpp0v5_2%3a8.39-3_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-3) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../02-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../04-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../05-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../06-libpcre16-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../07-libpcre32-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../08-libpcre3-dev_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-3) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-3) ...
+Setting up libpcre32-3:amd64 (2:8.39-3) ...
+Setting up libpcre16-3:amd64 (2:8.39-3) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libpcre3-dev:amd64 (2:8.39-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0                v0.11.0 [required by base]
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install omake                   0.10.3  [required by orakuda]
+  - install base-bytes              base    [required by pcre]
+  - install ocamlbuild              0.12.0  [required by camlp4]
+  - install conf-pkg-config         1.1     [required by conf-libpcre]
+  - install seq                     base    [required by re]
+  - install base                    v0.11.1 [required by pcre]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppxx]
+  - install camlp4                  4.07+1  [required by orakuda]
+  - install conf-libpcre            1       [required by pcre]
+  - install re                      1.8.0   [required by ppx_test]
+  - install stdio                   v0.11.0 [required by pcre]
+  - install ppx_tools_versioned     5.2     [required by ppxx]
+  - install configurator            v0.11.0 [required by pcre]
+  - install ppxx                    2.3.2   [required by ppx_test]
+  - install pcre                    7.3.4   [required by orakuda]
+  - install ppx_test                1.6.0   [required by spotlib]
+  - install spotlib                 4.0.3   [required by orakuda]
+  - install orakuda                 1.1.1
+===== 20 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlp4.4.07+1] found in cache
+[configurator.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[omake.0.10.3] found in cache
+[orakuda.1.1.1] found in cache
+[pcre.7.3.4] found in cache
+[ppx_test.1.6.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxx.2.3.2] found in cache
+[re.1.8.0] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[spotlib.4.0.3] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed ocamlbuild.0.12.0
+-> installed omake.0.10.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed ppxx.2.3.2
+-> installed seq.base
+-> installed re.1.8.0
+-> installed ppx_test.1.6.0
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed spotlib.4.0.3
+-> installed stdio.v0.11.0
+-> installed camlp4.4.07+1
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+[ERROR] The compilation of orakuda failed at "/home/opam/.opam/4.07/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling orakuda.1.1.1 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/orakuda.1.1.1
+# command              ~/.opam/4.07/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/orakuda-11-46a875.env
+# output-file          ~/.opam/log/orakuda-11-46a875.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: Stdlib.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: Stdlib.String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# *** omake: reading OMakefiles
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.07/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.07/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.07/bin/ocamlopt.opt)
+# --- Checking for ocamldep.opt... (found /home/opam/.opam/4.07/bin/ocamldep.opt)
+# --- Checking for ocamllex.opt... (found /home/opam/.opam/4.07/bin/ocamllex.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# --- Checking whether ocamlopt can create cmxs plugins... (yes)
+# File OMyMakefile: line 44, characters 2-21:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 229, characters 3-26:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 781, characters 6-34:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# *** omake: finished reading OMakefiles (0.18 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - build . regexp.cmi
+# + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c regexp.mli
+# File "regexp.mli", line 117, characters 57-122:
+# Warning 50: ambiguous documentation comment
+# - build . cformat.cmx
+# + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
+# File "cformat.ml", line 58, characters 6-728:
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val contents : elem list ref -> bytes
+#        is not included in
+#          val contents : t -> string
+#        File "cformat.ml", line 55, characters 2-28: Expected declaration
+#        File "cformat.ml", line 73, characters 6-14: Actual declaration
+# - build . cformat.cmo
+# + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c cformat.ml
+# File "cformat.ml", line 58, characters 6-728:
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val contents : elem list ref -> bytes
+#        is not included in
+#          val contents : t -> string
+#        File "cformat.ml", line 55, characters 2-28: Expected declaration
+#        File "cformat.ml", line 73, characters 6-14: Actual declaration
+# - build pa pa_hash.o
+# + ocamlfind ocamlopt -annot -bin-annot -package pcre,camlp4 -g -w A-3-4-9-40-42-44-45-48 -warn-error a -pp camlp4of -I . -c pa_hash.ml
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
+# *** omake: 72/125 targets are up to date
+# *** omake: failed (1.07 sec, 20/20 scans, 15/15 rules, 44/81 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    cformat.cmo
+#       depends on: cformat.ml
+#    cformat.cmx
+#       depends on: cformat.ml
+#    cformat.o
+#       depends on: cformat.ml
+# E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/opam/.opam/4.07\"' terminated with error code 2")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build orakuda 1.1.1
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install camlp4                  4.07+1
+| - install conf-libpcre            1
+| - install conf-pkg-config         1.1
+| - install configurator            v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install omake                   0.10.3
+| - install pcre                    7.3.4
+| - install ppx_test                1.6.0
+| - install ppx_tools_versioned     5.2
+| - install ppxx                    2.3.2
+| - install re                      1.8.0
+| - install result                  1.3
+| - install seq                     base
+| - install sexplib0                v0.11.0
+| - install spotlib                 4.0.3
+| - install stdio                   v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180812034826.export"
+31 1534045697 1534045822
