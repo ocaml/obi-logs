@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 prof_spacetime.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for prof_spacetime.0.1.0: The following dependencies couldn't be met:
+          - prof_spacetime -> spacetime_lib < 0.2 -> raw_spacetime -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=prof_spacetime.0.1.0 returned 20
+20 1534037280 1534037282

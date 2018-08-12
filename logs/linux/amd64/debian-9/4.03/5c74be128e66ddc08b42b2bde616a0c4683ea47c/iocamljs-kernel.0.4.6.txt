@@ -1,0 +1,183 @@
+$ opam depext -iy -j 2 iocamljs-kernel.0.4.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install easy-format             1.3.1      [required by yojson]
+  - install result                  1.3        [required by cmdliner, lwt]
+  - install conf-which              1          [required by camlp4]
+  - install base-bytes              base       [required by base64, cppo]
+  - install ocamlbuild              0.12.0     [required by js_of_ocaml, optcomp]
+  - install ppx_tools               5.0+4.03.0 [required by js_of_ocaml]
+  - install ocaml-migrate-parsetree 1.0.11     [required by lwt]
+  - install biniou                  1.2.0      [required by yojson]
+  - install cppo                    1.6.4      [required by js_of_ocaml]
+  - install base64                  2.2.0      [required by js_of_ocaml]
+  - install uchar                   0.0.2      [required by js_of_ocaml]
+  - install topkg                   0.9.1      [required by cmdliner]
+  - install menhir                  20180703   [required by js_of_ocaml]
+  - install camlp4                  4.03+1     [required by js_of_ocaml, optcomp]
+  - install ppx_tools_versioned     5.2        [required by lwt]
+  - install yojson                  1.4.1      [required by js_of_ocaml]
+  - install cmdliner                1.0.2      [required by js_of_ocaml]
+  - install optcomp                 1.6        [required by iocamljs-kernel]
+  - install lwt                     3.3.0      [required by iocamljs-kernel]      For the PPX, please install package lwt_ppx
+                                                                                  For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                  For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install js_of_ocaml             2.8.4      [required by iocamljs-kernel]
+  - install iocamljs-kernel         0.4.6
+===== 21 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base64.2.2.0] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.03+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[iocamljs-kernel.0.4.6] found in cache
+[js_of_ocaml.2.8.4] found in cache
+[lwt.3.3.0] found in cache
+[menhir.20180703] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[optcomp.1.6] found in cache
+[ppx_tools.5.0+4.03.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed menhir.20180703
+-> installed ppx_tools.5.0+4.03.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed yojson.1.4.1
+-> installed camlp4.4.03+1
+-> installed lwt.3.3.0
+-> installed optcomp.1.6
+-> installed js_of_ocaml.2.8.4
+[ERROR] The compilation of iocamljs-kernel failed at "/usr/bin/make clean min".
+
+#=== ERROR while compiling iocamljs-kernel.0.4.6 ==============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/iocamljs-kernel.0.4.6
+# command              /usr/bin/make clean min
+# exit-code            2
+# env-file             ~/.opam/log/iocamljs-kernel-11-b446b1.env
+# output-file          ~/.opam/log/iocamljs-kernel-11-b446b1.out
+### output ###
+# rm -f *.cmis.js
+# rm -f *.cm[ioa] iocaml_full.byte iocaml.byte iocaml.js 
+# rm -fr *~
+# ocamlfind ocamlc -c exec.mli
+# ocamlfind ocamlc -c \
+# 	-syntax camlp4o -package js_of_ocaml.syntax,optcomp \
+# 	-package str,dynlink,js_of_ocaml,js_of_ocaml.compiler,js_of_ocaml.toplevel \
+# 	-I /home/opam/.opam/4.03/lib/ocaml/compiler-libs \
+# 	exec.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.03/lib/ocaml/compiler-libs, /home/opam/.opam/4.03/lib/ocaml
+# ocamlfind ocamlc -c iocaml.mli
+# ocamlfind ocamlc -c \
+# 	-syntax camlp4o -package js_of_ocaml.syntax \
+# 	-package str,dynlink,js_of_ocaml,js_of_ocaml.compiler,js_of_ocaml.toplevel \
+# 	-I /home/opam/.opam/4.03/lib/ocaml/compiler-libs \
+# 	iocaml.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.03/lib/ocaml/compiler-libs, /home/opam/.opam/4.03/lib/ocaml
+# File "iocaml.ml", line 137, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 138, characters 46-64:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 139, characters 46-64:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 158, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 159, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 160, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 161, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 164, characters 8-41:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "iocaml.ml", line 220, characters 18-31:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "iocaml.ml", line 222, characters 12-19:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# ocamlfind ocamlc -c iocaml_main.ml
+# ocamlfind ocamlc -a -o iocamljs.cma exec.cmo iocaml.cmo iocaml_main.cmo
+# jsoo_mktop \
+# 	-verbose \
+# 	-dont-export-unit gc \
+# 	-export-unit iocaml \
+# 	iocamljs.cma \
+# 	-jsopt +weak.js -jsopt +toplevel.js \
+# 	-jsopt -I -jsopt ./ \
+# 	-o iocaml.byte
+# + jsoo_mkcmis stdlib
+# + jsoo_mkcmis -o exported-unit.cmis.js iocaml /home/opam/.opam/4.03/lib/ocaml/compiler-libs/outcometree.cmi /home/opam/.opam/4.03/lib/ocaml/compiler-libs/topdirs.cmi /home/opam/.opam/4.03/lib/ocaml/compiler-libs/toploop.cmi
+# Error for package iocaml
+# Fatal error: exception Fl_package_base.No_such_package("iocaml", "")
+# Fatal error: exception Failure("Error: jsoo_mkcmis -o exported-unit.cmis.js iocaml /home/opam/.opam/4.03/lib/ocaml/compiler-libs/outcometree.cmi /home/opam/.opam/4.03/lib/ocaml/compiler-libs/topdirs.cmi /home/opam/.opam/4.03/lib/ocaml/compiler-libs/toploop.cmi")
+# Makefile:44: recipe for target 'min' failed
+# make: *** [min] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build iocamljs-kernel 0.4.6
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install base64                  2.2.0
+| - install biniou                  1.2.0
+| - install camlp4                  4.03+1
+| - install cmdliner                1.0.2
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install easy-format             1.3.1
+| - install js_of_ocaml             2.8.4
+| - install lwt                     3.3.0
+| - install menhir                  20180703
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install optcomp                 1.6
+| - install ppx_tools               5.0+4.03.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180812020218.export"
+31 1534039336 1534039493
