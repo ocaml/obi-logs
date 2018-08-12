@@ -167,8 +167,8 @@ The following actions will be performed:
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
 -> installed fmt.0.8.5
--> installed mirage-device.1.1.0
 -> installed logs.0.6.2
+-> installed mirage-device.1.1.0
 -> installed mirage-clock.1.3.0
 -> installed mirage-flow.1.5.0
 -> installed mirage-channel.3.1.0
@@ -184,22 +184,22 @@ The following actions will be performed:
 -> installed uri.1.9.7
 -> installed dns.1.0.1
 -> installed dns-forward.0.10.0
-[ERROR] The compilation of dns-forward-lwt-unix failed at "/home/opam/.opam/4.05/bin/jbuilder build -p dns-forward-lwt-unix -j 47".
+[ERROR] The compilation of dns-forward-lwt-unix failed at "/home/opam/.opam/4.05/bin/jbuilder build -p dns-forward-lwt-unix -j 71".
 
 #=== ERROR while compiling dns-forward-lwt-unix.0.9.0 =========================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.05/.opam-switch/build/dns-forward-lwt-unix.0.9.0
-# command              ~/.opam/4.05/bin/jbuilder build -p dns-forward-lwt-unix -j 47
+# command              ~/.opam/4.05/bin/jbuilder build -p dns-forward-lwt-unix -j 71
 # exit-code            1
 # env-file             ~/.opam/log/dns-forward-lwt-unix-11-bff2e7.env
 # output-file          ~/.opam/log/dns-forward-lwt-unix-11-bff2e7.out
 ### output ###
-#     ocamlopt lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.05/bin/ocamlopt.opt -w -40 -g -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.05/lib/astring -I /home/opam/.opam/4.05/lib/base64 -I /home/opam/.opam/4.05/lib/bytes -I /home/opam/.opam/4.05/lib/cstruct -I /home/opam/.opam/4.05/lib/cstruct-lwt -I /home/opam/.opam/4.05/lib/dns -I /home/opam/.opam/4.05/lib/dns-forward -I /home/opam/.opam/4.05/lib/duration -I /home/opam/.opam/4.05/lib/fmt -I /home/opam/.opam/4.05/lib/hashcons -I /home/opam/.opam/4.05/lib/io-page -I /home/opam/.opam/4.05/lib/io-page-unix -I /home/opam/.opam/4.05/lib/ipaddr -I /home/opam/.opam/4.05/lib/logs -I /home/opam/.opam/4.05/lib/lwt -I /home/opam/.opam/4.05/lib/lwt/unix -I /home/opam/.opam/4.05/lib/mirage-channel -I /home/opam/.opam/4.05/lib/mirage-channel-lwt -I /home/opam/.opam/4.05/lib/mirage-clock -I /home/opam/.opam/4.05/lib/mirage-clock-lwt -I /home/opam/.opam/4.05/lib/mirage-clock-unix -I /home/opam/.opam/4.05/lib/mirage-device -I /home/opam/.opam/4.05/lib/mirage-flow -I /home/opam/.opam/4.05/lib/mirage-flow-lwt -I /home/opam/.opam/4.05/lib/mirage-time -I /home/opam/.opam/4.05/lib/mirage-time-lwt -I /home/opam/.opam/4.05/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.05/lib/ocaml/compiler-libs -I /home/opam/.opam/4.05/lib/ocaml/threads -I /home/opam/.opam/4.05/lib/parsexp -I /home/opam/.opam/4.05/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.05/lib/ppx_tools_versioned -I /home/opam/.opam/4.05/lib/re -I /home/opam/.opam/4.05/lib/re/posix -I /home/opam/.opam/4.05/lib/re/str -I /home/opam/.opam/4.05/lib/result -I /home/opam/.opam/4.05/lib/rresult -I /home/opam/.opam/4.05/lib/sexplib -I /home/opam/.opam/4.05/lib/sexplib0 -I /home/opam/.opam/4.05/lib/stringext -I /home/opam/.opam/4.05/lib/uchar -I /home/opam/.opam/4.05/lib/uri -I /home/opam/.opam/4.05/lib/uri/services -intf-suffix .ml -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmx -c -impl lwt/dns_forward_lwt_unix.ml)
-# File "lwt/dns_forward_lwt_unix.ml", line 464, characters 22-37:
-# Error: Unbound module Rpc.Client.Make
 #       ocamlc lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.05/bin/ocamlc.opt -w -40 -g -bin-annot -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.05/lib/astring -I /home/opam/.opam/4.05/lib/base64 -I /home/opam/.opam/4.05/lib/bytes -I /home/opam/.opam/4.05/lib/cstruct -I /home/opam/.opam/4.05/lib/cstruct-lwt -I /home/opam/.opam/4.05/lib/dns -I /home/opam/.opam/4.05/lib/dns-forward -I /home/opam/.opam/4.05/lib/duration -I /home/opam/.opam/4.05/lib/fmt -I /home/opam/.opam/4.05/lib/hashcons -I /home/opam/.opam/4.05/lib/io-page -I /home/opam/.opam/4.05/lib/io-page-unix -I /home/opam/.opam/4.05/lib/ipaddr -I /home/opam/.opam/4.05/lib/logs -I /home/opam/.opam/4.05/lib/lwt -I /home/opam/.opam/4.05/lib/lwt/unix -I /home/opam/.opam/4.05/lib/mirage-channel -I /home/opam/.opam/4.05/lib/mirage-channel-lwt -I /home/opam/.opam/4.05/lib/mirage-clock -I /home/opam/.opam/4.05/lib/mirage-clock-lwt -I /home/opam/.opam/4.05/lib/mirage-clock-unix -I /home/opam/.opam/4.05/lib/mirage-device -I /home/opam/.opam/4.05/lib/mirage-flow -I /home/opam/.opam/4.05/lib/mirage-flow-lwt -I /home/opam/.opam/4.05/lib/mirage-time -I /home/opam/.opam/4.05/lib/mirage-time-lwt -I /home/opam/.opam/4.05/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.05/lib/ocaml/compiler-libs -I /home/opam/.opam/4.05/lib/ocaml/threads -I /home/opam/.opam/4.05/lib/parsexp -I /home/opam/.opam/4.05/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.05/lib/ppx_tools_versioned -I /home/opam/.opam/4.05/lib/re -I /home/opam/.opam/4.05/lib/re/posix -I /home/opam/.opam/4.05/lib/re/str -I /home/opam/.opam/4.05/lib/result -I /home/opam/.opam/4.05/lib/rresult -I /home/opam/.opam/4.05/lib/sexplib -I /home/opam/.opam/4.05/lib/sexplib0 -I /home/opam/.opam/4.05/lib/stringext -I /home/opam/.opam/4.05/lib/uchar -I /home/opam/.opam/4.05/lib/uri -I /home/opam/.opam/4.05/lib/uri/services -intf-suffix .ml -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmo -c -impl lwt/dns_forward_lwt_unix.ml)
+# File "lwt/dns_forward_lwt_unix.ml", line 464, characters 22-37:
+# Error: Unbound module Rpc.Client.Make
+#     ocamlopt lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.05/bin/ocamlopt.opt -w -40 -g -I lwt/.dns_forward_lwt_unix.objs -I /home/opam/.opam/4.05/lib/astring -I /home/opam/.opam/4.05/lib/base64 -I /home/opam/.opam/4.05/lib/bytes -I /home/opam/.opam/4.05/lib/cstruct -I /home/opam/.opam/4.05/lib/cstruct-lwt -I /home/opam/.opam/4.05/lib/dns -I /home/opam/.opam/4.05/lib/dns-forward -I /home/opam/.opam/4.05/lib/duration -I /home/opam/.opam/4.05/lib/fmt -I /home/opam/.opam/4.05/lib/hashcons -I /home/opam/.opam/4.05/lib/io-page -I /home/opam/.opam/4.05/lib/io-page-unix -I /home/opam/.opam/4.05/lib/ipaddr -I /home/opam/.opam/4.05/lib/logs -I /home/opam/.opam/4.05/lib/lwt -I /home/opam/.opam/4.05/lib/lwt/unix -I /home/opam/.opam/4.05/lib/mirage-channel -I /home/opam/.opam/4.05/lib/mirage-channel-lwt -I /home/opam/.opam/4.05/lib/mirage-clock -I /home/opam/.opam/4.05/lib/mirage-clock-lwt -I /home/opam/.opam/4.05/lib/mirage-clock-unix -I /home/opam/.opam/4.05/lib/mirage-device -I /home/opam/.opam/4.05/lib/mirage-flow -I /home/opam/.opam/4.05/lib/mirage-flow-lwt -I /home/opam/.opam/4.05/lib/mirage-time -I /home/opam/.opam/4.05/lib/mirage-time-lwt -I /home/opam/.opam/4.05/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.05/lib/ocaml/compiler-libs -I /home/opam/.opam/4.05/lib/ocaml/threads -I /home/opam/.opam/4.05/lib/parsexp -I /home/opam/.opam/4.05/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.05/lib/ppx_tools_versioned -I /home/opam/.opam/4.05/lib/re -I /home/opam/.opam/4.05/lib/re/posix -I /home/opam/.opam/4.05/lib/re/str -I /home/opam/.opam/4.05/lib/result -I /home/opam/.opam/4.05/lib/rresult -I /home/opam/.opam/4.05/lib/sexplib -I /home/opam/.opam/4.05/lib/sexplib0 -I /home/opam/.opam/4.05/lib/stringext -I /home/opam/.opam/4.05/lib/uchar -I /home/opam/.opam/4.05/lib/uri -I /home/opam/.opam/4.05/lib/uri/services -intf-suffix .ml -no-alias-deps -o lwt/.dns_forward_lwt_unix.objs/dns_forward_lwt_unix.cmx -c -impl lwt/dns_forward_lwt_unix.ml)
 # File "lwt/dns_forward_lwt_unix.ml", line 464, characters 22-37:
 # Error: Unbound module Rpc.Client.Make
 
@@ -266,5 +266,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180811233527.export"
-31 1534030522 1534030635
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180812222151.export"
+31 1534112505 1534112625

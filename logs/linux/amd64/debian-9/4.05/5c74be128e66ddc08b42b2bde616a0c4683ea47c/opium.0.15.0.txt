@@ -164,8 +164,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/opium.0.15.0
 # command              /usr/bin/make install
 # exit-code            2
-# env-file             ~/.opam/log/opium-12-382142.env
-# output-file          ~/.opam/log/opium-12-382142.out
+# env-file             ~/.opam/log/opium-11-382142.env
+# output-file          ~/.opam/log/opium-11-382142.out
 ### output ###
 # *** omake: reading OMakefiles
 # --- Checking for ocamlfind... (found /home/opam/.opam/4.05/bin/ocamlfind)
@@ -174,7 +174,7 @@ The following actions will be performed:
 # --- Checking for ocamldep.opt... (found /home/opam/.opam/4.05/bin/ocamldep.opt)
 # --- Checking for ocamllex.opt... (found /home/opam/.opam/4.05/bin/ocamllex.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.06 sec)
+# *** omake: finished reading OMakefiles (0.05 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build opium_kernel opium_hmap.cmi
 # + ocamlfind ocamlc.opt -package hmap,cohttp.lwt-core,ppx_deriving,ppx_fields_conv,ppx_sexp_conv,ezjsonm -g -bin-annot -thread -g -I . -c opium_hmap.mli
@@ -200,7 +200,7 @@ The following actions will be performed:
 # Abbreviations:
 #   e.g. ocamlfind opt instead of ocamlfind ocamlopt
 # *** omake: 55/108 targets are up to date
-# *** omake: failed (0.24 sec, 18/18 scans, 2/2 rules, 26/58 digests)
+# *** omake: failed (0.28 sec, 18/18 scans, 2/2 rules, 26/58 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    opium_kernel/opium_hmap.cmi
 #       depends on: opium_kernel/opium_hmap.mli
@@ -267,5 +267,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180811232618.export"
-31 1534029948 1534030150
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180812224309.export"
+31 1534113773 1534113969
