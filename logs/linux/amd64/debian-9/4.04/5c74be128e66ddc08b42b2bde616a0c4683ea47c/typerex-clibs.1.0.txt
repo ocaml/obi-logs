@@ -1,0 +1,290 @@
+$ opam depext -iy -j 2 typerex-clibs.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result        1.3          [required by cmdliner]
+  - install ocamlbuild    0.12.0       [required by cmdliner]
+  - install topkg         0.9.1        [required by cmdliner]
+  - install cmdliner      1.0.2        [required by ocp-build]
+  - install ocp-build     1.99.20-beta [required by typerex-clibs]
+  - install typerex-clibs 1.0
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cmdliner.1.0.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocp-build.1.99.20-beta] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[typerex-clibs.1.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed ocp-build.1.99.20-beta
+[ERROR] The compilation of typerex-clibs failed at "/usr/bin/make".
+
+#=== ERROR while compiling typerex-clibs.1.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/typerex-clibs.1.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/typerex-clibs-11-9efc19.env
+# output-file          ~/.opam/log/typerex-clibs-11-9efc19.out
+### output ###
+# ocp-build init
+# tput: unknown terminal "none"
+# tput: No value for $TERM and no -T specified
+# stty: 'standard input': Inappropriate ioctl for device
+# Warning: file "/home/opam/.opam/4.04/.opam-switch/build/typerex-clibs.1.0/_obuild/ocp-build.root" does not exist. Creating with default values.
+# ocp-build
+# tput: unknown terminal "none"
+# tput: No value for $TERM and no -T specified
+# stty: 'standard input': Inappropriate ioctl for device
+# Compiler: ocaml 4.04.2
+# ----- 36 env warnings -----
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4lib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4Bin".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-r".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-rp".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-op".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4QuotationCommon".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedQuotationExpander".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4GrammarParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4AutoPrinter".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pr-p".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "pa_macro".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4fulllib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4lib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4Bin".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-r".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-rp".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlParserParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pa-op".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4QuotationCommon".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4OCamlRevisedQuotationExpander".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4GrammarParser".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "Camlp4AutoPrinter".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4-pr-p".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "pa_macro".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4o".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# Warning: inexistent package directory:
+#   "/home/opam/.opam/4.04/lib/ocaml/camlp4"
+#   Disabling package "camlp4fulllib".
+#     (from "/home/opam/.opam/4.04/lib/ocaml/ocp-build/camlp4.ocp")
+# 0.02s _obuild/ocplib-bz2/bz2.mlimods                                   [ done ]
+# 0.02s _obuild/ocplib-bz2/bz2.mlmods                                    [ done ]
+# 0.02s _obuild/ocplib-zlib/zlib.mlimods                                 [ done ]
+# 0.02s _obuild/ocplib-zlib/zlib.mlmods                                  [ done ]
+# 0.02s _obuild/ocplib-zlib/gzip.mlimods                                 [ done ]
+# 0.02s _obuild/ocplib-zlib/gzip.mlmods                                  [ done ]
+# 0.02s _obuild/ocplib-zlib/zip.mlimods                                  [ done ]
+# 0.02s _obuild/ocplib-zlib/zip.mlmods                                   [ done ]
+# 0.02s _obuild/ocplib-digest/checksum.mlmods                            [ done ]
+# 0.02s _obuild/ocplib-digest/base16.mlimods                             [ done ]
+# 0.02s _obuild/ocplib-zlib/zlibstubs.o                                  [failed]
+# [52.1] Command failed: '/home/opam/.opam/4.04/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.04/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.04/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/zlibstubs.c'
+# -- stderr for ./_obuild/ocplib-zlib/zlibstubs.o --
+# ./libs/ocplib-zlib/zlibstubs.c:15:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# 0.02s _obuild/ocplib-digest/base16.mlmods                              [ done ]
+# 0.02s _obuild/ocplib-digest/base32.mlimods                             [ done ]
+# 0.02s _obuild/ocplib-digest/base32.mlmods                              [ done ]
+# 0.02s _obuild/ocplib-digest/base64.mlimods                             [ done ]
+# 0.02s _obuild/ocplib-digest/base64.mlmods                              [ done ]
+# 0.02s _obuild/ocplib-digest/base6427.mlimods                           [ done ]
+# 0.02s _obuild/ocplib-digest/base6427.mlmods                            [ done ]
+# 0.02s _obuild/ocplib-digest/makeDigest.mlmods                          [ done ]
+# 0.01s _obuild/ocplib-digest/md4.mlimods                                [ done ]
+# 0.01s _obuild/ocplib-digest/md4.mlmods                                 [ done ]
+# 0.01s _obuild/ocplib-digest/md5.mlimods                                [ done ]
+# 0.01s _obuild/ocplib-digest/md5.mlmods                                 [ done ]
+# 0.01s _obuild/ocplib-digest/sha1.mlimods                               [ done ]
+# 0.01s _obuild/ocplib-digest/sha1.mlmods                                [ done ]
+# 0.01s _obuild/ocplib-digest/md5HMac.mlmods                             [ done ]
+# 0.01s _obuild/ocplib-digest/sha1HMac.mlimods                           [ done ]
+# 0.01s _obuild/ocplib-digest/sha1HMac.mlmods                            [ done ]
+# 0.01s _obuild/ocplib-bz2/bz2.cmi                                       [ done ]
+# 0.01s _obuild/ocplib-digest/base16.cmi                                 [ done ]
+# 0.01s _obuild/ocplib-zlib/zlib.cmi                                     [ done ]
+# 0.01s _obuild/ocplib-zlib/zip.cmi                                      [ done ]
+# 0.01s _obuild/ocplib-zlib/gzip.cmi                                     [ done ]
+# 0.02s _obuild/ocplib-digest/checksum.cmo                               [ done ]
+# -- stderr for ./_obuild/ocplib-digest/checksum.cmo --
+# File "./libs/ocplib-digest/checksum.ml", line 39, characters 0-72:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# 0.05s _obuild/ocplib-bz2/c_bz.o                                        [failed]
+# [23.1] Command failed: '/home/opam/.opam/4.04/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.04/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.04/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/c_bz.c'
+# -- stderr for ./_obuild/ocplib-bz2/c_bz.o --
+# ./libs/ocplib-zlib/c_bz.c:27:19: fatal error: bzlib.h: No such file or directory
+#  #include <bzlib.h>
+#                    ^
+# compilation terminated.
+# 0.13s _obuild/ocplib-digest/sha1_c.o                                   [ done ]
+# 0.15s _obuild/ocplib-digest/md4_c.o                                    [ done ]
+# 0.24s _obuild/ocplib-digest/md5_c.o                                    [ done ]
+# 4 errors in 0.39s. 38 jobs (parallelism 2.8x), 39 files generated.
+# Error log:
+# Error:
+# [52.1] '/home/opam/.opam/4.04/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.04/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.04/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/zlibstubs.c'
+# 
+# ./libs/ocplib-zlib/zlibstubs.c:15:18: fatal error: zlib.h: No such file or directory
+#  #include <zlib.h>
+#                   ^
+# compilation terminated.
+# 
+# Error:
+# rule 52: target ./_obuild/ocplib-zlib/zlibstubs.o not built
+# Error:
+# [23.1] '/home/opam/.opam/4.04/bin/ocamlc.opt' '-I' './libs/ocplib-zlib' '-I' '/home/opam/.opam/4.04/lib/ocaml/ocplib-compat' '-I' '/home/opam/.opam/4.04/lib/ocaml' '-ccopt' '-I autoconf' '-ccopt' '' '-c' './libs/ocplib-zlib/c_bz.c'
+# 
+# ./libs/ocplib-zlib/c_bz.c:27:19: fatal error: bzlib.h: No such file or directory
+#  #include <bzlib.h>
+#                    ^
+# compilation terminated.
+# 
+# Error:
+# rule 23: target ./_obuild/ocplib-bz2/c_bz.o not built
+# autoconf/Makefile.rules:9: recipe for target 'ocp-build-build' failed
+# make: *** [ocp-build-build] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build typerex-clibs 1.0
++- 
++- The following changes have been performed
+| - install cmdliner   1.0.2
+| - install ocamlbuild 0.12.0
+| - install ocp-build  1.99.20-beta
+| - install result     1.3
+| - install topkg      0.9.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180811230947.export"
+31 1534028984 1534029020

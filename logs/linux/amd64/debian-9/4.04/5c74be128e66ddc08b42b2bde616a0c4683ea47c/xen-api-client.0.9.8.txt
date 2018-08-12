@@ -1,0 +1,589 @@
+$ opam depext -iy -j 2 xen-api-client.0.9.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libssl-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libssl-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../05-libssl-dev_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libssl-doc.
+Preparing to unpack .../06-libssl-doc_1.1.0f-3+deb9u2_all.deb ...
+Unpacking libssl-doc (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../07-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../08-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../09-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../10-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libssl-dev:amd64 (1.1.0f-3+deb9u2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libssl-doc (1.1.0f-3+deb9u2) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3          [required by xen-api-client]
+  - install ppx_tools               5.0            [required by ppx_bench, ppx_assert, ppx_expect]
+  - install result                  1.3            [required by conduit, cmdliner, rresult]
+  - install ocamlbuild              0.12.0         [required by xen-api-client]
+  - install magic-mime              1.1.0          [required by cohttp]
+  - install base-bytes              base           [required by cohttp, ounit]
+  - install conf-pkg-config         1.1            [required by conf-openssl]
+  - install easy-format             1.3.1          [required by yojson]
+  - install ppx_derivers            1.0            [required by ppx_deriving]
+  - install conf-which              1              [required by ssl, biniou]
+  - install ocaml-migrate-parsetree 1.0.11         [required by lwt]
+  - install variantslib             113.24.00      [required by async]
+  - install uchar                   0.0.2          [required by fmt, jsonm]
+  - install typerep                 113.24.00      [required by async]
+  - install topkg                   0.9.1          [required by cmdliner, rresult]
+  - install sexplib                 113.33.00+4.03 [required by cohttp, async, cstruct]
+  - install ppx_core                113.33.01+4.03 [required by ppx_bench, ppx_assert, ppx_expect]
+  - install ocamlmod                0.0.9          [required by oasis]
+  - install ocamlify                0.0.1          [required by oasis]
+  - install fieldslib               113.24.00      [required by async, cohttp]
+  - install camlp4                  4.04+1         [required by type_conv]
+  - install bin_prot                113.33.00+4.03 [required by async]
+  - install stringext               1.5.0          [required by cohttp]
+  - install ounit                   2.0.8          [required by xen-api-client]
+  - install omd                     1.3.1          [required by cow]
+  - install cppo                    1.6.4          [required by rpc]
+  - install base64                  2.2.0          [required by cohttp]
+  - install conf-openssl            1              [required by ssl]
+  - install biniou                  1.2.0          [required by yojson]
+  - install ppx_tools_versioned     5.2            [required by lwt]
+  - install xmlm                    1.3.0          [required by xen-api-client]
+  - install rresult                 0.5.0          [required by rpc]
+  - install cmdliner                1.0.2          [required by cohttp, rpc]
+  - install cstruct                 3.2.1          [required by xen-api-client]
+  - install ppx_optcomp             113.33.01+4.03 [required by conduit]
+  - install oasis                   0.4.11         [required by rpc]
+  - install type_conv               113.00.02      [required by rpc]
+  - install cppo_ocamlbuild         1.6.0          [required by ppx_deriving]
+  - install ssl                     0.5.5          [required by xen-api-client]
+  - install yojson                  1.4.1          [required by rpc]
+  - install lwt                     3.3.0          [required by xen-api-client]                    For the PPX, please install package lwt_ppx
+                                                                                                   For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                                   For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install uutf                    1.0.1          [required by jsonm]
+  - install fmt                     0.8.5          [required by cohttp]
+  - install hex                     1.2.0          [required by ezjsonm]
+  - install ppx_driver              113.33.02+4.03 [required by async]
+  - install ppx_deriving            4.2.1          [required by cohttp, rpc]
+  - install jsonm                   1.0.1          [required by ezjsonm]
+  - install logs                    0.6.2          [required by cohttp]
+  - install ppx_pipebang            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_let                 113.33.00+4.03 [required by ppx_jane]
+  - install ppx_inline_test         113.33.00+4.03 [required by async]
+  - install ppx_here                113.33.00      [required by ppx_assert, ppx_jane]
+  - install ppx_type_conv           113.33.02+4.03 [required by ppx_assert]
+  - install ezjsonm                 0.6.0          [required by cow]
+  - install ppx_bench               113.33.00+4.03 [required by async]
+  - install ppx_fail                113.33.00+4.03 [required by ppx_jane]
+  - install ppx_variants_conv       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_typerep_conv        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_conv           113.33.01+4.03 [required by cohttp]
+  - install ppx_fields_conv         113.33.00+4.03 [required by cohttp]
+  - install ppx_enumerate           113.33.00+4.03 [required by ppx_jane]
+  - install ppx_compare             113.33.00+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_bin_prot            113.33.00+4.03 [required by ppx_jane]
+  - install uri                     1.9.2          [required by xen-api-client]
+  - install ppx_sexp_value          113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_message        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_custom_printf       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ipaddr                  2.7.2          [required by conduit]
+  - install ppx_assert              113.33.00      [required by async]
+  - install cow                     2.3.0          [required by rpc]
+  - install ppx_expect              113.33.01+4.03 [required by async]
+  - install ppx_jane                113.33.00      [required by async]
+  - install core_kernel             113.33.02+4.03 [required by async_kernel, async_rpc_kernel]
+  - install core                    113.33.02+4.03 [required by async]
+  - install async_kernel            113.33.00      [required by async]
+  - install async_unix              113.33.00+4.03 [required by async]
+  - install async_rpc_kernel        113.33.00      [required by async_extra]
+  - install async_extra             113.33.00+4.03 [required by async]
+  - install async                   113.33.00      [required by xen-api-client]
+  - install rpc                     2.2.0          [required by xen-api-client]
+  - install conduit                 0.15.3         [required by cohttp]
+  - install cohttp                  0.22.0         [required by xen-api-client]
+  - install xen-api-client          0.9.8
+===== 83 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.113.33.00] found in cache
+[async_extra.113.33.00+4.03] found in cache
+[async_kernel.113.33.00] found in cache
+[async_rpc_kernel.113.33.00] found in cache
+[async_unix.113.33.00+4.03] found in cache
+[base64.2.2.0] found in cache
+[bin_prot.113.33.00+4.03] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.04+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cohttp.0.22.0] found in cache
+[conduit.0.15.3] found in cache
+[core.113.33.02+4.03] found in cache
+[core_kernel.113.33.02+4.03] found in cache
+[cow.2.3.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[easy-format.1.3.1] found in cache
+[ezjsonm.0.6.0] found in cache
+[fieldslib.113.24.00] found in cache
+[fmt.0.8.5] found in cache
+[hex.1.2.0] found in cache
+[ipaddr.2.7.2] found in cache
+[jsonm.1.0.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.3.3.0] found in cache
+[magic-mime.1.1.0] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[omd.1.3.1] found in cache
+[ounit.2.0.8] found in cache
+[ppx_assert.113.33.00] found in cache
+[ppx_bench.113.33.00+4.03] found in cache
+[ppx_bin_prot.113.33.00+4.03] found in cache
+[ppx_compare.113.33.00+4.03] found in cache
+[ppx_core.113.33.01+4.03] found in cache
+[ppx_custom_printf.113.33.00+4.03] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.113.33.02+4.03] found in cache
+[ppx_enumerate.113.33.00+4.03] found in cache
+[ppx_expect.113.33.01+4.03] found in cache
+[ppx_fail.113.33.00+4.03] found in cache
+[ppx_fields_conv.113.33.00+4.03] found in cache
+[ppx_here.113.33.00] found in cache
+[ppx_inline_test.113.33.00+4.03] found in cache
+[ppx_jane.113.33.00] found in cache
+[ppx_let.113.33.00+4.03] found in cache
+[ppx_optcomp.113.33.01+4.03] found in cache
+[ppx_pipebang.113.33.00+4.03] found in cache
+[ppx_sexp_conv.113.33.01+4.03] found in cache
+[ppx_sexp_message.113.33.00+4.03] found in cache
+[ppx_sexp_value.113.33.00+4.03] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppx_type_conv.113.33.02+4.03] found in cache
+[ppx_typerep_conv.113.33.00+4.03] found in cache
+[ppx_variants_conv.113.33.00+4.03] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rpc.2.2.0] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.113.33.00+4.03] found in cache
+[ssl.0.5.5] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[type_conv.113.00.02] found in cache
+[typerep.113.24.00] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.2] found in cache
+[uutf.1.0.1] found in cache
+[variantslib.113.24.00] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[xen-api-client.0.9.8] downloaded from https://github.com/xen-org/xen-api-client/archive/0.9.8.tar.gz
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed conf-pkg-config.1.1
+-> installed conf-openssl.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed magic-mime.1.1.0
+-> installed ocamlbuild.0.12.0
+-> installed bin_prot.113.33.00+4.03
+-> installed cppo_ocamlbuild.1.6.0
+-> installed fieldslib.113.24.00
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed omd.1.3.1
+-> installed ounit.2.0.8
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed camlp4.4.04+1
+-> installed ppx_core.113.33.01+4.03
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_optcomp.113.33.01+4.03
+-> installed ppx_deriving.4.2.1
+-> installed ppx_tools_versioned.5.2
+-> installed ppx_driver.113.33.02+4.03
+-> installed lwt.3.3.0
+-> installed ppx_here.113.33.00
+-> installed ppx_inline_test.113.33.00+4.03
+-> installed ppx_fail.113.33.00+4.03
+-> installed ppx_let.113.33.00+4.03
+-> installed ppx_pipebang.113.33.00+4.03
+-> installed ppx_type_conv.113.33.02+4.03
+-> installed ppx_bench.113.33.00+4.03
+-> installed ppx_bin_prot.113.33.00+4.03
+-> installed ppx_compare.113.33.00+4.03
+-> installed ppx_enumerate.113.33.00+4.03
+-> installed sexplib.113.33.00+4.03
+-> installed cstruct.3.2.1
+-> installed hex.1.2.0
+-> installed ppx_fields_conv.113.33.00+4.03
+-> installed ssl.0.5.5
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed ppx_sexp_conv.113.33.01+4.03
+-> installed ipaddr.2.7.2
+-> installed ppx_assert.113.33.00
+-> installed ppx_custom_printf.113.33.00+4.03
+-> installed ppx_sexp_message.113.33.00+4.03
+-> installed ppx_sexp_value.113.33.00+4.03
+-> installed rresult.0.5.0
+-> installed type_conv.113.00.02
+-> installed typerep.113.24.00
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
+-> installed ppx_typerep_conv.113.33.00+4.03
+-> installed uri.1.9.2
+-> installed logs.0.6.2
+-> installed uutf.1.0.1
+-> installed variantslib.113.24.00
+-> installed jsonm.1.0.1
+-> installed ezjsonm.0.6.0
+-> installed xmlm.1.3.0
+-> installed cow.2.3.0
+-> installed yojson.1.4.1
+-> installed ppx_variants_conv.113.33.00+4.03
+-> installed ppx_expect.113.33.01+4.03
+-> installed ppx_jane.113.33.00
+-> installed core_kernel.113.33.02+4.03
+-> installed async_kernel.113.33.00
+-> installed async_rpc_kernel.113.33.00
+-> installed core.113.33.02+4.03
+-> installed async_unix.113.33.00+4.03
+-> installed async_extra.113.33.00+4.03
+-> installed async.113.33.00
+-> installed conduit.0.15.3
+-> installed rpc.2.2.0
+-> installed cohttp.0.22.0
+[ERROR] The compilation of xen-api-client failed at "/usr/bin/make".
+
+#=== ERROR while compiling xen-api-client.0.9.8 ===============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/xen-api-client.0.9.8
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/xen-api-client-11-f80bc3.env
+# output-file          ~/.opam/log/xen-api-client-11-f80bc3.out
+### output ###
+# ocamlopt.opt -o setup.bin setup.ml || ocamlopt -o setup.bin setup.ml || ocamlc -o setup.bin setup.ml
+# File "setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# rm -f setup.cmx setup.cmi setup.o setup.cmo
+# ./setup.bin -configure  --enable-tests --enable-async # 
+# 
+# Configuration: 
+# ocamlfind: ........................................... /home/opam/.opam/4.04/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.04/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.04/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.04/bin/ocamlbuild
+# Package name: ........................................ xen-api-client
+# Package version: ..................................... 0.9.8
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.04.2
+# standard_library_default: ............................ /home/opam/.opam/4.04/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.04/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.04/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+# native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ...................................... 
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# build the Lwt library: ............................... false
+# build the Core/Async library: ........................ true
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... true
+# pkg_xmlm: ............................................ /home/opam/.opam/4.04/lib/xmlm
+# pkg_rpclib: .......................................... /home/opam/.opam/4.04/lib/rpclib
+# pkg_cohttp: .......................................... /home/opam/.opam/4.04/lib/cohttp
+# pkg_core: ............................................ /home/opam/.opam/4.04/lib/core
+# pkg_async: ........................................... /home/opam/.opam/4.04/lib/async
+# pkg_async_unix: ...................................... /home/opam/.opam/4.04/lib/async_unix
+# pkg_uri: ............................................. /home/opam/.opam/4.04/lib/uri
+# pkg_threads: ......................................... /home/opam/.opam/4.04/lib/ocaml
+# pkg_ounit: ........................................... /home/opam/.opam/4.04/lib/oUnit
+# 
+# ./setup.bin -build
+# /home/opam/.opam/4.04/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 28, characters 18-29:
+# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 63, characters 35-46:
+# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 118, characters 38-49:
+# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 130, characters 23-34:
+# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# Configuration "true: quiet, debug, tests", line 1, characters 20-25:
+# Warning: the tag "tests" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/aPI.ml > lib/aPI.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/date.ml > lib/date.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/date.cmo lib/date.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/api_errors.ml > lib/api_errors.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/api_messages.ml > lib/api_messages.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/client.ml > lib/client.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/aPI.cmo lib/aPI.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_errors.cmo lib/api_errors.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/xen_api.ml > lib/xen_api.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/event_helper.ml > lib/event_helper.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/event_types.ml > lib/event_types.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmo lib/event_types.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmo lib/event_types.ml
+# File "lib/event_types.ml", line 65, characters 27-43:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_messages.cmo lib/api_messages.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/client.cmo lib/client.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/xen_api.cmo lib/xen_api.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_helper.cmo lib/event_helper.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -a -I lib lib/date.cmo lib/aPI.cmo lib/api_errors.cmo lib/api_messages.cmo lib/client.cmo lib/xen_api.cmo lib/event_types.cmo lib/event_helper.cmo -o lib/xen-api-client.cma
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/date.cmx lib/date.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/aPI.cmx lib/aPI.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_errors.cmx lib/api_errors.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmx lib/event_types.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmx lib/event_types.ml
+# File "lib/event_types.ml", line 65, characters 27-43:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_messages.cmx lib/api_messages.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/client.cmx lib/client.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/xen_api.cmx lib/xen_api.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_helper.cmx lib/event_helper.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -a -I lib lib/date.cmx lib/aPI.cmx lib/api_errors.cmx lib/api_messages.cmx lib/client.cmx lib/xen_api.cmx lib/event_types.cmx lib/event_helper.cmx -o lib/xen-api-client.cmxa
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -shared -I lib lib/xen-api-client.cmxa lib/date.cmx lib/aPI.cmx lib/api_errors.cmx lib/api_messages.cmx lib/client.cmx lib/xen_api.cmx lib/event_types.cmx lib/event_helper.cmx -o lib/xen-api-client.cmxs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -modules async/xen_api_async_unix.mli > async/xen_api_async_unix.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -thread -I async -I lib -o async/xen_api_async_unix.cmi async/xen_api_async_unix.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -modules async/xen_api_async_unix.ml > async/xen_api_async_unix.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -thread -I async -I lib -o async/xen_api_async_unix.cmo async/xen_api_async_unix.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -thread -I async -I lib -o async/xen_api_async_unix.cmo async/xen_api_async_unix.ml
+# File "async/xen_api_async_unix.ml", line 109, characters 3-17:
+# Error: This function has type
+#          'a ->
+#          [> `Probably_should_not_use_blocking_Core_Printf_functions_with_Async ]
+#        It is applied to too many arguments; maybe you forgot a `;'.
+# Command exited with code 2.
+# + /home/opam/.opam/4.04/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlbuild' lib/xen-api-client.cma lib/xen-api-client.cmxa lib/xen-api-client.a lib/xen-api-client.cmxs async/xen-api-client-async.cma async/xen-api-client-async.cmxa async/xen-api-client-async.a async/xen-api-client-async.cmxs lib_test/xen_api_test.native async_test/list_vms.native event_test/event_test.native -tag debug -tag tests' terminated with error code 10")
+# Makefile:23: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build xen-api-client 0.9.8
++- 
++- The following changes have been performed
+| - install async                   113.33.00
+| - install async_extra             113.33.00+4.03
+| - install async_kernel            113.33.00
+| - install async_rpc_kernel        113.33.00
+| - install async_unix              113.33.00+4.03
+| - install base-bytes              base
+| - install base64                  2.2.0
+| - install bin_prot                113.33.00+4.03
+| - install biniou                  1.2.0
+| - install camlp4                  4.04+1
+| - install cmdliner                1.0.2
+| - install cohttp                  0.22.0
+| - install conduit                 0.15.3
+| - install conf-openssl            1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install core                    113.33.02+4.03
+| - install core_kernel             113.33.02+4.03
+| - install cow                     2.3.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 3.2.1
+| - install easy-format             1.3.1
+| - install ezjsonm                 0.6.0
+| - install fieldslib               113.24.00
+| - install fmt                     0.8.5
+| - install hex                     1.2.0
+| - install ipaddr                  2.7.2
+| - install jsonm                   1.0.1
+| - install logs                    0.6.2
+| - install lwt                     3.3.0
+| - install magic-mime              1.1.0
+| - install oasis                   0.4.11
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install omd                     1.3.1
+| - install ounit                   2.0.8
+| - install ppx_assert              113.33.00
+| - install ppx_bench               113.33.00+4.03
+| - install ppx_bin_prot            113.33.00+4.03
+| - install ppx_compare             113.33.00+4.03
+| - install ppx_core                113.33.01+4.03
+| - install ppx_custom_printf       113.33.00+4.03
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              113.33.02+4.03
+| - install ppx_enumerate           113.33.00+4.03
+| - install ppx_expect              113.33.01+4.03
+| - install ppx_fail                113.33.00+4.03
+| - install ppx_fields_conv         113.33.00+4.03
+| - install ppx_here                113.33.00
+| - install ppx_inline_test         113.33.00+4.03
+| - install ppx_jane                113.33.00
+| - install ppx_let                 113.33.00+4.03
+| - install ppx_optcomp             113.33.01+4.03
+| - install ppx_pipebang            113.33.00+4.03
+| - install ppx_sexp_conv           113.33.01+4.03
+| - install ppx_sexp_message        113.33.00+4.03
+| - install ppx_sexp_value          113.33.00+4.03
+| - install ppx_tools               5.0
+| - install ppx_tools_versioned     5.2
+| - install ppx_type_conv           113.33.02+4.03
+| - install ppx_typerep_conv        113.33.00+4.03
+| - install ppx_variants_conv       113.33.00+4.03
+| - install re                      1.7.3
+| - install result                  1.3
+| - install rpc                     2.2.0
+| - install rresult                 0.5.0
+| - install sexplib                 113.33.00+4.03
+| - install ssl                     0.5.5
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install type_conv               113.00.02
+| - install typerep                 113.24.00
+| - install uchar                   0.0.2
+| - install uri                     1.9.2
+| - install uutf                    1.0.1
+| - install variantslib             113.24.00
+| - install xmlm                    1.3.0
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180811234641.export"
+31 1534031188 1534032188
