@@ -69,7 +69,7 @@ The following actions will be performed:
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 [ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
-[ERROR] The compilation of octavius failed at "/home/opam/.opam/4.08/bin/jbuilder build -p octavius -j 71".
+[ERROR] The compilation of octavius failed at "/home/opam/.opam/4.08/bin/jbuilder build -p octavius -j 11".
 -> installed base-bytes.base
 -> installed cppo.1.6.4
 -> installed opam-file-format.2.0.0
@@ -83,7 +83,7 @@ The following actions will be performed:
 #=== ERROR while compiling octavius.1.2.0 =====================================#
 # context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.08/.opam-switch/build/octavius.1.2.0
-# command              ~/.opam/4.08/bin/jbuilder build -p octavius -j 71
+# command              ~/.opam/4.08/bin/jbuilder build -p octavius -j 11
 # exit-code            1
 # env-file             ~/.opam/log/octavius-11-c1bafb.env
 # output-file          ~/.opam/log/octavius-11-c1bafb.out
@@ -99,8 +99,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
 # command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/ocamlbuild-11-8989cf.env
-# output-file          ~/.opam/log/ocamlbuild-11-8989cf.out
+# env-file             ~/.opam/log/ocamlbuild-11-9de511.env
+# output-file          ~/.opam/log/ocamlbuild-11-9de511.out
 ### output ###
 # if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
 #   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
@@ -201,5 +201,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180811215616.export"
-31 1534024573 1534024599
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180812211153.export"
+31 1534108310 1534108354

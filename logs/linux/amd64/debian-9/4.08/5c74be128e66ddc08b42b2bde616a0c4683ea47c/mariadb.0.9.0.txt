@@ -85,8 +85,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
 # command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/ocamlbuild-10-0c525f.env
-# output-file          ~/.opam/log/ocamlbuild-10-0c525f.out
+# env-file             ~/.opam/log/ocamlbuild-11-0c525f.env
+# output-file          ~/.opam/log/ocamlbuild-11-0c525f.out
 ### output ###
 # if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
 #   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
@@ -181,5 +181,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180811214506.export"
-31 1534023895 1534023910
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180812211636.export"
+31 1534108574 1534108599
