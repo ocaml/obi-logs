@@ -1,0 +1,177 @@
+$ opam depext -iy -j 2 vorbis.0.7.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+libogg-devel
+libvorbis-devel
+m4
+package libogg-devel is not installed
+package libvorbis-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Sat Aug 11 20:14:13 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# The following new OS packages need to be installed: libogg-devel libvorbis-devel
+The following command needs to be run through "sudo":
+    yum install -y libogg-devel libvorbis-devel
+Fedora 28 - x86_64 - Updates                     10 MB/s |  22 MB     00:02    
+Last metadata expiration check: 0:00:09 ago on Sun Aug 12 05:56:42 2018.
+Dependencies resolved.
+================================================================================
+ Package                 Arch         Version               Repository     Size
+================================================================================
+Installing:
+ libogg-devel            x86_64       2:1.3.2-10.fc28       fedora         18 k
+ libvorbis-devel         x86_64       1:1.3.6-3.fc28        updates        25 k
+Installing dependencies:
+ autoconf                noarch       2.69-27.fc28          fedora        710 k
+ automake                noarch       1.15.1-5.fc28         fedora        706 k
+ libogg                  x86_64       2:1.3.2-10.fc28       fedora         30 k
+ libvorbis               x86_64       1:1.3.6-3.fc28        updates       195 k
+ perl-Thread-Queue       noarch       3.13-1.fc28           updates        23 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages
+
+Total download size: 1.7 M
+Installed size: 4.9 M
+Downloading Packages:
+(1/7): libogg-devel-1.3.2-10.fc28.x86_64.rpm    168 kB/s |  18 kB     00:00    
+(2/7): libogg-1.3.2-10.fc28.x86_64.rpm          249 kB/s |  30 kB     00:00    
+(3/7): libvorbis-devel-1.3.6-3.fc28.x86_64.rpm  936 kB/s |  25 kB     00:00    
+(4/7): libvorbis-1.3.6-3.fc28.x86_64.rpm        2.9 MB/s | 195 kB     00:00    
+(5/7): perl-Thread-Queue-3.13-1.fc28.noarch.rpm 2.5 MB/s |  23 kB     00:00    
+(6/7): automake-1.15.1-5.fc28.noarch.rpm        2.7 MB/s | 706 kB     00:00    
+(7/7): autoconf-2.69-27.fc28.noarch.rpm         4.3 MB/s | 710 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           877 kB/s | 1.7 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libogg-2:1.3.2-10.fc28.x86_64                          1/7 
+  Installing       : libvorbis-1:1.3.6-3.fc28.x86_64                        2/7 
+  Installing       : perl-Thread-Queue-3.13-1.fc28.noarch                   3/7 
+  Installing       : autoconf-2.69-27.fc28.noarch                           4/7 
+  Running scriptlet: autoconf-2.69-27.fc28.noarch                           4/7 
+install-info: No such file or directory for /usr/share/info/autoconf.info
+  Installing       : automake-1.15.1-5.fc28.noarch                          5/7 
+  Running scriptlet: automake-1.15.1-5.fc28.noarch                          5/7 
+install-info: No such file or directory for /usr/share/info/automake.info.gz
+  Installing       : libogg-devel-2:1.3.2-10.fc28.x86_64                    6/7 
+  Installing       : libvorbis-devel-1:1.3.6-3.fc28.x86_64                  7/7 
+  Running scriptlet: libvorbis-devel-1:1.3.6-3.fc28.x86_64                  7/7 
+  Verifying        : libogg-devel-2:1.3.2-10.fc28.x86_64                    1/7 
+  Verifying        : automake-1.15.1-5.fc28.noarch                          2/7 
+  Verifying        : libogg-2:1.3.2-10.fc28.x86_64                          3/7 
+  Verifying        : autoconf-2.69-27.fc28.noarch                           4/7 
+  Verifying        : libvorbis-devel-1:1.3.6-3.fc28.x86_64                  5/7 
+  Verifying        : libvorbis-1:1.3.6-3.fc28.x86_64                        6/7 
+  Verifying        : perl-Thread-Queue-3.13-1.fc28.noarch                   7/7 
+
+Installed:
+  libogg-devel.x86_64 2:1.3.2-10.fc28    libvorbis-devel.x86_64 1:1.3.6-3.fc28  
+  autoconf.noarch 2.69-27.fc28           automake.noarch 1.15.1-5.fc28          
+  libogg.x86_64 2:1.3.2-10.fc28          libvorbis.x86_64 1:1.3.6-3.fc28        
+  perl-Thread-Queue.noarch 3.13-1.fc28  
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides libogg-devel libvorbis-devel
+libogg-devel-1.3.2-10.fc28.x86_64
+libvorbis-devel-1.3.6-3.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ogg    0.5.2 [required by vorbis]
+  - install vorbis 0.7.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ogg.0.5.2] found in cache
+[vorbis.0.7.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ogg.0.5.2
+[ERROR] The compilation of vorbis failed at "/usr/bin/make".
+
+#=== ERROR while compiling vorbis.0.7.0 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/vorbis.0.7.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/vorbis-10-865888.env
+# output-file          ~/.opam/log/vorbis-10-865888.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.7.0/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.7.0/src'
+# making ._bcdi/ogg_demuxer_vorbis_decoder.di from ogg_demuxer_vorbis_decoder.mli
+# making ._bcdi/vorbis.di from vorbis.mli
+# making ._d/ogg_demuxer_vorbis_decoder.d from ogg_demuxer_vorbis_decoder.ml
+# making ._d/vorbis.d from vorbis.ml
+# ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -Wall  -I/home/opam/.opam/4.06/include    \
+# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include     \
+# 			  -I/home/opam/.opam/4.06/lib/bytes -I/home/opam/.opam/4.06/lib/ogg  -o vorbis_stubs.o " vorbis_stubs.c 
+# ar rcs libvorbis_stubs.a  vorbis_stubs.o
+# ocamlc.opt -c -g -w +A-4@5-7@8-9@11@12@20-35-44-45-50 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ogg vorbis.mli
+# ocamlc.opt -c -g -w +A-4@5-7@8-9@11@12@20-35-44-45-50 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ogg vorbis.ml
+# File "vorbis.ml", line 58, characters 0-136:
+# Warning 3: deprecated: uppercase
+# Use String.uppercase_ascii instead.
+#   File "string.mli", line 262, characters 0-93:
+#   Definition
+#   File "vorbis.ml", line 54, characters 2-34:
+#   Expected signature
+# File "vorbis.ml", line 222, characters 12-15:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# make[2]: *** [OCamlMakefile:952: vorbis.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.7.0/src'
+# make[1]: *** [OCamlMakefile:717: byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.7.0/src'
+# make: *** [Makefile:18: all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build vorbis 0.7.0
++- 
++- The following changes have been performed
+| - install ogg 0.5.2
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libvorbis-devel
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812055659.export"
+31 1534053397 1534053425

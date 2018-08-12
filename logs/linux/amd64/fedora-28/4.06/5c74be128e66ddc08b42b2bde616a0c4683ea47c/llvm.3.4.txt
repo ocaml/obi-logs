@@ -1,0 +1,46 @@
+$ opam depext -iy -j 2 llvm.3.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by llvm]
+  - install llvm       3.4
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[llvm.3.4] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The installation of llvm failed at "sh ./compile.sh install 3.4 make /home/opam/.opam/4.06 /home/opam/.opam/4.06/lib".
+
+#=== ERROR while installing llvm.3.4 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/llvm.3.4
+# command              /usr/bin/sh ./compile.sh install 3.4 make /home/opam/.opam/4.06 /home/opam/.opam/4.06/lib
+# exit-code            1
+# env-file             ~/.opam/log/llvm-10-57f057.env
+# output-file          ~/.opam/log/llvm-10-57f057.out
+### output ###
+# stat: cannot stat '/usr/local/Cellar/llvm/3.4*/bin/llvm-config': No such file or directory
+# ./compile.sh: line 45: llvm-config-3.4: command not found
+# ./compile.sh: line 45: llvm-config34: command not found
+# ./compile.sh: line 45: llvm-config-mp-3.4: command not found
+# ./compile.sh: line 45: llvm-config: command not found
+# Error: LLVM 3.4 is not installed.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install llvm 3.4
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812054306.export"
+31 1534052584 1534052631
