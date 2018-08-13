@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 charrua-core.0.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for charrua-core.0.7: The following dependencies couldn't be met:
+          - charrua-core -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=charrua-core.0.7 returned 20
+20 1534194738 1534194740

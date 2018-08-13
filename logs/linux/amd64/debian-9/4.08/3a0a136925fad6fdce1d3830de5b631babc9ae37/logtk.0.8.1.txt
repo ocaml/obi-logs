@@ -1,0 +1,15 @@
+$ opam depext -iy -j 2 logtk.0.8.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for logtk.0.8.1: The following dependencies couldn't be met:
+          - logtk -> containers < 1.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - logtk -> sequence >= 0.6 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - containers (>= 0.12 & < 0.17) is in conflict with sequence >= 0.6
+          - containers (>= 0.17 & != 0.22 & < 1.0) is in conflict with sequence >= 1.0
+          - containers = 0.22 is in conflict with sequence >= 0.9
+
+
+Command failed: opam list --readonly --external  --resolve=logtk.0.8.1 returned 20
+20 1534194174 1534194176

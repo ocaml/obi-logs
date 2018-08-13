@@ -1,0 +1,37 @@
+$ opam depext -iy -j 2 stdint.0.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install stdint 0.4.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[stdint.0.4.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of stdint failed at "/home/opam/.opam/4.08/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.08".
+
+#=== ERROR while compiling stdint.0.4.0 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/stdint.0.4.0
+# command              ~/.opam/4.08/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.08
+# exit-code            1
+# env-file             ~/.opam/log/stdint-11-05296d.env
+# output-file          ~/.opam/log/stdint-11-05296d.out
+### output ###
+# W: Not_found
+# W: Not_found
+# E: Cannot find external tool 'ocamlbuild'
+# E: Failure("1 configuration error")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build stdint 0.4.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534194465 1534194473
