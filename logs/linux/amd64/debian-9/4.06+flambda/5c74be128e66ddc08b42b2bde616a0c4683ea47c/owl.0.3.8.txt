@@ -859,9 +859,32 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/owl.0.3.8
 # command              ~/.opam/4.06+flambda/bin/jbuilder build -p owl -j 71
 # exit-code            1
-# env-file             ~/.opam/log/owl-11-d05010.env
-# output-file          ~/.opam/log/owl-11-d05010.out
+# env-file             ~/.opam/log/owl-10-d05010.env
+# output-file          ~/.opam/log/owl-10-d05010.out
 ### output ###
+#       ocamlc src/owl/.owl.objs/owl_stats.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmo -c -impl src/owl/owl_stats.ml)
+# File "src/owl/owl_stats.ml", line 1:
+# Error: The implementation src/owl/owl_stats.ml
+#        does not match the interface src/owl/.owl.objs/owl_stats.cmi:
+#        Values do not match:
+#          val histogram :
+#            [ `Bins of float array | `N of int ] ->
+#            ?weights:float array -> float array -> Owl_base_stats.histogram
+#        is not included in
+#          val histogram : float array -> int -> int array
+#        File "src/owl/stats/owl_stats.mli", line 156, characters 0-47:
+#          Expected declaration
+#        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
+#          Actual declaration
+#       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
+# File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
+# Error: Unbound type constructor L.t
+#       ocamlc src/owl/.owl.objs/owl_ppl.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl.cmo -c -impl src/owl/owl_ppl.ml)
+# File "src/owl/ppl/owl_ppl.ml", line 26, characters 14-20:
+# Error: Unbound value to_arr
 #       ocamlc src/owl/.owl.objs/owl_regression_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_regression_generic.cmo -c -impl src/owl/owl_regression_generic.ml)
 # File "src/owl/optimise/owl_regression_generic.ml", line 13, characters 37-38:
@@ -1008,21 +1031,6 @@ The following actions will be performed:
 #        The module `A' is required but not provided
 #        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 11, characters 2-43:
 #          Expected declaration
-#       ocamlc src/owl/.owl.objs/owl_stats.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmo -c -impl src/owl/owl_stats.ml)
-# File "src/owl/owl_stats.ml", line 1:
-# Error: The implementation src/owl/owl_stats.ml
-#        does not match the interface src/owl/.owl.objs/owl_stats.cmi:
-#        Values do not match:
-#          val histogram :
-#            [ `Bins of float array | `N of int ] ->
-#            ?weights:float array -> float array -> Owl_base_stats.histogram
-#        is not included in
-#          val histogram : float array -> int -> int array
-#        File "src/owl/stats/owl_stats.mli", line 156, characters 0-47:
-#          Expected declaration
-#        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
-#          Actual declaration
 #     ocamlopt src/owl/.owl.objs/owl_stats.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmx -c -impl src/owl/owl_stats.ml)
 # File "src/owl/owl_stats.ml", line 1:
@@ -1038,27 +1046,6 @@ The following actions will be performed:
 #          Expected declaration
 #        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
 #          Actual declaration
-#       ocamlc src/owl/.owl.objs/owl_ppl.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl.cmo -c -impl src/owl/owl_ppl.ml)
-# File "src/owl/ppl/owl_ppl.ml", line 26, characters 14-20:
-# Error: Unbound value to_arr
-#       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
-# File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
-# Error: Unbound type constructor L.t
-#       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
-# File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
-# Error: Signature mismatch:
-#        ...
-#        Values do not match:
-#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
-#        is not included in
-#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
-#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
-#          Expected declaration
-#        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2047, characters 0-43:
-#          Actual declaration
 #       ocamlc src/owl/.owl.objs/owl_dense_ndarray.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray.cmo -c -impl src/owl/owl_dense_ndarray.ml)
 # File "src/owl/dense/owl_dense_ndarray.ml", line 11, characters 36-61:
@@ -1071,6 +1058,19 @@ The following actions will be performed:
 #        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
 #          Expected declaration
 #        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 2069, characters 0-43:
+#          Actual declaration
+#       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
+# File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2047, characters 0-43:
 #          Actual declaration
 #       ocamlc src/owl/.owl.objs/owl_linalg_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+flambda/lib/bytes -I /home/opam/.opam/4.06+flambda/lib/ctypes -I /home/opam/.opam/4.06+flambda/lib/eigen -I /home/opam/.opam/4.06+flambda/lib/integers -I /home/opam/.opam/4.06+flambda/lib/owl-base -I /home/opam/.opam/4.06+flambda/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_linalg_generic.cmo -c -impl src/owl/owl_linalg_generic.ml)
@@ -1119,5 +1119,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180812021735.export"
-31 1534040204 1534040555
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180813001123.export"
+31 1534119040 1534119353
