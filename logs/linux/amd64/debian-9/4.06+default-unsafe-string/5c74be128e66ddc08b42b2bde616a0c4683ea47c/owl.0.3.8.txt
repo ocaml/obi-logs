@@ -892,6 +892,14 @@ The following actions will be performed:
 #          Expected declaration
 #        File "src/owl/stats/owl_stats.ml", line 178, characters 4-13:
 #          Actual declaration
+#       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
+# File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
+# Error: Unbound type constructor L.t
+#       ocamlc src/owl/.owl.objs/owl_ppl.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl.cmo -c -impl src/owl/owl_ppl.ml)
+# File "src/owl/ppl/owl_ppl.ml", line 26, characters 14-20:
+# Error: Unbound value to_arr
 #       ocamlc src/owl/.owl.objs/owl_regression_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_regression_generic.cmo -c -impl src/owl/owl_regression_generic.ml)
 # File "src/owl/optimise/owl_regression_generic.ml", line 13, characters 37-38:
@@ -1038,27 +1046,6 @@ The following actions will be performed:
 #        The module `A' is required but not provided
 #        File "src/base/optimise/owl_algodiff_generic_sig.ml", line 11, characters 2-43:
 #          Expected declaration
-#       ocamlc src/owl/.owl.objs/owl_ppl.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl.cmo -c -impl src/owl/owl_ppl.ml)
-# File "src/owl/ppl/owl_ppl.ml", line 26, characters 14-20:
-# Error: Unbound value to_arr
-#       ocamlc src/owl/.owl.objs/owl_ppl_random_variable.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
-# File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
-# Error: Unbound type constructor L.t
-#       ocamlc src/owl/.owl.objs/owl_dense_ndarray.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray.cmo -c -impl src/owl/owl_dense_ndarray.ml)
-# File "src/owl/dense/owl_dense_ndarray.ml", line 11, characters 36-61:
-# Error: Signature mismatch:
-#        ...
-#        Values do not match:
-#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
-#        is not included in
-#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
-#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
-#          Expected declaration
-#        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 2069, characters 0-43:
-#          Actual declaration
 #       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
 # File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
@@ -1071,6 +1058,19 @@ The following actions will be performed:
 #        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
 #          Expected declaration
 #        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2047, characters 0-43:
+#          Actual declaration
+#       ocamlc src/owl/.owl.objs/owl_dense_ndarray.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray.cmo -c -impl src/owl/owl_dense_ndarray.ml)
+# File "src/owl/dense/owl_dense_ndarray.ml", line 11, characters 36-61:
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 2069, characters 0-43:
 #          Actual declaration
 #       ocamlc src/owl/.owl.objs/owl_linalg_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06+default-unsafe-string/lib/bytes -I /home/opam/.opam/4.06+default-unsafe-string/lib/ctypes -I /home/opam/.opam/4.06+default-unsafe-string/lib/eigen -I /home/opam/.opam/4.06+default-unsafe-string/lib/integers -I /home/opam/.opam/4.06+default-unsafe-string/lib/owl-base -I /home/opam/.opam/4.06+default-unsafe-string/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_linalg_generic.cmo -c -impl src/owl/owl_linalg_generic.ml)
@@ -1119,5 +1119,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180811201738.export"
-31 1534018611 1534018887
+    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180813040557.export"
+31 1534133111 1534133413
