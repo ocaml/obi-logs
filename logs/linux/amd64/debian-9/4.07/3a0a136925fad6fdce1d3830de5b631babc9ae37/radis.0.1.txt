@@ -1,0 +1,84 @@
+$ opam depext -iy -j 2 radis.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3    [required by fmt]
+  - install ocamlbuild 0.12.0 [required by fmt]
+  - install uchar      0.0.2  [required by fmt]
+  - install topkg      0.9.1  [required by fmt]
+  - install fmt        0.8.5  [required by radis]
+  - install radis      0.1
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[fmt.0.8.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[radis.0.1] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed uchar.0.0.2
+-> installed topkg.0.9.1
+-> installed fmt.0.8.5
+[ERROR] The compilation of radis failed at "/home/opam/.opam/4.07/bin/jbuilder build -p radis -j 11".
+
+#=== ERROR while compiling radis.0.1 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/radis.0.1
+# command              ~/.opam/4.07/bin/jbuilder build -p radis -j 11
+# exit-code            1
+# env-file             ~/.opam/log/radis-11-dcf56b.env
+# output-file          ~/.opam/log/radis-11-dcf56b.out
+### output ###
+#     ocamlopt lib/.Radis.objs/radis.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlopt.opt -w -40 -g -I lib/.Radis.objs -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/uchar -intf-suffix .ml -no-alias-deps -o lib/.Radis.objs/radis.cmx -c -impl lib/radis.ml)
+# File "lib/radis.ml", line 46, characters 0-12862:
+# Error: Signature mismatch:
+#        ...
+#        The value `of_seq' is required but not provided
+#        File "map.mli", line 324, characters 4-41: Expected declaration
+#        The value `add_seq' is required but not provided
+#        File "map.mli", line 320, characters 4-50: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "map.mli", line 315, characters 4-53: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "map.mli", line 311, characters 4-41: Expected declaration
+#       ocamlc lib/.Radis.objs/radis.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.Radis.objs -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/uchar -intf-suffix .ml -no-alias-deps -o lib/.Radis.objs/radis.cmo -c -impl lib/radis.ml)
+# File "lib/radis.ml", line 46, characters 0-12862:
+# Error: Signature mismatch:
+#        ...
+#        The value `of_seq' is required but not provided
+#        File "map.mli", line 324, characters 4-41: Expected declaration
+#        The value `add_seq' is required but not provided
+#        File "map.mli", line 320, characters 4-50: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "map.mli", line 315, characters 4-53: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "map.mli", line 311, characters 4-41: Expected declaration
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build radis 0.1
++- 
++- The following changes have been performed
+| - install fmt        0.8.5
+| - install ocamlbuild 0.12.0
+| - install result     1.3
+| - install topkg      0.9.1
+| - install uchar      0.0.2
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180813203547.export"
+31 1534192545 1534192570

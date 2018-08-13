@@ -1,0 +1,68 @@
+$ opam depext -iy -j 2 ocamlweb.1.39
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlweb 1.39
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlweb.1.39] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of ocamlweb failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocamlweb.1.39 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/ocamlweb.1.39
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ocamlweb-11-6d07ae.env
+# output-file          ~/.opam/log/ocamlweb-11-6d07ae.out
+### output ###
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/misc.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/misc.ml
+# File "ocaml-parser/misc.ml", line 95, characters 14-33:
+# Warning 3: deprecated: Stdlib.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "ocaml-parser/misc.ml", line 131, characters 13-26:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "ocaml-parser/misc.ml", line 138, characters 13-26:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/clflags.ml
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/terminfo.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/terminfo.ml
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/warnings.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/warnings.ml
+# File "ocaml-parser/warnings.ml", line 128, characters 4-48:
+# Warning 3: deprecated: Stdlib.Format.pp_get_all_formatter_output_functions
+# Use Format.pp_get_formatter_out_functions instead.
+# File "ocaml-parser/warnings.ml", line 131, characters 2-46:
+# Warning 3: deprecated: Stdlib.Format.pp_set_all_formatter_output_functions
+# Use Format.pp_set_formatter_out_functions instead.
+# File "ocaml-parser/warnings.ml", line 134, characters 2-46:
+# Warning 3: deprecated: Stdlib.Format.pp_set_all_formatter_output_functions
+# Use Format.pp_set_formatter_out_functions instead.
+# ocamllex ocaml-parser/linenum.mll
+# 12 states, 323 transitions, table size 1364 bytes
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/linenum.ml
+# ocamlc.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.mli
+# ocamlopt.opt -c -I ocaml-parser -I ocamllex-parser  ocaml-parser/location.ml
+# File "ocaml-parser/location.ml", line 73, characters 7-20:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Makefile:227: recipe for target 'ocaml-parser/location.cmx' failed
+# make: *** [ocaml-parser/location.cmx] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlweb 1.39
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534191785 1534191791
