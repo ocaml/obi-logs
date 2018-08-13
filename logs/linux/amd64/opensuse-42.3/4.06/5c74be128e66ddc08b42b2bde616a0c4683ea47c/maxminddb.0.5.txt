@@ -31,8 +31,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/maxminddb.0.5
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/maxminddb-11-3bd1cf.env
-# output-file          ~/.opam/log/maxminddb-11-3bd1cf.out
+# env-file             ~/.opam/log/maxminddb-12-3bd1cf.env
+# output-file          ~/.opam/log/maxminddb-12-3bd1cf.out
 ### output ###
 # ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -g -ccopt -Wextra -ccopt -Wall -ccopt '-std=c99' -c src/maxminddb_stubs.c
@@ -59,5 +59,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812045540.export"
-31 1534049494 1534049783
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813012238.export"
+31 1534123084 1534123401

@@ -1,6 +1,11 @@
 $ opam depext -iy -j 2 glical.0.0.2
 # Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
 # No extra OS packages requirements found.
+Download (curl) error for 'http://download.opensuse.org/distribution/leap/42.3/repo/non-oss/suse/repodata/repomd.xml':
+Error code: Connection failed
+Error message: Could not resolve host: download.opensuse.org
+
+Cannot read input: bad stream or EOF.
 # Now letting OPAM install the packages
 The following actions will be performed:
   - install glical 0.0.2
@@ -46,4 +51,4 @@ The following actions will be performed:
 +- 
 - No changes have been performed
 # Run eval $(opam env) to update the current shell environment
-31 1534049796 1534050042
+31 1534123011 1534123042

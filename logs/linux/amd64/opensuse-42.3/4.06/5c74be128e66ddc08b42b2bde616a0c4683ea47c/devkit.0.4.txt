@@ -19,9 +19,9 @@ The following 6 NEW packages are going to be installed:
 Overall download size: 643.4 KiB. Already cached: 0 B. After the operation, additional 1.0 MiB will be used.
 Continue? [y/n/...? shows all options] (y): y
 Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/6),   4.8 KiB (   72   B unpacked)
-Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [.done]
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [done]
 Retrieving package libcurl-devel-7.37.0-36.1.x86_64 (2/6), 227.2 KiB (357.2 KiB unpacked)
-Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [.done]
+Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [done]
 Retrieving package libpcre16-0-8.39-11.1.x86_64 (3/6), 147.2 KiB (406.3 KiB unpacked)
 Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcrecpp0-8.39-11.1.x86_64 (4/6),  24.0 KiB ( 34.6 KiB unpacked)
@@ -29,7 +29,7 @@ Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
 Retrieving package libpcreposix0-8.39-11.1.x86_64 (5/6),  15.7 KiB ( 10.2 KiB unpacked)
 Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
 Retrieving package pcre-devel-8.39-11.1.x86_64 (6/6), 224.5 KiB (263.5 KiB unpacked)
-Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
+Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [.done (10.6 MiB/s)]
 Checking for file conflicts: [......done]
 (1/6) Installing: libstdc++-devel-4.8-11.16.x86_64 [.....done]
 (2/6) Installing: libcurl-devel-7.37.0-36.1.x86_64 [...........done]
@@ -137,8 +137,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/libevent.0.8.1
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/libevent-12-835ba5.env
-# output-file          ~/.opam/log/libevent-12-835ba5.out
+# env-file             ~/.opam/log/libevent-11-835ba5.env
+# output-file          ~/.opam/log/libevent-11-835ba5.out
 ### output ###
 # ocamlc -c -ccopt "-DFULL_UNROLL -Wall -O2 -I/usr/local/include" event_stubs.c
 # event_stubs.c:13:19: fatal error: event.h: No such file or directory
@@ -187,5 +187,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812042855.export"
-31 1534048102 1534048277
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813014708.export"
+31 1534124359 1534125009
