@@ -223,9 +223,9 @@ The following actions will be performed:
 [uri.1.9.2] found in cache
 [uutf.1.0.1] found in cache
 [variantslib.113.24.00] found in cache
+[xen-api-client.0.9.8] found in cache
 [xmlm.1.3.0] found in cache
 [yojson.1.4.1] found in cache
-[xen-api-client.0.9.8] downloaded from https://github.com/xen-org/xen-api-client/archive/0.9.8.tar.gz
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
@@ -254,17 +254,17 @@ The following actions will be performed:
 -> installed result.1.3
 -> installed ocaml-migrate-parsetree.1.0.11
 -> installed ppx_optcomp.113.33.01+4.03
--> installed ppx_deriving.4.2.1
--> installed ppx_tools_versioned.5.2
 -> installed ppx_driver.113.33.02+4.03
--> installed lwt.3.3.0
+-> installed ppx_deriving.4.2.1
+[ERROR] The compilation of ppx_pipebang failed at "/usr/bin/make".
 -> installed ppx_here.113.33.00
--> installed ppx_inline_test.113.33.00+4.03
 -> installed ppx_fail.113.33.00+4.03
+-> installed ppx_inline_test.113.33.00+4.03
 -> installed ppx_let.113.33.00+4.03
--> installed ppx_pipebang.113.33.00+4.03
--> installed ppx_type_conv.113.33.02+4.03
+-> installed ppx_tools_versioned.5.2
 -> installed ppx_bench.113.33.00+4.03
+-> installed ppx_type_conv.113.33.02+4.03
+-> installed lwt.3.3.0
 -> installed ppx_bin_prot.113.33.00+4.03
 -> installed ppx_compare.113.33.00+4.03
 -> installed ppx_enumerate.113.33.00+4.03
@@ -299,53 +299,41 @@ The following actions will be performed:
 -> installed yojson.1.4.1
 -> installed ppx_variants_conv.113.33.00+4.03
 -> installed ppx_expect.113.33.01+4.03
--> installed ppx_jane.113.33.00
--> installed core_kernel.113.33.02+4.03
--> installed async_kernel.113.33.00
--> installed async_rpc_kernel.113.33.00
--> installed core.113.33.02+4.03
--> installed async_unix.113.33.00+4.03
--> installed async_extra.113.33.00+4.03
--> installed async.113.33.00
--> installed conduit.0.15.3
--> installed rpc.2.2.0
--> installed cohttp.0.22.0
-[ERROR] The compilation of xen-api-client failed at "/usr/bin/make".
 
-#=== ERROR while compiling xen-api-client.0.9.8 ===============================#
+#=== ERROR while compiling ppx_pipebang.113.33.00+4.03 ========================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.04/.opam-switch/build/xen-api-client.0.9.8
+# path                 ~/.opam/4.04/.opam-switch/build/ppx_pipebang.113.33.00+4.03
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/xen-api-client-11-f80bc3.env
-# output-file          ~/.opam/log/xen-api-client-11-f80bc3.out
+# env-file             ~/.opam/log/ppx_pipebang-11-88cef1.env
+# output-file          ~/.opam/log/ppx_pipebang-11-88cef1.out
 ### output ###
-# ocamlopt.opt -o setup.bin setup.ml || ocamlopt -o setup.bin setup.ml || ocamlc -o setup.bin setup.ml
-# File "setup.ml", line 318, characters 20-36:
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# File "setup.ml", line 316, characters 20-36:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 318, characters 42-58:
+# File "setup.ml", line 316, characters 42-58:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 327, characters 14-30:
+# File "setup.ml", line 325, characters 14-30:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 327, characters 38-54:
+# File "setup.ml", line 325, characters 38-54:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 330, characters 25-41:
+# File "setup.ml", line 328, characters 25-41:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 368, characters 10-26:
+# File "setup.ml", line 366, characters 10-26:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 474, characters 13-29:
+# File "setup.ml", line 472, characters 13-29:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# File "setup.ml", line 1825, characters 16-33:
+# File "setup.ml", line 1823, characters 16-33:
 # Warning 3: deprecated: String.capitalize
 # Use String.capitalize_ascii instead.
-# File "setup.ml", line 1831, characters 16-35:
+# File "setup.ml", line 1829, characters 16-35:
 # Warning 3: deprecated: String.uncapitalize
 # Use String.uncapitalize_ascii instead.
 # File "setup.ml", line 5847, characters 11-28:
@@ -354,16 +342,16 @@ The following actions will be performed:
 # File "setup.ml", line 5848, characters 11-30:
 # Warning 3: deprecated: String.uncapitalize
 # Use String.uncapitalize_ascii instead.
-# rm -f setup.cmx setup.cmi setup.o setup.cmo
-# ./setup.bin -configure  --enable-tests --enable-async # 
+# for f in setup.*; do [ $f = setup.exe -o $f = setup.ml ] || rm -f $f; done
+# ./setup.exe -configure 
 # 
 # Configuration: 
 # ocamlfind: ........................................... /home/opam/.opam/4.04/bin/ocamlfind
 # ocamlc: .............................................. /home/opam/.opam/4.04/bin/ocamlc.opt
 # ocamlopt: ............................................ /home/opam/.opam/4.04/bin/ocamlopt.opt
 # ocamlbuild: .......................................... /home/opam/.opam/4.04/bin/ocamlbuild
-# Package name: ........................................ xen-api-client
-# Package version: ..................................... 0.9.8
+# Package name: ........................................ ppx_pipebang
+# Package version: ..................................... 113.33.00+4.03
 # os_type: ............................................. Unix
 # system: .............................................. linux
 # architecture: ........................................ amd64
@@ -409,114 +397,66 @@ The following actions will be performed:
 # Turn ocaml profile flag on: .......................... false
 # Compiler support generation of .cmxs.: ............... true
 # OCamlbuild additional flags: ......................... 
-# build the Lwt library: ............................... false
-# build the Core/Async library: ........................ true
 # Create documentations: ............................... true
-# Compile tests executable and library and run them: ... true
-# pkg_xmlm: ............................................ /home/opam/.opam/4.04/lib/xmlm
-# pkg_rpclib: .......................................... /home/opam/.opam/4.04/lib/rpclib
-# pkg_cohttp: .......................................... /home/opam/.opam/4.04/lib/cohttp
-# pkg_core: ............................................ /home/opam/.opam/4.04/lib/core
-# pkg_async: ........................................... /home/opam/.opam/4.04/lib/async
-# pkg_async_unix: ...................................... /home/opam/.opam/4.04/lib/async_unix
-# pkg_uri: ............................................. /home/opam/.opam/4.04/lib/uri
-# pkg_threads: ......................................... /home/opam/.opam/4.04/lib/ocaml
-# pkg_ounit: ........................................... /home/opam/.opam/4.04/lib/oUnit
+# Compile tests executable and library and run them: ... false
+# pkg_ppx_core: ........................................ /home/opam/.opam/4.04/lib/ppx_core
+# pkg_ppx_driver: ...................................... /home/opam/.opam/4.04/lib/ppx_driver
+# pkg_ppx_tools_metaquot: .............................. /home/opam/.opam/4.04/lib/ppx_tools
 # 
-# ./setup.bin -build
-# /home/opam/.opam/4.04/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
-# File "_tags", line 28, characters 18-29:
-# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# File "_tags", line 63, characters 35-46:
-# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# File "_tags", line 118, characters 38-49:
-# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# File "_tags", line 130, characters 23-34:
-# Warning: the tag "pkg_lwt.ssl" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# Configuration "true: quiet, debug, tests", line 1, characters 20-25:
-# Warning: the tag "tests" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/aPI.ml > lib/aPI.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/date.ml > lib/date.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/date.cmo lib/date.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/api_errors.ml > lib/api_errors.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/api_messages.ml > lib/api_messages.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/client.ml > lib/client.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/aPI.cmo lib/aPI.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_errors.cmo lib/api_errors.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/xen_api.ml > lib/xen_api.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/event_helper.ml > lib/event_helper.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -modules lib/event_types.ml > lib/event_types.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmo lib/event_types.ml
-# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmo lib/event_types.ml
-# File "lib/event_types.ml", line 65, characters 27-43:
-# Warning 3: deprecated: String.lowercase
-# Use String.lowercase_ascii instead.
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_messages.cmo lib/api_messages.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/client.cmo lib/client.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/xen_api.cmo lib/xen_api.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_helper.cmo lib/event_helper.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -a -I lib lib/date.cmo lib/aPI.cmo lib/api_errors.cmo lib/api_messages.cmo lib/client.cmo lib/xen_api.cmo lib/event_types.cmo lib/event_helper.cmo -o lib/xen-api-client.cma
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/date.cmx lib/date.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/aPI.cmx lib/aPI.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_errors.cmx lib/api_errors.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmx lib/event_types.ml
-# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_types.cmx lib/event_types.ml
-# File "lib/event_types.ml", line 65, characters 27-43:
-# Warning 3: deprecated: String.lowercase
-# Use String.lowercase_ascii instead.
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/api_messages.cmx lib/api_messages.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/client.cmx lib/client.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/xen_api.cmx lib/xen_api.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package cohttp -package rpclib -syntax camlp4o -package rpclib.syntax -package xmlm -syntax camlp4o -I lib -o lib/event_helper.cmx lib/event_helper.ml
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -a -I lib lib/date.cmx lib/aPI.cmx lib/api_errors.cmx lib/api_messages.cmx lib/client.cmx lib/xen_api.cmx lib/event_types.cmx lib/event_helper.cmx -o lib/xen-api-client.cmxa
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -shared -I lib lib/xen-api-client.cmxa lib/date.cmx lib/aPI.cmx lib/api_errors.cmx lib/api_messages.cmx lib/client.cmx lib/xen_api.cmx lib/event_types.cmx lib/event_helper.cmx -o lib/xen-api-client.cmxs
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -modules async/xen_api_async_unix.mli > async/xen_api_async_unix.mli.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -thread -I async -I lib -o async/xen_api_async_unix.cmi async/xen_api_async_unix.mli
-# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -modules async/xen_api_async_unix.ml > async/xen_api_async_unix.ml.depends
-# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -thread -I async -I lib -o async/xen_api_async_unix.cmo async/xen_api_async_unix.ml
-# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -I lib -package async -package async_unix -package cohttp -package core -package rpclib -package threads -package uri -package xmlm -thread -I async -I lib -o async/xen_api_async_unix.cmo async/xen_api_async_unix.ml
-# File "async/xen_api_async_unix.ml", line 109, characters 3-17:
-# Error: This function has type
-#          'a ->
-#          [> `Probably_should_not_use_blocking_Core_Printf_functions_with_Async ]
-#        It is applied to too many arguments; maybe you forgot a `;'.
-# Command exited with code 2.
-# + /home/opam/.opam/4.04/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ./setup.exe -build 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -predicates ppx_driver -modules src/ppx_pipebang.mli > src/ppx_pipebang.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_pipebang.cmi src/ppx_pipebang.mli
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_pipebang.cmi src/ppx_pipebang.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -predicates ppx_driver -modules src/ppx_pipebang.ml > src/ppx_pipebang.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_pipebang.cmo src/ppx_pipebang.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_pipebang.cmo src/ppx_pipebang.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -a -linkall -thread -I src src/ppx_pipebang.cmo -o src/ppx_pipebang.cma
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_pipebang.cmx src/ppx_pipebang.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I src -o src/ppx_pipebang.cmx src/ppx_pipebang.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -a -linkall -thread -I src src/ppx_pipebang.cmx -o src/ppx_pipebang.cmxa
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -shared -linkall -I src src/ppx_pipebang.cmxa -o src/ppx_pipebang.cmxs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -predicates ppx_driver -modules as_ppx/ppx.ml > as_ppx/ppx.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I src -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I as_ppx -I src -o as_ppx/ppx.cmo as_ppx/ppx.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I src -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I as_ppx -I src -o as_ppx/ppx.cmo as_ppx/ppx.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -I src -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I as_ppx -I src -o as_ppx/ppx.cmx as_ppx/ppx.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -I src -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -w -40 -I as_ppx -I src -o as_ppx/ppx.cmx as_ppx/ppx.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -linkpkg -g -thread -linkpkg -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -I src -I as_ppx src/ppx_pipebang.cmxa as_ppx/ppx.cmx -o as_ppx/ppx.native
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -linkpkg -g -thread -linkpkg -package ppx_tools.metaquot -package ppx_driver -package ppx_core -predicates ppx_driver -I src -I as_ppx src/ppx_pipebang.cmxa as_ppx/ppx.cmx -o as_ppx/ppx.native
+# Uncaught exception: Fl_topo.Inconsistent_ordering
+# Command exited with code 3.
+# + ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
 # File "myocamlbuild.ml", line 518, characters 43-62:
 # Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
 # Use String.uncapitalize_ascii instead.
 # File "myocamlbuild.ml", line 531, characters 51-70:
 # Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
 # Use String.uncapitalize_ascii instead.
-# E: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlbuild' lib/xen-api-client.cma lib/xen-api-client.cmxa lib/xen-api-client.a lib/xen-api-client.cmxs async/xen-api-client-async.cma async/xen-api-client-async.cmxa async/xen-api-client-async.a async/xen-api-client-async.cmxs lib_test/xen_api_test.native async_test/list_vms.native event_test/event_test.native -tag debug -tag tests' terminated with error code 10")
-# Makefile:23: recipe for target 'build' failed
+# E: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlbuild' src/ppx_pipebang.cma src/ppx_pipebang.cmxa src/ppx_pipebang.a src/ppx_pipebang.cmxs as_ppx/ppx.native -use-ocamlfind -tag debug' terminated with error code 10")
+# Makefile:15: recipe for target 'build' failed
 # make: *** [build] Error 1
 
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 +- The following actions failed
-| - build xen-api-client 0.9.8
+| - build ppx_pipebang 113.33.00+4.03
 +- 
-+- The following changes have been performed
-| - install async                   113.33.00
-| - install async_extra             113.33.00+4.03
-| - install async_kernel            113.33.00
-| - install async_rpc_kernel        113.33.00
-| - install async_unix              113.33.00+4.03
++- The following changes have been performed (the rest was aborted)
 | - install base-bytes              base
 | - install base64                  2.2.0
 | - install bin_prot                113.33.00+4.03
 | - install biniou                  1.2.0
 | - install camlp4                  4.04+1
 | - install cmdliner                1.0.2
-| - install cohttp                  0.22.0
-| - install conduit                 0.15.3
 | - install conf-openssl            1
 | - install conf-pkg-config         1.1
 | - install conf-which              1
-| - install core                    113.33.02+4.03
-| - install core_kernel             113.33.02+4.03
 | - install cow                     2.3.0
 | - install cppo                    1.6.4
 | - install cppo_ocamlbuild         1.6.0
@@ -553,10 +493,8 @@ The following actions will be performed:
 | - install ppx_fields_conv         113.33.00+4.03
 | - install ppx_here                113.33.00
 | - install ppx_inline_test         113.33.00+4.03
-| - install ppx_jane                113.33.00
 | - install ppx_let                 113.33.00+4.03
 | - install ppx_optcomp             113.33.01+4.03
-| - install ppx_pipebang            113.33.00+4.03
 | - install ppx_sexp_conv           113.33.01+4.03
 | - install ppx_sexp_message        113.33.00+4.03
 | - install ppx_sexp_value          113.33.00+4.03
@@ -567,7 +505,6 @@ The following actions will be performed:
 | - install ppx_variants_conv       113.33.00+4.03
 | - install re                      1.7.3
 | - install result                  1.3
-| - install rpc                     2.2.0
 | - install rresult                 0.5.0
 | - install sexplib                 113.33.00+4.03
 | - install ssl                     0.5.5
@@ -585,5 +522,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180811234641.export"
-31 1534031188 1534032188
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180813060030.export"
+31 1534140016 1534140273

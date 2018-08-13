@@ -132,10 +132,8 @@ The following actions will be performed:
 -> installed ppx_optcomp.113.33.01+4.03
 -> installed ppx_deriving_protobuf.2.6
 -> installed ppx_tools_versioned.5.2
--> installed bitstring.3.0.0
--> installed sequence.1.1
 -> installed ppx_driver.113.33.02+4.03
-[ERROR] The compilation of containers failed at "/usr/bin/make build".
+-> installed bitstring.3.0.0
 -> installed ppx_here.113.33.00
 -> installed ppx_inline_test.113.33.00+4.03
 -> installed ppx_fail.113.33.00+4.03
@@ -146,16 +144,18 @@ The following actions will be performed:
 -> installed ppx_bin_prot.113.33.00+4.03
 -> installed ppx_compare.113.33.00+4.03
 -> installed ppx_enumerate.113.33.00+4.03
--> installed sexplib.113.33.00+4.03
+-> installed sequence.1.1
 -> installed ppx_fields_conv.113.33.00+4.03
--> installed typerep.113.24.00
+-> installed sexplib.113.33.00+4.03
 -> installed ppx_sexp_conv.113.33.01+4.03
+[ERROR] The compilation of containers failed at "/usr/bin/make build".
 -> installed ppx_assert.113.33.00
 -> installed ppx_custom_printf.113.33.00+4.03
 -> installed ppx_sexp_message.113.33.00+4.03
--> installed ppx_typerep_conv.113.33.00+4.03
--> installed variantslib.113.24.00
+-> installed typerep.113.24.00
 -> installed ppx_sexp_value.113.33.00+4.03
+-> installed variantslib.113.24.00
+-> installed ppx_typerep_conv.113.33.00+4.03
 -> installed ppx_variants_conv.113.33.00+4.03
 -> installed ppx_expect.113.33.01+4.03
 -> installed ppx_jane.113.33.00
@@ -173,8 +173,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/riakc_ppx.3.1.4
 # command              ~/.opam/4.04/bin/omake -j2
 # exit-code            2
-# env-file             ~/.opam/log/riakc_ppx-11-cf0234.env
-# output-file          ~/.opam/log/riakc_ppx-11-cf0234.out
+# env-file             ~/.opam/log/riakc_ppx-11-8adc5a.env
+# output-file          ~/.opam/log/riakc_ppx-11-8adc5a.out
 ### output ###
 # *** omake: reading OMakefiles
 # --- Checking for ocamlfind... (found /home/opam/.opam/4.04/bin/ocamlfind)
@@ -207,7 +207,7 @@ The following actions will be performed:
 # Warning 3: deprecated: Core.Std.String.Map.iter
 # [since 2015-10] Use iteri instead
 # *** omake: 54/241 targets are up to date
-# *** omake: failed (1.57 sec, 17/17 scans, 5/5 rules, 74/103 digests)
+# *** omake: failed (1.90 sec, 17/17 scans, 5/5 rules, 74/103 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    _build/lib/response.cmo
 #       depends on: _build/lib/response.ml
@@ -218,8 +218,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.04/.opam-switch/build/containers.0.11
 # command              /usr/bin/make build
 # exit-code            2
-# env-file             ~/.opam/log/containers-11-653fc5.env
-# output-file          ~/.opam/log/containers-11-653fc5.out
+# env-file             ~/.opam/log/containers-11-0db6fe.env
+# output-file          ~/.opam/log/containers-11-0db6fe.out
 ### output ###
 # ocaml setup.ml -build 
 # File "./setup.ml", line 318, characters 20-36:
@@ -630,5 +630,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180811225842.export"
-31 1534028319 1534028907
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180813050203.export"
+31 1534136521 1534137129
