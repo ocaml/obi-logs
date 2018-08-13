@@ -42,7 +42,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -70,7 +70,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 06:28:14 2018
+Install Date: Sun Aug 12 06:36:45 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -89,8 +89,7 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: autoconf gmp-devel perl-Pod-Html
 The following command needs to be run through "sudo":
     yum install -y autoconf gmp-devel perl-Pod-Html
-Fedora 28 - x86_64 - Updates                     36 MB/s |  22 MB     00:00    
-Last metadata expiration check: 0:00:08 ago on Sun Aug 12 06:09:38 2018.
+Last metadata expiration check: 0:00:00 ago on Mon Aug 13 06:00:08 2018.
 Dependencies resolved.
 ================================================================================
  Package             Arch         Version                   Repository     Size
@@ -109,12 +108,12 @@ Install  4 Packages
 Total download size: 1.0 M
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          198 kB/s |  31 kB     00:00    
-(2/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        820 kB/s | 187 kB     00:00    
-(3/4): perl-Pod-Html-1.22.02-413.fc28.noarch.rp 922 kB/s |  85 kB     00:00    
-(4/4): autoconf-2.69-27.fc28.noarch.rpm         1.9 MB/s | 710 kB     00:00    
+(1/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          1.1 MB/s |  31 kB     00:00    
+(2/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        4.8 MB/s | 187 kB     00:00    
+(3/4): autoconf-2.69-27.fc28.noarch.rpm         9.7 MB/s | 710 kB     00:00    
+(4/4): perl-Pod-Html-1.22.02-413.fc28.noarch.rp 1.0 MB/s |  85 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           488 kB/s | 1.0 MB     00:02     
+Total                                           915 kB/s | 1.0 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -183,8 +182,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/conf-sdpa.1
 # command              /usr/bin/sh -exc command -v sdpa
 # exit-code            1
-# env-file             ~/.opam/log/conf-sdpa-10-f0f09f.env
-# output-file          ~/.opam/log/conf-sdpa-10-f0f09f.out
+# env-file             ~/.opam/log/conf-sdpa-11-f0f09f.env
+# output-file          ~/.opam/log/conf-sdpa-11-f0f09f.out
 ### output ###
 # + command -v sdpa
 
@@ -207,5 +206,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812060955.export"
-31 1534054174 1534054206
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813060015.export"
+31 1534140004 1534140029

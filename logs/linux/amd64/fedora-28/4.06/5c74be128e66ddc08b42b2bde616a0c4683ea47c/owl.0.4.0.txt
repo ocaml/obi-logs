@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: openblas-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y openblas-devel pkgconfig
-Fedora 28 - x86_64 - Updates                    4.0 MB/s |  22 MB     00:05    
-Last metadata expiration check: 0:00:11 ago on Sun Aug 12 06:18:11 2018.
+Last metadata expiration check: 0:00:00 ago on Mon Aug 13 06:00:37 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -67,22 +66,22 @@ Install  14 Packages
 Total download size: 42 M
 Installed size: 364 M
 Downloading Packages:
-(1/14): openblas-0.3.2-1.fc28.x86_64.rpm        668 kB/s |  29 kB     00:00    
-(2/14): openblas-devel-0.3.2-1.fc28.x86_64.rpm  1.2 MB/s |  91 kB     00:00    
-(3/14): openblas-openmp-0.3.2-1.fc28.x86_64.rpm 6.7 MB/s | 4.7 MB     00:00    
-(4/14): openblas-openmp64_-0.3.2-1.fc28.x86_64. 7.1 MB/s | 4.6 MB     00:00    
-(5/14): openblas-openmp64-0.3.2-1.fc28.x86_64.r 6.6 MB/s | 4.6 MB     00:00    
-(6/14): openblas-serial-0.3.2-1.fc28.x86_64.rpm 9.7 MB/s | 4.5 MB     00:00    
-(7/14): openblas-serial64-0.3.2-1.fc28.x86_64.r 9.4 MB/s | 4.5 MB     00:00    
-(8/14): openblas-serial64_-0.3.2-1.fc28.x86_64. 8.9 MB/s | 4.4 MB     00:00    
-(9/14): openblas-threads-0.3.2-1.fc28.x86_64.rp 9.7 MB/s | 4.7 MB     00:00    
-(10/14): openblas-srpm-macros-2-2.fc27.noarch.r 514 kB/s | 6.6 kB     00:00    
-(11/14): openblas-threads64_-0.3.2-1.fc28.x86_6 9.9 MB/s | 4.6 MB     00:00    
-(12/14): openblas-threads64-0.3.2-1.fc28.x86_64 8.4 MB/s | 4.6 MB     00:00    
-(13/14): libquadmath-8.1.1-5.fc28.x86_64.rpm    3.2 MB/s | 186 kB     00:00    
-(14/14): libgfortran-8.1.1-5.fc28.x86_64.rpm    6.4 MB/s | 656 kB     00:00    
+(1/14): openblas-devel-0.3.2-1.fc28.x86_64.rpm  810 kB/s |  91 kB     00:00    
+(2/14): openblas-0.3.2-1.fc28.x86_64.rpm         86 kB/s |  29 kB     00:00    
+(3/14): openblas-openmp64-0.3.2-1.fc28.x86_64.r 8.0 MB/s | 4.6 MB     00:00    
+(4/14): openblas-openmp-0.3.2-1.fc28.x86_64.rpm 6.5 MB/s | 4.7 MB     00:00    
+(5/14): openblas-openmp64_-0.3.2-1.fc28.x86_64. 3.4 MB/s | 4.6 MB     00:01    
+(6/14): openblas-serial-0.3.2-1.fc28.x86_64.rpm 4.0 MB/s | 4.5 MB     00:01    
+(7/14): openblas-serial64-0.3.2-1.fc28.x86_64.r 3.0 MB/s | 4.5 MB     00:01    
+(8/14): openblas-serial64_-0.3.2-1.fc28.x86_64. 3.3 MB/s | 4.4 MB     00:01    
+(9/14): openblas-threads-0.3.2-1.fc28.x86_64.rp 3.0 MB/s | 4.7 MB     00:01    
+(10/14): openblas-srpm-macros-2-2.fc27.noarch.r 170 kB/s | 6.6 kB     00:00    
+(11/14): libgfortran-8.1.1-5.fc28.x86_64.rpm    2.6 MB/s | 656 kB     00:00    
+(12/14): libquadmath-8.1.1-5.fc28.x86_64.rpm    2.5 MB/s | 186 kB     00:00    
+(13/14): openblas-threads64-0.3.2-1.fc28.x86_64 2.7 MB/s | 4.6 MB     00:01    
+(14/14): openblas-threads64_-0.3.2-1.fc28.x86_6 3.2 MB/s | 4.6 MB     00:01    
 --------------------------------------------------------------------------------
-Total                                            15 MB/s |  42 MB     00:02     
+Total                                           8.1 MB/s |  42 MB     00:05     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -272,5 +271,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812061844.export"
-31 1534054684 1534054905
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813060102.export"
+31 1534140032 1534140256

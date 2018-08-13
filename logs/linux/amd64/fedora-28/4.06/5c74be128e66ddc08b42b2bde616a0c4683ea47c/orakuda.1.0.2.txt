@@ -8,7 +8,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -36,8 +36,7 @@ package pkgconfig is not installed
 # The following new OS packages need to be installed: pcre-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y pcre-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     18 MB/s |  22 MB     00:01    
-Last metadata expiration check: 0:00:08 ago on Sun Aug 12 05:55:20 2018.
+Last metadata expiration check: 0:00:00 ago on Mon Aug 13 05:39:03 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -57,12 +56,12 @@ Install  4 Packages
 Total download size: 973 k
 Installed size: 2.6 M
 Downloading Packages:
-(1/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.6 MB/s | 193 kB     00:00    
-(2/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          384 kB/s |  46 kB     00:00    
-(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm         11 MB/s | 184 kB     00:00    
-(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        3.9 MB/s | 550 kB     00:00    
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          726 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.6 MB/s | 193 kB     00:00    
+(3/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        2.0 MB/s | 184 kB     00:00    
+(4/4): pcre-devel-8.42-2.fc28.x86_64.rpm        2.7 MB/s | 550 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           1.5 MB/s | 973 kB     00:00     
+Total                                           1.3 MB/s | 973 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -212,7 +211,7 @@ The following actions will be performed:
 # File OMyMakefile: line 781, characters 6-34:
 #    Warning: old-style foreach expression.
 #    This expression should use a => binding.
-# *** omake: finished reading OMakefiles (0.19 sec)
+# *** omake: finished reading OMakefiles (0.15 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build . regexp.cmi
 # + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
@@ -246,8 +245,12 @@ The following actions will be performed:
 #          val contents : t -> string
 #        File "cformat.ml", line 55, characters 2-28: Expected declaration
 #        File "cformat.ml", line 73, characters 6-14: Actual declaration
-# *** omake: 71/125 targets are up to date
-# *** omake: failed (0.76 sec, 20/20 scans, 14/14 rules, 44/81 digests)
+# - build pa pa_hash.o
+# + ocamlfind ocamlopt -annot -bin-annot -package pcre,camlp4 -g -w A-3-4-9-40-42-44-45-48 -warn-error a -pp camlp4of -I . -c pa_hash.ml
+# File "_none_", line 1:
+# Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
+# *** omake: 72/125 targets are up to date
+# *** omake: failed (1.09 sec, 20/20 scans, 15/15 rules, 44/81 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    cformat.cmo
 #       depends on: cformat.ml
@@ -287,5 +290,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812055533.export"
-31 1534053316 1534053462
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813053908.export"
+31 1534138740 1534138873

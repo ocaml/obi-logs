@@ -10,7 +10,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -38,7 +38,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 06:28:14 2018
+Install Date: Sun Aug 12 06:36:45 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -57,8 +57,7 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: libffi-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y libffi-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     37 MB/s |  22 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sun Aug 12 06:15:25 2018.
+Last metadata expiration check: 0:00:00 ago on Mon Aug 13 05:54:26 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -74,9 +73,9 @@ Install  1 Package
 Total download size: 27 k
 Installed size: 27 k
 Downloading Packages:
-libffi-devel-3.1-16.fc28.x86_64.rpm             515 kB/s |  27 kB     00:00    
+libffi-devel-3.1-16.fc28.x86_64.rpm             697 kB/s |  27 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            50 kB/s |  27 kB     00:00     
+Total                                            37 kB/s |  27 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -193,8 +192,8 @@ The following actions will be performed:
 -> installed easy-format.1.3.1
 -> installed num.1.1
 -> installed obuild.0.1.10
--> installed bdd.0.3
 -> installed biniou.1.2.0
+-> installed bdd.0.3
 -> installed ocamlbuild.0.12.0
 -> installed js_of_ocaml-ocamlbuild.3.1.0
 -> installed result.1.3
@@ -214,10 +213,10 @@ The following actions will be performed:
 -> installed js_of_ocaml-compiler.3.2.1
 -> installed js_of_ocaml.3.2.0
 -> installed js_of_ocaml-ppx.3.2.0
--> installed camlp4.4.06+1
--> installed js_of_ocaml-camlp4.3.1.0
 -> installed vg.0.9.1
 -> installed zed.1.6
+-> installed camlp4.4.06+1
+-> installed js_of_ocaml-camlp4.3.1.0
 -> installed lwt.3.3.0
 -> installed lwt_react.1.1.1
 -> installed lambda-term.1.12.0
@@ -379,5 +378,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812061538.export"
-31 1534054521 1534054728
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813055431.export"
+31 1534139662 1534139855

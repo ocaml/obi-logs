@@ -7,7 +7,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -34,8 +34,7 @@ package zlib-devel is not installed
 # The following new OS packages need to be installed: zlib-devel
 The following command needs to be run through "sudo":
     yum install -y zlib-devel
-Fedora 28 - x86_64 - Updates                     49 MB/s |  22 MB     00:00    
-Last metadata expiration check: 0:00:09 ago on Sun Aug 12 06:12:52 2018.
+Last metadata expiration check: 0:00:00 ago on Mon Aug 13 05:43:29 2018.
 Dependencies resolved.
 ================================================================================
  Package            Arch           Version                Repository       Size
@@ -50,9 +49,9 @@ Install  1 Package
 Total download size: 55 k
 Installed size: 138 k
 Downloading Packages:
-zlib-devel-1.2.11-8.fc28.x86_64.rpm             848 kB/s |  55 kB     00:00    
+zlib-devel-1.2.11-8.fc28.x86_64.rpm             596 kB/s |  55 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                            92 kB/s |  55 kB     00:00     
+Total                                           155 kB/s |  55 kB     00:00     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -90,8 +89,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/npy.0.0.5
 # command              ~/.opam/4.06/bin/jbuilder build --only-packages npy --root . -j 71 @install
 # exit-code            1
-# env-file             ~/.opam/log/npy-10-865888.env
-# output-file          ~/.opam/log/npy-10-865888.out
+# env-file             ~/.opam/log/npy-11-865888.env
+# output-file          ~/.opam/log/npy-11-865888.out
 ### output ###
 #     ocamlopt src/.npy.objs/npy.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -I src/.npy.objs -I /home/opam/.opam/4.06/lib/camlzip/../zip -intf-suffix .ml -no-alias-deps -o src/.npy.objs/npy.cmx -c -impl src/npy.ml)
@@ -116,5 +115,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812061307.export"
-31 1534054367 1534054392
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813054334.export"
+31 1534139006 1534139017

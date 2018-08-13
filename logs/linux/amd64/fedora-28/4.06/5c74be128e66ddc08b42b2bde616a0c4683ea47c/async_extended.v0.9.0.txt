@@ -7,7 +7,7 @@ Name        : gcc-c++
 Version     : 8.1.1
 Release     : 5.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 06:28:13 2018
+Install Date: Sun Aug 12 06:36:45 2018
 Group       : Development/Languages
 Size        : 30589214
 License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
@@ -29,7 +29,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -223,7 +223,6 @@ The following actions will be performed:
 -> installed fieldslib.v0.9.0
 -> installed ppx_here.v0.9.1
 -> installed ppx_let.v0.9.0
--> installed variantslib.v0.9.0
 -> installed ppx_metaquot.v0.9.0
 -> installed ppx_fail.v0.9.0
 -> installed ppx_inline_test.v0.9.2
@@ -244,8 +243,9 @@ The following actions will be performed:
 -> installed ppx_base.v0.9.0
 -> installed configurator.v0.9.1
 -> installed ppx_typerep_conv.v0.9.0
--> installed ppx_variants_conv.v0.9.0
+-> installed variantslib.v0.9.0
 -> installed ppx_custom_printf.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
 -> installed bin_prot.v0.9.2
 -> installed ppx_expect.v0.9.0
 -> installed ppx_bin_prot.v0.9.0
@@ -258,11 +258,11 @@ The following actions will be performed:
 -> installed async_extra.v0.9.0
 -> installed async.v0.9.0
 -> installed async_find.v0.9.0
+-> installed async_inotify.v0.9.0
 -> installed async_interactive.v0.9.0
 -> installed command_rpc.v0.9.0
--> installed re2.v0.9.1
 -> installed textutils.v0.9.0
--> installed async_inotify.v0.9.0
+-> installed re2.v0.9.1
 [ERROR] The compilation of core_extended failed at "/home/opam/.opam/4.06/bin/jbuilder build -p core_extended -j 71".
 
 #=== ERROR while compiling core_extended.v0.9.1 ===============================#
@@ -270,18 +270,16 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/core_extended.v0.9.1
 # command              ~/.opam/4.06/bin/jbuilder build -p core_extended -j 71
 # exit-code            1
-# env-file             ~/.opam/log/core_extended-10-8961ef.env
-# output-file          ~/.opam/log/core_extended-10-8961ef.out
+# env-file             ~/.opam/log/core_extended-10-97bc7c.env
+# output-file          ~/.opam/log/core_extended-10-97bc7c.out
 ### output ###
 #       ocamlc src/core_extended.{cmi,cmo,cmt}
 #     ocamlopt src/core_extended.{cmx,o}
 #         bash src/config_ext.h
 #       ocamlc src/extended_int_stubs.o
+#       ocamlc src/posix_clock_stubs.o
 #       ocamlc src/malloc_stubs.o
 #       ocamlc src/unix_pseudo_terminal_stubs.o
-#       ocamlc src/posix_clock_stubs.o
-#       ocamlc src/low_level_debug_stubs.o
-#       ocamlc src/linebuf_stubs.o
 #       ocamlc src/extended_unix_stubs.o (exit 2)
 # (cd _build/default/src && /home/opam/.opam/4.06/bin/ocamlc.opt -g -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/num -I /home/opam/.opam/4.06/lib/ocaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/re2 -I /home/opam/.opam/4.06/lib/re2/c -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/0 -I /home/opam/.opam/4.06/lib/sexplib/num -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/textutils -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -ccopt -g -o extended_unix_stubs.o extended_unix_stubs.c)
 # extended_unix_stubs.c: In function 'quota_query':
@@ -336,6 +334,8 @@ The following actions will be performed:
 # /usr/include/sys/quota.h:130:45: note: expected 'const char *' but argument is of type 'int'
 #  extern int quotactl (int __cmd, const char *__special, int __id,
 #                                  ~~~~~~~~~~~~^~~~~~~~~
+# 
+# Waiting for 1 job to finish.
 
 
 
@@ -414,5 +414,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812061735.export"
-31 1534054652 1534054924
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813061522.export"
+31 1534140920 1534141216

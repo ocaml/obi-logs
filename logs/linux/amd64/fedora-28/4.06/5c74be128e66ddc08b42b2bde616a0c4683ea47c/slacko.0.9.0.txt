@@ -9,7 +9,7 @@ Name        : m4
 Version     : 1.4.18
 Release     : 6.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 20:14:13 2018
+Install Date: Sun Aug 12 20:16:44 2018
 Group       : Applications/Text
 Size        : 372272
 License     : GPLv3+
@@ -38,7 +38,7 @@ Name        : which
 Version     : 2.21
 Release     : 8.fc28
 Architecture: x86_64
-Install Date: Sat Aug 11 06:28:14 2018
+Install Date: Sun Aug 12 06:36:45 2018
 Group       : Unspecified
 Size        : 79310
 License     : GPLv3
@@ -57,8 +57,7 @@ the specified program is in your PATH.
 # The following new OS packages need to be installed: openssl-devel pkgconfig
 The following command needs to be run through "sudo":
     yum install -y openssl-devel pkgconfig
-Fedora 28 - x86_64 - Updates                     26 MB/s |  22 MB     00:00    
-Last metadata expiration check: 0:00:07 ago on Sun Aug 12 05:50:29 2018.
+Last metadata expiration check: 0:00:01 ago on Mon Aug 13 05:57:34 2018.
 Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
 Dependencies resolved.
 ================================================================================
@@ -86,20 +85,20 @@ Install  12 Packages
 Total download size: 4.1 M
 Installed size: 7.6 M
 Downloading Packages:
-(1/12): libkadm5-1.16.1-13.fc28.x86_64.rpm      2.1 MB/s | 182 kB     00:00    
-(2/12): zlib-devel-1.2.11-8.fc28.x86_64.rpm     3.4 MB/s |  55 kB     00:00    
-(3/12): libcom_err-devel-1.44.2-0.fc28.x86_64.r 4.8 MB/s |  37 kB     00:00    
-(4/12): openssl-devel-1.1.0h-3.fc28.x86_64.rpm   15 MB/s | 1.9 MB     00:00    
-(5/12): libselinux-devel-2.8-1.fc28.x86_64.rpm  5.9 MB/s | 197 kB     00:00    
-(6/12): krb5-devel-1.16.1-13.fc28.x86_64.rpm    3.2 MB/s | 545 kB     00:00    
-(7/12): keyutils-libs-devel-1.5.10-6.fc28.x86_6 2.3 MB/s |  47 kB     00:00    
-(8/12): libsepol-devel-2.8-1.fc28.x86_64.rpm    1.4 MB/s |  84 kB     00:00    
-(9/12): libverto-devel-0.3.0-5.fc28.x86_64.rpm  559 kB/s |  17 kB     00:00    
-(10/12): pcre2-utf16-10.31-8.fc28.x86_64.rpm    8.0 MB/s | 221 kB     00:00    
-(11/12): pcre2-utf32-10.31-8.fc28.x86_64.rpm    6.7 MB/s | 213 kB     00:00    
-(12/12): pcre2-devel-10.31-8.fc28.x86_64.rpm    9.7 MB/s | 589 kB     00:00    
+(1/12): libkadm5-1.16.1-13.fc28.x86_64.rpm      1.6 MB/s | 182 kB     00:00    
+(2/12): openssl-devel-1.1.0h-3.fc28.x86_64.rpm   12 MB/s | 1.9 MB     00:00    
+(3/12): zlib-devel-1.2.11-8.fc28.x86_64.rpm     1.2 MB/s |  55 kB     00:00    
+(4/12): libcom_err-devel-1.44.2-0.fc28.x86_64.r 2.4 MB/s |  37 kB     00:00    
+(5/12): krb5-devel-1.16.1-13.fc28.x86_64.rpm    2.7 MB/s | 545 kB     00:00    
+(6/12): libsepol-devel-2.8-1.fc28.x86_64.rpm    2.7 MB/s |  84 kB     00:00    
+(7/12): keyutils-libs-devel-1.5.10-6.fc28.x86_6 1.8 MB/s |  47 kB     00:00    
+(8/12): libverto-devel-0.3.0-5.fc28.x86_64.rpm  531 kB/s |  17 kB     00:00    
+(9/12): libselinux-devel-2.8-1.fc28.x86_64.rpm  2.0 MB/s | 197 kB     00:00    
+(10/12): pcre2-utf16-10.31-8.fc28.x86_64.rpm    3.8 MB/s | 221 kB     00:00    
+(11/12): pcre2-utf32-10.31-8.fc28.x86_64.rpm    3.8 MB/s | 213 kB     00:00    
+(12/12): pcre2-devel-10.31-8.fc28.x86_64.rpm    6.4 MB/s | 589 kB     00:00    
 --------------------------------------------------------------------------------
-Total                                           3.2 MB/s | 4.1 MB     00:01     
+Total                                           3.0 MB/s | 4.1 MB     00:01     
 Running transaction check
 Transaction check succeeded.
 Running transaction test
@@ -276,9 +275,9 @@ The following actions will be performed:
 -> installed ppx_core.v0.9.3
 -> installed ppx_optcomp.v0.9.0
 -> installed ppx_driver.v0.9.2
--> installed camlp4.4.06+1
 -> installed fieldslib.v0.9.0
 -> installed ppx_metaquot.v0.9.0
+-> installed camlp4.4.06+1
 -> installed ppx_type_conv.v0.9.1
 -> installed lwt.3.3.0
 -> installed ppx_fields_conv.v0.9.0
@@ -369,5 +368,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812055043.export"
-31 1534053024 1534053222
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813055743.export"
+31 1534139846 1534140168
