@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ospec.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ospec.0.2.1: The following dependencies couldn't be met:
+          - ospec -> ocaml = 3.12.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ospec.0.2.1 returned 20
+20 1534191441 1534191444
