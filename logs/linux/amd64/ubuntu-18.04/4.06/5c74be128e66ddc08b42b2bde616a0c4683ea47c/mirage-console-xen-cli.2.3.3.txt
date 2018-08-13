@@ -151,38 +151,38 @@ The following actions will be performed:
 -> installed ppx_tools_versioned.5.2
 -> installed base.v0.11.1
 -> installed sexplib.v0.11.0
--> installed cstruct.3.2.1
 -> installed lwt.3.3.0
--> installed ppx_cstruct.3.2.1
--> installed cstruct-lwt.3.2.1
--> installed mirage-profile.0.8.2
 -> installed stdio.v0.11.0
 -> installed configurator.v0.11.0
+-> installed cstruct.3.2.1
+-> installed cstruct-lwt.3.2.1
 -> installed io-page.2.0.1
 -> installed io-page-unix.2.0.1
+-> installed ppx_cstruct.3.2.1
+-> installed mirage-profile.0.8.2
 -> installed shared-memory-ring.3.0.1
 -> installed shared-memory-ring-lwt.3.0.1
 -> installed topkg.0.9.1
+-> installed ppxlib.0.3.0
 -> installed cmdliner.1.0.2
-[ERROR] The compilation of xenctrl failed at "/usr/bin/make".
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ipaddr.2.8.0
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
--> installed ppxlib.0.3.0
--> installed fmt.0.8.5
--> installed logs.0.6.2
--> installed mirage-device.1.1.0
--> installed mirage-flow.1.5.0
--> installed mirage-unix.3.0.8
--> installed ppx_sexp_conv.v0.11.2
--> installed mirage-console.2.3.5
--> installed mirage-console-lwt.2.3.5
--> installed ipaddr.2.8.0
+[ERROR] The compilation of xenctrl failed at "/usr/bin/make".
 -> installed xen-evtchn.2.0.0
 -> installed xen-gnt.3.0.1
 -> installed xenstore.2.0.0
+-> installed fmt.0.8.5
+-> installed mirage-device.1.1.0
+-> installed mirage-flow.1.5.0
+-> installed logs.0.6.2
+-> installed mirage-console.2.3.5
+-> installed mirage-unix.3.0.8
+-> installed xenstore_transport.1.0.0
+-> installed mirage-console-lwt.2.3.5
 -> installed mirage-console-unix.2.3.5
 -> installed mirage-console-xen-proto.2.3.5
--> installed xenstore_transport.1.0.0
 -> installed mirage-console-xen-backend.2.3.3
 
 #=== ERROR while compiling xenctrl.0.9.31 =====================================#
@@ -190,8 +190,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/xenctrl.0.9.31
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/xenctrl-13-dca4a2.env
-# output-file          ~/.opam/log/xenctrl-13-dca4a2.out
+# env-file             ~/.opam/log/xenctrl-13-6eb9f4.env
+# output-file          ~/.opam/log/xenctrl-13-6eb9f4.out
 ### output ###
 # File "setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -398,5 +398,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180812032647.export"
-31 1534044396 1534044523
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180813034655.export"
+31 1534132003 1534132140
