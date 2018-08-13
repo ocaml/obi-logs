@@ -93,34 +93,34 @@ The following actions will be performed:
 -> installed ppx_core.113.33.01+4.03
 -> installed ppx_deriving.4.1.5
 -> installed sexplib.113.33.00+4.03
--> installed ppx_optcomp.113.33.00+4.03
 -> installed cstruct.3.2.1
--> installed ppx_driver.113.33.02+4.03
+-> installed ppx_optcomp.113.33.00+4.03
 -> installed io-page.1.6.1
 -> installed topkg.0.9.1
+-> installed ppx_driver.113.33.02+4.03
 -> installed astring.0.8.3
 -> installed rresult.0.5.0
 -> installed uchar.0.0.2
--> installed ppx_type_conv.113.33.02+4.03
 -> installed fmt.0.8.5
 -> installed logs.0.6.2
--> installed datakit-server.0.12.0
 -> installed mirage-device.1.1.0
+-> installed datakit-server.0.12.0
 -> installed mirage-clock.1.3.0
 -> installed mirage-flow.1.3.0
 -> installed mirage-channel.3.1.0
 -> installed mirage-kv.1.1.1
 -> installed mirage-flow-lwt.1.4.0
 -> installed mirage-kv-lwt.1.1.0
--> installed ppx_sexp_conv.113.33.01+4.03
--> installed win-error.0.3
+-> installed ppx_type_conv.113.33.02+4.03
 -> installed mirage-channel-lwt.3.1.0
-[ERROR] The compilation of protocol-9p failed at "/home/opam/.opam/4.03/bin/jbuilder build -p protocol-9p -j 11".
+-> installed win-error.0.3
+-> installed ppx_sexp_conv.113.33.01+4.03
+[ERROR] The compilation of protocol-9p failed at "/home/opam/.opam/4.03/bin/jbuilder build -p protocol-9p -j 47".
 
 #=== ERROR while compiling protocol-9p.0.12.1 =================================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.03/.opam-switch/build/protocol-9p.0.12.1
-# command              ~/.opam/4.03/bin/jbuilder build -p protocol-9p -j 11
+# command              ~/.opam/4.03/bin/jbuilder build -p protocol-9p -j 47
 # exit-code            1
 # env-file             ~/.opam/log/protocol-9p-11-973d25.env
 # output-file          ~/.opam/log/protocol-9p-11-973d25.out
@@ -175,5 +175,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180812012401.export"
-31 1534037036 1534037165
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180813023236.export"
+31 1534127553 1534127642

@@ -324,8 +324,8 @@ The following actions will be performed:
 -> installed ocaml-compiler-libs.v0.9.0
 -> installed ocamlbuild.0.12.0
 -> installed cppo_ocamlbuild.1.6.0
--> installed ocamlgraph.1.8.8
 -> installed fileutils.0.5.3
+-> installed ocamlgraph.1.8.8
 -> installed ocamlify.0.0.1
 -> installed ocamlmod.0.0.9
 -> installed octavius.1.2.0
@@ -335,13 +335,13 @@ The following actions will be performed:
 -> installed lwt.4.1.0
 -> installed lwt_log.1.1.0
 -> installed ocaml-migrate-parsetree.1.0.11
--> installed oasis.0.4.7
--> installed sexplib.v0.9.2
 -> installed ppx_ast.v0.9.1
+-> installed sexplib.v0.9.2
+-> installed oasis.0.4.7
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
--> installed base.v0.9.3
 -> installed cmdliner.1.0.2
+-> installed base.v0.9.3
 -> installed react.1.2.1
 -> installed lwt_react.1.1.1
 -> installed stdio.v0.9.0
@@ -465,6 +465,7 @@ The following actions will be performed:
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_env.cmo lib/bap_primus/bap_primus_env.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_exn.cmo lib/bap_primus/bap_primus_exn.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmo lib/bap_primus/bap_primus_generator.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmo lib/bap_primus/bap_primus_interpreter.ml
 # + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_generator.cmo lib/bap_primus/bap_primus_generator.ml
 # File "lib/bap_primus/bap_primus_generator.ml", line 11, characters 6-11:
 # Warning 3: deprecated: Core_kernel.Std.expm1
@@ -472,7 +473,6 @@ The following actions will be performed:
 # File "lib/bap_primus/bap_primus_generator.ml", line 11, characters 29-34:
 # Warning 3: deprecated: Core_kernel.Std.log1p
 # [since 2016-07] Use [Float.log1p]
-# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_interpreter.cmo lib/bap_primus/bap_primus_interpreter.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_iterator.cmo lib/bap_primus/bap_primus_iterator.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_linker.cmo lib/bap_primus/bap_primus_linker.ml
 # /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -package uuidm -package ppx_jane -package core_kernel -package bap-future -package bap-c -package bap-abi -package bap -I lib/bap_primus -o lib/bap_primus/bap_primus_lisp.cmo lib/bap_primus/bap_primus_lisp.ml
@@ -579,5 +579,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180812014900.export"
-31 1534038513 1534039493
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180813031017.export"
+31 1534129795 1534130423

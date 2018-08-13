@@ -116,8 +116,8 @@ The following actions will be performed:
 -> installed ppx_tools.5.0+4.03.0
 -> installed ppx_core.113.33.01+4.03
 -> installed ppx_optcomp.113.33.00+4.03
--> installed omake.0.10.3
 -> installed ppx_driver.113.33.02+4.03
+-> installed omake.0.10.3
 -> installed ppx_here.113.33.00
 -> installed ppx_inline_test.113.33.00+4.03
 -> installed ppx_fail.113.33.00+4.03
@@ -173,14 +173,14 @@ The following actions will be performed:
 # --- Checking for ocamllex.opt... (found /home/opam/.opam/4.03/bin/ocamllex.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
 # --- Checking whether ocamlopt can create cmxs plugins... (yes)
-# *** omake: finished reading OMakefiles (0.16 sec)
+# *** omake: finished reading OMakefiles (0.21 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan _build/lib scan-ocaml-response.ml
 # + ocamlfind ocamldep -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -modules response.ml
 # File "response.ml", line 96, characters 32-33:
 # Error: Syntax error
 # *** omake: 28/230 targets are up to date
-# *** omake: failed (1.54 sec, 5/5 scans, 2/2 rules, 68/97 digests)
+# *** omake: failed (1.97 sec, 5/5 scans, 2/2 rules, 68/97 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner _build/lib/scan-ocaml-response.ml>
 #       depends on: _build/lib/response.ml
@@ -244,5 +244,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180812013607.export"
-31 1534037764 1534038567
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180813032414.export"
+31 1534130650 1534131618
