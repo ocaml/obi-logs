@@ -1,0 +1,227 @@
+$ opam depext -iy -j 2 camltc.0.9.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+git
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by lwt]
+  - install base-bytes              base   [required by ounit]
+  - install ocamlbuild              0.12.0 [required by camltc]
+  - install ocaml-migrate-parsetree 1.0.11 [required by lwt]
+  - install cppo                    1.6.4  [required by lwt]
+  - install ounit                   2.0.8  [required by camltc]
+  - install ppx_tools_versioned     5.2    [required by lwt]
+  - install lwt                     3.3.0  [required by camltc] For the PPX, please install package lwt_ppx
+                                                                For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install camltc                  0.9.4
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[lwt.3.3.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ounit.2.0.8] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[camltc.0.9.4] synchronised from git+https://github.com/toolslive/camltc.git#317e1e4606ce1e86d09b7b83ec2cb1709a81d437
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlbuild.0.12.0
+-> installed ppx_tools_versioned.5.2
+-> installed ounit.2.0.8
+-> installed lwt.3.3.0
+[ERROR] The compilation of camltc failed at "/usr/bin/make -C src".
+
+#=== ERROR while compiling camltc.0.9.4 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/camltc.0.9.4
+# command              /usr/bin/make -C src
+# exit-code            2
+# env-file             ~/.opam/log/camltc-11-c1fc31.env
+# output-file          ~/.opam/log/camltc-11-c1fc31.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/camltc.0.9.4/src'
+# ocamlbuild -use-ocamlfind test.byte test.native camltc.cma camltc.cmxa camltc.a
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.07/lib/ocamlbuild /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.07/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -modules test.ml > test.ml.depends
+# ocamlfind ocamldep -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -modules camltc.mli > camltc.mli.depends
+# configuring tokyocabinet
+# mkdir -p 3rd-party/tokyocabinet && cd 3rd-party/tokyocabinet && ../../../3rd-party/tokyocabinet/configure --disable-bzip --disable-zlib
+# + mkdir -p 3rd-party/tokyocabinet && cd 3rd-party/tokyocabinet && ../../../3rd-party/tokyocabinet/configure --disable-bzip --disable-zlib
+# #================================================================
+# # Configuring Tokyo Cabinet version 1.4.48 (no-zlib) (no-bzip).
+# #================================================================
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking how to run the C preprocessor... gcc -E
+# checking for grep that handles long lines and -e... /bin/grep
+# checking for egrep... /bin/grep -E
+# checking for ANSI C header files... yes
+# checking for sys/types.h... yes
+# checking for sys/stat.h... yes
+# checking for stdlib.h... yes
+# checking for string.h... yes
+# checking for memory.h... yes
+# checking for strings.h... yes
+# checking for inttypes.h... yes
+# checking for stdint.h... yes
+# checking for unistd.h... yes
+# checking whether byte ordering is bigendian... no
+# checking for main in -lc... yes
+# checking for main in -lm... yes
+# checking for main in -lpthread... yes
+# checking for main in -lrt... yes
+# checking for main in -ltokyocabinet... no
+# checking for stdlib.h... (cached) yes
+# checking for stdint.h... (cached) yes
+# checking for unistd.h... (cached) yes
+# checking dirent.h usability... yes
+# checking dirent.h presence... yes
+# checking for dirent.h... yes
+# checking regex.h usability... yes
+# checking regex.h presence... yes
+# checking for regex.h... yes
+# checking glob.h usability... yes
+# checking glob.h presence... yes
+# checking for glob.h... yes
+# checking pthread.h usability... yes
+# checking pthread.h presence... yes
+# checking for pthread.h... yes
+# configure: creating ./config.status
+# config.status: creating Makefile
+# config.status: creating tokyocabinet.pc
+# #================================================================
+# # Ready to make.
+# #================================================================
+# make 3rd-party tokyocabinet
+# make -C 3rd-party/tokyocabinet
+# + make -C 3rd-party/tokyocabinet
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/camltc.0.9.4/src/_build/3rd-party/tokyocabinet'
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcutil.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tchdb.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcbdb.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcfdb.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tctdb.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcadb.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/myconf.c
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/md5.c
+# ar rv libtokyocabinet.a tcutil.o tchdb.o tcbdb.o tcfdb.o tctdb.o tcadb.o myconf.o md5.o
+# ar: creating libtokyocabinet.a
+# a - tcutil.o
+# a - tchdb.o
+# a - tcbdb.o
+# a - tcfdb.o
+# a - tctdb.o
+# a - tcadb.o
+# a - myconf.o
+# a - md5.o
+# if uname -a | egrep -i 'SunOS' > /dev/null ; \
+#   then \
+#     gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -shared -Wl,-G,-h,libtokyocabinet.so.9 -o libtokyocabinet.so.9.11.0 \
+#       tcutil.o tchdb.o tcbdb.o tcfdb.o tctdb.o tcadb.o myconf.o md5.o -L. -L/usr/local/lib -lrt -lpthread -lm -lc  ; \
+#   else \
+#     gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -shared -Wl,-soname,libtokyocabinet.so.9 -o libtokyocabinet.so.9.11.0 \
+#       tcutil.o tchdb.o tcbdb.o tcfdb.o tctdb.o tcadb.o myconf.o md5.o -L. -L/usr/local/lib -lrt -lpthread -lm -lc  ; \
+#   fi
+# ln -f -s libtokyocabinet.so.9.11.0 libtokyocabinet.so.9
+# ln -f -s libtokyocabinet.so.9.11.0 libtokyocabinet.so
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcutest.c
+# ../../../3rd-party/tokyocabinet/tcutest.c: In function 'procmisc':
+# ../../../3rd-party/tokyocabinet/tcutest.c:880:22: warning: self-comparison always evaluates to false [-Wtautological-compare]
+#            if(dary[j] != dary[j]) err = true;
+#                       ^~
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcutest tcutest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcumttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcumttest tcumttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcucodec.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcucodec tcucodec.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tchtest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tchtest tchtest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tchmttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tchmttest tchmttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tchmgr.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tchmgr tchmgr.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcbtest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcbtest tcbtest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcbmttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcbmttest tcbmttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcbmgr.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcbmgr tcbmgr.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcftest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcftest tcftest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcfmttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcfmttest tcfmttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcfmgr.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcfmgr tcfmgr.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcttest tcttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tctmttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tctmttest tctmttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tctmgr.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tctmgr tctmgr.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcatest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcatest tcatest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcamttest.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcamttest tcamttest.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcamgr.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcamgr tcamgr.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# gcc -c -I. -I/usr/local/include -DNDEBUG -D_GNU_SOURCE=1 -D_REENTRANT -D__EXTENSIONS__ -D_MYNOZLIB -D_MYNOBZIP -D_TC_PREFIX="\"/usr/local\"" -D_TC_INCLUDEDIR="\"/usr/local/include\"" -D_TC_LIBDIR="\"/usr/local/lib\"" -D_TC_BINDIR="\"/usr/local/bin\"" -D_TC_LIBEXECDIR="\"/usr/local/libexec\"" -D_TC_APPINC="\"-I/usr/local/include\"" -D_TC_APPLIBS="\"-L/usr/local/lib -ltokyocabinet -lrt -lpthread -lm -lc \"" -I../../../3rd-party/tokyocabinet -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 ../../../3rd-party/tokyocabinet/tcawmgr.c
+# gcc -g -O2 -std=c99 -Wall -fPIC -fsigned-char -O2 -o tcawmgr.cgi tcawmgr.o -L. -L/usr/local/lib  -ltokyocabinet -lrt -lpthread -lm -lc 
+# 
+# #================================================================
+# # Ready to install.
+# #================================================================
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/camltc.0.9.4/src/_build/3rd-party/tokyocabinet'
+# ocamlfind ocamldep -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -modules hotc_test.ml > hotc_test.ml.depends
+# ocamlfind ocamldep -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -modules extra.ml > extra.ml.depends
+# ocamlfind ocamldep -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -modules hotc.mli > hotc.mli.depends
+# ocamlfind ocamldep -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -modules otc.ml > otc.ml.depends
+# ocamlfind ocamlc -c -g -annot -thread -thread -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -o otc.cmo otc.ml
+# + ocamlfind ocamlc -c -g -annot -thread -thread -package lwt.preemptive -package lwt.unix -package lwt -package oUnit -o otc.cmo otc.ml
+# File "otc.ml", line 27, characters 14-15:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# Makefile:4: recipe for target 'build' failed
+# make: *** [build] Error 10
+# make: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/camltc.0.9.4/src'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build camltc 0.9.4
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install cppo                    1.6.4
+| - install lwt                     3.3.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ounit                   2.0.8
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    git
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180814210121.export"
+31 1534280479 1534280554

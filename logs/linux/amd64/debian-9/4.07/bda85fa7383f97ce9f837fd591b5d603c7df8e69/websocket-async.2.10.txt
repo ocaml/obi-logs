@@ -1,0 +1,31 @@
+$ opam depext -iy -j 2 websocket-async.2.10
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for websocket-async.2.10: The following dependencies couldn't be met:
+          - websocket-async -> async_ssl < v0.10.0 -> sexplib < 112.18.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ppx_bench < 113.34.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ppx_bench < 113.34.00 -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ppx_bench < 113.34.00 -> ppx_inline_test < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ppx_bench < 113.34.00 -> ppx_inline_test < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ppx_assert < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ppx_assert < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> pa_test >= 112.24.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> herelib < 109.36.00 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> ctypes < 0.4.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - websocket-async -> async_ssl < v0.10.0 -> base < v0.10 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=websocket-async.2.10 returned 20
+20 1534278182 1534278184

@@ -1,0 +1,80 @@
+$ opam depext -iy -j 2 imagelib.20170118
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy m4 zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package zlib1g-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install camlzip    1.07     [required by imagelib]
+  - install ocamlbuild 0.12.0   [required by imagelib]
+  - install imagelib   20170118
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlzip.1.07] found in cache
+[imagelib.20170118] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed camlzip.1.07
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of imagelib failed at "/usr/bin/make".
+
+#=== ERROR while compiling imagelib.20170118 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/imagelib.20170118
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/imagelib-11-06fa5f.env
+# output-file          ~/.opam/log/imagelib-11-06fa5f.out
+### output ###
+# ocamlbuild -cflags -w,-3 -use-ocamlfind imagelib.cma
+# ocamlfind ocamldep -package bigarray -package zip -modules imageUtil.ml > imageUtil.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules image.mli > image.mli.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o image.cmi image.mli
+# ocamlfind ocamldep -package bigarray -package zip -modules image.ml > image.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imageGIF.ml > imageGIF.ml.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageUtil.cmo imageUtil.ml
+# ocamlfind ocamldep -package bigarray -package zip -modules imageJPG.ml > imageJPG.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imagePNG.ml > imagePNG.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imagePPM.ml > imagePPM.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imageXCF.ml > imageXCF.ml.depends
+# ocamlfind ocamldep -package bigarray -package zip -modules imageLib.mli > imageLib.mli.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageLib.cmi imageLib.mli
+# ocamlfind ocamldep -package bigarray -package zip -modules imageLib.ml > imageLib.ml.depends
+# ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# + ocamlfind ocamlc -c -w -3 -package bigarray -package zip -o imageGIF.cmo imageGIF.ml
+# File "imageGIF.ml", line 40, characters 16-21:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# GNUmakefile:49: recipe for target 'imagelib.cma' failed
+# make: *** [imagelib.cma] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build imagelib 20170118
++- 
++- The following changes have been performed
+| - install camlzip    1.07
+| - install ocamlbuild 0.12.0
++- 
+
+<><> imagelib.20170118 troubleshooting ><><><><><><><><><><><><><><><><><><><><>
+=> imagelib requires convert (imagemagick) to handle format other than png and ppm.
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180814201350.export"
+31 1534277624 1534277639
