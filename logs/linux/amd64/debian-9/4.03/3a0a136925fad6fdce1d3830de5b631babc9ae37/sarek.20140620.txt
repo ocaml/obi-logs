@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 sarek.20140620
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for sarek.20140620: The following dependencies couldn't be met:
+          - sarek -> ocaml = 4.01.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=sarek.20140620 returned 20
+20 1534204286 1534204289
