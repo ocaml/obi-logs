@@ -1,0 +1,171 @@
+$ opam depext -iy -j 2 annexlib.0.13.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+pcre-devel
+# The following new OS packages need to be installed: pcre-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install pcre-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 5 NEW packages are going to be installed:
+  libpcre16-0 libpcrecpp0 libpcreposix0 libstdc++-devel pcre-devel
+
+5 new packages to install.
+Overall download size: 416.3 KiB. Already cached: 0 B. After the operation, additional 714.7 KiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libstdc++-devel-4.8-11.16.x86_64 (1/5),   4.8 KiB (   72   B unpacked)
+Retrieving: libstdc++-devel-4.8-11.16.x86_64.rpm [done]
+Retrieving package libpcre16-0-8.39-11.1.x86_64 (2/5), 147.2 KiB (406.3 KiB unpacked)
+Retrieving: libpcre16-0-8.39-11.1.x86_64.rpm [.done (3.9 KiB/s)]
+Retrieving package libpcrecpp0-8.39-11.1.x86_64 (3/5),  24.0 KiB ( 34.6 KiB unpacked)
+Retrieving: libpcrecpp0-8.39-11.1.x86_64.rpm [done]
+Retrieving package libpcreposix0-8.39-11.1.x86_64 (4/5),  15.7 KiB ( 10.2 KiB unpacked)
+Retrieving: libpcreposix0-8.39-11.1.x86_64.rpm [done]
+Retrieving package pcre-devel-8.39-11.1.x86_64 (5/5), 224.5 KiB (263.5 KiB unpacked)
+Retrieving: pcre-devel-8.39-11.1.x86_64.rpm [done]
+Checking for file conflicts: [......done]
+(1/5) Installing: libstdc++-devel-4.8-11.16.x86_64 [.....done]
+(2/5) Installing: libpcre16-0-8.39-11.1.x86_64 [.........done]
+(3/5) Installing: libpcrecpp0-8.39-11.1.x86_64 [....done]
+(4/5) Installing: libpcreposix0-8.39-11.1.x86_64 [.....done]
+(5/5) Installing: pcre-devel-8.39-11.1.x86_64 [..........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install base-bytes      base    [required by pcre]
+  - install conf-pkg-config 1.1     [required by conf-libpcre]
+  - install base            v0.11.1 [required by pcre]
+  - install conf-libpcre    1       [required by pcre]
+  - install stdio           v0.11.0 [required by pcre]
+  - install configurator    v0.11.0 [required by pcre]
+  - install pcre            7.3.4   [required by annexlib]
+  - install annexlib        0.13.5
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[annexlib.0.13.5] found in cache
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+[ERROR] The compilation of annexlib failed at "/usr/bin/make all".
+
+#=== ERROR while compiling annexlib.0.13.5 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/annexlib.0.13.5
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/annexlib-12-130d46.env
+# output-file          ~/.opam/log/annexlib-12-130d46.out
+### output ###
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/annexlib.0.13.5'
+# making ._bcdi/variant.di from variant.mli
+# making ._bcdi/syslog.di from syslog.mli
+# making ._bcdi/find.di from find.mli
+# making ._bcdi/glob.di from glob.mli
+# making ._bcdi/unixExtras.di from unixExtras.mli
+# making ._bcdi/time.di from time.mli
+# making ._bcdi/iOExtras.di from iOExtras.mli
+# making ._bcdi/strExtras.di from strExtras.mli
+# making ._bcdi/charExtras.di from charExtras.mli
+# making ._bcdi/locale.di from locale.mli
+# making ._bcdi/option.di from option.mli
+# making ._bcdi/listExtras.di from listExtras.mli
+# making ._bcdi/arrayExtras.di from arrayExtras.mli
+# making ._d/variant.d from variant.ml
+# making ._d/syslog.d from syslog.ml
+# making ._d/find.d from find.ml
+# making ._d/glob.d from glob.ml
+# making ._d/unixExtras.d from unixExtras.ml
+# making ._d/time.d from time.ml
+# making ._d/iOExtras.d from iOExtras.ml
+# making ._d/strExtras.d from strExtras.ml
+# making ._d/charExtras.d from charExtras.ml
+# making ._d/locale.d from locale.ml
+# making ._d/option.d from option.ml
+# making ._d/listExtras.d from listExtras.ml
+# making ._d/arrayExtras.d from arrayExtras.ml
+# ocamlc -c -cc "gcc" -ccopt "-fPIC -DPIC -g -O2 -fPIC -DPIC -Wall -Wno-unused \
+# 			    -o util_stubs.o " util_stubs.c 
+# util_stubs.c: In function 'stew_strptime_tm':
+# util_stubs.c:400:3: warning: implicit declaration of function 'strptime' [-Wimplicit-function-declaration]
+#    s = strptime(String_val(time_str), String_val(fmt), &tm);
+#    ^
+# util_stubs.c:400:5: warning: assignment makes pointer from integer without a cast [enabled by default]
+#    s = strptime(String_val(time_str), String_val(fmt), &tm);
+#      ^
+# ar rcs libannexlib_stubs.a  util_stubs.o
+# ocamlfind ocamlc -package pcre,unix -c arrayExtras.mli
+# ocamlfind ocamlc -package pcre,unix -c arrayExtras.ml
+# ocamlfind ocamlc -package pcre,unix -c listExtras.mli
+# ocamlfind ocamlc -package pcre,unix -c listExtras.ml
+# ocamlfind ocamlc -package pcre,unix -c option.mli
+# ocamlfind ocamlc -package pcre,unix -c option.ml
+# ocamlfind ocamlc -package pcre,unix -c locale.mli
+# ocamlfind ocamlc -package pcre,unix -c locale.ml
+# ocamlfind ocamlc -package pcre,unix -c charExtras.mli
+# ocamlfind ocamlc -package pcre,unix -c charExtras.ml
+# File "charExtras.ml", line 31, characters 35-37:
+# Warning 3: deprecated: Pervasives.or
+# Use (||) instead.
+# ocamlfind ocamlc -package pcre,unix -c strExtras.mli
+# ocamlfind ocamlc -package pcre,unix -c strExtras.ml
+# File "strExtras.ml", line 143, characters 13-26:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "strExtras.ml", line 145, characters 6-23:
+# Warning 3: deprecated: String.unsafe_set
+# File "strExtras.ml", line 151, characters 13-26:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "strExtras.ml", line 153, characters 6-23:
+# Warning 3: deprecated: String.unsafe_set
+# File "strExtras.ml", line 160, characters 6-23:
+# Warning 3: deprecated: String.unsafe_set
+# File "strExtras.ml", line 160, characters 24-27:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# OCamlMakefile:935: recipe for target 'strExtras.cmo' failed
+# make[1]: *** [strExtras.cmo] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/annexlib.0.13.5'
+# OCamlMakefile:700: recipe for target 'byte-code-library' failed
+# make: *** [byte-code-library] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build annexlib 0.13.5
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install conf-libpcre    1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install pcre            7.3.4
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180814041206.export"
+31 1534219488 1534219953

@@ -1,0 +1,22 @@
+$ opam depext -iy -j 2 cmark.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+cmark
+homebrew
+libffi-devel
+m4
+osx
+# The following new OS packages need to be installed: cmark homebrew libffi-devel osx
+The following command needs to be run through "sudo":
+    zypper --non-interactive install cmark homebrew libffi-devel osx
+Retrieving repository 'OSS Update' metadata [.done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+'libffi-devel' not found in package names. Trying capabilities.
+'homebrew' not found in package names. Trying capabilities.
+No provider of 'homebrew' found.
+'osx' not found in package names. Trying capabilities.
+No provider of 'osx' found.
+OS package installation failed
+1 1534217408 1534217911

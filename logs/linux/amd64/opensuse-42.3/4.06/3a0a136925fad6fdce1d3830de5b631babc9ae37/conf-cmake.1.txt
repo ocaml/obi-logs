@@ -1,0 +1,33 @@
+$ opam depext -iy -j 2 conf-cmake.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-cmake 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-cmake failed at "/bin/bash -ex configure.sh".
+
+#=== ERROR while compiling conf-cmake.1 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-cmake.1
+# command              /bin/bash -ex configure.sh
+# exit-code            1
+# env-file             ~/.opam/log/conf-cmake-12-9b8556.env
+# output-file          ~/.opam/log/conf-cmake-12-9b8556.out
+### output ###
+# + command -v cmake3
+# + command -v cmake
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-cmake 1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534222596 1534222763

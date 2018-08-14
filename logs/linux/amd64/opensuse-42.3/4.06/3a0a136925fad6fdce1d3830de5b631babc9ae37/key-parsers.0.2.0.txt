@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 key-parsers.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for key-parsers.0.2.0: The following dependencies couldn't be met:
+          - key-parsers -> asn1-combinators < 0.2.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=key-parsers.0.2.0 returned 20
+20 1534220707 1534220710
