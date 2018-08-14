@@ -1,0 +1,12 @@
+$ opam depext -iy -j 2 ocaml-gist.0.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+npm
+# The following new OS packages need to be installed: npm
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy npm
+E: Unable to locate package npm
+OS package installation failed
+1 1534199216 1534199223
