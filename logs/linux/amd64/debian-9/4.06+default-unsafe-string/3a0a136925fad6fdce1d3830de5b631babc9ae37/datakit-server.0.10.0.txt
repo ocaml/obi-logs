@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 datakit-server.0.10.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for datakit-server.0.10.0: The following dependencies couldn't be met:
+          - datakit-server -> protocol-9p = 0.9.0 -> lwt < 3.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=datakit-server.0.10.0 returned 20
+20 1534211818 1534211820
