@@ -1,0 +1,233 @@
+$ opam depext -iy -j 2 osdp.0.5.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+autoconf
+debianutils
+libgmp-dev
+m4
+perl
+sdpa
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy autoconf debianutils libgmp-dev m4 perl sdpa
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package autoconf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-autoconf_2.69-10_all.deb ...
+Unpacking autoconf (2.69-10) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../01-autotools-dev_20161112.1_all.deb ...
+Unpacking autotools-dev (20161112.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../02-automake_1%3a1.15-6_all.deb ...
+Unpacking automake (1:1.15-6) ...
+Selecting previously unselected package libgfortran3:amd64.
+Preparing to unpack .../03-libgfortran3_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libgfortran3:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package libgfortran-6-dev:amd64.
+Preparing to unpack .../04-libgfortran-6-dev_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking libgfortran-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package gfortran-6.
+Preparing to unpack .../05-gfortran-6_6.3.0-18+deb9u1_amd64.deb ...
+Unpacking gfortran-6 (6.3.0-18+deb9u1) ...
+Selecting previously unselected package gfortran.
+Preparing to unpack .../06-gfortran_4%3a6.3.0-4_amd64.deb ...
+Unpacking gfortran (4:6.3.0-4) ...
+Selecting previously unselected package libblas-common.
+Preparing to unpack .../07-libblas-common_3.7.0-2_amd64.deb ...
+Unpacking libblas-common (3.7.0-2) ...
+Selecting previously unselected package libatlas3-base.
+Preparing to unpack .../08-libatlas3-base_3.10.3-1+b1_amd64.deb ...
+Unpacking libatlas3-base (3.10.3-1+b1) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../09-libblas3_3.7.0-2_amd64.deb ...
+Unpacking libblas3 (3.7.0-2) ...
+Selecting previously unselected package libblas-dev.
+Preparing to unpack .../10-libblas-dev_3.7.0-2_amd64.deb ...
+Unpacking libblas-dev (3.7.0-2) ...
+Selecting previously unselected package libatlas-dev.
+Preparing to unpack .../11-libatlas-dev_3.10.3-1+b1_amd64.deb ...
+Unpacking libatlas-dev (3.10.3-1+b1) ...
+Selecting previously unselected package libatlas-base-dev.
+Preparing to unpack .../12-libatlas-base-dev_3.10.3-1+b1_amd64.deb ...
+Unpacking libatlas-base-dev (3.10.3-1+b1) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../13-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../14-libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libmumps-seq-4.10.0.
+Preparing to unpack .../15-libmumps-seq-4.10.0_4.10.0.dfsg-4+b2_amd64.deb ...
+Unpacking libmumps-seq-4.10.0 (4.10.0.dfsg-4+b2) ...
+Selecting previously unselected package sdpa.
+Preparing to unpack .../16-sdpa_7.3.9+dfsg-1+b3_amd64.deb ...
+Unpacking sdpa (7.3.9+dfsg-1+b3) ...
+Setting up libblas-common (3.7.0-2) ...
+Setting up libgfortran3:amd64 (6.3.0-18+deb9u1) ...
+Setting up libgfortran-6-dev:amd64 (6.3.0-18+deb9u1) ...
+Setting up autoconf (2.69-10) ...
+Setting up libblas3 (3.7.0-2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up autotools-dev (20161112.1) ...
+Setting up automake (1:1.15-6) ...
+update-alternatives: using /usr/bin/automake-1.15 to provide /usr/bin/automake (automake) in auto mode
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libmumps-seq-4.10.0 (4.10.0.dfsg-4+b2) ...
+Setting up libatlas3-base (3.10.3-1+b1) ...
+update-alternatives: using /usr/lib/atlas-base/atlas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+update-alternatives: using /usr/lib/atlas-base/atlas/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up gfortran-6 (6.3.0-18+deb9u1) ...
+Setting up gfortran (4:6.3.0-4) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f77 (f77) in auto mode
+Setting up libblas-dev (3.7.0-2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up libatlas-dev (3.10.3-1+b1) ...
+Setting up libatlas-base-dev (3.10.3-1+b1) ...
+update-alternatives: using /usr/lib/atlas-base/atlas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+update-alternatives: using /usr/lib/atlas-base/atlas/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Setting up sdpa (7.3.9+dfsg-1+b3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp       1      [required by zarith]
+  - install conf-which     1      [required by conf-autoconf]
+  - install conf-perl      1      [required by zarith]
+  - install ocamlbuild     0.12.0 [required by osdp]
+  - install num            1.1    [required by ocplib-simplex]
+  - install conf-sdpa      1      [required by osdp]
+  - install conf-autoconf  0.1    [required by ocplib-simplex]
+  - install zarith         1.7    [required by osdp]
+  - install ocplib-simplex 0.3    [required by osdp]
+  - install osdp           0.5.4
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[conf-sdpa.1] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-simplex.0.3] found in cache
+[osdp.0.5.4] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-sdpa.1
+-> installed conf-which.1
+-> installed conf-autoconf.0.1
+-> installed num.1.1
+-> installed zarith.1.7
+-> installed ocplib-simplex.0.3
+
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
+# exit-code            2
+# env-file             ~/.opam/log/ocamlbuild-11-af3201.env
+# output-file          ~/.opam/log/ocamlbuild-11-af3201.out
+### output ###
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlbuild 0.12.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install conf-autoconf  0.1
+| - install conf-gmp       1
+| - install conf-perl      1
+| - install conf-sdpa      1
+| - install conf-which     1
+| - install num            1.1
+| - install ocplib-simplex 0.3
+| - install zarith         1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180814202300.export"
+31 1534278168 1534278187

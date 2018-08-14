@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 lustre-v6.1.737
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for lustre-v6.1.737: The following dependencies couldn't be met:
+          - lustre-v6 -> lutils -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+          - lustre-v6 -> lutils -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - lustre-v6 -> lutils -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=lustre-v6.1.737 returned 20
+20 1534278880 1534278882

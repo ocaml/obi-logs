@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_monoid.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ppx_monoid.0.2: The following dependencies couldn't be met:
+          - ppx_monoid -> ppx_tools >= 0.99.2 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_monoid.0.2 returned 20
+20 1534278852 1534278855
