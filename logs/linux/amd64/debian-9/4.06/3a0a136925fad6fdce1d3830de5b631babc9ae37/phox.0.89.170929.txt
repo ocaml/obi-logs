@@ -1,0 +1,108 @@
+$ opam depext -iy -j 2 phox.0.89.170929
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0      [required by camlp4]
+  - install camlp4     4.06+1      [required by phox]
+  - install phox       0.89.170929
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[phox.0.89.170929] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.06+1
+[ERROR] The compilation of phox failed at "/usr/bin/make".
+
+#=== ERROR while compiling phox.0.89.170929 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/phox.0.89.170929
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/phox-11-629056.env
+# output-file          ~/.opam/log/phox-11-629056.out
+### output ###
+# cd tools; /usr/bin/make all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/phox.0.89.170929/tools'
+# chmod a+x cleandir
+# rm -f phoxdep; \
+# echo "#!"`which perl` > phoxdep; \
+# chmod a+x phoxdep; \
+#         cat phoxdep.tpl >> phoxdep
+# rm -f phoxx.awk; \
+# echo "#!"`which awk` -f > phoxx.awk; \
+# chmod a+x phoxx.awk; \
+#         cat phoxx.tpl >> phoxx.awk
+# rm -f phox_tex.awk; \
+# echo "#!"`which awk` -f > phox_tex.awk; \
+# chmod a+x phox_tex.awk; \
+#         cat phox_tex.tpl >> phox_tex.awk
+# rm -f phox_tut.awk; \
+# echo "#!"`which awk` -f > phox_tut.awk; \
+# chmod a+x phox_tut.awk; \
+#         cat phox_tut.tpl >> phox_tut.awk
+# rm -f phox_tags.awk; \
+# echo "#!"`which awk` -f > phox_tags.awk; \
+# chmod a+x phox_tags.awk; \
+#         cat phox_tags.tpl >> phox_tags.awk
+# rm -f phox_etags.sh; \
+# sed -e 's|%%DOCDIR%%|/usr/local/doc/phox|' \
+#             phox_etags.tpl > phox_etags.sh; \
+# chmod a+x phox_etags.sh
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/phox.0.89.170929/tools'
+# cd src; /usr/bin/make phoxopt     
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/phox.0.89.170929/src'
+# Makefile:79: .depend: No such file or directory
+# if [ -f version.ml ]; then rm -f version.ml; fi;\
+# echo 'let version = "0.89.170929 "^"September 2017"' > version.ml;\
+# echo 'let default_path = "/usr/local/lib/phox"' >> version.ml;\
+# echo "let delim = ':'" >> version.ml;\
+# 
+# ocamlfind ocamldep -pp camlp4o version.ml restart.ml lang.ml basic.ml myhashtbl.ml undo.ml flags.ml data_base.ml cache.ml data.ml types.ml local.ml files.ml option.ml lexer.ml typunif.ml lambda_util.ml print.ml typing.ml parser.ml safe_add.ml data_info.ml af2_basic.ml hilbert.ml pattern.ml module.ml bindlib.ml lambda.ml parse_lambda.ml type_check.ml compile.ml interact.ml rewrite.ml inductive.ml poids.ml tex.ml logic.ml typespoids.ml splitting.ml ptypes.ml oldeduction.ml affichage.ml majlistes.ml prover.ml af2_logic.ml new_cmd.ml proof_general.ml parse_cmd.ml main.ml logic.mli affichage.mli lexer.mli flags.mli interact.mli prover.mli typing.mli new_cmd.mli parser.mli bindlib.mli tex.mli majlistes.mli hilbert.mli module.mli option.mli pattern.mli compile.mli oldeduction.mli typunif.mli version.mli data.mli data_base.mli main.mli basic.mli undo.mli rewrite.mli parse_lambda.mli af2_basic.mli typespoids.mli splitting.mli data_info.mli local.mli files.mli types.mli safe_add.mli resolution.mli lambda_util.mli poids.mli eval.mli inductive.mli myhashtbl.mli type_check.mli restart.mli ptypes.mli print.mli cache.mli parse_cmd.mli lambda.mli proof_general.mli > .depend
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c version.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c version.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c restart.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c restart.ml
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c lang.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c basic.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c basic.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c myhashtbl.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c myhashtbl.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c undo.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c undo.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c flags.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c flags.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c data_base.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c data_base.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c cache.mli
+# ocamlfind ocamlopt -pp camlp4o -rectypes -c cache.ml
+# ocamlfind ocamlc -g -pp camlp4o -rectypes -c data.mli
+# File "data.mli", line 2, characters 10-17:
+# Error: Unbound module Num
+# Makefile:59: recipe for target 'data.cmi' failed
+# make[1]: *** [data.cmi] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/phox.0.89.170929/src'
+# Makefile:7: recipe for target 'world' failed
+# make: *** [world] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build phox 0.89.170929
++- 
++- The following changes have been performed
+| - install camlp4     4.06+1
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180814021448.export"
+31 1534212885 1534213005
