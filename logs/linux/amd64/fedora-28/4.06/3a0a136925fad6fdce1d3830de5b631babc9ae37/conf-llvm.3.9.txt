@@ -1,0 +1,132 @@
+$ opam depext -iy -j 2 conf-llvm.3.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+llvm3.9-devel
+package llvm3.9-devel is not installed
+The following command needs to be run through "sudo":
+    yum install -y llvm3.9-devel
+Last metadata expiration check: 4:52:38 ago on Mon Aug 13 20:10:07 2018.
+Dependencies resolved.
+================================================================================
+ Package                Arch         Version                Repository     Size
+================================================================================
+Installing:
+ llvm3.9-devel          x86_64       3.9.1-13.fc28          fedora        2.0 M
+Installing dependencies:
+ cmake-filesystem       x86_64       3.11.2-1.fc28          updates        38 k
+ llvm3.9                x86_64       3.9.1-13.fc28          fedora        2.2 M
+ llvm3.9-libs           x86_64       3.9.1-13.fc28          fedora         12 M
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 16 M
+Installed size: 61 M
+Downloading Packages:
+(1/4): llvm3.9-devel-3.9.1-13.fc28.x86_64.rpm   411 kB/s | 2.0 MB     00:05    
+(2/4): llvm3.9-3.9.1-13.fc28.x86_64.rpm         432 kB/s | 2.2 MB     00:05    
+(3/4): cmake-filesystem-3.11.2-1.fc28.x86_64.rp 388 kB/s |  38 kB     00:00    
+(4/4): llvm3.9-libs-3.9.1-13.fc28.x86_64.rpm    1.5 MB/s |  12 MB     00:08    
+--------------------------------------------------------------------------------
+Total                                           819 kB/s |  16 MB     00:20     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : llvm3.9-libs-3.9.1-13.fc28.x86_64                      1/4 
+  Running scriptlet: llvm3.9-libs-3.9.1-13.fc28.x86_64                      1/4 
+  Installing       : llvm3.9-3.9.1-13.fc28.x86_64                           2/4 
+  Installing       : cmake-filesystem-3.11.2-1.fc28.x86_64                  3/4 
+  Installing       : llvm3.9-devel-3.9.1-13.fc28.x86_64                     4/4 
+  Running scriptlet: llvm3.9-devel-3.9.1-13.fc28.x86_64                     4/4 
+  Verifying        : llvm3.9-devel-3.9.1-13.fc28.x86_64                     1/4 
+  Verifying        : llvm3.9-3.9.1-13.fc28.x86_64                           2/4 
+  Verifying        : llvm3.9-libs-3.9.1-13.fc28.x86_64                      3/4 
+  Verifying        : cmake-filesystem-3.11.2-1.fc28.x86_64                  4/4 
+
+Installed:
+  llvm3.9-devel.x86_64 3.9.1-13.fc28    cmake-filesystem.x86_64 3.11.2-1.fc28   
+  llvm3.9.x86_64 3.9.1-13.fc28          llvm3.9-libs.x86_64 3.9.1-13.fc28       
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides llvm3.9-devel
+llvm3.9-devel-3.9.1-13.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-llvm 3.9
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-llvm failed at "/usr/bin/bash -ex configure.sh 3.9".
+
+#=== ERROR while compiling conf-llvm.3.9 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-llvm.3.9
+# command              /usr/bin/bash -ex configure.sh 3.9
+# exit-code            1
+# env-file             ~/.opam/log/conf-llvm-9-9b8556.env
+# output-file          ~/.opam/log/conf-llvm-9-9b8556.out
+### output ###
+# + version=3.9
+# + config=
+# + hash brew
+# + shopt -s nullglob
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config-3.9 --version
+# configure.sh: line 13: llvm-config-3.9: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-3.9'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config-3.9' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config39 --version
+# configure.sh: line 13: llvm-config39: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config39'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config39' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config-mp-3.9 --version
+# configure.sh: line 13: llvm-config-mp-3.9: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-mp-3.9'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config-mp-3.9' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config --version
+# configure.sh: line 13: llvm-config: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.9'\''.'
+# Note: 'llvm-config' doesn't match the required version. Got '' but required '3.9'.
+# + continue
+# + echo 'Error: LLVM 3.9 is not installed.'
+# Error: LLVM 3.9 is not installed.
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-llvm 3.9
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    llvm3.9-devel
+
+# Run eval $(opam env) to update the current shell environment
+31 1534208558 1534208617

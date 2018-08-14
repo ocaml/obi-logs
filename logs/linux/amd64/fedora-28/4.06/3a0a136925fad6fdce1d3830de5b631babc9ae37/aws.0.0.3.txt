@@ -1,0 +1,567 @@
+$ opam depext -iy -j 2 aws.0.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gmp
+gmp-devel
+m4
+openssl-devel
+pcre-devel
+perl-Pod-Html
+pkgconfig
+which
+zlib-devel
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Thu Apr 26 13:03:41 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Mon Aug 13 20:10:30 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package openssl-devel is not installed
+package pcre-devel is not installed
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Mon Aug 13 06:26:19 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+package zlib-devel is not installed
+# The following new OS packages need to be installed: gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+Last metadata expiration check: 4:53:24 ago on Mon Aug 13 20:10:07 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                  Arch        Version                Repository    Size
+================================================================================
+Installing:
+ gmp-devel                x86_64      1:6.1.2-7.fc28         fedora       187 k
+ openssl-devel            x86_64      1:1.1.0h-3.fc28        fedora       1.9 M
+ pcre-devel               x86_64      8.42-2.fc28            updates      550 k
+ perl-Pod-Html            noarch      1.22.02-413.fc28       updates       85 k
+ zlib-devel               x86_64      1.2.11-8.fc28          updates       55 k
+Installing dependencies:
+ gmp-c++                  x86_64      1:6.1.2-7.fc28         fedora        31 k
+ keyutils-libs-devel      x86_64      1.5.10-6.fc28          fedora        47 k
+ krb5-devel               x86_64      1.16.1-13.fc28         updates      545 k
+ libcom_err-devel         x86_64      1.44.2-0.fc28          updates       37 k
+ libkadm5                 x86_64      1.16.1-13.fc28         updates      182 k
+ libselinux-devel         x86_64      2.8-1.fc28             updates      197 k
+ libsepol-devel           x86_64      2.8-1.fc28             updates       84 k
+ libverto-devel           x86_64      0.3.0-5.fc28           fedora        17 k
+ pcre-cpp                 x86_64      8.42-2.fc28            updates       46 k
+ pcre-utf16               x86_64      8.42-2.fc28            updates      193 k
+ pcre-utf32               x86_64      8.42-2.fc28            updates      184 k
+ pcre2-devel              x86_64      10.31-8.fc28           updates      589 k
+ pcre2-utf16              x86_64      10.31-8.fc28           updates      221 k
+ pcre2-utf32              x86_64      10.31-8.fc28           updates      213 k
+
+Transaction Summary
+================================================================================
+Install  19 Packages
+
+Total download size: 5.3 M
+Installed size: 11 M
+Downloading Packages:
+(1/19): gmp-c++-6.1.2-7.fc28.x86_64.rpm         583 kB/s |  31 kB     00:00    
+(2/19): gmp-devel-6.1.2-7.fc28.x86_64.rpm       1.5 MB/s | 187 kB     00:00    
+(3/19): pcre-devel-8.42-2.fc28.x86_64.rpm       3.6 MB/s | 550 kB     00:00    
+(4/19): pcre-cpp-8.42-2.fc28.x86_64.rpm         583 kB/s |  46 kB     00:00    
+(5/19): pcre-utf16-8.42-2.fc28.x86_64.rpm       8.0 MB/s | 193 kB     00:00    
+(6/19): pcre-utf32-8.42-2.fc28.x86_64.rpm       5.3 MB/s | 184 kB     00:00    
+(7/19): perl-Pod-Html-1.22.02-413.fc28.noarch.r 4.8 MB/s |  85 kB     00:00    
+(8/19): zlib-devel-1.2.11-8.fc28.x86_64.rpm     3.1 MB/s |  55 kB     00:00    
+(9/19): libkadm5-1.16.1-13.fc28.x86_64.rpm      6.4 MB/s | 182 kB     00:00    
+(10/19): krb5-devel-1.16.1-13.fc28.x86_64.rpm    10 MB/s | 545 kB     00:00    
+(11/19): libcom_err-devel-1.44.2-0.fc28.x86_64. 2.2 MB/s |  37 kB     00:00    
+(12/19): libsepol-devel-2.8-1.fc28.x86_64.rpm   4.7 MB/s |  84 kB     00:00    
+(13/19): libselinux-devel-2.8-1.fc28.x86_64.rpm 7.8 MB/s | 197 kB     00:00    
+(14/19): keyutils-libs-devel-1.5.10-6.fc28.x86_ 1.8 MB/s |  47 kB     00:00    
+(15/19): libverto-devel-0.3.0-5.fc28.x86_64.rpm 718 kB/s |  17 kB     00:00    
+(16/19): openssl-devel-1.1.0h-3.fc28.x86_64.rpm 5.1 MB/s | 1.9 MB     00:00    
+(17/19): pcre2-utf16-10.31-8.fc28.x86_64.rpm    6.2 MB/s | 221 kB     00:00    
+(18/19): pcre2-devel-10.31-8.fc28.x86_64.rpm    7.8 MB/s | 589 kB     00:00    
+(19/19): pcre2-utf32-10.31-8.fc28.x86_64.rpm    2.0 MB/s | 213 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           3.2 MB/s | 5.3 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pcre2-utf32-10.31-8.fc28.x86_64                       1/19 
+  Installing       : pcre2-utf16-10.31-8.fc28.x86_64                       2/19 
+  Installing       : pcre2-devel-10.31-8.fc28.x86_64                       3/19 
+  Installing       : libverto-devel-0.3.0-5.fc28.x86_64                    4/19 
+  Installing       : keyutils-libs-devel-1.5.10-6.fc28.x86_64              5/19 
+  Installing       : libsepol-devel-2.8-1.fc28.x86_64                      6/19 
+  Installing       : libselinux-devel-2.8-1.fc28.x86_64                    7/19 
+  Installing       : libcom_err-devel-1.44.2-0.fc28.x86_64                 8/19 
+  Installing       : libkadm5-1.16.1-13.fc28.x86_64                        9/19 
+  Installing       : krb5-devel-1.16.1-13.fc28.x86_64                     10/19 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                      11/19 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                        12/19 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                        13/19 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                          14/19 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                        15/19 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                        15/19 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                      16/19 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                      16/19 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                        17/19 
+  Installing       : openssl-devel-1:1.1.0h-3.fc28.x86_64                 18/19 
+  Installing       : perl-Pod-Html-1.22.02-413.fc28.noarch                19/19 
+  Running scriptlet: perl-Pod-Html-1.22.02-413.fc28.noarch                19/19 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                       1/19 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                         2/19 
+  Verifying        : openssl-devel-1:1.1.0h-3.fc28.x86_64                  3/19 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                         4/19 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                           5/19 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                         6/19 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                         7/19 
+  Verifying        : perl-Pod-Html-1.22.02-413.fc28.noarch                 8/19 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                       9/19 
+  Verifying        : krb5-devel-1.16.1-13.fc28.x86_64                     10/19 
+  Verifying        : libkadm5-1.16.1-13.fc28.x86_64                       11/19 
+  Verifying        : libcom_err-devel-1.44.2-0.fc28.x86_64                12/19 
+  Verifying        : libselinux-devel-2.8-1.fc28.x86_64                   13/19 
+  Verifying        : libsepol-devel-2.8-1.fc28.x86_64                     14/19 
+  Verifying        : keyutils-libs-devel-1.5.10-6.fc28.x86_64             15/19 
+  Verifying        : libverto-devel-0.3.0-5.fc28.x86_64                   16/19 
+  Verifying        : pcre2-devel-10.31-8.fc28.x86_64                      17/19 
+  Verifying        : pcre2-utf16-10.31-8.fc28.x86_64                      18/19 
+  Verifying        : pcre2-utf32-10.31-8.fc28.x86_64                      19/19 
+
+Installed:
+  gmp-devel.x86_64 1:6.1.2-7.fc28                                               
+  openssl-devel.x86_64 1:1.1.0h-3.fc28                                          
+  pcre-devel.x86_64 8.42-2.fc28                                                 
+  perl-Pod-Html.noarch 1.22.02-413.fc28                                         
+  zlib-devel.x86_64 1.2.11-8.fc28                                               
+  gmp-c++.x86_64 1:6.1.2-7.fc28                                                 
+  keyutils-libs-devel.x86_64 1.5.10-6.fc28                                      
+  krb5-devel.x86_64 1.16.1-13.fc28                                              
+  libcom_err-devel.x86_64 1.44.2-0.fc28                                         
+  libkadm5.x86_64 1.16.1-13.fc28                                                
+  libselinux-devel.x86_64 2.8-1.fc28                                            
+  libsepol-devel.x86_64 2.8-1.fc28                                              
+  libverto-devel.x86_64 0.3.0-5.fc28                                            
+  pcre-cpp.x86_64 8.42-2.fc28                                                   
+  pcre-utf16.x86_64 8.42-2.fc28                                                 
+  pcre-utf32.x86_64 8.42-2.fc28                                                 
+  pcre2-devel.x86_64 10.31-8.fc28                                               
+  pcre2-utf16.x86_64 10.31-8.fc28                                               
+  pcre2-utf32.x86_64 10.31-8.fc28                                               
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gmp-devel openssl-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+gmp-devel-6.1.2-7.fc28.x86_64
+openssl-devel-1.1.0h-3.fc28.x86_64
+pcre-devel-8.42-2.fc28.x86_64
+perl-Pod-Html-1.22.02-413.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp                1       [required by conf-gmp-powm-sec, zarith]
+  - install calendar                2.04    [required by aws]
+  - install re                      1.7.3   [required by pgocaml, tyxml]
+  - install base-bytes              base    [required by ocamlnet]
+  - install conf-perl               1       [required by zarith]
+  - install conf-pkg-config         1.1     [required by conf-zlib]
+  - install num                     1.1     [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base, sexplib]
+  - install easy-format             1.3.1   [required by yojson]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by lwt]
+  - install conf-which              1       [required by biniou]
+  - install ocamlbuild              0.12.0  [required by aws]
+  - install conf-gmp-powm-sec       1       [required by cryptokit]
+  - install csv                     2.1     [required by pgocaml]
+  - install cppo                    1.6.4   [required by lwt, yojson]
+  - install zarith                  1.7     [required by cryptokit]
+  - install conf-zlib               1       [required by cryptokit]
+  - install conf-openssl            1       [required by ssl]
+  - install conf-libpcre            1       [required by pcre]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by pcre]
+  - install ocaml-migrate-parsetree 1.0.11  [required by lwt]
+  - install biniou                  1.2.0   [required by yojson]
+  - install uchar                   0.0.2   [required by tyxml]
+  - install topkg                   0.9.1   [required by xmlm]
+  - install ocamlmod                0.0.9   [required by oasis]
+  - install ocamlify                0.0.1   [required by oasis]
+  - install camlp4                  4.06+1  [required by lwt, ocsigenserver]
+  - install cryptokit               1.13    [required by aws]
+  - install ssl                     0.5.5   [required by ocsigenserver]
+  - install sexplib                 v0.11.0 [required by ipaddr]
+  - install stdio                   v0.11.0 [required by pcre]
+  - install ppx_tools_versioned     5.2     [required by lwt]
+  - install yojson                  1.4.1   [required by aws]
+  - install xmlm                    1.3.0   [required by aws]
+  - install uutf                    1.0.1   [required by tyxml]
+  - install react                   1.2.1   [required by ocsigenserver]
+  - install oasis                   0.4.11  [required by aws]
+  - install pgocaml                 2.3     [required by ocsigenserver]
+  - install ppxlib                  0.3.0   [required by ppx_sexp_conv]
+  - install configurator            v0.11.0 [required by pcre]
+  - install lwt                     3.3.0   [required by aws]                       For the PPX, please install package lwt_ppx
+                                                                                    For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                    For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install tyxml                   4.2.0   [required by ocsigenserver]             For tyxml's ppx, please install tyxml-ppx.
+                                                                                    Tyxml's camlp4-based libraries (tyxml.syntax and tyxml.parser) are now deprecated and will be removed in the next major version.
+  - install ppx_sexp_conv           v0.11.2 [required by ipaddr]
+  - install pcre                    7.3.4   [required by aws]
+  - install lwt_ssl                 1.1.2   [required by ocsigenserver]
+  - install lwt_react               1.1.1   [required by ocsigenserver]
+  - install ipaddr                  2.8.0   [required by ocsigenserver]
+  - install ocamlnet                4.1.6   [required by aws]
+  - install ocsigenserver           2.9     [required by aws]
+  - install aws                     0.0.3
+===== 53 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[aws.0.0.3] found in cache
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[calendar.2.04] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[csv.2.1] found in cache
+[easy-format.1.3.1] found in cache
+[ipaddr.2.8.0] found in cache
+[lwt.3.3.0] found in cache
+[lwt_react.1.1.1] found in cache
+[lwt_ssl.1.1.2] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ocamlnet.4.1.6] found in cache
+[ocsigenserver.2.9] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[pgocaml.2.3] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[react.1.2.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[ssl.0.5.5] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[tyxml.4.2.0] found in cache
+[uchar.0.0.2] found in cache
+[uutf.1.0.1] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed calendar.2.04
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed conf-openssl.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed csv.2.1
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed camlp4.4.06+1
+-> installed lwt.3.3.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed ssl.0.5.5
+-> installed pgocaml.2.3
+-> installed lwt_ssl.1.1.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ipaddr.2.8.0
+-> installed topkg.0.9.1
+-> installed react.1.2.1
+-> installed lwt_react.1.1.1
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed tyxml.4.2.0
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed ocamlnet.4.1.6
+-> installed ocsigenserver.2.9
+[ERROR] The compilation of aws failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling aws.0.0.3 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/aws.0.0.3
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/aws-10-9c711f.env
+# output-file          ~/.opam/log/aws-10-9c711f.out
+### output ###
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "test/_tags", line 1, characters 110-120:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 31, characters 25-35:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 64, characters 21-31:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 79, characters 18-28:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 94, characters 20-30:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 109, characters 25-35:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 124, characters 21-31:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 141, characters 34-44:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# File "_tags", line 153, characters 20-30:
+# Warning: the tag "pkg_cohttp" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/creds.ml > src/creds.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/aws_sigs.ml > src/aws_sigs.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/aws_util.ml > src/aws_util.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/creds.cmo src/creds.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/creds.cmo src/creds.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/policy.mli > src/policy.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/policy.cmi src/policy.mli
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/policy.cmi src/policy.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/policy.ml > src/policy.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/eC2_factory.ml > src/eC2_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/aws_sigs.cmo src/aws_sigs.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/aws_sigs.cmo src/aws_sigs.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/aws_util.cmo src/aws_util.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/aws_util.cmo src/aws_util.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/my_xml.ml > src/my_xml.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/my_xml.cmo src/my_xml.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/my_xml.cmo src/my_xml.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/sDB_factory.ml > src/sDB_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/s3_factory.ml > src/s3_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/sQS_factory.ml > src/sQS_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/fPS_factory.ml > src/fPS_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/dynamo_factory.ml > src/dynamo_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/iAM_factory.ml > src/iAM_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/iAM_factory.cmo src/iAM_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/iAM_factory.cmo src/iAM_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/iAM_factory.ml", line 74, characters 6-22:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -modules src/sES_factory.ml > src/sES_factory.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/policy.cmo src/policy.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/policy.cmo src/policy.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/eC2_factory.cmo src/eC2_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/eC2_factory.cmo src/eC2_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/eC2_factory.ml", line 99, characters 6-22:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/sDB_factory.cmo src/sDB_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/sDB_factory.cmo src/sDB_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/sDB_factory.ml", line 57, characters 8-24:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/s3_factory.cmo src/s3_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/s3_factory.cmo src/s3_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/s3_factory.ml", line 207, characters 23-39:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/s3_factory.ml", line 548, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "src/s3_factory.ml", line 550, characters 40-56:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/sQS_factory.cmo src/sQS_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/sQS_factory.cmo src/sQS_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/sQS_factory.ml", line 60, characters 6-22:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/fPS_factory.cmo src/fPS_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/fPS_factory.cmo src/fPS_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/fPS_factory.ml", line 131, characters 6-22:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/dynamo_factory.cmo src/dynamo_factory.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package calendar -package cryptokit -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package netstring -package pcre -package xmlm -package yojson -syntax camlp4o -I src -o src/dynamo_factory.cmo src/dynamo_factory.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/dynamo_factory.ml", line 337, characters 16-31:
+# Error: Unbound value Util.option_map
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/aws.cma src/aws.cmxa src/aws.a src/aws.cmxs src/ocsigen/ocsigen.cma src/ocsigen/ocsigen.cmxa src/ocsigen/ocsigen.a src/ocsigen/ocsigen.cmxs -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build aws 0.0.3
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install calendar                2.04
+| - install camlp4                  4.06+1
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-libpcre            1
+| - install conf-openssl            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install csv                     2.1
+| - install easy-format             1.3.1
+| - install ipaddr                  2.8.0
+| - install lwt                     3.3.0
+| - install lwt_react               1.1.1
+| - install lwt_ssl                 1.1.2
+| - install num                     1.1
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install ocamlnet                4.1.6
+| - install ocsigenserver           2.9
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install pgocaml                 2.3
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install react                   1.2.1
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install ssl                     0.5.5
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install tyxml                   4.2.0
+| - install uchar                   0.0.2
+| - install uutf                    1.0.1
+| - install xmlm                    1.3.0
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180814010338.export"
+31 1534208607 1534208922

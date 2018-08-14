@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 patdiff.112.24.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for patdiff.112.24.00: The following dependencies couldn't be met:
+          - patdiff -> patience_diff < 112.25.00 -> pipebang >= 110.01.00 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - patdiff -> patience_diff < 112.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - patdiff -> patience_diff < 112.25.00 -> core_kernel (>= 111.17.00 & < 111.28.00) -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=patdiff.112.24.00 returned 20
+20 1534209820 1534209822
