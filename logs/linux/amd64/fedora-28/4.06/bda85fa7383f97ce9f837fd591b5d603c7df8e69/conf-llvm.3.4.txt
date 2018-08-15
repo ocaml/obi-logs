@@ -1,0 +1,103 @@
+$ opam depext -iy -j 2 conf-llvm.3.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+which
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Tue Aug 14 06:32:16 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-which 1   [required by conf-llvm]
+  - install conf-llvm  3.4
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-which.1
+[ERROR] The compilation of conf-llvm failed at "/usr/bin/bash -ex configure 3.4".
+
+#=== ERROR while compiling conf-llvm.3.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-llvm.3.4
+# command              /usr/bin/bash -ex configure 3.4
+# exit-code            1
+# env-file             ~/.opam/log/conf-llvm-10-5f1023.env
+# output-file          ~/.opam/log/conf-llvm-10-5f1023.out
+### output ###
+# + version=3.4
+# + config=
+# + hash brew
+# + shopt -s nullglob
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config-3.4 --version
+# configure: line 13: llvm-config-3.4: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-3.4'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.4'\''.'
+# Note: 'llvm-config-3.4' doesn't match the required version. Got '' but required '3.4'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config34 --version
+# configure: line 13: llvm-config34: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config34'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.4'\''.'
+# Note: 'llvm-config34' doesn't match the required version. Got '' but required '3.4'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config-mp-3.4 --version
+# configure: line 13: llvm-config-mp-3.4: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-mp-3.4'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.4'\''.'
+# Note: 'llvm-config-mp-3.4' doesn't match the required version. Got '' but required '3.4'.
+# + continue
+# + for llvm_config in $config llvm-config-$version llvm-config${version//./} llvm-config-mp-$version $brew_llvm_config llvm-config
+# ++ llvm-config --version
+# configure: line 13: llvm-config: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''3.4'\''.'
+# Note: 'llvm-config' doesn't match the required version. Got '' but required '3.4'.
+# + continue
+# + echo 'Error: LLVM 3.4 is not installed.'
+# Error: LLVM 3.4 is not installed.
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-llvm 3.4
++- 
++- The following changes have been performed
+| - install conf-which 1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180815014747.export"
+31 1534297665 1534297670
