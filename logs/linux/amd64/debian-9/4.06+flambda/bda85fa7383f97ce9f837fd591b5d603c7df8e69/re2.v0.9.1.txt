@@ -1,0 +1,1155 @@
+$ opam depext -iy -j 2 re2.v0.9.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install   num                     1.1                      [required by sexplib]
+  - remove    dune                    1.1.1                    [conflicts with jbuilder]
+  - install   ocamlbuild              0.12.0                   [required by ppx_driver]
+  - downgrade jbuilder                transition to 1.0+beta17 [required by re2]
+  - install   sexplib                 v0.9.3                   [required by core_kernel]
+  - install   result                  1.3                      [required by ocaml-migrate-parsetree]
+  - install   re                      1.7.3                    [required by ppx_expect]
+  - install   ppx_traverse_builtins   v0.9.0                   [required by ppx_core, ppx_metaquot]
+  - install   ppx_derivers            1.0                      [required by ppx_type_conv]
+  - install   octavius                1.2.0                    [required by ppx_js_style]
+  - install   ocaml-compiler-libs     v0.9.0                   [required by ppx_core]
+  - install   jane-street-headers     v0.9.0                   [required by core_kernel]
+  - install   base                    v0.9.4                   [required by core_kernel]
+  - install   ocaml-migrate-parsetree 1.0.7                    [required by re2]
+  - install   typerep                 v0.9.0                   [required by core_kernel]
+  - install   stdio                   v0.9.1                   [required by core_kernel]
+  - install   ppx_ast                 v0.9.2                   [required by ppx_core]
+  - install   ppx_core                v0.9.3                   [required by ppx_assert, ppx_inline_test]
+  - install   ppx_optcomp             v0.9.0                   [required by ppx_driver]
+  - install   ppx_driver              v0.9.2                   [required by re2]
+  - install   variantslib             v0.9.0                   [required by core_kernel]
+  - install   ppx_metaquot            v0.9.0                   [required by ppx_assert, ppx_inline_test]
+  - install   ppx_let                 v0.9.0                   [required by ppx_jane]
+  - install   ppx_here                v0.9.1                   [required by ppx_assert, ppx_jane]
+  - install   fieldslib               v0.9.0                   [required by core_kernel]
+  - install   ppx_type_conv           v0.9.1                   [required by ppx_assert]
+  - install   ppx_pipebang            v0.9.0                   [required by ppx_jane]
+  - install   ppx_optional            v0.9.0                   [required by ppx_jane]
+  - install   ppx_js_style            v0.9.0                   [required by ppx_base]
+  - install   ppx_inline_test         v0.9.2                   [required by core_kernel]
+  - install   ppx_fail                v0.9.0                   [required by ppx_jane]
+  - install   ppx_variants_conv       v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_typerep_conv        v0.9.0                   [required by ppx_jane]
+  - install   ppx_traverse            v0.9.0                   [required by ppx_custom_printf, ppx_expect]
+  - install   ppx_sexp_conv           v0.9.0                   [required by core_kernel]
+  - install   ppx_fields_conv         v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_enumerate           v0.9.0                   [required by ppx_base]
+  - install   ppx_compare             v0.9.0                   [required by bin_prot, ppx_assert]
+  - install   ppx_bench               v0.9.1                   [required by ppx_jane]
+  - install   ppx_sexp_value          v0.9.0                   [required by ppx_jane]
+  - install   ppx_sexp_message        v0.9.0                   [required by core_kernel]
+  - install   ppx_custom_printf       v0.9.0                   [required by bin_prot, ppx_jane]
+  - install   ppx_hash                v0.9.0                   [required by core_kernel]
+  - install   ppx_assert              v0.9.0                   [required by core_kernel]
+  - install   bin_prot                v0.9.2                   [required by core_kernel]
+  - install   ppx_base                v0.9.0                   [required by core_kernel]
+  - install   ppx_expect              v0.9.0                   [required by ppx_jane]
+  - install   ppx_bin_prot            v0.9.0                   [required by ppx_jane]
+  - install   configurator            v0.9.1                   [required by core_kernel]
+  - install   ppx_jane                v0.9.0                   [required by re2]
+  - install   core_kernel             v0.9.1                   [required by re2]
+  - install   re2                     v0.9.1
+===== 50 to install | 1 to downgrade | 1 to remove =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.9.4] found in cache
+[bin_prot.v0.9.2] found in cache
+[configurator.v0.9.1] found in cache
+[core_kernel.v0.9.1] found in cache
+[fieldslib.v0.9.0] found in cache
+[jane-street-headers.v0.9.0] found in cache
+[jbuilder.1.0+beta17] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.7] found in cache
+[ocamlbuild.0.12.0] found in cache
+[octavius.1.2.0] found in cache
+[ppx_assert.v0.9.0] found in cache
+[ppx_ast.v0.9.2] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_bench.v0.9.1] found in cache
+[ppx_bin_prot.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.3] found in cache
+[ppx_custom_printf.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_driver.v0.9.2] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_expect.v0.9.0] found in cache
+[ppx_fail.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_here.v0.9.1] found in cache
+[ppx_inline_test.v0.9.2] found in cache
+[ppx_jane.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_let.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_optional.v0.9.0] found in cache
+[ppx_pipebang.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_sexp_message.v0.9.0] found in cache
+[ppx_sexp_value.v0.9.0] found in cache
+[ppx_traverse.v0.9.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[ppx_typerep_conv.v0.9.0] found in cache
+[ppx_variants_conv.v0.9.0] found in cache
+[re.1.7.3] found in cache
+[re2.v0.9.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.9.3] found in cache
+[stdio.v0.9.1] found in cache
+[typerep.v0.9.0] found in cache
+[variantslib.v0.9.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> removed   jbuilder.transition
+-> removed   dune.1.1.1
+-> installed jbuilder.1.0+beta17
+-> installed jane-street-headers.v0.9.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed sexplib.v0.9.3
+-> installed ocaml-migrate-parsetree.1.0.7
+-> installed base.v0.9.4
+-> installed ppx_ast.v0.9.2
+-> installed stdio.v0.9.1
+-> installed typerep.v0.9.0
+-> installed ppx_core.v0.9.3
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_driver.v0.9.2
+-> installed fieldslib.v0.9.0
+-> installed ppx_here.v0.9.1
+-> installed ppx_let.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_fail.v0.9.0
+-> installed ppx_inline_test.v0.9.2
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_optional.v0.9.0
+-> installed ppx_pipebang.v0.9.0
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_bench.v0.9.1
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ppx_assert.v0.9.0
+-> installed ppx_hash.v0.9.0
+-> installed ppx_sexp_message.v0.9.0
+-> installed ppx_sexp_value.v0.9.0
+-> installed ppx_traverse.v0.9.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed ppx_typerep_conv.v0.9.0
+-> installed variantslib.v0.9.0
+-> installed ppx_custom_printf.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
+-> installed bin_prot.v0.9.2
+-> installed ppx_expect.v0.9.0
+-> installed ppx_bin_prot.v0.9.0
+-> installed ppx_jane.v0.9.0
+[ERROR] The compilation of core_kernel failed at "/home/opam/.opam/4.06+flambda/bin/jbuilder build -p core_kernel -j 71".
+
+#=== ERROR while compiling core_kernel.v0.9.1 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/core_kernel.v0.9.1
+# command              ~/.opam/4.06+flambda/bin/jbuilder build -p core_kernel -j 71
+# exit-code            1
+# env-file             ~/.opam/log/core_kernel-11-f6f920.env
+# output-file          ~/.opam/log/core_kernel-11-f6f920.out
+### output ###
+#     ocamldep src/config/discover.depends.ocamldep-output
+#       ocamlc base_for_tests/src/base_for_tests.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__.{cmi,cmo,cmt}
+#     ocamlopt base_for_tests/src/base_for_tests.{cmx,o}
+#     ocamlopt src/core_kernel__.{cmx,o}
+#       ocamlc src/config/discover.{cmi,cmo,cmt}
+#     ocamlopt src/config/discover.{cmx,o}
+#     ocamlopt src/config/discover.exe
+#     discover src/config.h,src/rt-flags
+#       ocamlc src/version_util_fallback_stubs.o
+#       ocamlc src/core_array_stubs.o
+#       ocamlc src/core_gc_stubs.o
+#       ocamlc src/time_ns_stubs.o
+#       ocamlc src/bigstring_marshal_stubs.o
+#       ocamlc src/bigstring_stubs.o
+#   ocamlmklib src/dllcore_kernel_stubs.so,src/libcore_kernel_stubs.a
+#     ocamlopt .ppx/ppx_base+ppx_inline_test+ppx_sexp_conv+ppx_sexp_message+ppx_driver.runner/ppx.exe
+#          ppx base_for_tests/src/test_blit.pp.mli
+#          ppx base_for_tests/src/test_binary_searchable.pp.mli
+#          ppx base_for_tests/src/test_binary_searchable_intf.pp.ml
+#          ppx base_for_tests/src/test_blit.pp.ml
+#          ppx base_for_tests/src/test_blit_intf.pp.ml
+#     ocamldep base_for_tests/src/base_for_tests.dependsi.ocamldep-output
+#          ppx base_for_tests/src/test_binary_searchable.pp.ml
+#     ocamldep base_for_tests/src/base_for_tests.depends.ocamldep-output
+#       ocamlc base_for_tests/src/base_for_tests__Test_binary_searchable_intf.{cmi,cmo,cmt}
+#       ocamlc base_for_tests/src/base_for_tests__Test_blit_intf.{cmi,cmo,cmt}
+#       ocamlc base_for_tests/src/base_for_tests__Test_binary_searchable.{cmi,cmti}
+#     ocamlopt .ppx/ppx_jane+ppx_driver.runner/ppx.exe
+#     ocamlopt base_for_tests/src/base_for_tests__Test_binary_searchable_intf.{cmx,o}
+#     ocamlopt base_for_tests/src/base_for_tests__Test_blit_intf.{cmx,o}
+#       ocamlc base_for_tests/src/base_for_tests__Test_blit.{cmi,cmti}
+#       ocamlc base_for_tests/src/base_for_tests__Test_binary_searchable.{cmo,cmt}
+#          ppx src/bag.pp.ml
+#          ppx src/bigbuffer.pp.ml
+#          ppx src/bigbuffer_internal.pp.ml
+#          ppx src/bigstring_marshal.pp.ml
+#          ppx src/bigsubstring.pp.ml
+#          ppx src/binable.pp.ml
+#          ppx src/binable0.pp.ml
+#          ppx src/binary_searchable.pp.ml
+#          ppx src/binary_searchable_intf.pp.ml
+#          ppx src/bigstring.pp.ml
+#          ppx src/blit.pp.ml
+#          ppx src/blit_intf.pp.ml
+#          ppx src/bool.pp.ml
+#          ppx src/bounded_index.pp.ml
+#          ppx src/blang.pp.ml
+#          ppx src/bounded_index_intf.pp.ml
+#          ppx src/bucket.pp.ml
+#          ppx src/bus.pp.ml
+#          ppx src/byte_units.pp.ml
+#          ppx src/comparable.pp.ml
+#          ppx src/comparable_intf.pp.ml
+#          ppx src/comparator.pp.ml
+#          ppx src/constrained_float.pp.ml
+#          ppx src/container.pp.ml
+#          ppx src/binary_packing.pp.ml
+#          ppx src/container_intf.pp.ml
+#          ppx src/container_unit_tests.pp.ml
+#          ppx src/core_arg.pp.ml
+#          ppx src/core_array.pp.ml
+#          ppx src/core_bin_prot.pp.ml
+#          ppx src/core_bytes.pp.ml
+#          ppx src/core_char.pp.ml
+#          ppx src/core_ephemeron.pp.ml
+#          ppx src/core_gc.pp.ml
+#          ppx src/core_hashtbl.pp.ml
+#          ppx src/core_hashtbl_intf.pp.ml
+#          ppx src/core_int.pp.ml
+#          ppx src/core_int32.pp.ml
+#          ppx src/core_int63.pp.ml
+#          ppx src/core_int64.pp.ml
+#          ppx src/core_kernel.pp.ml
+#          ppx src/core_lazy.pp.ml
+#          ppx src/core_list.pp.ml
+#          ppx src/core_map.pp.ml
+#          ppx src/core_map_intf.pp.ml
+#          ppx src/core_nativeint.pp.ml
+#          ppx src/core_pervasives.pp.ml
+#          ppx src/core_printexc.pp.ml
+#          ppx src/core_printf.pp.ml
+#          ppx src/core_queue.pp.ml
+#          ppx src/core_random.pp.ml
+#          ppx src/core_set.pp.ml
+#          ppx src/core_set_intf.pp.ml
+#          ppx src/bounded_int_table.pp.ml
+#          ppx src/core_sexp.pp.ml
+#          ppx src/core_stack.pp.ml
+#          ppx src/core_string.pp.ml
+#          ppx src/core_weak.pp.ml
+#          ppx src/date.pp.ml
+#          ppx src/date0_intf.pp.ml
+#          ppx src/date0.pp.ml
+#          ppx src/date_intf.pp.ml
+#          ppx src/day_of_week.pp.ml
+#          ppx src/day_of_week_intf.pp.ml
+#          ppx src/debug.pp.ml
+#          ppx src/deprecate_pipe_bang.pp.ml
+#          ppx src/deque.pp.ml
+#          ppx src/deriving_hash.pp.ml
+#          ppx src/deriving_hash_intf.pp.ml
+#          ppx src/digit_string_helpers.pp.ml
+#          ppx src/doubly_linked.pp.ml
+#          ppx src/either.pp.ml
+#          ppx src/error.pp.ml
+#          ppx src/fdeque.pp.ml
+#          ppx src/fheap.pp.ml
+#          ppx src/flags.pp.ml
+#          ppx src/flags_intf.pp.ml
+#          ppx src/float.pp.ml
+#          ppx src/float_with_finite_only_serialization.pp.ml
+#          ppx src/fn.pp.ml
+#          ppx src/force_once.pp.ml
+#          ppx src/fqueue.pp.ml
+#          ppx src/hash_heap.pp.ml
+#          ppx src/hash_queue.pp.ml
+#          ppx src/hash_set.pp.ml
+#          ppx src/hash_set_intf.pp.ml
+#          ppx src/hashable.pp.ml
+#          ppx src/heap.pp.ml
+#          ppx src/heap_intf.pp.ml
+#          ppx src/hexdump.pp.ml
+#          ppx src/hexdump_intf.pp.ml
+#          ppx src/host_and_port.pp.ml
+#          ppx src/identifiable.pp.ml
+#          ppx src/immediate_option.pp.ml
+#          ppx src/immediate_option_intf.pp.ml
+#          ppx src/import.pp.ml
+#          ppx src/info.pp.ml
+#          ppx src/info_intf.pp.ml
+#          ppx src/int_intf.pp.ml
+#          ppx src/int_replace_polymorphic_compare.pp.ml
+#          ppx src/int_set.pp.ml
+#          ppx src/interfaces.pp.ml
+#          ppx src/limiter.pp.ml
+#          ppx src/linked_queue.pp.ml
+#          ppx src/linked_stack.pp.ml
+#          ppx src/make_stable.pp.ml
+#          ppx src/make_substring.pp.ml
+#          ppx src/maybe_bound.pp.ml
+#          ppx src/memo.pp.ml
+#          ppx src/month.pp.ml
+#          ppx src/month_intf.pp.ml
+#          ppx src/moption.pp.ml
+#          ppx src/never_returns.pp.ml
+#          ppx src/no_polymorphic_compare.pp.ml
+#          ppx src/nothing.pp.ml
+#          ppx src/obj_array.pp.ml
+#          ppx src/ofday.pp.ml
+#          ppx src/ofday_intf.pp.ml
+#          ppx src/only_in_test.pp.ml
+#          ppx src/option.pp.ml
+#          ppx src/option_array.pp.ml
+#          ppx src/or_error.pp.ml
+#          ppx src/ordering.pp.ml
+#          ppx src/percent.pp.ml
+#          ppx src/perms.pp.ml
+#          ppx src/pid.pp.ml
+#          ppx src/polymorphic_compare_intf.pp.ml
+#          ppx src/pool_intf.pp.ml
+#          ppx src/queue_intf.pp.ml
+#          ppx src/quickcheck_intf.pp.ml
+#          ppx src/quickcheckable.pp.ml
+#          ppx src/ref.pp.ml
+#          ppx src/pool.pp.ml
+#          ppx src/pooled_hashtbl.pp.ml
+#          ppx src/result.pp.ml
+#          ppx src/robustly_comparable.pp.ml
+#          ppx src/rope.pp.ml
+#          ppx src/sequence.pp.ml
+#          ppx src/set_once.pp.ml
+#          ppx src/sexpable.pp.ml
+#          ppx src/sign.pp.ml
+#          ppx src/source_code_position.pp.ml
+#          ppx src/source_code_position0.pp.ml
+#          ppx src/span.pp.ml
+#          ppx src/span_intf.pp.ml
+#          ppx src/splittable_random.pp.ml
+#          ppx src/stable.pp.ml
+#          ppx src/stable_containers.pp.ml
+#          ppx src/stable_int63able.pp.ml
+#          ppx src/stable_internal.pp.ml
+#          ppx src/stable_module_types.pp.ml
+#          ppx src/stable_unit_test.pp.ml
+#          ppx src/quickcheck.pp.ml
+#          ppx src/stable_unit_test_intf.pp.ml
+#          ppx src/stack_intf.pp.ml
+#          ppx src/std_common.pp.ml
+#          ppx src/std_kernel.pp.ml
+#          ppx src/string_id.pp.ml
+#          ppx src/string_id_intf.pp.ml
+#          ppx src/substring.pp.ml
+#          ppx src/substring_intf.pp.ml
+#          ppx src/t.pp.ml
+#          ppx src/std_internal.pp.ml
+#          ppx src/thread_safe_queue.pp.ml
+#          ppx src/time.pp.ml
+#          ppx src/time0_intf.pp.ml
+#          ppx src/time_float.pp.ml
+#          ppx src/time_float0.pp.ml
+#          ppx src/time_intf.pp.ml
+#          ppx src/time_ns_alternate_sexp.pp.ml
+#          ppx src/time_ns_intf.pp.ml
+#          ppx src/timing_wheel_ns_intf.pp.ml
+#          ppx src/total_map.pp.ml
+#          ppx src/tuple.pp.ml
+#          ppx src/tuple_type.pp.ml
+#          ppx src/tuple_type_intf.pp.ml
+#          ppx src/type_equal.pp.ml
+#          ppx src/type_equal_intf.pp.ml
+#          ppx src/type_immediacy.pp.ml
+#          ppx src/uniform_array.pp.ml
+#          ppx src/union_find.pp.ml
+#          ppx src/unique_id.pp.ml
+#          ppx src/unique_id_intf.pp.ml
+#          ppx src/unit.pp.ml
+#          ppx src/unit_of_time.pp.ml
+#          ppx src/univ.pp.ml
+#          ppx src/univ_map.pp.ml
+#          ppx src/univ_map_intf.pp.ml
+#          ppx src/unpack_buffer.pp.ml
+#          ppx src/validated.pp.ml
+#          ppx src/validated_intf.pp.ml
+#          ppx src/version_util.pp.ml
+#          ppx src/weak_pointer.pp.ml
+#          ppx src/zone.pp.ml
+#          ppx src/zone_intf.pp.ml
+#          ppx src/bag.pp.mli
+#          ppx src/bigbuffer.pp.mli
+#          ppx src/bigstring.pp.mli
+#          ppx src/bigstring_marshal.pp.mli
+#          ppx src/bigsubstring.pp.mli
+#          ppx src/binable.pp.mli
+#          ppx src/time_ns.pp.ml
+#          ppx src/binary_packing.pp.mli
+#          ppx src/binary_searchable.pp.mli
+#          ppx src/blang.pp.mli
+#          ppx src/blit.pp.mli
+#          ppx src/bool.pp.mli
+#          ppx src/bounded_index.pp.mli
+#          ppx src/bounded_int_table.pp.mli
+#          ppx src/bus.pp.mli
+#          ppx src/byte_units.pp.mli
+#          ppx src/comparable.pp.mli
+#          ppx src/comparator.pp.mli
+#          ppx src/container.pp.mli
+#          ppx src/core_arg.pp.mli
+#          ppx src/core_array.pp.mli
+#          ppx src/core_bytes.pp.mli
+#          ppx src/core_char.pp.mli
+#          ppx src/core_ephemeron.pp.mli
+#          ppx src/core_gc.pp.mli
+#          ppx src/core_hashtbl.pp.mli
+#          ppx src/core_int.pp.mli
+#          ppx src/core_int32.pp.mli
+#          ppx src/core_int63.pp.mli
+#          ppx src/core_int64.pp.mli
+#          ppx src/core_lazy.pp.mli
+#          ppx src/core_list.pp.mli
+#          ppx src/core_map.pp.mli
+#          ppx src/core_nativeint.pp.mli
+#          ppx src/core_pervasives.pp.mli
+#          ppx src/core_printexc.pp.mli
+#          ppx src/timing_wheel_ns.pp.ml
+#          ppx src/core_queue.pp.mli
+#          ppx src/core_set.pp.mli
+#          ppx src/core_sexp.pp.mli
+#          ppx src/core_stack.pp.mli
+#          ppx src/core_string.pp.mli
+#          ppx src/core_weak.pp.mli
+#          ppx src/date.pp.mli
+#          ppx src/date0.pp.mli
+#          ppx src/day_of_week.pp.mli
+#          ppx src/debug.pp.mli
+#          ppx src/deprecate_pipe_bang.pp.mli
+#          ppx src/deque.pp.mli
+#          ppx src/deriving_hash.pp.mli
+#          ppx src/digit_string_helpers.pp.mli
+#          ppx src/doubly_linked.pp.mli
+#          ppx src/either.pp.mli
+#          ppx src/error.pp.mli
+#          ppx src/fdeque.pp.mli
+#          ppx src/fheap.pp.mli
+#          ppx src/flags.pp.mli
+#          ppx src/float.pp.mli
+#          ppx src/float_with_finite_only_serialization.pp.mli
+#          ppx src/force_once.pp.mli
+#          ppx src/fqueue.pp.mli
+#          ppx src/hash_set.pp.mli
+#          ppx src/heap.pp.mli
+#          ppx src/hexdump.pp.mli
+#          ppx src/host_and_port.pp.mli
+#          ppx src/identifiable.pp.mli
+#          ppx src/immediate_option.pp.mli
+#          ppx src/info.pp.mli
+#          ppx src/int_set.pp.mli
+#          ppx src/limiter.pp.mli
+#          ppx src/linked_queue.pp.mli
+#          ppx src/linked_stack.pp.mli
+#          ppx src/make_stable.pp.mli
+#          ppx src/maybe_bound.pp.mli
+#          ppx src/memo.pp.mli
+#          ppx src/month.pp.mli
+#          ppx src/moption.pp.mli
+#          ppx src/no_polymorphic_compare.pp.mli
+#          ppx src/nothing.pp.mli
+#          ppx src/obj_array.pp.mli
+#          ppx src/ofday.pp.mli
+#          ppx src/only_in_test.pp.mli
+#          ppx src/option.pp.mli
+#          ppx src/option_array.pp.mli
+#          ppx src/or_error.pp.mli
+#          ppx src/ordering.pp.mli
+#          ppx src/percent.pp.mli
+#          ppx src/perms.pp.mli
+#          ppx src/pid.pp.mli
+#          ppx src/pool.pp.mli
+#          ppx src/pooled_hashtbl.pp.mli
+#          ppx src/quickcheck.pp.mli
+#          ppx src/ref.pp.mli
+#          ppx src/result.pp.mli
+#          ppx src/rope.pp.mli
+#          ppx src/sequence.pp.mli
+#          ppx src/set_once.pp.mli
+#          ppx src/sexpable.pp.mli
+#          ppx src/sign.pp.mli
+#          ppx src/source_code_position.pp.mli
+#          ppx src/span.pp.mli
+#          ppx src/splittable_random.pp.mli
+#          ppx src/stable_containers.pp.mli
+#          ppx src/stable_unit_test.pp.mli
+#          ppx src/string_id.pp.mli
+#          ppx src/substring.pp.mli
+#          ppx src/thread_safe_queue.pp.mli
+#          ppx src/time.pp.mli
+#          ppx src/time_float.pp.mli
+#          ppx src/time_float0.pp.mli
+#          ppx src/time_ns.pp.mli
+#          ppx src/timing_wheel_ns.pp.mli
+#          ppx src/total_map.pp.mli
+#          ppx src/type_equal.pp.mli
+#          ppx src/unique_id.pp.mli
+#          ppx src/tuple.pp.mli
+#          ppx src/unit.pp.mli
+#          ppx src/tuple_type.pp.mli
+#          ppx src/unit_of_time.pp.mli
+#          ppx src/uniform_array.pp.mli
+#          ppx src/union_find.pp.mli
+#          ppx src/univ.pp.mli
+#          ppx src/type_immediacy.pp.mli
+#          ppx src/univ_map.pp.mli
+#          ppx src/validated.pp.mli
+#          ppx src/zone.pp.mli
+#          ppx src/weak_pointer.pp.mli
+#          ppx src/unpack_buffer.pp.mli
+#          ppx src/version_util.pp.mli
+#       ocamlc base_for_tests/src/base_for_tests__Test_blit.{cmo,cmt}
+#       ocamlc base_for_tests/src/base_for_tests.cma
+#     ocamldep src/core_kernel.dependsi.ocamldep-output
+#       ocamlc src/core_kernel__Deprecate_pipe_bang.{cmi,cmti}
+#       ocamlc src/core_kernel__Maybe_bound.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_pervasives.{cmi,cmti}
+#       ocamlc src/core_kernel__Sequence.{cmi,cmti}
+#       ocamlc src/core_kernel__Linked_queue.{cmi,cmti}
+#     ocamlopt base_for_tests/src/base_for_tests__Test_blit.{cmx,o}
+#     ocamldep src/core_kernel.depends.ocamldep-output
+#       ocamlc src/core_kernel__Deprecate_pipe_bang.{cmo,cmt}
+#       ocamlc src/core_kernel__Robustly_comparable.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Fn.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_pervasives.{cmo,cmt}
+#     ocamlopt base_for_tests/src/base_for_tests__Test_binary_searchable.{cmx,o}
+#       ocamlc src/core_kernel__Sequence.{cmo,cmt}
+#     ocamlopt base_for_tests/src/base_for_tests.{a,cmxa}
+#     ocamlopt src/core_kernel__Deprecate_pipe_bang.{cmx,o}
+#     ocamlopt src/core_kernel__Robustly_comparable.{cmx,o}
+#     ocamlopt src/core_kernel__Core_pervasives.{cmx,o}
+#     ocamlopt src/core_kernel__Fn.{cmx,o}
+#     ocamlopt base_for_tests/src/base_for_tests.cmxs
+#     ocamlopt src/core_kernel__Sequence.{cmx,o}
+#       ocamlc src/core_kernel__Import.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Binary_packing.{cmi,cmti}
+#       ocamlc src/core_kernel__Comparator.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_bytes.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_arg.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_ephemeron.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_printexc.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_weak.{cmi,cmti}
+#       ocamlc src/core_kernel__Digit_string_helpers.{cmi,cmti}
+#       ocamlc src/core_kernel__Float_with_finite_only_serialization.{cmi,cmti}
+#       ocamlc src/core_kernel__Force_once.{cmi,cmti}
+#       ocamlc src/core_kernel__Moption.{cmi,cmti}
+#       ocamlc src/core_kernel__Int_set.{cmi,cmti}
+#       ocamlc src/core_kernel__No_polymorphic_compare.{cmi,cmti}
+#       ocamlc src/core_kernel__Only_in_test.{cmi,cmti}
+#       ocamlc src/core_kernel__Ordering.{cmi,cmti}
+#       ocamlc src/core_kernel__Splittable_random.{cmi,cmti}
+#       ocamlc src/core_kernel__Rope.{cmi,cmti}
+#       ocamlc src/core_kernel__Thread_safe_queue.{cmi,cmti}
+#       ocamlc src/core_kernel__Sexpable.{cmi,cmti}
+#       ocamlc src/core_kernel__Union_find.{cmi,cmti}
+#       ocamlc src/core_kernel__Deriving_hash_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_random.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Perms.{cmi,cmti}
+#       ocamlc src/core_kernel__Polymorphic_compare_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__T.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Maybe_bound.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_printf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__No_polymorphic_compare.{cmo,cmt}
+#       ocamlc src/core_kernel__Tuple_type_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Unit_of_time.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_bytes.{cmo,cmt}
+#       ocamlc src/core_kernel__Queue_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Deriving_hash.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_printexc.{cmo,cmt}
+#       ocamlc src/core_kernel__Immediate_option_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Hexdump_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Type_immediacy.{cmi,cmti}
+#       ocamlc src/core_kernel__Int_replace_polymorphic_compare.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Stable_unit_test_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_arg.{cmo,cmt}
+#       ocamlc src/core_kernel__Binary_searchable_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Comparator.{cmo,cmt}
+#       ocamlc src/core_kernel__Blit_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Stable_module_types.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Sexpable.{cmo,cmt}
+#       ocamlc src/core_kernel__Binable.{cmi,cmti}
+#       ocamlc src/core_kernel__Ordering.{cmo,cmt}
+#       ocamlc src/core_kernel__Tuple_type.{cmi,cmti}
+#       ocamlc src/core_kernel__Deriving_hash.{cmo,cmt}
+#       ocamlc src/core_kernel__Force_once.{cmo,cmt}
+#       ocamlc src/core_kernel__Binary_searchable.{cmi,cmti}
+#       ocamlc src/core_kernel__Immediate_option.{cmi,cmti}
+#       ocamlc src/core_kernel__Unit_of_time.{cmo,cmt}
+#       ocamlc src/core_kernel__Stable_unit_test.{cmi,cmti}
+#       ocamlc src/core_kernel__Blit.{cmi,cmti}
+#       ocamlc src/core_kernel__Source_code_position0.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Hexdump.{cmi,cmti}
+#       ocamlc src/core_kernel__Binary_searchable.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_lazy.{cmi,cmti}
+#       ocamlc src/core_kernel__Result.{cmi,cmti}
+#       ocamlc src/core_kernel__Make_stable.{cmi,cmti}
+#       ocamlc src/core_kernel__Binable0.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Info_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Tuple_type.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_queue.{cmi,cmti}
+#       ocamlc src/core_kernel__Quickcheck_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Immediate_option.{cmo,cmt}
+#       ocamlc src/core_kernel__Blit.{cmo,cmt}
+#       ocamlc src/core_kernel__Obj_array.{cmi,cmti}
+#       ocamlc src/core_kernel__Option_array.{cmi,cmti}
+#       ocamlc src/core_kernel__Uniform_array.{cmi,cmti}
+#       ocamlc src/core_kernel__Only_in_test.{cmo,cmt}
+#       ocamlc src/core_kernel__Set_once.{cmi,cmti}
+#       ocamlc src/core_kernel__Info.{cmi,cmti}
+#       ocamlc src/core_kernel__Make_stable.{cmo,cmt}
+#       ocamlc src/core_kernel__Error.{cmi,cmti}
+#       ocamlc src/core_kernel__Container_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Hexdump.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_lazy.{cmo,cmt}
+#       ocamlc src/core_kernel__Quickcheck.{cmi,cmti}
+#       ocamlc src/core_kernel__Hash_set_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Result.{cmo,cmt}
+#       ocamlc src/core_kernel__Container.{cmi,cmti}
+#       ocamlc src/core_kernel__Linked_queue.{cmo,cmt}
+#       ocamlc src/core_kernel__Or_error.{cmi,cmti}
+#       ocamlc src/core_kernel__Quickcheckable.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Type_immediacy.{cmo,cmt}
+#       ocamlc src/core_kernel__Error.{cmo,cmt}
+#       ocamlc src/core_kernel__Deque.{cmi,cmti}
+#       ocamlc src/core_kernel__Doubly_linked.{cmi,cmti}
+#       ocamlc src/core_kernel__Fheap.{cmi,cmti}
+#       ocamlc src/core_kernel__Heap_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Stack_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Container.{cmo,cmt}
+#       ocamlc src/core_kernel__Fqueue.{cmi,cmti}
+#       ocamlc src/core_kernel__Fdeque.{cmi,cmti}
+#       ocamlc src/core_kernel__Option.{cmi,cmti}
+#       ocamlc src/core_kernel__Info.{cmo,cmt}
+#       ocamlc src/core_kernel__Splittable_random.{cmo,cmt}
+#       ocamlc src/core_kernel__Either.{cmi,cmti}
+#       ocamlc src/core_kernel__Ref.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_list.{cmi,cmti}
+#       ocamlc src/core_kernel__Linked_stack.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_stack.{cmi,cmti}
+#       ocamlc src/core_kernel__Heap.{cmi,cmti}
+#       ocamlc src/core_kernel__Or_error.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_array.{cmi,cmti}
+#       ocamlc src/core_kernel__Perms.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_hashtbl_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Set_once.{cmo,cmt}
+#       ocamlc src/core_kernel__Union_find.{cmo,cmt}
+#       ocamlc src/core_kernel__Option.{cmo,cmt}
+#       ocamlc src/core_kernel__Ref.{cmo,cmt}
+#       ocamlc src/core_kernel__Uniform_array.{cmo,cmt}
+#       ocamlc src/core_kernel__Either.{cmo,cmt}
+#       ocamlc src/core_kernel__Obj_array.{cmo,cmt}
+#     ocamlopt src/core_kernel__Import.{cmx,o}
+#       ocamlc src/core_kernel__Core_list.{cmo,cmt}
+#       ocamlc src/core_kernel__Pooled_hashtbl.{cmi,cmti}
+#     ocamlopt src/core_kernel__Core_random.{cmx,o}
+#     ocamlopt src/core_kernel__Deriving_hash_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Core_bytes.{cmx,o}
+#     ocamlopt src/core_kernel__Core_printexc.{cmx,o}
+#     ocamlopt src/core_kernel__Comparator.{cmx,o}
+#     ocamlopt src/core_kernel__Tuple_type_intf.{cmx,o}
+#     ocamlopt src/core_kernel__No_polymorphic_compare.{cmx,o}
+#     ocamlopt src/core_kernel__Polymorphic_compare_intf.{cmx,o}
+#       ocamlc src/core_kernel__Doubly_linked.{cmo,cmt}
+#     ocamlopt src/core_kernel__Core_printf.{cmx,o}
+#     ocamlopt src/core_kernel__Force_once.{cmx,o}
+#     ocamlopt src/core_kernel__Immediate_option_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Maybe_bound.{cmx,o}
+#     ocamlopt src/core_kernel__Core_arg.{cmx,o}
+#     ocamlopt src/core_kernel__T.{cmx,o}
+#       ocamlc src/core_kernel__Core_hashtbl.{cmi,cmti}
+#     ocamlopt src/core_kernel__Int_replace_polymorphic_compare.{cmx,o}
+#     ocamlopt src/core_kernel__Stable_unit_test_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Queue_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Sexpable.{cmx,o}
+#     ocamlopt src/core_kernel__Deriving_hash.{cmx,o}
+#     ocamlopt src/core_kernel__Hexdump_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Unit_of_time.{cmx,o}
+#     ocamlopt src/core_kernel__Ordering.{cmx,o}
+#     ocamlopt src/core_kernel__Stable_module_types.{cmx,o}
+#       ocamlc src/core_kernel__Core_array.{cmo,cmt}
+# File "src/core_array.ml", line 269, characters 11-12:
+# Warning 3: deprecated: empty
+# [since 2016-04] Use [ [||] ]
+#   File "src/array.mli", line 292, characters 0-70:
+#   Definition
+#   File "src/core_array.ml", line 214, characters 2-41:
+#   Expected signature
+# File "src/core_array.ml", line 361, characters 9-10:
+# Warning 3: deprecated: empty
+# [since 2016-04] Use [ [||] ]
+#   File "src/array.mli", line 292, characters 0-70:
+#   Definition
+#   File "src/core_array.ml", line 353, characters 2-26:
+#   Expected signature
+#     ocamlopt src/core_kernel__Immediate_option.{cmx,o}
+#     ocamlopt src/core_kernel__Core_lazy.{cmx,o}
+#       ocamlc src/core_kernel__Quickcheck.{cmo,cmt}
+#     ocamlopt src/core_kernel__Tuple_type.{cmx,o}
+#       ocamlc src/core_kernel__Hash_set.{cmi,cmti}
+#       ocamlc src/core_kernel__Hash_heap.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Source_code_position0.{cmx,o}
+#     ocamlopt src/core_kernel__Info_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Result.{cmx,o}
+#     ocamlopt src/core_kernel__Only_in_test.{cmx,o}
+#     ocamlopt src/core_kernel__Ref.{cmx,o}
+#       ocamlc src/core_kernel__Hash_queue.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Binable0.{cmx,o}
+#     ocamlopt src/core_kernel__Hexdump.{cmx,o}
+#       ocamlc src/core_kernel__Core_hashtbl.{cmo,cmt}
+#       ocamlc src/core_kernel__Hash_set.{cmo,cmt}
+#     ocamlopt src/core_kernel__Hash_set_intf.{cmx,o}
+#       ocamlc src/core_kernel__Core_map_intf.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Type_immediacy.{cmx,o}
+#     ocamlopt src/core_kernel__Linked_queue.{cmx,o}
+#     ocamlopt src/core_kernel__Core_hashtbl_intf.{cmx,o}
+#       ocamlc src/core_kernel__Hashable.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_map.{cmi,cmti}
+#     ocamlopt src/core_kernel__Info.{cmx,o}
+#     ocamlopt src/core_kernel__Error.{cmx,o}
+#       ocamlc src/core_kernel__Core_set_intf.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Perms.{cmx,o}
+#     ocamlopt src/core_kernel__Binary_searchable_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Blit_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Container_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Binary_searchable.{cmx,o}
+#     ocamlopt src/core_kernel__Or_error.{cmx,o}
+#     ocamlopt src/core_kernel__Blit.{cmx,o}
+#     ocamlopt src/core_kernel__Container.{cmx,o}
+#     ocamlopt src/core_kernel__Splittable_random.{cmx,o}
+#     ocamlopt src/core_kernel__Heap_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Stack_intf.{cmx,o}
+#       ocamlc src/core_kernel__Core_set.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_map.{cmo,cmt}
+#     ocamlopt src/core_kernel__Quickcheck_intf.{cmx,o}
+#       ocamlc src/core_kernel__Comparable_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_set.{cmo,cmt}
+#       ocamlc src/core_kernel__Comparable.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_sexp.{cmi,cmti}
+#       ocamlc src/core_kernel__Month_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Bool.{cmi,cmti}
+#       ocamlc src/core_kernel__Source_code_position.{cmi,cmti}
+#       ocamlc src/core_kernel__Byte_units.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_gc.{cmi,cmti}
+#       ocamlc src/core_kernel__Debug.{cmi,cmti}
+#       ocamlc src/core_kernel__Validated_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Bigstring.{cmi,cmti}
+#       ocamlc src/core_kernel__Validated.{cmi,cmti}
+#       ocamlc src/core_kernel__Bigstring_marshal.{cmi,cmti}
+#       ocamlc src/core_kernel__Substring_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_bin_prot.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Bigbuffer_internal.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Quickcheck.{cmx,o}
+#       ocamlc src/core_kernel__Debug.{cmo,cmt}
+#       ocamlc src/core_kernel__Bigstring_marshal.{cmo,cmt}
+#       ocamlc src/core_kernel__Bigbuffer.{cmi,cmti}
+#       ocamlc src/core_kernel__Tuple.{cmi,cmti}
+#     ocamlopt src/core_kernel__Quickcheckable.{cmx,o}
+#       ocamlc src/core_kernel__Type_equal_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Identifiable.{cmi,cmti}
+#       ocamlc src/core_kernel__Month.{cmi,cmti}
+#       ocamlc src/core_kernel__Source_code_position.{cmo,cmt}
+#       ocamlc src/core_kernel__Bool.{cmo,cmt}
+#     ocamlopt src/core_kernel__Either.{cmx,o}
+#       ocamlc src/core_kernel__Type_equal.{cmi,cmti}
+#       ocamlc src/core_kernel__Comparable.{cmo,cmt}
+#       ocamlc src/core_kernel__Univ.{cmi,cmti}
+#       ocamlc src/core_kernel__Univ_map_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_char.{cmi,cmti}
+#     ocamlopt src/core_kernel__Core_list.{cmx,o}
+#       ocamlc src/core_kernel__Unit.{cmi,cmti}
+#       ocamlc src/core_kernel__Nothing.{cmi,cmti}
+#       ocamlc src/core_kernel__Sign.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_gc.{cmo,cmt}
+#       ocamlc src/core_kernel__Never_returns.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Pid.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_string.{cmi,cmti}
+#     ocamlopt src/core_kernel__Option.{cmx,o}
+#       ocamlc src/core_kernel__Type_equal.{cmo,cmt}
+#       ocamlc src/core_kernel__Tuple.{cmo,cmt}
+#       ocamlc src/core_kernel__Nothing.{cmo,cmt}
+#       ocamlc src/core_kernel__Int_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Unit.{cmo,cmt}
+#       ocamlc src/core_kernel__Float.{cmi,cmti}
+#       ocamlc src/core_kernel__Bigbuffer.{cmo,cmt}
+#     ocamlopt src/core_kernel__Set_once.{cmx,o}
+#       ocamlc src/core_kernel__Core_char.{cmo,cmt}
+#       ocamlc src/core_kernel__Sign.{cmo,cmt}
+#       ocamlc src/core_kernel__Identifiable.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_int.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_int63.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_nativeint.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_int32.{cmi,cmti}
+#       ocamlc src/core_kernel__Stable_int63able.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_int64.{cmi,cmti}
+#       ocamlc src/core_kernel__Binable.{cmo,cmt}
+#       ocamlc src/core_kernel__Rope.{cmo,cmt}
+#     ocamlopt src/core_kernel__Core_array.{cmx,o}
+# File "src/core_array.ml", line 269, characters 11-12:
+# Warning 3: deprecated: empty
+# [since 2016-04] Use [ [||] ]
+#   File "src/array.mli", line 292, characters 0-70:
+#   Definition
+#   File "src/core_array.ml", line 214, characters 2-41:
+#   Expected signature
+# File "src/core_array.ml", line 361, characters 9-10:
+# Warning 3: deprecated: empty
+# [since 2016-04] Use [ [||] ]
+#   File "src/array.mli", line 292, characters 0-70:
+#   Definition
+#   File "src/core_array.ml", line 353, characters 2-26:
+#   Expected signature
+#       ocamlc src/core_kernel__Pool_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Pool.{cmi,cmti}
+#     ocamlopt src/core_kernel__Union_find.{cmx,o}
+#       ocamlc src/core_kernel__Pid.{cmo,cmt}
+#     ocamlopt src/core_kernel__Obj_array.{cmx,o}
+#       ocamlc src/core_kernel__Core_sexp.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_nativeint.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_int32.{cmo,cmt}
+#       ocamlc src/core_kernel__Flags_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Core_int64.{cmo,cmt}
+#       ocamlc src/core_kernel__Month.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_string.{cmo,cmt}
+#       ocamlc src/core_kernel__Pooled_hashtbl.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_int.{cmo,cmt}
+#       ocamlc src/core_kernel__Pool.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_int63.{cmo,cmt}
+#       ocamlc src/core_kernel__Interfaces.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Float.{cmo,cmt}
+#     ocamlopt src/core_kernel__Core_hashtbl.{cmx,o}
+#       ocamlc src/core_kernel__Timing_wheel_ns_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Flags.{cmi,cmti}
+#     ocamlopt src/core_kernel__Doubly_linked.{cmx,o}
+#     ocamlopt src/core_kernel__Hash_set.{cmx,o}
+#     ocamlopt src/core_kernel__Core_map_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Hash_queue.{cmx,o}
+#       ocamlc src/core_kernel__Std_internal.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Weak_pointer.{cmi,cmti}
+#       ocamlc src/core_kernel__Bag.{cmi,cmti}
+#       ocamlc src/core_kernel__Bus.{cmi,cmti}
+#       ocamlc src/core_kernel__Bounded_int_table.{cmi,cmti}
+#       ocamlc src/core_kernel__Stable_containers.{cmi,cmti}
+#       ocamlc src/core_kernel__Blang.{cmi,cmti}
+#       ocamlc src/core_kernel__Unpack_buffer.{cmi,cmti}
+#       ocamlc src/core_kernel__Memo.{cmi,cmti}
+#       ocamlc src/core_kernel__Core_ephemeron.{cmo,cmt}
+#       ocamlc src/core_kernel__Total_map.{cmi,cmti}
+#       ocamlc src/core_kernel__Digit_string_helpers.{cmo,cmt}
+#       ocamlc src/core_kernel__Fqueue.{cmo,cmt}
+#       ocamlc src/core_kernel__Moption.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_weak.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_stack.{cmo,cmt}
+#       ocamlc src/core_kernel__Weak_pointer.{cmo,cmt}
+#     ocamlopt src/core_kernel__Hashable.{cmx,o}
+#       ocamlc src/core_kernel__Bag.{cmo,cmt}
+#       ocamlc src/core_kernel__Int_set.{cmo,cmt}
+#       ocamlc src/core_kernel__Stable_unit_test.{cmo,cmt}
+#       ocamlc src/core_kernel__Linked_stack.{cmo,cmt}
+#       ocamlc src/core_kernel__Univ.{cmo,cmt}
+#       ocamlc src/core_kernel__Container_unit_tests.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Thread_safe_queue.{cmo,cmt}
+#     ocamlopt src/core_kernel__Bag.{cmx,o}
+#       ocamlc src/core_kernel__Option_array.{cmo,cmt}
+#       ocamlc src/core_kernel__Heap.{cmo,cmt}
+#       ocamlc src/core_kernel__Fheap.{cmo,cmt}
+#       ocamlc src/core_kernel__Validated.{cmo,cmt}
+#       ocamlc src/core_kernel__Fdeque.{cmo,cmt}
+#       ocamlc src/core_kernel__Core_queue.{cmo,cmt}
+#       ocamlc src/core_kernel__Make_substring.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Stable_internal.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Deque.{cmo,cmt}
+#       ocamlc src/core_kernel__Binary_packing.{cmo,cmt}
+#       ocamlc src/core_kernel__Memo.{cmo,cmt}
+#       ocamlc src/core_kernel__Bigsubstring.{cmi,cmti}
+#       ocamlc src/core_kernel__Substring.{cmi,cmti}
+#       ocamlc src/core_kernel__Percent.{cmi,cmti}
+#       ocamlc src/core_kernel__Float_with_finite_only_serialization.{cmo,cmt}
+#       ocamlc src/core_kernel__Bigsubstring.{cmo,cmt}
+#       ocamlc src/core_kernel__Substring.{cmo,cmt}
+#       ocamlc src/core_kernel__Bounded_int_table.{cmo,cmt}
+#       ocamlc src/core_kernel__Univ_map.{cmi,cmti}
+#       ocamlc src/core_kernel__Host_and_port.{cmi,cmti}
+#       ocamlc src/core_kernel__Span_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Unpack_buffer.{cmo,cmt}
+#       ocamlc src/core_kernel__Bigstring.{cmo,cmt}
+# File "src/bigstring.ml", line 382, characters 28-43:
+# Warning 3: deprecated: Bigarray.Array1.map_file
+# Use [array1_of_genarray (Unix.map_file ...)] instead.
+# Note that Bigarray.Array1.map_file raises Sys_error while
+# Unix.map_file raises Unix_error.
+#       ocamlc src/core_kernel__Constrained_float.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Blang.{cmo,cmt}
+#       ocamlc src/core_kernel__Total_map.{cmo,cmt}
+#       ocamlc src/core_kernel__Unique_id_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Day_of_week_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Bucket.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Flags.{cmo,cmt}
+#       ocamlc src/core_kernel__Byte_units.{cmo,cmt}
+#       ocamlc src/core_kernel__Stable_containers.{cmo,cmt}
+#       ocamlc src/core_kernel__Span.{cmi,cmti}
+#       ocamlc src/core_kernel__Bounded_index_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Percent.{cmo,cmt}
+# File "src/percent.ml", line 160, characters 9-14:
+# Warning 3: deprecated: sign
+# [since 2016-01] Replace [sign] with [robust_sign] or [sign_exn]
+#   File "src/float.mli", line 42, characters 0-103:
+#   Definition
+#   File "src/comparable_intf.ml", line 30, characters 2-25:
+#   Expected signature
+#       ocamlc src/core_kernel__Host_and_port.{cmo,cmt}
+#       ocamlc src/core_kernel__Day_of_week.{cmi,cmti}
+#       ocamlc src/core_kernel__String_id_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Unique_id.{cmi,cmti}
+#       ocamlc src/core_kernel__Univ_map.{cmo,cmt}
+#       ocamlc src/core_kernel__Ofday_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Bounded_index.{cmi,cmti}
+#       ocamlc src/core_kernel__Bus.{cmo,cmt}
+#       ocamlc src/core_kernel__Date0_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Span.{cmo,cmt}
+# File "src/span.ml", line 67, characters 15-20:
+# Warning 3: deprecated: sign
+# [since 2016-01] Replace [sign] with [robust_sign] or [sign_exn]
+#   File "src/float.mli", line 42, characters 0-103:
+#   Definition
+#   File "src/comparable_intf.ml", line 30, characters 2-25:
+#   Expected signature
+#       ocamlc src/core_kernel__Unique_id.{cmo,cmt}
+#       ocamlc src/core_kernel__String_id.{cmi,cmti}
+#       ocamlc src/core_kernel__Day_of_week.{cmo,cmt}
+#       ocamlc src/core_kernel__Ofday.{cmi,cmti}
+#       ocamlc src/core_kernel__Date0.{cmi,cmti}
+#       ocamlc src/core_kernel__Bounded_index.{cmo,cmt}
+#       ocamlc src/core_kernel__Time_ns_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Time_ns.{cmi,cmti}
+#       ocamlc src/core_kernel__Limiter.{cmi,cmti}
+#       ocamlc src/core_kernel__Time_ns_alternate_sexp.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Limiter.{cmo,cmt}
+#       ocamlc src/core_kernel__Ofday.{cmo,cmt}
+# File "src/ofday.ml", line 29, characters 9-14:
+# Warning 3: deprecated: sign
+# [since 2016-01] Replace [sign] with [robust_sign] or [sign_exn]
+#   File "src/float.mli", line 42, characters 0-103:
+#   Definition
+#   File "src/comparable_intf.ml", line 30, characters 2-25:
+#   Expected signature
+#       ocamlc src/core_kernel__Time0_intf.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Core_map.{cmx,o}
+#       ocamlc src/core_kernel__Timing_wheel_ns.{cmi,cmti}
+#       ocamlc src/core_kernel__Time_ns.{cmo,cmt}
+#       ocamlc src/core_kernel__Date0.{cmo,cmt}
+#       ocamlc src/core_kernel__Time_float0.{cmi,cmti}
+#       ocamlc src/core_kernel__String_id.{cmo,cmt}
+#     ocamlopt src/core_kernel__Core_set_intf.{cmx,o}
+#       ocamlc src/core_kernel__Time_float0.{cmo,cmt}
+#       ocamlc src/core_kernel__Zone_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Timing_wheel_ns.{cmo,cmt}
+#       ocamlc src/core_kernel__Zone.{cmi,cmti}
+#       ocamlc src/core_kernel__Zone.{cmo,cmt}
+#     ocamlopt src/core_kernel__Core_set.{cmx,o}
+#       ocamlc src/core_kernel__Time_intf.{cmi,cmo,cmt}
+#     ocamlopt src/core_kernel__Comparable_intf.{cmx,o}
+#       ocamlc src/core_kernel__Time_float.{cmi,cmti}
+#       ocamlc src/core_kernel__Time.{cmi,cmti}
+#       ocamlc src/core_kernel__Date_intf.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Time_float.{cmo,cmt}
+#       ocamlc src/core_kernel__Date.{cmi,cmti}
+#       ocamlc src/core_kernel__Std_kernel.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Version_util.{cmi,cmti}
+#       ocamlc src/core_kernel__Std_common.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Stable.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel__Version_util.{cmo,cmt}
+#       ocamlc src/core_kernel__Date.{cmo,cmt}
+#       ocamlc src/core_kernel__Time.{cmo,cmt}
+#     ocamlopt src/core_kernel__Comparable.{cmx,o}
+#       ocamlc src/core_kernel.{cmi,cmo,cmt}
+#       ocamlc src/core_kernel.cma
+#     ocamlopt src/core_kernel__Month_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Type_equal_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Bool.{cmx,o}
+#     ocamlopt src/core_kernel__Type_equal.{cmx,o}
+#     ocamlopt src/core_kernel__Source_code_position.{cmx,o}
+#     ocamlopt src/core_kernel__Univ_map_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Validated_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Debug.{cmx,o}
+#     ocamlopt src/core_kernel__Core_gc.{cmx,o}
+#     ocamlopt src/core_kernel__Identifiable.{cmx,o}
+#     ocamlopt src/core_kernel__Int_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Unit.{cmx,o}
+#     ocamlopt src/core_kernel__Core_nativeint.{cmx,o}
+#     ocamlopt src/core_kernel__Nothing.{cmx,o}
+#     ocamlopt src/core_kernel__Never_returns.{cmx,o}
+#     ocamlopt src/core_kernel__Core_int32.{cmx,o}
+#     ocamlopt src/core_kernel__Core_char.{cmx,o}
+#     ocamlopt src/core_kernel__Sign.{cmx,o}
+#     ocamlopt src/core_kernel__Core_int64.{cmx,o}
+#     ocamlopt src/core_kernel__Core_int.{cmx,o}
+#     ocamlopt src/core_kernel__Core_int63.{cmx,o}
+#     ocamlopt src/core_kernel__Stable_int63able.{cmx,o}
+#     ocamlopt src/core_kernel__Pool_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Flags_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Timing_wheel_ns_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Interfaces.{cmx,o}
+#     ocamlopt src/core_kernel__Pool.{cmx,o}
+#     ocamlopt src/core_kernel__Pooled_hashtbl.{cmx,o}
+#     ocamlopt src/core_kernel__Float.{cmx,o}
+#     ocamlopt src/core_kernel__Core_string.{cmx,o}
+#     ocamlopt src/core_kernel__Rope.{cmx,o}
+#     ocamlopt src/core_kernel__Core_sexp.{cmx,o}
+#     ocamlopt src/core_kernel__Std_internal.{cmx,o}
+#     ocamlopt src/core_kernel__Core_ephemeron.{cmx,o}
+#     ocamlopt src/core_kernel__Core_weak.{cmx,o}
+#     ocamlopt src/core_kernel__Moption.{cmx,o}
+#     ocamlopt src/core_kernel__Digit_string_helpers.{cmx,o}
+#     ocamlopt src/core_kernel__Int_set.{cmx,o}
+#     ocamlopt src/core_kernel__Univ.{cmx,o}
+#     ocamlopt src/core_kernel__Weak_pointer.{cmx,o}
+#     ocamlopt src/core_kernel__Memo.{cmx,o}
+#     ocamlopt src/core_kernel__Thread_safe_queue.{cmx,o}
+#     ocamlopt src/core_kernel__Linked_stack.{cmx,o}
+#     ocamlopt src/core_kernel__Fheap.{cmx,o}
+#     ocamlopt src/core_kernel__Stable_internal.{cmx,o}
+#     ocamlopt src/core_kernel__Constrained_float.{cmx,o}
+#     ocamlopt src/core_kernel__Unique_id_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Span_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Heap.{cmx,o}
+#     ocamlopt src/core_kernel__Fdeque.{cmx,o}
+#     ocamlopt src/core_kernel__Total_map.{cmx,o}
+#     ocamlopt src/core_kernel__Bucket.{cmx,o}
+#     ocamlopt src/core_kernel__Hash_heap.{cmx,o}
+#     ocamlopt src/core_kernel__Flags.{cmx,o}
+#     ocamlopt src/core_kernel__Bounded_index_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Fqueue.{cmx,o}
+#     ocamlopt src/core_kernel__String_id_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Binary_packing.{cmx,o}
+#     ocamlopt src/core_kernel__Univ_map.{cmx,o}
+#     ocamlopt src/core_kernel__Ofday_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Host_and_port.{cmx,o}
+#     ocamlopt src/core_kernel__Unique_id.{cmx,o}
+#     ocamlopt src/core_kernel__Byte_units.{cmx,o}
+#     ocamlopt src/core_kernel__Bus.{cmx,o}
+#     ocamlopt src/core_kernel__String_id.{cmx,o}
+#     ocamlopt src/core_kernel__Bigstring.{cmx,o}
+# File "src/bigstring.ml", line 382, characters 28-43:
+# Warning 3: deprecated: Bigarray.Array1.map_file
+# Use [array1_of_genarray (Unix.map_file ...)] instead.
+# Note that Bigarray.Array1.map_file raises Sys_error while
+# Unix.map_file raises Unix_error.
+#     ocamlopt src/core_kernel__Substring_intf.{cmx,o}
+#     ocamlopt src/core_kernel__Core_bin_prot.{cmx,o}
+#     ocamlopt src/core_kernel__Bigbuffer_internal.{cmx,o}
+#     ocamlopt src/core_kernel__Bigstring_marshal.{cmx,o}
+#     ocamlopt src/core_kernel__Binable.{cmx,o}
+#     ocamlopt src/core_kernel__Make_stable.{cmx,o}
+#     ocamlopt src/core_kernel__Float_with_finite_only_serialization.{cmx,o}
+#     ocamlopt src/core_kernel__Bigbuffer.{cmx,o}
+#     ocamlopt src/core_kernel__Make_substring.{cmx,o}
+#     ocamlopt src/core_kernel__Stable_unit_test.{cmx,o}
+#     ocamlopt src/core_kernel__Uniform_array.{cmx,o}
+#     ocamlopt src/core_kernel__Validated.{cmx,o}
+#     ocamlopt src/core_kernel__Substring.{cmx,o}
+#     ocamlopt src/core_kernel__Bigsubstring.{cmx,o}
+#     ocamlopt src/core_kernel__Option_array.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06+flambda/bin/ocamlopt.opt -w -40 -unsafe-string -g -I /home/opam/.opam/4.06+flambda/lib/base -I /home/opam/.opam/4.06+flambda/lib/base/caml -I /home/opam/.opam/4.06+flambda/lib/base/shadow_stdlib -I /home/opam/.opam/4.06+flambda/lib/bin_prot -I /home/opam/.opam/4.06+flambda/lib/bin_prot/shape -I /home/opam/.opam/4.06+flambda/lib/fieldslib -I /home/opam/.opam/4.06+flambda/lib/jane-street-headers -I /home/opam/.opam/4.06+flambda/lib/num -I /home/opam/.opam/4.06+flambda/lib/ocaml -I /home/opam/.opam/4.06+flambda/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06+flambda/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06+flambda/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06+flambda/lib/ppx_expect/collector -I /home/opam/.opam/4.06+flambda/lib/ppx_expect/common -I /home/opam/.opam/4.06+flambda/lib/ppx_expect/config -I /home/opam/.opam/4.06+flambda/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06+flambda/lib/ppx_inline_test/config -I /home/opam/.opam/4.06+flambda/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06+flambda/lib/sexplib -I /home/opam/.opam/4.06+flambda/lib/sexplib/0 -I /home/opam/.opam/4.06+flambda/lib/stdio -I /home/opam/.opam/4.06+flambda/lib/typerep -I /home/opam/.opam/4.06+flambda/lib/variantslib -I base_for_tests/src -no-alias-deps -I src -open Core_kernel__ -o src/core_kernel__Option_array.cmx -c -impl src/option_array.pp.ml)
+# >> Fatal error: Assignment of a float to a specialised non-float array: (array.unsafe_set[int]<{src/option_array.ml:207,14-43;src/option_array.ml:145,21-79;src/uniform_array.ml:50,6-28;src/uniform_array.ml:33,27-66;src/obj_array.ml:79,4-74}>
+#                                                           res/5490 i/5494
+#                                                           obj/5504)
+# Fatal error: exception Misc.Fatal_error
+# 
+# Waiting for 8 jobs to finish.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build core_kernel v0.9.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - remove    dune                    1.1.1
+| - downgrade jbuilder                transition to 1.0+beta17
+| - install   base                    v0.9.4
+| - install   bin_prot                v0.9.2
+| - install   configurator            v0.9.1
+| - install   fieldslib               v0.9.0
+| - install   jane-street-headers     v0.9.0
+| - install   num                     1.1
+| - install   ocaml-compiler-libs     v0.9.0
+| - install   ocaml-migrate-parsetree 1.0.7
+| - install   ocamlbuild              0.12.0
+| - install   octavius                1.2.0
+| - install   ppx_assert              v0.9.0
+| - install   ppx_ast                 v0.9.2
+| - install   ppx_base                v0.9.0
+| - install   ppx_bench               v0.9.1
+| - install   ppx_bin_prot            v0.9.0
+| - install   ppx_compare             v0.9.0
+| - install   ppx_core                v0.9.3
+| - install   ppx_custom_printf       v0.9.0
+| - install   ppx_derivers            1.0
+| - install   ppx_driver              v0.9.2
+| - install   ppx_enumerate           v0.9.0
+| - install   ppx_expect              v0.9.0
+| - install   ppx_fail                v0.9.0
+| - install   ppx_fields_conv         v0.9.0
+| - install   ppx_hash                v0.9.0
+| - install   ppx_here                v0.9.1
+| - install   ppx_inline_test         v0.9.2
+| - install   ppx_jane                v0.9.0
+| - install   ppx_js_style            v0.9.0
+| - install   ppx_let                 v0.9.0
+| - install   ppx_metaquot            v0.9.0
+| - install   ppx_optcomp             v0.9.0
+| - install   ppx_optional            v0.9.0
+| - install   ppx_pipebang            v0.9.0
+| - install   ppx_sexp_conv           v0.9.0
+| - install   ppx_sexp_message        v0.9.0
+| - install   ppx_sexp_value          v0.9.0
+| - install   ppx_traverse            v0.9.0
+| - install   ppx_traverse_builtins   v0.9.0
+| - install   ppx_type_conv           v0.9.1
+| - install   ppx_typerep_conv        v0.9.0
+| - install   ppx_variants_conv       v0.9.0
+| - install   re                      1.7.3
+| - install   result                  1.3
+| - install   sexplib                 v0.9.3
+| - install   stdio                   v0.9.1
+| - install   typerep                 v0.9.0
+| - install   variantslib             v0.9.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180815004312.export"
+31 1534293789 1534293989
