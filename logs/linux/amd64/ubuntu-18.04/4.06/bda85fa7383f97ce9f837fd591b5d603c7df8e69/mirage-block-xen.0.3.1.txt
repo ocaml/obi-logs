@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 mirage-block-xen.0.3.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for mirage-block-xen.0.3.1: The following dependencies couldn't be met:
+          - mirage-block-xen -> mirage-xen >= 0.9.9 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-block-xen -> mirage-xen >= 0.9.9 -> mirage-xen-ocaml >= 2.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-block-xen -> mirage-xen >= 0.9.9 -> io-page < 2.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-block-xen.0.3.1 returned 20
+20 1534291676 1534291678

@@ -1,0 +1,115 @@
+$ opam depext -iy -j 2 solo5-kernel-ukvm.0.2.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+linux-libc-dev
+pkg-config
+# The following new OS packages need to be installed: pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libglib2.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../0-libglib2.0-0_2.56.1-2ubuntu1_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../1-libglib2.0-data_2.56.1-2ubuntu1_all.deb ...
+Unpacking libglib2.0-data (2.56.1-2ubuntu1) ...
+Selecting previously unselected package libicu60:amd64.
+Preparing to unpack .../2-libicu60_60.2-3ubuntu3_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../3-libxml2_2.9.4+dfsg1-6.1ubuntu1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../4-shared-mime-info_1.9-2_amd64.deb ...
+Unpacking shared-mime-info (1.9-2) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../5-xdg-user-dirs_0.17-1ubuntu1_amd64.deb ...
+Unpacking xdg-user-dirs (0.17-1ubuntu1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../6-pkg-config_0.29.1-0ubuntu2_amd64.deb ...
+Unpacking pkg-config (0.29.1-0ubuntu2) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3) ...
+Setting up libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
+No schema files found: doing nothing.
+Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
+Setting up pkg-config (0.29.1-0ubuntu2) ...
+Setting up libglib2.0-data (2.56.1-2ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up shared-mime-info (1.9-2) ...
+Setting up xdg-user-dirs (0.17-1ubuntu1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-pkg-config   1.1   [required by solo5-kernel-ukvm]
+  - install solo5-kernel-ukvm 0.2.2
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[solo5-kernel-ukvm.0.2.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of solo5-kernel-ukvm failed at "/usr/bin/make ukvm".
+
+#=== ERROR while compiling solo5-kernel-ukvm.0.2.2 ============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2
+# command              /usr/bin/make ukvm
+# exit-code            2
+# env-file             ~/.opam/log/solo5-kernel-ukvm-13-d2c37b.env
+# output-file          ~/.opam/log/solo5-kernel-ukvm-13-d2c37b.out
+### output ###
+# Makefile.common:28: /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/Makeconf: No such file or directory
+# ./configure.sh
+# /usr/bin/make -C kernel ukvm
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/kernel'
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/kernel.c -o ukvm/kernel.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/gdt.c -o ukvm/gdt.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/io.c -o ukvm/io.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/platform.c -o ukvm/platform.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/platform_intr.c -o ukvm/platform_intr.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/mem.c -o ukvm/mem.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ukvm/time.c -o ukvm/time.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c abort.c -o abort.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -DASM_FILE -c cpu.S -o cpu.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -DASM_FILE -c cpu_vectors.S -o cpu_vectors.o
+# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -D__SOLO5_KERNEL__ -c ee_printf.c -o ee_printf.o
+# ee_printf.c: In function 'vsnprintf':
+# ee_printf.c:639:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+#              flags |= UPPERCASE;
+#                    ^
+# ee_printf.c:641:9: note: here
+#          case 'a':
+#          ^~~~
+# ee_printf.c:656:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
+#              flags |= UPPERCASE;
+#                    ^
+# ee_printf.c:658:9: note: here
+#          case 'x':
+#          ^~~~
+# cc1: all warnings being treated as errors
+# Makefile:70: recipe for target 'ee_printf.o' failed
+# make[1]: *** [ee_printf.o] Error 1
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-ukvm.0.2.2/kernel'
+# Makefile:39: recipe for target 'ukvm' failed
+# make: *** [ukvm] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build solo5-kernel-ukvm 0.2.2
++- 
++- The following changes have been performed
+| - install conf-pkg-config 1.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    linux-libc-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180815000326.export"
+31 1534291397 1534291410

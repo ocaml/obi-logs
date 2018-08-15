@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 async_rpc_kernel.113.24.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for async_rpc_kernel.113.24.00: The following dependencies couldn't be met:
+          - async_rpc_kernel -> ppx_bench < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - async_rpc_kernel -> ppx_bench < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=async_rpc_kernel.113.24.00 returned 20
+20 1534292061 1534292064
