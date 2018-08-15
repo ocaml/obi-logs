@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 osc.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for osc.0.1.0: The following dependencies couldn't be met:
+          - osc -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=osc.0.1.0 returned 20
+20 1534309915 1534309916

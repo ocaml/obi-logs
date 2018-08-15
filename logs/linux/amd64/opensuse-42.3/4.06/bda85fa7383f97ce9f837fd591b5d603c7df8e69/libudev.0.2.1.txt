@@ -1,0 +1,16 @@
+$ opam depext -iy -j 2 libudev.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+libffi-devel
+m4
+# The following new OS packages need to be installed: libffi-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install libffi-devel
+Download (curl) error for 'http://download.opensuse.org/update/leap/42.3/oss/media.1/media':
+Error code: Curl error 56
+Error message: Recv failure: Connection reset by peer
+
+Abort, retry, ignore? [a/r/i/...? shows all options] (a): a
+ABORT request: Aborting requested by user
+OS package installation failed
+1 1534306160 1534306181
