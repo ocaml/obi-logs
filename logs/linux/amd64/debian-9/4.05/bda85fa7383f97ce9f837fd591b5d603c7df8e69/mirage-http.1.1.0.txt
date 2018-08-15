@@ -1,0 +1,24 @@
+$ opam depext -iy -j 2 mirage-http.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-http.1.1.0: The following dependencies couldn't be met:
+          - mirage-http -> cohttp < 0.12.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp < 0.12.0 -> lwt < 2.5.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp < 0.12.0 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> cohttp < 0.12.0 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> lwt >= 2.4.3 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> tcpip < 2.5.1 -> mirage-types-lwt = 2.2.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-http -> tcpip < 2.5.1 -> lwt < 3.0.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - cohttp < 0.9.12 is in conflict with lwt >= 2.4.7
+          - tcpip (< 2.2.0 | >= 2.3.0 & < 2.5.0) is in conflict with lwt >= 3.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-http.1.1.0 returned 20
+20 1534288113 1534288117
