@@ -1,0 +1,396 @@
+$ opam depext -iy -j 2 xapi-backtrace.0.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers     v0.9.0    [required by core_kernel]
+  - install re                      1.7.3     [required by uri]
+  - install ocaml-compiler-libs     v0.9.0    [required by ppx_core]
+  - install ppx_tools               5.0       [required by ppx_deriving]
+  - install result                  1.3       [required by ppx_deriving, cmdliner, ocaml-migrate-parsetree, etc.]
+  - install base-num                base      [required by num]
+  - install ocamlbuild              0.12.0    [required by rresult, oasis, ppx_driver, etc.]
+  - install spawn                   v0.9.0    [required by core]
+  - install base-bytes              base      [required by cppo]
+  - install octavius                1.2.0     [required by ppx_js_style]
+  - install easy-format             1.3.1     [required by yojson]
+  - install ppx_derivers            1.0       [required by ppx_type_conv, ppx_deriving]
+  - install conf-which              1         [required by biniou]
+  - install ppx_traverse_builtins   v0.9.0    [required by ppx_core, ppx_metaquot]
+  - install ocaml-migrate-parsetree 1.0.11    [required by ppx_sexp_conv]
+  - install num                     0         [required by sexplib]
+  - install uchar                   0.0.2     [required by jsonm]
+  - install topkg                   0.9.1     [required by cmdliner, rresult]
+  - install ocamlmod                0.0.9     [required by oasis]
+  - install ocamlify                0.0.1     [required by oasis]
+  - install camlp4                  4.04+1    [required by type_conv]
+  - install stringext               1.5.0     [required by uri]
+  - install omd                     1.3.1     [required by cow]
+  - install cppo                    1.6.4     [required by rpc]
+  - install biniou                  1.2.0     [required by yojson]
+  - install ppx_ast                 v0.9.1    [required by ppx_core]
+  - install sexplib                 v0.9.2    [required by xapi-backtrace]
+  - install xmlm                    1.3.0     [required by rpc]
+  - install rresult                 0.5.0     [required by rpc]
+  - install cmdliner                1.0.2     [required by rpc]
+  - install oasis                   0.4.11    [required by rpc]
+  - install type_conv               113.00.02 [required by rpc]
+  - install lwt                     4.1.0     [required by rpc]                                                   For the PPX, please install package lwt_ppx
+                                                                                                                  For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                                                  For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cppo_ocamlbuild         1.6.0     [required by ppx_deriving]
+  - install yojson                  1.4.1     [required by rpc]
+  - install cstruct                 3.2.1     [required by hex]
+  - install base                    v0.9.3    [required by ppx_core]
+  - install uutf                    1.0.1     [required by jsonm]
+  - install ppx_deriving            4.2.1     [required by rpc]
+  - install hex                     1.2.0     [required by ezjsonm]
+  - install typerep                 v0.9.0    [required by core_kernel]
+  - install stdio                   v0.9.0    [required by ppx_core]
+  - install jsonm                   1.0.1     [required by ezjsonm]
+  - install ppx_core                v0.9.0    [required by ppx_sexp_conv]
+  - install ezjsonm                 0.6.0     [required by cow]
+  - install ppx_optcomp             v0.9.0    [required by ppx_driver]
+  - install ppx_driver              v0.9.1    [required by ppx_sexp_conv]
+  - install variantslib             v0.9.0    [required by core_kernel]
+  - install ppx_metaquot            v0.9.0    [required by ppx_sexp_conv]
+  - install ppx_let                 v0.9.0    [required by ppx_jane]
+  - install ppx_here                v0.9.1    [required by ppx_assert, ppx_jane]
+  - install fieldslib               v0.9.0    [required by core_kernel]
+  - install ppx_type_conv           v0.9.1    [required by ppx_sexp_conv]
+  - install ppx_pipebang            v0.9.0    [required by ppx_jane]
+  - install ppx_optional            v0.9.0    [required by ppx_jane]
+  - install ppx_js_style            v0.9.0    [required by ppx_base]
+  - install ppx_inline_test         v0.9.2    [required by core_kernel]
+  - install ppx_fail                v0.9.0    [required by ppx_jane]
+  - install ppx_variants_conv       v0.9.0    [required by bin_prot, ppx_jane]
+  - install ppx_typerep_conv        v0.9.0    [required by ppx_jane]
+  - install ppx_traverse            v0.9.0    [required by ppx_custom_printf, ppx_expect]
+  - install ppx_sexp_conv           v0.9.0    [required by xapi-backtrace]
+  - install ppx_fields_conv         v0.9.0    [required by bin_prot, ppx_jane]
+  - install ppx_enumerate           v0.9.0    [required by ppx_base]
+  - install ppx_compare             v0.9.0    [required by bin_prot, ppx_assert]
+  - install ppx_bench               v0.9.1    [required by ppx_jane]
+  - install uri                     1.9.7     [required by cow]
+  - install ppx_sexp_value          v0.9.0    [required by ppx_jane]
+  - install ppx_sexp_message        v0.9.0    [required by core_kernel]
+  - install ppx_custom_printf       v0.9.0    [required by bin_prot, ppx_jane]
+  - install ppx_hash                v0.9.0    [required by core_kernel]
+  - install ppx_assert              v0.9.0    [required by core_kernel, core]
+  - install cow                     2.3.0     [required by rpc]
+  - install bin_prot                v0.9.1    [required by core_kernel]
+  - install ppx_base                v0.9.0    [required by core_kernel]
+  - install ppx_expect              v0.9.0    [required by ppx_jane]
+  - install ppx_bin_prot            v0.9.0    [required by ppx_jane]
+  - install configurator            v0.9.1    [required by core_kernel, core]
+  - install ppx_jane                v0.9.0    [required by async]
+  - install core_kernel             v0.9.0    [required by async_kernel, async_rpc_kernel]
+  - install core                    v0.9.1    [required by async]
+  - install async_kernel            v0.9.0    [required by async]
+  - install async_unix              v0.9.0    [required by async]
+  - install async_rpc_kernel        v0.9.0    [required by async_extra]
+  - install async_extra             v0.9.0    [required by async]
+  - install async                   v0.9.0    [required by rpc]
+  - install rpc                     2.2.0     [required by xapi-backtrace]
+  - install xapi-backtrace          0.5
+===== 88 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[async.v0.9.0] found in cache
+[async_extra.v0.9.0] found in cache
+[async_kernel.v0.9.0] found in cache
+[async_rpc_kernel.v0.9.0] found in cache
+[async_unix.v0.9.0] found in cache
+[base.v0.9.3] found in cache
+[bin_prot.v0.9.1] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.04+1] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.9.1] found in cache
+[core.v0.9.1] found in cache
+[core_kernel.v0.9.0] found in cache
+[cow.2.3.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[easy-format.1.3.1] found in cache
+[ezjsonm.0.6.0] found in cache
+[fieldslib.v0.9.0] found in cache
+[hex.1.2.0] found in cache
+[jane-street-headers.v0.9.0] found in cache
+[jsonm.1.0.1] found in cache
+[lwt.4.1.0] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[octavius.1.2.0] found in cache
+[omd.1.3.1] found in cache
+[ppx_assert.v0.9.0] found in cache
+[ppx_ast.v0.9.1] found in cache
+[ppx_base.v0.9.0] found in cache
+[ppx_bench.v0.9.1] found in cache
+[ppx_bin_prot.v0.9.0] found in cache
+[ppx_compare.v0.9.0] found in cache
+[ppx_core.v0.9.0] found in cache
+[ppx_custom_printf.v0.9.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.9.1] found in cache
+[ppx_enumerate.v0.9.0] found in cache
+[ppx_expect.v0.9.0] found in cache
+[ppx_fail.v0.9.0] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_hash.v0.9.0] found in cache
+[ppx_here.v0.9.1] found in cache
+[ppx_inline_test.v0.9.2] found in cache
+[ppx_jane.v0.9.0] found in cache
+[ppx_js_style.v0.9.0] found in cache
+[ppx_let.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_optional.v0.9.0] found in cache
+[ppx_pipebang.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_sexp_message.v0.9.0] found in cache
+[ppx_sexp_value.v0.9.0] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_traverse.v0.9.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.1] found in cache
+[ppx_typerep_conv.v0.9.0] found in cache
+[ppx_variants_conv.v0.9.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rpc.2.2.0] found in cache
+[rresult.0.5.0] found in cache
+[sexplib.v0.9.2] found in cache
+[spawn.v0.9.0] found in cache
+[stdio.v0.9.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[type_conv.113.00.02] found in cache
+[typerep.v0.9.0] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[variantslib.v0.9.0] found in cache
+[xapi-backtrace.0.5] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed conf-which.1
+-> installed easy-format.1.3.1
+-> installed cppo.1.6.4
+-> installed jane-street-headers.v0.9.0
+-> installed num.0
+-> installed biniou.1.2.0
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed octavius.1.2.0
+-> installed omd.1.3.1
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_ast.v0.9.1
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.v0.9.2
+-> installed camlp4.4.04+1
+-> installed cstruct.3.2.1
+-> installed hex.1.2.0
+-> installed spawn.v0.9.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed base.v0.9.3
+-> installed cmdliner.1.0.2
+-> installed rresult.0.5.0
+-> installed stdio.v0.9.0
+-> installed type_conv.113.00.02
+-> installed typerep.v0.9.0
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+-> installed ppx_core.v0.9.0
+-> installed jsonm.1.0.1
+-> installed ezjsonm.0.6.0
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_driver.v0.9.1
+-> installed fieldslib.v0.9.0
+-> installed ppx_here.v0.9.1
+-> installed ppx_let.v0.9.0
+-> installed variantslib.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_fail.v0.9.0
+-> installed ppx_inline_test.v0.9.2
+-> installed ppx_js_style.v0.9.0
+-> installed ppx_optional.v0.9.0
+-> installed ppx_pipebang.v0.9.0
+-> installed ppx_type_conv.v0.9.1
+-> installed ppx_bench.v0.9.1
+-> installed ppx_compare.v0.9.0
+-> installed ppx_enumerate.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed ppx_assert.v0.9.0
+-> installed ppx_hash.v0.9.0
+-> installed ppx_sexp_message.v0.9.0
+-> installed ppx_sexp_value.v0.9.0
+-> installed ppx_traverse.v0.9.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed ppx_typerep_conv.v0.9.0
+-> installed ppx_variants_conv.v0.9.0
+-> installed uri.1.9.7
+-> installed ppx_custom_printf.v0.9.0
+-> installed bin_prot.v0.9.1
+-> installed cow.2.3.0
+-> installed ppx_expect.v0.9.0
+-> installed ppx_bin_prot.v0.9.0
+-> installed ppx_jane.v0.9.0
+-> installed core_kernel.v0.9.0
+-> installed async_kernel.v0.9.0
+-> installed async_rpc_kernel.v0.9.0
+-> installed core.v0.9.1
+-> installed async_unix.v0.9.0
+-> installed async_extra.v0.9.0
+-> installed async.v0.9.0
+-> installed rpc.2.2.0
+[ERROR] The compilation of xapi-backtrace failed at "/home/opam/.opam/4.04/bin/jbuilder build -p xapi-backtrace -j 71".
+
+#=== ERROR while compiling xapi-backtrace.0.5 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/xapi-backtrace.0.5
+# command              ~/.opam/4.04/bin/jbuilder build -p xapi-backtrace -j 71
+# exit-code            1
+# env-file             ~/.opam/log/xapi-backtrace-11-a54243.env
+# output-file          ~/.opam/log/xapi-backtrace-11-a54243.out
+### output ###
+#        ocaml (internal)
+# File "lib/jbuild", line 11, characters 51-53:
+# Warning 14: illegal backslash escape in string.
+#       ocamlc lib/.backtrace.objs/backtrace.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlc.opt -w -40 -ppx '/home/opam/.opam/4.04/lib/ppx_deriving/./ppx_deriving /home/opam/.opam/4.04/lib/ppx_deriving_rpc/./ppx_deriving_rpc.cma package:ppx_sexp_conv' -g -bin-annot -I lib/.backtrace.objs -I /home/opam/.opam/4.04/lib/base -I /home/opam/.opam/4.04/lib/base/caml -I /home/opam/.opam/4.04/lib/base/shadow_stdlib -I /home/opam/.opam/4.04/lib/biniou -I /home/opam/.opam/4.04/lib/easy-format -I /home/opam/.opam/4.04/lib/ocaml-compiler-libs/common -I /home/opam/.opam/4.04/lib/ocaml-compiler-libs/shadow -I /home/opam/.opam/4.04/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.04/lib/ocaml/compiler-libs -I /home/opam/.opam/4.04/lib/ocaml/threads -I /home/opam/.opam/4.04/lib/ppx_ast -I /home/opam/.opam/4.04/lib/ppx_core -I /home/opam/.opam/4.04/lib/ppx_derivers -I /home/opam/.opam/4.04/lib/ppx_deriving -I /home/opam/.opam/4.04/lib/ppx_deriving_rpc -I /home/opam/.opam/4.04/lib/ppx_driver -I /home/opam/.opam/4.04/lib/ppx_driver/print_diff -I /home/opam/.opam/4.04/lib/ppx_optcomp -I /home/opam/.opam/4.04/lib/ppx_sexp_conv -I /home/opam/.opam/4.04/lib/ppx_sexp_conv/expander -I /home/opam/.opam/4.04/lib/ppx_tools -I /home/opam/.opam/4.04/lib/ppx_traverse_builtins -I /home/opam/.opam/4.04/lib/ppx_type_conv -I /home/opam/.opam/4.04/lib/result -I /home/opam/.opam/4.04/lib/rpclib -I /home/opam/.opam/4.04/lib/rresult -I /home/opam/.opam/4.04/lib/sexplib -I /home/opam/.opam/4.04/lib/sexplib/0 -I /home/opam/.opam/4.04/lib/stdio -I /home/opam/.opam/4.04/lib/xmlm -I /home/opam/.opam/4.04/lib/yojson -intf-suffix .ml -no-alias-deps -o lib/.backtrace.objs/backtrace.cmo -c -impl lib/backtrace.ml)
+# File "lib/backtrace.ml", line 225, characters 9-21:
+# Error: Unbound value error_of_rpc
+#     ocamlopt lib/.backtrace.objs/backtrace.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.04/bin/ocamlopt.opt -w -40 -ppx '/home/opam/.opam/4.04/lib/ppx_deriving/./ppx_deriving /home/opam/.opam/4.04/lib/ppx_deriving_rpc/./ppx_deriving_rpc.cma package:ppx_sexp_conv' -g -I lib/.backtrace.objs -I /home/opam/.opam/4.04/lib/base -I /home/opam/.opam/4.04/lib/base/caml -I /home/opam/.opam/4.04/lib/base/shadow_stdlib -I /home/opam/.opam/4.04/lib/biniou -I /home/opam/.opam/4.04/lib/easy-format -I /home/opam/.opam/4.04/lib/ocaml-compiler-libs/common -I /home/opam/.opam/4.04/lib/ocaml-compiler-libs/shadow -I /home/opam/.opam/4.04/lib/ocaml-migrate-parsetree -I /home/opam/.opam/4.04/lib/ocaml/compiler-libs -I /home/opam/.opam/4.04/lib/ocaml/threads -I /home/opam/.opam/4.04/lib/ppx_ast -I /home/opam/.opam/4.04/lib/ppx_core -I /home/opam/.opam/4.04/lib/ppx_derivers -I /home/opam/.opam/4.04/lib/ppx_deriving -I /home/opam/.opam/4.04/lib/ppx_deriving_rpc -I /home/opam/.opam/4.04/lib/ppx_driver -I /home/opam/.opam/4.04/lib/ppx_driver/print_diff -I /home/opam/.opam/4.04/lib/ppx_optcomp -I /home/opam/.opam/4.04/lib/ppx_sexp_conv -I /home/opam/.opam/4.04/lib/ppx_sexp_conv/expander -I /home/opam/.opam/4.04/lib/ppx_tools -I /home/opam/.opam/4.04/lib/ppx_traverse_builtins -I /home/opam/.opam/4.04/lib/ppx_type_conv -I /home/opam/.opam/4.04/lib/result -I /home/opam/.opam/4.04/lib/rpclib -I /home/opam/.opam/4.04/lib/rresult -I /home/opam/.opam/4.04/lib/sexplib -I /home/opam/.opam/4.04/lib/sexplib/0 -I /home/opam/.opam/4.04/lib/stdio -I /home/opam/.opam/4.04/lib/xmlm -I /home/opam/.opam/4.04/lib/yojson -intf-suffix .ml -no-alias-deps -o lib/.backtrace.objs/backtrace.cmx -c -impl lib/backtrace.ml)
+# File "lib/backtrace.ml", line 225, characters 9-21:
+# Error: Unbound value error_of_rpc
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build xapi-backtrace 0.5
++- 
++- The following changes have been performed
+| - install async                   v0.9.0
+| - install async_extra             v0.9.0
+| - install async_kernel            v0.9.0
+| - install async_rpc_kernel        v0.9.0
+| - install async_unix              v0.9.0
+| - install base                    v0.9.3
+| - install base-bytes              base
+| - install base-num                base
+| - install bin_prot                v0.9.1
+| - install biniou                  1.2.0
+| - install camlp4                  4.04+1
+| - install cmdliner                1.0.2
+| - install conf-which              1
+| - install configurator            v0.9.1
+| - install core                    v0.9.1
+| - install core_kernel             v0.9.0
+| - install cow                     2.3.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 3.2.1
+| - install easy-format             1.3.1
+| - install ezjsonm                 0.6.0
+| - install fieldslib               v0.9.0
+| - install hex                     1.2.0
+| - install jane-street-headers     v0.9.0
+| - install jsonm                   1.0.1
+| - install lwt                     4.1.0
+| - install num                     0
+| - install oasis                   0.4.11
+| - install ocaml-compiler-libs     v0.9.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install octavius                1.2.0
+| - install omd                     1.3.1
+| - install ppx_assert              v0.9.0
+| - install ppx_ast                 v0.9.1
+| - install ppx_base                v0.9.0
+| - install ppx_bench               v0.9.1
+| - install ppx_bin_prot            v0.9.0
+| - install ppx_compare             v0.9.0
+| - install ppx_core                v0.9.0
+| - install ppx_custom_printf       v0.9.0
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              v0.9.1
+| - install ppx_enumerate           v0.9.0
+| - install ppx_expect              v0.9.0
+| - install ppx_fail                v0.9.0
+| - install ppx_fields_conv         v0.9.0
+| - install ppx_hash                v0.9.0
+| - install ppx_here                v0.9.1
+| - install ppx_inline_test         v0.9.2
+| - install ppx_jane                v0.9.0
+| - install ppx_js_style            v0.9.0
+| - install ppx_let                 v0.9.0
+| - install ppx_metaquot            v0.9.0
+| - install ppx_optcomp             v0.9.0
+| - install ppx_optional            v0.9.0
+| - install ppx_pipebang            v0.9.0
+| - install ppx_sexp_conv           v0.9.0
+| - install ppx_sexp_message        v0.9.0
+| - install ppx_sexp_value          v0.9.0
+| - install ppx_tools               5.0
+| - install ppx_traverse            v0.9.0
+| - install ppx_traverse_builtins   v0.9.0
+| - install ppx_type_conv           v0.9.1
+| - install ppx_typerep_conv        v0.9.0
+| - install ppx_variants_conv       v0.9.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install rpc                     2.2.0
+| - install rresult                 0.5.0
+| - install sexplib                 v0.9.2
+| - install spawn                   v0.9.0
+| - install stdio                   v0.9.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install type_conv               113.00.02
+| - install typerep                 v0.9.0
+| - install uchar                   0.0.2
+| - install uri                     1.9.7
+| - install uutf                    1.0.1
+| - install variantslib             v0.9.0
+| - install xmlm                    1.3.0
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180815031146.export"
+31 1534302701 1534303101
