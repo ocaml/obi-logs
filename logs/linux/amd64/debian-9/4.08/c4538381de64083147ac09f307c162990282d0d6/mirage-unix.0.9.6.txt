@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 mirage-unix.0.9.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mirage-unix.0.9.6: The following dependencies couldn't be met:
+          - mirage-unix -> cstruct < 2.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - mirage-unix -> cstruct < 2.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mirage-unix.0.9.6 returned 20
+20 1534400404 1534400406

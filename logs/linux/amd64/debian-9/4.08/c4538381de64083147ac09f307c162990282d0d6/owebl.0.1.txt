@@ -1,0 +1,61 @@
+$ opam depext -iy -j 2 owebl.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install owebl 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[owebl.0.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of owebl failed at "/usr/bin/make".
+
+#=== ERROR while compiling owebl.0.1 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/owebl.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/owebl-13-05296d.env
+# output-file          ~/.opam/log/owebl-13-05296d.out
+### output ###
+# make[1]: Entering directory '/home/opam/.opam/4.08/.opam-switch/build/owebl.0.1'
+# ocamlfind ocamldep -I src/ src/server.ml > ._d/src/server.d
+# ocamlfind ocamldep -I src/ src/handler.ml > ._d/src/handler.d
+# ocamlfind ocamldep -I src/ src/rule.ml > ._d/src/rule.d
+# ocamlfind ocamldep -I src/ src/response.ml > ._d/src/response.d
+# ocamlfind ocamldep -I src/ src/template.ml > ._d/src/template.d
+# ocamlfind ocamldep -I src/ src/request.ml > ._d/src/request.d
+# ocamlfind ocamldep -I src/ src/verb.ml > ._d/src/verb.d
+# ocamlfind ocamldep -I src/ src/utils.ml > ._d/src/utils.d
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/utils.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/verb.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/request.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/template.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/response.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/rule.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/handler.ml
+# ocamlfind ocamlopt -package unix,str -c -I src/ -for-pack Owebl src/server.ml
+# File "src/server.ml", line 7, characters 21-34:
+# Warning 3: deprecated: Stdlib.String.create
+# Use Bytes.create instead.
+# File "src/server.ml", line 11, characters 38-44:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakeFile:1076: recipe for target 'src/server.cmx' failed
+# make[1]: *** [src/server.cmx] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/owebl.0.1'
+# OCamlMakeFile:801: recipe for target 'native-code-library' failed
+# make: *** [native-code-library] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build owebl 0.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534399386 1534399392
