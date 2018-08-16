@@ -1,0 +1,106 @@
+$ opam depext -iy -j 2 lwt-zmq.2.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libzmq3-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libzmq3-dev m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpgm-5.2-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libpgm-5.2-0_5.2.122~dfsg-2_amd64.deb ...
+Unpacking libpgm-5.2-0:amd64 (5.2.122~dfsg-2) ...
+Selecting previously unselected package libsodium18:amd64.
+Preparing to unpack .../libsodium18_1.0.11-2_amd64.deb ...
+Unpacking libsodium18:amd64 (1.0.11-2) ...
+Selecting previously unselected package libzmq5:amd64.
+Preparing to unpack .../libzmq5_4.2.1-4_amd64.deb ...
+Unpacking libzmq5:amd64 (4.2.1-4) ...
+Selecting previously unselected package libzmq3-dev:amd64.
+Preparing to unpack .../libzmq3-dev_4.2.1-4_amd64.deb ...
+Unpacking libzmq3-dev:amd64 (4.2.1-4) ...
+Setting up libpgm-5.2-0:amd64 (5.2.122~dfsg-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libsodium18:amd64 (1.0.11-2) ...
+Setting up libzmq5:amd64 (4.2.1-4) ...
+Setting up libzmq3-dev:amd64 (4.2.1-4) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by lwt]
+  - install base-bytes              base   [required by cppo, stdint]
+  - install ocamlbuild              0.12.0 [required by lwt-zmq]
+  - install conf-zmq                0.1    [required by zmq]
+  - install ocaml-migrate-parsetree 1.0.11 [required by lwt]
+  - install stdint                  0.5.1  [required by zmq]
+  - install cppo                    1.6.4  [required by lwt]
+  - install ppx_tools_versioned     5.2    [required by lwt]
+  - install zmq                     4.0-8  [required by lwt-zmq]
+  - install lwt                     3.3.0  [required by lwt-zmq]      For the PPX, please install package lwt_ppx
+                                                                      For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install lwt-zmq                 2.0.0
+===== 11 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[lwt.3.3.0] found in cache
+[lwt-zmq.2.0.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[stdint.0.5.1] found in cache
+[zmq.4.0-8] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-zmq.0.1
+-> installed cppo.1.6.4
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed stdint.0.5.1
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed zmq.4.0-8
+-> installed lwt.3.3.0
+[ERROR] The compilation of lwt-zmq failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling lwt-zmq.2.0.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/lwt-zmq.2.0.0
+# command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/lwt-zmq-11-5b77f6.env
+# output-file          ~/.opam/log/lwt-zmq-11-5b77f6.out
+### output ###
+# File "./setup.ml", line 247, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 247, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build lwt-zmq 2.0.0
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install conf-zmq                0.1
+| - install cppo                    1.6.4
+| - install lwt                     3.3.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install stdint                  0.5.1
+| - install zmq                     4.0-8
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180816043057.export"
+31 1534393851 1534393888
