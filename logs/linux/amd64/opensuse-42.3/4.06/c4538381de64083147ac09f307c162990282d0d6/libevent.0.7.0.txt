@@ -1,0 +1,40 @@
+$ opam depext -iy -j 2 libevent.0.7.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install libevent 0.7.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[libevent.0.7.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of libevent failed at "/usr/bin/make all allopt".
+
+#=== ERROR while compiling libevent.0.7.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/libevent.0.7.0
+# command              /usr/bin/make all allopt
+# exit-code            2
+# env-file             ~/.opam/log/libevent-12-d2c37b.env
+# output-file          ~/.opam/log/libevent-12-d2c37b.out
+### output ###
+# ocamlc -c -ccopt "-DFULL_UNROLL -Wall -O2 -I/usr/local/include" event_stubs.c
+# event_stubs.c:13:19: fatal error: event.h: No such file or directory
+#  #include <event.h>
+#                    ^
+# compilation terminated.
+# Makefile:102: recipe for target 'event_stubs.o' failed
+# make: *** [event_stubs.o] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build libevent 0.7.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534391371 1534391628

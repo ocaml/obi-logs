@@ -1,0 +1,14 @@
+$ opam depext -iy -j 2 conf-sdl2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+sdl2
+The following command needs to be run through "sudo":
+    zypper --non-interactive install sdl2
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+'sdl2' not found in package names. Trying capabilities.
+No provider of 'sdl2' found.
+OS package installation failed
+1 1534391701 1534392218

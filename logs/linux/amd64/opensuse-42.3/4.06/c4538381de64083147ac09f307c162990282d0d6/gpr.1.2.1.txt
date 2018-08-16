@@ -1,0 +1,533 @@
+$ opam depext -iy -j 2 gpr.1.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+blas-devel
+gsl-devel
+lapack-devel
+m4
+# The following new OS packages need to be installed: blas-devel gsl-devel lapack-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install blas-devel gsl-devel lapack-devel
+Retrieving repository 'OSS Update' metadata [...done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 8 NEW packages are going to be installed:
+  blas-devel gsl gsl-devel lapack-devel libblas3 libgfortran3 liblapack3 libquadmath0
+
+8 new packages to install.
+Overall download size: 3.4 MiB. Already cached: 0 B. After the operation, additional 11.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package gsl-1.16-9.4.x86_64 (1/8), 811.6 KiB (  2.6 MiB unpacked)
+Retrieving: gsl-1.16-9.4.x86_64.rpm [done]
+Retrieving package gsl-devel-1.16-9.4.x86_64 (2/8), 426.4 KiB (  1.2 MiB unpacked)
+Retrieving: gsl-devel-1.16-9.4.x86_64.rpm [done]
+Retrieving package libquadmath0-7.3.1+r258812-10.1.x86_64 (3/8), 140.9 KiB (251.1 KiB unpacked)
+Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [done]
+Retrieving package libgfortran3-6.2.1+r239768-6.19.x86_64 (4/8), 265.4 KiB (  1.2 MiB unpacked)
+Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [.done (2.4 KiB/s)]
+Retrieving package libblas3-3.5.0-11.3.x86_64 (5/8), 132.2 KiB (362.6 KiB unpacked)
+Retrieving: libblas3-3.5.0-11.3.x86_64.rpm [done]
+Retrieving package liblapack3-3.5.0-11.3.x86_64 (6/8),   1.7 MiB (  5.6 MiB unpacked)
+Retrieving: liblapack3-3.5.0-11.3.x86_64.rpm [done]
+Retrieving package blas-devel-3.5.0-11.3.x86_64 (7/8),   6.9 KiB (    0   B unpacked)
+Retrieving: blas-devel-3.5.0-11.3.x86_64.rpm [done]
+Retrieving package lapack-devel-3.5.0-11.3.x86_64 (8/8),   7.2 KiB (    0   B unpacked)
+Retrieving: lapack-devel-3.5.0-11.3.x86_64.rpm [done]
+Checking for file conflicts: [.......done]
+(1/8) Installing: gsl-1.16-9.4.x86_64 [............done]
+(2/8) Installing: gsl-devel-1.16-9.4.x86_64 [............done]
+(3/8) Installing: libquadmath0-7.3.1+r258812-10.1.x86_64 [.......done]
+(4/8) Installing: libgfortran3-6.2.1+r239768-6.19.x86_64 [...........done]
+(5/8) Installing: libblas3-3.5.0-11.3.x86_64 [.........done]
+Additional rpm output:
+update-alternatives: using /usr/lib64/blas/libblas.so.3 to provide /usr/lib64/libblas.so.3 (libblas.so.3) in auto mode
+
+
+(6/8) Installing: liblapack3-3.5.0-11.3.x86_64 [............done]
+Additional rpm output:
+update-alternatives: using /usr/lib64/lapack/liblapack.so.3 to provide /usr/lib64/liblapack.so.3 (liblapack.so.3) in auto mode
+
+
+(7/8) Installing: blas-devel-3.5.0-11.3.x86_64 [....done]
+(8/8) Installing: lapack-devel-3.5.0-11.3.x86_64 [....done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers     v0.11.0 [required by core_kernel]
+  - install re                      1.7.3   [required by ppx_expect]
+  - install base-bytes              base    [required by lacaml]
+  - install conf-pkg-config         1.1     [required by gsl]
+  - install num                     1.1     [required by sexplib]
+  - install octavius                1.2.0   [required by ppx_js_style]
+  - install conf-gsl                1       [required by gsl]
+  - install spawn                   v0.12.0 [required by core]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install conf-blas               1       [required by lacaml]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install conf-lapack             1       [required by lacaml]
+  - install ocamlbuild              0.12.0  [required by gpr]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by core, gsl]
+  - install ocaml-migrate-parsetree 1.0.11  [required by core]
+  - install lacaml                  9.2.2   [required by gpr]
+  - install sexplib                 v0.11.0 [required by core]
+  - install typerep                 v0.11.0 [required by core_kernel]
+  - install stdio                   v0.11.0 [required by core, gsl]
+  - install ppxlib                  0.3.0   [required by core]
+  - install configurator            v0.11.0 [required by core, gsl]
+  - install variantslib             v0.11.0 [required by core_kernel]
+  - install ppx_typerep_conv        v0.11.1 [required by ppx_jane]
+  - install ppx_sexp_conv           v0.11.2 [required by core_kernel]
+  - install ppx_pipebang            v0.11.0 [required by ppx_jane]
+  - install ppx_optional            v0.11.0 [required by ppx_jane]
+  - install ppx_optcomp             v0.11.0 [required by ppx_jane]
+  - install ppx_let                 v0.11.0 [required by ppx_jane]
+  - install ppx_js_style            v0.11.0 [required by ppx_base]
+  - install ppx_inline_test         v0.11.0 [required by core_kernel]
+  - install ppx_here                v0.11.0 [required by ppx_assert, ppx_jane]
+  - install ppx_enumerate           v0.11.1 [required by ppx_base]
+  - install ppx_compare             v0.11.1 [required by ppx_assert, bin_prot, ppx_base]
+  - install fieldslib               v0.11.0 [required by core_kernel]
+  - install gsl                     1.22.0  [required by gpr]
+  - install ppx_variants_conv       v0.11.1 [required by bin_prot, ppx_jane]
+  - install ppx_custom_printf       v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_bench               v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_value          v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_message        v0.11.0 [required by core_kernel]
+  - install ppx_fail                v0.11.0 [required by ppx_jane]
+  - install ppx_hash                v0.11.1 [required by core_kernel]
+  - install ppx_assert              v0.11.0 [required by core]
+  - install ppx_fields_conv         v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_base                v0.11.0 [required by core_kernel]
+  - install ppx_expect              v0.11.0 [required by ppx_jane]
+  - install bin_prot                v0.11.0 [required by core_kernel]
+  - install ppx_bin_prot            v0.11.1 [required by ppx_jane]
+  - install ppx_jane                v0.11.0 [required by core]
+  - install splittable_random       v0.11.0 [required by core_kernel]
+  - install core_kernel             v0.11.1 [required by core]
+  - install core                    v0.11.2 [required by gpr]
+  - install gpr                     1.2.1
+===== 56 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[bin_prot.v0.11.0] found in cache
+[configurator.v0.11.0] found in cache
+[core.v0.11.2] found in cache
+[core_kernel.v0.11.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[gpr.1.2.1] found in cache
+[gsl.1.22.0] found in cache
+[jane-street-headers.v0.11.0] found in cache
+[lacaml.9.2.2] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[octavius.1.2.0] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[spawn.v0.12.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[typerep.v0.11.0] found in cache
+[variantslib.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-blas.1
+-> installed conf-gsl.1
+-> installed conf-lapack.1
+-> installed conf-pkg-config.1.1
+-> installed jane-street-headers.v0.11.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed spawn.v0.12.0
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed gsl.1.22.0
+-> installed lacaml.9.2.2
+-> installed ppxlib.0.3.0
+-> installed fieldslib.v0.11.0
+-> installed ppx_compare.v0.11.1
+-> installed ppx_enumerate.v0.11.1
+-> installed ppx_here.v0.11.0
+-> installed ppx_fields_conv.v0.11.0
+-> installed ppx_inline_test.v0.11.0
+-> installed ppx_fail.v0.11.0
+-> installed ppx_js_style.v0.11.0
+-> installed ppx_let.v0.11.0
+-> installed ppx_optcomp.v0.11.0
+-> installed ppx_optional.v0.11.0
+-> installed ppx_pipebang.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ppx_assert.v0.11.0
+-> installed ppx_bench.v0.11.0
+-> installed ppx_custom_printf.v0.11.0
+-> installed ppx_hash.v0.11.1
+-> installed ppx_sexp_message.v0.11.0
+-> installed ppx_sexp_value.v0.11.0
+-> installed typerep.v0.11.0
+-> installed ppx_base.v0.11.0
+-> installed variantslib.v0.11.0
+-> installed ppx_typerep_conv.v0.11.1
+-> installed ppx_variants_conv.v0.11.1
+-> installed bin_prot.v0.11.0
+-> installed ppx_expect.v0.11.0
+-> installed ppx_bin_prot.v0.11.1
+-> installed ppx_jane.v0.11.0
+-> installed splittable_random.v0.11.0
+-> installed core_kernel.v0.11.1
+-> installed core.v0.11.2
+[ERROR] The compilation of gpr failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling gpr.1.2.1 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/gpr.1.2.1
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/gpr-12-652ad2.env
+# output-file          ~/.opam/log/gpr-12-652ad2.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr.ml > lib/gpr.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.mli > lib/gpr_block_diag.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.mli > lib/gpr_cov_const.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_interfaces.ml > lib/gpr_interfaces.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_utils.ml > lib/gpr_utils.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmo lib/gpr_utils.ml
+# File "lib/gpr_utils.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# File "lib/gpr_utils.ml", line 42, characters 15-19:
+# Warning 3: deprecated: Core.Std.atan
+# [since 2016-07] Use [Float.atan]
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmo lib/gpr_interfaces.ml
+# File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+# Warning 50: ambiguous documentation comment
+# File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+# Warning 50: ambiguous documentation comment
+# File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+# Warning 50: ambiguous documentation comment
+# File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.mli > lib/gpr_cov_lin_ard.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.mli > lib/gpr_cov_lin_one.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.mli > lib/gpr_cov_se_fat.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.mli > lib/gpr_cov_se_iso.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.mli > lib/gpr_fitc_gp.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_version.ml > lib/gpr_version.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmi lib/gpr_block_diag.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmi lib/gpr_cov_const.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmi lib/gpr_cov_lin_ard.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmi lib/gpr_cov_lin_one.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmi lib/gpr_cov_se_fat.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmi lib/gpr_cov_se_iso.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmi lib/gpr_fitc_gp.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmo lib/gpr_version.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_block_diag.ml > lib/gpr_block_diag.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_const.ml > lib/gpr_cov_const.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_ard.ml > lib/gpr_cov_lin_ard.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_lin_one.ml > lib/gpr_cov_lin_one.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_iso.ml > lib/gpr_cov_se_iso.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_cov_se_fat.ml > lib/gpr_cov_se_fat.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -modules lib/gpr_fitc_gp.ml > lib/gpr_fitc_gp.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmo lib/gpr.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmo lib/gpr_block_diag.ml
+# File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmo lib/gpr_cov_const.ml
+# File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_ard.ml
+# File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmo lib/gpr_cov_lin_one.ml
+# File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmo lib/gpr_cov_se_iso.ml
+# File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_fat.ml
+# File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmo lib/gpr_fitc_gp.ml
+# File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -a -I lib lib/gpr_block_diag.cmo lib/gpr_utils.cmo lib/gpr_interfaces.cmo lib/gpr_cov_const.cmo lib/gpr_cov_lin_ard.cmo lib/gpr_cov_lin_one.cmo lib/gpr_cov_se_fat.cmo lib/gpr_cov_se_iso.cmo lib/gpr_fitc_gp.cmo lib/gpr_version.cmo lib/gpr.cmo -o lib/gpr.cma
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_utils.cmx lib/gpr_utils.ml
+# File "lib/gpr_utils.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# File "lib/gpr_utils.ml", line 42, characters 15-19:
+# Warning 3: deprecated: Core.Std.atan
+# [since 2016-07] Use [Float.atan]
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_interfaces.cmx lib/gpr_interfaces.ml
+# File "lib/gpr_interfaces.ml", line 105, characters 12-33:
+# Warning 50: ambiguous documentation comment
+# File "lib/gpr_interfaces.ml", line 715, characters 16-54:
+# Warning 50: ambiguous documentation comment
+# File "lib/gpr_interfaces.ml", line 746, characters 16-62:
+# Warning 50: ambiguous documentation comment
+# File "lib/gpr_interfaces.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_block_diag.cmx lib/gpr_block_diag.ml
+# File "lib/gpr_block_diag.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_const.cmx lib/gpr_cov_const.ml
+# File "lib/gpr_cov_const.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_ard.ml
+# File "lib/gpr_cov_lin_ard.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_lin_one.cmx lib/gpr_cov_lin_one.ml
+# File "lib/gpr_cov_lin_one.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_fat.ml
+# File "lib/gpr_cov_se_fat.ml", line 27, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_cov_se_iso.cmx lib/gpr_cov_se_iso.ml
+# File "lib/gpr_cov_se_iso.ml", line 26, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_fitc_gp.cmx lib/gpr_fitc_gp.ml
+# File "lib/gpr_fitc_gp.ml", line 27, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr_version.cmx lib/gpr_version.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -I lib -o lib/gpr.cmx lib/gpr.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -a -I lib lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxa
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -shared -I lib lib/gpr.cmxa lib/gpr_block_diag.cmx lib/gpr_utils.cmx lib/gpr_interfaces.cmx lib/gpr_cov_const.cmx lib/gpr_cov_lin_ard.cmx lib/gpr_cov_lin_one.cmx lib/gpr_cov_se_fat.cmx lib/gpr_cov_se_iso.cmx lib/gpr_fitc_gp.cmx lib/gpr_version.cmx lib/gpr.cmx -o lib/gpr.cmxs
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package lacaml -package gsl -package core -package str -modules app/ocaml_gpr.ml > app/ocaml_gpr.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmo app/ocaml_gpr.ml
+# File "app/ocaml_gpr.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# File "app/ocaml_gpr.ml", line 174, characters 18-27:
+# Warning 3: deprecated: Core.Std.read_line
+# [since 2016-04] Use
+# [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+# File "app/ocaml_gpr.ml", line 184, characters 24-33:
+# Warning 3: deprecated: Core.Std.read_line
+# [since 2016-04] Use
+# [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+# File "app/ocaml_gpr.ml", line 228, characters 11-19:
+# Warning 3: deprecated: Core.Std.open_out
+# [since 2016-04] Use [Out_channel.create]
+# File "app/ocaml_gpr.ml", line 377, characters 11-18:
+# Warning 3: deprecated: Core.Std.open_in
+# [since 2016-04] Use [In_channel.create]
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -safe-string -no-alias-deps -strict-sequence -I lib -thread -w Aer-44-48 -package threads -package lacaml -package gsl -package core -package str -I app -I lib -o app/ocaml_gpr.cmx app/ocaml_gpr.ml
+# File "app/ocaml_gpr.ml", line 24, characters 5-13:
+# Warning 3: deprecated: module Core.Std
+# [since 2017-02] Use Core. The Std sub-module is no longer needed
+# File "app/ocaml_gpr.ml", line 174, characters 18-27:
+# Warning 3: deprecated: Core.Std.read_line
+# [since 2016-04] Use
+# [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+# File "app/ocaml_gpr.ml", line 184, characters 24-33:
+# Warning 3: deprecated: Core.Std.read_line
+# [since 2016-04] Use
+# [Out_channel.(flush stdout); In_channel.(input_line_exn stdin)]
+# File "app/ocaml_gpr.ml", line 228, characters 11-19:
+# Warning 3: deprecated: Core.Std.open_out
+# [since 2016-04] Use [Out_channel.create]
+# File "app/ocaml_gpr.ml", line 377, characters 11-18:
+# Warning 3: deprecated: Core.Std.open_in
+# [since 2016-04] Use [In_channel.create]
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str -I lib -I app lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -linkpkg -g -linkpkg -thread -package threads -package lacaml -package gsl -package core -package str -I lib -I app lib/gpr.cmxa app/ocaml_gpr.cmx -o app/ocaml_gpr.native
+# /home/opam/.opam/4.06/lib/gsl/libgsl_stubs.a(mlgsl_randist.o): In function `ml_gsl_ran_multivariate_gaussian':
+# /home/opam/.opam/4.06/.opam-switch/build/gsl.1.22.0/_build/default/src/mlgsl_randist.c:56: undefined reference to `gsl_ran_multivariate_gaussian'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Command exited with code 2.
+# + ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/gpr.cma lib/gpr.cmxa lib/gpr.a lib/gpr.cmxs app/ocaml_gpr.native -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build gpr 1.2.1
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install bin_prot                v0.11.0
+| - install conf-blas               1
+| - install conf-gsl                1
+| - install conf-lapack             1
+| - install conf-pkg-config         1.1
+| - install configurator            v0.11.0
+| - install core                    v0.11.2
+| - install core_kernel             v0.11.1
+| - install fieldslib               v0.11.0
+| - install gsl                     1.22.0
+| - install jane-street-headers     v0.11.0
+| - install lacaml                  9.2.2
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install octavius                1.2.0
+| - install parsexp                 v0.11.0
+| - install ppx_assert              v0.11.0
+| - install ppx_base                v0.11.0
+| - install ppx_bench               v0.11.0
+| - install ppx_bin_prot            v0.11.1
+| - install ppx_compare             v0.11.1
+| - install ppx_custom_printf       v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_enumerate           v0.11.1
+| - install ppx_expect              v0.11.0
+| - install ppx_fail                v0.11.0
+| - install ppx_fields_conv         v0.11.0
+| - install ppx_hash                v0.11.1
+| - install ppx_here                v0.11.0
+| - install ppx_inline_test         v0.11.0
+| - install ppx_jane                v0.11.0
+| - install ppx_js_style            v0.11.0
+| - install ppx_let                 v0.11.0
+| - install ppx_optcomp             v0.11.0
+| - install ppx_optional            v0.11.0
+| - install ppx_pipebang            v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_sexp_message        v0.11.0
+| - install ppx_sexp_value          v0.11.0
+| - install ppx_typerep_conv        v0.11.1
+| - install ppx_variants_conv       v0.11.1
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install spawn                   v0.12.0
+| - install splittable_random       v0.11.0
+| - install stdio                   v0.11.0
+| - install typerep                 v0.11.0
+| - install variantslib             v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180816030842.export"
+31 1534388491 1534389128

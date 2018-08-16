@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ocaml-src.4.00.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for ocaml-src.4.00.0: The following dependencies couldn't be met:
+          - ocaml-src -> ocaml = 4.00.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ocaml-src.4.00.0 returned 20
+20 1534389493 1534389495
