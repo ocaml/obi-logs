@@ -1,0 +1,55 @@
+$ opam depext -iy -j 2 annot.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install annot 1.1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[annot.1.1.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of annot failed at "/usr/bin/make".
+
+#=== ERROR while compiling annot.1.1.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/annot.1.1.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/annot-11-1872ec.env
+# output-file          ~/.opam/log/annot-11-1872ec.out
+### output ###
+# /usr/bin/make -C src Makefile
+# make[1]: Entering directory '/home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/src'
+# Makefile:177: DEPEND: No such file or directory
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rintervalmap.ml intervalmap.nw > intervalmap.ml
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rannot.ml annot.nw > annot.ml
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rparser.mly syntax.nw > parser.mly
+# /home/opam/.opam/4.08/bin/ocamlyacc parser.mly
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mll syntax.nw > scanner.mll
+# /home/opam/.opam/4.08/bin/ocamllex scanner.mll
+# 33 states, 267 transitions, table size 1266 bytes
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rmain.ml main.nw > main.ml
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rintervalmap.mli intervalmap.nw > intervalmap.mli
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rannot.mli annot.nw > annot.mli
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rscanner.mli syntax.nw > scanner.mli
+# /home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/tools/nofake '-L# %L "%F"%N' -Rmain.mli main.nw > main.mli
+# /home/opam/.opam/4.08/bin/ocamldep -I .  intervalmap.ml annot.ml parser.ml scanner.ml main.ml   intervalmap.mli  annot.mli  parser.mli  scanner.mli  main.mli > DEPEND	
+# File "intervalmap.nw", line 43, characters 4-5:
+# Error: Syntax error
+# Makefile:175: recipe for target 'DEPEND' failed
+# make[1]: *** [DEPEND] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.08/.opam-switch/build/annot.1.1.0/src'
+# Makefile:14: recipe for target 'Makefile' failed
+# make: *** [Makefile] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build annot 1.1.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534450756 1534450760

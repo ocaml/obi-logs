@@ -1,0 +1,15 @@
+$ opam depext -iy -j 2 xenstore_transport.0.9.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for xenstore_transport.0.9.6: The following dependencies couldn't be met:
+          - xenstore_transport -> xenstore >= 1.2.2 -> ppx_tools -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - xenstore_transport -> xenstore >= 1.2.2 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - xenstore_transport -> xenstore >= 1.2.2 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - xenstore_transport -> xenstore >= 1.2.2 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=xenstore_transport.0.9.6 returned 20
+20 1534450899 1534450901

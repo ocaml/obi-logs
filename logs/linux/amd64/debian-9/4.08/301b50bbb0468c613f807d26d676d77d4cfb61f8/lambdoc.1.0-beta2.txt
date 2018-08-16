@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 lambdoc.1.0-beta2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for lambdoc.1.0-beta2: The following dependencies couldn't be met:
+          - lambdoc -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - lambdoc -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=lambdoc.1.0-beta2 returned 20
+20 1534450563 1534450565

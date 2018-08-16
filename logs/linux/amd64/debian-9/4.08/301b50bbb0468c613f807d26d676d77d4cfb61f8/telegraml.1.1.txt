@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 telegraml.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for telegraml.1.1: The following dependencies couldn't be met:
+          - telegraml -> batteries >= 2.4.0 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=telegraml.1.1 returned 20
+20 1534450184 1534450186

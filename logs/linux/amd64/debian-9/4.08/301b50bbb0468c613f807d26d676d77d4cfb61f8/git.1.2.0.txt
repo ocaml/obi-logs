@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 git.1.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for git.1.2.0: The following dependencies couldn't be met:
+          - git -> conduit = 0.5.1 -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - git -> conduit = 0.5.1 -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - git -> conduit = 0.5.1 -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=git.1.2.0 returned 20
+20 1534450540 1534450542
