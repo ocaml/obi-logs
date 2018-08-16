@@ -1,0 +1,272 @@
+$ opam depext -iy -j 2 tidy.0-2009-0.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libtidy-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libtidy-dev m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libtidy5.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libtidy5_1%3a5.2.0-2_amd64.deb ...
+Unpacking libtidy5 (1:5.2.0-2) ...
+Selecting previously unselected package libtidy-dev.
+Preparing to unpack .../libtidy-dev_1%3a5.2.0-2_amd64.deb ...
+Unpacking libtidy-dev (1:5.2.0-2) ...
+Setting up libtidy5 (1:5.2.0-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libtidy-dev (1:5.2.0-2) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers     v0.11.0      [required by core_kernel]
+  - install re                      1.7.3        [required by ppx_expect]
+  - install num                     1.1          [required by sexplib]
+  - install octavius                1.2.0        [required by ppx_js_style]
+  - install ocaml-compiler-libs     v0.11.0      [required by ppxlib]
+  - install sexplib0                v0.11.0      [required by base, sexplib]
+  - install ppx_derivers            1.0          [required by ppxlib]
+  - install result                  1.3          [required by ocaml-migrate-parsetree]
+  - install parsexp                 v0.11.0      [required by sexplib]
+  - install base                    v0.11.1      [required by core_kernel]
+  - install ocaml-migrate-parsetree 1.0.11       [required by core_kernel]
+  - install sexplib                 v0.11.0      [required by core_kernel]
+  - install typerep                 v0.11.0      [required by core_kernel]
+  - install stdio                   v0.11.0      [required by core_kernel]
+  - install ppxlib                  0.3.0        [required by ppx_inline_test, ppx_assert, ppx_base, ppx_jane]
+  - install configurator            v0.11.0      [required by core_kernel]
+  - install variantslib             v0.11.0      [required by core_kernel]
+  - install ppx_typerep_conv        v0.11.1      [required by ppx_jane]
+  - install ppx_sexp_conv           v0.11.2      [required by core_kernel]
+  - install ppx_pipebang            v0.11.0      [required by ppx_jane]
+  - install ppx_optional            v0.11.0      [required by ppx_jane]
+  - install ppx_optcomp             v0.11.0      [required by ppx_jane]
+  - install ppx_let                 v0.11.0      [required by ppx_jane]
+  - install ppx_js_style            v0.11.0      [required by ppx_base]
+  - install ppx_inline_test         v0.11.0      [required by core_kernel]
+  - install ppx_here                v0.11.0      [required by ppx_assert, ppx_jane]
+  - install ppx_enumerate           v0.11.1      [required by ppx_base]
+  - install ppx_compare             v0.11.1      [required by ppx_assert, bin_prot, ppx_base]
+  - install fieldslib               v0.11.0      [required by core_kernel]
+  - install ppx_variants_conv       v0.11.1      [required by bin_prot, ppx_jane]
+  - install ppx_custom_printf       v0.11.0      [required by bin_prot, ppx_jane]
+  - install ppx_bench               v0.11.0      [required by ppx_jane]
+  - install ppx_sexp_value          v0.11.0      [required by ppx_jane]
+  - install ppx_sexp_message        v0.11.0      [required by core_kernel]
+  - install ppx_fail                v0.11.0      [required by ppx_jane]
+  - install ppx_hash                v0.11.1      [required by core_kernel]
+  - install ppx_assert              v0.11.0      [required by core_kernel]
+  - install ppx_fields_conv         v0.11.0      [required by bin_prot, ppx_jane]
+  - install ppx_base                v0.11.0      [required by core_kernel]
+  - install ppx_expect              v0.11.0      [required by ppx_jane]
+  - install bin_prot                v0.11.0      [required by core_kernel]
+  - install ppx_bin_prot            v0.11.1      [required by ppx_jane]
+  - install ppx_jane                v0.11.0      [required by core_kernel]
+  - install splittable_random       v0.11.0      [required by core_kernel]
+  - install core_kernel             v0.11.1      [required by tidy]
+  - install tidy                    0-2009-0.1.1
+===== 46 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[bin_prot.v0.11.0] found in cache
+[configurator.v0.11.0] found in cache
+[core_kernel.v0.11.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[jane-street-headers.v0.11.0] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[octavius.1.2.0] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[tidy.0-2009-0.1.1] found in cache
+[typerep.v0.11.0] found in cache
+[variantslib.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed jane-street-headers.v0.11.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed parsexp.v0.11.0
+-> installed base.v0.11.1
+-> installed sexplib.v0.11.0
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed typerep.v0.11.0
+-> installed ppxlib.0.3.0
+-> installed fieldslib.v0.11.0
+-> installed ppx_compare.v0.11.1
+-> installed ppx_enumerate.v0.11.1
+-> installed ppx_here.v0.11.0
+-> installed ppx_fields_conv.v0.11.0
+-> installed ppx_inline_test.v0.11.0
+-> installed ppx_fail.v0.11.0
+-> installed ppx_js_style.v0.11.0
+-> installed ppx_let.v0.11.0
+-> installed ppx_optcomp.v0.11.0
+-> installed ppx_optional.v0.11.0
+-> installed ppx_pipebang.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ppx_assert.v0.11.0
+-> installed ppx_bench.v0.11.0
+-> installed ppx_custom_printf.v0.11.0
+-> installed ppx_hash.v0.11.1
+-> installed ppx_sexp_message.v0.11.0
+-> installed ppx_sexp_value.v0.11.0
+-> installed ppx_typerep_conv.v0.11.1
+-> installed variantslib.v0.11.0
+-> installed ppx_base.v0.11.0
+-> installed ppx_variants_conv.v0.11.1
+-> installed bin_prot.v0.11.0
+-> installed ppx_expect.v0.11.0
+-> installed ppx_bin_prot.v0.11.1
+-> installed ppx_jane.v0.11.0
+-> installed splittable_random.v0.11.0
+-> installed core_kernel.v0.11.1
+[ERROR] The compilation of tidy failed at "/usr/bin/make".
+
+#=== ERROR while compiling tidy.0-2009-0.1.1 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+default-unsafe-string | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+default-unsafe-string/.opam-switch/build/tidy.0-2009-0.1.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/tidy-12-0536cb.env
+# output-file          ~/.opam/log/tidy-12-0536cb.out
+### output ###
+# ocamlfind ocamlc -package core_kernel tidy.mli
+# File "tidy.mli", line 639, characters 34-62:
+# Warning 3: deprecated: module Core_kernel.Std
+# [since 2018-03] Use Core_kernel directly instead
+# File "tidy.mli", line 657, characters 37-59:
+# Warning 3: deprecated: module Core_kernel.Std
+# [since 2018-03] Use Core_kernel directly instead
+# File "tidy.mli", line 688, characters 25-53:
+# Warning 3: deprecated: module Core_kernel.Std
+# [since 2018-03] Use Core_kernel directly instead
+# File "tidy.mli", line 689, characters 25-53:
+# Warning 3: deprecated: module Core_kernel.Std
+# [since 2018-03] Use Core_kernel directly instead
+# gcc -Wall -fPIC  -c -I `ocamlc -where` -I /usr/include/tidy -o stub.o stub.c
+# In file included from stub.c:2:0:
+# /usr/include/tidy/buffio.h:2:2: warning: #warning "FIXME: Using compatibility tidy header (buffio.h) that will go away!" [-Wcpp]
+#  #warning "FIXME: Using compatibility tidy header (buffio.h) that will go away!"
+#   ^~~~~~~
+# ocamlfind ocamlmklib -package core_kernel -ltidy -o tidy -oc tidy_stubs tidy.ml stub.o
+# File "tidy.ml", line 1, characters 5-20:
+# Warning 3: deprecated: module Core_kernel.Std
+# [since 2018-03] Use Core_kernel directly instead
+# File "tidy.ml", line 499, characters 2-75:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "tidy.ml", line 500, characters 2-75:
+# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
+# File "tidy.ml", line 980, characters 8-102:
+# Error: This expression has type
+#          string Core_kernel.Std.String.Map.t Base__.Map_intf.Or_duplicate.t
+#        but an expression was expected of type
+#          string Core_kernel.Std.String.Map.t =
+#            (Core_kernel.Std.String.Map.Key.t, string,
+#             Core_kernel.Std.String.Map.Key.comparator_witness)
+#            Base__Map.t
+# Makefile:13: recipe for target 'tidy.cma' failed
+# make: *** [tidy.cma] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build tidy 0-2009-0.1.1
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install bin_prot                v0.11.0
+| - install configurator            v0.11.0
+| - install core_kernel             v0.11.1
+| - install fieldslib               v0.11.0
+| - install jane-street-headers     v0.11.0
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install octavius                1.2.0
+| - install parsexp                 v0.11.0
+| - install ppx_assert              v0.11.0
+| - install ppx_base                v0.11.0
+| - install ppx_bench               v0.11.0
+| - install ppx_bin_prot            v0.11.1
+| - install ppx_compare             v0.11.1
+| - install ppx_custom_printf       v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_enumerate           v0.11.1
+| - install ppx_expect              v0.11.0
+| - install ppx_fail                v0.11.0
+| - install ppx_fields_conv         v0.11.0
+| - install ppx_hash                v0.11.1
+| - install ppx_here                v0.11.0
+| - install ppx_inline_test         v0.11.0
+| - install ppx_jane                v0.11.0
+| - install ppx_js_style            v0.11.0
+| - install ppx_let                 v0.11.0
+| - install ppx_optcomp             v0.11.0
+| - install ppx_optional            v0.11.0
+| - install ppx_pipebang            v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_sexp_message        v0.11.0
+| - install ppx_sexp_value          v0.11.0
+| - install ppx_typerep_conv        v0.11.1
+| - install ppx_variants_conv       v0.11.1
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install splittable_random       v0.11.0
+| - install stdio                   v0.11.0
+| - install typerep                 v0.11.0
+| - install variantslib             v0.11.0
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libtidy-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180816220149.export"
+31 1534456903 1534457068
