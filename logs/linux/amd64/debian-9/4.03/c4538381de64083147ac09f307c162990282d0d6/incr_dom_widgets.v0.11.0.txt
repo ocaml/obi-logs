@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 incr_dom_widgets.v0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for incr_dom_widgets.v0.11.0: The following dependencies couldn't be met:
+          - incr_dom_widgets -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=incr_dom_widgets.v0.11.0 returned 20
+20 1534398053 1534398056

@@ -1,0 +1,12 @@
+$ opam depext -iy -j 2 lambda-term.1.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for lambda-term.1.5: The following dependencies couldn't be met:
+          - lambda-term -> lwt < 3.0.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - lambda-term -> react < 1.0.0
+        Your request can't be satisfied:
+          - lwt (= 2.4.5 | >= 2.5.2 & < 3.0.0) is in conflict with react < 1.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=lambda-term.1.5 returned 20
+20 1534397452 1534397455
