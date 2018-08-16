@@ -1,0 +1,22 @@
+$ opam depext -iy -j 2 conf-mysql.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-mysql 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+#=== ERROR while compiling conf-mysql.1 =======================================#
+"mysql_config": command not found.
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-mysql 1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534385619 1534385624

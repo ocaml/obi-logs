@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 lambda-term.1.10.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for lambda-term.1.10.1: The following dependencies couldn't be met:
+          - lambda-term -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=lambda-term.1.10.1 returned 20
+20 1534385692 1534385695

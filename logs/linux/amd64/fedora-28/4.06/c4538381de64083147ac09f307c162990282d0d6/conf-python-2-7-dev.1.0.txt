@@ -1,0 +1,34 @@
+$ opam depext -iy -j 2 conf-python-2-7-dev.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-python-2-7-dev 1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-python-2-7-dev failed at "/usr/bin/cc test.c".
+
+#=== ERROR while compiling conf-python-2-7-dev.1.0 ============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-python-2-7-dev.1.0
+# command              /usr/bin/cc test.c
+# exit-code            1
+# env-file             ~/.opam/log/conf-python-2-7-dev-10-9b8556.env
+# output-file          ~/.opam/log/conf-python-2-7-dev-10-9b8556.out
+### output ###
+# test.c:1:10: fatal error: python2.7/Python.h: No such file or directory
+#  #include "python2.7/Python.h"
+#           ^~~~~~~~~~~~~~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-python-2-7-dev 1.0
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534384998 1534385002

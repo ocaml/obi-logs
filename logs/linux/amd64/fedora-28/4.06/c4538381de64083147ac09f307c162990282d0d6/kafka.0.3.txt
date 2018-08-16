@@ -1,0 +1,153 @@
+$ opam depext -iy -j 2 kafka.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+librdkafka-devel
+m4
+zlib-devel
+package librdkafka-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Aug 15 20:05:28 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package zlib-devel is not installed
+# The following new OS packages need to be installed: librdkafka-devel zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y librdkafka-devel zlib-devel
+Fedora 28 - x86_64 - Updates                     28 MB/s |  22 MB     00:00    
+Last metadata expiration check: 0:00:08 ago on Thu Aug 16 02:06:31 2018.
+Dependencies resolved.
+================================================================================
+ Package                Arch         Version                Repository     Size
+================================================================================
+Installing:
+ librdkafka-devel       x86_64       0.11.3-2.fc28          fedora         47 k
+ zlib-devel             x86_64       1.2.11-8.fc28          updates        55 k
+Installing dependencies:
+ librdkafka             x86_64       0.11.3-2.fc28          fedora        339 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+
+Total download size: 441 k
+Installed size: 1.3 M
+Downloading Packages:
+(1/3): zlib-devel-1.2.11-8.fc28.x86_64.rpm      748 kB/s |  55 kB     00:00    
+(2/3): librdkafka-devel-0.11.3-2.fc28.x86_64.rp 543 kB/s |  47 kB     00:00    
+(3/3): librdkafka-0.11.3-2.fc28.x86_64.rpm      3.0 MB/s | 339 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           296 kB/s | 441 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : librdkafka-0.11.3-2.fc28.x86_64                        1/3 
+  Running scriptlet: librdkafka-0.11.3-2.fc28.x86_64                        1/3 
+  Installing       : librdkafka-devel-0.11.3-2.fc28.x86_64                  2/3 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                        3/3 
+  Running scriptlet: zlib-devel-1.2.11-8.fc28.x86_64                        3/3 
+  Verifying        : librdkafka-devel-0.11.3-2.fc28.x86_64                  1/3 
+  Verifying        : librdkafka-0.11.3-2.fc28.x86_64                        2/3 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                        3/3 
+
+Installed:
+  librdkafka-devel.x86_64 0.11.3-2.fc28     zlib-devel.x86_64 1.2.11-8.fc28    
+  librdkafka.x86_64 0.11.3-2.fc28          
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides librdkafka-devel zlib-devel
+librdkafka-devel-0.11.3-2.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result     1.3    [required by cmdliner, lwt]
+  - install base-bytes base   [required by cppo]
+  - install ocamlbuild 0.12.0 [required by cmdliner]
+  - install cppo       1.6.4  [required by lwt]
+  - install topkg      0.9.1  [required by cmdliner]
+  - install lwt        4.1.0  [required by kafka]         For the PPX, please install package lwt_ppx
+                                                          For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cmdliner   1.0.2  [required by kafka]
+  - install kafka      0.3
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[kafka.0.3] found in cache
+[lwt.4.1.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed lwt.4.1.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+[ERROR] The compilation of kafka failed at "/home/opam/.opam/4.06/bin/jbuilder build -p kafka . -j 71 @install".
+
+#=== ERROR while compiling kafka.0.3 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/kafka.0.3
+# command              ~/.opam/4.06/bin/jbuilder build -p kafka . -j 71 @install
+# exit-code            1
+# env-file             ~/.opam/log/kafka-10-233b17.env
+# output-file          ~/.opam/log/kafka-10-233b17.out
+### output ###
+# Don't know how to build .
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build kafka 0.3
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install cmdliner   1.0.2
+| - install cppo       1.6.4
+| - install lwt        4.1.0
+| - install ocamlbuild 0.12.0
+| - install result     1.3
+| - install topkg      0.9.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    librdkafka-devel zlib-devel
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180816020646.export"
+31 1534385187 1534385225
