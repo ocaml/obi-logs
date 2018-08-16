@@ -1,0 +1,14 @@
+$ opam depext -iy -j 2 ppx_fun.0.0.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ppx_fun.0.0.4: The following dependencies couldn't be met:
+          - ppx_fun -> ppx_core >= v0.9.0 -> ppxlib < 0.3.0
+          - ppx_fun -> ppx_core >= v0.9.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - ppx_fun -> ppx_core >= v0.9.0 -> base < v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - ppx_fun >= 0.0.4 is in conflict with ppxlib
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_fun.0.0.4 returned 20
+20 1534453209 1534453212
