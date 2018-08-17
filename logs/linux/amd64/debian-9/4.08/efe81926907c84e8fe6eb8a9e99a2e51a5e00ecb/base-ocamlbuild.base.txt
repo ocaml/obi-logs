@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 base-ocamlbuild.base
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for base-ocamlbuild.base: The following dependencies couldn't be met:
+          - base-ocamlbuild -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=base-ocamlbuild.base returned 20
+20 1534537008 1534537010
