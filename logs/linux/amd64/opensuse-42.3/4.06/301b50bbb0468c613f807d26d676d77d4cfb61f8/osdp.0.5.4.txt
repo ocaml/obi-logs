@@ -1,0 +1,93 @@
+$ opam depext -iy -j 2 osdp.0.5.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+gmp-devel
+m4
+which
+# The following new OS packages need to be installed: gmp-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install gmp-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  gmp-devel libgmpxx4
+
+2 new packages to install.
+Overall download size: 1.2 MiB. Already cached: 0 B. After the operation, additional 7.1 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libgmpxx4-5.1.3-7.15.x86_64 (1/2),  16.1 KiB ( 26.5 KiB unpacked)
+Retrieving: libgmpxx4-5.1.3-7.15.x86_64.rpm [done]
+Retrieving package gmp-devel-5.1.3-7.15.x86_64 (2/2),   1.2 MiB (  7.1 MiB unpacked)
+Retrieving: gmp-devel-5.1.3-7.15.x86_64.rpm [done]
+Checking for file conflicts: [......done]
+(1/2) Installing: libgmpxx4-5.1.3-7.15.x86_64 [....done]
+(2/2) Installing: gmp-devel-5.1.3-7.15.x86_64 [............done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp       1      [required by zarith]
+  - install conf-which     1      [required by conf-autoconf]
+  - install conf-perl      1      [required by zarith]
+  - install ocamlbuild     0.12.0 [required by osdp]
+  - install num            1.1    [required by ocplib-simplex]
+  - install conf-sdpa      1      [required by osdp]
+  - install conf-autoconf  0.1    [required by ocplib-simplex]
+  - install zarith         1.7    [required by osdp]
+  - install ocplib-simplex 0.3    [required by osdp]
+  - install osdp           0.5.4
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[conf-sdpa.1] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-simplex.0.3] found in cache
+[osdp.0.5.4] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-sdpa failed at "/usr/bin/sh -exc command -v sdpa".
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-which.1
+-> installed conf-autoconf.0.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed zarith.1.7
+-> installed ocplib-simplex.0.3
+
+#=== ERROR while compiling conf-sdpa.1 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdpa.1
+# command              /usr/bin/sh -exc command -v sdpa
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdpa-12-f0f09f.env
+# output-file          ~/.opam/log/conf-sdpa-12-f0f09f.out
+### output ###
+# + command -v sdpa
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-sdpa 1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install conf-autoconf  0.1
+| - install conf-gmp       1
+| - install conf-perl      1
+| - install conf-which     1
+| - install num            1.1
+| - install ocamlbuild     0.12.0
+| - install ocplib-simplex 0.3
+| - install zarith         1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817025546.export"
+31 1534474031 1534474554

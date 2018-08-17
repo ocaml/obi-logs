@@ -1,0 +1,16 @@
+$ opam depext -iy -j 2 frei0r.0.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+frei0r-devel
+m4
+# The following new OS packages need to be installed: frei0r-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install frei0r-devel
+Retrieving repository 'OSS Update' metadata [.....done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+'frei0r-devel' not found in package names. Trying capabilities.
+No provider of 'frei0r-devel' found.
+OS package installation failed
+1 1534477219 1534477273

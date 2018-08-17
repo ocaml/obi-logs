@@ -1,0 +1,34 @@
+$ opam depext -iy -j 2 conf-leveldb.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# No extra OS packages requirements found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-leveldb 1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-leveldb failed at "/usr/bin/cc -c test.cc".
+
+#=== ERROR while compiling conf-leveldb.1 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-leveldb.1
+# command              /usr/bin/cc -c test.cc
+# exit-code            1
+# env-file             ~/.opam/log/conf-leveldb-12-9b8556.env
+# output-file          ~/.opam/log/conf-leveldb-12-9b8556.out
+### output ###
+# test.cc:1:24: fatal error: leveldb/db.h: No such file or directory
+#  #include <leveldb/db.h>
+#                         ^
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-leveldb 1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534474832 1534475081

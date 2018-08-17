@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 immutable.0.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for immutable.0.0.1: The following dependencies couldn't be met:
+          - immutable -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=immutable.0.0.1 returned 20
+20 1534477004 1534477006

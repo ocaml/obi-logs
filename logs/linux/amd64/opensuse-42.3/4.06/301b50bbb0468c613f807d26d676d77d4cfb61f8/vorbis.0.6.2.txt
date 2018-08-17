@@ -1,0 +1,113 @@
+$ opam depext -iy -j 2 vorbis.0.6.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+libogg-devel
+libvorbis-devel
+m4
+# The following new OS packages need to be installed: libogg-devel libvorbis-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install libogg-devel libvorbis-devel
+Retrieving repository 'OSS Update' metadata [....done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 6 NEW packages are going to be installed:
+  libogg-devel libogg0 libvorbis-devel libvorbis0 libvorbisenc2 libvorbisfile3
+
+6 new packages to install.
+Overall download size: 325.1 KiB. Already cached: 0 B. After the operation, additional 3.4 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libogg0-1.3.0-6.3.x86_64 (1/6),  19.1 KiB ( 33.4 KiB unpacked)
+Retrieving: libogg0-1.3.0-6.3.x86_64.rpm [.done]
+Retrieving package libogg-devel-1.3.0-6.3.x86_64 (2/6),  69.1 KiB (267.4 KiB unpacked)
+Retrieving: libogg-devel-1.3.0-6.3.x86_64.rpm [done]
+Retrieving package libvorbis0-1.3.3-17.1.x86_64 (3/6),  91.3 KiB (182.8 KiB unpacked)
+Retrieving: libvorbis0-1.3.3-17.1.x86_64.rpm [done]
+Retrieving package libvorbisfile3-1.3.3-17.1.x86_64 (4/6),  22.5 KiB ( 34.5 KiB unpacked)
+Retrieving: libvorbisfile3-1.3.3-17.1.x86_64.rpm [done]
+Retrieving package libvorbisenc2-1.3.3-17.1.x86_64 (5/6), 100.6 KiB (  2.8 MiB unpacked)
+Retrieving: libvorbisenc2-1.3.3-17.1.x86_64.rpm [done]
+Retrieving package libvorbis-devel-1.3.3-17.1.x86_64 (6/6),  22.4 KiB ( 45.3 KiB unpacked)
+Retrieving: libvorbis-devel-1.3.3-17.1.x86_64.rpm [done]
+Checking for file conflicts: [.......done]
+(1/6) Installing: libogg0-1.3.0-6.3.x86_64 [.....done]
+(2/6) Installing: libogg-devel-1.3.0-6.3.x86_64 [............done]
+(3/6) Installing: libvorbis0-1.3.3-17.1.x86_64 [......done]
+(4/6) Installing: libvorbisfile3-1.3.3-17.1.x86_64 [....done]
+(5/6) Installing: libvorbisenc2-1.3.3-17.1.x86_64 [............done]
+(6/6) Installing: libvorbis-devel-1.3.3-17.1.x86_64 [........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ogg    0.5.2 [required by vorbis]
+  - install vorbis 0.6.2
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ogg.0.5.2] found in cache
+[vorbis.0.6.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ogg.0.5.2
+[ERROR] The compilation of vorbis failed at "/usr/bin/make".
+
+#=== ERROR while compiling vorbis.0.6.2 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/vorbis.0.6.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/vorbis-12-865888.env
+# output-file          ~/.opam/log/vorbis-12-865888.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.6.2/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.6.2/src'
+# making ._bcdi/ogg_demuxer_vorbis_decoder.di from ogg_demuxer_vorbis_decoder.mli
+# making ._bcdi/vorbis.di from vorbis.mli
+# making ._d/ogg_demuxer_vorbis_decoder.d from ogg_demuxer_vorbis_decoder.ml
+# making ._d/vorbis.d from vorbis.ml
+# ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -Wall -g -O2 -I/home/opam/.opam/4.06/include    \
+# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include     \
+# 			  -I/home/opam/.opam/4.06/lib/bytes -I/home/opam/.opam/4.06/lib/ogg  -o vorbis_stubs.o " vorbis_stubs.c 
+# ar rcs libvorbis_stubs.a  vorbis_stubs.o
+# ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ogg vorbis.mli
+# ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ogg vorbis.ml
+# File "vorbis.ml", line 58, characters 0-136:
+# Warning 3: deprecated: uppercase
+# Use String.uppercase_ascii instead.
+#   File "string.mli", line 262, characters 0-93:
+#   Definition
+#   File "vorbis.ml", line 54, characters 2-34:
+#   Expected signature
+# File "vorbis.ml", line 230, characters 12-15:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakefile:952: recipe for target 'vorbis.cmo' failed
+# make[2]: *** [vorbis.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.6.2/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/vorbis.0.6.2/src'
+# Makefile:18: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build vorbis 0.6.2
++- 
++- The following changes have been performed
+| - install ogg 0.5.2
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libvorbis-devel
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817042025.export"
+31 1534479143 1534479631

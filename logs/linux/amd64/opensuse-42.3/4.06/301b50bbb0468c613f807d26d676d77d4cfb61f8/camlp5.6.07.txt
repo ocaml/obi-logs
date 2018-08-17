@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 camlp5.6.07
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for camlp5.6.07: The following dependencies couldn't be met:
+          - camlp5 -> ocaml < 4.01.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=camlp5.6.07 returned 20
+20 1534474042 1534474044

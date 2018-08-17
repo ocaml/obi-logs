@@ -1,0 +1,165 @@
+$ opam depext -iy -j 2 llvm.4.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+llvm4
+m4
+python
+# The following new OS packages need to be installed: llvm4 python
+The following command needs to be run through "sudo":
+    zypper --non-interactive install llvm4 python
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 4 NEW packages are going to be installed:
+  libLLVM4 libsqlite3-0 llvm4 python
+
+4 new packages to install.
+Overall download size: 12.2 MiB. Already cached: 0 B. After the operation, additional 52.1 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (1/4), 408.9 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [..done]
+Retrieving package libLLVM4-4.0.1-5.1.x86_64 (2/4),   9.7 MiB ( 43.2 MiB unpacked)
+Retrieving: libLLVM4-4.0.1-5.1.x86_64.rpm [.done]
+Retrieving package python-2.7.13-27.6.1.x86_64 (3/4), 313.8 KiB (  1.4 MiB unpacked)
+Retrieving: python-2.7.13-27.6.1.x86_64.rpm [done]
+Retrieving package llvm4-4.0.1-5.1.x86_64 (4/4),   1.8 MiB (  6.7 MiB unpacked)
+Retrieving: llvm4-4.0.1-5.1.x86_64.rpm [done]
+Checking for file conflicts: [......done]
+(1/4) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
+(2/4) Installing: libLLVM4-4.0.1-5.1.x86_64 [............done]
+(3/4) Installing: python-2.7.13-27.6.1.x86_64 [............done]
+(4/4) Installing: llvm4-4.0.1-5.1.x86_64 [............done]
+Additional rpm output:
+update-alternatives: using /usr/bin/llvm-ar-4.0.1 to provide /usr/bin/llvm-ar (llvm-ar) in auto mode
+
+
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by topkg]
+  - install base-bytes      base   [required by ctypes]
+  - install ocamlbuild      0.12.0 [required by integers]
+  - install conf-pkg-config 1.1    [required by ctypes]
+  - install conf-llvm       4.0.0  [required by llvm]
+  - install conf-cmake      1      [required by llvm]
+  - install conf-python-2-7 1.0    [required by llvm]
+  - install topkg           0.9.1  [required by integers]
+  - install integers        0.2.2  [required by ctypes]
+  - install ctypes          0.14.0 [required by llvm]
+  - install llvm            4.0.0
+===== 11 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ctypes.0.14.0] found in cache
+[integers.0.2.2] found in cache
+[llvm.4.0.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+[topkg.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-cmake failed at "/bin/bash -ex configure.sh".
+[ERROR] The compilation of conf-llvm failed at "/bin/bash -ex configure.sh 4.0.0".
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-python-2-7.1.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed ctypes.0.14.0
+
+#=== ERROR while compiling conf-llvm.4.0.0 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-llvm.4.0.0
+# command              /bin/bash -ex configure.sh 4.0.0
+# exit-code            1
+# env-file             ~/.opam/log/conf-llvm-12-48c407.env
+# output-file          ~/.opam/log/conf-llvm-12-48c407.out
+### output ###
+# + version=4.0
+# + config=
+# + hash brew
+# + shopt -s nullglob
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config-4.0 --version
+# configure.sh: line 13: llvm-config-4.0: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-4.0'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''4.0'\''.'
+# Note: 'llvm-config-4.0' doesn't match the required version. Got '' but required '4.0'.
+# + continue
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config40 --version
+# configure.sh: line 13: llvm-config40: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config40'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''4.0'\''.'
+# Note: 'llvm-config40' doesn't match the required version. Got '' but required '4.0'.
+# + continue
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config-mp-4.0 --version
+# configure.sh: line 13: llvm-config-mp-4.0: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config-mp-4.0'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''4.0'\''.'
+# Note: 'llvm-config-mp-4.0' doesn't match the required version. Got '' but required '4.0'.
+# + continue
+# + for llvm_config in '$config' 'llvm-config-$version' 'llvm-config${version//./}' 'llvm-config-mp-$version' '$brew_llvm_config' llvm-config
+# ++ llvm-config --version
+# configure.sh: line 13: llvm-config: command not found
+# + llvm_version=
+# + true
+# + case $llvm_version in
+# + echo 'Note: '\''llvm-config'\'' doesn'\''t match the required version. Got '\'''\'' but required '\''4.0'\''.'
+# Note: 'llvm-config' doesn't match the required version. Got '' but required '4.0'.
+# + continue
+# + echo 'Error: LLVM 4.0 is not installed.'
+# Error: LLVM 4.0 is not installed.
+# + exit 1
+
+
+#=== ERROR while compiling conf-cmake.1 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-cmake.1
+# command              /bin/bash -ex configure.sh
+# exit-code            1
+# env-file             ~/.opam/log/conf-cmake-12-d474c2.env
+# output-file          ~/.opam/log/conf-cmake-12-d474c2.out
+### output ###
+# + command -v cmake3
+# + command -v cmake
+# + exit 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-cmake 1
+| - build conf-llvm  4.0.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install conf-python-2-7 1.0
+| - install ctypes          0.14.0
+| - install integers        0.2.2
+| - install ocamlbuild      0.12.0
+| - install result          1.3
+| - install topkg           0.9.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    llvm4
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817030959.export"
+31 1534474897 1534475429
