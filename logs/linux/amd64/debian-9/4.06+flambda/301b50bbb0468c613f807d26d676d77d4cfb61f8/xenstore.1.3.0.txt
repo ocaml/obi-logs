@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 xenstore.1.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for xenstore.1.3.0: The following dependencies couldn't be met:
+          - xenstore -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xenstore.1.3.0 returned 20
+20 1534486316 1534486318
