@@ -1,0 +1,220 @@
+$ opam depext -iy -j 2 osdp.0.5.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+autoconf
+debianutils
+libgmp-dev
+m4
+perl
+sdpa
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy autoconf debianutils libgmp-dev m4 perl sdpa
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package autoconf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../00-autoconf_2.69-11_all.deb ...
+Unpacking autoconf (2.69-11) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../01-autotools-dev_20180224.1_all.deb ...
+Unpacking autotools-dev (20180224.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../02-automake_1%3a1.15.1-3ubuntu2_all.deb ...
+Unpacking automake (1:1.15.1-3ubuntu2) ...
+Selecting previously unselected package libgfortran4:amd64.
+Preparing to unpack .../03-libgfortran4_7.3.0-16ubuntu3_amd64.deb ...
+Unpacking libgfortran4:amd64 (7.3.0-16ubuntu3) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../04-libgmpxx4ldbl_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../05-libgmp-dev_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libopenblas-base:amd64.
+Preparing to unpack .../06-libopenblas-base_0.2.20+ds-4_amd64.deb ...
+Unpacking libopenblas-base:amd64 (0.2.20+ds-4) ...
+Selecting previously unselected package libscotch-6.0.
+Preparing to unpack .../07-libscotch-6.0_6.0.4.dfsg1-8_amd64.deb ...
+Unpacking libscotch-6.0 (6.0.4.dfsg1-8) ...
+Selecting previously unselected package libmumps-seq-5.1.2:amd64.
+Preparing to unpack .../08-libmumps-seq-5.1.2_5.1.2-4_amd64.deb ...
+Unpacking libmumps-seq-5.1.2:amd64 (5.1.2-4) ...
+Selecting previously unselected package libopenblas-dev:amd64.
+Preparing to unpack .../09-libopenblas-dev_0.2.20+ds-4_amd64.deb ...
+Unpacking libopenblas-dev:amd64 (0.2.20+ds-4) ...
+Selecting previously unselected package sdpa.
+Preparing to unpack .../10-sdpa_7.3.11+dfsg-1ubuntu1_amd64.deb ...
+Unpacking sdpa (7.3.11+dfsg-1ubuntu1) ...
+Setting up libscotch-6.0 (6.0.4.dfsg1-8) ...
+Setting up libgfortran4:amd64 (7.3.0-16ubuntu3) ...
+Setting up autoconf (2.69-11) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up autotools-dev (20180224.1) ...
+Setting up automake (1:1.15.1-3ubuntu2) ...
+update-alternatives: using /usr/bin/automake-1.15 to provide /usr/bin/automake (automake) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/automake.1.gz because associated file /usr/share/man/man1/automake-1.15.1.gz (of link group automake) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/aclocal.1.gz because associated file /usr/share/man/man1/aclocal-1.15.1.gz (of link group automake) doesn't exist
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Setting up libopenblas-base:amd64 (0.2.20+ds-4) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/openblas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/x86_64-linux-gnu/openblas/liblapack.so.3 to provide /usr/lib/x86_64-linux-gnu/liblapack.so.3 (liblapack.so.3-x86_64-linux-gnu) in auto mode
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Setting up libmumps-seq-5.1.2:amd64 (5.1.2-4) ...
+Setting up libopenblas-dev:amd64 (0.2.20+ds-4) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/openblas/libblas.so to provide /usr/lib/x86_64-linux-gnu/libblas.so (libblas.so-x86_64-linux-gnu) in auto mode
+update-alternatives: using /usr/lib/x86_64-linux-gnu/openblas/liblapack.so to provide /usr/lib/x86_64-linux-gnu/liblapack.so (liblapack.so-x86_64-linux-gnu) in auto mode
+Setting up sdpa (7.3.11+dfsg-1ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp       1      [required by zarith]
+  - install conf-which     1      [required by conf-autoconf]
+  - install conf-perl      1      [required by zarith]
+  - install ocamlbuild     0.12.0 [required by osdp]
+  - install num            1.1    [required by ocplib-simplex]
+  - install conf-sdpa      1      [required by osdp]
+  - install conf-autoconf  0.1    [required by ocplib-simplex]
+  - install zarith         1.7    [required by osdp]
+  - install ocplib-simplex 0.3    [required by osdp]
+  - install osdp           0.5.4
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[conf-sdpa.1] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocplib-simplex.0.3] found in cache
+[osdp.0.5.4] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-sdpa.1
+-> installed conf-which.1
+-> installed conf-autoconf.0.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed zarith.1.7
+-> installed ocplib-simplex.0.3
+[ERROR] The compilation of osdp failed at "/usr/bin/make".
+
+#=== ERROR while compiling osdp.0.5.4 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/osdp.0.5.4
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/osdp-13-e01822.env
+# output-file          ~/.opam/log/osdp-13-e01822.out
+### output ###
+# make -C src osdp
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/osdp.0.5.4/src'
+# ocamlbuild -use-ocamlfind -classic-display -no-links osdp.cma osdp_top.cmo osdp.cmxa osdp.cmxs 
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 7, characters 18-30:
+# Warning: the tag "use_rounding" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c csdp_stubs.c
+# ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c moseksdp_stubs.c
+# ocamlfind ocamlc -g -ccopt -frounding-math -package zarith -package ocplib-simplex -c posdef_stubs.c
+# ocamlfind ocamlmklib -o osdp csdp_stubs.o moseksdp_stubs.o posdef_stubs.o
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.mli > csdp.mli.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.mli > sdpRet.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpRet.cmi sdpRet.mli
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmi csdp.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules csdp.ml > csdp.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.mli > ident.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmi ident.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules ident.ml > ident.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.mli > linExpr.mli.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.mli > scalar.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o scalar.cmi scalar.mli
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmi linExpr.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules linExpr.ml > linExpr.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.mli > utils.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o utils.cmi utils.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.mli > lmi.mli.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.mli > matrix.mli.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.mli > sdp.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmi matrix.mli
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdp.cmi sdp.mli
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmi lmi.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules lmi.ml > lmi.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.mli > posdef.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o posdef.cmi posdef.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules matrix.ml > matrix.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.mli > monomial.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o monomial.cmi monomial.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules monomial.ml > monomial.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.mli > moseksdp.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o moseksdp.cmi moseksdp.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules moseksdp.ml > moseksdp.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.mli > newtonPolytope.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o newtonPolytope.cmi newtonPolytope.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules newtonPolytope.ml > newtonPolytope.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.mli > polynomial.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o polynomial.cmi polynomial.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules polynomial.ml > polynomial.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules posdef.ml > posdef.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.mli > preSdp.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o preSdp.cmi preSdp.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules preSdp.ml > preSdp.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules scalar.ml > scalar.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdp.ml > sdp.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.mli > sdpa.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa.cmi sdpa.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa.ml > sdpa.ml.depends
+# /home/opam/.opam/4.06/bin/ocamllex.opt -q sdpa_lexer.mll
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_lexer.ml > sdpa_lexer.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlyacc sdpa_parser.mly
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.mli > sdpa_parser.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_parser.cmi sdpa_parser.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_paths.ml > sdpa_paths.ml.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_lexer.cmo sdpa_lexer.ml
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sdpa_paths.cmo sdpa_paths.ml
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpa_parser.ml > sdpa_parser.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sdpRet.ml > sdpRet.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.mli > sos.mli.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o sos.cmi sos.mli
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules sos.ml > sos.ml.depends
+# ocamlfind ocamldep -package zarith -package ocplib-simplex -modules utils.ml > utils.ml.depends
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o csdp.cmo csdp.ml
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o ident.cmo ident.ml
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o linExpr.cmo linExpr.ml
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o lmi.cmo lmi.ml
+# ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+# + ocamlfind ocamlc -c -g -package zarith -package ocplib-simplex -o matrix.cmo matrix.ml
+# File "matrix.ml", line 111, characters 41-63:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "matrix.ml", line 112, characters 27-34:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Makefile:24: recipe for target 'osdp' failed
+# make[1]: *** [osdp] Error 10
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/osdp.0.5.4/src'
+# Makefile:40: recipe for target 'osdp' failed
+# make: *** [osdp] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build osdp 0.5.4
++- 
++- The following changes have been performed
+| - install conf-autoconf  0.1
+| - install conf-gmp       1
+| - install conf-perl      1
+| - install conf-sdpa      1
+| - install conf-which     1
+| - install num            1.1
+| - install ocamlbuild     0.12.0
+| - install ocplib-simplex 0.3
+| - install zarith         1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817005638.export"
+31 1534467385 1534467414

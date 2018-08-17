@@ -1,0 +1,107 @@
+$ opam depext -iy -j 2 flow_parser.0.44.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by ocaml-migrate-parsetree]
+  - install base-bytes              base   [required by gen]
+  - install ocamlbuild              0.12.0 [required by flow_parser]
+  - install ocaml-migrate-parsetree 1.0.11 [required by sedlex]
+  - install gen                     0.5.1  [required by sedlex]
+  - install ppx_tools_versioned     5.2    [required by sedlex]
+  - install sedlex                  1.99.4 [required by flow_parser]
+  - install flow_parser             0.44.0
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[flow_parser.0.44.0] found in cache
+[gen.0.5.1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed gen.0.5.1
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed sedlex.1.99.4
+[ERROR] The compilation of flow_parser failed at "/bin/sh -c cd src/parser && make ocamlfind-install".
+
+#=== ERROR while compiling flow_parser.0.44.0 =================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/flow_parser.0.44.0
+# command              /bin/sh -c cd src/parser && make ocamlfind-install
+# exit-code            2
+# env-file             ~/.opam/log/flow_parser-13-af8e1e.env
+# output-file          ~/.opam/log/flow_parser-13-af8e1e.out
+### output ###
+# ocamlbuild parser_flow.cma parser_flow.cmxa
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parser_flow.ml > parser_flow.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules declaration_parser.ml > declaration_parser.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules loc.mli > loc.mli.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parse_error.ml > parse_error.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o loc.cmi loc.mli
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parser_common.ml > parser_common.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o parse_error.cmo parse_error.ml
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules parser_env.mli > parser_env.mli.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules spider_monkey_ast.ml > spider_monkey_ast.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules token.ml > token.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o spider_monkey_ast.cmo spider_monkey_ast.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o token.cmo token.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o parser_env.cmi parser_env.mli
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules type_parser.ml > type_parser.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o parser_common.cmo parser_common.ml
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o type_parser.cmo type_parser.ml
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules expression_parser.ml > expression_parser.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o declaration_parser.cmo declaration_parser.ml
+# /home/opam/.opam/4.06/bin/ocamllex.opt -q lexer_flow.mll
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules lexer_flow.ml > lexer_flow.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules lex_env.ml > lex_env.ml.depends
+# /home/opam/.opam/4.06/bin/ocamldep.opt -modules lex_result.ml > lex_result.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlc.opt -c -o lex_env.cmo lex_env.ml
+# + /home/opam/.opam/4.06/bin/ocamlc.opt -c -o lex_env.cmo lex_env.ml
+# File "lex_env.ml", line 81, characters 4-24:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+#   as the working directory does not look like an ocamlbuild project (no
+#   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+#   you should add the option "-r" or create an empty '_tags' file.
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:121: recipe for target 'ocamlfind-install' failed
+# make: *** [ocamlfind-install] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build flow_parser 0.44.0
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install gen                     0.5.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install sedlex                  1.99.4
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817012403.export"
+31 1534469040 1534469068

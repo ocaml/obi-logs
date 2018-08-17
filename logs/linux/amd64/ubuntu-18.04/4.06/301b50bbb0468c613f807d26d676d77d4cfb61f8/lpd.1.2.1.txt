@@ -1,0 +1,96 @@
+$ opam depext -iy -j 2 lpd.1.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by lpd]
+  - install lpd        1.2.1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[lpd.1.2.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of lpd failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling lpd.1.2.1 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/lpd.1.2.1
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/lpd-13-50de41.env
+# output-file          ~/.opam/log/lpd-13-50de41.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package unix -modules socket.mli > socket.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package threads -package unix -thread -o socket.cmi socket.mli
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package threads -package unix -modules socket.ml > socket.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package threads -package unix -thread -o socket.cmo socket.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package threads -package unix -thread -o socket.cmo socket.ml
+# File "socket.ml", line 25, characters 12-25:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File "socket.ml", line 25, characters 12-36:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# Command exited with code 2.
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' socket.cma socket.cmxa socket.a socket.cmxs lpd.cma lpd.cmxa lpd.a lpd.cmxs lpd_to_win.native page_counter.native -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build lpd 1.2.1
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817011131.export"
+31 1534468289 1534468302
