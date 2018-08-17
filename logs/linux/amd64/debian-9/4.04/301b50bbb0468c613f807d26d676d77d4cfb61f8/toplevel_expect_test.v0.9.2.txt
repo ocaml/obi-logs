@@ -1,0 +1,30 @@
+$ opam depext -iy -j 2 toplevel_expect_test.v0.9.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for toplevel_expect_test.v0.9.2: The following dependencies couldn't be met:
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> ppx_inline_test >= v0.11 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> ppx_hash >= v0.10 -> ppx_core >= v0.10 -> ppxlib < 0.3.0 -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> ppx_hash >= v0.10 -> ppx_core >= v0.10 -> ocaml-compiler-libs >= v0.10
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> ppx_hash >= v0.10 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> bin_prot >= v0.9.2 -> ppx_compare >= v0.10 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> bin_prot >= v0.9.2 -> ppx_compare >= v0.10 -> ppx_core >= v0.10 -> ocaml-compiler-libs >= v0.10
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> bin_prot >= v0.9.2 -> ppx_compare >= v0.10 -> ppx_core >= v0.10 -> ppxlib < 0.3.0 -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> bin_prot >= v0.9.2 -> ppx_fields_conv >= v0.11 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> core_kernel >= v0.9.1 -> bin_prot >= v0.9.2 -> sexplib >= v0.9.3 -> ocaml >= 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - toplevel_expect_test -> ocaml-compiler-libs < v0.10
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_typerep_conv >= v0.10 -> ppx_core >= v0.10 -> ppxlib < 0.3.0 -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_typerep_conv >= v0.10 -> ppx_core >= v0.10 -> ocaml-compiler-libs >= v0.10
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_typerep_conv >= v0.10 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_sexp_value >= v0.9 -> ppx_core >= v0.10 -> ppxlib < 0.3.0 -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_sexp_value >= v0.9 -> ppx_core >= v0.10 -> ocaml-compiler-libs >= v0.10
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_sexp_value >= v0.9 -> ppxlib -> ocaml-compiler-libs >= v0.11.0
+          - toplevel_expect_test -> ppx_jane >= v0.9 -> ppx_sexp_value >= v0.9 -> sexplib < v0.10 -> ocaml (< 4.03.0 | >= 4.05.0)
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of ocaml-compiler-libs satisfies the constraints
+          - No available version of sexplib satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=toplevel_expect_test.v0.9.2 returned 20
+20 1534483593 1534483597

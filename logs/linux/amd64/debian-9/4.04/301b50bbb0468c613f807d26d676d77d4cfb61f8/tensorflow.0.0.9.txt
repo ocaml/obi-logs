@@ -1,0 +1,380 @@
+$ opam depext -iy -j 2 tensorflow.0.0.9
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libffi-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libffi-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../0-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../1-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../2-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libffi-dev:amd64.
+Preparing to unpack .../3-libffi-dev_3.2.1-6_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.2.1-6) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../4-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../5-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../6-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../7-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../8-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../9-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up libffi-dev:amd64 (3.2.1-6) ...
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3          [required by ppx_expect]
+  - install base-bytes              base           [required by ctypes]
+  - install conf-pkg-config         1.1            [required by ctypes]
+  - install ctypes-foreign          0.4.0          [required by tensorflow]
+  - install ppx_tools               5.0            [required by ppx_bench, ppx_assert, ppx_expect]
+  - install ppx_derivers            1.0            [required by ppx_deriving]
+  - install result                  1.3            [required by cmdliner, core_kernel]
+  - install ocamlbuild              0.12.0         [required by tensorflow]
+  - install cppo                    1.6.4          [required by ppx_deriving]
+  - install ocaml-migrate-parsetree 1.0.11         [required by ppx_deriving]
+  - install variantslib             113.24.00      [required by core_kernel]
+  - install typerep                 113.24.00      [required by core_kernel]
+  - install topkg                   0.9.1          [required by cmdliner]
+  - install sexplib                 113.33.00+4.03 [required by core_kernel]
+  - install ppx_core                113.33.01+4.03 [required by ppx_bench, ppx_assert, ppx_expect]
+  - install fieldslib               113.24.00      [required by core_kernel]
+  - install bin_prot                113.33.00+4.03 [required by core_kernel]
+  - install cppo_ocamlbuild         1.6.0          [required by ppx_deriving]
+  - install integers                0.2.2          [required by ctypes]
+  - install cmdliner                1.0.2          [required by tensorflow]
+  - install ppx_optcomp             113.33.01+4.03 [required by ppx_driver]
+  - install ppx_deriving            4.2.1          [required by ppx_type_conv]
+  - install ctypes                  0.14.0         [required by tensorflow]
+  - install ppx_driver              113.33.02+4.03 [required by core_kernel]
+  - install ppx_type_conv           113.33.02+4.03 [required by ppx_assert]
+  - install ppx_pipebang            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_let                 113.33.00+4.03 [required by ppx_jane]
+  - install ppx_inline_test         113.33.00+4.03 [required by core_kernel]
+  - install ppx_here                113.33.00      [required by ppx_assert, ppx_jane]
+  - install ppx_variants_conv       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_typerep_conv        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_conv           113.33.01+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_fields_conv         113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_enumerate           113.33.00+4.03 [required by ppx_jane]
+  - install ppx_compare             113.33.00+4.03 [required by ppx_expect, ppx_assert, ppx_jane]
+  - install ppx_bin_prot            113.33.00+4.03 [required by ppx_jane]
+  - install ppx_bench               113.33.00+4.03 [required by core_kernel]
+  - install ppx_fail                113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_value          113.33.00+4.03 [required by ppx_jane]
+  - install ppx_sexp_message        113.33.00+4.03 [required by ppx_jane]
+  - install ppx_custom_printf       113.33.00+4.03 [required by ppx_expect, ppx_jane]
+  - install ppx_assert              113.33.00      [required by core_kernel]
+  - install ppx_expect              113.33.01+4.03 [required by core_kernel]
+  - install ppx_jane                113.33.00      [required by core_kernel]
+  - install core_kernel             113.33.02+4.03 [required by tensorflow]
+  - install tensorflow              0.0.9
+===== 46 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[bin_prot.113.33.00+4.03] found in cache
+[cmdliner.1.0.2] found in cache
+[core_kernel.113.33.02+4.03] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[ctypes.0.14.0] found in cache
+[fieldslib.113.24.00] found in cache
+[integers.0.2.2] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_assert.113.33.00] found in cache
+[ppx_bench.113.33.00+4.03] found in cache
+[ppx_bin_prot.113.33.00+4.03] found in cache
+[ppx_compare.113.33.00+4.03] found in cache
+[ppx_core.113.33.01+4.03] found in cache
+[ppx_custom_printf.113.33.00+4.03] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.113.33.02+4.03] found in cache
+[ppx_enumerate.113.33.00+4.03] found in cache
+[ppx_expect.113.33.01+4.03] found in cache
+[ppx_fail.113.33.00+4.03] found in cache
+[ppx_fields_conv.113.33.00+4.03] found in cache
+[ppx_here.113.33.00] found in cache
+[ppx_inline_test.113.33.00+4.03] found in cache
+[ppx_jane.113.33.00] found in cache
+[ppx_let.113.33.00+4.03] found in cache
+[ppx_optcomp.113.33.01+4.03] found in cache
+[ppx_pipebang.113.33.00+4.03] found in cache
+[ppx_sexp_conv.113.33.01+4.03] found in cache
+[ppx_sexp_message.113.33.00+4.03] found in cache
+[ppx_sexp_value.113.33.00+4.03] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_type_conv.113.33.02+4.03] found in cache
+[ppx_typerep_conv.113.33.00+4.03] found in cache
+[ppx_variants_conv.113.33.00+4.03] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.113.33.00+4.03] found in cache
+[tensorflow.0.0.9] found in cache
+[topkg.0.9.1] found in cache
+[typerep.113.24.00] found in cache
+[variantslib.113.24.00] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed cppo.1.6.4
+-> installed ctypes-foreign.0.4.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed bin_prot.113.33.00+4.03
+-> installed cppo_ocamlbuild.1.6.0
+-> installed fieldslib.113.24.00
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_core.113.33.01+4.03
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.113.33.00+4.03
+-> installed topkg.0.9.1
+-> installed integers.0.2.2
+-> installed cmdliner.1.0.2
+-> installed ppx_optcomp.113.33.01+4.03
+-> installed ppx_driver.113.33.02+4.03
+-> installed ctypes.0.14.0
+-> installed ppx_here.113.33.00
+-> installed ppx_inline_test.113.33.00+4.03
+-> installed ppx_fail.113.33.00+4.03
+-> installed ppx_let.113.33.00+4.03
+-> installed ppx_pipebang.113.33.00+4.03
+-> installed ppx_type_conv.113.33.02+4.03
+-> installed ppx_bench.113.33.00+4.03
+-> installed ppx_bin_prot.113.33.00+4.03
+-> installed ppx_compare.113.33.00+4.03
+-> installed ppx_enumerate.113.33.00+4.03
+-> installed ppx_fields_conv.113.33.00+4.03
+-> installed typerep.113.24.00
+-> installed ppx_sexp_conv.113.33.01+4.03
+-> installed ppx_assert.113.33.00
+-> installed ppx_custom_printf.113.33.00+4.03
+-> installed ppx_sexp_message.113.33.00+4.03
+-> installed ppx_typerep_conv.113.33.00+4.03
+-> installed variantslib.113.24.00
+-> installed ppx_sexp_value.113.33.00+4.03
+-> installed ppx_variants_conv.113.33.00+4.03
+-> installed ppx_expect.113.33.01+4.03
+-> installed ppx_jane.113.33.00
+-> installed core_kernel.113.33.02+4.03
+[ERROR] The compilation of tensorflow failed at "/usr/bin/make libtensorflowcstubs.a tensorflow_core.lib tensorflow.lib".
+
+#=== ERROR while compiling tensorflow.0.0.9 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/tensorflow.0.0.9
+# command              /usr/bin/make libtensorflowcstubs.a tensorflow_core.lib tensorflow.lib
+# exit-code            2
+# env-file             ~/.opam/log/tensorflow-11-d99d42.env
+# output-file          ~/.opam/log/tensorflow-11-d99d42.out
+### output ###
+# ocamlbuild libtensorflowcstubs.a
+# /home/opam/.opam/4.04/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.04/lib/ocamlbuild /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tf_gen.ml > src/wrapper/tf_gen.ml.depends
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tf_bindings.ml > src/wrapper/tf_bindings.ml.depends
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tf_bindings.cmo src/wrapper/tf_bindings.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tf_gen.cmo src/wrapper/tf_gen.ml
+# ocamlfind ocamlc -linkpkg -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper src/wrapper/tf_bindings.cmo src/wrapper/tf_gen.cmo -o src/wrapper/tf_gen.byte
+# src/wrapper/tf_gen.byte
+# ocamlfind ocamlc -package ctypes -package ctypes.foreign -package ctypes.stubs -c src/wrapper/tf_stubs.c
+# + ocamlfind ocamlc -package ctypes -package ctypes.foreign -package ctypes.stubs -c src/wrapper/tf_stubs.c
+# src/wrapper/tf_stubs.c: In function 'caml__12_TF_Message':
+# src/wrapper/tf_stubs.c:92:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+#     char* x70 = TF_Message(x69);
+#                 ^~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__13_TF_OperationName':
+# src/wrapper/tf_stubs.c:98:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+#     char* x73 = TF_OperationName(x72);
+#                 ^~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__14_TF_OperationOpType':
+# src/wrapper/tf_stubs.c:104:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+#     char* x76 = TF_OperationOpType(x75);
+#                 ^~~~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__15_TF_OperationDevice':
+# src/wrapper/tf_stubs.c:110:16: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+#     char* x79 = TF_OperationDevice(x78);
+#                 ^~~~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__34_TF_SetAttrStringList':
+# src/wrapper/tf_stubs.c:254:37: warning: passing argument 3 of 'TF_SetAttrStringList' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SetAttrStringList(x193, x194, x195, x196, x197);
+#                                      ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:436:13: note: expected 'const void * const*' but argument is of type 'void **'
+#  extern void TF_SetAttrStringList(TF_OperationDescription* desc,
+#              ^~~~~~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__42_TF_SetAttrTypeList':
+# src/wrapper/tf_stubs.c:326:35: warning: passing argument 3 of 'TF_SetAttrTypeList' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SetAttrTypeList(x274, x275, x276, x277);
+#                                    ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:457:13: note: expected 'const TF_DataType * {aka const enum <anonymous> *}' but argument is of type 'int *'
+#  extern void TF_SetAttrTypeList(TF_OperationDescription* desc,
+#              ^~~~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__44_TF_SetAttrShapeList':
+# src/wrapper/tf_stubs.c:347:36: warning: passing argument 3 of 'TF_SetAttrShapeList' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SetAttrShapeList(x297, x298, x299, x300, x301);
+#                                     ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:471:13: note: expected 'const int64_t * const* {aka const long int * const*}' but argument is of type 'int64_t ** {aka long int **}'
+#  extern void TF_SetAttrShapeList(TF_OperationDescription* desc,
+#              ^~~~~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__46_TF_SetAttrTensorList':
+# src/wrapper/tf_stubs.c:368:37: warning: passing argument 3 of 'TF_SetAttrTensorList' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SetAttrTensorList(x319, x320, x321, x322, x325);
+#                                      ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:492:13: note: expected 'TF_Tensor * const* {aka struct TF_Tensor * const*}' but argument is of type 'void **'
+#  extern void TF_SetAttrTensorList(TF_OperationDescription* desc,
+#              ^~~~~~~~~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c: In function 'caml__54_TF_SessionRun':
+# src/wrapper/tf_stubs.c:436:36: warning: passing argument 4 of 'TF_SessionRun' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SessionRun(x377, x378, x379, x380, x381, x384, x385, x386, x389,
+#                                     ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:900:13: note: expected 'TF_Tensor * const* {aka struct TF_Tensor * const*}' but argument is of type 'void **'
+#  extern void TF_SessionRun(TF_Session* session,
+#              ^~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c:436:54: warning: passing argument 7 of 'TF_SessionRun' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SessionRun(x377, x378, x379, x380, x381, x384, x385, x386, x389,
+#                                                       ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:900:13: note: expected 'TF_Tensor ** {aka struct TF_Tensor **}' but argument is of type 'void **'
+#  extern void TF_SessionRun(TF_Session* session,
+#              ^~~~~~~~~~~~~
+# src/wrapper/tf_stubs.c:436:66: warning: passing argument 9 of 'TF_SessionRun' from incompatible pointer type [-Wincompatible-pointer-types]
+#     TF_SessionRun(x377, x378, x379, x380, x381, x384, x385, x386, x389,
+#                                                                   ^~~~
+# In file included from src/wrapper/tf_stubs.c:1:0:
+# src/wrapper/c_api.h:900:13: note: expected 'const TF_Operation * const* {aka const struct TF_Operation * const*}' but argument is of type 'void **'
+#  extern void TF_SessionRun(TF_Session* session,
+#              ^~~~~~~~~~~~~
+# mv tf_stubs.o src/wrapper/tf_stubs.o
+# ocamlfind ocamlmklib -o tensorflowcstubs src/wrapper/tf_stubs.o
+# ocamlbuild tensorflow_core.cmxa tensorflow_core.cma tensorflow_core.cmxs tensorflow_core.cmx
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/protobuf.mli > src/wrapper/protobuf.mli.depends
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/protobuf.cmi src/wrapper/protobuf.mli
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/protobuf.ml > src/wrapper/protobuf.ml.depends
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tensor.mli > src/wrapper/tensor.mli.depends
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tensor.cmi src/wrapper/tensor.mli
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tensor.ml > src/wrapper/tensor.ml.depends
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/wrapper.mli > src/wrapper/wrapper.mli.depends
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/wrapper.cmi src/wrapper/wrapper.mli
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/wrapper.ml > src/wrapper/wrapper.ml.depends
+# ocamlfind ocamldep -package ctypes -package ctypes.foreign -package ctypes.stubs -modules src/wrapper/tf_generated.ml > src/wrapper/tf_generated.ml.depends
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tf_generated.cmo src/wrapper/tf_generated.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/protobuf.cmo src/wrapper/protobuf.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tensor.cmo src/wrapper/tensor.ml
+# ocamlfind ocamlc -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/wrapper.cmo src/wrapper/wrapper.ml
+# ocamlfind ocamlc -pack src/wrapper/protobuf.cmo src/wrapper/tensor.cmo src/wrapper/tf_bindings.cmo src/wrapper/wrapper.cmo -o tensorflow_core.cmo
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tensor.cmx src/wrapper/tensor.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tf_bindings.cmx src/wrapper/tf_bindings.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/tf_generated.cmx src/wrapper/tf_generated.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/protobuf.cmx src/wrapper/protobuf.ml
+# ocamlfind ocamlopt -c -for-pack Tensorflow_core -warn-error '' -w A-4-29-40-41-42-44-45-48-56-58 -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper -o src/wrapper/wrapper.cmx src/wrapper/wrapper.ml
+# touch tensorflow_core.mli  ; if  ocamlfind ocamlopt -pack -I src/wrapper src/wrapper/protobuf.cmx src/wrapper/tensor.cmx src/wrapper/tf_bindings.cmx src/wrapper/wrapper.cmx -o tensorflow_core.cmx  ; then  rm -f tensorflow_core.mli  ; else  rm -f tensorflow_core.mli  ; exit 1; fi
+# ocamlfind ocamlopt -a -cclib -ltensorflowcstubs -cclib -ltensorflow -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper src/wrapper/tf_generated.cmx tensorflow_core.cmx -o tensorflow_core.cmxa
+# ocamlfind ocamlc -a -cclib -ltensorflowcstubs -cclib -ltensorflow -package ctypes -package ctypes.foreign -package ctypes.stubs -I src/wrapper src/wrapper/tf_generated.cmo tensorflow_core.cmo -o tensorflow_core.cma
+# ocamlfind ocamlopt -shared -linkall -package ctypes -package ctypes.foreign -package ctypes.stubs tensorflow_core.cmxa -o tensorflow_core.cmxs
+# + ocamlfind ocamlopt -shared -linkall -package ctypes -package ctypes.foreign -package ctypes.stubs tensorflow_core.cmxa -o tensorflow_core.cmxs
+# /usr/bin/ld: cannot find -ltensorflowcstubs
+# /usr/bin/ld: cannot find -ltensorflow
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+# Command exited with code 2.
+# Makefile:6: recipe for target 'tensorflow_core.lib' failed
+# make: *** [tensorflow_core.lib] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build tensorflow 0.0.9
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install bin_prot                113.33.00+4.03
+| - install cmdliner                1.0.2
+| - install conf-pkg-config         1.1
+| - install core_kernel             113.33.02+4.03
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install ctypes                  0.14.0
+| - install ctypes-foreign          0.4.0
+| - install fieldslib               113.24.00
+| - install integers                0.2.2
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_assert              113.33.00
+| - install ppx_bench               113.33.00+4.03
+| - install ppx_bin_prot            113.33.00+4.03
+| - install ppx_compare             113.33.00+4.03
+| - install ppx_core                113.33.01+4.03
+| - install ppx_custom_printf       113.33.00+4.03
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              113.33.02+4.03
+| - install ppx_enumerate           113.33.00+4.03
+| - install ppx_expect              113.33.01+4.03
+| - install ppx_fail                113.33.00+4.03
+| - install ppx_fields_conv         113.33.00+4.03
+| - install ppx_here                113.33.00
+| - install ppx_inline_test         113.33.00+4.03
+| - install ppx_jane                113.33.00
+| - install ppx_let                 113.33.00+4.03
+| - install ppx_optcomp             113.33.01+4.03
+| - install ppx_pipebang            113.33.00+4.03
+| - install ppx_sexp_conv           113.33.01+4.03
+| - install ppx_sexp_message        113.33.00+4.03
+| - install ppx_sexp_value          113.33.00+4.03
+| - install ppx_tools               5.0
+| - install ppx_type_conv           113.33.02+4.03
+| - install ppx_typerep_conv        113.33.00+4.03
+| - install ppx_variants_conv       113.33.00+4.03
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 113.33.00+4.03
+| - install topkg                   0.9.1
+| - install typerep                 113.24.00
+| - install variantslib             113.24.00
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180817053331.export"
+31 1534483998 1534484426

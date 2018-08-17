@@ -1,0 +1,33 @@
+$ opam depext -iy -j 2 virtual_dom.v0.9.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for virtual_dom.v0.9.1: The following dependencies couldn't be met:
+          - virtual_dom -> base >= v0.9.4 -> sexplib = v0.9.3 -> base < v0.9.1
+          - virtual_dom -> base >= v0.9.4 -> sexplib = v0.9.3 -> ocaml (< 4.03.0 | >= 4.05.0)
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_sexp_conv < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_sexp_conv < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_optional < v0.10 -> ppx_metaquot < v0.10
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert (>= v0.9 & < v0.10) -> base < v0.10 -> sexplib = v0.9.3 -> base < v0.9.1
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert (>= v0.9 & < v0.10) -> base < v0.10 -> sexplib = v0.9.3 -> ocaml (< 4.03.0 | >= 4.05.0)
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert (>= v0.9 & < v0.10) -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert (>= v0.9 & < v0.10) -> ppx_metaquot >= v0.10
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert (>= v0.9 & < v0.10) -> ppx_sexp_conv < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert (>= v0.9 & < v0.10) -> ppx_sexp_conv < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - virtual_dom -> ppx_jane (>= v0.9 & < v0.10) -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of base satisfies the constraints
+          - No available version of ppx_assert satisfies the constraints
+          - No available version of ppx_jane satisfies the constraints
+          - No available version of ppx_metaquot satisfies the constraints
+          - No available version of sexplib satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=virtual_dom.v0.9.1 returned 20
+20 1534481402 1534481406

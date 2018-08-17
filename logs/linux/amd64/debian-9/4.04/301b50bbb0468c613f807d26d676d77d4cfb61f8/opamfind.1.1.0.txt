@@ -1,0 +1,262 @@
+$ opam depext -iy -j 2 opamfind.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libpcre3-dev
+m4
+pkg-config
+# The following new OS packages need to be installed: libpcre3-dev pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libpcre3-dev pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0v5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-libpcrecpp0v5_2%3a8.39-3_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-3) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../02-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../04-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../05-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../06-libpcre16-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../07-libpcre32-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../08-libpcre3-dev_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-3) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-3) ...
+Setting up libpcre32-3:amd64 (2:8.39-3) ...
+Setting up libpcre16-3:amd64 (2:8.39-3) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libpcre3-dev:amd64 (2:8.39-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocaml-compiler-libs     v0.11.0 [required by camlon]
+  - install sexplib0                v0.11.0 [required by base]
+  - install ppx_tools               5.0     [required by ppx_monadic, ppx_orakuda]
+  - install ppx_derivers            1.0     [required by ppx_deriving]
+  - install result                  1.3     [required by ppx_deriving]
+  - install re                      1.7.3   [required by ppx_orakuda]
+  - install base-bytes              base    [required by pcre]
+  - install ocamlbuild              0.12.0  [required by ppx_deriving]
+  - install conf-pkg-config         1.1     [required by conf-libpcre]
+  - install omake                   0.9.8.7 [required by opamfind]
+  - install base                    v0.11.1 [required by pcre]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppx_deriving]
+  - install cppo                    1.6.4   [required by ppx_deriving]
+  - install conf-libpcre            1       [required by pcre]
+  - install ppxx                    1.4.0   [required by ppx_monadic, ppx_meta_conv, ppx_orakuda]
+  - install camlon                  1.0.2   [required by opamfind]
+  - install stdio                   v0.11.0 [required by pcre]
+  - install cppo_ocamlbuild         1.6.0   [required by ppx_deriving]
+  - install ppx_test                1.4.2   [required by spotlib]
+  - install ppx_monadic             1.0.6   [required by opamfind]
+  - install configurator            v0.11.0 [required by pcre]
+  - install ppx_deriving            4.2.1   [required by ppx_meta_conv]
+  - install spotlib                 3.1.2   [required by opamfind]
+  - install pcre                    7.3.4   [required by ppx_orakuda]
+  - install ppx_meta_conv           2.6.0   [required by opamfind]
+  - install ppx_orakuda             3.0.3   [required by opamfind]
+  - install opamfind                1.1.0
+===== 27 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlon.1.0.2] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[omake.0.9.8.7] found in cache
+[opamfind.1.1.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_meta_conv.2.6.0] found in cache
+[ppx_monadic.1.0.6] found in cache
+[ppx_orakuda.3.0.3] found in cache
+[ppx_test.1.4.2] found in cache
+[ppx_tools.5.0] found in cache
+[ppxx.1.4.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[spotlib.3.1.2] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed cppo.1.6.4
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_deriving.4.2.1
+-> installed sexplib0.v0.11.0
+-> installed omake.0.9.8.7
+-> installed base.v0.11.1
+-> installed camlon.1.0.2
+-> installed ppxx.1.4.0
+-> installed ppx_monadic.1.0.6
+-> installed ppx_test.1.4.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed spotlib.3.1.2
+-> installed ppx_meta_conv.2.6.0
+-> installed ppx_orakuda.3.0.3
+[ERROR] The compilation of opamfind failed at "/home/opam/.opam/4.04/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling opamfind.1.1.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/opamfind.1.1.0
+# command              ~/.opam/4.04/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/opamfind-11-c85b3b.env
+# output-file          ~/.opam/log/opamfind-11-c85b3b.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# *** omake: reading OMakefiles
+# File OMyMakefile: line 44, characters 2-21:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 226, characters 3-26:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 756, characters 6-34:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.04/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.04/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.04/bin/ocamlopt.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# *** omake: finished reading OMakefiles (0.05 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - scan src scan-ocaml-module_path.mli
+# + ocamlfind ocamldep -package spotlib,findlib,compiler-libs.common,ppx_meta_conv_ocaml,ppx_orakuda.regexp_re_pcre,ppx_monadic -modules module_path.mli
+#      | Shell.ocamldep-postproc()
+# File "_none_", line 1:
+# Error: Cannot load /home/opam/.opam/4.04/lib/re/re_perl.cmxs: cannot find file /home/opam/.opam/4.04/lib/re/re_perl.cmxs in search path
+# *** omake: 16/79 targets are up to date
+# *** omake: failed (0.11 sec, 1/1 scans, 0/0 rules, 11/81 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    <scanner src/scan-ocaml-module_path.mli>
+#       depends on: src/module_path.mli
+# E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/opam/.opam/4.04\"' terminated with error code 2")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build opamfind 1.1.0
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install camlon                  1.0.2
+| - install conf-libpcre            1
+| - install conf-pkg-config         1.1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install omake                   0.9.8.7
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_meta_conv           2.6.0
+| - install ppx_monadic             1.0.6
+| - install ppx_orakuda             3.0.3
+| - install ppx_test                1.4.2
+| - install ppx_tools               5.0
+| - install ppxx                    1.4.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib0                v0.11.0
+| - install spotlib                 3.1.2
+| - install stdio                   v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180817050034.export"
+31 1534482021 1534482153
