@@ -1,0 +1,176 @@
+$ opam depext -iy -j 2 ocaml-http.0.1.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+pcre-devel
+pkgconfig
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Thu Aug 16 20:06:38 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pcre-devel is not installed
+package pkgconfig is not installed
+# The following new OS packages need to be installed: pcre-devel pkgconfig
+The following command needs to be run through "sudo":
+    yum install -y pcre-devel pkgconfig
+Last metadata expiration check: 4:22:54 ago on Thu Aug 16 20:06:07 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package            Arch           Version                Repository       Size
+================================================================================
+Installing:
+ pcre-devel         x86_64         8.42-2.fc28            updates         550 k
+Installing dependencies:
+ pcre-cpp           x86_64         8.42-2.fc28            updates          46 k
+ pcre-utf16         x86_64         8.42-2.fc28            updates         193 k
+ pcre-utf32         x86_64         8.42-2.fc28            updates         184 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 973 k
+Installed size: 2.6 M
+Downloading Packages:
+(1/4): pcre-cpp-8.42-2.fc28.x86_64.rpm          456 kB/s |  46 kB     00:00    
+(2/4): pcre-utf16-8.42-2.fc28.x86_64.rpm        1.6 MB/s | 193 kB     00:00    
+(3/4): pcre-devel-8.42-2.fc28.x86_64.rpm        4.3 MB/s | 550 kB     00:00    
+(4/4): pcre-utf32-8.42-2.fc28.x86_64.rpm        5.7 MB/s | 184 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.3 MB/s | 973 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                          1/4 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                          2/4 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                            3/4 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                          4/4 
+  Running scriptlet: pcre-devel-8.42-2.fc28.x86_64                          4/4 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                          1/4 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                            2/4 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                          3/4 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                          4/4 
+
+Installed:
+  pcre-devel.x86_64 8.42-2.fc28          pcre-cpp.x86_64 8.42-2.fc28           
+  pcre-utf16.x86_64 8.42-2.fc28          pcre-utf32.x86_64 8.42-2.fc28         
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides pcre-devel pkgconfig
+pcre-devel-8.42-2.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install base-bytes      base    [required by ocamlnet]
+  - install ocamlbuild      0.12.0  [required by camlp4, ocamlnet]
+  - install conf-pkg-config 1.1     [required by conf-libpcre]
+  - install base            v0.11.1 [required by pcre]
+  - install camlp4          4.06+1  [required by ocaml-http]
+  - install conf-libpcre    1       [required by pcre]
+  - install stdio           v0.11.0 [required by pcre]
+  - install configurator    v0.11.0 [required by pcre]
+  - install pcre            7.3.4   [required by ocaml-http]
+  - install ocamlnet        4.1.6   [required by ocaml-http]
+  - install ocaml-http      0.1.5
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camlp4.4.06+1] found in cache
+[configurator.v0.11.0] found in cache
+[ocaml-http.0.1.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlnet.4.1.6] found in cache
+[pcre.7.3.4] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed camlp4.4.06+1
+-> installed ocamlnet.4.1.6
+[ERROR] The compilation of ocaml-http failed at "/usr/bin/make all".
+
+#=== ERROR while compiling ocaml-http.0.1.5 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ocaml-http.0.1.5
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/ocaml-http-10-66b88b.env
+# output-file          ~/.opam/log/ocaml-http-10-66b88b.out
+### output ###
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_types.mli
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_constants.mli
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_constants.ml
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_types.ml
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_parser_sanity.mli
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_parser_sanity.ml
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_misc.mli
+# ocamlfind ocamlc  -pp camlp4o -package "unix str pcre netstring" -c http_misc.ml
+# File "http_misc.ml", line 126, characters 29-32:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# make: *** [Makefile:74: http_misc.cmo] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocaml-http 0.1.5
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install base-bytes      base
+| - install camlp4          4.06+1
+| - install conf-libpcre    1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install ocamlbuild      0.12.0
+| - install ocamlnet        4.1.6
+| - install pcre            7.3.4
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180817002905.export"
+31 1534465737 1534465916

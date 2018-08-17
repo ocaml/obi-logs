@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 shared-memory-ring.1.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for shared-memory-ring.1.1.1: The following dependencies couldn't be met:
+          - shared-memory-ring -> cstruct < 2.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - shared-memory-ring -> cstruct < 2.0.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=shared-memory-ring.1.1.1 returned 20
+20 1534466111 1534466114
