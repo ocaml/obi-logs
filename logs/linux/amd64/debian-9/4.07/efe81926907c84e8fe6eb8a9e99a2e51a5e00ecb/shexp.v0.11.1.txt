@@ -1,0 +1,107 @@
+$ opam depext -iy -j 2 shexp.v0.11.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install spawn                   v0.12.0 [required by shexp]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install num                     1.1     [required by sexplib]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install ocaml-migrate-parsetree 1.0.11  [required by posixat]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by shexp]
+  - install sexplib                 v0.11.0 [required by posixat]
+  - install stdio                   v0.11.0 [required by ppx_optcomp]
+  - install ppxlib                  0.3.0   [required by ppx_optcomp, ppx_sexp_conv]
+  - install ppx_sexp_conv           v0.11.2 [required by posixat]
+  - install ppx_optcomp             v0.11.0 [required by posixat]
+  - install posixat                 v0.11.0 [required by shexp]
+  - install shexp                   v0.11.1
+===== 16 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[parsexp.v0.11.0] found in cache
+[posixat.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppxlib.0.3.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[shexp.v0.11.1] found in cache
+[spawn.v0.12.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed parsexp.v0.11.0
+-> installed base.v0.11.1
+-> installed sexplib.v0.11.0
+-> installed spawn.v0.12.0
+-> installed stdio.v0.11.0
+-> installed ppxlib.0.3.0
+-> installed ppx_optcomp.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed posixat.v0.11.0
+[ERROR] The compilation of shexp failed at "/home/opam/.opam/4.07/bin/jbuilder build -p shexp -j 71".
+
+#=== ERROR while compiling shexp.v0.11.1 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/shexp.v0.11.1
+# command              ~/.opam/4.07/bin/jbuilder build -p shexp -j 71
+# exit-code            1
+# env-file             ~/.opam/log/shexp-11-86cb45.env
+# output-file          ~/.opam/log/shexp-11-86cb45.out
+### output ###
+#       ocamlc process-lib/src/.shexp_process.objs/shexp_process__Import.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I process-lib/src/.shexp_process.objs -I /home/opam/.opam/4.07/lib/base -I /home/opam/.opam/4.07/lib/base/caml -I /home/opam/.opam/4.07/lib/base/shadow_stdlib -I /home/opam/.opam/4.07/lib/ocaml/threads -I /home/opam/.opam/4.07/lib/parsexp -I /home/opam/.opam/4.07/lib/posixat -I /home/opam/.opam/4.07/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.07/lib/sexplib -I /home/opam/.opam/4.07/lib/sexplib0 -I /home/opam/.opam/4.07/lib/spawn -I bigstring-io-lib/src/.shexp_bigstring_io.objs -I bigstring-lib/src/.shexp_bigstring.objs -I sexp-lib/src/.shexp_sexp.objs -no-alias-deps -open Shexp_process__ -o process-lib/src/.shexp_process.objs/shexp_process__Import.cmo -c -impl process-lib/src/import.ml)
+# File "process-lib/src/import.ml", line 7, characters 21-89:
+# Error: In this `with' constraint, the new definition of List
+#        does not match its original definition in the constrained signature:
+#        Modules do not match:
+#          (module List)
+#        is not included in
+#          (module ListLabels)
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build shexp v0.11.1
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install parsexp                 v0.11.0
+| - install posixat                 v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_optcomp             v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppxlib                  0.3.0
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install spawn                   v0.12.0
+| - install stdio                   v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180817201352.export"
+31 1534536830 1534536886
