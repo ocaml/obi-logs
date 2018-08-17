@@ -1,0 +1,335 @@
+$ opam depext -iy -j 2 ppx_expect.113.33.00+4.03
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ppx_tools               5.0            [required by ppx_expect]
+  - install ppx_derivers            1.0            [required by ppx_deriving]
+  - install result                  1.3            [required by ppx_deriving]
+  - install re                      1.7.3          [required by ppx_expect]
+  - install base-bytes              base           [required by cppo]
+  - install ocamlbuild              0.12.0         [required by ppx_expect]
+  - install ocaml-migrate-parsetree 1.0.11         [required by ppx_deriving]
+  - install cppo                    1.6.4          [required by ppx_deriving]
+  - install variantslib             113.24.00      [required by ppx_expect]
+  - install sexplib                 113.33.00+4.03 [required by ppx_expect]
+  - install ppx_core                113.33.01+4.03 [required by ppx_expect]
+  - install fieldslib               113.24.00      [required by ppx_expect]
+  - install cppo_ocamlbuild         1.6.0          [required by ppx_deriving]
+  - install ppx_optcomp             113.33.01+4.03 [required by ppx_driver]
+  - install ppx_deriving            4.2.1          [required by ppx_type_conv]
+  - install ppx_driver              113.33.02+4.03 [required by ppx_expect]
+  - install ppx_type_conv           113.33.02+4.03 [required by ppx_fields_conv, ppx_assert, ppx_variants_conv]
+  - install ppx_inline_test         113.33.00+4.03 [required by ppx_expect]
+  - install ppx_here                113.33.00      [required by ppx_assert]
+  - install ppx_variants_conv       113.33.00+4.03 [required by ppx_expect]
+  - install ppx_sexp_conv           113.33.01+4.03 [required by ppx_expect]
+  - install ppx_fields_conv         113.33.00+4.03 [required by ppx_expect]
+  - install ppx_compare             113.33.00+4.03 [required by ppx_expect]
+  - install ppx_custom_printf       113.33.00+4.03 [required by ppx_expect]
+  - install ppx_assert              113.33.00      [required by ppx_expect]
+  - install ppx_expect              113.33.00+4.03
+===== 26 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[fieldslib.113.24.00] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_assert.113.33.00] found in cache
+[ppx_compare.113.33.00+4.03] found in cache
+[ppx_core.113.33.01+4.03] found in cache
+[ppx_custom_printf.113.33.00+4.03] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.113.33.02+4.03] found in cache
+[ppx_expect.113.33.00+4.03] found in cache
+[ppx_fields_conv.113.33.00+4.03] found in cache
+[ppx_here.113.33.00] found in cache
+[ppx_inline_test.113.33.00+4.03] found in cache
+[ppx_optcomp.113.33.01+4.03] found in cache
+[ppx_sexp_conv.113.33.01+4.03] found in cache
+[ppx_tools.5.0] found in cache
+[ppx_type_conv.113.33.02+4.03] found in cache
+[ppx_variants_conv.113.33.00+4.03] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.113.33.00+4.03] found in cache
+[variantslib.113.24.00] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed fieldslib.113.24.00
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_core.113.33.01+4.03
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.113.33.00+4.03
+-> installed variantslib.113.24.00
+-> installed ppx_optcomp.113.33.01+4.03
+-> installed ppx_driver.113.33.02+4.03
+-> installed ppx_here.113.33.00
+-> installed ppx_inline_test.113.33.00+4.03
+-> installed ppx_type_conv.113.33.02+4.03
+-> installed ppx_compare.113.33.00+4.03
+-> installed ppx_fields_conv.113.33.00+4.03
+-> installed ppx_variants_conv.113.33.00+4.03
+-> installed ppx_sexp_conv.113.33.01+4.03
+-> installed ppx_assert.113.33.00
+-> installed ppx_custom_printf.113.33.00+4.03
+[ERROR] The compilation of ppx_expect failed at "/usr/bin/make".
+
+#=== ERROR while compiling ppx_expect.113.33.00+4.03 ==========================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/ppx_expect.113.33.00+4.03
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ppx_expect-10-8fe22c.env
+# output-file          ~/.opam/log/ppx_expect-10-8fe22c.out
+### output ###
+# ocamlopt.opt -o setup.exe setup.ml || ocamlopt -o setup.exe setup.ml || ocamlc -o setup.exe setup.ml
+# File "setup.ml", line 316, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 316, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 325, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 325, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 328, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 366, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 472, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "setup.ml", line 1823, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 1829, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# for f in setup.*; do [ $f = setup.exe -o $f = setup.ml ] || rm -f $f; done
+# ./setup.exe -configure 
+# 
+# Configuration: 
+# ocamlfind: ........................................... /home/opam/.opam/4.04/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.04/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.04/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.04/bin/ocamlbuild
+# Package name: ........................................ ppx_expect
+# Package version: ..................................... 113.33.00+4.03
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.04.2
+# standard_library_default: ............................ /home/opam/.opam/4.04/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.04/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.04/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+# native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ...................................... 
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_sexplib: ......................................... /home/opam/.opam/4.04/lib/sexplib
+# pkg_fieldslib: ....................................... /home/opam/.opam/4.04/lib/fieldslib
+# pkg_ppx_inline_test_runtime_lib: ..................... /home/opam/.opam/4.04/lib/ppx_inline_test
+# pkg_ppx_assert_runtime_lib: .......................... /home/opam/.opam/4.04/lib/ppx_assert
+# pkg_re: .............................................. /home/opam/.opam/4.04/lib/re
+# pkg_variantslib: ..................................... /home/opam/.opam/4.04/lib/variantslib
+# pkg_ppx_core: ........................................ /home/opam/.opam/4.04/lib/ppx_core
+# pkg_ppx_tools_metaquot: .............................. /home/opam/.opam/4.04/lib/ppx_tools
+# pkg_ppx_driver: ...................................... /home/opam/.opam/4.04/lib/ppx_driver
+# pkg_ppx_inline_test: ................................. /home/opam/.opam/4.04/lib/ppx_inline_test
+# pkg_ppx_inline_test_libname: ......................... /home/opam/.opam/4.04/lib/ppx_inline_test
+# 
+# ./setup.exe -build 
+# W: Cannot find source file matching module 'ppx_expect' in library ppx_expect
+# W: Cannot find source file matching module 'Expectation_lifter' in library ppx_expect
+# W: Cannot find source file matching module 'expect_test_matcher' in library expect_test_matcher
+# W: Cannot find source file matching module 'expect_test_common' in library expect_test_common
+# ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -predicates ppx_driver -linkpkg -o ppx-driver-ppx_compare+ppx_sexp_conv.native -package ppx_compare,ppx_sexp_conv ppx_driver_runner.cmxa
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -predicates ppx_driver -linkpkg -o ppx-driver-ppx_compare+ppx_sexp_conv.native -package ppx_compare,ppx_sexp_conv ppx_driver_runner.cmxa
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml, /home/opam/.opam/4.04/lib/ocaml/compiler-libs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -predicates ppx_driver -modules common/expectation.mli > common/expectation.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -predicates ppx_driver -modules common/file.mli > common/file.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/file.cmi common/file.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/expectation.cmi common/expectation.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -predicates ppx_driver -modules common/expectation.ml > common/expectation.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -predicates ppx_driver -modules common/file.ml > common/file.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -predicates ppx_driver -modules common/std.ml > common/std.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -for-pack Expect_test_common -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/expectation.cmo common/expectation.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -for-pack Expect_test_common -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/file.cmo common/file.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -for-pack Expect_test_common -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/std.cmo common/std.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -pack -g -annot -bin-annot common/file.cmo common/expectation.cmo common/std.cmo -o common/expect_test_common.cmo
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -a -thread -I common common/expect_test_common.cmo -o common/expect_test_common.cma
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -for-pack Expect_test_common -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/file.cmx common/file.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -for-pack Expect_test_common -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/expectation.cmx common/expectation.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -package sexplib -for-pack Expect_test_common -pp './ppx-driver-ppx_compare+ppx_sexp_conv.native -dump-ast' -predicates ppx_driver -w -40 -I common -I namespace_wrappers -o common/std.cmx common/std.ml
+# touch common/expect_test_common.mli  ; if  /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -pack -g -annot -bin-annot -I common common/file.cmx common/expectation.cmx common/std.cmx -o common/expect_test_common.cmx  ; then  rm -f common/expect_test_common.mli  ; else  rm -f common/expect_test_common.mli  ; exit 1; fi
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -a -thread -I common common/expect_test_common.cmx -o common/expect_test_common.cmxa
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -shared -linkall -I common common/expect_test_common.cmxa -o common/expect_test_common.cmxs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -predicates ppx_driver -predicates ppx_driver -modules config/expect_test_config.mli > config/expect_test_config.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -predicates ppx_driver -w -40 -I config -I namespace_wrappers -o config/expect_test_config.cmi config/expect_test_config.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -predicates ppx_driver -predicates ppx_driver -modules config/expect_test_config.ml > config/expect_test_config.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -predicates ppx_driver -w -40 -I config -I namespace_wrappers -o config/expect_test_config.cmo config/expect_test_config.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -a -thread -I config config/expect_test_config.cmo -o config/expect_test_config.cma
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -predicates ppx_driver -w -40 -I config -I namespace_wrappers -o config/expect_test_config.cmx config/expect_test_config.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -a -thread -I config config/expect_test_config.cmx -o config/expect_test_config.cmxa
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -shared -linkall -I config config/expect_test_config.cmxa -o config/expect_test_config.cmxs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -predicates ppx_driver -linkpkg -o ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -package ppx_custom_printf,ppx_fields_conv,ppx_inline_test ppx_driver_runner.cmxa
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -predicates ppx_driver -linkpkg -o ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -package ppx_custom_printf,ppx_fields_conv,ppx_inline_test ppx_driver_runner.cmxa
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml, /home/opam/.opam/4.04/lib/ocaml/compiler-libs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package ppx_inline_test.runtime-lib -package fieldslib -pp './ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules collector/expect_test_collector.mli > collector/expect_test_collector.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -I config -package sexplib -package ppx_inline_test.runtime-lib -package fieldslib -pp './ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I collector -I common -I config -I namespace_wrappers -o collector/expect_test_collector.cmi collector/expect_test_collector.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package ppx_inline_test.runtime-lib -package fieldslib -pp './ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules collector/expect_test_collector.ml > collector/expect_test_collector.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -I config -package sexplib -package ppx_inline_test.runtime-lib -package fieldslib -pp './ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I collector -I common -I config -I namespace_wrappers -o collector/expect_test_collector.cmo collector/expect_test_collector.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -a -thread -I collector collector/expect_test_collector.cmo -o collector/expect_test_collector.cma
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -no-alias-deps -thread -I common -I config -package sexplib -package ppx_inline_test.runtime-lib -package fieldslib -pp './ppx-driver-ppx_custom_printf+ppx_fields_conv+ppx_inline_test.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I collector -I common -I config -I namespace_wrappers -o collector/expect_test_collector.cmx collector/expect_test_collector.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -a -thread -I collector collector/expect_test_collector.cmx -o collector/expect_test_collector.cmxa
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -shared -linkall -I collector collector/expect_test_collector.cmxa -o collector/expect_test_collector.cmxs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -g -thread -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -c matcher/fnmatch_stub.c
+# mv fnmatch_stub.o matcher/fnmatch_stub.o
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlmklib -o matcher/expect_test_matcher_stubs matcher/fnmatch_stub.o
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -predicates ppx_driver -linkpkg -o ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -package ppx_assert,ppx_compare,ppx_custom_printf,ppx_inline_test,ppx_sexp_conv,ppx_variants_conv ppx_driver_runner.cmxa
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlopt -predicates ppx_driver -linkpkg -o ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -package ppx_assert,ppx_compare,ppx_custom_printf,ppx_inline_test,ppx_sexp_conv,ppx_variants_conv ppx_driver_runner.cmxa
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml, /home/opam/.opam/4.04/lib/ocaml/compiler-libs
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/choose_tag.mli > matcher/choose_tag.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/choose_tag.cmi matcher/choose_tag.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/choose_tag.ml > matcher/choose_tag.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/lexer.mli > matcher/lexer.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/cst.mli > matcher/cst.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/fmt.mli > matcher/fmt.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/cst.cmi matcher/cst.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/fmt.cmi matcher/fmt.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/lexer.cmi matcher/lexer.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/cst.ml > matcher/cst.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/fmt.ml > matcher/fmt.ml.depends
+# /home/opam/.opam/4.04/bin/ocamllex.opt -q matcher/lexer.mll
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/lexer.ml > matcher/lexer.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/matcher.mli > matcher/matcher.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/reconcile.mli > matcher/reconcile.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/reconcile.cmi matcher/reconcile.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/matcher.cmi matcher/matcher.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/matcher.ml > matcher/matcher.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/reconcile.ml > matcher/reconcile.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -predicates ppx_driver -predicates ppx_driver -modules namespace_wrappers/ocaml_re.mli > namespace_wrappers/ocaml_re.mli.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -w -49 -predicates ppx_driver -w -40 -I namespace_wrappers -o namespace_wrappers/ocaml_re.cmi namespace_wrappers/ocaml_re.mli
+# /home/opam/.opam/4.04/bin/ocamlfind ocamldep -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -predicates ppx_driver -modules matcher/std.ml > matcher/std.ml.depends
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/choose_tag.cmo matcher/choose_tag.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/cst.cmo matcher/cst.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/fmt.cmo matcher/fmt.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/lexer.cmo matcher/lexer.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/matcher.cmo matcher/matcher.ml
+# /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/reconcile.cmo matcher/reconcile.ml
+# + /home/opam/.opam/4.04/bin/ocamlfind ocamlc -c -g -annot -bin-annot -no-alias-deps -thread -I common -package sexplib -package variantslib -package re -package ppx_inline_test.runtime-lib -package ppx_assert.runtime-lib -for-pack Expect_test_matcher -pp './ppx-driver-ppx_assert+ppx_compare+ppx_custom_printf+ppx_inline_test+ppx_sexp_conv+ppx_variants_conv.native -dump-ast -inline-test-drop -inline-test-lib fake_for_drop' -predicates ppx_driver -w -40 -I matcher -I common -I namespace_wrappers -o matcher/reconcile.cmo matcher/reconcile.ml
+# File "matcher/reconcile.ml", line 39, characters 25-36:
+# Error: The module Re_emacs is an alias for module Re_emacs, which is missing
+# Command exited with code 2.
+# + ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.04/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.04/lib/ocaml/compiler-libs, /home/opam/.opam/4.04/lib/ocaml
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.04/bin/ocamlbuild' common/expect_test_common.cma common/expect_test_common.cmxa common/expect_test_common.a common/expect_test_common.cmxs config/expect_test_config.cma config/expect_test_config.cmxa config/expect_test_config.a config/expect_test_config.cmxs collector/expect_test_collector.cma collector/expect_test_collector.cmxa collector/expect_test_collector.a collector/expect_test_collector.cmxs matcher/libexpect_test_matcher_stubs.a matcher/dllexpect_test_matcher_stubs.so matcher/expect_test_matcher.cma matcher/expect_test_matcher.cmxa matcher/expect_test_matcher.a matcher/expect_test_matcher.cmxs expect_payload/ppx_expect_payload.cma expect_payload/ppx_expect_payload.cmxa expect_payload/ppx_expect_payload.a expect_payload/ppx_expect_payload.cmxs src/ppx_expect.cma src/ppx_expect.cmxa src/ppx_expect.a src/ppx_expect.cmxs as_ppx/ppx.native -use-ocamlfind -plugin-tags 'package(ppx_driver.ocamlbuild)' -tag debug' terminated with error code 10")
+# Makefile:15: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_expect 113.33.00+4.03
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install fieldslib               113.24.00
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_assert              113.33.00
+| - install ppx_compare             113.33.00+4.03
+| - install ppx_core                113.33.01+4.03
+| - install ppx_custom_printf       113.33.00+4.03
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_driver              113.33.02+4.03
+| - install ppx_fields_conv         113.33.00+4.03
+| - install ppx_here                113.33.00
+| - install ppx_inline_test         113.33.00+4.03
+| - install ppx_optcomp             113.33.01+4.03
+| - install ppx_sexp_conv           113.33.01+4.03
+| - install ppx_tools               5.0
+| - install ppx_type_conv           113.33.02+4.03
+| - install ppx_variants_conv       113.33.00+4.03
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 113.33.00+4.03
+| - install variantslib             113.24.00
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180817220238.export"
+31 1534543354 1534543512
