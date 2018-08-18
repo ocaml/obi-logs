@@ -1,0 +1,117 @@
+$ opam depext -iy -j 2 fstar.0.9.4.0-beta0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libgmp-dev
+m4
+perl
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libgmp-dev m4 perl
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp    1             [required by zarith]
+  - install conf-which  1             [required by biniou]
+  - install base-bytes  base          [required by fileutils, stdint]
+  - install conf-perl   1             [required by zarith]
+  - install ocamlbuild  0.12.0        [required by fstar]
+  - install easy-format 1.3.1         [required by yojson]
+  - install num         1.1           [required by batteries]
+  - install stdint      0.5.1         [required by fstar]
+  - install cppo        1.6.4         [required by yojson]
+  - install zarith      1.7           [required by fstar]
+  - install pprint      20180528      [required by fstar]
+  - install fileutils   0.5.3         [required by fstar]
+  - install biniou      1.2.0         [required by yojson]
+  - install batteries   2.8.0         [required by fstar]
+  - install yojson      1.4.1         [required by fstar]
+  - install fstar       0.9.4.0-beta0
+===== 16 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[batteries.2.8.0] found in cache
+[biniou.1.2.0] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[fileutils.0.5.3] found in cache
+[fstar.0.9.4.0-beta0] found in cache
+[num.1.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[pprint.20180528] found in cache
+[stdint.0.5.1] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-gmp.1
+-> installed conf-perl.1
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed fileutils.0.5.3
+-> installed pprint.20180528
+-> installed stdint.0.5.1
+-> installed yojson.1.4.1
+-> installed zarith.1.7
+-> installed batteries.2.8.0
+[ERROR] The compilation of fstar failed at "/usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output".
+
+#=== ERROR while compiling fstar.0.9.4.0-beta0 ================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/fstar.0.9.4.0-beta0
+# command              /usr/bin/make PREFIX=/home/opam/.opam/4.06 -C src/ocaml-output
+# exit-code            2
+# env-file             ~/.opam/log/fstar-11-de2abc.env
+# output-file          ~/.opam/log/fstar-11-de2abc.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.4.0-beta0/src/ocaml-output'
+# cp "../extraction/ml/FStar_Extraction_ML_PrintML_4.06.1.ml" ../extraction/ml/FStar_Extraction_ML_PrintML.ml
+# cp: cannot stat '../extraction/ml/FStar_Extraction_ML_PrintML_4.06.1.ml': No such file or directory
+# Makefile:54: recipe for target '../extraction/ml/FStar_Extraction_ML_PrintML.ml' failed
+# make: *** [../extraction/ml/FStar_Extraction_ML_PrintML.ml] Error 1
+# make: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/fstar.0.9.4.0-beta0/src/ocaml-output'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build fstar 0.9.4.0-beta0
++- 
++- The following changes have been performed
+| - install base-bytes  base
+| - install batteries   2.8.0
+| - install biniou      1.2.0
+| - install conf-gmp    1
+| - install conf-perl   1
+| - install conf-which  1
+| - install cppo        1.6.4
+| - install easy-format 1.3.1
+| - install fileutils   0.5.3
+| - install num         1.1
+| - install ocamlbuild  0.12.0
+| - install pprint      20180528
+| - install stdint      0.5.1
+| - install yojson      1.4.1
+| - install zarith      1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818055732.export"
+31 1534571844 1534571896

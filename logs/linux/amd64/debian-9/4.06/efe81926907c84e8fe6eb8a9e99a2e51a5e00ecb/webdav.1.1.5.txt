@@ -1,0 +1,90 @@
+$ opam depext -iy -j 2 webdav.1.1.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install omake      0.10.3 [required by webdav]
+  - install base-bytes base   [required by ocamlnet]
+  - install ocamlbuild 0.12.0 [required by ocamlnet]
+  - install ocamlnet   4.1.6  [required by webdav]
+  - install camlp4     4.06+1 [required by ulex]
+  - install ulex       1.2    [required by pxp]
+  - install pxp        1.2.8  [required by webdav]
+  - install webdav     1.1.5
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlnet.4.1.6] found in cache
+[omake.0.10.3] found in cache
+[pxp.1.2.8] found in cache
+[ulex.1.2] found in cache
+[webdav.1.1.5] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.06+1
+-> installed omake.0.10.3
+-> installed ulex.1.2
+-> installed ocamlnet.4.1.6
+-> installed pxp.1.2.8
+[ERROR] The compilation of webdav failed at "/usr/bin/make".
+
+#=== ERROR while compiling webdav.1.1.5 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/webdav.1.1.5
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/webdav-11-47e100.env
+# output-file          ~/.opam/log/webdav-11-47e100.out
+### output ###
+# omake
+# *** omake: reading OMakefiles
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.06/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.06/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.06/bin/ocamlopt.opt)
+# --- Checking for ocamldep.opt... (found /home/opam/.opam/4.06/bin/ocamldep.opt)
+# --- Checking for ocamllex.opt... (found /home/opam/.opam/4.06/bin/ocamllex.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# --- Checking whether ocamlopt can create cmxs plugins... (yes)
+# --- Checking for -safe-string... (yes)
+# --- Checking for ocamlfind... (found)
+# --- Checking for ocamlnet... (found)
+# --- Checking for ocamlnet-4... (found)
+# *** omake: finished reading OMakefiles (0.11 sec)
+# - build . webdav_http.cmo
+# + ocamlfind ocamlc -syntax camlp4o -ppopt '-D OCAMLNET4' -package pxp,netstring,netclient,pxp-pp,camlp4.macro -dtypes -safe-string -g -I . -c webdav_http.ml
+# File "webdav_http.ml", line 7, characters 5-18:
+# Error: Unbound module Webdav_compat
+# *** omake: 42/70 targets are up to date
+# *** omake: failed (9.91 sec, 13/13 scans, 5/5 rules, 28/65 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    webdav_http.cmo
+#       depends on: webdav_http.ml
+# Makefile:11: recipe for target 'build' failed
+# make: *** [build] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build webdav 1.1.5
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install camlp4     4.06+1
+| - install ocamlbuild 0.12.0
+| - install ocamlnet   4.1.6
+| - install omake      0.10.3
+| - install pxp        1.2.8
+| - install ulex       1.2
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818055657.export"
+31 1534571815 1534571975
