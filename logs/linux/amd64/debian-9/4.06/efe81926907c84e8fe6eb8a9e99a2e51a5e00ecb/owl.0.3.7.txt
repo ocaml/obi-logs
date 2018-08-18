@@ -866,6 +866,10 @@ The following actions will be performed:
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_nlp_utils.cmo -c -impl src/owl/owl_nlp_utils.ml)
 # File "src/owl/nlp/owl_nlp_utils.ml", line 93, characters 26-51:
 # Error: Unbound value Owl_utils.marshal_to_file
+#       ocamlc src/owl/.owl.objs/owl_sparse_dok_matrix.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmo -c -impl src/owl/owl_sparse_dok_matrix.ml)
+# File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
+# Error: Unbound value Owl_utils.marshal_to_file
 #       ocamlc src/owl/.owl.objs/owl_stats.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_stats.cmo -c -impl src/owl/owl_stats.ml)
 # File "src/owl/owl_stats.ml", line 1:
@@ -1050,27 +1054,10 @@ The following actions will be performed:
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_ppl_random_variable.cmo -c -impl src/owl/owl_ppl_random_variable.ml)
 # File "src/owl/ppl/owl_ppl_random_variable.ml", line 17, characters 19-22:
 # Error: Unbound type constructor L.t
-#       ocamlc src/owl/.owl.objs/owl_sparse_dok_matrix.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmo -c -impl src/owl/owl_sparse_dok_matrix.ml)
-# File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
-# Error: Unbound value Owl_utils.marshal_to_file
 #     ocamlopt src/owl/.owl.objs/owl_sparse_dok_matrix.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -safe-string -g -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_sparse_dok_matrix.cmx -c -impl src/owl/owl_sparse_dok_matrix.ml)
 # File "src/owl/sparse/owl_sparse_dok_matrix.ml", line 82, characters 15-40:
 # Error: Unbound value Owl_utils.marshal_to_file
-#       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
-# File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
-# Error: Signature mismatch:
-#        ...
-#        Values do not match:
-#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
-#        is not included in
-#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
-#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
-#          Expected declaration
-#        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2039, characters 0-43:
-#          Actual declaration
 #       ocamlc src/owl/.owl.objs/owl_dense_ndarray.{cmi,cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray.cmo -c -impl src/owl/owl_dense_ndarray.ml)
 # File "src/owl/dense/owl_dense_ndarray.ml", line 11, characters 36-61:
@@ -1083,6 +1070,19 @@ The following actions will be performed:
 #        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
 #          Expected declaration
 #        File "src/owl/dense/owl_dense_ndarray_generic.mli", line 1983, characters 0-43:
+#          Actual declaration
+#       ocamlc src/owl/.owl.objs/owl_dense_matrix.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -no-alias-deps -o src/owl/.owl.objs/owl_dense_matrix.cmo -c -impl src/owl/owl_dense_matrix.ml)
+# File "src/owl/dense/owl_dense_matrix.ml", line 11, characters 36-60:
+# Error: Signature mismatch:
+#        ...
+#        Values do not match:
+#          val add_ : ('a, 'b) t -> ('a, 'b) t -> unit
+#        is not included in
+#          val add_ : ?out:('a, 'b) t -> ('a, 'b) t -> ('a, 'b) t -> unit
+#        File "src/base/types/owl_types_operator.ml", line 114, characters 2-64:
+#          Expected declaration
+#        File "src/owl/dense/owl_dense_matrix_generic.mli", line 2039, characters 0-43:
 #          Actual declaration
 #       ocamlc src/owl/.owl.objs/owl_linalg_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_linalg_generic.cmo -c -impl src/owl/owl_linalg_generic.ml)
@@ -1102,15 +1102,15 @@ The following actions will be performed:
 # File "src/owl/dense/owl_dense_ndarray_a.ml", line 129, characters 41-48:
 # Error: This expression has type int but an expression was expected of type
 #          'a array array
-#       ocamlc src/owl/.owl.objs/owl_sparse_ndarray_generic.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_sparse_ndarray_generic.cmo -c -impl src/owl/owl_sparse_ndarray_generic.ml)
-# File "src/owl/sparse/owl_sparse_ndarray_generic.ml", line 540, characters 15-40:
-# Error: Unbound value Owl_utils.marshal_to_file
 #       ocamlc src/owl/.owl.objs/owl_dense_ndarray_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_dense_ndarray_generic.cmo -c -impl src/owl/owl_dense_ndarray_generic.ml)
 # File "src/owl/dense/owl_dense_ndarray_generic.ml", line 152, characters 54-61:
 # Error: This expression has type int but an expression was expected of type
 #          int array array
+#       ocamlc src/owl/.owl.objs/owl_sparse_ndarray_generic.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_sparse_ndarray_generic.cmo -c -impl src/owl/owl_sparse_ndarray_generic.ml)
+# File "src/owl/sparse/owl_sparse_ndarray_generic.ml", line 540, characters 15-40:
+# Error: Unbound value Owl_utils.marshal_to_file
 #       ocamlc src/owl/.owl.objs/owl_sparse_matrix_generic.{cmo,cmt} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/owl/.owl.objs -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -intf-suffix .ml -no-alias-deps -o src/owl/.owl.objs/owl_sparse_matrix_generic.cmo -c -impl src/owl/owl_sparse_matrix_generic.ml)
 # File "src/owl/sparse/owl_sparse_matrix_generic.ml", line 581, characters 15-40:
@@ -1145,5 +1145,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818054737.export"
-31 1534571209 1534571515
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818203301.export"
+31 1534624335 1534624611

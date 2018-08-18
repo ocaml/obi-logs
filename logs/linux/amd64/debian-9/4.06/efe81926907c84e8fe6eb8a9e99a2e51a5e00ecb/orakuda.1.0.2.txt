@@ -136,8 +136,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/orakuda.1.0.2
 # command              ~/.opam/4.06/bin/ocaml setup.ml -build
 # exit-code            1
-# env-file             ~/.opam/log/orakuda-12-127107.env
-# output-file          ~/.opam/log/orakuda-12-127107.out
+# env-file             ~/.opam/log/orakuda-11-127107.env
+# output-file          ~/.opam/log/orakuda-11-127107.out
 ### output ###
 # File "./setup.ml", line 318, characters 20-36:
 # Warning 3: deprecated: String.lowercase
@@ -189,12 +189,17 @@ The following actions will be performed:
 # File OMyMakefile: line 781, characters 6-34:
 #    Warning: old-style foreach expression.
 #    This expression should use a => binding.
-# *** omake: finished reading OMakefiles (0.20 sec)
+# *** omake: finished reading OMakefiles (0.16 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - build . regexp.cmi
 # + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c regexp.mli
 # File "regexp.mli", line 117, characters 57-122:
 # Warning 50: ambiguous documentation comment
+# - build . cformat.cmo
+# + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
+# File "cformat.ml", line 75, characters 14-27:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
 # - build . cformat.cmx
 # + ocamlfind ocamlopt -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -I . -c cformat.ml
 # File "cformat.ml", line 58, characters 6-728:
@@ -206,11 +211,6 @@ The following actions will be performed:
 #          val contents : t -> string
 #        File "cformat.ml", line 55, characters 2-28: Expected declaration
 #        File "cformat.ml", line 73, characters 6-14: Actual declaration
-# - build . cformat.cmo
-# + ocamlfind ocamlc -annot -bin-annot -for-pack Orakuda -package pcre,camlp4,spotlib -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -annot -w Ae -I . -c cformat.ml
-# File "cformat.ml", line 75, characters 14-27:
-# Warning 3: deprecated: String.create
-# Use Bytes.create instead.
 # File "cformat.ml", line 84, characters 3-17:
 # Warning 3: deprecated: String.set
 # Use Bytes.set instead.
@@ -223,12 +223,8 @@ The following actions will be performed:
 #          val contents : t -> string
 #        File "cformat.ml", line 55, characters 2-28: Expected declaration
 #        File "cformat.ml", line 73, characters 6-14: Actual declaration
-# - build pa pa_hash.o
-# + ocamlfind ocamlopt -annot -bin-annot -package pcre,camlp4 -g -w A-3-4-9-40-42-44-45-48 -warn-error a -pp camlp4of -I . -c pa_hash.ml
-# File "_none_", line 1:
-# Warning 58: no cmx file was found in path for module Camlp4, and its interface was not compiled with -opaque
-# *** omake: 72/125 targets are up to date
-# *** omake: failed (1.36 sec, 20/20 scans, 15/15 rules, 44/81 digests)
+# *** omake: 71/125 targets are up to date
+# *** omake: failed (0.68 sec, 20/20 scans, 14/14 rules, 44/81 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    cformat.cmo
 #       depends on: cformat.ml
@@ -268,5 +264,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818061236.export"
-31 1534572747 1534572883
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818201829.export"
+31 1534623500 1534623625
