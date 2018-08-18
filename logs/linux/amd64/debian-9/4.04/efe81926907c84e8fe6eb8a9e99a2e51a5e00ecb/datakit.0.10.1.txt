@@ -268,23 +268,23 @@ The following actions will be performed:
 -> installed ppx_driver.v0.9.1
 -> installed fieldslib.v0.9.0
 -> installed ppx_metaquot.v0.9.0
--> installed ppx_js_style.v0.9.0
 -> installed ppx_type_conv.v0.9.0
 -> installed ppx_compare.v0.9.0
 -> installed ppx_enumerate.v0.9.0
 -> installed ppx_fields_conv.v0.9.0
+-> installed ppx_js_style.v0.9.0
 -> installed ppx_sexp_conv.v0.9.0
 -> installed ipaddr.2.8.0
 -> installed ppx_hash.v0.9.0
--> installed ppx_base.v0.9.0
 -> installed uri.1.9.7
 -> installed conduit.0.15.4
--> installed configurator.v0.9.1
 -> installed git.1.10.0
--> installed io-page.2.0.1
--> installed io-page-unix.2.0.1
 -> installed irmin.1.1.0
 -> installed irmin-git.1.1.0
+-> installed ppx_base.v0.9.0
+-> installed configurator.v0.9.1
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
 -> installed mirage-channel-lwt.3.1.0
 -> installed protocol-9p.0.12.1
 -> installed protocol-9p-unix.0.12.1
@@ -310,8 +310,8 @@ The following actions will be performed:
 # File "tests/datakit-bridge-github/jbuild", line 5, characters 13-34:
 # Warning: This field is useless without a (public_name ...) field.
 #     ocamldep src/datakit/bin/main.depends.ocamldep-output
-#     ocamldep src/datakit/datakit.dependsi.ocamldep-output
 #     ocamldep src/datakit/datakit.depends.ocamldep-output
+#     ocamldep src/datakit/datakit.dependsi.ocamldep-output
 #     ocamldep src/datakit-conduit/datakit_conduit.depends.ocamldep-output
 #     ocamldep src/datakit-io/datakit_io.depends.ocamldep-output
 #     ocamldep src/datakit-log/datakit_log.depends.ocamldep-output
@@ -321,6 +321,7 @@ The following actions will be performed:
 #       ocamlc src/datakit-conduit/datakit_conduit.{cmi,cmti}
 #       ocamlc src/datakit-log/datakit_log.{cmi,cmti}
 #       ocamlc src/datakit-io/datakit_io.{cmi,cmti}
+#       ocamlc src/datakit/ivfs_blob.{cmi,cmti}
 #     ocamlopt src/datakit-conduit/datakit_conduit.{cmx,o} (exit 2)
 # (cd _build/default && /home/opam/.opam/4.04/bin/ocamlopt.opt -w -40 -g -I /home/opam/.opam/4.04/lib/asetmap -I /home/opam/.opam/4.04/lib/astring -I /home/opam/.opam/4.04/lib/bos -I /home/opam/.opam/4.04/lib/bytes -I /home/opam/.opam/4.04/lib/cstruct -I /home/opam/.opam/4.04/lib/cstruct-lwt -I /home/opam/.opam/4.04/lib/datakit-server -I /home/opam/.opam/4.04/lib/duration -I /home/opam/.opam/4.04/lib/fmt -I /home/opam/.opam/4.04/lib/fpath -I /home/opam/.opam/4.04/lib/hvsock -I /home/opam/.opam/4.04/lib/hvsock/lwt -I /home/opam/.opam/4.04/lib/hvsock/lwt-unix -I /home/opam/.opam/4.04/lib/io-page -I /home/opam/.opam/4.04/lib/io-page-unix -I /home/opam/.opam/4.04/lib/logs -I /home/opam/.opam/4.04/lib/lwt -I /home/opam/.opam/4.04/lib/mirage-channel -I /home/opam/.opam/4.04/lib/mirage-channel-lwt -I /home/opam/.opam/4.04/lib/mirage-clock -I /home/opam/.opam/4.04/lib/mirage-device -I /home/opam/.opam/4.04/lib/mirage-flow -I /home/opam/.opam/4.04/lib/mirage-flow-lwt -I /home/opam/.opam/4.04/lib/mirage-kv -I /home/opam/.opam/4.04/lib/mirage-kv-lwt -I /home/opam/.opam/4.04/lib/mirage-time -I /home/opam/.opam/4.04/lib/mirage-time-lwt -I /home/opam/.opam/4.04/lib/ocaml -I /home/opam/.opam/4.04/lib/ocaml/threads -I /home/opam/.opam/4.04/lib/ocplib-endian -I /home/opam/.opam/4.04/lib/ppx_deriving -I /home/opam/.opam/4.04/lib/prometheus -I /home/opam/.opam/4.04/lib/protocol-9p -I /home/opam/.opam/4.04/lib/protocol-9p-unix -I /home/opam/.opam/4.04/lib/re -I /home/opam/.opam/4.04/lib/re/posix -I /home/opam/.opam/4.04/lib/result -I /home/opam/.opam/4.04/lib/rresult -I /home/opam/.opam/4.04/lib/sexplib -I /home/opam/.opam/4.04/lib/sexplib/0 -I /home/opam/.opam/4.04/lib/stringext -I /home/opam/.opam/4.04/lib/uchar -I /home/opam/.opam/4.04/lib/uri -no-alias-deps -I src/datakit-conduit -o src/datakit-conduit/datakit_conduit.cmx -c -impl src/datakit-conduit/datakit_conduit.ml)
 # File "src/datakit-conduit/datakit_conduit.ml", line 191, characters 17-46:
@@ -428,5 +429,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180817222518.export"
-31 1534544703 1534544898
+    opam switch import "/home/opam/.opam/4.04/.opam-switch/backup/state-20180818213711.export"
+31 1534628214 1534628422
