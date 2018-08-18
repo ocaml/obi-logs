@@ -1,0 +1,311 @@
+$ opam depext -iy -j 2 gpr.1.3.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+blas-devel
+gsl-devel
+lapack-devel
+m4
+# The following new OS packages need to be installed: blas-devel gsl-devel lapack-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install blas-devel gsl-devel lapack-devel
+Retrieving repository 'OSS Update' metadata [...done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 8 NEW packages are going to be installed:
+  blas-devel gsl gsl-devel lapack-devel libblas3 libgfortran3 liblapack3 libquadmath0
+
+8 new packages to install.
+Overall download size: 3.4 MiB. Already cached: 0 B. After the operation, additional 11.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package gsl-1.16-9.4.x86_64 (1/8), 811.6 KiB (  2.6 MiB unpacked)
+Retrieving: gsl-1.16-9.4.x86_64.rpm [.done]
+Retrieving package gsl-devel-1.16-9.4.x86_64 (2/8), 426.4 KiB (  1.2 MiB unpacked)
+Retrieving: gsl-devel-1.16-9.4.x86_64.rpm [done]
+Retrieving package libquadmath0-7.3.1+r258812-10.1.x86_64 (3/8), 140.9 KiB (251.1 KiB unpacked)
+Retrieving: libquadmath0-7.3.1+r258812-10.1.x86_64.rpm [done]
+Retrieving package libgfortran3-6.2.1+r239768-6.19.x86_64 (4/8), 265.4 KiB (  1.2 MiB unpacked)
+Retrieving: libgfortran3-6.2.1+r239768-6.19.x86_64.rpm [done]
+Retrieving package libblas3-3.5.0-11.3.x86_64 (5/8), 132.2 KiB (362.6 KiB unpacked)
+Retrieving: libblas3-3.5.0-11.3.x86_64.rpm [done]
+Retrieving package liblapack3-3.5.0-11.3.x86_64 (6/8),   1.7 MiB (  5.6 MiB unpacked)
+Retrieving: liblapack3-3.5.0-11.3.x86_64.rpm [done]
+Retrieving package blas-devel-3.5.0-11.3.x86_64 (7/8),   6.9 KiB (    0   B unpacked)
+Retrieving: blas-devel-3.5.0-11.3.x86_64.rpm [.done (2.5 KiB/s)]
+Retrieving package lapack-devel-3.5.0-11.3.x86_64 (8/8),   7.2 KiB (    0   B unpacked)
+Retrieving: lapack-devel-3.5.0-11.3.x86_64.rpm [done]
+Checking for file conflicts: [.......done]
+(1/8) Installing: gsl-1.16-9.4.x86_64 [............done]
+(2/8) Installing: gsl-devel-1.16-9.4.x86_64 [............done]
+(3/8) Installing: libquadmath0-7.3.1+r258812-10.1.x86_64 [.......done]
+(4/8) Installing: libgfortran3-6.2.1+r239768-6.19.x86_64 [...........done]
+(5/8) Installing: libblas3-3.5.0-11.3.x86_64 [.........done]
+Additional rpm output:
+update-alternatives: using /usr/lib64/blas/libblas.so.3 to provide /usr/lib64/libblas.so.3 (libblas.so.3) in auto mode
+
+
+(6/8) Installing: liblapack3-3.5.0-11.3.x86_64 [............done]
+Additional rpm output:
+update-alternatives: using /usr/lib64/lapack/liblapack.so.3 to provide /usr/lib64/liblapack.so.3 (liblapack.so.3) in auto mode
+
+
+(7/8) Installing: blas-devel-3.5.0-11.3.x86_64 [....done]
+(8/8) Installing: lapack-devel-3.5.0-11.3.x86_64 [....done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install jane-street-headers     v0.11.0 [required by core_kernel]
+  - install re                      1.7.3   [required by ppx_expect]
+  - install base-bytes              base    [required by lacaml]
+  - install conf-pkg-config         1.1     [required by gsl]
+  - install num                     1.1     [required by sexplib]
+  - install octavius                1.2.0   [required by ppx_js_style]
+  - install conf-gsl                1       [required by gsl]
+  - install spawn                   v0.12.0 [required by core]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install conf-blas               1       [required by lacaml]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install conf-lapack             1       [required by lacaml]
+  - install ocamlbuild              0.12.0  [required by lacaml]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install base                    v0.11.1 [required by core, gsl]
+  - install ocaml-migrate-parsetree 1.0.11  [required by core]
+  - install lacaml                  9.3.2   [required by gpr]
+  - install sexplib                 v0.11.0 [required by core]
+  - install typerep                 v0.11.0 [required by core_kernel]
+  - install stdio                   v0.11.0 [required by core, gsl]
+  - install ppxlib                  0.3.0   [required by core]
+  - install configurator            v0.11.0 [required by core, gsl]
+  - install variantslib             v0.11.0 [required by core_kernel]
+  - install ppx_typerep_conv        v0.11.1 [required by ppx_jane]
+  - install ppx_sexp_conv           v0.11.2 [required by core_kernel]
+  - install ppx_pipebang            v0.11.0 [required by ppx_jane]
+  - install ppx_optional            v0.11.0 [required by ppx_jane]
+  - install ppx_optcomp             v0.11.0 [required by ppx_jane]
+  - install ppx_let                 v0.11.0 [required by ppx_jane]
+  - install ppx_js_style            v0.11.0 [required by ppx_base]
+  - install ppx_inline_test         v0.11.0 [required by core_kernel]
+  - install ppx_here                v0.11.0 [required by ppx_assert, ppx_jane]
+  - install ppx_enumerate           v0.11.1 [required by ppx_base]
+  - install ppx_compare             v0.11.1 [required by ppx_assert, bin_prot, ppx_base]
+  - install fieldslib               v0.11.0 [required by core_kernel]
+  - install gsl                     1.22.0  [required by gpr]
+  - install ppx_variants_conv       v0.11.1 [required by bin_prot, ppx_jane]
+  - install ppx_custom_printf       v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_bench               v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_value          v0.11.0 [required by ppx_jane]
+  - install ppx_sexp_message        v0.11.0 [required by core_kernel]
+  - install ppx_fail                v0.11.0 [required by ppx_jane]
+  - install ppx_hash                v0.11.1 [required by core_kernel]
+  - install ppx_assert              v0.11.0 [required by core]
+  - install ppx_fields_conv         v0.11.0 [required by bin_prot, ppx_jane]
+  - install ppx_base                v0.11.0 [required by core_kernel]
+  - install ppx_expect              v0.11.0 [required by ppx_jane]
+  - install bin_prot                v0.11.0 [required by core_kernel]
+  - install ppx_bin_prot            v0.11.1 [required by ppx_jane]
+  - install ppx_jane                v0.11.0 [required by core]
+  - install splittable_random       v0.11.0 [required by core_kernel]
+  - install core_kernel             v0.11.1 [required by core]
+  - install core                    v0.11.2 [required by gpr]
+  - install gpr                     1.3.1
+===== 56 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[bin_prot.v0.11.0] found in cache
+[configurator.v0.11.0] found in cache
+[core.v0.11.2] found in cache
+[core_kernel.v0.11.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[gpr.1.3.1] found in cache
+[gsl.1.22.0] found in cache
+[jane-street-headers.v0.11.0] found in cache
+[lacaml.9.3.2] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[octavius.1.2.0] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_assert.v0.11.0] found in cache
+[ppx_base.v0.11.0] found in cache
+[ppx_bench.v0.11.0] found in cache
+[ppx_bin_prot.v0.11.1] found in cache
+[ppx_compare.v0.11.1] found in cache
+[ppx_custom_printf.v0.11.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_enumerate.v0.11.1] found in cache
+[ppx_expect.v0.11.0] found in cache
+[ppx_fail.v0.11.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppx_hash.v0.11.1] found in cache
+[ppx_here.v0.11.0] found in cache
+[ppx_inline_test.v0.11.0] found in cache
+[ppx_jane.v0.11.0] found in cache
+[ppx_js_style.v0.11.0] found in cache
+[ppx_let.v0.11.0] found in cache
+[ppx_optcomp.v0.11.0] found in cache
+[ppx_optional.v0.11.0] found in cache
+[ppx_pipebang.v0.11.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_sexp_message.v0.11.0] found in cache
+[ppx_sexp_value.v0.11.0] found in cache
+[ppx_typerep_conv.v0.11.1] found in cache
+[ppx_variants_conv.v0.11.1] found in cache
+[ppxlib.0.3.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[spawn.v0.12.0] found in cache
+[splittable_random.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[typerep.v0.11.0] found in cache
+[variantslib.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-blas.1
+-> installed conf-gsl.1
+-> installed conf-lapack.1
+-> installed conf-pkg-config.1.1
+-> installed jane-street-headers.v0.11.0
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed spawn.v0.12.0
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed gsl.1.22.0
+-> installed lacaml.9.3.2
+-> installed ppxlib.0.3.0
+-> installed fieldslib.v0.11.0
+-> installed ppx_compare.v0.11.1
+-> installed ppx_enumerate.v0.11.1
+-> installed ppx_here.v0.11.0
+-> installed ppx_fields_conv.v0.11.0
+-> installed ppx_inline_test.v0.11.0
+-> installed ppx_fail.v0.11.0
+-> installed ppx_js_style.v0.11.0
+-> installed ppx_let.v0.11.0
+-> installed ppx_optcomp.v0.11.0
+-> installed ppx_optional.v0.11.0
+-> installed ppx_pipebang.v0.11.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed ppx_assert.v0.11.0
+-> installed ppx_bench.v0.11.0
+-> installed ppx_custom_printf.v0.11.0
+-> installed ppx_hash.v0.11.1
+-> installed ppx_sexp_message.v0.11.0
+-> installed ppx_sexp_value.v0.11.0
+-> installed typerep.v0.11.0
+-> installed ppx_base.v0.11.0
+-> installed variantslib.v0.11.0
+-> installed ppx_typerep_conv.v0.11.1
+-> installed ppx_variants_conv.v0.11.1
+-> installed bin_prot.v0.11.0
+-> installed ppx_expect.v0.11.0
+-> installed ppx_bin_prot.v0.11.1
+-> installed ppx_jane.v0.11.0
+-> installed splittable_random.v0.11.0
+-> installed core_kernel.v0.11.1
+-> installed core.v0.11.2
+[ERROR] The compilation of gpr failed at "/home/opam/.opam/4.06/bin/jbuilder build -p gpr -j 71".
+
+#=== ERROR while compiling gpr.1.3.1 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/gpr.1.3.1
+# command              ~/.opam/4.06/bin/jbuilder build -p gpr -j 71
+# exit-code            1
+# env-file             ~/.opam/log/gpr-12-c74e39.env
+# output-file          ~/.opam/log/gpr-12-c74e39.out
+### output ###
+#     ocamlopt app/ocaml_gpr.exe (exit 2)
+# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -w -9 -safe-string -strict-sequence -principal -short-paths -g -o app/ocaml_gpr.exe -I /home/opam/.opam/4.06/lib/base -I /home/opam/.opam/4.06/lib/base/caml -I /home/opam/.opam/4.06/lib/base/md5 -I /home/opam/.opam/4.06/lib/base/shadow_stdlib -I /home/opam/.opam/4.06/lib/bin_prot -I /home/opam/.opam/4.06/lib/bin_prot/shape -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/core -I /home/opam/.opam/4.06/lib/core_kernel -I /home/opam/.opam/4.06/lib/core_kernel/base_for_tests -I /home/opam/.opam/4.06/lib/fieldslib -I /home/opam/.opam/4.06/lib/gsl -I /home/opam/.opam/4.06/lib/jane-street-headers -I /home/opam/.opam/4.06/lib/lacaml -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/parsexp -I /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_expect/collector -I /home/opam/.opam/4.06/lib/ppx_expect/common -I /home/opam/.opam/4.06/lib/ppx_expect/config -I /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_inline_test/config -I /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib -I /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib -I /home/opam/.opam/4.06/lib/sexplib -I /home/opam/.opam/4.06/lib/sexplib/unix -I /home/opam/.opam/4.06/lib/sexplib0 -I /home/opam/.opam/4.06/lib/spawn -I /home/opam/.opam/4.06/lib/splittable_random -I /home/opam/.opam/4.06/lib/stdio -I /home/opam/.opam/4.06/lib/typerep -I /home/opam/.opam/4.06/lib/variantslib -I src /home/opam/.opam/4.06/lib/ocaml/str.cmxa /home/opam/.opam/4.06/lib/ocaml/unix.cmxa /home/opam/.opam/4.06/lib/ocaml/threads/threads.cmxa /home/opam/.opam/4.06/lib/base/caml/caml.cmxa /home/opam/.opam/4.06/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/opam/.opam/4.06/lib/sexplib0/sexplib0.cmxa /home/opam/.opam/4.06/lib/base/base.cmxa /home/opam/.opam/4.06/lib/base/md5/md5_lib.cmxa /home/opam/.opam/4.06/lib/ocaml/bigarray.cmxa /home/opam/.opam/4.06/lib/fieldslib/fieldslib.cmxa /home/opam/.opam/4.06/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/opam/.opam/4.06/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/opam/.opam/4.06/lib/variantslib/variantslib.cmxa /home/opam/.opam/4.06/lib/bin_prot/shape/bin_shape_lib.cmxa /home/opam/.opam/4.06/lib/bin_prot/bin_prot.cmxa /home/opam/.opam/4.06/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/opam/.opam/4.06/lib/ppx_inline_test/config/inline_test_config.cmxa /home/opam/.opam/4.06/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa /home/opam/.opam/4.06/lib/core_kernel/base_for_tests/base_for_tests.cmxa /home/opam/.opam/4.06/lib/jane-street-headers/jane_street_headers.cmxa /home/opam/.opam/4.06/lib/ppx_assert/runtime-lib/ppx_assert_lib.cmxa /home/opam/.opam/4.06/lib/ppx_bench/runtime-lib/ppx_bench_lib.cmxa /home/opam/.opam/4.06/lib/ppx_expect/common/expect_test_common.cmxa /home/opam/.opam/4.06/lib/ppx_expect/config/expect_test_config.cmxa /home/opam/.opam/4.06/lib/ppx_expect/collector/expect_test_collector.cmxa /home/opam/.opam/4.06/lib/parsexp/parsexp.cmxa /home/opam/.opam/4.06/lib/sexplib/sexplib.cmxa /home/opam/.opam/4.06/lib/typerep/typerep_lib.cmxa /home/opam/.opam/4.06/lib/splittable_random/splittable_random.cmxa /home/opam/.opam/4.06/lib/stdio/stdio.cmxa /home/opam/.opam/4.06/lib/core_kernel/core_kernel.cmxa /home/opam/.opam/4.06/lib/sexplib/unix/sexplib_unix.cmxa /home/opam/.opam/4.06/lib/spawn/spawn.cmxa /home/opam/.opam/4.06/lib/core/core.cmxa /home/opam/.opam/4.06/lib/lacaml/lacaml.cmxa /home/opam/.opam/4.06/lib/gsl/gsl.cmxa src/gpr.cmxa app/.ocaml_gpr.eobjs/ocaml_gpr.cmx)
+# /home/opam/.opam/4.06/lib/gsl/libgsl_stubs.a(mlgsl_randist.o): In function `ml_gsl_ran_multivariate_gaussian':
+# /home/opam/.opam/4.06/.opam-switch/build/gsl.1.22.0/_build/default/src/mlgsl_randist.c:56: undefined reference to `gsl_ran_multivariate_gaussian'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build gpr 1.3.1
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install bin_prot                v0.11.0
+| - install conf-blas               1
+| - install conf-gsl                1
+| - install conf-lapack             1
+| - install conf-pkg-config         1.1
+| - install configurator            v0.11.0
+| - install core                    v0.11.2
+| - install core_kernel             v0.11.1
+| - install fieldslib               v0.11.0
+| - install gsl                     1.22.0
+| - install jane-street-headers     v0.11.0
+| - install lacaml                  9.3.2
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install octavius                1.2.0
+| - install parsexp                 v0.11.0
+| - install ppx_assert              v0.11.0
+| - install ppx_base                v0.11.0
+| - install ppx_bench               v0.11.0
+| - install ppx_bin_prot            v0.11.1
+| - install ppx_compare             v0.11.1
+| - install ppx_custom_printf       v0.11.0
+| - install ppx_derivers            1.0
+| - install ppx_enumerate           v0.11.1
+| - install ppx_expect              v0.11.0
+| - install ppx_fail                v0.11.0
+| - install ppx_fields_conv         v0.11.0
+| - install ppx_hash                v0.11.1
+| - install ppx_here                v0.11.0
+| - install ppx_inline_test         v0.11.0
+| - install ppx_jane                v0.11.0
+| - install ppx_js_style            v0.11.0
+| - install ppx_let                 v0.11.0
+| - install ppx_optcomp             v0.11.0
+| - install ppx_optional            v0.11.0
+| - install ppx_pipebang            v0.11.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_sexp_message        v0.11.0
+| - install ppx_sexp_value          v0.11.0
+| - install ppx_typerep_conv        v0.11.1
+| - install ppx_variants_conv       v0.11.1
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install spawn                   v0.12.0
+| - install splittable_random       v0.11.0
+| - install stdio                   v0.11.0
+| - install typerep                 v0.11.0
+| - install variantslib             v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818025106.export"
+31 1534560620 1534560904

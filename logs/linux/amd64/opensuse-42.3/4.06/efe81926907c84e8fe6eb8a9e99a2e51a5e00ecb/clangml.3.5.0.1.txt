@@ -1,0 +1,140 @@
+$ opam depext -iy -j 2 clangml.3.5.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes   base    [required by ANSITerminal]
+  - install ocamlbuild   0.12.0  [required by clangml]
+  - install num          1.1     [required by batteries, deriving]
+  - install ANSITerminal 0.8     [required by clangml]
+  - install ocamlmod     0.0.9   [required by oasis]
+  - install ocamlify     0.0.1   [required by oasis]
+  - install dolog        3.0     [required by clangml]
+  - install camlp4       4.06+1  [required by clangml]
+  - install batteries    2.8.0   [required by clangml]
+  - install oasis        0.4.11  [required by deriving]
+  - install deriving     0.8.1   [required by clangml]
+  - install clangml      3.5.0.1
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ANSITerminal.0.8] found in cache
+[batteries.2.8.0] found in cache
+[camlp4.4.06+1] found in cache
+[clangml.3.5.0.1] found in cache
+[deriving.0.8.1] found in cache
+[dolog.3.0] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ANSITerminal.0.8
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed batteries.2.8.0
+-> installed dolog.3.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed camlp4.4.06+1
+-> installed deriving.0.8.1
+[ERROR] The compilation of clangml failed at "/usr/bin/make".
+
+#=== ERROR while compiling clangml.3.5.0.1 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/clangml.3.5.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/clangml-12-3a52b4.env
+# output-file          ~/.opam/log/clangml-12-3a52b4.out
+### output ###
+# ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# grep -v '^\s*deriving (Show)\s*$' clang/clang/ast.ml | sed -e 's/\s\+deriving (Show)//;s/= AstBridge.\w\+ //' > clang/clang/astBridge.ml
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules tools/bridgen/bridgen.ml > tools/bridgen/bridgen.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules tools/bridgen/codegen.ml > tools/bridgen/codegen.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/denseIntMap.mli > util/denseIntMap.mli.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/denseIntMap.cmi util/denseIntMap.mli
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/denseIntMap.ml > util/denseIntMap.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/prelude.ml > util/prelude.ml.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/prelude.cmo util/prelude.ml
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/formatx.ml > util/formatx.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/option.ml > util/option.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntMap.mli > util/sparseIntMap.mli.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/sparseIntMap.cmi util/sparseIntMap.mli
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntMap.ml > util/sparseIntMap.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntSet.mli > util/sparseIntSet.mli.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/sparseIntSet.cmi util/sparseIntSet.mli
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/sparseIntSet.ml > util/sparseIntSet.ml.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package bytes -modules util/various.ml > util/various.ml.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/denseIntMap.cmo util/denseIntMap.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/formatx.cmo util/formatx.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/option.cmo util/option.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/sparseIntMap.cmo util/sparseIntMap.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/sparseIntSet.cmo util/sparseIntSet.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I util -I clang -I tools -o util/various.cmo util/various.ml
+# ocamlfind ocamlc -pack -g -annot util/prelude.cmo util/denseIntMap.cmo util/formatx.cmo util/option.cmo util/sparseIntMap.cmo util/sparseIntSet.cmo util/various.cmo -o util.cmo
+# ocamlfind ocamldep -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -modules tools/ocamlTypes/codegen.mli > tools/ocamlTypes/codegen.mli.depends
+# ocamlfind ocamldep -package dolog -package deriving.syntax -syntax camlp4o -package camlp4 -package bytes -modules tools/ocamlTypes/sig.ml > tools/ocamlTypes/sig.ml.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/sig.cmo tools/ocamlTypes/sig.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmi tools/ocamlTypes/codegen.mli
+# ocamlfind ocamldep -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -modules tools/ocamlTypes/codegen.ml > tools/ocamlTypes/codegen.ml.depends
+# ocamlfind ocamldep -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -package bytes -modules tools/ocamlTypes/parse.ml > tools/ocamlTypes/parse.ml.depends
+# ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/print.ml > tools/ocamlTypes/print.ml.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/print.cmo tools/ocamlTypes/print.ml
+# ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/process.ml > tools/ocamlTypes/process.ml.depends
+# ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/type_graph.mli > tools/ocamlTypes/type_graph.mli.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/type_graph.cmi tools/ocamlTypes/type_graph.mli
+# ocamlfind ocamldep -package dolog -package camlp4 -package bytes -modules tools/ocamlTypes/type_graph.ml > tools/ocamlTypes/type_graph.ml.depends
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package batteries -package camlp4.quotations -package camlp4 -package bytes -pp camlp4of -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/codegen.cmo tools/ocamlTypes/codegen.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -syntax camlp4o -package camlp4.quotations -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/parse.cmo tools/ocamlTypes/parse.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/process.cmo tools/ocamlTypes/process.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package camlp4 -package bytes -I tools/ocamlTypes -I clang -I tools -o tools/ocamlTypes/type_graph.cmo tools/ocamlTypes/type_graph.ml
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I tools/bridgen -I clang -I tools -o tools/bridgen/codegen.cmo tools/bridgen/codegen.ml
+# ocamlfind ocamlc -pack -g -annot tools/ocamlTypes/sig.cmo tools/ocamlTypes/codegen.cmo tools/ocamlTypes/print.cmo tools/ocamlTypes/parse.cmo tools/ocamlTypes/process.cmo tools/ocamlTypes/type_graph.cmo -o tools/ocamlTypes.cmo
+# ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I tools/bridgen -I clang -I tools -o tools/bridgen/bridgen.cmo tools/bridgen/bridgen.ml
+# + ocamlfind ocamlc -c -I +camlp4/Camlp4Parsers -annot -g -annot -package dolog -package deriving.syntax -syntax camlp4o -package bytes -I tools/bridgen -I clang -I tools -o tools/bridgen/bridgen.cmo tools/bridgen/bridgen.ml
+# File "tools/bridgen/bridgen.ml", line 23, characters 10-14:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 38, characters 4-16:
+# Warning 3: deprecated: Scanf.fscanf
+# Use Scanning.from_channel then Scanf.bscanf.
+# Makefile:17: recipe for target 'mainClang.native' failed
+# make: *** [mainClang.native] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build clangml 3.5.0.1
++- 
++- The following changes have been performed
+| - install ANSITerminal 0.8
+| - install base-bytes   base
+| - install batteries    2.8.0
+| - install camlp4       4.06+1
+| - install deriving     0.8.1
+| - install dolog        3.0
+| - install num          1.1
+| - install oasis        0.4.11
+| - install ocamlbuild   0.12.0
+| - install ocamlify     0.0.1
+| - install ocamlmod     0.0.9
++- 
+
+<><> clangml.3.5.0.1 troubleshooting ><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires llvm-3.5, clang-3.5, boost and binutils
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818012915.export"
+31 1534555537 1534555878

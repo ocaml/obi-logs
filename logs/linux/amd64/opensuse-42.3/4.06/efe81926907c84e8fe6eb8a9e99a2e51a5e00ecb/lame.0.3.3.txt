@@ -1,0 +1,15 @@
+$ opam depext -iy -j 2 lame.0.3.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+lame-devel
+m4
+# The following new OS packages need to be installed: lame-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install lame-devel
+Retrieving repository 'OSS Update' metadata [..done]
+Building repository 'OSS Update' cache [....done]
+Loading repository data...
+Reading installed packages...
+Package 'lame-devel' not found.
+OS package installation failed
+1 1534559822 1534560298
