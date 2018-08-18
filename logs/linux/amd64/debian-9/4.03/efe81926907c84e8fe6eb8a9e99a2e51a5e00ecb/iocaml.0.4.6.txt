@@ -1,0 +1,29 @@
+$ opam depext -iy -j 2 iocaml.0.4.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for iocaml.0.4.6: The following dependencies couldn't be met:
+          - iocaml -> cohttp >= 0.10.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> cohttp >= 0.10.0 -> ppx_type_conv >= v0.9.1 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> cohttp >= 0.10.0 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> cohttp >= 0.10.0 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> cohttp >= 0.10.0 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> websocket = 0.8.1 -> cohttp (>= 0.10.0 & < 0.12.0) -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> websocket = 0.8.1 -> cohttp (>= 0.10.0 & < 0.12.0) -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> websocket = 0.8.1 -> cohttp (>= 0.10.0 & < 0.12.0) -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> websocket = 0.8.1 -> cohttp (>= 0.10.0 & < 0.12.0) -> ppx_type_conv >= v0.9.1 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> websocket = 0.8.1 -> cohttp (>= 0.10.0 & < 0.12.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cohttp satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=iocaml.0.4.6 returned 20
+20 1534546327 1534546331
