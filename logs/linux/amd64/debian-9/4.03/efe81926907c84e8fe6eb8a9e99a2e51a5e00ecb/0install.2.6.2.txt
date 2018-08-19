@@ -141,8 +141,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.03/.opam-switch/build/0install.2.6.2
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/0install-11-31457d.env
-# output-file          ~/.opam/log/0install-11-31457d.out
+# env-file             ~/.opam/log/0install-12-31457d.env
+# output-file          ~/.opam/log/0install-12-31457d.out
 ### output ###
 # [ -d "/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/build" ] || mkdir "/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/build"
 # [ -d "/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/dist" ] || mkdir "/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/dist"
@@ -245,17 +245,13 @@ The following actions will be performed:
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/argparse.cmo support/argparse.ml
 # File "support/argparse.ml", line 36, characters 2-88:
 # Warning 50: unattached documentation comment (ignored)
-# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/qdom.cmo support/qdom.ml
-# File "support/qdom.ml", line 222, characters 12-28:
-# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/system.cmo support/system.ml
 # File "support/system.ml", line 64, characters 18-34:
 # Warning 3: deprecated: String.lowercase
 # Use String.lowercase_ascii instead.
-# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/lwt_preemptive_copy.cmo support/lwt_preemptive_copy.ml
-# File "support/lwt_preemptive_copy.ml", line 60, characters 28-33:
-# Warning 41: Error belongs to several types: result result
-# The first one was selected. Please disambiguate if this is wrong.
+# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/qdom.cmo support/qdom.ml
+# File "support/qdom.ml", line 222, characters 12-28:
+# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/utils.cmo support/utils.ml
 # File "support/utils.ml", line 315, characters 12-25:
 # Warning 3: deprecated: String.create
@@ -266,6 +262,10 @@ The following actions will be performed:
 # File "support/utils.ml", line 467, characters 16-29:
 # Warning 3: deprecated: String.create
 # Use Bytes.create instead.
+# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/lwt_preemptive_copy.cmo support/lwt_preemptive_copy.ml
+# File "support/lwt_preemptive_copy.ml", line 60, characters 28-33:
+# Warning 41: Error belongs to several types: result result
+# The first one was selected. Please disambiguate if this is wrong.
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/gpg.cmo support/gpg.ml
 # File "support/gpg.ml", line 255, characters 17-31:
 # Warning 48: implicit elimination of optional argument ?stdin
@@ -449,6 +449,11 @@ The following actions will be performed:
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/downloader.cmo zeroinstall/downloader.ml
 # File "zeroinstall/downloader.ml", line 229, characters 114-126:
 # Warning 48: implicit elimination of optional argument ?step
+# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/apps.cmo zeroinstall/apps.ml
+# File "zeroinstall/apps.ml", line 102, characters 27-43:
+# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
+# File "zeroinstall/apps.ml", line 234, characters 8-27:
+# Warning 48: implicit elimination of optional arguments ?search_path, ?env
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/archive.cmo zeroinstall/archive.ml
 # File "zeroinstall/archive.ml", line 16, characters 8-24:
 # Warning 3: deprecated: String.lowercase
@@ -459,28 +464,23 @@ The following actions will be performed:
 # Warning 48: implicit elimination of optional arguments ?timeout, ?env, ?stdin, ?stderr
 # File "zeroinstall/archive.ml", line 225, characters 19-73:
 # Warning 48: implicit elimination of optional arguments ?timeout, ?env, ?stdout
-# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/apps.cmo zeroinstall/apps.ml
-# File "zeroinstall/apps.ml", line 102, characters 27-43:
-# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
-# File "zeroinstall/apps.ml", line 234, characters 8-27:
-# Warning 48: implicit elimination of optional arguments ?search_path, ?env
-# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/distro.cmo zeroinstall/distro.ml
-# File "zeroinstall/distro.ml", line 106, characters 77-102:
-# Warning 48: implicit elimination of optional arguments ?buf, ?fname, ?lnum
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/gui.cmo zeroinstall/gui.ml
 # File "zeroinstall/gui.ml", line 281, characters 40-55:
 # Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
-# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/fetch.cmo zeroinstall/fetch.ml
-# File "zeroinstall/fetch.ml", line 158, characters 43-58:
-# Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
-# File "zeroinstall/fetch.ml", line 229, characters 56-71:
-# Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
+# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/distro.cmo zeroinstall/distro.ml
+# File "zeroinstall/distro.ml", line 106, characters 77-102:
+# Warning 48: implicit elimination of optional arguments ?buf, ?fname, ?lnum
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/distro_impls.cmo zeroinstall/distro_impls.ml
 # File "zeroinstall/distro_impls.ml", line 449, characters 29-40:
 # Warning 3: deprecated: String.copy
 # File "zeroinstall/distro_impls.ml", line 451, characters 43-59:
 # Warning 3: deprecated: String.set
 # Use Bytes.set instead.
+# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Zeroinstall -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I zeroinstall -o zeroinstall/fetch.cmo zeroinstall/fetch.ml
+# File "zeroinstall/fetch.ml", line 158, characters 43-58:
+# Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
+# File "zeroinstall/fetch.ml", line 229, characters 56-71:
+# Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
 # ocamlfind ocamlc -pack -g -annot zeroinstall/versions.cmo zeroinstall/about.cmo zeroinstall/general.cmo zeroinstall/dry_run.cmo zeroinstall/manifest.cmo zeroinstall/stores.cmo zeroinstall/config.cmo zeroinstall/constants.cmo zeroinstall/arch.cmo zeroinstall/env.cmo zeroinstall/feed_url.cmo zeroinstall/selections.cmo zeroinstall/binding.cmo zeroinstall/escape.cmo zeroinstall/recipe.cmo zeroinstall/feed.cmo zeroinstall/feed_cache.cmo zeroinstall/dbus.cmo zeroinstall/downloader.cmo zeroinstall/packagekit_interfaces.cmo zeroinstall/packagekit.cmo zeroinstall/distro.cmo zeroinstall/feed_provider.cmi zeroinstall/feed_provider_impl.cmo zeroinstall/archive.cmo zeroinstall/impl_provider.cmo zeroinstall/requirements.cmo zeroinstall/solver.cmo zeroinstall/progress.cmi zeroinstall/trust.cmo zeroinstall/fetch.cmo zeroinstall/driver.cmo zeroinstall/ui.cmi zeroinstall/apps.cmo zeroinstall/command.cmo zeroinstall/diagnostics.cmo zeroinstall/console.cmo zeroinstall/distro_impls.cmo zeroinstall/exec.cmo zeroinstall/tree.cmo zeroinstall/gui.cmo zeroinstall/helpers.cmo zeroinstall/json_connection.cmo zeroinstall/launcher.cmo -o zeroinstall.cmo
 # ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o options.cmi options.mli
 # ocamlfind ocamldep -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -modules common_options.ml > common_options.ml.depends
@@ -494,9 +494,6 @@ The following actions will be performed:
 # ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o req_options.cmo req_options.ml
 # ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o show.cmo show.ml
 # ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o whatchanged.cmo whatchanged.ml
-# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o show.cmo show.ml
-# File "show.ml", line 18, characters 12-28:
-# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o req_options.cmo req_options.ml
 # File "req_options.ml", line 20, characters 2-91:
 # Warning 50: unattached documentation comment (ignored)
@@ -506,6 +503,9 @@ The following actions will be performed:
 # Warning 50: unattached documentation comment (ignored)
 # File "req_options.ml", line 73, characters 10-146:
 # Warning 50: unattached documentation comment (ignored)
+# + ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o show.cmo show.ml
+# File "show.ml", line 18, characters 12-28:
+# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # ocamlfind ocamldep -package oUnit -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -modules tests/test_0install.ml > tests/test_0install.ml.depends
 # ocamlfind ocamldep -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -modules conf.ml > conf.ml.depends
 # ocamlfind ocamlc -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package oUnit -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I tests -o tests/fake_system.cmo tests/fake_system.ml
@@ -697,9 +697,6 @@ The following actions will be performed:
 # File "support/locale.ml", line 34, characters 30-46:
 # Warning 3: deprecated: String.uppercase
 # Use String.uppercase_ascii instead.
-# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/qdom.cmx support/qdom.ml
-# File "support/qdom.ml", line 222, characters 12-28:
-# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/lwt_preemptive_copy.cmx support/lwt_preemptive_copy.ml
 # File "support/lwt_preemptive_copy.ml", line 60, characters 28-33:
 # Warning 41: Error belongs to several types: result result
@@ -707,6 +704,9 @@ The following actions will be performed:
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/argparse.cmx support/argparse.ml
 # File "support/argparse.ml", line 36, characters 2-88:
 # Warning 50: unattached documentation comment (ignored)
+# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/qdom.cmx support/qdom.ml
+# File "support/qdom.ml", line 222, characters 12-28:
+# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -for-pack Support -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -I support -o support/gpg.cmx support/gpg.ml
 # File "support/gpg.ml", line 255, characters 17-31:
 # Warning 48: implicit elimination of optional argument ?stdin
@@ -826,6 +826,9 @@ The following actions will be performed:
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o req_options.cmx req_options.ml
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o show.cmx show.ml
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o whatchanged.cmx whatchanged.ml
+# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o show.cmx show.ml
+# File "show.ml", line 18, characters 12-28:
+# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o req_options.cmx req_options.ml
 # File "req_options.ml", line 20, characters 2-91:
 # Warning 50: unattached documentation comment (ignored)
@@ -835,9 +838,6 @@ The following actions will be performed:
 # Warning 50: unattached documentation comment (ignored)
 # File "req_options.ml", line 73, characters 10-146:
 # Warning 50: unattached documentation comment (ignored)
-# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o show.cmx show.ml
-# File "show.ml", line 18, characters 12-28:
-# Warning 48: implicit elimination of optional arguments ?decl, ?nl, ?indent, ?ns_prefix
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o generic_select.cmx generic_select.ml
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o generic_select.cmx generic_select.ml
 # File "generic_select.ml", line 131, characters 2-28:
@@ -910,9 +910,6 @@ The following actions will be performed:
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o slave.cmx slave.ml
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o store.cmx store.ml
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -syntax camlp4o -package lwt.syntax -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o update.cmx update.ml
-# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o search.cmx search.ml
-# File "search.ml", line 36, characters 47-62:
-# Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o conf.cmx conf.ml
 # File "conf.ml", line 23, characters 8-24:
 # Warning 3: deprecated: String.lowercase
@@ -920,12 +917,15 @@ The following actions will be performed:
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o import.cmx import.ml
 # File "import.ml", line 24, characters 33-48:
 # Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
-# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o optimise.cmx optimise.ml
-# File "optimise.ml", line 128, characters 43-58:
-# Warning 3: deprecated: String.set
-# Use Bytes.set instead.
+# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o search.cmx search.ml
+# File "search.ml", line 36, characters 47-62:
+# Warning 48: implicit elimination of optional arguments ?enc, ?strip, ?ns, ?entity
 # + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o store.cmx store.ml
 # File "store.ml", line 120, characters 50-64:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# + ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o optimise.cmx optimise.ml
+# File "optimise.ml", line 128, characters 43-58:
 # Warning 3: deprecated: String.set
 # Use Bytes.set instead.
 # ocamlfind ocamlopt -c -g -g -annot -thread -strict-sequence -w A-4 -warn-error +5+6+10+26 -package yojson,xmlm,str,lwt,lwt.unix,lwt.react,lwt.preemptive,extlib,curl,ssl,dynlink -o cli.cmx cli.ml
@@ -1050,92 +1050,96 @@ The following actions will be performed:
 # [ -L _build -o -e _build ] || ln -s /home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/build/ocaml _build
 # ln -f "/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/build/ocaml/0install" "/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/build/ocaml/0launch"
 # make[3]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/ocaml'
-# .....................................................................S...Curl: handle 0x558ec5da8040 leaked, conn 0x558ec5db10b0, url 
-# Curl: handle 0x558ec5dfc500 leaked, conn 0x558ec5e05570, url 
-# Curl: handle 0x558ec5e87790 leaked, conn 0x558ec5e45dc0, url 
-# Curl: handle 0x558ec5ca2c60 leaked, conn 0x558ec5e460a0, url 
-# ..Curl: handle 0x558ec5ccdc30 leaked, conn 0x558ec5e469b0, url 
-# ..Curl: handle 0x558ec5e57670 leaked, conn 0x558ec5c6a7e0, url 
-# ....................Curl: handle 0x558ec5cbebe0 leaked, conn 0x558ec5d075c0, url 
-# Curl: handle 0x558ec5fe3d90 leaked, conn 0x558ec5ee3b70, url 
-# Curl: handle 0x558ec5d27940 leaked, conn 0x558ec5e46910, url 
-# ......Curl: handle 0x558ec5cf7660 leaked, conn 0x558ec5ce2ce0, url 
-# Curl: handle 0x558ec5e946c0 leaked, conn 0x558ec5e45800, url 
-# Curl: handle 0x558ec5ee48a0 leaked, conn 0x558ec5e466a0, url 
-# Curl: handle 0x558ec5c59e20 leaked, conn 0x558ec5c69f20, url 
-# .....................................................Curl: handle 0x558ec5dec470 leaked, conn 0x558ec5c6a7e0, url 
-# ......................Curl: handle 0x558ec6006bb0 leaked, conn 0x558ec5e45600, url 
-# Curl: handle 0x558ec5d719c0 leaked, conn 0x558ec5d27690, url 
-# Curl: handle 0x558ec5e25630 leaked, conn 0x558ec5dc2070, url 
-# Curl: handle 0x558ec5c92c00 leaked, conn 0x558ec5dc1670, url 
-# Curl: handle 0x558ec5ead610 leaked, conn 0x558ec5cbdfe0, url 
-# ...Curl: handle 0x558ec5d07880 leaked, conn 0x558ec5d27200, url http://localhost:8000/HelloWorld.tgz
-# Curl: handle 0x558ec5e05570 leaked, conn 0x558ec5e7f7f0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# Curl: handle 0x558ec5f6da90 leaked, conn 0x558ec5dc1d60, url http://localhost:8000/HelloWorld.tgz
-# Curl: handle 0x558ec6026c70 leaked, conn 0x558ec5e801c0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# ..Curl: handle 0x558ec5d61960 leaked, conn 0x558ec5c6a7e0, url http://localhost:8000/6FCF121BE2390E0B.gpg
-# Curl: handle 0x558ec5e0e460 leaked, conn 0x558ec5cbe740, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# Curl: handle 0x558ec5e17350 leaked, conn 0x558ec5dc1110, url http://localhost:8000/HelloWorld.tgz
-# Curl: handle 0x558ec604fc20 leaked, conn 0x558ec5e79410, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# ...Curl: handle 0x558ec5eed790 leaked, conn 0x558ec5cbe110, url http://localhost:8000/dummy_1-1_all.deb
-# Curl: handle 0x558ec5f066e0 leaked, conn 0x558ec5e7f7f0, url http://localhost:8000/redirect/dummy_1-1_all.deb
-# Curl: handle 0x558ec5f0f5d0 leaked, conn 0x558ec5e352f0, url http://localhost:8000/HelloWorld.tar.bz2
-# ....Curl: handle 0x558ec5d95ac0 leaked, conn 0x558ec5e34df0, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec5f5da30 leaked, conn 0x558ec5d828e0, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec61820c0 leaked, conn 0x558ec6006090, url http://localhost:8000/HelloWorld.tar.bz2
-# ...Curl: handle 0x558ec5f76980 leaked, conn 0x558ec5dc20a0, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec5f8f8d0 leaked, conn 0x558ec5e34fe0, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec5e3a6e0 leaked, conn 0x558ec60068e0, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec5fa8820 leaked, conn 0x558ec5e79060, url http://localhost:8000/HelloWorldMain
-# ....Curl: handle 0x558ec60c8db0 leaked, conn 0x558ec5dc20a0, url http://localhost:8000/HelloSym.tgz
-# Curl: handle 0x558ec5f2d910 leaked, conn 0x558ec5e80240, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec6058b10 leaked, conn 0x558ec5f1d780, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec6071a60 leaked, conn 0x558ec5e78e30, url http://localhost:8000/redirect/dummy_1-1_all.deb
-# Curl: handle 0x558ec608a9b0 leaked, conn 0x558ec5e39510, url http://localhost:8000/HelloWorld.autopackage
-# ..Curl: handle 0x558ec61cb130 leaked, conn 0x558ec5e253f0, url http://localhost:8000/6FCF121BE2390E0B.gpg
-# Curl: handle 0x558ec622b370 leaked, conn 0x558ec5e453f0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# ...Curl: handle 0x558ec6141f40 leaked, conn 0x558ec5e78780, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec6366700 leaked, conn 0x558ec5e44fc0, url http://roscidus.com/0mirror/feeds/http/example.com:8000/Hello.xml/impl/sha1=3ce644dc725f1d21cfcf02562c76f375944b266a
-# ...Curl: handle 0x558ec5c82ba0 leaked, conn 0x558ec5e44b20, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec62442c0 leaked, conn 0x558ec5e78900, url http://roscidus.com/0mirror/archive/http%3A%23%23example.com%3A8000%23HelloWorld.tgz
-# Curl: handle 0x558ec6316520 leaked, conn 0x558ec5d608b0, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec640dc30 leaked, conn 0x558ec5d5fd40, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# Curl: handle 0x558ec65e7600 leaked, conn 0x558ec5d5fe80, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec5db10b0 leaked, conn 0x558ec5dc13a0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# Curl: handle 0x558ec628b5b0 leaked, conn 0x558ec60069d0, url http://localhost:8000/HelloWorld.tgz
-# Curl: handle 0x558ec6394aa0 leaked, conn 0x558ec5e44d10, url http://example.com:8000/6FCF121BE2390E0B.gpg
-# Curl: handle 0x558ec5d378a0 leaked, conn 0x558ec5dc1740, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# Curl: handle 0x558ec61ab070 leaked, conn 0x558ec5e39510, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec6600550 leaked, conn 0x558ec62644c0, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec67c9ec0 leaked, conn 0x558ec626ab90, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec6812f30 leaked, conn 0x558ec626b0e0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# .Curl: handle 0x558ec63ad9f0 leaked, conn 0x558ec60069d0, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec5d178e0 leaked, conn 0x558ec626a7a0, url http://example.com:8000/HelloWorld.tgz
-# .Curl: handle 0x558ec60bfec0 leaked, conn 0x558ec5e25290, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec6128ff0 leaked, conn 0x558ec5e35250, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# Curl: handle 0x558ec602fb60 leaked, conn 0x558ec5d27690, url http://localhost:8000/HelloWorld.tar.bz2
-# Curl: handle 0x558ec5dc2250 leaked, conn 0x558ec5cbe3b0, url http://localhost:8000/HelloWorldMain
-# .Curl: handle 0x558ec6151ea0 leaked, conn 0x558ec62644c0, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec6416b20 leaked, conn 0x558ec6087d10, url http://example.com:8000/6FCF121BE2390E0B.gpg
-# Curl: handle 0x558ec609fe00 leaked, conn 0x558ec5e39510, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# ...Curl: handle 0x558ec5cabb50 leaked, conn 0x558ec5d608b0, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec6476d60 leaked, conn 0x558ec5e25390, url http://localhost/missing.png
-# Curl: handle 0x558ec60f8ed0 leaked, conn 0x558ec626a610, url http://roscidus.com/0mirror/search/?q=firefox
-# ..Curl: handle 0x558ec61eb1f0 leaked, conn 0x558ec5d27690, url http://example.com:8000/Hello.xml
-# ....S.......S..............SS.........Curl: handle 0x558ec62ad3f0 leaked, conn 0x558ec5f1d780, url http://roscidus.com/0mirror/archive/http%3A%23%23example.com%3A8000%23HelloWorld.tgz
-# Curl: handle 0x558ec62944a0 leaked, conn 0x558ec5e871f0, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec645de10 leaked, conn 0x558ec5d60680, url http://example.com:8000/HelloWorld.tgz
-# Curl: handle 0x558ec607a950 leaked, conn 0x558ec5e80240, url http://roscidus.com/0mirror/feeds/http/example.com:8000/Hello.xml/impl/sha1=3ce644dc725f1d21cfcf02562c76f375944b266a
-# Curl: handle 0x558ec67a0f10 leaked, conn 0x558ec626a9d0, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec63566a0 leaked, conn 0x558ec609fd00, url http://example.com:8000/HelloWorld.tgz
-# ....Environment variable 'zeroinstall-runenv-PROG' not set
-# ... launching /tmp/0install-test-3a5d0d9f/cache/0install.net/injector/exec-199377/PROG/PROG
+# .....................................................................S...Curl: handle 0x56433763b040 leaked, conn 0x5643376440b0, url 
+# Curl: handle 0x56433768f6e0 leaked, conn 0x5643376986e0, url 
+# Curl: handle 0x56433771a8d0 leaked, conn 0x5643376d8f00, url 
+# Curl: handle 0x564337545cc0 leaked, conn 0x5643376d9110, url 
+# ..Curl: handle 0x56433766b310 leaked, conn 0x5643376d92f0, url 
+# ..Curl: handle 0x564337760810 leaked, conn 0x5643376d92f0, url 
+# Curl: handle 0x564337737860 leaked, conn 0x564337572cb0, url 
+# Curl: handle 0x5643377fdaa0 leaked, conn 0x564337678380, url 
+# ....................Curl: handle 0x5643377f4bb0 leaked, conn 0x5643376d9110, url 
+# ......Curl: handle 0x56433755ec10 leaked, conn 0x5643376d8f00, url 
+# Curl: handle 0x564337757920 leaked, conn 0x5643376d9840, url 
+# Curl: handle 0x564337787a40 leaked, conn 0x5643376d97a0, url 
+# Curl: handle 0x56433758a660 leaked, conn 0x5643374fcf20, url 
+# .....................................................Curl: handle 0x5643376440b0 leaked, conn 0x564337678380, url 
+# .....................Curl: handle 0x56433782baa0 leaked, conn 0x5643374fc670, url 
+# Curl: handle 0x564337525c00 leaked, conn 0x5643377376c0, url 
+# Curl: handle 0x5643376a8740 leaked, conn 0x564337737740, url 
+# ...Curl: handle 0x564337769700 leaked, conn 0x564337828130, url 
+# Curl: handle 0x56433754ebb0 leaked, conn 0x5643375736d0, url 
+# Curl: handle 0x564337505b40 leaked, conn 0x564337827d20, url http://localhost:8000/HelloWorld.tgz
+# Curl: handle 0x5643376ea7b0 leaked, conn 0x5643374fc930, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x564337859980 leaked, conn 0x5643378287b0, url http://localhost:8000/HelloWorld.tgz
+# Curl: handle 0x5643378c2ab0 leaked, conn 0x56433768f400, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# ...Curl: handle 0x5643376986e0 leaked, conn 0x5643375736d0, url http://localhost:8000/6FCF121BE2390E0B.gpg
+# Curl: handle 0x5643376f36a0 leaked, conn 0x56433759eac0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x56433770c5f0 leaked, conn 0x5643378288f0, url http://localhost:8000/HelloWorld.tgz
+# Curl: handle 0x5643378a29f0 leaked, conn 0x56433759f7c0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# ...Curl: handle 0x5643377c0a50 leaked, conn 0x56433768f620, url http://localhost:8000/dummy_1-1_all.deb
+# Curl: handle 0x5643378fbac0 leaked, conn 0x5643375733d0, url http://localhost:8000/redirect/dummy_1-1_all.deb
+# Curl: handle 0x5643379c4e30 leaked, conn 0x56433759ecf0, url http://localhost:8000/HelloWorld.tar.bz2
+# ...Curl: handle 0x564337984cb0 leaked, conn 0x564337545bf0, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x5643379ddd80 leaked, conn 0x564337736ef0, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x56433761bb90 leaked, conn 0x56433759ee30, url http://localhost:8000/HelloWorld.tar.bz2
+# ....Curl: handle 0x564337624a80 leaked, conn 0x56433768f060, url http://localhost:8000/HelloWorldMain
+# Curl: handle 0x5643375cb9b0 leaked, conn 0x5643378b2950, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x5643375e4900 leaked, conn 0x5643378b29d0, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x5643375fd850 leaked, conn 0x564337859640, url http://localhost:8000/HelloWorld.tar.bz2
+# ....Curl: handle 0x56433798dba0 leaked, conn 0x564337827c50, url http://localhost:8000/HelloSym.tgz
+# Curl: handle 0x5643379a6af0 leaked, conn 0x5643378285d0, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x564337a4e020 leaked, conn 0x56433759ef70, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x564337a66f70 leaked, conn 0x564337737070, url http://localhost:8000/redirect/dummy_1-1_all.deb
+# Curl: handle 0x564337a8ff20 leaked, conn 0x56433760b8d0, url http://localhost:8000/HelloWorld.autopackage
+# ...Curl: handle 0x564337b57510 leaked, conn 0x5643375cae90, url http://example.com:8000/6FCF121BE2390E0B.gpg
+# Curl: handle 0x564337bc0640 leaked, conn 0x5643379b4a30, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# ..Curl: handle 0x564337ace320 leaked, conn 0x56433768eaa0, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337be95f0 leaked, conn 0x564337827980, url http://roscidus.com/0mirror/feeds/http/example.com:8000/Hello.xml/impl/sha1=3ce644dc725f1d21cfcf02562c76f375944b266a
+# ..Curl: handle 0x564337d1ba90 leaked, conn 0x56433755e940, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337cbb850 leaked, conn 0x564337a9def0, url http://roscidus.com/0mirror/archive/http%3A%23%23example.com%3A8000%23HelloWorld.tgz
+# Curl: handle 0x564337b1e500 leaked, conn 0x5643375cb880, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337c52720 leaked, conn 0x564337cd9a70, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# .Curl: handle 0x564337bd9590 leaked, conn 0x5643378596c0, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337e9c390 leaked, conn 0x564337a2c140, url http://example.com:8000/Hello.xml
+# Curl: handle 0x5643377e0b10 leaked, conn 0x5643375736d0, url http://localhost:8000/HelloWorld.tgz
+# Curl: handle 0x5643379049b0 leaked, conn 0x5643375cb150, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x564337c7b6d0 leaked, conn 0x5643375b2860, url http://example.com:8000/Hello.xml
+# Curl: handle 0x564337aee3e0 leaked, conn 0x564337825a30, url http://example.com:8000/HelloWorld.tgz
+# .Curl: handle 0x5643376b1630 leaked, conn 0x5643375736d0, url http://example.com:8000/HelloWorld.tgz
+# .Curl: handle 0x56433794bca0 leaked, conn 0x56433755e3f0, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337740750 leaked, conn 0x564337736e10, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x5643376fc590 leaked, conn 0x564337827d20, url http://localhost:8000/HelloWorld.tar.bz2
+# Curl: handle 0x564337b4e620 leaked, conn 0x5643375cb590, url http://localhost:8000/HelloWorldMain
+# .Curl: handle 0x564337727800 leaked, conn 0x5643377506b0, url http://example.com:8000/Hello.xml
+# Curl: handle 0x5643374ece20 leaked, conn 0x564337827d20, url http://example.com:8000/6FCF121BE2390E0B.gpg
+# Curl: handle 0x564337a16d90 leaked, conn 0x564337a9e140, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x5643377d0ab0 leaked, conn 0x564337be89e0, url http://example.com:8000/Hello.xml
+# ....Curl: handle 0x5643379b4dd0 leaked, conn 0x564337a9e140, url http://localhost/missing.png
+# Curl: handle 0x5643378eba60 leaked, conn 0x564337736e10, url http://roscidus.com/0mirror/search/?q=firefox
+# Curl: handle 0x564337c845c0 leaked, conn 0x5643378278c0, url http://example.com:8000/6FCF121BE2390E0B.gpg
+# Curl: handle 0x5643377a0990 leaked, conn 0x56433771a530, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x56433807ec50 leaked, conn 0x564337a2c3d0, url http://example.com:8000/Hello.xml
+# .....S.......S..............SS........Curl: handle 0x564337817a00 leaked, conn 0x56433755ea40, url http://localhost:8000/6FCF121BE2390E0B.gpg
+# Curl: handle 0x5643375a2900 leaked, conn 0x5643375733d0, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x564337ce9bf0 leaked, conn 0x564337683110, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337d02b40 leaked, conn 0x564337683620, url http://roscidus.com/0mirror/archive/http%3A%23%23example.com%3A8000%23HelloWorld.tgz
+# Curl: handle 0x564337ca2900 leaked, conn 0x564337a28f50, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337cf2ae0 leaked, conn 0x5643376d8790, url http://roscidus.com/0mirror/feeds/http/example.com:8000/Hello.xml/impl/sha1=3ce644dc725f1d21cfcf02562c76f375944b266a
+# Curl: handle 0x564338055ca0 leaked, conn 0x564337827700, url http://example.com:8000/Hello.xml
+# .....Curl: handle 0x5643380cee30 leaked, conn 0x564337be8820, url http://example.com:8000/Hello.xml
+# Curl: handle 0x5643376836c0 leaked, conn 0x564337a2d870, url http://example.com:8000/HelloWorld.tgz
+# Curl: handle 0x564337d6bc70 leaked, conn 0x56433759ef70, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
+# Curl: handle 0x5643380aed70 leaked, conn 0x564337be88a0, url http://example.com:8000/Hello.xml
+# Curl: handle 0x5643376da750 leaked, conn 0x5643375736d0, url http://roscidus.com/0mirror/keys/6FCF121BE2390E0B.gpg
+# Environment variable 'zeroinstall-runenv-PROG' not set
+# ... launching /tmp/0install-test-4842eba/cache/0install.net/injector/exec-199377/PROG/PROG
 # Environment variable 'zeroinstall-runenv-0testprog' not set
-# ... launching /tmp/0install-test-3a5d0d9f/cache/0install.net/injector/exec-199377/0testprog/0testprog
+# ... launching /tmp/0install-test-4842eba/cache/0install.net/injector/exec-199377/0testprog/0testprog
 # (showing full log)
 # info: Getting new selections for /home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/tests/runnable/RunExec.xml
 # info: SELF=/home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/tests/runnable/.
-# info: PATH=/tmp/0install-test-3a5d0d9f/cache/0install.net/injector/exec-199377/0testprog:...
+# info: PATH=/tmp/0install-test-4842eba/cache/0install.net/injector/exec-199377/0testprog:...
 # info: Running /home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/tests/runnable/go.sh user-arg-run
 # warning: Test failed: Child returned error exit status 1
 # ... running /home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/tests/runnable/RunExec.xml
@@ -1158,18 +1162,14 @@ The following actions will be performed:
 # Called from file "src/oUnit.ml", line 86, characters 13-17
 # Called from file "tests/test.ml", line 271, characters 4-9
 # 
-# ECurl: handle 0x558ec644fb30 leaked, conn 0x558ec626abd0, url http://roscidus.com/0mirror/keys/6FCF121BE2390E0B.gpg
-# Curl: handle 0x558ec5ddb1a0 leaked, conn 0x558ec60879c0, url http://example.com:8000/Hello.xml
-# Curl: handle 0x558ec63edb70 leaked, conn 0x558ec626b220, url http://example.com:8000/6FCF121BE2390E0B.gpg
-# Curl: handle 0x558ec67d2db0 leaked, conn 0x558ec645dd60, url http://localhost:3333/key-info/key/DE937DD411906ACF7C263B396FCF121BE2390E0B
-# ........
+# E........
 # ==============================================================================
 # Error: 0install:23:run:8:executable
 # 
 # Child returned error exit status 1
 # ... running /home/opam/.opam/4.03/.opam-switch/build/0install.2.6.2/tests/runnable/RunExec.xml
 # ------------------------------------------------------------------------------
-# Ran: 264 tests in: 27.64 seconds.
+# Ran: 264 tests in: 27.44 seconds.
 # FAILED: Cases: 264 Tried: 264 Errors: 1 Failures: 0 Skip:  5 Todo: 0 Timeouts: 0.
 # test.native: tpp.c:84: __pthread_tpp_change_priority: Assertion `new_prio == -1 || (new_prio >= fifo_min_prio && new_prio <= fifo_max_prio)' failed.
 # Aborted (core dumped)
@@ -1219,5 +1219,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180817224507.export"
-31 1534545894 1534546113
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180818222759.export"
+31 1534631265 1534631489

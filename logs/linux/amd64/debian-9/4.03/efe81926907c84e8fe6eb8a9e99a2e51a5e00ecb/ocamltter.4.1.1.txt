@@ -195,7 +195,7 @@ The following actions will be performed:
 # --- Checking for ocamlc.opt... (found /home/opam/.opam/4.03/bin/ocamlc.opt)
 # --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.03/bin/ocamlopt.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
-# *** omake: finished reading OMakefiles (0.09 sec)
+# *** omake: finished reading OMakefiles (0.10 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan twitter scan-ocaml-api_intf.ml
 # + ocamlfind ocamldep -package cryptokit,str,spotlib,ppx_meta_conv,ppx_meta_conv_tiny_json,ppx_meta_conv_ocaml,curl -package ppx_meta_conv -modules api_intf.ml
@@ -203,7 +203,7 @@ The following actions will be performed:
 # File "_none_", line 1:
 # Cannot load /home/opam/.opam/4.03/lib/re/re_perl.cmxs: cannot find file /home/opam/.opam/4.03/lib/re/re_perl.cmxs in search path
 # *** omake: 28/293 targets are up to date
-# *** omake: failed (0.15 sec, 1/1 scans, 0/0 rules, 15/135 digests)
+# *** omake: failed (0.18 sec, 1/1 scans, 0/0 rules, 15/135 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner twitter/scan-ocaml-api_intf.ml>
 #       depends on: twitter/api_intf.ml
@@ -248,5 +248,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180817230737.export"
-31 1534547244 1534547373
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180818230714.export"
+31 1534633620 1534633758

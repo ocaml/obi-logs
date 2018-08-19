@@ -141,10 +141,10 @@ The following actions will be performed:
 -> installed ppx_sexp_conv.113.33.01+4.03
 -> installed ppx_assert.113.33.00
 -> installed ppx_custom_printf.113.33.00+4.03
--> installed ppx_sexp_value.113.33.00+4.03
+-> installed ppx_sexp_message.113.33.00+4.03
 -> installed ppx_typerep_conv.113.33.00+4.03
 -> installed variantslib.113.24.00
--> installed ppx_sexp_message.113.33.00+4.03
+-> installed ppx_sexp_value.113.33.00+4.03
 -> installed ppx_variants_conv.113.33.00+4.03
 -> installed ppx_expect.113.33.01+4.03
 -> installed ppx_jane.113.33.00
@@ -173,14 +173,14 @@ The following actions will be performed:
 # --- Checking for ocamllex.opt... (found /home/opam/.opam/4.03/bin/ocamllex.opt)
 # --- Checking whether ocamlc understands the "z" warnings... (yes)
 # --- Checking whether ocamlopt can create cmxs plugins... (yes)
-# *** omake: finished reading OMakefiles (0.14 sec)
+# *** omake: finished reading OMakefiles (0.13 sec)
 # --- Checking if ocamldep understands -modules... (yes)
 # - scan _build/lib scan-ocaml-response.ml
 # + ocamlfind ocamldep -package core,async,async_unix,ppx_deriving,ppx_deriving_protobuf,ppx_deriving.show,ppx_deriving_protobuf.runtime,bitstring -modules response.ml
 # File "response.ml", line 96, characters 32-33:
 # Error: Syntax error
 # *** omake: 28/230 targets are up to date
-# *** omake: failed (1.20 sec, 5/5 scans, 2/2 rules, 68/97 digests)
+# *** omake: failed (1.25 sec, 5/5 scans, 2/2 rules, 68/97 digests)
 # *** omake: targets were not rebuilt because of errors:
 #    <scanner _build/lib/scan-ocaml-response.ml>
 #       depends on: _build/lib/response.ml
@@ -244,5 +244,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180817234024.export"
-31 1534549221 1534549829
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180818222235.export"
+31 1534630952 1534631528
