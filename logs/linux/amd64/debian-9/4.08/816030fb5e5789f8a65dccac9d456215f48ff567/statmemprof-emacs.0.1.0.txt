@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 statmemprof-emacs.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for statmemprof-emacs.0.1.0: The following dependencies couldn't be met:
+          - statmemprof-emacs -> ocaml-variants (= 4.03.0+statistical-memprof & = 4.04.2+statistical-memprof & = 4.05.0+statistical-memprof & = 4.06.0+statistical-memprof & = 4.06.1+statistical-memprof)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=statmemprof-emacs.0.1.0 returned 20
+20 1534717311 1534717313
