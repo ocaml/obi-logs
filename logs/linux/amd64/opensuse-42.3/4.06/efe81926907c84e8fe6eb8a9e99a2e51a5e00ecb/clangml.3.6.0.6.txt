@@ -51,8 +51,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06/.opam-switch/build/clangml.3.6.0.6
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/clangml-13-3a52b4.env
-# output-file          ~/.opam/log/clangml-13-3a52b4.out
+# env-file             ~/.opam/log/clangml-12-3a52b4.env
+# output-file          ~/.opam/log/clangml-12-3a52b4.out
 ### output ###
 # ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
 # /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -101,5 +101,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818011409.export"
-31 1534554818 1534555028
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180819050858.export"
+31 1534655075 1534655460

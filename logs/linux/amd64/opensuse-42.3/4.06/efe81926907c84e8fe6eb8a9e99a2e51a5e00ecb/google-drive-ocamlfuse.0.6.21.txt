@@ -10,8 +10,6 @@ which
 # The following new OS packages need to be installed: fuse-devel gmp-devel libcurl-devel sqlite3-devel
 The following command needs to be run through "sudo":
     zypper --non-interactive install fuse-devel gmp-devel libcurl-devel sqlite3-devel
-Retrieving repository 'OSS Update' metadata [..done]
-Building repository 'OSS Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 Resolving package dependencies...
@@ -39,7 +37,7 @@ Retrieving: sqlite3-devel-3.8.10.2-10.2.x86_64.rpm [done]
 Retrieving package fuse-devel-2.9.3-11.3.x86_64 (8/9),  70.7 KiB (280.7 KiB unpacked)
 Retrieving: fuse-devel-2.9.3-11.3.x86_64.rpm [done]
 Retrieving package libcurl-devel-7.37.0-36.1.x86_64 (9/9), 227.2 KiB (357.2 KiB unpacked)
-Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [.done (13.8 KiB/s)]
+Retrieving: libcurl-devel-7.37.0-36.1.x86_64.rpm [done]
 Checking for file conflicts: [.......done]
 (1/9) Installing: fuse-2.9.3-11.3.x86_64 [.........done]
 Additional rpm output:
@@ -241,5 +239,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818012711.export"
-31 1534555112 1534555793
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180819050509.export"
+31 1534654595 1534655279
