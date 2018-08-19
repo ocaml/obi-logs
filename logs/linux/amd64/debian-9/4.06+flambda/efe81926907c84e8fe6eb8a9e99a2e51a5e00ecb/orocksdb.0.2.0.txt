@@ -114,8 +114,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.06+flambda/.opam-switch/build/orocksdb.0.2.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/orocksdb-12-bd0fdf.env
-# output-file          ~/.opam/log/orocksdb-12-bd0fdf.out
+# env-file             ~/.opam/log/orocksdb-11-bd0fdf.env
+# output-file          ~/.opam/log/orocksdb-11-bd0fdf.out
 ### output ###
 # ocamlbuild -use-ocamlfind -lflags -cclib,/usr/local/lib/librocksdb.so rocks.inferred.mli rocks.cma rocks.cmxa rocks.cmxs
 # ocamlfind ocamldep -package ctypes.foreign -package ctypes -modules rocks.ml > rocks.ml.depends
@@ -162,5 +162,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180818031033.export"
-31 1534561821 1534561878
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180819011501.export"
+31 1534641290 1534641347
