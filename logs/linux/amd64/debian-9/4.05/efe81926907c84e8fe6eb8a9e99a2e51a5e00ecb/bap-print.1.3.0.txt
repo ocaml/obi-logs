@@ -400,8 +400,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/bap-print.1.3.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/bap-print-11-2c9262.env
-# output-file          ~/.opam/log/bap-print-11-2c9262.out
+# env-file             ~/.opam/log/bap-print-10-2c9262.env
+# output-file          ~/.opam/log/bap-print-10-2c9262.out
 ### output ###
 # ocaml setup.ml -quiet -build 
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package core_kernel -package findlib -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -510,5 +510,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180818035746.export"
-31 1534564640 1534565352
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180818235630.export"
+31 1534636564 1534637251

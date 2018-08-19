@@ -351,8 +351,8 @@ The following actions will be performed:
 -> installed ppx_ast.v0.9.1
 -> installed stringext.1.5.0
 -> installed topkg.0.9.1
--> installed base.v0.9.4
 -> installed cmdliner.1.0.2
+-> installed base.v0.9.4
 -> installed react.1.2.1
 -> installed lwt_react.1.1.1
 -> installed stdio.v0.9.1
@@ -414,8 +414,8 @@ The following actions will be performed:
 # path                 ~/.opam/4.05/.opam-switch/build/bap-x86.1.0.0
 # command              /usr/bin/make
 # exit-code            2
-# env-file             ~/.opam/log/bap-x86-11-5620b2.env
-# output-file          ~/.opam/log/bap-x86-11-5620b2.out
+# env-file             ~/.opam/log/bap-x86-12-5620b2.env
+# output-file          ~/.opam/log/bap-x86-12-5620b2.out
 ### output ###
 # ocaml setup.ml -quiet -build 
 # ocamlfind ocamlopt -package unix -package ocamlbuild -linkpkg -package core_kernel -package findlib -package ppx_driver.ocamlbuild myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
@@ -520,6 +520,7 @@ The following actions will be performed:
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -package bap -package bap-abi -package bap-c -package cmdliner -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_abi.cmo plugins/x86/x86_abi.ml
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -package bap -package bap-abi -package bap-c -package cmdliner -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_asm_reg.cmo plugins/x86/x86_asm_reg.ml
 # /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -package bap -package bap-abi -package bap-c -package cmdliner -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_backend.cmo plugins/x86/x86_backend.ml
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -package bap -package bap-abi -package bap-c -package cmdliner -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_btx.cmo plugins/x86/x86_btx.ml
 # + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -short-paths -I lib/x86_cpu -package bap -package bap-abi -package bap-c -package cmdliner -package core_kernel -package ppx_jane -pp 'ppx-jane -dump-ast -inline-test-lib bap' -predicates ppx_driver -I plugins/x86 -I lib/x86_cpu -o plugins/x86/x86_backend.cmo plugins/x86/x86_backend.ml
 # File "plugins/x86/x86_backend.ml", line 18, characters 23-26:
 # Error: This expression has type
@@ -628,5 +629,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180818040841.export"
-31 1534565294 1534566077
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180818235958.export"
+31 1534636773 1534637554

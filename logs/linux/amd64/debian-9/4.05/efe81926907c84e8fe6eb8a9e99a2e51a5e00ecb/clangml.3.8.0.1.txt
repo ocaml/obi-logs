@@ -286,7 +286,7 @@ The following actions will be performed:
 # File "tools/bridgen/bridgen.ml", line 35, characters 37-54:
 # Warning 3: deprecated: String.capitalize
 # Use String.capitalize_ascii instead.
-# ocamlfind ocamlopt -linkpkg -g -package dolog -package camlp4.fulllib -package deriving -package batteries -package bytes -I tools/bridgen -I tools util.cmx tools/bridgen/codegen.cmx tools/ocamlTypes.cmx tools/bridgen/bridgen.cmx -o tools/bridgen/bridgen.native
+# ocamlfind ocamlopt -linkpkg -g -package dolog -package batteries -package camlp4.fulllib -package deriving -package bytes -I tools/bridgen -I tools util.cmx tools/bridgen/codegen.cmx tools/ocamlTypes.cmx tools/bridgen/bridgen.cmx -o tools/bridgen/bridgen.native
 # tools/bridgen/bridgen.native plugin/c++ ast_bridge clang/clang/astBridge.ml
 # grep -v '^\s*deriving (Show)\s*$' clang/clang/sloc.ml | sed -e 's/\s\+deriving (Show)//;s/= SlocBridge.\w\+ //' > clang/clang/slocBridge.ml
 # tools/bridgen/bridgen.native plugin/c++ sloc_bridge clang/clang/slocBridge.ml
@@ -347,5 +347,5 @@ The packages you requested declare the following system dependencies. Please mak
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180818041833.export"
-31 1534565871 1534566079
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180818233442.export"
+31 1534635250 1534635436
