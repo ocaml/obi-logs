@@ -42,17 +42,17 @@ The following actions will be performed:
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 -> installed base-bytes.base
-[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 -> installed conf-zmq.0.1
 -> installed stdint.0.5.1
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
 
 #=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
 # context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
 # command              /usr/bin/make check-if-preinstalled all opam-install
 # exit-code            2
-# env-file             ~/.opam/log/ocamlbuild-11-c743ac.env
-# output-file          ~/.opam/log/ocamlbuild-11-c743ac.out
+# env-file             ~/.opam/log/ocamlbuild-11-b76d46.env
+# output-file          ~/.opam/log/ocamlbuild-11-b76d46.out
 ### output ###
 # if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
 #   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
@@ -146,5 +146,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180817203342.export"
-31 1534538007 1534538026
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180819040347.export"
+31 1534651421 1534651431
