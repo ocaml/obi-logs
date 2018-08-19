@@ -37,8 +37,8 @@ The following actions will be performed:
 # env-file             ~/.opam/log/radis-11-dcf56b.env
 # output-file          ~/.opam/log/radis-11-dcf56b.out
 ### output ###
-#       ocamlc lib/.Radis.objs/radis.{cmo,cmt} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.Radis.objs -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/uchar -intf-suffix .ml -no-alias-deps -o lib/.Radis.objs/radis.cmo -c -impl lib/radis.ml)
+#     ocamlopt lib/.Radis.objs/radis.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlopt.opt -w -40 -g -I lib/.Radis.objs -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/uchar -intf-suffix .ml -no-alias-deps -o lib/.Radis.objs/radis.cmx -c -impl lib/radis.ml)
 # File "lib/radis.ml", line 46, characters 0-12862:
 # Error: Signature mismatch:
 #        ...
@@ -50,8 +50,8 @@ The following actions will be performed:
 #        File "map.mli", line 315, characters 4-53: Expected declaration
 #        The value `to_seq' is required but not provided
 #        File "map.mli", line 311, characters 4-41: Expected declaration
-#     ocamlopt lib/.Radis.objs/radis.{cmx,o} (exit 2)
-# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlopt.opt -w -40 -g -I lib/.Radis.objs -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/uchar -intf-suffix .ml -no-alias-deps -o lib/.Radis.objs/radis.cmx -c -impl lib/radis.ml)
+#       ocamlc lib/.Radis.objs/radis.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.07/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.Radis.objs -I /home/opam/.opam/4.07/lib/fmt -I /home/opam/.opam/4.07/lib/result -I /home/opam/.opam/4.07/lib/uchar -intf-suffix .ml -no-alias-deps -o lib/.Radis.objs/radis.cmo -c -impl lib/radis.ml)
 # File "lib/radis.ml", line 46, characters 0-12862:
 # Error: Signature mismatch:
 #        ...
@@ -80,5 +80,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180817205827.export"
-31 1534539505 1534539524
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180819031524.export"
+31 1534648522 1534648544
