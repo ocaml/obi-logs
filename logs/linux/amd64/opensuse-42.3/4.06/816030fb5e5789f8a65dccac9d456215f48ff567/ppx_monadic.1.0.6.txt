@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_monadic.1.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for ppx_monadic.1.0.6: The following dependencies couldn't be met:
+          - ppx_monadic -> ppxx < 2.0.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_monadic.1.0.6 returned 20
+20 1534713720 1534713722

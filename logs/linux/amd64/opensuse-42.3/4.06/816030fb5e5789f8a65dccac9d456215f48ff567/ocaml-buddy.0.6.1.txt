@@ -1,0 +1,53 @@
+$ opam depext -iy -j 2 ocaml-buddy.0.6.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild  0.12.0 [required by ocaml-buddy]
+  - install ocaml-buddy 0.6.1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocaml-buddy.0.6.1] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of ocaml-buddy failed at "/usr/bin/make all".
+
+#=== ERROR while compiling ocaml-buddy.0.6.1 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ocaml-buddy.0.6.1
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/ocaml-buddy-12-e80101.env
+# output-file          ~/.opam/log/ocaml-buddy-12-e80101.out
+### output ###
+# ocamlbuild -classic-display -use-ocamlfind buddy.cma
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamlc -cc gcc -ccopt -fPIC -c libbuddy_stubs.c
+# + ocamlfind ocamlc -cc gcc -ccopt -fPIC -c libbuddy_stubs.c
+# libbuddy_stubs.c:22:17: fatal error: bdd.h: No such file or directory
+#  #include <bdd.h>
+#                  ^
+# compilation terminated.
+# Command exited with code 2.
+# Makefile:41: recipe for target '_build/buddy.cma' failed
+# make: *** [_build/buddy.cma] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocaml-buddy 0.6.1
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180819203748.export"
+31 1534711033 1534711076
