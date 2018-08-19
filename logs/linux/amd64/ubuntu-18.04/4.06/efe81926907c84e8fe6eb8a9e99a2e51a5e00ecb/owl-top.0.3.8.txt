@@ -902,31 +902,31 @@ The following actions will be performed:
 -> installed conf-openblas.0.2.0
 -> installed conf-pkg-config.1.1
 -> installed ocaml-compiler-libs.v0.11.0
--> installed ocamlbuild.0.12.0
--> installed ocamlify.0.0.1
--> installed ocamlmod.0.0.9
 -> installed owl-base.0.4.0
--> installed plplot.5.11.0
 -> installed result.1.3
 -> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
 -> installed base.v0.11.1
--> installed oasis.0.4.11
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed plplot.5.11.0
 -> installed stdio.v0.11.0
--> installed topkg.0.9.1
 -> installed configurator.v0.11.0
+-> installed topkg.0.9.1
 -> installed integers.0.2.2
 -> installed ctypes.0.14.0
+-> installed oasis.0.4.11
 -> installed eigen.0.0.5
 -> installed owl.0.4.0
-[ERROR] The compilation of owl-zoo failed at "/home/opam/.opam/4.06/bin/dune build -p owl-zoo -j 11".
+[ERROR] The compilation of owl-zoo failed at "/home/opam/.opam/4.06/bin/dune build -p owl-zoo -j 71".
 
 #=== ERROR while compiling owl-zoo.0.4.0 ======================================#
 # context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
 # path                 ~/.opam/4.06/.opam-switch/build/owl-zoo.0.4.0
-# command              ~/.opam/4.06/bin/dune build -p owl-zoo -j 11
+# command              ~/.opam/4.06/bin/dune build -p owl-zoo -j 71
 # exit-code            1
-# env-file             ~/.opam/log/owl-zoo-14-ce3876.env
-# output-file          ~/.opam/log/owl-zoo-14-ce3876.out
+# env-file             ~/.opam/log/owl-zoo-13-ce3876.env
+# output-file          ~/.opam/log/owl-zoo-13-ce3876.out
 ### output ###
 #       ocamlc bin/owl_bin_zoo.bc (exit 2)
 # (cd _build/default && /home/opam/.opam/4.06/bin/ocamlc.opt -w -40 -safe-string -g -o bin/owl_bin_zoo.bc -linkall -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/eigen -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/ocaml-compiler-libs/toplevel -I /home/opam/.opam/4.06/lib/ocaml/compiler-libs -I /home/opam/.opam/4.06/lib/owl -I /home/opam/.opam/4.06/lib/owl-base -I /home/opam/.opam/4.06/lib/plplot -I src/zoo /home/opam/.opam/4.06/lib/ocaml/unix.cma /home/opam/.opam/4.06/lib/ocaml/bigarray.cma /home/opam/.opam/4.06/lib/integers/integers.cma /home/opam/.opam/4.06/lib/ctypes/ctypes.cma /home/opam/.opam/4.06/lib/ocaml/str.cma /home/opam/.opam/4.06/lib/ctypes/cstubs.cma /home/opam/.opam/4.06/lib/eigen/eigen.cma /home/opam/.opam/4.06/lib/owl-base/owl_base.cma /home/opam/.opam/4.06/lib/plplot/plplot.cma /home/opam/.opam/4.06/lib/owl/owl.cma /home/opam/.opam/4.06/lib/ocaml/compiler-libs/ocamlcommon.cma /home/opam/.opam/4.06/lib/ocaml/compiler-libs/ocamlbytecomp.cma /home/opam/.opam/4.06/lib/ocaml/compiler-libs/ocamltoplevel.cma /home/opam/.opam/4.06/lib/ocaml-compiler-libs/toplevel/ocaml_toplevel.cma src/zoo/owl_zoo.cma bin/.owl_bin_zoo.eobjs/owl_bin_zoo.cmo)
@@ -997,5 +997,5 @@ The following actions will be performed:
 # Run eval $(opam env) to update the current shell environment
 
 The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180818064642.export"
-31 1534574765 1534575067
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180819031433.export"
+31 1534648436 1534648754
