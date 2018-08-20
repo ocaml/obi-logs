@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 doc-ock.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for doc-ock.1.1.0: The following dependencies couldn't be met:
+          - doc-ock -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=doc-ock.1.1.0 returned 20
+20 1534743183 1534743186

@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 core_extended.108.07.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for core_extended.108.07.00: The following dependencies couldn't be met:
+          - core_extended -> core = 108.07.00 -> ocaml < 4.00.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=core_extended.108.07.00 returned 20
+20 1534744113 1534744115

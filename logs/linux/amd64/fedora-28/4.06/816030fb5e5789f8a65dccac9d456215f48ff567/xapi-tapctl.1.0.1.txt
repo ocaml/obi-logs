@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 xapi-tapctl.1.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for xapi-tapctl.1.0.1: The following dependencies couldn't be met:
+          - xapi-tapctl -> rpc -> type_conv < 108.07.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - xapi-tapctl -> rpc -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xapi-tapctl.1.0.1 returned 20
+20 1534743686 1534743689

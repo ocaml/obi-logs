@@ -1,0 +1,206 @@
+$ opam depext -iy -j 2 fftw3.0.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Sun Aug 19 20:03:44 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0     v0.11.0 [required by base]
+  - install base-bytes   base    [required by cppo]
+  - install base         v0.11.1 [required by fftw3]
+  - install cppo         1.6.4   [required by fftw3]
+  - install stdio        v0.11.0 [required by fftw3]
+  - install configurator v0.11.0 [required by fftw3]
+  - install fftw3        0.8
+===== 7 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[fftw3.0.8] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed sexplib0.v0.11.0
+-> installed cppo.1.6.4
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+[ERROR] The compilation of fftw3 failed at "/home/opam/.opam/4.06/bin/jbuilder build -p fftw3 -j 47".
+
+#=== ERROR while compiling fftw3.0.8 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/fftw3.0.8
+# command              ~/.opam/4.06/bin/jbuilder build -p fftw3 -j 47
+# exit-code            1
+# env-file             ~/.opam/log/fftw3-10-07d8bf.env
+# output-file          ~/.opam/log/fftw3-10-07d8bf.out
+### output ###
+#       ocamlc config/.discover.eobjs/discover.{cmi,cmo,cmt}
+# File "config/discover.ml", line 64, characters 16-25:
+# Warning 3: deprecated: Not_found
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Instead of raising [Not_found], consider using [raise_s] with an informative error
+# message.  If code needs to distinguish [Not_found] from other exceptions, please change
+# it to handle both [Not_found] and [Not_found_s].  Then, instead of raising [Not_found],
+# raise [Not_found_s] with an informative error message.
+# File "config/discover.ml", line 68, characters 16-25:
+# Warning 3: deprecated: Not_found
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Instead of raising [Not_found], consider using [raise_s] with an informative error
+# message.  If code needs to distinguish [Not_found] from other exceptions, please change
+# it to handle both [Not_found] and [Not_found_s].  Then, instead of raising [Not_found],
+# raise [Not_found_s] with an informative error message.
+#     ocamlopt config/.discover.eobjs/discover.{cmx,o}
+# File "config/discover.ml", line 64, characters 16-25:
+# Warning 3: deprecated: Not_found
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Instead of raising [Not_found], consider using [raise_s] with an informative error
+# message.  If code needs to distinguish [Not_found] from other exceptions, please change
+# it to handle both [Not_found] and [Not_found_s].  Then, instead of raising [Not_found],
+# raise [Not_found_s] with an informative error message.
+# File "config/discover.ml", line 68, characters 16-25:
+# Warning 3: deprecated: Not_found
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Instead of raising [Not_found], consider using [raise_s] with an informative error
+# message.  If code needs to distinguish [Not_found] from other exceptions, please change
+# it to handle both [Not_found] and [Not_found_s].  Then, instead of raising [Not_found],
+# raise [Not_found_s] with an informative error message.
+#     discover src/c_flags.sexp,src/c_library_flags.sexp (exit 1)
+# (cd _build/default/src && ../config/discover.exe)
+# run: /home/opam/.opam/4.06/bin/ocamlc.opt -config
+# -> process exited with code 0
+# -> stdout:
+#  | version: 4.06.1
+#  | standard_library_default: /home/opam/.opam/4.06/lib/ocaml
+#  | standard_library: /home/opam/.opam/4.06/lib/ocaml
+#  | standard_runtime: /home/opam/.opam/4.06/bin/ocamlrun
+#  | ccomp_type: cc
+#  | c_compiler: gcc
+#  | ocamlc_cflags: -O2 -fno-strict-aliasing -fwrapv -fPIC
+#  | ocamlc_cppflags: -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | ocamlopt_cflags: -O2 -fno-strict-aliasing -fwrapv
+#  | ocamlopt_cppflags: -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | bytecomp_c_compiler: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | native_c_compiler: gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+#  | bytecomp_c_libraries: -lm  -ldl  -lpthread                  
+#  | native_c_libraries: -lm  -ldl
+#  | native_pack_linker: ld -r -o 
+#  | ranlib: ranlib
+#  | cc_profile: -pg
+#  | architecture: amd64
+#  | model: default
+#  | int_size: 63
+#  | word_size: 64
+#  | system: linux
+#  | asm: as
+#  | asm_cfi_supported: true
+#  | with_frame_pointers: false
+#  | ext_exe: 
+#  | ext_obj: .o
+#  | ext_asm: .s
+#  | ext_lib: .a
+#  | ext_dll: .so
+#  | os_type: Unix
+#  | default_executable_name: a.out
+#  | systhread_supported: true
+#  | host: x86_64-unknown-linux-gnu
+#  | target: x86_64-unknown-linux-gnu
+#  | profiling: true
+#  | flambda: false
+#  | spacetime: false
+#  | safe_string: false
+#  | default_safe_string: true
+#  | flat_float_array: true
+#  | afl_instrument: false
+#  | windows_unicode: false
+#  | exec_magic_number: Caml1999X011
+#  | cmi_magic_number: Caml1999I022
+#  | cmo_magic_number: Caml1999O022
+#  | cma_magic_number: Caml1999A022
+#  | cmx_magic_number: Caml1999Y022
+#  | cmxa_magic_number: Caml1999Z022
+#  | ast_impl_magic_number: Caml1999M022
+#  | ast_intf_magic_number: Caml1999N022
+#  | cmxs_magic_number: Caml1999D022
+#  | cmt_magic_number: Caml1999T022
+# -> stderr:
+# find_in_path: pkg-config
+# -> found: /usr/bin/pkg-config
+# run: /usr/bin/pkg-config fftw3
+# -> process exited with code 1
+# -> stdout:
+# -> stderr:
+# find_in_path: pkg-config
+# -> found: /usr/bin/pkg-config
+# run: /usr/bin/pkg-config fftw3f
+# -> process exited with code 1
+# -> stdout:
+# -> stderr:
+# compiling c program:
+#  | #include <fftw3.h>
+#  |      int main() {
+#  |        const int n = 10;
+#  |        fftw_complex in[10], out[10];
+#  |        fftw_plan_dft_1d(n, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
+#  |        return 0;
+#  |      }
+# run: gcc -O2 -fno-strict-aliasing -fwrapv -fPIC '-I' '/home/opam/.opam/4.06/lib/ocaml' '-o' '/tmp/ocaml-configurator884ad9/c-test-3/test.exe' '/tmp/ocaml-configurator884ad9/c-test-3/test.c' '-lfftw3' '-lfftw3f'
+# -> process exited with code 1
+# -> stdout:
+# -> stderr:
+#  | /tmp/ocaml-configurator884ad9/c-test-3/test.c:1:10: fatal error: fftw3.h: No such file or directory
+#  |  #include <fftw3.h>
+#  |           ^~~~~~~~~
+#  | compilation terminated.
+# Error: Please install FFTW3 and/or set environment variables FFTW3_CFLAGS and FFTW3_LIBS.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build fftw3 0.8
++- 
++- The following changes have been performed
+| - install base         v0.11.1
+| - install base-bytes   base
+| - install configurator v0.11.0
+| - install cppo         1.6.4
+| - install sexplib0     v0.11.0
+| - install stdio        v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180820054451.export"
+31 1534743888 1534743923

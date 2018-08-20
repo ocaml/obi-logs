@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 xapi-inventory.1.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for xapi-inventory.1.0.2: The following dependencies couldn't be met:
+          - xapi-inventory -> xapi-stdext -> xapi-backtrace < 0.5 -> rpc >= 1.9.51 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=xapi-inventory.1.0.2 returned 20
+20 1534743061 1534743064
