@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ocaml-top.1.1.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ocaml-top.1.1.4: The following dependencies couldn't be met:
+          - ocaml-top -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ocaml-top.1.1.4 returned 20
+20 1534734148 1534734151

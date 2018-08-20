@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ssl.0.4.6a
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ssl.0.4.6a: The following dependencies couldn't be met:
+          - ssl -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ssl.0.4.6a returned 20
+20 1534734788 1534734790
