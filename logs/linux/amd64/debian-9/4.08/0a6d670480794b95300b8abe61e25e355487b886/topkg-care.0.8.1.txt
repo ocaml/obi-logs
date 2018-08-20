@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 topkg-care.0.8.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for topkg-care.0.8.1: The following dependencies couldn't be met:
+          - topkg-care -> opam-lib = 1.2.2 -> dose < 3.4.0 -> ocamlgraph < 1.8.6 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=topkg-care.0.8.1 returned 20
+20 1534796069 1534796071

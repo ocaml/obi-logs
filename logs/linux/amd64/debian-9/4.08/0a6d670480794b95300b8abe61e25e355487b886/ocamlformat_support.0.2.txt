@@ -1,0 +1,52 @@
+$ opam depext -iy -j 2 ocamlformat_support.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlformat_support 0.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlformat_support.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of ocamlformat_support failed at "/home/opam/.opam/4.08/bin/jbuilder build -p ocamlformat_support -j 71".
+
+#=== ERROR while compiling ocamlformat_support.0.2 ============================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlformat_support.0.2
+# command              ~/.opam/4.08/bin/jbuilder build -p ocamlformat_support -j 71
+# exit-code            1
+# env-file             ~/.opam/log/ocamlformat_support-11-05296d.env
+# output-file          ~/.opam/log/ocamlformat_support-11-05296d.out
+### output ###
+#     ocamlopt .format_.objs/format___Format.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmx -c -impl format.ml)
+# File "format.ml", line 1248, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+#       ocamlc .format_.objs/format___Format.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmo -c -impl format.ml)
+# File "format.ml", line 1248, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+#     ocamlopt .format_.objs/format_.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format_.cmx -c -impl format_.ml)
+# File "format_.ml", line 1363, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+#       ocamlc .format_.objs/format_.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format_.cmo -c -impl format_.ml)
+# File "format_.ml", line 1363, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlformat_support 0.2
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534797115 1534797119
