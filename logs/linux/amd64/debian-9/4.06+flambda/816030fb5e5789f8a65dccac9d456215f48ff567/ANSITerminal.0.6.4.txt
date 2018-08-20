@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ANSITerminal.0.6.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ANSITerminal.0.6.4: The following dependencies couldn't be met:
+          - ANSITerminal -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ANSITerminal.0.6.4 returned 20
+20 1534746424 1534746427
