@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 integration1d.0.4.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for integration1d.0.4.1: The following dependencies couldn't be met:
+          - integration1d -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=integration1d.0.4.1 returned 20
+20 1534733315 1534733317
