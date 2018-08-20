@@ -1,0 +1,167 @@
+$ opam depext -iy -j 2 gpx.1.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by ISO8601]
+  - install xml-light  2.4    [required by gpx]
+  - install ISO8601    0.2.5  [required by gpx]
+  - install gpx        1.1.0
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[gpx.1.1.0] found in cache
+[ISO8601.0.2.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[xml-light.2.4] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed xml-light.2.4
+-> installed ocamlbuild.0.12.0
+-> installed ISO8601.0.2.5
+[ERROR] The compilation of gpx failed at "/usr/bin/make -C src build".
+
+#=== ERROR while compiling gpx.1.1.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/gpx.1.1.0
+# command              /usr/bin/make -C src build
+# exit-code            2
+# env-file             ~/.opam/log/gpx-12-f33fa5.env
+# output-file          ~/.opam/log/gpx-12-f33fa5.out
+### output ###
+# make: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/gpx.1.1.0/src'
+# ocamlfind ocamlc -package str -package xml-light -package ISO8601 -c gpx.mli
+# File "gpx.mli", line 31, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and metadata.
+# File "gpx.mli", line 37, characters 3-26:
+# Warning 30: the label time is defined in both types metadata and wpt.
+# File "gpx.mli", line 41, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and wpt.
+# File "gpx.mli", line 43, characters 3-23:
+# Warning 30: the label desc is defined in both types metadata and wpt.
+# File "gpx.mli", line 45, characters 3-19:
+# Warning 30: the label link is defined in both types metadata and wpt.
+# File "gpx.mli", line 55, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and wpt.
+# File "gpx.mli", line 59, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and rte.
+# File "gpx.mli", line 60, characters 3-22:
+# Warning 30: the label cmt is defined in both types wpt and rte.
+# File "gpx.mli", line 61, characters 3-23:
+# Warning 30: the label desc is defined in both types metadata and rte.
+# File "gpx.mli", line 62, characters 3-22:
+# Warning 30: the label src is defined in both types wpt and rte.
+# File "gpx.mli", line 63, characters 3-19:
+# Warning 30: the label link is defined in both types metadata and rte.
+# File "gpx.mli", line 65, characters 3-22:
+# Warning 30: the label typ is defined in both types wpt and rte.
+# File "gpx.mli", line 66, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and rte.
+# File "gpx.mli", line 71, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and trk.
+# File "gpx.mli", line 72, characters 3-22:
+# Warning 30: the label cmt is defined in both types wpt and trk.
+# File "gpx.mli", line 73, characters 3-23:
+# Warning 30: the label desc is defined in both types metadata and trk.
+# File "gpx.mli", line 74, characters 3-22:
+# Warning 30: the label src is defined in both types wpt and trk.
+# File "gpx.mli", line 75, characters 3-19:
+# Warning 30: the label link is defined in both types metadata and trk.
+# File "gpx.mli", line 76, characters 3-22:
+# Warning 30: the label number is defined in both types rte and trk.
+# File "gpx.mli", line 77, characters 3-22:
+# Warning 30: the label typ is defined in both types wpt and trk.
+# File "gpx.mli", line 78, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and trk.
+# File "gpx.mli", line 86, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and trkseg.
+# File "gpx.mli", line 90, characters 3-18:
+# Warning 30: the label author is defined in both types metadata and copyright.
+# File "gpx.mli", line 98, characters 3-22:
+# Warning 30: the label typ is defined in both types wpt and link.
+# File "gpx.mli", line 107, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and person.
+# File "gpx.mli", line 109, characters 3-21:
+# Warning 30: the label link is defined in both types metadata and person.
+# ocamlfind ocamlc -package str -package xml-light -package ISO8601 -a -o gpx.cma gpx.ml
+# File "gpx.ml", line 20, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and metadata.
+# File "gpx.ml", line 26, characters 3-26:
+# Warning 30: the label time is defined in both types metadata and wpt.
+# File "gpx.ml", line 30, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and wpt.
+# File "gpx.ml", line 32, characters 3-23:
+# Warning 30: the label desc is defined in both types metadata and wpt.
+# File "gpx.ml", line 34, characters 3-19:
+# Warning 30: the label link is defined in both types metadata and wpt.
+# File "gpx.ml", line 44, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and wpt.
+# File "gpx.ml", line 48, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and rte.
+# File "gpx.ml", line 49, characters 3-22:
+# Warning 30: the label cmt is defined in both types wpt and rte.
+# File "gpx.ml", line 50, characters 3-23:
+# Warning 30: the label desc is defined in both types metadata and rte.
+# File "gpx.ml", line 51, characters 3-22:
+# Warning 30: the label src is defined in both types wpt and rte.
+# File "gpx.ml", line 52, characters 3-19:
+# Warning 30: the label link is defined in both types metadata and rte.
+# File "gpx.ml", line 54, characters 3-22:
+# Warning 30: the label typ is defined in both types wpt and rte.
+# File "gpx.ml", line 55, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and rte.
+# File "gpx.ml", line 60, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and trk.
+# File "gpx.ml", line 61, characters 3-22:
+# Warning 30: the label cmt is defined in both types wpt and trk.
+# File "gpx.ml", line 62, characters 3-23:
+# Warning 30: the label desc is defined in both types metadata and trk.
+# File "gpx.ml", line 63, characters 3-22:
+# Warning 30: the label src is defined in both types wpt and trk.
+# File "gpx.ml", line 64, characters 3-19:
+# Warning 30: the label link is defined in both types metadata and trk.
+# File "gpx.ml", line 65, characters 3-22:
+# Warning 30: the label number is defined in both types rte and trk.
+# File "gpx.ml", line 66, characters 3-22:
+# Warning 30: the label typ is defined in both types wpt and trk.
+# File "gpx.ml", line 67, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and trk.
+# File "gpx.ml", line 75, characters 3-32:
+# Warning 30: the label extensions is defined in both types gpx and trkseg.
+# File "gpx.ml", line 79, characters 3-18:
+# Warning 30: the label author is defined in both types metadata and copyright.
+# File "gpx.ml", line 87, characters 3-22:
+# Warning 30: the label typ is defined in both types wpt and link.
+# File "gpx.ml", line 96, characters 3-23:
+# Warning 30: the label name is defined in both types metadata and person.
+# File "gpx.ml", line 98, characters 3-21:
+# Warning 30: the label link is defined in both types metadata and person.
+# File "gpx.ml", line 152, characters 24-162:
+# Warning 8: this pattern-matching is not exhaustive.
+# Here is an example of a case that is not matched:
+# ""
+# File "gpx.ml", line 280, characters 6-43:
+# Error: This function has type float -> string
+#        It is applied to too many arguments; maybe you forgot a `;'.
+# Makefile:18: recipe for target 'build' failed
+# make: *** [build] Error 2
+# make: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/gpx.1.1.0/src'
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build gpx 1.1.0
++- 
++- The following changes have been performed
+| - install ISO8601    0.2.5
+| - install ocamlbuild 0.12.0
+| - install xml-light  2.4
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180820001846.export"
+31 1534724324 1534724337

@@ -1,0 +1,74 @@
+$ opam depext -iy -j 2 broken.0.4.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+bmake
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy bmake m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package bmake.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../bmake_20160220-2build1_amd64.deb ...
+Unpacking bmake (20160220-2build1) ...
+Setting up bmake (20160220-2build1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-bmake 1.0            [required by broken]
+  - install bsdowl     3.0.0-20150830 [required by broken]
+  - install broken     0.4.2
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-bmake.1.0
+-> installed bsdowl.3.0.0-20150830
+[ERROR] The installation of broken failed at "/usr/bin/bmake -I/home/opam/.opam/4.06/share/bsdowl install".
+
+#=== ERROR while installing broken.0.4.2 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/broken.0.4.2
+# command              /usr/bin/bmake -I/home/opam/.opam/4.06/share/bsdowl install
+# exit-code            1
+# env-file             ~/.opam/log/broken-13-ad6566.env
+# output-file          ~/.opam/log/broken-13-ad6566.out
+### output ###
+# ===> src (install)
+# install -d /home/opam/.opam/4.06/lib/broken
+# install -o opam -g opam -m 440 broken.cmxa /home/opam/.opam/4.06/lib/broken
+# install -o opam -g opam -m 440 broken.a /home/opam/.opam/4.06/lib/broken
+# install -o opam -g opam -m 440 broken.cma /home/opam/.opam/4.06/lib/broken
+# install -o opam -g opam -m 440 broken.cmi /home/opam/.opam/4.06/lib/broken
+# ===> meta (install)
+# install -d /home/opam/.opam/4.06/lib/broken
+# install -o opam -g opam -m 440 broken /home/opam/.opam/4.06/lib/broken/META
+# ===> manual (install)
+# install -d -o opam -g opam /home/opam/.opam/4.06/share/doc/broken/html
+# (cd broken_html && sh -c '(find $1 -depth $3 | cpio -dump $2 >/dev/null 2>&1) && find $1 -depth $3 -type d -exec chmod 755 $2/{} \; && find $1 -depth $3 -type f -exec chmod 440 $2/{} \;' COPYTREE_DOC . /home/opam/.opam/4.06/share/doc/broken/html)
+# *** Error code 127
+# 
+# Stop.
+# bmake[1]: stopped in /home/opam/.opam/4.06/.opam-switch/build/broken.0.4.2/manual
+# *** Error code 1
+# 
+# Stop.
+# bmake: stopped in /home/opam/.opam/4.06/.opam-switch/build/broken.0.4.2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - install broken 0.4.2
++- 
++- The following changes have been performed
+| - install bsdowl     3.0.0-20150830
+| - install conf-bmake 1.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180820000456.export"
+31 1534723489 1534723503
