@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 biocaml.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for biocaml.0.3.0: The following dependencies couldn't be met:
+          - biocaml -> flow >= 0.2 -> ocaml < 4.01.0
+              base of this switch (use `--unlock-base' to force)
+          - biocaml -> flow >= 0.2 -> core < 111.17.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=biocaml.0.3.0 returned 20
+20 1534740473 1534740476
