@@ -1,0 +1,239 @@
+$ opam depext -iy -j 2 opass.2.15
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by containers, cmdliner, ppx_deriving]
+  - install ppx_tools               5.1+4.06.0 [required by ppx_deriving]
+  - install base-bytes              base       [required by csv]
+  - install ocamlbuild              0.12.0     [required by cmdliner, ppx_deriving]
+  - install num                     1.1        [required by sexplib]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.1    [required by ppx_sexp_conv]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_deriving, ppx_sexp_conv]
+  - install csv                     2.1        [required by opass]
+  - install cppo                    1.6.4      [required by ppx_deriving]
+  - install uchar                   0.0.2      [required by containers]
+  - install topkg                   0.9.1      [required by cmdliner]
+  - install menhir                  20180703   [required by toml]
+  - install ISO8601                 0.2.5      [required by toml]
+  - install sexplib                 v0.11.0    [required by opass]
+  - install stdio                   v0.11.0    [required by ppxlib]
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install containers              2.3        [required by opass]
+  - install cmdliner                1.0.2      [required by opass]
+  - install toml                    5.0.0      [required by pds]
+  - install ppxlib                  0.3.0      [required by ppx_sexp_conv]
+  - install ppx_deriving            4.2.1      [required by opass]
+  - install crunch                  2.1.0      [required by pds]
+  - install ppx_sexp_conv           v0.11.2    [required by opass]
+  - install pds                     5.24       [required by opass]
+  - install merlin-of-pds           1.4        [required by opass]
+  - install lua_pattern             1.7        [required by opass]
+  - install opass                   2.15
+===== 31 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[cmdliner.1.0.2] found in cache
+[containers.2.3] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[crunch.2.1.0] found in cache
+[csv.2.1] found in cache
+[ISO8601.0.2.5] found in cache
+[lua_pattern.1.7] found in cache
+[menhir.20180703] found in cache
+[merlin-of-pds.1.4] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[opass.2.15] found in cache
+[parsexp.v0.11.0] found in cache
+[pds.5.24] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppxlib.0.3.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[toml.5.0.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed csv.2.1
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ISO8601.0.2.5
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_deriving.4.2.1
+-> installed sexplib0.v0.11.0
+-> installed menhir.20180703
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed toml.5.0.0
+-> installed topkg.0.9.1
+-> installed base.v0.11.1
+-> installed cmdliner.1.0.2
+-> installed stdio.v0.11.0
+-> installed crunch.2.1.0
+-> installed pds.5.24
+-> installed merlin-of-pds.1.4
+-> installed lua_pattern.1.7
+-> installed uchar.0.0.2
+-> installed containers.2.3
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+[ERROR] The compilation of opass failed at "/usr/bin/make -j71".
+
+#=== ERROR while compiling opass.2.15 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/opass.2.15
+# command              /usr/bin/make -j71
+# exit-code            2
+# env-file             ~/.opam/log/opass-11-bbc5b6.env
+# output-file          ~/.opam/log/opass-11-bbc5b6.out
+### output ###
+# pds -f | merlin-of-pds > .merlin
+# pds
+# /usr/bin/make -f pds.mk Makefile
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15'
+# make[1]: Nothing to be done for 'Makefile'.
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15'
+# pds
+# /usr/bin/make -f pds.mk all
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15'
+# /usr/bin/make \
+# OCAMLPATH=/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release: \
+# BUILD_DIR=/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/db \
+# -C build/release/db
+# make[2]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/db'
+# /usr/bin/make \
+# OCAMLPATH=/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release: \
+# BUILD_DIR=/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/editable \
+# -C build/release/editable
+# make[2]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/editable'
+# cd ../../../src/db && \
+# ocamlfind ocamldep   \
+# db.ml  db.mli > /home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/db/.d
+# /usr/bin/make \
+# OCAMLPATH=/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release: \
+# BUILD_DIR=/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/password \
+# -C build/release/password
+# make[2]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/password'
+# cd ../../../src/editable && \
+# ocamlfind ocamldep   \
+# editable.ml editable_entry.ml editable_form.ml  editable.mli editable_entry.mli editable_form.mli > /home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/editable/.d
+# cd ../../../src/password && \
+# ocamlfind ocamldep   \
+# password.ml  password.mli > /home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/password/.d
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -c ../../../src/db/db.mli -o db.cmi
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_entry.mli -o editable_entry.cmi
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers -c ../../../src/password/password.mli -o password.cmi
+# ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmx
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/password/password.ml -o password.cmo
+# ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmx
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable_form.mli -o editable_form.cmi
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_entry.ml -o editable_entry.cmo
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers -c ../../../src/editable/editable.mli -o editable.cmi
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmo
+# File "../../../src/password/password.ml", line 14, characters 30-33:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# ../../../Ocamlrules.mk.in:119: recipe for target 'password.cmo' failed
+# make[2]: *** [password.cmo] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# File "../../../src/password/password.ml", line 14, characters 30-33:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# ../../../Ocamlrules.mk.in:113: recipe for target 'password.cmx' failed
+# make[2]: *** [password.cmx] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/password'
+# pds.mk:65: recipe for target 'release_password' failed
+# make[1]: *** [release_password] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmo
+# ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable_form.ml -o editable_form.cmx
+# ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmx
+# ocamlfind ocamlc -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib  -c ../../../src/db/db.ml -o db.cmo
+# ocamlfind ocamlc  -bin-annot -w '@f@p@u@s@40' -g -package containers -custom -thread -a -I +camlp4 -o editable.cma \
+# 	editable_entry.cmo editable_form.cmo editable.cmo
+# ocamlfind ocamlopt -thread -I +camlp4  -bin-annot -w '@f@p@u@s@40' -g -package containers  -c ../../../src/editable/editable.ml -o editable.cmx
+# ocamlfind ocamlc  -bin-annot -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -custom -thread -a -I +camlp4 -o db.cma \
+# 	db.cmo
+# ocamlfind ocamlopt  -bin-annot -w '@f@p@u@s@40' -g -package containers -thread -a -I +camlp4 -o editable.cmxa \
+# 	editable_entry.cmx editable_form.cmx editable.cmx
+# ocamlfind ocamlopt  -bin-annot -w '@f@p@u@s@40' -g -package containers,ppx_deriving,ppx_sexp_conv,sexplib -thread -a -I +camlp4 -o db.cmxa \
+# 	db.cmx
+# make[2]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/editable'
+# make[2]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15/build/release/db'
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/opass.2.15'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build opass 2.15
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install cmdliner                1.0.2
+| - install containers              2.3
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install crunch                  2.1.0
+| - install csv                     2.1
+| - install ISO8601                 0.2.5
+| - install lua_pattern             1.7
+| - install menhir                  20180703
+| - install merlin-of-pds           1.4
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install parsexp                 v0.11.0
+| - install pds                     5.24
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.1+4.06.0
+| - install ppxlib                  0.3.0
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install toml                    5.0.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
++- 
+
+<><> containers.2.3 installed successfully ><><><><><><><><><><><><><><><><><><>
+=> Containers 2.3 is a small release with a few more functions in existing modules,
+   some bugfixes, and many performance improvements.
+
+   Changelog: https://github.com/c-cube/ocaml-containers/blob/2.3/CHANGELOG.adoc
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180821063243.export"
+31 1534833160 1534833307
