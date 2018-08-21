@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 re2.v0.9.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for re2.v0.9.0: The following dependencies couldn't be met:
+          - re2 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=re2.v0.9.0 returned 20
+20 1534808067 1534808070

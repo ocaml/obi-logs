@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 redis-sync.0.3.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for redis-sync.0.3.4: The following dependencies couldn't be met:
+          - redis-sync -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=redis-sync.0.3.4 returned 20
+20 1534804715 1534804718

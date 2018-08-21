@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 pulseaudio.0.1.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+pulseaudio-libs-devel
+# The following new OS packages need to be installed: pulseaudio-libs-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install pulseaudio-libs-devel
+Loading repository data...
+Reading installed packages...
+Package 'pulseaudio-libs-devel' not found.
+OS package installation failed
+1 1534803445 1534803860

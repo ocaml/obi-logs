@@ -1,0 +1,15 @@
+$ opam depext -iy -j 2 opamfu.0.1.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for opamfu.0.1.3: The following dependencies couldn't be met:
+          - opamfu -> opam-lib < 1.3 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - opamfu -> opam-lib < 1.3 -> dose < 3.4.0 -> extlib < 1.7.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - opamfu -> opam-lib < 1.3 -> dose < 3.4.0 -> extlib-compat < 1.7.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - opamfu -> opam-lib < 1.3 -> dose < 3.4.0 -> ocamlgraph < 1.8.6 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=opamfu.0.1.3 returned 20
+20 1534809296 1534809299

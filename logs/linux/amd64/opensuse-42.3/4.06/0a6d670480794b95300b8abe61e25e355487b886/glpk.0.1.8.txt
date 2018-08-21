@@ -1,0 +1,53 @@
+$ opam depext -iy -j 2 glpk.0.1.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install glpk 0.1.8
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[glpk.0.1.8] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of glpk failed at "/usr/bin/make byte opt".
+
+#=== ERROR while compiling glpk.0.1.8 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/glpk.0.1.8
+# command              /usr/bin/make byte opt
+# exit-code            2
+# env-file             ~/.opam/log/glpk-12-05296d.env
+# output-file          ~/.opam/log/glpk-12-05296d.out
+### output ###
+# make -C src byte
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/glpk.0.1.8/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/glpk.0.1.8/src'
+# making ._bcdi/glpk.di from glpk.mli
+# making ._d/glpk.d from glpk.ml
+# ocamlc -c -cc "cc" -ccopt "-fPIC -Wall -DCAML_NAME_SPACE -g \
+# 			-DPIC   \
+# 			 -Ioldapi/   -o glpk_stubs.o " glpk_stubs.c 
+# glpk_stubs.c:32:18: fatal error: glpk.h: No such file or directory
+#  #include <glpk.h>
+#                   ^
+# compilation terminated.
+# OCamlMakefile:1013: recipe for target 'glpk_stubs.o' failed
+# make[2]: *** [glpk_stubs.o] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/glpk.0.1.8/src'
+# OCamlMakefile:716: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/glpk.0.1.8/src'
+# Makefile:12: recipe for target 'byte' failed
+# make: *** [byte] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build glpk 0.1.8
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1534803036 1534803243
