@@ -1,0 +1,536 @@
+$ opam depext -iy -j 2 lablqml.0.5.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+pkgconfig
+qt5-qtbase-devel
+qt5-qtdeclarative-devel
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Mon Aug 20 20:10:33 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pkgconfig is not installed
+package qt5-qtbase-devel is not installed
+package qt5-qtdeclarative-devel is not installed
+# The following new OS packages need to be installed: pkgconfig qt5-qtbase-devel qt5-qtdeclarative-devel
+The following command needs to be run through "sudo":
+    yum install -y pkgconfig qt5-qtbase-devel qt5-qtdeclarative-devel
+Fedora 28 - x86_64 - Updates                     22 MB/s |  22 MB     00:01    
+Last metadata expiration check: 0:00:08 ago on Tue Aug 21 05:53:59 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package                     Arch       Version               Repository   Size
+================================================================================
+Installing:
+ qt5-qtbase-devel            x86_64     5.10.1-6.fc28         fedora      4.0 M
+ qt5-qtdeclarative-devel     x86_64     5.10.1-6.fc28         updates     1.1 M
+Installing dependencies:
+ aajohan-comfortaa-fonts     noarch     3.001-2.fc28          fedora      147 k
+ cmake                       x86_64     3.11.2-1.fc28         updates     7.7 M
+ cmake-data                  noarch     3.11.2-1.fc28         updates     1.3 M
+ cmake-filesystem            x86_64     3.11.2-1.fc28         updates      38 k
+ cmake-rpm-macros            noarch     3.11.2-1.fc28         updates      38 k
+ cups-libs                   x86_64     1:2.2.6-18.fc28       updates     429 k
+ fontconfig                  x86_64     2.13.0-4.fc28         updates     253 k
+ fontpackages-filesystem     noarch     1.44-21.fc28          fedora       15 k
+ freetype                    x86_64     2.8-10.fc28           fedora      384 k
+ glx-utils                   x86_64     8.3.0-9.fc28          fedora       40 k
+ graphite2                   x86_64     1.3.10-5.fc28         fedora      119 k
+ harfbuzz                    x86_64     1.7.5-3.fc28          fedora      293 k
+ hwdata                      noarch     0.314-1.fc28          updates     1.5 M
+ jsoncpp                     x86_64     1.8.4-3.fc28          fedora       92 k
+ libICE                      x86_64     1.0.9-12.fc28         fedora       72 k
+ libSM                       x86_64     1.2.2-8.fc28          fedora       44 k
+ libXdamage                  x86_64     1.1.4-12.fc28         fedora       26 k
+ libXdamage-devel            x86_64     1.1.4-12.fc28         fedora       14 k
+ libXext                     x86_64     1.3.3-8.fc28          fedora       44 k
+ libXext-devel               x86_64     1.3.3-8.fc28          fedora       79 k
+ libXfixes                   x86_64     5.0.3-5.fc28          fedora       24 k
+ libXfixes-devel             x86_64     5.0.3-5.fc28          fedora       18 k
+ libXi                       x86_64     1.7.9-6.fc28          fedora       48 k
+ libXrender                  x86_64     0.9.10-5.fc28         fedora       32 k
+ libXxf86vm                  x86_64     1.1.4-7.fc28          fedora       22 k
+ libXxf86vm-devel            x86_64     1.1.4-7.fc28          fedora       23 k
+ libdrm                      x86_64     2.4.93-1.fc28         updates     164 k
+ libdrm-devel                x86_64     2.4.93-1.fc28         updates     142 k
+ libevdev                    x86_64     1.5.9-4.fc28          updates      41 k
+ libglvnd                    x86_64     1:1.1.0-1.fc28        updates      96 k
+ libglvnd-core-devel         x86_64     1:1.1.0-1.fc28        updates      24 k
+ libglvnd-devel              x86_64     1:1.1.0-1.fc28        updates      15 k
+ libglvnd-egl                x86_64     1:1.1.0-1.fc28        updates      48 k
+ libglvnd-gles               x86_64     1:1.1.0-1.fc28        updates      39 k
+ libglvnd-glx                x86_64     1:1.1.0-1.fc28        updates     133 k
+ libglvnd-opengl             x86_64     1:1.1.0-1.fc28        updates      47 k
+ libgudev                    x86_64     232-3.fc28            fedora       32 k
+ libicu                      x86_64     60.2-2.fc28           fedora      8.8 M
+ libinput                    x86_64     1.11.3-1.fc28         updates     163 k
+ libjpeg-turbo               x86_64     1.5.3-6.fc28          updates     154 k
+ libpciaccess                x86_64     0.13.4-8.fc28         fedora       31 k
+ libpng                      x86_64     2:1.6.34-6.fc28       updates     125 k
+ libuv                       x86_64     1:1.22.0-1.fc28       updates     132 k
+ libwacom                    x86_64     0.30-1.fc28           updates      37 k
+ libwacom-data               noarch     0.30-1.fc28           updates      75 k
+ libwayland-client           x86_64     1.15.0-1.fc28         fedora       38 k
+ libwayland-server           x86_64     1.15.0-1.fc28         fedora       44 k
+ libxkbcommon-x11            x86_64     0.8.0-5.fc28          updates      24 k
+ libxshmfence                x86_64     1.3-1.fc28            fedora       12 k
+ llvm-libs                   x86_64     6.0.1-6.fc28          updates      15 M
+ mesa-filesystem             x86_64     18.0.5-3.fc28         updates      30 k
+ mesa-libEGL                 x86_64     18.0.5-3.fc28         updates     119 k
+ mesa-libEGL-devel           x86_64     18.0.5-3.fc28         updates      47 k
+ mesa-libGL                  x86_64     18.0.5-3.fc28         updates     177 k
+ mesa-libGL-devel            x86_64     18.0.5-3.fc28         updates     173 k
+ mesa-libgbm                 x86_64     18.0.5-3.fc28         updates      51 k
+ mesa-libglapi               x86_64     18.0.5-3.fc28         updates      58 k
+ mtdev                       x86_64     1.1.5-12.fc28         fedora       23 k
+ pcre2-utf16                 x86_64     10.31-8.fc28          updates     221 k
+ qt-settings                 noarch     28.0-2.fc28           fedora       27 k
+ qt5-qtbase                  x86_64     5.10.1-6.fc28         fedora      3.5 M
+ qt5-qtbase-common           noarch     5.10.1-6.fc28         fedora       37 k
+ qt5-qtbase-gui              x86_64     5.10.1-6.fc28         fedora      5.4 M
+ qt5-qtdeclarative           x86_64     5.10.1-6.fc28         updates     3.4 M
+ qt5-qtxmlpatterns           x86_64     5.10.1-1.fc28         fedora      1.1 M
+ qt5-rpm-macros              noarch     5.10.1-1.fc28         fedora       11 k
+ rhash                       x86_64     1.3.5-2.fc28          fedora      129 k
+ xcb-util                    x86_64     0.4.0-9.fc28          fedora       21 k
+ xcb-util-image              x86_64     0.4.0-9.fc28          fedora       20 k
+ xcb-util-keysyms            x86_64     0.4.0-7.fc28          fedora       15 k
+ xcb-util-renderutil         x86_64     0.3.9-10.fc28         fedora       18 k
+ xcb-util-wm                 x86_64     0.4.1-12.fc28         fedora       31 k
+Installing weak dependencies:
+ mesa-dri-drivers            x86_64     18.0.5-3.fc28         updates      12 M
+
+Transaction Summary
+================================================================================
+Install  75 Packages
+
+Total download size: 70 M
+Installed size: 244 M
+Downloading Packages:
+(1/75): qt5-qtbase-5.10.1-6.fc28.x86_64.rpm     4.4 MB/s | 3.5 MB     00:00    
+(2/75): qt5-rpm-macros-5.10.1-1.fc28.noarch.rpm 380 kB/s |  11 kB     00:00    
+(3/75): qt5-qtbase-devel-5.10.1-6.fc28.x86_64.r 4.7 MB/s | 4.0 MB     00:00    
+(4/75): freetype-2.8-10.fc28.x86_64.rpm         6.4 MB/s | 384 kB     00:00    
+(5/75): libXext-1.3.3-8.fc28.x86_64.rpm         2.3 MB/s |  44 kB     00:00    
+(6/75): qt-settings-28.0-2.fc28.noarch.rpm      585 kB/s |  27 kB     00:00    
+(7/75): qt5-qtbase-common-5.10.1-6.fc28.noarch. 466 kB/s |  37 kB     00:00    
+(8/75): glx-utils-8.3.0-9.fc28.x86_64.rpm       1.1 MB/s |  40 kB     00:00    
+(9/75): qt5-qtbase-gui-5.10.1-6.fc28.x86_64.rpm 5.0 MB/s | 5.4 MB     00:01    
+(10/75): libICE-1.0.9-12.fc28.x86_64.rpm        3.6 MB/s |  72 kB     00:00    
+(11/75): harfbuzz-1.7.5-3.fc28.x86_64.rpm       4.9 MB/s | 293 kB     00:00    
+(12/75): libSM-1.2.2-8.fc28.x86_64.rpm          2.9 MB/s |  44 kB     00:00    
+(13/75): libXi-1.7.9-6.fc28.x86_64.rpm          3.5 MB/s |  48 kB     00:00    
+(14/75): libXrender-0.9.10-5.fc28.x86_64.rpm    2.5 MB/s |  32 kB     00:00    
+(15/75): xcb-util-image-0.4.0-9.fc28.x86_64.rpm 307 kB/s |  20 kB     00:00    
+(16/75): xcb-util-keysyms-0.4.0-7.fc28.x86_64.r 237 kB/s |  15 kB     00:00    
+(17/75): xcb-util-renderutil-0.3.9-10.fc28.x86_ 494 kB/s |  18 kB     00:00    
+(18/75): xcb-util-wm-0.4.1-12.fc28.x86_64.rpm   849 kB/s |  31 kB     00:00    
+(19/75): graphite2-1.3.10-5.fc28.x86_64.rpm     5.5 MB/s | 119 kB     00:00    
+(20/75): xcb-util-0.4.0-9.fc28.x86_64.rpm       457 kB/s |  21 kB     00:00    
+(21/75): qt5-qtdeclarative-devel-5.10.1-6.fc28. 9.7 MB/s | 1.1 MB     00:00    
+(22/75): qt5-qtxmlpatterns-5.10.1-1.fc28.x86_64 6.8 MB/s | 1.1 MB     00:00    
+(23/75): libxkbcommon-x11-0.8.0-5.fc28.x86_64.r 2.4 MB/s |  24 kB     00:00    
+(24/75): qt5-qtdeclarative-5.10.1-6.fc28.x86_64  13 MB/s | 3.4 MB     00:00    
+(25/75): cmake-data-3.11.2-1.fc28.noarch.rpm     11 MB/s | 1.3 MB     00:00    
+(26/75): cmake-filesystem-3.11.2-1.fc28.x86_64. 1.6 MB/s |  38 kB     00:00    
+(27/75): cmake-rpm-macros-3.11.2-1.fc28.noarch. 2.0 MB/s |  38 kB     00:00    
+(28/75): jsoncpp-1.8.4-3.fc28.x86_64.rpm        4.2 MB/s |  92 kB     00:00    
+(29/75): cmake-3.11.2-1.fc28.x86_64.rpm          29 MB/s | 7.7 MB     00:00    
+(30/75): rhash-1.3.5-2.fc28.x86_64.rpm          2.1 MB/s | 129 kB     00:00    
+(31/75): cups-libs-2.2.6-18.fc28.x86_64.rpm      23 MB/s | 429 kB     00:00    
+(32/75): fontpackages-filesystem-1.44-21.fc28.n 1.3 MB/s |  15 kB     00:00    
+(33/75): fontconfig-2.13.0-4.fc28.x86_64.rpm    8.1 MB/s | 253 kB     00:00    
+(34/75): libdrm-2.4.93-1.fc28.x86_64.rpm         12 MB/s | 164 kB     00:00    
+(35/75): libpciaccess-0.13.4-8.fc28.x86_64.rpm  2.4 MB/s |  31 kB     00:00    
+(36/75): libglvnd-egl-1.1.0-1.fc28.x86_64.rpm   3.6 MB/s |  48 kB     00:00    
+(37/75): libglvnd-1.1.0-1.fc28.x86_64.rpm       7.0 MB/s |  96 kB     00:00    
+(38/75): libglvnd-glx-1.1.0-1.fc28.x86_64.rpm    13 MB/s | 133 kB     00:00    
+(39/75): mtdev-1.1.5-12.fc28.x86_64.rpm         2.0 MB/s |  23 kB     00:00    
+(40/75): libinput-1.11.3-1.fc28.x86_64.rpm      8.2 MB/s | 163 kB     00:00    
+(41/75): libjpeg-turbo-1.5.3-6.fc28.x86_64.rpm   16 MB/s | 154 kB     00:00    
+(42/75): libpng-1.6.34-6.fc28.x86_64.rpm        7.0 MB/s | 125 kB     00:00    
+(43/75): libwayland-server-1.15.0-1.fc28.x86_64 3.6 MB/s |  44 kB     00:00    
+(44/75): libicu-60.2-2.fc28.x86_64.rpm          8.2 MB/s | 8.8 MB     00:01    
+(45/75): mesa-libgbm-18.0.5-3.fc28.x86_64.rpm   609 kB/s |  51 kB     00:00    
+(46/75): mesa-libEGL-devel-18.0.5-3.fc28.x86_64 753 kB/s |  47 kB     00:00    
+(47/75): libglvnd-devel-1.1.0-1.fc28.x86_64.rpm 1.8 MB/s |  15 kB     00:00    
+(48/75): libglvnd-core-devel-1.1.0-1.fc28.x86_6 3.1 MB/s |  24 kB     00:00    
+(49/75): libglvnd-gles-1.1.0-1.fc28.x86_64.rpm  2.4 MB/s |  39 kB     00:00    
+(50/75): libwayland-client-1.15.0-1.fc28.x86_64 3.2 MB/s |  38 kB     00:00    
+(51/75): libglvnd-opengl-1.1.0-1.fc28.x86_64.rp 2.1 MB/s |  47 kB     00:00    
+(52/75): mesa-libEGL-18.0.5-3.fc28.x86_64.rpm   2.6 MB/s | 119 kB     00:00    
+(53/75): libxshmfence-1.3-1.fc28.x86_64.rpm     1.1 MB/s |  12 kB     00:00    
+(54/75): mesa-libGL-devel-18.0.5-3.fc28.x86_64. 9.4 MB/s | 173 kB     00:00    
+(55/75): mesa-libglapi-18.0.5-3.fc28.x86_64.rpm 3.7 MB/s |  58 kB     00:00    
+(56/75): libXdamage-1.1.4-12.fc28.x86_64.rpm    2.1 MB/s |  26 kB     00:00    
+(57/75): libXfixes-5.0.3-5.fc28.x86_64.rpm      1.9 MB/s |  24 kB     00:00    
+(58/75): mesa-libGL-18.0.5-3.fc28.x86_64.rpm    5.0 MB/s | 177 kB     00:00    
+(59/75): libXxf86vm-1.1.4-7.fc28.x86_64.rpm     1.6 MB/s |  22 kB     00:00    
+(60/75): pcre2-utf16-10.31-8.fc28.x86_64.rpm     14 MB/s | 221 kB     00:00    
+(61/75): libdrm-devel-2.4.93-1.fc28.x86_64.rpm  8.3 MB/s | 142 kB     00:00    
+(62/75): libXdamage-devel-1.1.4-12.fc28.x86_64. 1.1 MB/s |  14 kB     00:00    
+(63/75): libXfixes-devel-5.0.3-5.fc28.x86_64.rp 1.6 MB/s |  18 kB     00:00    
+(64/75): libXext-devel-1.3.3-8.fc28.x86_64.rpm  3.7 MB/s |  79 kB     00:00    
+(65/75): libXxf86vm-devel-1.1.4-7.fc28.x86_64.r 1.9 MB/s |  23 kB     00:00    
+(66/75): libevdev-1.5.9-4.fc28.x86_64.rpm       4.4 MB/s |  41 kB     00:00    
+(67/75): libwacom-0.30-1.fc28.x86_64.rpm        4.6 MB/s |  37 kB     00:00    
+(68/75): libgudev-232-3.fc28.x86_64.rpm         2.7 MB/s |  32 kB     00:00    
+(69/75): libwacom-data-0.30-1.fc28.noarch.rpm   9.1 MB/s |  75 kB     00:00    
+(70/75): libuv-1.22.0-1.fc28.x86_64.rpm         4.8 MB/s | 132 kB     00:00    
+(71/75): aajohan-comfortaa-fonts-3.001-2.fc28.n 6.1 MB/s | 147 kB     00:00    
+(72/75): mesa-filesystem-18.0.5-3.fc28.x86_64.r 3.1 MB/s |  30 kB     00:00    
+(73/75): hwdata-0.314-1.fc28.noarch.rpm         8.8 MB/s | 1.5 MB     00:00    
+(74/75): mesa-dri-drivers-18.0.5-3.fc28.x86_64.  25 MB/s |  12 MB     00:00    
+(75/75): llvm-libs-6.0.1-6.fc28.x86_64.rpm       20 MB/s |  15 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                            16 MB/s |  70 MB     00:04     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libXext-1.3.3-8.fc28.x86_64                           1/75 
+  Running scriptlet: libXext-1.3.3-8.fc28.x86_64                           1/75 
+  Installing       : libglvnd-1:1.1.0-1.fc28.x86_64                        2/75 
+  Installing       : mesa-libglapi-18.0.5-3.fc28.x86_64                    3/75 
+  Running scriptlet: mesa-libglapi-18.0.5-3.fc28.x86_64                    3/75 
+  Installing       : cmake-filesystem-3.11.2-1.fc28.x86_64                 4/75 
+  Installing       : libXext-devel-1.3.3-8.fc28.x86_64                     5/75 
+  Installing       : libXfixes-5.0.3-5.fc28.x86_64                         6/75 
+  Running scriptlet: libXfixes-5.0.3-5.fc28.x86_64                         6/75 
+  Installing       : libXfixes-devel-5.0.3-5.fc28.x86_64                   7/75 
+  Installing       : libxshmfence-1.3-1.fc28.x86_64                        8/75 
+  Running scriptlet: libxshmfence-1.3-1.fc28.x86_64                        8/75 
+  Installing       : libXdamage-1.1.4-12.fc28.x86_64                       9/75 
+  Running scriptlet: libXdamage-1.1.4-12.fc28.x86_64                       9/75 
+  Installing       : libXdamage-devel-1.1.4-12.fc28.x86_64                10/75 
+  Installing       : libXxf86vm-1.1.4-7.fc28.x86_64                       11/75 
+  Running scriptlet: libXxf86vm-1.1.4-7.fc28.x86_64                       11/75 
+  Installing       : libXxf86vm-devel-1.1.4-7.fc28.x86_64                 12/75 
+  Installing       : libwayland-server-1.15.0-1.fc28.x86_64               13/75 
+  Installing       : libpng-2:1.6.34-6.fc28.x86_64                        14/75 
+  Installing       : freetype-2.8-10.fc28.x86_64                          15/75 
+  Installing       : fontpackages-filesystem-1.44-21.fc28.noarch          16/75 
+  Installing       : cmake-rpm-macros-3.11.2-1.fc28.noarch                17/75 
+  Installing       : libICE-1.0.9-12.fc28.x86_64                          18/75 
+  Running scriptlet: libICE-1.0.9-12.fc28.x86_64                          18/75 
+  Installing       : libSM-1.2.2-8.fc28.x86_64                            19/75 
+  Running scriptlet: libSM-1.2.2-8.fc28.x86_64                            19/75 
+  Installing       : aajohan-comfortaa-fonts-3.001-2.fc28.noarch          20/75 
+  Installing       : fontconfig-2.13.0-4.fc28.x86_64                      21/75 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                      21/75 
+  Installing       : libglvnd-opengl-1:1.1.0-1.fc28.x86_64                22/75 
+  Installing       : libXi-1.7.9-6.fc28.x86_64                            23/75 
+  Running scriptlet: libXi-1.7.9-6.fc28.x86_64                            23/75 
+  Installing       : llvm-libs-6.0.1-6.fc28.x86_64                        24/75 
+  Running scriptlet: llvm-libs-6.0.1-6.fc28.x86_64                        24/75 
+  Installing       : mesa-filesystem-18.0.5-3.fc28.x86_64                 25/75 
+  Installing       : libwacom-data-0.30-1.fc28.noarch                     26/75 
+  Installing       : libuv-1:1.22.0-1.fc28.x86_64                         27/75 
+  Installing       : libgudev-232-3.fc28.x86_64                           28/75 
+  Installing       : libwacom-0.30-1.fc28.x86_64                          29/75 
+  Installing       : libevdev-1.5.9-4.fc28.x86_64                         30/75 
+  Installing       : hwdata-0.314-1.fc28.noarch                           31/75 
+  Installing       : libpciaccess-0.13.4-8.fc28.x86_64                    32/75 
+  Installing       : libdrm-2.4.93-1.fc28.x86_64                          33/75 
+  Installing       : mesa-libgbm-18.0.5-3.fc28.x86_64                     34/75 
+  Running scriptlet: mesa-libgbm-18.0.5-3.fc28.x86_64                     34/75 
+  Installing       : libglvnd-glx-1:1.1.0-1.fc28.x86_64                   35/75 
+  Installing       : mesa-libGL-18.0.5-3.fc28.x86_64                      36/75 
+  Installing       : libdrm-devel-2.4.93-1.fc28.x86_64                    37/75 
+  Installing       : glx-utils-8.3.0-9.fc28.x86_64                        38/75 
+  Installing       : pcre2-utf16-10.31-8.fc28.x86_64                      39/75 
+  Installing       : libwayland-client-1.15.0-1.fc28.x86_64               40/75 
+  Installing       : libglvnd-egl-1:1.1.0-1.fc28.x86_64                   41/75 
+  Installing       : mesa-libEGL-18.0.5-3.fc28.x86_64                     42/75 
+  Installing       : libglvnd-gles-1:1.1.0-1.fc28.x86_64                  43/75 
+  Installing       : libglvnd-core-devel-1:1.1.0-1.fc28.x86_64            44/75 
+  Installing       : libglvnd-devel-1:1.1.0-1.fc28.x86_64                 45/75 
+  Installing       : mesa-libEGL-devel-18.0.5-3.fc28.x86_64               46/75 
+  Installing       : mesa-libGL-devel-18.0.5-3.fc28.x86_64                47/75 
+  Installing       : libjpeg-turbo-1.5.3-6.fc28.x86_64                    48/75 
+  Installing       : mtdev-1.1.5-12.fc28.x86_64                           49/75 
+  Running scriptlet: mtdev-1.1.5-12.fc28.x86_64                           49/75 
+  Installing       : libinput-1.11.3-1.fc28.x86_64                        50/75 
+  Running scriptlet: libinput-1.11.3-1.fc28.x86_64                        50/75 
+  Installing       : cups-libs-1:2.2.6-18.fc28.x86_64                     51/75 
+  Installing       : rhash-1.3.5-2.fc28.x86_64                            52/75 
+  Running scriptlet: rhash-1.3.5-2.fc28.x86_64                            52/75 
+  Installing       : jsoncpp-1.8.4-3.fc28.x86_64                          53/75 
+  Installing       : cmake-data-3.11.2-1.fc28.noarch                      54/75 
+  Installing       : cmake-3.11.2-1.fc28.x86_64                           55/75 
+  Installing       : qt5-rpm-macros-5.10.1-1.fc28.noarch                  56/75 
+  Installing       : libxkbcommon-x11-0.8.0-5.fc28.x86_64                 57/75 
+  Installing       : xcb-util-0.4.0-9.fc28.x86_64                         58/75 
+  Running scriptlet: xcb-util-0.4.0-9.fc28.x86_64                         58/75 
+  Installing       : xcb-util-image-0.4.0-9.fc28.x86_64                   59/75 
+  Running scriptlet: xcb-util-image-0.4.0-9.fc28.x86_64                   59/75 
+  Installing       : graphite2-1.3.10-5.fc28.x86_64                       60/75 
+  Installing       : harfbuzz-1.7.5-3.fc28.x86_64                         61/75 
+  Running scriptlet: harfbuzz-1.7.5-3.fc28.x86_64                         61/75 
+  Installing       : xcb-util-wm-0.4.1-12.fc28.x86_64                     62/75 
+  Running scriptlet: xcb-util-wm-0.4.1-12.fc28.x86_64                     62/75 
+  Installing       : xcb-util-renderutil-0.3.9-10.fc28.x86_64             63/75 
+  Running scriptlet: xcb-util-renderutil-0.3.9-10.fc28.x86_64             63/75 
+  Installing       : xcb-util-keysyms-0.4.0-7.fc28.x86_64                 64/75 
+  Running scriptlet: xcb-util-keysyms-0.4.0-7.fc28.x86_64                 64/75 
+  Installing       : libXrender-0.9.10-5.fc28.x86_64                      65/75 
+  Running scriptlet: libXrender-0.9.10-5.fc28.x86_64                      65/75 
+  Installing       : qt-settings-28.0-2.fc28.noarch                       66/75 
+  Installing       : libicu-60.2-2.fc28.x86_64                            67/75 
+  Running scriptlet: libicu-60.2-2.fc28.x86_64                            67/75 
+  Installing       : qt5-qtbase-gui-5.10.1-6.fc28.x86_64                  68/75 
+  Running scriptlet: qt5-qtbase-gui-5.10.1-6.fc28.x86_64                  68/75 
+  Installing       : qt5-qtbase-common-5.10.1-6.fc28.noarch               69/75 
+  Running scriptlet: qt5-qtbase-5.10.1-6.fc28.x86_64                      70/75 
+  Installing       : qt5-qtbase-5.10.1-6.fc28.x86_64                      70/75 
+  Running scriptlet: qt5-qtbase-5.10.1-6.fc28.x86_64                      70/75 
+  Installing       : qt5-qtbase-devel-5.10.1-6.fc28.x86_64                71/75 
+  Installing       : qt5-qtxmlpatterns-5.10.1-1.fc28.x86_64               72/75 
+  Running scriptlet: qt5-qtxmlpatterns-5.10.1-1.fc28.x86_64               72/75 
+  Installing       : qt5-qtdeclarative-5.10.1-6.fc28.x86_64               73/75 
+  Installing       : qt5-qtdeclarative-devel-5.10.1-6.fc28.x86_64         74/75 
+  Installing       : mesa-dri-drivers-18.0.5-3.fc28.x86_64                75/75 
+  Running scriptlet: mesa-dri-drivers-18.0.5-3.fc28.x86_64                75/75 
+  Running scriptlet: fontconfig-2.13.0-4.fc28.x86_64                      75/75 
+  Verifying        : qt5-qtbase-devel-5.10.1-6.fc28.x86_64                 1/75 
+  Verifying        : qt5-qtbase-5.10.1-6.fc28.x86_64                       2/75 
+  Verifying        : qt5-qtbase-gui-5.10.1-6.fc28.x86_64                   3/75 
+  Verifying        : qt5-rpm-macros-5.10.1-1.fc28.noarch                   4/75 
+  Verifying        : freetype-2.8-10.fc28.x86_64                           5/75 
+  Verifying        : libXext-1.3.3-8.fc28.x86_64                           6/75 
+  Verifying        : libicu-60.2-2.fc28.x86_64                             7/75 
+  Verifying        : qt-settings-28.0-2.fc28.noarch                        8/75 
+  Verifying        : qt5-qtbase-common-5.10.1-6.fc28.noarch                9/75 
+  Verifying        : glx-utils-8.3.0-9.fc28.x86_64                        10/75 
+  Verifying        : harfbuzz-1.7.5-3.fc28.x86_64                         11/75 
+  Verifying        : libICE-1.0.9-12.fc28.x86_64                          12/75 
+  Verifying        : libSM-1.2.2-8.fc28.x86_64                            13/75 
+  Verifying        : libXi-1.7.9-6.fc28.x86_64                            14/75 
+  Verifying        : libXrender-0.9.10-5.fc28.x86_64                      15/75 
+  Verifying        : xcb-util-image-0.4.0-9.fc28.x86_64                   16/75 
+  Verifying        : xcb-util-keysyms-0.4.0-7.fc28.x86_64                 17/75 
+  Verifying        : xcb-util-renderutil-0.3.9-10.fc28.x86_64             18/75 
+  Verifying        : xcb-util-wm-0.4.1-12.fc28.x86_64                     19/75 
+  Verifying        : graphite2-1.3.10-5.fc28.x86_64                       20/75 
+  Verifying        : xcb-util-0.4.0-9.fc28.x86_64                         21/75 
+  Verifying        : qt5-qtdeclarative-devel-5.10.1-6.fc28.x86_64         22/75 
+  Verifying        : qt5-qtdeclarative-5.10.1-6.fc28.x86_64               23/75 
+  Verifying        : qt5-qtxmlpatterns-5.10.1-1.fc28.x86_64               24/75 
+  Verifying        : libxkbcommon-x11-0.8.0-5.fc28.x86_64                 25/75 
+  Verifying        : cmake-3.11.2-1.fc28.x86_64                           26/75 
+  Verifying        : cmake-data-3.11.2-1.fc28.noarch                      27/75 
+  Verifying        : cmake-filesystem-3.11.2-1.fc28.x86_64                28/75 
+  Verifying        : cmake-rpm-macros-3.11.2-1.fc28.noarch                29/75 
+  Verifying        : jsoncpp-1.8.4-3.fc28.x86_64                          30/75 
+  Verifying        : rhash-1.3.5-2.fc28.x86_64                            31/75 
+  Verifying        : cups-libs-1:2.2.6-18.fc28.x86_64                     32/75 
+  Verifying        : fontconfig-2.13.0-4.fc28.x86_64                      33/75 
+  Verifying        : fontpackages-filesystem-1.44-21.fc28.noarch          34/75 
+  Verifying        : libdrm-2.4.93-1.fc28.x86_64                          35/75 
+  Verifying        : libpciaccess-0.13.4-8.fc28.x86_64                    36/75 
+  Verifying        : libglvnd-egl-1:1.1.0-1.fc28.x86_64                   37/75 
+  Verifying        : libglvnd-1:1.1.0-1.fc28.x86_64                       38/75 
+  Verifying        : libglvnd-glx-1:1.1.0-1.fc28.x86_64                   39/75 
+  Verifying        : libinput-1.11.3-1.fc28.x86_64                        40/75 
+  Verifying        : mtdev-1.1.5-12.fc28.x86_64                           41/75 
+  Verifying        : libjpeg-turbo-1.5.3-6.fc28.x86_64                    42/75 
+  Verifying        : libpng-2:1.6.34-6.fc28.x86_64                        43/75 
+  Verifying        : mesa-libgbm-18.0.5-3.fc28.x86_64                     44/75 
+  Verifying        : libwayland-server-1.15.0-1.fc28.x86_64               45/75 
+  Verifying        : mesa-libEGL-devel-18.0.5-3.fc28.x86_64               46/75 
+  Verifying        : libglvnd-devel-1:1.1.0-1.fc28.x86_64                 47/75 
+  Verifying        : mesa-libEGL-18.0.5-3.fc28.x86_64                     48/75 
+  Verifying        : libglvnd-core-devel-1:1.1.0-1.fc28.x86_64            49/75 
+  Verifying        : libglvnd-gles-1:1.1.0-1.fc28.x86_64                  50/75 
+  Verifying        : libglvnd-opengl-1:1.1.0-1.fc28.x86_64                51/75 
+  Verifying        : libwayland-client-1.15.0-1.fc28.x86_64               52/75 
+  Verifying        : libxshmfence-1.3-1.fc28.x86_64                       53/75 
+  Verifying        : mesa-libGL-devel-18.0.5-3.fc28.x86_64                54/75 
+  Verifying        : mesa-libGL-18.0.5-3.fc28.x86_64                      55/75 
+  Verifying        : mesa-libglapi-18.0.5-3.fc28.x86_64                   56/75 
+  Verifying        : libXdamage-1.1.4-12.fc28.x86_64                      57/75 
+  Verifying        : libXfixes-5.0.3-5.fc28.x86_64                        58/75 
+  Verifying        : libXxf86vm-1.1.4-7.fc28.x86_64                       59/75 
+  Verifying        : pcre2-utf16-10.31-8.fc28.x86_64                      60/75 
+  Verifying        : hwdata-0.314-1.fc28.noarch                           61/75 
+  Verifying        : libdrm-devel-2.4.93-1.fc28.x86_64                    62/75 
+  Verifying        : libXdamage-devel-1.1.4-12.fc28.x86_64                63/75 
+  Verifying        : libXext-devel-1.3.3-8.fc28.x86_64                    64/75 
+  Verifying        : libXfixes-devel-5.0.3-5.fc28.x86_64                  65/75 
+  Verifying        : libXxf86vm-devel-1.1.4-7.fc28.x86_64                 66/75 
+  Verifying        : libevdev-1.5.9-4.fc28.x86_64                         67/75 
+  Verifying        : libwacom-0.30-1.fc28.x86_64                          68/75 
+  Verifying        : libgudev-232-3.fc28.x86_64                           69/75 
+  Verifying        : libuv-1:1.22.0-1.fc28.x86_64                         70/75 
+  Verifying        : libwacom-data-0.30-1.fc28.noarch                     71/75 
+  Verifying        : aajohan-comfortaa-fonts-3.001-2.fc28.noarch          72/75 
+  Verifying        : mesa-dri-drivers-18.0.5-3.fc28.x86_64                73/75 
+  Verifying        : mesa-filesystem-18.0.5-3.fc28.x86_64                 74/75 
+  Verifying        : llvm-libs-6.0.1-6.fc28.x86_64                        75/75 
+
+Installed:
+  qt5-qtbase-devel.x86_64 5.10.1-6.fc28                                         
+  qt5-qtdeclarative-devel.x86_64 5.10.1-6.fc28                                  
+  mesa-dri-drivers.x86_64 18.0.5-3.fc28                                         
+  aajohan-comfortaa-fonts.noarch 3.001-2.fc28                                   
+  cmake.x86_64 3.11.2-1.fc28                                                    
+  cmake-data.noarch 3.11.2-1.fc28                                               
+  cmake-filesystem.x86_64 3.11.2-1.fc28                                         
+  cmake-rpm-macros.noarch 3.11.2-1.fc28                                         
+  cups-libs.x86_64 1:2.2.6-18.fc28                                              
+  fontconfig.x86_64 2.13.0-4.fc28                                               
+  fontpackages-filesystem.noarch 1.44-21.fc28                                   
+  freetype.x86_64 2.8-10.fc28                                                   
+  glx-utils.x86_64 8.3.0-9.fc28                                                 
+  graphite2.x86_64 1.3.10-5.fc28                                                
+  harfbuzz.x86_64 1.7.5-3.fc28                                                  
+  hwdata.noarch 0.314-1.fc28                                                    
+  jsoncpp.x86_64 1.8.4-3.fc28                                                   
+  libICE.x86_64 1.0.9-12.fc28                                                   
+  libSM.x86_64 1.2.2-8.fc28                                                     
+  libXdamage.x86_64 1.1.4-12.fc28                                               
+  libXdamage-devel.x86_64 1.1.4-12.fc28                                         
+  libXext.x86_64 1.3.3-8.fc28                                                   
+  libXext-devel.x86_64 1.3.3-8.fc28                                             
+  libXfixes.x86_64 5.0.3-5.fc28                                                 
+  libXfixes-devel.x86_64 5.0.3-5.fc28                                           
+  libXi.x86_64 1.7.9-6.fc28                                                     
+  libXrender.x86_64 0.9.10-5.fc28                                               
+  libXxf86vm.x86_64 1.1.4-7.fc28                                                
+  libXxf86vm-devel.x86_64 1.1.4-7.fc28                                          
+  libdrm.x86_64 2.4.93-1.fc28                                                   
+  libdrm-devel.x86_64 2.4.93-1.fc28                                             
+  libevdev.x86_64 1.5.9-4.fc28                                                  
+  libglvnd.x86_64 1:1.1.0-1.fc28                                                
+  libglvnd-core-devel.x86_64 1:1.1.0-1.fc28                                     
+  libglvnd-devel.x86_64 1:1.1.0-1.fc28                                          
+  libglvnd-egl.x86_64 1:1.1.0-1.fc28                                            
+  libglvnd-gles.x86_64 1:1.1.0-1.fc28                                           
+  libglvnd-glx.x86_64 1:1.1.0-1.fc28                                            
+  libglvnd-opengl.x86_64 1:1.1.0-1.fc28                                         
+  libgudev.x86_64 232-3.fc28                                                    
+  libicu.x86_64 60.2-2.fc28                                                     
+  libinput.x86_64 1.11.3-1.fc28                                                 
+  libjpeg-turbo.x86_64 1.5.3-6.fc28                                             
+  libpciaccess.x86_64 0.13.4-8.fc28                                             
+  libpng.x86_64 2:1.6.34-6.fc28                                                 
+  libuv.x86_64 1:1.22.0-1.fc28                                                  
+  libwacom.x86_64 0.30-1.fc28                                                   
+  libwacom-data.noarch 0.30-1.fc28                                              
+  libwayland-client.x86_64 1.15.0-1.fc28                                        
+  libwayland-server.x86_64 1.15.0-1.fc28                                        
+  libxkbcommon-x11.x86_64 0.8.0-5.fc28                                          
+  libxshmfence.x86_64 1.3-1.fc28                                                
+  llvm-libs.x86_64 6.0.1-6.fc28                                                 
+  mesa-filesystem.x86_64 18.0.5-3.fc28                                          
+  mesa-libEGL.x86_64 18.0.5-3.fc28                                              
+  mesa-libEGL-devel.x86_64 18.0.5-3.fc28                                        
+  mesa-libGL.x86_64 18.0.5-3.fc28                                               
+  mesa-libGL-devel.x86_64 18.0.5-3.fc28                                         
+  mesa-libgbm.x86_64 18.0.5-3.fc28                                              
+  mesa-libglapi.x86_64 18.0.5-3.fc28                                            
+  mtdev.x86_64 1.1.5-12.fc28                                                    
+  pcre2-utf16.x86_64 10.31-8.fc28                                               
+  qt-settings.noarch 28.0-2.fc28                                                
+  qt5-qtbase.x86_64 5.10.1-6.fc28                                               
+  qt5-qtbase-common.noarch 5.10.1-6.fc28                                        
+  qt5-qtbase-gui.x86_64 5.10.1-6.fc28                                           
+  qt5-qtdeclarative.x86_64 5.10.1-6.fc28                                        
+  qt5-qtxmlpatterns.x86_64 5.10.1-1.fc28                                        
+  qt5-rpm-macros.noarch 5.10.1-1.fc28                                           
+  rhash.x86_64 1.3.5-2.fc28                                                     
+  xcb-util.x86_64 0.4.0-9.fc28                                                  
+  xcb-util-image.x86_64 0.4.0-9.fc28                                            
+  xcb-util-keysyms.x86_64 0.4.0-7.fc28                                          
+  xcb-util-renderutil.x86_64 0.3.9-10.fc28                                      
+  xcb-util-wm.x86_64 0.4.1-12.fc28                                              
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides pkgconfig qt5-qtbase-devel qt5-qtdeclarative-devel
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+qt5-qtbase-devel-5.10.1-6.fc28.x86_64
+qt5-qtdeclarative-devel-5.10.1-6.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3    [required by ocaml-migrate-parsetree]
+  - install conf-qt                 5.2.1  [required by lablqml]
+  - install ocamlbuild              0.12.0 [required by lablqml]
+  - install conf-pkg-config         1.1    [required by lablqml]
+  - install ocaml-migrate-parsetree 1.0.11 [required by lablqml]
+  - install lablqml                 0.5.2
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[lablqml.0.5.2] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[result.1.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+-> installed conf-qt.5.2.1
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of lablqml failed at "/home/opam/.opam/4.06/.opam-switch/build/lablqml.0.5.2/./configure".
+
+#=== ERROR while compiling lablqml.0.5.2 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/lablqml.0.5.2
+# command              ~/.opam/4.06/.opam-switch/build/lablqml.0.5.2/./configure
+# exit-code            1
+# env-file             ~/.opam/log/lablqml-10-eee391.env
+# output-file          ~/.opam/log/lablqml-10-eee391.out
+### output ###
+# N.B. Don't forget to export right LD_LIBRARY_PATH and PKG_CONFIG_PATH for Qt5 before running this!
+# OCaml 4.06.1 found.
+# ocamlfind found.
+# which: no qmake in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# [0;31mERROR[0m: qmake not found
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build lablqml 0.5.2
++- 
++- The following changes have been performed
+| - install conf-pkg-config         1.1
+| - install conf-qt                 5.2.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install result                  1.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180821055439.export"
+31 1534830834 1534830893

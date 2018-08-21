@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 riakc_ppx.3.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for riakc_ppx.3.1.2: The following dependencies couldn't be met:
+          - riakc_ppx -> ocaml < 4.02.2
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=riakc_ppx.3.1.2 returned 20
+20 1534829277 1534829280
