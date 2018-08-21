@@ -1,0 +1,42 @@
+$ opam depext -iy -j 2 opam-installext.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install opam-installext 1.0.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[opam-installext.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of opam-installext failed at "/usr/bin/make".
+
+#=== ERROR while compiling opam-installext.1.0.0 ==============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.04.2 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.04/.opam-switch/build/opam-installext.1.0.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/opam-installext-10-05296d.env
+# output-file          ~/.opam/log/opam-installext-10-05296d.out
+### output ###
+# ./configure
+# Detected Linux kernel.
+# Unknown Linux distribution .
+# Please submit a bug report or patch at:
+# https://github.com/ocaml/opam-installext/issues
+# Makefile:16: recipe for target 'opam-installext' failed
+# make: *** [opam-installext] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build opam-installext 1.0.0
++- 
+- No changes have been performed
+
+<><> opam-installext.1.0.0 troubleshooting ><><><><><><><><><><><><><><><><><><>
+=> installext is deprecated. Please `opam install depext` instead.
+# Run eval $(opam env) to update the current shell environment
+31 1534818236 1534818241

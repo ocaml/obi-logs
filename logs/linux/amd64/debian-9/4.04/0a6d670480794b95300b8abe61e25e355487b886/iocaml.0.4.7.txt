@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 iocaml.0.4.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for iocaml.0.4.7: The following dependencies couldn't be met:
+          - iocaml -> websocket (>= 0.9 & < 1.0) -> tls < 0.5 -> nocrypto < 0.2.0 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+          - iocaml -> websocket (>= 0.9 & < 1.0) -> tls < 0.5 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of websocket satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=iocaml.0.4.7 returned 20
+20 1534820911 1534820918
