@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 async.108.00.01
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for async.108.00.01: The following dependencies couldn't be met:
+          - async -> async_unix < 108.00.02 -> async_core < 108.00.02 -> core < 108.00.02
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=async.108.00.01 returned 20
+20 1534827568 1534827571
