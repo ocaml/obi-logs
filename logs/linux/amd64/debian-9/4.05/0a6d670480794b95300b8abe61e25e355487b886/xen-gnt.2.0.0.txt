@@ -1,0 +1,418 @@
+$ opam depext -iy -j 2 xen-gnt.2.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libxen-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libxen-dev m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libxenstore3.0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../libxenstore3.0_4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10_amd64.deb ...
+Unpacking libxenstore3.0:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Selecting previously unselected package libyajl2:amd64.
+Preparing to unpack .../libyajl2_2.1.0-2+b3_amd64.deb ...
+Unpacking libyajl2:amd64 (2.1.0-2+b3) ...
+Selecting previously unselected package libxen-4.8:amd64.
+Preparing to unpack .../libxen-4.8_4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10_amd64.deb ...
+Unpacking libxen-4.8:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Selecting previously unselected package libxen-dev:amd64.
+Preparing to unpack .../libxen-dev_4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10_amd64.deb ...
+Unpacking libxen-dev:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Setting up libxenstore3.0:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Setting up libyajl2:amd64 (2.1.0-2+b3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libxen-4.8:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Setting up libxen-dev:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0                v0.11.0 [required by sexplib]
+  - install result                  1.3     [required by cmdliner, lwt]
+  - install base-num                base    [required by num]
+  - install base-bytes              base    [required by cppo]
+  - install ocamlbuild              0.12.0  [required by xen-gnt]
+  - install parsexp                 v0.11.0 [required by sexplib]
+  - install ocaml-migrate-parsetree 1.0.11  [required by lwt]
+  - install num                     0       [required by sexplib]
+  - install cppo                    1.6.4   [required by lwt]
+  - install topkg                   0.9.1   [required by cmdliner]
+  - install ocamlmod                0.0.9   [required by oasis]
+  - install ocamlify                0.0.1   [required by oasis]
+  - install camlp4                  4.05+1  [required by xen-gnt]
+  - install ppx_tools_versioned     5.2     [required by lwt]
+  - install sexplib                 v0.11.0 [required by cstruct]
+  - install cmdliner                1.0.2   [required by xen-gnt]
+  - install oasis                   0.4.11  [required by xen-gnt]
+  - install lwt                     3.3.0   [required by xen-gnt]       For the PPX, please install package lwt_ppx
+                                                                        For the Camlp4 syntax, please install package lwt_camlp4
+                                                                        For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cstruct                 3.2.1   [required by xen-gnt]
+  - install io-page                 1.2.0   [required by xen-gnt]
+  - install xen-gnt                 2.0.0
+===== 21 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.05+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cstruct.3.2.1] found in cache
+[io-page.1.2.0] found in cache
+[lwt.3.3.0] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[xen-gnt.2.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed cppo.1.6.4
+-> installed num.0
+-> installed result.1.3
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.3.2.1
+-> installed io-page.1.2.0
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed camlp4.4.05+1
+-> installed lwt.3.3.0
+[ERROR] The compilation of xen-gnt failed at "/usr/bin/make".
+
+#=== ERROR while compiling xen-gnt.2.0.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/xen-gnt.2.0.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/xen-gnt-11-e3c72c.env
+# output-file          ~/.opam/log/xen-gnt-11-e3c72c.out
+### output ###
+# Makefile:8: config.mk: No such file or directory
+# ocamlfind ocamlopt -package "cmdliner" -linkpkg configure.ml -o configure
+# rm -f configure.c* configure.o
+# ./configure
+# Looking for xenctrl.h: ok
+# ocaml setup.ml -configure --enable-tests --enable-xenctrl
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# 
+# Configuration: 
+# ocamlfind: ........................................... /home/opam/.opam/4.05/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.05/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.05/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.05/bin/ocamlbuild
+# Package name: ........................................ gnt
+# Package version: ..................................... 2.0.0
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.05.0
+# standard_library_default: ............................ /home/opam/.opam/4.05/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.05/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.05/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ...................................... 
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# build Unix userspace bindings: ....................... true
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... true
+# pkg_unix: ............................................ /home/opam/.opam/4.05/lib/ocaml
+# pkg_bigarray: ........................................ /home/opam/.opam/4.05/lib/ocaml
+# pkg_io_page: ......................................... /home/opam/.opam/4.05/lib/io-page
+# pkg_lwt: ............................................. /home/opam/.opam/4.05/lib/lwt
+# pkg_lwt_unix: ........................................ /home/opam/.opam/4.05/lib/lwt
+# pkg_io_page_unix: .................................... /home/opam/.opam/4.05/lib/io-page
+# pkg_cstruct: ......................................... /home/opam/.opam/4.05/lib/cstruct
+# ocamldoc: ............................................ /home/opam/.opam/4.05/bin/ocamldoc
+# 
+# ocaml setup.ml -build -j 4
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# /home/opam/.opam/4.05/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# Configuration "true: quiet, debug, tests", line 1, characters 20-25:
+# Warning: the tag "tests" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package bigarray -package io-page -package io-page.unix -package lwt -package lwt.unix -package unix -modules lib/gnt.mli > lib/gnt.mli.depends
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -bin-annot -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -package bigarray -package io-page -package io-page.unix -package lwt -package lwt.unix -package unix -I lib -o lib/gnt.cmi lib/gnt.mli
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -bin-annot -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -package bigarray -package io-page -package io-page.unix -package lwt -package lwt.unix -package unix -I lib -o lib/gnt.cmi lib/gnt.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package bigarray -package io-page -package io-page.unix -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package unix -syntax camlp4o -modules lib/gnt.ml > lib/gnt.ml.depends
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -bin-annot -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -package bigarray -package io-page -package io-page.unix -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package unix -syntax camlp4o -I lib -o lib/gnt.cmo lib/gnt.ml
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -bin-annot -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -package bigarray -package io-page -package io-page.unix -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package unix -syntax camlp4o -I lib -o lib/gnt.cmo lib/gnt.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "lib/gnt.ml", line 92, characters 24-36:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "lib/gnt.ml", line 164, characters 26-45:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/gnt.ml", line 168, characters 10-33:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/gnt.ml", line 180, characters 19-37:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/gnt.ml", line 181, characters 36-55:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -a -bin-annot -I lib lib/gnt.cmo -o lib/xen_gnt.cma
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -bin-annot -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -package bigarray -package io-page -package io-page.unix -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package unix -syntax camlp4o -I lib -o lib/gnt.cmx lib/gnt.ml
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -bin-annot -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -package bigarray -package io-page -package io-page.unix -package lwt -syntax camlp4o -package lwt.syntax -package lwt.unix -package unix -syntax camlp4o -I lib -o lib/gnt.cmx lib/gnt.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "lib/gnt.ml", line 92, characters 24-36:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "lib/gnt.ml", line 164, characters 26-45:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/gnt.ml", line 168, characters 10-33:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/gnt.ml", line 180, characters 19-37:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# File "lib/gnt.ml", line 181, characters 36-55:
+# Warning 3: deprecated: module Lwt_sequence
+#  This module is an implementation detail of Lwt. See
+#    https://github.com/ocsigen/lwt/issues/361
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlopt -a -bin-annot -I lib lib/gnt.cmx -o lib/xen_gnt.cmxa
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlopt -shared -I lib lib/xen_gnt.cmxa lib/gnt.cmx -o lib/xen_gnt.cmxs
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gntshr_stubs.c
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gnttab_stubs.c
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -g -ccopt -Wno-unused-function -ccopt -g -ccopt -ggdb -c lib/gntshr_stubs.c
+# lib/gntshr_stubs.c: In function 'stub_gntshr_open':
+# lib/gntshr_stubs.c:83:2: error: unknown type name 'xc_gntshr'
+#   xc_gntshr *xgh;
+#   ^~~~~~~~~
+# lib/gntshr_stubs.c:85:8: warning: implicit declaration of function 'xc_gntshr_open' [-Wimplicit-function-declaration]
+#   xgh = xc_gntshr_open(NULL, 0);
+#         ^~~~~~~~~~~~~~
+# lib/gntshr_stubs.c:85:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+#   xgh = xc_gntshr_open(NULL, 0);
+#       ^
+# lib/gntshr_stubs.c: In function 'stub_gntshr_close':
+# lib/gntshr_stubs.c:99:2: warning: implicit declaration of function 'xc_gntshr_close' [-Wimplicit-function-declaration]
+#   xc_gntshr_close(_G(xgh));
+#   ^~~~~~~~~~~~~~~
+# lib/gntshr_stubs.c:53:19: error: 'xc_gntshr' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                    ^
+# lib/gntshr_stubs.c:99:18: note: in expansion of macro '_G'
+#   xc_gntshr_close(_G(xgh));
+#                   ^~
+# lib/gntshr_stubs.c:53:19: note: each undeclared identifier is reported only once for each function it appears in
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                    ^
+# lib/gntshr_stubs.c:99:18: note: in expansion of macro '_G'
+#   xc_gntshr_close(_G(xgh));
+#                   ^~
+# lib/gntshr_stubs.c:53:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                               ^
+# lib/gntshr_stubs.c:99:18: note: in expansion of macro '_G'
+#   xc_gntshr_close(_G(xgh));
+#                   ^~
+# lib/gntshr_stubs.c: In function 'stub_gntshr_share_pages_batched':
+# lib/gntshr_stubs.c:128:8: warning: implicit declaration of function 'xc_gntshr_share_pages' [-Wimplicit-function-declaration]
+#   map = xc_gntshr_share_pages(_G(xgh), Int_val(domid), c_count, refs, Bool_val(writable));
+#         ^~~~~~~~~~~~~~~~~~~~~
+# lib/gntshr_stubs.c:53:19: error: 'xc_gntshr' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                    ^
+# lib/gntshr_stubs.c:128:30: note: in expansion of macro '_G'
+#   map = xc_gntshr_share_pages(_G(xgh), Int_val(domid), c_count, refs, Bool_val(writable));
+#                               ^~
+# lib/gntshr_stubs.c:53:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                               ^
+# lib/gntshr_stubs.c:128:30: note: in expansion of macro '_G'
+#   map = xc_gntshr_share_pages(_G(xgh), Int_val(domid), c_count, refs, Bool_val(writable));
+#                               ^~
+# lib/gntshr_stubs.c:53:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                               ^
+# lib/gntshr_stubs.c:132:15: note: in expansion of macro '_G'
+#    failwith_xc(_G(xgh));
+#                ^~
+# lib/gntshr_stubs.c: In function 'stub_gntshr_munmap_batched':
+# lib/gntshr_stubs.c:53:19: error: 'xc_gntshr' undeclared (first use in this function)
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                    ^
+# lib/gntshr_stubs.c:175:15: note: in expansion of macro '_G'
+#    failwith_xc(_G(xgh));
+#                ^~
+# lib/gntshr_stubs.c:53:30: error: expected expression before ')' token
+#  #define _G(__g) ((xc_gntshr *)(__g))
+#                               ^
+# lib/gntshr_stubs.c:175:15: note: in expansion of macro '_G'
+#    failwith_xc(_G(xgh));
+#                ^~
+# Command exited with code 2.
+# + /home/opam/.opam/4.05/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.05/bin/ocamlbuild' lib/xen_gnt.cma lib/xen_gnt.cmxa lib/xen_gnt.a lib/xen_gnt.cmxs lib/libxen_gnt_unix_stubs.a lib/dllxen_gnt_unix_stubs.so lib/xen_gnt_unix.cma lib/xen_gnt_unix.cmxa lib/xen_gnt_unix.a lib/xen_gnt_unix.cmxs test/test_gntshr.native lib_test/main.native -tag debug -tag tests -j 4' terminated with error code 10")
+# Makefile:25: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build xen-gnt 2.0.0
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install base-num                base
+| - install camlp4                  4.05+1
+| - install cmdliner                1.0.2
+| - install cppo                    1.6.4
+| - install cstruct                 3.2.1
+| - install io-page                 1.2.0
+| - install lwt                     3.3.0
+| - install num                     0
+| - install oasis                   0.4.11
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install parsexp                 v0.11.0
+| - install ppx_tools_versioned     5.2
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install topkg                   0.9.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libxen-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180821010328.export"
+31 1534813400 1534813546

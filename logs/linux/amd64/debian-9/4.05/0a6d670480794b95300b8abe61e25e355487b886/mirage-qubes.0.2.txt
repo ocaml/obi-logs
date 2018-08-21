@@ -1,0 +1,384 @@
+$ opam depext -iy -j 2 mirage-qubes.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libxen-dev
+m4
+perl
+pkg-config
+uuid-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libxen-dev m4 perl pkg-config uuid-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../01-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../03-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../04-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libxenstore3.0:amd64.
+Preparing to unpack .../05-libxenstore3.0_4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10_amd64.deb ...
+Unpacking libxenstore3.0:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Selecting previously unselected package libyajl2:amd64.
+Preparing to unpack .../06-libyajl2_2.1.0-2+b3_amd64.deb ...
+Unpacking libyajl2:amd64 (2.1.0-2+b3) ...
+Selecting previously unselected package libxen-4.8:amd64.
+Preparing to unpack .../07-libxen-4.8_4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10_amd64.deb ...
+Unpacking libxen-4.8:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Selecting previously unselected package libxen-dev:amd64.
+Preparing to unpack .../08-libxen-dev_4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10_amd64.deb ...
+Unpacking libxen-dev:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Selecting previously unselected package uuid-dev:amd64.
+Preparing to unpack .../13-uuid-dev_2.29.2-1+deb9u1_amd64.deb ...
+Unpacking uuid-dev:amd64 (2.29.2-1+deb9u1) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up uuid-dev:amd64 (2.29.2-1+deb9u1) ...
+Setting up libxenstore3.0:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libyajl2:amd64 (2.1.0-2+b3) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libxen-4.8:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Setting up libxen-dev:amd64 (4.8.4+xsa273+shim4.10.1+xsa273-1+deb9u10) ...
+Processing triggers for sgml-base (1.29) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes              base       [required by io-page]
+  - install conf-perl               1          [required by minios-xen]
+  - install conf-pkg-config         1.1        [required by mirage-xen]
+  - install ppx_tools               5.0+4.05.0 [required by vchan]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install ppx_derivers            1.0        [required by ppx_deriving]
+  - install result                  1.3        [required by logs, vchan]
+  - install base-num                base       [required by num]
+  - install ocaml-src               4.05.0     [required by mirage-xen-ocaml]
+  - install ocamlbuild              0.12.0     [required by mirage-qubes]
+  - install cppo                    1.6.4      [required by lwt, ppx_deriving]
+  - install minios-xen              0.9        [required by mirage-xen-minios]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.1    [required by ppx_sexp_conv]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_deriving, ppx_sexp_conv]
+  - install num                     0          [required by sexplib]
+  - install uchar                   0.0.2      [required by fmt]
+  - install topkg                   0.9.1      [required by logs, mirage-xen]
+  - install ocplib-endian           1.0        [required by mirage-profile]
+  - install lwt                     4.1.0      [required by mirage-qubes]                                     For the PPX, please install package lwt_ppx
+                                                                                                              For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cppo_ocamlbuild         1.6.0      [required by ppx_deriving]
+  - install mirage-xen-minios       0.9.3      [required by mirage-xen]
+  - install stdio                   v0.11.0    [required by configurator, ppxlib]
+  - install ppx_tools_versioned     5.2        [required by ppx_cstruct]
+  - install sexplib                 v0.11.0    [required by cstruct, vchan]
+  - install cmdliner                1.0.2      [required by logs, vchan]
+  - install astring                 0.8.3      [required by ocb-stubblr]
+  - install ppx_deriving            4.2.1      [required by vchan]
+  - install mirage-xen-posix        3.0.4      [required by mirage-xen-ocaml]
+  - install ppxlib                  0.3.0      [required by ppx_sexp_conv]
+  - install configurator            v0.11.0    [required by io-page, io-page-xen]
+  - install cstruct                 3.2.1      [required by mirage-qubes]
+  - install xen-evtchn              2.0.0      [required by mirage-qubes]
+  - install fmt                     0.8.5      [required by logs]
+  - install ocb-stubblr             0.1.1      [required by mirage-xen]
+  - install mirage-xen-ocaml        3.0.6      [required by mirage-xen]
+  - install ppx_sexp_conv           v0.11.2    [required by vchan]
+  - install ppx_cstruct             3.2.1      [required by shared-memory-ring-lwt, mirage-profile, xenstore]
+  - install io-page                 2.0.1      [required by mirage-types, vchan]
+  - install mirage-flow             1.5.0      [required by mirage-flow-lwt]
+  - install mirage-device           1.1.0      [required by mirage-clock]
+  - install logs                    0.6.2      [required by mirage-qubes]
+  - install xenstore                2.0.0      [required by mirage-xen, vchan]
+  - install mirage-profile          0.8.2      [required by mirage-xen]
+  - install mirage-types            2.8.0      [required by mirage-qubes]
+  - install io-page-xen             2.0.1      [required by mirage-xen]
+  - install mirage-clock            1.3.0      [required by mirage-flow-lwt]
+  - install xenstore_transport      1.0.0      [required by vchan]
+  - install xen-gnt                 3.0.1      [required by mirage-qubes]
+  - install shared-memory-ring      3.0.1      [required by shared-memory-ring-lwt]
+  - install mirage-flow-lwt         1.5.0      [required by vchan]
+  - install shared-memory-ring-lwt  3.0.1      [required by mirage-xen]
+  - install mirage-xen              3.0.6      [required by mirage-qubes]
+  - install vchan                   2.3.1      [required by mirage-qubes]
+  - install mirage-qubes            0.2
+===== 56 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[base.v0.11.1] found in cache
+[cmdliner.1.0.2] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[fmt.0.8.5] found in cache
+[io-page.2.0.1] found in cache
+[io-page-xen.2.0.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[minios-xen.0.9] found in cache
+[mirage-clock.1.3.0] found in cache
+[mirage-device.1.1.0] found in cache
+[mirage-flow.1.5.0] found in cache
+[mirage-flow-lwt.1.5.0] found in cache
+[mirage-profile.0.8.2] found in cache
+[mirage-qubes.0.2] found in cache
+[mirage-types.2.8.0] found in cache
+[mirage-xen.3.0.6] found in cache
+[mirage-xen-minios.0.9.3] found in cache
+[mirage-xen-ocaml.3.0.6] found in cache
+[mirage-xen-posix.3.0.4] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocaml-src.4.05.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocb-stubblr.0.1.1] found in cache
+[ocplib-endian.1.0] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.0+4.05.0] found in cache
+[ppx_tools_versioned.5.2] found in cache
+[ppxlib.0.3.0] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[shared-memory-ring.3.0.1] found in cache
+[shared-memory-ring-lwt.3.0.1] found in cache
+[stdio.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[vchan.2.3.1] found in cache
+[xen-evtchn.2.0.0] found in cache
+[xen-gnt.3.0.1] found in cache
+[xenstore.2.0.0] found in cache
+[xenstore_transport.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed cppo.1.6.4
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocaml-src.4.05.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed minios-xen.0.9
+-> installed mirage-xen-minios.0.9.3
+-> installed ocplib-endian.1.0
+-> installed mirage-xen-posix.3.0.4
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0+4.05.0
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed mirage-xen-ocaml.3.0.6
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.v0.11.0
+-> installed base.v0.11.1
+-> installed cstruct.3.2.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed io-page.2.0.1
+-> installed io-page-xen.2.0.1
+-> installed mirage-types.2.8.0
+-> installed ppx_cstruct.3.2.1
+-> installed mirage-profile.0.8.2
+-> installed shared-memory-ring.3.0.1
+-> installed shared-memory-ring-lwt.3.0.1
+-> installed topkg.0.9.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed ocb-stubblr.0.1.1
+-> installed ppxlib.0.3.0
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
+-> installed mirage-device.1.1.0
+-> installed logs.0.6.2
+-> installed mirage-flow.1.5.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed xen-evtchn.2.0.0
+-> installed xen-gnt.3.0.1
+-> installed xenstore.2.0.0
+-> installed mirage-clock.1.3.0
+-> installed mirage-flow-lwt.1.5.0
+-> installed xenstore_transport.1.0.0
+-> installed mirage-xen.3.0.6
+-> installed vchan.2.3.1
+[ERROR] The compilation of mirage-qubes failed at "/usr/bin/make".
+
+#=== ERROR while compiling mirage-qubes.0.2 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/mirage-qubes.0.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/mirage-qubes-11-cb6c95.env
+# output-file          ~/.opam/log/mirage-qubes-11-cb6c95.out
+### output ###
+# ocaml setup.ml -build 
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# W: Cannot find source file matching module 'qubes' in library qubes
+# /home/opam/.opam/4.05/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "_tags", line 32, characters 17-35:
+# Warning: the tag "pkg_cstruct.syntax" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package cstruct -package logs -package mirage-types -package vchan.xen -modules lib/rExec.mli > lib/rExec.mli.depends
+# /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package cstruct -package logs -package mirage-types -package vchan.xen -modules lib/s.mli > lib/s.mli.depends
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package cstruct -package logs -package mirage-types -package vchan.xen -w A-4 -I lib -o lib/s.cmi lib/s.mli
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package cstruct -package logs -package mirage-types -package vchan.xen -w A-4 -I lib -o lib/s.cmi lib/s.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.05/lib/ocaml/compiler-libs, /home/opam/.opam/4.05/lib/ocaml
+# /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package cstruct -package logs -package mirage-types -package vchan.xen -w A-4 -I lib -o lib/rExec.cmi lib/rExec.mli
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamlc -c -g -annot -bin-annot -strict-sequence -package cstruct -package logs -package mirage-types -package vchan.xen -w A-4 -I lib -o lib/rExec.cmi lib/rExec.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.05/lib/ocaml/compiler-libs, /home/opam/.opam/4.05/lib/ocaml
+# /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package cstruct -package logs -package mirage-types -package vchan.xen -modules lib/rExec.ml > lib/rExec.ml.depends
+# /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package cstruct -package logs -package mirage-types -package vchan.xen -modules lib/formats.ml > lib/formats.ml.depends
+# + /home/opam/.opam/4.05/bin/ocamlfind ocamldep -package cstruct -package logs -package mirage-types -package vchan.xen -modules lib/formats.ml > lib/formats.ml.depends
+# File "lib/formats.ml", line 12, characters 13-15:
+# Error: Syntax error
+# Command exited with code 2.
+# + /home/opam/.opam/4.05/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.05/lib/ocamlbuild /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.05/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.05/bin/ocamlbuild' lib/qubes.cma lib/qubes.cmxa lib/qubes.a lib/qubes.cmxs -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mirage-qubes 0.2
++- 
++- The following changes have been performed
+| - install astring                 0.8.3
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install base-num                base
+| - install cmdliner                1.0.2
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cppo_ocamlbuild         1.6.0
+| - install cstruct                 3.2.1
+| - install fmt                     0.8.5
+| - install io-page                 2.0.1
+| - install io-page-xen             2.0.1
+| - install logs                    0.6.2
+| - install lwt                     4.1.0
+| - install minios-xen              0.9
+| - install mirage-clock            1.3.0
+| - install mirage-device           1.1.0
+| - install mirage-flow             1.5.0
+| - install mirage-flow-lwt         1.5.0
+| - install mirage-profile          0.8.2
+| - install mirage-types            2.8.0
+| - install mirage-xen              3.0.6
+| - install mirage-xen-minios       0.9.3
+| - install mirage-xen-ocaml        3.0.6
+| - install mirage-xen-posix        3.0.4
+| - install num                     0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocaml-src               4.05.0
+| - install ocamlbuild              0.12.0
+| - install ocb-stubblr             0.1.1
+| - install ocplib-endian           1.0
+| - install parsexp                 v0.11.0
+| - install ppx_cstruct             3.2.1
+| - install ppx_derivers            1.0
+| - install ppx_deriving            4.2.1
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.0+4.05.0
+| - install ppx_tools_versioned     5.2
+| - install ppxlib                  0.3.0
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install shared-memory-ring      3.0.1
+| - install shared-memory-ring-lwt  3.0.1
+| - install stdio                   v0.11.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install vchan                   2.3.1
+| - install xen-evtchn              2.0.0
+| - install xen-gnt                 3.0.1
+| - install xenstore                2.0.0
+| - install xenstore_transport      1.0.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180821005910.export"
+31 1534813137 1534813298
