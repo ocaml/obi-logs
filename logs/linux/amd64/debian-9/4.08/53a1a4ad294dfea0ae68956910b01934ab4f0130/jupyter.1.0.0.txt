@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 jupyter.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for jupyter.1.0.0: The following dependencies couldn't be met:
+          - jupyter -> ppx_deriving_yojson -> ppx_deriving (< 3.0 | >= 4.0) -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - jupyter -> ppx_deriving_yojson -> ppx_deriving (< 3.0 | >= 4.0) -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - jupyter -> ppx_deriving_yojson -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=jupyter.1.0.0 returned 20
+20 1535487595 1535487600

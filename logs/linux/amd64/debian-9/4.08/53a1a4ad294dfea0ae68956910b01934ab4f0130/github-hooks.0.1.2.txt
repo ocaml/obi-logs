@@ -1,0 +1,23 @@
+$ opam depext -iy -j 2 github-hooks.0.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for github-hooks.0.1.2: The following dependencies couldn't be met:
+          - github-hooks -> nocrypto -> type_conv -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+          - github-hooks -> nocrypto -> type_conv -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks -> nocrypto -> type_conv -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks -> nocrypto -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks -> nocrypto -> ppx_deriving -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks -> nocrypto -> ppx_deriving -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks -> nocrypto -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-hooks -> nocrypto -> ctypes < 0.4.0 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=github-hooks.0.1.2 returned 20
+20 1535488342 1535488344
