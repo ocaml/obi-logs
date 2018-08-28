@@ -1,0 +1,139 @@
+$ opam depext -iy -j 2 KaSim.3.5.150925
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install num   1.1        [required by KaSim]
+  - install KaSim 3.5.150925
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[KaSim.3.5.150925] found in cache
+[num.1.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed num.1.1
+[ERROR] The compilation of KaSim failed at "/usr/bin/make".
+
+#=== ERROR while compiling KaSim.3.5.150925 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/KaSim.3.5.150925
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/KaSim-11-48c407.env
+# output-file          ~/.opam/log/KaSim-11-48c407.out
+### output ###
+# ocamllex  grammar/kappaLexer.mll
+# 85 states, 2129 transitions, table size 9026 bytes
+# ocamlyacc  grammar/kappaParser.mly
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/KaSim.3.5.150925'
+# ocamldep -native -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ grammar/kappaParser.mli > ._ncdi/grammar/kappaParser.di
+# ocamldep -native -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/precondition.mli > ._ncdi/pattern/precondition.di
+# ocamldep -native -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/mixture.mli > ._ncdi/pattern/mixture.di
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ grammar/kappaParser.ml > ._d/grammar/kappaParser.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ grammar/kappaLexer.ml > ._d/grammar/kappaLexer.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ main/main.ml > ._d/main/main.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ simulation/run.ml > ._d/simulation/run.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ Error/safe.ml > ._d/Error/safe.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ simulation/plot.ml > ._d/simulation/plot.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/compression_main.ml > ._d/cflow/compression_main.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/dag2.ml > ._d/cflow/dag2.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/dag.ml > ._d/cflow/dag.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/generic_branch_and_cut_solver.ml > ._d/cflow/generic_branch_and_cut_solver.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/propagation_heuristics.ml > ._d/cflow/propagation_heuristics.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/blackboard.ml > ._d/cflow/blackboard.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/blackboard_generation.ml > ._d/cflow/blackboard_generation.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/pseudo_inverse.ml > ._d/cflow/pseudo_inverse.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/po_cut.ml > ._d/cflow/po_cut.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/kappa_instantiation.ml > ._d/cflow/kappa_instantiation.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/causal.ml > ._d/cflow/causal.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/profiling.ml > ._d/cflow/profiling.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/cflow_handler.ml > ._d/cflow/cflow_handler.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/priority.ml > ._d/cflow/priority.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ cflow/graph_closure.ml > ._d/cflow/graph_closure.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ simulation/external.ml > ._d/simulation/external.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ grammar/eval.ml > ._d/grammar/eval.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ simulation/nonLocal.ml > ._d/simulation/nonLocal.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ simulation/state.ml > ._d/simulation/state.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/dynamics.ml > ._d/pattern/dynamics.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/matching.ml > ._d/pattern/matching.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ siteGraphs/species.ml > ._d/siteGraphs/species.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ siteGraphs/graph.ml > ._d/siteGraphs/graph.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/precondition.ml > ._d/pattern/precondition.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/mixture.ml > ._d/pattern/mixture.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ siteGraphs/node.ml > ._d/siteGraphs/node.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/environment.ml > ._d/pattern/environment.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ pattern/signature.ml > ._d/pattern/signature.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ grammar/ast.ml > ._d/grammar/ast.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/liftSet.ml > ._d/dataStructures/liftSet.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ Error/ExceptionDefn.ml > ._d/Error/ExceptionDefn.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ Error/debug.ml > ._d/Error/debug.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/random_tree.ml > ._d/dataStructures/random_tree.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/mods.ml > ._d/dataStructures/mods.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/dynamicArray.ml > ._d/dataStructures/dynamicArray.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/valMap.ml > ._d/dataStructures/valMap.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/mapExt.ml > ._d/dataStructures/mapExt.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ main/parameter.ml > ._d/main/parameter.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/cache.ml > ._d/dataStructures/cache.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/tools.ml > ._d/dataStructures/tools.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/safeHeap.ml > ._d/dataStructures/safeHeap.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/heap.ml > ._d/dataStructures/heap.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/longString.ml > ._d/dataStructures/longString.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/memoryManagement.ml > ._d/dataStructures/memoryManagement.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/largeArray.ml > ._d/dataStructures/largeArray.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/binomialtree.ml > ._d/dataStructures/binomialtree.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/set_patched.ml > ._d/dataStructures/set_patched.d
+# ocamldep -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/color.ml > ._d/dataStructures/color.d
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/color.ml
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/set_patched.ml
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/binomialtree.ml
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/largeArray.ml
+# File "dataStructures/largeArray.ml", line 39, characters 15-27:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "dataStructures/largeArray.ml", line 45, characters 13-25:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "dataStructures/largeArray.ml", line 46, characters 13-25:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "dataStructures/largeArray.ml", line 52, characters 17-29:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# File "dataStructures/largeArray.ml", line 57, characters 16-28:
+# Warning 3: deprecated: Array.create
+# Use Array.make instead.
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/memoryManagement.ml
+# ocamlc -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/longString.mli
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/longString.ml
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/heap.ml
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/safeHeap.ml
+# ocamlopt.opt -c -dtypes -I Error/ -I cflow/ -I dataStructures/ -I grammar/ -I main/ -I pattern/ -I simulation/ -I siteGraphs/ dataStructures/tools.ml
+# File "dataStructures/tools.ml", line 62, characters 37-47:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "dataStructures/tools.ml", line 62, characters 78-81:
+# Error: This expression has type bytes but an expression was expected of type
+#          string
+# OCamlMakefile:975: recipe for target 'dataStructures/tools.cmi' failed
+# make[1]: *** [dataStructures/tools.cmi] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/KaSim.3.5.150925'
+# OCamlMakefile:729: recipe for target 'native-code' failed
+# make: *** [native-code] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build KaSim 3.5.150925
++- 
++- The following changes have been performed
+| - install num 1.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180828212850.export"
+31 1535491728 1535491736

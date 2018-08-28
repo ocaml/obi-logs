@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 benchmark.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for benchmark.1.2: The following dependencies couldn't be met:
+          - benchmark -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=benchmark.1.2 returned 20
+20 1535493418 1535493420
