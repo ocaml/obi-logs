@@ -1,62 +1,0 @@
-$ opam depext -iy -j 2 conf-gssapi.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libkrb5-dev
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libkrb5-dev
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libgssrpc4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../0-libgssrpc4_1.15-1+deb9u1_amd64.deb ...
-Unpacking libgssrpc4:amd64 (1.15-1+deb9u1) ...
-Selecting previously unselected package libkadm5clnt-mit11:amd64.
-Preparing to unpack .../1-libkadm5clnt-mit11_1.15-1+deb9u1_amd64.deb ...
-Unpacking libkadm5clnt-mit11:amd64 (1.15-1+deb9u1) ...
-Selecting previously unselected package libkdb5-8:amd64.
-Preparing to unpack .../2-libkdb5-8_1.15-1+deb9u1_amd64.deb ...
-Unpacking libkdb5-8:amd64 (1.15-1+deb9u1) ...
-Selecting previously unselected package libkadm5srv-mit11:amd64.
-Preparing to unpack .../3-libkadm5srv-mit11_1.15-1+deb9u1_amd64.deb ...
-Unpacking libkadm5srv-mit11:amd64 (1.15-1+deb9u1) ...
-Selecting previously unselected package comerr-dev.
-Preparing to unpack .../4-comerr-dev_2.1-1.43.4-2_amd64.deb ...
-Unpacking comerr-dev (2.1-1.43.4-2) ...
-Selecting previously unselected package krb5-multidev.
-Preparing to unpack .../5-krb5-multidev_1.15-1+deb9u1_amd64.deb ...
-Unpacking krb5-multidev (1.15-1+deb9u1) ...
-Selecting previously unselected package libkrb5-dev.
-Preparing to unpack .../6-libkrb5-dev_1.15-1+deb9u1_amd64.deb ...
-Unpacking libkrb5-dev (1.15-1+deb9u1) ...
-Setting up libgssrpc4:amd64 (1.15-1+deb9u1) ...
-Setting up comerr-dev (2.1-1.43.4-2) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up libkdb5-8:amd64 (1.15-1+deb9u1) ...
-Setting up libkadm5clnt-mit11:amd64 (1.15-1+deb9u1) ...
-Setting up libkadm5srv-mit11:amd64 (1.15-1+deb9u1) ...
-Setting up krb5-multidev (1.15-1+deb9u1) ...
-Setting up libkrb5-dev (1.15-1+deb9u1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install conf-gssapi 1
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-
-#=== ERROR while compiling conf-gssapi.1 ======================================#
-"pkg-config": command not found.
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build conf-gssapi 1
-+- 
-- No changes have been performed
-
-The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
-    libkrb5-dev
-
-# Run eval $(opam env) to update the current shell environment
-31 1534641027 1534641035

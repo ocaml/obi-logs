@@ -1,104 +1,0 @@
-$ opam depext -iy -j 2 parmap.1.0-rc7.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-autoconf
-automake
-debianutils
-m4
-# The following new OS packages need to be installed: autoconf automake
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy autoconf automake
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package autoconf.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../autoconf_2.69-10_all.deb ...
-Unpacking autoconf (2.69-10) ...
-Selecting previously unselected package autotools-dev.
-Preparing to unpack .../autotools-dev_20161112.1_all.deb ...
-Unpacking autotools-dev (20161112.1) ...
-Selecting previously unselected package automake.
-Preparing to unpack .../automake_1%3a1.15-6_all.deb ...
-Unpacking automake (1:1.15-6) ...
-Setting up autoconf (2.69-10) ...
-Setting up autotools-dev (20161112.1) ...
-Setting up automake (1:1.15-6) ...
-update-alternatives: using /usr/bin/automake-1.15 to provide /usr/bin/automake (automake) in auto mode
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install conf-which    1         [required by conf-aclocal, conf-autoconf]
-  - install ocamlbuild    0.12.0    [required by parmap]
-  - install conf-autoconf 0.1       [required by parmap]
-  - install conf-aclocal  1.0.0     [required by parmap]
-  - install parmap        1.0-rc7.1
-===== 5 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[ocamlbuild.0.12.0] found in cache
-[parmap.1.0-rc7.1] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed conf-which.1
--> installed conf-aclocal.1.0.0
--> installed conf-autoconf.0.1
--> installed ocamlbuild.0.12.0
-[ERROR] The compilation of parmap failed at "/usr/bin/make DESTDIR=/home/opam/.opam/4.06 OCAMLLIBDIR=lib".
-
-#=== ERROR while compiling parmap.1.0-rc7.1 ===================================#
-# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/parmap.1.0-rc7.1
-# command              /usr/bin/make DESTDIR=/home/opam/.opam/4.06 OCAMLLIBDIR=lib
-# exit-code            2
-# env-file             ~/.opam/log/parmap-11-06fa5f.env
-# output-file          ~/.opam/log/parmap-11-06fa5f.out
-### output ###
-# ocamlbuild -j 10 -use-ocamlfind  parmap.cma  parmap.cmxa  parmap.cmxs parmap.a
-# ocamlfind ocamlc -ccopt -D_GNU_SOURCE -ccopt -fPIC -c bytearray_stubs.c
-# ocamlfind ocamlc -ccopt -D_GNU_SOURCE -ccopt -fPIC -c setcore_stubs.c
-# ocamlfind ocamlmklib -o parmap_stubs bytearray_stubs.o setcore_stubs.o
-# ocamlfind ocamldep -package unix -package bigarray -modules parmap.mli > parmap.mli.depends
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o parmap.cmi parmap.mli
-# ocamlfind ocamldep -package unix -package bigarray -modules parmap.ml > parmap.ml.depends
-# ocamlfind ocamldep -package unix -package bigarray -modules bytearray.mli > bytearray.mli.depends
-# ocamlfind ocamldep -package unix -package bigarray -modules parmap_utils.mli > parmap_utils.mli.depends
-# ocamlfind ocamldep -package unix -package bigarray -modules setcore.ml > setcore.ml.depends
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o bytearray.cmi bytearray.mli
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o parmap_utils.cmi parmap_utils.mli
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o setcore.cmo setcore.ml
-# ocamlfind ocamldep -package unix -package bigarray -modules bytearray.ml > bytearray.ml.depends
-# ocamlfind ocamldep -package unix -package bigarray -modules parmap_utils.ml > parmap_utils.ml.depends
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o parmap.cmo parmap.ml
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o bytearray.cmo bytearray.ml
-# ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o parmap_utils.cmo parmap_utils.ml
-# + ocamlfind ocamlc -c -annot -package unix -package bigarray -w Ae -o bytearray.cmo bytearray.ml
-# File "bytearray.ml", line 38, characters 0-118:
-# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
-# File "bytearray.ml", line 41, characters 0-116:
-# Warning 3: deprecated: [@@noalloc] should be used instead of "noalloc"
-# File "bytearray.ml", line 47, characters 10-23:
-# Warning 3: deprecated: String.create
-# Use Bytes.create instead.
-# File "bytearray.ml", line 48, characters 28-29:
-# Error: This expression has type bytes but an expression was expected of type
-#          string
-# Command exited with code 2.
-# Makefile:58: recipe for target 'all' failed
-# make: *** [all] Error 10
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build parmap 1.0-rc7.1
-+- 
-+- The following changes have been performed
-| - install conf-aclocal  1.0.0
-| - install conf-autoconf 0.1
-| - install conf-which    1
-| - install ocamlbuild    0.12.0
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180815011152.export"
-31 1534295505 1534295524

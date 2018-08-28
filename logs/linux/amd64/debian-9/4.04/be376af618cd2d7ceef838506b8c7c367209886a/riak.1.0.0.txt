@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 riak.1.0.0
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for riak.1.0.0: The following dependencies couldn't be met:
-          - riak -> riak-pb -> piqi < 0.7.0 -> camlp4 < 4.02 -> ocaml < 4.02
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=riak.1.0.0 returned 20
-20 1532299185 1532299187

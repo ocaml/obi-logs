@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 mirage-conduit.2.0.0
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
-[ERROR] No solution for mirage-conduit.2.0.0: The following dependencies couldn't be met:
-          - mirage-conduit -> conduit = 0.7.2 -> sexplib < 113.01.00 -> ocaml < 4.03.0
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=mirage-conduit.2.0.0 returned 20
-20 1533599182 1533599185

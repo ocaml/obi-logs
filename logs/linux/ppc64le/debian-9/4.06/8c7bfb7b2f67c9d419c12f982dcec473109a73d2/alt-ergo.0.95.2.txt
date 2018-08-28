@@ -1,165 +1,0 @@
-$ opam depext -iy -j 2 alt-ergo.0.95.2
-# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libgmp-dev
-m4
-perl
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libgmp-dev m4 perl
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libgmpxx4ldbl:ppc64el.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17555 files and directories currently installed.)
-Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_ppc64el.deb ...
-Unpacking libgmpxx4ldbl:ppc64el (2:6.1.2+dfsg-1) ...
-Selecting previously unselected package libgmp-dev:ppc64el.
-Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_ppc64el.deb ...
-Unpacking libgmp-dev:ppc64el (2:6.1.2+dfsg-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up libgmpxx4ldbl:ppc64el (2:6.1.2+dfsg-1) ...
-Setting up libgmp-dev:ppc64el (2:6.1.2+dfsg-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install ocamlgraph 1.8.8  [required by alt-ergo]
-  - install conf-gmp   1      [required by zarith]
-  - install conf-perl  1      [required by zarith]
-  - install num        1.1    [required by alt-ergo]
-  - install zarith     1.7    [required by alt-ergo]
-  - install alt-ergo   0.95.2                        This release is too old. Please consider using version 1.30 that fixes many soundness bugs and brings a lot of improvements
-===== 6 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[alt-ergo.0.95.2] found in cache
-[num.1.1] found in cache
-[ocamlgraph.1.8.8] found in cache
-[zarith.1.7] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed conf-gmp.1
--> installed conf-perl.1
--> installed num.1.1
--> installed zarith.1.7
--> installed ocamlgraph.1.8.8
-[ERROR] The compilation of alt-ergo failed at "/usr/bin/make".
-
-#=== ERROR while compiling alt-ergo.0.95.2 ====================================#
-# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/alt-ergo.0.95.2
-# command              /usr/bin/make
-# exit-code            2
-# env-file             ~/.opam/log/alt-ergo-11-9e78df.env
-# output-file          ~/.opam/log/alt-ergo-11-9e78df.out
-### output ###
-# Makefile:485: .depend: No such file or directory
-# ocamlyacc -v src/parsing/why_parser.mly 
-# ocamllex.opt src/parsing/why_lexer.mll > /dev/null
-# ocamlyacc -v src/parsing/smt_parser.mly 
-# ocamllex.opt src/parsing/smt_lex.mll > /dev/null
-# ocamlyacc -v src/parsing/smtlib2_parse.mly 
-# ocamllex.opt src/parsing/smtlib2_lex.mll > /dev/null
-# ocamldep -slash -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/*.ml* src/structures/*.ml* src/theories/*.ml* src/instances/*.ml* src/sat/*.ml* src/preprocess/*.ml* src/parsing/*.ml* src/gui/*.ml* src/main/*.ml* > .depend
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/version.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/version.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/numbers.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/numbers.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/timers.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/timers.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/options.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/options.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/loc.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/loc.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/hashcons.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/hashcons.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/util/hstring.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/util/hstring.ml
-# File "src/util/hstring.ml", line 50, characters 24-45:
-# Warning 52: Code should not depend on the actual values of
-# this constructor's arguments. They are only for information
-# and may change in future versions. (See manual section 8.5)
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/ty.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/ty.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/symbols.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/symbols.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/subst.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/subst.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/term.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/term.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/literal.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/literal.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/formula.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/formula.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/explanation.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/explanation.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/exception.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/exception.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/why_ptree.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/why_ptree.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/smtlib2_ast.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/structures/smtlib2_ast.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/parsing/errors.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/errors.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/parsing/why_parser.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/why_parser.ml
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/why_lexer.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/structures/smt_ast.mli
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/parsing/smt_parser.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/smt_parser.ml
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/smt_lex.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/parsing/smtlib2_parse.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/smtlib2_parse.ml
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/parsing/smtlib2_lex.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/preprocess/existantial.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/preprocess/existantial.ml
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/preprocess/smt_to_why.ml
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/preprocess/smtlib2_to_why.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/preprocess/triggers.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/preprocess/triggers.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/preprocess/why_typing.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/preprocess/why_typing.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/preprocess/cnf.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/preprocess/cnf.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/theories/boxed.mli
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/theories/sig.mli
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/instances/matching.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/instances/matching.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/theories/polynome.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/theories/polynome.ml
-# File "src/theories/polynome.ml", line 97, characters 24-38:
-# Warning 52: Code should not depend on the actual values of
-# this constructor's arguments. They are only for information
-# and may change in future versions. (See manual section 8.5)
-# File "_none_", line 1:
-# Warning 52: Code should not depend on the actual values of
-# this constructor's arguments. They are only for information
-# and may change in future versions. (See manual section 8.5)
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/theories/ac.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/theories/ac.ml
-# ocamlc.opt -c -annot -g -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  src/theories/intervals.mli
-# ocamlopt.opt -c -annot -inline 1000 -I /home/opam/.opam/4.06/lib/zarith -I /home/opam/.opam/4.06/lib/ocamlgraph  -I src/util -I src/structures -I src/theories -I src/instances -I src/sat -I src/preprocess -I src/parsing -I src/gui -I src/main  -for-pack AltErgo src/theories/intervals.ml
-# /tmp/camlasm82955c.s: Assembler messages:
-# /tmp/camlasm82955c.s:10178: Error: operand out of range (0x000000000000804c is not between 0xffffffffffff8000 and 0x0000000000007ffc)
-# /tmp/camlasm82955c.s:32746: Error: operand out of range (0x000000000000805c is not between 0xffffffffffff8000 and 0x0000000000007ffc)
-# File "src/theories/intervals.ml", line 1:
-# Error: Assembler error, input left in file /tmp/camlasm82955c.s
-# Makefile:415: recipe for target 'src/theories/intervals.cmx' failed
-# make: *** [src/theories/intervals.cmx] Error 2
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build alt-ergo 0.95.2
-+- 
-+- The following changes have been performed
-| - install conf-gmp   1
-| - install conf-perl  1
-| - install num        1.1
-| - install ocamlgraph 1.8.8
-| - install zarith     1.7
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704031101.export"
-31 1530673850 1530673886

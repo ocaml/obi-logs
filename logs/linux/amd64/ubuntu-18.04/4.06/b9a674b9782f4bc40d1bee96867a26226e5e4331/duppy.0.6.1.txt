@@ -1,151 +1,0 @@
-$ opam depext -iy -j 2 duppy.0.6.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
-# The following system packages are needed:
-libpcre3-dev
-m4
-pkg-config
-# The following new OS packages need to be installed: libpcre3-dev pkg-config
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libpcre3-dev pkg-config
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libglib2.0-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
-Preparing to unpack .../00-libglib2.0-0_2.56.1-2ubuntu1_amd64.deb ...
-Unpacking libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
-Selecting previously unselected package libglib2.0-data.
-Preparing to unpack .../01-libglib2.0-data_2.56.1-2ubuntu1_all.deb ...
-Unpacking libglib2.0-data (2.56.1-2ubuntu1) ...
-Selecting previously unselected package libicu60:amd64.
-Preparing to unpack .../02-libicu60_60.2-3ubuntu3_amd64.deb ...
-Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
-Selecting previously unselected package libxml2:amd64.
-Preparing to unpack .../03-libxml2_2.9.4+dfsg1-6.1ubuntu1_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
-Selecting previously unselected package shared-mime-info.
-Preparing to unpack .../04-shared-mime-info_1.9-2_amd64.deb ...
-Unpacking shared-mime-info (1.9-2) ...
-Selecting previously unselected package xdg-user-dirs.
-Preparing to unpack .../05-xdg-user-dirs_0.17-1ubuntu1_amd64.deb ...
-Unpacking xdg-user-dirs (0.17-1ubuntu1) ...
-Selecting previously unselected package libpcre16-3:amd64.
-Preparing to unpack .../06-libpcre16-3_2%3a8.39-9_amd64.deb ...
-Unpacking libpcre16-3:amd64 (2:8.39-9) ...
-Selecting previously unselected package libpcre32-3:amd64.
-Preparing to unpack .../07-libpcre32-3_2%3a8.39-9_amd64.deb ...
-Unpacking libpcre32-3:amd64 (2:8.39-9) ...
-Selecting previously unselected package libpcrecpp0v5:amd64.
-Preparing to unpack .../08-libpcrecpp0v5_2%3a8.39-9_amd64.deb ...
-Unpacking libpcrecpp0v5:amd64 (2:8.39-9) ...
-Selecting previously unselected package libpcre3-dev:amd64.
-Preparing to unpack .../09-libpcre3-dev_2%3a8.39-9_amd64.deb ...
-Unpacking libpcre3-dev:amd64 (2:8.39-9) ...
-Selecting previously unselected package pkg-config.
-Preparing to unpack .../10-pkg-config_0.29.1-0ubuntu2_amd64.deb ...
-Unpacking pkg-config (0.29.1-0ubuntu2) ...
-Setting up libicu60:amd64 (60.2-3ubuntu3) ...
-Setting up libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
-No schema files found: doing nothing.
-Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
-Setting up pkg-config (0.29.1-0ubuntu2) ...
-Setting up libglib2.0-data (2.56.1-2ubuntu1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-Setting up shared-mime-info (1.9-2) ...
-Setting up libpcrecpp0v5:amd64 (2:8.39-9) ...
-Setting up libpcre32-3:amd64 (2:8.39-9) ...
-Setting up libpcre16-3:amd64 (2:8.39-9) ...
-Setting up xdg-user-dirs (0.17-1ubuntu1) ...
-Setting up libpcre3-dev:amd64 (2:8.39-9) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install sexplib0        v0.11.0 [required by base]
-  - install base-bytes      base    [required by pcre]
-  - install ocamlbuild      0.12.0  [required by camlp4]
-  - install conf-pkg-config 1.1     [required by conf-libpcre]
-  - install base            v0.11.1 [required by pcre]
-  - install camlp4          4.06+1  [required by duppy]
-  - install conf-libpcre    1       [required by pcre]
-  - install stdio           v0.11.0 [required by pcre]
-  - install configurator    v0.11.0 [required by pcre]
-  - install pcre            7.3.4   [required by duppy]
-  - install duppy           0.6.1
-===== 11 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[base.v0.11.1] found in cache
-[camlp4.4.06+1] found in cache
-[configurator.v0.11.0] found in cache
-[duppy.0.6.1] found in cache
-[ocamlbuild.0.12.0] found in cache
-[pcre.7.3.4] found in cache
-[sexplib0.v0.11.0] found in cache
-[stdio.v0.11.0] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed base-bytes.base
--> installed conf-pkg-config.1.1
--> installed conf-libpcre.1
--> installed sexplib0.v0.11.0
--> installed ocamlbuild.0.12.0
--> installed base.v0.11.1
--> installed stdio.v0.11.0
--> installed configurator.v0.11.0
--> installed pcre.7.3.4
--> installed camlp4.4.06+1
-[ERROR] The compilation of duppy failed at "/usr/bin/make".
-
-#=== ERROR while compiling duppy.0.6.1 ========================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/duppy.0.6.1
-# command              /usr/bin/make
-# exit-code            2
-# env-file             ~/.opam/log/duppy-13-2c7be2.env
-# output-file          ~/.opam/log/duppy-13-2c7be2.out
-### output ###
-# /usr/bin/make -C src all
-# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
-# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
-# making ._bcdi/duppy.di from duppy.mli
-# making ._d/duppy.d from duppy.ml
-# ocamlc.opt -thread -c -cc "gcc" -ccopt "-fPIC -I/home/opam/.opam/4.06/include -Wall -DCAML_NAME_SPACE \
-# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include  \
-# 			  -I/home/opam/.opam/4.06/lib/pcre -I/home/opam/.opam/4.06/lib/bytes  -o duppy_stubs.o " duppy_stubs.c 
-# ar rcs libduppy_stubs.a  duppy_stubs.o
-# ocamlc.opt -thread -c -dtypes -g -w +A-4@5-7@8-9@11@12@20-35-44-45-50 -I /home/opam/.opam/4.06/lib/pcre -I /home/opam/.opam/4.06/lib/bytes duppy.mli
-# ocamlc.opt -thread -c -dtypes -g -w +A-4@5-7@8-9@11@12@20-35-44-45-50 -I /home/opam/.opam/4.06/lib/pcre -I /home/opam/.opam/4.06/lib/bytes duppy.ml
-# File "duppy.ml", line 87, characters 45-48:
-# Error: This expression has type string but an expression was expected of type
-#          bytes
-# OCamlMakefile:952: recipe for target 'duppy.cmo' failed
-# make[2]: *** [duppy.cmo] Error 2
-# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
-# OCamlMakefile:717: recipe for target 'byte-code-library' failed
-# make[1]: *** [byte-code-library] Error 2
-# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/duppy.0.6.1/src'
-# Makefile:12: recipe for target 'all' failed
-# make: *** [all] Error 2
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build duppy 0.6.1
-+- 
-+- The following changes have been performed
-| - install base            v0.11.1
-| - install base-bytes      base
-| - install camlp4          4.06+1
-| - install conf-libpcre    1
-| - install conf-pkg-config 1.1
-| - install configurator    v0.11.0
-| - install ocamlbuild      0.12.0
-| - install pcre            7.3.4
-| - install sexplib0        v0.11.0
-| - install stdio           v0.11.0
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180728010124.export"
-31 1532739675 1532739800

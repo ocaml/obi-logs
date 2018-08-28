@@ -1,197 +1,0 @@
-$ opam depext -iy -j 2 gpr.1.2.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libblas-dev
-libgsl0-dev
-liblapack-dev
-m4
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libblas-dev libgsl0-dev liblapack-dev m4
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libgfortran3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../00-libgfortran3_6.3.0-18+deb9u1_amd64.deb ...
-Unpacking libgfortran3:amd64 (6.3.0-18+deb9u1) ...
-Selecting previously unselected package libgfortran-6-dev:amd64.
-Preparing to unpack .../01-libgfortran-6-dev_6.3.0-18+deb9u1_amd64.deb ...
-Unpacking libgfortran-6-dev:amd64 (6.3.0-18+deb9u1) ...
-Selecting previously unselected package gfortran-6.
-Preparing to unpack .../02-gfortran-6_6.3.0-18+deb9u1_amd64.deb ...
-Unpacking gfortran-6 (6.3.0-18+deb9u1) ...
-Selecting previously unselected package gfortran.
-Preparing to unpack .../03-gfortran_4%3a6.3.0-4_amd64.deb ...
-Unpacking gfortran (4:6.3.0-4) ...
-Selecting previously unselected package libblas-common.
-Preparing to unpack .../04-libblas-common_3.7.0-2_amd64.deb ...
-Unpacking libblas-common (3.7.0-2) ...
-Selecting previously unselected package libblas3.
-Preparing to unpack .../05-libblas3_3.7.0-2_amd64.deb ...
-Unpacking libblas3 (3.7.0-2) ...
-Selecting previously unselected package libblas-dev.
-Preparing to unpack .../06-libblas-dev_3.7.0-2_amd64.deb ...
-Unpacking libblas-dev (3.7.0-2) ...
-Selecting previously unselected package libgsl2:amd64.
-Preparing to unpack .../07-libgsl2_2.3+dfsg-1_amd64.deb ...
-Unpacking libgsl2:amd64 (2.3+dfsg-1) ...
-Selecting previously unselected package libgsl-dev.
-Preparing to unpack .../08-libgsl-dev_2.3+dfsg-1_amd64.deb ...
-Unpacking libgsl-dev (2.3+dfsg-1) ...
-Selecting previously unselected package liblapack3.
-Preparing to unpack .../09-liblapack3_3.7.0-2_amd64.deb ...
-Unpacking liblapack3 (3.7.0-2) ...
-Selecting previously unselected package liblapack-dev.
-Preparing to unpack .../10-liblapack-dev_3.7.0-2_amd64.deb ...
-Unpacking liblapack-dev (3.7.0-2) ...
-Setting up libblas-common (3.7.0-2) ...
-Setting up libgfortran3:amd64 (6.3.0-18+deb9u1) ...
-Setting up libgfortran-6-dev:amd64 (6.3.0-18+deb9u1) ...
-Setting up libgsl2:amd64 (2.3+dfsg-1) ...
-Setting up libblas3 (3.7.0-2) ...
-update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up gfortran-6 (6.3.0-18+deb9u1) ...
-Setting up libgsl-dev (2.3+dfsg-1) ...
-Setting up liblapack3 (3.7.0-2) ...
-update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
-Setting up gfortran (4:6.3.0-4) ...
-update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in auto mode
-update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f77 (f77) in auto mode
-Setting up libblas-dev (3.7.0-2) ...
-update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
-Setting up liblapack-dev (3.7.0-2) ...
-update-alternatives: using /usr/lib/lapack/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install jane-street-headers     v0.9.0 [required by core_kernel]
-  - install spawn                   v0.9.0 [required by core]
-  - install re                      1.7.3  [required by ppx_expect]
-  - install base-bytes              base   [required by lacaml]
-  - install ocaml-compiler-libs     v0.9.0 [required by ppx_core]
-  - install octavius                1.2.0  [required by ppx_js_style]
-  - install conf-gsl                1      [required by gsl]
-  - install conf-blas               1      [required by lacaml]
-  - install result                  1.3    [required by ocaml-migrate-parsetree]
-  - install conf-lapack             1      [required by lacaml]
-  - install base-num                base   [required by num]
-  - install ocamlbuild              0.12.0 [required by gpr]
-  - install ppx_traverse_builtins   v0.9.0 [required by ppx_core, ppx_metaquot]
-  - install ocaml-migrate-parsetree 1.0.11 [required by core]
-  - install num                     0      [required by core_kernel]
-  - install lacaml                  9.2.2  [required by gpr]
-  - install gsl                     1.19.3 [required by gpr]
-  - install ppx_ast                 v0.9.1 [required by ppx_core]
-  - install sexplib                 v0.9.2 [required by core]
-  - install base                    v0.9.3 [required by core]
-  - install typerep                 v0.9.0 [required by core_kernel]
-  - install stdio                   v0.9.0 [required by core]
-  - install ppx_core                v0.9.0 [required by ppx_assert, ppx_inline_test]
-  - install ppx_optcomp             v0.9.0 [required by ppx_driver]
-  - install ppx_driver              v0.9.1 [required by core]
-  - install variantslib             v0.9.0 [required by core_kernel]
-  - install ppx_metaquot            v0.9.0 [required by ppx_assert, ppx_inline_test]
-  - install ppx_let                 v0.9.0 [required by ppx_jane]
-  - install ppx_here                v0.9.1 [required by ppx_assert, ppx_jane]
-  - install fieldslib               v0.9.0 [required by core_kernel]
-  - install ppx_type_conv           v0.9.0 [required by ppx_base, ppx_assert]
-  - install ppx_pipebang            v0.9.0 [required by ppx_jane]
-  - install ppx_optional            v0.9.0 [required by ppx_jane]
-  - install ppx_js_style            v0.9.0 [required by ppx_base]
-  - install ppx_inline_test         v0.9.2 [required by core_kernel]
-  - install ppx_fail                v0.9.0 [required by ppx_jane]
-  - install ppx_variants_conv       v0.9.0 [required by bin_prot, ppx_jane]
-  - install ppx_typerep_conv        v0.9.0 [required by ppx_jane]
-  - install ppx_traverse            v0.9.0 [required by ppx_custom_printf, ppx_expect]
-  - install ppx_sexp_conv           v0.9.0 [required by core_kernel]
-  - install ppx_fields_conv         v0.9.0 [required by bin_prot, ppx_jane]
-  - install ppx_enumerate           v0.9.0 [required by ppx_base]
-  - install ppx_compare             v0.9.0 [required by bin_prot, ppx_base, ppx_assert]
-  - install ppx_bench               v0.9.1 [required by ppx_jane]
-  - install ppx_sexp_value          v0.9.0 [required by ppx_jane]
-  - install ppx_sexp_message        v0.9.0 [required by core_kernel]
-  - install ppx_custom_printf       v0.9.0 [required by bin_prot, ppx_jane]
-  - install ppx_hash                v0.9.0 [required by core_kernel]
-  - install ppx_assert              v0.9.0 [required by core]
-  - install bin_prot                v0.9.1 [required by core_kernel]
-  - install ppx_base                v0.9.0 [required by configurator, core_kernel]
-  - install ppx_expect              v0.9.0 [required by ppx_jane]
-  - install ppx_bin_prot            v0.9.0 [required by ppx_jane]
-  - install configurator            v0.9.1 [required by core]
-  - install ppx_jane                v0.9.0 [required by core]
-  - install core_kernel             v0.9.0 [required by core]
-  - install core                    v0.9.1 [required by gpr]
-  - install gpr                     1.2.1
-===== 58 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[base.v0.9.3] found in cache
-[bin_prot.v0.9.1] found in cache
-[configurator.v0.9.1] found in cache
-[core.v0.9.1] found in cache
-[core_kernel.v0.9.0] found in cache
-[fieldslib.v0.9.0] found in cache
-[gpr.1.2.1] found in cache
-[gsl.1.19.3] found in cache
-[jane-street-headers.v0.9.0] found in cache
-[lacaml.9.2.2] found in cache
-[ocaml-compiler-libs.v0.9.0] found in cache
-[ocaml-migrate-parsetree.1.0.11] found in cache
-[ocamlbuild.0.12.0] found in cache
-[octavius.1.2.0] found in cache
-[ppx_assert.v0.9.0] found in cache
-[ppx_ast.v0.9.1] found in cache
-[ppx_base.v0.9.0] found in cache
-[ppx_bench.v0.9.1] found in cache
-[ppx_bin_prot.v0.9.0] found in cache
-[ppx_compare.v0.9.0] found in cache
-[ppx_core.v0.9.0] found in cache
-[ppx_custom_printf.v0.9.0] found in cache
-[ppx_driver.v0.9.1] found in cache
-[ppx_enumerate.v0.9.0] found in cache
-[ppx_expect.v0.9.0] found in cache
-[ppx_fail.v0.9.0] found in cache
-[ppx_fields_conv.v0.9.0] found in cache
-[ppx_hash.v0.9.0] found in cache
-[ppx_here.v0.9.1] found in cache
-[ppx_inline_test.v0.9.2] found in cache
-[ppx_jane.v0.9.0] found in cache
-[ppx_js_style.v0.9.0] found in cache
-[ppx_let.v0.9.0] found in cache
-[ppx_metaquot.v0.9.0] found in cache
-[ppx_optcomp.v0.9.0] found in cache
-[ppx_optional.v0.9.0] found in cache
-[ppx_pipebang.v0.9.0] found in cache
-[ppx_sexp_conv.v0.9.0] found in cache
-[ppx_sexp_message.v0.9.0] found in cache
-[ppx_sexp_value.v0.9.0] found in cache
-[ppx_traverse.v0.9.0] found in cache
-[ppx_traverse_builtins.v0.9.0] found in cache
-[ppx_type_conv.v0.9.0] found in cache
-[ppx_typerep_conv.v0.9.0] found in cache
-[ppx_variants_conv.v0.9.0] found in cache
-[re.1.7.3] found in cache
-[result.1.3] found in cache
-[sexplib.v0.9.2] found in cache
-[spawn.v0.9.0] found in cache
-[stdio.v0.9.0] found in cache
-[typerep.v0.9.0] found in cache
-[variantslib.v0.9.0] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-
-#=== ERROR while compiling conf-gsl.1 =========================================#
-"pkg-config": command not found.
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build conf-blas 1
-| - build conf-gsl  1
-+- 
-- No changes have been performed
-
-The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
-    libblas-dev libgsl0-dev
-
-# Run eval $(opam env) to update the current shell environment
-31 1533605538 1533605554

@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 netlink.0.1.0
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for netlink.0.1.0: The following dependencies couldn't be met:
-          - netlink -> ctypes < 0.2.3 -> ocaml < 4.03.0
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=netlink.0.1.0 returned 20
-20 1532303923 1532303925

@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 base-implicits.base
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for base-implicits.base: The following dependencies couldn't be met:
-          - base-implicits -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
-              no matching version
-
-
-Command failed: opam list --readonly --external  --resolve=base-implicits.base returned 20
-20 1534277886 1534277888

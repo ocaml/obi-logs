@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 ppx_enumerate.113.33.00+4.03
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
-[ERROR] No solution for ppx_enumerate.113.33.00+4.03: The following dependencies couldn't be met:
-          - ppx_enumerate -> ppx_core < 113.34.00+4.03 -> ocaml < 4.05
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=ppx_enumerate.113.33.00+4.03 returned 20
-20 1532321959 1532321962

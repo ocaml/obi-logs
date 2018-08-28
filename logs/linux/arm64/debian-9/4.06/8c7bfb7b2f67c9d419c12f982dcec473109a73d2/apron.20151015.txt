@@ -1,151 +1,0 @@
-$ opam depext -iy -j 2 apron.20151015
-# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libgmp-dev
-libmpfr-dev
-m4
-perl
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libgmp-dev libmpfr-dev m4 perl
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libgmpxx4ldbl:arm64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17581 files and directories currently installed.)
-Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_arm64.deb ...
-Unpacking libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
-Selecting previously unselected package libgmp-dev:arm64.
-Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_arm64.deb ...
-Unpacking libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
-Selecting previously unselected package libmpfr-dev:arm64.
-Preparing to unpack .../libmpfr-dev_3.1.5-1_arm64.deb ...
-Unpacking libmpfr-dev:arm64 (3.1.5-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
-Setting up libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
-Setting up libmpfr-dev:arm64 (3.1.5-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install camlidl   1.05     [required by apron]
-  - install conf-gmp  1        [required by mlgmpidl]
-  - install conf-perl 1        [required by apron]
-  - install conf-mpfr 1        [required by mlgmpidl]
-  - install mlgmpidl  1.2.6-1  [required by apron]
-  - install apron     20151015
-===== 6 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[apron.20151015] found in cache
-[camlidl.1.05] found in cache
-[mlgmpidl.1.2.6-1] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed conf-gmp.1
--> installed conf-mpfr.1
--> installed conf-perl.1
--> installed camlidl.1.05
-[ERROR] The compilation of mlgmpidl failed at "/usr/bin/make".
-
-#=== ERROR while compiling mlgmpidl.1.2.6-1 ===================================#
-# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/mlgmpidl.1.2.6-1
-# command              /usr/bin/make
-# exit-code            2
-# env-file             ~/.opam/log/mlgmpidl-11-8b8e2c.env
-# output-file          ~/.opam/log/mlgmpidl-11-8b8e2c.out
-### output ###
-# tmpdir=$(mktemp -d tmp.XXXXXX);				\
-# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
-# { cp mpz.idl ${tmpdir}/mpz.idl;					\
-#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpz.idl;		\
-#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpz_stubs.c >mpz_caml.c;	\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpz.ml >mpz.ml;		\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpz.mli >mpz.mli; }
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpz.mli
-# tmpdir=$(mktemp -d tmp.XXXXXX);				\
-# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
-# { cp mpq.idl ${tmpdir}/mpq.idl;					\
-#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpq.idl;		\
-#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpq_stubs.c >mpq_caml.c;	\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpq.ml >mpq.ml;		\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpq.mli >mpq.mli; }
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpq.mli
-# tmpdir=$(mktemp -d tmp.XXXXXX);				\
-# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
-# { cp mpf.idl ${tmpdir}/mpf.idl;					\
-#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpf.idl;		\
-#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpf_stubs.c >mpf_caml.c;	\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpf.ml >mpf.ml;		\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpf.mli >mpf.mli; }
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpf.mli
-# tmpdir=$(mktemp -d tmp.XXXXXX);				\
-# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
-# { cp mpfr.idl ${tmpdir}/mpfr.idl;					\
-#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/mpfr.idl;		\
-#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/mpfr_stubs.c >mpfr_caml.c;	\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpfr.ml >mpfr.ml;		\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/mpfr.mli >mpfr.mli; }
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfr.mli
-# tmpdir=$(mktemp -d tmp.XXXXXX);				\
-# trap "rm -rf ${tmpdir};" EXIT QUIT INT;			\
-# { cp gmp_random.idl ${tmpdir}/gmp_random.idl;					\
-#   /home/opam/.opam/4.06/bin/camlidl -no-include -prepro cpp ${tmpdir}/gmp_random.idl;		\
-#   /usr/bin/perl perlscript_c.pl < ${tmpdir}/gmp_random_stubs.c >gmp_random_caml.c;	\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/gmp_random.ml >gmp_random.ml;		\
-#   /usr/bin/perl perlscript_caml.pl < ${tmpdir}/gmp_random.mli >gmp_random.mli; }
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c gmp_random.mli
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpzf.mli
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpqf.mli
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfrf.mli
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpz.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpq.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfr.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c gmp_random.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpzf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpqf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -c mpfrf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpz_caml.o mpz_caml.c
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpq_caml.o mpq_caml.c
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpf_caml.o mpf_caml.c
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o mpfr_caml.o mpfr_caml.c
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o gmp_random_caml.o gmp_random_caml.c
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -ccopt -U__STRICT_ANSI__ -ccopt -UNDEBUG -ccopt -O0 -ccopt -g -ccopt -Wcast-qual -ccopt -Wswitch -ccopt -Wall -ccopt -Wextra -ccopt -Wundef -ccopt -Wcast-align -ccopt -Wno-unused -ccopt -Wno-unused-parameter -ccopt -Wno-unused-function -ccopt -fPIC -ccopt -Werror-implicit-function-declaration -ccopt -Wbad-function-cast -ccopt -Wstrict-prototypes -ccopt -std=c99 -ccopt -I/home/opam/.opam/4.06/lib/ocaml -ccopt -I/home/opam/.opam/4.06/lib/camlidl -g -c -o gmp_caml.o gmp_caml.c
-# /home/opam/.opam/4.06/bin/ocamlmklib -oc gmp_caml mpz_caml.o mpq_caml.o mpf_caml.o mpfr_caml.o gmp_random_caml.o gmp_caml.o   -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl
-# /home/opam/.opam/4.06/bin/ocamlmklib -oc gmp_caml.p mpz_caml.o mpq_caml.o mpf_caml.o mpfr_caml.o gmp_random_caml.o gmp_caml.o   -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -package "bigarray" -annot -g -a -o gmp.cma mpz.cmo mpq.cmo mpf.cmo mpfr.cmo gmp_random.cmo mpzf.cmo mpqf.cmo mpfrf.cmo \
-# -dllib -lgmp_caml -ccopt -L/home/opam/.opam/4.06/lib/stublibs -ccopt -L/home/opam/.opam/4.06/lib/gmp -ccopt "  -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl" -ccopt -L/home/opam/.opam/4.06/lib/ocaml -ccopt -L/home/opam/.opam/4.06/lib/camlidl    -cclib -lmpfr -cclib -lgmp -cclib -lcamlidl
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpz.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpq.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpfr.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c gmp_random.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpzf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpqf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -c mpfrf.ml
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -a -o gmp.cmxa mpz.cmx mpq.cmx mpf.cmx mpfr.cmx gmp_random.cmx mpzf.cmx mpqf.cmx mpfrf.cmx \
-# -cclib -lgmp_caml -ccopt -L/home/opam/.opam/4.06/lib/stublibs -ccopt -L/home/opam/.opam/4.06/lib/gmp -ccopt "  -L/home/opam/.opam/4.06/lib/ocaml -L/home/opam/.opam/4.06/lib/ocaml/stublibs -L/home/opam/.opam/4.06/lib/camlidl -lmpfr -lgmp -lcamlidl" -ccopt -L/home/opam/.opam/4.06/lib/ocaml -ccopt -L/home/opam/.opam/4.06/lib/camlidl    -cclib -lmpfr -cclib -lgmp -cclib -lcamlidl
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -annot -inline 20 -linkall -shared -o gmp.cmxs -I . gmp.cmxa
-# /home/opam/.opam/4.06/bin/ocamlfind ocamlopt -package "bigarray" -p -annot -inline 20  -c -o mpz.p.cmx mpz.ml
-# Profiling with "gprof" is not supported on this platform.
-# Makefile:276: recipe for target 'mpz.p.cmx' failed
-# make: *** [mpz.p.cmx] Error 2
-# rm gmp_caml.o mpz_caml.o mpf_caml.o mpq_caml.o gmp_random_caml.o mpfr_caml.o
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build mlgmpidl 1.2.6-1
-+- 
-+- The following changes have been performed (the rest was aborted)
-| - install camlidl   1.05
-| - install conf-gmp  1
-| - install conf-mpfr 1
-| - install conf-perl 1
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704000411.export"
-31 1530662599 1530662687

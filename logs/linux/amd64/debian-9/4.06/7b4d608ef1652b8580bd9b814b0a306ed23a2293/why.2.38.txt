@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 why.2.38
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for why.2.38: The following dependencies couldn't be met:
-          - why -> frama-c = 20161101 -> frama-c-base = 20161101 -> ocaml < 4.06
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=why.2.38 returned 20
-20 1533681130 1533681132

@@ -1,197 +1,0 @@
-$ opam depext -iy -j 2 numerix.0.22
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libgmp-dev
-m4
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libgmp-dev m4
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libgmpxx4ldbl:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
-Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
-Selecting previously unselected package libgmp-dev:amd64.
-Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
-Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
-Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install conf-gmp 1    [required by numerix]
-  - install num      1.1  [required by numerix]
-  - install numerix  0.22
-===== 3 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[num.1.1] found in cache
-[numerix.0.22] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed conf-gmp.1
--> installed num.1.1
-[ERROR] The compilation of numerix failed at "/usr/bin/make clean lib examples test".
-
-#=== ERROR while compiling numerix.0.22 =======================================#
-# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.08/.opam-switch/build/numerix.0.22
-# command              /usr/bin/make clean lib examples test
-# exit-code            2
-# env-file             ~/.opam/log/numerix-11-736596.env
-# output-file          ~/.opam/log/numerix-11-736596.out
-### output ###
-# rm -f kernel/n/o/*
-# rm -f kernel/ocaml/o/*
-# gcc -O2 -Wall -fpic -Duse_clong -c -o kernel/n/o/numerix-c.o kernel/n/c/numerix.c
-# In file included from kernel/n/c/numerix.c:59:0:
-# kernel/n/c/pow.c: In function 'cn_root':
-# kernel/n/c/pow.c:153:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-#        for (ly = lb+lx; y[ly] == 0; ly--); if (ly < la) break;
-#        ^~~
-# kernel/n/c/pow.c:153:43: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
-#        for (ly = lb+lx; y[ly] == 0; ly--); if (ly < la) break;
-#                                            ^~
-# kernel/n/c/pow.c:161:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-#        for (; (ly) && (!y[ly]); ly--); if (!ly) {exact = 1; break;}
-#        ^~~
-# kernel/n/c/pow.c:161:39: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
-#        for (; (ly) && (!y[ly]); ly--); if (!ly) {exact = 1; break;}
-#                                        ^~
-# In file included from kernel/n/c/numerix.c:64:0:
-# kernel/n/c/gcd.c: In function 'divise':
-# kernel/n/c/gcd.c:127:17: warning: operation on '*la' may be undefined [-Wsequence-point]
-#          aa[(*la)++] = xn(shift_up)(a,*la,aa,n);
-#             ~~~~~^~
-# kernel/n/c/gcd.c: In function 'cn_gcd_n2':
-# kernel/n/c/gcd.c:852:13: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
-#              while ((la > 0) && (a[la-1] == 0)) la--; _l[i] = la;
-#              ^~~~~
-# kernel/n/c/gcd.c:852:54: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
-#              while ((la > 0) && (a[la-1] == 0)) la--; _l[i] = la;
-#                                                       ^~
-# gcc -O2 -Wall -fpic -Duse_dlong -c -o kernel/n/o/numerix-d.o kernel/n/c/numerix.c
-# In file included from kernel/n/c/numerix.c:59:0:
-# kernel/n/c/pow.c: In function 'dn_root':
-# kernel/n/c/pow.c:153:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-#        for (ly = lb+lx; y[ly] == 0; ly--); if (ly < la) break;
-#        ^~~
-# kernel/n/c/pow.c:153:43: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
-#        for (ly = lb+lx; y[ly] == 0; ly--); if (ly < la) break;
-#                                            ^~
-# kernel/n/c/pow.c:161:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-#        for (; (ly) && (!y[ly]); ly--); if (!ly) {exact = 1; break;}
-#        ^~~
-# kernel/n/c/pow.c:161:39: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
-#        for (; (ly) && (!y[ly]); ly--); if (!ly) {exact = 1; break;}
-#                                        ^~
-# In file included from kernel/n/c/numerix.c:64:0:
-# kernel/n/c/gcd.c: In function 'divise':
-# kernel/n/c/gcd.c:127:17: warning: operation on '*la' may be undefined [-Wsequence-point]
-#          aa[(*la)++] = xn(shift_up)(a,*la,aa,n);
-#             ~~~~~^~
-# kernel/n/c/gcd.c: In function 'dn_gcd_n2':
-# kernel/n/c/gcd.c:852:13: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
-#              while ((la > 0) && (a[la-1] == 0)) la--; _l[i] = la;
-#              ^~~~~
-# kernel/n/c/gcd.c:852:54: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
-#              while ((la > 0) && (a[la-1] == 0)) la--; _l[i] = la;
-#                                                       ^~
-# gcc -O2 -Wall -fpic -Duse_slong -c -o kernel/n/o/numerix-s.o kernel/n/c/numerix.c
-# In file included from kernel/n/c/numerix.c:59:0:
-# kernel/n/c/pow.c: In function 'sn_root':
-# kernel/n/c/pow.c:153:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-#        for (ly = lb+lx; y[ly] == 0; ly--); if (ly < la) break;
-#        ^~~
-# kernel/n/c/pow.c:153:43: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
-#        for (ly = lb+lx; y[ly] == 0; ly--); if (ly < la) break;
-#                                            ^~
-# kernel/n/c/pow.c:161:7: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-#        for (; (ly) && (!y[ly]); ly--); if (!ly) {exact = 1; break;}
-#        ^~~
-# kernel/n/c/pow.c:161:39: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'for'
-#        for (; (ly) && (!y[ly]); ly--); if (!ly) {exact = 1; break;}
-#                                        ^~
-# In file included from kernel/n/c/numerix.c:64:0:
-# kernel/n/c/gcd.c: In function 'divise':
-# kernel/n/c/gcd.c:127:17: warning: operation on '*la' may be undefined [-Wsequence-point]
-#          aa[(*la)++] = xn(shift_up)(a,*la,aa,n);
-#             ~~~~~^~
-# kernel/n/c/gcd.c: In function 'sn_gcd_n2':
-# kernel/n/c/gcd.c:852:13: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
-#              while ((la > 0) && (a[la-1] == 0)) la--; _l[i] = la;
-#              ^~~~~
-# kernel/n/c/gcd.c:852:54: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
-#              while ((la > 0) && (a[la-1] == 0)) la--; _l[i] = la;
-#                                                       ^~
-# gcc -O2 -Wall -fpic -Duse_slong -c -o kernel/n/o/numerix-t.o kernel/n/x86-64/numerix.S
-# kernel/ocaml/numerix.sh  clong dlong slong big gmp kernel/ocaml/ml/numerix.ml >kernel/ocaml/o/numerix.ml
-# kernel/ocaml/numerix.sh  clong dlong slong big gmp kernel/ocaml/mli/numerix.mli >kernel/ocaml/o/numerix.mli
-# ocamlc.opt -I kernel/ocaml/o -c kernel/ocaml/o/numerix.mli
-# ocamlc.opt -I kernel/ocaml/o -c kernel/ocaml/o/numerix.ml
-# File "kernel/ocaml/o/numerix.ml", line 280, characters 15-26:
-# Warning 3: deprecated: Stdlib.String.copy
-# File "kernel/ocaml/o/numerix.ml", line 444, characters 15-26:
-# Warning 3: deprecated: Stdlib.String.copy
-# File "kernel/ocaml/o/numerix.ml", line 608, characters 15-26:
-# Warning 3: deprecated: Stdlib.String.copy
-# File "kernel/ocaml/o/numerix.ml", line 772, characters 15-26:
-# Warning 3: deprecated: Stdlib.String.copy
-# File "kernel/ocaml/o/numerix.ml", line 900, characters 29-31:
-# Warning 3: deprecated: Stdlib.or
-# Use (||) instead.
-# File "kernel/ocaml/o/numerix.ml", line 907, characters 29-31:
-# Warning 3: deprecated: Stdlib.or
-# Use (||) instead.
-# File "kernel/ocaml/o/numerix.ml", line 915, characters 20-22:
-# Warning 3: deprecated: Stdlib.or
-# Use (||) instead.
-# File "kernel/ocaml/o/numerix.ml", line 1054, characters 29-30:
-# Warning 3: deprecated: Stdlib.&
-# Use (&&) instead.
-# File "kernel/ocaml/o/numerix.ml", line 1089, characters 28-29:
-# Warning 3: deprecated: Stdlib.&
-# Use (&&) instead.
-# File "kernel/ocaml/o/numerix.ml", line 1090, characters 28-29:
-# Warning 3: deprecated: Stdlib.&
-# Use (&&) instead.
-# File "kernel/ocaml/o/numerix.ml", line 1093, characters 26-27:
-# Warning 3: deprecated: Stdlib.&
-# Use (&&) instead.
-# File "kernel/ocaml/o/numerix.ml", line 1130, characters 14-27:
-# Warning 3: deprecated: Stdlib.String.create
-# Use Bytes.create instead.
-# File "kernel/ocaml/o/numerix.ml", line 1131, characters 22-34:
-# Warning 3: deprecated: Stdlib.String.set
-# Use Bytes.set instead.
-# File "kernel/ocaml/o/numerix.ml", line 1132, characters 8-22:
-# Warning 3: deprecated: Stdlib.String.set
-# Use Bytes.set instead.
-# File "kernel/ocaml/o/numerix.ml", line 1133, characters 8-22:
-# Warning 3: deprecated: Stdlib.String.set
-# Use Bytes.set instead.
-# File "kernel/ocaml/o/numerix.ml", line 1134, characters 26-73:
-# Warning 3: deprecated: Stdlib.String.set
-# Use Bytes.set instead.
-# File "kernel/ocaml/o/numerix.ml", line 1135, characters 8-9:
-# Error: This expression has type bytes but an expression was expected of type
-#          string
-# kernel/ocaml/makefile:128: recipe for target 'kernel/ocaml/o/numerix.cmo' failed
-# make: *** [kernel/ocaml/o/numerix.cmo] Error 2
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build numerix 0.22
-+- 
-+- The following changes have been performed
-| - install conf-gmp 1
-| - install num      1.1
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180816060534.export"
-31 1534399528 1534399546

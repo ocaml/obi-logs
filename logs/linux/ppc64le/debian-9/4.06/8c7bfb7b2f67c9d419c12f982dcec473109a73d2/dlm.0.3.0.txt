@@ -1,170 +1,0 @@
-$ opam depext -iy -j 2 dlm.0.3.0
-# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libdlm-dev
-m4
-pkg-config
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libdlm-dev m4 pkg-config
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package sgml-base.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17555 files and directories currently installed.)
-Preparing to unpack .../00-sgml-base_1.29_all.deb ...
-Unpacking sgml-base (1.29) ...
-Selecting previously unselected package libicu57:ppc64el.
-Preparing to unpack .../01-libicu57_57.1-6+deb9u2_ppc64el.deb ...
-Unpacking libicu57:ppc64el (57.1-6+deb9u2) ...
-Selecting previously unselected package libxml2:ppc64el.
-Preparing to unpack .../02-libxml2_2.9.4+dfsg1-2.2+deb9u2_ppc64el.deb ...
-Unpacking libxml2:ppc64el (2.9.4+dfsg1-2.2+deb9u2) ...
-Selecting previously unselected package libdlm3:ppc64el.
-Preparing to unpack .../03-libdlm3_4.0.7-1_ppc64el.deb ...
-Unpacking libdlm3:ppc64el (4.0.7-1) ...
-Selecting previously unselected package libdlm-dev:ppc64el.
-Preparing to unpack .../04-libdlm-dev_4.0.7-1_ppc64el.deb ...
-Unpacking libdlm-dev:ppc64el (4.0.7-1) ...
-Selecting previously unselected package libglib2.0-0:ppc64el.
-Preparing to unpack .../05-libglib2.0-0_2.50.3-2_ppc64el.deb ...
-Unpacking libglib2.0-0:ppc64el (2.50.3-2) ...
-Selecting previously unselected package libglib2.0-data.
-Preparing to unpack .../06-libglib2.0-data_2.50.3-2_all.deb ...
-Unpacking libglib2.0-data (2.50.3-2) ...
-Selecting previously unselected package pkg-config.
-Preparing to unpack .../07-pkg-config_0.29-4+b1_ppc64el.deb ...
-Unpacking pkg-config (0.29-4+b1) ...
-Selecting previously unselected package shared-mime-info.
-Preparing to unpack .../08-shared-mime-info_1.8-1_ppc64el.deb ...
-Unpacking shared-mime-info (1.8-1) ...
-Selecting previously unselected package xdg-user-dirs.
-Preparing to unpack .../09-xdg-user-dirs_0.15-2+b1_ppc64el.deb ...
-Unpacking xdg-user-dirs (0.15-2+b1) ...
-Selecting previously unselected package xml-core.
-Preparing to unpack .../10-xml-core_0.17_all.deb ...
-Unpacking xml-core (0.17) ...
-Setting up libdlm3:ppc64el (4.0.7-1) ...
-Setting up libglib2.0-0:ppc64el (2.50.3-2) ...
-No schema files found: doing nothing.
-Setting up sgml-base (1.29) ...
-Setting up libicu57:ppc64el (57.1-6+deb9u2) ...
-Setting up libxml2:ppc64el (2.9.4+dfsg1-2.2+deb9u2) ...
-Setting up pkg-config (0.29-4+b1) ...
-Setting up libglib2.0-data (2.50.3-2) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up shared-mime-info (1.8-1) ...
-Setting up xml-core (0.17) ...
-Setting up xdg-user-dirs (0.15-2+b1) ...
-Setting up libdlm-dev:ppc64el (4.0.7-1) ...
-Processing triggers for sgml-base (1.29) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install result          1.3    [required by lwt, unix-errno]
-  - install base-bytes      base   [required by unix-errno, ctypes, ounit, uuidm]
-  - install ocamlbuild      0.12.0 [required by unix-errno, ounit, uuidm]
-  - install conf-pkg-config 1.1    [required by ctypes]
-  - install cppo            1.6.4  [required by lwt]
-  - install topkg           0.9.1  [required by uuidm]
-  - install ounit           2.0.8  [required by dlm]
-  - install lwt             4.1.0  [required by dlm]                              For the PPX, please install package lwt_ppx
-                                                                                  For Lwt_log and Lwt_daemon, please install package lwt_log
-  - install uuidm           0.9.6  [required by dlm]
-  - install integers        0.2.2  [required by ctypes]
-  - install ctypes          0.14.0 [required by dlm]
-  - install unix-errno      0.5.2  [required by dlm]
-  - install dlm             0.3.0
-===== 13 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[cppo.1.6.4] found in cache
-[ctypes.0.14.0] found in cache
-[dlm.0.3.0] found in cache
-[integers.0.2.2] found in cache
-[lwt.4.1.0] found in cache
-[ocamlbuild.0.12.0] found in cache
-[ounit.2.0.8] found in cache
-[result.1.3] found in cache
-[topkg.0.9.1] found in cache
-[unix-errno.0.5.2] found in cache
-[uuidm.0.9.6] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed base-bytes.base
--> installed conf-pkg-config.1.1
--> installed cppo.1.6.4
--> installed result.1.3
--> installed ocamlbuild.0.12.0
--> installed lwt.4.1.0
--> installed topkg.0.9.1
--> installed integers.0.2.2
--> installed ounit.2.0.8
--> installed uuidm.0.9.6
--> installed ctypes.0.14.0
--> installed unix-errno.0.5.2
-[ERROR] The compilation of dlm failed at "/home/opam/.opam/4.06/bin/jbuilder build --only dlm --root . -j 79 @install".
-
-#=== ERROR while compiling dlm.0.3.0 ==========================================#
-# context              2.0.0~rc3 | linux/ppc64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/dlm.0.3.0
-# command              ~/.opam/4.06/bin/jbuilder build --only dlm --root . -j 79 @install
-# exit-code            1
-# env-file             ~/.opam/log/dlm-11-eeeb7f.env
-# output-file          ~/.opam/log/dlm-11-eeeb7f.out
-### output ###
-# File "lib_gen/jbuild", line 1, characters 0-0:
-# Warning: Module "Bindings" is used in several stanzas:
-# - lib_gen/jbuild:9
-# - lib_gen/jbuild:2
-# To remove this warning, you must specify an explicit "modules" field in every
-# library, executable, and executables stanzas in this jbuild file. Note that
-# each module cannot appear in more than one "modules" field - it must belong
-# to a single library or executable.
-# This warning will become an error in the future.
-# File "lib_gen/jbuild", line 1, characters 0-0:
-# Warning: Module "Generated_types" is used in several stanzas:
-# - lib_gen/jbuild:9
-# - lib_gen/jbuild:2
-# To remove this warning, you must specify an explicit "modules" field in every
-# library, executable, and executables stanzas in this jbuild file. Note that
-# each module cannot appear in more than one "modules" field - it must belong
-# to a single library or executable.
-# This warning will become an error in the future.
-#     ocamlopt test/dlm_test.exe (exit 2)
-# (cd _build/default && /home/opam/.opam/4.06/bin/ocamlopt.opt -w -40 -g -o test/dlm_test.exe -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ctypes -I /home/opam/.opam/4.06/lib/integers -I /home/opam/.opam/4.06/lib/lwt -I /home/opam/.opam/4.06/lib/lwt/unix -I /home/opam/.opam/4.06/lib/oUnit -I /home/opam/.opam/4.06/lib/ocaml/threads -I /home/opam/.opam/4.06/lib/result -I /home/opam/.opam/4.06/lib/unix-errno -I /home/opam/.opam/4.06/lib/uuidm -I lib -I lib_gen -I lib_gen/types /home/opam/.opam/4.06/lib/ocaml/unix.cmxa /home/opam/.opam/4.06/lib/ocaml/bigarray.cmxa /home/opam/.opam/4.06/lib/integers/integers.cmxa /home/opam/.opam/4.06/lib/ctypes/ctypes.cmxa /home/opam/.opam/4.06/lib/ocaml/str.cmxa /home/opam/.opam/4.06/lib/ctypes/cstubs.cmxa lib_gen/types/bindings_structs_lib.cmxa lib_gen/dlm_bindings.cmxa /home/opam/.opam/4.06/lib/result/result.cmxa /home/opam/.opam/4.06/lib/lwt/lwt.cmxa /home/opam/.opam/4.06/lib/ocaml/threads/threads.cmxa /home/opam/.opam/4.06/lib/lwt/unix/lwt_unix.cmxa /home/opam/.opam/4.06/lib/unix-errno/errno_.cmxa /home/opam/.opam/4.06/lib/unix-errno/unix_errno.cmxa lib/dlm.cmxa /home/opam/.opam/4.06/lib/oUnit/oUnitAdvanced.cmxa /home/opam/.opam/4.06/lib/oUnit/oUnit.cmxa /home/opam/.opam/4.06/lib/uuidm/uuidm.cmxa test/.dlm_test.eobjs/dlm_test.cmx)
-# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/unix/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek':
-# /home/opam/.opam/4.06/.opam-switch/build/lwt.4.1.0/_build/default/src/unix/unix_lseek_job.c:96:(.text+0xb8): call to `result_lseek.part.0' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
-# /usr/bin/ld: /home/opam/.opam/4.06/lib/lwt/unix/liblwt_unix_stubs.a(unix_lseek_job.o): In function `result_lseek_64':
-# /home/opam/.opam/4.06/.opam-switch/build/lwt.4.1.0/_build/default/src/unix/unix_lseek_job.c:117:(.text+0x134): call to `result_lseek_64.part.1' lacks nop, can't restore toc; (-mcmodel=small toc adjust stub)
-# /usr/bin/ld: final link failed: Bad value
-# collect2: error: ld returned 1 exit status
-# File "caml_startup", line 1:
-# Error: Error during linking
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build dlm 0.3.0
-+- 
-+- The following changes have been performed
-| - install base-bytes      base
-| - install conf-pkg-config 1.1
-| - install cppo            1.6.4
-| - install ctypes          0.14.0
-| - install integers        0.2.2
-| - install lwt             4.1.0
-| - install ocamlbuild      0.12.0
-| - install ounit           2.0.8
-| - install result          1.3
-| - install topkg           0.9.1
-| - install unix-errno      0.5.2
-| - install uuidm           0.9.6
-+- 
-
-The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
-    libdlm-dev
-
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704005312.export"
-31 1530665581 1530665635

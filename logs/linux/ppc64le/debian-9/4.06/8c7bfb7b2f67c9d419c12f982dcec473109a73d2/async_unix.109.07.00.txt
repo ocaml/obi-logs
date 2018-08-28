@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 async_unix.109.07.00
-# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for async_unix.109.07.00: The following dependencies couldn't be met:
-          - async_unix -> async_core = 109.07.00 -> core = 109.07.00 -> ocaml < 4.01.0
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=async_unix.109.07.00 returned 20
-20 1530675918 1530675921

@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 datakit-client-9p.0.12.0
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for datakit-client-9p.0.12.0: The following dependencies couldn't be met:
-          - datakit-client-9p -> protocol-9p-unix >= 0.11.0 -> ppx_tools -> ocaml < 4.08
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=datakit-client-9p.0.12.0 returned 20
-20 1534194842 1534194844

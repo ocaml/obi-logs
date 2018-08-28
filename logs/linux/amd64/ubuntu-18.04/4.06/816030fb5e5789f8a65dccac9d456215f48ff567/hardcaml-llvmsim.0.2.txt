@@ -1,137 +1,0 @@
-$ opam depext -iy -j 2 hardcaml-llvmsim.0.2
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
-# The following system packages are needed:
-debianutils
-libffi-dev
-m4
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy debianutils libffi-dev m4
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libffi-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
-Preparing to unpack .../libffi-dev_3.2.1-8_amd64.deb ...
-Unpacking libffi-dev:amd64 (3.2.1-8) ...
-Setting up libffi-dev:amd64 (3.2.1-8) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install ctypes-foreign          0.4.0  [required by hardcaml-llvmsim]
-  - install easy-format             1.3.1  [required by yojson]
-  - install result                  1.3    [required by topkg, ocaml-migrate-parsetree]
-  - install conf-which              1      [required by biniou]
-  - install base-bytes              base   [required by hardcaml]
-  - install ocamlbuild              0.12.0 [required by hardcaml-llvmsim]
-  - install num                     1.1    [required by hardcaml]
-  - install ocaml-migrate-parsetree 1.0.11 [required by js_of_ocaml]
-  - install biniou                  1.2.0  [required by yojson]
-  - install cppo                    1.6.4  [required by js_of_ocaml-compiler]
-  - install uchar                   0.0.2  [required by js_of_ocaml]
-  - install topkg                   0.9.1  [required by hardcaml]
-  - install llvm                    3.5    [required by hardcaml-llvmsim]
-  - install camlp4                  4.06+1 [required by hardcaml]
-  - install ppx_tools_versioned     5.2    [required by js_of_ocaml]
-  - install yojson                  1.4.1  [required by js_of_ocaml-compiler]
-  - install cmdliner                1.0.2  [required by js_of_ocaml-compiler]
-  - install astring                 0.8.3  [required by hardcaml]
-  - install js_of_ocaml-camlp4      3.1.0  [required by hardcaml]
-  - install js_of_ocaml-compiler    3.2.1  [required by js_of_ocaml]
-  - install js_of_ocaml             3.2.0  [required by hardcaml]
-  - install hardcaml                1.2.0  [required by hardcaml-llvmsim]
-  - install hardcaml-llvmsim        0.2
-===== 23 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[astring.0.8.3] found in cache
-[biniou.1.2.0] found in cache
-[camlp4.4.06+1] found in cache
-[cmdliner.1.0.2] found in cache
-[cppo.1.6.4] found in cache
-[easy-format.1.3.1] found in cache
-[hardcaml.1.2.0] found in cache
-[hardcaml-llvmsim.0.2] found in cache
-[js_of_ocaml.3.2.0] found in cache
-[js_of_ocaml-camlp4.3.1.0] found in cache
-[js_of_ocaml-compiler.3.2.1] found in cache
-[llvm.3.5] found in cache
-[num.1.1] found in cache
-[ocaml-migrate-parsetree.1.0.11] found in cache
-[ocamlbuild.0.12.0] found in cache
-[ppx_tools_versioned.5.2] found in cache
-[result.1.3] found in cache
-[topkg.0.9.1] found in cache
-[uchar.0.0.2] found in cache
-[yojson.1.4.1] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed base-bytes.base
--> installed conf-which.1
--> installed cppo.1.6.4
--> installed ctypes-foreign.0.4.0
--> installed easy-format.1.3.1
--> installed biniou.1.2.0
--> installed num.1.1
--> installed ocamlbuild.0.12.0
-[ERROR] The installation of llvm failed at "sh ./compile.sh install 3.5 make /home/opam/.opam/4.06 /home/opam/.opam/4.06/lib".
--> installed result.1.3
--> installed ocaml-migrate-parsetree.1.0.11
--> installed ppx_tools_versioned.5.2
--> installed topkg.0.9.1
--> installed astring.0.8.3
--> installed cmdliner.1.0.2
--> installed uchar.0.0.2
--> installed yojson.1.4.1
--> installed js_of_ocaml-compiler.3.2.1
--> installed js_of_ocaml.3.2.0
--> installed camlp4.4.06+1
--> installed js_of_ocaml-camlp4.3.1.0
--> installed hardcaml.1.2.0
-
-#=== ERROR while installing llvm.3.5 ==========================================#
-# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/llvm.3.5
-# command              /bin/sh ./compile.sh install 3.5 make /home/opam/.opam/4.06 /home/opam/.opam/4.06/lib
-# exit-code            1
-# env-file             ~/.opam/log/llvm-13-626917.env
-# output-file          ~/.opam/log/llvm-13-626917.out
-### output ###
-# stat: cannot stat '/usr/local/Cellar/llvm/3.5*/bin/llvm-config': No such file or directory
-# ./compile.sh: 1: ./compile.sh: llvm-config-3.5: not found
-# ./compile.sh: 1: ./compile.sh: llvm-config35: not found
-# ./compile.sh: 1: ./compile.sh: llvm-config-mp-3.5: not found
-# ./compile.sh: 1: ./compile.sh: llvm-config: not found
-# Error: LLVM 3.5 is not installed.
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - install llvm 3.5
-+- 
-+- The following changes have been performed (the rest was aborted)
-| - install astring                 0.8.3
-| - install base-bytes              base
-| - install biniou                  1.2.0
-| - install camlp4                  4.06+1
-| - install cmdliner                1.0.2
-| - install conf-which              1
-| - install cppo                    1.6.4
-| - install ctypes-foreign          0.4.0
-| - install easy-format             1.3.1
-| - install hardcaml                1.2.0
-| - install js_of_ocaml             3.2.0
-| - install js_of_ocaml-camlp4      3.1.0
-| - install js_of_ocaml-compiler    3.2.1
-| - install num                     1.1
-| - install ocaml-migrate-parsetree 1.0.11
-| - install ocamlbuild              0.12.0
-| - install ppx_tools_versioned     5.2
-| - install result                  1.3
-| - install topkg                   0.9.1
-| - install uchar                   0.0.2
-| - install yojson                  1.4.1
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180820000635.export"
-31 1534723587 1534723722

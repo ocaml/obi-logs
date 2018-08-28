@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 redis.0.2.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=alpine, os-family=alpine
-[ERROR] No solution for redis.0.2.1: The following dependencies couldn't be met:
-          - redis -> ocaml < 4.05.0
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=redis.0.2.1 returned 20
-20 1533685517 1533685520

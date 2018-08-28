@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 github.0.3.0
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for github.0.3.0: The following dependencies couldn't be met:
-          - github -> uri < 1.3.1 -> ocaml < 4.06.0
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=github.0.3.0 returned 20
-20 1532911361 1532911364

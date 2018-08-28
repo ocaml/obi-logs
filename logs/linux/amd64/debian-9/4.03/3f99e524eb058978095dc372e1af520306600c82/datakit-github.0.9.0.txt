@@ -1,19 +1,0 @@
-$ opam depext -iy -j 2 datakit-github.0.9.0
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-debianutils
-m4
-time
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy debianutils m4 time
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package time.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../time_1.7-25.1+b1_amd64.deb ...
-Unpacking time (1.7-25.1+b1) ...
-Setting up time (1.7-25.1+b1) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-[ERROR] Sorry, resolution of the request timed out.
-        Try to specify a simpler request, use a different solver, or increase the allowed time by setting OPAMSOLVERTIMEOUT to a bigger value (currently, it is set to 60.0 seconds).
-60 1532474920 1532475000

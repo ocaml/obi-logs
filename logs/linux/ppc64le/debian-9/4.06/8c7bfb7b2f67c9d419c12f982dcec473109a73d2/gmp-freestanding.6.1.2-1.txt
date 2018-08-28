@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 gmp-freestanding.6.1.2-1
-# Detecting depexts using vars: arch=ppc64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for gmp-freestanding.6.1.2-1: The following dependencies couldn't be met:
-          - gmp-freestanding -> ocaml-freestanding >= 0.2.3
-              unmet availability conditions, e.g. os = "linux" & (arch = "x86_64" | arch = "arm64") | os = "freebsd" & arch = "x86_64"
-
-
-Command failed: opam list --readonly --external  --resolve=gmp-freestanding.6.1.2-1 returned 20
-20 1530667765 1530667768

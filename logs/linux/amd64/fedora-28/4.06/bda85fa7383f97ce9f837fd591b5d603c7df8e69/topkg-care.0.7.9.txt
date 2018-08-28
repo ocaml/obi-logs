@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 topkg-care.0.7.9
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
-[ERROR] No solution for topkg-care.0.7.9: The following dependencies couldn't be met:
-          - topkg-care -> opam-lib = 1.2.2 -> dose < 3.4.0 -> ocamlgraph < 1.8.6 -> ocaml < 4.06.0
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=topkg-care.0.7.9 returned 20
-20 1534299074 1534299076

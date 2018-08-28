@@ -1,95 +1,0 @@
-$ opam depext -iy -j 2 kafka.0.3
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-librdkafka-dev
-m4
-zlib1g-dev
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy librdkafka-dev m4 zlib1g-dev
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package librdkafka1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../librdkafka1_0.9.3-1_amd64.deb ...
-Unpacking librdkafka1:amd64 (0.9.3-1) ...
-Selecting previously unselected package librdkafka++1:amd64.
-Preparing to unpack .../librdkafka++1_0.9.3-1_amd64.deb ...
-Unpacking librdkafka++1:amd64 (0.9.3-1) ...
-Selecting previously unselected package librdkafka-dev:amd64.
-Preparing to unpack .../librdkafka-dev_0.9.3-1_amd64.deb ...
-Unpacking librdkafka-dev:amd64 (0.9.3-1) ...
-Selecting previously unselected package zlib1g-dev:amd64.
-Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
-Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
-Setting up librdkafka1:amd64 (0.9.3-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up librdkafka++1:amd64 (0.9.3-1) ...
-Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
-Setting up librdkafka-dev:amd64 (0.9.3-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install result     1.3    [required by cmdliner, lwt]
-  - install base-bytes base   [required by cppo]
-  - install ocamlbuild 0.12.0 [required by cmdliner]
-  - install cppo       1.6.4  [required by lwt]
-  - install topkg      0.9.1  [required by cmdliner]
-  - install lwt        4.1.0  [required by kafka]         For the PPX, please install package lwt_ppx
-                                                          For Lwt_log and Lwt_daemon, please install package lwt_log
-  - install cmdliner   1.0.2  [required by kafka]
-  - install kafka      0.3
-===== 8 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[cmdliner.1.0.2] found in cache
-[cppo.1.6.4] found in cache
-[kafka.0.3] found in cache
-[lwt.4.1.0] found in cache
-[ocamlbuild.0.12.0] found in cache
-[result.1.3] found in cache
-[topkg.0.9.1] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed base-bytes.base
--> installed cppo.1.6.4
--> installed result.1.3
--> installed lwt.4.1.0
--> installed ocamlbuild.0.12.0
--> installed topkg.0.9.1
--> installed cmdliner.1.0.2
-[ERROR] The compilation of kafka failed at "/home/opam/.opam/4.07/bin/jbuilder build -p kafka . -j 47 @install".
-
-#=== ERROR while compiling kafka.0.3 ==========================================#
-# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.07/.opam-switch/build/kafka.0.3
-# command              ~/.opam/4.07/bin/jbuilder build -p kafka . -j 47 @install
-# exit-code            1
-# env-file             ~/.opam/log/kafka-11-233b17.env
-# output-file          ~/.opam/log/kafka-11-233b17.out
-### output ###
-# Don't know how to build .
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build kafka 0.3
-+- 
-+- The following changes have been performed
-| - install base-bytes base
-| - install cmdliner   1.0.2
-| - install cppo       1.6.4
-| - install lwt        4.1.0
-| - install ocamlbuild 0.12.0
-| - install result     1.3
-| - install topkg      0.9.1
-+- 
-
-The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
-    librdkafka-dev zlib1g-dev
-
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180807210340.export"
-31 1533675803 1533675833

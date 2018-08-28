@@ -1,175 +1,0 @@
-$ opam depext -iy -j 2 spoc.20170724
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libffi-dev
-m4
-pkg-config
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libffi-dev m4 pkg-config
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package sgml-base.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
-Preparing to unpack .../0-sgml-base_1.29_all.deb ...
-Unpacking sgml-base (1.29) ...
-Selecting previously unselected package libicu57:amd64.
-Preparing to unpack .../1-libicu57_57.1-6+deb9u2_amd64.deb ...
-Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
-Selecting previously unselected package libxml2:amd64.
-Preparing to unpack .../2-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
-Selecting previously unselected package libffi-dev:amd64.
-Preparing to unpack .../3-libffi-dev_3.2.1-6_amd64.deb ...
-Unpacking libffi-dev:amd64 (3.2.1-6) ...
-Selecting previously unselected package libglib2.0-0:amd64.
-Preparing to unpack .../4-libglib2.0-0_2.50.3-2_amd64.deb ...
-Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
-Selecting previously unselected package libglib2.0-data.
-Preparing to unpack .../5-libglib2.0-data_2.50.3-2_all.deb ...
-Unpacking libglib2.0-data (2.50.3-2) ...
-Selecting previously unselected package pkg-config.
-Preparing to unpack .../6-pkg-config_0.29-4+b1_amd64.deb ...
-Unpacking pkg-config (0.29-4+b1) ...
-Selecting previously unselected package shared-mime-info.
-Preparing to unpack .../7-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
-Unpacking shared-mime-info (1.8-1+deb9u1) ...
-Selecting previously unselected package xdg-user-dirs.
-Preparing to unpack .../8-xdg-user-dirs_0.15-2+b1_amd64.deb ...
-Unpacking xdg-user-dirs (0.15-2+b1) ...
-Selecting previously unselected package xml-core.
-Preparing to unpack .../9-xml-core_0.17_all.deb ...
-Unpacking xml-core (0.17) ...
-Setting up libglib2.0-0:amd64 (2.50.3-2) ...
-No schema files found: doing nothing.
-Setting up libffi-dev:amd64 (3.2.1-6) ...
-Setting up sgml-base (1.29) ...
-Setting up libicu57:amd64 (57.1-6+deb9u2) ...
-Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
-Setting up pkg-config (0.29-4+b1) ...
-Setting up libglib2.0-data (2.50.3-2) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up shared-mime-info (1.8-1+deb9u1) ...
-Setting up xml-core (0.17) ...
-Setting up xdg-user-dirs (0.15-2+b1) ...
-Processing triggers for sgml-base (1.29) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install result          1.3      [required by topkg]
-  - install base-bytes      base     [required by ctypes]
-  - install ocamlbuild      0.12.0   [required by camlp4]
-  - install conf-pkg-config 1.1      [required by ctypes]
-  - install ctypes-foreign  0.4.0    [required by spoc]
-  - install topkg           0.9.1    [required by integers]
-  - install camlp4          4.05+1   [required by spoc]
-  - install integers        0.2.2    [required by ctypes]
-  - install ctypes          0.14.0   [required by spoc]
-  - install spoc            20170724
-===== 10 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[camlp4.4.05+1] found in cache
-[ctypes.0.14.0] found in cache
-[integers.0.2.2] found in cache
-[ocamlbuild.0.12.0] found in cache
-[result.1.3] found in cache
-[spoc.20170724] found in cache
-[topkg.0.9.1] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed base-bytes.base
--> installed conf-pkg-config.1.1
--> installed ctypes-foreign.0.4.0
--> installed result.1.3
--> installed ocamlbuild.0.12.0
--> installed topkg.0.9.1
--> installed integers.0.2.2
--> installed ctypes.0.14.0
--> installed camlp4.4.05+1
-[ERROR] The compilation of spoc failed at "/usr/bin/make".
-
-#=== ERROR while compiling spoc.20170724 ======================================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.05/.opam-switch/build/spoc.20170724
-# command              /usr/bin/make
-# exit-code            2
-# env-file             ~/.opam/log/spoc-11-45397e.env
-# output-file          ~/.opam/log/spoc-11-45397e.out
-### output ###
-# cd Spoc && make -j72 && cd ..
-# make[1]: Entering directory '/home/opam/.opam/4.05/.opam-switch/build/spoc.20170724/Spoc'
-# [43m[30mBuilding Spoc[0m
-# [33m[Kernel_cuda.o][0m
-# [33m[Spoc_cu.o][0m
-# [33m[Mem_c.o][0m
-# [33m[Kernel_opencl.o][0m
-# [33m[Spoc_c.o][0m
-# [33m[Custom.o][0m
-# [33m[cuda_drvapi_dynlink.o][0m
-# [33m[Opencl_dynlink.o][0m
-# [35m[Devices.cmi][0m
-# [43m[30mBuilding Spoc external kernel extension[0m
-# [31m[kernels_ext.cma][0m
-# [43m[30mBuilding WebSpoc[0m
-# [36m[spoc_lib.js][0m
-# make[2]: Entering directory '/home/opam/.opam/4.05/.opam-switch/build/spoc.20170724/Spoc/extension'
-# make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
-# [35m[Vector.cmi][0m
-# [34m[Devices.cmx][0m
-# [32m[Devices.cmo][0m
-# [32m[Vector.cmo][0m
-# [35m[OpenCL.cmi][0m
-# [35m[Cuda.cmi][0m
-# [35m[Kernel.cmi][0m
-# [35m[Mem.cmi][0m
-# [35m[Tools.cmi][0m
-# [32m[KernelOpenCL.cmo][0m
-# [32m[KernelCuda.cmo][0m
-# [32m[Cuda.cmo][0m
-# [32m[Kernel.cmo][0m
-# [32m[Mem.cmo][0m
-# [32m[OpenCL.cmo][0m
-# [32m[Tools.cmo][0m
-# [34m[Vector.cmx][0m
-# [34m[OpenCL.cmx][0m
-# [34m[Cuda.cmx][0m
-# [34m[Mem.cmx][0m
-# [34m[KernelOpenCL.cmx][0m
-# [34m[KernelCuda.cmx][0m
-# [34m[Kernel.cmx][0m
-# [34m[Tools.cmx][0m
-# make[2]: Leaving directory '/home/opam/.opam/4.05/.opam-switch/build/spoc.20170724/Spoc/extension'
-# [33m[spoc.o][0m
-# [32m[spoc.cmo][0m
-# [34m[spoc.cmx][0m
-# [31m[spoc.cma][0m
-# [31m[spoc.cmxa][0m
-# ranlib: './libspoc.a': No such file
-# Makefile:65: recipe for target 'spoc.cma' failed
-# make[1]: *** [spoc.cma] Error 2
-# make[1]: *** Waiting for unfinished jobs....
-# make[1]: Leaving directory '/home/opam/.opam/4.05/.opam-switch/build/spoc.20170724/Spoc'
-# Makefile:4: recipe for target 'all' failed
-# make: *** [all] Error 2
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build spoc 20170724
-+- 
-+- The following changes have been performed
-| - install base-bytes      base
-| - install camlp4          4.05+1
-| - install conf-pkg-config 1.1
-| - install ctypes          0.14.0
-| - install ctypes-foreign  0.4.0
-| - install integers        0.2.2
-| - install ocamlbuild      0.12.0
-| - install result          1.3
-| - install topkg           0.9.1
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180724041635.export"
-31 1532405784 1532405907

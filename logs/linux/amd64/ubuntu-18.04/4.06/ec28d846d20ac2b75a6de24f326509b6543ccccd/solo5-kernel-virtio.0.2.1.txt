@@ -1,115 +1,0 @@
-$ opam depext -iy -j 2 solo5-kernel-virtio.0.2.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
-# The following system packages are needed:
-pkg-config
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy pkg-config
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libglib2.0-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
-Preparing to unpack .../0-libglib2.0-0_2.56.1-2ubuntu1_amd64.deb ...
-Unpacking libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
-Selecting previously unselected package libglib2.0-data.
-Preparing to unpack .../1-libglib2.0-data_2.56.1-2ubuntu1_all.deb ...
-Unpacking libglib2.0-data (2.56.1-2ubuntu1) ...
-Selecting previously unselected package libicu60:amd64.
-Preparing to unpack .../2-libicu60_60.2-3ubuntu3_amd64.deb ...
-Unpacking libicu60:amd64 (60.2-3ubuntu3) ...
-Selecting previously unselected package libxml2:amd64.
-Preparing to unpack .../3-libxml2_2.9.4+dfsg1-6.1ubuntu1_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
-Selecting previously unselected package shared-mime-info.
-Preparing to unpack .../4-shared-mime-info_1.9-2_amd64.deb ...
-Unpacking shared-mime-info (1.9-2) ...
-Selecting previously unselected package xdg-user-dirs.
-Preparing to unpack .../5-xdg-user-dirs_0.17-1ubuntu1_amd64.deb ...
-Unpacking xdg-user-dirs (0.17-1ubuntu1) ...
-Selecting previously unselected package pkg-config.
-Preparing to unpack .../6-pkg-config_0.29.1-0ubuntu2_amd64.deb ...
-Unpacking pkg-config (0.29.1-0ubuntu2) ...
-Setting up libicu60:amd64 (60.2-3ubuntu3) ...
-Setting up libglib2.0-0:amd64 (2.56.1-2ubuntu1) ...
-No schema files found: doing nothing.
-Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1) ...
-Setting up pkg-config (0.29.1-0ubuntu2) ...
-Setting up libglib2.0-data (2.56.1-2ubuntu1) ...
-Processing triggers for libc-bin (2.27-3ubuntu1) ...
-Setting up shared-mime-info (1.9-2) ...
-Setting up xdg-user-dirs (0.17-1ubuntu1) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install conf-pkg-config     1.1   [required by solo5-kernel-virtio]
-  - install solo5-kernel-virtio 0.2.1
-===== 2 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[solo5-kernel-virtio.0.2.1] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed conf-pkg-config.1.1
-[ERROR] The compilation of solo5-kernel-virtio failed at "/usr/bin/make virtio".
-
-#=== ERROR while compiling solo5-kernel-virtio.0.2.1 ==========================#
-# context              2.0.0~rc3 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1
-# command              /usr/bin/make virtio
-# exit-code            2
-# env-file             ~/.opam/log/solo5-kernel-virtio-13-d2c37b.env
-# output-file          ~/.opam/log/solo5-kernel-virtio-13-d2c37b.out
-### output ###
-# Makefile.common:28: /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/Makeconf: No such file or directory
-# ./configure.sh
-# /usr/bin/make -C kernel virtio
-# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/kernel'
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -DASM_FILE -c virtio/boot.S -o virtio/boot.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/kernel.c -o virtio/kernel.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/platform.c -o virtio/platform.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/platform_intr.c -o virtio/platform_intr.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/mem.c -o virtio/mem.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/pci.c -o virtio/pci.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/serial.c -o virtio/serial.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/time.c -o virtio/time.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/virtio_ring.c -o virtio/virtio_ring.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/virtio_net.c -o virtio/virtio_net.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/virtio_blk.c -o virtio/virtio_blk.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/tscclock.c -o virtio/tscclock.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c virtio/clock_subr.c -o virtio/clock_subr.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c abort.c -o abort.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -DASM_FILE -c cpu.S -o cpu.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -DASM_FILE -c cpu_vectors.S -o cpu_vectors.o
-# cc -nostdinc -ffreestanding -mno-red-zone -isystem /home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/include-host -std=gnu99 -Wall -Wextra -Werror -O2 -g -c ee_printf.c -o ee_printf.o
-# ee_printf.c: In function 'vsnprintf':
-# ee_printf.c:639:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
-#              flags |= UPPERCASE;
-#                    ^
-# ee_printf.c:641:9: note: here
-#          case 'a':
-#          ^~~~
-# ee_printf.c:656:19: error: this statement may fall through [-Werror=implicit-fallthrough=]
-#              flags |= UPPERCASE;
-#                    ^
-# ee_printf.c:658:9: note: here
-#          case 'x':
-#          ^~~~
-# cc1: all warnings being treated as errors
-# Makefile:68: recipe for target 'ee_printf.o' failed
-# make[1]: *** [ee_printf.o] Error 1
-# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/solo5-kernel-virtio.0.2.1/kernel'
-# Makefile:32: recipe for target 'virtio' failed
-# make: *** [virtio] Error 2
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build solo5-kernel-virtio 0.2.1
-+- 
-+- The following changes have been performed
-| - install conf-pkg-config 1.1
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180731044154.export"
-31 1533012106 1533012117

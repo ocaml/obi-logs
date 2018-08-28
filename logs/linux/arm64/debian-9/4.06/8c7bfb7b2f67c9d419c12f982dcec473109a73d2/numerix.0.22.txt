@@ -1,120 +1,0 @@
-$ opam depext -iy -j 2 numerix.0.22
-# Detecting depexts using vars: arch=arm64, os=linux, os-distribution=debian, os-family=debian
-# The following system packages are needed:
-libgmp-dev
-m4
-The following command needs to be run through "sudo":
-    apt-get install -qq -yy libgmp-dev m4
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package libgmpxx4ldbl:arm64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17581 files and directories currently installed.)
-Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-1_arm64.deb ...
-Unpacking libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
-Selecting previously unselected package libgmp-dev:arm64.
-Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-1_arm64.deb ...
-Unpacking libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up libgmpxx4ldbl:arm64 (2:6.1.2+dfsg-1) ...
-Setting up libgmp-dev:arm64 (2:6.1.2+dfsg-1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-# OS packages installation successful
-# Now letting OPAM install the packages
-The following actions will be performed:
-  - install conf-gmp 1    [required by numerix]
-  - install num      1.1  [required by numerix]
-  - install numerix  0.22
-===== 3 to install =====
-
-<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-[num.1.1] found in cache
-[numerix.0.22] found in cache
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
--> installed conf-gmp.1
--> installed num.1.1
-[ERROR] The compilation of numerix failed at "/home/opam/.opam/4.06/.opam-switch/build/numerix.0.22/./configure --prefix=/home/opam/.opam/4.06 --enable-sse2 --disable-lang --enable-ocaml --enable-clong --enable-dlong --enable-slong --enable-gmp --enable-ocaml_bignum".
-
-#=== ERROR while compiling numerix.0.22 =======================================#
-# context              2.0.0~rc3 | linux/arm64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
-# path                 ~/.opam/4.06/.opam-switch/build/numerix.0.22
-# command              ~/.opam/4.06/.opam-switch/build/numerix.0.22/./configure --prefix=/home/opam/.opam/4.06 --enable-sse2 --disable-lang --enable-ocaml --enable-clong --enable-dlong --enable-slong --enable-gmp --enable-ocaml_bignum
-# exit-code            1
-# env-file             ~/.opam/log/numerix-11-f0f09f.env
-# output-file          ~/.opam/log/numerix-11-f0f09f.out
-### output ###
-# checking for gcc... gcc
-# checking for C compiler default output file name... a.out
-# checking whether the C compiler works... yes
-# checking whether we are cross compiling... no
-# checking for suffix of executables... 
-# checking for suffix of object files... o
-# checking whether we are using the GNU C compiler... yes
-# checking whether gcc accepts -g... yes
-# checking for gcc option to accept ANSI C... none needed
-# checking how to run the C preprocessor... gcc -E
-# checking for egrep... grep -E
-# checking for ANSI C header files... yes
-# checking for sys/types.h... yes
-# checking for sys/stat.h... yes
-# checking for stdlib.h... yes
-# checking for string.h... yes
-# checking for memory.h... yes
-# checking for strings.h... yes
-# checking for inttypes.h... yes
-# checking for stdint.h... yes
-# checking for unistd.h... yes
-# checking for long... yes
-# checking size of long... 8
-# checking for long long... yes
-# checking size of long long... 8
-# checking build system type... config/config.guess: unable to guess system type
-# 
-# This script, last modified 2004-03-03, has failed to recognize
-# the operating system you are using. It is advised that you
-# download the most up to date version of the config scripts from
-# 
-#     ftp://ftp.gnu.org/pub/gnu/config/
-# 
-# If the version you run (config/config.guess) is already up to date, please
-# send the following data and any information you think might be
-# pertinent to <config-patches@gnu.org> in order to provide the needed
-# information to handle your system.
-# 
-# config.guess timestamp = 2004-03-03
-# 
-# uname -m = aarch64
-# uname -r = 4.10.0-38-generic
-# uname -s = Linux
-# uname -v = #42~16.04.1-Ubuntu SMP Tue Oct 10 16:33:57 UTC 2017
-# 
-# /usr/bin/uname -p = 
-# /bin/uname -X     = 
-# 
-# hostinfo               = 
-# /bin/universe          = 
-# /usr/bin/arch -k       = 
-# /bin/arch              = 
-# /usr/bin/oslevel       = 
-# /usr/convex/getsysinfo = 
-# 
-# UNAME_MACHINE = aarch64
-# UNAME_RELEASE = 4.10.0-38-generic
-# UNAME_SYSTEM  = Linux
-# UNAME_VERSION = #42~16.04.1-Ubuntu SMP Tue Oct 10 16:33:57 UTC 2017
-# configure: error: cannot guess build type; you must specify one
-
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-+- The following actions failed
-| - build numerix 0.22
-+- 
-+- The following changes have been performed
-| - install conf-gmp 1
-| - install num      1.1
-+- 
-# Run eval $(opam env) to update the current shell environment
-
-The former state can be restored with:
-    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180704023411.export"
-31 1530671626 1530671677

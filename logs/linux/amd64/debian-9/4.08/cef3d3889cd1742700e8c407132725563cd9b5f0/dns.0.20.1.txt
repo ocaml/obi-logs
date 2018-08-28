@@ -1,9 +1,0 @@
-$ opam depext -iy -j 2 dns.0.20.1
-# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
-[ERROR] No solution for dns.0.20.1: The following dependencies couldn't be met:
-          - dns -> ppx_tools -> ocaml < 4.08
-              base of this switch (use `--unlock-base' to force)
-
-
-Command failed: opam list --readonly --external  --resolve=dns.0.20.1 returned 20
-20 1533846266 1533846268
