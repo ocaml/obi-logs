@@ -1,0 +1,17 @@
+$ opam depext -iy -j 2 github.0.8.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for github.0.8.4: The following dependencies couldn't be met:
+          - github -> cohttp < 0.14.0 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.14.0 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.14.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.14.0 -> lwt < 2.5.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.14.0 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=github.0.8.4 returned 20
+20 1535489224 1535489226
