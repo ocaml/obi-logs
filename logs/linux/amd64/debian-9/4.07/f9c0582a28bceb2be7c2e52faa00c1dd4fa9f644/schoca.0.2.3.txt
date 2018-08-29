@@ -1,0 +1,105 @@
+$ opam depext -iy -j 2 schoca.0.2.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by camlp4]
+  - install camlp4     4.07+1 [required by schoca]
+  - install schoca     0.2.3
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.07+1] found in cache
+[ocamlbuild.0.12.0] found in cache
+[schoca.0.2.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+-> installed camlp4.4.07+1
+[ERROR] The compilation of schoca failed at "/usr/bin/make".
+
+#=== ERROR while compiling schoca.0.2.3 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/schoca.0.2.3
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/schoca-11-57f057.env
+# output-file          ~/.opam/log/schoca-11-57f057.out
+### output ###
+# for dir in lib shell examples ;\
+# do \
+#   /usr/bin/make -C ${dir} ; \
+# done
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/schoca.0.2.3/lib'
+# ocamlfind ocamldep   -package camlp4  -syntax camlp4o \
+#    scmConfig.ml scmUtil.ml scmUtil.mli scmDynnum.ml scmDynnum.mli scmTypes.ml scmTypes.mli scmParser.mli scmParser.ml scmLexer.ml scmEval.ml scmSchoca.ml > .depend
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmUtil.mli
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmDynnum.mli
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmTypes.mli
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmConfig.ml
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmTypes.ml
+# File "scmTypes.ml", line 505, characters 10-22:
+# Warning 3: deprecated: Stdlib.Array.create
+# Use Array.make instead.
+# ocamlyacc -v scmParser.mly
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmParser.mli
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmUtil.ml
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmDynnum.ml
+# File "scmDynnum.ml", line 432, characters 9-23:
+# Warning 3: deprecated: Stdlib.Char.lowercase
+# Use Char.lowercase_ascii instead.
+# File "scmDynnum.ml", line 447, characters 35-49:
+# Warning 3: deprecated: Stdlib.Char.lowercase
+# Use Char.lowercase_ascii instead.
+# File "scmDynnum.ml", line 321, characters 7-17:
+# Warning 26: unused variable i.
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmParser.ml
+# ocamllex scmLexer.mll
+# 240 states, 7043 transitions, table size 29612 bytes
+# ocamlfind ocamlc  -package camlp4   -g  -syntax camlp4o -c scmLexer.ml
+# File "scmLexer.mll", line 36, characters 7-24:
+# Warning 3: deprecated: Stdlib.String.unsafe_set
+# File "scmLexer.mll", line 36, characters 25-28:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# ../OCaml.mk:173: recipe for target 'scmLexer.cmo' failed
+# make[1]: *** [scmLexer.cmo] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/schoca.0.2.3/lib'
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/schoca.0.2.3/shell'
+# ocamlfind ocamldep  -I ../lib -package camlp4  -syntax camlp4o \
+#    scmMain.ml > .depend
+# ocamlfind ocamlc -I ../lib -package camlp4  -I ../lib -g  -syntax camlp4o -c ../lib/scmSchoca.ml
+# File "../lib/scmSchoca.ml", line 1, characters 5-12:
+# Error: Unbound module ScmEval
+# ../OCaml.mk:173: recipe for target '../lib/scmSchoca.cmo' failed
+# make[1]: *** [../lib/scmSchoca.cmo] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/schoca.0.2.3/shell'
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/schoca.0.2.3/examples'
+# ocamlfind ocamldep  -I ../lib -package camlp4  -syntax camlp4o \
+#    read_ini_file.ml > .depend
+# ocamlfind ocamlc -I ../lib -package camlp4  -I ../lib -g  -syntax camlp4o -c ../lib/scmSchoca.ml
+# File "../lib/scmSchoca.ml", line 1, characters 5-12:
+# Error: Unbound module ScmEval
+# ../OCaml.mk:173: recipe for target '../lib/scmSchoca.cmo' failed
+# make[1]: *** [../lib/scmSchoca.cmo] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/schoca.0.2.3/examples'
+# OCaml.mk:75: recipe for target 'subdirs' failed
+# make: *** [subdirs] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build schoca 0.2.3
++- 
++- The following changes have been performed
+| - install camlp4     4.07+1
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180829215150.export"
+31 1535579508 1535579616
