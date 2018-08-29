@@ -1,0 +1,20 @@
+$ opam depext -iy -j 2 clangml.3.5.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+binutils-dev
+clang-3.5
+libboost-dev
+libclang-3.5-dev
+llvm-3.5-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy binutils-dev clang-3.5 libboost-dev libclang-3.5-dev llvm-3.5-dev m4
+E: Package 'clang-3.5' has no installation candidate
+E: Unable to locate package libclang-3.5-dev
+E: Couldn't find any package by glob 'libclang-3.5-dev'
+E: Couldn't find any package by regex 'libclang-3.5-dev'
+E: Unable to locate package llvm-3.5-dev
+E: Couldn't find any package by glob 'llvm-3.5-dev'
+E: Couldn't find any package by regex 'llvm-3.5-dev'
+OS package installation failed
+1 1535510672 1535510681
