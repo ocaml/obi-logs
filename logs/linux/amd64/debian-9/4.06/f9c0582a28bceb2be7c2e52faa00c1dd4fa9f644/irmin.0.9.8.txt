@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 irmin.0.9.8
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for irmin.0.9.8: The following dependencies couldn't be met:
+          - irmin -> lwt < 2.7.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=irmin.0.9.8 returned 20
+20 1535575557 1535575560
