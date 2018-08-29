@@ -1,0 +1,389 @@
+$ opam depext -iy -j 2 rdf.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gmp
+gmp-devel
+m4
+pcre-devel
+perl-Pod-Html
+pkgconfig
+which
+zlib-devel
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Tue Aug 21 05:47:54 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Tue Aug 28 20:05:35 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package pcre-devel is not installed
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Tue Aug 28 07:14:10 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+package zlib-devel is not installed
+# The following new OS packages need to be installed: gmp-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y gmp-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+Fedora 28 - x86_64 - Updates                     27 MB/s |  23 MB     00:00    
+Last metadata expiration check: 0:00:16 ago on Wed Aug 29 05:00:42 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package             Arch         Version                   Repository     Size
+================================================================================
+Installing:
+ gmp-devel           x86_64       1:6.1.2-7.fc28            fedora        187 k
+ pcre-devel          x86_64       8.42-2.fc28               updates       550 k
+ perl-Pod-Html       noarch       1.22.02-413.fc28          updates        85 k
+ zlib-devel          x86_64       1.2.11-8.fc28             updates        55 k
+Installing dependencies:
+ gmp-c++             x86_64       1:6.1.2-7.fc28            fedora         31 k
+ pcre-cpp            x86_64       8.42-2.fc28               updates        46 k
+ pcre-utf16          x86_64       8.42-2.fc28               updates       193 k
+ pcre-utf32          x86_64       8.42-2.fc28               updates       184 k
+
+Transaction Summary
+================================================================================
+Install  8 Packages
+
+Total download size: 1.3 M
+Installed size: 3.1 M
+Downloading Packages:
+(1/8): gmp-c++-6.1.2-7.fc28.x86_64.rpm          716 kB/s |  31 kB     00:00    
+(2/8): gmp-devel-6.1.2-7.fc28.x86_64.rpm        3.0 MB/s | 187 kB     00:00    
+(3/8): pcre-cpp-8.42-2.fc28.x86_64.rpm          2.0 MB/s |  46 kB     00:00    
+(4/8): pcre-devel-8.42-2.fc28.x86_64.rpm        6.5 MB/s | 550 kB     00:00    
+(5/8): pcre-utf16-8.42-2.fc28.x86_64.rpm        5.2 MB/s | 193 kB     00:00    
+(6/8): perl-Pod-Html-1.22.02-413.fc28.noarch.rp 4.0 MB/s |  85 kB     00:00    
+(7/8): pcre-utf32-8.42-2.fc28.x86_64.rpm        4.1 MB/s | 184 kB     00:00    
+(8/8): zlib-devel-1.2.11-8.fc28.x86_64.rpm      4.2 MB/s |  55 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           756 kB/s | 1.3 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pcre-utf32-8.42-2.fc28.x86_64                          1/8 
+  Installing       : pcre-utf16-8.42-2.fc28.x86_64                          2/8 
+  Installing       : pcre-cpp-8.42-2.fc28.x86_64                            3/8 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                          4/8 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                          4/8 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                        5/8 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                        5/8 
+  Installing       : pcre-devel-8.42-2.fc28.x86_64                          6/8 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                        7/8 
+  Installing       : perl-Pod-Html-1.22.02-413.fc28.noarch                  8/8 
+  Running scriptlet: perl-Pod-Html-1.22.02-413.fc28.noarch                  8/8 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                        1/8 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                          2/8 
+  Verifying        : pcre-devel-8.42-2.fc28.x86_64                          3/8 
+  Verifying        : pcre-cpp-8.42-2.fc28.x86_64                            4/8 
+  Verifying        : pcre-utf16-8.42-2.fc28.x86_64                          5/8 
+  Verifying        : pcre-utf32-8.42-2.fc28.x86_64                          6/8 
+  Verifying        : perl-Pod-Html-1.22.02-413.fc28.noarch                  7/8 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                        8/8 
+
+Installed:
+  gmp-devel.x86_64 1:6.1.2-7.fc28           pcre-devel.x86_64 8.42-2.fc28      
+  perl-Pod-Html.noarch 1.22.02-413.fc28     zlib-devel.x86_64 1.2.11-8.fc28    
+  gmp-c++.x86_64 1:6.1.2-7.fc28             pcre-cpp.x86_64 8.42-2.fc28        
+  pcre-utf16.x86_64 8.42-2.fc28             pcre-utf32.x86_64 8.42-2.fc28      
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gmp-devel pcre-devel perl-Pod-Html pkgconfig zlib-devel
+gmp-devel-6.1.2-7.fc28.x86_64
+pcre-devel-8.42-2.fc28.x86_64
+perl-Pod-Html-1.22.02-413.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp                1        [required by conf-gmp-powm-sec, zarith]
+  - install calendar                2.04     [required by rdf]
+  - install re                      1.7.3    [required by uri]
+  - install base-bytes              base     [required by pcre, uuidm]
+  - install conf-perl               1        [required by zarith]
+  - install conf-pkg-config         1.1      [required by conf-zlib, conf-libpcre]
+  - install num                     1.1      [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0  [required by ppxlib]
+  - install sexplib0                v0.11.0  [required by base, sexplib]
+  - install easy-format             1.3.1    [required by yojson]
+  - install ppx_derivers            1.0      [required by ppxlib]
+  - install result                  1.3      [required by ocaml-migrate-parsetree, topkg]
+  - install conf-which              1        [required by biniou]
+  - install ocamlbuild              0.12.0   [required by uuidm, jsonm, cryptokit, etc.]
+  - install conf-gmp-powm-sec       1        [required by cryptokit]
+  - install stringext               1.5.0    [required by uri]
+  - install gen                     0.5.1    [required by sedlex]
+  - install cppo                    1.6.4    [required by yojson]
+  - install zarith                  1.7      [required by cryptokit]
+  - install conf-zlib               1        [required by cryptokit]
+  - install conf-libpcre            1        [required by pcre]
+  - install parsexp                 v0.11.0  [required by sexplib]
+  - install base                    v0.11.1  [required by pcre]
+  - install ocaml-migrate-parsetree 1.0.11   [required by sedlex, ppx_sexp_conv]
+  - install biniou                  1.2.0    [required by yojson]
+  - install uchar                   0.0.2    [required by jsonm]
+  - install topkg                   0.9.1    [required by uuidm, jsonm, xmlm]
+  - install menhir                  20180703 [required by rdf]
+  - install cryptokit               1.13     [required by rdf]
+  - install sexplib                 v0.11.0  [required by uri]
+  - install stdio                   v0.11.0  [required by pcre]
+  - install ppx_tools_versioned     5.2.1    [required by sedlex]
+  - install yojson                  1.4.1    [required by rdf]
+  - install xmlm                    1.3.0    [required by rdf]
+  - install uutf                    1.0.1    [required by rdf]
+  - install uuidm                   0.9.6    [required by rdf]
+  - install ppxlib                  0.3.0    [required by ppx_sexp_conv]
+  - install configurator            v0.11.0  [required by pcre]
+  - install sedlex                  1.99.4   [required by rdf]
+  - install uunf                    11.0.0   [required by iri]
+  - install jsonm                   1.0.1    [required by rdf]
+  - install ppx_sexp_conv           v0.11.2  [required by uri]
+  - install pcre                    7.3.4    [required by rdf]
+  - install iri                     0.4.0    [required by rdf]
+  - install uri                     1.9.7    [required by rdf]
+  - install rdf                     0.11.0
+===== 46 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[calendar.2.04] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[iri.0.4.0] found in cache
+[jsonm.1.0.1] found in cache
+[menhir.20180703] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppxlib.0.3.0] found in cache
+[rdf.0.11.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uuidm.0.9.6] found in cache
+[uunf.11.0.0] found in cache
+[uutf.1.0.1] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed calendar.2.04
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed gen.0.5.1
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ppx_derivers.1.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed menhir.20180703
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed ppx_tools_versioned.5.2.1
+-> installed base.v0.11.1
+[ERROR] The compilation of sedlex failed at "/usr/bin/make all".
+-> installed sexplib.v0.11.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed uchar.0.0.2
+-> installed uuidm.0.9.6
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed uri.1.9.7
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed uunf.11.0.0
+
+#=== ERROR while compiling sedlex.1.99.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/sedlex.1.99.4
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/sedlex-10-fb00c6.env
+# output-file          ~/.opam/log/sedlex-10-fb00c6.out
+### output ###
+# (cd src/lib && /usr/bin/make all doc)
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/lib'
+# ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+# ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+# rm -rf ../../libdoc
+# mkdir ../../libdoc
+# ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/lib'
+# (cd src/syntax && /usr/bin/make all)
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml, /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# File "ppx_sedlex.ml", line 11, characters 5-24:
+# Error: Unbound module Ast_convenience_405
+# make[1]: *** [Makefile:18: sedlex.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# make: *** [Makefile:14: all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sedlex 1.99.4
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install calendar                2.04
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-libpcre            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install jsonm                   1.0.1
+| - install menhir                  20180703
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools_versioned     5.2.1
+| - install ppxlib                  0.3.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install uri                     1.9.7
+| - install uuidm                   0.9.6
+| - install uunf                    11.0.0
+| - install uutf                    1.0.1
+| - install xmlm                    1.3.0
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180829050108.export"
+31 1535518835 1535519122

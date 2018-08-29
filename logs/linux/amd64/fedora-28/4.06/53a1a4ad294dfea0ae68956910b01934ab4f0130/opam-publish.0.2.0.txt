@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 opam-publish.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for opam-publish.0.2.0: The following dependencies couldn't be met:
+          - opam-publish -> opam-lib = 1.2.0 -> dose = 3.2.2+opam -> ocamlgraph = 1.8.5 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=opam-publish.0.2.0 returned 20
+20 1535519475 1535519478
