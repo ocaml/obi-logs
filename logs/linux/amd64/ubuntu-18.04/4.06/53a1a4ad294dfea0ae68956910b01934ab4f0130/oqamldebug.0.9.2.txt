@@ -1,0 +1,50 @@
+$ opam depext -iy -j 2 oqamldebug.0.9.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+qt4-qmake
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy qt4-qmake
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package qtchooser.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../qtchooser_64-ga1b6736-5_amd64.deb ...
+Unpacking qtchooser (64-ga1b6736-5) ...
+Selecting previously unselected package qt4-qmake.
+Preparing to unpack .../qt4-qmake_4%3a4.8.7+dfsg-7ubuntu1_amd64.deb ...
+Unpacking qt4-qmake (4:4.8.7+dfsg-7ubuntu1) ...
+Setting up qtchooser (64-ga1b6736-5) ...
+Setting up qt4-qmake (4:4.8.7+dfsg-7ubuntu1) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install oqamldebug 0.9.2
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[oqamldebug.0.9.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of oqamldebug failed at "/usr/bin/qmake CONFIG-=app_bundle CONFIG+=release PREFIX_BIN=/home/opam/.opam/4.06/bin/ CONFIG-=debug oqamldebug.pro".
+
+#=== ERROR while compiling oqamldebug.0.9.2 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/oqamldebug.0.9.2
+# command              /usr/bin/qmake CONFIG-=app_bundle CONFIG+=release PREFIX_BIN=/home/opam/.opam/4.06/bin/ CONFIG-=debug oqamldebug.pro
+# exit-code            1
+# env-file             ~/.opam/log/oqamldebug-13-05296d.env
+# output-file          ~/.opam/log/oqamldebug-13-05296d.out
+### output ###
+# qmake: could not find a Qt installation of ''
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build oqamldebug 0.9.2
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    qt4-qmake
+
+# Run eval $(opam env) to update the current shell environment
+31 1535517099 1535517107
