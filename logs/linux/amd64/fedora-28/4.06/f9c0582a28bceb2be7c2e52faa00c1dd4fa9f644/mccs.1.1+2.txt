@@ -1,0 +1,173 @@
+$ opam depext -iy -j 2 mccs.1.1+2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+glpk
+m4
+perl-Pod-Html
+package glpk is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Aug 29 20:04:49 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package perl-Pod-Html is not installed
+# The following new OS packages need to be installed: glpk perl-Pod-Html
+The following command needs to be run through "sudo":
+    yum install -y glpk perl-Pod-Html
+Last metadata expiration check: 2:24:30 ago on Wed Aug 29 20:04:24 2018.
+Dependencies resolved.
+================================================================================
+ Package             Arch         Version                   Repository     Size
+================================================================================
+Installing:
+ glpk                x86_64       4.61-4.fc28               fedora        408 k
+ perl-Pod-Html       noarch       1.22.02-413.fc28          updates        85 k
+Installing dependencies:
+ atlas               x86_64       3.10.3-5.fc28             updates       6.4 M
+ libgfortran         x86_64       8.1.1-5.fc28              updates       656 k
+ libquadmath         x86_64       8.1.1-5.fc28              updates       186 k
+ suitesparse         x86_64       4.4.6-11.fc28             fedora        1.0 M
+ tbb                 x86_64       2018.5-1.fc28             updates       158 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages
+
+Total download size: 8.9 M
+Installed size: 33 M
+Downloading Packages:
+(1/7): perl-Pod-Html-1.22.02-413.fc28.noarch.rp 850 kB/s |  85 kB     00:00    
+(2/7): tbb-2018.5-1.fc28.x86_64.rpm             4.9 MB/s | 158 kB     00:00    
+(3/7): suitesparse-4.4.6-11.fc28.x86_64.rpm     5.7 MB/s | 1.0 MB     00:00    
+(4/7): glpk-4.61-4.fc28.x86_64.rpm              2.1 MB/s | 408 kB     00:00    
+(5/7): libquadmath-8.1.1-5.fc28.x86_64.rpm      3.6 MB/s | 186 kB     00:00    
+(6/7): libgfortran-8.1.1-5.fc28.x86_64.rpm      5.4 MB/s | 656 kB     00:00    
+(7/7): atlas-3.10.3-5.fc28.x86_64.rpm            17 MB/s | 6.4 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           4.9 MB/s | 8.9 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libquadmath-8.1.1-5.fc28.x86_64                        1/7 
+  Running scriptlet: libquadmath-8.1.1-5.fc28.x86_64                        1/7 
+  Installing       : libgfortran-8.1.1-5.fc28.x86_64                        2/7 
+  Running scriptlet: libgfortran-8.1.1-5.fc28.x86_64                        2/7 
+  Installing       : atlas-3.10.3-5.fc28.x86_64                             3/7 
+  Running scriptlet: atlas-3.10.3-5.fc28.x86_64                             3/7 
+  Installing       : tbb-2018.5-1.fc28.x86_64                               4/7 
+  Installing       : suitesparse-4.4.6-11.fc28.x86_64                       5/7 
+  Running scriptlet: suitesparse-4.4.6-11.fc28.x86_64                       5/7 
+  Installing       : glpk-4.61-4.fc28.x86_64                                6/7 
+  Running scriptlet: glpk-4.61-4.fc28.x86_64                                6/7 
+  Installing       : perl-Pod-Html-1.22.02-413.fc28.noarch                  7/7 
+  Running scriptlet: perl-Pod-Html-1.22.02-413.fc28.noarch                  7/7 
+  Verifying        : glpk-4.61-4.fc28.x86_64                                1/7 
+  Verifying        : suitesparse-4.4.6-11.fc28.x86_64                       2/7 
+  Verifying        : perl-Pod-Html-1.22.02-413.fc28.noarch                  3/7 
+  Verifying        : tbb-2018.5-1.fc28.x86_64                               4/7 
+  Verifying        : atlas-3.10.3-5.fc28.x86_64                             5/7 
+  Verifying        : libgfortran-8.1.1-5.fc28.x86_64                        6/7 
+  Verifying        : libquadmath-8.1.1-5.fc28.x86_64                        7/7 
+
+Installed:
+  glpk.x86_64 4.61-4.fc28             perl-Pod-Html.noarch 1.22.02-413.fc28    
+  atlas.x86_64 3.10.3-5.fc28          libgfortran.x86_64 8.1.1-5.fc28          
+  libquadmath.x86_64 8.1.1-5.fc28     suitesparse.x86_64 4.4.6-11.fc28         
+  tbb.x86_64 2018.5-1.fc28           
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides glpk perl-Pod-Html
+glpk-4.61-4.fc28.x86_64
+perl-Pod-Html-1.22.02-413.fc28.noarch
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes base   [required by extlib]
+  - install conf-perl  1      [required by cudf]
+  - install ocamlbuild 0.12.0 [required by cudf]
+  - install conf-glpk  1      [required by mccs]
+  - install cppo       1.6.4  [required by extlib]
+  - install extlib     1.7.5  [required by cudf]
+  - install cudf       0.9    [required by mccs]
+  - install mccs       1.1+2
+===== 8 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[cudf.0.9] found in cache
+[extlib.1.7.5] found in cache
+[mccs.1.1+2] found in cache
+[ocamlbuild.0.12.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-glpk.1
+-> installed conf-perl.1
+-> installed cppo.1.6.4
+-> installed extlib.1.7.5
+-> installed ocamlbuild.0.12.0
+-> installed cudf.0.9
+[ERROR] The compilation of mccs failed at "/home/opam/.opam/4.06/bin/jbuilder build -p mccs".
+
+#=== ERROR while compiling mccs.1.1+2 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/mccs.1.1+2
+# command              ~/.opam/4.06/bin/jbuilder build -p mccs
+# exit-code            1
+# env-file             ~/.opam/log/mccs-10-4aef26.env
+# output-file          ~/.opam/log/mccs-10-4aef26.out
+### output ###
+#          gcc src/glpk_solver.o (exit 1)
+# (cd _build/default/src && /usr/bin/gcc -I /home/opam/.opam/4.06/lib/ocaml -O2 -fno-strict-aliasing -fwrapv -fPIC -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/cudf -I /home/opam/.opam/4.06/lib/extlib -g -I . -std=c++11 -o glpk_solver.o -c glpk_solver.cpp)
+# In file included from glpk_solver.cpp:11:
+# ./glpk_solver.h:15:10: fatal error: glpk.h: No such file or directory
+#  #include <glpk.h>
+#           ^~~~~~~~
+# compilation terminated.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build mccs 1.1+2
++- 
++- The following changes have been performed
+| - install base-bytes base
+| - install conf-glpk  1
+| - install conf-perl  1
+| - install cppo       1.6.4
+| - install cudf       0.9
+| - install extlib     1.7.5
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180829222903.export"
+31 1535581726 1535581767

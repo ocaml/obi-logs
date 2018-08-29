@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 async_unix.109.18.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for async_unix.109.18.00: The following dependencies couldn't be met:
+          - async_unix -> herelib = 109.15.00 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=async_unix.109.18.00 returned 20
+20 1535584516 1535584519

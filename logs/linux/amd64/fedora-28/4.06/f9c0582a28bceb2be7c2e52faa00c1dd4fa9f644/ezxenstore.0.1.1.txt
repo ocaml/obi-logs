@@ -1,0 +1,229 @@
+$ opam depext -iy -j 2 ezxenstore.0.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Wed Aug 29 20:04:49 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install result                  1.3        [required by cmdliner, logs]
+  - install ppx_tools               5.1+4.06.0 [required by xenstore]
+  - install base-bytes              base       [required by cppo]
+  - install ocamlbuild              0.12.0     [required by logs, cmdliner, oasis]
+  - install num                     1.1        [required by sexplib]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_cstruct]
+  - install cppo                    1.6.4      [required by lwt]
+  - install topkg                   0.9.1      [required by cmdliner, logs]
+  - install ocamlmod                0.0.9      [required by oasis]
+  - install ocamlify                0.0.1      [required by oasis]
+  - install sexplib                 v0.11.0    [required by cstruct]
+  - install ppx_tools_versioned     5.2.1      [required by ppx_cstruct]
+  - install lwt                     4.1.0      [required by xenstore, logs, xenstore_transport] For the PPX, please install package lwt_ppx
+                                                                                                For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cmdliner                1.0.2      [required by ezxenstore]
+  - install oasis                   0.4.11     [required by ezxenstore]
+  - install cstruct                 3.2.1      [required by xenstore]
+  - install logs                    0.6.2      [required by ezxenstore]
+  - install ppx_cstruct             3.2.1      [required by xenstore]
+  - install xenstore                2.0.0      [required by ezxenstore]
+  - install xenstore_transport      1.0.0      [required by ezxenstore]
+  - install ezxenstore              0.1.1
+===== 23 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[cstruct.3.2.1] found in cache
+[ezxenstore.0.1.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[result.1.3] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[topkg.0.9.1] found in cache
+[xenstore.2.0.0] found in cache
+[xenstore_transport.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed num.1.1
+-> installed ppx_tools.5.1+4.06.0
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed ppx_tools_versioned.5.2.1
+-> installed sexplib0.v0.11.0
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed cstruct.3.2.1
+-> installed ppx_cstruct.3.2.1
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed logs.0.6.2
+-> installed xenstore.2.0.0
+-> installed xenstore_transport.1.0.0
+-> installed oasis.0.4.11
+[ERROR] The compilation of ezxenstore failed at "/usr/bin/make".
+
+#=== ERROR while compiling ezxenstore.0.1.1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ezxenstore.0.1.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ezxenstore-10-f1bd42.env
+# output-file          ~/.opam/log/ezxenstore-10-f1bd42.out
+### output ###
+# oasis setup
+# ocaml setup.ml -configure 
+# 
+# Configuration:
+# ocamlfind: ........................................... /home/opam/.opam/4.06/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.06/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.06/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.06/bin/ocamlbuild
+# Package name: ........................................ ezxenstore
+# Package version: ..................................... 0.1.1
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.06.1
+# standard_library_default: ............................ /home/opam/.opam/4.06/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.06/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.06/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# native_c_compiler: ................................... gcc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ......................................
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: .........................
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_xenstore_unix: ................................... /home/opam/.opam/4.06/lib/xenstore/unix
+# pkg_xenstore_transport_unix: ......................... /home/opam/.opam/4.06/lib/xenstore_transport
+# pkg_threads: ......................................... /home/opam/.opam/4.06/lib/ocaml
+# pkg_logs: ............................................ /home/opam/.opam/4.06/lib/logs
+# pkg_cmdliner: ........................................ /home/opam/.opam/4.06/lib/cmdliner
+# 
+# ocaml setup.ml -build 
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package cmdliner -package logs -package threads -package xenstore.unix -package xenstore_transport.unix -modules lib/xenstore.ml > lib/xenstore.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package cmdliner -package logs -package threads -package xenstore.unix -package xenstore_transport.unix -modules lib/watch.ml > lib/watch.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cmdliner -package logs -package threads -package xenstore.unix -package xenstore_transport.unix -thread -I lib -o lib/xenstore.cmo lib/xenstore.ml
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cmdliner -package logs -package threads -package xenstore.unix -package xenstore_transport.unix -thread -I lib -o lib/watch.cmo lib/watch.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package cmdliner -package logs -package threads -package xenstore.unix -package xenstore_transport.unix -thread -I lib -o lib/watch.cmo lib/watch.ml
+# File "lib/watch.ml", line 56, characters 27-30:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' lib/ezxenstore.cma lib/ezxenstore.cmxa lib/ezxenstore.a lib/ezxenstore.cmxs lib_test/main.byte -tag debug' terminated with error code 10")
+# make: *** [Makefile:7: build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ezxenstore 0.1.1
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install cmdliner                1.0.2
+| - install cppo                    1.6.4
+| - install cstruct                 3.2.1
+| - install logs                    0.6.2
+| - install lwt                     4.1.0
+| - install num                     1.1
+| - install oasis                   0.4.11
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocamlify                0.0.1
+| - install ocamlmod                0.0.9
+| - install parsexp                 v0.11.0
+| - install ppx_cstruct             3.2.1
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2.1
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install topkg                   0.9.1
+| - install xenstore                2.0.0
+| - install xenstore_transport      1.0.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180829220729.export"
+31 1535580447 1535580516
