@@ -1,0 +1,103 @@
+$ opam depext -iy -j 2 conf-mpi.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+openmpi
+The following command needs to be run through "sudo":
+    zypper --non-interactive install openmpi
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 11 NEW packages are going to be installed:
+  libfabric1 libibverbs libibverbs1 libmlx5-1 libpsm2-2 libpsm2-compat librdmacm1 mpi-selector openmpi openmpi-libs rdma-core
+
+11 new packages to install.
+Overall download size: 3.4 MiB. Already cached: 0 B. After the operation, additional 11.7 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package mpi-selector-1.0.3-16.3.noarch (1/11),  24.4 KiB ( 48.8 KiB unpacked)
+Retrieving: mpi-selector-1.0.3-16.3.noarch.rpm [done]
+Retrieving package libpsm2-2-10.2.103-2.6.x86_64 (2/11), 160.2 KiB (400.4 KiB unpacked)
+Retrieving: libpsm2-2-10.2.103-2.6.x86_64.rpm [done]
+Retrieving package libpsm2-compat-10.2.103-2.6.x86_64 (3/11),  10.1 KiB ( 19.1 KiB unpacked)
+Retrieving: libpsm2-compat-10.2.103-2.6.x86_64.rpm [done]
+Retrieving package rdma-core-14-8.1.x86_64 (4/11),  33.9 KiB ( 60.2 KiB unpacked)
+Retrieving: rdma-core-14-8.1.x86_64.rpm [done]
+Retrieving package libibverbs1-14-8.1.x86_64 (5/11),  37.7 KiB ( 82.1 KiB unpacked)
+Retrieving: libibverbs1-14-8.1.x86_64.rpm [done]
+Retrieving package libmlx5-1-14-8.1.x86_64 (6/11),  41.4 KiB ( 98.4 KiB unpacked)
+Retrieving: libmlx5-1-14-8.1.x86_64.rpm [done]
+Retrieving package libibverbs-14-8.1.x86_64 (7/11), 124.5 KiB (374.2 KiB unpacked)
+Retrieving: libibverbs-14-8.1.x86_64.rpm [done]
+Retrieving package librdmacm1-14-8.1.x86_64 (8/11),  44.2 KiB ( 87.6 KiB unpacked)
+Retrieving: librdmacm1-14-8.1.x86_64.rpm [done]
+Retrieving package libfabric1-1.4.1-1.5.x86_64 (9/11), 307.7 KiB (871.1 KiB unpacked)
+Retrieving: libfabric1-1.4.1-1.5.x86_64.rpm [done]
+Retrieving package openmpi-libs-1.10.6-4.1.x86_64 (10/11),   2.3 MiB (  8.9 MiB unpacked)
+Retrieving: openmpi-libs-1.10.6-4.1.x86_64.rpm [done]
+Retrieving package openmpi-1.10.6-4.1.x86_64 (11/11), 296.7 KiB (791.2 KiB unpacked)
+Retrieving: openmpi-1.10.6-4.1.x86_64.rpm [.done]
+Checking for file conflicts: [.......done]
+( 1/11) Installing: mpi-selector-1.0.3-16.3.noarch [........done]
+( 2/11) Installing: libpsm2-2-10.2.103-2.6.x86_64 [.........done]
+( 3/11) Installing: libpsm2-compat-10.2.103-2.6.x86_64 [......done]
+( 4/11) Installing: rdma-core-14-8.1.x86_64 [.........done]
+Additional rpm output:
+Failed to connect to bus: No such file or directory
+
+
+( 5/11) Installing: libibverbs1-14-8.1.x86_64 [.....done]
+( 6/11) Installing: libmlx5-1-14-8.1.x86_64 [.....done]
+( 7/11) Installing: libibverbs-14-8.1.x86_64 [...........done]
+( 8/11) Installing: librdmacm1-14-8.1.x86_64 [.....done]
+( 9/11) Installing: libfabric1-1.4.1-1.5.x86_64 [..........done]
+(10/11) Installing: openmpi-libs-1.10.6-4.1.x86_64 [............done]
+(11/11) Installing: openmpi-1.10.6-4.1.x86_64 [...........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-pkg-config 1.1 [required by conf-mpi]
+  - install conf-mpi        1
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of conf-mpi failed at "/usr/bin/sh configure linux".
+
+#=== ERROR while compiling conf-mpi.1 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-mpi.1
+# command              /usr/bin/sh configure linux
+# exit-code            2
+# env-file             ~/.opam/log/conf-mpi-13-5f1023.env
+# output-file          ~/.opam/log/conf-mpi-13-5f1023.out
+### output ###
+# Unable to locate a valid MPI installation (openmpi or mpich).
+# 
+# If you have one and it is not detected, you may manually set
+# the following variables and restart this script:
+# * MPI_INC_DIR: include directory containing 'mpi.h', e.g., /usr/include/openmpi
+# * MPI_LIB_DIR: library directory containing 'libmpi.{so,dll}', e.g., /usr/lib/openmpi/lib
+# * MPI_BIN_PATH: path to the 'mpicc' and 'mpirun' binaries, e.g., /usr/lib/openmpi/bin
+# 
+# To install MPI, try: opam depext conf-mpi
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-mpi 1
++- 
++- The following changes have been performed
+| - install conf-pkg-config 1.1
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    openmpi
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180829052101.export"
+31 1535520002 1535520064

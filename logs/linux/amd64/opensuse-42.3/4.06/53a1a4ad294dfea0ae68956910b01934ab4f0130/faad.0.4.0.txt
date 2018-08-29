@@ -1,0 +1,14 @@
+$ opam depext -iy -j 2 faad.0.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+faad2-devel
+m4
+# The following new OS packages need to be installed: faad2-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install faad2-devel
+Loading repository data...
+Reading installed packages...
+'faad2-devel' not found in package names. Trying capabilities.
+No provider of 'faad2-devel' found.
+OS package installation failed
+1 1535523280 1535523320

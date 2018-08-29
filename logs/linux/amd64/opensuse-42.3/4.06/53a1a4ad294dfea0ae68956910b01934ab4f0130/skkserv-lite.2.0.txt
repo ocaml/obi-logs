@@ -1,0 +1,187 @@
+$ opam depext -iy -j 2 skkserv-lite.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+sqlite3-devel
+# The following new OS packages need to be installed: sqlite3-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install sqlite3-devel
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  libsqlite3-0 sqlite3-devel
+
+2 new packages to install.
+Overall download size: 548.1 KiB. Already cached: 0 B. After the operation, additional 1.2 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libsqlite3-0-3.8.10.2-10.2.x86_64 (1/2), 408.9 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-10.2.x86_64.rpm [done]
+Retrieving package sqlite3-devel-3.8.10.2-10.2.x86_64 (2/2), 139.3 KiB (397.2 KiB unpacked)
+Retrieving: sqlite3-devel-3.8.10.2-10.2.x86_64.rpm [done]
+Checking for file conflicts: [...done]
+(1/2) Installing: libsqlite3-0-3.8.10.2-10.2.x86_64 [..........done]
+(2/2) Installing: sqlite3-devel-3.8.10.2-10.2.x86_64 [.........done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by lwt]
+  - install camomile                1.0.1   [required by skkserv-lite]
+  - install sexplib0                v0.11.0 [required by base]
+  - install base-bytes              base    [required by cppo]
+  - install ocamlbuild              0.12.0  [required by skkserv-lite]
+  - install conf-pkg-config         1.1     [required by conf-sqlite3]
+  - install ocaml-migrate-parsetree 1.0.11  [required by lwt]
+  - install base                    v0.11.1 [required by sqlite3]
+  - install cppo                    1.6.4   [required by lwt]
+  - install conf-sqlite3            1       [required by sqlite3]
+  - install ppx_tools_versioned     5.2.1   [required by lwt]
+  - install stdio                   v0.11.0 [required by sqlite3]
+  - install lwt                     3.3.0   [required by skkserv-lite] For the PPX, please install package lwt_ppx
+                                                                       For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install configurator            v0.11.0 [required by sqlite3]
+  - install sqlite3                 4.4.0   [required by skkserv-lite]
+  - install skkserv-lite            2.0
+===== 16 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[camomile.1.0.1] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[lwt.3.3.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[skkserv-lite.2.0] found in cache
+[sqlite3.4.4.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed camomile.1.0.1
+-> installed conf-pkg-config.1.1
+-> installed cppo.1.6.4
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed conf-sqlite3.1
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.11.1
+-> installed ppx_tools_versioned.5.2.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed sqlite3.4.4.0
+-> installed lwt.3.3.0
+[ERROR] The compilation of skkserv-lite failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling skkserv-lite.2.0 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/skkserv-lite.2.0
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/skkserv-lite-12-aacd2c.env
+# output-file          ~/.opam/log/skkserv-lite-12-aacd2c.out
+### output ###
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -modules src/main.ml > src/main.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -modules src/dict.mli > src/dict.mli.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -modules src/encode.ml > src/encode.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -modules src/ext.ml > src/ext.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -modules src/skkserv.ml > src/skkserv.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/dict.cmi src/dict.mli
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/dict.cmi src/dict.mli
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/encode.cmo src/encode.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/encode.cmo src/encode.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/ext.cmo src/ext.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/ext.cmo src/ext.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamldep -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -modules src/version.ml > src/version.ml.depends
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/version.cmo src/version.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/version.cmo src/version.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/skkserv.cmo src/skkserv.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/skkserv.cmo src/skkserv.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/main.cmo src/main.ml
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -c -g -annot -bin-annot -package unix -package str -package sqlite3 -package lwt.unix -package lwt -package camomile -I src -o src/main.cmo src/main.ml
+# ocamlfind: [WARNING] Package `threads': Linking problems may arise because of the missing -thread or -vmthread switch
+# File "src/main.ml", line 108, characters 21-24:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# + ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/main.native -use-ocamlfind -tag debug' terminated with error code 10")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build skkserv-lite 2.0
++- 
++- The following changes have been performed
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install camomile                1.0.1
+| - install conf-pkg-config         1.1
+| - install conf-sqlite3            1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install lwt                     3.3.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2.1
+| - install result                  1.3
+| - install sexplib0                v0.11.0
+| - install sqlite3                 4.4.0
+| - install stdio                   v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180829054251.export"
+31 1535520814 1535521433
