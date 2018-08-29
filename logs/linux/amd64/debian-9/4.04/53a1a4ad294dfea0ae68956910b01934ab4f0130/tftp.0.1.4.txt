@@ -1,0 +1,54 @@
+$ opam depext -iy -j 2 tftp.0.1.4
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for tftp.0.1.4: The following dependencies couldn't be met:
+          - tftp -> cstruct (>= 1.0.1 & < 2.0.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> cstruct (>= 1.0.1 & < 2.0.0) -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> mirage (>= 2.5.0 & < 3.0.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> mirage (>= 2.5.0 & < 3.0.0) -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> mirage (>= 2.5.0 & < 3.0.0) -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> mirage (>= 2.5.0 & < 3.0.0) -> mirage-types-lwt < 3.0.0 -> io-page >= 1.4.0
+          - tftp -> mirage (>= 2.5.0 & < 3.0.0) -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> mirage (>= 2.5.0 & < 3.0.0) -> functoria < 1.1.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-types-lwt < 3.0.0 -> io-page >= 1.4.0
+          - tftp -> tcpip -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-console < 2.2.0 -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-console < 2.2.0 -> mirage-types-lwt < 3.0.0 -> io-page >= 1.4.0
+          - tftp -> tcpip -> mirage-console < 2.2.0 -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-console < 2.2.0 -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> mirage-console < 2.2.0 -> ocaml < 4.04
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> io-page < 1.3.0
+          - tftp -> tcpip -> cstruct >= 1.9.0 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> channel -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> channel -> mirage-types-lwt < 3.0.0 -> io-page >= 1.4.0
+          - tftp -> tcpip -> channel -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> ocaml < 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - tftp -> tcpip -> channel -> mirage-types-lwt < 3.0.0 -> cstruct >= 1.4.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cstruct satisfies the constraints
+          - No available version of io-page satisfies the constraints
+          - No available version of mirage satisfies the constraints
+          - mirage (>= 2.6.0 & < 2.7.0 | >= 2.9.0 & != 3.0.4) is in conflict with io-page < 1.4.0
+          - mirage = 3.0.4 is in conflict with io-page < 2.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=tftp.0.1.4 returned 20
+20 1535501301 1535501307
