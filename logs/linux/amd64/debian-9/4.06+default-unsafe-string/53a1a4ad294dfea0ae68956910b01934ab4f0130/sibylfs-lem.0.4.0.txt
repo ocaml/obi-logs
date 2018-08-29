@@ -1,0 +1,85 @@
+$ opam depext -iy -j 2 sibylfs-lem.0.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild  0.12.0 [required by sibylfs-lem]
+  - install sibylfs-lem 0.4.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[sibylfs-lem.0.4.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of sibylfs-lem failed at "/usr/bin/make ocaml-libs".
+
+#=== ERROR while compiling sibylfs-lem.0.4.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+default-unsafe-string | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0
+# command              /usr/bin/make ocaml-libs
+# exit-code            2
+# env-file             ~/.opam/log/sibylfs-lem-11-982793.env
+# output-file          ~/.opam/log/sibylfs-lem-11-982793.out
+### output ###
+# make -C library ocaml-libs
+# make[1]: Entering directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0/library'
+# make -C .. build-lem
+# make[2]: Entering directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0'
+# printf 'let v="%s"\n' `git describe --dirty --always` > src/version.ml
+# fatal: Not a git repository (or any of the parent directories): .git
+# make -C src all
+# make[3]: Entering directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0/src'
+# ocamlbuild -cflag -g main.native
+# make[3]: Leaving directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0/src'
+# ln -sf src/main.native lem
+# make[2]: Leaving directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0'
+# ../lem -ocaml -outdir ../ocaml-lib -wl ign -wl_auto_import err -wl_rename err pervasives_extra.lem pervasives.lem basic_classes.lem either.lem function.lem list.lem map.lem maybe.lem relation.lem set_helpers.lem sorting.lem tuple.lem function_extra.lem bool.lem list_extra.lem num.lem map_extra.lem set.lem set_extra.lem maybe_extra.lem string.lem string_extra.lem word.lem assert_extra.lem -auxiliary_level none -only_changed_output
+# make[1]: Leaving directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0/library'
+# make -C ocaml-lib all
+# make[1]: Entering directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0/ocaml-lib'
+# ocamlbuild extract.cmxa
+# /home/opam/.opam/4.06+default-unsafe-string/bin/ocamldep.opt -modules nat_big_num.ml > nat_big_num.ml.depends
+# /home/opam/.opam/4.06+default-unsafe-string/bin/ocamldep.opt -modules nat_big_num.mli > nat_big_num.mli.depends
+# /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -c -o nat_big_num.cmi nat_big_num.mli
+# /home/opam/.opam/4.06+default-unsafe-string/bin/ocamldep.opt -modules nat_num.ml > nat_num.ml.depends
+# /home/opam/.opam/4.06+default-unsafe-string/bin/ocamldep.opt -modules nat_num.mli > nat_num.mli.depends
+# /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -c -o nat_num.cmi nat_num.mli
+# + /home/opam/.opam/4.06+default-unsafe-string/bin/ocamlc.opt -c -o nat_num.cmi nat_num.mli
+# File "nat_num.mli", line 2, characters 15-30:
+# Error: Unbound module Big_int
+# Command exited with code 2.
+# Hint: Recursive traversal of subdirectories was not enabled for this build,
+#   as the working directory does not look like an ocamlbuild project (no
+#   '_tags' or 'myocamlbuild.ml' file). If you have modules in subdirectories,
+#   you should add the option "-r" or create an empty '_tags' file.
+#   
+#   To enable recursive traversal for some subdirectories only, you can use the
+#   following '_tags' file:
+#   
+#       true: -traverse
+#       <dir1> or <dir2>: traverse
+#       
+# Makefile:2: recipe for target 'all' failed
+# make[1]: *** [all] Error 10
+# make[1]: Leaving directory '/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/build/sibylfs-lem.0.4.0/ocaml-lib'
+# Makefile:31: recipe for target 'ocaml-libs' failed
+# make: *** [ocaml-libs] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sibylfs-lem 0.4.0
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+default-unsafe-string/.opam-switch/backup/state-20180829013700.export"
+31 1535506615 1535506688
