@@ -1,0 +1,38 @@
+$ opam depext -iy -j 2 cloudi.1.7.1-rc1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install cloudi 1.7.1-rc1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cloudi.1.7.1-rc1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of cloudi failed at "/usr/bin/make".
+
+#=== ERROR while compiling cloudi.1.7.1-rc1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/cloudi.1.7.1-rc1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/cloudi-11-05296d.env
+# output-file          ~/.opam/log/cloudi-11-05296d.out
+### output ###
+# ocamlc -safe-string -w @A -o erlang.cmi -c erlang.mli
+# File "erlang.mli", line 84, characters 27-42:
+# Error: Unbound module Big_int
+# makefile:26: recipe for target 'erlang.cmi' failed
+# make: *** [erlang.cmi] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build cloudi 1.7.1-rc1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1535595397 1535595402
