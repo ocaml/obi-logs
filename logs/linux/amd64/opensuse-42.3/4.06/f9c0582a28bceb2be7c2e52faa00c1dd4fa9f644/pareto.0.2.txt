@@ -1,0 +1,95 @@
+$ opam depext -iy -j 2 pareto.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+gsl-devel
+m4
+# The following new OS packages need to be installed: gsl-devel
+The following command needs to be run through "sudo":
+    zypper --non-interactive install gsl-devel
+Loading repository data...
+Reading installed packages...
+Resolving package dependencies...
+
+The following 2 NEW packages are going to be installed:
+  gsl gsl-devel
+
+2 new packages to install.
+Overall download size: 1.2 MiB. Already cached: 0 B. After the operation, additional 3.8 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package gsl-1.16-9.4.x86_64 (1/2), 811.6 KiB (  2.6 MiB unpacked)
+Retrieving: gsl-1.16-9.4.x86_64.rpm [done]
+Retrieving package gsl-devel-1.16-9.4.x86_64 (2/2), 426.4 KiB (  1.2 MiB unpacked)
+Retrieving: gsl-devel-1.16-9.4.x86_64.rpm [done]
+Checking for file conflicts: [.......done]
+(1/2) Installing: gsl-1.16-9.4.x86_64 [............done]
+(2/2) Installing: gsl-devel-1.16-9.4.x86_64 [............done]
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install sexplib0        v0.11.0 [required by base]
+  - install ocamlbuild      0.12.0  [required by pareto]
+  - install conf-pkg-config 1.1     [required by gsl]
+  - install conf-gsl        1       [required by gsl]
+  - install base            v0.11.1 [required by gsl]
+  - install stdio           v0.11.0 [required by gsl]
+  - install configurator    v0.11.0 [required by gsl]
+  - install gsl             1.22.0  [required by pareto]
+  - install pareto          0.2
+===== 9 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[gsl.1.22.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[pareto.0.2] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-gsl.1
+-> installed conf-pkg-config.1.1
+-> installed sexplib0.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed gsl.1.22.0
+[ERROR] The compilation of pareto failed at "/home/opam/.opam/4.06/.opam-switch/build/pareto.0.2/./configure --prefix /home/opam/.opam/4.06".
+
+#=== ERROR while compiling pareto.0.2 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/pareto.0.2
+# command              ~/.opam/4.06/.opam-switch/build/pareto.0.2/./configure --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/pareto-12-661dd4.env
+# output-file          ~/.opam/log/pareto-12-661dd4.out
+### output ###
+# File "./setup.ml", line 213, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 213, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build pareto 0.2
++- 
++- The following changes have been performed
+| - install base            v0.11.1
+| - install conf-gsl        1
+| - install conf-pkg-config 1.1
+| - install configurator    v0.11.0
+| - install gsl             1.22.0
+| - install ocamlbuild      0.12.0
+| - install sexplib0        v0.11.0
+| - install stdio           v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180829234215.export"
+31 1535586101 1535586176

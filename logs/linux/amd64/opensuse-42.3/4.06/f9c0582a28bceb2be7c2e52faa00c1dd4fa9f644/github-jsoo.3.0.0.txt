@@ -1,0 +1,46 @@
+$ opam depext -iy -j 2 github-jsoo.3.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for github-jsoo.3.0.0: The following dependencies couldn't be met:
+          - github-jsoo -> cohttp < 0.99 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> lwt < 2.5.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> cohttp < 0.99 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> cstruct < 0.6.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> lwt < 2.5.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> uri < 1.5.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> github >= 3.0.0 -> cohttp != 0.99 -> uri < 1.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - github-jsoo -> js_of_ocaml -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cohttp satisfies the constraints
+          - cohttp (>= 0.20.1 & < 0.99.0) is in conflict with js_of_ocaml >= 3.0
+
+
+Command failed: opam list --readonly --external  --resolve=github-jsoo.3.0.0 returned 20
+20 1535592124 1535592128
