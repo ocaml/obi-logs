@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 mikmatch.1.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for mikmatch.1.0.6: The following dependencies couldn't be met:
+          - mikmatch -> ocaml < 4.01
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=mikmatch.1.0.6 returned 20
+20 1535608982 1535608986

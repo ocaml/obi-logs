@@ -1,0 +1,228 @@
+$ opam depext -iy -j 2 stog.0.17.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                      1.7.3      [required by uri]
+  - install base-bytes              base       [required by omd]
+  - install ppx_tools               5.0+4.05.0 [required by ocf]
+  - install ocaml-compiler-libs     v0.11.0    [required by ppxlib]
+  - install sexplib0                v0.11.0    [required by sexplib]
+  - install easy-format             1.3.1      [required by yojson]
+  - install ppx_derivers            1.0        [required by ppxlib]
+  - install result                  1.3        [required by lwt, ptime]
+  - install base-num                base       [required by num]
+  - install conf-which              1          [required by biniou]
+  - install ocamlbuild              0.12.0     [required by omd, ptime]
+  - install stringext               1.5.0      [required by uri]
+  - install gen                     0.5.1      [required by sedlex]
+  - install cppo                    1.6.4      [required by lwt]
+  - install parsexp                 v0.11.0    [required by sexplib]
+  - install base                    v0.11.1    [required by ppx_sexp_conv]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_blob]
+  - install num                     0          [required by sexplib]
+  - install biniou                  1.2.0      [required by yojson]
+  - install uchar                   0.0.2      [required by js_of_ocaml]
+  - install topkg                   0.9.1      [required by ptime]
+  - install omd                     1.3.1      [required by stog]
+  - install camlp4                  4.05+1     [required by ulex]
+  - install lwt                     4.1.0      [required by stog]                         For the PPX, please install package lwt_ppx
+                                                                                          For the Camlp4 syntax, please install package lwt_camlp4
+                                                                                          For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install stdio                   v0.11.0    [required by ppxlib]
+  - install ppx_tools_versioned     5.2.1      [required by js_of_ocaml, js_of_ocaml-ppx]
+  - install ppx_blob                0.4.0      [required by stog]
+  - install sexplib                 v0.11.0    [required by uri]
+  - install yojson                  1.4.1      [required by ocf]
+  - install cmdliner                1.0.2      [required by uunf, js_of_ocaml-compiler]
+  - install ulex                    1.2        [required by higlo]
+  - install ppxlib                  0.3.0      [required by ppx_sexp_conv]
+  - install sedlex                  1.99.4     [required by xtmpl]
+  - install ocf                     0.5.0      [required by stog]
+  - install uutf                    1.0.1      [required by stog]
+  - install js_of_ocaml-compiler    3.2.1      [required by js_of_ocaml]
+  - install ppx_sexp_conv           v0.11.2    [required by uri]
+  - install uunf                    11.0.0     [required by iri]
+  - install js_of_ocaml             3.2.0      [required by stog]
+  - install uri                     1.9.7      [required by stog]
+  - install iri                     0.4.0      [required by xtmpl]
+  - install ptime                   0.8.4      [required by stog]
+  - install js_of_ocaml-ppx         3.2.0      [required by xtmpl]
+  - install xtmpl                   0.17.0     [required by stog]
+  - install higlo                   0.6        [required by stog]
+  - install stog                    0.17.0
+===== 46 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[camlp4.4.05+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[higlo.0.6] found in cache
+[iri.0.4.0] found in cache
+[js_of_ocaml.3.2.0] found in cache
+[js_of_ocaml-compiler.3.2.1] found in cache
+[js_of_ocaml-ppx.3.2.0] found in cache
+[lwt.4.1.0] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocf.0.5.0] found in cache
+[omd.1.3.1] found in cache
+[parsexp.v0.11.0] found in cache
+[ppx_blob.0.4.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools.5.0+4.05.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppxlib.0.3.0] found in cache
+[ptime.0.8.4] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[stog.0.17.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[ulex.1.2] found in cache
+[uri.1.9.7] found in cache
+[uunf.11.0.0] found in cache
+[uutf.1.0.1] found in cache
+[xtmpl.0.17.0] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed gen.0.5.1
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed biniou.1.2.0
+-> installed omd.1.3.1
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.0+4.05.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_blob.0.4.0
+-> installed ppx_tools_versioned.5.2.1
+[ERROR] The compilation of sedlex failed at "/usr/bin/make all".
+-> installed sexplib0.v0.11.0
+-> installed base.v0.11.1
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed stdio.v0.11.0
+-> installed camlp4.4.05+1
+-> installed ppxlib.0.3.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed ppx_sexp_conv.v0.11.2
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed ulex.1.2
+-> installed uutf.1.0.1
+-> installed uri.1.9.7
+-> installed yojson.1.4.1
+-> installed js_of_ocaml-compiler.3.2.1
+-> installed js_of_ocaml.3.2.0
+-> installed js_of_ocaml-ppx.3.2.0
+-> installed ocf.0.5.0
+-> installed ptime.0.8.4
+-> installed uunf.11.0.0
+
+#=== ERROR while compiling sedlex.1.99.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.05.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.05/.opam-switch/build/sedlex.1.99.4
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/sedlex-11-1acd5f.env
+# output-file          ~/.opam/log/sedlex-11-1acd5f.out
+### output ###
+# (cd src/lib && /usr/bin/make all doc)
+# make[1]: Entering directory '/home/opam/.opam/4.05/.opam-switch/build/sedlex.1.99.4/src/lib'
+# ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+# ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+# rm -rf ../../libdoc
+# mkdir ../../libdoc
+# ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+# make[1]: Leaving directory '/home/opam/.opam/4.05/.opam-switch/build/sedlex.1.99.4/src/lib'
+# (cd src/syntax && /usr/bin/make all)
+# make[1]: Entering directory '/home/opam/.opam/4.05/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.05/lib/ocaml, /home/opam/.opam/4.05/lib/ocaml/compiler-libs
+# File "ppx_sedlex.ml", line 11, characters 5-24:
+# Error: Unbound module Ast_convenience_405
+# Makefile:18: recipe for target 'sedlex.cma' failed
+# make[1]: *** [sedlex.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.05/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sedlex 1.99.4
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install base-num                base
+| - install biniou                  1.2.0
+| - install camlp4                  4.05+1
+| - install cmdliner                1.0.2
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install js_of_ocaml             3.2.0
+| - install js_of_ocaml-compiler    3.2.1
+| - install js_of_ocaml-ppx         3.2.0
+| - install lwt                     4.1.0
+| - install num                     0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ocf                     0.5.0
+| - install omd                     1.3.1
+| - install parsexp                 v0.11.0
+| - install ppx_blob                0.4.0
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools               5.0+4.05.0
+| - install ppx_tools_versioned     5.2.1
+| - install ppxlib                  0.3.0
+| - install ptime                   0.8.4
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install ulex                    1.2
+| - install uri                     1.9.7
+| - install uunf                    11.0.0
+| - install uutf                    1.0.1
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.05/.opam-switch/backup/state-20180830062903.export"
+31 1535610540 1535610743
