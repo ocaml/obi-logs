@@ -1,0 +1,20 @@
+$ opam depext -iy -j 2 async_unix.v0.9.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for async_unix.v0.9.1: The following dependencies couldn't be met:
+          - async_unix -> core >= v0.9.2 -> ppx_jane >= v0.10
+          - async_unix -> core >= v0.9.2 -> core_kernel >= v0.9.1 -> ppx_jane >= v0.10
+          - async_unix -> core >= v0.9.2 -> core_kernel >= v0.9.1 -> sexplib = v0.9.3 -> ocaml (< 4.03.0 | >= 4.05.0)
+              base of this switch (use `--unlock-base' to force)
+          - async_unix -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - async_unix -> ppx_jane (>= v0.9 & < v0.10) -> ppx_assert < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - async_unix -> ppx_jane (>= v0.9 & < v0.10) -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of ppx_jane satisfies the constraints
+          - No available version of sexplib satisfies the constraints
+
+
+Command failed: opam list --readonly --external  --resolve=async_unix.v0.9.1 returned 20
+20 1535603142 1535603145
