@@ -1,0 +1,703 @@
+$ opam depext -iy -j 2 ppx_fields_conv.v0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppx_fields_conv]
+  - install base                    v0.11.1 [required by ppx_fields_conv]
+  - install stdio                   v0.11.0 [required by ppxlib]
+  - install ppxlib                  0.3.0   [required by ppx_fields_conv]
+  - install fieldslib               v0.11.0 [required by ppx_fields_conv]
+  - install ppx_fields_conv         v0.11.0
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[fieldslib.v0.11.0] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_fields_conv.v0.11.0] found in cache
+[ppxlib.0.3.0] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+[ERROR] The compilation of ocaml-migrate-parsetree failed at "/home/opam/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71".
+[ERROR] The compilation of base failed at "/home/opam/.opam/4.08/bin/jbuilder build -p base -j 71".
+
+#=== ERROR while compiling ocaml-migrate-parsetree.1.0.11 =====================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocaml-migrate-parsetree.1.0.11
+# command              ~/.opam/4.08/bin/jbuilder build -p ocaml-migrate-parsetree -j 71
+# exit-code            1
+# env-file             ~/.opam/log/ocaml-migrate-parsetree-11-2fbc47.env
+# output-file          ~/.opam/log/ocaml-migrate-parsetree-11-2fbc47.out
+### output ###
+#        ocaml src/ast-version,src/compiler-functions-file (exit 1)
+# (cd _build/default/src && /home/opam/.opam/4.08/bin/ocaml config/gen.ml 4.08.0+dev0-2018-04-09)
+# Unkown OCaml version 4.08.0+dev0-2018-04-09
+
+
+#=== ERROR while compiling base.v0.11.1 =======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/base.v0.11.1
+# command              ~/.opam/4.08/bin/jbuilder build -p base -j 71
+# exit-code            1
+# env-file             ~/.opam/log/base-11-1a4e3e.env
+# output-file          ~/.opam/log/base-11-1a4e3e.out
+### output ###
+#       ocamlc shadow-stdlib/src/.shadow_stdlib.objs/shadow_stdlib.{cmi,cmti}
+# File "shadow-stdlib/src/shadow_stdlib.mli", line 28, characters 0-279:
+# Warning 53: the "deprecated" attribute cannot appear in this context
+# File "shadow-stdlib/src/shadow_stdlib.mli", line 1399, characters 0-401:
+# Warning 53: the "deprecated" attribute cannot appear in this context
+#       ocamlc src/.base.objs/base__Import0.{cmi,cmo,cmt}
+# File "src/import0.ml", line 7, characters 6-394:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 126, characters 22-37:
+# Warning 3: deprecated: module Caml.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 128, characters 10-25:
+# Warning 3: deprecated: module Caml.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 172, characters 12-26:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 173, characters 12-26:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Comparator.{cmo,cmt}
+# File "src/comparator.ml", line 67, characters 20-38:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#     ocamlopt src/.base.objs/base__Import0.{cmx,o}
+# File "src/import0.ml", line 7, characters 6-394:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 126, characters 22-37:
+# Warning 3: deprecated: module Caml.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 128, characters 10-25:
+# Warning 3: deprecated: module Caml.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 172, characters 12-26:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/import0.ml", line 173, characters 12-26:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Exn.{cmo,cmt}
+# File "src/exn.ml", line 120, characters 28-49:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Result.{cmi,cmti}
+# File "src/result.mli", line 19, characters 33-50:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Ordered_collection_common.{cmi,cmti}
+# File "src/ordered_collection_common.mli", line 28, characters 80-88:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Result.{cmo,cmt}
+# File "src/result.ml", line 3, characters 27-44:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Container_intf.{cmi,cmo,cmt}
+# File "src/container_intf.ml", line 47, characters 40-48:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 48, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 118, characters 40-48:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 119, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 188, characters 39-47:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 189, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 256, characters 39-47:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 257, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 319, characters 43-51:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 320, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 353, characters 43-51:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 354, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 446, characters 31-39:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 448, characters 16-24:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Ordered_collection_common.{cmo,cmt}
+# File "src/ordered_collection_common.ml", line 37, characters 6-15:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/ordered_collection_common.ml", line 38, characters 29-41:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Or_error.{cmi,cmti}
+# File "src/or_error.mli", line 12, characters 26-34:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.mli", line 62, characters 30-38:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Container.{cmo,cmt}
+# File "src/container.ml", line 23, characters 4-13:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container.ml", line 25, characters 8-17:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Or_error.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Or_error.cmo -c -impl src/or_error.ml)
+# File "src/or_error.ml", line 3, characters 26-34:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.ml", line 7, characters 18-32:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.ml", line 16, characters 14-32:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.ml", line 16, characters 14-32:
+# Error: Unbound value Result.hash_fold_t
+#       ocamlc src/.base.objs/base__Validate.{cmi,cmti}
+# File "src/validate.mli", line 140, characters 38-46:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Float0.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -no-alias-deps -open Base__ -o src/.base.objs/base__Float0.cmo -c -impl src/float0.ml)
+# File "src/float0.ml", line 31, characters 2-18:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/float0.ml", line 31, characters 2-18:
+# Error: Unbound value Option.value_exn
+#       ocamlc src/.base.objs/base__Option_array.{cmi,cmti}
+# File "src/option_array.mli", line 94, characters 31-39:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/option_array.mli", line 95, characters 23-31:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+#       ocamlc src/.base.objs/base__Sequence.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Sequence.cmo -c -impl src/sequence.ml)
+# File "src/sequence.ml", line 977, characters 18-31:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/sequence.ml", line 977, characters 18-31:
+# Error: Unbound value Result.return
+#       ocamlc src/.base.objs/base__Either.{cmo,cmt}
+# File "src/either.ml", line 231, characters 37-48:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+#       ocamlc src/.base.objs/base__Array.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Array.cmo -c -impl src/array.ml)
+# File "src/array.ml", line 523, characters 16-26:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/array.ml", line 523, characters 61-79:
+# Error: The function applied to this argument has type 'a option -> 'b option
+# This argument cannot be applied with label ~f
+#       ocamlc src/.base.objs/base__Option_array.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Option_array.cmo -c -impl src/option_array.ml)
+# File "src/option_array.ml", line 99, characters 32-38:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/option_array.ml", line 99, characters 32-38:
+# Error: Signature mismatch:
+#        ...
+#        The value `sexp_of_t' is required but not provided
+#        File "src/sexpable.mli", line 21, characters 4-94:
+#          Expected declaration
+#        The value `t_of_sexp' is required but not provided
+#        File "src/sexpable.mli", line 19, characters 4-94:
+#          Expected declaration
+#       ocamlc src/.base.objs/base__Bool.{cmo,cmt}
+# File "src/bool.ml", line 62, characters 10-24:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/bool.ml", line 63, characters 10-24:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#     ocamlopt src/.base.objs/base__Comparator.{cmx,o}
+# File "src/comparator.ml", line 67, characters 20-38:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#     ocamlopt src/.base.objs/base__Exn.{cmx,o}
+# File "src/exn.ml", line 120, characters 28-49:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Int_conversions.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Int_conversions.cmo -c -impl src/int_conversions.ml)
+# File "src/int_conversions.ml", line 345, characters 12-27:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/int_conversions.ml", line 345, characters 12-27:
+# Error: Unbound value Option.try_with
+#       ocamlc src/.base.objs/base__Type_equal.{cmo,cmt}
+# File "src/type_equal.ml", line 179, characters 19-33:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+#       ocamlc src/.base.objs/base__Hash_set.{cmo,cmt}
+# File "src/hash_set.ml", line 41, characters 6-15:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/hash_set.ml", line 52, characters 6-15:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#     ocamlopt src/.base.objs/base__Result.{cmx,o}
+# File "src/result.ml", line 3, characters 27-44:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc src/.base.objs/base__Hashtbl.{cmo,cmt}
+# File "src/hashtbl.ml", line 373, characters 5-19:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/hashtbl.ml", line 391, characters 17-29:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/hashtbl.ml", line 476, characters 13-22:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/hashtbl.ml", line 484, characters 4-13:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/hashtbl.ml", line 485, characters 4-16:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/hashtbl.ml", line 536, characters 13-22:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#     ocamlopt src/.base.objs/base__Ordered_collection_common.{cmx,o}
+# File "src/ordered_collection_common.ml", line 37, characters 6-15:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/ordered_collection_common.ml", line 38, characters 29-41:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#     ocamlopt src/.base.objs/base__Container_intf.{cmx,o}
+# File "src/container_intf.ml", line 47, characters 40-48:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 48, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 118, characters 40-48:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 119, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 188, characters 39-47:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 189, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 256, characters 39-47:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 257, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 319, characters 43-51:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 320, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 353, characters 43-51:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 354, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 446, characters 31-39:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container_intf.ml", line 448, characters 16-24:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#     ocamlopt src/.base.objs/base__Container.{cmx,o}
+# File "src/container.ml", line 23, characters 4-13:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/container.ml", line 25, characters 8-17:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Map.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Map.cmo -c -impl src/map.ml)
+# File "src/map.ml", line 129, characters 22-31:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/map.ml", line 141, characters 15-30:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/map.ml", line 144, characters 8-17:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/map.ml", line 414, characters 23-35:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/map.ml", line 431, characters 29-43:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/map.ml", line 802, characters 15-30:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/map.ml", line 817, characters 17-32:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/map.ml", line 868, characters 17-32:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/map.ml", line 925, characters 14-25:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/map.ml", line 926, characters 75-76:
+# Error: This expression has type
+#          none:(init:'a -> f:(('b, 'c) t -> 'b -> ('b, 'c) t) -> 'd) ->
+#          some:('e -> init:'a -> f:(('b, 'c) t -> 'b -> ('b, 'c) t) -> 'd) ->
+#          'd
+#        but an expression was expected of type ('b, 'f) t
+#     ocamlopt src/.base.objs/base__Sequence.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Sequence.cmx -c -impl src/sequence.ml)
+# File "src/sequence.ml", line 977, characters 18-31:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/sequence.ml", line 977, characters 18-31:
+# Error: Unbound value Result.return
+#       ocamlc src/.base.objs/base__Set_intf.{cmi,cmo,cmt}
+# File "src/set_intf.ml", line 1001, characters 39-47:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/set_intf.ml", line 1002, characters 20-28:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+#       ocamlc src/.base.objs/base__Set.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Set.cmo -c -impl src/set.ml)
+# File "src/set.ml", line 135, characters 22-31:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/set.ml", line 147, characters 15-30:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/set.ml", line 150, characters 8-17:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/set.ml", line 400, characters 16-34:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/set.ml", line 574, characters 17-32:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "src/set.ml", line 630, characters 14-25:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/set.ml", line 631, characters 70-71:
+# Error: This expression has type
+#          none:(init:'a -> f:('b t -> 'b -> 'b t) -> 'c) ->
+#          some:('d -> init:'a -> f:('b t -> 'b -> 'b t) -> 'c) -> 'c
+#        but an expression was expected of type 'b t
+#       ocamlc src/.base.objs/base__String.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -safe-string -g -bin-annot -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__String.cmo -c -impl src/string.ml)
+# File "src/string.ml", line 349, characters 2-16:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/string.ml", line 1152, characters 4-14:
+# Warning 3: deprecated: module Base__.Import.Option
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Option instead
+# File "src/string.ml", line 1152, characters 46-71:
+# Error: The function applied to this argument has type 'a option -> 'b option
+# This argument cannot be applied with label ~f
+#     ocamlopt src/.base.objs/base__Or_error.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -safe-string -g -I src/.base.objs -I /home/opam/.opam/4.08/lib/sexplib0 -I compiler-stdlib/src/.caml.objs -I shadow-stdlib/src/.shadow_stdlib.objs -intf-suffix .ml -no-alias-deps -open Base__ -o src/.base.objs/base__Or_error.cmx -c -impl src/or_error.ml)
+# File "src/or_error.ml", line 3, characters 26-34:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.ml", line 7, characters 18-32:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.ml", line 16, characters 14-32:
+# Warning 3: deprecated: module Base__.Import.Result
+# [2016-09] this element comes from the stdlib distributed with OCaml.
+# Refering to the stdlib directly is discouraged by Base. You should either
+# use the equivalent functionality offered by Base, or if you really want to
+# refer to the stdlib, use Caml.Result instead
+# File "src/or_error.ml", line 16, characters 14-32:
+# Error: Unbound value Result.hash_fold_t
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build base                    v0.11.1
+| - build ocaml-migrate-parsetree 1.0.11
++- 
++- The following changes have been performed (the rest was aborted)
+| - install ocaml-compiler-libs v0.11.0
+| - install ppx_derivers        1.0
+| - install result              1.3
+| - install sexplib0            v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180830201231.export"
+31 1535659949 1535659959

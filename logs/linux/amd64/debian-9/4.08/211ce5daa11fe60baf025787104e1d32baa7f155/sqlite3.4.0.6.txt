@@ -1,0 +1,172 @@
+$ opam depext -iy -j 2 sqlite3.4.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libsqlite3-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libsqlite3-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../0-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../1-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../2-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../3-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../4-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libsqlite3-dev:amd64.
+Preparing to unpack .../5-libsqlite3-dev_3.16.2-5+deb9u1_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.16.2-5+deb9u1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../6-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../7-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../8-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../9-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libsqlite3-dev:amd64 (3.16.2-5+deb9u1) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild      0.12.0 [required by sqlite3]
+  - install conf-pkg-config 1.1    [required by sqlite3]
+  - install sqlite3         4.0.6
+===== 3 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[sqlite3.4.0.6] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-pkg-config.1.1
+[ERROR] The compilation of ocamlbuild failed at "/usr/bin/make check-if-preinstalled all opam-install".
+
+#=== ERROR while compiling ocamlbuild.0.12.0 ==================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlbuild.0.12.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
+# exit-code            2
+# env-file             ~/.opam/log/ocamlbuild-11-a71bb4.env
+# output-file          ~/.opam/log/ocamlbuild-11-a71bb4.out
+### output ###
+# if test -d /home/opam/.opam/4.08/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/home/opam/.opam/4.08/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/const.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/loc.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/discard_printf.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/signatures.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_std.ml
+# File "src/my_std.ml", line 127, characters 20-38:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/my_unix.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/display.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/log.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/shell.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/bool.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_ast.ml
+# ocamllex.opt src/glob_lexer.mll
+# 55 states, 419 transitions, table size 2006 bytes
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob_lexer.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/glob.ml
+# ocamllex.opt src/lexers.mll
+# 251 states, 1051 transitions, table size 5710 bytes
+# 4334 additional bytes used for bindings
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/lexers.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/param_tags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/command.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_config.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/ocamlbuild_where.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/slurp.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/options.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/pathname.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/configuration.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/flags.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/hygiene.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/digest_cache.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/resource.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/rule.ml
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.mli
+# ocamlc.opt -w L -w R -w Z -I src -I +unix -safe-string -bin-annot -c src/solver.ml
+# File "src/solver.ml", line 43, characters 31-32:
+# Error: This expression has type int but an expression was expected of type
+#          ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit,
+#           Format.formatter -> unit)
+#          format4 =
+#            ('a -> 'b -> 'c -> 'd -> 'e -> 'f, Format.formatter, unit, 
+#             unit, unit, Format.formatter -> unit)
+#            CamlinternalFormatBasics.format6
+# Makefile:422: recipe for target 'src/solver.cmo' failed
+# make: *** [src/solver.cmo] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlbuild 0.12.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install conf-pkg-config 1.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180830211728.export"
+31 1535663839 1535663851
