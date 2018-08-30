@@ -1,0 +1,32 @@
+$ opam depext -iy -j 2 dns-forward.0.7.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for dns-forward.0.7.2: The following dependencies couldn't be met:
+          - dns-forward -> cstruct (>= 2.4 & < 3.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> cstruct (>= 2.4 & < 3.0) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> dns -> ipaddr (>= 2.6.0 & < 2.8.0) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> dns -> ipaddr (>= 2.6.0 & < 2.8.0) -> ppx_deriving >= 4.2 -> ocaml >= 4.04.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> dns -> ipaddr (>= 2.6.0 & < 2.8.0) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> dns -> cstruct (< 2.0.0 | >= 3.0.2) -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> dns -> cstruct (< 2.0.0 | >= 3.0.2) -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> mirage-flow = 1.1.0 -> mirage-types-lwt < 3.0.0 -> mirage-types >= 2.3.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> mirage-flow = 1.1.0 -> mirage-types-lwt < 3.0.0 -> mirage-types >= 2.3.0 -> mirage-flow >= 1.2.0 -> ocaml >= 4.04.2
+              base of this switch (use `--unlock-base' to force)
+          - dns-forward -> mirage-flow = 1.1.0 -> mirage-types-lwt < 3.0.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cstruct satisfies the constraints
+          - No available version of ipaddr satisfies the constraints
+          - No available version of mirage-flow satisfies the constraints
+          - mirage-types (>= 2.3.0 & < 3.0.0) is in conflict with ipaddr < 2.0.0
+
+
+Command failed: opam list --readonly --external  --resolve=dns-forward.0.7.2 returned 20
+20 1535599776 1535599780

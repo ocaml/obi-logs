@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 gensqlite.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for gensqlite.0.1: The following dependencies couldn't be met:
+          - gensqlite -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=gensqlite.0.1 returned 20
+20 1535598511 1535598514

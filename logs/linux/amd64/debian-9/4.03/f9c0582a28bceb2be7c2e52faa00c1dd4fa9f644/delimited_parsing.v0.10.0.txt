@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 delimited_parsing.v0.10.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for delimited_parsing.v0.10.0: The following dependencies couldn't be met:
+          - delimited_parsing -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=delimited_parsing.v0.10.0 returned 20
+20 1535596256 1535596259

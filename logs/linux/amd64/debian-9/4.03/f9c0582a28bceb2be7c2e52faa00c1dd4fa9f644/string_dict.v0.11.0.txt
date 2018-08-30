@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 string_dict.v0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for string_dict.v0.11.0: The following dependencies couldn't be met:
+          - string_dict -> ocaml >= 4.04.1
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=string_dict.v0.11.0 returned 20
+20 1535597890 1535597893

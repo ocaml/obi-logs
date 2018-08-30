@@ -1,0 +1,89 @@
+$ opam depext -iy -j 2 odepack.0.6.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by odepack]
+  - install odepack    0.6.3
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[odepack.0.6.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of odepack failed at "/home/opam/.opam/4.03/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.03".
+
+#=== ERROR while compiling odepack.0.6.3 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/odepack.0.6.3
+# command              ~/.opam/4.03/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.03
+# exit-code            1
+# env-file             ~/.opam/log/odepack-11-e80101.env
+# output-file          ~/.opam/log/odepack-11-e80101.out
+### output ###
+# File "./setup.ml", line 217, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "./setup.ml", line 250, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 250, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 258, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 258, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 261, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 291, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 388, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1257, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1262, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "./setup.ml", line 1797, characters 6-24:
+# Warning 3: deprecated: Lazy.lazy_from_fun
+# Use Lazy.from_fun instead.
+# File "setup.ml", line 4920, characters 31-50:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 4921, characters 31-48:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 4922, characters 31-50:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 4923, characters 31-48:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# Please install one of these fortran compilers: gfortran, g95, g77.
+# If you use a different compiler, send its name to the author (see _oasis file).
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build odepack 0.6.3
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180830024811.export"
+31 1535597289 1535597301

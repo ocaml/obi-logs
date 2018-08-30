@@ -1,0 +1,42 @@
+$ opam depext -iy -j 2 statverif.1.97pl1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install statverif 1.97pl1.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[statverif.1.97pl1.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of statverif failed at "/usr/bin/make".
+
+#=== ERROR while compiling statverif.1.97pl1.1 ================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/statverif.1.97pl1.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/statverif-11-05296d.env
+# output-file          ~/.opam/log/statverif-11-05296d.out
+### output ###
+# make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.03/.opam-switch/build/statverif.1.97pl1.1/src'
+# ocamlbuild -use-ocamlfind main.native
+# make[1]: ocamlbuild: Command not found
+# Makefile:4: recipe for target 'all' failed
+# make[1]: *** [all] Error 127
+# make[1]: Leaving directory '/home/opam/.opam/4.03/.opam-switch/build/statverif.1.97pl1.1/src'
+# Makefile:4: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build statverif 1.97pl1.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1535598647 1535598652

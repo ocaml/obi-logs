@@ -1,0 +1,348 @@
+$ opam depext -iy -j 2 cowabloga.0.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install magic-mime              1.1.0      [required by cowabloga]
+  - install re                      1.7.3      [required by cohttp]
+  - install base-bytes              base       [required by cohttp, lwt]
+  - install ocaml-compiler-libs     v0.9.0     [required by ppx_core]
+  - install result                  1.3        [required by lwt]
+  - install base-num                base       [required by num]
+  - install conf-which              1          [required by camlp4]
+  - install ocamlbuild              0.12.0     [required by cowabloga]
+  - install ppx_traverse_builtins   v0.9.0     [required by ppx_metaquot]
+  - install ppx_tools               5.0+4.03.0 [required by lwt]
+  - install stringext               1.5.0      [required by cohttp]
+  - install base64                  2.2.0      [required by cohttp]
+  - install ocaml-migrate-parsetree 1.0.11     [required by ppx_fields_conv, fieldslib, ppx_sexp_conv]
+  - install num                     0          [required by sexplib]
+  - install uchar                   0.0.2      [required by jsonm]
+  - install topkg                   0.9.1      [required by jsonm, xmlm]
+  - install omd                     1.3.1      [required by cowabloga]
+  - install camlp4                  4.03+1     [required by cow, lwt]
+  - install ppx_ast                 v0.9.1     [required by ppx_core]
+  - install sexplib                 v0.9.2     [required by cohttp]
+  - install xmlm                    1.3.0      [required by cow]
+  - install uutf                    1.0.1      [required by jsonm]
+  - install ulex                    1.2        [required by cow]
+  - install type_conv               113.00.02  [required by cow]
+  - install lwt                     2.6.0      [required by cowabloga]
+  - install cstruct                 3.2.1      [required by cowabloga]
+  - install base                    v0.9.3     [required by fieldslib]
+  - install jsonm                   1.0.1      [required by cohttp]
+  - install dyntype                 0.9.0      [required by cow]
+  - install hex                     1.2.0      [required by ezjsonm]
+  - install stdio                   v0.9.0     [required by ppx_core]
+  - install ezjsonm                 0.6.0      [required by cow]
+  - install ppx_core                v0.9.0     [required by ppx_fields_conv, ppx_sexp_conv]
+  - install ppx_optcomp             v0.9.0     [required by ppx_driver]
+  - install ppx_driver              v0.9.1     [required by ppx_fields_conv, fieldslib, ppx_sexp_conv]
+  - install ppx_metaquot            v0.9.0     [required by ppx_fields_conv, ppx_sexp_conv]
+  - install fieldslib               v0.9.0     [required by cohttp]
+  - install ppx_type_conv           v0.9.0     [required by ppx_fields_conv, ppx_sexp_conv]
+  - install ppx_sexp_conv           v0.9.0     [required by cohttp]
+  - install ppx_fields_conv         v0.9.0     [required by cohttp]
+  - install uri                     1.9.7      [required by cohttp, cow]
+  - install cow                     1.4.0      [required by cowabloga]
+  - install cohttp                  1.0.0      [required by cowabloga]
+  - install cowabloga               0.1.0
+===== 44 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.9.3] found in cache
+[base64.2.2.0] found in cache
+[camlp4.4.03+1] found in cache
+[cohttp.1.0.0] found in cache
+[cow.1.4.0] found in cache
+[cowabloga.0.1.0] found in cache
+[cstruct.3.2.1] found in cache
+[dyntype.0.9.0] found in cache
+[ezjsonm.0.6.0] found in cache
+[fieldslib.v0.9.0] found in cache
+[hex.1.2.0] found in cache
+[jsonm.1.0.1] found in cache
+[lwt.2.6.0] found in cache
+[magic-mime.1.1.0] found in cache
+[ocaml-compiler-libs.v0.9.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[omd.1.3.1] found in cache
+[ppx_ast.v0.9.1] found in cache
+[ppx_core.v0.9.0] found in cache
+[ppx_driver.v0.9.1] found in cache
+[ppx_fields_conv.v0.9.0] found in cache
+[ppx_metaquot.v0.9.0] found in cache
+[ppx_optcomp.v0.9.0] found in cache
+[ppx_sexp_conv.v0.9.0] found in cache
+[ppx_tools.5.0+4.03.0] found in cache
+[ppx_traverse_builtins.v0.9.0] found in cache
+[ppx_type_conv.v0.9.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sexplib.v0.9.2] found in cache
+[stdio.v0.9.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[type_conv.113.00.02] found in cache
+[uchar.0.0.2] found in cache
+[ulex.1.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[xmlm.1.3.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base-num.base
+-> installed base64.2.2.0
+-> installed conf-which.1
+-> installed magic-mime.1.1.0
+-> installed num.0
+-> installed ocaml-compiler-libs.v0.9.0
+-> installed ocamlbuild.0.12.0
+-> installed omd.1.3.1
+-> installed ppx_tools.5.0+4.03.0
+-> installed ppx_traverse_builtins.v0.9.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_ast.v0.9.1
+-> installed sexplib.v0.9.2
+-> installed base.v0.9.3
+-> installed cstruct.3.2.1
+-> installed hex.1.2.0
+-> installed stdio.v0.9.0
+-> installed ppx_core.v0.9.0
+-> installed ppx_optcomp.v0.9.0
+-> installed ppx_driver.v0.9.1
+-> installed fieldslib.v0.9.0
+-> installed ppx_metaquot.v0.9.0
+-> installed ppx_type_conv.v0.9.0
+-> installed ppx_fields_conv.v0.9.0
+-> installed ppx_sexp_conv.v0.9.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed uchar.0.0.2
+-> installed uri.1.9.7
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed cohttp.1.0.0
+-> installed ezjsonm.0.6.0
+-> installed xmlm.1.3.0
+-> installed camlp4.4.03+1
+-> installed type_conv.113.00.02
+-> installed dyntype.0.9.0
+-> installed ulex.1.2
+-> installed lwt.2.6.0
+-> installed cow.1.4.0
+[ERROR] The compilation of cowabloga failed at "/usr/bin/make all".
+
+#=== ERROR while compiling cowabloga.0.1.0 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/cowabloga.0.1.0
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/cowabloga-11-ddf8cd.env
+# output-file          ~/.opam/log/cowabloga-11-ddf8cd.out
+### output ###
+# ocaml setup.ml -all 
+# File "./setup.ml", line 318, characters 20-36:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 318, characters 42-58:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 14-30:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 327, characters 38-54:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 330, characters 25-41:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 368, characters 10-26:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 474, characters 13-29:
+# Warning 3: deprecated: String.lowercase
+# Use String.lowercase_ascii instead.
+# File "./setup.ml", line 1825, characters 16-33:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "./setup.ml", line 1831, characters 16-35:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "setup.ml", line 5847, characters 11-28:
+# Warning 3: deprecated: String.capitalize
+# Use String.capitalize_ascii instead.
+# File "setup.ml", line 5848, characters 11-30:
+# Warning 3: deprecated: String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# 
+# Configuration: 
+# ocamlfind: ........................................... /home/opam/.opam/4.03/bin/ocamlfind
+# ocamlc: .............................................. /home/opam/.opam/4.03/bin/ocamlc.opt
+# ocamlopt: ............................................ /home/opam/.opam/4.03/bin/ocamlopt.opt
+# ocamlbuild: .......................................... /home/opam/.opam/4.03/bin/ocamlbuild
+# Package name: ........................................ cowabloga
+# Package version: ..................................... 0.1.0
+# os_type: ............................................. Unix
+# system: .............................................. linux
+# architecture: ........................................ amd64
+# ccomp_type: .......................................... cc
+# ocaml_version: ....................................... 4.03.0
+# standard_library_default: ............................ /home/opam/.opam/4.03/lib/ocaml
+# standard_library: .................................... /home/opam/.opam/4.03/lib/ocaml
+# standard_runtime: .................................... /home/opam/.opam/4.03/bin/ocamlrun
+# bytecomp_c_compiler: ................................. gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT -fPIC
+# native_c_compiler: ................................... gcc -std=gnu99 -O2 -fno-strict-aliasing -fwrapv -Wall -D_FILE_OFFSET_BITS=64 -D_REENTRANT
+# model: ............................................... default
+# ext_obj: ............................................. .o
+# ext_asm: ............................................. .s
+# ext_lib: ............................................. .a
+# ext_dll: ............................................. .so
+# default_executable_name: ............................. a.out
+# systhread_supported: ................................. true
+# Install architecture-independent files dir: .......... /usr/local
+# Install architecture-dependent files in dir: ......... $prefix
+# User executables: .................................... $exec_prefix/bin
+# System admin executables: ............................ $exec_prefix/sbin
+# Program executables: ................................. $exec_prefix/libexec
+# Read-only single-machine data: ....................... $prefix/etc
+# Modifiable architecture-independent data: ............ $prefix/com
+# Modifiable single-machine data: ...................... $prefix/var
+# Object code libraries: ............................... $exec_prefix/lib
+# Read-only arch-independent data root: ................ $prefix/share
+# Read-only architecture-independent data: ............. $datarootdir
+# Info documentation: .................................. $datarootdir/info
+# Locale-dependent data: ............................... $datarootdir/locale
+# Man documentation: ................................... $datarootdir/man
+# Documentation root: .................................. $datarootdir/doc/$pkg_name
+# HTML documentation: .................................. $docdir
+# DVI documentation: ................................... $docdir
+# PDF documentation: ................................... $docdir
+# PS documentation: .................................... $docdir
+# findlib_version: ..................................... 1.8.0
+# is_native: ........................................... true
+# suffix_program: ...................................... 
+# Remove a file.: ...................................... rm -f
+# Remove a directory.: ................................. rm -rf
+# Turn ocaml debug flag on: ............................ true
+# Turn ocaml profile flag on: .......................... false
+# Compiler support generation of .cmxs.: ............... true
+# OCamlbuild additional flags: ......................... 
+# Create documentations: ............................... true
+# Compile tests executable and library and run them: ... false
+# pkg_cow: ............................................. /home/opam/.opam/4.03/lib/cow
+# pkg_cow_syntax: ...................................... /home/opam/.opam/4.03/lib/cow
+# pkg_lwt: ............................................. /home/opam/.opam/4.03/lib/lwt
+# pkg_omd: ............................................. /home/opam/.opam/4.03/lib/omd
+# pkg_cstruct: ......................................... /home/opam/.opam/4.03/lib/cstruct
+# pkg_re_str: .......................................... /home/opam/.opam/4.03/lib/re/str
+# pkg_magic_mime: ...................................... /home/opam/.opam/4.03/lib/magic-mime
+# pkg_cohttp_lwt: ...................................... /home/opam/.opam/4.03/lib/cohttp
+# 
+# W: Cannot find source file matching module 'cowabloga' in library cowabloga
+# /home/opam/.opam/4.03/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.03/lib/ocamlbuild /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/atom_feed.ml > lib/atom_feed.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/date.ml > lib/date.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/blog.mli > lib/blog.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/atom_feed.cmo lib/atom_feed.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/date.cmo lib/date.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/foundation.mli > lib/foundation.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/foundation.cmi lib/foundation.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/blog.cmi lib/blog.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/blog.ml > lib/blog.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/wiki.ml > lib/wiki.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/feed.ml > lib/feed.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/links.ml > lib/links.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/wiki.cmo lib/wiki.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/links.cmo lib/links.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/headers.ml > lib/headers.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/dispatch.ml > lib/dispatch.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/headers.cmo lib/headers.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/foundation.ml > lib/foundation.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/bootstrap.mli > lib/bootstrap.mli.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/bootstrap.cmi lib/bootstrap.mli
+# /home/opam/.opam/4.03/bin/ocamlfind ocamldep -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -modules lib/bootstrap.ml > lib/bootstrap.ml.depends
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/blog.cmo lib/blog.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/feed.cmo lib/feed.ml
+# /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/dispatch.cmo lib/dispatch.ml
+# + /home/opam/.opam/4.03/bin/ocamlfind ocamlc -c -g -annot -bin-annot -principal -strict-sequence -package cow -syntax camlp4o -package cow.syntax -package cstruct -package lwt -package magic-mime -package omd -package re.str -warn-error +1..49 -w A-4-41-44 -I lib -o lib/dispatch.cmo lib/dispatch.ml
+# File "lib/dispatch.ml", line 38, characters 39-45:
+# Warning 3: deprecated: module Re_str
+# Use Re.Str
+# File "lib/dispatch.ml", line 1:
+# Error: Some fatal warnings were triggered (1 occurrences)
+# Command exited with code 2.
+# + /home/opam/.opam/4.03/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.03/lib/ocamlbuild /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.03/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 518, characters 43-62:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# File "myocamlbuild.ml", line 531, characters 51-70:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.uncapitalize
+# Use String.uncapitalize_ascii instead.
+# E: Failure("Command ''/home/opam/.opam/4.03/bin/ocamlbuild' lib/cowabloga.cma lib/cowabloga.cmxa lib/cowabloga.a lib/cowabloga.cmxs lib_test/serve.native -tag debug' terminated with error code 10")
+# Makefile:18: recipe for target 'all' failed
+# make: *** [all] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build cowabloga 0.1.0
++- 
++- The following changes have been performed
+| - install base                    v0.9.3
+| - install base-bytes              base
+| - install base-num                base
+| - install base64                  2.2.0
+| - install camlp4                  4.03+1
+| - install cohttp                  1.0.0
+| - install conf-which              1
+| - install cow                     1.4.0
+| - install cstruct                 3.2.1
+| - install dyntype                 0.9.0
+| - install ezjsonm                 0.6.0
+| - install fieldslib               v0.9.0
+| - install hex                     1.2.0
+| - install jsonm                   1.0.1
+| - install lwt                     2.6.0
+| - install magic-mime              1.1.0
+| - install num                     0
+| - install ocaml-compiler-libs     v0.9.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install omd                     1.3.1
+| - install ppx_ast                 v0.9.1
+| - install ppx_core                v0.9.0
+| - install ppx_driver              v0.9.1
+| - install ppx_fields_conv         v0.9.0
+| - install ppx_metaquot            v0.9.0
+| - install ppx_optcomp             v0.9.0
+| - install ppx_sexp_conv           v0.9.0
+| - install ppx_tools               5.0+4.03.0
+| - install ppx_traverse_builtins   v0.9.0
+| - install ppx_type_conv           v0.9.0
+| - install re                      1.7.3
+| - install result                  1.3
+| - install sexplib                 v0.9.2
+| - install stdio                   v0.9.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install type_conv               113.00.02
+| - install uchar                   0.0.2
+| - install ulex                    1.2
+| - install uri                     1.9.7
+| - install uutf                    1.0.1
+| - install xmlm                    1.3.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180830030221.export"
+31 1535598087 1535598263
