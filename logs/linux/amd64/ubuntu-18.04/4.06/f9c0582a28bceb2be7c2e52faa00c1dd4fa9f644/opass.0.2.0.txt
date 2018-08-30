@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 opass.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+[ERROR] No solution for opass.0.2.0: The following dependencies couldn't be met:
+          - opass -> core < 113.24.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=opass.0.2.0 returned 20
+20 1535607703 1535607707
