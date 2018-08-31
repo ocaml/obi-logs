@@ -1,0 +1,73 @@
+$ opam depext -iy -j 2 ptset.1.0.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install obuild 0.1.10 [required by ptset]
+  - install ptset  1.0.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[obuild.0.1.10] found in cache
+[ptset.1.0.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed obuild.0.1.10
+[ERROR] The compilation of ptset failed at "/home/opam/.opam/4.07/bin/obuild build lib-ptset".
+
+#=== ERROR while compiling ptset.1.0.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/ptset.1.0.0
+# command              ~/.opam/4.07/bin/obuild build lib-ptset
+# exit-code            6
+# env-file             ~/.opam/log/ptset-11-e4db2f.env
+# output-file          ~/.opam/log/ptset-11-e4db2f.out
+### output ###
+# [1 of 4] Intfing Ptset                         
+# [2 of 4] Compiling Ptset                         
+# 
+# File "ptset.ml", line 1:
+# Error: The implementation ptset.ml
+#        does not match the interface dist/build/lib-ptset/ptset.cmi:
+#        The value `of_seq' is required but not provided
+#        File "set.mli", line 277, characters 4-31: Expected declaration
+#        The value `add_seq' is required but not provided
+#        File "set.mli", line 273, characters 4-37: Expected declaration
+#        The value `to_seq' is required but not provided
+#        File "set.mli", line 269, characters 4-31: Expected declaration
+#        The value `to_seq_from' is required but not provided
+#        File "set.mli", line 264, characters 4-43: Expected declaration
+#        The value `find_last_opt' is required but not provided
+#        File "set.mli", line 249, characters 4-55: Expected declaration
+#        The value `find_last' is required but not provided
+#        File "set.mli", line 242, characters 4-44: Expected declaration
+#        The value `find_first_opt' is required but not provided
+#        File "set.mli", line 235, characters 4-56: Expected declaration
+#        The value `find_first' is required but not provided
+#        File "set.mli", line 222, characters 4-45: Expected declaration
+#        The value `find_opt' is required but not provided
+#        File "set.mli", line 216, characters 4-40: Expected declaration
+#        The value `choose_opt' is required but not provided
+#        File "set.mli", line 194, characters 4-35: Expected declaration
+#        The value `max_elt_opt' is required but not provided
+#        File "set.mli", line 183, characters 4-36: Expected declaration
+#        The value `min_elt_opt' is required but not provided
+#        File "set.mli", line 172, characters 4-36: Expected declaration
+# 
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ptset 1.0.0
++- 
++- The following changes have been performed
+| - install obuild 0.1.10
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180830225735.export"
+31 1535669852 1535669865

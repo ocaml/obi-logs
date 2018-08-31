@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 type-beat.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for type-beat.0.1: The following dependencies couldn't be met:
+          - type-beat -> angstrom = 0.5.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=type-beat.0.1 returned 20
+20 1535668845 1535668848
