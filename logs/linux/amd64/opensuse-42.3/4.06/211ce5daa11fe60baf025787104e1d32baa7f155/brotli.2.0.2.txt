@@ -1,0 +1,24 @@
+$ opam depext -iy -j 2 brotli.2.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-brotli 0.0.1  [required by brotli]
+  - install ocamlbuild  0.12.0 [required by brotli]
+  - install ocamlmod    0.0.9  [required by oasis]
+  - install ocamlify    0.0.1  [required by oasis]
+  - install oasis       0.4.11 [required by brotli]
+  - install brotli      2.0.2
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[oasis.0.4.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[ERROR] The sources of the following couldn't be obtained, aborting:
+          - brotli.2.0.2: Bad checksum
+
+40 1535682067 1535682096

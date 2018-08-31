@@ -1,0 +1,68 @@
+$ opam depext -iy -j 2 fury-puyo.0.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-sdl-ttf   1      [required by fury-puyo]
+  - install conf-sdl-image 1      [required by fury-puyo]
+  - install ocamlbuild     0.12.0 [required by fury-puyo]
+  - install conf-sdl-mixer 1      [required by fury-puyo]
+  - install ocamlsdl       0.9.1  [required by fury-puyo]
+  - install fury-puyo      0.5
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[fury-puyo.0.5] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlsdl.0.9.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-sdl-image failed at "/usr/bin/pkg-config SDL_image".
+[ERROR] The compilation of conf-sdl-mixer failed at "/usr/bin/pkg-config SDL_mixer".
+[ERROR] The compilation of conf-sdl-ttf failed at "/usr/bin/pkg-config SDL_ttf".
+-> installed ocamlbuild.0.12.0
+
+#=== ERROR while compiling conf-sdl-ttf.1 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdl-ttf.1
+# command              /usr/bin/pkg-config SDL_ttf
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdl-ttf-12-6cc03f.env
+# output-file          ~/.opam/log/conf-sdl-ttf-12-6cc03f.out
+
+
+#=== ERROR while compiling conf-sdl-mixer.1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdl-mixer.1
+# command              /usr/bin/pkg-config SDL_mixer
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdl-mixer-12-a00279.env
+# output-file          ~/.opam/log/conf-sdl-mixer-12-a00279.out
+
+
+#=== ERROR while compiling conf-sdl-image.1 ===================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-sdl-image.1
+# command              /usr/bin/pkg-config SDL_image
+# exit-code            1
+# env-file             ~/.opam/log/conf-sdl-image-12-d8a4ae.env
+# output-file          ~/.opam/log/conf-sdl-image-12-d8a4ae.out
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-sdl-image 1
+| - build conf-sdl-mixer 1
+| - build conf-sdl-ttf   1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180831012506.export"
+31 1535678537 1535678714
