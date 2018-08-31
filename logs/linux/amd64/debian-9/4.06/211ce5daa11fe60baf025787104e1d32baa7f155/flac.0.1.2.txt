@@ -1,0 +1,148 @@
+$ opam depext -iy -j 2 flac.0.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+libflac-dev
+libogg-dev
+m4
+pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libflac-dev libogg-dev m4 pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libogg0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-libogg0_1.3.2-1_amd64.deb ...
+Unpacking libogg0:amd64 (1.3.2-1) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../02-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libflac8:amd64.
+Preparing to unpack .../04-libflac8_1.3.2-1_amd64.deb ...
+Unpacking libflac8:amd64 (1.3.2-1) ...
+Selecting previously unselected package libogg-dev:amd64.
+Preparing to unpack .../05-libogg-dev_1.3.2-1_amd64.deb ...
+Unpacking libogg-dev:amd64 (1.3.2-1) ...
+Selecting previously unselected package libflac-dev:amd64.
+Preparing to unpack .../06-libflac-dev_1.3.2-1_amd64.deb ...
+Unpacking libflac-dev:amd64 (1.3.2-1) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../07-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../08-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../09-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../10-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../11-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../12-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up libogg0:amd64 (1.3.2-1) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up libogg-dev:amd64 (1.3.2-1) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up libflac8:amd64 (1.3.2-1) ...
+Setting up libflac-dev:amd64 (1.3.2-1) ...
+Processing triggers for sgml-base (1.29) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ogg  0.5.2 [required by flac]
+  - install flac 0.1.2
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[flac.0.1.2] found in cache
+[ogg.0.5.2] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ogg.0.5.2
+[ERROR] The compilation of flac failed at "/usr/bin/make".
+
+#=== ERROR while compiling flac.0.1.2 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/flac.0.1.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/flac-11-865888.env
+# output-file          ~/.opam/log/flac-11-865888.out
+### output ###
+# /usr/bin/make -C src all
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/flac.0.1.2/src'
+# make[2]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/flac.0.1.2/src'
+# making ._bcdi/ogg_demuxer_flac_decoder.di from ogg_demuxer_flac_decoder.mli
+# making ._bcdi/ogg_flac.di from ogg_flac.mli
+# making ._bcdi/flac.di from flac.mli
+# making ._d/ogg_demuxer_flac_decoder.d from ogg_demuxer_flac_decoder.ml
+# making ._d/ogg_flac.d from ogg_flac.ml
+# making ._d/flac.d from flac.ml
+# ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/opam/.opam/4.06/include  -I .. -Wall -DCAML_NAME_SPACE \
+# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include   \
+# 			  -I/home/opam/.opam/4.06/lib/bytes -I/home/opam/.opam/4.06/lib/ogg  -o flac_stubs.o " flac_stubs.c 
+# ocamlc.opt -c -cc "gcc" -ccopt "-fPIC -g -O2 -I/home/opam/.opam/4.06/include  -I .. -Wall -DCAML_NAME_SPACE \
+# 			-DPIC -fPIC -I/home/opam/.opam/4.06/include   \
+# 			  -I/home/opam/.opam/4.06/lib/bytes -I/home/opam/.opam/4.06/lib/ogg  -o ogg_flac_stubs.o " ogg_flac_stubs.c 
+# ar rcs libflac_stubs.a  flac_stubs.o ogg_flac_stubs.o
+# ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ogg flac.mli
+# File "flac.mli", line 110, characters 8-59:
+# Warning 50: unattached documentation comment (ignored)
+# ocamlc.opt -c -g -w +A@5-7@8@11@12@20-35-44-45 -I /home/opam/.opam/4.06/lib/bytes -I /home/opam/.opam/4.06/lib/ogg flac.ml
+# File "flac.ml", line 37, characters 0-136:
+# Warning 3: deprecated: uppercase
+# Use String.uppercase_ascii instead.
+#   File "string.mli", line 262, characters 0-93:
+#   Definition
+#   File "flac.ml", line 33, characters 2-34:
+#   Expected signature
+# File "flac.ml", line 207, characters 17-21:
+# Error: This expression has type int -> bytes * int
+#        but an expression was expected of type read = int -> string * int
+#        Type bytes is not compatible with type string 
+# OCamlMakefile:952: recipe for target 'flac.cmo' failed
+# make[2]: *** [flac.cmo] Error 2
+# make[2]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/flac.0.1.2/src'
+# OCamlMakefile:717: recipe for target 'byte-code-library' failed
+# make[1]: *** [byte-code-library] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/flac.0.1.2/src'
+# Makefile:12: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build flac 0.1.2
++- 
++- The following changes have been performed
+| - install ogg 0.5.2
++- 
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libflac-dev
+
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180831055715.export"
+31 1535695022 1535695042

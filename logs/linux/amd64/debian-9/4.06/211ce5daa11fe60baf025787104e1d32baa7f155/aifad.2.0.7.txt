@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 aifad.2.0.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for aifad.2.0.7: The following dependencies couldn't be met:
+          - aifad -> cfg < 2.1.0 -> ocaml < 4.06
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=aifad.2.0.7 returned 20
+20 1535695691 1535695694
