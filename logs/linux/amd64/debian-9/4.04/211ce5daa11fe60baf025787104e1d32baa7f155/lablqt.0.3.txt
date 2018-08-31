@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 lablqt.0.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for lablqt.0.3: The following dependencies couldn't be met:
+          - lablqt -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=lablqt.0.3 returned 20
+20 1535693396 1535693399
