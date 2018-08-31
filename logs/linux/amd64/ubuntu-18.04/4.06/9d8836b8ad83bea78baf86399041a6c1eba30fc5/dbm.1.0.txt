@@ -1,0 +1,50 @@
+$ opam depext -iy -j 2 dbm.1.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=ubuntu, os-family=debian
+# The following system packages are needed:
+libgdbm-dev
+m4
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy libgdbm-dev m4
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libgdbm-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15325 files and directories currently installed.)
+Preparing to unpack .../libgdbm-dev_1.14.1-6_amd64.deb ...
+Unpacking libgdbm-dev:amd64 (1.14.1-6) ...
+Setting up libgdbm-dev:amd64 (1.14.1-6) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install dbm 1.0
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[dbm.1.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[WARNING] File /home/opam/.opam/4.06/.opam-switch/build/dbm.1.0/mkdir-stublibs.patch uses context diffs which are less portable; consider using unified diffs
+[ERROR] The compilation of dbm failed at "/home/opam/.opam/4.06/.opam-switch/build/dbm.1.0/./configure".
+
+#=== ERROR while compiling dbm.1.0 ============================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/dbm.1.0
+# command              ~/.opam/4.06/.opam-switch/build/dbm.1.0/./configure
+# exit-code            2
+# env-file             ~/.opam/log/dbm-14-2c871f.env
+# output-file          ~/.opam/log/dbm-14-2c871f.out
+### output ###
+# Configuring for OCaml version 4.06.1
+# 
+# NDBM not found, the "camldbm" library cannot be built.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build dbm 1.0
++- 
+- No changes have been performed
+
+The packages you requested declare the following system dependencies. Please make sure they are installed before retrying:
+    libgdbm-dev
+
+# Run eval $(opam env) to update the current shell environment
+31 1535746084 1535746094
