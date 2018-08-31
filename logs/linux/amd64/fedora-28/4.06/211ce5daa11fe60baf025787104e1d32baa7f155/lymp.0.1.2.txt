@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 lymp.0.1.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for lymp.0.1.2: The following dependencies couldn't be met:
+          - lymp -> bson -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=lymp.0.1.2 returned 20
+20 1535687695 1535687698

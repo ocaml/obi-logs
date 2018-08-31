@@ -1,0 +1,129 @@
+$ opam depext -iy -j 2 ppx_poly_record.1.1.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Thu Aug 30 20:08:47 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxx]
+  - install omake                   0.9.8.7 [required by ppx_poly_record]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppxx]
+  - install ppx_tools_versioned     5.2.1   [required by ppxx]
+  - install ppxx                    2.3.1   [required by ppx_poly_record]
+  - install ppx_poly_record         1.1.1
+===== 7 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[omake.0.9.8.7] found in cache
+[ppx_poly_record.1.1.1] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppxx.2.3.1] found in cache
+[result.1.3] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2.1
+-> installed ppxx.2.3.1
+-> installed omake.0.9.8.7
+[ERROR] The compilation of ppx_poly_record failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -build".
+
+#=== ERROR while compiling ppx_poly_record.1.1.1 ==============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/ppx_poly_record.1.1.1
+# command              ~/.opam/4.06/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             ~/.opam/log/ppx_poly_record-10-9501aa.env
+# output-file          ~/.opam/log/ppx_poly_record-10-9501aa.out
+### output ###
+# *** omake: reading OMakefiles
+# File OMyMakefile: line 205, characters 3-26:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMyMakefile: line 759, characters 2-21:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.06/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.06/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.06/bin/ocamlopt.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# *** omake: finished reading OMakefiles (0.08 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - build ppx ppx_poly_record.cmx
+# + ocamlfind ocamlc -annot -bin-annot -package compiler-libs.common,ppxx -g -w A-3-4-9-40-42-44-45-48 -warn-error a -g -I . -c ppx_poly_record.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml, /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# File "ppx_poly_record.ml", line 95, characters 53-59:
+# Error: This expression has type
+#          (Ast_405.Parsetree.pattern * Ast_405.Parsetree.expression * 
+#           string * Ast_405.Parsetree.expression * Parsetree.expression)
+#          list
+#        but an expression was expected of type
+#          (Ast_405.Parsetree.pattern * Ast_405.Parsetree.expression * 
+#           string * Ast_405.Parsetree.expression *
+#           Ast_405.Parsetree.expression)
+#          list
+#        Type Parsetree.expression is not compatible with type
+#          Ast_405.Parsetree.expression 
+# *** omake: 24/76 targets are up to date
+# *** omake: failed (0.15 sec, 1/1 scans, 1/1 rules, 13/85 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    ppx/ppx_poly_record.cmi
+#       depends on: ppx/ppx_poly_record.ml
+#    ppx/ppx_poly_record.cmo
+#       depends on: ppx/ppx_poly_record.ml
+#    ppx/ppx_poly_record.cmx
+#       depends on: ppx/ppx_poly_record.ml
+#    ppx/ppx_poly_record.o
+#       depends on: ppx/ppx_poly_record.ml
+# E: Failure("Command 'sh -c \"cp OMakeroot.in OMakeroot; omake PREFIX=/home/opam/.opam/4.06\"' terminated with error code 2")
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ppx_poly_record 1.1.1
++- 
++- The following changes have been performed
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install omake                   0.9.8.7
+| - install ppx_tools_versioned     5.2.1
+| - install ppxx                    2.3.1
+| - install result                  1.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180831035317.export"
+31 1535687594 1535687644

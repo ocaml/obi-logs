@@ -1,0 +1,201 @@
+$ opam depext -iy -j 2 erm_xmpp.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+gmp
+gmp-devel
+m4
+perl-Pod-Html
+pkgconfig
+zlib-devel
+Name        : gmp
+Epoch       : 1
+Version     : 6.1.2
+Release     : 7.fc28
+Architecture: x86_64
+Install Date: Tue Aug 21 05:47:54 2018
+Group       : System Environment/Libraries
+Size        : 802883
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, Thu Feb  8 08:28:20 2018, Key ID e08e7e629db62fb1
+Source RPM  : gmp-6.1.2-7.fc28.src.rpm
+Build Date  : Wed Feb  7 15:25:15 2018
+Build Host  : buildhw-02.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.
+package gmp-devel is not installed
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Thu Aug 30 20:08:47 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package perl-Pod-Html is not installed
+package pkgconfig is not installed
+package zlib-devel is not installed
+# The following new OS packages need to be installed: gmp-devel perl-Pod-Html pkgconfig zlib-devel
+The following command needs to be run through "sudo":
+    yum install -y gmp-devel perl-Pod-Html pkgconfig zlib-devel
+Fedora 28 - x86_64 - Updates                     26 MB/s |  23 MB     00:00    
+Last metadata expiration check: 0:00:09 ago on Fri Aug 31 04:13:21 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package             Arch         Version                   Repository     Size
+================================================================================
+Installing:
+ gmp-devel           x86_64       1:6.1.2-7.fc28            fedora        187 k
+ perl-Pod-Html       noarch       1.22.02-413.fc28          updates        85 k
+ zlib-devel          x86_64       1.2.11-8.fc28             updates        55 k
+Installing dependencies:
+ gmp-c++             x86_64       1:6.1.2-7.fc28            fedora         31 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 359 k
+Installed size: 551 k
+Downloading Packages:
+(1/4): perl-Pod-Html-1.22.02-413.fc28.noarch.rp 1.5 MB/s |  85 kB     00:00    
+(2/4): zlib-devel-1.2.11-8.fc28.x86_64.rpm      3.1 MB/s |  55 kB     00:00    
+(3/4): gmp-c++-6.1.2-7.fc28.x86_64.rpm          242 kB/s |  31 kB     00:00    
+(4/4): gmp-devel-6.1.2-7.fc28.x86_64.rpm        1.4 MB/s | 187 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           287 kB/s | 359 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : gmp-c++-1:6.1.2-7.fc28.x86_64                          1/4 
+  Running scriptlet: gmp-c++-1:6.1.2-7.fc28.x86_64                          1/4 
+  Installing       : gmp-devel-1:6.1.2-7.fc28.x86_64                        2/4 
+  Running scriptlet: gmp-devel-1:6.1.2-7.fc28.x86_64                        2/4 
+  Installing       : zlib-devel-1.2.11-8.fc28.x86_64                        3/4 
+  Installing       : perl-Pod-Html-1.22.02-413.fc28.noarch                  4/4 
+  Running scriptlet: perl-Pod-Html-1.22.02-413.fc28.noarch                  4/4 
+  Verifying        : gmp-devel-1:6.1.2-7.fc28.x86_64                        1/4 
+  Verifying        : gmp-c++-1:6.1.2-7.fc28.x86_64                          2/4 
+  Verifying        : perl-Pod-Html-1.22.02-413.fc28.noarch                  3/4 
+  Verifying        : zlib-devel-1.2.11-8.fc28.x86_64                        4/4 
+
+Installed:
+  gmp-devel.x86_64 1:6.1.2-7.fc28     perl-Pod-Html.noarch 1.22.02-413.fc28    
+  zlib-devel.x86_64 1.2.11-8.fc28     gmp-c++.x86_64 1:6.1.2-7.fc28            
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides gmp-devel perl-Pod-Html pkgconfig zlib-devel
+gmp-devel-6.1.2-7.fc28.x86_64
+perl-Pod-Html-1.22.02-413.fc28.noarch
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+zlib-devel-1.2.11-8.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp          1      [required by conf-gmp-powm-sec, zarith]
+  - install conf-perl         1      [required by zarith]
+  - install ocamlbuild        0.12.0 [required by erm_xmpp]
+  - install conf-pkg-config   1.1    [required by conf-zlib]
+  - install conf-gmp-powm-sec 1      [required by cryptokit]
+  - install zarith            1.7    [required by cryptokit]
+  - install erm_xml           0.3    [required by erm_xmpp]
+  - install camlp4            4.06+1 [required by erm_xmpp]
+  - install conf-zlib         1      [required by cryptokit]
+  - install cryptokit         1.13   [required by erm_xmpp]
+  - install erm_xmpp          0.2
+===== 11 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[camlp4.4.06+1] found in cache
+[cryptokit.1.13] found in cache
+[erm_xml.0.3] found in cache
+[erm_xmpp.0.2] found in cache
+[ocamlbuild.0.12.0] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-zlib.1
+-> installed zarith.1.7
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of erm_xml failed at "/home/opam/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06".
+-> installed cryptokit.1.13
+-> installed camlp4.4.06+1
+
+#=== ERROR while compiling erm_xml.0.3 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/erm_xml.0.3
+# command              ~/.opam/4.06/bin/ocaml setup.ml -configure --prefix /home/opam/.opam/4.06
+# exit-code            2
+# env-file             ~/.opam/log/erm_xml-10-ac853a.env
+# output-file          ~/.opam/log/erm_xml-10-ac853a.out
+### output ###
+# File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-26:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# File "/usr/home/ermine/projects/ocaml/src/oasis.git/src/oasis/OASISString.ml", line 118, characters 8-11:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build erm_xml 0.3
++- 
++- The following changes have been performed (the rest was aborted)
+| - install camlp4            4.06+1
+| - install conf-gmp          1
+| - install conf-gmp-powm-sec 1
+| - install conf-perl         1
+| - install conf-pkg-config   1.1
+| - install conf-zlib         1
+| - install cryptokit         1.13
+| - install ocamlbuild        0.12.0
+| - install zarith            1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180831041337.export"
+31 1535688797 1535688918

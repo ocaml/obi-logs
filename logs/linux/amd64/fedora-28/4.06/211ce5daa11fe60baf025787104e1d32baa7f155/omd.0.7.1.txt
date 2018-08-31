@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 omd.0.7.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for omd.0.7.1: The following dependencies couldn't be met:
+          - omd -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=omd.0.7.1 returned 20
+20 1535688037 1535688041
