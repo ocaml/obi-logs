@@ -1,0 +1,571 @@
+$ opam depext -iy -j 2 frenetic.5.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install re                         1.7.3      [required by cohttp, mparser]
+  - install num                        1.1        [required by sexplib]
+  - install result                     1.3        [required by ppx_deriving]
+  - install ocamlbuild                 0.12.0     [required by mparser, menhir, ppx_deriving]
+  - install jane-street-headers        v0.10.0    [required by core_kernel]
+  - install magic-mime                 1.1.0      [required by cohttp-async]
+  - install base-bytes                 base       [required by base64, mparser]
+  - install ocamlgraph                 1.8.8      [required by frenetic]
+  - install ppx_derivers               1.0        [required by ppx_deriving]
+  - install ppx_traverse_builtins      v0.10.0    [required by ppx_core, ppx_metaquot]
+  - install ppx_tools                  5.1+4.06.0 [required by ppx_deriving]
+  - install spawn                      v0.10.1    [required by core]
+  - install octavius                   1.2.0      [required by ppx_js_style]
+  - install ocaml-compiler-libs        v0.10.0    [required by ppx_core]
+  - install easy-format                1.3.1      [required by yojson]
+  - install conf-which                 1          [required by biniou]
+  - install sexplib                    v0.10.0    [required by frenetic]
+  - install ocaml-migrate-parsetree    1.0.11     [required by ppx_deriving, async_extended, async, etc.]
+  - install uchar                      0.0.2      [required by jsonm]
+  - install topkg                      0.9.1      [required by randomconv, duration, jsonm, etc.]
+  - install menhir                     20180703   [required by frenetic]
+  - install stringext                  1.5.0      [required by cohttp]
+  - install mparser                    1.2.3      [required by frenetic]
+  - install gen                        0.5.1      [required by sedlex]
+  - install cppo                       1.6.4      [required by frenetic]
+  - install base64                     2.2.0      [required by frenetic]
+  - install biniou                     1.2.0      [required by yojson]
+  - install cstruct                    3.2.1      [required by frenetic]
+  - install base                       v0.10.0    [required by core_kernel, core]
+  - install ppx_tools_versioned        5.2.1      [required by frenetic]
+  - install ppx_ast                    v0.10.0    [required by ppx_core]
+  - install uutf                       1.0.1      [required by jsonm]
+  - install rresult                    0.5.0      [required by tcpip]
+  - install fmt                        0.8.5      [required by cohttp-async, tcpip]
+  - install duration                   0.1.1      [required by tcpip]
+  - install astring                    0.8.3      [required by conduit]
+  - install ocplib-endian              1.0        [required by mirage-profile]
+  - install lwt                        4.1.0      [required by tcpip]                                      For the PPX, please install package lwt_ppx
+                                                                                                           For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install cppo_ocamlbuild            1.6.0      [required by ppx_deriving]
+  - install yojson                     1.4.1      [required by frenetic]
+  - install randomconv                 0.1.0      [required by tcpip]
+  - install mirage-random              1.1.0      [required by tcpip]
+  - install typerep                    v0.10.0    [required by core_kernel]
+  - install stdio                      v0.10.0    [required by core_kernel, core]
+  - install sedlex                     1.99.4     [required by frenetic]
+  - install ppx_cstruct                3.2.1      [required by frenetic]
+  - install jsonm                      1.0.1      [required by cohttp]
+  - install mirage-flow                1.5.0      [required by mirage-protocols]
+  - install mirage-device              1.1.0      [required by mirage-net, mirage-clock, mirage-protocols]
+  - install logs                       0.6.2      [required by cohttp-async, tcpip]
+  - install inotify                    2.3        [required by async_inotify]
+  - install cstruct-lwt                3.2.1      [required by tcpip]
+  - install ppx_deriving               4.2.1      [required by frenetic]
+  - install ppx_core                   v0.10.0    [required by frenetic]
+  - install configurator               v0.10.0    [required by tcpip]
+  - install mirage-profile             0.8.2      [required by tcpip]
+  - install mirage-time                1.1.0      [required by mirage-time-lwt]
+  - install mirage-protocols           1.3.0      [required by tcpip]
+  - install mirage-net                 1.1.1      [required by tcpip]
+  - install mirage-clock               1.3.0      [required by tcpip]
+  - install ppx_optcomp                v0.10.0    [required by ppx_driver]
+  - install io-page                    2.0.1      [required by io-page-unix, mirage-net-lwt]
+  - install mirage-time-lwt            1.1.0      [required by tcpip]
+  - install mirage-stack               1.2.0      [required by mirage-stack-lwt]
+  - install mirage-clock-lwt           1.3.0      [required by tcpip]
+  - install ppx_driver                 v0.10.4    [required by frenetic]
+  - install io-page-unix               2.0.1      [required by tcpip]
+  - install variantslib                v0.10.0    [required by core_kernel]
+  - install ppx_metaquot               v0.10.0    [required by frenetic]
+  - install ppx_let                    v0.10.0    [required by ppx_jane]
+  - install ppx_here                   v0.10.0    [required by ppx_assert, ppx_jane]
+  - install fieldslib                  v0.10.0    [required by cohttp]
+  - install ppx_type_conv              v0.10.0    [required by cohttp]
+  - install ppx_pipebang               v0.10.0    [required by ppx_jane]
+  - install ppx_optional               v0.10.0    [required by ppx_jane]
+  - install ppx_js_style               v0.10.0    [required by ppx_base]
+  - install ppx_inline_test            v0.10.1    [required by core_kernel]
+  - install ppx_fail                   v0.10.0    [required by ppx_jane]
+  - install ppx_variants_conv          v0.10.0    [required by bin_prot, ppx_jane]
+  - install ppx_typerep_conv           v0.10.0    [required by ppx_jane]
+  - install ppx_traverse               v0.10.0    [required by ppx_custom_printf, ppx_expect]
+  - install ppx_sexp_conv              v0.10.0    [required by frenetic]
+  - install ppx_fields_conv            v0.10.0    [required by frenetic]
+  - install ppx_enumerate              v0.10.0    [required by frenetic]
+  - install ppx_compare                v0.10.0    [required by frenetic]
+  - install ppx_bench                  v0.10.0    [required by ppx_jane]
+  - install uri                        1.9.7      [required by cohttp]
+  - install ppx_sexp_value             v0.10.0    [required by ppx_jane]
+  - install ppx_sexp_message           v0.10.0    [required by core_kernel]
+  - install ppx_custom_printf          v0.10.0    [required by bin_prot, ppx_jane]
+  - install ipaddr                     2.8.0      [required by frenetic]
+  - install ppx_hash                   v0.10.0    [required by core_kernel]
+  - install ppx_assert                 v0.10.0    [required by core_kernel, core]
+  - install cohttp                     1.1.0      [required by frenetic]
+  - install bin_prot                   v0.10.0    [required by core_extended]
+  - install mirage-stack-lwt           1.2.0      [required by tcpip]
+  - install mirage-protocols-lwt       1.3.0      [required by tcpip]
+  - install mirage-net-lwt             1.1.0      [required by tcpip]
+  - install conduit                    1.1.0      [required by conduit-async]
+  - install ppx_base                   v0.10.0    [required by core_kernel]
+  - install ppx_expect                 v0.10.1    [required by ppx_jane]
+  - install ppx_bin_prot               v0.10.0    [required by ppx_jane]
+  - install tcpip                      3.4.2      [required by frenetic]
+  - install sexp_pretty                v0.10.0    [required by expect_test_helpers]
+  - install ppx_jane                   v0.10.0    [required by async, async_extended]
+  - install core_kernel                v0.10.0    [required by cstruct-async]
+  - install textutils_kernel           v0.10.0    [required by textutils]
+  - install re2                        v0.10.1    [required by core_extended]
+  - install protocol_version_header    v0.10.0    [required by async_rpc_kernel]
+  - install expect_test_helpers_kernel v0.10.0    [required by expect_test_helpers]
+  - install core                       v0.10.0    [required by frenetic]
+  - install async_kernel               v0.10.0    [required by async, cstruct-async]
+  - install textutils                  v0.10.0    [required by async_extended]
+  - install async_unix                 v0.10.0    [required by async, cstruct-async]
+  - install async_rpc_kernel           v0.10.0    [required by async_extra]
+  - install core_extended              v0.10.0    [required by async_extended]
+  - install cstruct-async              3.2.1      [required by frenetic]
+  - install async_extra                v0.10.0    [required by async]
+  - install async                      v0.10.0    [required by frenetic]
+  - install expect_test_helpers        v0.10.0    [required by async_extended]
+  - install conduit-async              1.1.0      [required by cohttp-async]
+  - install command_rpc                v0.10.0    [required by async_extended]
+  - install async_shell                v0.10.0    [required by async_extended]
+  - install async_interactive          v0.10.0    [required by async_extended]
+  - install async_find                 v0.10.0    [required by async_extended]
+  - install delimited_parsing          v0.10.0    [required by async_extended]
+  - install cohttp-async               1.0.2      [required by frenetic]
+  - install async_inotify              v0.10.0    [required by async_extended]
+  - install async_extended             v0.10.0    [required by frenetic]
+  - install frenetic                   5.0.2
+===== 130 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[astring.0.8.3] found in cache
+[async.v0.10.0] found in cache
+[async_extended.v0.10.0] found in cache
+[async_extra.v0.10.0] found in cache
+[async_find.v0.10.0] found in cache
+[async_inotify.v0.10.0] found in cache
+[async_interactive.v0.10.0] found in cache
+[async_kernel.v0.10.0] found in cache
+[async_rpc_kernel.v0.10.0] found in cache
+[async_shell.v0.10.0] found in cache
+[async_unix.v0.10.0] found in cache
+[base.v0.10.0] found in cache
+[base64.2.2.0] found in cache
+[bin_prot.v0.10.0] found in cache
+[biniou.1.2.0] found in cache
+[cohttp.1.1.0] found in cache
+[cohttp-async.1.0.2] found in cache
+[command_rpc.v0.10.0] found in cache
+[conduit.1.1.0] found in cache
+[conduit-async.1.1.0] found in cache
+[configurator.v0.10.0] found in cache
+[core.v0.10.0] found in cache
+[core_extended.v0.10.0] found in cache
+[core_kernel.v0.10.0] found in cache
+[cppo.1.6.4] found in cache
+[cppo_ocamlbuild.1.6.0] found in cache
+[cstruct.3.2.1] found in cache
+[cstruct-async.3.2.1] found in cache
+[cstruct-lwt.3.2.1] found in cache
+[delimited_parsing.v0.10.0] found in cache
+[duration.0.1.1] found in cache
+[easy-format.1.3.1] found in cache
+[expect_test_helpers.v0.10.0] found in cache
+[expect_test_helpers_kernel.v0.10.0] found in cache
+[fieldslib.v0.10.0] found in cache
+[fmt.0.8.5] found in cache
+[frenetic.5.0.2] found in cache
+[gen.0.5.1] found in cache
+[inotify.2.3] found in cache
+[io-page.2.0.1] found in cache
+[io-page-unix.2.0.1] found in cache
+[ipaddr.2.8.0] found in cache
+[jane-street-headers.v0.10.0] found in cache
+[jsonm.1.0.1] found in cache
+[logs.0.6.2] found in cache
+[lwt.4.1.0] found in cache
+[magic-mime.1.1.0] found in cache
+[menhir.20180703] found in cache
+[mirage-clock.1.3.0] found in cache
+[mirage-clock-lwt.1.3.0] found in cache
+[mirage-device.1.1.0] found in cache
+[mirage-flow.1.5.0] found in cache
+[mirage-net.1.1.1] found in cache
+[mirage-net-lwt.1.1.0] found in cache
+[mirage-profile.0.8.2] found in cache
+[mirage-protocols.1.3.0] found in cache
+[mirage-protocols-lwt.1.3.0] found in cache
+[mirage-random.1.1.0] found in cache
+[mirage-stack.1.2.0] found in cache
+[mirage-stack-lwt.1.2.0] found in cache
+[mirage-time.1.1.0] found in cache
+[mirage-time-lwt.1.1.0] found in cache
+[mparser.1.2.3] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.10.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[ocplib-endian.1.0] found in cache
+[octavius.1.2.0] found in cache
+[ppx_assert.v0.10.0] found in cache
+[ppx_ast.v0.10.0] found in cache
+[ppx_base.v0.10.0] found in cache
+[ppx_bench.v0.10.0] found in cache
+[ppx_bin_prot.v0.10.0] found in cache
+[ppx_compare.v0.10.0] found in cache
+[ppx_core.v0.10.0] found in cache
+[ppx_cstruct.3.2.1] found in cache
+[ppx_custom_printf.v0.10.0] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_deriving.4.2.1] found in cache
+[ppx_driver.v0.10.4] found in cache
+[ppx_enumerate.v0.10.0] found in cache
+[ppx_expect.v0.10.1] found in cache
+[ppx_fail.v0.10.0] found in cache
+[ppx_fields_conv.v0.10.0] found in cache
+[ppx_hash.v0.10.0] found in cache
+[ppx_here.v0.10.0] found in cache
+[ppx_inline_test.v0.10.1] found in cache
+[ppx_jane.v0.10.0] found in cache
+[ppx_js_style.v0.10.0] found in cache
+[ppx_let.v0.10.0] found in cache
+[ppx_metaquot.v0.10.0] found in cache
+[ppx_optcomp.v0.10.0] found in cache
+[ppx_optional.v0.10.0] found in cache
+[ppx_pipebang.v0.10.0] found in cache
+[ppx_sexp_conv.v0.10.0] found in cache
+[ppx_sexp_message.v0.10.0] found in cache
+[ppx_sexp_value.v0.10.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppx_traverse.v0.10.0] found in cache
+[ppx_traverse_builtins.v0.10.0] found in cache
+[ppx_type_conv.v0.10.0] found in cache
+[ppx_typerep_conv.v0.10.0] found in cache
+[ppx_variants_conv.v0.10.0] found in cache
+[protocol_version_header.v0.10.0] found in cache
+[randomconv.0.1.0] found in cache
+[re.1.7.3] found in cache
+[re2.v0.10.1] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[sedlex.1.99.4] found in cache
+[sexp_pretty.v0.10.0] found in cache
+[sexplib.v0.10.0] found in cache
+[spawn.v0.10.1] found in cache
+[stdio.v0.10.0] found in cache
+[stringext.1.5.0] found in cache
+[tcpip.3.4.2] found in cache
+[textutils.v0.10.0] found in cache
+[textutils_kernel.v0.10.0] found in cache
+[topkg.0.9.1] found in cache
+[typerep.v0.10.0] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uutf.1.0.1] found in cache
+[variantslib.v0.10.0] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed base64.2.2.0
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed gen.0.5.1
+-> installed jane-street-headers.v0.10.0
+-> installed magic-mime.1.1.0
+-> installed num.1.1
+-> installed biniou.1.2.0
+-> installed ocaml-compiler-libs.v0.10.0
+-> installed ocamlbuild.0.12.0
+-> installed cppo_ocamlbuild.1.6.0
+-> installed ocamlgraph.1.8.8
+-> installed ocplib-endian.1.0
+-> installed octavius.1.2.0
+-> installed ppx_derivers.1.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed ppx_traverse_builtins.v0.10.0
+-> installed re.1.7.3
+-> installed mparser.1.2.3
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed menhir.20180703
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed inotify.2.3
+-> installed ppx_ast.v0.10.0
+-> installed ppx_tools_versioned.5.2.1
+-> installed ppx_deriving.4.2.1
+-> installed sexplib.v0.10.0
+[ERROR] The compilation of sedlex failed at "/usr/bin/make all".
+-> installed cstruct.3.2.1
+-> installed cstruct-lwt.3.2.1
+-> installed mirage-random.1.1.0
+-> installed ppx_cstruct.3.2.1
+-> installed mirage-profile.0.8.2
+-> installed spawn.v0.10.1
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed base.v0.10.0
+-> installed astring.0.8.3
+-> installed duration.0.1.1
+-> installed randomconv.0.1.0
+-> installed rresult.0.5.0
+-> installed stdio.v0.10.0
+-> installed configurator.v0.10.0
+-> installed io-page.2.0.1
+-> installed io-page-unix.2.0.1
+-> installed typerep.v0.10.0
+-> installed uchar.0.0.2
+-> installed fmt.0.8.5
+-> installed mirage-device.1.1.0
+-> installed logs.0.6.2
+-> installed mirage-clock.1.3.0
+-> installed mirage-flow.1.5.0
+-> installed mirage-clock-lwt.1.3.0
+-> installed mirage-net.1.1.1
+-> installed mirage-time.1.1.0
+-> installed mirage-protocols.1.3.0
+-> installed mirage-time-lwt.1.1.0
+-> installed ppx_core.v0.10.0
+-> installed mirage-stack.1.2.0
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed yojson.1.4.1
+-> installed ppx_optcomp.v0.10.0
+-> installed ppx_driver.v0.10.4
+-> installed fieldslib.v0.10.0
+-> installed ppx_here.v0.10.0
+-> installed ppx_let.v0.10.0
+-> installed ppx_metaquot.v0.10.0
+-> installed ppx_fail.v0.10.0
+-> installed ppx_inline_test.v0.10.1
+-> installed ppx_js_style.v0.10.0
+-> installed ppx_optional.v0.10.0
+-> installed ppx_pipebang.v0.10.0
+-> installed ppx_type_conv.v0.10.0
+-> installed ppx_bench.v0.10.0
+-> installed ppx_compare.v0.10.0
+-> installed ppx_enumerate.v0.10.0
+-> installed ppx_fields_conv.v0.10.0
+-> installed ppx_sexp_conv.v0.10.0
+-> installed ipaddr.2.8.0
+-> installed mirage-net-lwt.1.1.0
+-> installed mirage-protocols-lwt.1.3.0
+-> installed mirage-stack-lwt.1.2.0
+-> installed ppx_assert.v0.10.0
+-> installed ppx_hash.v0.10.0
+-> installed ppx_sexp_message.v0.10.0
+-> installed ppx_sexp_value.v0.10.0
+-> installed ppx_traverse.v0.10.0
+-> installed ppx_base.v0.10.0
+-> installed ppx_typerep_conv.v0.10.0
+-> installed sexp_pretty.v0.10.0
+-> installed tcpip.3.4.2
+-> installed uri.1.9.7
+-> installed conduit.1.1.0
+-> installed ppx_custom_printf.v0.10.0
+-> installed variantslib.v0.10.0
+-> installed cohttp.1.1.0
+-> installed ppx_variants_conv.v0.10.0
+-> installed bin_prot.v0.10.0
+-> installed ppx_expect.v0.10.1
+-> installed ppx_bin_prot.v0.10.0
+-> installed ppx_jane.v0.10.0
+-> installed core_kernel.v0.10.0
+-> installed async_kernel.v0.10.0
+-> installed core.v0.10.0
+-> installed async_unix.v0.10.0
+-> installed cstruct-async.3.2.1
+-> installed expect_test_helpers_kernel.v0.10.0
+-> installed protocol_version_header.v0.10.0
+-> installed async_rpc_kernel.v0.10.0
+-> installed re2.v0.10.1
+-> installed textutils_kernel.v0.10.0
+-> installed async_extra.v0.10.0
+-> installed textutils.v0.10.0
+-> installed async.v0.10.0
+-> installed async_find.v0.10.0
+-> installed async_inotify.v0.10.0
+-> installed async_interactive.v0.10.0
+-> installed command_rpc.v0.10.0
+-> installed conduit-async.1.1.0
+-> installed core_extended.v0.10.0
+-> installed cohttp-async.1.0.2
+-> installed expect_test_helpers.v0.10.0
+-> installed async_shell.v0.10.0
+-> installed delimited_parsing.v0.10.0
+-> installed async_extended.v0.10.0
+
+#=== ERROR while compiling sedlex.1.99.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/sedlex-11-352405.env
+# output-file          ~/.opam/log/sedlex-11-352405.out
+### output ###
+# (cd src/lib && /usr/bin/make all doc)
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/lib'
+# ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+# ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+# rm -rf ../../libdoc
+# mkdir ../../libdoc
+# ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/lib'
+# (cd src/syntax && /usr/bin/make all)
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06+flambda/lib/ocaml, /home/opam/.opam/4.06+flambda/lib/ocaml/compiler-libs
+# File "ppx_sedlex.ml", line 11, characters 5-24:
+# Error: Unbound module Ast_convenience_405
+# Makefile:18: recipe for target 'sedlex.cma' failed
+# make[1]: *** [sedlex.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sedlex 1.99.4
++- 
++- The following changes have been performed (the rest was aborted)
+| - install astring                    0.8.3
+| - install async                      v0.10.0
+| - install async_extended             v0.10.0
+| - install async_extra                v0.10.0
+| - install async_find                 v0.10.0
+| - install async_inotify              v0.10.0
+| - install async_interactive          v0.10.0
+| - install async_kernel               v0.10.0
+| - install async_rpc_kernel           v0.10.0
+| - install async_shell                v0.10.0
+| - install async_unix                 v0.10.0
+| - install base                       v0.10.0
+| - install base-bytes                 base
+| - install base64                     2.2.0
+| - install bin_prot                   v0.10.0
+| - install biniou                     1.2.0
+| - install cohttp                     1.1.0
+| - install cohttp-async               1.0.2
+| - install command_rpc                v0.10.0
+| - install conduit                    1.1.0
+| - install conduit-async              1.1.0
+| - install conf-which                 1
+| - install configurator               v0.10.0
+| - install core                       v0.10.0
+| - install core_extended              v0.10.0
+| - install core_kernel                v0.10.0
+| - install cppo                       1.6.4
+| - install cppo_ocamlbuild            1.6.0
+| - install cstruct                    3.2.1
+| - install cstruct-async              3.2.1
+| - install cstruct-lwt                3.2.1
+| - install delimited_parsing          v0.10.0
+| - install duration                   0.1.1
+| - install easy-format                1.3.1
+| - install expect_test_helpers        v0.10.0
+| - install expect_test_helpers_kernel v0.10.0
+| - install fieldslib                  v0.10.0
+| - install fmt                        0.8.5
+| - install gen                        0.5.1
+| - install inotify                    2.3
+| - install io-page                    2.0.1
+| - install io-page-unix               2.0.1
+| - install ipaddr                     2.8.0
+| - install jane-street-headers        v0.10.0
+| - install jsonm                      1.0.1
+| - install logs                       0.6.2
+| - install lwt                        4.1.0
+| - install magic-mime                 1.1.0
+| - install menhir                     20180703
+| - install mirage-clock               1.3.0
+| - install mirage-clock-lwt           1.3.0
+| - install mirage-device              1.1.0
+| - install mirage-flow                1.5.0
+| - install mirage-net                 1.1.1
+| - install mirage-net-lwt             1.1.0
+| - install mirage-profile             0.8.2
+| - install mirage-protocols           1.3.0
+| - install mirage-protocols-lwt       1.3.0
+| - install mirage-random              1.1.0
+| - install mirage-stack               1.2.0
+| - install mirage-stack-lwt           1.2.0
+| - install mirage-time                1.1.0
+| - install mirage-time-lwt            1.1.0
+| - install mparser                    1.2.3
+| - install num                        1.1
+| - install ocaml-compiler-libs        v0.10.0
+| - install ocaml-migrate-parsetree    1.0.11
+| - install ocamlbuild                 0.12.0
+| - install ocamlgraph                 1.8.8
+| - install ocplib-endian              1.0
+| - install octavius                   1.2.0
+| - install ppx_assert                 v0.10.0
+| - install ppx_ast                    v0.10.0
+| - install ppx_base                   v0.10.0
+| - install ppx_bench                  v0.10.0
+| - install ppx_bin_prot               v0.10.0
+| - install ppx_compare                v0.10.0
+| - install ppx_core                   v0.10.0
+| - install ppx_cstruct                3.2.1
+| - install ppx_custom_printf          v0.10.0
+| - install ppx_derivers               1.0
+| - install ppx_deriving               4.2.1
+| - install ppx_driver                 v0.10.4
+| - install ppx_enumerate              v0.10.0
+| - install ppx_expect                 v0.10.1
+| - install ppx_fail                   v0.10.0
+| - install ppx_fields_conv            v0.10.0
+| - install ppx_hash                   v0.10.0
+| - install ppx_here                   v0.10.0
+| - install ppx_inline_test            v0.10.1
+| - install ppx_jane                   v0.10.0
+| - install ppx_js_style               v0.10.0
+| - install ppx_let                    v0.10.0
+| - install ppx_metaquot               v0.10.0
+| - install ppx_optcomp                v0.10.0
+| - install ppx_optional               v0.10.0
+| - install ppx_pipebang               v0.10.0
+| - install ppx_sexp_conv              v0.10.0
+| - install ppx_sexp_message           v0.10.0
+| - install ppx_sexp_value             v0.10.0
+| - install ppx_tools                  5.1+4.06.0
+| - install ppx_tools_versioned        5.2.1
+| - install ppx_traverse               v0.10.0
+| - install ppx_traverse_builtins      v0.10.0
+| - install ppx_type_conv              v0.10.0
+| - install ppx_typerep_conv           v0.10.0
+| - install ppx_variants_conv          v0.10.0
+| - install protocol_version_header    v0.10.0
+| - install randomconv                 0.1.0
+| - install re                         1.7.3
+| - install re2                        v0.10.1
+| - install result                     1.3
+| - install rresult                    0.5.0
+| - install sexp_pretty                v0.10.0
+| - install sexplib                    v0.10.0
+| - install spawn                      v0.10.1
+| - install stdio                      v0.10.0
+| - install stringext                  1.5.0
+| - install tcpip                      3.4.2
+| - install textutils                  v0.10.0
+| - install textutils_kernel           v0.10.0
+| - install topkg                      0.9.1
+| - install typerep                    v0.10.0
+| - install uchar                      0.0.2
+| - install uri                        1.9.7
+| - install uutf                       1.0.1
+| - install variantslib                v0.10.0
+| - install yojson                     1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180831065302.export"
+31 1535698379 1535698933
