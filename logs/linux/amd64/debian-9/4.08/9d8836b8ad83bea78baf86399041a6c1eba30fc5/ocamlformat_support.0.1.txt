@@ -1,0 +1,95 @@
+$ opam depext -iy -j 2 ocamlformat_support.0.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# No extra OS packages requirements found.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlformat_support 0.1
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlformat_support.0.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of ocamlformat_support failed at "/usr/bin/make".
+
+#=== ERROR while compiling ocamlformat_support.0.1 ============================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/ocamlformat_support.0.1
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/ocamlformat_support-11-05296d.env
+# output-file          ~/.opam/log/ocamlformat_support-11-05296d.out
+### output ###
+# patch -s -i format.ml.patch -o format_.ml
+# patch -s -i format.mli.patch -o format_.mli
+# jbuilder build
+#       ocamlc .format_.objs/format___Format.{cmi,cmti}
+# File "format.mli", line 354, characters 32-54:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format.mli", line 544, characters 15-37:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#       ocamlc .format_.objs/format_.{cmi,cmti}
+# File "format_.mli", line 368, characters 32-54:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format_.mli", line 563, characters 15-37:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+#     ocamlopt .format_.objs/format___Format.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmx -c -impl format.ml)
+# File "format.ml", line 1009, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format.ml", line 1010, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format.ml", line 1248, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+#     ocamlopt .format_.objs/format_.{cmx,o} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlopt.opt -w -40 -g -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format_.cmx -c -impl format_.ml)
+# File "format_.ml", line 1109, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format_.ml", line 1110, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format_.ml", line 1351, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+#       ocamlc .format_.objs/format___Format.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format___Format.cmo -c -impl format.ml)
+# File "format.ml", line 1009, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format.ml", line 1010, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format.ml", line 1248, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+#       ocamlc .format_.objs/format_.{cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I .format_.objs -intf-suffix .ml -no-alias-deps -open Format___ -o .format_.objs/format_.cmo -c -impl format_.ml)
+# File "format_.ml", line 1109, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format_.ml", line 1110, characters 45-62:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# File "format_.ml", line 1351, characters 31-34:
+# Error: This expression has type ('a, 'b) CamlinternalFormat.acc
+#        but an expression was expected of type formatter
+# Makefile:15: recipe for target 'lib' failed
+# make: *** [lib] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build ocamlformat_support 0.1
++- 
+- No changes have been performed
+# Run eval $(opam env) to update the current shell environment
+31 1535747180 1535747184

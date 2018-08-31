@@ -1,0 +1,11 @@
+$ opam depext -iy -j 2 flowtype.0.79.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for flowtype.0.79.1: The following dependencies couldn't be met:
+          - flowtype -> ppx_deriving -> ppx_tools >= 4.02.3 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - flowtype -> ppx_deriving -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=flowtype.0.79.1 returned 20
+20 1535748228 1535748230
