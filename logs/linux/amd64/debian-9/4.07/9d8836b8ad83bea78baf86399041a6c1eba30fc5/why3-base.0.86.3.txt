@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 why3-base.0.86.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for why3-base.0.86.3: The following dependencies couldn't be met:
+          - why3-base -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=why3-base.0.86.3 returned 20
+20 1535749554 1535749557

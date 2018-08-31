@@ -1,0 +1,38 @@
+$ opam depext -iy -j 2 capnp-rpc-unix.0.3.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for capnp-rpc-unix.0.3.1: The following dependencies couldn't be met:
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> nocrypto < 0.2.0 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> ppx_sexp_conv < v0.11.0 -> ppx_core < v0.11 -> base < v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> ppx_sexp_conv < v0.11.0 -> ppx_core < v0.11 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> ppx_sexp_conv < v0.11.0 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> ppx_sexp_conv < v0.11.0 -> base >= v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> x509 < 0.6.0 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> x509 < 0.6.0 -> nocrypto < 0.2.0 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> tls -> x509 < 0.6.0 -> asn1-combinators < 0.2.0 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> capnp >= 3.0.0 -> core_kernel < v0.11 -> sexplib < 113.34.00+4.03 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> capnp >= 3.0.0 -> core_kernel < v0.11 -> ppx_driver < 113.25.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> capnp >= 3.0.0 -> core_kernel < v0.11 -> ppx_driver < 113.25.00 -> ppx_core < 113.25.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> capnp >= 3.0.0 -> core_kernel < v0.11 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+          - capnp-rpc-unix -> capnp-rpc-lwt >= 0.3 -> capnp >= 3.0.0 -> core_kernel < v0.11 -> base < v0.11 -> ocaml < 4.07.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - capnp (>= 3.0.0 & < 3.2.0) is in conflict with base >= v0.10.0
+          - tls >= 0.9.2 is in conflict with ppx_sexp_conv = v0.11.0
+
+
+Command failed: opam list --readonly --external  --resolve=capnp-rpc-unix.0.3.1 returned 20
+20 1535749434 1535749440

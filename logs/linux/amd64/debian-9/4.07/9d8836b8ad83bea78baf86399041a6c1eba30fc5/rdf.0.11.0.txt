@@ -1,0 +1,306 @@
+$ opam depext -iy -j 2 rdf.0.11.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+libgmp-dev
+libpcre3-dev
+m4
+perl
+pkg-config
+zlib1g-dev
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy debianutils libgmp-dev libpcre3-dev m4 perl pkg-config zlib1g-dev
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcrecpp0v5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../00-libpcrecpp0v5_2%3a8.39-3_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-3) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../02-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../03-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../04-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../05-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../06-libgmpxx4ldbl_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../07-libgmp-dev_2%3a6.1.2+dfsg-1_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../08-libpcre16-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../09-libpcre32-3_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-3) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../10-libpcre3-dev_2%3a8.39-3_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-3) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../11-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../12-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../13-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../14-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../15-zlib1g-dev_1%3a1.2.8.dfsg-5_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-3) ...
+Setting up libpcre32-3:amd64 (2:8.39-3) ...
+Setting up libpcre16-3:amd64 (2:8.39-3) ...
+Setting up xml-core (0.17) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-1) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-5) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-1) ...
+Setting up libpcre3-dev:amd64 (2:8.39-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-gmp                1        [required by conf-gmp-powm-sec, zarith]
+  - install calendar                2.04     [required by rdf]
+  - install base-bytes              base     [required by pcre, uuidm]
+  - install conf-perl               1        [required by zarith]
+  - install conf-pkg-config         1.1      [required by conf-zlib, conf-libpcre]
+  - install seq                     base     [required by re]
+  - install num                     1.1      [required by sexplib]
+  - install ocaml-compiler-libs     v0.11.0  [required by ppxlib]
+  - install sexplib0                v0.11.0  [required by base, sexplib]
+  - install easy-format             1.3.1    [required by yojson]
+  - install ppx_derivers            1.0      [required by ppxlib]
+  - install result                  1.3      [required by ocaml-migrate-parsetree, topkg]
+  - install conf-which              1        [required by biniou]
+  - install ocamlbuild              0.12.0   [required by uuidm, jsonm, cryptokit, etc.]
+  - install conf-gmp-powm-sec       1        [required by cryptokit]
+  - install stringext               1.5.0    [required by uri]
+  - install gen                     0.5.1    [required by sedlex]
+  - install cppo                    1.6.4    [required by yojson]
+  - install zarith                  1.7      [required by cryptokit]
+  - install conf-zlib               1        [required by cryptokit]
+  - install conf-libpcre            1        [required by pcre]
+  - install re                      1.8.0    [required by uri]
+  - install parsexp                 v0.11.0  [required by sexplib]
+  - install base                    v0.11.1  [required by pcre]
+  - install ocaml-migrate-parsetree 1.0.11   [required by sedlex, ppx_sexp_conv]
+  - install biniou                  1.2.0    [required by yojson]
+  - install uchar                   0.0.2    [required by jsonm]
+  - install topkg                   0.9.1    [required by uuidm, jsonm, xmlm]
+  - install menhir                  20180703 [required by rdf]
+  - install cryptokit               1.13     [required by rdf]
+  - install sexplib                 v0.11.0  [required by uri]
+  - install stdio                   v0.11.0  [required by pcre]
+  - install ppx_tools_versioned     5.2.1    [required by sedlex]
+  - install yojson                  1.4.1    [required by rdf]
+  - install xmlm                    1.3.0    [required by rdf]
+  - install uutf                    1.0.1    [required by rdf]
+  - install uuidm                   0.9.6    [required by rdf]
+  - install ppxlib                  0.3.0    [required by ppx_sexp_conv]
+  - install configurator            v0.11.0  [required by pcre]
+  - install sedlex                  1.99.4   [required by rdf]
+  - install uunf                    11.0.0   [required by iri]
+  - install jsonm                   1.0.1    [required by rdf]
+  - install ppx_sexp_conv           v0.11.2  [required by uri]
+  - install pcre                    7.3.4    [required by rdf]
+  - install iri                     0.4.0    [required by rdf]
+  - install uri                     1.9.7    [required by rdf]
+  - install rdf                     0.11.0
+===== 47 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[biniou.1.2.0] found in cache
+[calendar.2.04] found in cache
+[configurator.v0.11.0] found in cache
+[cppo.1.6.4] found in cache
+[cryptokit.1.13] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[iri.0.4.0] found in cache
+[jsonm.1.0.1] found in cache
+[menhir.20180703] found in cache
+[num.1.1] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[parsexp.v0.11.0] found in cache
+[pcre.7.3.4] found in cache
+[ppx_derivers.1.0] found in cache
+[ppx_sexp_conv.v0.11.2] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[ppxlib.0.3.0] found in cache
+[rdf.0.11.0] found in cache
+[re.1.8.0] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+[sexplib.v0.11.0] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+[stringext.1.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[uri.1.9.7] found in cache
+[uuidm.0.9.6] found in cache
+[uunf.11.0.0] found in cache
+[uutf.1.0.1] found in cache
+[xmlm.1.3.0] found in cache
+[yojson.1.4.1] found in cache
+[zarith.1.7] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed calendar.2.04
+-> installed conf-gmp.1
+-> installed conf-gmp-powm-sec.1
+-> installed conf-perl.1
+-> installed conf-pkg-config.1.1
+-> installed conf-libpcre.1
+-> installed conf-which.1
+-> installed conf-zlib.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed gen.0.5.1
+-> installed num.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ocamlbuild.0.12.0
+-> installed ppx_derivers.1.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2.1
+[ERROR] The compilation of sedlex failed at "/usr/bin/make all".
+-> installed seq.base
+-> installed re.1.8.0
+-> installed sexplib0.v0.11.0
+-> installed menhir.20180703
+-> installed parsexp.v0.11.0
+-> installed sexplib.v0.11.0
+-> installed stringext.1.5.0
+-> installed topkg.0.9.1
+-> installed base.v0.11.1
+-> installed uchar.0.0.2
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed pcre.7.3.4
+-> installed uuidm.0.9.6
+-> installed uutf.1.0.1
+-> installed jsonm.1.0.1
+-> installed ppxlib.0.3.0
+-> installed ppx_sexp_conv.v0.11.2
+-> installed uri.1.9.7
+-> installed xmlm.1.3.0
+-> installed yojson.1.4.1
+-> installed zarith.1.7
+-> installed cryptokit.1.13
+-> installed uunf.11.0.0
+
+#=== ERROR while compiling sedlex.1.99.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.07.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.07/.opam-switch/build/sedlex.1.99.4
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/sedlex-11-32934c.env
+# output-file          ~/.opam/log/sedlex-11-32934c.out
+### output ###
+# (cd src/lib && /usr/bin/make all doc)
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/sedlex.1.99.4/src/lib'
+# ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+# ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+# rm -rf ../../libdoc
+# mkdir ../../libdoc
+# ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/sedlex.1.99.4/src/lib'
+# (cd src/syntax && /usr/bin/make all)
+# make[1]: Entering directory '/home/opam/.opam/4.07/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.07/lib/ocaml, /home/opam/.opam/4.07/lib/ocaml/compiler-libs
+# File "ppx_sedlex.ml", line 11, characters 5-24:
+# Error: Unbound module Ast_convenience_405
+# Makefile:18: recipe for target 'sedlex.cma' failed
+# make[1]: *** [sedlex.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.07/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sedlex 1.99.4
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                    v0.11.1
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install calendar                2.04
+| - install conf-gmp                1
+| - install conf-gmp-powm-sec       1
+| - install conf-libpcre            1
+| - install conf-perl               1
+| - install conf-pkg-config         1.1
+| - install conf-which              1
+| - install conf-zlib               1
+| - install configurator            v0.11.0
+| - install cppo                    1.6.4
+| - install cryptokit               1.13
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install jsonm                   1.0.1
+| - install menhir                  20180703
+| - install num                     1.1
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install parsexp                 v0.11.0
+| - install pcre                    7.3.4
+| - install ppx_derivers            1.0
+| - install ppx_sexp_conv           v0.11.2
+| - install ppx_tools_versioned     5.2.1
+| - install ppxlib                  0.3.0
+| - install re                      1.8.0
+| - install result                  1.3
+| - install seq                     base
+| - install sexplib                 v0.11.0
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
+| - install stringext               1.5.0
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install uri                     1.9.7
+| - install uuidm                   0.9.6
+| - install uunf                    11.0.0
+| - install uutf                    1.0.1
+| - install xmlm                    1.3.0
+| - install yojson                  1.4.1
+| - install zarith                  1.7
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.07/.opam-switch/backup/state-20180831212229.export"
+31 1535750526 1535750629
