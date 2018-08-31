@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 custom_printf.112.17.00
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for custom_printf.112.17.00: The following dependencies couldn't be met:
+          - custom_printf -> sexplib < 112.18.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=custom_printf.112.17.00 returned 20
+20 1535753183 1535753186

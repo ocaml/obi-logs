@@ -1,0 +1,28 @@
+$ opam depext -iy -j 2 github.0.4.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for github.0.4.0: The following dependencies couldn't be met:
+          - github -> cohttp < 0.9.7 -> uri -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.9.7 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.9.7 -> pa_sexp_conv -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.9.7 -> lwt < 2.5.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.9.7 -> fieldslib < 113.01.00 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+          - github -> cohttp < 0.9.7 -> fieldslib < 113.01.00 -> type_conv < 109.20.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> lwt -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - github -> uri >= 1.3.3 -> sexplib < 113.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+        Your request can't be satisfied:
+          - No available version of cohttp satisfies the constraints
+          - No available version of lwt satisfies the constraints
+          - No available version of uri satisfies the constraints
+          - cohttp < 0.9.12 is in conflict with lwt >= 2.4.7
+
+
+Command failed: opam list --readonly --external  --resolve=github.0.4.0 returned 20
+20 1535755144 1535755147
