@@ -1,0 +1,70 @@
+$ opam depext -iy -j 2 secp256k1.0.1.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install conf-secp256k1 1.0.0  [required by secp256k1]
+  - install ocamlbuild     0.12.0 [required by secp256k1]
+  - install ocamlmod       0.0.9  [required by oasis]
+  - install ocamlify       0.0.1  [required by oasis]
+  - install oasis          0.4.11 [required by secp256k1]
+  - install secp256k1      0.1.5
+===== 6 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[conf-secp256k1.1.0.0] found in cache
+[oasis.0.4.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+[secp256k1.0.1.5] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed conf-secp256k1.1.0.0
+-> installed ocamlbuild.0.12.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+[ERROR] The compilation of secp256k1 failed at "/usr/bin/make".
+
+#=== ERROR while compiling secp256k1.0.1.5 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/secp256k1.0.1.5
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/secp256k1-12-abfa5b.env
+# output-file          ~/.opam/log/secp256k1-12-abfa5b.out
+### output ###
+# ocaml setup.ml -build 
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+# + /home/opam/.opam/4.06/bin/ocamlfind ocamlc -g -ccopt -O -c src/secp256k1_wrap.c
+# src/secp256k1_wrap.c:10:23: fatal error: secp256k1.h: No such file or directory
+#  #include <secp256k1.h>
+#                        ^
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/home/opam/.opam/4.06/bin/ocamlbuild' src/libsecp256k1_stubs.a src/dllsecp256k1_stubs.so src/secp256k1.cma src/secp256k1.cmxa src/secp256k1.a src/secp256k1.cmxs test/test.native -tag debug' terminated with error code 10")
+# Makefile:7: recipe for target 'build' failed
+# make: *** [build] Error 1
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build secp256k1 0.1.5
++- 
++- The following changes have been performed
+| - install conf-secp256k1 1.0.0
+| - install oasis          0.4.11
+| - install ocamlbuild     0.12.0
+| - install ocamlify       0.0.1
+| - install ocamlmod       0.0.9
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180901010927.export"
+31 1535764121 1535764201

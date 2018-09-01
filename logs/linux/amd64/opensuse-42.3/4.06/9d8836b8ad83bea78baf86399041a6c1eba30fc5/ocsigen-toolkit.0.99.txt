@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 ocsigen-toolkit.0.99
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+[ERROR] No solution for ocsigen-toolkit.0.99: The following dependencies couldn't be met:
+          - ocsigen-toolkit -> eliom < 6.3.0 -> js_of_ocaml < 3.0 -> ocaml < 4.05.0
+              base of this switch (use `--unlock-base' to force)
+          - ocsigen-toolkit -> eliom < 6.3.0 -> deriving-ocsigen -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+          - ocsigen-toolkit -> eliom < 6.3.0 -> camlp4 < 4.02+7 -> ocaml < 4.03
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ocsigen-toolkit.0.99 returned 20
+20 1535762631 1535762633

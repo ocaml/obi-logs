@@ -1,0 +1,106 @@
+$ opam depext -iy -j 2 rashell.0.2.1
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+which
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install easy-format 1.3.1          [required by biniou, atd, yojson]
+  - install result      1.3            [required by lwt]
+  - install conf-which  1              [required by biniou]
+  - install base-bytes  base           [required by cppo]
+  - install ocamlbuild  0.12.0         [required by menhir]
+  - install conf-bmake  1.0            [required by rashell]
+  - install biniou      1.2.0          [required by atdgen]
+  - install cppo        1.6.4          [required by lwt]
+  - install menhir      20180703       [required by atd]
+  - install bsdowl      3.0.0-20150830 [required by rashell]
+  - install yojson      1.4.1          [required by atdgen]
+  - install lwt         4.1.0          [required by rashell]             For the PPX, please install package lwt_ppx
+                                                                         For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install atd         1.12.0         [required by atdgen]
+  - install broken      0.4.2          [required by rashell]
+  - install atdgen      1.12.0         [required by rashell]
+  - install mixture     1.0.0          [required by rashell]
+  - install rashell     0.2.1
+===== 17 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[atd.1.12.0] found in cache
+[atdgen.1.12.0] found in cache
+[biniou.1.2.0] found in cache
+[broken.0.4.2] found in cache
+[bsdowl.3.0.0-20150830] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[lwt.4.1.0] found in cache
+[menhir.20180703] found in cache
+[mixture.1.0.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[rashell.0.2.1] found in cache
+[result.1.3] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-bmake failed at "/usr/bin/sh ./detect_program.sh ./conf-bmake.config bmake".
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed yojson.1.4.1
+-> installed menhir.20180703
+-> installed atd.1.12.0
+-> installed atdgen.1.12.0
+
+#=== ERROR while compiling conf-bmake.1.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-bmake.1.0
+# command              /usr/bin/sh ./detect_program.sh ./conf-bmake.config bmake
+# exit-code            1
+# env-file             ~/.opam/log/conf-bmake-12-51aaa5.env
+# output-file          ~/.opam/log/conf-bmake-12-51aaa5.out
+### output ###
+# Debug: program: bmake
+# Debug: output: ./conf-bmake.config
+# Debug: pwd: /home/opam/.opam/4.06/.opam-switch/build/conf-bmake.1.0
+# Debug: Looking for bmake in /home/opam/.opam/4.06/bin
+# Debug: Looking for bmake in /home/opam/.opam/plugins/bin
+# Debug: Looking for bmake in /home/opam/.opam/4.06/bin
+# Debug: Looking for bmake in /usr/local/sbin
+# Debug: Looking for bmake in /usr/local/bin
+# Debug: Looking for bmake in /usr/sbin
+# Debug: Looking for bmake in /usr/bin
+# Debug: Looking for bmake in /sbin
+# Debug: Looking for bmake in /bin
+# Debug: bmake: Not found in PATH.
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-bmake 1.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install atd         1.12.0
+| - install atdgen      1.12.0
+| - install base-bytes  base
+| - install biniou      1.2.0
+| - install conf-which  1
+| - install cppo        1.6.4
+| - install easy-format 1.3.1
+| - install lwt         4.1.0
+| - install menhir      20180703
+| - install ocamlbuild  0.12.0
+| - install result      1.3
+| - install yojson      1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180901011136.export"
+31 1535764283 1535764324

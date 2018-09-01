@@ -1,0 +1,122 @@
+$ opam depext -iy -j 2 wcs-lib.2017-05-26.04
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+which
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install easy-format             1.3.1         [required by atd]
+  - install result                  1.3           [required by ocaml-migrate-parsetree]
+  - install conf-which              1             [required by biniou]
+  - install base-bytes              base          [required by gen]
+  - install ocamlbuild              0.12.0        [required by rml]
+  - install num                     1.1           [required by rml]
+  - install ocaml-migrate-parsetree 1.0.11        [required by wcs-lib]
+  - install biniou                  1.2.0         [required by atdgen]
+  - install gen                     0.5.1         [required by sedlex]
+  - install cppo                    1.6.4         [required by yojson]
+  - install menhir                  20180703      [required by wcs-lib]
+  - install rml                     1.09.05       [required by wcs-lib]
+  - install ppx_tools_versioned     5.2.1         [required by sedlex]
+  - install yojson                  1.4.1         [required by atdgen]
+  - install atd                     1.12.0        [required by wcs-lib]
+  - install sedlex                  1.99.4        [required by wcs-lib]
+  - install atdgen                  1.12.0        [required by wcs-lib]
+  - install wcs-lib                 2017-05-26.04
+===== 18 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[atd.1.12.0] found in cache
+[atdgen.1.12.0] found in cache
+[biniou.1.2.0] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[menhir.20180703] found in cache
+[num.1.1] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[result.1.3] found in cache
+[rml.1.09.05] found in cache
+[sedlex.1.99.4] found in cache
+[wcs-lib.2017-05-26.04] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed gen.0.5.1
+-> installed num.1.1
+-> installed ocamlbuild.0.12.0
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2.1
+-> installed menhir.20180703
+[ERROR] The compilation of sedlex failed at "/usr/bin/make all".
+-> installed rml.1.09.05
+-> installed yojson.1.4.1
+-> installed atd.1.12.0
+-> installed atdgen.1.12.0
+
+#=== ERROR while compiling sedlex.1.99.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/sedlex.1.99.4
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/sedlex-12-9c9e36.env
+# output-file          ~/.opam/log/sedlex-12-9c9e36.out
+### output ###
+# (cd src/lib && /usr/bin/make all doc)
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/lib'
+# ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+# ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+# rm -rf ../../libdoc
+# mkdir ../../libdoc
+# ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/lib'
+# (cd src/syntax && /usr/bin/make all)
+# make[1]: Entering directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml, /home/opam/.opam/4.06/lib/ocaml/compiler-libs
+# File "ppx_sedlex.ml", line 11, characters 5-24:
+# Error: Unbound module Ast_convenience_405
+# Makefile:18: recipe for target 'sedlex.cma' failed
+# make[1]: *** [sedlex.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sedlex 1.99.4
++- 
++- The following changes have been performed (the rest was aborted)
+| - install atd                     1.12.0
+| - install atdgen                  1.12.0
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install menhir                  20180703
+| - install num                     1.1
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2.1
+| - install result                  1.3
+| - install rml                     1.09.05
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180901003255.export"
+31 1535761690 1535762016
