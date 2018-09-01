@@ -1,0 +1,116 @@
+$ opam depext -iy -j 2 reason-parser.1.13.5
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes              base     [required by cppo]
+  - install ocamlbuild              0.12.0   [required by menhir, topkg]
+  - install result                  1.2      [required by reason-parser]
+  - install cppo                    1.6.4    [required by merlin-extend]
+  - install menhir                  20170418 [required by reason-parser]
+  - install topkg                   0.8.1    [required by reason-parser]
+  - install ocaml-migrate-parsetree 1.0.11   [required by reason-parser]
+  - install merlin-extend           0.3      [required by reason-parser]
+  - install ppx_tools_versioned     5.2.1    [required by reason-parser]
+  - install reason-parser           1.13.5
+===== 10 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[menhir.20170418] found in cache
+[merlin-extend.0.3] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[reason-parser.1.13.5] found in cache
+[result.1.2] found in cache
+[topkg.0.8.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed cppo.1.6.4
+-> installed merlin-extend.0.3
+-> installed result.1.2
+-> installed ocamlbuild.0.12.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2.1
+-> installed topkg.0.8.1
+-> installed menhir.20170418
+[ERROR] The compilation of reason-parser failed at "/home/opam/.opam/4.03/.opam-switch/build/reason-parser.1.13.5/./build.native build --native true --native-dynlink true".
+
+#=== ERROR while compiling reason-parser.1.13.5 ===============================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.03.0 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.03/.opam-switch/build/reason-parser.1.13.5
+# command              ~/.opam/4.03/.opam-switch/build/reason-parser.1.13.5/./build.native build --native true --native-dynlink true
+# exit-code            1
+# env-file             ~/.opam/log/reason-parser-11-5287bb.env
+# output-file          ~/.opam/log/reason-parser-11-5287bb.out
+### output ###
+# File "_tags", line 11, characters 37-43:
+# Warning: the tag "reason" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.
+# menhir --strict --unused-tokens --fixed-exception --table  --raw-depend --ocamldep 'ocamlfind ocamldep -modules' src/reason_parser.mly > src/reason_parser.mly.depends
+# ocamlfind ocamldep -package 'menhirLib unix compiler-libs.common ocamlbuild findlib merlin_extend result dynlink findlib.dynload ocaml-migrate-parsetree ppx_tools_versioned.metaquot_404' -modules src/reason_config.ml > src/reason_config.ml.depends
+# ocamlfind ocamldep -package 'menhirLib unix compiler-libs.common ocamlbuild findlib merlin_extend result dynlink findlib.dynload ocaml-migrate-parsetree ppx_tools_versioned.metaquot_404' -modules src/syntax_util.ml > src/syntax_util.ml.depends
+# ocamlfind ocamldep -package 'compiler-libs.common findlib result ocaml-migrate-parsetree ppx_tools_versioned.metaquot_404' -modules vendor/ppx_deriving/ppx_deriving_show.ml > vendor/ppx_deriving/ppx_deriving_show.ml.depends
+# ocamlfind ocamldep -package 'compiler-libs.common findlib result ocaml-migrate-parsetree ppx_tools_versioned.metaquot_404' -modules vendor/ppx_deriving/ppx_deriving.ml > vendor/ppx_deriving/ppx_deriving.ml.depends
+# ocamlfind ocamlc -c -I +ocamldoc -g -bin-annot -safe-string -package 'compiler-libs.common findlib result ocaml-migrate-parsetree ppx_tools_versioned.metaquot_404' -w @5@8@10@11@12@14@23-24@26@29@40 -I vendor/ppx_deriving -I src -I vendor/easy_format -o vendor/ppx_deriving/ppx_deriving.cmo vendor/ppx_deriving/ppx_deriving.ml
+# + ocamlfind ocamlc -c -I +ocamldoc -g -bin-annot -safe-string -package 'compiler-libs.common findlib result ocaml-migrate-parsetree ppx_tools_versioned.metaquot_404' -w @5@8@10@11@12@14@23-24@26@29@40 -I vendor/ppx_deriving -I src -I vendor/easy_format -o vendor/ppx_deriving/ppx_deriving.cmo vendor/ppx_deriving/ppx_deriving.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.03/lib/ocaml, /home/opam/.opam/4.03/lib/ocaml/compiler-libs
+# File "vendor/ppx_deriving/ppx_deriving.ml", line 7, characters 5-24:
+# Error: Unbound module Ast_convenience_404
+# Command exited with code 2.
+# build.native: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-use-menhir' '-menhir'
+#      'menhir --strict --unused-tokens --fixed-exception --table ' '-cflags'
+#      '-I,+ocamldoc' '-I' 'vendor/easy_format' '-I' 'vendor/ppx_deriving'
+#      'opam' 'pkg/META' 'src/reason_parser.a' 'src/reason_parser.cmxs'
+#      'src/reason_parser.cmxa' 'src/reason_parser.cma'
+#      'src/reason_parser_message.cmx' 'src/reason_toolchain.cmx'
+#      'src/syntax_util.cmx' 'src/reason_config.cmx' 'src/reason_oprint.cmx'
+#      'src/reason_pprint_ast.cmx' 'src/reason_lexer.cmx'
+#      'src/reason_parser.cmx' 'pkg/META' 'src/reason_parser.mli'
+#      'src/reason_parser.cmi' 'src/reason_parser.cmx' 'src/reason_parser.cmo'
+#      'src/reason_lexer.cmi' 'src/reason_lexer.cmx' 'src/reason_lexer.cmo'
+#      'src/reason_config.cmi' 'src/reason_config.cmx' 'src/reason_config.cmo'
+#      'src/reason_parser_message.cmi' 'src/reason_parser_message.cmx'
+#      'src/reason_parser_message.cmo' 'src/reason_pprint_ast.cmi'
+#      'src/reason_pprint_ast.cmx' 'src/reason_pprint_ast.cmo'
+#      'src/reason_toolchain.cmi' 'src/reason_toolchain.cmx'
+#      'src/reason_toolchain.cmo' 'src/reason_oprint.cmi'
+#      'src/reason_oprint.cmx' 'src/reason_oprint.cmo' 'src/syntax_util.cmi'
+#      'src/syntax_util.cmx' 'src/syntax_util.cmo'
+#      'vendor/easy_format/easy_format.o' 'vendor/easy_format/easy_format.cmi'
+#      'vendor/easy_format/easy_format.cmx'
+#      'vendor/easy_format/easy_format.cmo'
+#      'vendor/ppx_deriving/ppx_deriving.o'
+#      'vendor/ppx_deriving/ppx_deriving.cmi'
+#      'vendor/ppx_deriving/ppx_deriving.cmx'
+#      'vendor/ppx_deriving/ppx_deriving.cmo'
+#      'vendor/ppx_deriving/ppx_deriving_show.o'
+#      'vendor/ppx_deriving/ppx_deriving_show.cmi'
+#      'vendor/ppx_deriving/ppx_deriving_show.cmx'
+#      'vendor/ppx_deriving/ppx_deriving_show.cmo']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build reason-parser 1.13.5
++- 
++- The following changes have been performed
+| - install base-bytes              base
+| - install cppo                    1.6.4
+| - install menhir                  20170418
+| - install merlin-extend           0.3
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools_versioned     5.2.1
+| - install result                  1.2
+| - install topkg                   0.8.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.03/.opam-switch/backup/state-20180901051017.export"
+31 1535778614 1535778648
