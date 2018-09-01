@@ -1,0 +1,191 @@
+$ opam depext -iy -j 2 higlo.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+debianutils
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install easy-format             1.3.1      [required by yojson]
+  - install result                  1.3        [required by ocaml-migrate-parsetree, cmdliner]
+  - install ppx_tools               5.1+4.06.0 [required by xtmpl]
+  - install re                      1.7.3      [required by xtmpl]
+  - install conf-which              1          [required by biniou]
+  - install base-bytes              base       [required by ulex]
+  - install ocamlbuild              0.12.0     [required by ulex]
+  - install ocaml-migrate-parsetree 1.0.11     [required by js_of_ocaml, js_of_ocaml-ppx]
+  - install biniou                  1.2.0      [required by yojson]
+  - install gen                     0.5.1      [required by sedlex]
+  - install cppo                    1.6.4      [required by js_of_ocaml-compiler]
+  - install uchar                   0.0.2      [required by js_of_ocaml]
+  - install topkg                   0.9.1      [required by uunf]
+  - install camlp4                  4.06+1     [required by ulex]
+  - install ppx_tools_versioned     5.2.1      [required by js_of_ocaml, js_of_ocaml-ppx]
+  - install yojson                  1.4.1      [required by js_of_ocaml-compiler]
+  - install cmdliner                1.0.2      [required by uunf, js_of_ocaml-compiler]
+  - install ulex                    1.2        [required by higlo]
+  - install sedlex                  1.99.4     [required by xtmpl]
+  - install uutf                    1.0.1      [required by xtmpl]
+  - install js_of_ocaml-compiler    3.2.1      [required by js_of_ocaml]
+  - install uunf                    11.0.0     [required by iri]
+  - install js_of_ocaml             3.2.0      [required by xtmpl]
+  - install iri                     0.4.0      [required by xtmpl]
+  - install js_of_ocaml-ppx         3.2.0      [required by xtmpl]
+  - install xtmpl                   0.17.0     [required by higlo]
+  - install higlo                   0.6
+===== 27 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[biniou.1.2.0] found in cache
+[camlp4.4.06+1] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[easy-format.1.3.1] found in cache
+[gen.0.5.1] found in cache
+[higlo.0.6] found in cache
+[iri.0.4.0] found in cache
+[js_of_ocaml.3.2.0] found in cache
+[js_of_ocaml-compiler.3.2.1] found in cache
+[js_of_ocaml-ppx.3.2.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ppx_tools.5.1+4.06.0] found in cache
+[ppx_tools_versioned.5.2.1] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[sedlex.1.99.4] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[ulex.1.2] found in cache
+[uunf.11.0.0] found in cache
+[uutf.1.0.1] found in cache
+[xtmpl.0.17.0] found in cache
+[yojson.1.4.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-which.1
+-> installed cppo.1.6.4
+-> installed easy-format.1.3.1
+-> installed biniou.1.2.0
+-> installed gen.0.5.1
+-> installed ocamlbuild.0.12.0
+-> installed ppx_tools.5.1+4.06.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed ppx_tools_versioned.5.2.1
+[ERROR] The compilation of sedlex failed at "/usr/bin/make all".
+-> installed topkg.0.9.1
+-> installed cmdliner.1.0.2
+-> installed uchar.0.0.2
+-> installed uutf.1.0.1
+[ERROR] The compilation of uunf failed at "/home/opam/.opam/4.06+flambda/bin/ocaml pkg/pkg.ml build --pinned false --with-uutf true --with-cmdliner true".
+-> installed yojson.1.4.1
+-> installed js_of_ocaml-compiler.3.2.1
+-> installed js_of_ocaml.3.2.0
+-> installed js_of_ocaml-ppx.3.2.0
+-> installed camlp4.4.06+1
+-> installed ulex.1.2
+
+#=== ERROR while compiling uunf.11.0.0 ========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/uunf.11.0.0
+# command              ~/.opam/4.06+flambda/bin/ocaml pkg/pkg.ml build --pinned false --with-uutf true --with-cmdliner true
+# exit-code            1
+# env-file             ~/.opam/log/uunf-11-9cfda2.env
+# output-file          ~/.opam/log/uunf-11-9cfda2.out
+### output ###
+# ocamlfind ocamldep -package bytes -package uchar -modules src/uunf_tmap.ml > src/uunf_tmap.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmap.cmo src/uunf_tmap.ml
+# ocamlfind ocamldep -package bytes -package uchar -modules src/uunf_tmapbool.ml > src/uunf_tmapbool.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmapbool.cmo src/uunf_tmapbool.ml
+# ocamlfind ocamldep -package bytes -package uchar -modules src/uunf_tmapbyte.ml > src/uunf_tmapbyte.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmapbyte.cmo src/uunf_tmapbyte.ml
+# ocamlfind ocamldep -package bytes -package uchar -modules src/uunf_data.ml > src/uunf_data.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_data.cmo src/uunf_data.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmap.cmx src/uunf_tmap.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmapbool.cmx src/uunf_tmapbool.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_tmapbyte.cmx src/uunf_tmapbyte.ml
+# ocamlfind ocamldep -package bytes -package uchar -modules src/uunf.ml > src/uunf.ml.depends
+# ocamlfind ocamldep -package bytes -package uchar -modules src/uunf.mli > src/uunf.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf.cmi src/uunf.mli
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_data.cmx src/uunf_data.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package bytes -package uchar -I src -I test -o src/uunf_data.cmx src/uunf_data.ml
+# Fatal error: exception Stack overflow
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/uunf.a' 'src/uunf.cmxs' 'src/uunf.cmxa' 'src/uunf.cma'
+#      'src/uunf.cmx' 'src/uunf.cmi' 'src/uunf.mli' 'src/uunf_data.cmx'
+#      'src/uunf_tmapbyte.cmx' 'src/uunf_tmapbool.cmx' 'src/uunf_tmap.cmx'
+#      'src/uunf_string.a' 'src/uunf_string.cmxs' 'src/uunf_string.cmxa'
+#      'src/uunf_string.cma' 'src/uunf_string.cmx' 'src/uunf_string.cmi'
+#      'src/uunf_string.mli' 'test/unftrip.native' 'DEVEL.md'
+#      'test/examples.ml']: exited with 10
+
+
+#=== ERROR while compiling sedlex.1.99.4 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4
+# command              /usr/bin/make all
+# exit-code            2
+# env-file             ~/.opam/log/sedlex-11-1c697e.env
+# output-file          ~/.opam/log/sedlex-11-1c697e.out
+### output ###
+# (cd src/lib && /usr/bin/make all doc)
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/lib'
+# ocamlfind ocamlc -package gen -w +A-4-9 -safe-string -c sedlexing.mli sedlexing.ml
+# ocamlfind ocamlc -package gen -a -o sedlexing.cma sedlexing.cmo
+# rm -rf ../../libdoc
+# mkdir ../../libdoc
+# ocamlfind ocamldoc -package gen -html sedlexing.mli -d ../../libdoc
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/lib'
+# (cd src/syntax && /usr/bin/make all)
+# make[1]: Entering directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# ocamlfind ocamlc -package ppx_tools_versioned.metaquot_405 -package ocaml-migrate-parsetree -linkall -w +A-4-9-42 -annot -a -o sedlex.cma sedlex_cset.mli sedlex_cset.ml unicode63.mli unicode63.ml sedlex.mli sedlex.ml ppx_sedlex.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06+flambda/lib/ocaml, /home/opam/.opam/4.06+flambda/lib/ocaml/compiler-libs
+# File "ppx_sedlex.ml", line 11, characters 5-24:
+# Error: Unbound module Ast_convenience_405
+# Makefile:18: recipe for target 'sedlex.cma' failed
+# make[1]: *** [sedlex.cma] Error 2
+# make[1]: Leaving directory '/home/opam/.opam/4.06+flambda/.opam-switch/build/sedlex.1.99.4/src/syntax'
+# Makefile:13: recipe for target 'all' failed
+# make: *** [all] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build sedlex 1.99.4
+| - build uunf   11.0.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes              base
+| - install biniou                  1.2.0
+| - install camlp4                  4.06+1
+| - install cmdliner                1.0.2
+| - install conf-which              1
+| - install cppo                    1.6.4
+| - install easy-format             1.3.1
+| - install gen                     0.5.1
+| - install js_of_ocaml             3.2.0
+| - install js_of_ocaml-compiler    3.2.1
+| - install js_of_ocaml-ppx         3.2.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ocamlbuild              0.12.0
+| - install ppx_tools               5.1+4.06.0
+| - install ppx_tools_versioned     5.2.1
+| - install re                      1.7.3
+| - install result                  1.3
+| - install topkg                   0.9.1
+| - install uchar                   0.0.2
+| - install ulex                    1.2
+| - install uutf                    1.0.1
+| - install yojson                  1.4.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180901211447.export"
+31 1535836484 1535836621

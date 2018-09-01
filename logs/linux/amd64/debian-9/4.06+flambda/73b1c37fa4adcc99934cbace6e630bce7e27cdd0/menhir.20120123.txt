@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 menhir.20120123
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for menhir.20120123: The following dependencies couldn't be met:
+          - menhir -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=menhir.20120123 returned 20
+20 1535838659 1535838662

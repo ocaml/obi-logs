@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ezjsonm.0.4.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for ezjsonm.0.4.2: The following dependencies couldn't be met:
+          - ezjsonm -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ezjsonm.0.4.2 returned 20
+20 1535836189 1535836191
