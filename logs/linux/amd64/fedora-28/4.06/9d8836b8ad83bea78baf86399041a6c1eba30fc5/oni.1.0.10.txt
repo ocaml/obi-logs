@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 oni.1.0.10
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for oni.1.0.10: The following dependencies couldn't be met:
+          - oni -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=oni.1.0.10 returned 20
+20 1535783263 1535783265

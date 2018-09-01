@@ -1,0 +1,339 @@
+$ opam depext -iy -j 2 odig.0.0.2
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Fri Aug 31 20:05:16 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlgraph       1.8.8  [required by opam-core]
+  - install result           1.3    [required by logs, fmt, topkg, etc.]
+  - install re               1.7.3  [required by opam-core]
+  - install base-bytes       base   [required by astring]
+  - install ocamlbuild       0.12.0 [required by odig]
+  - install opam-file-format 2.0.0  [required by opam-format]
+  - install cppo             1.6.4  [required by opam-core]
+  - install uchar            0.0.2  [required by fmt]
+  - install topkg            0.9.1  [required by odig]
+  - install opam-core        2.0.0  [required by opam-format]
+  - install rresult          0.5.0  [required by odig]
+  - install mtime            1.1.0  [required by odig]
+  - install cmdliner         1.0.2  [required by odig]
+  - install astring          0.8.3  [required by bos, webbrowser]
+  - install asetmap          0.8.1  [required by odig]
+  - install opam-format      2.0.0  [required by odig]
+  - install fmt              0.8.5  [required by odig]
+  - install fpath            0.7.2  [required by odig]
+  - install logs             0.6.2  [required by odig]
+  - install bos              0.2.0  [required by odig]
+  - install webbrowser       0.6.1  [required by odig]
+  - install odig             0.0.2
+===== 22 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[asetmap.0.8.1] found in cache
+[astring.0.8.3] found in cache
+[bos.0.2.0] found in cache
+[cmdliner.1.0.2] found in cache
+[cppo.1.6.4] found in cache
+[fmt.0.8.5] found in cache
+[fpath.0.7.2] found in cache
+[logs.0.6.2] found in cache
+[mtime.1.1.0] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlgraph.1.8.8] found in cache
+[odig.0.0.2] found in cache
+[opam-core.2.0.0] found in cache
+[opam-file-format.2.0.0] found in cache
+[opam-format.2.0.0] found in cache
+[re.1.7.3] found in cache
+[result.1.3] found in cache
+[rresult.0.5.0] found in cache
+[topkg.0.9.1] found in cache
+[uchar.0.0.2] found in cache
+[webbrowser.0.6.1] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ocamlbuild.0.12.0
+-> installed cppo.1.6.4
+-> installed ocamlgraph.1.8.8
+-> installed opam-file-format.2.0.0
+-> installed re.1.7.3
+-> installed result.1.3
+-> installed opam-core.2.0.0
+-> installed topkg.0.9.1
+-> installed asetmap.0.8.1
+-> installed astring.0.8.3
+-> installed cmdliner.1.0.2
+-> installed mtime.1.1.0
+-> installed opam-format.2.0.0
+-> installed rresult.0.5.0
+-> installed uchar.0.0.2
+-> installed fpath.0.7.2
+-> installed fmt.0.8.5
+-> installed logs.0.6.2
+-> installed bos.0.2.0
+-> installed webbrowser.0.6.1
+[ERROR] The compilation of odig failed at "/home/opam/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false --etc-dir /home/opam/.opam/4.06/etc/odig --lib-dir /home/opam/.opam/4.06/lib".
+
+#=== ERROR while compiling odig.0.0.2 =========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/odig.0.0.2
+# command              ~/.opam/4.06/bin/ocaml pkg/pkg.ml build --pinned false --etc-dir /home/opam/.opam/4.06/etc/odig --lib-dir /home/opam/.opam/4.06/lib
+# exit-code            1
+# env-file             ~/.opam/log/odig-10-151672.env
+# output-file          ~/.opam/log/odig-10-151672.out
+### output ###
+# ocamlfind ocamlopt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -linkpkg myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig.ml > src/odig.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig.mli > src/odig.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig.cmi src/odig.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig.cmi src/odig.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_btrail.ml > src/odig_btrail.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_btrail.mli > src/odig_btrail.mli.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_trail.mli > src/odig_trail.mli.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_digest.mli > src/odig_digest.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_digest.cmi src/odig_digest.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_digest.cmi src/odig_digest.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_trail.cmi src/odig_trail.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_trail.cmi src/odig_trail.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_btrail.cmi src/odig_btrail.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_btrail.cmi src/odig_btrail.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_trail.ml > src/odig_trail.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_digest.ml > src/odig_digest.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_digest.cmx src/odig_digest.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_digest.cmx src/odig_digest.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_trail.cmx src/odig_trail.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_trail.cmx src/odig_trail.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_cobj.ml > src/odig_cobj.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_log.ml > src/odig_log.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_ocamlc.mli > src/odig_ocamlc.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_log.cmo src/odig_log.ml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamlc.cmi src/odig_ocamlc.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamlc.cmi src/odig_ocamlc.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_log.cmo src/odig_log.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_cobj.cmo src/odig_cobj.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_cobj.cmo src/odig_cobj.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_ocamlc.ml > src/odig_ocamlc.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_log.cmx src/odig_log.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamlc.cmx src/odig_ocamlc.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_log.cmx src/odig_log.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamlc.cmx src/odig_ocamlc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_conf.ml > src/odig_conf.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_etc.ml > src/odig_etc.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_sexp.mli > src/odig_sexp.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_etc.cmo src/odig_etc.ml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_sexp.cmi src/odig_sexp.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_etc.cmo src/odig_etc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_sexp.cmi src/odig_sexp.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_conf.cmo src/odig_conf.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_conf.cmo src/odig_conf.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_btrail.cmx src/odig_btrail.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_btrail.cmx src/odig_btrail.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_sexp.ml > src/odig_sexp.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_etc.cmx src/odig_etc.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_sexp.cmx src/odig_sexp.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_etc.cmx src/odig_etc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_sexp.cmx src/odig_sexp.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_dot.ml > src/odig_dot.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_dot.mli > src/odig_dot.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_dot.cmi src/odig_dot.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_dot.cmi src/odig_dot.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_html.ml > src/odig_html.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_html.mli > src/odig_html.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_html.cmi src/odig_html.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_html.cmi src/odig_html.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_json.ml > src/odig_json.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_json.mli > src/odig_json.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_json.cmi src/odig_json.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_json.cmi src/odig_json.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_ocamldoc.ml > src/odig_ocamldoc.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_api_doc.mli > src/odig_api_doc.mli.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_pkg.ml > src/odig_pkg.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_codec.mli > src/odig_codec.mli.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_opam.mli > src/odig_opam.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_codec.cmi src/odig_codec.mli
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_opam.cmi src/odig_opam.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_codec.cmi src/odig_codec.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_opam.cmi src/odig_opam.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_pkg.cmo src/odig_pkg.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_pkg.cmo src/odig_pkg.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_api_doc.cmi src/odig_api_doc.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_api_doc.cmi src/odig_api_doc.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamldoc.cmo src/odig_ocamldoc.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamldoc.cmo src/odig_ocamldoc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_api_doc.ml > src/odig_api_doc.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_cobj.cmx src/odig_cobj.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_cobj.cmx src/odig_cobj.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_conf.cmx src/odig_conf.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_conf.cmx src/odig_conf.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_html.cmx src/odig_html.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_html.cmx src/odig_html.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_codec.ml > src/odig_codec.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_opam.ml > src/odig_opam.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_codec.cmx src/odig_codec.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_opam.cmx src/odig_opam.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_codec.cmx src/odig_codec.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_opam.cmx src/odig_opam.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_pkg.cmx src/odig_pkg.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_pkg.cmx src/odig_pkg.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_api_doc.cmx src/odig_api_doc.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_api_doc.cmx src/odig_api_doc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_ocamltop.mli > src/odig_ocamltop.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamltop.cmi src/odig_ocamltop.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamltop.cmi src/odig_ocamltop.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/native/odig_ocamltop.mli > src/native/odig_ocamltop.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src/native -I src -I src-bin -I toys -o src/native/odig_ocamltop.cmi src/native/odig_ocamltop.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src/native -I src -I src-bin -I toys -o src/native/odig_ocamltop.cmi src/native/odig_ocamltop.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/native/odig_ocamltop.ml > src/native/odig_ocamltop.ml.depends
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src/native -I src -I src-bin -I toys -o src/native/odig_ocamltop.cmx src/native/odig_ocamltop.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src/native -I src -I src-bin -I toys -o src/native/odig_ocamltop.cmx src/native/odig_ocamltop.ml
+# findlib: [WARNING] Interface odig_ocamltop.cmi occurs in several directories: src, src/native
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_odoc.ml > src/odig_odoc.ml.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_odoc.cmo src/odig_odoc.ml
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_odoc.cmo src/odig_odoc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_top.ml > src/odig_top.ml.depends
+# ocamlfind ocamldep -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -modules src/odig_top.mli > src/odig_top.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_top.cmi src/odig_top.mli
+# + ocamlfind ocamlc -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_top.cmi src/odig_top.mli
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# cp src/native/odig_ocamltop.cmx src/odig_ocamltop.cmx
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_dot.cmx src/odig_dot.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_json.cmx src/odig_json.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamldoc.cmx src/odig_ocamldoc.ml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_odoc.cmx src/odig_odoc.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_dot.cmx src/odig_dot.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_top.cmx src/odig_top.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_json.cmx src/odig_json.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_odoc.cmx src/odig_odoc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_ocamldoc.cmx src/odig_ocamldoc.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig_top.cmx src/odig_top.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig.cmx src/odig.ml
+# + ocamlfind ocamlopt -c -g -bin-annot -safe-string -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src -I src-bin -I toys -o src/odig.cmx src/odig.ml
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# cp src/native/odig_ocamltop.o src/odig_ocamltop.o
+# ocamlfind ocamlopt -a -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src src/odig_digest.cmx src/odig_trail.cmx src/odig_btrail.cmx src/odig_log.cmx src/odig_ocamlc.cmx src/odig_cobj.cmx src/odig_codec.cmx src/odig_etc.cmx src/odig_sexp.cmx src/odig_conf.cmx src/odig_html.cmx src/odig_opam.cmx src/odig_pkg.cmx src/odig_api_doc.cmx src/odig_dot.cmx src/odig_json.cmx src/odig_ocamldoc.cmx src/odig_ocamltop.cmx src/odig_odoc.cmx src/odig_top.cmx src/odig.cmx -o src/odig.cmxa
+# + ocamlfind ocamlopt -a -package 'opam-format compiler-libs.common' -package 'rresult asetmap fpath bos.setup mtime mtime.clock.os' -I src src/odig_digest.cmx src/odig_trail.cmx src/odig_btrail.cmx src/odig_log.cmx src/odig_ocamlc.cmx src/odig_cobj.cmx src/odig_codec.cmx src/odig_etc.cmx src/odig_sexp.cmx src/odig_conf.cmx src/odig_html.cmx src/odig_opam.cmx src/odig_pkg.cmx src/odig_api_doc.cmx src/odig_dot.cmx src/odig_json.cmx src/odig_ocamldoc.cmx src/odig_ocamltop.cmx src/odig_odoc.cmx src/odig_top.cmx src/odig.cmx -o src/odig.cmxa
+# findlib: [WARNING] Interface topdirs.cmi occurs in several directories: /home/opam/.opam/4.06/lib/ocaml/compiler-libs, /home/opam/.opam/4.06/lib/ocaml
+# File "_none_", line 1:
+# Error: Files src/odig_top.cmx and src/odig_ocamltop.cmx
+#        make inconsistent assumptions over interface Odig_ocamltop
+# Command exited with code 2.
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/odig.a' 'src/odig.cmxs' 'src/odig.cmxa' 'src/odig.cma'
+#      'src/odig_trail.cmx' 'src/odig_top.cmx' 'src/odig_sexp.cmx'
+#      'src/odig_pkg.cmx' 'src/odig_opam.cmx' 'src/odig_odoc.cmx'
+#      'src/odig_ocamltop.cmx' 'src/odig_ocamldoc.cmx' 'src/odig_ocamlc.cmx'
+#      'src/odig_log.cmx' 'src/odig_json.cmx' 'src/odig_html.cmx'
+#      'src/odig_etc.cmx' 'src/odig_dot.cmx' 'src/odig_digest.cmx'
+#      'src/odig_conf.cmx' 'src/odig_codec.cmx' 'src/odig_cobj.cmx'
+#      'src/odig_btrail.cmx' 'src/odig_api_doc.cmx' 'src/odig.cmx'
+#      'src/odig.cmi' 'src/odig.mli' 'src/odig_cli.a' 'src/odig_cli.cmxs'
+#      'src/odig_cli.cmxa' 'src/odig_cli.cma' 'src/odig_cli.cmx'
+#      'src/odig_cli.cmi' 'src/odig_cli.mli' 'src/odig.bytetop'
+#      'src-bin/odig_bin.native' 'etc/odig.conf' 'etc/odoc.css'
+#      'etc/ocamldoc.css' 'toys/metagen.native' 'toys/linkable.native']: exited with 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build odig 0.0.2
++- 
++- The following changes have been performed
+| - install asetmap          0.8.1
+| - install astring          0.8.3
+| - install base-bytes       base
+| - install bos              0.2.0
+| - install cmdliner         1.0.2
+| - install cppo             1.6.4
+| - install fmt              0.8.5
+| - install fpath            0.7.2
+| - install logs             0.6.2
+| - install mtime            1.1.0
+| - install ocamlbuild       0.12.0
+| - install ocamlgraph       1.8.8
+| - install opam-core        2.0.0
+| - install opam-file-format 2.0.0
+| - install opam-format      2.0.0
+| - install re               1.7.3
+| - install result           1.3
+| - install rresult          0.5.0
+| - install topkg            0.9.1
+| - install uchar            0.0.2
+| - install webbrowser       0.6.1
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180901064549.export"
+31 1535784346 1535784404
