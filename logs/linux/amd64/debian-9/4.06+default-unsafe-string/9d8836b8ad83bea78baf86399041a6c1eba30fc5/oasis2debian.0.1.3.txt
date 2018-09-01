@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 oasis2debian.0.1.3
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for oasis2debian.0.1.3: The following dependencies couldn't be met:
+          - oasis2debian -> xstrp4 -> ocaml < 4.06.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=oasis2debian.0.1.3 returned 20
+20 1535773296 1535773299
