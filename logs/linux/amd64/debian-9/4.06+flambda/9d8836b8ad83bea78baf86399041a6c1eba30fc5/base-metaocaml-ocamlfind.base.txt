@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 base-metaocaml-ocamlfind.base
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for base-metaocaml-ocamlfind.base: The following dependencies couldn't be met:
+          - base-metaocaml-ocamlfind -> ocaml-variants (= 4.02.1+BER & = 4.02.1+modular-implicits-ber & = 4.04.0+BER)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=base-metaocaml-ocamlfind.base returned 20
+20 1535767144 1535767146

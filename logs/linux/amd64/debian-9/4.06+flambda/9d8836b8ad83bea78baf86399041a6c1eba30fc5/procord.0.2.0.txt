@@ -1,0 +1,69 @@
+$ opam depext -iy -j 2 procord.0.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install ocamlbuild 0.12.0 [required by procord]
+  - install procord    0.2.0
+===== 2 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ocamlbuild.0.12.0] found in cache
+[procord.0.2.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed ocamlbuild.0.12.0
+[ERROR] The compilation of procord failed at "/usr/bin/make".
+
+#=== ERROR while compiling procord.0.2.0 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.06.1+flambda | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06+flambda/.opam-switch/build/procord.0.2.0
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/procord-11-e80101.env
+# output-file          ~/.opam/log/procord-11-e80101.out
+### output ###
+# ocamlbuild -no-links -I source -tag annot source/procord.cma source/procord.cmxa
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_connection.mli > source/procord_connection.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmi source/procord_connection.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_connection.ml > source/procord_connection.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_rope.mli > source/procord_rope.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_rope.cmi source/procord_rope.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_process.mli > source/procord_process.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_task.mli > source/procord_task.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_task.cmi source/procord_task.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_process.cmi source/procord_process.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_process.ml > source/procord_process.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_protocol.mli > source/procord_protocol.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_worker.mli > source/procord_worker.mli.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_protocol.cmi source/procord_protocol.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_worker.cmi source/procord_worker.mli
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_protocol.ml > source/procord_protocol.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_rope.ml > source/procord_rope.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_task.ml > source/procord_task.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamldep.opt -modules source/procord_worker.ml > source/procord_worker.ml.depends
+# /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+# + /home/opam/.opam/4.06+flambda/bin/ocamlc.opt -c -annot -I source -o source/procord_connection.cmo source/procord_connection.ml
+# File "source/procord_connection.ml", line 480, characters 50-56:
+# Error: This expression has type string but an expression was expected of type
+#          bytes
+# Command exited with code 2.
+# Makefile:23: recipe for target 'lib' failed
+# make: *** [lib] Error 10
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build procord 0.2.0
++- 
++- The following changes have been performed
+| - install ocamlbuild 0.12.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06+flambda/.opam-switch/backup/state-20180901022412.export"
+31 1535768649 1535768666
