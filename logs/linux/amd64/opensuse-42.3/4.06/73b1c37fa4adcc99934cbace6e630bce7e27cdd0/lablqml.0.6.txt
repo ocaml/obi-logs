@@ -1,0 +1,83 @@
+$ opam depext -iy -j 2 lablqml.0.6
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=opensuse, os-family=suse
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result                  1.3     [required by ocaml-migrate-parsetree]
+  - install conf-qt                 5.2.1   [required by lablqml]
+  - install ocaml-compiler-libs     v0.11.0 [required by ppxlib]
+  - install sexplib0                v0.11.0 [required by base]
+  - install conf-pkg-config         1.1     [required by lablqml]
+  - install ppx_derivers            1.0     [required by ppxlib]
+  - install ocaml-migrate-parsetree 1.0.11  [required by ppxlib]
+  - install base                    v0.11.1 [required by configurator, ppxlib]
+  - install stdio                   v0.11.0 [required by configurator, ppxlib]
+  - install ppxlib                  0.3.0   [required by lablqml]
+  - install configurator            v0.11.0 [required by lablqml]
+  - install lablqml                 0.6
+===== 12 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[base.v0.11.1] found in cache
+[configurator.v0.11.0] found in cache
+[lablqml.0.6] found in cache
+[ocaml-compiler-libs.v0.11.0] found in cache
+[ocaml-migrate-parsetree.1.0.11] found in cache
+[ppx_derivers.1.0] found in cache
+[ppxlib.0.3.0] found in cache
+[result.1.3] found in cache
+[sexplib0.v0.11.0] found in cache
+[stdio.v0.11.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ERROR] The compilation of conf-qt failed at "/usr/bin/sh -exc min=\"5.2.1\" cur=`PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH qmake -query QT_VERSION`; res=`printf \"$min\\n$cur\\n\" | sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -n | head -n 1`; [ \"$res\" = \"$min\" ]".
+-> installed conf-pkg-config.1.1
+-> installed ocaml-compiler-libs.v0.11.0
+-> installed ppx_derivers.1.0
+-> installed result.1.3
+-> installed sexplib0.v0.11.0
+-> installed ocaml-migrate-parsetree.1.0.11
+-> installed base.v0.11.1
+-> installed stdio.v0.11.0
+-> installed configurator.v0.11.0
+-> installed ppxlib.0.3.0
+
+#=== ERROR while compiling conf-qt.5.2.1 ======================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/conf-qt.5.2.1
+# command              /usr/bin/sh -exc min="5.2.1" cur=`PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:$PATH qmake -query QT_VERSION`; res=`printf "$min\n$cur\n" | sort -t '.' -k 1,1 -k 2,2 -k 3,3 -k 4,4 -n | head -n 1`; [ "$res" = "$min" ]
+# exit-code            127
+# env-file             ~/.opam/log/conf-qt-12-326a35.env
+# output-file          ~/.opam/log/conf-qt-12-326a35.out
+### output ###
+# + min=5.2.1
+# ++ PATH=/usr/lib64/qt5/bin:/usr/lib/qt5/bin:/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# ++ qmake -query QT_VERSION
+# /usr/bin/sh: qmake: command not found
+# + cur=
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build conf-qt 5.2.1
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base                    v0.11.1
+| - install conf-pkg-config         1.1
+| - install configurator            v0.11.0
+| - install ocaml-compiler-libs     v0.11.0
+| - install ocaml-migrate-parsetree 1.0.11
+| - install ppx_derivers            1.0
+| - install ppxlib                  0.3.0
+| - install result                  1.3
+| - install sexplib0                v0.11.0
+| - install stdio                   v0.11.0
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180902064337.export"
+31 1535870403 1535870662
