@@ -1,0 +1,13 @@
+$ opam depext -iy -j 2 cowabloga.0.0.7
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+[ERROR] No solution for cowabloga.0.0.7: The following dependencies couldn't be met:
+          - cowabloga -> cow < 2.0.0 -> ocaml < 4.02.0
+              base of this switch (use `--unlock-base' to force)
+          - cowabloga -> cow < 2.0.0 -> camlp4 -> ocaml < 4.08
+              base of this switch (use `--unlock-base' to force)
+          - cowabloga -> cow < 2.0.0 -> camlp4 -> ocaml-variants (= 4.02.0+modular-implicits & = 4.02.1+modular-implicits-ber)
+              no matching version
+
+
+Command failed: opam list --readonly --external  --resolve=cowabloga.0.0.7 returned 20
+20 1535845012 1535845014

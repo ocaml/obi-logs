@@ -1,0 +1,424 @@
+$ opam depext -iy -j 2 uwt.0.3.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+pkg-config
+# The following new OS packages need to be installed: pkg-config
+The following command needs to be run through "sudo":
+    apt-get install -qq -yy pkg-config
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package sgml-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17681 files and directories currently installed.)
+Preparing to unpack .../0-sgml-base_1.29_all.deb ...
+Unpacking sgml-base (1.29) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../1-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../2-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../3-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../4-libglib2.0-data_2.50.3-2_all.deb ...
+Unpacking libglib2.0-data (2.50.3-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../5-pkg-config_0.29-4+b1_amd64.deb ...
+Unpacking pkg-config (0.29-4+b1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../6-shared-mime-info_1.8-1+deb9u1_amd64.deb ...
+Unpacking shared-mime-info (1.8-1+deb9u1) ...
+Selecting previously unselected package xdg-user-dirs.
+Preparing to unpack .../7-xdg-user-dirs_0.15-2+b1_amd64.deb ...
+Unpacking xdg-user-dirs (0.15-2+b1) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../8-xml-core_0.17_all.deb ...
+Unpacking xml-core (0.17) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
+Setting up sgml-base (1.29) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Setting up pkg-config (0.29-4+b1) ...
+Setting up libglib2.0-data (2.50.3-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up shared-mime-info (1.8-1+deb9u1) ...
+Setting up xml-core (0.17) ...
+Setting up xdg-user-dirs (0.15-2+b1) ...
+Processing triggers for sgml-base (1.29) ...
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install result          1.3    [required by uwt]
+  - install omake           0.10.3 [required by uwt]
+  - install base-bytes      base   [required by uwt]
+  - install conf-pkg-config 1.1    [required by uwt]
+  - install cppo            1.6.4  [required by uwt]
+  - install lwt             4.1.0  [required by uwt] For the PPX, please install package lwt_ppx
+                                                     For Lwt_log and Lwt_daemon, please install package lwt_log
+  - install uwt             0.3.0
+===== 7 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[lwt.4.1.0] found in cache
+[omake.0.10.3] found in cache
+[result.1.3] found in cache
+[uwt.0.3.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed conf-pkg-config.1.1
+-> installed cppo.1.6.4
+-> installed result.1.3
+-> installed lwt.4.1.0
+-> installed omake.0.10.3
+[ERROR] The compilation of uwt failed at "/home/opam/.opam/4.08/bin/omake -j71 lib BUILD_LIBUV=true UWT_BUILD_JOBS=71".
+
+#=== ERROR while compiling uwt.0.3.0 ==========================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/uwt.0.3.0
+# command              ~/.opam/4.08/bin/omake -j71 lib BUILD_LIBUV=true UWT_BUILD_JOBS=71
+# exit-code            2
+# env-file             ~/.opam/log/uwt-11-78b2de.env
+# output-file          ~/.opam/log/uwt-11-78b2de.out
+### output ###
+# *** omake: reading OMakefiles
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.08/bin/ocamlfind)
+# --- Checking for ocamlc.opt... (found /home/opam/.opam/4.08/bin/ocamlc.opt)
+# --- Checking for ocamlopt.opt... (found /home/opam/.opam/4.08/bin/ocamlopt.opt)
+# --- Checking for ocamldep.opt... (found /home/opam/.opam/4.08/bin/ocamldep.opt)
+# --- Checking for ocamllex.opt... (found /home/opam/.opam/4.08/bin/ocamllex.opt)
+# --- Checking whether ocamlc understands the "z" warnings... (yes)
+# --- Checking whether ocamlopt can create cmxs plugins... (yes)
+# File OMakeIncludes: line 44, characters 1-17:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMakeIncludes: line 51, characters 1-17:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# File OMakeIncludes: line 81, characters 1-18:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# --- Checking for ocamlfind... (found /home/opam/.opam/4.08/bin/ocamlfind)
+# /home/opam/.opam/4.08/lib/ocaml
+# File OMakeCFLAGS: line 14, characters 3-23:
+#    Warning: old-style foreach expression.
+#    This expression should use a => binding.
+# --- Checking for pkg-config... (found /usr/bin/pkg-config)
+# --- Checking for libuv by pkg-config... (failed /usr/bin/pkg-config libuv)
+# checking for a BSD-compatible install... /usr/bin/install -c
+# checking whether build environment is sane... yes
+# checking for a thread-safe mkdir -p... /bin/mkdir -p
+# checking for gawk... no
+# checking for mawk... mawk
+# checking whether make sets $(MAKE)... yes
+# checking whether make supports nested variables... yes
+# checking build system type... x86_64-pc-linux-gnu
+# checking host system type... x86_64-pc-linux-gnu
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking whether gcc understands -c and -o together... yes
+# checking for style of include used by make... GNU
+# checking dependency style of gcc... gcc3
+# checking if gcc supports -pedantic flag... yes
+# checking for gcc way to treat warnings as errors... -Werror
+# checking if gcc supports -fvisibility=hidden... yes
+# checking if gcc supports -g flag... yes
+# checking if gcc supports -std=gnu89 flag... yes
+# checking if gcc supports -Wall flag... yes
+# checking if gcc supports -Wextra flag... yes
+# checking if gcc supports -Wno-unused-parameter flag... yes
+# checking if gcc supports -Wstrict-prototypes flag... yes
+# checking for ar... ar
+# checking the archiver (ar) interface... ar
+# checking how to print strings... printf
+# checking for a sed that does not truncate output... /bin/sed
+# checking for grep that handles long lines and -e... /bin/grep
+# checking for egrep... /bin/grep -E
+# checking for fgrep... /bin/grep -F
+# checking for ld used by gcc... /usr/bin/ld
+# checking if the linker (/usr/bin/ld) is GNU ld... yes
+# checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+# checking the name lister (/usr/bin/nm -B) interface... BSD nm
+# checking whether ln -s works... yes
+# checking the maximum length of command line arguments... 1572864
+# checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+# checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+# checking for /usr/bin/ld option to reload object files... -r
+# checking for objdump... objdump
+# checking how to recognize dependent libraries... pass_all
+# checking for dlltool... no
+# checking how to associate runtime and link libraries... printf %s\n
+# checking for archiver @FILE support... @
+# checking for strip... strip
+# checking for ranlib... ranlib
+# checking command to parse /usr/bin/nm -B output from gcc object... ok
+# checking for sysroot... no
+# checking for a working dd... /bin/dd
+# checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+# ./configure: line 7186: /usr/bin/file: No such file or directory
+# checking for mt... no
+# checking if : is a manifest tool... no
+# checking how to run the C preprocessor... gcc -E
+# checking for ANSI C header files... yes
+# checking for sys/types.h... yes
+# checking for sys/stat.h... yes
+# checking for stdlib.h... yes
+# checking for string.h... yes
+# checking for memory.h... yes
+# checking for strings.h... yes
+# checking for inttypes.h... yes
+# checking for stdint.h... yes
+# checking for unistd.h... yes
+# checking for dlfcn.h... yes
+# checking for objdir... .libs
+# checking if gcc supports -fno-rtti -fno-exceptions... no
+# checking for gcc option to produce PIC... -fPIC -DPIC
+# checking if gcc PIC flag -fPIC -DPIC works... yes
+# checking if gcc static flag -static works... yes
+# checking if gcc supports -c -o file.o... yes
+# checking if gcc supports -c -o file.o... (cached) yes
+# checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+# checking dynamic linker characteristics... GNU/Linux ld.so
+# checking how to hardcode library paths into programs... immediate
+# checking whether stripping libraries is possible... yes
+# checking if libtool supports shared libraries... yes
+# checking whether to build shared libraries... no
+# checking whether to build static libraries... yes
+# checking whether make supports nested variables... (cached) yes
+# checking for dlopen in -ldl... yes
+# checking for kstat_lookup in -lkstat... no
+# checking for gethostbyname in -lnsl... yes
+# checking for perfstat_cpu in -lperfstat... no
+# checking for pthread_mutex_init in -lpthread... yes
+# checking for clock_gettime in -lrt... yes
+# checking for sendfile in -lsendfile... no
+# checking for socket in -lsocket... no
+# checking for special C compiler options needed for large files... no
+# checking for _FILE_OFFSET_BITS value needed for large files... no
+# checking sys/ahafs_evProds.h usability... no
+# checking sys/ahafs_evProds.h presence... no
+# checking for sys/ahafs_evProds.h... no
+# checking that generated files are newer than configure... done
+# configure: creating ./config.status
+# config.status: creating Makefile
+# config.status: creating libuv.pc
+# config.status: executing depfiles commands
+# config.status: executing libtool commands
+#   CC       src/libuv_la-fs-poll.lo
+#   CC       src/libuv_la-inet.lo
+#   CC       src/libuv_la-threadpool.lo
+#   CC       src/libuv_la-uv-common.lo
+#   CC       src/libuv_la-uv-data-getter-setters.lo
+#   CC       src/unix/libuv_la-async.lo
+#   CC       src/libuv_la-version.lo
+#   CC       src/unix/libuv_la-core.lo
+#   CC       src/unix/libuv_la-dl.lo
+#   CC       src/unix/libuv_la-fs.lo
+#   CC       src/unix/libuv_la-getaddrinfo.lo
+#   CC       src/unix/libuv_la-loop-watcher.lo
+#   CC       src/unix/libuv_la-getnameinfo.lo
+#   CC       src/unix/libuv_la-pipe.lo
+#   CC       src/unix/libuv_la-poll.lo
+#   CC       src/unix/libuv_la-loop.lo
+#   CC       src/unix/libuv_la-signal.lo
+#   CC       src/unix/libuv_la-tcp.lo
+#   CC       src/unix/libuv_la-process.lo
+#   CC       src/unix/libuv_la-thread.lo
+#   CC       src/unix/libuv_la-stream.lo
+#   CC       src/unix/libuv_la-timer.lo
+#   CC       src/unix/libuv_la-udp.lo
+#   CC       src/unix/libuv_la-linux-core.lo
+#   CC       src/unix/libuv_la-tty.lo
+#   CC       src/unix/libuv_la-linux-syscalls.lo
+#   CC       src/unix/libuv_la-linux-inotify.lo
+#   CC       src/unix/libuv_la-proctitle.lo
+#   CC       src/unix/libuv_la-sysinfo-loadavg.lo
+#   CC       src/unix/libuv_la-procfs-exepath.lo
+#   CC       src/unix/libuv_la-sysinfo-memory.lo
+# src/unix/signal.c: In function 'uv__signal_stop':
+# src/unix/signal.c:533:7: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+#    int ret;
+#        ^~~
+#   CCLD     libuv.la
+# ar: `u' modifier ignored since `D' is the default (see `U')
+# --- Checking for cppo... (found /home/opam/.opam/4.08/bin/cppo)
+# ocamlfind: Package `lwt_log.core' not found
+# *** omake: finished reading OMakefiles (7.05 sec)
+# --- Checking if ocamldep understands -modules... (yes)
+# - build src config.inc
+# + ./configure CC=gcc CFLAGS='-O2 -fno-strict-aliasing -fwrapv -fPIC -D_FILE_OFFSET_BITS=64 -D_REENTRANT  -O2 -g -I/home/opam/.opam/4.08/.opam-switch/build/uwt.0.3.0/libuv/include' LDFLAGS=' -L. -luv -lrt -lpthread -lnsl -ldl'
+# checking for gcc... gcc
+# checking whether the C compiler works... yes
+# checking for C compiler default output file name... a.out
+# checking for suffix of executables... 
+# checking whether we are cross compiling... no
+# checking for suffix of object files... o
+# checking whether we are using the GNU C compiler... yes
+# checking whether gcc accepts -g... yes
+# checking for gcc option to accept ISO C89... none needed
+# checking how to run the C preprocessor... gcc -E
+# checking for grep that handles long lines and -e... /bin/grep
+# checking for egrep... /bin/grep -E
+# checking for ANSI C header files... yes
+# checking for sys/types.h... yes
+# checking for sys/stat.h... yes
+# checking for stdlib.h... yes
+# checking for string.h... yes
+# checking for memory.h... yes
+# checking for strings.h... yes
+# checking for inttypes.h... yes
+# checking for stdint.h... yes
+# checking for unistd.h... yes
+# checking minix/config.h usability... no
+# checking minix/config.h presence... no
+# checking for minix/config.h... no
+# checking whether it is safe to define __EXTENSIONS__... yes
+# checking posix source 200809L... checking errno.h usability... yes
+# checking errno.h presence... yes
+# checking for errno.h... yes
+# checking for stdint.h... (cached) yes
+# checking for unistd.h... (cached) yes
+# checking for errno.h... (cached) yes
+# checking limits.h usability... yes
+# checking limits.h presence... yes
+# checking for limits.h... yes
+# checking for sys/stat.h... (cached) yes
+# checking for sys/types.h... (cached) yes
+# checking sys/socket.h usability... yes
+# checking sys/socket.h presence... yes
+# checking for sys/socket.h... yes
+# checking fcntl.h usability... yes
+# checking fcntl.h presence... yes
+# checking for fcntl.h... yes
+# checking netinet/in.h usability... yes
+# checking netinet/in.h presence... yes
+# checking for netinet/in.h... yes
+# checking netdb.h usability... yes
+# checking netdb.h presence... yes
+# checking for netdb.h... yes
+# checking grp.h usability... yes
+# checking grp.h presence... yes
+# checking for grp.h... yes
+# checking pwd.h usability... yes
+# checking pwd.h presence... yes
+# checking for pwd.h... yes
+# checking sys/param.h usability... yes
+# checking sys/param.h presence... yes
+# checking for sys/param.h... yes
+# checking sys/un.h usability... yes
+# checking sys/un.h presence... yes
+# checking for sys/un.h... yes
+# checking arpa/inet.h usability... yes
+# checking arpa/inet.h presence... yes
+# checking for arpa/inet.h... yes
+# checking for strdup... yes
+# checking whether strnlen is declared... yes
+# checking whether uv_os_tmpdir is declared... yes
+# checking whether uv_fs_copyfile is declared... yes
+# checking whether uv_os_get_passwd is declared... yes
+# checking whether uv_translate_sys_error is declared... yes
+# checking whether uv_os_getenv is declared... yes
+# checking whether uv_os_setenv is declared... yes
+# checking whether uv_os_unsetenv is declared... yes
+# checking whether uv_signal_start_oneshot is declared... yes
+# checking whether uv_os_getppid is declared... yes
+# checking whether uv_pipe_chmod is declared... yes
+# checking whether UV_DISCONNECT is declared... yes
+# checking whether UV_PRIORITIZED is declared... yes
+# checking for stdbool.h that conforms to C99... yes
+# checking for _Bool... yes
+# checking for special C compiler options needed for large files... no
+# checking for _FILE_OFFSET_BITS value needed for large files... no
+# checking for typeof syntax and keyword spelling... typeof
+# checking whether byte ordering is bigendian... no
+# checking _Static_assert... yes
+# checking attribute "noreturn"... yes
+# checking attribute "packed"... yes
+# checking attribute "always_inline"... yes
+# checking attribute "unused"... yes
+# checking for __func__... yes
+# checking if the compiler supports __builtin_clz... yes
+# checking for __builtin_expect()... yes
+# checking for __builtin_types_compatible_p()... yes
+# checking for statement expressions... yes
+# checking for library containing gethostbyname_r... none required
+# checking for library containing getservbyname_r... none required
+# checking whether _WIN32 is declared... no
+# checking whether __ANDROID__ is declared... no
+# checking whether __linux__ is declared... yes
+# checking for POSIX-style gethostbyXXXX_r... yes
+# checking for SUN-style gethostbyXXXX_r... no
+# checking for POSIX-style getservbyXXXX_r... yes
+# checking for SUN-style getservbyXXXX_r... no
+# checking for POSIX-style getprotobyXXXX_r... yes
+# checking for SUN-style getprotobyXXXX_r... no
+# checking for getlogin... yes
+# checking for cuserid... yes
+# checking for getpwnam... yes
+# checking for getgrnam... yes
+# checking for getpwuid... yes
+# checking for getgrgid... yes
+# checking for getlogin_r... yes
+# checking for getpwnam_r... yes
+# checking for getgrnam_r... yes
+# checking for getpwuid_r... yes
+# checking for getgrgid_r... yes
+# checking for chroot... yes
+# checking for lockf... yes
+# checking for pipe2... yes
+# checking uv_translate_sys_error... no
+# checking for struct sockaddr_in.sin_len... no
+# checking for struct sockaddr_in6.sin6_len... no
+# configure: creating ./config.status
+# config.status: creating config.inc
+# config.status: creating config.h
+# --- Checking for OCaml library location... (/home/opam/.opam/4.08/lib/ocaml)
+# - build src uwt_throttle.cmo
+# + ocamlfind ocamlc -package bigarray,unix,lwt -safe-string -warn-error +1..49-3-4 -g -bin-annot -I . -c uwt_throttle.ml
+# File "uwt_throttle.ml", line 103, characters 38-55:
+# Warning 3: deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# 
+# If you need to stay compatible with OCaml < 4.07, you can use the 
+# stdlib-shims library: https://github.com/ocaml/stdlib-shims
+# - build src uwt_preemptive.cmo
+# + ocamlfind ocamlc -package bigarray,unix,lwt -safe-string -warn-error +1..49-3-4 -thread -g -bin-annot -I . -c uwt_preemptive.ml
+# File "uwt_preemptive.ml", line 303, characters 43-50:
+# Error: This expression has type ('a, exn) result
+#        but an expression was expected of type
+#          'b Lwt.result = ('b, exn) Pervasives.result
+# *** omake: 183/232 targets are up to date
+# *** omake: failed (17.42 sec, 24/24 scans, 29/36 rules, 140/194 digests)
+# *** omake: targets were not rebuilt because of errors:
+#    src/uwt_preemptive.cmo
+#       depends on: src/uwt_preemptive.ml
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build uwt 0.3.0
++- 
++- The following changes have been performed
+| - install base-bytes      base
+| - install conf-pkg-config 1.1
+| - install cppo            1.6.4
+| - install lwt             4.1.0
+| - install omake           0.10.3
+| - install result          1.3
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180901232747.export"
+31 1535844458 1535844529

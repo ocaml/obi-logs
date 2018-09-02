@@ -1,0 +1,51 @@
+$ opam depext -iy -j 2 doc-ock.1.2.0
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=debian, os-family=debian
+# The following system packages are needed:
+m4
+# All required OS packages found.
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install base-bytes base  [required by cppo]
+  - install octavius   1.2.0 [required by doc-ock]
+  - install cppo       1.6.4 [required by doc-ock]
+  - install doc-ock    1.2.0
+===== 4 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.4] found in cache
+[doc-ock.1.2.0] found in cache
+[octavius.1.2.0] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+[ERROR] The compilation of octavius failed at "/home/opam/.opam/4.08/bin/jbuilder build -p octavius -j 71".
+-> installed cppo.1.6.4
+
+#=== ERROR while compiling octavius.1.2.0 =====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-variants.4.08.0+trunk | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.08/.opam-switch/build/octavius.1.2.0
+# command              ~/.opam/4.08/bin/jbuilder build -p octavius -j 71
+# exit-code            1
+# env-file             ~/.opam/log/octavius-11-a00279.env
+# output-file          ~/.opam/log/octavius-11-a00279.out
+### output ###
+#       ocamlc test/.main.eobjs/main.{cmi,cmo,cmt} (exit 2)
+# (cd _build/default && /home/opam/.opam/4.08/bin/ocamlc.opt -w -40 -g -bin-annot -I test/.main.eobjs -I /home/opam/.opam/4.08/lib/ocaml/compiler-libs -I src/.octavius.objs -no-alias-deps -o test/.main.eobjs/main.cmo -c -impl test/main.ml)
+# File "test/main.ml", line 25, characters 14-26:
+# Error: Unbound value report_error
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build octavius 1.2.0
++- 
++- The following changes have been performed (the rest was aborted)
+| - install base-bytes base
+| - install cppo       1.6.4
++- 
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.08/.opam-switch/backup/state-20180901232402.export"
+31 1535844240 1535844245
