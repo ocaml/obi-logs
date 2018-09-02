@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 core_bench.109.58.01
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for core_bench.109.58.01: The following dependencies couldn't be met:
+          - core_bench -> sexplib < 112.01.00 -> ocaml < 4.03.0
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=core_bench.109.58.01 returned 20
+20 1535864806 1535864808

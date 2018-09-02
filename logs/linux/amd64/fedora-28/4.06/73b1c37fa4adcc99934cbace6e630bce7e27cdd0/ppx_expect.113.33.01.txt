@@ -1,0 +1,9 @@
+$ opam depext -iy -j 2 ppx_expect.113.33.01
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+[ERROR] No solution for ppx_expect.113.33.01: The following dependencies couldn't be met:
+          - ppx_expect -> ocaml = 4.02.3
+              base of this switch (use `--unlock-base' to force)
+
+
+Command failed: opam list --readonly --external  --resolve=ppx_expect.113.33.01 returned 20
+20 1535863563 1535863565

@@ -1,0 +1,224 @@
+$ opam depext -iy -j 2 clangml-transforms.0.23
+# Detecting depexts using vars: arch=x86_64, os=linux, os-distribution=fedora, os-family=fedora
+# The following system packages are needed:
+m4
+ncurses-devel
+pkgconfig
+wget
+which
+Name        : m4
+Version     : 1.4.18
+Release     : 6.fc28
+Architecture: x86_64
+Install Date: Sat Sep  1 20:04:39 2018
+Group       : Applications/Text
+Size        : 372272
+License     : GPLv3+
+Signature   : RSA/SHA256, Sun Feb 25 11:01:47 2018, Key ID e08e7e629db62fb1
+Source RPM  : m4-1.4.18-6.fc28.src.rpm
+Build Date  : Sun Feb 25 10:58:14 2018
+Build Host  : buildvm-25.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : http://www.gnu.org/software/m4/
+Bug URL     : https://bugz.fedoraproject.org/m4
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.
+package ncurses-devel is not installed
+package pkgconfig is not installed
+package wget is not installed
+Name        : which
+Version     : 2.21
+Release     : 8.fc28
+Architecture: x86_64
+Install Date: Sat Sep  1 07:23:21 2018
+Group       : Unspecified
+Size        : 79310
+License     : GPLv3
+Signature   : RSA/SHA256, Fri Feb 16 17:11:18 2018, Key ID e08e7e629db62fb1
+Source RPM  : which-2.21-8.fc28.src.rpm
+Build Date  : Fri Feb 16 17:06:50 2018
+Build Host  : buildvm-05.phx2.fedoraproject.org
+Relocations : (not relocatable)
+Packager    : Fedora Project
+Vendor      : Fedora Project
+URL         : https://savannah.gnu.org/projects/which/
+Summary     : Displays where a particular program in your path is located
+Description :
+The which command shows the full pathname of a specified program, if
+the specified program is in your PATH.
+# The following new OS packages need to be installed: ncurses-devel pkgconfig wget
+The following command needs to be run through "sudo":
+    yum install -y ncurses-devel pkgconfig wget
+Last metadata expiration check: 0:00:00 ago on Sun Sep  2 04:49:46 2018.
+Package pkgconf-pkg-config-1.4.2-1.fc28.x86_64 is already installed, skipping.
+Dependencies resolved.
+================================================================================
+ Package               Arch        Version                   Repository    Size
+================================================================================
+Installing:
+ ncurses-devel         x86_64      6.1-5.20180224.fc28       updates      527 k
+ wget                  x86_64      1.19.5-1.fc28             updates      719 k
+Installing dependencies:
+ ncurses-c++-libs      x86_64      6.1-5.20180224.fc28       updates       54 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+
+Total download size: 1.3 M
+Installed size: 3.7 M
+Downloading Packages:
+(1/3): ncurses-c++-libs-6.1-5.20180224.fc28.x86 767 kB/s |  54 kB     00:00    
+(2/3): ncurses-devel-6.1-5.20180224.fc28.x86_64 2.3 MB/s | 527 kB     00:00    
+(3/3): wget-1.19.5-1.fc28.x86_64.rpm            2.9 MB/s | 719 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.1 MB/s | 1.3 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : ncurses-c++-libs-6.1-5.20180224.fc28.x86_64            1/3 
+  Installing       : ncurses-devel-6.1-5.20180224.fc28.x86_64               2/3 
+  Installing       : wget-1.19.5-1.fc28.x86_64                              3/3 
+  Running scriptlet: wget-1.19.5-1.fc28.x86_64                              3/3 
+install-info: No such file or directory for /usr/share/info/wget.info.gz
+  Verifying        : ncurses-devel-6.1-5.20180224.fc28.x86_64               1/3 
+  Verifying        : ncurses-c++-libs-6.1-5.20180224.fc28.x86_64            2/3 
+  Verifying        : wget-1.19.5-1.fc28.x86_64                              3/3 
+
+Installed:
+  ncurses-devel.x86_64 6.1-5.20180224.fc28        wget.x86_64 1.19.5-1.fc28    
+  ncurses-c++-libs.x86_64 6.1-5.20180224.fc28    
+
+Complete!
+The following command needs to be run through "sudo":
+    rpm -q --whatprovides ncurses-devel pkgconfig wget
+ncurses-devel-6.1-5.20180224.fc28.x86_64
+pkgconf-pkg-config-1.4.2-1.fc28.x86_64
+wget-1.19.5-1.fc28.x86_64
+# OS packages installation successful
+# Now letting OPAM install the packages
+The following actions will be performed:
+  - install obuild             0.1.10  [required by clangml-transforms]
+  - install conf-binutils      0.2     [required by clangml]
+  - install conf-which         1       [required by conf-wget]
+  - install base-bytes         base    [required by ANSITerminal]
+  - install ocamlbuild         0.12.0  [required by batteries, clangml]
+  - install conf-pkg-config    1.1     [required by conf-ncurses]
+  - install num                1.1     [required by batteries]
+  - install conf-wget          1       [required by clangml]
+  - install ANSITerminal       0.8     [required by clangml]
+  - install ocamlmod           0.0.9   [required by oasis]
+  - install ocamlify           0.0.1   [required by oasis]
+  - install dolog              3.0     [required by clangml-transforms]
+  - install camlp4             4.06+1  [required by clangml]
+  - install conf-ncurses       1       [required by clangml]
+  - install batteries          2.8.0   [required by clangml-transforms]
+  - install oasis              0.4.11  [required by deriving]
+  - install deriving           0.8.1   [required by clangml-transforms]
+  - install clangml            3.9.1.2 [required by clangml-transforms]
+  - install clangml-transforms 0.23
+===== 19 to install =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[ANSITerminal.0.8] found in cache
+[batteries.2.8.0] found in cache
+[camlp4.4.06+1] found in cache
+[clangml.3.9.1.2] found in cache
+[clangml-transforms.0.23] found in cache
+[deriving.0.8.1] found in cache
+[dolog.3.0] found in cache
+[num.1.1] found in cache
+[oasis.0.4.11] found in cache
+[obuild.0.1.10] found in cache
+[ocamlbuild.0.12.0] found in cache
+[ocamlify.0.0.1] found in cache
+[ocamlmod.0.0.9] found in cache
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-> installed base-bytes.base
+-> installed ANSITerminal.0.8
+-> installed conf-binutils.0.2
+-> installed conf-pkg-config.1.1
+-> installed conf-ncurses.1
+-> installed conf-which.1
+-> installed num.1.1
+-> installed conf-wget.1
+-> installed obuild.0.1.10
+-> installed ocamlbuild.0.12.0
+-> installed batteries.2.8.0
+-> installed dolog.3.0
+-> installed ocamlify.0.0.1
+-> installed ocamlmod.0.0.9
+-> installed oasis.0.4.11
+-> installed camlp4.4.06+1
+-> installed deriving.0.8.1
+[ERROR] The compilation of clangml failed at "/usr/bin/make".
+
+#=== ERROR while compiling clangml.3.9.1.2 ====================================#
+# context              2.0.0 | linux/x86_64 | ocaml-base-compiler.4.06.1 | git+file:///home/opam/opam-repository
+# path                 ~/.opam/4.06/.opam-switch/build/clangml.3.9.1.2
+# command              /usr/bin/make
+# exit-code            2
+# env-file             ~/.opam/log/clangml-10-fe3fe6.env
+# output-file          ~/.opam/log/clangml-10-fe3fe6.out
+### output ###
+# ocamlbuild -classic-display -cflags -annot clangml.dylib consumer/processor.native -package bytes
+# /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# which: no clang++-3.9 in (/home/opam/.opam/4.06/bin:/home/opam/.opam/plugins/bin:/home/opam/.opam/4.06/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+# which: no clang++ in (/home/opam/usr/clang39/bin)
+# Fatal error: exception Myocamlbuild.No_command_found("[clang++-3.9; /home/opam/usr/clang39/bin/clang++]")
+# + /home/opam/.opam/4.06/bin/ocamlopt.opt unix.cmxa -I /home/opam/.opam/4.06/lib/ocamlbuild /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuildlib.cmxa -I /home/opam/.opam/4.06/lib/bytes myocamlbuild.ml /home/opam/.opam/4.06/lib/ocamlbuild/ocamlbuild.cmx -o myocamlbuild
+# File "myocamlbuild.ml", line 88, characters 15-31:
+# Warning 3: deprecated: Ocamlbuild_plugin.String.lowercase
+# Use String.lowercase_ascii instead.
+# File "myocamlbuild.ml", line 98, characters 4-16:
+# Warning 3: deprecated: Scanf.fscanf
+# Use Scanning.from_channel then Scanf.bscanf.
+# make: *** [Makefile:16: mainClang.native] Error 2
+
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
++- The following actions failed
+| - build clangml 3.9.1.2
++- 
++- The following changes have been performed (the rest was aborted)
+| - install ANSITerminal    0.8
+| - install base-bytes      base
+| - install batteries       2.8.0
+| - install camlp4          4.06+1
+| - install conf-binutils   0.2
+| - install conf-ncurses    1
+| - install conf-pkg-config 1.1
+| - install conf-wget       1
+| - install conf-which      1
+| - install deriving        0.8.1
+| - install dolog           3.0
+| - install num             1.1
+| - install oasis           0.4.11
+| - install obuild          0.1.10
+| - install ocamlbuild      0.12.0
+| - install ocamlify        0.0.1
+| - install ocamlmod        0.0.9
++- 
+
+<><> clangml.3.9.1.2 troubleshooting ><><><><><><><><><><><><><><><><><><><><><>
+=> This package requires llvm-3.9, clang-3.9, boost and binutils
+# Run eval $(opam env) to update the current shell environment
+
+The former state can be restored with:
+    opam switch import "/home/opam/.opam/4.06/.opam-switch/backup/state-20180902044952.export"
+31 1535863783 1535863923
